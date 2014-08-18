@@ -1,64 +1,113 @@
-pushd C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\webroot
+pushd C:\WORKS\WS\Eclipse_Kepler\VM_Cake\app\webroot
 
 sqlite3 development.sqlite3
 .explain on
 
-pragma table_info(images);
+pragma table_info(texts);
 
 .exit
 
-DROP TABLE videos;
-
-
 [sqlite3]======================================
-CREATE TABLE images(
+CREATE TABLE videos(
    id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
-   created_at			VARCHAR(30),
-   updated_at			VARCHAR(30),
+   created_at	VARCHAR(30),
+   updated_at	VARCHAR(30),
    
-   local_id				INTEGER,
-   local_created_at		VARCHAR(30),
-   local_modified_at	VARCHAR(30),
+   title		VARCHAR(255),
+   url			TEXT,
    
-   file_id				INTEGER,
-   file_path			TEXT,
-   file_name			TEXT,
+   memo			TEXT,
+   tag			TEXT,
    
-   local_date_added		VARCHAR(30),
-   local_date_modified	VARCHAR(30),
+   genre_id		INT
    
-   memos				TEXT,
-   tags					TEXT,
    
-   local_last_viewed_at	TEXT,
-   table_name			TEXT
+);
+
+CREATE TABLE genres (
+	id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	name			VARCHAR(255)
+	
+);
+
+CREATE TABLE positions(
+   id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+   created_at	VARCHAR(30),
+   updated_at	VARCHAR(30),
    
+   video_id		INT,
+   
+   point		VARCHAR(255),
+   
+   memo			TEXT,
+   tag			TEXT
+   
+);
+
+CREATE TABLE users (
+	id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	username VARCHAR(50),
+	password VARCHAR(50),
+	role VARCHAR(20)
+	
 );
 
 
 [mysql(lollipop)]======================================
 #REF http://sql-info.de/mysql/examples/CREATE-TABLE-examples.html
 
-CREATE TABLE images(
+CREATE TABLE videos(
 	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	created_at	VARCHAR(30),
 	updated_at	VARCHAR(30),
 	
-   local_id				INTEGER,
-   local_created_at		VARCHAR(30),
-   local_modified_at	VARCHAR(30),
-   
-   file_id				INTEGER,
-   file_path			TEXT,
-   file_name			TEXT,
-   
-   local_date_added		VARCHAR(30),
-   local_date_modified	VARCHAR(30),
-   
-   memos				TEXT,
-   tags					TEXT,
-   
-   local_last_viewed_at	TEXT,
-   table_name			TEXT
+	title		VARCHAR(255),
+	url			TEXT,
+	
+	memo			TEXT,
+	tag			TEXT,
+	
+	genre_id		INT
+	
+	
+);
+
+CREATE TABLE genres (
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	name			VARCHAR(255)
+	
+);
+
+CREATE TABLE positions(
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	video_id		INT,
+	
+	point		VARCHAR(255),
+	
+	memo			TEXT,
+	tag			TEXT
+	
+);
+
+CREATE TABLE users (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	username VARCHAR(50),
+	password VARCHAR(50),
+	role VARCHAR(20)
 	
 );
