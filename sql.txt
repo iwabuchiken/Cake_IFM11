@@ -1,0 +1,113 @@
+pushd C:\WORKS\WS\Eclipse_Kepler\VM_Cake\app\webroot
+
+sqlite3 development.sqlite3
+.explain on
+
+pragma table_info(texts);
+
+.exit
+
+[sqlite3]======================================
+CREATE TABLE videos(
+   id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+   created_at	VARCHAR(30),
+   updated_at	VARCHAR(30),
+   
+   title		VARCHAR(255),
+   url			TEXT,
+   
+   memo			TEXT,
+   tag			TEXT,
+   
+   genre_id		INT
+   
+   
+);
+
+CREATE TABLE genres (
+	id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	name			VARCHAR(255)
+	
+);
+
+CREATE TABLE positions(
+   id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+   created_at	VARCHAR(30),
+   updated_at	VARCHAR(30),
+   
+   video_id		INT,
+   
+   point		VARCHAR(255),
+   
+   memo			TEXT,
+   tag			TEXT
+   
+);
+
+CREATE TABLE users (
+	id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	username VARCHAR(50),
+	password VARCHAR(50),
+	role VARCHAR(20)
+	
+);
+
+
+[mysql(lollipop)]======================================
+#REF http://sql-info.de/mysql/examples/CREATE-TABLE-examples.html
+
+CREATE TABLE videos(
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	title		VARCHAR(255),
+	url			TEXT,
+	
+	memo			TEXT,
+	tag			TEXT,
+	
+	genre_id		INT
+	
+	
+);
+
+CREATE TABLE genres (
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	name			VARCHAR(255)
+	
+);
+
+CREATE TABLE positions(
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	video_id		INT,
+	
+	point		VARCHAR(255),
+	
+	memo			TEXT,
+	tag			TEXT
+	
+);
+
+CREATE TABLE users (
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	username VARCHAR(50),
+	password VARCHAR(50),
+	role VARCHAR(20)
+	
+);
