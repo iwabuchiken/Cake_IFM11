@@ -3,7 +3,7 @@ pushd C:\WORKS\WS\Eclipse_Kepler\VM_Cake\app\webroot
 sqlite3 development.sqlite3
 .explain on
 
-pragma table_info(texts);
+pragma table_info(images);
 
 .exit
 
