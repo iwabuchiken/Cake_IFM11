@@ -5,7 +5,7 @@
 
 		<!-- Here is where we loop through our $images array, printing out post info -->
 
-	<?php //echo $this->element('images/index/index_t_entries')?>
+	<?php echo $this->element('images/index/index_t_entries')?>
 	
 
 </table>

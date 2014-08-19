@@ -27,16 +27,17 @@ class ImagesController extends AppController {
 	
 	}
 	
-	public function add() {
+	public function 
+	add() {
 		if ($this->request->is('post')) {
 				
 			$this->Image->create();
 				
-			$this->request->data['Image']['created_at'] =
-			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+// 			$this->request->data['Image']['created_at'] =
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
 				
-			$this->request->data['Image']['updated_at'] =
-			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+// 			$this->request->data['Image']['updated_at'] =
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
 				
 			if ($this->Image->save($this->request->data)) {
 	
@@ -46,12 +47,47 @@ class ImagesController extends AppController {
 			}
 				
 			$this->Session->setFlash(__('Unable to add your image.'));
-				
-		} else {
-				
+
 		}
+		
+// 		} else if ($this->request->is('get')) {
+				
+// 			$this->Session->setFlash(__('Sorry. GET method is not available'));
+			
+// 		}//if ($this->request->is('post'))
 	
-	}
+	}//add
+	
+	public function 
+	add_from_remote() {
+		if ($this->request->is('post')) {
+				
+			$this->Image->create();
+				
+// 			$this->request->data['Image']['created_at'] =
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+				
+// 			$this->request->data['Image']['updated_at'] =
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+				
+			if ($this->Image->save($this->request->data)) {
+	
+				$this->Session->setFlash(__('Your image has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+	
+			}
+				
+			$this->Session->setFlash(__('Unable to add your image.'));
+
+		}
+		
+// 		} else if ($this->request->is('get')) {
+				
+// 			$this->Session->setFlash(__('Sorry. GET method is not available'));
+			
+// 		}//if ($this->request->is('post'))
+	
+	}//add
 	
 	public function delete($id) {
 		/******************************
