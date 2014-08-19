@@ -67,7 +67,8 @@ class DATABASE_CONFIG {
 	public $development = array(
 			'datasource' => 'Database/Sqlite',
 			'persistent' => false,
-			// 		'host' => 'localhost',
+					'host' => '127.0.0.1:3306',
+// 					'host' => 'localhost',
 			// 		'login' => 'LAA0278957',
 			// 		'password' => 'kfo7jvqoyd',
 			'database' => 'development.sqlite3',
@@ -101,6 +102,20 @@ class DATABASE_CONFIG {
 	}
 	
 	public $default = array();
+// 	public $default = array(
+// 			'datasource' => 'Database/Sqlite',
+// 			'persistent' => false,
+// 					'host' => '127.0.0.1:3306',
+// // 					'host' => 'localhost',
+// 			// 		'login' => 'LAA0278957',
+// 			// 		'password' => 'kfo7jvqoyd',
+// 			'database' => 'development.sqlite3',
+// 			'prefix' => '',
+// 			// 		'encoding' => 'shift-jis',
+// 			// 		'encoding' => 'utf11',
+// 			'encoding' => 'utf8',
+// 	);
+	
 // 	public $default = array(
 // 		'datasource' => 'Database/Mysql',
 // 		'persistent' => false,
