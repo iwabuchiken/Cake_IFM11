@@ -8,6 +8,9 @@ class ImagesController extends AppController {
 // 	public $helpers = array('Html', 'Form');
 
 	public function index() {
+
+		//log
+		Utils::write_Log($this->dpath_Log, "index()", __FILE__, __LINE__);
 		
 		$this->set('images', $this->Image->find('all'));
 	
@@ -29,8 +32,17 @@ class ImagesController extends AppController {
 	
 	public function 
 	add() {
+		
+		//log
+		$msg = "add()";
+		Utils::write_Log($this->dpath_Log, $msg, __FILE__, __LINE__);
+		
 		if ($this->request->is('post')) {
-				
+
+			//log
+			$msg = "add by post";
+			Utils::write_Log($this->dpath_Log, $msg, __FILE__, __LINE__);
+			
 			$this->Image->create();
 				
 // 			$this->request->data['Image']['created_at'] =
