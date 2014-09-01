@@ -12,9 +12,54 @@ class ImagesController extends AppController {
 		//log
 		Utils::write_Log($this->dpath_Log, "index()", __FILE__, __LINE__);
 		
-		$this->set('images', $this->Image->find('all'));
-	
+// 		$filter_TableName = $this->request->query['filter_table_name'];
+		@$filter_TableName = $this->request->query['filter_table_name'];
+		
+		/**********************************
+		* Build: list
+		**********************************/
+		if ($filter_TableName != null) {
+			
+// 			debug("filter => not null");
+			
+			$images = $this->_index_Build_ImageList_TableName($filter_TableName);
+// 			$temp = $this->_index_Build_ImageList_TableName($filter_TableName);
+			
+// 			debug($temp);
+// 			debug("\$temp => ".count($temp));
+// 			debug("\$temp => ".$temp);
+			
+// 			$images = $this->Image->find('all');
+			
+		} else {
+			
+// 			debug("filter => null");
+			
+			$images = $this->Image->find('all');
+			
+		}
+		
+		$this->set('images', $images);
+// 		$this->set('images', $this->Image->find('all'));
+
+// 		debug($this->request);
+// 		debug($this->request->query);
+		
 	}
+	
+	public function 
+	_index_Build_ImageList_TableName($filter_TableName) {
+		
+// 		$options = array('Image.memos LIKE' => "%abc%");
+		$options = array(
+						'conditions' => 
+							array(
+									'Image.memos LIKE' => "%$filter_TableName%")
+		);
+		
+		return $this->Image->find('all', $options);
+		
+	}//_index_Build_ImageList_TableName
 	
 	public function view($id = null) {
 		if (!$id) {
@@ -52,12 +97,21 @@ class ImagesController extends AppController {
 // 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
 				
 			if ($this->Image->save($this->request->data)) {
+				
+				//log
+				$msg = "image => saved";
+				Utils::write_Log($this->dpath_Log, $msg, __FILE__, __LINE__);
 	
 				$this->Session->setFlash(__('Your image has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 	
 			}
 				
+			//log
+			$msg = "Unable to save";
+			Utils::write_Log($this->dpath_Log, $msg, __FILE__, __LINE__);
+			
+			
 			$this->Session->setFlash(__('Unable to add your image.'));
 
 		}
