@@ -20,6 +20,12 @@
 
 <div>
 
+	file_name => <?php echo $images2[0]['Image']['file_name']; ?>
+
+</div>
+
+<div>
+
 	<a name="bottom"></a><a href="#top" class="navi_top_bottom">Top</a>
 	
 </div>
