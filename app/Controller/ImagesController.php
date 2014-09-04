@@ -59,7 +59,10 @@ class ImagesController extends AppController {
 		// we are using the 'User' model
 		$images2 = $this->paginate('Image');
 		
-		debug($images2);
+// 		debug($images2);
+// 		debug($images2);
+		
+		$this->set('images2', $images2);
 		
 	}
 	
