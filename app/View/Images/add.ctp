@@ -1,14 +1,11 @@
-<h1>Add Video</h1>
+<h1>Add Image</h1>
 	<?php
-	echo $this->Form->create('Video');
-	echo $this->Form->input('title');
-	echo $this->Form->input('url');
+		//REF get http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html#options-for-create
+// 		echo $this->Form->create('Image',  array('type' => 'get'));
+		echo $this->Form->create('Image');
+		echo $this->Form->input('file_name');
+		echo $this->Form->input('table_name');
+		echo $this->Form->input('memos');
 	
-	echo $this->Form->input('genre_id',
-			array('options' => $genre_names)
-	
-	);
-	
-// 	echo $this->Form->input('body', array('rows' => '3'));
-	echo $this->Form->end('Save Video');
+		echo $this->Form->end('Save Image');
 	?>

@@ -44,15 +44,20 @@
 		
 	</tr>
 
-		<td colspan="7">
-		
+	<td colspan="7">
+	
 <!-- 			/cake_apps/images/ifm11 -->
-			<?php echo $this->Html->image(
+		<?php echo $this->Html->image(
 						"http://benfranklin.chips.jp/cake_apps/images/ifm11/"
 						.$image['Image']['file_name'], 
-						array('fullBase' => true)); ?>
-		
-		</td>
+						array(
+								'fullBase'	=> true,
+								'height'	=> "300px"
+						)
+					); 
+		?>
+	
+	</td>
 	
 	<tr>
 	

@@ -7,7 +7,30 @@ class ImagesController extends AppController {
 	public $helpers = array('Html', 'Form');
 // 	public $helpers = array('Html', 'Form');
 
+	//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
+	public $components = array('Paginator');
+
 	public function index() {
+		
+		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
+// 		public $paginate = array(
+		$this->paginate = array(
+				'limit' => 3,
+				'order' => array(
+						'id' => 'asc'
+				)
+		);
+		
+		// we are using the 'User' model
+		$images2 = $this->paginate('Image');
+		
+		debug($images2);
+		
+		// pass the value to our view.ctp
+// 		$this->set('users', $users);
+		
+		
+		
 		
 		$this->set('images', $this->Image->find('all'));
 	
@@ -27,16 +50,17 @@ class ImagesController extends AppController {
 	
 	}
 	
-	public function add() {
+	public function 
+	add() {
 		if ($this->request->is('post')) {
 				
 			$this->Image->create();
 				
-			$this->request->data['Image']['created_at'] =
-			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+// 			$this->request->data['Image']['created_at'] =
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
 				
-			$this->request->data['Image']['updated_at'] =
-			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+// 			$this->request->data['Image']['updated_at'] =
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
 				
 			if ($this->Image->save($this->request->data)) {
 	
@@ -46,12 +70,47 @@ class ImagesController extends AppController {
 			}
 				
 			$this->Session->setFlash(__('Unable to add your image.'));
-				
-		} else {
-				
+
 		}
+		
+// 		} else if ($this->request->is('get')) {
+				
+// 			$this->Session->setFlash(__('Sorry. GET method is not available'));
+			
+// 		}//if ($this->request->is('post'))
 	
-	}
+	}//add
+	
+	public function 
+	add_from_remote() {
+		if ($this->request->is('post')) {
+				
+			$this->Image->create();
+				
+// 			$this->request->data['Image']['created_at'] =
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+				
+// 			$this->request->data['Image']['updated_at'] =
+// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+				
+			if ($this->Image->save($this->request->data)) {
+	
+				$this->Session->setFlash(__('Your image has been saved.'));
+				return $this->redirect(array('action' => 'index'));
+	
+			}
+				
+			$this->Session->setFlash(__('Unable to add your image.'));
+
+		}
+		
+// 		} else if ($this->request->is('get')) {
+				
+// 			$this->Session->setFlash(__('Sorry. GET method is not available'));
+			
+// 		}//if ($this->request->is('post'))
+	
+	}//add
 	
 	public function delete($id) {
 		/******************************
