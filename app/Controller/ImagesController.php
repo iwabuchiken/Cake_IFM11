@@ -7,6 +7,9 @@ class ImagesController extends AppController {
 	public $helpers = array('Html', 'Form');
 // 	public $helpers = array('Html', 'Form');
 
+	//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
+	public $components = array('Paginator');
+
 	public function index() {
 
 		//log
@@ -44,6 +47,19 @@ class ImagesController extends AppController {
 
 // 		debug($this->request);
 // 		debug($this->request->query);
+		
+		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
+		$this->paginate = array(
+				'limit' => 3,
+				'order' => array(
+						'id' => 'asc'
+				)
+		);
+		
+		// we are using the 'User' model
+		$images2 = $this->paginate('Image');
+		
+		debug($images2);
 		
 	}
 	
