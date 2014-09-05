@@ -20,9 +20,53 @@
 
 <div>
 
-	file_name => <?php echo $images2[0]['Image']['file_name']; ?>
+	$images2[0]['Image']['file_name'] => <?php echo $images2[0]['Image']['file_name']; ?>
 
 </div>
+
+<div>
+	<?php 
+
+		$paginator = $this->Paginator;
+	
+		echo $paginator->first("First");
+		
+		echo " | ";
+		
+		if($paginator->hasPrev()){
+			echo $paginator->prev("Prev");
+		} else {
+		
+			echo "Prev";
+
+		}
+		
+		echo " | ";
+		
+		echo $paginator->numbers(array('modulus' => 2));
+		
+		echo " | ";
+		
+		// for the 'next' button
+
+        if($paginator->hasNext()){
+            echo $paginator->next("Next");
+        } else {
+		
+			echo "Next";
+
+		}
+		
+		echo " | ";
+		
+		echo $paginator->last("Last");
+        
+    ?>
+
+</div>
+
+<br>
+<br>
 
 <div>
 
