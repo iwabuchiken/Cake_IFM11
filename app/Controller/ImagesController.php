@@ -12,6 +12,14 @@ class ImagesController extends AppController {
 
 	public function index() {
 
+		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
+		$this->paginate = array(
+				'limit' => 4,
+				'order' => array(
+						'id' => 'asc'
+				)
+		);
+		
 		//log
 		Utils::write_Log($this->dpath_Log, "index()", __FILE__, __LINE__);
 		
@@ -38,7 +46,9 @@ class ImagesController extends AppController {
 			
 // 			debug("filter => null");
 			
-			$images = $this->Image->find('all');
+// 			$images = $this->Image->find('all');
+
+			$images = $this->paginate('Image');
 			
 		}
 		
@@ -48,18 +58,21 @@ class ImagesController extends AppController {
 // 		debug($this->request);
 // 		debug($this->request->query);
 		
-		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
-		$this->paginate = array(
-				'limit' => 3,
-				'order' => array(
-						'id' => 'asc'
-				)
-		);
+// 		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
+// 		$this->paginate = array(
+// 				'limit' => 3,
+// 				'order' => array(
+// 						'id' => 'asc'
+// 				)
+// 		);
 		
 		// we are using the 'User' model
 		$images2 = $this->paginate('Image');
 		
-		debug($images2);
+// 		debug($images2);
+// 		debug($images2);
+		
+		$this->set('images2', $images2);
 		
 	}
 	
