@@ -1,5 +1,13 @@
-pushd C:\WORKS\Utils\shortcuts\cake_ifm11
+@echo off
 
-start b_start_chrome.bat
+REM pushd C:\WORKS\Utils\shortcuts\cake_ifm11
 
-exit
+REM "start ..." => another window opens
+REM start C:\WORKS\Utils\shortcuts\cake_ifm11\b_start_chrome.bat
+
+REM no "start" command => the window stays
+C:\WORKS\Utils\shortcuts\cake_ifm11\b_start_chrome.bat
+
+REM popd
+
+REM exit

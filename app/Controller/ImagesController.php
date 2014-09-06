@@ -32,10 +32,41 @@ class ImagesController extends AppController {
 		if ($filter_TableName != null) {
 			
 // 			debug("filter => not null");
+
+			$this->paginate = array(
+// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
+					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
+					'limit' => 4,
+					'order' => array(
+							'id' => 'asc'
+					)
+			);
 			
-			$images = $this->_index_Build_ImageList_TableName($filter_TableName);
+			$images = $this->paginate('Image');
+			
+// 			debug($images);
+			
+// 			$images = $this->_index_Build_ImageList_TableName($filter_TableName);
 // 			$temp = $this->_index_Build_ImageList_TableName($filter_TableName);
 			
+			/**********************************
+			 * total number of images
+			**********************************/
+			$this->set('total_num_of_images', count($this->Image->find('all')));
+			
+			$this->set('num_of_images_filtered', 
+				count(
+					$this->Image->find('all',
+							array(
+								'conditions' => 
+									array(
+										'Image.memos LIKE' => "%$filter_TableName%")
+// 										'Image.file_name LIKE' => "%$filter_TableName%")
+							)
+					)
+				)
+			);
+
 // 			debug($temp);
 // 			debug("\$temp => ".count($temp));
 // 			debug("\$temp => ".$temp);
@@ -49,12 +80,22 @@ class ImagesController extends AppController {
 // 			$images = $this->Image->find('all');
 
 			$images = $this->paginate('Image');
-			
+
+			/**********************************
+			 * total number of images
+			**********************************/
+			$this->set('total_num_of_images', count($this->Image->find('all')));
+					
 		}
 		
 		$this->set('images', $images);
 // 		$this->set('images', $this->Image->find('all'));
 
+		/**********************************
+		* total number of images
+		**********************************/
+// 		$this->set('total_num_of_images', count($this->Image->find('all')));
+		
 // 		debug($this->request);
 // 		debug($this->request->query);
 		
@@ -66,13 +107,13 @@ class ImagesController extends AppController {
 // 				)
 // 		);
 		
-		// we are using the 'User' model
-		$images2 = $this->paginate('Image');
+// 		// we are using the 'User' model
+// 		$images2 = $this->paginate('Image');
 		
-// 		debug($images2);
-// 		debug($images2);
+// // 		debug($images2);
+// // 		debug($images2);
 		
-		$this->set('images2', $images2);
+// 		$this->set('images2', $images2);
 		
 	}
 	
