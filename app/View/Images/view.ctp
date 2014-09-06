@@ -1,3 +1,5 @@
+<!-- Current => <?php //echo @$current_url; ?> -->
+
 <div>
 	
 	<div>

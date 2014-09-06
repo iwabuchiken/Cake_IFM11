@@ -91,6 +91,28 @@ class ImagesController extends AppController {
 		$this->set('images', $images);
 // 		$this->set('images', $this->Image->find('all'));
 
+// 		//REF http://stackoverflow.com/questions/6836990/how-to-get-complete-current-url-for-cakephp answered Jul 29 '11 at 15:18
+// 		debug($this->here);
+// 		debug(Router::url( $this->here, true ));
+// 		debug("/ => ".Router::url('/', true ));
+		
+// 		debug("webroot => ".$this->webroot);
+		 
+// 		debug("HTTP_HOST => ".$_SERVER['HTTP_HOST']);
+		 
+		/**********************************
+		* store: current url
+		**********************************/
+		//REF http://book.cakephp.org/2.0/ja/core-libraries/components/sessions.html
+		
+		$current_url = Router::url('/', true ).substr($this->here, strlen($this->webroot));
+		$this->Session->write('current_url', $current_url);
+// 		$this->Session->write('current_url', Router::url( $this->here, true ));
+		
+// 		debug("\$current_url => ".$current_url);
+		
+// 		debug(Router::url( $this->here, true ));
+		
 		/**********************************
 		* total number of images
 		**********************************/
@@ -142,7 +164,13 @@ class ImagesController extends AppController {
 		}
 	
 		$this->set('image', $image);
+		
+		$current_url = $this->Session->read('current_url');
+		
+		$this->set('current_url', $current_url);
 	
+// 		debug($current_url);
+		
 	}
 	
 	public function 

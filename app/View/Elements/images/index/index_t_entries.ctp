@@ -71,6 +71,7 @@
 								'action' => 'view', 
 								$image['Image']['id']
 								),
+						//REF escapse http://simultechnology.blendmix.jp/blog/archives/749
 						array('escape' => false)
 							); ?>
 	
