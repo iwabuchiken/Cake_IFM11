@@ -35,3 +35,59 @@ a.navi_top_bottom {
 	/*background: #81BEF7;*/
 	
 }
+
+span.Pg_first a {
+	
+	color: purple;
+	
+}
+
+span.Pg_last a {
+	
+	color: purple;
+	
+}
+
+span.Pg_prev {
+	
+	color: purple;
+	
+}
+
+span.Pg_prev a {
+	
+	color: blue;
+	
+}
+
+span.Pg_next {
+	
+	color: purple;
+	
+}
+
+span.Pg_next a {
+	
+	color: blue;
+	
+}
+
+/*
+a[rel='prev'] {
+	
+	color: yellow;
+	
+}
+*/
+
+div.pagination {
+	
+	background: #A4F7B6;
+	
+}
+
+/* REF http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
