@@ -1,0 +1,58 @@
+2014-08-19 01:27:17 Error: [MissingActionException] Action AppController::Lib() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'Lib',
+)
+Request URL: /Cake_IFM11/app/Lib/templates/utils.php
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-19 07:38:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Cake_IFM11/images
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-19 07:42:56 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /Cake_IFM11/images
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-19 12:07:05 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\cons.php' (include_path='C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib;.;C:\WORKS\Programs\xampp_1.8.2_x86\php\PEAR') in [C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\Controller\AppController.php, line 55]
+2014-08-19 12:07:05 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\cons.php' (include_path='C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib;.;C:\WORKS\Programs\xampp_1.8.2_x86\php\PEAR')
+Request URL: /Cake_IFM11/images/
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require_once() ...', 'C:\\WORKS\\WS\\Ecl...', 55)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'C:\\WORKS\\WS\\Ecl...', 55, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'C:\\WORKS\\WS\\Ecl...', 55, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-05 11:11:43 Error: Fatal Error (1): Call to a member function hasNext() on a non-object in [C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\View\Images\index.ctp, line 30]
+2014-09-05 11:11:44 Error: [FatalErrorException] Call to a member function hasNext() on a non-object
+Request URL: /Cake_IFM11/images
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 30)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 30, Array)
+#2 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 30, Array)
+#3 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-06 03:40:19 Error: [MissingControllerException] Controller class CakeIFM11Controller could not be found.
+Exception Attributes: array (
+  'class' => 'CakeIFM11Controller',
+  'plugin' => NULL,
+)
+Request URL: /Cake_IFM11/Cake_IFM11/images/index/page:2/sort:Image.id/direction:asc
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
