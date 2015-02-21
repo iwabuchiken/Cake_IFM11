@@ -20,7 +20,8 @@
 
 		<!-- Here is where we loop through our $images array, printing out post info -->
 		
-	<?php echo $this->element('images/index/_search_memos')?>
+	<?php //echo $this->element('images/index/_search_memos')?>
+	<?php echo $this->element('images/index/_searchs')?>
 
 	<?php echo $this->element('images/index/index_t_entries')?>
 	

@@ -19,11 +19,12 @@
 						'div'	=> false,
 						//REF select http://stackoverflow.com/questions/6912071/select-all-text-on-hover answered Aug 2 '11 at 12:35
 						'onmouseover'	=> 'this.select()',
-						'name'	=> CONS::$str_Filter_Memo
-// 						'name'	=> 'filter_memo'
+						'name'	=> CONS::$str_Filter_TableName
+// 						'name'	=> 'filter_table_name'
 			);
-			
-			echo $this->Form->input('Memos', $options_Memo);
+			echo $this->Form->input('Table name', $options_Memo);
+// 			echo $this->Form->input('Memos', $options_Memo);
+// 			echo $this->Form->input('Table name', array('class'=>'basic_ta_1'));
 			
 			$options = array(
 					'label' => 'Filter',

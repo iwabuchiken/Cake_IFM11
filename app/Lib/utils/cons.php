@@ -39,4 +39,13 @@ class CONS {
 		* Session keys
 	****************************************/
 
+	/*******************************
+		Images
+	*******************************/
+	public static $str_Filter_Memo = "filter_memo";
+	public static $str_Filter_Memo_all = "*";
+	
+	public static $str_Filter_TableName = "filter_table_name";
+	public static $str_Filter_TableName_all = "*";
+	
 }//class CONS

@@ -25,6 +25,11 @@ class ImagesController extends AppController {
 		
 // 		$filter_TableName = $this->request->query['filter_table_name'];
 		@$filter_TableName = $this->request->query['filter_table_name'];
+		@$filter_Memo = $this->request->query['filter_memo'];
+		
+		$opt_conditions = $this->_index__Options();
+
+		debug($opt_conditions);
 		
 		/**********************************
 		* Build: list
@@ -138,6 +143,74 @@ class ImagesController extends AppController {
 // 		$this->set('images2', $images2);
 		
 	}
+	
+	public function
+	_index__Options() {
+	
+		/**********************************
+		 * param: filter: hin
+		**********************************/
+		$filter_memo = CONS::$str_Filter_Memo;
+	
+		$opt_conditions = array();
+	
+		@$query_Filter_Memo = $this->request->query[$filter_memo];
+	
+		if ($query_Filter_Memo == CONS::$str_Filter_Memo_all) {
+			// 		if ($query_Filter_Hins == "-1") {
+	
+			$this->Session->write($filter_memo, null);
+	
+			$this->set("filter_memo", '');
+	
+		} else if ($query_Filter_Memo == null) {
+	
+			@$session_Filter = $this->Session->read($filter_memo);
+	
+			if ($session_Filter != null) {
+	
+				// 				$opt_conditions['Token.hin'] = "DISTINCT ".$session_Filter;
+				$opt_conditions['Image.memos LIKE'] = "%$session_Filter%";
+	
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter_memo", $session_Filter);
+	
+			} else {
+	
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter_memo", null);
+	
+			}
+	
+		} else {
+	
+			// 			$opt_conditions['History.line LIKE'] = "%$query_Filter_Hins%";
+	
+			//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
+			// 			$opt_conditions['Image.memos LIKE'] = "DISTINCT ".$query_Filter_Hins;
+			$opt_conditions['Image.memos LIKE'] = "%$query_Filter_Memo%";
+	
+			$session_Filter = $this->Session->write($filter_memo, $query_Filter_Memo);
+	
+			//			debug("session_Filter => written");
+	
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("filter_memo", $query_Filter_Memo);
+	
+		}
+	
+		/**********************************
+		 * return
+		**********************************/
+		return $opt_conditions;
+	
+	}//_index__Options
 	
 	public function 
 	_index_Build_ImageList_TableName($filter_TableName) {
