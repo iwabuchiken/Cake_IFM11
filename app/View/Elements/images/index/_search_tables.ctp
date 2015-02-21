@@ -22,7 +22,7 @@
 						'name'	=> CONS::$str_Filter_TableName
 // 						'name'	=> 'filter_table_name'
 			);
-			echo $this->Form->input('Table name', $options_Memo);
+			echo $this->Form->input("Table name ('*' for all)", $options_Memo);
 // 			echo $this->Form->input('Memos', $options_Memo);
 // 			echo $this->Form->input('Table name', array('class'=>'basic_ta_1'));
 			

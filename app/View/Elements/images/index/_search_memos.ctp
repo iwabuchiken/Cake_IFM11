@@ -23,7 +23,8 @@
 // 						'name'	=> 'filter_memo'
 			);
 			
-			echo $this->Form->input('Memos', $options_Memo);
+			echo $this->Form->input("Memos ('*' for all)", $options_Memo);
+// 			echo $this->Form->input('Memos', $options_Memo);
 			
 			$options = array(
 					'label' => 'Filter',

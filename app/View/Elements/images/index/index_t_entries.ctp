@@ -1,7 +1,7 @@
 <?php foreach ($images as $image): ?>
 
 	<tr>
-		<td colspan="1">
+		<td colspan="1" class="td_images_ID">
 		
 			<?php echo $this->Html->link($image['Image']['id'],
 							array(
@@ -12,14 +12,14 @@
 			
 		</td>
 		
-		<td colspan="3">
+		<td colspan="3" class="td_images_TableName">
 		
 			<?php echo $image['Image']['table_name']
 							; ?>
 							
 		</td>
 		
-		<td colspan="3">
+		<td colspan="3" class="td_images_FileName">
 		
 			<?php echo $image['Image']['file_name']
 							; ?>
@@ -29,18 +29,20 @@
 	</tr>
 	
 	<tr>
-		<td colspan="5" rowspan="2">
+		<td colspan="5" rowspan="2" class="td_images_Memo">
 			<?php echo $image['Image']['memos']; ?>
 		</td>
 		
-		<td colspan="2">
+		<td colspan="2" class="td_images_CreatedAt">
 			<?php echo $image['Image']['created_at']; ?>
 		</td>
 		
 	</tr>
 	
 	<tr>
-		<td colspan="2"><?php echo $image['Image']['updated_at']; ?></td>
+		<td colspan="2" class="td_images_ModifiedAt">
+			<?php echo $image['Image']['updated_at']; ?>
+		</td>
 		
 	</tr>
 
