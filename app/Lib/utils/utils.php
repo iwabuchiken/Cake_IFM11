@@ -26,7 +26,15 @@
 		
 				case CONS::$timeLabelTypes["basic"]:
 		
-					return date('Y/m/d H:i:s', time());
+					$label = date('Y/m/d H:i:s.u', time());
+					
+					$len_label = strlen($label);
+					
+// 					debug(substr($label, 0, $len_label - 3));
+					
+					return substr($label, 0, $len_label - 3);
+// 					return date('Y/m/d H:i:s.u', time());
+// 					return date('Y/m/d H:i:s', time());
 		
 				case CONS::$timeLabelTypes["serial"]:
 		

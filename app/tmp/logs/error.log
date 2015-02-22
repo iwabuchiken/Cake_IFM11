@@ -56,3 +56,23 @@ Request URL: /Cake_IFM11/Cake_IFM11/images/index/page:2/sort:Image.id/direction:
 Stack Trace:
 #0 C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-02-21 23:36:34 Error: Fatal Error (64): Cannot declare property CONS::$dname_Utils final, the final modifier is allowed only for methods and classes in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\cons.php, line 10]
+2015-02-21 23:36:34 Error: [FatalErrorException] Cannot declare property CONS::$dname_Utils final, the final modifier is allowed only for methods and classes
+Request URL: /Cake_IFM11/images
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot declare ...', 'C:\\WORKS\\WS\\Ecl...', 10)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot declare ...', 'C:\\WORKS\\WS\\Ecl...', 10, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot declare ...', 'C:\\WORKS\\WS\\Ecl...', 10, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-21 23:53:41 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 101]
+2015-02-21 23:53:41 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Cake_IFM11/images?filter_memo=%E9%A3%9F%E4%BA%8B
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 101)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 101, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 101, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

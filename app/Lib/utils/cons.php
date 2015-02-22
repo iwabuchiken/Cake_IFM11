@@ -48,4 +48,9 @@ class CONS {
 	public static $str_Filter_TableName = "filter_table_name";
 	public static $str_Filter_TableName_all = "*";
 	
+	/*******************************
+		paginate
+	*******************************/
+	public static $paginate_Modulus = 15;
+	
 }//class CONS

@@ -12,6 +12,9 @@ class ImagesController extends AppController {
 
 	public function index() {
 
+// 		//test
+// 		$this->_test_CreateModel();
+		
 		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
 		$this->paginate = array(
 				'limit' => 4,
@@ -29,18 +32,33 @@ class ImagesController extends AppController {
 		
 		$opt_conditions = $this->_index__Options();
 
-		debug($opt_conditions);
+// 		//test
+// 		debug(Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]));
+// 		debug(Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
+// 		debug(substr(Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]), 0, 3));
+		
+// 		$label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+// 		$len_label = strlen($label);
+		
+// 		debug(substr($label, 0, $len_label - 3));
+		
+// 		debug(microtime());
+// 		debug("true: ".microtime(true));
+// 		debug("true,round: ".round(microtime(true)));
+		
+// 		debug($opt_conditions);
 		
 		/**********************************
 		* Build: list
 		**********************************/
-		if ($filter_TableName != null) {
+// 		if ($filter_TableName != null) {
 			
 // 			debug("filter => not null");
 
 			$this->paginate = array(
 // 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
-					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
+					'conditions' => $opt_conditions,
+// 					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
 					'limit' => 4,
 					'order' => array(
 							'id' => 'asc'
@@ -48,6 +66,29 @@ class ImagesController extends AppController {
 			);
 			
 			$images = $this->paginate('Image');
+
+// 			debug($this->params['paging']['Image']);
+			
+// 			array(
+// 					'page' => (int) 1,
+// 					'current' => (int) 4,
+// 					'count' => (int) 7,
+// 					'prevPage' => false,
+// 					'nextPage' => true,
+// 					'pageCount' => (int) 2,
+// 					'order' => array(
+// 							'Image.id' => 'asc'
+// 					),
+// 					'limit' => (int) 4,
+// 					'options' => array(
+// 							'order' => array(
+// 									'Image.id' => 'asc'
+// 							)
+// 					),
+// 					'paramType' => 'named'
+// 			)
+
+			$paginateData = $this->params['paging']['Image'];
 			
 // 			debug($images);
 			
@@ -57,20 +98,26 @@ class ImagesController extends AppController {
 			/**********************************
 			 * total number of images
 			**********************************/
+// 			$this->set('total_num_of_images', $paginateData['count']);
+			
+// 			debug("page count => ".$paginateData['pageCount']);
+			
 			$this->set('total_num_of_images', count($this->Image->find('all')));
 			
-			$this->set('num_of_images_filtered', 
-				count(
-					$this->Image->find('all',
-							array(
-								'conditions' => 
-									array(
-										'Image.memos LIKE' => "%$filter_TableName%")
-// 										'Image.file_name LIKE' => "%$filter_TableName%")
-							)
-					)
-				)
-			);
+			$this->set('num_of_pages', $paginateData['pageCount']);  
+			
+			$this->set('num_of_images_filtered', $paginateData['count']);  
+// 				count(
+// 					$this->Image->find('all',
+// 							array(
+// 								'conditions' => 
+// 									array(
+// 										'Image.memos LIKE' => "%$filter_TableName%")
+// // 										'Image.file_name LIKE' => "%$filter_TableName%")
+// 							)
+// 					)
+// 				)
+// 			);
 
 // 			debug($temp);
 // 			debug("\$temp => ".count($temp));
@@ -78,20 +125,20 @@ class ImagesController extends AppController {
 			
 // 			$images = $this->Image->find('all');
 			
-		} else {
+// 		} else {
 			
-// 			debug("filter => null");
+// // 			debug("filter => null");
 			
-// 			$images = $this->Image->find('all');
+// // 			$images = $this->Image->find('all');
 
-			$images = $this->paginate('Image');
+// 			$images = $this->paginate('Image');
 
-			/**********************************
-			 * total number of images
-			**********************************/
-			$this->set('total_num_of_images', count($this->Image->find('all')));
+// 			/**********************************
+// 			 * total number of images
+// 			**********************************/
+// 			$this->set('total_num_of_images', count($this->Image->find('all')));
 					
-		}
+// 		}
 		
 		$this->set('images', $images);
 // 		$this->set('images', $this->Image->find('all'));
@@ -143,6 +190,29 @@ class ImagesController extends AppController {
 // 		$this->set('images2', $images2);
 		
 	}
+	
+	public function
+	_test_CreateModel() {
+		
+		$this->Image->create();
+
+		$this->Image->set("created_at", Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
+		
+		$this->Image->save();
+		
+		debug("model created");
+		
+// 			$this->request->data['Image']['created_at'] =
+// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+				
+// 			$this->request->data['Image']['updated_at'] =
+// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+				
+// 			if ($this->Image->save($this->request->data)) {
+	
+		
+	}
+	
 	
 	public function
 	_index__Options() {
@@ -347,10 +417,22 @@ class ImagesController extends AppController {
 		if ($this->request->is('post')) {
 
 			//log
+			$info = serialize($this->request->data);
+				
+			Utils::write_Log($this->dpath_Log, $info, __FILE__, __LINE__);
+				
+			//log
 			$msg = "add by post";
 			Utils::write_Log($this->dpath_Log, $msg, __FILE__, __LINE__);
 			
 			$this->Image->create();
+
+			$this->Image->set("created_at",
+					Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
+			
+			$this->Image->set("updated_at",
+					Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
+			
 				
 // 			$this->request->data['Image']['created_at'] =
 // 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
@@ -389,14 +471,25 @@ class ImagesController extends AppController {
 	public function 
 	add_from_remote() {
 		if ($this->request->is('post')) {
-				
+
+			//test
+			$info = serialize($this->request->data);
+			
+			Utils::write_Log($this->dpath_Log, $info, __FILE__, __LINE__);
+			
 			$this->Image->create();
 				
 // 			$this->request->data['Image']['created_at'] =
-// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
 				
 // 			$this->request->data['Image']['updated_at'] =
-// 			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+
+			$this->Image->set("created_at", 
+							Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
+				
+			$this->Image->set("updated_at", 
+							Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]));
 				
 			if ($this->Image->save($this->request->data)) {
 	

@@ -1,9 +1,51 @@
 <h1>
 
-	Images (<?php echo "total = $total_num_of_images"; ?>)
-		<?php if (@$num_of_images_filtered) echo "(filtered = $num_of_images_filtered)"?>
+	Images 
+	
+	<br>
+	
+		(
+		<font color="black">
+			total images = <?php echo $total_num_of_images; ?>
+			
+			<?php if (@$num_of_images_filtered) 
+						echo "/ filtered images = $num_of_images_filtered";
+					else
+						echo "/ filtered images = ";
+			?>
+			
+			<?php 
+				if (@$num_of_pages) 
+					echo "/ pages = $num_of_pages";
+				else 
+					echo "/ pages =";
+			?>
+		)
+			
 	<!-- Images (<?php //echo count($images)?>) -->
 	
+	<br>
+	
+	(
+		<?php 
+			if(isset($filter_memo)) 
+				echo "filter_memo => $filter_memo";
+			else
+				echo "filter_memo =>";
+		?>
+		
+		<?php 
+			if(isset($filter_table_name)) 
+				echo " / filter_table_name => $filter_table_name";
+			else 
+				echo " / filter_table_name =>";
+		?>
+	)
+
+	</font>
+	
+	<br>
+	<br>
 	<a name="top"></a><a href="#bottom" class="navi_top_bottom">Bottom</a>
 	
 </h1>
