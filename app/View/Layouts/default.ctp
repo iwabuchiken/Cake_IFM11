@@ -40,6 +40,8 @@
 		echo $this->Html->css('cake.generic');
 		
 		echo $this->Html->css('main');
+		
+		echo $this->Html->script('main');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
