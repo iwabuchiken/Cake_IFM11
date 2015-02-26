@@ -20,8 +20,17 @@
 						//REF select http://stackoverflow.com/questions/6912071/select-all-text-on-hover answered Aug 2 '11 at 12:35
 						'onmouseover'	=> 'this.select()',
 						'name'	=> CONS::$str_Filter_Memo
+					
+					
 // 						'name'	=> 'filter_memo'
 			);
+			
+			if (isset($filter_memo)) {
+
+				//REF http://stackoverflow.com/questions/6259371/cakephp-this-form-input-how-to-set-a-select-default-option answered Jun 7 '11 at 0:38
+				$options_Memo['default'] = $filter_memo;
+				
+			}
 			
 			echo $this->Form->input("Memos ('*' for all)", $options_Memo);
 // 			echo $this->Form->input('Memos', $options_Memo);
@@ -32,6 +41,25 @@
 							'class' => 'submit_button',
 					)
 			);
+			
+			//REF http://www.cakephpexample.com/cakephp/cakephp-radio-button/
+// 			echo $this->Form->input('RadioGroup', array(
+			echo $this->Form->input(CONS::$str_Filter_RadioButtons_Name_Memo, array(
+					'div' => true,
+// 					'div' => false,
+					'label' => true,
+					'type' => 'radio',
+					'legend' => false,
+					'options' => array(
+									CONS::$str_Filter_RadioButtons_Memo_AND 
+											=> CONS::$str_Filter_RadioButtons_Memo_AND, 
+									CONS::$str_Filter_RadioButtons_Memo_OR 
+											=> CONS::$str_Filter_RadioButtons_Memo_OR
+					),
+					'default'	=> CONS::$str_Filter_RadioButtons_Memo_AND
+// 					'options' => array(1 => 'Personal ', 2 => 'Company')
+			));
+			
 			echo $this->Form->end($options);
 			
 // 			echo $this->Form->end('Save Image', array('name'=>'submit_button'));

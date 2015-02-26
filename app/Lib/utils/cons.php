@@ -45,6 +45,14 @@ class CONS {
 	public static $str_Filter_Memo = "filter_memo";
 	public static $str_Filter_Memo_all = "*";
 	
+	public static $str_Filter_RadioButtons_Name_Memo = "RBs_AND_OR_Memo";
+	public static $str_Filter_RadioButtons_Memo_AND = "AND";
+	public static $str_Filter_RadioButtons_Memo_OR = "OR";
+	
+	public static $str_Filter_RadioButtons_Name_TableName = "RBs_AND_OR_TableName";
+	public static $str_Filter_RadioButtons_TableName_AND = "AND_TableName";
+	public static $str_Filter_RadioButtons_TableName_OR = "OR_TableName";
+	
 	public static $str_Filter_TableName = "filter_table_name";
 	public static $str_Filter_TableName_all = "*";
 	

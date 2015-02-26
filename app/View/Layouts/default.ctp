@@ -22,8 +22,9 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
+		<?php //echo $cakeDescription ?>
+		<?php //echo $title_for_layout; ?>
+		Cake_IFM11
 	</title>
 	
 	<meta name="viewport"

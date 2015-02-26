@@ -76,3 +76,24 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-02-26 10:20:41 Error: Fatal Error (1): Access to undeclared static property: CONS::$str_Filter_RadioButtons_Name in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Elements\images\index\_search_memos.ctp, line 38]
+2015-02-26 10:20:41 Error: [FatalErrorException] Access to undeclared static property: CONS::$str_Filter_RadioButtons_Name
+Request URL: /Cake_IFM11/images?filter_memo=%E4%B9%BE%E9%9B%BB%E6%B1%A0&RBs_AND_OR=OR
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Access to undec...', 'C:\\WORKS\\WS\\Ecl...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Access to undec...', 'C:\\WORKS\\WS\\Ecl...', 38, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Access to undec...', 'C:\\WORKS\\WS\\Ecl...', 38, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-26 11:21:54 Error: [NotFoundException] Not Found
+Request URL: /Cake_IFM11/images/index/page:2/sort:Image.id/direction:asc?filter_memo=-%E9%A3%9F%E4%BA%8B&RBs_AND_OR_Memo=AND
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(1080): PaginatorComponent->paginate('Image', Array, Array)
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(71): Controller->paginate('Image')
+#2 [internal function]: ImagesController->index()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

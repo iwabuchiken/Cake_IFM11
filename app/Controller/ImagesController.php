@@ -13,6 +13,9 @@ class ImagesController extends AppController {
 	public function index() {
 
 // 		//test
+// 		debug($this->request->query);
+		
+// 		//test
 // 		$this->_test_CreateModel();
 		
 		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
@@ -232,6 +235,7 @@ class ImagesController extends AppController {
 		/**********************************
 		 * return
 		**********************************/
+		
 		return $opt_conditions;
 
 	}//_index__Options
@@ -239,6 +243,15 @@ class ImagesController extends AppController {
 	public function 
 	_index__Options__Memo($opt_conditions) {
 
+		/*******************************
+			get: AND, OR
+		*******************************/
+		@$AND_OR = $this->request->query[CONS::$str_Filter_RadioButtons_Name_Memo];
+		
+		
+		
+// 		debug($AND_OR);
+		
 		/**********************************
 		 * param: filter: hin
 		**********************************/
@@ -260,9 +273,46 @@ class ImagesController extends AppController {
 			@$session_Filter = $this->Session->read($filter_memo);
 		
 			if ($session_Filter != null) {
-		
+
+				if ($AND_OR != null) {
+				
+					$opt_conditions = $this->_index__Options__Memo_AndOr(
+														$opt_conditions, $session_Filter, $AND_OR);
+					
+				} else {
+				
+				
+					$opt_conditions['Image.memos LIKE'] = "%$session_Filter%";
+				
+				}
+				
+				
+// 				if ($AND_OR != null) {
+				
+// 					$tokens = explode(" ", $session_Filter);
+					
+// 					debug($tokens);
+					
+// 					if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_AND) {
+					
+					
+// 					} else if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_OR) {
+					
+					
+					
+// 					}
+				
+				
+// 				} else {
+				
+				
+// 					$opt_conditions['Image.memos LIKE'] = "%$session_Filter%";
+				
+// 				}
+				
+				
 				// 				$opt_conditions['Token.hin'] = "DISTINCT ".$session_Filter;
-				$opt_conditions['Image.memos LIKE'] = "%$session_Filter%";
+// 				$opt_conditions['Image.memos LIKE'] = "%$session_Filter%";
 		
 				/**********************************
 				 * set: var
@@ -279,12 +329,48 @@ class ImagesController extends AppController {
 			}
 		
 		} else {
-		
+
+			if ($AND_OR != null) {
+			
+				$opt_conditions = $this->_index__Options__Memo_AndOr(
+						$opt_conditions, $query_Filter_Memo, $AND_OR);
+					
+			} else {
+			
+			
+				$opt_conditions['Image.memos LIKE'] = "%$query_Filter_Memo%";
+			
+			}
+				
+			
+// 			if ($AND_OR != null) {
+			
+// 				$tokens = explode(" ", $query_Filter_Memo);
+					
+// 				debug($tokens);
+					
+// 				if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_AND) {
+						
+						
+// 				} else if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_OR) {
+						
+						
+						
+// 				}
+			
+			
+// 			} else {
+			
+			
+// 				$opt_conditions['Image.memos LIKE'] = "%$query_Filter_Memo%";
+			
+// 			}//if ($AND_OR != null)
+				
 			// 			$opt_conditions['History.line LIKE'] = "%$query_Filter_Hins%";
 		
 			//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
 			// 			$opt_conditions['Image.memos LIKE'] = "DISTINCT ".$query_Filter_Hins;
-			$opt_conditions['Image.memos LIKE'] = "%$query_Filter_Memo%";
+// 			$opt_conditions['Image.memos LIKE'] = "%$query_Filter_Memo%";
 		
 			$session_Filter = $this->Session->write($filter_memo, $query_Filter_Memo);
 		
@@ -303,6 +389,145 @@ class ImagesController extends AppController {
 		return $opt_conditions;
 		
 	}//_index__Options__Memo
+	
+	public function 
+	_index__Options__Memo_AndOr
+	($opt_conditions, $filter_String, $AND_OR) {
+
+// 		if ($AND_OR != null) {
+		
+			$tokens = explode(" ", $filter_String);
+				
+// 			debug($tokens);
+				
+			if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_AND) {
+
+				$tmp = array();
+				
+				
+// 				$a = array("Image.memos LIKE", "Image.memos LIKE", "Image.memos LIKE");
+// 				$b = array("a", "b", "c");
+				
+// 				$c = array_combine($a, $b);
+				
+// 				debug($c);
+				
+				$tmp2 = array();
+				$tmp2['AND'] = array();
+				$tmp2['NOT'] = array();
+// 				$tmp2 = array('AND' => array());
+// 				$tmp2 = array('NOT' => array());
+// 				$tmp2 = array('AND');
+				
+				debug($tmp2);
+				
+// 				$tmp2['AND'] = [array('Image.memos LIKE' => $filter_String), array('Image.memos LIKE' => $filter_String)];
+				
+// 				$tmp2['AND']['Image.memos LIKE'] = $filter_String;
+// 				$tmp2['AND']['Image.memos LIKE'] = $filter_String." (1)";
+				
+				
+				
+// 				$tmp2 = array('AND' => array(
+// 									array('Image.memos LIKE' => $filter_String),
+// 									array('Image.memos LIKE' => $filter_String)
+// 				));
+				
+				// 				array(
+				// 						'AND' => array(
+				// 								(int) 0 => array(
+				// 										'Image.memos LIKE' => '食事'
+				// 								),
+				// 								(int) 1 => array(
+				// 										'Image.memos LIKE' => '食事'
+				// 								)
+				// 						)
+				// 				)
+// 				debug($tmp2);
+				
+				for ($i = 0; $i < count($tokens); $i++) {
+
+// 					array_push($tmp, array('Image.memos LIKE' => $filter_String));
+					
+// 					array_push($tmp2['NOT'], array('Image.memos LIKE' => "%$tokens[$i]%"));
+
+// 					if ($tokens[$i]) {
+					
+					
+					
+// 					} else {
+					
+					
+					
+// 					}
+					
+// 					debug(mb_substr($tokens[$i], 0, 1));
+// 					debug(substr($tokens[$i], 0, 2));
+					//REF substr http://stackoverflow.com/questions/2790899/php-how-to-check-if-a-string-starts-with-a-specified-string answered May 7 '10 at 18:46
+					$start_char = mb_substr($tokens[$i], 0, 1);
+					
+					if ($start_char == '-') {
+					
+						$str = mb_substr($tokens[$i], 1, mb_strlen($tokens[$i]) - 1);
+// 						$str = mb_substr($tokens[$i], 1, mb_strlen($tokens[$i] -1));
+						
+// 						debug("starts with -");
+
+						//REF NOT http://cakebaker.42dh.com/2007/04/26/how-to-use-not-in-in-a-condition/
+						array_push($tmp2['NOT'], 
+									array('Image.memos LIKE' => "%$str%"));
+					
+					} else {
+					
+// 						debug("starts NOT with -");
+						array_push($tmp2['AND'], array('Image.memos LIKE' => "%$tokens[$i]%"));
+					
+					}
+					
+					
+// 					array_push($tmp2['AND'], array('Image.memos LIKE' => "%$tokens[$i]%"));
+// 					array_push($tmp2['NOT'], array('Image.memos LIKE' => "%$tokens[$i]%"));
+					
+					
+// 					array_push($tmp2['AND'], array('Image.memos LIKE' => "%$filter_String%"));
+// 					$tmp2['AND'] = array('Image.memos LIKE' => $filter_String);
+					
+				}
+				
+				$tmp = array('AND' => $tmp);
+				
+// 				debug($tmp);
+				debug($tmp2);
+				
+// 				$tmp2 = array('AND' => array('Image.memos LIKE' => $filter_String));
+				
+				$opt_conditions = array($tmp2);
+// 				$opt_conditions = $tmp2;
+				
+// 				$opt_conditions['Image.memos LIKE'] = "%$filter_String%";
+				
+				
+				
+			} else if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_OR) {
+					
+				$opt_conditions['Image.memos LIKE'] = "%$filter_String%";
+				
+			}
+		
+		
+// 		} else {
+		
+		
+// 			$opt_conditions['Image.memos LIKE'] = "%$session_Filter%";
+		
+// 		}
+		
+		/*******************************
+			return
+		*******************************/
+		return $opt_conditions;
+			
+	}//_index__Options__Memo_AndOr($opt_conditions)
 	
 	public function 
 	_index__Options__TableName($opt_conditions) {
