@@ -622,6 +622,8 @@ class ImagesController extends AppController {
 			throw new NotFoundException(__('Invalid image'));
 		}
 	
+// 		debug("id => ".$id);
+		
 		$this->set('image', $image);
 		
 		$current_url = $this->Session->read('current_url');
@@ -820,6 +822,59 @@ class ImagesController extends AppController {
 	
 		}
 	
+		if (!$this->request->data) {
+			$this->request->data = $image;;
+		}
+
+		/*******************************
+		 set data
+		*******************************/
+		$this->set("image", $image);
+		
+		debug("image => set");
+		
+		
+	}//public function edit($id = null)
+	
+	public function edit_image($id = null) {
+		if (!$id) {
+			throw new NotFoundException(__('Invalid text'));
+		}
+	
+// 		debug("id => ".$id);
+		
+		/****************************************
+		 * Image
+		****************************************/
+		$image = $this->Image->findById($id);
+		
+		if (!$image) {
+			throw new NotFoundException(__('Invalid image'));
+		}
+	
+		if (count($this->params->data) != 0) {
+	
+			$this->Image->id = $id;
+	
+			$this->params->data['Image']['updated_at'] =
+			Utils::get_CurrentTime2(CONS::$timeLabelTypes["rails"]);
+	
+			if ($this->Image->save($this->request->data)) {
+	
+				$this->Session->setFlash(__('Your image has been updated.'));
+				return $this->redirect(
+						array(
+								'action' => 'view',
+								$id));
+	
+			}//if ($this->Text->save($this->request->data))
+	
+			$this->Session->setFlash(__('Unable to update your image.'));
+	
+		}
+	
+// 		debug($this->request->data);
+		
 		if (!$this->request->data) {
 			$this->request->data = $image;;
 		}

@@ -26,11 +26,45 @@
   
   <tr>
   
-    <td class="label">Memos</td>
+    <td class="label">
+    		Memos
+    		
+   			<?php echo $this->Html->link("(Edit)",
+				array(
+					'controller' => 'images', 
+					'action' => 'edit', 
+					$image['Image']['id'])
+				); ?>
+    		
+    		
+    </td>
     
     <td colspan="3">
     
     	<?php echo $image['Image']['memos']; ?>
+    
+    </td>
+    
+  </tr>
+  
+  <tr>
+  
+    <td class="label">
+    		Tags
+    		
+   			<?php echo $this->Html->link("(Edit)",
+				array(
+					'controller' => 'images', 
+					'action' => 'edit', 
+					$image['Image']['id'])
+				); ?>
+    		
+    		
+    </td>
+    
+    <td colspan="3">
+    
+    	<?php echo $image['Image']['tags']; ?>
     
     </td>
     

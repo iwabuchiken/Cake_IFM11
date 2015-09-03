@@ -97,3 +97,99 @@ Stack Trace:
 #5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2015-09-03 08:03:17 Error: [MissingTableException] Table videos for model Video was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'videos',
+  'class' => 'Video',
+  'ds' => 'default',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/edit/5
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(3525): Model->setSource('videos')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Video', 'fields')
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\edit.ctp(5): FormHelper->create('Video')
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(948): include('C:\\WORKS\\WS\\Ecl...')
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(910): View->_evaluate('C:\\WORKS\\WS\\Ecl...', Array)
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(471): View->_render('C:\\WORKS\\WS\\Ecl...')
+#8 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#9 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#10 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#11 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 08:06:08 Error: [MissingTableException] Table videos for model Video was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'videos',
+  'class' => 'Video',
+  'ds' => 'default',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/edit/5
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(3525): Model->setSource('videos')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Video', 'fields')
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\edit.ctp(5): FormHelper->create('Video')
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(948): include('C:\\WORKS\\WS\\Ecl...')
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(910): View->_evaluate('C:\\WORKS\\WS\\Ecl...', Array)
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(471): View->_render('C:\\WORKS\\WS\\Ecl...')
+#8 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#9 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#10 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#11 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 08:08:48 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\edit_image.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\edit_image.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/edit_image/5
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-09-03 08:09:24 Error: [MissingTableException] Table videos for model Video was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'videos',
+  'class' => 'Video',
+  'ds' => 'default',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/edit_image/5
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(3525): Model->setSource('videos')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Video', 'fields')
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\edit_image.ctp(5): FormHelper->create('Video')
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(948): include('C:\\WORKS\\WS\\Ecl...')
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(910): View->_evaluate('C:\\WORKS\\WS\\Ecl...', Array)
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(471): View->_render('C:\\WORKS\\WS\\Ecl...')
+#8 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#9 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#10 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#11 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-09-03 08:09:56 Error: [MissingTableException] Table videos for model Video was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'videos',
+  'class' => 'Video',
+  'ds' => 'default',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/edit_image/5
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(3525): Model->setSource('videos')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Video', 'fields')
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\edit_image.ctp(5): FormHelper->create('Video')
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(948): include('C:\\WORKS\\WS\\Ecl...')
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(910): View->_evaluate('C:\\WORKS\\WS\\Ecl...', Array)
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(471): View->_render('C:\\WORKS\\WS\\Ecl...')
+#8 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#9 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#10 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#11 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

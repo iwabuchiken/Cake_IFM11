@@ -1,4 +1,6 @@
-pushd C:\WORKS\WS\Eclipse_Kepler\Cake_IFM11\app\webroot
+C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\development.sqlite3
+
+pushd C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot
 
 sqlite3 development.sqlite3
 .explain on
