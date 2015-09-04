@@ -40,6 +40,13 @@
 			else 
 				echo " / filter_table_name =>";
 		?>
+		
+		<?php 
+			if(isset($filter_file_name)) 
+				echo " / filter_file_name => $filter_file_name";
+			else 
+				echo " / filter_file_name =>";
+		?>
 	)
 
 	</font>

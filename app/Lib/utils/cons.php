@@ -42,6 +42,15 @@ class CONS {
 	/*******************************
 		Images
 	*******************************/
+	// filter: file_name
+	public static $str_Filter_File_Name = "filter_file_name";
+	public static $str_Filter_File_Name_all = "*";
+	
+	public static $str_Filter_RadioButtons_Name_File_Name = "RBs_AND_OR_File_Name";
+	public static $str_Filter_RadioButtons_File_Name_AND = "AND";
+	public static $str_Filter_RadioButtons_File_Name_OR = "OR";
+	
+	// filter: memo
 	public static $str_Filter_Memo = "filter_memo";
 	public static $str_Filter_Memo_all = "*";
 	
@@ -49,6 +58,7 @@ class CONS {
 	public static $str_Filter_RadioButtons_Memo_AND = "AND";
 	public static $str_Filter_RadioButtons_Memo_OR = "OR";
 	
+	// filter: table name
 	public static $str_Filter_RadioButtons_Name_TableName = "RBs_AND_OR_TableName";
 	public static $str_Filter_RadioButtons_TableName_AND = "AND_TableName";
 	public static $str_Filter_RadioButtons_TableName_OR = "OR_TableName";
