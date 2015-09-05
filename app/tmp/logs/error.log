@@ -193,3 +193,72 @@ Stack Trace:
 #10 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #11 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2015-09-05 03:42:35 Error: [MissingControllerException] Controller class KeywordsController could not be found.
+Exception Attributes: array (
+  'class' => 'KeywordsController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/keywords?sort=file_name
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-09-05 11:26:04 Error: Fatal Error (1): Call to undefined method PaginatorComponent::sortDir() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 116]
+2015-09-05 11:26:04 Error: [FatalErrorException] Call to undefined method PaginatorComponent::sortDir()
+Request URL: /Eclipse_Luna/Cake_IFM11/images?sort=id
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 116)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 116, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 116, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 11:29:33 Error: Fatal Error (1): Call to undefined method PaginatorComponent::sortDir() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 118]
+2015-09-05 11:29:33 Error: [FatalErrorException] Call to undefined method PaginatorComponent::sortDir()
+Request URL: /Eclipse_Luna/Cake_IFM11/images?sort=id
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 11:30:53 Error: Fatal Error (1): Call to a member function sortDir() on null in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 116]
+2015-09-05 11:30:53 Error: [FatalErrorException] Call to a member function sortDir() on null
+Request URL: /Eclipse_Luna/Cake_IFM11/images?sort=id
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 116)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 116, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 116, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 11:31:19 Error: Fatal Error (1): Call to undefined method PaginatorComponent::sortDir() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 117]
+2015-09-05 11:31:19 Error: [FatalErrorException] Call to undefined method PaginatorComponent::sortDir()
+Request URL: /Eclipse_Luna/Cake_IFM11/images?sort=id
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 117)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 117, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 117, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 11:32:21 Error: Fatal Error (1): Call to undefined method PaginatorComponent::sort() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 118]
+2015-09-05 11:32:21 Error: [FatalErrorException] Call to undefined method PaginatorComponent::sort()
+Request URL: /Eclipse_Luna/Cake_IFM11/images?sort=id
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-09-05 11:35:20 Error: Fatal Error (1): Call to undefined method PaginatorComponent::sort() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 118]
+2015-09-05 11:35:20 Error: [FatalErrorException] Call to undefined method PaginatorComponent::sort()
+Request URL: /Eclipse_Luna/Cake_IFM11/images?sort=id
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 118, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

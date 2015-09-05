@@ -12,19 +12,54 @@ class ImagesController extends AppController {
 
 	public function index() {
 
-// 		//test
+		//debug
+// 		debug($this->request->named);
+// 		debug($this->request);
+		
+		/**********************************
+		 * sort
+		**********************************/
+		$opt_order = $this->_index__Sort();
+// 		$options_sort = $this->_index__Sort();
+		
+// 		$sort_name = $options_sort[0];
+// 		$sort_direction = $options_sort[1];
+		
+// 		$sort_name = @$this->request->query['sort'];
+		
+// 		if ($sort_name != null && $sort_name != "") {
+		
+// 			$opt_order = array("Image.".$sort_name => $sort_direction);
+// // 			$opt_order = array("Image.".$sort_name => 'desc');
+// // 			$opt_order = array("Image.".$sort_name => 'asc');
+// // 			$opt_order = array($sort_name => 'asc');
+		
+// 		} else {
+		
+// 			$sort_name = "id";
+				
+// 			$opt_order = array($sort_name => 'asc');
+// 			// 			$opt_order = array('id' => 'asc');
+		
+// 		}
+		
+// 		$this->set("sort", $sort_name);
+		
+		//test
+// 		debug($opt_order);
 // 		debug($this->request->query);
 		
 // 		//test
 // 		$this->_test_CreateModel();
 		
-		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
-		$this->paginate = array(
-				'limit' => 4,
-				'order' => array(
-						'id' => 'asc'
-				)
-		);
+// 		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
+// 		$this->paginate = array(
+// 				'limit' => 4,
+// 				'order' => $opt_order,
+// // 				'order' => array(
+// // 						'id' => 'asc'
+// // 				)
+// 		);
 		
 		//log
 		Utils::write_Log($this->dpath_Log, "index()", __FILE__, __LINE__);
@@ -49,9 +84,13 @@ class ImagesController extends AppController {
 					'conditions' => $opt_conditions,
 // 					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
 					'limit' => 4,
-					'order' => array(
-							'id' => 'asc'
-					)
+					'order' => $opt_order,
+					
+// 					'page'	=> 2,
+					
+// 					'order' => array(
+// 							'id' => 'asc'
+// 					)
 			);
 			
 			$images = $this->paginate('Image');
@@ -78,6 +117,12 @@ class ImagesController extends AppController {
 // 			)
 
 			$paginateData = $this->params['paging']['Image'];
+			
+// 			debug($paginateData);
+			
+// 			debug($this->paginator->sortDir());	//=> 'Call to a member function sortDir() on null'
+// 			debug($this->Paginator->sortDir());	//=> 'Call to undefined method PaginatorComponent::sortDir()'
+// 			debug($this->Paginator->sort());	//=> 'Call to undefined method PaginatorComponent::sortDir()'
 			
 // 			debug($images);
 			
@@ -202,6 +247,169 @@ class ImagesController extends AppController {
 		
 	}
 	
+	
+	public function
+	_index__Sort() {
+
+		/*******************************
+			get query
+		*******************************/
+		$sort_name = @$this->request->query['sort'];
+		
+		$sort_direction = @$this->request->query['direction'];
+		
+		/*******************************
+			sort name
+		*******************************/
+		if ($sort_name === null && $sort_name == "") {
+			
+			$sort_name = "id";
+			
+		}
+
+		/*******************************
+			direction
+		*******************************/
+		$val_Session_Direction = "direction";
+		
+		$val_Session_Direction__ASC = "asc";
+		$val_Session_Direction__DESC = "desc";
+		
+		/*******************************
+			query is not given
+		*******************************/
+		if ($sort_direction === null || $sort_direction == "") {
+// 		if ($sort_direction === null && $sort_direction == "") {
+
+			// read the sessin value
+			@$session_Direction = $this->Session->read($val_Session_Direction);
+// 			@$session_Direction = $this->Session->read("direction");
+			
+// 			debug("session_Direction => '$session_Direction'");
+			
+			// paginatin => in effect?
+			@$named = $this->request->named;
+			
+			/*******************************
+				current => not set
+					--> set to 'asc' (default)
+			*******************************/
+			if ($named != null) {//if ($session_Direction === null)
+
+				if ($session_Direction === null) {
+
+					$sort_direction = $val_Session_Direction__ASC;
+					
+					// update session value
+					$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
+						
+				} else {
+					
+					// set var
+					$sort_direction = $session_Direction;
+						
+				}
+				
+			/*******************************
+				current => not set
+					--> set to 'asc' (default)
+			*******************************/
+			} else if ($session_Direction === null) {
+			
+				debug("\$session_Direction === null");
+				
+				$sort_direction = $val_Session_Direction__ASC;
+
+				// update session value
+				$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
+				
+			/*******************************
+				current => asc
+					--> change to 'desc'
+			*******************************/
+			} else if ($session_Direction == $val_Session_Direction__ASC) {
+				
+				// set var
+				$sort_direction = $val_Session_Direction__DESC;
+				
+				// update session value
+// 				$this->Session->write("desc");
+				$this->Session->write($val_Session_Direction, $val_Session_Direction__DESC);
+
+			/*******************************
+				current => desc
+					--> change to 'asc'
+			*******************************/
+			} else if ($session_Direction == $val_Session_Direction__DESC) {
+				
+				// set var
+				$sort_direction = $val_Session_Direction__ASC;
+				
+				// update session value
+				$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
+
+			/*******************************
+				default
+			*******************************/
+			} else {//if ($session_Direction === null)
+			
+				$sort_direction = $val_Session_Direction__ASC;
+				
+				// update session value
+				$this->Session->write(val_Session_Direction, $val_Session_Direction__ASC);
+				
+				debug("session_Direction => default");
+				
+			}//if ($session_Direction === null)
+			
+			
+// 			$sort_direction = $val_Session_Direction__ASC;
+			
+		} else {//if ($sort_direction === null && $sort_direction == "")
+			
+			debug("else");
+			
+			debug("\$sort_direction => $sort_direction");
+			
+		}
+		
+// 		debug("\$sort_direction => $sort_direction");
+		
+// 		if ($sort_name != null && $sort_name != ""
+// 				&& ($sort_direction != null && $sort_direction != "")) {
+		
+// 			$opt_order = array("Image.".$sort_name => $sort_direction);
+			// 			$opt_order = array("Image.".$sort_name => 'desc');
+			// 			$opt_order = array("Image.".$sort_name => 'asc');
+			// 			$opt_order = array($sort_name => 'asc');
+		
+// 		} else {
+		
+// // 			$sort_name = "id";
+		
+// // 			$sort_direction = "asc";
+			
+// // 			$opt_order = array($sort_name => $sort_direction);
+// // 			$opt_order = array($sort_name => 'asc');
+// 			// 			$opt_order = array('id' => 'asc');
+		
+// 		}
+		
+		/*******************************
+			set
+		*******************************/
+		$opt_order = array("Image.".$sort_name => $sort_direction);
+		
+		$this->set("sort", $sort_name);
+		
+		$this->set("direction", $sort_direction);
+
+		/*******************************
+			return
+		*******************************/
+		return $opt_order;
+		
+	}//_index__Sort
 	
 	public function
 	_index__Options() {

@@ -52,6 +52,30 @@
 	</font>
 	
 	<br>
+	(
+		<?php 
+		
+			if(isset($sort))
+				echo "sort => $sort";
+			else
+				echo "sort => no";
+		
+		?>
+		/
+		<?php 
+		
+			if(isset($direction))
+				echo "direction => $direction";
+			
+			else {
+				echo "<font color='black'>";
+				echo "direction => no";
+				echo "</font>";
+			}
+			
+		?>
+	)
+	<br>
 	<br>
 	<a name="top"></a><a href="#bottom" class="navi_top_bottom">Bottom</a>
 	
