@@ -2,6 +2,13 @@
 
 class CONS {
 
+	/*******************************
+	 server
+	*******************************/
+	public static $name_Server_Remote = "benfranklin.chips.jp";
+	
+	public static $name_Server_Local = "localhost";
+	
 	/******************************
 	
 		Paths and names
@@ -70,5 +77,15 @@ class CONS {
 		paginate
 	*******************************/
 	public static $paginate_Modulus = 15;
+
+	/*******************************
+		DB
+	*******************************/
+	public static $tname_IFM11		= "ifm11";
+	
+// 	2015/10/26 00:50:00.378
+	public static $query_Range_Start = "2015/10/20 00:00:00.000";
+	
+	public static $query_Range_End = "2015/10/27 00:00:00.000";
 	
 }//class CONS

@@ -262,3 +262,65 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-10-26 08:17:55 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\image_manager.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\image_manager.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-26 08:30:33 Error: Fatal Error (1): Access to undeclared static property: CONS::$name_Server_Local in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 300]
+2015-10-26 08:30:33 Error: [FatalErrorException] Access to undeclared static property: CONS::$name_Server_Local
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Access to undec...', 'C:\\WORKS\\WS\\Ecl...', 300)
+#1 [internal function]: ErrorHandler::handleError(1, 'Access to undec...', 'C:\\WORKS\\WS\\Ecl...', 300, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Access to undec...', 'C:\\WORKS\\WS\\Ecl...', 300, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-26 08:34:20 Error: Fatal Error (1): Call to undefined method Utils::get_Latest_File__By_FileName() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 331]
+2015-10-26 08:34:20 Error: [FatalErrorException] Call to undefined method Utils::get_Latest_File__By_FileName()
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 331)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 331, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 331, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-26 08:49:43 Error: Fatal Error (4): syntax error, unexpected '.' in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 392]
+2015-10-26 08:49:43 Error: [FatalErrorException] syntax error, unexpected '.'
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 392)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 392, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 392, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-26 08:52:46 Error: Fatal Error (1): Call to undefined function columnCount() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 405]
+2015-10-26 08:52:46 Error: [FatalErrorException] Call to undefined function columnCount()
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 405)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 405, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS\\WS\\Ecl...', 405, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-26 08:53:16 Error: Fatal Error (1): Call to a member function columnCount() on boolean in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 405]
+2015-10-26 08:53:16 Error: [FatalErrorException] Call to a member function columnCount() on boolean
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 405)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 405, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 405, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

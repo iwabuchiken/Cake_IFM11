@@ -288,6 +288,231 @@
 // 			$time    = $hours+':'+$minutes+':'+$seconds;
 // 			return $time;
 // 		}
+
+		public static function
+		find_All_Images() {
+			
+			//ref C:\WORKS\WS\Eclipse_Luna\Cake_TA2\app\Lib\utils\utils.php
+			
+			/*******************************
+			 PDO file
+			*******************************/
+			$fpath = "";
 				
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+					
+				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+					
+			} else {
+					
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+					
+			/*******************************
+			 validate: db file exists
+			*******************************/
+			$res = file_exists($fpath);
+			
+			if ($res == false) {
+			
+				debug("data folder => not exist: $fpath");
+				
+				return null;
+			
+			} else {
+				
+				debug("data folder => exists: $fpath");
+				
+			}
+				
+			/*******************************
+			 get: the latest db file
+			*******************************/
+			$fname = Utils::get_Latest_File__By_FileName($fpath);
+				
+			$fpath .= DIRECTORY_SEPARATOR.$fname;
+				
+			debug("fpath => $fpath");
+			
+			/*******************************
+			 pdo: setup
+			*******************************/
+			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+			$file_db = new PDO("sqlite:$fpath");
+				
+			if ($file_db === null) {
+					
+				debug("pdo => null");
+					
+				return null;
+					
+			} else {
+				
+				debug("pdo => created");
+				
+			}
+				
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+
+			/*******************************
+				get: db infos
+			*******************************/
+			//ref http://stackoverflow.com/questions/669092/sqlite-getting-number-of-rows-in-a-database answered Mar 21 '09 at 10:37
+			$images = $file_db->query("SELECT Count(*) FROM ".CONS::$tname_IFM11);
+// 			$images = $file_db->query('SELECT Count(*) FROM ta2');
+			// 			$images = $file_db->query('SELECT * FROM ta2 ORDER BY _id DESC');
+				
+			// 			$cnt_Tweets = sqlite_num_rows($images);	//=> "Call to undefined function sqlite_num_rows()"
+			
+			//ref http://stackoverflow.com/questions/883365/row-count-with-pdo answered May 19 '09 at 15:16
+			$cnt_Images = $images->fetchColumn();	//=> w
+			// 			$cnt_Images = count($images);
+				
+			debug("cnt_Images => ".$cnt_Images);
+
+			/*******************************
+				get: images
+			*******************************/
+			$q = "SELECT * FROM "
+					.CONS::$tname_IFM11
+					." WHERE created_at > "
+							."'"
+							.CONS::$query_Range_Start
+							."'"
+					." "
+					."AND"
+					." "
+					." created_at < "
+							."'"
+							.CONS::$query_Range_End
+							."'";
+							
+			debug("q => $q");
+			
+			$result = $file_db->query($q);
+				
+// 			$res_cnt = $file_db->query($q_cnt);
+			
+			//debug
+			if ($result === true) {
+					
+				debug("result => true");
+				
+				debug("count => ".$result->columnCount());
+					
+			} else {
+					
+				debug("result => false");
+			
+				debug($result);
+				debug(get_class($result));
+				
+			}//if ($result === true)
+					
+			/*******************************
+				report
+			*******************************/
+			$count = 0;
+			
+			foreach ($result as $row) {
+				
+				debug($row);
+				
+				$count += 1;
+				
+				if ($count > 5) {
+					
+					break;
+					
+				}//$count > 5
+				
+			}
+			
+			/*******************************
+				pdo => reset
+			*******************************/
+			$file_db = null;
+			
+			/*******************************
+				return
+			*******************************/
+			return null;
+					
+		}//find_All_Images
+
+		public static function
+		get_Latest_File__By_FileName($fpath) {
+		
+			/*******************************
+			 dir list
+			*******************************/
+			//REF array_values http://stackoverflow.com/questions/7536961/reset-php-array-index Jeremy Banks♦
+			//REF scan dir http://php.net/manual/en/function.scandir.php#107215
+			$scanned_directory = array_values(array_diff(scandir($fpath), array('..', '.')));
+			// 			$scanned_directory = array_diff(scandir($fpath), array('..', '.'));
+				
+			// 			debug($scanned_directory);
+		
+			/*******************************
+			 validate: any entry
+			*******************************/
+			if (count($scanned_directory) < 1) {
+		
+				//debug
+				$msg = "dir list => no entry";
+		
+				Utils::write_Log(
+				Utils::get_dPath_Log(),
+				$msg,
+				__FILE__, __LINE__);
+		
+		
+				return null;
+		
+			}
+				
+			/*******************************
+			 get: the latest
+			*******************************/
+			/*******************************
+			 1 entry, only
+			*******************************/
+			if (count($scanned_directory) == 1) {
+		
+				return $scanned_directory[0];
+		
+			}
+				
+			/*******************************
+			 2 or more
+			*******************************/
+			$tmp_fname = $scanned_directory[0];
+				
+			$len = count($scanned_directory);
+				
+			for ($i = 1; $i < $len; $i++) {
+		
+				if (strcmp($tmp_fname, $scanned_directory[$i]) < 0) {
+						
+					$tmp_fname = $scanned_directory[$i];
+						
+				}
+		
+			}
+				
+			// 			debug("latest => ".$tmp_fname);
+				
+			/*******************************
+			 return
+			*******************************/
+			return $tmp_fname;
+				
+		}//get_Latest_File__By_FileName($fpath)
+		
+		
 	}//class Utils
 	

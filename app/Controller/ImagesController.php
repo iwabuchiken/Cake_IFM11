@@ -1108,7 +1108,8 @@ class ImagesController extends AppController {
 		
 	}//public function edit($id = null)
 	
-	public function edit_image($id = null) {
+	public function 
+	edit_image($id = null) {
 		if (!$id) {
 			throw new NotFoundException(__('Invalid text'));
 		}
@@ -1153,5 +1154,31 @@ class ImagesController extends AppController {
 	
 	}//public function edit($id = null)
 	
+	public function
+	image_manager() {
+		
+// 		/*******************************
+// 			valid: local server?
+// 		*******************************/
+// 		if (env('SERVER_NAME') !== 'localhost') {	//REF api http://php.net/manual/ja/reserved.variables.server.php
+// 			// 		if (env('SERVER_ADDR') !== '127.0.0.1') {	//=> false returned
+// 			// 			$this->default = $this->development;
+// 			debug("not local");
+			
+// // 			return ;
 	
+// 		} else {
+			
+// 			debug("local");
+			
+// 		}
+		
+		/*******************************
+			get: images
+		*******************************/
+		$images = Utils::find_All_Images();
+		
+		
+		
+	}//image_manager
 }
