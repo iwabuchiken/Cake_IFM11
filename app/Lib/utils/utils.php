@@ -397,21 +397,21 @@
 				
 // 			$res_cnt = $file_db->query($q_cnt);
 			
-			//debug
-			if ($result === true) {
+// 			//debug
+// 			if ($result === true) {
 					
-				debug("result => true");
+// 				debug("result => true");
 				
-				debug("count => ".$result->columnCount());
+// 				debug("count => ".$result->columnCount());
 					
-			} else {
+// 			} else {
 					
-				debug("result => false");
+// 				debug("result => false");
 			
-				debug($result);
-				debug(get_class($result));
+// 				debug($result);
+// 				debug(get_class($result));
 				
-			}//if ($result === true)
+// 			}//if ($result === true)
 					
 			/*******************************
 				report
@@ -424,7 +424,7 @@
 				
 				$count += 1;
 				
-				if ($count > 5) {
+				if ($count > 2) {
 					
 					break;
 					
@@ -440,7 +440,8 @@
 			/*******************************
 				return
 			*******************************/
-			return null;
+			return $result;
+// 			return null;
 					
 		}//find_All_Images
 

@@ -44,6 +44,30 @@ a.has_link {
 	
 }
 
+a.button {
+    color: #4e4e4e;
+    /*color: #6e6e6e;*/
+    font: bold 20px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    padding: 7px 12px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+    background: #81BEF7;
+    
+    border: solid 1px #86B404;
+    /*border: solid 1px #dcdcdc;*/
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+
 table#view_file_info {
 
 	border: 2px solid #555;

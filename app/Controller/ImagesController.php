@@ -1178,7 +1178,11 @@ class ImagesController extends AppController {
 		*******************************/
 		$images = Utils::find_All_Images();
 		
-		
+
+		/*******************************
+			set: data
+		*******************************/
+		$this->set("images", $images);
 		
 	}//image_manager
 }

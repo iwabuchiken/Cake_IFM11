@@ -118,10 +118,14 @@
 	
 </div>
 
-<br>
-<br>
+<!-- <br> -->
+<!-- <br> -->
 
-<?php echo $this->Html->link(
-    'Add Image',
-    array('controller' => 'images', 'action' => 'add')
-); ?>
+<?php echo $this->element('layouts/links')?>
+
+<?php 
+// 	echo $this->Html->link(
+// 	    'Add Image',
+// 	    array('controller' => 'images', 'action' => 'add')
+// 	); 
+?>
