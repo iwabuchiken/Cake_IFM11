@@ -1291,4 +1291,5 @@ class ImagesController extends AppController {
 		$this->set("image_id", $image_id);
 		
 	}
+	
 }
