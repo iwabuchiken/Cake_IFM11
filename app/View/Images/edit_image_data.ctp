@@ -35,16 +35,18 @@
 	  	<td class="col_title">
 	  		Memos
 	  	</td>
-	    <td class="col_value" id="image_data_id">
+	    <td class="col_value" id="image_data_memos">
 	    	<?php 
 	    	
 		    	$opt = array(
 		    	
 		    			'value' => $image['memos'],
 		    	
-		    			'onmouseover'	=> 'this.select()'
+		    			'onmouseover'	=> 'this.select()',
 		    			// 							'onmouseover'	=> 'this.focus()'
 		    	
+						'id'			=> 'image_data_memos'
+
 		    	);
 		    		
 		    	//ref http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html
@@ -67,11 +69,13 @@
 	$options = array(
 	    'label' => 'Submit',
 	    'id' => 'submit',
-	    'onclick' => 'alert(123)'
+	    'onclick' => 'update_Image_Data()'
 // 	    'onclick' => 'myfunc()'
 	);
 	echo $this->Form->end($options);
 ?>
+
+<br>
 
 <hr/>
 

@@ -61,8 +61,8 @@ class ImagesController extends AppController {
 // // 				)
 // 		);
 		
-		//log
-		Utils::write_Log($this->dpath_Log, "index()", __FILE__, __LINE__);
+// 		//log
+// 		Utils::write_Log($this->dpath_Log, "index()", __FILE__, __LINE__);
 		
 // 		$filter_TableName = $this->request->query['filter_table_name'];
 		@$filter_TableName = $this->request->query['filter_table_name'];
@@ -909,9 +909,9 @@ class ImagesController extends AppController {
 	public function 
 	add() {
 		
-		//log
-		$msg = "add()";
-		Utils::write_Log($this->dpath_Log, $msg, __FILE__, __LINE__);
+// 		//log
+// 		$msg = "add()";
+// 		Utils::write_Log($this->dpath_Log, $msg, __FILE__, __LINE__);
 		
 		if ($this->request->is('post')) {
 
@@ -1225,5 +1225,70 @@ class ImagesController extends AppController {
 // 		}
 		
 	}//edit_image_data
-	
+
+	public function
+	update_image_data() {
+
+		$this->layout = 'plain';
+		
+		/*******************************
+			get: params: memos
+		*******************************/
+		$memos = @$this->request->query['memos'];
+		
+		$msg = null;
+		
+		if ($memos == null) {
+		
+			$msg = "memos => null";
+		
+		} else if ($memos == "") {
+			
+			$msg = "memos => blank";
+			
+		} else {
+		
+			$msg = "memos => $memos";
+			
+		}//if ($memos == null)
+		
+		/*******************************
+			get: params: id
+		*******************************/
+		$image_id = @$this->request->query['image_id'];
+		
+		//ref http://php.net/manual/en/function.trim.php
+		$image_id = trim($image_id);
+		
+// 		$msg = null;
+		
+		$msg .= " | ";
+		
+		if ($image_id == null) {
+		
+			$msg .= "id => null";
+		
+		} else if ($image_id == "") {
+			
+			$msg .= "id => blank";
+			
+		} else {
+		
+			$msg .= "id => $image_id";
+			
+		}//if ($image_id == null)
+
+		//log
+		$msg_Log = "update_image_data: $msg";
+		
+		Utils::write_Log($this->dpath_Log, $msg_Log, __FILE__, __LINE__);
+		
+		/*******************************
+			set: values
+		*******************************/
+		$this->set("msg", $msg);
+		
+		$this->set("image_id", $image_id);
+		
+	}
 }

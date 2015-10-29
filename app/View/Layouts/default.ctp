@@ -39,14 +39,22 @@
 
 		
 		echo $this->Html->css('cake.generic');
-		
 		echo $this->Html->css('main');
+		echo $this->Html->css('jquery-ui.structure');
+		echo $this->Html->css('jquery-ui.theme');
 		
-		echo $this->Html->script('main');
-
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+		
+		echo $this->Html->script('http://code.jquery.com/jquery-1.10.2.min.js');
+		echo $this->Html->script('jquery-ui.js');
+		
+		echo $this->Html->script('main');
+
+		// d3
+		echo $this->Html->script('http://d3js.org/d3.v3.min.js');
+		
 	?>
 </head>
 <body>
