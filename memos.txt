@@ -1,1 +1,10 @@
 cake bake -app C:\WORKS\WS\Eclipse_Kepler\Cake_test
+
+[sqlite3]
+pushd C:\Users\IwabuchiKen\Desktop
+
+sqlite3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\development.sqlite3
+.explain on
+.tables
+pragma table_info(texts);
+pragma table_info(langs);

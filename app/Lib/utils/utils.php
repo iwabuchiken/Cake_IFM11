@@ -290,7 +290,9 @@
 // 		}
 
 		public static function
-		find_All_Images() {
+		find_All_Images
+		($sort_ColName = "_id", $sort_Direction = "ASC",
+			$limit = "50") {
 			
 			//ref C:\WORKS\WS\Eclipse_Luna\Cake_TA2\app\Lib\utils\utils.php
 			
@@ -306,7 +308,9 @@
 					
 			} else {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
@@ -331,7 +335,7 @@
 			 get: the latest db file
 			*******************************/
 			$fname = Utils::get_Latest_File__By_FileName($fpath);
-				
+
 			$fpath .= DIRECTORY_SEPARATOR.$fname;
 				
 			debug("fpath => $fpath");
@@ -379,17 +383,30 @@
 			*******************************/
 			$q = "SELECT * FROM "
 					.CONS::$tname_IFM11
-					." WHERE created_at > "
-							."'"
-							.CONS::$query_Range_Start
-							."'"
+// 					." WHERE created_at > "
+// 							."'"
+// 							.CONS::$query_Range_Start
+// 							."'"
+// 					." "
+// 					."AND"
+// 					." "
+// 					." created_at < "
+// 							."'"
+// 							.CONS::$query_Range_End
+// 							."'"
+// // 					.", "
+
 					." "
-					."AND"
+					//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+					."ORDER BY"
 					." "
-					." created_at < "
-							."'"
-							.CONS::$query_Range_End
-							."'";
+					.$sort_ColName." ".$sort_Direction
+					
+					." "
+					."LIMIT"
+					." "
+					.$limit
+					;
 							
 			debug("q => $q");
 			
@@ -418,19 +435,19 @@
 			*******************************/
 			$count = 0;
 			
-			foreach ($result as $row) {
+// 			foreach ($result as $row) {
 				
-				debug($row);
+// 				debug($row);
 				
-				$count += 1;
+// 				$count += 1;
 				
-				if ($count > 2) {
+// 				if ($count > 2) {
 					
-					break;
+// 					break;
 					
-				}//$count > 5
+// 				}//$count > 5
 				
-			}
+// 			}
 			
 			/*******************************
 				pdo => reset
@@ -456,7 +473,7 @@
 			$scanned_directory = array_values(array_diff(scandir($fpath), array('..', '.')));
 			// 			$scanned_directory = array_diff(scandir($fpath), array('..', '.'));
 				
-			// 			debug($scanned_directory);
+// 			debug($scanned_directory);
 		
 			/*******************************
 			 validate: any entry
@@ -479,31 +496,42 @@
 			/*******************************
 			 get: the latest
 			*******************************/
-			/*******************************
-			 1 entry, only
-			*******************************/
-			if (count($scanned_directory) == 1) {
-		
-				return $scanned_directory[0];
-		
-			}
-				
-			/*******************************
-			 2 or more
-			*******************************/
+// 			krsort($scanned_directory);
+			arsort($scanned_directory);
+
+			$scanned_directory = array_values($scanned_directory);
+			
+// 			debug($scanned_directory);
+			
 			$tmp_fname = $scanned_directory[0];
-				
-			$len = count($scanned_directory);
-				
-			for ($i = 1; $i < $len; $i++) {
+			
+// 			debug($tmp_fname);
+			
+// 			/*******************************
+// 			 1 entry, only
+// 			*******************************/
+// 			if (count($scanned_directory) == 1) {
 		
-				if (strcmp($tmp_fname, $scanned_directory[$i]) < 0) {
-						
-					$tmp_fname = $scanned_directory[$i];
-						
-				}
+// 				return $scanned_directory[0];
 		
-			}
+// 			}
+				
+// 			/*******************************
+// 			 2 or more
+// 			*******************************/
+// 			$tmp_fname = $scanned_directory[0];
+				
+// 			$len = count($scanned_directory);
+				
+// 			for ($i = 1; $i < $len; $i++) {
+		
+// 				if (strcmp($tmp_fname, $scanned_directory[$i]) < 0) {
+						
+// 					$tmp_fname = $scanned_directory[$i];
+						
+// 				}
+		
+// 			}
 				
 			// 			debug("latest => ".$tmp_fname);
 				

@@ -1176,7 +1176,11 @@ class ImagesController extends AppController {
 		/*******************************
 			get: images
 		*******************************/
-		$images = Utils::find_All_Images();
+		$sort_ColName = "_id";
+		$sort_Direction = "DESC";
+		
+		$images = Utils::find_All_Images($sort_ColName, $sort_Direction);
+// 		$images = Utils::find_All_Images();
 		
 
 		/*******************************
@@ -1185,4 +1189,5 @@ class ImagesController extends AppController {
 		$this->set("images", $images);
 		
 	}//image_manager
+	
 }
