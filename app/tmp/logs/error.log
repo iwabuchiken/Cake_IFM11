@@ -394,3 +394,35 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-10-29 10:34:16 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\edit_image_data.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\edit_image_data.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/edit_image_data/10453
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-29 10:39:32 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 1206]
+2015-10-29 10:39:32 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /Eclipse_Luna/Cake_IFM11/images/edit_image_data/10452
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 1206)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 1206, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 1206, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-29 10:48:52 Error: Fatal Error (1): Call to a member function fetchColumn() on null in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 1206]
+2015-10-29 10:48:52 Error: [FatalErrorException] Call to a member function fetchColumn() on null
+Request URL: /Eclipse_Luna/Cake_IFM11/images/edit_image_data/10452
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 1206)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 1206, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 1206, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

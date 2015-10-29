@@ -26,7 +26,13 @@
 						$row['_id'],
 						array(
 								'controller' => 'images',
-								'action' => 'edit_image')
+								'action' => 'edit_image_data',
+								$row['_id'])
+						,
+						//ref http://book.cakephp.org/2.0/en/core-libraries/helpers/html.html
+						array(
+							'target'		=> '_blank'
+						)
 // 						,
 // 						array('class' => 'button')
 				);
