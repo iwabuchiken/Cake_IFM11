@@ -96,6 +96,13 @@ table#image_data tr th {
 	
 }
 
+table#edit_image_data tr td {
+
+	border: 2px solid #555;
+	
+}
+
+
 table#view_file_info tr td.label {
 
 	background: #D5FF80;
@@ -230,6 +237,22 @@ td.td_images_CreatedAt {
 td.td_images_ModifiedAt {
 
 	border: 2px solid olive;
+	
+}
+
+td.col_title {
+	
+	background:	LightGreen;
+	
+	width:		150px;
+	
+}
+
+td.col_value {
+	
+	background:	white;
+	
+	width:		100px;
 	
 }
 

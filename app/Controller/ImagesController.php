@@ -1189,5 +1189,41 @@ class ImagesController extends AppController {
 		$this->set("images", $images);
 		
 	}//image_manager
+
+	public function
+	edit_image_data($id = null) {
+		
+		debug("id => '$id'");
+		
+		debug($this->request->query);
+// 		debug($this->request);
+		
+		/*******************************
+			get image data
+		*******************************/
+		$image = Utils::find_Image_ById($id);
+		
+		/*******************************
+			set: value
+		*******************************/
+		$this->set("image", $image);
+		
+// 		debug($image[1]);
+// 		debug($image['file_name']);
+// 		debug($image);
+		
+// 		$cnt = $image->fetchColumn();
+		
+// 		debug("cnt => $cnt");
+		
+// 		foreach ($image as $row) {
+			
+// // 			debug($row['_id']);
+			
+// // 			debug($row);
+			
+// 		}
+		
+	}//edit_image_data
 	
 }
