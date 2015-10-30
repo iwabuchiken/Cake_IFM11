@@ -741,7 +741,142 @@
 			return $tmp_fname;
 				
 		}//get_Latest_File__By_FileName($fpath)
-		
+
+		/*******************************
+			@return
+			true => update done<br>
+			false => update not done
+		*******************************/
+		public static function
+		update_Image($image) {
+			
+			/*******************************
+			 PDO file
+			*******************************/
+			$fpath = "";
+				
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+					
+				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+					
+			} else {
+					
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+					
+			/*******************************
+			 validate: db file exists
+			*******************************/
+			$res = file_exists($fpath);
+			
+			if ($res == false) {
+			
+//				debug("data folder => not exist: $fpath");
+				
+				$msg = "db file => not exist: $fpath";
+					
+				write_Log(
+						CONS::get_dPath_Log(),
+						// 				$this->get_dPath_Log(),
+						$msg,
+						__FILE__,
+						__LINE__
+				);
+					
+				return false;
+			
+			} else {
+				
+//				debug("data folder => exists: $fpath");
+				
+			}
+				
+			/*******************************
+			 get: the latest db file
+			*******************************/
+			$fname = Utils::get_Latest_File__By_FileName($fpath);
+
+			$fpath .= DIRECTORY_SEPARATOR.$fname;
+				
+//			debug("fpath => $fpath");
+			
+			/*******************************
+			 pdo: setup
+			*******************************/
+			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+			$file_db = new PDO("sqlite:$fpath");
+				
+			if ($file_db === null) {
+					
+//				debug("pdo => null");
+
+				$msg = "pdo => null";
+					
+				write_Log(
+					CONS::get_dPath_Log(),
+					$msg,
+					__FILE__,
+					__LINE__
+				);
+				
+				return false;
+					
+			} else {
+				
+//				debug("pdo => created");
+				
+			}
+				
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+
+			/*******************************
+				update
+			*******************************/
+			// new data
+// 			$title = 'PHP Pattern';
+// 			$author = 'Imanda';
+// 			$id = 3;
+
+			$id = $image['_id'];
+			
+			$memos = $image['memos'];
+
+			//ref http://www.phpeveryday.com/articles/PDO-Insert-and-Update-Statement-Use-Prepared-Statement-P552.html
+			// query
+			$sql = "UPDATE "
+					.CONS::$tname_IFM11
+					." " 
+			        ."SET memos=? WHERE _id=?";
+// 			        ."SET memos=? WHERE id=?";
+// 			        ."SET memos=?
+// 						WHERE id=?";
+			
+			$q = $file_db->prepare($sql);
+// 			$q = $conn->prepare($sql);
+			
+			$result = $q->execute(array($memos, $id));
+			
+// 			debug("execute result => ".$result);
+			
+// 			$q->execute(array($title,$author,$id));
+			
+			/*******************************
+				pdo => reset
+			*******************************/
+			$file_db = null;
+
+			/*******************************
+				return
+			*******************************/
+			return true;
+			
+		}//update_Image($image)
 		
 	}//class Utils
 	

@@ -1284,12 +1284,32 @@ class ImagesController extends AppController {
 		Utils::write_Log($this->dpath_Log, $msg_Log, __FILE__, __LINE__);
 		
 		/*******************************
-			set: values
+			get: image data from id
+		*******************************/
+		$image = Utils::find_Image_ById($image_id);
+		
+// 		debug($image);
+
+		$image['memos'] = $memos;
+		
+		/*******************************
+			update data
+		*******************************/
+		$res = Utils::update_Image($image);
+		
+		$msg = ($res == true ? "updated" : "NOT updated");
+		
+// 		debug("update done => ".($res == true ? "yes" : "no"));
+// 		debug($image);
+
+		/*******************************
+		 set: values
 		*******************************/
 		$this->set("msg", $msg);
 		
 		$this->set("image_id", $image_id);
 		
-	}
+		
+	}//update_image_data
 	
 }
