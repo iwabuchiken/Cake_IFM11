@@ -38,3 +38,5 @@
 	<a name="bottom"></a><a href="#top" class="navi_top_bottom">Top</a>
 	
 </div>
+
+<?php echo $this->element('layouts/links')?>

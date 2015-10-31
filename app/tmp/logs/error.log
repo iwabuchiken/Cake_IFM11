@@ -538,3 +538,44 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-10-31 23:12:20 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\admin__image__manager.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\admin__image__manager.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/admin_Image_Manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-31 23:16:03 Error: [MissingActionException] Action ImagesController::admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'ImagesController',
+  'action' => 'admin',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/admin
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-31 23:16:09 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/admin
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-01 00:08:26 Error: [NotFoundException] Invalid admin
+Request URL: /Eclipse_Luna/Cake_IFM11/admins/edit/1
+Stack Trace:
+#0 [internal function]: AdminsController->edit('1')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AdminsController), Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

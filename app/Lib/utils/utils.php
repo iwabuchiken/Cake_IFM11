@@ -540,6 +540,13 @@
 					PDO::ERRMODE_EXCEPTION);
 
 			/*******************************
+				prep: range data
+			*******************************/
+			$tmp = Utils::get_Admin_Value(CONS::$adminData_Image_data_Range_Start, "val1");
+			
+			debug("val1 => $tmp");
+			
+			/*******************************
 				get: db infos
 			*******************************/
 			//ref http://stackoverflow.com/questions/669092/sqlite-getting-number-of-rows-in-a-database answered Mar 21 '09 at 10:37
@@ -1150,6 +1157,44 @@
 			return true;
 			
 		}//add_ImageData_From_DB_File
+
+		public static function
+		get_Admin_Value
+		($key, $val_1) {
+		
+			// 			$this->loadModel('Admin');
+		
+			//REF http://stackoverflow.com/questions/2802677/what-are-the-possible-reasons-for-appimport-not-working answered May 10 '10 at 13:18
+			$model = ClassRegistry::init('Admin');
+		
+			$option = array(
+		
+					'conditions'	=> array(
+							'Admin.name LIKE'	=> $key
+					)
+			);
+		
+			// 		$admin = $this->Admin->find('first');
+			$admin = $model->find('first', $option);
+			// 			$admin = $this->Admin->find('first', $option);
+		
+			// 		debug($admin);
+		
+			if ($admin == null) {
+					
+				return null;
+					
+			} else {
+					
+				return @$admin['Admin'][$val_1];
+		
+			}//if ($admin == null)
+				
+				
+				
+				// 			return @$admin['Admin'][$val_1];
+		
+		}//get_Admin_Value
 		
 	}//class Utils
 	

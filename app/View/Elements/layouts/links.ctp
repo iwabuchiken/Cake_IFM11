@@ -6,7 +6,8 @@
 	
 		<td>
 		
-			<?php echo $this->Html->link(
+			<?php echo 
+					$this->Html->link(
 								'Add Image',
 								array('controller' => 'images', 
 										'action' => 'add'),
@@ -21,6 +22,17 @@
 								'Image manager',
 								array('controller' => 'images', 
 										'action' => 'image_manager'),
+								array('class' => "button"));
+			?>
+			
+		</td>
+		
+		<td>
+		
+			<?php echo $this->Html->link(
+								'Admin: Image manager',
+								array('controller' => 'admins', 
+										'action' => 'index'),
 								array('class' => "button"));
 			?>
 			

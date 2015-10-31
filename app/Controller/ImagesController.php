@@ -1319,5 +1319,16 @@ class ImagesController extends AppController {
 		
 		
 	}//update_image_data
+
+	public function
+	admin_Image_Manager() {
+		
+		$this->loadModel('Admin');
+		
+		$admins = $this->Admin->find('all');
+		
+		debug("admins => ".count($admins));
+		
+	}//admin_Image_Manager
 	
 }

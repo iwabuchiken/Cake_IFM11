@@ -3,6 +3,13 @@
 class CONS {
 
 	/*******************************
+		admins
+	*******************************/
+	public static $adminData_Image_data_Range_Start = "image_data_Range_Start";
+	
+	public static $adminData_Image_data_Range_End = "image_data_Range_End";
+	
+	/*******************************
 	 server
 	*******************************/
 	public static $name_Server_Remote = "benfranklin.chips.jp";

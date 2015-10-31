@@ -3,11 +3,13 @@ C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\development.sqlite3
 pushd C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot
 
 sqlite3 development.sqlite3
-.explain on
 
+sqlite3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\development.sqlite3
+.explain on
 .tables
 
 pragma table_info(images);
+pragma table_info(admins);
 
 .exit
 
@@ -41,6 +43,22 @@ CREATE TABLE images(
 
 DROP TABLE images;
 
+--------------------------------------------- admins
+DROP TABLE admins;
+
+CREATE TABLE admins (
+	id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	name		VARCHAR(30),
+	val1		VARCHAR(100),
+	val2		VARCHAR(100)
+	
+);
+
+
+
 [mysql(lollipop)]======================================
 #REF http://sql-info.de/mysql/examples/CREATE-TABLE-examples.html
 
@@ -67,3 +85,19 @@ CREATE TABLE images(
    table_name			TEXT
 	
 );
+
+--------------------------------------------- admins
+DROP TABLE admins;
+
+CREATE TABLE admins (
+
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	name		VARCHAR(30),
+	val1		VARCHAR(100),
+	val2		VARCHAR(100)
+	
+);
+
