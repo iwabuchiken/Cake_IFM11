@@ -2,13 +2,12 @@
   <tr>
     <th>No</th>
     <th>ID</th>
+<!--     <th>No</th> -->
+    <th>File name</th>
+<!--     <th>date_added</th> -->
+<!--     <th>date_modified</th> -->
+    <th>Memos</th>
     <th>Ops</th>
-    
-    <th colspan="3" rowspan="2">Memos</th>
-  </tr>
-  
-  <tr>
-    <th colspan="3">File name</th>
   </tr>
 
   <?php 
@@ -22,7 +21,7 @@
 ?>
 
 	<tr>
-		<td class="image_data_No">
+		<td>
 			<?php 
 			
 				echo $count;
@@ -54,54 +53,8 @@
 			
 			?>
 		</td>
-
-		<td>	<!-- Ops -->
-	
-			<?php 
-			
-				$options = array(
-						'label' => 'Update',
-						'id' => 'submit',
-						'onclick' => "update_Image_Data__FromList("
-									.$row['_id']
-									.")",
-// 						'class'		=> "submit_image_data_FromList"
-				);
-				echo $this->Form->end($options);
-			
-			?>
 		
-		</td>
-
-		<td colspan="3" rowspan="2">
-	<!-- 		<textarea> -->
-				<?php 
-				// 		echo "<td>"
-						$opt = array(
-							
-								'value' => $row['memos'],
-	
-								'onmouseover'	=> 'this.select()',
-	// 							'onmouseover'	=> 'this.focus()'
-								'type'			=> 'textarea',
-	
-								'id'			=> "image_data_Memo_".$row['_id'],
-	
-						);
-						
-						//ref http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html
-				    	echo $this->Form->input('', $opt);
-	// 			    	echo $row['memos'];
-				//     			.$row['memos']
-				//     			."</td>";
-				?>
-	<!-- 		</textarea> -->
-		</td>
-			
-	</tr>
-	
-	<tr>
-		<td class="image_data_File_Name" colspan="3">
+		<td class="image_data_File_Name">
 			<?php 
 			
 				echo $row['file_name'];
@@ -125,6 +78,48 @@
 //     			."</td>";
 ?>
 
+	<td>
+<!-- 		<textarea> -->
+			<?php 
+			// 		echo "<td>"
+					$opt = array(
+						
+							'value' => $row['memos'],
+
+							'onmouseover'	=> 'this.select()',
+// 							'onmouseover'	=> 'this.focus()'
+							'type'			=> 'textarea',
+
+							'id'			=> "image_data_Memo_".$row['_id'],
+
+					);
+					
+					//ref http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html
+			    	echo $this->Form->input('', $opt);
+// 			    	echo $row['memos'];
+			//     			.$row['memos']
+			//     			."</td>";
+			?>
+<!-- 		</textarea> -->
+	</td>
+	
+	<td>
+	
+		<?php 
+		
+			$options = array(
+					'label' => 'Update',
+					'id' => 'submit',
+					'onclick' => "update_Image_Data__FromList("
+								.$row['_id']
+								.")"
+			);
+			echo $this->Form->end($options);
+		
+		?>
+	
+	</td>
+	
 <?php 
   		echo "</tr>";
 

@@ -1008,6 +1008,13 @@ class ImagesController extends AppController {
 // 		}//if ($this->request->is('post'))
 	
 	}//add
+
+	public function
+	add_From_DB_File() {
+		
+		$res = Utils::add_ImageData_From_DB_File();
+		
+	}//add_From_DB_File
 	
 	public function delete($id) {
 		/******************************
@@ -1179,7 +1186,8 @@ class ImagesController extends AppController {
 		$sort_ColName = "_id";
 		$sort_Direction = "DESC";
 		
-		$images = Utils::find_All_Images($sort_ColName, $sort_Direction);
+		$images = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
+// 		$images = Utils::find_All_Images($sort_ColName, $sort_Direction);
 // 		$images = Utils::find_All_Images();
 		
 

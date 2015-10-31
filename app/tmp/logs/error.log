@@ -469,3 +469,72 @@ Stack Trace:
 #5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2015-10-30 08:23:55 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\add__from__d_b__file.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\add__from__d_b__file.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-30 08:37:35 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "00": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(548): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1069): Utils::find_All_Images__DateRange('_id', 'ASC', '50')
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1015): Utils::add_ImageData_From_DB_File()
+#3 [internal function]: ImagesController->add_From_DB_File()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-10-30 08:38:23 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "00": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(597): PDO->query('SELECT * FROM i...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1069): Utils::find_All_Images__DateRange('_id', 'ASC', '50')
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1015): Utils::add_ImageData_From_DB_File()
+#3 [internal function]: ImagesController->add_From_DB_File()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-10-30 08:38:59 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "00": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(605): PDO->query('SELECT * FROM i...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1077): Utils::find_All_Images__DateRange('_id', 'ASC', '50')
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1015): Utils::add_ImageData_From_DB_File()
+#3 [internal function]: ImagesController->add_From_DB_File()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-10-31 10:50:21 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "WHERE": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(565): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1189): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-10-31 11:05:18 Error: Fatal Error (4): syntax error, unexpected ''_id].")"' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Elements\image_manager\result_rows.ctp, line 112]
+2015-10-31 11:05:18 Error: [FatalErrorException] syntax error, unexpected ''_id].")"' (T_ENCAPSED_AND_WHITESPACE), expecting ']'
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 112)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 112, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 112, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

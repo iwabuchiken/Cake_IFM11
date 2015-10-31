@@ -256,6 +256,47 @@ td.col_value {
 	
 }
 
+td.image_data_File_Name {
+	
+	background:		white;
+	
+	text-align:		center;
+	
+	vertical-align:	middle;
+	
+	width:		150px;
+	
+}
+
+td.image_data_ID {
+	
+	background:		blue;
+	
+	width:		150px;
+	
+}
+
+td.image_data_No {
+	
+	background:		Aquamarine;
+	
+	text-align:		center;
+	
+	width:		30px;
+	
+}
+
+input.submit_image_data_FromList {
+	
+	/*background:		Aquamarine;*/
+	
+	text-align:		center;
+	vertical-align:	middle;
+	
+	width:		100px;
+	
+}
+
 #image {
     transform-origin: top left; /* IE 10+, Firefox, etc. */
     -webkit-transform-origin: top left; /* Chrome */
