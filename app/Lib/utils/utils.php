@@ -504,7 +504,7 @@
 			
 			} else {
 				
-				debug("data folder => exists: $fpath");
+// 				debug("data folder => exists: $fpath");
 				
 			}
 				
@@ -531,7 +531,7 @@
 					
 			} else {
 				
-				debug("pdo => created");
+//				debug("pdo => created");
 				
 			}
 				
@@ -554,7 +554,7 @@
 // 						."WHERE date_added < '$range_End'"
 						;
 			
-			debug("query => $query");
+//			debug("query => $query");
 			
 			$images = $file_db->query(
 						$query

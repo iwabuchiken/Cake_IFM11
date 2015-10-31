@@ -83,9 +83,12 @@
 	
 								'onmouseover'	=> 'this.select()',
 	// 							'onmouseover'	=> 'this.focus()'
+// 								'type'			=> 'input',
 								'type'			=> 'textarea',
 	
 								'id'			=> "image_data_Memo_".$row['_id'],
+
+// 								'height'		=> '100px'
 	
 						);
 						
