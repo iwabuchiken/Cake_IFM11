@@ -1327,23 +1327,90 @@
 		}//update_Image($image)
 
 		public static function
-		add_ImageData_From_DB_File() {
+		add_ImageData_From_DB_File($images, $numOf_Images) {
+// 		add_ImageData_From_DB_File() {
 
-			$last_Added_From_DBFile = CONS::$last_Added_From_DBFile;
-// 			$last_Added_From_DBFile = CONS::last_Added_From_DBFile;
+			$model = ClassRegistry::init('Image');
 			
-			$whereArgs = "WHERE date_added > '$last_Added_From_DBFile'";
+			foreach ($images as $img) {
+			
+				debug($img);
+				
+				$model->create();
+// 				$model->create();
+				
+	// 			$this->request->data['Image']['created_at'] =
+	// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+					
+	// 			$this->request->data['Image']['updated_at'] =
+	// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+	
+				$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+				
+				$model->set("created_at", $tmp);
+					
+				$model->set("updated_at", $tmp);
+				
+				$model->set("local_id", $img['_id']);
+				
+				$model->set("local_created_at", $img['created_at']);
+					
+				$model->set("local_modified_at", $img['modified_at']);
+				
+				$model->set("file_id", $img['file_id']);
+				
+				$model->set("file_path", $img['file_path']);
+					
+				$model->set("file_name", $img['file_name']);
+					
+				$model->set("local_date_added", $img['date_added']);
+					
+				$model->set("local_date_modified", $img['date_modified']);
+					
+				$model->set("memos", $img['memos']);
+					
+				$model->set("tags", $img['tags']);
+					
+				$model->set("local_last_viewed_at", $img['last_viewed_at']);
+					
+				$model->set("table_name", $img['table_name']);
+					
+				if ($model->save()) {
+// 				if ($model->save($model->request->data)) {
+		
+					debug("image => saved: ".$img['file_name']);
+					
+// 					return true;
+					
+				} else {
+					
+					debug("image => NOT saved: ".$img['file_name']);
+// 					return false;
+					
+				}
+				
+				//debug
+				break;
+				
+			}//foreach ($images as $img)
+			
+			return true;
+			
+// 			$last_Added_From_DBFile = CONS::$last_Added_From_DBFile;
+// // 			$last_Added_From_DBFile = CONS::last_Added_From_DBFile;
+			
 // 			$whereArgs = "WHERE date_added > '$last_Added_From_DBFile'";
+// // 			$whereArgs = "WHERE date_added > '$last_Added_From_DBFile'";
 			
-			$result = Utils::find_All_Images__WhereArgs("_id", "ASC", $whereArgs);
-// 			$images = Utils::find_All_Images__DateRange("_id", "ASC", "50");
+// 			$result = Utils::find_All_Images__WhereArgs("_id", "ASC", $whereArgs);
+// // 			$images = Utils::find_All_Images__DateRange("_id", "ASC", "50");
 			
-// 			$cnt_Images = $images->fetchColumn();
-			$cnt_Images = $result[1];
+// // 			$cnt_Images = $images->fetchColumn();
+// 			$cnt_Images = $result[1];
 			
-			$images = $result[0];
+// 			$images = $result[0];
 			
-			debug("cnt_Images => $cnt_Images");
+// 			debug("cnt_Images => $cnt_Images");
 
 // 			//debug
 // 			foreach ($images as $img) {
@@ -1425,13 +1492,17 @@
 // 			*******************************/
 // 			$file_db = null;
 				
-			/*******************************
-			 return
-			*******************************/
-			return true;
+// 			/*******************************
+// 			 return
+// 			*******************************/
+// 			return true;
 			
 		}//add_ImageData_From_DB_File
 
+		/*******************************
+			@return
+			null => if no entry in the admins table, and others
+		*******************************/
 		public static function
 		get_Admin_Value
 		($key, $val_1) {
@@ -1458,6 +1529,15 @@
 					
 				return null;
 					
+			} else if (!isset($admin['Admin'])) {
+// 			} else if ($admin['Admin'] == null) {
+				
+				return  null;
+				
+				} else if (!isset($admin['Admin'][$val_1])) {
+				
+				return  null;
+				
 			} else {
 					
 				return @$admin['Admin'][$val_1];

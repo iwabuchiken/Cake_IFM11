@@ -1029,9 +1029,25 @@ class ImagesController extends AppController {
 		/*******************************
 			get data: from DB file
 		*******************************/
+		$last_Added_From_DBFile = 
+						Utils::get_Admin_Value(
+								CONS::$adminKey_last_Added_From_DBFile, 
+								"val1");
+		
+// 		debug("\$last_Added_From_DBFile => $last_Added_From_DBFile");
+		
+		if ($last_Added_From_DBFile == null) {
+			
+			$last_Added_From_DBFile = CONS::$adminVal_last_Added_From_DBFile;
+			
+		}//$last_Added_From_DBFile == null
+		
+// 		$last_Added_From_DBFile = CONS::$last_Added_From_DBFile;
+		
 		$whereArgs = "WHERE modified_at > "
 						."'"
-						.CONS::$last_Added_From_DBFile
+						.$last_Added_From_DBFile
+// 						.CONS::$last_Added_From_DBFile
 						."'";
 		
 		$result = Utils::find_All_Images__WhereArgs("modified_at", "DESC", $whereArgs);
@@ -1044,37 +1060,44 @@ class ImagesController extends AppController {
 		debug("\$numOf_Images => $numOf_Images");
 		
 		$cnt = 0;
-		
-		foreach ($images as $img) {
-		
-			debug($img);
-			
-			break;
-			
-// // 			if ($cnt > 1100) {
-// 			if ($cnt == ($numOf_Images - 1)) {
-				
-// 				debug("cnt => $cnt");
-				
-// 				debug($img);
-				
-// 			}//$cnt == ($numOf_Images - 1)
-			
-// 			$cnt = $cnt + 1	;
-// // 			$cnt ++;
-			
-		}//foreach ($images as $img)
-		
+
 		/*******************************
-			get: from mysql, the latest image data by "created_at"
+			insert: data from sqlite file into => mysql db
 		*******************************/
-		$image_Latest_Local_Created_At = 
-					Utils::find_Image_First_By__MYSQL(
-								CONS::$tname_IFM11, 
-								"local_created_at", 
-								"DESC");
+		Utils::add_ImageData_From_DB_File($images, $numOf_Images);
 		
-		debug($image_Latest_Local_Created_At);
+// 		foreach ($images as $img) {
+		
+// 			debug($img);
+			
+// 			break;
+			
+// // // 			if ($cnt > 1100) {
+// // 			if ($cnt == ($numOf_Images - 1)) {
+				
+// // 				debug("cnt => $cnt");
+				
+// // 				debug($img);
+				
+// // 			}//$cnt == ($numOf_Images - 1)
+			
+// // 			$cnt = $cnt + 1	;
+// // // 			$cnt ++;
+			
+// 		}//foreach ($images as $img)
+		
+// 		/*******************************
+// 			get: from mysql, the latest image data by "created_at"
+// 		*******************************/
+// 		$image_Latest_Local_Created_At = 
+// 					Utils::find_Image_First_By__MYSQL(
+// 								CONS::$tname_IFM11, 
+// 								"local_created_at", 
+// 								"DESC");
+		
+// 		debug($image_Latest_Local_Created_At);
+		
+		
 		
 	}//add_From_DB_File
 	

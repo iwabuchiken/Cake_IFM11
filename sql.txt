@@ -88,6 +88,40 @@ CREATE TABLE images(
 );
 
 --------------------------------------------- images: clone
+DROP TABLE images;
+
+INSERT INTO images (
+		created_at, updated_at,
+		
+		local_id, local_created_at, local_modified_at,
+		
+		file_id, file_path, file_name, 
+		
+		local_date_added, local_date_modified,
+		
+		memos, tags,
+		
+		local_last_viewed_at, 
+		table_name
+	
+	) 
+	SELECT
+	
+		created_at, updated_at,
+		
+		local_id, local_created_at, local_modified_at,
+		
+		file_id, file_path, file_name, 
+		
+		local_date_added, local_date_modified,
+		
+		memos, tags,
+		
+		local_last_viewed_at, 
+		table_name
+			
+	FROM images_dup;
+
 CREATE TABLE images_dup (
 	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	created_at	VARCHAR(30),
