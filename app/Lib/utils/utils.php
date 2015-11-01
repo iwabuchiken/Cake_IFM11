@@ -1332,65 +1332,104 @@
 
 			$model = ClassRegistry::init('Image');
 			
+			//debug
+			$count = 0;
+			
+			$max = 10;
+			
 			foreach ($images as $img) {
 			
-				debug($img);
+				if ($count > $max) {
+// 				if ($count > 5) {
+					
+					break;
+					
+				}//$count 
+
+				/*******************************
+					judge: data already in the mysql table
+				*******************************/
+				$file_name = $img['file_name'];
 				
-				$model->create();
-// 				$model->create();
+				$res_B = Utils::isIn_DB_Image_Data_By_FileName($file_name);
 				
-	// 			$this->request->data['Image']['created_at'] =
-	// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-					
-	// 			$this->request->data['Image']['updated_at'] =
-	// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-	
-				$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+// 				debug($img);
 				
-				$model->set("created_at", $tmp);
-					
-				$model->set("updated_at", $tmp);
+				if ($res_B == false) {
 				
-				$model->set("local_id", $img['_id']);
-				
-				$model->set("local_created_at", $img['created_at']);
-					
-				$model->set("local_modified_at", $img['modified_at']);
-				
-				$model->set("file_id", $img['file_id']);
-				
-				$model->set("file_path", $img['file_path']);
-					
-				$model->set("file_name", $img['file_name']);
-					
-				$model->set("local_date_added", $img['date_added']);
-					
-				$model->set("local_date_modified", $img['date_modified']);
-					
-				$model->set("memos", $img['memos']);
-					
-				$model->set("tags", $img['tags']);
-					
-				$model->set("local_last_viewed_at", $img['last_viewed_at']);
-					
-				$model->set("table_name", $img['table_name']);
-					
-				if ($model->save()) {
-// 				if ($model->save($model->request->data)) {
-		
-					debug("image => saved: ".$img['file_name']);
-					
-// 					return true;
-					
+					Utils::add_ImageData_From_DB_File__NewData($model, $img);
+// 					Utils::add_ImageData_From_DB_File__NewData($img);
+
 				} else {
-					
-					debug("image => NOT saved: ".$img['file_name']);
-// 					return false;
-					
-				}
 				
-				//debug
-				break;
+					debug("is in DB => ".$img['file_name']);
+					
+					Utils::add_ImageData_From_DB_File__UpdateData($model, $img);
+					
+					continue;
+					
+				}//if ($res_B == false)
+				
+				
+				
+// 				$model->create();
+// // 				$model->create();
+				
+// 	// 			$this->request->data['Image']['created_at'] =
+// 	// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+					
+// 	// 			$this->request->data['Image']['updated_at'] =
+// 	// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+	
+// 				$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+				
+// 				$model->set("created_at", $tmp);
+					
+// 				$model->set("updated_at", $tmp);
+				
+// 				$model->set("local_id", $img['_id']);
+				
+// 				$model->set("local_created_at", $img['created_at']);
+					
+// 				$model->set("local_modified_at", $img['modified_at']);
+				
+// 				$model->set("file_id", $img['file_id']);
+				
+// 				$model->set("file_path", $img['file_path']);
+					
+// 				$model->set("file_name", $img['file_name']);
+					
+// 				$model->set("local_date_added", $img['date_added']);
+					
+// 				$model->set("local_date_modified", $img['date_modified']);
+					
+// 				$model->set("memos", $img['memos']);
+					
+// 				$model->set("tags", $img['tags']);
+					
+// 				$model->set("local_last_viewed_at", $img['last_viewed_at']);
+					
+// 				$model->set("table_name", $img['table_name']);
+					
+// // 				if ($model->save()) {
+// // // 				if ($model->save($model->request->data)) {
+		
+// // 					debug("image => saved: ".$img['file_name']);
+					
+// // // 					return true;
+					
+// // 				} else {
+					
+// // 					debug("image => NOT saved: ".$img['file_name']);
+// // // 					return false;
+					
+// // 				}
+				
+				// count
+				$count = $count + 1;
+				
+// 				//debug
+// 				break;
 				
 			}//foreach ($images as $img)
 			
@@ -1499,6 +1538,190 @@
 			
 		}//add_ImageData_From_DB_File
 
+		public static function
+		add_ImageData_From_DB_File__NewData($model, $img) {
+
+			$model->create();
+			// 				$model->create();
+			
+			// 			$this->request->data['Image']['created_at'] =
+			// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+				
+			// 			$this->request->data['Image']['updated_at'] =
+			// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+			$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+			$model->set("created_at", $tmp);
+				
+			$model->set("updated_at", $tmp);
+			
+			$model->set("local_id", $img['_id']);
+			
+			$model->set("local_created_at", $img['created_at']);
+				
+			$model->set("local_modified_at", $img['modified_at']);
+			
+			$model->set("file_id", $img['file_id']);
+			
+			$model->set("file_path", $img['file_path']);
+				
+			$model->set("file_name", $img['file_name']);
+				
+			$model->set("local_date_added", $img['date_added']);
+				
+			$model->set("local_date_modified", $img['date_modified']);
+				
+			$model->set("memos", $img['memos']);
+				
+			$model->set("tags", $img['tags']);
+				
+			$model->set("local_last_viewed_at", $img['last_viewed_at']);
+				
+			$model->set("table_name", $img['table_name']);
+	
+			if ($model->save()) {
+
+				debug("image => saved: ".$img['file_name']);
+
+			} else {
+
+				debug("image => NOT saved: ".$img['file_name']);
+
+			}
+					
+		}//add_ImageData_From_DB_File__NewData($img)
+		
+		public static function
+		add_ImageData_From_DB_File__UpdateData($model, $img) {
+
+			$file_name = $img['file_name'];
+			
+			$model = ClassRegistry::init('Image');
+				
+			$opt = array(
+			
+					"conditions"	=> "file_name = '$file_name'"
+					// 				"conditions"	=> "file_name = $file_name"
+						
+			);
+				
+			$image = $model->find('first', $opt);
+			
+			debug($image);
+			
+			$model->create();
+			
+			$model->id = $image['Image']['id'];
+// 			$model->id = $image['id'];
+// 			$model->id = $img['id'];
+			
+			$data = array(
+				
+					'Image'
+					
+			);
+			
+			$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+			$data['Image']['created_at'] = $image['Image']['created_at'];
+// 			$data['Image']['created_at'] = $tmp;
+			$data['Image']['updated_at'] = $tmp;
+			
+			$data['Image']['file_name'] = $img['file_name'];
+			
+			// 				$model->create();
+			
+			// 			$this->request->data['Image']['created_at'] =
+			// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+				
+			// 			$this->request->data['Image']['updated_at'] =
+			// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+// 			$model->set("created_at", $tmp);
+				
+// 			$model->set("updated_at", $tmp);
+			
+// 			$model->set("local_id", $img['_id']);
+			
+// 			$model->set("local_created_at", $img['created_at']);
+				
+// 			$model->set("local_modified_at", $img['modified_at']);
+			
+// 			$model->set("file_id", $img['file_id']);
+			
+// 			$model->set("file_path", $img['file_path']);
+				
+// 			$model->set("file_name", $img['file_name']);
+				
+// 			$model->set("local_date_added", $img['date_added']);
+				
+// 			$model->set("local_date_modified", $img['date_modified']);
+				
+// 			$model->set("memos", $img['memos']);
+				
+// 			$model->set("tags", $img['tags']);
+				
+// 			$model->set("local_last_viewed_at", $img['last_viewed_at']);
+				
+// 			$model->set("table_name", $img['table_name']);
+	
+			if ($model->save($data)) {
+// 			if ($model->save()) {
+
+				debug("image => updated: ".$img['file_name']);
+
+			} else {
+
+				debug("image => NOT updated: ".$img['file_name']);
+
+			}
+					
+		}//add_ImageData_From_DB_File__UpdateData
+		
+		/*******************************
+			judge if the image data is in the mysql db table<br>
+			@return
+			true	=> 'find' command returned 1 image data<br>
+			false	=> other than returned 1
+		*******************************/
+		public static function
+		isIn_DB_Image_Data_By_FileName($file_name) {
+
+			$model = ClassRegistry::init('Image');
+			
+			$opt = array(
+				
+				"conditions"	=> "file_name = '$file_name'"
+// 				"conditions"	=> "file_name = $file_name"
+					
+			);
+			
+			$image = $model->find('first', $opt);
+			
+// 			debug($image);
+			
+// 			debug(count($image));
+			
+			/*******************************
+				return
+			*******************************/
+			$len = count($image);
+			
+			if ($len == 1) {
+			
+				return true;
+			
+			} else {
+			
+				return false;
+				
+			}//if ($len == 1)
+			
+			
+			
+		}//isIn_DB_Image_Data_By_FileName
+		
 		/*******************************
 			@return
 			null => if no entry in the admins table, and others
