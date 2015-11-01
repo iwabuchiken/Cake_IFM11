@@ -1011,6 +1011,18 @@ class ImagesController extends AppController {
 
 	public function
 	add_From_DB_File() {
+
+		/*******************************
+			valid: remote server
+		*******************************/
+		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+			
+			debug("Not the remote server");
+			
+			return;
+				
+		}
+		
 		
 // 		$res = Utils::add_ImageData_From_DB_File();
 
@@ -1053,7 +1065,16 @@ class ImagesController extends AppController {
 			
 		}//foreach ($images as $img)
 		
+		/*******************************
+			get: from mysql, the latest image data by "created_at"
+		*******************************/
+		$image_Latest_Local_Created_At = 
+					Utils::find_Image_First_By__MYSQL(
+								CONS::$tname_IFM11, 
+								"local_created_at", 
+								"DESC");
 		
+		debug($image_Latest_Local_Created_At);
 		
 	}//add_From_DB_File
 	

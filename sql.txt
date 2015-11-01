@@ -18,27 +18,27 @@ DROP TABLE videos;
 
 [sqlite3]======================================
 CREATE TABLE images(
-   id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
-   created_at			VARCHAR(30),
-   updated_at			VARCHAR(30),
-   
-   local_id				INTEGER,
-   local_created_at		VARCHAR(30),
-   local_modified_at	VARCHAR(30),
-   
-   file_id				INTEGER,
-   file_path			TEXT,
-   file_name			TEXT,
-   
-   local_date_added		VARCHAR(30),
-   local_date_modified	VARCHAR(30),
-   
-   memos				TEXT,
-   tags					TEXT,
-   
-   local_last_viewed_at	TEXT,
-   table_name			TEXT
-   
+	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+	
+	local_id				INTEGER,
+	local_created_at		VARCHAR(30),
+	local_modified_at	VARCHAR(30),
+	
+	file_id				INTEGER,
+	file_path			TEXT,
+	file_name			TEXT,
+	
+	local_date_added		VARCHAR(30),
+	local_date_modified	VARCHAR(30),
+	
+	memos				TEXT,
+	tags					TEXT,
+	
+	local_last_viewed_at	TEXT,
+	table_name			TEXT
+	
 );
 
 DROP TABLE images;
@@ -47,7 +47,7 @@ DROP TABLE images;
 DROP TABLE admins;
 
 CREATE TABLE admins (
-	id			INTEGER PRIMARY KEY     AUTOINCREMENT	NOT NULL,
+	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
 	created_at	VARCHAR(30),
 	updated_at	VARCHAR(30),
 	
@@ -62,29 +62,88 @@ CREATE TABLE admins (
 [mysql(lollipop)]======================================
 #REF http://sql-info.de/mysql/examples/CREATE-TABLE-examples.html
 
+--------------------------------------------- images
 CREATE TABLE images(
 	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	created_at	VARCHAR(30),
 	updated_at	VARCHAR(30),
 	
-   local_id				INTEGER,
-   local_created_at		VARCHAR(30),
-   local_modified_at	VARCHAR(30),
-   
-   file_id				INTEGER,
-   file_path			TEXT,
-   file_name			TEXT,
-   
-   local_date_added		VARCHAR(30),
-   local_date_modified	VARCHAR(30),
-   
-   memos				TEXT,
-   tags					TEXT,
-   
-   local_last_viewed_at	TEXT,
-   table_name			TEXT
+	local_id				INTEGER,
+	local_created_at		VARCHAR(30),
+	local_modified_at	VARCHAR(30),
+	
+	file_id				INTEGER,
+	file_path			TEXT,
+	file_name			TEXT,
+	
+	local_date_added		VARCHAR(30),
+	local_date_modified	VARCHAR(30),
+	
+	memos				TEXT,
+	tags					TEXT,
+	
+	local_last_viewed_at	TEXT,
+	table_name			TEXT
 	
 );
+
+--------------------------------------------- images: clone
+CREATE TABLE images_dup (
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	local_id				INTEGER,
+	local_created_at		VARCHAR(30),
+	local_modified_at	VARCHAR(30),
+	
+	file_id				INTEGER,
+	file_path			TEXT,
+	file_name			TEXT,
+	
+	local_date_added		VARCHAR(30),
+	local_date_modified	VARCHAR(30),
+	
+	memos				TEXT,
+	tags					TEXT,
+	
+	local_last_viewed_at	TEXT,
+	table_name			TEXT
+	
+);
+
+INSERT INTO images_dup (
+		created_at, updated_at,
+		
+		local_id, local_created_at, local_modified_at,
+		
+		file_id, file_path, file_name, 
+		
+		local_date_added, local_date_modified,
+		
+		memos, tags,
+		
+		local_last_viewed_at, 
+		table_name
+	
+	) 
+	SELECT
+	
+		created_at, updated_at,
+		
+		local_id, local_created_at, local_modified_at,
+		
+		file_id, file_path, file_name, 
+		
+		local_date_added, local_date_modified,
+		
+		memos, tags,
+		
+		local_last_viewed_at, 
+		table_name
+			
+	FROM images;
+
 
 --------------------------------------------- admins
 DROP TABLE admins;

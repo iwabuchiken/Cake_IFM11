@@ -1078,6 +1078,28 @@
 		}//find_Image_ById
 
 		public static function
+		find_Image_First_By__MYSQL
+		($tname, $col_Name, $direction) {
+
+			/*******************************
+				model
+			*******************************/
+			$model = ClassRegistry::init('Image');
+			
+			$opt = array(
+				
+				"order"		=> 'local_created_at DESC'
+					
+			);
+			
+			$image = $model->find('first', $opt);
+					
+			
+			return $image;
+			
+		}//find_Image_First_By__MYSQL
+
+		public static function
 		get_Latest_File__By_FileName($fpath) {
 		
 			/*******************************
