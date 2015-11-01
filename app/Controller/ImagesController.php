@@ -1012,7 +1012,48 @@ class ImagesController extends AppController {
 	public function
 	add_From_DB_File() {
 		
-		$res = Utils::add_ImageData_From_DB_File();
+// 		$res = Utils::add_ImageData_From_DB_File();
+
+		/*******************************
+			get data: from DB file
+		*******************************/
+		$whereArgs = "WHERE modified_at > "
+						."'"
+						.CONS::$last_Added_From_DBFile
+						."'";
+		
+		$result = Utils::find_All_Images__WhereArgs("modified_at", "DESC", $whereArgs);
+// 		$result = Utils::find_All_Images__WhereArgs("_id", "ASC", $whereArgs);
+		
+		$images = $result[0];
+		
+		$numOf_Images = $result[1];
+		
+		debug("\$numOf_Images => $numOf_Images");
+		
+		$cnt = 0;
+		
+		foreach ($images as $img) {
+		
+			debug($img);
+			
+			break;
+			
+// // 			if ($cnt > 1100) {
+// 			if ($cnt == ($numOf_Images - 1)) {
+				
+// 				debug("cnt => $cnt");
+				
+// 				debug($img);
+				
+// 			}//$cnt == ($numOf_Images - 1)
+			
+// 			$cnt = $cnt + 1	;
+// // 			$cnt ++;
+			
+		}//foreach ($images as $img)
+		
+		
 		
 	}//add_From_DB_File
 	
@@ -1308,7 +1349,7 @@ class ImagesController extends AppController {
 			update data
 		*******************************/
 		$res = Utils::update_Image($image);
-		
+
 		$msg = ($res == true ? "updated" : "NOT updated");
 		
 // 		debug("update done => ".($res == true ? "yes" : "no"));

@@ -621,3 +621,111 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-11-01 10:55:31 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "modified_at": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=+%3AS.E.+%E7%8E%84%E7%B1%B3+%E3%82%AB%E3%83%93+%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%AA%E3%83%BC%E3%81%82%E3%82%8A+++%2F+20150904&image_id=9913
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1281): PDO->prepare('UPDATE ifm11 SE...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1310): Utils::update_Image(Array)
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-01 10:55:36 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "modified_at": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=+%3AS.E.+%E7%8E%84%E7%B1%B3+%E3%82%AB%E3%83%93+%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%AA%E3%83%BC%E3%81%82%E3%82%8A+++%2F+20150904&image_id=9913
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1281): PDO->prepare('UPDATE ifm11 SE...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1310): Utils::update_Image(Array)
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-01 02:55:44 Error: Fatal Error (4): syntax error, unexpected '$msg' (T_VARIABLE) in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 1312]
+2015-11-01 02:55:44 Error: [FatalErrorException] syntax error, unexpected '$msg' (T_VARIABLE)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=+%3AS.E.+%E7%8E%84%E7%B1%B3+%E3%82%AB%E3%83%93+%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%AA%E3%83%BC%E3%81%82%E3%82%8A+++%2F+20150904&image_id=9913
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 1312)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 1312, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 1312, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-01 10:56:19 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "modified_at": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=+%3AS.E.+%E7%8E%84%E7%B1%B3+%E3%82%AB%E3%83%93+%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%AA%E3%83%BC%E3%81%82%E3%82%8A+++%2F+20150904&image_id=9913
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1281): PDO->prepare('UPDATE ifm11 SE...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1310): Utils::update_Image(Array)
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-01 10:56:59 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "modified_at": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=+%3AS.E.+%E7%8E%84%E7%B1%B3+%E3%82%AB%E3%83%93+%E3%83%AD%E3%83%BC%E3%82%BA%E3%83%9E%E3%83%AA%E3%83%BC%E3%81%82%E3%82%8A+++%2F+20150904&image_id=9913
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1282): PDO->prepare('UPDATE ifm11 SE...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1310): Utils::update_Image(Array)
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-01 10:57:35 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near " ": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1002): PDO->query('SELECT * FROM i...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1301): Utils::find_Image_ById('')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-01 10:58:06 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "modified_at": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?image_id=10427
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1282): PDO->prepare('UPDATE ifm11 SE...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1310): Utils::update_Image(Array)
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-01 10:58:45 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "modified_at": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?image_id=10427
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1284): PDO->prepare('UPDATE ifm11 SE...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1310): Utils::update_Image(Array)
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-01 03:16:51 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "00": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(789): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1022): Utils::find_All_Images__WhereArgs('_id', 'ASC', 'WHERE modified_...')
+#2 [internal function]: ImagesController->add_From_DB_File()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-01 03:18:40 Error: Fatal Error (1): Cannot use object of type PDOStatement as array in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 1031]
+2015-11-01 03:18:40 Error: [FatalErrorException] Cannot use object of type PDOStatement as array
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\WORKS\\WS\\Ecl...', 1031)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\WORKS\\WS\\Ecl...', 1031, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\WORKS\\WS\\Ecl...', 1031, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

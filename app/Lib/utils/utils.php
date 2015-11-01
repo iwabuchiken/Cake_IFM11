@@ -1262,12 +1262,22 @@
 			
 			$memos = $image['memos'];
 
+			$modified_at = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
 			//ref http://www.phpeveryday.com/articles/PDO-Insert-and-Update-Statement-Use-Prepared-Statement-P552.html
 			// query
 			$sql = "UPDATE "
 					.CONS::$tname_IFM11
 					." " 
-			        ."SET memos=? WHERE _id=?";
+			        ."SET memos=? "
+			        		
+			       	.", "
+// 			       	." "
+			        ."modified_at=? "
+// 			        ."modified_at = ? "
+
+					." "			        		
+			        ."WHERE _id=?";
 // 			        ."SET memos=? WHERE id=?";
 // 			        ."SET memos=?
 // 						WHERE id=?";
@@ -1275,7 +1285,8 @@
 			$q = $file_db->prepare($sql);
 // 			$q = $conn->prepare($sql);
 			
-			$result = $q->execute(array($memos, $id));
+			$result = $q->execute(array($memos, $modified_at, $id));
+// 			$result = $q->execute(array($memos, $id));
 			
 // 			debug("execute result => ".$result);
 			
@@ -1312,14 +1323,14 @@
 			
 			debug("cnt_Images => $cnt_Images");
 
-			//debug
-			foreach ($images as $img) {
+// 			//debug
+// 			foreach ($images as $img) {
 				
-				debug($img);
+// 				debug($img);
 				
-				break;
+// 				break;
 				
-			}
+// 			}
 			
 // 			/*******************************
 // 			 PDO file
