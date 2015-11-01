@@ -579,3 +579,45 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AdminsController), Object(CakeRequest))
 #4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-11-01 02:34:59 Error: Fatal Error (1): Undefined class constant 'last_Added_From_DBFile' in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 1299]
+2015-11-01 02:34:59 Error: [FatalErrorException] Undefined class constant 'last_Added_From_DBFile'
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Undefined class...', 'C:\\WORKS\\WS\\Ecl...', 1299)
+#1 [internal function]: ErrorHandler::handleError(1, 'Undefined class...', 'C:\\WORKS\\WS\\Ecl...', 1299, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Undefined class...', 'C:\\WORKS\\WS\\Ecl...', 1299, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-01 02:35:41 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "WHERE": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(826): PDO->query('SELECT * FROM i...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1304): Utils::find_All_Images__WhereArgs('WHERE date_adde...')
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1015): Utils::add_ImageData_From_DB_File()
+#3 [internal function]: ImagesController->add_From_DB_File()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-01 02:36:10 Error: Fatal Error (1): Call to a member function fetchColumn() on array in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 1307]
+2015-11-01 02:36:10 Error: [FatalErrorException] Call to a member function fetchColumn() on array
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 1307)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 1307, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 1307, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-01 02:38:00 Error: Fatal Error (1): Cannot use object of type PDOStatement as array in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 1314]
+2015-11-01 02:38:00 Error: [FatalErrorException] Cannot use object of type PDOStatement as array
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\WORKS\\WS\\Ecl...', 1314)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\WORKS\\WS\\Ecl...', 1314, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\WORKS\\WS\\Ecl...', 1314, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

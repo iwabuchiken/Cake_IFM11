@@ -9,6 +9,8 @@ class CONS {
 	
 	public static $adminData_Image_data_Range_End = "image_data_Range_End";
 	
+	public static $last_Added_From_DBFile = "2015/10/01 00:00:00.000";
+	
 	/*******************************
 	 server
 	*******************************/

@@ -21,7 +21,10 @@ class AdminsController extends AppController {
 			throw new NotFoundException(__('Invalid admin'));
 		}
 	
+		debug("id => $id");
+		
 		$admin = $this->Admin->findById($id);
+		
 		if (!$admin) {
 			throw new NotFoundException(__('Invalid admin'));
 		}

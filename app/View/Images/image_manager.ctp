@@ -1,9 +1,15 @@
-<div>
+<!-- <div> -->
 
-	<a name="top"></a><a href="#bottom" class="navi_top_bottom">Bottom</a>
+	<h1>
 	
-</div>
-
+		Images (total=<?php echo $numOf_images; ?>)
+	
+		<a name="top"></a><a href="#bottom" class="navi_top_bottom">Bottom</a>
+	
+	</h1>
+	
+<!-- </div> -->
+<br>
 <!-- body ------------------------------------------->
 
 <?php echo $this->element('image_manager/result_rows')?>

@@ -8,9 +8,33 @@
 		
 			<?php echo 
 					$this->Html->link(
+								'Images',
+								array('controller' => 'images', 
+										'action' => 'index'),
+								array('class' => "button"));
+			?>
+			
+		</td>
+		
+		<td>
+		
+			<?php echo 
+					$this->Html->link(
 								'Add Image',
 								array('controller' => 'images', 
 										'action' => 'add'),
+								array('class' => "button"));
+			?>
+			
+		</td>
+		
+		<td>
+		
+			<?php echo 
+					$this->Html->link(
+								'Add Image (From DB file)',
+								array('controller' => 'images', 
+										'action' => 'add_From_DB_File'),
 								array('class' => "button"));
 			?>
 			

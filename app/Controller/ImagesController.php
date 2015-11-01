@@ -1186,15 +1186,19 @@ class ImagesController extends AppController {
 		$sort_ColName = "_id";
 		$sort_Direction = "DESC";
 		
-		$images = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
+		$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
+// 		$images = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
 // 		$images = Utils::find_All_Images($sort_ColName, $sort_Direction);
 // 		$images = Utils::find_All_Images();
 		
+		$images = $result[0];
 
 		/*******************************
 			set: data
 		*******************************/
 		$this->set("images", $images);
+		
+		$this->set("numOf_images", $result[1]);
 		
 	}//image_manager
 
