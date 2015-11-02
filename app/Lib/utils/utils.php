@@ -1326,11 +1326,33 @@
 			
 		}//update_Image($image)
 
+		/*******************************
+			@return<br>
+			array(
+				"total_data"<br>		
+				"new_data_Success"<br>	
+				"new_data_Failed"<br>	
+					
+				"existing_data_Success"<br>	
+				"existing_data_Failed"<br>
+			)
+		*******************************/
+		
 		public static function
 		add_ImageData_From_DB_File($images, $numOf_Images) {
 // 		add_ImageData_From_DB_File() {
 
 			$model = ClassRegistry::init('Image');
+
+			$result = array(
+				"total_data"		=> 0,
+				"new_data_Success"	=> 0,
+				"new_data_Failed"	=> 0,
+					
+				"existing_data_Success"	=> 0,
+				"existing_data_Failed"	=> 0,
+					
+			);
 			
 			//debug
 			$count = 0;
@@ -1339,12 +1361,12 @@
 			
 			foreach ($images as $img) {
 			
-				if ($count > $max) {
-// 				if ($count > 5) {
+// 				if ($count > $max) {
+// // 				if ($count > 5) {
 					
-					break;
+// 					break;
 					
-				}//$count 
+// 				}//$count 
 
 				/*******************************
 					judge: data already in the mysql table
@@ -1355,189 +1377,56 @@
 				
 // 				debug($img);
 				
-				if ($res_B == false) {
+				if ($res_B == false) {	// new image data
 				
-					Utils::add_ImageData_From_DB_File__NewData($model, $img);
+					$tmp_B = Utils::add_ImageData_From_DB_File__NewData($model, $img);
 // 					Utils::add_ImageData_From_DB_File__NewData($img);
 
-				} else {
+					if ($tmp_B == true) {
+					
+						$result['new_data_Success'] += 1;
+					
+					} else {
+					
+						$result['new_data_Failed'] += 1;
+						
+					}//if ($tmp_B == true)
+					
+				} else {				// existing image data
 				
-					debug("is in DB => ".$img['file_name']);
+// 					debug("is in DB => ".$img['file_name']);
 					
-					Utils::add_ImageData_From_DB_File__UpdateData($model, $img);
+					$tmp_B = Utils::add_ImageData_From_DB_File__UpdateData($model, $img);
+
+					if ($tmp_B == true) {
+							
+						$result['existing_data_Success'] += 1;
+							
+					} else {
+							
+						$result['existing_data_Failed'] += 1;
 					
-					continue;
-					
+					}//if ($tmp_B == true)
+								
 				}//if ($res_B == false)
-				
-				
-				
-// 				$model->create();
-// // 				$model->create();
-				
-// 	// 			$this->request->data['Image']['created_at'] =
-// 	// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-					
-// 	// 			$this->request->data['Image']['updated_at'] =
-// 	// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-	
-// 				$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-				
-// 				$model->set("created_at", $tmp);
-					
-// 				$model->set("updated_at", $tmp);
-				
-// 				$model->set("local_id", $img['_id']);
-				
-// 				$model->set("local_created_at", $img['created_at']);
-					
-// 				$model->set("local_modified_at", $img['modified_at']);
-				
-// 				$model->set("file_id", $img['file_id']);
-				
-// 				$model->set("file_path", $img['file_path']);
-					
-// 				$model->set("file_name", $img['file_name']);
-					
-// 				$model->set("local_date_added", $img['date_added']);
-					
-// 				$model->set("local_date_modified", $img['date_modified']);
-					
-// 				$model->set("memos", $img['memos']);
-					
-// 				$model->set("tags", $img['tags']);
-					
-// 				$model->set("local_last_viewed_at", $img['last_viewed_at']);
-					
-// 				$model->set("table_name", $img['table_name']);
-					
-// // 				if ($model->save()) {
-// // // 				if ($model->save($model->request->data)) {
-		
-// // 					debug("image => saved: ".$img['file_name']);
-					
-// // // 					return true;
-					
-// // 				} else {
-					
-// // 					debug("image => NOT saved: ".$img['file_name']);
-// // // 					return false;
-					
-// // 				}
 				
 				// count
 				$count = $count + 1;
 				
-// 				//debug
-// 				break;
-				
 			}//foreach ($images as $img)
 			
-			return true;
+			$result['total_data'] = $count;
 			
-// 			$last_Added_From_DBFile = CONS::$last_Added_From_DBFile;
-// // 			$last_Added_From_DBFile = CONS::last_Added_From_DBFile;
-			
-// 			$whereArgs = "WHERE date_added > '$last_Added_From_DBFile'";
-// // 			$whereArgs = "WHERE date_added > '$last_Added_From_DBFile'";
-			
-// 			$result = Utils::find_All_Images__WhereArgs("_id", "ASC", $whereArgs);
-// // 			$images = Utils::find_All_Images__DateRange("_id", "ASC", "50");
-			
-// // 			$cnt_Images = $images->fetchColumn();
-// 			$cnt_Images = $result[1];
-			
-// 			$images = $result[0];
-			
-// 			debug("cnt_Images => $cnt_Images");
-
-// 			//debug
-// 			foreach ($images as $img) {
-				
-// 				debug($img);
-				
-// 				break;
-				
-// 			}
-			
-// 			/*******************************
-// 			 PDO file
-// 			*******************************/
-// 			$fpath = "";
-			
-// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
-					
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-// 				// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
-					
-// 			} else {
-					
-// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-// 				// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
-					
-// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
-				
-// 			/*******************************
-// 			 validate: db file exists
-// 			*******************************/
-// 			$res = file_exists($fpath);
-				
-// 			if ($res == false) {
-					
-// 				debug("data folder => not exist: $fpath");
-			
-// 				return null;
-					
-// 			} else {
-			
-// 				debug("data folder => exists: $fpath");
-			
-// 			}
-			
-// 			/*******************************
-// 			 get: the latest db file
-// 			*******************************/
-// 			$fname = Utils::get_Latest_File__By_FileName($fpath);
-			
-// 			$fpath .= DIRECTORY_SEPARATOR.$fname;
-			
-// 			debug("fpath => $fpath");
-				
-// 			/*******************************
-// 			 pdo: setup
-// 			*******************************/
-// 			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
-// 			$file_db = new PDO("sqlite:$fpath");
-			
-// 			if ($file_db === null) {
-					
-// 				debug("pdo => null");
-					
-// 				return null;
-					
-// 			} else {
-			
-// 				debug("pdo => created");
-			
-// 			}
-			
-// 			// Set errormode to exceptions
-// 			$file_db->setAttribute(PDO::ATTR_ERRMODE,
-// 					PDO::ERRMODE_EXCEPTION);
-			
-// 			/*******************************
-// 			 pdo => reset
-// 			*******************************/
-// 			$file_db = null;
-				
-// 			/*******************************
-// 			 return
-// 			*******************************/
+			return $result;
 // 			return true;
 			
 		}//add_ImageData_From_DB_File
 
+		/*******************************
+			@return<br>
+			true	=> data saved<br>
+			false	=> data NOT saved<br>
+		*******************************/
 		public static function
 		add_ImageData_From_DB_File__NewData($model, $img) {
 
@@ -1584,10 +1473,14 @@
 
 				debug("image => saved: ".$img['file_name']);
 
+				return true;
+				
 			} else {
 
 				debug("image => NOT saved: ".$img['file_name']);
 
+				return false;
+				
 			}
 					
 		}//add_ImageData_From_DB_File__NewData($img)
@@ -1608,7 +1501,7 @@
 				
 			$image = $model->find('first', $opt);
 			
-			debug($image);
+// 			debug($image);
 			
 			$model->create();
 			
@@ -1628,7 +1521,7 @@
 // 			$data['Image']['created_at'] = $tmp;
 			$data['Image']['updated_at'] = $tmp;
 			
-			$data['Image']['file_name'] = $img['file_name'];
+			$data['Image']['memos'] = $img['memos'];
 			
 			// 				$model->create();
 			
@@ -1671,10 +1564,14 @@
 
 				debug("image => updated: ".$img['file_name']);
 
+				return true;
+				
 			} else {
 
 				debug("image => NOT updated: ".$img['file_name']);
 
+				return false;
+				
 			}
 					
 		}//add_ImageData_From_DB_File__UpdateData
