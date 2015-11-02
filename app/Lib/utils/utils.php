@@ -1416,7 +1416,42 @@
 			}//foreach ($images as $img)
 			
 			$result['total_data'] = $count;
+
+			/*******************************
+				log
+			*******************************/
+// 			"total_data"		=> 0,
+// 			"new_data_Success"	=> 0,
+// 			"new_data_Failed"	=> 0,
+				
+// 			"existing_data_Success"	=> 0,
+// 			"existing_data_Failed"	=> 0,
+				
+			//ref http://php.net/manual/en/function.serialize.php
+// 			$msg = serialize($result);
+			$msg = sprintf(
+					"update: total = %d, "
+					."new.success = %d, new.failed = %d"
+					.", "
+					."existing.success = %d, existing.failed = %d",
+					$result['total_data'],
+					$result['new_data_Success'], $result['new_data_Failed'],
+					$result['existing_data_Success'], $result['existing_data_Failed']
+					);
 			
+			Utils::write_Log(
+			
+						Utils::get_dPath_Log(),
+// 						CONS::get_dPath_Log(),
+						$msg,
+						__FILE__,
+						__LINE__
+						
+			);
+			
+			/*******************************
+				return
+			*******************************/
 			return $result;
 // 			return true;
 			
@@ -1514,7 +1549,7 @@
 			*******************************/
 			if ($image['Image']['updated_at'] > $img['modified_at']) {
 				
-				debug("local => not newer: ".$img['file_name']);
+// 				debug("local => not newer: ".$img['file_name']);
 				
 				return false;
 				
