@@ -1485,6 +1485,14 @@
 					
 		}//add_ImageData_From_DB_File__NewData($img)
 		
+		/*******************************
+			$img	=> data from local sqlite file<br>
+			$image	=> data from remote mysql db<br>
+			compare	=> $image['Image']['updated_at'], $img['modified_at']
+				--> if $image update is later than $img update<br>
+					i.e. if the remote data is more update than the local
+						=> not updating<br>
+		*******************************/
 		public static function
 		add_ImageData_From_DB_File__UpdateData($model, $img) {
 
@@ -1500,6 +1508,17 @@
 			);
 				
 			$image = $model->find('first', $opt);
+			
+			/*******************************
+				valid: local data --> newer
+			*******************************/
+			if ($image['Image']['updated_at'] > $img['modified_at']) {
+				
+				debug("local => not newer: ".$img['file_name']);
+				
+				return false;
+				
+			}//$image['Image']['']
 			
 // 			debug($image);
 			
@@ -1523,42 +1542,6 @@
 			
 			$data['Image']['memos'] = $img['memos'];
 			
-			// 				$model->create();
-			
-			// 			$this->request->data['Image']['created_at'] =
-			// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-				
-			// 			$this->request->data['Image']['updated_at'] =
-			// 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-			
-// 			$model->set("created_at", $tmp);
-				
-// 			$model->set("updated_at", $tmp);
-			
-// 			$model->set("local_id", $img['_id']);
-			
-// 			$model->set("local_created_at", $img['created_at']);
-				
-// 			$model->set("local_modified_at", $img['modified_at']);
-			
-// 			$model->set("file_id", $img['file_id']);
-			
-// 			$model->set("file_path", $img['file_path']);
-				
-// 			$model->set("file_name", $img['file_name']);
-				
-// 			$model->set("local_date_added", $img['date_added']);
-				
-// 			$model->set("local_date_modified", $img['date_modified']);
-				
-// 			$model->set("memos", $img['memos']);
-				
-// 			$model->set("tags", $img['tags']);
-				
-// 			$model->set("local_last_viewed_at", $img['last_viewed_at']);
-				
-// 			$model->set("table_name", $img['table_name']);
-	
 			if ($model->save($data)) {
 // 			if ($model->save()) {
 
