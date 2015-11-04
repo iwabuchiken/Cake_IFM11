@@ -1580,13 +1580,13 @@
 			if ($model->save($data)) {
 // 			if ($model->save()) {
 
-				debug("image => updated: ".$img['file_name']);
+// 				debug("image => updated: ".$img['file_name']);
 
 				return true;
 				
 			} else {
 
-				debug("image => NOT updated: ".$img['file_name']);
+// 				debug("image => NOT updated: ".$img['file_name']);
 
 				return false;
 				
