@@ -739,3 +739,125 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-11-07 22:30:37 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(527): PDO->__construct('sqlite:C:\\WORKS...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1243): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-07 22:30:51 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(527): PDO->__construct('sqlite:C:\\WORKS...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1243): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-07 22:50:44 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\common_1.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\common_1.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName('common_1')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render('common_1', NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1257): Controller->render('common_1')
+#3 [internal function]: ImagesController->image_manager()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-07 22:51:31 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\commons\common_1.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\commons\\common_1.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName('commons/common_...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render('commons/common_...', NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1257): Controller->render('commons/common_...')
+#3 [internal function]: ImagesController->image_manager()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-07 22:51:47 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\Elements\commons\common_1.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\Elements\\commons\\common_1.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName('Elements/common...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render('Elements/common...', NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1257): Controller->render('Elements/common...')
+#3 [internal function]: ImagesController->image_manager()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-07 23:04:31 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(550): PDO->__construct('sqlite:C:\\WORKS...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1243): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-07 23:05:07 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(550): PDO->__construct('sqlite:C:\\WORKS...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1243): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-07 23:06:40 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(550): PDO->__construct('sqlite:C:\\WORKS...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1243): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-07 23:07:10 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(550): PDO->__construct('sqlite:C:\\WORKS...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1243): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-11-07 23:08:06 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(550): PDO->__construct('sqlite:C:\\WORKS...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(1243): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

@@ -336,6 +336,17 @@
 			*******************************/
 			$fname = Utils::get_Latest_File__By_FileName($fpath);
 
+			/*******************************
+			 valid: file exists
+			*******************************/
+			if ($fname == null) {
+			
+				debug("Utils::get_Latest_File__By_FileName => returned null");
+			
+				return null;
+			
+			}//$fname == null
+					
 			$fpath .= DIRECTORY_SEPARATOR.$fname;
 				
 			debug("fpath => $fpath");
@@ -463,7 +474,8 @@
 		}//find_All_Images
 
 		/*******************************
-			@return array($result, $cnt_Images)
+			@return array($result, $cnt_Images)<br>
+			null	=> data folder => not exist<br>
 		*******************************/
 		public static function
 		find_All_Images__DateRange
@@ -516,6 +528,17 @@
 			*******************************/
 			$fname = Utils::get_Latest_File__By_FileName($fpath);
 
+			/*******************************
+				valid: file exists
+			*******************************/
+			if ($fname == null) {
+				
+				debug("Utils::get_Latest_File__By_FileName => returned null");
+				
+				return null;
+				
+			}//$fname == null
+			
 			$fpath .= DIRECTORY_SEPARATOR.$fname;
 				
 			debug("fpath => $fpath");
@@ -1140,42 +1163,71 @@
 			
 // 			debug($scanned_directory);
 			
-			$tmp_fname = $scanned_directory[0];
+// 			debug($scanned_directory);
 			
-// 			debug($tmp_fname);
-			
-// 			/*******************************
-// 			 1 entry, only
-// 			*******************************/
-// 			if (count($scanned_directory) == 1) {
-		
-// 				return $scanned_directory[0];
-		
-// 			}
-				
-// 			/*******************************
-// 			 2 or more
-// 			*******************************/
+			$tmp_fname = implode(
+								DIRECTORY_SEPARATOR, 
+								array($fpath, $scanned_directory[0])
+						);
 // 			$tmp_fname = $scanned_directory[0];
+			
+			$len_list = count($scanned_directory);
+			
+			for ($i = 1; $i < $len_list; $i++) {
 				
-// 			$len = count($scanned_directory);
+// 				debug("\$tmp_fname[$i] => $tmp_fname");
 				
-// 			for ($i = 1; $i < $len; $i++) {
-		
-// 				if (strcmp($tmp_fname, $scanned_directory[$i]) < 0) {
+				//ref http://php.net/manual/en/function.is-file.php
+				if (is_dir($tmp_fname)) {
+// 				if (is_file($tmp_fname)) {
+
+// 					debug("is_dir => $tmp_fname");
+// 					debug("is_file => $tmp_fname");
+
+// 					debug("\$tmp_fname => $tmp_fname");
 						
 // 					$tmp_fname = $scanned_directory[$i];
+					$tmp_fname = implode(
+									DIRECTORY_SEPARATOR, 
+									array($fpath, $scanned_directory[$i]));
 						
-// 				}
-		
-// 			}
+// 					debug("\$tmp_fname is now => $tmp_fname");
+					
+// 					break;
+					
+				} else {//if (!is_file($tmp_fname))
+					
+					debug("not a dir => $tmp_fname");
+// 					debug("\$tmp_fname => $tmp_fname");
+
+					break;
+// 					$tmp_fname = $scanned_directory[$i];
+					
+// 					debug("\$tmp_fname is now => $tmp_fname");
+
+// 					debug(is_file($tmp_fname) ? "is a file" : "not a file");
+					
+				}//if (!is_file($tmp_fname))
 				
-			// 			debug("latest => ".$tmp_fname);
+			}
+			
+// 			debug("\$tmp_fname is now => $tmp_fname");
+			
+			if (!is_file($tmp_fname)) {
 				
+				debug("no file exists in: $fpath");
+				
+				return null;
+				
+			}//!is_file($tmp_fname)
+			
 			/*******************************
 			 return
 			*******************************/
-			return $tmp_fname;
+// 			debug("basename(\$tmp_fname) => ".basename($tmp_fname));
+			
+			return basename($tmp_fname);
+// 			return $tmp_fname;
 				
 		}//get_Latest_File__By_FileName($fpath)
 

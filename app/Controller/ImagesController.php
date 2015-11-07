@@ -1244,6 +1244,25 @@ class ImagesController extends AppController {
 // 		$images = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
 // 		$images = Utils::find_All_Images($sort_ColName, $sort_Direction);
 // 		$images = Utils::find_All_Images();
+
+		/*******************************
+			valid: not null
+		*******************************/
+		if ($result == null) {
+			
+// 			$this->layout = "plain";
+			
+			debug("Utils::find_All_Images__DateRange => returned null");
+			
+			$this->set("message", "Utils::find_All_Images__DateRange => returned null");
+			
+			$this->render("/Elements/commons/common_1");
+// 			$this->render("Elements/commons/common_1");
+// 			$this->render("common_1");
+			
+			return;
+			
+		}//$result == null
 		
 		$images = $result[0];
 
