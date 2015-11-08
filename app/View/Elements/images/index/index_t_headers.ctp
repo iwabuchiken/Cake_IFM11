@@ -24,6 +24,20 @@
 		
 		<th colspan="3" class="th_images_green">
 
+			<?php echo $this->Html->link(
+						'File name',
+						array('controller' => 'images', 
+								'action' => 'index',
+								'?' => "sort=file_name"),
+						array('class'	=> 'has_link'));
+			?>
+		
+<!-- 			File name -->
+			
+		</th>
+
+		<th colspan="3" class="th_images_green">
+
 			<?php 
 			
 				$param['?'] = "sort=table_name";
@@ -42,19 +56,6 @@
 			
 		</th>
 		
-		<th colspan="3" class="th_images_green">
-
-			<?php echo $this->Html->link(
-						'File name',
-						array('controller' => 'images', 
-								'action' => 'index',
-								'?' => "sort=file_name"),
-						array('class'	=> 'has_link'));
-			?>
-		
-<!-- 			File name -->
-			
-		</th>
 		
 </tr>
 

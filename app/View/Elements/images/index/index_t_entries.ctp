@@ -12,13 +12,6 @@
 			
 		</td>
 		
-		<td colspan="3" class="td_images_TableName">
-		
-			<?php echo $image['Image']['table_name']
-							; ?>
-							
-		</td>
-		
 		<td colspan="3" class="td_images_FileName">
 		
 			<?php echo $image['Image']['file_name']
@@ -26,6 +19,13 @@
 							
 		</td>
 	
+		<td colspan="3" class="td_images_TableName">
+		
+			<?php echo $image['Image']['table_name']
+							; ?>
+							
+		</td>
+		
 	</tr>
 	
 	<tr>
