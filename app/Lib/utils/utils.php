@@ -1197,7 +1197,7 @@
 					
 				} else {//if (!is_file($tmp_fname))
 					
-					debug("not a dir => $tmp_fname");
+// 					debug("not a dir => $tmp_fname");
 // 					debug("\$tmp_fname => $tmp_fname");
 
 					break;
