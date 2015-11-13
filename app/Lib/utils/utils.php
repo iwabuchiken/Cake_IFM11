@@ -1739,6 +1739,149 @@
 				// 			return @$admin['Admin'][$val_1];
 		
 		}//get_Admin_Value
+
+		/*******************************
+			@return
+			null	=> fopen --> null returned
+		*******************************/
+		public static function
+		get_CsvLines_Images_FromRemote
+		($range_Start, $range_End) {
+			
+			/*******************************
+			 file: path
+			*******************************/
+			$fpath = "";
+			
+			$fname = "images.csv";
+			
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+			
+				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\$fname";
+			
+			} else {
+			
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web"
+						."/cake_apps/Cake_IFM11/app/Lib/data"
+						."/$fname";
+			
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+			
+			/*******************************
+			file: open
+			*******************************/
+			$csv_File = fopen($fpath, "r");
+			// 		$csv_File = fopen($fpath_Csv, "r");
+			
+			// validate: null
+			if ($csv_File == null) {
+				
+				debug("csv file => null");
+					
+				return null;
+							
+			}//$csv_File == null
+			
+			// 		debug("\$csv_File => ".($csv_File == null ? "null" : "NOT null"));
+		
+			/*******************************
+			read lines
+			*******************************/
+			$csv_Lines = array();
+		
+			// 		for ($i = 0; $i < 3; $i++) {
+		
+			// 			fgetcsv($csv_File);
+		
+				// 		}
+		
+			//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
+			while ( ($data = fgetcsv($csv_File) ) !== FALSE ) {
+	
+				array_push($csv_Lines, $data);
+	
+			}
+	
+			debug("csv lines => ".count($csv_Lines));
+
+// 			debug($csv_Lines[0]);
+
+// 			debug($csv_Lines[0][4]);
+			
+// 			debug($csv_Lines[count($csv_Lines) - 1]);
+
+// 			debug($csv_Lines[count($csv_Lines) - 1][4]);
+			
+			/*******************************
+				filter: by range
+			*******************************/
+			$csv_Lines_Filtered = array();
+			
+			foreach ($csv_Lines as $line) {
+			
+				$name = $line[8];
+				
+				if ($name >= $range_Start 
+						&& $name < $range_End) {
+// 						&& $name <= $range_End) {
+// 				if ($line[4] >= $range_Start 
+// 						&& $line[5] <= $range_End) {
+
+					array_push($csv_Lines_Filtered, $line);
+					
+				}//$line;
+				
+			}//foreach ($csv_Lines as $line)
+			
+// 			debug($csv_Lines_Filtered[0]);
+			debug("\$csv_Lines_Filtered => ".count($csv_Lines_Filtered));
+			
+			/*******************************
+				return
+			*******************************/
+// 			return $csv_Lines;
+			return $csv_Lines_Filtered;
+			
+		}//get_CsvLines_Images_FromRemote
+
+		public static function
+		get_Remote_ImageList($range_Start, $range_End) {
+			
+			$dpath = "/home/users/2/chips.jp-benfranklin/web"
+					."/cake_apps/images/ifm11";
+			
+// 			$f = fopen($dpath);
+			$scanned_directory = array_values(array_diff(scandir($dpath), array('..', '.')));
+			
+			debug("images dir => ".count($scanned_directory));
+			
+			/*******************************
+				filter: by range
+			*******************************/
+			$list_Filtered = array();
+			
+			foreach ($scanned_directory as $line) {
+// 			foreach ($csv_Lines as $line) {
+			
+				$name = $line;
+// 				$name = $line[8];
+				
+				if ($name >= $range_Start 
+						&& $name < $range_End) {
+// 						&& $name <= $range_End) {
+// 				if ($line[4] >= $range_Start 
+// 						&& $line[5] <= $range_End) {
+
+					array_push($list_Filtered, $line);
+					
+				}//$line;
+				
+			}//foreach ($csv_Lines as $line)
+						
+			return $list_Filtered;
+// 			return $scanned_directory;
+			
+		}//get_Remote_ImageList
 		
 	}//class Utils
 	

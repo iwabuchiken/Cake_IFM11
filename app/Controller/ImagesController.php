@@ -1407,5 +1407,136 @@ class ImagesController extends AppController {
 		debug("admins => ".count($admins));
 		
 	}//admin_Image_Manager
+
+	public function
+	im_Add_Image_Data() {
+
+		/*******************************
+			valid: remote server
+		*******************************/
+		if (Utils::get_HostName() == "localhost") {
+				
+			debug("I am a local server. No op.");
+			
+			return;
+			
+		}		
+		
+		/*******************************
+			range
+		*******************************/
+		$range_Start = @$this->request->query['range_Start'];
+		
+		if ($range_Start === null) {
+			
+			$range_Start = "2015-10-01";
+// 			$range_Start = "2015/10/01";
+			
+		}//$range_Start === null
+		
+		$range_End = @$this->request->query['range_End'];
+		
+		if ($range_End === null) {
+			
+			$range_End = "2015-11-01";
+// 			$range_End = "2015/11/01";
+			
+		}//$range_End === null
+		
+		debug("start => $range_Start || end => $range_End");
+		
+		/*******************************
+			list: remote mysql data
+		*******************************/
+		$list_Remote_DB = Utils::get_CsvLines_Images_FromRemote($range_Start, $range_End);
+// 		$csv_Lines = Utils::get_CsvLines_Images_FromRemote($range_Start, $range_End);
+// 		$csv_Lines = Utils::get_CsvLines_Images_FromRemote();
+
+		/*******************************
+			list: remote mysql data => file names
+		*******************************/
+		$list_Remote_DB_File_Names = array();
+		
+		foreach ($list_Remote_DB as $item) {
+		
+			array_push($list_Remote_DB_File_Names, $item[8]);
+			
+		}//foreach ($list_Remote_DB as $item)
+		
+		debug("\$list_Remote_DB_File_Names[0] => "
+				.$list_Remote_DB_File_Names[0]);
+		
+		/*******************************
+			list: remote image files
+		*******************************/
+		$list_Remote_Images = Utils::get_Remote_ImageList($range_Start, $range_End);
+// 		$list_Remote_Images = Utils::get_Remote_ImageList();
+		
+		debug("\$list_Remote_Images[0] => ".count($list_Remote_Images[0]));
+		
+		/*******************************
+			filter
+		*******************************/
+		$list_Missing_Files = array();
+		
+		foreach ($list_Remote_Images as $image_file_name) {
+		
+			if (!in_array($image_file_name, $list_Remote_DB_File_Names)) {
+				
+				array_push($list_Missing_Files, $image_file_name);
+				
+			}//!$list_Remote_DB_File_Names
+			
+		}//foreach ($list_Remote_Images as $image_file)
+		
+		debug("missing files => ".count($list_Missing_Files));
+		
+		debug("\$list_Missing_Files[0] => ".$list_Missing_Files[0]);
+		
+		/*******************************
+			valid: any missing files
+		*******************************/
+		if (count($list_Missing_Files) < 1) {
+			
+			debug("no missing files");
+			
+			return ;
+			
+		}//count($list_Missing_Files < 1)
+		
+		/*******************************
+			save list to files
+		*******************************/
+		$time_Label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+// 		$time_Label = Utils::get_CurrentTime2("serial");
+		
+		$fname = sprintf("list_images_%s.txt", $time_Label);
+// 		$fname = "list_images.txt";
+		
+		debug("\$fname => ".$fname);
+		
+		$fpath = "/home/users/2/chips.jp-benfranklin/web"
+					."/cake_apps/Cake_IFM11/app/Lib/data"
+					."/$fname";
+
+		$f = fopen($fpath, "w");
+// 		$f = fopen($fpath, "r");
+		
+		// write
+		$count = 1;
+		
+		foreach ($list_Missing_Files as $name) {
+		
+			fwrite($f, sprintf("%d\t%s\n", $count, $name));
+			
+			$count += 1;
+			
+		}//foreach ($list_Missing_Files as $name)
+		
+		fclose($f);
+		
+		debug("list => saved: ".$fpath);
+		
+	}//im_Add_Image_Data
 	
 }
