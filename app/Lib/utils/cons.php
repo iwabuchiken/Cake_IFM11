@@ -48,6 +48,14 @@ class CONS {
 			"serial" => "serialType"	// "yyyyMMdd_His"
 	);
 
+	public static $dpath_ImageFiles_List = 
+				"/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/image_files_list"
+// 				"/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/image_files_list"
+	
+				;
+// 				."/cake_apps/Cake_IFM11/app/Lib/data"
+// 				."/image_files_list";
+	
 	/****************************************
 		* csv files
 	****************************************/

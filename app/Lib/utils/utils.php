@@ -474,6 +474,7 @@
 		}//find_All_Images
 
 		/*******************************
+		 * @param $range_Start,End not including
 			@return array($result, $cnt_Images)<br>
 			null	=> data folder => not exist<br>
 		*******************************/
@@ -1123,15 +1124,15 @@
 		}//find_Image_First_By__MYSQL
 
 		public static function
-		get_Latest_File__By_FileName($fpath) {
+		get_Latest_File__By_FileName($dpath) {
 		
 			/*******************************
 			 dir list
 			*******************************/
 			//REF array_values http://stackoverflow.com/questions/7536961/reset-php-array-index Jeremy Banks♦
 			//REF scan dir http://php.net/manual/en/function.scandir.php#107215
-			$scanned_directory = array_values(array_diff(scandir($fpath), array('..', '.')));
-			// 			$scanned_directory = array_diff(scandir($fpath), array('..', '.'));
+			$scanned_directory = array_values(array_diff(scandir($dpath), array('..', '.')));
+			// 			$scanned_directory = array_diff(scandir($dpath), array('..', '.'));
 				
 // 			debug($scanned_directory);
 		
@@ -1167,7 +1168,7 @@
 			
 			$tmp_fname = implode(
 								DIRECTORY_SEPARATOR, 
-								array($fpath, $scanned_directory[0])
+								array($dpath, $scanned_directory[0])
 						);
 // 			$tmp_fname = $scanned_directory[0];
 			
@@ -1189,7 +1190,7 @@
 // 					$tmp_fname = $scanned_directory[$i];
 					$tmp_fname = implode(
 									DIRECTORY_SEPARATOR, 
-									array($fpath, $scanned_directory[$i]));
+									array($dpath, $scanned_directory[$i]));
 						
 // 					debug("\$tmp_fname is now => $tmp_fname");
 					
@@ -1215,7 +1216,7 @@
 			
 			if (!is_file($tmp_fname)) {
 				
-				debug("no file exists in: $fpath");
+				debug("no file exists in: $dpath");
 				
 				return null;
 				
@@ -1229,7 +1230,7 @@
 			return basename($tmp_fname);
 // 			return $tmp_fname;
 				
-		}//get_Latest_File__By_FileName($fpath)
+		}//get_Latest_File__By_FileName($dpath)
 
 		/*******************************
 			@return
