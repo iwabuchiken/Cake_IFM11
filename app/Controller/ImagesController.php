@@ -1412,81 +1412,196 @@ class ImagesController extends AppController {
 	im_Add_Image_Data() {
 
 		/*******************************
-			valid: remote server
+			gen: image file list
 		*******************************/
-		if (Utils::get_HostName() == "localhost") {
-				
-			debug("I am a local server. No op.");
+		$gen_ImageList = @$this->request->query['gen_ImageList'];
+		
+		if ($gen_ImageList != null && $gen_ImageList == "yes") {
+
+			debug("generating image file list...");
 			
-			return;
+			$this->im_Add_Image_Data__Gen_ImageList_File();
 			
-		}		
+		} else {//$gen_ImageList != null && $gen_ImageList == "yes"
+
+			debug("image file list => not generating...");
+			
+		}//$gen_ImageList != null && $gen_ImageList == "yes"
+
+		/*******************************
+			list: L1: Names from image file list
+		*******************************/
+		/*******************************
+			get: list file
+		*******************************/
+		$dpath = CONS::$dpath_ImageFiles_List;
+		
+		$latest_File_Name = Utils::get_Latest_File__By_FileName($dpath);
+		
+		debug("latest images list file => $latest_File_Name");
+		
+		$f_ImagesFiles_List = fopen("$dpath/$latest_File_Name", "r");
+		
+		debug("file opened => $latest_File_Name");
+		
+		// get: file names
+		$list_ImageFiles_Names = array();
+		
+		while ( ($data = fgetcsv($f_ImagesFiles_List) ) !== FALSE ) {
+
+			array_push($list_ImageFiles_Names, $data[1]);
+	
+		}
+
+		debug("\$list_ImageFiles_Names => ".count($list_ImageFiles_Names));
+		
+		debug(array_slice($list_ImageFiles_Names, 0, 3));
+		
+		// close
+		fclose($f_ImagesFiles_List);
 		
 		/*******************************
-			range
+			list: L2: Image instances from remote db table
+		*******************************/
+// 		$range_Start = "2015/10/01";
+// 		$range_End = "2015/11/01";
+
+// 		$images_MySQL = Utils::find_All_Images__DateRange(
+// 							"_id", 
+// 							"ASC", 
+// 							$range_Start, $range_End);
+				
+// 		debug("count(\$images_MySQL)".count($images_MySQL));
+
+		$range_Start = "2015-10-01";
+		
+		$range_End = "2015-11-01";
+		
+		$opt = array(
+
+				//ref http://book.cakephp.org/2.0/en/models/retrieving-your-data.html "CakePHP accepts all valid SQL boolean operations, including AND, OR, NOT, XOR, etc."
+				'conditions' => array(
+						
+								'AND' => array(
+										
+									array('Image.file_name >' => "$range_Start"),
+										
+									array('Image.file_name <' => "$range_End"),
+										
+// 									array('Image.file_name' => "> $range_Start"),
+										
+// 									array('Image.file_name' => "< $range_End"),
+										
+								),
+// 				'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
+// 				'conditions'	=> 
+// 						"Image.file_name > $range_Start AND Image.file_name < $range_End"
+		));
+		
+		$images_MySQL = $this->Image->find('all', $opt);
+
+		debug("count(\$images_MySQL) => ".count($images_MySQL));
+		
+		//debug
+		$count = 0;
+
+		foreach ($images_MySQL as $image) {
+		
+			debug($image['Image']['file_name']);
+			
+			$count += 1;
+			
+			if ($count > 5) {
+				
+				break;
+				
+			}//$count > 5
+			
+		}//foreach ($images_MySQL as $image)
+		
+		
+		
+	}//im_Add_Image_Data
+
+	public function
+	im_Add_Image_Data__Gen_ImageList_File() {
+
+		/*******************************
+		 valid: remote server
+		*******************************/
+		if (Utils::get_HostName() == "localhost") {
+		
+			debug("I am a local server. No op.");
+				
+			return;
+				
+		}
+		
+		/*******************************
+		 range
 		*******************************/
 		$range_Start = @$this->request->query['range_Start'];
 		
 		if ($range_Start === null) {
-			
+				
 			$range_Start = "2015-10-01";
-// 			$range_Start = "2015/10/01";
-			
+			// 			$range_Start = "2015/10/01";
+				
 		}//$range_Start === null
 		
 		$range_End = @$this->request->query['range_End'];
 		
 		if ($range_End === null) {
-			
+				
 			$range_End = "2015-11-01";
-// 			$range_End = "2015/11/01";
-			
+			// 			$range_End = "2015/11/01";
+				
 		}//$range_End === null
 		
 		debug("start => $range_Start || end => $range_End");
 		
 		/*******************************
-			list: remote mysql data
+		 list: remote mysql data
 		*******************************/
 		$list_Remote_DB = Utils::get_CsvLines_Images_FromRemote($range_Start, $range_End);
-// 		$csv_Lines = Utils::get_CsvLines_Images_FromRemote($range_Start, $range_End);
-// 		$csv_Lines = Utils::get_CsvLines_Images_FromRemote();
-
+		// 		$csv_Lines = Utils::get_CsvLines_Images_FromRemote($range_Start, $range_End);
+		// 		$csv_Lines = Utils::get_CsvLines_Images_FromRemote();
+		
 		/*******************************
-			list: remote mysql data => file names
+		 list: remote mysql data => file names
 		*******************************/
 		$list_Remote_DB_File_Names = array();
 		
 		foreach ($list_Remote_DB as $item) {
 		
 			array_push($list_Remote_DB_File_Names, $item[8]);
-			
+				
 		}//foreach ($list_Remote_DB as $item)
 		
 		debug("\$list_Remote_DB_File_Names[0] => "
 				.$list_Remote_DB_File_Names[0]);
 		
 		/*******************************
-			list: remote image files
+		 list: remote image files
 		*******************************/
 		$list_Remote_Images = Utils::get_Remote_ImageList($range_Start, $range_End);
-// 		$list_Remote_Images = Utils::get_Remote_ImageList();
+		// 		$list_Remote_Images = Utils::get_Remote_ImageList();
 		
 		debug("\$list_Remote_Images[0] => ".count($list_Remote_Images[0]));
 		
 		/*******************************
-			filter
+		 filter
 		*******************************/
 		$list_Missing_Files = array();
 		
 		foreach ($list_Remote_Images as $image_file_name) {
 		
 			if (!in_array($image_file_name, $list_Remote_DB_File_Names)) {
-				
+		
 				array_push($list_Missing_Files, $image_file_name);
-				
+		
 			}//!$list_Remote_DB_File_Names
-			
+				
 		}//foreach ($list_Remote_Images as $image_file)
 		
 		debug("missing files => ".count($list_Missing_Files));
@@ -1494,49 +1609,70 @@ class ImagesController extends AppController {
 		debug("\$list_Missing_Files[0] => ".$list_Missing_Files[0]);
 		
 		/*******************************
-			valid: any missing files
+		 valid: any missing files
 		*******************************/
 		if (count($list_Missing_Files) < 1) {
-			
+				
 			debug("no missing files");
-			
+				
 			return ;
-			
+				
 		}//count($list_Missing_Files < 1)
 		
 		/*******************************
-			save list to files
+		 save list to files
 		*******************************/
 		$time_Label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
-// 		$time_Label = Utils::get_CurrentTime2("serial");
+		// 		$time_Label = Utils::get_CurrentTime2("serial");
 		
-		$fname = sprintf("list_images_%s.txt", $time_Label);
-// 		$fname = "list_images.txt";
+		$fname = sprintf("list_images_%s.csv", $time_Label);
+// 		$fname = sprintf("list_images_%s.txt", $time_Label);
+		// 		$fname = "list_images.txt";
 		
 		debug("\$fname => ".$fname);
 		
-		$fpath = "/home/users/2/chips.jp-benfranklin/web"
-					."/cake_apps/Cake_IFM11/app/Lib/data"
-					."/$fname";
-
-		$f = fopen($fpath, "w");
-// 		$f = fopen($fpath, "r");
+		$dpath = "/home/users/2/chips.jp-benfranklin/web"
+				."/cake_apps/Cake_IFM11/app/Lib/data"
+				."/image_files_list";
 		
+		// valid: folder exists
+		if (!file_exists($dpath)) {
+			
+			mkdir($dpath);
+			
+			debug("folder => created: $dpath");
+			
+		} else {
+			
+			debug("folder => exists: $dpath");
+			
+		}
+		
+		$fpath = "$dpath/$fname";
+// 		$fpath = "/home/users/2/chips.jp-benfranklin/web"
+// 				."/cake_apps/Cake_IFM11/app/Lib/data"
+// 				."/image_files_list"
+// 				."/$fname";
+		
+		$f = fopen($fpath, "w");
+		// 		$f = fopen($fpath, "r");
+
 		// write
 		$count = 1;
-		
+
 		foreach ($list_Missing_Files as $name) {
-		
-			fwrite($f, sprintf("%d\t%s\n", $count, $name));
-			
+
+// 			fwrite($f, sprintf("%d\t%s\n", $count, $name));
+			fputcsv($f, array($count, $name));
+				
 			$count += 1;
 			
 		}//foreach ($list_Missing_Files as $name)
-		
+
 		fclose($f);
-		
+
 		debug("list => saved: ".$fpath);
 		
-	}//im_Add_Image_Data
+	}//im_Add_Image_Data__Gen_ImageList_File
 	
 }
