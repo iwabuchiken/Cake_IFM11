@@ -1429,6 +1429,271 @@ class ImagesController extends AppController {
 		}//$gen_ImageList != null && $gen_ImageList == "yes"
 
 		/*******************************
+			list: L2: data from sqlite bk file
+		*******************************/
+		
+		$images_SQLite_IFM11 = $this->im_Add_Image_Data__Get_BK_List();
+
+// 		//debug
+// 		$count = 0;
+		
+// 		debug("im_Add_Image_Data__Get_BK_List => done");
+
+// 		foreach ($images_SQLite_IFM11 as $item) {
+// 			// 		foreach ($result as $item) {
+		
+// 			$count += 1;
+				
+// 		}//foreach ($result as $item)
+		
+// 		debug("images_SQLite_IFM11 => $count");
+// 			// 		debug("result => $count");
+		
+// 		$count = 0;
+		
+// 		foreach ($images_SQLite_IFM11 as $image_SQLite_BK) {
+		
+// 			debug($count);
+			
+// 			debug($image_SQLite_BK);
+			
+// 			$count += 1;
+			
+// 			if ($count > 3) {
+				
+// 				break;
+				
+// 			}//$count > 3
+			
+// // 			break;
+			
+// 		}//foreach ($images_SQLite_IFM11 as $image_SQLite_BK)
+		
+		
+		
+// 		debug($images_SQLite_IFM11[0]);
+		
+		/*******************************
+			list: L3: data from remote mysql table
+		*******************************/
+		$images_MySQL_Images = $this->im_Add_Image_Data__Get_MySQL_List();
+
+		debug($images_MySQL_Images[0]['Image']['file_name']);
+// 		debug($images_MySQL_Images[0]);		//=> w
+// 		debug($images_MySQL_Images);
+		
+		$cnt_Images_MySQL = count($images_MySQL_Images);
+		
+		$images_MySQL_Images__FileNames = array();
+		
+
+		//debug
+		$count = 0;
+		
+		for ($i = 0; $i < $cnt_Images_MySQL; $i++) {
+
+// 			debug($images_MySQL_Images[$i]['Image']['file_name']);
+// 			debug($images_MySQL_Images[$i]);
+			
+			$name = $images_MySQL_Images[$i]['Image']['file_name'];
+			
+			array_push($images_MySQL_Images__FileNames, $name);
+			
+			$count += 1;
+			
+// 			if ($count > 3) {
+// 				break;
+// 			}//$count > 3
+			
+// 			$name = $image_MySQL_Images[$i]['Image']['file_name'];
+			
+// 			array_push($images_MySQL_Images__FileNames, $name);
+// // 			array_push($images_MySQL_Images__FileNames, $image_MySQL_Images[$i]['Image']['file_name']);
+			
+		}
+		
+		debug("\$images_MySQL_Images__FileNames => ".count($images_MySQL_Images__FileNames));
+		
+		debug(array_slice($images_MySQL_Images__FileNames, 0, 3));
+		
+// 		foreach ($images_MySQL_Images as $image_MySQL) {
+		
+// 			array_push($images_MySQL_Images__FileNames, $image_MySQL['Image']['file_name']);
+			
+// 		}//foreach ($images_MySQL_Images as $image_MySQL)
+		
+// 		/*******************************
+// 			list: L4: L3 - L2
+// 		*******************************/
+// 		$images_Missing_From_MySQL = array();
+		
+// 		debug($images_SQLite_IFM11[0]);
+		
+// 		foreach ($images_SQLite_IFM11 as $image_SQLite_BK) {
+		
+// 			if ($image_MySQL) {
+// 				;
+// 			}//$image_MySQL;
+			
+// 		}//foreach ($images_SQLite_IFM11 as $image_SQLite_BK)
+		
+		
+		
+		
+	}//im_Add_Image_Data
+
+	/*******************************
+		@return PDOStatement
+	*******************************/
+	public function
+	im_Add_Image_Data__Get_BK_List() {
+		
+		$fname_SQLite_IFM11 = "ifm11_backup_20151109_081050.bk";
+		
+		/*******************************
+			dir path
+		*******************************/
+		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+			$dpath = "C:\\WORKS\\WS\\Eclipse_Luna"
+						."\\Cake_IFM11\\app\\Lib"
+						."\\data";
+				
+		} else {
+				
+			$dpath = "/home/users/2/chips.jp-benfranklin/web"
+						."/cake_apps/Cake_IFM11/app/Lib"
+						."/data";
+				
+		}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+		
+		// file path
+		$fpath = implode(DIRECTORY_SEPARATOR, array($dpath, $fname_SQLite_IFM11));
+		
+		debug("\$fpath => ".$fpath);
+		
+		// images
+// 		$images_SQLite_IFM11 = Utils::find_All_Images__From_File("_id", "ASC",)
+		
+		$whereArgs = "WHERE file_name > "
+						."'"
+						."2015-10"
+// 						.CONS::$last_Added_From_DBFile
+						."'"
+						." AND "
+						."file_name < "
+						."'"
+						."2015-11"
+// 						.CONS::$last_Added_From_DBFile
+						."'"
+						;
+		
+		$result = Utils::find_All_Images__WhereArgs__FromFile(
+							"_id", "ASC", 
+							$whereArgs, $fpath);
+		
+// 		//debug
+// 		$count = 0;
+		
+// 		foreach ($result[0] as $item) {
+// // 		foreach ($result as $item) {
+		
+// 			$count += 1;
+			
+// 		}//foreach ($result as $item)
+		
+// 		debug("result[0] => $count");
+// // 		debug("result => $count");
+
+		/*******************************
+			return
+		*******************************/
+		return $result[0];
+		
+	}//im_Add_Image_Data__Get_BK_List
+
+	/*******************************
+		range => 2015-10-01 ~ 2015-11-01
+	*******************************/
+	public function
+	im_Add_Image_Data__Get_MySQL_List() {
+
+		$range_Start = "2015-10-01";
+		
+		$range_End = "2015-11-01";
+		
+		$opt = array(
+
+				//ref http://book.cakephp.org/2.0/en/models/retrieving-your-data.html "CakePHP accepts all valid SQL boolean operations, including AND, OR, NOT, XOR, etc."
+				'conditions' => array(
+						
+								'AND' => array(
+										
+									array('Image.file_name >' => "$range_Start"),
+										
+									array('Image.file_name <' => "$range_End"),
+										
+// 									array('Image.file_name' => "> $range_Start"),
+										
+// 									array('Image.file_name' => "< $range_End"),
+										
+								),
+// 				'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
+// 				'conditions'	=> 
+// 						"Image.file_name > $range_Start AND Image.file_name < $range_End"
+		));
+		
+		$images_MySQL = $this->Image->find('all', $opt);
+
+		debug("count(\$images_MySQL) => ".count($images_MySQL));
+		
+		//debug
+		$count = 0;
+
+// 		foreach ($images_MySQL as $image) {
+		
+// 			debug($image['Image']['file_name']);
+			
+// 			$count += 1;
+			
+// 			if ($count > 5) {
+				
+// 				break;
+				
+// 			}//$count > 5
+			
+// 		}//foreach ($images_MySQL as $image)
+
+		/*******************************
+			return
+		*******************************/
+		return $images_MySQL;
+// 		return $result[0];
+		
+	}//im_Add_Image_Data__Get_MySQL_List
+	
+	
+	public function
+	im_Add_Image_Data__DEPRECATED_S_13_SHARP_2() {
+
+		/*******************************
+			gen: image file list
+		*******************************/
+		$gen_ImageList = @$this->request->query['gen_ImageList'];
+		
+		if ($gen_ImageList != null && $gen_ImageList == "yes") {
+
+			debug("generating image file list...");
+			
+			$this->im_Add_Image_Data__Gen_ImageList_File();
+			
+		} else {//$gen_ImageList != null && $gen_ImageList == "yes"
+
+			debug("image file list => not generating...");
+			
+		}//$gen_ImageList != null && $gen_ImageList == "yes"
+
+		/*******************************
 			list: L1: Names from image file list
 		*******************************/
 		/*******************************
@@ -1521,7 +1786,7 @@ class ImagesController extends AppController {
 		
 		
 		
-	}//im_Add_Image_Data
+	}//im_Add_Image_Data__DEPRECATED_S_13_SHARP_2
 
 	public function
 	im_Add_Image_Data__Gen_ImageList_File() {
@@ -1566,7 +1831,7 @@ class ImagesController extends AppController {
 		$list_Remote_DB = Utils::get_CsvLines_Images_FromRemote($range_Start, $range_End);
 		// 		$csv_Lines = Utils::get_CsvLines_Images_FromRemote($range_Start, $range_End);
 		// 		$csv_Lines = Utils::get_CsvLines_Images_FromRemote();
-		
+
 		/*******************************
 		 list: remote mysql data => file names
 		*******************************/
