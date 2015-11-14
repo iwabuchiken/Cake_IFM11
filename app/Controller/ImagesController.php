@@ -1412,6 +1412,31 @@ class ImagesController extends AppController {
 	im_Add_Image_Data() {
 
 		/*******************************
+			valid: "GO" command given
+		*******************************/
+		$command = @$this->request->query['command'];
+		
+		if ($command == null || $command != "GO") {
+			
+			debug("No 'GO' command given. No operations => ?command=GO");
+			
+			return ;
+			
+		}//$command == null || $command != "GO"
+		
+		/*******************************
+			valid: remote server
+		*******************************/
+		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+			
+			debug("Not the remote server");
+			
+			return;
+				
+		}
+		
+		
+		/*******************************
 			gen: image file list
 		*******************************/
 		$gen_ImageList = @$this->request->query['gen_ImageList'];
@@ -1434,53 +1459,12 @@ class ImagesController extends AppController {
 		
 		$images_SQLite_IFM11 = $this->im_Add_Image_Data__Get_BK_List();
 
-// 		//debug
-// 		$count = 0;
-		
-// 		debug("im_Add_Image_Data__Get_BK_List => done");
-
-// 		foreach ($images_SQLite_IFM11 as $item) {
-// 			// 		foreach ($result as $item) {
-		
-// 			$count += 1;
-				
-// 		}//foreach ($result as $item)
-		
-// 		debug("images_SQLite_IFM11 => $count");
-// 			// 		debug("result => $count");
-		
-// 		$count = 0;
-		
-// 		foreach ($images_SQLite_IFM11 as $image_SQLite_BK) {
-		
-// 			debug($count);
-			
-// 			debug($image_SQLite_BK);
-			
-// 			$count += 1;
-			
-// 			if ($count > 3) {
-				
-// 				break;
-				
-// 			}//$count > 3
-			
-// // 			break;
-			
-// 		}//foreach ($images_SQLite_IFM11 as $image_SQLite_BK)
-		
-		
-		
-// 		debug($images_SQLite_IFM11[0]);
-		
 		/*******************************
 			list: L3: data from remote mysql table
 		*******************************/
 		$images_MySQL_Images = $this->im_Add_Image_Data__Get_MySQL_List();
 
-		debug($images_MySQL_Images[0]['Image']['file_name']);
-// 		debug($images_MySQL_Images[0]);		//=> w
-// 		debug($images_MySQL_Images);
+// 		debug($images_MySQL_Images[0]['Image']['file_name']);
 		
 		$cnt_Images_MySQL = count($images_MySQL_Images);
 		
@@ -1492,52 +1476,50 @@ class ImagesController extends AppController {
 		
 		for ($i = 0; $i < $cnt_Images_MySQL; $i++) {
 
-// 			debug($images_MySQL_Images[$i]['Image']['file_name']);
-// 			debug($images_MySQL_Images[$i]);
-			
 			$name = $images_MySQL_Images[$i]['Image']['file_name'];
 			
 			array_push($images_MySQL_Images__FileNames, $name);
 			
 			$count += 1;
 			
-// 			if ($count > 3) {
-// 				break;
-// 			}//$count > 3
-			
-// 			$name = $image_MySQL_Images[$i]['Image']['file_name'];
-			
-// 			array_push($images_MySQL_Images__FileNames, $name);
-// // 			array_push($images_MySQL_Images__FileNames, $image_MySQL_Images[$i]['Image']['file_name']);
-			
 		}
 		
-		debug("\$images_MySQL_Images__FileNames => ".count($images_MySQL_Images__FileNames));
-		
-		debug(array_slice($images_MySQL_Images__FileNames, 0, 3));
-		
-// 		foreach ($images_MySQL_Images as $image_MySQL) {
-		
-// 			array_push($images_MySQL_Images__FileNames, $image_MySQL['Image']['file_name']);
-			
-// 		}//foreach ($images_MySQL_Images as $image_MySQL)
-		
-// 		/*******************************
-// 			list: L4: L3 - L2
-// 		*******************************/
-// 		$images_Missing_From_MySQL = array();
+		/*******************************
+			list: L4: L3 - L2
+		*******************************/
+		$images_Missing_From_MySQL = array();
 		
 // 		debug($images_SQLite_IFM11[0]);
 		
-// 		foreach ($images_SQLite_IFM11 as $image_SQLite_BK) {
-		
+		foreach ($images_SQLite_IFM11 as $item) {
+
+			$file_name = $item['file_name'];
+			
+			if (!in_array($file_name, $images_MySQL_Images__FileNames)) {
+				
+				array_push($images_Missing_From_MySQL, $item);
+				
+			}//condition
+			
+// 			debug($image_SQLite_BK);
+			
+// 			break;
+			
 // 			if ($image_MySQL) {
 // 				;
 // 			}//$image_MySQL;
 			
-// 		}//foreach ($images_SQLite_IFM11 as $image_SQLite_BK)
+		}//foreach ($images_SQLite_IFM11 as $image_SQLite_BK)
 		
+		debug("images_Missing_From_MySQL => ".count($images_Missing_From_MySQL));
 		
+// 		debug(array_slice($images_Missing_From_MySQL, 0, 2));
+		
+		/*******************************
+			save missing image data => to remote mysql table
+		*******************************/
+		$res_Add_Data = Utils::add_ImageData_From_DB_File($images_Missing_From_MySQL, count($images_Missing_From_MySQL));
+// 		$res_Add_Data = Utils::add_ImageData_From_DB_File($images, $numOf_Images);
 		
 		
 	}//im_Add_Image_Data
