@@ -890,7 +890,8 @@
 		}//find_All_Images
 
 		/*******************************
-			@return array($result, $cnt_Images)
+			@return array($result, $cnt_Images)<br>
+			@param $sort_ColName
 		*******************************/
 		public static function
 		find_All_Images__WhereArgs
@@ -2269,6 +2270,35 @@
 // 			return $scanned_directory;
 			
 		}//get_Remote_ImageList
+
+		/*******************************
+			"2015/09/30 00:00:00.000" => ""2015-09-30_00-00-00.000""
+		*******************************/
+		public static function
+		conv_TimeLabel_Standard_2_FileNameFormat
+		($fname_orig) {
+			
+			$tokens = explode(" ", $fname_orig);
+			
+			$tokens_Date = explode("/", $tokens[0]);
+			$tokens_Time = explode(".", $tokens[1]);
+			$tokens_Time_Sec = explode(":", $tokens_Time[0]);
+			
+// 			debug($tokens_Time);
+			
+			$label_Date = implode("-", $tokens_Date);
+			
+			$label_Time_Sec = implode("-", $tokens_Time_Sec);
+			
+// 			debug("\$label_Date => $label_Date || \$label_Time_Sec => $label_Time_Sec");
+			
+			$label_Full = $label_Date."_$label_Time_Sec"."_".$tokens_Time[1];
+			
+// 			debug($label_Full);
+
+			return $label_Full;
+			
+		}//conv_TimeLabel_Standard_2_FileNameFormat($fname_orig)
 		
 	}//class Utils
 	

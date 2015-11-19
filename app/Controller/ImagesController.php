@@ -1009,6 +1009,11 @@ class ImagesController extends AppController {
 	
 	}//add
 
+	/*******************************
+		use => CONS::$adminKey_last_Added_From_DBFile<br>
+		convert => "2015/09/16 00:00:00.000" to "2015-09-16_00-00-00.000"
+		where args => "WHERE file_name > $last_Added_From_DBFile"
+	*******************************/
 	public function
 	add_From_DB_File() {
 
@@ -1044,13 +1049,19 @@ class ImagesController extends AppController {
 		
 // 		$last_Added_From_DBFile = CONS::$last_Added_From_DBFile;
 		
-		$whereArgs = "WHERE modified_at > "
+		// convert
+		$last_Added_From_DBFile = 
+				Utils::conv_TimeLabel_Standard_2_FileNameFormat($last_Added_From_DBFile);
+		
+		$whereArgs = "WHERE file_name > "
+// 		$whereArgs = "WHERE modified_at > "
 						."'"
 						.$last_Added_From_DBFile
 // 						.CONS::$last_Added_From_DBFile
 						."'";
 		
-		$result = Utils::find_All_Images__WhereArgs("modified_at", "DESC", $whereArgs);
+		$result = Utils::find_All_Images__WhereArgs("file_name", "DESC", $whereArgs);
+// 		$result = Utils::find_All_Images__WhereArgs("modified_at", "DESC", $whereArgs);
 // 		$result = Utils::find_All_Images__WhereArgs("_id", "ASC", $whereArgs);
 		
 		$images = $result[0];
@@ -1217,22 +1228,13 @@ class ImagesController extends AppController {
 	
 	public function
 	image_manager() {
+
+// 		//test
+// 		$fname_orig = "2015/09/30 00:00:00.000";
 		
-// 		/*******************************
-// 			valid: local server?
-// 		*******************************/
-// 		if (env('SERVER_NAME') !== 'localhost') {	//REF api http://php.net/manual/ja/reserved.variables.server.php
-// 			// 		if (env('SERVER_ADDR') !== '127.0.0.1') {	//=> false returned
-// 			// 			$this->default = $this->development;
-// 			debug("not local");
-			
-// // 			return ;
-	
-// 		} else {
-			
-// 			debug("local");
-			
-// 		}
+// 		$fname_new = Utils::conv_TimeLabel_Standard_2_FileNameFormat($fname_orig);
+		
+// 		debug("$fname_orig, $fname_new");
 		
 		/*******************************
 			get: images

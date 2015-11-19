@@ -39,6 +39,9 @@
 			?>
 			
 		</td>
+
+	</tr>
+	<tr>
 		
 		<td>
 		
@@ -58,6 +61,20 @@
 								array('controller' => 'admins', 
 										'action' => 'index'),
 								array('class' => "button"));
+			?>
+			
+		</td>
+		
+		<td>
+		
+			<?php echo $this->Html->link(
+								'Remote: images',
+								'http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images',
+								array(
+										'class' => "button",
+										'target'	=> "_blank"
+									)
+								);
 			?>
 			
 		</td>
