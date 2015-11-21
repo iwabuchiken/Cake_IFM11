@@ -1235,12 +1235,40 @@ class ImagesController extends AppController {
 // 		$fname_new = Utils::conv_TimeLabel_Standard_2_FileNameFormat($fname_orig);
 		
 // 		debug("$fname_orig, $fname_new");
+
+		/*******************************
+			prep: params
+		*******************************/
+		$sort = @$this->request->query['sort'];
+		$direction = @$this->request->query['direction'];
 		
 		/*******************************
 			get: images
 		*******************************/
-		$sort_ColName = "_id";
-		$sort_Direction = "DESC";
+		if ($sort != null) {
+		
+			$sort_ColName = $sort;
+		
+		} else {
+		
+			$sort_ColName = "_id";
+			
+		}//if ($sort != null)
+		
+		if ($direction != null) {
+		
+			$sort_Direction = $direction;
+		
+		} else {
+		
+			$sort_Direction = "DESC";
+			
+		}//if ($direction != null)
+		
+		
+		
+// 		$sort_ColName = "_id";
+// 		$sort_Direction = "DESC";
 		
 		$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
 // 		$images = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
