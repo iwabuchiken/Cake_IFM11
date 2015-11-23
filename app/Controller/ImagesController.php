@@ -1009,6 +1009,300 @@ class ImagesController extends AppController {
 	
 	}//add
 
+	public function 
+	add_Fix() {
+		
+		/*******************************
+		 valid: "GO" command given
+		*******************************/
+		$command = @$this->request->query['command'];
+		
+		if ($command == null || $command != "GO") {
+				
+			debug("No 'GO' command given. No operations => ?command=GO");
+				
+			return ;
+				
+		}//$command == null || $command != "GO"
+		
+		/*******************************
+		 valid: remote server
+		*******************************/
+		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+			debug("Not the remote server");
+				
+			return;
+		
+		}
+		
+		/**************************************************************
+			get: image file list => /cake_apps/images/ifm11
+		**************************************************************/
+// 		"/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+		
+		$dpath_Image_Files = "/home/users/2/chips.jp-benfranklin/web/cake_apps/images/ifm11";
+// 		$dpath_Image_Files = "/cake_apps/images/ifm11";
+		
+		$list_Files = array_values(array_diff(
+						scandir($dpath_Image_Files), array('..', '.')));
+		
+		debug("\$list_Files =>".count($list_Files));
+		
+		debug(array_slice($list_Files, 0, 3));
+		
+		/*******************************
+			set:start, end
+		*******************************/
+		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
+		
+		if ($start === null) {
+			
+			$start = "2015-08-15";
+			
+		}//$start === null
+		
+		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
+
+		if ($end === null) {
+				
+			$end = "2015-09-03";
+				
+		}//$start === null
+		
+// 		$start = "2015-08-31";
+// 		$end = "2015-09-03";
+// 		$start = "2005-08-31";
+// 		$end = "2005-09-03";
+		
+		debug(sprintf("start = %s / end = %s", $start, $end));
+		
+		$list_Files__Filtered = array();
+		
+		foreach ($list_Files as $file_Name) {
+		
+			if ($file_Name >= $start && $file_Name <= $end) {
+				
+				array_push($list_Files__Filtered, $file_Name);
+				
+			}//$file_Name >= $start && $file_Name <= $end;
+			
+		}//foreach ($list_Files as $file_Name)
+		
+		debug("\$list_Files__Filtered => ".count($list_Files__Filtered));
+// 		debug("\$file_Name => ".count($file_Name));
+		
+// 		debug($list_Files__Filtered);
+		
+		/*******************************
+			valid: any entry
+		*******************************/
+		if (count($list_Files__Filtered) < 1) {
+// 		if (count($list_Files__Filtered < 1)) {
+			
+			debug("filtered files => less than 1");
+			
+			return;
+			
+		}//count($list_Files__Filtered < 1)
+		
+		/**************************************************************
+			list: images in the mysql table
+		**************************************************************/
+		$opt = array(
+			
+				'conditions' => array(
+
+						'AND' => array(
+					
+								"Image.file_name >=" => $start,
+								
+								"Image.file_name <=" => $end,
+						)
+				)
+		);
+		
+		$images_MySQL = $this->Image->find('all', $opt);
+		
+		debug("\$images_MySQL => ".count($images_MySQL));
+		
+		/*******************************
+			list: names from mysql data
+		*******************************/
+		$images_MySQL__File_Names = array();
+		
+		foreach ($images_MySQL as $image) {
+		
+			array_push($images_MySQL__File_Names, $image['Image']['file_name']);
+			
+		}//foreach ($images_MySQL as $image)
+		
+		debug("\$images_MySQL__File_Names => ".count($images_MySQL__File_Names));
+
+		sort($images_MySQL__File_Names);
+		
+		// unique
+		$images_MySQL__File_Names = array_unique($images_MySQL__File_Names);
+		
+		debug("\$images_MySQL__File_Names => ".count($images_MySQL__File_Names));
+		
+		/*******************************
+			filter
+		*******************************/
+		$list_Files__Not_In_Remote = array();
+		
+		foreach ($list_Files__Filtered as $fname) {
+		
+			if (!in_array($fname, $images_MySQL__File_Names)) {
+				
+				array_push($list_Files__Not_In_Remote, $fname);
+				
+			}//!in_array($fname, $images_MySQL__File_Names);
+			
+		}//foreach ($list_Files__Filtered as $fname)
+		
+		debug("\$list_Files__Not_In_Remote => ".count($list_Files__Not_In_Remote));
+		
+		debug($list_Files__Not_In_Remote);
+		
+		$this->add_Fix__Save_New_Files($list_Files__Not_In_Remote);
+// 		$this->add_Fix__Save_New_Files($list_Files__Filtered);
+		
+// 		/*******************************
+// 			save new files
+// 		*******************************/
+// 		$cnt_Files_Saved = 0;
+// 		$cnt_Files_Not_Saved = 0;
+		
+// 		foreach ($list_Files__Filtered as $fname) {
+		
+// 			$this->Image->create();
+			
+// 			$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+// 			$this->Image->set("created_at", $time);
+			
+// 			$this->Image->set("updated_at", $time);
+			
+// 			$this->Image->set("local_id", null);
+				
+// 			$this->Image->set("local_created_at", null);
+			
+// 			$this->Image->set("local_modified_at", null);
+				
+// 			$this->Image->set("file_id", null);
+				
+// 			$this->Image->set("file_path", null);
+			
+// 			$this->Image->set("file_name", $fname);
+			
+// 			$this->Image->set("local_date_added", null);
+			
+// 			$this->Image->set("local_date_modified", null);
+			
+// 			$this->Image->set("memos", null);
+			
+// 			$this->Image->set("tags", null);
+			
+// 			$this->Image->set("local_last_viewed_at", null);
+			
+// 			$this->Image->set("table_name", "ifm11");
+
+// 			/*******************************
+// 				save
+// 			*******************************/
+// 			if ($this->Image->save()) {
+			
+// 				debug("image => saved: ".$fname);
+
+// 				$cnt_Files_Saved += 1;
+			
+// 			} else {
+			
+// 				debug("image => NOT saved: ".$fname);
+			
+// 				$cnt_Files_Not_Saved += 1;
+			
+// 			}
+				
+// 		}//foreach ($list_Files__Filtered as $fname)
+		
+// 		debug(sprintf("total = %d / saved = %d / not saved = %d", 
+// 				count($list_Files__Filtered), 
+// 				$cnt_Files_Saved, 
+// 				$cnt_Files_Not_Saved));
+		
+	}//add_Fix
+
+	public function 
+	add_Fix__Save_New_Files($list_Files__Filtered) {
+		
+		/*******************************
+			save new files
+		*******************************/
+		$cnt_Files_Saved = 0;
+		$cnt_Files_Not_Saved = 0;
+		
+		foreach ($list_Files__Filtered as $fname) {
+		
+			$this->Image->create();
+			
+			$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+			$this->Image->set("created_at", $time);
+			
+			$this->Image->set("updated_at", $time);
+			
+			$this->Image->set("local_id", null);
+				
+			$this->Image->set("local_created_at", null);
+			
+			$this->Image->set("local_modified_at", null);
+				
+			$this->Image->set("file_id", null);
+				
+			$this->Image->set("file_path", null);
+			
+			$this->Image->set("file_name", $fname);
+			
+			$this->Image->set("local_date_added", null);
+			
+			$this->Image->set("local_date_modified", null);
+			
+			$this->Image->set("memos", null);
+			
+			$this->Image->set("tags", null);
+			
+			$this->Image->set("local_last_viewed_at", null);
+			
+			$this->Image->set("table_name", "ifm11");
+
+			/*******************************
+				save
+			*******************************/
+			if ($this->Image->save()) {
+			
+				debug("image => saved: ".$fname);
+
+				$cnt_Files_Saved += 1;
+			
+			} else {
+			
+				debug("image => NOT saved: ".$fname);
+			
+				$cnt_Files_Not_Saved += 1;
+			
+			}
+				
+		}//foreach ($list_Files__Filtered as $fname)
+		
+		debug(sprintf("total = %d / saved = %d / not saved = %d", 
+				count($list_Files__Filtered), 
+				$cnt_Files_Saved, 
+				$cnt_Files_Not_Saved));
+		
+	}//add_Fix__Save_New_Files
+
 	/*******************************
 		use => CONS::$adminKey_last_Added_From_DBFile<br>
 		convert => "2015/09/16 00:00:00.000" to "2015-09-16_00-00-00.000"

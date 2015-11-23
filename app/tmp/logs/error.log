@@ -914,3 +914,15 @@ Stack Trace:
 #5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2015-11-23 02:49:53 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Images\add_fix.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Images\\add_fix.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/add_fix
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
