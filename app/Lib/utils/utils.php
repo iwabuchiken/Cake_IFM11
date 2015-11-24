@@ -2211,7 +2211,6 @@
 				"existing_data_Failed"<br>
 			)
 		*******************************/
-		
 		public static function
 		add_ImageData_From_DB_File($images, $numOf_Images) {
 // 		add_ImageData_From_DB_File() {
@@ -2333,6 +2332,140 @@
 
 		/*******************************
 			@return<br>
+			array(
+				"total_data"<br>		
+				"new_data_Success"<br>	
+				"new_data_Failed"<br>	
+					
+				"existing_data_Success"<br>	
+				"existing_data_Failed"<br>
+			)
+		*******************************/
+		public static function
+		add_ImageData__MySQL_NotInCSV_2_CSV($images) {
+// 		add_ImageData_From_DB_File() {
+
+// 			$model = ClassRegistry::init('Image');
+
+			$result = array(
+				"total_data"		=> 0,
+				"new_data_Success"	=> 0,
+				"new_data_Failed"	=> 0,
+					
+				"existing_data_Success"	=> 0,
+				"existing_data_Failed"	=> 0,
+					
+			);
+			
+			//debug
+			$count = 0;
+			
+			$max = 10;
+			
+			foreach ($images as $img) {
+			
+// 				if ($count > $max) {
+// // 				if ($count > 5) {
+					
+// 					break;
+					
+// 				}//$count 
+
+				/*******************************
+					judge: data already in the mysql table
+				*******************************/
+// 				$file_name = $img['file_name'];
+				
+// 				$res_B = Utils::isIn_DB_Image_Data_By_FileName($file_name);
+				
+// // 				debug($img);
+				
+// 				if ($res_B == false) {	// new image data
+				
+					$tmp_B = Utils::add_ImageData__MySQL_NotInCSV_2_CSV__NewData($img);
+// 					$tmp_B = Utils::add_ImageData_From_DB_File__NewModel($model, $img);
+// 					$tmp_B = Utils::add_ImageData_From_DB_File__NewData($model, $img);
+// 					Utils::add_ImageData_From_DB_File__NewData($img);
+
+					if ($tmp_B == true) {
+					
+						$result['new_data_Success'] += 1;
+					
+					} else {
+					
+						$result['new_data_Failed'] += 1;
+						
+					}//if ($tmp_B == true)
+					
+// 				} else {				// existing image data
+				
+// // 					debug("is in DB => ".$img['file_name']);
+					
+// 					$tmp_B = Utils::add_ImageData_From_DB_File__UpdateData($model, $img);
+
+// 					if ($tmp_B == true) {
+							
+// 						$result['existing_data_Success'] += 1;
+							
+// 					} else {
+							
+// 						$result['existing_data_Failed'] += 1;
+					
+// 					}//if ($tmp_B == true)
+								
+// 				}//if ($res_B == false)
+				
+				// count
+				$count = $count + 1;
+				
+			}//foreach ($images as $img)
+			
+			$result['total_data'] = $count;
+
+			/*******************************
+				log
+			*******************************/
+// 			"total_data"		=> 0,
+// 			"new_data_Success"	=> 0,
+// 			"new_data_Failed"	=> 0,
+				
+// 			"existing_data_Success"	=> 0,
+// 			"existing_data_Failed"	=> 0,
+				
+			//ref http://php.net/manual/en/function.serialize.php
+// 			$msg = serialize($result);
+			$msg = sprintf(
+					"update: total = %d, "
+					."new.success = %d, new.failed = %d"
+					.", "
+					."existing.success = %d, existing.failed = %d",
+					$result['total_data'],
+					$result['new_data_Success'], $result['new_data_Failed'],
+					$result['existing_data_Success'], $result['existing_data_Failed']
+					);
+			
+// 			debug($msg);
+			
+			Utils::write_Log(
+			
+						Utils::get_dPath_Log(),
+// 						CONS::get_dPath_Log(),
+						$msg,
+						__FILE__,
+						__LINE__
+						
+			);
+			
+			/*******************************
+				return
+			*******************************/
+			return $result;
+// 			return true;
+			
+		}//add_ImageData__MySQL_NotInCSV_2_CSV
+
+		/*******************************
+			@return<br>
 			true	=> data saved<br>
 			false	=> data NOT saved<br>
 		*******************************/
@@ -2393,6 +2526,199 @@
 			}
 					
 		}//add_ImageData_From_DB_File__NewData($img)
+		
+		/*******************************
+		 * @param $model	Image<br>
+		 * @param $img		$img['Image'][***]<br>
+			@return<br>
+			true	=> data saved<br>
+			false	=> data NOT saved<br>
+		*******************************/
+		public static function
+		add_ImageData__MySQL_NotInCSV_2_CSV__NewData($img) {
+// 		add_ImageData__MySQL_NotInCSV_2_CSV__NewModel($model, $img) {
+// 		add_ImageData_From_DB_File__NewModel($model, $img) {
+
+// 			/*******************************
+// 				model
+// 			*******************************/
+// 			$model->create();
+
+			/*******************************
+			 PDO file
+			*******************************/
+			$fpath = "";
+			
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+					
+				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+				// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+					
+			} else {
+					
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+				// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+				// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+				
+			/*******************************
+			 validate: db file exists
+			*******************************/
+			$res = file_exists($fpath);
+				
+			if ($res == false) {
+					
+				debug("data folder => not exist: $fpath");
+			
+				return null;
+					
+			} else {
+			
+				debug("data folder => exists: $fpath");
+			
+			}
+			
+			/*******************************
+			 get: the latest db file
+			*******************************/
+			$fname = Utils::get_Latest_File__By_FileName($fpath);
+			
+			/*******************************
+			 valid: file exists
+			*******************************/
+			if ($fname == null) {
+					
+				debug("Utils::get_Latest_File__By_FileName => returned null");
+					
+				return null;
+					
+			}//$fname == null
+				
+			$fpath .= DIRECTORY_SEPARATOR.$fname;
+			
+			debug("fpath => $fpath");
+				
+			/*******************************
+			 pdo: setup
+			*******************************/
+			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+			$file_db = new PDO("sqlite:$fpath");
+			
+			if ($file_db === null) {
+					
+				debug("pdo => null");
+					
+				return null;
+					
+			} else {
+			
+				debug("pdo => created");
+			
+			}
+			
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+
+			/*******************************
+				prep: data for insertion
+			*******************************/
+			$sql = "INSERT INTO ifm11 (date_added, file_name) VALUES (?, ?)";
+			
+			$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+			$data = array(
+				
+					$time,
+					$img['Image']['file_name'],
+					
+			);
+			
+			/*******************************
+				insert data
+			*******************************/
+			//ref http://stackoverflow.com/questions/1176122/how-do-i-insert-into-pdo-sqllite3 answered Jul 24 '09 at 7:14
+			$qry = $file_db->prepare($sql);
+// 			$qry = $file_db->prepare(
+// 			$qry = $db->prepare(
+// 					'INSERT INTO ifm11 (file_name) VALUES (?)');
+// 					'INSERT INTO twocents (path, name, message) VALUES (?, ?, ?)');
+			
+			//ref http://php.net/manual/en/pdostatement.execute.php
+			$res = $qry->execute($data);
+// 			$res = $qry->execute(array($img['Image']['file_name']));
+// 			$qry->execute(array($path, $name, $message));
+
+			//debug
+			if ($res === true) {
+			
+				debug("execute => true: ".$img['Image']['file_name']);
+			
+			} else {
+			
+				debug("execute => false: ".$img['Image']['file_name']);
+				
+			}//if ($res === true)
+			
+			
+			
+			/*******************************
+			 pdo => reset
+			*******************************/
+			$file_db = null;
+												
+			/*******************************
+				set values
+			*******************************/
+			$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+
+// 			$model->set("created_at", $tmp);
+				
+// 			$model->set("updated_at", $tmp);
+			
+// 			$model->set("local_id", $img['Image']['_id']);
+			
+// 			$model->set("local_created_at", $img['Image']['created_at']);
+				
+// 			$model->set("local_modified_at", $img['Image']['modified_at']);
+			
+// 			$model->set("file_id", $img['Image']['file_id']);
+			
+// 			$model->set("file_path", $img['Image']['file_path']);
+				
+// 			$model->set("file_name", $img['Image']['file_name']);
+				
+// 			$model->set("local_date_added", $img['Image']['date_added']);
+				
+// 			$model->set("local_date_modified", $img['Image']['date_modified']);
+				
+// 			$model->set("memos", $img['Image']['memos']);
+				
+// 			$model->set("tags", $img['Image']['tags']);
+				
+// 			$model->set("local_last_viewed_at", $img['Image']['last_viewed_at']);
+				
+// 			$model->set("table_name", $img['Image']['table_name']);
+	
+			//test
+			return false;
+			
+// 			if ($model->save()) {
+
+// 				debug("image => saved: ".$img['file_name']);
+
+// 				return true;
+				
+// 			} else {
+
+// 				debug("image => NOT saved: ".$img['file_name']);
+
+// 				return false;
+				
+// 			}
+					
+		}//add_ImageData__MySQL_NotInCSV_2_CSV__NewData
 		
 		/*******************************
 			$img	=> data from local sqlite file<br>

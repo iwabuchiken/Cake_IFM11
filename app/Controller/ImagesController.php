@@ -1330,6 +1330,18 @@ class ImagesController extends AppController {
 				
 		}
 		
+		/*******************************
+		 valid: "GO" command given
+		*******************************/
+		$command = @$this->request->query['command'];
+		
+		if ($command == null || $command != "GO") {
+				
+// 			debug("No 'GO' command given. No operations => ?command=GO");
+				
+			return ;
+				
+		}//$command == null || $command != "GO"
 		
 // 		$res = Utils::add_ImageData_From_DB_File();
 
@@ -1836,7 +1848,14 @@ class ImagesController extends AppController {
 			
 		}//foreach ($images_MySQL_NotIn_CSV as $elem)
 		
-		debug(array_slice($images_MySQL_NotIn_CSV__Names, 0, 30));
+// 		debug(array_slice($images_MySQL_NotIn_CSV__Names, 0, 30));
+		
+		/*******************************
+			"NotIn_CSV" images => save to CSV db file
+		*******************************/
+		$res_Str = Utils::add_ImageData__MySQL_NotInCSV_2_CSV($images_MySQL_NotIn_CSV);
+		
+		debug($res_Str);
 		
 	}//image_manager__Update_CSV()
 	
