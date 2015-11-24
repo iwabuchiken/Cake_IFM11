@@ -1009,6 +1009,12 @@ class ImagesController extends AppController {
 	
 	}//add
 
+	/*******************************
+		1) add image data to mysql table<br>
+			=> those image files that are not recorded yet in the mysql table<br>
+		2) Ranges are given by the admin values<br>
+			=> add_image_Range_Start, add_image_Range_End
+	*******************************/
 	public function 
 	add_Fix() {
 		
@@ -1318,6 +1324,8 @@ class ImagesController extends AppController {
 			
 			debug("Not the remote server");
 			
+			$this->add_From_DB_File__Local();
+			
 			return;
 				
 		}
@@ -1375,7 +1383,83 @@ class ImagesController extends AppController {
 		
 	}//add_From_DB_File
 	
-	public function delete($id) {
+	public function 
+	add_From_DB_File__Local() {
+		
+		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\csv";
+// 		$dpath_Src = "lib\\data\\csv";
+		
+		$fname_Src = "images.csv";
+		
+		$fpath_Src = implode(DIRECTORY_SEPARATOR, array($dpath_Src, $fname_Src));
+		
+		debug("\$fpath_Src => ".$fpath_Src);
+		
+		$f_CSV = fopen($fpath_Src, "r");
+		
+		/*******************************
+		 read lines
+		*******************************/
+		$csv_Lines = array();
+		
+		//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
+		while ( ($data = fgetcsv($f_CSV) ) !== FALSE ) {
+		
+			array_push($csv_Lines, $data);
+		
+		}
+		
+		debug("csv lines => ".count($csv_Lines));
+
+		debug(array_slice($csv_Lines, 0, 3));
+		
+		// 		(int) 0 => '2',
+		// 		(int) 1 => 'null',
+		// 		(int) 2 => 'null',
+		// 		(int) 3 => '38',
+		// 		(int) 4 => '2014/08/12 17:39:54.454',
+		// 		(int) 5 => '2014/08/20 11:27:08.197',
+		// 		(int) 6 => '7809',
+		// 		(int) 7 => '2014-08-12_12-17-13_686.jpg',
+		// 		(int) 8 => '2014-08-12_12-17-13_686.jpg',
+		// 		(int) 9 => '2014/08/12 12:17:13.000',
+		// 		(int) 10 => '2014/08/12 12:17:14.000',
+		// 		(int) 11 => ':PLANTS　プランター　オクラ',
+		// 		(int) 12 => '',
+		// 		(int) 13 => '',
+		// 		(int) 14 => 'ifm11__PLANTS'
+		
+		/*******************************
+			filter: by file_name
+		*******************************/
+		$start = "2015-08-15";
+		$end = "2015-09-01";
+		
+		debug("start = $start / end = $end");
+		
+		$csv_Lines__Filtered = array();
+		
+		foreach ($csv_Lines as $line) {
+		
+			if ($line[8] >= $start && $line[8] <= $end) {
+				
+				array_push($csv_Lines__Filtered, $line);
+				
+			}//$line[8] >= $start && $line[8] <= $end;
+			
+		}//foreach ($csv_Lines as $line)
+		
+		debug("\$csv_Lines__Filtered => ".count($csv_Lines__Filtered));
+		
+		/*******************************
+			close
+		*******************************/
+		fclose($f_CSV);
+		
+	}//add_From_DB_File__Local()
+	
+	public function 
+	delete($id) {
 		/******************************
 	
 		validate
@@ -1523,6 +1607,22 @@ class ImagesController extends AppController {
 	public function
 	image_manager() {
 
+		/*******************************
+			query: update csv
+		*******************************/
+		@$param_ACTION = $this->request->query['action'];
+		
+		if ($param_ACTION != null && $param_ACTION == "UPDATE_CSV") {
+			
+			$this->image_manager__Update_CSV();
+			
+			//ref http://book.cakephp.org/2.0/en/controllers.html "// Render the element in /View/Elements/ajaxreturn.ctp"
+			$this->render("/Elements/plain");
+			
+			return;
+			
+		}//$param_ACTION != null && $param_ACTION == ""
+		
 // 		//test
 // 		$fname_orig = "2015/09/30 00:00:00.000";
 		
@@ -1599,6 +1699,147 @@ class ImagesController extends AppController {
 		
 	}//image_manager
 
+	public function
+	image_manager__Update_CSV() {
+		
+		debug("image_manager__Update_CSV()");
+
+		$dpath = "/home/users/2/chips.jp-benfranklin/web/cake_apps"
+					."/Cake_IFM11/app/Lib/data";
+		
+		/*******************************
+		 get: the latest db file
+		*******************************/
+		$fname = Utils::get_Latest_File__By_FileName($dpath);
+		
+		/*******************************
+		 valid: file exists
+		*******************************/
+		if ($fname == null) {
+		
+			debug("Utils::get_Latest_File__By_FileName => returned null");
+		
+			return null;
+		
+		}//$fname == null
+			
+// 		$fpath .= DIRECTORY_SEPARATOR.$fname;
+		
+// 		$fname = "ifm11_backup.bk";
+		
+		$fpath = implode(DIRECTORY_SEPARATOR, array($dpath, $fname));
+		
+// 		debug($fpath);
+// 		debug($dpath);
+		
+		/*******************************
+			valid: file exists
+		*******************************/
+		if (!file_exists($fpath)) {
+			
+			debug("file => not exist: $fpath");
+			
+			return;
+			
+		} else {//!file_exists($fpath)
+			
+			debug("file => exists: $fpath");
+			
+		}
+		
+		/*******************************
+			list: from => remote csv file: L1
+		*******************************/
+		$start = "2015-09-01";
+		$end = "2015-09-15";
+		
+		$result = Utils::find_All_Images__Range_By_FileName(
+						"file_name", 
+						"DESC", 
+						$start, 
+						$end);
+// 						"2015-09-01", 
+// 						"2015-09-15");
+		
+		$images_CSV = $result[0];
+		
+		debug($result[1]);
+
+		/*******************************
+		 list: from => remote csv file: names list: L1'
+		*******************************/
+		$images_CSV__Names = array();
+		
+		foreach ($images_CSV as $item) {
+		
+			array_push($images_CSV__Names, $item['file_name']);
+// 			array_push($images_CSV__Names, $item[8]);
+			
+		}//foreach ($images_CSV as $item)
+		
+		debug("images_CSV__Names");
+		debug(array_slice($images_CSV__Names, 0, 3));
+		
+		/*******************************
+			list: from => remote mysql table: L2
+		*******************************/
+		$opt = array(
+	
+			'conditions' => array(
+	
+					'AND' => array(
+				
+							"Image.file_name >=" => $start,
+							
+							"Image.file_name <=" => $end,
+					)
+			)
+		);
+		
+		$images_MySQL = $this->Image->find('all', $opt);
+		
+		debug("\$images_MySQL => ".count($images_MySQL));
+		
+		/*******************************
+			new list: mysql records not in the csv file
+		*******************************/
+		$images_MySQL_NotIn_CSV = array();
+		
+		foreach ($images_MySQL as $image) {
+		
+			if (!in_array($image['Image']['file_name'], $images_CSV__Names)) {
+				
+				array_push($images_MySQL_NotIn_CSV, $image);
+				
+			}//!in_array($image['Image']['file_name'], $images_CSV__Names);
+			
+		}//foreach ($images_MySQL as $image)
+		
+		debug("images_MySQL_NotIn_CSV => ".count($images_MySQL_NotIn_CSV));
+		
+		$len_Images_MySQL_NotIn_CSV = count($images_MySQL_NotIn_CSV);
+		
+// 		debug(array_slice(
+// 				$images_MySQL_NotIn_CSV, 
+// 				$len_Images_MySQL_NotIn_CSV - 3, 
+// 				$len_Images_MySQL_NotIn_CSV - 1));
+// 		debug(array_slice($images_MySQL_NotIn_CSV, 0, 3));
+		
+		/*******************************
+		 new list: mysql records not in the csv file: names
+		*******************************/
+		$images_MySQL_NotIn_CSV__Names = array();
+		
+		foreach ($images_MySQL_NotIn_CSV as $elem) {
+		
+			array_push($images_MySQL_NotIn_CSV__Names, $elem['Image']['file_name']);
+			
+		}//foreach ($images_MySQL_NotIn_CSV as $elem)
+		
+		debug(array_slice($images_MySQL_NotIn_CSV__Names, 0, 30));
+		
+	}//image_manager__Update_CSV()
+	
 	public function
 	edit_image_data($id = null) {
 		
