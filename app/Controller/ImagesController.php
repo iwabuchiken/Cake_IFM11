@@ -1174,70 +1174,6 @@ class ImagesController extends AppController {
 		$this->add_Fix__Save_New_Files($list_Files__Not_In_Remote);
 // 		$this->add_Fix__Save_New_Files($list_Files__Filtered);
 		
-// 		/*******************************
-// 			save new files
-// 		*******************************/
-// 		$cnt_Files_Saved = 0;
-// 		$cnt_Files_Not_Saved = 0;
-		
-// 		foreach ($list_Files__Filtered as $fname) {
-		
-// 			$this->Image->create();
-			
-// 			$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-			
-// 			$this->Image->set("created_at", $time);
-			
-// 			$this->Image->set("updated_at", $time);
-			
-// 			$this->Image->set("local_id", null);
-				
-// 			$this->Image->set("local_created_at", null);
-			
-// 			$this->Image->set("local_modified_at", null);
-				
-// 			$this->Image->set("file_id", null);
-				
-// 			$this->Image->set("file_path", null);
-			
-// 			$this->Image->set("file_name", $fname);
-			
-// 			$this->Image->set("local_date_added", null);
-			
-// 			$this->Image->set("local_date_modified", null);
-			
-// 			$this->Image->set("memos", null);
-			
-// 			$this->Image->set("tags", null);
-			
-// 			$this->Image->set("local_last_viewed_at", null);
-			
-// 			$this->Image->set("table_name", "ifm11");
-
-// 			/*******************************
-// 				save
-// 			*******************************/
-// 			if ($this->Image->save()) {
-			
-// 				debug("image => saved: ".$fname);
-
-// 				$cnt_Files_Saved += 1;
-			
-// 			} else {
-			
-// 				debug("image => NOT saved: ".$fname);
-			
-// 				$cnt_Files_Not_Saved += 1;
-			
-// 			}
-				
-// 		}//foreach ($list_Files__Filtered as $fname)
-		
-// 		debug(sprintf("total = %d / saved = %d / not saved = %d", 
-// 				count($list_Files__Filtered), 
-// 				$cnt_Files_Saved, 
-// 				$cnt_Files_Not_Saved));
-		
 	}//add_Fix
 
 	public function 
@@ -1831,12 +1767,6 @@ class ImagesController extends AppController {
 		
 		$len_Images_MySQL_NotIn_CSV = count($images_MySQL_NotIn_CSV);
 		
-// 		debug(array_slice(
-// 				$images_MySQL_NotIn_CSV, 
-// 				$len_Images_MySQL_NotIn_CSV - 3, 
-// 				$len_Images_MySQL_NotIn_CSV - 1));
-// 		debug(array_slice($images_MySQL_NotIn_CSV, 0, 3));
-		
 		/*******************************
 		 new list: mysql records not in the csv file: names
 		*******************************/
@@ -1847,8 +1777,6 @@ class ImagesController extends AppController {
 			array_push($images_MySQL_NotIn_CSV__Names, $elem['Image']['file_name']);
 			
 		}//foreach ($images_MySQL_NotIn_CSV as $elem)
-		
-// 		debug(array_slice($images_MySQL_NotIn_CSV__Names, 0, 30));
 		
 		/*******************************
 			"NotIn_CSV" images => save to CSV db file

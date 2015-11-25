@@ -2571,7 +2571,8 @@
 					
 				debug("data folder => not exist: $fpath");
 			
-				return null;
+				return false;
+// 				return null;
 					
 			} else {
 			
@@ -2591,7 +2592,8 @@
 					
 				debug("Utils::get_Latest_File__By_FileName => returned null");
 					
-				return null;
+				return false;
+// 				return null;
 					
 			}//$fname == null
 				
@@ -2609,7 +2611,8 @@
 					
 				debug("pdo => null");
 					
-				return null;
+				return false;
+// 				return null;
 					
 			} else {
 			
@@ -2624,14 +2627,25 @@
 			/*******************************
 				prep: data for insertion
 			*******************************/
-			$sql = "INSERT INTO ifm11 (date_added, file_name) VALUES (?, ?)";
+			$sql = "INSERT INTO ifm11 ("
+						."created_at, modified_at, date_added, "
+						."file_id, file_path, file_name"
+						.") "
+					."VALUES ("
+						."?, ?, ?, "
+						."?, ?, ?"
+						.")";
 			
 			$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
 			
 			$data = array(
 				
-					$time,
-					$img['Image']['file_name'],
+					$time,		// created_at
+					$time,		// modified_at
+					$time,		// date_added
+					$img['Image']['file_id'],		// file_id
+					$img['Image']['file_path'],		// file_path
+					$img['Image']['file_name'],		// file_name
 					
 			);
 			
