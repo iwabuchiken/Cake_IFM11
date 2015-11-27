@@ -1584,6 +1584,8 @@ class ImagesController extends AppController {
 		$sort = @$this->request->query['sort'];
 		$direction = @$this->request->query['direction'];
 		
+		$filter_No_Memos = @$this->request->query['filter'];
+		
 		/*******************************
 			get: images
 		*******************************/
@@ -1607,15 +1609,24 @@ class ImagesController extends AppController {
 			
 		}//if ($direction != null)
 		
+		/*******************************
+			find: images
+		*******************************/
+		if ($filter_No_Memos != null && $filter_No_Memos == "no_memo") {
 		
+			debug("filtering by 'no_memo'...");
+			
+			$result = 
+				Utils::find_All_Images__DateRange__NoMemos(
+								$sort_ColName, $sort_Direction);
 		
-// 		$sort_ColName = "_id";
-// 		$sort_Direction = "DESC";
+		} else {
 		
-		$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
-// 		$images = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
-// 		$images = Utils::find_All_Images($sort_ColName, $sort_Direction);
-// 		$images = Utils::find_All_Images();
+			$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
+			
+		}//if ($filter_No_Memos != null && $filter_No_Memos ==)
+		
+// 		$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
 
 		/*******************************
 			valid: not null

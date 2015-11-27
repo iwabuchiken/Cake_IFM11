@@ -1099,6 +1099,259 @@
 			null	=> data folder => not exist<br>
 		*******************************/
 		public static function
+		find_All_Images__DateRange__NoMemos
+		($sort_ColName = "_id", $sort_Direction = "ASC",
+// 			$limit = "50", 
+			$range_Start = "2015/10/01 00:00:00.000",
+			$range_End = "2015/10/10 00:00:00.000"
+			) {
+// 			$limit = "50", $range_Start = "2015/10/01 00:00:00.000") {
+			
+			//ref C:\WORKS\WS\Eclipse_Luna\Cake_TA2\app\Lib\utils\utils.php
+			
+			/*******************************
+			 PDO file
+			*******************************/
+			$fpath = "";
+				
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+					
+				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+					
+			} else {
+					
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+					
+			/*******************************
+			 validate: db file exists
+			*******************************/
+			$res = file_exists($fpath);
+			
+			if ($res == false) {
+			
+				debug("data folder => not exist: $fpath");
+				
+				return null;
+			
+			} else {
+				
+// 				debug("data folder => exists: $fpath");
+				
+			}
+				
+			/*******************************
+			 get: the latest db file
+			*******************************/
+			$fname = Utils::get_Latest_File__By_FileName($fpath);
+
+			/*******************************
+				valid: file exists
+			*******************************/
+			if ($fname == null) {
+				
+				debug("Utils::get_Latest_File__By_FileName => returned null");
+				
+				return null;
+				
+			}//$fname == null
+			
+			$fpath .= DIRECTORY_SEPARATOR.$fname;
+				
+			debug("fpath => $fpath");
+			
+			/*******************************
+			 pdo: setup
+			*******************************/
+			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+			$file_db = new PDO("sqlite:$fpath");
+				
+			if ($file_db === null) {
+					
+				debug("pdo => null");
+					
+				return null;
+					
+			} else {
+				
+//				debug("pdo => created");
+				
+			}
+				
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+
+			/*******************************
+				prep: range data: Start
+			*******************************/
+			$tmp = Utils::get_Admin_Value(CONS::$adminData_Image_data_Range_Start, "val1");
+			
+			debug("val1 => $tmp");
+			
+			if ($tmp != null) {
+				
+				$range_Start = $tmp
+				;
+			}//$tmp != null
+
+			/*******************************
+				prep: range data: End
+			*******************************/
+			$tmp = Utils::get_Admin_Value(CONS::$adminData_Image_data_Range_End, "val1");
+			
+			debug("End => $tmp");
+			
+			if ($tmp != null) {
+				
+				$range_End = $tmp;
+				
+			}//$tmp != null
+			
+			/*******************************
+				get: db infos
+			*******************************/
+			//ref http://stackoverflow.com/questions/669092/sqlite-getting-number-of-rows-in-a-database answered Mar 21 '09 at 10:37
+			$query = "SELECT Count(*) FROM "
+						.CONS::$tname_IFM11
+						." "
+						."WHERE date_added > '$range_Start'"
+						." "
+						."AND"
+						." "
+						."date_added < '$range_End'"
+						." "
+						."AND"
+						." "
+// 						."memos = ''"
+// 						." "
+// 						."OR"
+// 						." "
+// 						."memos = 'null'"
+// 						." "
+// 						."OR"
+// 						." "
+						."memos = 'NULL'"
+// 						."WHERE date_added < '$range_End'"
+						;
+			
+//			debug("query => $query");
+			
+			$images = $file_db->query(
+						$query
+// 						"SELECT Count(*) FROM "
+// 						.CONS::$tname_IFM11
+// 						." "
+// 						."WHERE date_added > '$range_Start'"
+			
+			);
+// 			$images = $file_db->query("SELECT Count(*) FROM ".CONS::$tname_IFM11);
+// 			$images = $file_db->query('SELECT Count(*) FROM ta2');
+			// 			$images = $file_db->query('SELECT * FROM ta2 ORDER BY _id DESC');
+				
+			// 			$cnt_Tweets = sqlite_num_rows($images);	//=> "Call to undefined function sqlite_num_rows()"
+			
+			//ref http://stackoverflow.com/questions/883365/row-count-with-pdo answered May 19 '09 at 15:16
+			$cnt_Images = $images->fetchColumn();	//=> w
+			// 			$cnt_Images = count($images);
+				
+			debug("cnt_Images => ".$cnt_Images);
+
+			/*******************************
+				get: images
+			*******************************/
+			$q = "SELECT * FROM "
+					.CONS::$tname_IFM11
+					
+					." "
+					."WHERE date_added > '$range_Start'"
+					." "
+					."AND"
+					." "
+					."date_added < '$range_End'"
+// 					."WHERE date_added < '$range_End'"
+
+					." "
+							."AND"
+							." "
+// 					."memos = ''"
+// 					."memos = 'null'"
+// 					."memos = 'NULL'"
+// 					."memos = NULL"
+					."memos is null"
+							
+					." "
+					//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+					."ORDER BY"
+					." "
+					.$sort_ColName." ".$sort_Direction
+					;
+							
+			debug("q => $q");
+			
+			$result = $file_db->query($q);
+				
+// 			$res_cnt = $file_db->query($q_cnt);
+			
+// 			//debug
+// 			if ($result === true) {
+					
+// 				debug("result => true");
+				
+// 				debug("count => ".$result->columnCount());
+					
+// 			} else {
+					
+// 				debug("result => false");
+			
+// 				debug($result);
+// 				debug(get_class($result));
+				
+// 			}//if ($result === true)
+					
+			/*******************************
+				report
+			*******************************/
+			$count = 0;
+			
+// 			foreach ($result as $row) {
+				
+// 				debug($row);
+				
+// 				$count += 1;
+				
+// 				if ($count > 2) {
+					
+// 					break;
+					
+// 				}//$count > 5
+				
+// 			}
+			
+			/*******************************
+				pdo => reset
+			*******************************/
+			$file_db = null;
+			
+			/*******************************
+				return
+			*******************************/
+			return array($result, $cnt_Images);
+// 			return $result;
+// 			return null;
+					
+		}//find_All_Images__DateRange__NoMemos
+
+		/*******************************
+		 * @param $range_Start,End not including
+			@return array($result, $cnt_Images)<br>
+			null	=> data folder => not exist<br>
+		*******************************/
+		public static function
 		find_All_Images__Range_By_FileName
 		($sort_ColName = "_id", $sort_Direction = "ASC",
 // 			$limit = "50", 
