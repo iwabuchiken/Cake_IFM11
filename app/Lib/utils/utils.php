@@ -1282,6 +1282,7 @@
 // 					."memos = 'null'"
 // 					."memos = 'NULL'"
 // 					."memos = NULL"
+					//ref http://stackoverflow.com/questions/3620828/sqlite-select-where-empty answered Sep 1 '10 at 18:06
 					."memos is null"
 							
 					." "
