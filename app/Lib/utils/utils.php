@@ -1099,6 +1099,48 @@
 			null	=> data folder => not exist<br>
 		*******************************/
 		public static function
+		find_All_Images__From_MySQL__Range_By_FileName
+		($sort_ColName = "_id", $sort_Direction = "ASC",
+// 			$limit = "50", 
+			$range_Start = "2015-08-01",
+			$range_End = "2015-09-03"
+			) {
+// 			$limit = "50", $range_Start = "2015/10/01 00:00:00.000") {
+			
+			//ref C:\WORKS\WS\Eclipse_Luna\Cake_TA2\app\Lib\utils\utils.php
+			$model = ClassRegistry::init('Image');
+		
+			$opt = array(
+				
+					'conditions' => array(
+	
+							'AND' => array(
+						
+									"Image.file_name >=" => $range_Start,
+									
+									"Image.file_name <=" => $range_End,
+							)
+					)
+			);
+			
+			$listOf_Images_From_MySQL = $model->find('all', $opt);
+// 			$listOf_Images_From_MySQL = $this->Image->find('all', $opt);
+						
+			/*******************************
+				return
+			*******************************/
+			return $listOf_Images_From_MySQL;
+// 			return $result;
+// 			return null;
+					
+		}//find_All_Images__Range_By_FileName
+
+		/*******************************
+		 * @param $range_Start,End not including
+			@return array($result, $cnt_Images)<br>
+			null	=> data folder => not exist<br>
+		*******************************/
+		public static function
 		find_All_Images__DateRange__NoMemos
 		($sort_ColName = "_id", $sort_Direction = "ASC",
 // 			$limit = "50", 
@@ -2308,6 +2350,7 @@
 		}//get_Latest_File__By_FileName($dpath)
 
 		/*******************************
+		 * update => 'memos' column value of the image from csv file
 			@return
 			true => update done<br>
 			false => update not done
@@ -3335,6 +3378,32 @@
 			return $label_Full;
 			
 		}//conv_TimeLabel_Standard_2_FileNameFormat($fname_orig)
+
+		/*******************************
+		 	@return an instance of Cake model Image
+			@param<br> 
+			listOf_Images --> array of CakePHP model Image instances<br>
+		*******************************/
+		public static function
+		find_Image_From_ArrayOf_Images__By_FileName
+		($file_Name, $listOf_Images) {
+			
+			foreach ($listOf_Images as $elem) {
+			
+				$name = $elem['Image']['file_name'];
+				
+				// if same name => return
+				if ($file_Name == $name) {
+					
+					return $elem;
+				}//$file_Name == $name
+				
+			}//foreach ($listOf_Images as $elem)
+			
+			// return default => null
+			return null;
+			
+		}//find_Image_From_Array__By_FileName
 		
 	}//class Utils
 	

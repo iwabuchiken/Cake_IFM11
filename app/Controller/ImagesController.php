@@ -1666,8 +1666,6 @@ class ImagesController extends AppController {
 		/*******************************
 			update: memos
 		*******************************/
-		$this->image_manager__Update_CSV__Memos();
-		
 		//debug
 		if (Utils::get_HostName() == "localhost") {
 		
@@ -1679,11 +1677,14 @@ class ImagesController extends AppController {
 			
 			//debug
 			
-			debug("remote server: image_manager__Update_CSV --> under construction");
+			debug("remote server");
+// 			debug("remote server: image_manager__Update_CSV --> under construction");
 			
-			return;
+// 			return;
 			
 		}
+		
+		$this->image_manager__Update_CSV__Memos();
 		
 		
 		$dpath = "/home/users/2/chips.jp-benfranklin/web/cake_apps"
@@ -1824,25 +1825,191 @@ class ImagesController extends AppController {
 	public function
 	image_manager__Update_CSV__Memos() {
 		
-		/*******************************
+		/**********************************************
 			build list: from CSV
+		**********************************************/
+		/*******************************
+			get: PDOStatement
 		*******************************/
+		$result_Set = $this->image_manager__Update_CSV__Memos__ListFromCSV();
+
+		$numOf_Elem = $result_Set[1];
 		
+		/*******************************
+			list: images
+		*******************************/
+		$listOf_Images_From_CSV = array();
+		
+		foreach ($result_Set[0] as $elem) {
+		
+			array_push($listOf_Images_From_CSV, $elem);
+			
+		}//foreach ($result_Set[0] as $elem)
+		
+		debug("count(\$listOf_Images_From_CSV) => ".count($listOf_Images_From_CSV));
+
+		/**********************************************
+		 build list: names of the files from csv
+		**********************************************/		
+		$listOf_Names__From_CSV = array();
+		
+		foreach ($listOf_Images_From_CSV as $elem) {
+
+			array_push($listOf_Names__From_CSV, $elem['file_name']);
+			
+		}//foreach ($listOf_Images_From_CSV as $elem)
+
+// 		debug("\$listOf_Names__From_CSV => ".count($listOf_Names__From_CSV));
+		
+		/**********************************************
+		 build list: from mysql
+		**********************************************/		
+		/*******************************
+		 range
+		*******************************/
+		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
+		
+		if ($start === null) {
+		
+			$start = "2015-08-15";
+		
+		}//$start === null
+		
+		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
+		
+		if ($end === null) {
+		
+			$end = "2015-09-03";
+		
+		}//$start === null
+		
+		debug("start = $start / end = $end");
+		
+		// column, direction
+		$sort_ColName = "_id";
+		$sort_Direction = "DESC";
+		
+		$listOf_Images_From_MySQL = Utils::find_All_Images__From_MySQL__Range_By_FileName(
+							$sort_ColName, 
+							$sort_Direction, 
+							$start, $end);
+		
+		debug("count(\$listOf_Images_From_MySQL) => ".count($listOf_Images_From_MySQL));
+
+		/*******************************
+			list: from mysql, no memos
+		*******************************/
+		$numOf_Images_From_MySQL__NoMemos = 0;
+		
+		foreach ($listOf_Images_From_MySQL as $elem) {
+		
+			if ($elem['Image']['memos'] == '') {
+				
+				$numOf_Images_From_MySQL__NoMemos += 1;
+				
+			}//$elem['Image']['memos'];
+			
+		}//foreach ($listOf_Images_From_MySQL as $elem)
+		
+		debug("\$numOf_Images_From_MySQL__NoMemos => ".$numOf_Images_From_MySQL__NoMemos);
+		
+		/**********************************************
+		 build list: mysql records, those also in the csv records
+		**********************************************/		
+		// instances of the CakePHP Image model
+		$listOf_Images_From_MySQL_AlsoIn_CSV = array();
+		
+		foreach ($listOf_Images_From_MySQL as $elem) {
+		
+			$file_Name = $elem['Image']['file_name'];
+
+			// if in the names list, then push
+			if (in_array($file_Name, $listOf_Names__From_CSV)) {
+				
+				array_push($listOf_Images_From_MySQL_AlsoIn_CSV, $elem);
+				
+			}//in_array($file_Name, $listOf_Names__From_CSV)
+			
+		}//foreach ($listOf_Images_From_MySQL as $elem)
+		
+		debug("count(\$listOf_Images_From_MySQL_AlsoIn_CSV => "
+				.count($listOf_Images_From_MySQL_AlsoIn_CSV));
+		
+// 		/*******************************
+// 			insert: memos in the mysql records => into the csv records
+// 		*******************************/
+// 		$numOf_Success = 0;
+// 		$numOf_Failure = 0;
+		
+// 		foreach ($listOf_Images_From_CSV as $elem) {
+		
+// 			$image = Utils::find_Image_From_ArrayOf_Images__By_FileName(
+// 						$elem['file_name'], 
+// 						$listOf_Images_From_MySQL_AlsoIn_CSV);
+			
+// 			// update memos
+// 			$elem['memos'] = $image['Image']['memos'];
+			
+// 			// save updates
+// 			$result = Utils::update_Image($image);
+			
+// 			// report
+// 			if ($result === true) {
+
+// 				debug("update done => ".$elem['file_name']);
+			
+// 				$numOf_Success += 1;
+				
+// 			} else {
+			
+// 				debug("update NOT done => ".$elem['file_name']);
+				
+// 				$numOf_Failure += 1;
+				
+// 			}//if ($result)
+			
+// 		}//foreach ($listOf_Images_From_CSV as $elem)
+
+// 		/*******************************
+// 			report
+// 		*******************************/
+// 		$msg = array(
+			
+// 				"total" => $numOf_Elem,
+// 				"updates_Success" => $numOf_Success,
+// 				"updates_Failure" => $numOf_Failure,
+				
+// 		);
+		
+// 		debug($msg);
+		
+	}//image_manager__Update_CSV__Memos()
+	
+	/*******************************
+	 * query<br>
+	 * 1. add_image_Range_Start,End => range<br>
+	 * 2. memos => null<br>
+		@return<br>
+		array(query result : PDOStatement, number of images : Integer)
+	*******************************/
+	public function
+	image_manager__Update_CSV__Memos__ListFromCSV() {
+
 		/*******************************
 		 PDO file
 		*******************************/
 		$fpath = "";
 			
 		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
-				
+		
 			$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-				
+		
 		} else {
-				
+		
 			$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-				
+		
 		}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
-				
+		
 		/*******************************
 		 validate: db file exists
 		*******************************/
@@ -1851,20 +2018,20 @@ class ImagesController extends AppController {
 		if ($res == false) {
 		
 			debug("data folder => not exist: $fpath");
-			
+				
 			return null;
 		
 		} else {
-			
+				
 			debug("data folder => exists: $fpath");
-			
+				
 		}
 			
 		/*******************************
 		 get: the latest db file
 		*******************************/
 		$fname = Utils::get_Latest_File__By_FileName($fpath);
-
+		
 		/*******************************
 		 valid: file exists
 		*******************************/
@@ -1875,7 +2042,7 @@ class ImagesController extends AppController {
 			return null;
 		
 		}//$fname == null
-				
+		
 		$fpath .= DIRECTORY_SEPARATOR.$fname;
 			
 		debug("fpath => $fpath");
@@ -1887,44 +2054,44 @@ class ImagesController extends AppController {
 		$file_db = new PDO("sqlite:$fpath");
 			
 		if ($file_db === null) {
-				
+		
 			debug("pdo => null");
-				
+		
 			return null;
-				
+		
 		} else {
-			
-			debug("pdo => created");
-			
+				
+// 			debug("pdo => created");
+				
 		}
 			
 		// Set errormode to exceptions
 		$file_db->setAttribute(PDO::ATTR_ERRMODE,
 				PDO::ERRMODE_EXCEPTION);
-
+		
 		/*******************************
-			range
+		 range
 		*******************************/
 		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
 		
 		if ($start === null) {
-			
+				
 			$start = "2015-08-15";
-			
+				
 		}//$start === null
 		
 		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
-
+		
 		if ($end === null) {
-				
+		
 			$end = "2015-09-03";
-				
+		
 		}//$start === null
-
+		
 		debug("start = $start / end = $end");
 		
 		/*******************************
-			params
+		 params
 		*******************************/
 		$sort_ColName = "_id";
 		
@@ -1935,65 +2102,56 @@ class ImagesController extends AppController {
 		*******************************/
 		$where_Col = "file_name";
 		
-		$q = "SELECT * FROM "
-				.CONS::$tname_IFM11
-				." "."WHERE"." ".$where_Col." ".">="." "."'$start'"
-				
-				." "
-				."AND"
-				." "
-				
-				.$where_Col." "."<="." "."'$end'"
-				
-				." "
-				."AND"
-				." "
-						
-				."memos is null"
-						
-						
-				." "
-						//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
-				."ORDER BY"
-				." "
-				.$sort_ColName." ".$sort_Direction
+		$q = "SELECT * FROM ".CONS::$tname_IFM11
+			." "."WHERE"." "
+			.$where_Col." ".">="." "."'$start'"
+			." "."AND"." "
+			.$where_Col." "."<="." "."'$end'"
+			." "."AND"." "
+			."memos is null"
 					
-// 				." "
-// 				."LIMIT"
-// 				." "
-// 				.$limit
-				;
+			//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+			." "."ORDER BY"." "
+			.$sort_ColName." ".$sort_Direction
+			;
 			
 		debug("q => $q");
 			
 		$result = $file_db->query($q);
 		
-		debug(get_class($result));
+// 		debug(get_class($result));
 
-		$numOf_Elem = 0;
+		/*******************************
+			get: num of images
+		*******************************/
+		$q = "SELECT Count(*) FROM ".CONS::$tname_IFM11
+			." "."WHERE"." "
+			.$where_Col." ".">="." "."'$start'"
+			." "."AND"." "
+			.$where_Col." "."<="." "."'$end'"
+			." "."AND"." "
+			."memos is null"
+			//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+			." "."ORDER BY"." "
+			.$sort_ColName." ".$sort_Direction
+			;
+
+		$result_Num = $file_db->query($q);
 		
-		foreach ($result as $elem) {
-		
-			$numOf_Elem += 1;
-			
-// 			debug($elem);
-			
-// 			break;
-			
-		}//foreach ($result as $elem)
-		
-		debug("result => $numOf_Elem");
-		
-// 		debug(get_class($result[0]));
-// 		debug($result[0]);
+		$numOf_Images = $result_Num->fetchColumn();
 		
 		/*******************************
-			pdo => reset
+		 pdo => reset
 		*******************************/
 		$file_db = null;
 		
+		/*******************************
+			return
+		*******************************/
+		return array($result, $numOf_Images);
+// 		return $result;
 		
-	}//image_manager__Update_CSV__Memos()
+	}//image_manager__Update_CSV__Memos__ListFromCSV()
 	
 	public function
 	edit_image_data($id = null) {
