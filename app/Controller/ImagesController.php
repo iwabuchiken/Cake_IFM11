@@ -1663,6 +1663,29 @@ class ImagesController extends AppController {
 		
 		debug("image_manager__Update_CSV()");
 
+		/*******************************
+			update: memos
+		*******************************/
+		$this->image_manager__Update_CSV__Memos();
+		
+		//debug
+		if (Utils::get_HostName() == "localhost") {
+		
+			debug("I am a local server. No op.");
+				
+			return;
+				
+		} else {
+			
+			//debug
+			
+			debug("remote server: image_manager__Update_CSV --> under construction");
+			
+			return;
+			
+		}
+		
+		
 		$dpath = "/home/users/2/chips.jp-benfranklin/web/cake_apps"
 					."/Cake_IFM11/app/Lib/data";
 		
@@ -1797,6 +1820,180 @@ class ImagesController extends AppController {
 		debug($res_Str);
 		
 	}//image_manager__Update_CSV()
+	
+	public function
+	image_manager__Update_CSV__Memos() {
+		
+		/*******************************
+			build list: from CSV
+		*******************************/
+		
+		/*******************************
+		 PDO file
+		*******************************/
+		$fpath = "";
+			
+		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+			$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+				
+		} else {
+				
+			$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+				
+		}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+				
+		/*******************************
+		 validate: db file exists
+		*******************************/
+		$res = file_exists($fpath);
+		
+		if ($res == false) {
+		
+			debug("data folder => not exist: $fpath");
+			
+			return null;
+		
+		} else {
+			
+			debug("data folder => exists: $fpath");
+			
+		}
+			
+		/*******************************
+		 get: the latest db file
+		*******************************/
+		$fname = Utils::get_Latest_File__By_FileName($fpath);
+
+		/*******************************
+		 valid: file exists
+		*******************************/
+		if ($fname == null) {
+		
+			debug("Utils::get_Latest_File__By_FileName => returned null");
+		
+			return null;
+		
+		}//$fname == null
+				
+		$fpath .= DIRECTORY_SEPARATOR.$fname;
+			
+		debug("fpath => $fpath");
+		
+		/*******************************
+		 pdo: setup
+		*******************************/
+		//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+		$file_db = new PDO("sqlite:$fpath");
+			
+		if ($file_db === null) {
+				
+			debug("pdo => null");
+				
+			return null;
+				
+		} else {
+			
+			debug("pdo => created");
+			
+		}
+			
+		// Set errormode to exceptions
+		$file_db->setAttribute(PDO::ATTR_ERRMODE,
+				PDO::ERRMODE_EXCEPTION);
+
+		/*******************************
+			range
+		*******************************/
+		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
+		
+		if ($start === null) {
+			
+			$start = "2015-08-15";
+			
+		}//$start === null
+		
+		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
+
+		if ($end === null) {
+				
+			$end = "2015-09-03";
+				
+		}//$start === null
+
+		debug("start = $start / end = $end");
+		
+		/*******************************
+			params
+		*******************************/
+		$sort_ColName = "_id";
+		
+		$sort_Direction = "DESC";
+		
+		/*******************************
+		 build list: from CSV
+		*******************************/
+		$where_Col = "file_name";
+		
+		$q = "SELECT * FROM "
+				.CONS::$tname_IFM11
+				." "."WHERE"." ".$where_Col." ".">="." "."'$start'"
+				
+				." "
+				."AND"
+				." "
+				
+				.$where_Col." "."<="." "."'$end'"
+				
+				." "
+				."AND"
+				." "
+						
+				."memos is null"
+						
+						
+				." "
+						//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+				."ORDER BY"
+				." "
+				.$sort_ColName." ".$sort_Direction
+					
+// 				." "
+// 				."LIMIT"
+// 				." "
+// 				.$limit
+				;
+			
+		debug("q => $q");
+			
+		$result = $file_db->query($q);
+		
+		debug(get_class($result));
+
+		$numOf_Elem = 0;
+		
+		foreach ($result as $elem) {
+		
+			$numOf_Elem += 1;
+			
+// 			debug($elem);
+			
+// 			break;
+			
+		}//foreach ($result as $elem)
+		
+		debug("result => $numOf_Elem");
+		
+// 		debug(get_class($result[0]));
+// 		debug($result[0]);
+		
+		/*******************************
+			pdo => reset
+		*******************************/
+		$file_db = null;
+		
+		
+	}//image_manager__Update_CSV__Memos()
 	
 	public function
 	edit_image_data($id = null) {
