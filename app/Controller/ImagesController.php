@@ -1248,7 +1248,8 @@ class ImagesController extends AppController {
 	/*******************************
 		use => CONS::$adminKey_last_Added_From_DBFile<br>
 		convert => "2015/09/16 00:00:00.000" to "2015-09-16_00-00-00.000"
-		where args => "WHERE file_name > $last_Added_From_DBFile"
+		where args => "WHERE file_name > admin val::add_image_Range_Start,End"
+// 		where args => "WHERE file_name > $last_Added_From_DBFile"
 	*******************************/
 	public function
 	add_From_DB_File() {
@@ -1303,6 +1304,28 @@ class ImagesController extends AppController {
 		$last_Added_From_DBFile = 
 				Utils::conv_TimeLabel_Standard_2_FileNameFormat($last_Added_From_DBFile);
 		
+		/*******************************
+			set:start, end
+		*******************************/
+		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
+		
+		if ($start === null) {
+			
+			$start = "2015-08-15";
+			
+		}//$start === null
+		
+		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
+
+		if ($end === null) {
+				
+			$end = "2015-09-03";
+				
+		}//$start === null
+		
+		
+// 		$whereArgs = sprintf("WHERE file_name >= '$start' AND file_name <= '$end'");
+// 		$whereArgs = sprintf("WHERE file_name >= $start AND file_name <= $end");
 		$whereArgs = "WHERE file_name > "
 // 		$whereArgs = "WHERE modified_at > "
 						."'"
@@ -1564,6 +1587,11 @@ class ImagesController extends AppController {
 			
 			$this->image_manager__Update_CSV();
 			
+			/*******************************
+			 update: 'memos' values
+			*******************************/
+			$this->image_manager__Update_CSV__Memos();
+				
 			//ref http://book.cakephp.org/2.0/en/controllers.html "// Render the element in /View/Elements/ajaxreturn.ctp"
 			$this->render("/Elements/plain");
 			
@@ -1658,6 +1686,11 @@ class ImagesController extends AppController {
 		
 	}//image_manager
 
+	/*******************************
+		updates the csv records<br>
+		those in the mysql table but not in the csv table<br>
+		=> insert those records into the csv table
+	*******************************/
 	public function
 	image_manager__Update_CSV() {
 		
@@ -1684,7 +1717,10 @@ class ImagesController extends AppController {
 			
 		}
 		
-		$this->image_manager__Update_CSV__Memos();
+// 		/*******************************
+// 			update: 'memos' values
+// 		*******************************/
+// 		$this->image_manager__Update_CSV__Memos();
 		
 		
 		$dpath = "/home/users/2/chips.jp-benfranklin/web/cake_apps"
@@ -1733,8 +1769,27 @@ class ImagesController extends AppController {
 		/*******************************
 			list: from => remote csv file: L1
 		*******************************/
-		$start = "2015-09-01";
-		$end = "2015-09-15";
+// 		$start = "2015-09-01";
+// 		$end = "2015-09-15";
+		
+		/*******************************
+		 set:start, end
+		*******************************/
+		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
+		
+		if ($start === null) {
+				
+			$start = "2015-08-15";
+				
+		}//$start === null
+		
+		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
+		
+		if ($end === null) {
+		
+			$end = "2015-09-03";
+		
+		}//$start === null
 		
 		$result = Utils::find_All_Images__Range_By_FileName(
 						"file_name", 
@@ -1760,8 +1815,8 @@ class ImagesController extends AppController {
 			
 		}//foreach ($images_CSV as $item)
 		
-		debug("images_CSV__Names");
-		debug(array_slice($images_CSV__Names, 0, 3));
+// 		debug("images_CSV__Names");
+// 		debug(array_slice($images_CSV__Names, 0, 3));
 		
 		/*******************************
 			list: from => remote mysql table: L2
@@ -1935,53 +1990,53 @@ class ImagesController extends AppController {
 		debug("count(\$listOf_Images_From_MySQL_AlsoIn_CSV => "
 				.count($listOf_Images_From_MySQL_AlsoIn_CSV));
 		
-// 		/*******************************
-// 			insert: memos in the mysql records => into the csv records
-// 		*******************************/
-// 		$numOf_Success = 0;
-// 		$numOf_Failure = 0;
+		/*******************************
+			insert: memos in the mysql records => into the csv records
+		*******************************/
+		$numOf_Success = 0;
+		$numOf_Failure = 0;
 		
-// 		foreach ($listOf_Images_From_CSV as $elem) {
+		foreach ($listOf_Images_From_CSV as $elem) {
 		
-// 			$image = Utils::find_Image_From_ArrayOf_Images__By_FileName(
-// 						$elem['file_name'], 
-// 						$listOf_Images_From_MySQL_AlsoIn_CSV);
+			$image = Utils::find_Image_From_ArrayOf_Images__By_FileName(
+						$elem['file_name'], 
+						$listOf_Images_From_MySQL_AlsoIn_CSV);
 			
-// 			// update memos
-// 			$elem['memos'] = $image['Image']['memos'];
+			// update memos
+			$elem['memos'] = $image['Image']['memos'];
 			
-// 			// save updates
-// 			$result = Utils::update_Image($image);
+			// save updates
+			$result = Utils::update_Image($elem);
 			
-// 			// report
-// 			if ($result === true) {
+			// report
+			if ($result === true) {
 
-// 				debug("update done => ".$elem['file_name']);
+				debug("update done => ".$elem['file_name']);
 			
-// 				$numOf_Success += 1;
+				$numOf_Success += 1;
 				
-// 			} else {
+			} else {
 			
-// 				debug("update NOT done => ".$elem['file_name']);
+				debug("update NOT done => ".$elem['file_name']);
 				
-// 				$numOf_Failure += 1;
+				$numOf_Failure += 1;
 				
-// 			}//if ($result)
+			}//if ($result)
 			
-// 		}//foreach ($listOf_Images_From_CSV as $elem)
+		}//foreach ($listOf_Images_From_CSV as $elem)
 
-// 		/*******************************
-// 			report
-// 		*******************************/
-// 		$msg = array(
+		/*******************************
+			report
+		*******************************/
+		$msg = array(
 			
-// 				"total" => $numOf_Elem,
-// 				"updates_Success" => $numOf_Success,
-// 				"updates_Failure" => $numOf_Failure,
+				"total" => $numOf_Elem,
+				"updates_Success" => $numOf_Success,
+				"updates_Failure" => $numOf_Failure,
 				
-// 		);
+		);
 		
-// 		debug($msg);
+		debug($msg);
 		
 	}//image_manager__Update_CSV__Memos()
 	

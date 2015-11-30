@@ -1628,6 +1628,7 @@
 		}//find_All_Images
 
 		/*******************************
+		 * find records in sqlite 'bk' file
 			@return array($result, $cnt_Images)<br>
 			@param $sort_ColName
 		*******************************/
@@ -2498,6 +2499,7 @@
 		}//update_Image($image)
 
 		/*******************************
+		 * add csv records into the remote mysql table
 			@return<br>
 			array(
 				"total_data"<br>		
@@ -2972,63 +2974,14 @@
 				
 			}//if ($res === true)
 			
-			
-			
 			/*******************************
 			 pdo => reset
 			*******************************/
 			$file_db = null;
 												
-			/*******************************
-				set values
-			*******************************/
-			$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
-
-// 			$model->set("created_at", $tmp);
-				
-// 			$model->set("updated_at", $tmp);
-			
-// 			$model->set("local_id", $img['Image']['_id']);
-			
-// 			$model->set("local_created_at", $img['Image']['created_at']);
-				
-// 			$model->set("local_modified_at", $img['Image']['modified_at']);
-			
-// 			$model->set("file_id", $img['Image']['file_id']);
-			
-// 			$model->set("file_path", $img['Image']['file_path']);
-				
-// 			$model->set("file_name", $img['Image']['file_name']);
-				
-// 			$model->set("local_date_added", $img['Image']['date_added']);
-				
-// 			$model->set("local_date_modified", $img['Image']['date_modified']);
-				
-// 			$model->set("memos", $img['Image']['memos']);
-				
-// 			$model->set("tags", $img['Image']['tags']);
-				
-// 			$model->set("local_last_viewed_at", $img['Image']['last_viewed_at']);
-				
-// 			$model->set("table_name", $img['Image']['table_name']);
-	
 			//test
 			return false;
 			
-// 			if ($model->save()) {
-
-// 				debug("image => saved: ".$img['file_name']);
-
-// 				return true;
-				
-// 			} else {
-
-// 				debug("image => NOT saved: ".$img['file_name']);
-
-// 				return false;
-				
-// 			}
-					
 		}//add_ImageData__MySQL_NotInCSV_2_CSV__NewData
 		
 		/*******************************
