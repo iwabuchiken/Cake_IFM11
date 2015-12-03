@@ -75,8 +75,10 @@ if %temp%=="ch" (
 
 ) else if %temp%=="" (
 
-	echo starting =^> chrome (default^)
-	goto start_chrome
+	goto show_usage
+
+REM 	echo starting =^> chrome (default^)
+REM 	goto start_chrome
 
 ) else (
 
@@ -87,6 +89,15 @@ if %temp%=="ch" (
 	echo 	b db[d]		--^> start remote phpmyadmin page
 
 )
+
+:show_usage
+
+echo ^<Usage^>
+echo 	b ch/ff		--^> use chrome or firefox
+echo 	b local[l]	--^> start local "images" page
+echo 	b remote[r]	--^> start remote "images" page
+echo 	b db[d]		--^> start remote phpmyadmin page
+
 
 goto end
 
