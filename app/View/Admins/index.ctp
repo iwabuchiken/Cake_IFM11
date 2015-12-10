@@ -20,22 +20,8 @@
 	
 </div>
 
-<br>
-<hr>
 
-<br>
-<?php 
+<?php echo $this->element('admins/index/links')?>
 
-	echo $this->Html->link(
-			'Add admin data',
-			array('controller' => 'admins',
-					'action' => 'add'),
-			array('class' => "button"));
 
-?>
-
-<br>
-
-<br>
-<hr>
 <?php echo $this->element('layouts/links')?>

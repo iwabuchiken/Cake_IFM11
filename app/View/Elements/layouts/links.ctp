@@ -81,4 +81,22 @@
 		
 	</tr>
 	
+	<tr>
+	
+		<td>
+
+			<?php 
+				echo $this->Html->link(
+							'Admin',
+								array('controller' => 'admins', 
+										'action' => 'index'),
+								array('class' => "button_2")
+				);
+			
+			?>
+		
+		</td>
+	
+	</tr>
+	
 </table>

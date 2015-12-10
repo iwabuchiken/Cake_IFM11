@@ -991,3 +991,13 @@ Stack Trace:
 #7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #8 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #9 {main}
+2015-12-10 00:32:56 Error: Fatal Error (1): Unsupported operand types in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AdminsController.php, line 231]
+2015-12-10 00:32:56 Error: [FatalErrorException] Unsupported operand types
+Request URL: /Eclipse_Luna/Cake_IFM11/admins/stats
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\\WORKS\\WS\\Ecl...', 231)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\\WORKS\\WS\\Ecl...', 231, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\\WORKS\\WS\\Ecl...', 231, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

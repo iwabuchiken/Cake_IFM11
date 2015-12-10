@@ -18,3 +18,5 @@
 	echo $this->Form->end('Save Admin');
 	
 ?>
+
+<?php echo $this->element('admins/index/links')?>

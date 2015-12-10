@@ -149,5 +149,277 @@ class AdminsController extends AppController {
 		}
 	
 	}//edit
+
+	public function
+	stats() {
+
+		/*******************************
+			prep
+		*******************************/
+		$keywords = array(
+			
+				"RES"	=> array(
+			
+								"count" => 0,
+								"percent" => 0,
+						
+							),
+				"E2"	=> array(
+			
+								"count" => 0,
+								"percent" => 0,
+						
+							),
+				":m"	=> array(
+			
+								"count" => 0,
+								"percent" => 0,
+						
+							),
+				
+		);
+		
+		$keywords_3 = array(
+							array(
+									
+								"word"	=> "RES",
+								"count" => 0,
+								"percent" => 0,
+						
+							),
+				
+							array(
+								"word"	=> "E2",
+								"count" => 0,
+								"percent" => 0,
+						
+							),
+				
+							array(
+								"word"	=> ":m",
+								"count" => 0,
+								"percent" => 0,
+						
+							),
+				
+		);
+		
+		/*******************************
+			get tokens
+		*******************************/
+		$string = @$this->request->query['keywords'];
+		
+		if ($string == null || $string == '') {
+			
+			$string = "RES,E2,:m";
+			
+		}//$string == null || $string == ''
+// 		$string = "RES,E2,:m";
+		
+		$tokens = explode(",", $string);
+// 		$tokens = explode($string, ",");
+		
+		debug($tokens);
+		
+		$keywords_3 = array();
+		
+		foreach ($tokens as $token) {
+		
+			array_push($keywords_3, 
+						array(
+								"word"		=> $token, 
+								"count"		=> 0,
+								"percent"	=> 0,
+						)
+			);
+			
+		}//foreach ($tokens as $token)
+		
+		
+		
+// 		$keywords_3 = array(
+// 							array(
+									
+// 								"word"	=> "RES",
+// 								"count" => 0,
+// 								"percent" => 0,
+						
+// 							),
+				
+// 							array(
+// 								"word"	=> "E2",
+// 								"count" => 0,
+// 								"percent" => 0,
+						
+// 							),
+				
+// 							array(
+// 								"word"	=> ":m",
+// 								"count" => 0,
+// 								"percent" => 0,
+						
+// 							),
+				
+// 		);
+		
+		$keywords_2 = array();
+		
+// 		$keywords = array(
+			
+// 				"RES"	=> 0,
+// 				"E2"	=> 0,
+// 				":m"	=> 0
+				
+// 		);
+		
+		$keys = array();
+		
+		foreach ($keywords_3 as $keyword) {
+		
+			array_push($keys, $keyword['word']);
+			
+		}//foreach ($keywords_3 as $keyword)
+		
+		
+// 		$keys = array_keys($keywords);
+		
+		/*******************************
+			images
+		*******************************/
+		$model = ClassRegistry::init('Image');
+		
+		$listOf_Images = $model->find('all');
+		
+		debug("\$listOf_Images => ".count($listOf_Images));
+		
+// 		debug($listOf_Images[0]);
+		
+		/*******************************
+			count
+		*******************************/
+		foreach ($listOf_Images as $image) {
+		
+			// get memo
+			$memo = $image['Image']['memos'];
+			
+			// foreach: keywords
+			$number = count($keywords_3);
+			
+			for ($i = 0; $i < $number; $i++) {
+			
+				$keyword = $keywords_3[$i];
+				
+				$word = $keyword['word'];
+
+				if (strpos($memo, $word) !== false) {
+// 				if (strpos($memo, $word)) {
+	
+					$keywords_3[$i]['count'] += 1;
+// 					$keyword['count'] += 1;
+	
+				}//strpos($memo, $word)
+				
+				
+			}//for ($i = 0; $i < $number; $i++)
+			
+// 			foreach ($keywords_3 as $keyword) {
+				
+// 				$word = $keyword['word'];
+				
+// 				if (strpos($memo, $word)) {
+					
+// 					$keyword['count'] += 1;
+					
+// 				}//strpos($memo, $word)
+				
+// 			}
+			
+// 			foreach ($keys as $k) {
+			
+// 				if (strpos($memo, $k) !== false) {
+					
+// 					$keywords_3[$k]['count'] += 1;
+// // 					$keywords[$k]['count'] += 1;
+// // 					$keywords[$k] += 1;
+					
+// 				}//strpos($memo, $k) !== false;
+				
+// 			}//foreach ($keys as $k)
+			
+		}//foreach ($listOf_Images as $image)
+		
+		/*******************************
+			sum up
+		*******************************/
+		$total = 0;
+
+		foreach ($keywords_3 as $keyword) {
+		
+			$total += $keyword['count'];
+// 			$total += $keywords[$k]['count'];
+// 			$total += $keywords[$k];
+			
+		}//foreach ($keys as $k)
+			
+// 		debug("\$total => ".$total);
+		
+// 		foreach ($keys as $k) {
+		
+// 			$total += $keywords[$k]['count'];
+// // 			$total += $keywords[$k];
+			
+// 		}//foreach ($keys as $k)
+		
+		/*******************************
+			report
+		*******************************/
+// 		debug($keywords);
+		
+		debug("\$total => ".$total);
+		
+		/*******************************
+			add: percentage
+		*******************************/
+		$numOf_Images = count($listOf_Images);
+		
+		for ($i = 0; $i < $number; $i++) {
+		
+// 			$keyword = $keywords_3[$i];
+			
+			$keywords_3[$i]['percent'] = 
+								round(
+									(float)$keywords_3[$i]['count'] / $numOf_Images, 
+// 									(float)$keywords_3[$i]['count'] / $total, 
+									3);
+			
+		}//for ($i = 0; $i < $number; $i++)
+		
+// 		foreach ($keywords as $k) {
+			
+// 			$k['percent'] = round((float)$k['count'] / $total, 3);
+// // 			$k['percent'] = (float)$k['count'] / $total;
+// // 			$k['percent'] = floatval($k['count']) / $total;
+// // 			$k['percent'] = $k['count'] / $total;
+			
+// // 			debug($k);
+			
+// 			array_push($keywords_2, $k);
+			
+// 		}
+		
+		// report
+// 		debug($keywords);
+		
+// 		debug(1/3);
+		
+// 		debug($keywords_3);
+// 		debug($keywords_2);
+		
+		/*******************************
+			set values
+		*******************************/
+		$this->set("keywords", $keywords_3);
+		
+	}//stats()
 	
 }
