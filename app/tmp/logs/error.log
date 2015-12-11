@@ -1001,3 +1001,13 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-12-10 23:59:02 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'mp3file' (include_path='C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib;.;C:\WORKS\Programs\xampp\php\PEAR') in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AdminsController.php, line 3]
+2015-12-10 23:59:02 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'mp3file' (include_path='C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib;.;C:\WORKS\Programs\xampp\php\PEAR')
+Request URL: /Eclipse_Luna/Cake_IFM11/admins
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require() [<a h...', 'C:\\WORKS\\WS\\Ecl...', 3)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', 'C:\\WORKS\\WS\\Ecl...', 3, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', 'C:\\WORKS\\WS\\Ecl...', 3, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

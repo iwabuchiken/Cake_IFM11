@@ -1,5 +1,10 @@
 <?php
 
+// require 'mp3file';
+		// Error: require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required 'mp3file' (include_path='C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib;.;C:\WORKS\Programs\xampp\php\PEAR')
+		// File: C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AdminsController.php
+		// Line: 3
+
 class AdminsController extends AppController {
 	public $helpers = array('Html', 'Form');
 
@@ -13,6 +18,55 @@ class AdminsController extends AppController {
 		
 		$this->set('admins', $admins);
 // 		$this->set('admins', $this->Admin->find('all'));
+		
+		/*******************************
+			test
+		*******************************/
+		if (Utils::get_HostName() == "localhost") {
+		
+			$audio_FileName = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\mp3\\Daily Beast tamed  Real figures proving RT popularity.mp3";
+		
+		} else {
+				
+			$audio_FileName = "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/webroot/mp3/Daily Beast tamed  Real figures proving RT popularity.mp3";				
+			
+		}
+		
+// 		$audio_FileName = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\mp3\\Daily Beast tamed  Real figures proving RT popularity.mp3";
+		
+		debug($audio_FileName);
+		
+		// file exists
+		$res_B = file_exists($audio_FileName);
+		
+		// open file
+		if ($res_B === true) {
+		
+			$f = fopen($audio_FileName, "rb");
+	// 		$f = fopen($audio_FileName);
+			
+			fclose($f);
+		
+			debug("file opened/closed => $audio_FileName");
+			
+			/*******************************
+				mp3
+			*******************************/
+			$mp3file = new MP3File($audio_FileName);
+			
+			debug("mp3file created => $audio_FileName");
+			
+			$duration2 = $mp3file->getDuration();
+			
+			debug("duration => $duration2 seconds");
+			
+		} else {
+		
+			debug("file not exist => $audio_FileName");
+			
+		}//if ($res_B === true)
+		
+		
 		
 	}
 	

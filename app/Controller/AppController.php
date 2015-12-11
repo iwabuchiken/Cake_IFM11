@@ -56,6 +56,8 @@ class AppController extends Controller {
 	
 		require_once $this->dpath_Utils.DS."utils.php";
 	
+		require_once $this->dpath_Utils.DS."mp3file.class.php";
+	
 		// 		require_once $this->path_Utils.DS."db_util.php";
 	
 // 		$this->Auth->allow('index', 'view');
