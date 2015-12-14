@@ -10,6 +10,7 @@ sqlite3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\development.sqlite3
 
 pragma table_info(images);
 pragma table_info(admins);
+pragma table_info(audio_files);
 
 .exit
 
@@ -17,6 +18,7 @@ DROP TABLE videos;
 
 
 [sqlite3]======================================
+--------------------------------------------- images
 CREATE TABLE images(
 	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
 	created_at			VARCHAR(30),
@@ -43,6 +45,25 @@ CREATE TABLE images(
 
 DROP TABLE images;
 
+--------------------------------------------- audio_files
+CREATE TABLE audio_files(
+	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+	
+	local_id				INTEGER,
+	local_created_at		VARCHAR(30),
+	local_modified_at	VARCHAR(30),
+	
+	text				TEXT,
+	dir					TEXT,
+	
+	local_last_modified	VARCHAR(30)
+	
+);
+
+DROP TABLE audio_files;
+
 --------------------------------------------- admins
 DROP TABLE admins;
 
@@ -60,6 +81,27 @@ CREATE TABLE admins (
 
 
 [mysql(lollipop)]======================================
+--------------------------------------------- audio_files
+CREATE TABLE audio_files(
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+	
+	local_id				INTEGER,
+	local_created_at		VARCHAR(30),
+	local_modified_at	VARCHAR(30),
+	
+	text				TEXT,
+	dir					TEXT,
+	
+	local_last_modified	VARCHAR(30)
+	
+);
+
+DROP TABLE audio_files;
+
+
+
 #REF http://sql-info.de/mysql/examples/CREATE-TABLE-examples.html
 
 --------------------------------------------- images
