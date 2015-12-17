@@ -2507,6 +2507,8 @@ class AudioFilesController extends AppController {
 	
 		if ($command == null || $command != "GO") {
 	
+			debug("no command, or, no 'GO' param");
+			
 			// 			debug("No 'GO' command given. No operations => ?command=GO");
 	
 			return ;
@@ -2514,77 +2516,45 @@ class AudioFilesController extends AppController {
 		}//$command == null || $command != "GO"
 	
 		// 		$res = Utils::add_ImageData_From_DB_File();
+
+		/*******************************
+			get: latest audio memo instance
+		*******************************/
+		$am_MySQL_Latest = Utils::find_AudioFiles__MySQL__Latest();
 	
 		/*******************************
-		 get data: from DB file
+			get: file name
 		*******************************/
-		$last_Added_From_DBFile =
-		Utils::get_Admin_Value(
-				CONS::$adminKey_last_Added_From_DBFile,
-				"val1");
-	
-		// 		debug("\$last_Added_From_DBFile => $last_Added_From_DBFile");
-	
-		if ($last_Added_From_DBFile == null) {
-				
-			$last_Added_From_DBFile = CONS::$adminVal_last_Added_From_DBFile;
-				
-		}//$last_Added_From_DBFile == null
-	
-		// 		$last_Added_From_DBFile = CONS::$last_Added_From_DBFile;
-	
-		// convert
-		$last_Added_From_DBFile =
-		Utils::conv_TimeLabel_Standard_2_FileNameFormat($last_Added_From_DBFile);
-	
+		$am_MySQL_Latest_FileName = "";
+		
+		if (count($am_MySQL_Latest) > 0) {
+		
+			$am_MySQL_Latest_FileName = $am_MySQL_Latest['AudioFile']['file_name'];
+		
+		} else {
+		
+			$am_MySQL_Latest_FileName = "";
+			
+		}//if (count($am_MySQL_Latest) > 0)
+		
+		debug("\$am_MySQL_Latest_FileName => ".$am_MySQL_Latest_FileName);
+		
 		/*******************************
-		 set:start, end
+			get: list of am file names => from sqlite
 		*******************************/
-		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
-	
-		if ($start === null) {
-				
-			$start = "2015-08-15";
-				
-		}//$start === null
-	
-		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
-	
-		if ($end === null) {
-	
-			$end = "2015-09-03";
-	
-		}//$start === null
-	
-	
-		// 		$whereArgs = sprintf("WHERE file_name >= '$start' AND file_name <= '$end'");
-		// 		$whereArgs = sprintf("WHERE file_name >= $start AND file_name <= $end");
-		$whereArgs = "WHERE file_name > "
-		// 		$whereArgs = "WHERE modified_at > "
-		."'"
-				.$last_Added_From_DBFile
-				// 						.CONS::$last_Added_From_DBFile
-		."'";
-	
-		$result = Utils::find_All_Images__WhereArgs("file_name", "DESC", $whereArgs);
-		// 		$result = Utils::find_All_Images__WhereArgs("modified_at", "DESC", $whereArgs);
-		// 		$result = Utils::find_All_Images__WhereArgs("_id", "ASC", $whereArgs);
-	
-		$images = $result[0];
-	
-		$numOf_Images = $result[1];
-	
-		debug("\$numOf_Images => $numOf_Images");
-	
-		$cnt = 0;
-	
-		/*******************************
-		 insert: data from sqlite file into => mysql db
-		*******************************/
-		$res_Add_Data = Utils::add_ImageData_From_DB_File($images, $numOf_Images);
-	
-		debug($res_Add_Data);
-	
+		$listOf_AMs__SQLITE = Utils::find_AudioFiles__SQLITE();
+// 		$listOf_AMs__SQLITE = Utils::find_AudioFiles__SQLITE__Latest();
+
+		if ($listOf_AMs__SQLITE === null) {
+		
+			debug("\$listOf_AMs__SQLITE => null");
+		
+		} else {
+		
+			debug("\$listOf_AMs__SQLITE => ".count($listOf_AMs__SQLITE));
+			
+		}//if ($listOf_AMs__SQLITE === null)
+		
 	}//add_AudioFiles_From_DB_File
 
 	/*******************************
@@ -2662,6 +2632,16 @@ class AudioFilesController extends AppController {
 		$result = $file_db->query($q);
 		
 		// 		debug(get_class($result));
+
+		foreach ($result as $elem) {
+		
+			debug($elem);
+
+			break;
+			
+		}//foreach ($result as $elem)
+		
+		
 		
 		/*******************************
 		 get: num of images
@@ -2692,73 +2672,10 @@ class AudioFilesController extends AppController {
 		
 		debug("\$numOf_AudioFiles => ".$numOf_AudioFiles);
 		
-// 		$f_CSV = fopen($fpath_Src, "r");
-	
-// 		/*******************************
-// 		 read lines
-// 		*******************************/
-// 		$csv_Lines = array();
-	
-// 		//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
-// 		while ( ($data = fgetcsv($f_CSV) ) !== FALSE ) {
-	
-// 			array_push($csv_Lines, $data);
-	
-// 		}
-	
-// 		debug("csv lines => ".count($csv_Lines));
-	
-// 		debug(array_slice($csv_Lines, 0, 3));
-	
-// 		// 		(int) 0 => '2',
-// 		// 		(int) 1 => 'null',
-// 		// 		(int) 2 => 'null',
-// 		// 		(int) 3 => '38',
-// 		// 		(int) 4 => '2014/08/12 17:39:54.454',
-// 		// 		(int) 5 => '2014/08/20 11:27:08.197',
-// 		// 		(int) 6 => '7809',
-// 		// 		(int) 7 => '2014-08-12_12-17-13_686.jpg',
-// 		// 		(int) 8 => '2014-08-12_12-17-13_686.jpg',
-// 		// 		(int) 9 => '2014/08/12 12:17:13.000',
-// 		// 		(int) 10 => '2014/08/12 12:17:14.000',
-// 		// 		(int) 11 => ':PLANTS　プランター　オクラ',
-// 		// 		(int) 12 => '',
-// 		// 		(int) 13 => '',
-// 		// 		(int) 14 => 'ifm11__PLANTS'
-	
-// 		/*******************************
-// 		 filter: by file_name
-// 		*******************************/
-// 		$start = "2015-08-15";
-// 		$end = "2015-09-01";
-	
-// 		debug("start = $start / end = $end");
-	
-// 		$csv_Lines__Filtered = array();
-	
-// 		foreach ($csv_Lines as $line) {
-	
-// 			if ($line[8] >= $start && $line[8] <= $end) {
-	
-// 				array_push($csv_Lines__Filtered, $line);
-	
-// 			}//$line[8] >= $start && $line[8] <= $end;
-				
-// 		}//foreach ($csv_Lines as $line)
-	
-// 		debug("\$csv_Lines__Filtered => ".count($csv_Lines__Filtered));
-	
 		/*******************************
 		 pdo => reset
 		*******************************/
 		$file_db = null;
-		
-// 		/*******************************
-// 		 close
-// 		*******************************/
-// 		fclose($f_CSV);
-	
-// 		debug("bk => closed");
 		
 	}//add_AudioFiles_From_DB_File__Local()
 	

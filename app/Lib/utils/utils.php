@@ -3357,6 +3357,334 @@
 			return null;
 			
 		}//find_Image_From_Array__By_FileName
+
+		public static function
+		find_AudioFiles__MySQL__Latest() {
+			
+			$af = ClassRegistry::init('AudioFile');
+// 			$model = ClassRegistry::init('Image');
+			
+			$opt = array(
+				
+				"order"		=> 'created_at DESC'
+					
+			);
+			
+			return $af->find('first', $opt);
+// 			$af_Latest = $af->find('first', $opt);
+			
+			
+			
+		}//find_AudioFiles__MySQL__Latest
+		
+		public static function
+		find_AudioFiles__SQLITE__Latest() {
+			
+			$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+	// 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\Lib\\data\\ta";
+	// 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\csv";
+	// 				$dpath_Src = "lib\\data\\csv";
+		
+			$fname_Src = Utils::get_Latest_File__By_FileName($dpath_Src);
+	// 		$fname_Src = "images.csv";
+		
+			debug("\$fname_Src => ".$fname_Src);
+			
+			$fpath_Src = implode(DIRECTORY_SEPARATOR, array($dpath_Src, $fname_Src));
+		
+			debug("\$fpath_Src => ".$fpath_Src);
+		
+			/*******************************
+			 pdo: setup
+			*******************************/
+			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+			$file_db = new PDO("sqlite:$fpath_Src");
+	// 		$file_db = new PDO("sqlite:$fpath");
+				
+			if ($file_db === null) {
+			
+				debug("pdo => null");
+			
+				return null;
+			
+			} else {
+			
+				// 			debug("pdo => created");
+			
+			}
+				
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+			
+			/*******************************
+			 params
+			*******************************/
+			$sort_ColName = "_id";
+			
+			$sort_Direction = "DESC";
+			
+			/*******************************
+			 build list: from CSV
+			*******************************/
+	// 		$where_Col = "file_name";
+			
+			$q = "SELECT * FROM ".CONS::$tname_SQLITE_AudioFiles
+	// 		$q = "SELECT * FROM ".CONS::$tname_IFM11
+	// 		." "."WHERE"." "
+	// 				.$where_Col." ".">="." "."'$start'"
+	// 				." "."AND"." "
+	// 						.$where_Col." "."<="." "."'$end'"
+	// 						." "."AND"." "
+	// 								."memos is null"
+				
+											//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+			." "."ORDER BY"." "
+					.$sort_ColName." ".$sort_Direction
+					;
+						
+			debug("q => $q");
+			
+			$result = $file_db->query($q);
+			
+			// 		debug(get_class($result));
+	
+	// 		foreach ($result as $elem) {
+			
+	// 			debug($elem);
+	
+	// 			break;
+				
+	// 		}//foreach ($result as $elem)
+	
+	// 		/*******************************
+	// 			build: array of PDO elems
+	// 		*******************************/
+	// 		$arrayOf_AMs__SQLITE = array();
+			
+	// 		foreach ($result as $elem) {
+			
+	// 			array_push($arrayOf_AMs__SQLITE, $elem);
+				
+	// 		}//foreach ($result as $elem)
+			
+	// 		debug("\$arrayOf_AMs__SQLITE => ".count($arrayOf_AMs__SQLITE));
+			
+			/*******************************
+			 get: num of images
+			*******************************/
+			$q_Count = "SELECT Count(*) FROM ".CONS::$tname_SQLITE_AudioFiles
+	// 		$q_Count = "SELECT Count(*) FROM ".CONS::$tname_IFM11
+	// 		." "."WHERE"." "
+	// 				.$where_Col." ".">="." "."'$start'"
+	// 				." "."AND"." "
+	// 						.$where_Col." "."<="." "."'$end'"
+	// 						." "."AND"." "
+	// 								."memos is null"
+											//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+			." "."ORDER BY"." "
+					.$sort_ColName." ".$sort_Direction
+					;
+			
+					$result_Num = $file_db->query($q);
+			
+					$numOf_Images = $result_Num->fetchColumn();
+			
+			debug("\$q_Count => ".$q_Count);
+			
+			$result_Num = $file_db->query($q_Count);
+			
+			$numOf_AudioFiles = $result_Num->fetchColumn();
+	// 		$numOf_Images = $result_Num->fetchColumn();
+			
+			debug("\$numOf_AudioFiles => ".$numOf_AudioFiles);
+			
+			/*******************************
+			 pdo => reset
+			*******************************/
+			$file_db = null;
+	
+			/*******************************
+				return
+			*******************************/
+			if ($numOf_AudioFiles > 0) {
+			
+				$am_First = null;
+				
+				foreach ($result as $elem) {
+				
+					$am_First = $elem;
+					
+					break;
+					
+				}//foreach ($result as $elem)
+				
+				return $am_First;
+			
+			} else {
+			
+				return null;
+				
+			}//if ($numOf_AudioFiles > 0)
+			
+			
+			
+		
+		}//find_AudioFiles__SQLITE__Latest
+		
+		public static function
+		find_AudioFiles__SQLITE() {
+			
+			/*******************************
+				get: dpath
+			*******************************/
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+					
+				$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+					
+			} else {
+					
+				$dpath_Src = 
+						"/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/ta";
+// 				$dpath_Src = "/cake_apps/Cake_IFM11/app/Lib/data/ta";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+					
+// 			$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+// 			/cake_apps/Cake_IFM11/app/Lib/data/ta
+
+			$fname_Src = Utils::get_Latest_File__By_FileName($dpath_Src);
+		
+			debug("\$fname_Src => ".$fname_Src);
+			
+			$fpath_Src = implode(DIRECTORY_SEPARATOR, array($dpath_Src, $fname_Src));
+		
+			debug("\$fpath_Src => ".$fpath_Src);
+		
+			/*******************************
+			 pdo: setup
+			*******************************/
+			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+			$file_db = new PDO("sqlite:$fpath_Src");
+				
+			if ($file_db === null) {
+			
+				debug("pdo => null");
+			
+				return null;
+			
+			} else {
+			
+			}
+				
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+			
+			/*******************************
+			 params
+			*******************************/
+			$sort_ColName = "_id";
+			
+			$sort_Direction = "DESC";
+			
+			/*******************************
+			 build list: from CSV
+			*******************************/
+	// 		$where_Col = "file_name";
+			
+			$q = "SELECT * FROM ".CONS::$tname_SQLITE_AudioFiles
+	// 		$q = "SELECT * FROM ".CONS::$tname_IFM11
+	// 		." "."WHERE"." "
+	// 				.$where_Col." ".">="." "."'$start'"
+	// 				." "."AND"." "
+	// 						.$where_Col." "."<="." "."'$end'"
+	// 						." "."AND"." "
+	// 								."memos is null"
+				
+											//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+			." "."ORDER BY"." "
+					.$sort_ColName." ".$sort_Direction
+					;
+						
+			debug("q => $q");
+			
+			$result = $file_db->query($q);
+			
+			// 		debug(get_class($result));
+	
+	// 		foreach ($result as $elem) {
+			
+	// 			debug($elem);
+	
+	// 			break;
+				
+	// 		}//foreach ($result as $elem)
+	
+			/*******************************
+			 get: num of images
+			*******************************/
+			$q_Count = "SELECT Count(*) FROM ".CONS::$tname_SQLITE_AudioFiles
+	// 		$q_Count = "SELECT Count(*) FROM ".CONS::$tname_IFM11
+	// 		." "."WHERE"." "
+	// 				.$where_Col." ".">="." "."'$start'"
+	// 				." "."AND"." "
+	// 						.$where_Col." "."<="." "."'$end'"
+	// 						." "."AND"." "
+	// 								."memos is null"
+											//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+			." "."ORDER BY"." "
+					.$sort_ColName." ".$sort_Direction
+					;
+			
+					$result_Num = $file_db->query($q);
+			
+					$numOf_Images = $result_Num->fetchColumn();
+			
+			debug("\$q_Count => ".$q_Count);
+			
+			$result_Num = $file_db->query($q_Count);
+			
+			$numOf_AudioFiles = $result_Num->fetchColumn();
+	// 		$numOf_Images = $result_Num->fetchColumn();
+			
+			debug("\$numOf_AudioFiles => ".$numOf_AudioFiles);
+			
+			/*******************************
+			 pdo => reset
+			*******************************/
+			$file_db = null;
+	
+			/*******************************
+				return
+			*******************************/
+			if ($numOf_AudioFiles > 0) {
+			
+				/*******************************
+					build: array of PDO elems
+				*******************************/
+				$arrayOf_AMs__SQLITE = array();
+				
+				foreach ($result as $elem) {
+				
+					array_push($arrayOf_AMs__SQLITE, $elem);
+					
+				}//foreach ($result as $elem)
+				
+				debug("\$arrayOf_AMs__SQLITE => ".count($arrayOf_AMs__SQLITE));
+			
+				return $arrayOf_AMs__SQLITE;
+							
+			} else {
+			
+				return null;
+				
+			}//if ($numOf_AudioFiles > 0)
+			
+			
+			
+		
+		}//find_AudioFiles__SQLITE
 		
 	}//class Utils
 	
