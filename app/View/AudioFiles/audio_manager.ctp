@@ -1,16 +1,7 @@
-AudioFiles
-<br>
-<br>
-
-<?php 
-
-	echo __FILE__;
-
-?>
+audio manager
 
 <br>
 <br>
-<hr>
 
 <?php echo $this->element('layouts/links')?>
 

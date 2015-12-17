@@ -1032,3 +1032,46 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AudioFilesController), Object(CakeRequest))
 #4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-12-17 07:52:46 Error: [MissingActionException] Action AudioFilesController::audio_manager() could not be found.
+Exception Attributes: array (
+  'controller' => 'AudioFilesController',
+  'action' => 'audio_manager',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/audio_files/audio_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AudioFilesController), Object(CakeRequest))
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-12-17 08:04:46 Error: Fatal Error (64): Cannot redeclare AudioFilesController::add_From_DB_File() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AudioFilesController.php, line 2672]
+2015-12-17 08:04:46 Error: [FatalErrorException] Cannot redeclare AudioFilesController::add_From_DB_File()
+Request URL: /Eclipse_Luna/Cake_IFM11/audio_files/audio_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 2672)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 2672, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 2672, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-17 08:06:14 Error: Fatal Error (64): Cannot redeclare AudioFilesController::add_AudioFiles_From_DB_File() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AudioFilesController.php, line 2672]
+2015-12-17 08:06:14 Error: [FatalErrorException] Cannot redeclare AudioFilesController::add_AudioFiles_From_DB_File()
+Request URL: /Eclipse_Luna/Cake_IFM11/audio_files/audio_manager
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 2672)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 2672, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 2672, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-17 16:08:30 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\AudioFiles\add__audio_files__from__d_b__file.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\AudioFiles\\add__audio_files__from__d_b__file.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/audio_files/add_AudioFiles_From_DB_File
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AudioFilesController), Object(CakeRequest))
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

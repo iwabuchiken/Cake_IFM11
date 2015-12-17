@@ -47,6 +47,7 @@ DROP TABLE images;
 
 --------------------------------------------- audio_files
 CREATE TABLE audio_files(
+
 	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
 	created_at			VARCHAR(30),
 	updated_at			VARCHAR(30),
@@ -56,13 +57,60 @@ CREATE TABLE audio_files(
 	local_modified_at	VARCHAR(30),
 	
 	text				TEXT,
+	
+	file_name			TEXT,
 	dir					TEXT,
 	
-	local_last_modified	VARCHAR(30)
+	local_last_modified	VARCHAR(30),
+
+	audio_length	TEXT	
 	
 );
 
 DROP TABLE audio_files;
+DROP TABLE audio_files_old;
+
+ALTER TABLE audio_files RENAME TO audio_files_old;
+
+INSERT INTO audio_files 
+		(
+		
+		created_at,
+		updated_at,
+		
+		local_id,
+		local_created_at,
+		local_modified_at,
+		
+		text,
+		
+		file_name,
+		dir,
+		
+		local_last_modified,
+
+		audio_length,
+			
+		) 
+	SELECT
+
+		created_at,
+		updated_at,
+		
+		local_id,
+		local_created_at,
+		local_modified_at,
+		
+		text,
+		
+		file_name,
+		dir,
+		
+		local_last_modified,
+
+		audio_length,
+
+	FROM audio_files_old;
 
 --------------------------------------------- admins
 DROP TABLE admins;
@@ -83,6 +131,7 @@ CREATE TABLE admins (
 [mysql(lollipop)]======================================
 --------------------------------------------- audio_files
 CREATE TABLE audio_files(
+
 	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	created_at			VARCHAR(30),
 	updated_at			VARCHAR(30),
@@ -92,15 +141,60 @@ CREATE TABLE audio_files(
 	local_modified_at	VARCHAR(30),
 	
 	text				TEXT,
+	
+	file_name			TEXT,
 	dir					TEXT,
 	
-	local_last_modified	VARCHAR(30)
+	local_last_modified	VARCHAR(30),
+
+	audio_length	TEXT	
 	
 );
 
 DROP TABLE audio_files;
+DROP TABLE audio_files_old;
 
+ALTER TABLE audio_files RENAME TO audio_files_old;
 
+INSERT INTO audio_files 
+		(
+		
+		created_at,
+		updated_at,
+		
+		local_id,
+		local_created_at,
+		local_modified_at,
+		
+		text,
+		
+		file_name,
+		dir,
+		
+		local_last_modified,
+
+		audio_length,
+			
+		) 
+	SELECT
+
+		created_at,
+		updated_at,
+		
+		local_id,
+		local_created_at,
+		local_modified_at,
+		
+		text,
+		
+		file_name,
+		dir,
+		
+		local_last_modified,
+
+		audio_length,
+
+	FROM audio_files_old;
 
 #REF http://sql-info.de/mysql/examples/CREATE-TABLE-examples.html
 

@@ -1043,190 +1043,6 @@ class AudioFilesController extends AppController {
 				$cnt_Files_Not_Saved));
 		
 	}//add_Fix__Save_New_Files
-
-	/*******************************
-		use => CONS::$adminKey_last_Added_From_DBFile<br>
-		convert => "2015/09/16 00:00:00.000" to "2015-09-16_00-00-00.000"
-		where args => "WHERE file_name > admin val::add_image_Range_Start,End"
-// 		where args => "WHERE file_name > $last_Added_From_DBFile"
-	*******************************/
-	public function
-	add_From_DB_File() {
-
-		/*******************************
-			valid: remote server
-		*******************************/
-		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
-			
-			debug("Not the remote server");
-			
-			$this->add_From_DB_File__Local();
-			
-			return;
-				
-		}
-		
-		/*******************************
-		 valid: "GO" command given
-		*******************************/
-		$command = @$this->request->query['command'];
-		
-		if ($command == null || $command != "GO") {
-				
-// 			debug("No 'GO' command given. No operations => ?command=GO");
-				
-			return ;
-				
-		}//$command == null || $command != "GO"
-		
-// 		$res = Utils::add_ImageData_From_DB_File();
-
-		/*******************************
-			get data: from DB file
-		*******************************/
-		$last_Added_From_DBFile = 
-						Utils::get_Admin_Value(
-								CONS::$adminKey_last_Added_From_DBFile, 
-								"val1");
-		
-// 		debug("\$last_Added_From_DBFile => $last_Added_From_DBFile");
-		
-		if ($last_Added_From_DBFile == null) {
-			
-			$last_Added_From_DBFile = CONS::$adminVal_last_Added_From_DBFile;
-			
-		}//$last_Added_From_DBFile == null
-		
-// 		$last_Added_From_DBFile = CONS::$last_Added_From_DBFile;
-		
-		// convert
-		$last_Added_From_DBFile = 
-				Utils::conv_TimeLabel_Standard_2_FileNameFormat($last_Added_From_DBFile);
-		
-		/*******************************
-			set:start, end
-		*******************************/
-		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
-		
-		if ($start === null) {
-			
-			$start = "2015-08-15";
-			
-		}//$start === null
-		
-		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
-
-		if ($end === null) {
-				
-			$end = "2015-09-03";
-				
-		}//$start === null
-		
-		
-// 		$whereArgs = sprintf("WHERE file_name >= '$start' AND file_name <= '$end'");
-// 		$whereArgs = sprintf("WHERE file_name >= $start AND file_name <= $end");
-		$whereArgs = "WHERE file_name > "
-// 		$whereArgs = "WHERE modified_at > "
-						."'"
-						.$last_Added_From_DBFile
-// 						.CONS::$last_Added_From_DBFile
-						."'";
-		
-		$result = Utils::find_All_Images__WhereArgs("file_name", "DESC", $whereArgs);
-// 		$result = Utils::find_All_Images__WhereArgs("modified_at", "DESC", $whereArgs);
-// 		$result = Utils::find_All_Images__WhereArgs("_id", "ASC", $whereArgs);
-		
-		$images = $result[0];
-		
-		$numOf_Images = $result[1];
-		
-		debug("\$numOf_Images => $numOf_Images");
-		
-		$cnt = 0;
-
-		/*******************************
-			insert: data from sqlite file into => mysql db
-		*******************************/
-		$res_Add_Data = Utils::add_ImageData_From_DB_File($images, $numOf_Images);
-		
-		debug($res_Add_Data);
-		
-	}//add_From_DB_File
-	
-	public function 
-	add_From_DB_File__Local() {
-		
-		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\csv";
-// 		$dpath_Src = "lib\\data\\csv";
-		
-		$fname_Src = "images.csv";
-		
-		$fpath_Src = implode(DIRECTORY_SEPARATOR, array($dpath_Src, $fname_Src));
-		
-		debug("\$fpath_Src => ".$fpath_Src);
-		
-		$f_CSV = fopen($fpath_Src, "r");
-		
-		/*******************************
-		 read lines
-		*******************************/
-		$csv_Lines = array();
-		
-		//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
-		while ( ($data = fgetcsv($f_CSV) ) !== FALSE ) {
-		
-			array_push($csv_Lines, $data);
-		
-		}
-		
-		debug("csv lines => ".count($csv_Lines));
-
-		debug(array_slice($csv_Lines, 0, 3));
-		
-		// 		(int) 0 => '2',
-		// 		(int) 1 => 'null',
-		// 		(int) 2 => 'null',
-		// 		(int) 3 => '38',
-		// 		(int) 4 => '2014/08/12 17:39:54.454',
-		// 		(int) 5 => '2014/08/20 11:27:08.197',
-		// 		(int) 6 => '7809',
-		// 		(int) 7 => '2014-08-12_12-17-13_686.jpg',
-		// 		(int) 8 => '2014-08-12_12-17-13_686.jpg',
-		// 		(int) 9 => '2014/08/12 12:17:13.000',
-		// 		(int) 10 => '2014/08/12 12:17:14.000',
-		// 		(int) 11 => ':PLANTS　プランター　オクラ',
-		// 		(int) 12 => '',
-		// 		(int) 13 => '',
-		// 		(int) 14 => 'ifm11__PLANTS'
-		
-		/*******************************
-			filter: by file_name
-		*******************************/
-		$start = "2015-08-15";
-		$end = "2015-09-01";
-		
-		debug("start = $start / end = $end");
-		
-		$csv_Lines__Filtered = array();
-		
-		foreach ($csv_Lines as $line) {
-		
-			if ($line[8] >= $start && $line[8] <= $end) {
-				
-				array_push($csv_Lines__Filtered, $line);
-				
-			}//$line[8] >= $start && $line[8] <= $end;
-			
-		}//foreach ($csv_Lines as $line)
-		
-		debug("\$csv_Lines__Filtered => ".count($csv_Lines__Filtered));
-		
-		/*******************************
-			close
-		*******************************/
-		fclose($f_CSV);
-		
-	}//add_From_DB_File__Local()
 	
 	public function 
 	delete($id) {
@@ -2653,5 +2469,297 @@ class AudioFilesController extends AppController {
 		debug("list => saved: ".$fpath);
 		
 	}//im_Add_Image_Data__Gen_ImageList_File
+
+	public function
+	audio_manager() {
+	
+	
+	
+	}//audio_manager
+	
+
+	/*******************************
+	 use => CONS::$adminKey_last_Added_From_DBFile<br>
+	convert => "2015/09/16 00:00:00.000" to "2015-09-16_00-00-00.000"
+	where args => "WHERE file_name > admin val::add_image_Range_Start,End"
+	// 		where args => "WHERE file_name > $last_Added_From_DBFile"
+	*******************************/
+	public function
+	add_AudioFiles_From_DB_File() {
+	
+		/*******************************
+		 valid: remote server
+		*******************************/
+		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+			debug("Not the remote server");
+				
+			$this->add_AudioFiles_From_DB_File__Local();
+				
+			return;
+	
+		}
+	
+		/*******************************
+		 valid: "GO" command given
+		*******************************/
+		$command = @$this->request->query['command'];
+	
+		if ($command == null || $command != "GO") {
+	
+			// 			debug("No 'GO' command given. No operations => ?command=GO");
+	
+			return ;
+	
+		}//$command == null || $command != "GO"
+	
+		// 		$res = Utils::add_ImageData_From_DB_File();
+	
+		/*******************************
+		 get data: from DB file
+		*******************************/
+		$last_Added_From_DBFile =
+		Utils::get_Admin_Value(
+				CONS::$adminKey_last_Added_From_DBFile,
+				"val1");
+	
+		// 		debug("\$last_Added_From_DBFile => $last_Added_From_DBFile");
+	
+		if ($last_Added_From_DBFile == null) {
+				
+			$last_Added_From_DBFile = CONS::$adminVal_last_Added_From_DBFile;
+				
+		}//$last_Added_From_DBFile == null
+	
+		// 		$last_Added_From_DBFile = CONS::$last_Added_From_DBFile;
+	
+		// convert
+		$last_Added_From_DBFile =
+		Utils::conv_TimeLabel_Standard_2_FileNameFormat($last_Added_From_DBFile);
+	
+		/*******************************
+		 set:start, end
+		*******************************/
+		$start = Utils::get_Admin_Value("add_image_Range_Start", "val1");
+	
+		if ($start === null) {
+				
+			$start = "2015-08-15";
+				
+		}//$start === null
+	
+		$end = Utils::get_Admin_Value("add_image_Range_End", "val1");
+	
+		if ($end === null) {
+	
+			$end = "2015-09-03";
+	
+		}//$start === null
+	
+	
+		// 		$whereArgs = sprintf("WHERE file_name >= '$start' AND file_name <= '$end'");
+		// 		$whereArgs = sprintf("WHERE file_name >= $start AND file_name <= $end");
+		$whereArgs = "WHERE file_name > "
+		// 		$whereArgs = "WHERE modified_at > "
+		."'"
+				.$last_Added_From_DBFile
+				// 						.CONS::$last_Added_From_DBFile
+		."'";
+	
+		$result = Utils::find_All_Images__WhereArgs("file_name", "DESC", $whereArgs);
+		// 		$result = Utils::find_All_Images__WhereArgs("modified_at", "DESC", $whereArgs);
+		// 		$result = Utils::find_All_Images__WhereArgs("_id", "ASC", $whereArgs);
+	
+		$images = $result[0];
+	
+		$numOf_Images = $result[1];
+	
+		debug("\$numOf_Images => $numOf_Images");
+	
+		$cnt = 0;
+	
+		/*******************************
+		 insert: data from sqlite file into => mysql db
+		*******************************/
+		$res_Add_Data = Utils::add_ImageData_From_DB_File($images, $numOf_Images);
+	
+		debug($res_Add_Data);
+	
+	}//add_AudioFiles_From_DB_File
+
+	/*******************************
+		add from local db file => "ta2_backup_XXX.bk"<br>
+		loc => "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\Lib\data\ta"
+	*******************************/
+	public function
+	add_AudioFiles_From_DB_File__Local() {
+	
+		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+// 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\Lib\\data\\ta";
+// 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\csv";
+// 				$dpath_Src = "lib\\data\\csv";
+	
+		$fname_Src = Utils::get_Latest_File__By_FileName($dpath_Src);
+// 		$fname_Src = "images.csv";
+	
+		debug("\$fname_Src => ".$fname_Src);
+		
+		$fpath_Src = implode(DIRECTORY_SEPARATOR, array($dpath_Src, $fname_Src));
+	
+		debug("\$fpath_Src => ".$fpath_Src);
+	
+		/*******************************
+		 pdo: setup
+		*******************************/
+		//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+		$file_db = new PDO("sqlite:$fpath_Src");
+// 		$file_db = new PDO("sqlite:$fpath");
+			
+		if ($file_db === null) {
+		
+			debug("pdo => null");
+		
+			return null;
+		
+		} else {
+		
+			// 			debug("pdo => created");
+		
+		}
+			
+		// Set errormode to exceptions
+		$file_db->setAttribute(PDO::ATTR_ERRMODE,
+				PDO::ERRMODE_EXCEPTION);
+		
+		/*******************************
+		 params
+		*******************************/
+		$sort_ColName = "_id";
+		
+		$sort_Direction = "DESC";
+		
+		/*******************************
+		 build list: from CSV
+		*******************************/
+// 		$where_Col = "file_name";
+		
+		$q = "SELECT * FROM ".CONS::$tname_SQLITE_AudioFiles
+// 		$q = "SELECT * FROM ".CONS::$tname_IFM11
+// 		." "."WHERE"." "
+// 				.$where_Col." ".">="." "."'$start'"
+// 				." "."AND"." "
+// 						.$where_Col." "."<="." "."'$end'"
+// 						." "."AND"." "
+// 								."memos is null"
+			
+										//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+		." "."ORDER BY"." "
+				.$sort_ColName." ".$sort_Direction
+				;
+					
+		debug("q => $q");
+		
+		$result = $file_db->query($q);
+		
+		// 		debug(get_class($result));
+		
+		/*******************************
+		 get: num of images
+		*******************************/
+		$q_Count = "SELECT Count(*) FROM ".CONS::$tname_SQLITE_AudioFiles
+// 		$q_Count = "SELECT Count(*) FROM ".CONS::$tname_IFM11
+// 		." "."WHERE"." "
+// 				.$where_Col." ".">="." "."'$start'"
+// 				." "."AND"." "
+// 						.$where_Col." "."<="." "."'$end'"
+// 						." "."AND"." "
+// 								."memos is null"
+										//ref http://www.tutorialspoint.com/sqlite/sqlite_order_by.htm
+		." "."ORDER BY"." "
+				.$sort_ColName." ".$sort_Direction
+				;
+		
+				$result_Num = $file_db->query($q);
+		
+				$numOf_Images = $result_Num->fetchColumn();
+		
+		debug("\$q_Count => ".$q_Count);
+		
+		$result_Num = $file_db->query($q_Count);
+		
+		$numOf_AudioFiles = $result_Num->fetchColumn();
+// 		$numOf_Images = $result_Num->fetchColumn();
+		
+		debug("\$numOf_AudioFiles => ".$numOf_AudioFiles);
+		
+// 		$f_CSV = fopen($fpath_Src, "r");
+	
+// 		/*******************************
+// 		 read lines
+// 		*******************************/
+// 		$csv_Lines = array();
+	
+// 		//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
+// 		while ( ($data = fgetcsv($f_CSV) ) !== FALSE ) {
+	
+// 			array_push($csv_Lines, $data);
+	
+// 		}
+	
+// 		debug("csv lines => ".count($csv_Lines));
+	
+// 		debug(array_slice($csv_Lines, 0, 3));
+	
+// 		// 		(int) 0 => '2',
+// 		// 		(int) 1 => 'null',
+// 		// 		(int) 2 => 'null',
+// 		// 		(int) 3 => '38',
+// 		// 		(int) 4 => '2014/08/12 17:39:54.454',
+// 		// 		(int) 5 => '2014/08/20 11:27:08.197',
+// 		// 		(int) 6 => '7809',
+// 		// 		(int) 7 => '2014-08-12_12-17-13_686.jpg',
+// 		// 		(int) 8 => '2014-08-12_12-17-13_686.jpg',
+// 		// 		(int) 9 => '2014/08/12 12:17:13.000',
+// 		// 		(int) 10 => '2014/08/12 12:17:14.000',
+// 		// 		(int) 11 => ':PLANTS　プランター　オクラ',
+// 		// 		(int) 12 => '',
+// 		// 		(int) 13 => '',
+// 		// 		(int) 14 => 'ifm11__PLANTS'
+	
+// 		/*******************************
+// 		 filter: by file_name
+// 		*******************************/
+// 		$start = "2015-08-15";
+// 		$end = "2015-09-01";
+	
+// 		debug("start = $start / end = $end");
+	
+// 		$csv_Lines__Filtered = array();
+	
+// 		foreach ($csv_Lines as $line) {
+	
+// 			if ($line[8] >= $start && $line[8] <= $end) {
+	
+// 				array_push($csv_Lines__Filtered, $line);
+	
+// 			}//$line[8] >= $start && $line[8] <= $end;
+				
+// 		}//foreach ($csv_Lines as $line)
+	
+// 		debug("\$csv_Lines__Filtered => ".count($csv_Lines__Filtered));
+	
+		/*******************************
+		 pdo => reset
+		*******************************/
+		$file_db = null;
+		
+// 		/*******************************
+// 		 close
+// 		*******************************/
+// 		fclose($f_CSV);
+	
+// 		debug("bk => closed");
+		
+	}//add_AudioFiles_From_DB_File__Local()
 	
 }//class AudioFiles extends AppController
