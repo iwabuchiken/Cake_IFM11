@@ -2533,7 +2533,20 @@ class AudioFilesController extends AppController {
 		
 		} else {
 		
-			$am_MySQL_Latest_FileName = "";
+			$latest_file_name = @$this->request->query['latest-file-name'];
+
+			if ($latest_file_name != null && $latest_file_name != "") {
+			
+				$am_MySQL_Latest_FileName = $latest_file_name;
+			
+			} else {
+			
+				$am_MySQL_Latest_FileName = "レコード_2015-12-09_05-57-31.mp3";
+				
+			}//if ($latest_file_name != null && $latest_file_name != "")
+			
+// 			$am_MySQL_Latest_FileName = "レコード_2015-12-09_05-57-31.mp3";
+// 			$am_MySQL_Latest_FileName = "";
 			
 		}//if (count($am_MySQL_Latest) > 0)
 		
@@ -2554,6 +2567,27 @@ class AudioFilesController extends AppController {
 			debug("\$listOf_AMs__SQLITE => ".count($listOf_AMs__SQLITE));
 			
 		}//if ($listOf_AMs__SQLITE === null)
+		
+		/*******************************
+			filter: which AMs to save
+		*******************************/
+		$listOf_AMs__SQLITE__FilteredBy_FileName = array();
+		
+		foreach ($listOf_AMs__SQLITE as $elem) {
+		
+			$file_name = $elem['file_name'];
+			
+			// judge
+			if ($file_name > $am_MySQL_Latest_FileName) {
+				
+				array_push($listOf_AMs__SQLITE__FilteredBy_FileName, $elem);
+				
+			}//$file_name > $am_MySQL_Latest_FileName
+			
+		}//foreach ($listOf_AMs__SQLITE as $elem)
+		
+		debug("count(\$listOf_AMs__SQLITE__FilteredBy_FileName => "
+				.count($listOf_AMs__SQLITE__FilteredBy_FileName));
 		
 	}//add_AudioFiles_From_DB_File
 
