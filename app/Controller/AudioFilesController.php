@@ -2638,7 +2638,8 @@ class AudioFilesController extends AppController {
 		/*******************************
 		 params
 		*******************************/
-		$sort_ColName = "_id";
+		$sort_ColName = "file_name";
+// 		$sort_ColName = "_id";
 		
 		$sort_Direction = "DESC";
 		
@@ -2667,13 +2668,29 @@ class AudioFilesController extends AppController {
 		
 		// 		debug(get_class($result));
 
+		$aryOf_AudioFiles__SQLITE = array();
+		
 		foreach ($result as $elem) {
 		
-			debug($elem);
-
-			break;
+			array_push($aryOf_AudioFiles__SQLITE, $elem);
 			
+// 			debug($elem);
+
 		}//foreach ($result as $elem)
+
+		debug("\$aryOf_AudioFiles__SQLITE => ".count($aryOf_AudioFiles__SQLITE));
+		
+		debug($aryOf_AudioFiles__SQLITE[0]);
+		
+// 		// 		debug(get_class($result));
+
+// 		foreach ($result as $elem) {
+		
+// 			debug($elem);
+
+// 			break;
+			
+// 		}//foreach ($result as $elem)
 		
 		
 		
@@ -2711,6 +2728,120 @@ class AudioFilesController extends AppController {
 		*******************************/
 		$file_db = null;
 		
+		/*******************************
+			build: local db file: audio files
+		*******************************/
+		$sortColumn	= "file_name";
+		$direction	= "DESC";
+		
+		$listOf_AudioFiles__CakeModel = 
+						Utils::find_All_AudioFiles__CakeModel($sortColumn, $direction);
+// 		$listOf_AudioFiles__SQLITE = Utils::find_AudioFiles__SQLITE();
+		
+		debug("\$listOf_AudioFiles__CakeModel => ".count($listOf_AudioFiles__CakeModel));
+		
+		/*******************************
+			get: latest entry in Cake db
+		*******************************/
+		if (count($listOf_AudioFiles__CakeModel) < 1) {
+		
+			$fileNameOf_Latest_AF__CakeModel = "";
+		
+		} else {
+		
+			$fileNameOf_Latest_AF__CakeModel = 
+						$listOf_AudioFiles__CakeModel[0]['AudioFile']['file_name'];
+			
+		}//if (count($listOf_AudioFiles__CakeModel) < 1)
+		
+		
+		debug("\$fileNameOf_Latest_AF__CakeModel => ".$fileNameOf_Latest_AF__CakeModel);
+		
+		/*******************************
+			insert new AFs
+		*******************************/
+		$count = 0;
+		
+		$aryOf_AudioFiles_ToInsert = array();
+		
+		foreach ($aryOf_AudioFiles__SQLITE as $elem) {
+		
+			$file_name = $elem['file_name'];
+
+			if ($file_name > $fileNameOf_Latest_AF__CakeModel) {
+				
+				debug("Larger => $file_name > $fileNameOf_Latest_AF__CakeModel");
+				
+				$res_b = Utils::insert_Data__AudioFile($elem);
+				
+				if ($res_b == true) {
+				
+					$count += 1;
+				
+					debug("new record inserted => $file_name");
+					
+				} else {
+				
+					debug("new record NOT inserted => $file_name");
+					
+				}//if ($res_b == true)
+				
+			}//$file_name > $fileNameOf_Latest_AF__CakeModel
+			
+		}//foreach ($aryOf_AudioFiles__SQLITE as $elem)
+		
+		debug("total inseted => $count (records from sqlite => "
+				.count($aryOf_AudioFiles__SQLITE).")");
+
+		
+// 		$this->test();
+		
 	}//add_AudioFiles_From_DB_File__Local()
+
+	public function
+	test() {
+
+		/*******************************
+		 test
+		*******************************/
+// 		$fpath = "C:\\WORKS\\Storage\\audios\\and_ta2_audios\\AllVoice";
+		// 		$fpath = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11";
+		// 		$fpath = "C:\\Users\\kbuchi\\Desktop\\data\\audios";
+		// 		$fpath = "C:\\Users\\kbuchi\\Desktop\\data\\audios\\done";
+		$fpath = "C:\\Users\\kbuchi\\Desktop\\data\\audios\\done\\レコード_2015-11-29_16-29-18.mp3";
+		
+		$res_b = file_exists(mb_convert_encoding($fpath, "UTF-8", "SJIS-win"));
+// 		$res_b = file_exists(mb_convert_encoding($fpath, "UTF-8"));
+		// 		$res_b = file_exists($fpath);
+		
+		debug(($res_b == true ? "file exists: $fpath" : "file NOT exists: $fpath"));
+		
+		$fpath = "C:\\WORKS\\Storage\\audios\\and_ta2_audios\\AllVoice";
+		
+		//test
+		setlocale(LC_ALL, 'ja_JP.UTF-8');
+		
+		debug(scandir($fpath));
+		
+		//ref http://stackoverflow.com/questions/2887909/working-with-japanese-filenames-in-php-5-3-and-windows-vista/2888039#2888039 answered Oct 30 '10 at 6:58
+		if ($handle = opendir($fpath)) {
+				
+			debug("file opened: $fpath");
+				
+			// 		if ($handle = opendir($this->dir)) {
+			while (false !== ($file = readdir($handle))){
+				$name = mb_convert_encoding($file, "UTF-8", "SJIS-win" );
+				// 				$name = mb_convert_encoding($file, "UTF-8", "SJIS-win" );
+				debug($name);
+				// 				echo "$name<br>";
+			}
+			closedir($handle);
+		}
+		
+		// 		debug(setlocale(LC_CTYPE, 0) );
+		
+		
+	}//test()
+	
 	
 }//class AudioFiles extends AppController

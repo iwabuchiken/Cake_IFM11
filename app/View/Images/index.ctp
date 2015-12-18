@@ -123,6 +123,8 @@
 
 <?php echo $this->element('layouts/links')?>
 
+<?php echo $this->element('audio_files/links')?>
+
 <?php 
 // 	echo $this->Html->link(
 // 	    'Add Image',

@@ -3685,6 +3685,141 @@
 			
 		
 		}//find_AudioFiles__SQLITE
+
+		/*******************************
+			@return array of AudioFile models
+		*******************************/
+		public static function
+		find_All_AudioFiles__CakeModel
+		($sortColumn = "created_at", $direction = "DESC") {
+
+			$af = ClassRegistry::init('AudioFile');
+// 			$model = ClassRegistry::init('Image');
+			
+			$opt = array(
+				
+				"order"		=> "$sortColumn $direction"
+// 				"order"		=> 'created_at DESC'
+					
+			);
+			
+			return $af->find('all', $opt);
+// 			return $af->find('first', $opt);
+// 			$af_Latest = $af->find('first', $opt);
+			
+			
+		}//find_All_AudioFiles__CakeModel
+
+		public static function
+		insert_Data__AudioFile($instance) {
+			
+			$model = ClassRegistry::init('AudioFile');
+			
+			$model->create();
+			
+// 			created_at,
+// 			updated_at,
+			
+// 			local_id,
+// 			local_created_at,
+// 			local_modified_at,
+			
+// 			text,
+			
+// 			file_name,
+// 			dir,
+			
+// 			local_last_modified,
+			
+// 			audio_length,
+				
+			
+			$tmp = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+			$model->set("created_at", $tmp);
+				
+			$model->set("updated_at", $tmp);
+
+			$model->set("local_id", $instance['_id']);
+			$model->set("local_created_at", $instance['created_at']);
+			$model->set("local_modified_at", $instance['modified_at']);
+			
+			$model->set("text", $instance['text']);
+			$model->set("file_name", $instance['file_name']);
+			$model->set("dir", $instance['dir']);
+			
+			$model->set("local_last_modified", $instance['last_modified']);
+
+// 			$audio_Length = Utils::get_AudioLength($instance['file_name']);
+			
+			$model->set("audio_length", $instance['audio_length']);
+// 			$model->set("audio_length", $instance['audio_length']);
+			
+			if ($model->save()) {
+
+				debug("audio file => saved: ".$instance['file_name']);
+
+				return true;
+				
+			} else {
+
+				debug("audio file => NOT saved: ".$instance['file_name']);
+
+				return false;
+				
+			}
+			
+			
+		}//insert_Data__AudioFile
+
+		public static function
+		get_AudioLength($file_name) {
+			
+			/*******************************
+				local server
+			*******************************/
+			if (Utils::get_HostName() == "localhost") {
+
+				return Utils::get_AudioLength__LOCAL($file_name);
+				
+			} else {
+
+				return -1;
+// 				return get_AudioLength__REMOTE($file_name);
+				
+			}
+			
+			
+		}//get_AudioLength
+
+		public static function
+		get_AudioLength__LOCAL($file_name) {		
+			
+			$dpath = "C:\\Users\\kbuchi\\Desktop\\data\\audios\\done";
+			
+			$fpath = implode(
+								DIRECTORY_SEPARATOR, 
+								array($dpath, $file_name)
+						);
+			
+			// file exists
+			if (file_exists($fpath) == true) {
+// 			if (file_exists($fpath)) {
+			
+				$mp3file = new MP3File($fpath);
+			
+				return  $mp3file->getDuration();
+// 				$duration2 = $mp3file->getDuration();
+				
+			} else {
+			
+				debug("audio file => NOT exists --> $fpath");
+				
+				return -1;
+				
+			}//if (file_exists($fpath))
+			
+		}//get_AudioLength__LOCAL
 		
 	}//class Utils
 	
