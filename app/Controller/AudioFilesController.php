@@ -2473,7 +2473,34 @@ class AudioFilesController extends AppController {
 	public function
 	audio_manager() {
 	
+		/*******************************
+			update: cake db
+		*******************************/
+		$this->add_AudioFiles_From_DB_File();
+		
+		/*******************************
+			build list => sqlite data
+		*******************************/
+		$listOf_AMs__SQLITE = Utils::find_AudioFiles__SQLITE();
 	
+		if (count($listOf_AMs__SQLITE) > 0) {
+		
+			debug("\$listOf_AMs__SQLITE => ".count($listOf_AMs__SQLITE));
+			
+			debug($listOf_AMs__SQLITE[0]);
+		
+		} else {
+		
+			debug("\$listOf_AMs__SQLITE => < 0");
+			
+			return ;
+			
+		}//if (count($listOf_AMs__SQLITE) > 0)
+		
+		/*******************************
+			set values
+		*******************************/
+		$this->set("listOf_AMs__SQLITE", $listOf_AMs__SQLITE);
 	
 	}//audio_manager
 	
@@ -2678,9 +2705,9 @@ class AudioFilesController extends AppController {
 
 		}//foreach ($result as $elem)
 
-		debug("\$aryOf_AudioFiles__SQLITE => ".count($aryOf_AudioFiles__SQLITE));
+// 		debug("\$aryOf_AudioFiles__SQLITE => ".count($aryOf_AudioFiles__SQLITE));
 		
-		debug($aryOf_AudioFiles__SQLITE[0]);
+// 		debug($aryOf_AudioFiles__SQLITE[0]);
 		
 // 		// 		debug(get_class($result));
 
