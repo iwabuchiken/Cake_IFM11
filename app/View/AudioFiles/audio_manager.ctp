@@ -1,15 +1,12 @@
-audio manager
-
+<br>
+<a name="top"></a><a href="#bottom" class="navi_top_bottom">Bottom</a>
 <br>
 <br>
 
-<table>
-	<tr>
-		<th>No</th>
-		<th>File name</th>
-		<th>Text</th>
-	</tr>
-	
+<table id="audio_files_data">
+
+	<?php echo $this->element('audio_files/_audio_manager__Header')?>
+
 	<?php 
 	
 		if (isset($listOf_AMs__SQLITE)) {
@@ -19,58 +16,41 @@ audio manager
 			for ($i = 0; $i < $lenOf_AMs__SQLITE; $i++) {
 	
 	?>
-		<tr>
-			<td>
-				<?php echo $i + 1; ?>
-			</td>
-			
-			<td>
-				<?php echo $listOf_AMs__SQLITE[$i]['file_name'] ?>
-			</td>
-			
-			<td>
-				<?php 
-				
-// 					echo $listOf_AMs__SQLITE[$i]['text'] 
-					$opt = array(
-								
-							'value' => $listOf_AMs__SQLITE[$i]['text'],
-// 							'value' => $row['memos'],
-					
-							'onmouseover'	=> 'this.select()',
-							// 							'onmouseover'	=> 'this.focus()'
-					// 								'type'			=> 'input',
-							'type'		=> 'textarea',
-					
-							'id'		=> "audil_file_Text_".$listOf_AMs__SQLITE[$i]['_id'],
-// 							'id'			=> "image_data_Memo_".$row['_id'],
-					
-							// 								'height'		=> '100px'
-					
-					);
-					
-					//ref http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html
-					echo $this->Form->input('', $opt);
-					
-					
-				?>
-			</td>
-			
-		</tr>
+	
+	<?php 
+	
+		echo $this->element(
+// 						'audio_files/_audio_manager__Row'
+						'audio_files/_audio_manager__Row',
+
+
+						//ref http://book.cakephp.org/2.0/en/views.html#passing-variables-into-an-element
+						array(
+
+							"i" => $i, 
+							"listOf_AMs__SQLITE" => $listOf_AMs__SQLITE, 
+
+
+						)
+
+		);
+	
+	
+	?>
 	
 	<?php
-// 				echo $listOf_AMs__SQLITE[$i]['file_name'];
-				
-// 				echo "<br>";
 				
 			}//for ($i = 0; $i < $lenOf_AMs__SQLITE; $i++)
-			
 			
 		}//isset($listOf_AMs__SQLITE)
 	
 	?>
 </table>
 
+<br>
+<a name="bottom"></a><a href="#top" class="navi_top_bottom">Top</a>
+<br>
+<br>
 
 <hr>
 

@@ -13,7 +13,7 @@
 								'Audio files',
 								array('controller' => 'audio_files', 
 										'action' => 'index'),
-								array('class' => "button"));
+								array('class' => "button_AudioFiles"));
 			?>
 			
 		</td>
@@ -25,7 +25,7 @@
 								'Audio manager',
 								array('controller' => 'audio_files', 
 										'action' => 'audio_manager'),
-								array('class' => "button"));
+								array('class' => "button_AudioFiles"));
 			?>
 			
 		</td>
@@ -37,7 +37,7 @@
 								'Add audio files (from sqlite file)',
 								array('controller' => 'audio_files', 
 										'action' => 'add_AudioFiles_From_DB_File'),
-								array('class' => "button"));
+								array('class' => "button_AudioFiles"));
 			?>
 			
 		</td>

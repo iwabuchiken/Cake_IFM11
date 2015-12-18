@@ -68,6 +68,30 @@ a.button {
     cursor:pointer;
 }
 
+a.button_AudioFiles {
+    color: #4e4e4e;
+    /*color: #6e6e6e;*/
+    font: bold 20px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    padding: 7px 12px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+    background: LightGreen;
+    
+    border: solid 1px #86B404;
+    /*border: solid 1px #dcdcdc;*/
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-right: 20px;
+    cursor:pointer;
+}/* a.button_AudioFiles */
+
 a.button_2 {
     color: #4e4e4e;
     /*color: #6e6e6e;*/
@@ -114,6 +138,22 @@ table#image_data tr td {
 }
 
 table#image_data tr th {
+
+	border: 2px solid blue;
+	
+	text-align:	center;
+	
+	background:	#D5FF80;
+	
+}
+
+table#audio_files_data tr td {
+
+	border: 2px solid #555;
+	
+}
+
+table#audio_files_data tr th {
 
 	border: 2px solid blue;
 	
@@ -342,6 +382,44 @@ td.image_data_No {
 	text-align:		center;
 	
 	width:		30px;
+	
+}
+
+td.audio_file_data_No {
+	
+	background:		Aquamarine;
+	
+	text-align:		center;
+	
+	width:		30px;
+	
+}
+
+td.audio_file_data_FileName {
+	
+	background:		Moccasin;
+	
+	color:			black;
+	
+	font: bold 20px Helvetica, Arial, sans-serif;
+	
+	text-align:		left;
+	
+	/* width:		30px; */
+	
+}
+
+td.audio_file_data_Text {
+	
+	background:		White;
+	
+	color:			black;
+	
+	font: bold 15px Helvetica, Arial, sans-serif;
+	
+	text-align:		left;
+	
+	/* width:		30px; */
 	
 }
 

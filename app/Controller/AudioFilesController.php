@@ -2487,7 +2487,7 @@ class AudioFilesController extends AppController {
 		
 			debug("\$listOf_AMs__SQLITE => ".count($listOf_AMs__SQLITE));
 			
-			debug($listOf_AMs__SQLITE[0]);
+// 			debug($listOf_AMs__SQLITE[0]);
 		
 		} else {
 		
@@ -2633,11 +2633,11 @@ class AudioFilesController extends AppController {
 		$fname_Src = Utils::get_Latest_File__By_FileName($dpath_Src);
 // 		$fname_Src = "images.csv";
 	
-		debug("\$fname_Src => ".$fname_Src);
+// 		debug("\$fname_Src => ".$fname_Src);
 		
 		$fpath_Src = implode(DIRECTORY_SEPARATOR, array($dpath_Src, $fname_Src));
 	
-		debug("\$fpath_Src => ".$fpath_Src);
+// 		debug("\$fpath_Src => ".$fpath_Src);
 	
 		/*******************************
 		 pdo: setup
@@ -2689,7 +2689,7 @@ class AudioFilesController extends AppController {
 				.$sort_ColName." ".$sort_Direction
 				;
 					
-		debug("q => $q");
+// 		debug("q => $q");
 		
 		$result = $file_db->query($q);
 		
@@ -2741,14 +2741,14 @@ class AudioFilesController extends AppController {
 		
 				$numOf_Images = $result_Num->fetchColumn();
 		
-		debug("\$q_Count => ".$q_Count);
+// 		debug("\$q_Count => ".$q_Count);
 		
 		$result_Num = $file_db->query($q_Count);
 		
 		$numOf_AudioFiles = $result_Num->fetchColumn();
 // 		$numOf_Images = $result_Num->fetchColumn();
 		
-		debug("\$numOf_AudioFiles => ".$numOf_AudioFiles);
+// 		debug("\$numOf_AudioFiles => ".$numOf_AudioFiles);
 		
 		/*******************************
 		 pdo => reset
@@ -2765,7 +2765,7 @@ class AudioFilesController extends AppController {
 						Utils::find_All_AudioFiles__CakeModel($sortColumn, $direction);
 // 		$listOf_AudioFiles__SQLITE = Utils::find_AudioFiles__SQLITE();
 		
-		debug("\$listOf_AudioFiles__CakeModel => ".count($listOf_AudioFiles__CakeModel));
+// 		debug("\$listOf_AudioFiles__CakeModel => ".count($listOf_AudioFiles__CakeModel));
 		
 		/*******************************
 			get: latest entry in Cake db
@@ -2817,7 +2817,7 @@ class AudioFilesController extends AppController {
 			
 		}//foreach ($aryOf_AudioFiles__SQLITE as $elem)
 		
-		debug("total inseted => $count (records from sqlite => "
+		debug("total inserted => $count (records from sqlite => "
 				.count($aryOf_AudioFiles__SQLITE).")");
 
 		

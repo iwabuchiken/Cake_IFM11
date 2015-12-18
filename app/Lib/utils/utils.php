@@ -3555,7 +3555,7 @@
 
 			$fname_Src = Utils::get_Latest_File__By_FileName($dpath_Src);
 		
-			debug("\$fname_Src => ".$fname_Src);
+// 			debug("\$fname_Src => ".$fname_Src);
 			
 			$fpath_Src = implode(DIRECTORY_SEPARATOR, array($dpath_Src, $fname_Src));
 		
@@ -3607,7 +3607,7 @@
 					.$sort_ColName." ".$sort_Direction
 					;
 						
-			debug("q => $q");
+// 			debug("q => $q");
 			
 			$result = $file_db->query($q);
 			
@@ -3641,14 +3641,14 @@
 			
 					$numOf_Images = $result_Num->fetchColumn();
 			
-			debug("\$q_Count => ".$q_Count);
+// 			debug("\$q_Count => ".$q_Count);
 			
 			$result_Num = $file_db->query($q_Count);
 			
 			$numOf_AudioFiles = $result_Num->fetchColumn();
 	// 		$numOf_Images = $result_Num->fetchColumn();
 			
-			debug("\$numOf_AudioFiles => ".$numOf_AudioFiles);
+// 			debug("\$numOf_AudioFiles => ".$numOf_AudioFiles);
 			
 			/*******************************
 			 pdo => reset
@@ -3671,7 +3671,7 @@
 					
 				}//foreach ($result as $elem)
 				
-				debug("\$arrayOf_AMs__SQLITE => ".count($arrayOf_AMs__SQLITE));
+// 				debug("\$arrayOf_AMs__SQLITE => ".count($arrayOf_AMs__SQLITE));
 			
 				return $arrayOf_AMs__SQLITE;
 							
