@@ -2481,7 +2481,12 @@ class AudioFilesController extends AppController {
 		/*******************************
 			build list => sqlite data
 		*******************************/
-		$listOf_AMs__SQLITE = Utils::find_AudioFiles__SQLITE();
+		$sort_ColName = "file_name";
+
+		$sort_Direction = "DESC";
+
+		$listOf_AMs__SQLITE = Utils::find_AudioFiles__SQLITE($sort_ColName, $sort_Direction);
+// 		$listOf_AMs__SQLITE = Utils::find_AudioFiles__SQLITE();
 	
 		if (count($listOf_AMs__SQLITE) > 0) {
 		
@@ -2825,6 +2830,101 @@ class AudioFilesController extends AppController {
 		
 	}//add_AudioFiles_From_DB_File__Local()
 
+	public function
+	update_audio_file_data() {
+
+		/*******************************
+		 layout
+		*******************************/
+		$this->layout = "plain";
+		
+		/*******************************
+			query
+		*******************************/
+		$audio_file_id = @$this->request->query['audio_file_id'];
+		$text = @$this->request->query['text'];
+
+		/*******************************
+			validate: id not null
+		*******************************/
+		if ($audio_file_id === null) {
+		
+			$this->set("message", "id => can't find: $audio_file_id");
+		
+			$this->render("/Elements/audio_files/update_audio_file_data");
+			
+			return;
+			
+		} else if ($text === null) {
+		
+			$this->set("message", "text => null: $audio_file_id");
+		
+			$this->render("/Elements/audio_files/update_audio_file_data");
+			
+			return;
+			
+		}//if ($audio_file_id != null)
+		
+		/*******************************
+			find: audio file
+		*******************************/
+// 		$opt = array('conditions' => 
+// 							array(
+// 									'AudioFile.id LIKE' => "$audio_file_id")
+// 		);
+		
+		$af = Utils::find_AudioFile__SQLITE($audio_file_id);
+// 		$af = $this->AudioFile->find("first", $opt);
+		
+// 		debug(($af == null ? "audio file => null" : $af));
+		
+		/*******************************
+			valid: af instance exists
+		*******************************/
+		if ($af == null) {
+			
+			/*******************************
+				set values
+			*******************************/
+			$this->set("message", "af => null (id = ".$audio_file_id.")");
+			
+			/*******************************
+				view
+			*******************************/
+			$this->render("/Elements/audio_files/update_audio_file_data");
+			
+			return ;
+			
+		}//$af == null
+		
+// 		debug($af);
+		
+		/*******************************
+			update: text
+		*******************************/
+		$af['text'] = $text;
+		
+// 		debug($af);
+		
+		/*******************************
+			update af
+		*******************************/
+		$res_b = Utils::update_AudioFile__SQLITE($af);
+		
+		/*******************************
+			set values
+		*******************************/
+		$this->set("message", sprintf("done: %s (%s)", $af['_id'], $text));
+// 		$this->set("message", sprintf("done: %s (%s)", $af['AudioFile']['id'], $text));
+// 		$this->set("message", "done: ".$af['AudioFile']['id']);
+		
+		/*******************************
+			view
+		*******************************/
+		$this->render("/Elements/audio_files/update_audio_file_data");
+		
+	}//update_audio_file_data()
+	
 	public function
 	test() {
 

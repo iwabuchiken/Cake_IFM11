@@ -1105,3 +1105,50 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-12-19 01:55:15 Error: [MissingViewException] View file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Elements\update_audio_file_data.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Elements\\update_audio_file_data.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/audio_files/update_audio_file_data
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName('/Elements/updat...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render('/Elements/updat...', NULL)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AudioFilesController.php(2852): Controller->render('/Elements/updat...')
+#3 [internal function]: AudioFilesController->update_audio_file_data()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AudioFilesController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AudioFilesController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-12-19 10:25:07 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/audio_files/update_audio_file_data?audio_file_id=20&memo=abcde
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(2569): PDO->__construct('sqlite:C:\\WORKS...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AudioFilesController.php(2897): Utils::update_AudioFile(Array)
+#2 [internal function]: AudioFilesController->update_audio_file_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AudioFilesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AudioFilesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-12-19 04:53:03 Error: Fatal Error (1): Call to a member function fetchColumn() on boolean in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 3771]
+2015-12-19 04:53:03 Error: [FatalErrorException] Call to a member function fetchColumn() on boolean
+Request URL: /Eclipse_Luna/Cake_IFM11/audio_files/update_audio_file_data?audio_file_id=70&text=%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89_2015-12-17_14-02-+50.mp3+abcde
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 3771)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 3771, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 3771, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-19 13:03:59 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: id
+Request URL: /Eclipse_Luna/Cake_IFM11/audio_files/update_audio_file_data?audio_file_id=60&text=%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%89_2015-12-17_14-02-+50.mp3+abcde
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(2631): PDO->prepare('UPDATE audio_fi...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AudioFilesController.php(2907): Utils::update_AudioFile__SQLITE(Array)
+#2 [internal function]: AudioFilesController->update_audio_file_data()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(AudioFilesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AudioFilesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

@@ -43,7 +43,7 @@
 					// 								'type'			=> 'input',
 							'type'		=> 'textarea',
 					
-							'id'		=> "audil_file_Text_".$listOf_AMs__SQLITE[$i]['_id'],
+							'id'		=> "audio_file_Text_".$listOf_AMs__SQLITE[$i]['_id'],
 // 							'id'			=> "image_data_Memo_".$row['_id'],
 					
 							// 								'height'		=> '100px'

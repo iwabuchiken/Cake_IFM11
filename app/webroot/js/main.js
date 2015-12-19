@@ -214,3 +214,72 @@ function update_Image_Data__FromList(id) {
 
 	
 }//update_Image_Data
+
+function 
+update_AudioFiles_Data__FromList(id) {
+	
+	/***************************
+		prep: url
+	 ***************************/
+	var hostname = window.location.hostname;
+	
+	var url;
+	
+	if (hostname == "benfranklin.chips.jp") {
+		
+		url = "/cake_apps/Cake_IFM11/audio_files/update_audio_file_data";
+//		url = "/cake_apps/Cake_IFM11/images/update_image_data";
+		
+	} else {
+		
+		url = "/Eclipse_Luna/Cake_IFM11/audio_files/update_audio_file_data";
+//		url = "/Cake_IFM11/images/update_image_data";
+		
+	}
+	
+	/***************************
+		prep: vars
+	 ***************************/
+//	var memo = $("input#image_data_Memo_" + id).val();	//=> w
+	var memo = $("textarea#audio_file_Text_" + id).val();
+//	var memo = $("textarea#image_data_Memo_" + id).val();
+	
+	alert("memo => " + memo);
+	
+	var audio_file_id = id;
+	
+//	alert("id " + id + " => " + memo);
+	
+	/***************************
+		ajax
+	 ***************************/
+	$.ajax({
+		
+		url: url,
+		type: "GET",
+		//REF http://stackoverflow.com/questions/1916309/pass-multiple-parameters-to-jquery-ajax-call answered Dec 16 '09 at 17:37
+//	    data: {id: id},
+		data: {text: memo, audio_file_id: audio_file_id},
+//		data: {memos: memo, audio_file_id: audio_file_id},
+		
+		timeout: 10000
+		
+	}).done(function(data, status, xhr) {
+		
+		alert(data);
+		
+		//	alert(conv_Float_to_TimeLabel(data.point));
+		//	addPosition_ToList(data.point);
+		
+		//	_delete_position_Ajax__Done(data, status, xhr);
+//		_add_KW__Genre_Changed__Done(data, status, xhr);
+		
+	}).fail(function(xhr, status, error) {
+		
+		alert(xhr.status);
+		
+	});
+	
+	
+}//update_AudioFiles_Data__FromList
+
