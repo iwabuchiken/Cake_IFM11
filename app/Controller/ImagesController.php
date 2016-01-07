@@ -2855,4 +2855,79 @@ class ImagesController extends AppController {
 		
 	}//im_Add_Image_Data__Gen_ImageList_File
 
+	public function
+	manage_Sharp_ImageFiles() {
+		
+		/*******************************
+			valid: local server
+		*******************************/
+		if (Utils::get_HostName() != "localhost") {
+		
+			debug("I am not a local server. No op.");
+				
+			return;
+				
+		} else {
+			
+			//debug
+			
+			debug("local server");
+// 			debug("remote server: image_manager__Update_CSV --> under construction");
+			
+// 			return;
+			
+		}
+				
+		/*******************************
+			files list
+		*******************************/
+		$dpath = "C:\\WORKS\\Storage\\images\\100SHARP\\tmp";
+		
+		$list_Files = array_values(array_diff(
+				scandir($dpath), array('..', '.')));		
+		
+		debug("files => ".count($list_Files));
+		
+		/*******************************
+			file names
+		*******************************/
+		$count = 0;
+
+		$len = count($list_Files);
+		
+		for ($i = 0; $i < $len; $i++) {
+		
+			// exists?
+			$res_b = file_exists($list_Files[$i]);
+			
+			if ($res_b == false) {
+			
+				debug("file not exist => $list_Files[$i]");
+				
+				continue;
+			
+			} else {
+			
+				$f = fopen($list_Files[$i], "a");
+				
+				//ref http://www.w3schools.com/php/func_filesystem_filemtime.asp
+				debug(sprintf("%s (%s = %d)", 
+						$list_Files[$i], 
+						date("Y-m-d h:i:s", filemtime($list_Files[$i])),
+						filemtime($list_Files[$i])
+				));
+// 						filemtime($list_Files[$i])));
+				
+				fclose($f);
+				
+				$count += 1;
+				
+			}//if ($res_b == false)
+			
+		}//for ($i = 0; $i < $len; $i++)
+		
+		debug("done => $count");
+		
+	}//manage_Sharp_ImageFiles()
+	
 }
