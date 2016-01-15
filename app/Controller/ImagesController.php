@@ -3104,4 +3104,259 @@ class ImagesController extends AppController {
 		
 	}//manage_Sharp_ImageFiles()
 	
+	public function
+	manage_IPhone_ImageFiles__Change_FileNames() {
+		
+		/*******************************
+		 files list
+		*******************************/
+		$dpath = "C:\\WORKS\\Storage\\images\\100SHARP\\tmp";
+		
+		$list_Files = array_values(array_diff(
+				scandir($dpath), array('..', '.')));
+		
+		debug("files => ".count($list_Files));
+		
+		/*******************************
+		 file names
+		*******************************/
+		$count = 0;
+		
+		$len = count($list_Files);
+		
+		for ($i = 0; $i < $len; $i++) {
+		
+			// exists?
+			$res_b = file_exists($list_Files[$i]);
+				
+			if ($res_b == false) {
+					
+				debug("file not exist => $list_Files[$i]");
+		
+				continue;
+					
+			} else {
+					
+				$f = fopen($list_Files[$i], "a");
+		
+				//ref http://www.w3schools.com/php/func_filesystem_filemtime.asp
+				debug(sprintf("%s (%s = %d)",
+				$list_Files[$i],
+				date("Y-m-d h:i:s", filemtime($list_Files[$i])),
+				filemtime($list_Files[$i])
+				));
+				// 						filemtime($list_Files[$i])));
+		
+				fclose($f);
+		
+				$count += 1;
+		
+			}//if ($res_b == false)
+				
+		}//for ($i = 0; $i < $len; $i++)
+		
+		debug("done => $count");
+		
+	}//manage_IPhone_ImageFiles__Change_FileNames
+	
+	public function
+	manage_IPhone_ImageFiles__Insert_Data($db_file) {
+// 	manage_IPhone_ImageFiles__Insert_Data() {
+		
+		/*******************************
+			list of file names
+		*******************************/
+		$dpath_ImageFiles = "C:\\Users\\kbuchi\\Desktop\\data\\images\\iphone";
+// 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\iphone";
+// 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\is13sh";
+		
+		$list_Files = array_values(array_diff(
+				scandir($dpath_ImageFiles), array('..', '.')));
+		
+		$lenOf_List_Files = count($list_Files);
+		
+		debug("files => ".$lenOf_List_Files);
+// 		debug("files => ".count($list_Files));
+
+		debug($list_Files[0]);
+		
+		/*******************************
+			setup: vars
+		*******************************/
+		$dpath = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// 		"C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data";
+		
+		$fname = $db_file;
+// 		$fname = "ifm11_backup_20160107_092216.bk";
+		
+		$fpath = implode(DIRECTORY_SEPARATOR, array($dpath, $fname));
+
+		debug($fpath);
+		
+		/*******************************
+			valid: db file exists
+		*******************************/
+		if (! file_exists($fpath)) {
+			
+			debug("no such db file => $db_file");
+			
+			return ;
+			
+		}//! file_exists($fpath)
+		
+		/*******************************
+		 pdo: setup
+		*******************************/
+		//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+		$file_db = new PDO("sqlite:$fpath");
+			
+		if ($file_db === null) {
+		
+			debug("pdo => null");
+		
+			return null;
+		
+		} else {
+				
+// 			debug("pdo => created");
+				
+		}
+			
+		// Set errormode to exceptions
+		$file_db->setAttribute(PDO::ATTR_ERRMODE,
+				PDO::ERRMODE_EXCEPTION);
+
+		/*******************************
+		 prep: data for insertion
+		*******************************/
+		$sql = "INSERT INTO ifm11 ("
+				."created_at, modified_at, "		// 1,2
+				."date_added, date_modified, "		// 3,4
+				."file_path, file_name"				// 5,6
+						.") "
+								."SELECT "
+// 								."VALUES ("
+										."?, ?, "
+										."?, ?, "
+										."?, ?"
+								." "
+// 								.")"
+				." "
+				."WHERE NOT EXISTS(SELECT 1 FROM ifm11 WHERE file_path = ? AND file_name = ?)"
+			;
+			
+		debug($sql);
+		
+		$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+		
+		// counter => insertion successful
+		$count = 0;
+		
+		// insert
+		foreach ($list_Files as $elem) {
+		
+			$data = array(
+			
+					$time,		// created_at
+					$time,		// modified_at
+					
+					$time,		// date_added
+					$time,		// date_modified
+					
+					$dpath_ImageFiles,		// file_path
+					$elem,		// file_name
+						
+					$dpath_ImageFiles,		// file_path
+					$elem		// file_name
+						
+			);
+			
+			$qry = $file_db->prepare($sql);
+
+			//ref http://php.net/manual/en/pdostatement.execute.php
+			$res = $qry->execute($data);
+			
+			//debug
+			if ($res === true) {
+	
+				debug("execute => true: ".$elem);
+				
+				// count
+				$count += 1;
+	
+			} else {
+	
+				debug("execute => false: ".$elem);
+	
+			}//if ($res === true)
+					
+		}//foreach ($list_Files as $elem)
+		
+		/*******************************
+			report
+		*******************************/
+		$msg = sprintf("insert: total => %d, done => %d", $lenOf_List_Files, $count);
+				
+		debug($msg);
+		
+		/*******************************
+		 pdo => reset
+		*******************************/
+		$file_db = null;
+		
+	}//manage_IPhone_ImageFiles__Insert_Data
+	
+	public function
+	manage_IPhone_ImageFiles() {
+		
+		/*******************************
+			valid: local server
+		*******************************/
+		if (Utils::get_HostName() != "localhost") {
+		
+			debug("I am not a local server. No op.");
+				
+			return;
+				
+		} else {
+			
+			//debug
+			
+			debug("local server");
+// 			debug("remote server: image_manager__Update_CSV --> under construction");
+			
+// 			return;
+			
+		}
+
+		/*******************************
+			valid: param
+		*******************************/
+		$db_file = @$this->request->query['db_file'];
+		
+		if ($db_file == null) {
+			
+			debug("db file => not designated");
+			
+			return ;
+			
+		} else {//$db_file == null
+			
+			debug("db file => $db_file");
+			
+		}//$db_file == null
+		
+// 		/*******************************
+// 			rename => file names
+// 		*******************************/
+// // 		$this->manage_IPhone_ImageFiles__Change_FileNames();
+
+		/*******************************
+			insert data
+		*******************************/
+		$this->manage_IPhone_ImageFiles__Insert_Data($db_file);
+// 		$this->manage_IPhone_ImageFiles__Insert_Data();
+		
+	}//manage_IPhone_ImageFiles()
+	
 }
