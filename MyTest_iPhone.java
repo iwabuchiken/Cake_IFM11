@@ -30,12 +30,16 @@ import java.io.FileWriter;
 import java.util.Locale;
 import java.util.Arrays;
 
+//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
+import java.sql.*;
+
 public class MyTest_iPhone {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		D_20_v_1_1_Process_IPhone_ImageFiles__V2();
+		D_20_v_1_1_Process_IPhone_ImageFiles__V3();
+//		D_20_v_1_1_Process_IPhone_ImageFiles__V2();
 //		D_20_v_1_1_Process_IPhone_ImageFiles();
 
 //		D_20_v_1_0_s_2__Get_FileName__V3();
@@ -49,6 +53,200 @@ public class MyTest_iPhone {
 
 	public static void 
 	D_20_v_1_1_Process_IPhone_ImageFiles__V2() {
+		
+		///////////////////////////////////
+		//
+		// directory
+		//
+		///////////////////////////////////
+		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		
+		File dir = new File(dpath);
+		
+		if (!dir.exists()) {
+			
+			String msg;
+			
+			//ref http://stackoverflow.com/questions/47045/sprintf-equivalent-in-java answered Sep 5 '08 at 23:06
+			msg = String.format(Locale.JAPAN, 
+					"[%s : %d] dir doesn't exists => %s", 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), 
+					dir.getName());
+			
+			System.out.println(msg);
+			
+			return;
+			
+		}//if (dir.exists())
+		
+		///////////////////////////////////
+		//
+		// files list
+		//
+		///////////////////////////////////
+		File[] list_Files = dir.listFiles(new FileFilter(){
+//			File[] list_Files = dpath.listFiles(new FileFilter(){
+			
+			@Override
+			public boolean accept(File f) {
+				
+				return f.exists() && f.getName().startsWith("IMG");
+//				return f.exists() && f.getPath().startsWith("DSC");
+				
+			}
+			
+		});
+		
+		// validate
+		if (list_Files.length < 1) {
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] no entries", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+			
+			System.out.println(msg);
+			
+			return;
+			
+		} else {//if (list_Files.length < 1)
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] files => %d", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), list_Files.length);
+			
+			System.out.println(msg);
+			
+		}//if (list_Files.length < 1)
+		
+		///////////////////////////////////
+		//
+		// rename
+		//
+		///////////////////////////////////
+		long lastModified;
+		
+		String tmp_s;
+		
+		String fname_Modified;
+		
+		for (File elem : list_Files) {
+			
+			lastModified = elem.lastModified();
+			
+			tmp_s = conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg";
+			
+			fname_Modified = get_FileName_No_Duplicates(dpath, tmp_s);
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] file = %s / converted = %s / modified = %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), 
+					elem.getName(), tmp_s, fname_Modified);
+			
+//			System.out.println(msg);
+			
+			// rename
+			try {
+				
+				Files.move(elem.toPath(), new File(dpath, fname_Modified).toPath());
+//				Files.move(f_1.toPath(), f_2.toPath());
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}//for (File elem : list_Files)
+		
+//		long lastModified = f_1.lastModified();
+////		long lastModified = new File(dpath, fname_1).lastModified();
+//		
+//		File f_2 = new File(dpath, 
+//						conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg");
+		
+		
+//		String[] aryOf_FileNames = dir.list();
+//		
+//		// report
+//		String msg;
+//		msg = String.format(Locale.JAPAN, "[%s : %d] num of files => %d", Thread
+//				.currentThread().getStackTrace()[1].getFileName(), Thread
+//				.currentThread().getStackTrace()[1].getLineNumber(), aryOf_FileNames.length);
+//
+//		System.out.println(msg);
+//		
+//		///////////////////////////////////
+//		//
+//		// rename
+//		//
+//		///////////////////////////////////
+//		for (String elem : aryOf_FileNames) {
+//			
+//			elem = get_FileName_No_Duplicates(dpath, elem);
+//			
+//		}//for (String elem : aryOf_FileNames)
+//
+//		///////////////////////////////////
+//		//
+//		// record log
+//		//
+//		///////////////////////////////////
+//		String log_msg = "bbbbbbb";
+//		
+//		write_Log(log_msg, 
+//				Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+//				.currentThread().getStackTrace()[2].getLineNumber());
+		
+		///////////////////////////////////
+		//
+		// report
+		//
+		///////////////////////////////////
+		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] method => done", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
+		
+		System.out.println(msg);
+		
+	}//D_20_v_1_1_Process_IPhone_ImageFiles__V2
+	
+	
+	public static void 
+	D_20_v_1_1_Process_IPhone_ImageFiles__V3() {
+
+		//////////////////////////////////////////////////////////////////////
+		//
+		// files in the db
+		//
+		//////////////////////////////////////////////////////////////////////
+		///////////////////////////////////
+		//
+		// db
+		//
+		///////////////////////////////////
+		//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
+		Connection c = null;
+		
+		try {
+			
+			Class.forName("org.sqlite.JDBC");
+			//ref java.sql.DriverManager
+			
+			c = DriverManager.getConnection("jdbc:sqlite:test.db");
+			
+		} catch ( Exception e ) {
+			
+			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+			System.exit(0);
+			
+		}
+		
+		System.out.println("Opened database successfully");
 
 		///////////////////////////////////
 		//
@@ -117,86 +315,47 @@ public class MyTest_iPhone {
 			
 		}//if (list_Files.length < 1)
 
-		///////////////////////////////////
-		//
-		// rename
-		//
-		///////////////////////////////////
-		long lastModified;
-		
-		String tmp_s;
-		
-		String fname_Modified;
-		
-		for (File elem : list_Files) {
-			
-			lastModified = elem.lastModified();
-			
-			tmp_s = conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg";
-			
-			fname_Modified = get_FileName_No_Duplicates(dpath, tmp_s);
-			
-			String msg;
-			msg = String.format(Locale.JAPAN, "[%s : %d] file = %s / converted = %s / modified = %s", Thread
-					.currentThread().getStackTrace()[1].getFileName(), Thread
-					.currentThread().getStackTrace()[1].getLineNumber(), 
-					elem.getName(), tmp_s, fname_Modified);
-
-//			System.out.println(msg);
-
-			// rename
-			try {
-				
-				Files.move(elem.toPath(), new File(dpath, fname_Modified).toPath());
-//				Files.move(f_1.toPath(), f_2.toPath());
-				
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-
-		}//for (File elem : list_Files)
-		
-//		long lastModified = f_1.lastModified();
-////		long lastModified = new File(dpath, fname_1).lastModified();
-//		
-//		File f_2 = new File(dpath, 
-//						conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg");
-
-		
-//		String[] aryOf_FileNames = dir.list();
-//		
-//		// report
-//		String msg;
-//		msg = String.format(Locale.JAPAN, "[%s : %d] num of files => %d", Thread
-//				.currentThread().getStackTrace()[1].getFileName(), Thread
-//				.currentThread().getStackTrace()[1].getLineNumber(), aryOf_FileNames.length);
-//
-//		System.out.println(msg);
-//		
 //		///////////////////////////////////
 //		//
 //		// rename
 //		//
 //		///////////////////////////////////
-//		for (String elem : aryOf_FileNames) {
-//			
-//			elem = get_FileName_No_Duplicates(dpath, elem);
-//			
-//		}//for (String elem : aryOf_FileNames)
-//
-//		///////////////////////////////////
-//		//
-//		// record log
-//		//
-//		///////////////////////////////////
-//		String log_msg = "bbbbbbb";
+//		long lastModified;
 //		
-//		write_Log(log_msg, 
-//				Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-//				.currentThread().getStackTrace()[2].getLineNumber());
-
+//		String tmp_s;
+//		
+//		String fname_Modified;
+//		
+//		for (File elem : list_Files) {
+//			
+//			lastModified = elem.lastModified();
+//			
+//			tmp_s = conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg";
+//			
+//			fname_Modified = get_FileName_No_Duplicates(dpath, tmp_s);
+//			aa
+//			String msg;
+//			msg = String.format(Locale.JAPAN, "[%s : %d] file = %s / converted = %s / modified = %s", Thread
+//					.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber(), 
+//					elem.getName(), tmp_s, fname_Modified);
+//
+////			System.out.println(msg);
+//
+//			// rename
+//			try {
+//				
+//				Files.move(elem.toPath(), new File(dpath, fname_Modified).toPath());
+////				Files.move(f_1.toPath(), f_2.toPath());
+//				
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//
+//
+//		}//for (File elem : list_Files)
+//		
 		///////////////////////////////////
 		//
 		// report
@@ -209,7 +368,8 @@ public class MyTest_iPhone {
 
 		System.out.println(msg);
 		
-	}//D_20_v_1_1_Process_IPhone_ImageFiles__V2
+	}//D_20_v_1_1_Process_IPhone_ImageFiles__V3
+	
 	
 	public static void 
 	D_20_v_1_1_Process_IPhone_ImageFiles() {
@@ -412,7 +572,8 @@ public class MyTest_iPhone {
 	 *******************************/
 	public static String 
 //	public static void 
-	get_FileName_No_Duplicates(String dpath, String fname) {
+	get_FileName_No_Duplicates
+	(String dpath, String fname) {
 		
 //		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
 //		String dpath = "C:\WORKS\Storage\images\iphone\tmp";
@@ -530,6 +691,167 @@ public class MyTest_iPhone {
 
 				msg = String.format(Locale.JAPAN, "no match");
 
+				write_Log(msg, 
+						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+						.currentThread().getStackTrace()[2].getLineNumber());
+				
+				return null;
+				
+			}//if (matcher.find() == true)
+			
+			// update
+			res_b = listOf_FileNames.contains(fname);
+			
+			matcher = pattern.matcher(fname);
+			
+		}//while(res_b == true)
+		
+		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] fname is now => '%s'", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber(), fname);
+		
+//		System.out.println(msg);
+		
+		///////////////////////////////////
+		//
+		// return
+		//
+		///////////////////////////////////
+		return fname;
+		
+	}//get_FileName_No_Duplicates
+	
+	/*******************************
+	 * @return
+	 * null	=> file doesn't exist
+	 *******************************/
+	public static String 
+//	public static void 
+	get_FileName_No_Duplicates__V2
+	(String dpath, String fname) {
+		
+//		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+//		String dpath = "C:\WORKS\Storage\images\iphone\tmp";
+		
+//		String fname = "2016-01-11_16-17-05_000.jpg";
+		
+		File f = new File(dpath, fname);
+		
+		// get the list of all files in the directory
+		String[] aryOf_FileNames = new File(dpath).list();
+		
+		if (f.exists()) {
+			
+//			String msg;
+//			
+//			//ref http://stackoverflow.com/questions/47045/sprintf-equivalent-in-java answered Sep 5 '08 at 23:06
+//			msg = String.format(Locale.JAPAN, "[%s : %d] file exists => %s (total = %d files)", 
+//					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber(), 
+//					f.getName(),
+//					aryOf_FileNames.length);
+//			
+////			System.out.println(msg);
+//
+//			write_Log(msg, 
+//					Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+//					.currentThread().getStackTrace()[2].getLineNumber());
+			
+			
+		} else {//if (f.exists())
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] file => not exist: %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), f.getName());
+			
+			System.out.println(msg);
+			
+			return null;
+			
+		}//if (f.exists())
+		
+		///////////////////////////////////
+		//
+		// change file name
+		//
+		///////////////////////////////////
+		// same name in the db?
+		int serial_num = 0;
+		
+//		int numOf_SameFileName = 
+//		aa
+		//ref http://stackoverflow.com/questions/1128723/how-can-i-test-if-an-array-contains-a-certain-value answered Jul 15 '09 at 0:04
+		List<String> listOf_FileNames = Arrays.asList(aryOf_FileNames);
+		
+		boolean res_b;
+		
+		res_b = listOf_FileNames.contains(fname);
+		
+		String regex = "(\\d\\d\\d)\\.jpg";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(fname);
+		
+//		int serial_num;
+		
+		while(res_b == true) {
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] file %s => in the dir --> %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), fname, res_b);
+			
+//			System.out.println(msg);
+			
+			if (matcher.find() == true) {
+				
+				// update serial number
+				serial_num = Integer.parseInt(matcher.group(1));
+				
+				serial_num += 1;
+				
+				msg = String.format(Locale.JAPAN, "[%s : %d] serial num (after) => %d", 
+						Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+						.currentThread().getStackTrace()[1].getLineNumber(), serial_num);
+				
+//				System.out.println(msg);
+				
+				msg = String.format(Locale.JAPAN, 
+						"serial num (after) => %d",serial_num);
+				
+				write_Log(msg, 
+						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+						.currentThread().getStackTrace()[2].getLineNumber());
+				
+				fname = fname.replaceAll(regex, String.format("%03d.jpg", serial_num));
+				
+//				String msg;
+				msg = String.format(Locale.JAPAN, "[%s : %d] fname replaced => '%s'", Thread
+						.currentThread().getStackTrace()[1].getFileName(),
+						Thread.currentThread().getStackTrace()[1]
+								.getLineNumber(), fname);
+				
+//				System.out.println(msg);
+				
+				msg = String.format(Locale.JAPAN, "fname replaced => '%s'", fname);
+				
+				write_Log(msg, 
+						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+						.currentThread().getStackTrace()[2].getLineNumber());
+				
+			} else {//if (matcher.find() == true)
+				
+//				String msg;
+				msg = String.format(Locale.JAPAN, "[%s : %d] no match", Thread
+						.currentThread().getStackTrace()[1].getFileName(),
+						Thread.currentThread().getStackTrace()[1]
+								.getLineNumber());
+				
+//				System.out.println(msg);
+				
+				msg = String.format(Locale.JAPAN, "no match");
+				
 				write_Log(msg, 
 						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
 						.currentThread().getStackTrace()[2].getLineNumber());
@@ -1715,6 +2037,64 @@ public class MyTest_iPhone {
 		return count;
 		
 	}//get_NumOf_SameFileNames(dpath, f_tmp)
+	
+	public static int
+	get_NumOf_SameFileNames_InDB
+	(String dpath, String f_tmp) {
+
+		
+		return -1;
+		
+//		// file names
+//		File dir = new File(dpath);
+//		
+//		String[] listOf_FileNames = dir.list();
+//		
+//		int count = 0;
+//		
+//		for (String elem : listOf_FileNames) {
+//			
+//			// judge
+//			if (f_tmp.equals(elem)) {
+//				
+//				count += 1;
+//				
+//			}//if (f_tmp.equals(elem))
+//			
+//		}//for (String elem : listOf_FileNames)
+//		
+//		// return
+//		return count;
+		
+	}//get_NumOf_SameFileNames_InDB
+	
+	
+	public static int
+	get_NumOf_SameFileNames__V2(String dpath, String f_tmp) {
+		
+		// file names
+		File dir = new File(dpath);
+		
+		String[] listOf_FileNames = dir.list();
+		
+		int count = 0;
+		
+		for (String elem : listOf_FileNames) {
+			
+			// judge
+			if (f_tmp.equals(elem)) {
+				
+				count += 1;
+				
+			}//if (f_tmp.equals(elem))
+			
+		}//for (String elem : listOf_FileNames)
+		
+		// return
+		return count;
+		
+	}//get_NumOf_SameFileNames__V2(dpath, f_tmp)
+	
 	
 	public static int
 	get_NumOf_Elements_InArray
