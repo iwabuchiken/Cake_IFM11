@@ -32,7 +32,7 @@ public class MyTest {
 		// TODO Auto-generated method stub
 
 //		D_19_v_1_0__Change_SharpFile();
-//		D_19_v_1_0__Change_SharpFile__V2();
+		D_19_v_1_0__Change_SharpFile__V2();
 		D_19_v_1_0__Validate_Same_FileName();
 		
 //		D_19_v_1_0__Manage_Locale();
@@ -67,6 +67,7 @@ public class MyTest {
 		//
 		///////////////////////////////////
 		String dpath = "C:\\WORKS\\Storage\\images\\100SHARP\\tmp";
+//		String dpath = "C:\WORKS\Storage\images\100SHARP\tmp";
 		
 		File f = new File(dpath);
 		

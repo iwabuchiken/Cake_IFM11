@@ -1174,3 +1174,47 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-01-08 13:26:22 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near "WHERE": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/manage_Sharp_ImageFiles
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3003): PDO->prepare('INSERT INTO ifm...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3088): ImagesController->manage_Sharp_ImageFiles__Insert_Data()
+#2 [internal function]: ImagesController->manage_Sharp_ImageFiles()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-01-08 13:31:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1 near ",": syntax error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/manage_Sharp_ImageFiles
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3004): PDO->prepare('INSERT INTO ifm...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3089): ImagesController->manage_Sharp_ImageFiles__Insert_Data()
+#2 [internal function]: ImagesController->manage_Sharp_ImageFiles()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-01-08 13:50:01 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: ifm11
+Request URL: /Eclipse_Luna/Cake_IFM11/images/manage_Sharp_ImageFiles?db_file=ifm11_backup_20160107_092217.bk
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3007): PDO->prepare('INSERT INTO ifm...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3105): ImagesController->manage_Sharp_ImageFiles__Insert_Data('ifm11_backup_20...')
+#2 [internal function]: ImagesController->manage_Sharp_ImageFiles()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-01-08 13:50:55 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: ifm11
+Request URL: /Eclipse_Luna/Cake_IFM11/images/manage_Sharp_ImageFiles?db_file=ifm11_backup_20160107_092217.bk
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3018): PDO->prepare('INSERT INTO ifm...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3116): ImagesController->manage_Sharp_ImageFiles__Insert_Data('ifm11_backup_20...')
+#2 [internal function]: ImagesController->manage_Sharp_ImageFiles()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
