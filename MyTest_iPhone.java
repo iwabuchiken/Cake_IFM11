@@ -20,7 +20,11 @@ import java.util.Calendar;
 import java.util.Locale;
 import java.nio.file.Files;
 import java.io.FileFilter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 
 //ref http://stackoverflow.com/questions/8809098/how-do-i-set-the-default-locale-for-my-jvm answered Jan 10 '12 at 19:17
 import java.util.Locale;
@@ -31,7 +35,9 @@ public class MyTest_iPhone {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		D_20_v_1_0_s_2__Get_FileName__V3();
+		D_20_v_1_1_Process_IPhone_ImageFiles();
+
+//		D_20_v_1_0_s_2__Get_FileName__V3();
 //		D_20_v_1_0_s_2__Get_FileName__V2();
 //		D_20_v_1_0_s_2__Get_FileName();
 //		D_20_v_1_0__Get_FileName();
@@ -40,6 +46,81 @@ public class MyTest_iPhone {
 		
 	}//public static void main(String[] args)
 
+	public static void 
+	D_20_v_1_1_Process_IPhone_ImageFiles() {
+
+		///////////////////////////////////
+		//
+		// directory
+		//
+		///////////////////////////////////
+		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+
+		File dir = new File(dpath);
+
+		if (!dir.exists()) {
+			
+			String msg;
+			
+			//ref http://stackoverflow.com/questions/47045/sprintf-equivalent-in-java answered Sep 5 '08 at 23:06
+			msg = String.format(Locale.JAPAN, 
+					"[%s : %d] dir doesn't exists => %s", 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), 
+					dir.getName());
+			
+			System.out.println(msg);
+
+			return;
+			
+		}//if (dir.exists())
+
+		String[] aryOf_FileNames = dir.list();
+		
+		// report
+		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] num of files => %d", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber(), aryOf_FileNames.length);
+
+		System.out.println(msg);
+		
+		///////////////////////////////////
+		//
+		// rename
+		//
+		///////////////////////////////////
+		for (String elem : aryOf_FileNames) {
+			
+			elem = get_FileName_No_Duplicates(dpath, elem);
+			
+		}//for (String elem : aryOf_FileNames)
+
+		///////////////////////////////////
+		//
+		// record log
+		//
+		///////////////////////////////////
+		String log_msg = "bbbbbbb";
+		
+		write_Log(log_msg, 
+				Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+				.currentThread().getStackTrace()[2].getLineNumber());
+
+		///////////////////////////////////
+		//
+		// report
+		//
+		///////////////////////////////////
+//		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] method => done", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
+
+		System.out.println(msg);
+		
+	}//D_20_v_1_1_Process_IPhone_ImageFiles
+	
 //	public static String 
 	public static void 
 	D_20_v_1_0_s_2__Get_FileName__V3() {
@@ -160,6 +241,10 @@ public class MyTest_iPhone {
 		
 	}//D_20_v_1_0_s_2__Get_FileName__3
 	
+	/*******************************
+	 * @return
+	 * null	=> file doesn't exist
+	 *******************************/
 	public static String 
 //	public static void 
 	get_FileName_No_Duplicates(String dpath, String fname) {
@@ -176,17 +261,32 @@ public class MyTest_iPhone {
 		
 		if (f.exists()) {
 			
+//			String msg;
+//			
+//			//ref http://stackoverflow.com/questions/47045/sprintf-equivalent-in-java answered Sep 5 '08 at 23:06
+//			msg = String.format(Locale.JAPAN, "[%s : %d] file exists => %s (total = %d files)", 
+//					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber(), 
+//					f.getName(),
+//					aryOf_FileNames.length);
+//			
+////			System.out.println(msg);
+//
+//			write_Log(msg, 
+//					Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+//					.currentThread().getStackTrace()[2].getLineNumber());
+
+			
+		} else {//if (f.exists())
+			
 			String msg;
-			
-			//ref http://stackoverflow.com/questions/47045/sprintf-equivalent-in-java answered Sep 5 '08 at 23:06
-			msg = String.format(Locale.JAPAN, "[%s : %d] file exists => %s (total = %d files)", 
-					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
-					.currentThread().getStackTrace()[1].getLineNumber(), 
-					f.getName(),
-					aryOf_FileNames.length);
-			
+			msg = String.format(Locale.JAPAN, "[%s : %d] file => not exist: %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), f.getName());
+
 			System.out.println(msg);
 			
+			return null;
 			
 		}//if (f.exists())
 		
@@ -215,7 +315,7 @@ public class MyTest_iPhone {
 					.currentThread().getStackTrace()[1].getFileName(), Thread
 					.currentThread().getStackTrace()[1].getLineNumber(), fname, res_b);
 			
-			System.out.println(msg);
+//			System.out.println(msg);
 			
 			if (matcher.find() == true) {
 				
@@ -228,8 +328,15 @@ public class MyTest_iPhone {
 						Thread.currentThread().getStackTrace()[1].getFileName(), Thread
 						.currentThread().getStackTrace()[1].getLineNumber(), serial_num);
 				
-				System.out.println(msg);
-				
+//				System.out.println(msg);
+
+				msg = String.format(Locale.JAPAN, 
+						"serial num (after) => %d",serial_num);
+
+				write_Log(msg, 
+						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+						.currentThread().getStackTrace()[2].getLineNumber());
+
 				fname = fname.replaceAll(regex, String.format("%03d.jpg", serial_num));
 				
 //				String msg;
@@ -238,8 +345,14 @@ public class MyTest_iPhone {
 						Thread.currentThread().getStackTrace()[1]
 								.getLineNumber(), fname);
 				
-				System.out.println(msg);
-				
+//				System.out.println(msg);
+
+				msg = String.format(Locale.JAPAN, "fname replaced => '%s'", fname);
+
+				write_Log(msg, 
+						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+						.currentThread().getStackTrace()[2].getLineNumber());
+
 			} else {//if (matcher.find() == true)
 				
 //				String msg;
@@ -248,8 +361,13 @@ public class MyTest_iPhone {
 						Thread.currentThread().getStackTrace()[1]
 								.getLineNumber());
 				
-				System.out.println(msg);
-				
+//				System.out.println(msg);
+
+				msg = String.format(Locale.JAPAN, "no match");
+
+				write_Log(msg, 
+						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+						.currentThread().getStackTrace()[2].getLineNumber());
 				
 				return null;
 				
@@ -267,7 +385,7 @@ public class MyTest_iPhone {
 				.currentThread().getStackTrace()[1].getFileName(), Thread
 				.currentThread().getStackTrace()[1].getLineNumber(), fname);
 		
-		System.out.println(msg);
+//		System.out.println(msg);
 		
 		///////////////////////////////////
 		//
@@ -379,7 +497,6 @@ public class MyTest_iPhone {
 			
 			System.out.println(msg);
 			
-//			fname = fname.replace(regex, "aaa");
 			fname = fname.replaceAll(regex, String.format("%03d.jpg", serial_num));
 //			fname = fname.replace(regex, String.format("%03d.jpg", serial_num));
 			
@@ -1453,5 +1570,149 @@ public class MyTest_iPhone {
 		return count;
 		
 	}//get_NumOf_Elements_InArray
-	
+
+	public static void 
+	write_Log
+	(String message, String fileName, int lineNumber) {
+		
+		////////////////////////////////
+
+		// file
+
+		////////////////////////////////
+		String fname = "log.D-20.txt";
+		
+		File fpath_Log = new File("C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11", fname);
+		
+		////////////////////////////////
+
+		// file exists?
+
+		////////////////////////////////
+		if (!fpath_Log.exists()) {
+			
+			try {
+				
+				fpath_Log.createNewFile();
+				
+				String msg;
+				msg = String.format(Locale.JAPAN, "[%s : %d] log file => created: %s", Thread
+						.currentThread().getStackTrace()[1].getFileName(),
+						Thread.currentThread().getStackTrace()[1]
+								.getLineNumber(), fpath_Log.getAbsolutePath());
+
+				System.out.println(msg);
+				
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+				
+				String msg = "Can't create a log file";
+//				Methods_dlg.dlg_ShowMessage_Duration(actv, msg, R.color.gold2);
+				msg = String.format(Locale.JAPAN, "[%s : %d] log file => created: %s", Thread
+						.currentThread().getStackTrace()[1].getFileName(),
+						Thread.currentThread().getStackTrace()[1]
+								.getLineNumber(), fpath_Log.getAbsolutePath());
+
+				System.out.println(msg);
+				
+				return;
+				
+			}
+			
+		} else {
+			
+//			String msg;
+//			
+//			msg = String.format(Locale.JAPAN, "[%s : %d] log file => created: %s", Thread
+//					.currentThread().getStackTrace()[1].getFileName(),
+//					Thread.currentThread().getStackTrace()[1]
+//							.getLineNumber(), fpath_Log.getAbsolutePath());
+//
+//			System.out.println(msg);
+
+		}
+
+		////////////////////////////////
+
+		// write
+
+		////////////////////////////////
+		try {
+
+			String text = String.format(Locale.JAPAN,
+					"[%s] [%s : %d] %s\n", 
+					conv_MillSec_to_TimeLabel(
+							getMillSeconds_now(), "time label"),
+					fileName, lineNumber,
+					message);
+
+			//ref [append] http://alvinalexander.com/java/edu/qanda/pjqa00009.shtml
+			BufferedWriter bw = new BufferedWriter(new FileWriter(fpath_Log, true));
+			
+			//ref http://www.mkyong.com/java/how-to-write-to-file-in-java-bufferedwriter-example/
+			bw.write(text);
+			
+			bw.close();
+			
+//			//REF append http://stackoverflow.com/questions/8544771/how-to-write-data-with-fileoutputstream-without-losing-old-data answered Dec 17 '11 at 12:37
+//			FileOutputStream fos = new FileOutputStream(fpath_Log, true);
+////			FileOutputStream fos = new FileOutputStream(fpath_Log);
+//			
+//			String text = String.format(Locale.JAPAN,
+//							"[%s] [%s : %d] %s\n", 
+//							conv_MillSec_to_TimeLabel(
+//									getMillSeconds_now(), "time label"),
+//							fileName, lineNumber,
+//							message
+////							Methods.conv_MillSec_to_TimeLabel(
+////									STD.getMillSeconds_now()),
+////									fileName, lineNumber,
+////									message
+//						);
+//			
+//			//REF getBytes() http://www.adakoda.com/android/000240.html
+//			fos.write(text);
+////			fos.write(text.getBytes());
+////			fos.write(message.getBytes());
+//			
+////			fos.write("\n".getBytes());
+//			
+//			fos.close();
+			
+//			// Log
+//			String msg;
+//			msg = String.format(Locale.JAPAN, "[%s : %d] log => written", Thread
+//					.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber());
+//
+//			System.out.println(msg);
+			
+			
+//			Log.d("Methods.java" + "["
+//					+ Thread.currentThread().getStackTrace()[2].getLineNumber()
+//					+ "]", msg_Log);
+//			FileChannel oChannel = new FileOutputStream(fpath_Log).getChannel();
+//			
+//			oChannel.wri
+			
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+			
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+	}//write_Log
+
+	public static long getMillSeconds_now() {
+		
+		Calendar cal = Calendar.getInstance();
+		
+		return cal.getTime().getTime();
+		
+	}//private long getMillSeconds_now(int year, int month, int date)
+
 }
