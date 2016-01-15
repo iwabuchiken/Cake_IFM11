@@ -35,7 +35,8 @@ public class MyTest_iPhone {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		D_20_v_1_1_Process_IPhone_ImageFiles();
+		D_20_v_1_1_Process_IPhone_ImageFiles__V2();
+//		D_20_v_1_1_Process_IPhone_ImageFiles();
 
 //		D_20_v_1_0_s_2__Get_FileName__V3();
 //		D_20_v_1_0_s_2__Get_FileName__V2();
@@ -47,7 +48,7 @@ public class MyTest_iPhone {
 	}//public static void main(String[] args)
 
 	public static void 
-	D_20_v_1_1_Process_IPhone_ImageFiles() {
+	D_20_v_1_1_Process_IPhone_ImageFiles__V2() {
 
 		///////////////////////////////////
 		//
@@ -75,6 +76,170 @@ public class MyTest_iPhone {
 			
 		}//if (dir.exists())
 
+		///////////////////////////////////
+		//
+		// files list
+		//
+		///////////////////////////////////
+		File[] list_Files = dir.listFiles(new FileFilter(){
+//			File[] list_Files = dpath.listFiles(new FileFilter(){
+			
+			@Override
+			public boolean accept(File f) {
+				
+				return f.exists() && f.getName().startsWith("IMG");
+//				return f.exists() && f.getPath().startsWith("DSC");
+				
+			}
+			
+		});
+		
+		// validate
+		if (list_Files.length < 1) {
+
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] no entries", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+
+			System.out.println(msg);
+			
+			return;
+
+		} else {//if (list_Files.length < 1)
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] files => %d", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), list_Files.length);
+
+			System.out.println(msg);
+			
+		}//if (list_Files.length < 1)
+
+		///////////////////////////////////
+		//
+		// rename
+		//
+		///////////////////////////////////
+		long lastModified;
+		
+		String tmp_s;
+		
+		String fname_Modified;
+		
+		for (File elem : list_Files) {
+			
+			lastModified = elem.lastModified();
+			
+			tmp_s = conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg";
+			
+			fname_Modified = get_FileName_No_Duplicates(dpath, tmp_s);
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] file = %s / converted = %s / modified = %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), 
+					elem.getName(), tmp_s, fname_Modified);
+
+//			System.out.println(msg);
+
+			// rename
+			try {
+				
+				Files.move(elem.toPath(), new File(dpath, fname_Modified).toPath());
+//				Files.move(f_1.toPath(), f_2.toPath());
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+
+		}//for (File elem : list_Files)
+		
+//		long lastModified = f_1.lastModified();
+////		long lastModified = new File(dpath, fname_1).lastModified();
+//		
+//		File f_2 = new File(dpath, 
+//						conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg");
+
+		
+//		String[] aryOf_FileNames = dir.list();
+//		
+//		// report
+//		String msg;
+//		msg = String.format(Locale.JAPAN, "[%s : %d] num of files => %d", Thread
+//				.currentThread().getStackTrace()[1].getFileName(), Thread
+//				.currentThread().getStackTrace()[1].getLineNumber(), aryOf_FileNames.length);
+//
+//		System.out.println(msg);
+//		
+//		///////////////////////////////////
+//		//
+//		// rename
+//		//
+//		///////////////////////////////////
+//		for (String elem : aryOf_FileNames) {
+//			
+//			elem = get_FileName_No_Duplicates(dpath, elem);
+//			
+//		}//for (String elem : aryOf_FileNames)
+//
+//		///////////////////////////////////
+//		//
+//		// record log
+//		//
+//		///////////////////////////////////
+//		String log_msg = "bbbbbbb";
+//		
+//		write_Log(log_msg, 
+//				Thread.currentThread().getStackTrace()[2].getFileName(), Thread
+//				.currentThread().getStackTrace()[2].getLineNumber());
+
+		///////////////////////////////////
+		//
+		// report
+		//
+		///////////////////////////////////
+		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] method => done", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
+
+		System.out.println(msg);
+		
+	}//D_20_v_1_1_Process_IPhone_ImageFiles__V2
+	
+	public static void 
+	D_20_v_1_1_Process_IPhone_ImageFiles() {
+		
+		///////////////////////////////////
+		//
+		// directory
+		//
+		///////////////////////////////////
+		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		
+		File dir = new File(dpath);
+		
+		if (!dir.exists()) {
+			
+			String msg;
+			
+			//ref http://stackoverflow.com/questions/47045/sprintf-equivalent-in-java answered Sep 5 '08 at 23:06
+			msg = String.format(Locale.JAPAN, 
+					"[%s : %d] dir doesn't exists => %s", 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), 
+					dir.getName());
+			
+			System.out.println(msg);
+			
+			return;
+			
+		}//if (dir.exists())
+		
 		String[] aryOf_FileNames = dir.list();
 		
 		// report
@@ -82,7 +247,7 @@ public class MyTest_iPhone {
 		msg = String.format(Locale.JAPAN, "[%s : %d] num of files => %d", Thread
 				.currentThread().getStackTrace()[1].getFileName(), Thread
 				.currentThread().getStackTrace()[1].getLineNumber(), aryOf_FileNames.length);
-
+		
 		System.out.println(msg);
 		
 		///////////////////////////////////
@@ -95,7 +260,7 @@ public class MyTest_iPhone {
 			elem = get_FileName_No_Duplicates(dpath, elem);
 			
 		}//for (String elem : aryOf_FileNames)
-
+		
 		///////////////////////////////////
 		//
 		// record log
@@ -106,7 +271,7 @@ public class MyTest_iPhone {
 		write_Log(log_msg, 
 				Thread.currentThread().getStackTrace()[2].getFileName(), Thread
 				.currentThread().getStackTrace()[2].getLineNumber());
-
+		
 		///////////////////////////////////
 		//
 		// report
@@ -116,7 +281,7 @@ public class MyTest_iPhone {
 		msg = String.format(Locale.JAPAN, "[%s : %d] method => done", Thread
 				.currentThread().getStackTrace()[1].getFileName(), Thread
 				.currentThread().getStackTrace()[1].getLineNumber());
-
+		
 		System.out.println(msg);
 		
 	}//D_20_v_1_1_Process_IPhone_ImageFiles
