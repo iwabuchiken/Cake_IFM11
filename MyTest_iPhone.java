@@ -38,7 +38,8 @@ public class MyTest_iPhone {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		D_20_v_1_1_Process_IPhone_ImageFiles__V3();
+		D_20_v_1_1_Process_IPhone_ImageFiles__V4();
+//		D_20_v_1_1_Process_IPhone_ImageFiles__V3();
 //		D_20_v_1_1_Process_IPhone_ImageFiles__V2();
 //		D_20_v_1_1_Process_IPhone_ImageFiles();
 
@@ -50,6 +51,410 @@ public class MyTest_iPhone {
 		
 		
 	}//public static void main(String[] args)
+
+	public static void 
+	D_20_v_1_1_Process_IPhone_ImageFiles__V4() {
+
+		String log_msg = String.format(Locale.JAPAN, 
+				"\n\n============= D_20_v_1_1_Process_IPhone_ImageFiles__V4 ============="
+		);
+
+
+		write_Log(log_msg, 
+				Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
+
+		//////////////////////////////////////////////////////////////////////
+		//
+		// files in the db
+		//
+		//////////////////////////////////////////////////////////////////////
+		String q = "SELECT count(*) FROM ifm11 "
+				+ "WHERE file_name LIKE '2016-01-11_19-32-08%' "
+//					+ "WHERE file_name LIKE '2016-01-11_19-32-01%' "
+//					+ "WHERE file_name LIKE '2016-01-11_19-32-09%' "
+//					+ "WHERE file_name LIKE '2016-01-12_24-32-02%' "
+				+ "ORDER BY file_name DESC;";
+
+		String db_Directive = "jdbc:sqlite:"
+				+ "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
+				+ "\\ifm11_backup_20160110_080900.bk";
+//		+ "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data"
+
+		int val = is_InDB_FileName(db_Directive, q);
+//			int val = get_NumOf_Entries_InDB(stmt, q);
+//			int val = rs.getInt("count(*)");
+//			int val = rs.getInt(0);
+		
+		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] val => %d", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber(), val);
+
+		System.out.println(msg);
+
+		///////////////////////////////////
+		//
+		// directory
+		//
+		///////////////////////////////////
+		
+		File[] list_Files = D_20_v_1_1_Process_IPhone_ImageFiles__V4__Get_FilesList();
+		
+		// validate
+		if (list_Files == null ) {
+			
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] list_files => null", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+
+			System.out.println(msg);
+			
+			return;
+			
+		} else {//if (list_Files == null )
+			
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] list_files => %d", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), list_Files.length);
+
+			System.out.println(msg);
+			
+		}//if (list_Files == null )
+
+		///////////////////////////////////
+		//
+		// rename
+		//
+		///////////////////////////////////
+		long lastModified;
+		
+		String tmp_s;
+		
+		String tmp_s_2;
+		String tmp_s_3;
+		
+		String fname_Modified;
+		
+		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		
+		for (File elem : list_Files) {
+			
+			lastModified = elem.lastModified();
+			
+			tmp_s_2 = conv_MillSec_to_TimeLabel(lastModified, "file name");
+			
+			tmp_s = tmp_s_2 + ".jpg";
+//			tmp_s = conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg";
+			
+			String[] tokens = tmp_s_2.split("_");
+			
+			tmp_s_3 = tokens[0] + "_" + tokens[1];
+			
+			///////////////////////////////////
+			//
+			// same file name in db
+			//
+			///////////////////////////////////
+			q = String.format(Locale.JAPAN, 
+					"SELECT count(*) FROM ifm11 "
+							+ "WHERE file_name LIKE '%s%%' "
+//								+ "WHERE file_name LIKE '2016-01-11_19-32-01%' "
+//								+ "WHERE file_name LIKE '2016-01-11_19-32-09%' "
+//								+ "WHERE file_name LIKE '2016-01-12_24-32-02%' "
+							+ "ORDER BY file_name DESC;", 
+							
+					tmp_s_3);
+//			tmp_s);
+
+//			q = "SELECT count(*) FROM ifm11 "
+//					+ "WHERE file_name LIKE '2016-01-11_19-32-08%' "
+////						+ "WHERE file_name LIKE '2016-01-11_19-32-01%' "
+////						+ "WHERE file_name LIKE '2016-01-11_19-32-09%' "
+////						+ "WHERE file_name LIKE '2016-01-12_24-32-02%' "
+//					+ "ORDER BY file_name DESC;";
+
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] query => '%s'", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), q);
+
+//			System.out.println(msg);
+
+			msg = String.format(Locale.JAPAN, "query => '%s'", q);
+
+			write_Log(msg, 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+			
+			
+			val = is_InDB_FileName(db_Directive, q);
+			
+			
+////			String msg;
+//			msg = String.format(Locale.JAPAN, 
+//					"[%s : %d] file = %s / in db => %d / tmp_s_2 => %s", 
+//					Thread
+//					.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber(), 
+//					tmp_s, val, tmp_s_2
+//					);
+//
+//			System.out.println(msg);
+
+			///////////////////////////////////
+			//
+			// if in db => update time label
+			//
+			///////////////////////////////////
+			if (val > 0) {
+				
+				tmp_s = update_TimeLabeled_FileName(tmp_s);
+				
+//				String msg;
+				msg = String.format(Locale.JAPAN, "[%s : %d] file name => updated by 1", Thread
+						.currentThread().getStackTrace()[1].getFileName(),
+						Thread.currentThread().getStackTrace()[1]
+								.getLineNumber());
+
+//				System.out.println(msg);
+				
+			} else {//if (val > 0)
+				
+				
+				
+			}//if (val > 0)
+			
+			
+			///////////////////////////////////
+			//
+			// same file name in directory
+			//
+			///////////////////////////////////
+			fname_Modified = get_FileName_No_Duplicates__V2(dpath, tmp_s);
+//			fname_Modified = get_FileName_No_Duplicates(dpath, tmp_s);
+			
+			msg = String.format(Locale.JAPAN, 
+					"[%s : %d] file = %s / in db => %d / fname_Modified => %s", 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), 
+					tmp_s, val, fname_Modified
+			);
+
+//			System.out.println(msg);
+
+//			String log_msg = null; 
+			log_msg = String.format(Locale.JAPAN, 
+					"file = %s / in db => %d / fname_Modified => %s", 
+					 
+					tmp_s, val, fname_Modified
+			);
+
+
+			write_Log(log_msg, 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+
+			
+			// rename
+			try {
+				
+				Files.move(elem.toPath(), new File(dpath, fname_Modified).toPath());
+//				Files.move(f_1.toPath(), f_2.toPath());
+				
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+
+		}//for (File elem : list_Files)
+		
+		///////////////////////////////////
+		//
+		// report
+		//
+		///////////////////////////////////
+//		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] method => done", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
+
+		System.out.println(msg);
+		
+	}//D_20_v_1_1_Process_IPhone_ImageFiles__V4
+	
+	/*******************************
+	 * @return
+	 * null		=> dir doesn't exist
+	 * 			=> no entries
+	 *******************************/
+	public static File[] 
+	D_20_v_1_1_Process_IPhone_ImageFiles__V4__Get_FilesList() {
+		
+		///////////////////////////////////
+		//
+		// directory
+		//
+		///////////////////////////////////
+		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+//		String dpath = "C:\WORKS\Storage\images\iphone\tmp";
+		
+		File dir = new File(dpath);
+		
+		if (!dir.exists()) {
+			
+			String msg;
+			
+			//ref http://stackoverflow.com/questions/47045/sprintf-equivalent-in-java answered Sep 5 '08 at 23:06
+			msg = String.format(Locale.JAPAN, 
+					"[%s : %d] dir doesn't exists => %s", 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), 
+					dir.getName());
+			
+			System.out.println(msg);
+			
+			return null;
+			
+		}//if (dir.exists())
+		
+		///////////////////////////////////
+		//
+		// files list
+		//
+		///////////////////////////////////
+		File[] list_Files = dir.listFiles(new FileFilter(){
+//			File[] list_Files = dpath.listFiles(new FileFilter(){
+			
+			@Override
+			public boolean accept(File f) {
+				
+				return f.exists() && f.getName().startsWith("IMG");
+//				return f.exists() && f.getPath().startsWith("DSC");
+				
+			}
+			
+		});
+		
+		// validate
+		if (list_Files.length < 1) {
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] no entries", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+			
+			System.out.println(msg);
+			
+			return null;
+			
+		} else {//if (list_Files.length < 1)
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] files => %d", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), list_Files.length);
+			
+			System.out.println(msg);
+			
+			return list_Files;
+			
+		}//if (list_Files.length < 1)
+		
+	}//D_20_v_1_1_Process_IPhone_ImageFiles__V4__Get_FilesList
+	
+	
+	/*******************************
+	 * increment by 1<br>
+	 * "2016-01-11_16-17-02_000.jpg" => "2016-01-11_16-17-02_001.jpg"
+	 *******************************/
+	public static String
+	update_TimeLabeled_FileName(String fname) {
+		
+		String regex = "(\\d\\d\\d)\\.jpg";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(fname);
+		
+		int serial_num;
+		
+		if (matcher.find() == true) {
+			
+			// update serial number
+			serial_num = Integer.parseInt(matcher.group(1));
+		
+			serial_num += 1;
+			
+			fname = fname.replaceAll(regex, String.format("%03d.jpg", serial_num));
+			
+		} 
+			
+		return fname;
+		
+	}//update_TimeLabeled_FileName
+	
+	public static int
+	is_InDB_FileName(String db_Directive, String query) {
+		
+		///////////////////////////////////
+		//
+		// db
+		//
+		///////////////////////////////////
+		//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
+		Connection c = null;
+		
+		Statement stmt = null;
+		
+		try {
+			
+			Class.forName("org.sqlite.JDBC");
+			//ref java.sql.DriverManager
+			
+			c = DriverManager.getConnection(db_Directive);
+			
+			c.setAutoCommit(false);
+			
+			//ref http://stackoverflow.com/questions/7886462/how-to-get-row-count-using-resultset-in-java answered Jun 26 '12 at 5:34
+			stmt = c.createStatement( 
+					ResultSet.TYPE_FORWARD_ONLY, 
+//					ResultSet.TYPE_SCROLL_INSENSITIVE, 
+					ResultSet.CONCUR_READ_ONLY );
+			
+			ResultSet rs = stmt.executeQuery( query );
+			
+			///////////////////////////////////
+			//
+			// get count
+			//
+			///////////////////////////////////
+			int val = get_NumOf_Entries_InDB(stmt, query);
+			
+			rs.close();
+			stmt.close();
+			c.close();
+			
+			return val;
+			
+		} catch ( Exception e ) {
+			
+			String msg;
+			String tmp_s = e.getClass().getName() + ": " + e.getMessage();
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] Exception => %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), tmp_s);
+			
+			System.out.println(msg);
+			
+			return -1;
+			
+		}
+		
+	}//is_InDB_FileName
+	
 
 	public static void 
 	D_20_v_1_1_Process_IPhone_ImageFiles__V2() {
@@ -198,8 +603,8 @@ public class MyTest_iPhone {
 //		String log_msg = "bbbbbbb";
 //		
 //		write_Log(log_msg, 
-//				Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-//				.currentThread().getStackTrace()[2].getLineNumber());
+//				Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+//				.currentThread().getStackTrace()[1].getLineNumber());
 		
 		///////////////////////////////////
 		//
@@ -608,8 +1013,8 @@ public class MyTest_iPhone {
 		String log_msg = "bbbbbbb";
 		
 		write_Log(log_msg, 
-				Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-				.currentThread().getStackTrace()[2].getLineNumber());
+				Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
 		
 		///////////////////////////////////
 		//
@@ -778,8 +1183,8 @@ public class MyTest_iPhone {
 ////			System.out.println(msg);
 //
 //			write_Log(msg, 
-//					Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-//					.currentThread().getStackTrace()[2].getLineNumber());
+//					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber());
 
 			
 		} else {//if (f.exists())
@@ -789,7 +1194,13 @@ public class MyTest_iPhone {
 					.currentThread().getStackTrace()[1].getFileName(), Thread
 					.currentThread().getStackTrace()[1].getLineNumber(), f.getName());
 
-			System.out.println(msg);
+//			System.out.println(msg);
+
+			msg = String.format(Locale.JAPAN, "file => not exist: %s", f.getName());
+
+			write_Log(msg, 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
 			
 			return null;
 			
@@ -839,8 +1250,8 @@ public class MyTest_iPhone {
 						"serial num (after) => %d",serial_num);
 
 				write_Log(msg, 
-						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-						.currentThread().getStackTrace()[2].getLineNumber());
+						Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+						.currentThread().getStackTrace()[1].getLineNumber());
 
 				fname = fname.replaceAll(regex, String.format("%03d.jpg", serial_num));
 				
@@ -855,8 +1266,8 @@ public class MyTest_iPhone {
 				msg = String.format(Locale.JAPAN, "fname replaced => '%s'", fname);
 
 				write_Log(msg, 
-						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-						.currentThread().getStackTrace()[2].getLineNumber());
+						Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+						.currentThread().getStackTrace()[1].getLineNumber());
 
 			} else {//if (matcher.find() == true)
 				
@@ -871,8 +1282,8 @@ public class MyTest_iPhone {
 				msg = String.format(Locale.JAPAN, "no match");
 
 				write_Log(msg, 
-						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-						.currentThread().getStackTrace()[2].getLineNumber());
+						Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+						.currentThread().getStackTrace()[1].getLineNumber());
 				
 				return null;
 				
@@ -903,7 +1314,8 @@ public class MyTest_iPhone {
 	
 	/*******************************
 	 * @return
-	 * null	=> file doesn't exist
+	 * file doesn't exist	=> return the same file name<br> 
+	 * file exists	=> "2016-01-12_13-34-03_001.jpg" --> "2016-01-12_13-34-03_002.jpg"<br> 
 	 *******************************/
 	public static String 
 //	public static void 
@@ -934,8 +1346,8 @@ public class MyTest_iPhone {
 ////			System.out.println(msg);
 //
 //			write_Log(msg, 
-//					Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-//					.currentThread().getStackTrace()[2].getLineNumber());
+//					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber());
 			
 			
 		} else {//if (f.exists())
@@ -945,9 +1357,17 @@ public class MyTest_iPhone {
 					.currentThread().getStackTrace()[1].getFileName(), Thread
 					.currentThread().getStackTrace()[1].getLineNumber(), f.getName());
 			
-			System.out.println(msg);
+//			System.out.println(msg);
+
+			msg = String.format(Locale.JAPAN, "file => not exist: %s", f.getName());
+
+			write_Log(msg, 
+					Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+
 			
-			return null;
+			return fname;
+//			return null;
 			
 		}//if (f.exists())
 		
@@ -1000,8 +1420,8 @@ public class MyTest_iPhone {
 						"serial num (after) => %d",serial_num);
 				
 				write_Log(msg, 
-						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-						.currentThread().getStackTrace()[2].getLineNumber());
+						Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+						.currentThread().getStackTrace()[1].getLineNumber());
 				
 				fname = fname.replaceAll(regex, String.format("%03d.jpg", serial_num));
 				
@@ -1016,8 +1436,8 @@ public class MyTest_iPhone {
 				msg = String.format(Locale.JAPAN, "fname replaced => '%s'", fname);
 				
 				write_Log(msg, 
-						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-						.currentThread().getStackTrace()[2].getLineNumber());
+						Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+						.currentThread().getStackTrace()[1].getLineNumber());
 				
 			} else {//if (matcher.find() == true)
 				
@@ -1032,8 +1452,8 @@ public class MyTest_iPhone {
 				msg = String.format(Locale.JAPAN, "no match");
 				
 				write_Log(msg, 
-						Thread.currentThread().getStackTrace()[2].getFileName(), Thread
-						.currentThread().getStackTrace()[2].getLineNumber());
+						Thread.currentThread().getStackTrace()[1].getFileName(), Thread
+						.currentThread().getStackTrace()[1].getLineNumber());
 				
 				return null;
 				
@@ -2414,7 +2834,7 @@ public class MyTest_iPhone {
 			
 			
 //			Log.d("Methods.java" + "["
-//					+ Thread.currentThread().getStackTrace()[2].getLineNumber()
+//					+ Thread.currentThread().getStackTrace()[1].getLineNumber()
 //					+ "]", msg_Log);
 //			FileChannel oChannel = new FileOutputStream(fpath_Log).getChannel();
 //			
