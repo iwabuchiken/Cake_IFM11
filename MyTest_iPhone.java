@@ -232,22 +232,201 @@ public class MyTest_iPhone {
 		//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
 		Connection c = null;
 		
+		Statement stmt = null;
+		
 		try {
 			
 			Class.forName("org.sqlite.JDBC");
 			//ref java.sql.DriverManager
+
+			//ref [file path] http://stackoverflow.com/questions/1525444/how-to-connect-sqlite-with-java asked Oct 6 '09 at 13:02
+			String directive_Connection = "jdbc:sqlite:"
+							+ "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
+							+ "\\ifm11_backup_20160110_080900.bk";
 			
-			c = DriverManager.getConnection("jdbc:sqlite:test.db");
+			c = DriverManager.getConnection(directive_Connection);
+//			c = DriverManager.getConnection("jdbc:sqlite:C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ifm11_backup_20160110_080900.bk");
+//			c = DriverManager.getConnection("jdbc:sqlite:test.db");
 			
+			c.setAutoCommit(false);
+
+			//debug
+			System.out.println("Opened database successfully");
+			
+			//ref http://stackoverflow.com/questions/7886462/how-to-get-row-count-using-resultset-in-java answered Jun 26 '12 at 5:34
+			stmt = c.createStatement( 
+					ResultSet.TYPE_FORWARD_ONLY, 
+//					ResultSet.TYPE_SCROLL_INSENSITIVE, 
+				    ResultSet.CONCUR_READ_ONLY );
+//			stmt = c.createStatement();
+			
+			String q = "SELECT * FROM ifm11 "
+						+ "WHERE file_name LIKE '2016-01-11_19-32-09%' "
+//						+ "WHERE file_name LIKE '2016-01-12_24-32-02%' "
+						+ "ORDER BY file_name DESC;";
+//			+ "ORDER BY _id DESC;";
+//			String q = "SELECT * FROM ifm11 ORDER BY _id DESC;";
+//			String q = "SELECT * FROM ifm11;";
+			
+			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] query => '%s'", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), q);
+
+			System.out.println(msg);
+			
+			
+			ResultSet rs = stmt.executeQuery( q );
+//			ResultSet rs = stmt.executeQuery( "SELECT * FROM ifm11;" );
+//			ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
+
+//			///////////////////////////////////
+//			//
+//			// get count
+//			//
+//			///////////////////////////////////
+//			ResultSetMetaData metadata = rs.getMetaData();
+//			
+//			int columnCount = metadata.getColumnCount();
+//
+//			for (int i=1; i<=columnCount; i++) {
+//
+//				  String columnName = metadata.getColumnName(i);
+//
+//				  System.out.println(columnName);
+//
+//				}
+
+			
+			int count = 0;
+			
+			int limit = 5;
+//			int limit = 10;
+			
+			while ( rs.next() ) {
+				
+				 int id = rs.getInt("_id");
+				 
+				 String file_name = rs.getString("file_name");
+				 String file_Path = rs.getString("file_path");
+				 
+//				 String msg;
+				msg = String.format(Locale.JAPAN, "[%s : %d] file => %d %s (%s)", Thread
+						.currentThread().getStackTrace()[1].getFileName(),
+						Thread.currentThread().getStackTrace()[1]
+								.getLineNumber(), id, file_name, file_Path);
+
+				System.out.println(msg);
+
+				count += 1;
+				
+				if (count > limit) {
+//					if (count > 10) {
+
+					break;
+
+				}//if (count > 10)
+
+				//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
+//				 String	name = rs.getString("name");
+//				 int age	= rs.getInt("age");
+//				 String	address = rs.getString("address");
+//				 float salary = rs.getFloat("salary");
+//				 System.out.println( "ID = " + id );
+//				 System.out.println( "NAME = " + name );
+//				 System.out.println( "AGE = " + age );
+//				 System.out.println( "ADDRESS = " + address );
+//				 System.out.println( "SALARY = " + salary );
+//				 System.out.println();
+				 
+			}
+			
+			///////////////////////////////////
+			//
+			// get count
+			//
+			///////////////////////////////////
+			
+			q = "SELECT count(*) FROM ifm11 "
+//					+ "WHERE file_name LIKE '2016-01-11_19-32-08%' "
+					+ "WHERE file_name LIKE '2016-01-11_19-32-01%' "
+//					+ "WHERE file_name LIKE '2016-01-11_19-32-09%' "
+//					+ "WHERE file_name LIKE '2016-01-12_24-32-02%' "
+					+ "ORDER BY file_name DESC;";
+
+//			rs = stmt.executeQuery( q );
+//			
+			//ref http://examples.javacodegeeks.com/core-java/sql/getting-column-names-of-a-database-table/
+//			ResultSetMetaData metadata = rs.getMetaData();
+//			
+//			metadata = rs.getMetaData();
+//			
+//			int columnCount = metadata.getColumnCount();
+//
+//			for (int i=1; i<=columnCount; i++) {
+//
+//				  String columnName = metadata.getColumnName(i);
+//
+//				  System.out.println(columnName);
+//
+//				}
+			
+			int val = get_NumOf_Entries_InDB(stmt, q);
+//			int val = rs.getInt("count(*)");
+//			int val = rs.getInt(0);
+			
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] val => %d", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), val);
+
+			System.out.println(msg);
+			
+			
+////			rs = stmt.executeQuery( q );
+//			
+//			//ref http://stackoverflow.com/questions/7886462/how-to-get-row-count-using-resultset-in-java
+//			rs.last();
+//			
+////			String msg;
+//			msg = String.format(Locale.JAPAN, "[%s : %d] last() => done", Thread
+//					.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber());
+//
+//			System.out.println(msg);
+//			
+//			
+//		    int size = rs.getRow();
+////		    rs.beforeFirst();
+//			
+////		    String msg;
+//			msg = String.format(Locale.JAPAN, "[%s : %d] table size => %d", Thread
+//					.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber(), size);
+//
+//			System.out.println(msg);
+			
+		    
+			rs.close();
+			stmt.close();
+			c.close();
+					
 		} catch ( Exception e ) {
 			
-			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+			String msg;
+			String tmp_s = e.getClass().getName() + ": " + e.getMessage();
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] Exception => %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), tmp_s);
+
+			System.out.println(msg);
+			
+//			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
 			System.exit(0);
 			
 		}
 		
-		System.out.println("Opened database successfully");
-
 		///////////////////////////////////
 		//
 		// directory
@@ -333,7 +512,7 @@ public class MyTest_iPhone {
 //			tmp_s = conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg";
 //			
 //			fname_Modified = get_FileName_No_Duplicates(dpath, tmp_s);
-//			aa
+//			
 //			String msg;
 //			msg = String.format(Locale.JAPAN, "[%s : %d] file = %s / converted = %s / modified = %s", Thread
 //					.currentThread().getStackTrace()[1].getFileName(), Thread
@@ -781,7 +960,7 @@ public class MyTest_iPhone {
 		int serial_num = 0;
 		
 //		int numOf_SameFileName = 
-//		aa
+//		
 		//ref http://stackoverflow.com/questions/1128723/how-can-i-test-if-an-array-contains-a-certain-value answered Jul 15 '09 at 0:04
 		List<String> listOf_FileNames = Arrays.asList(aryOf_FileNames);
 		
@@ -2260,4 +2439,42 @@ public class MyTest_iPhone {
 		
 	}//private long getMillSeconds_now(int year, int month, int date)
 
+	/*******************************
+	 * @return
+	 * -1	=> query exception
+	 *******************************/
+	public static int
+	get_NumOf_Entries_InDB(Statement s, String query) {
+	
+		ResultSet rs = null;
+		
+		try {
+			
+			rs = s.executeQuery( query );
+			
+			return rs.getInt("count(*)");
+			
+		} catch ( Exception e ) {
+			
+			String msg;
+			String tmp_s = e.getClass().getName() + ": " + e.getMessage();
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] Exception => %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), tmp_s);
+
+			System.out.println(msg);
+			
+//			System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+//			System.exit(0);
+			
+			return -1;
+			
+		}
+		
+//		return rs.getInt("count(*)");
+//		int val = rs.getInt("count(*)");
+		
+	}//get_NumOf_Entries_InDB
+	
 }
