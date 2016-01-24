@@ -299,20 +299,21 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$fpath = "";
+			$fpath = Utils::get_fpath();
+// 			$fpath = "";
 				
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 			/*******************************
 			 validate: db file exists
@@ -880,21 +881,54 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$fpath = "";
+			$fpath = Utils::get_fpath();
+// 			$fpath = "";
 				
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+// 				// mac or pc
+// // 				$os_Name = PHP_OS;
+// 				//ref http://stackoverflow.com/questions/15845928/determine-if-operating-system-is-mac answered Apr 6 '13 at 1:11
+// 				$user_agent = getenv("HTTP_USER_AGENT");
+// // 				$os_Name = getenv("HTTP_USER_AGENT");
+				
+// // 				//debug
+// // 				debug("OS => $os_Name");
+				
+// // 				//debug
+// // 				//ref http://stackoverflow.com/questions/1482260/how-to-get-the-os-on-which-php-is-running answered Oct 21 '12 at 10:38
+// // 				debug("php_uname => ".php_uname('s'));
+// // 				debug("php_uname => ".php_uname('a'));
+// // 				debug("USER_AGENT => ".getenv("HTTP_USER_AGENT"));
+				
+// 				if (strpos($user_agent, "Win") !== FALSE) {
+// // 				if ($os_Name == "Win") {
 					
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 					$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
 					
-			} else {
+// 				} else if (strpos($user_agent, "Mac") !== FALSE) {
+// // 				} else if ($os_Name == "Mac") {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 					$fpath .= "/Users/mac/Desktop/works/WS/Cake_IFM11/app/Lib/data";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 				} else {
 					
+// 				}
+				
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+					
+// 			} else {
+					
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+					
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+					
+			//debug
+			debug("fpath => $fpath");
+			
 			/*******************************
 			 validate: db file exists
 			*******************************/
@@ -1154,20 +1188,21 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$fpath = "";
+			$fpath = Utils::get_fpath();
+// 			$fpath = "";
 				
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 			/*******************************
 			 validate: db file exists
@@ -1408,20 +1443,21 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$fpath = "";
+// 			$fpath = "";
+			$fpath = Utils::get_fpath();
 				
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 			/*******************************
 			 validate: db file exists
@@ -1645,20 +1681,21 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$fpath = "";
-				
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			$fpath = "";
+			$fpath = Utils::get_fpath();
+			
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 			/*******************************
 			 validate: db file exists
@@ -2027,20 +2064,21 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$fpath = "";
+			$fpath = Utils::get_fpath();
+// 			$fpath = "";
 				
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 			/*******************************
 			 validate: db file exists
@@ -2362,20 +2400,21 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$fpath = "";
+			$fpath = Utils::get_fpath();
+// 			$fpath = "";
 				
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 			/*******************************
 			 validate: db file exists
@@ -2510,20 +2549,22 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$dpath = "";
+			$fpath = Utils::get_fpath();
+			
+			$dpath = $fpath.DIRECTORY_SEPARATOR."ta";
 				
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$dpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
-// 				$dpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$dpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+// // 				$dpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$dpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/ta";
-// 				$dpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-// 				$dpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$dpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/ta";
+// // 				$dpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// // 				$dpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 			/*******************************
 			 validate: db file exists
@@ -2998,20 +3039,21 @@
 			/*******************************
 			 PDO file
 			*******************************/
-			$fpath = "";
+			$fpath = Utils::get_fpath();
+// 			$fpath = "";
 			
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-				// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// 				// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-				// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-				// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// 				// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// 				// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 				
 			/*******************************
 			 validate: db file exists
@@ -3318,26 +3360,29 @@
 			/*******************************
 			 file: path
 			*******************************/
-			$fpath = "";
+			$fpath = Utils::get_fpath();
+// 			$fpath = "";
 			
 			$fname = "images.csv";
 			
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+			$fpath .= DIRECTORY_SEPARATOR."csv".DIRECTORY_SEPARATOR.$fname;
 			
-				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11"
-							."\\app\\Lib\\data"
-							."\\csv"
-							."\\$fname";
-// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\$fname";
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 			
-			} else {
+// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11"
+// 							."\\app\\Lib\\data"
+// 							."\\csv"
+// 							."\\$fname";
+// // 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\$fname";
 			
-				$fpath .= "/home/users/2/chips.jp-benfranklin/web"
-						."/cake_apps/Cake_IFM11/app/Lib/data"
-						."/csv"
-						."/$fname";
+// 			} else {
 			
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web"
+// 						."/cake_apps/Cake_IFM11/app/Lib/data"
+// 						."/csv"
+// 						."/$fname";
+			
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 			
 			/*******************************
 			file: open
@@ -3532,7 +3577,10 @@
 		public static function
 		find_AudioFiles__SQLITE__Latest() {
 			
-			$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+			$dpath_Src = Utils::get_fpath();
+			
+			$dpath_Src .= DIRECTORY_SEPARATOR."ta";
+// 			$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
 	// 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\Lib\\data\\ta";
 	// 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\csv";
 	// 				$dpath_Src = "lib\\data\\csv";
@@ -3690,18 +3738,21 @@
 			/*******************************
 				dpath
 			*******************************/
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+			$dpath_Src = Utils::get_fpath();
+			
+			$dpath_Src .= DIRECTORY_SEPARATOR."ta";
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
-				// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
+// 				$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+// 				// 				$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_TA2\\app\\Lib\\data";
 					
-			} else {
+// 			} else {
 					
-				$dpath_Src = "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/ta";
-				// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
-				// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+// 				$dpath_Src = "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/ta";
+// 				// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// 				// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 // 			$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
 	// 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\Lib\\data\\ta";
@@ -3941,17 +3992,21 @@
 			/*******************************
 				get: dpath
 			*******************************/
-			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+			$dpath_Src = Utils::get_fpath();
+			
+			$dpath_Src .= DIRECTORY_SEPARATOR."ta";
+			
+// 			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 					
-				$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+// 				$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
 					
-			} else {
+// 			} else {
 					
-				$dpath_Src = 
-						"/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/ta";
-// 				$dpath_Src = "/cake_apps/Cake_IFM11/app/Lib/data/ta";
+// 				$dpath_Src = 
+// 						"/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data/ta";
+// // 				$dpath_Src = "/cake_apps/Cake_IFM11/app/Lib/data/ta";
 					
-			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 					
 // 			$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
 // 			/cake_apps/Cake_IFM11/app/Lib/data/ta
@@ -4223,6 +4278,44 @@
 			}//if (file_exists($fpath))
 			
 		}//get_AudioLength__LOCAL
+	
+		//////////////////////////
+		// @return
+		// path to "app/Lib/data"
+		//////////////////////////
+		public static function
+		get_fpath() {
+			
+			$fpath = "";
+				
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+				//ref http://stackoverflow.com/questions/15845928/determine-if-operating-system-is-mac answered Apr 6 '13 at 1:11
+				$user_agent = getenv("HTTP_USER_AGENT");
+				
+				if (strpos($user_agent, "Win") !== FALSE) {
+					
+					$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+					
+				} else if (strpos($user_agent, "Mac") !== FALSE) {
+					
+					$fpath .= "/Users/mac/Desktop/works/WS/Cake_IFM11/app/Lib/data";
+					
+				} else {
+					
+				}
+				
+			} else {
+					
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// 				$fpath .= "/cake_apps/Cake_IFM11/app/Lib/data";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/android_app_data/IFM11";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+		
+			return $fpath;
+			
+		}//get_fpath()
 		
 	}//class Utils
 	

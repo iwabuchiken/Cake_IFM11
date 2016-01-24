@@ -12,9 +12,8 @@ class ImagesController extends AppController {
 
 	public function index() {
 
-		//debug
-// 		debug($this->request->named);
-// 		debug($this->request);
+// 		//debug
+// 		debug("host => ".Utils::get_HostName());
 		
 		/**********************************
 		 * sort
@@ -2053,17 +2052,19 @@ class ImagesController extends AppController {
 		/*******************************
 		 PDO file
 		*******************************/
-		$fpath = "";
+		$fpath = Utils::get_fpath();
+		
+// 		$fpath = "";
 			
-		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 		
-			$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// 			$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
 		
-		} else {
+// 		} else {
 		
-			$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// 			$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
 		
-		}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 		}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 		
 		/*******************************
 		 validate: db file exists
@@ -2932,7 +2933,9 @@ class ImagesController extends AppController {
 		/*******************************
 			setup: vars
 		*******************************/
-		$dpath = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+		$dpath = Utils::get_fpath();
+		
+// 		$dpath = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
 // 		"C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data";
 		
 		$fname = $db_file;
@@ -3183,7 +3186,9 @@ class ImagesController extends AppController {
 		/*******************************
 			setup: vars
 		*******************************/
-		$dpath = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+		$dpath = Utils::get_fpath();
+		
+// 		$dpath = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
 // 		"C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data";
 		
 		$fname = $db_file;

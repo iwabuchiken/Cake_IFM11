@@ -1230,3 +1230,13 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2016-01-24 03:24:31 Error: Fatal Error (4): syntax error, unexpected '$fname_Src' (T_VARIABLE) in [/Users/mac/Desktop/works/WS/Cake_IFM11/app/Lib/utils/utils.php, line 3762]
+2016-01-24 03:24:31 Error: [FatalErrorException] syntax error, unexpected '$fname_Src' (T_VARIABLE)
+Request URL: /Cake_IFM11/images/image_manager
+Stack Trace:
+#0 /Users/mac/Desktop/works/WS/Cake_IFM11/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/mac/Desk...', 3762)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/mac/Desk...', 3762, Array)
+#2 /Users/mac/Desktop/works/WS/Cake_IFM11/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/mac/Desk...', 3762, Array)
+#3 /Users/mac/Desktop/works/WS/Cake_IFM11/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -1668,17 +1668,18 @@ class AudioFilesController extends AppController {
 		/*******************************
 		 PDO file
 		*******************************/
-		$fpath = "";
+		$fpath = Utils::get_fpath();
+// 		$fpath = "";
 			
-		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+// 		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 		
-			$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// 			$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
 		
-		} else {
+// 		} else {
 		
-			$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+// 			$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
 		
-		}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+// 		}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
 		
 		/*******************************
 		 validate: db file exists
@@ -2629,8 +2630,12 @@ class AudioFilesController extends AppController {
 	*******************************/
 	public function
 	add_AudioFiles_From_DB_File__Local() {
-	
-		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
+		
+		$dpath_Src = Utils::get_fpath();
+		
+		$dpath_Src .= DIRECTORY_SEPARATOR."ta";
+		
+// 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ta";
 // 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\Lib\\data\\ta";
 // 		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\csv";
 // 				$dpath_Src = "lib\\data\\csv";

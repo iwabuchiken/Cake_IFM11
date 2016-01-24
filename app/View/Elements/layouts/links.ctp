@@ -97,6 +97,19 @@
 		
 		</td>
 	
+		<td>
+
+			<?php 
+				echo $this->Html->link(
+							'Remote',
+								'http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images',
+								array('class' => "button_2")
+				);
+			
+			?>
+		
+		</td>
+	
 	</tr>
 	
 </table>
