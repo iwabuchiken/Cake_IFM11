@@ -2287,6 +2287,10 @@ class ImagesController extends AppController {
 		
 			$msg .= "id => null";
 		
+			$this->set("msg", $msg);
+			
+			return;
+			
 		} else if ($image_id == "") {
 			
 			$msg .= "id => blank";

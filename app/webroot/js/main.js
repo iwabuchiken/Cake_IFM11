@@ -111,6 +111,8 @@ function update_Image_Data() {
 	}
 
 //	alert("url => " + url);
+//	
+//	return;
 	
 	/***************************
 		get: values
@@ -159,6 +161,9 @@ function update_Image_Data__FromList(id) {
 	 ***************************/
 	var hostname = window.location.hostname;
 	
+//	//debug
+//	alert("hostname => " + hostname);
+	
 	var url;
 	
 	if (hostname == "benfranklin.chips.jp") {
@@ -167,11 +172,29 @@ function update_Image_Data__FromList(id) {
 		
 	} else {
 	
-		url = "/Eclipse_Luna/Cake_IFM11/images/update_image_data";
+		//ref http://stackoverflow.com/questions/9514179/how-to-find-the-operating-system-version-using-javascript answered Mar 1 '12 at 10:11 
+		if ((window.navigator.platform).startsWith("Mac")) {
+			
+//			alert("os => Mac");
+			url = "/Cake_IFM11/images/update_image_data";
+//			http://localhost:8888/Cake_IFM11/images/image_manager
+		} else {
+
+//			alert("os => NOT Mac");
+			url = "/Eclipse_Luna/Cake_IFM11/images/update_image_data";
+			
+		}
+		
+//		url = "/Eclipse_Luna/Cake_IFM11/images/update_image_data";
 //		url = "/Cake_IFM11/images/update_image_data";
 	
 	}
 
+//	//debug
+//	alert("url => " + url);
+////	
+////	return;
+//	
 	/***************************
 		prep: vars
 	 ***************************/
@@ -181,8 +204,14 @@ function update_Image_Data__FromList(id) {
 	
 	var image_id = id;
 
-//	alert("id " + id + " => " + memo);
-
+	
+//	alert("id (" + id + ") => " + memo);
+//
+//	alert(console.log(navigator));	//=> undefined
+//	alert(window.navigator.platform);	//=> MacIntel
+//	
+//	return;
+	
 	/***************************
 		ajax
 	 ***************************/
@@ -215,6 +244,95 @@ function update_Image_Data__FromList(id) {
 	
 }//update_Image_Data
 
+//function update_Image_Data__FromList(id) {
+//	
+//	/***************************
+//		prep: url
+//	 ***************************/
+//	var hostname = window.location.hostname;
+//	
+//	//debug
+//	alert("hostname => " + hostname);
+//	
+//	var url;
+//	
+//	if (hostname == "benfranklin.chips.jp") {
+//		
+//		url = "/cake_apps/Cake_IFM11/images/update_image_data";
+//		
+//	} else {
+//		
+//		if ((window.navigator.platform).startsWith("Mac")) {
+//			
+////			alert("os => Mac");
+//			url = "/Cake_IFM11/images/update_image_data";
+//			http://localhost:8888/Cake_IFM11/images/image_manager
+//		} else {
+//			
+////			alert("os => NOT Mac");
+//			url = "/Eclipse_Luna/Cake_IFM11/images/update_image_data";
+//			
+//		}
+//		
+////		url = "/Eclipse_Luna/Cake_IFM11/images/update_image_data";
+////		url = "/Cake_IFM11/images/update_image_data";
+//		
+//	}
+//	
+////	//debug
+////	alert("url => " + url);
+////	
+////	return;
+//	
+//	/***************************
+//		prep: vars
+//	 ***************************/
+////	var memo = $("input#image_data_Memo_" + id).val();	//=> w
+//	var memo = $("textarea#image_data_Memo_" + id).val();
+////	var memo = $("textarea#image_data_Memo_" + id).text();
+//	
+//	var image_id = id;
+//	
+//	
+////	alert("id " + id + " => " + memo);
+////
+////	alert(console.log(navigator));	//=> undefined
+////	alert(window.navigator.platform);	//=> MacIntel
+////	
+////	return;
+//	
+//	/***************************
+//		ajax
+//	 ***************************/
+//	$.ajax({
+//		
+//		url: url,
+//		type: "GET",
+//		//REF http://stackoverflow.com/questions/1916309/pass-multiple-parameters-to-jquery-ajax-call answered Dec 16 '09 at 17:37
+////	    data: {id: id},
+//		data: {memos: memo, image_id: image_id},
+//		
+//		timeout: 10000
+//		
+//	}).done(function(data, status, xhr) {
+//		
+//		alert(data);
+//		
+//		//	alert(conv_Float_to_TimeLabel(data.point));
+//		//	addPosition_ToList(data.point);
+//		
+//		//	_delete_position_Ajax__Done(data, status, xhr);
+////		_add_KW__Genre_Changed__Done(data, status, xhr);
+//		
+//	}).fail(function(xhr, status, error) {
+//		
+//		alert(xhr.status);
+//		
+//	});
+//	
+//	
+//}//update_Image_Data
+//
 function 
 update_AudioFiles_Data__FromList(id) {
 	
