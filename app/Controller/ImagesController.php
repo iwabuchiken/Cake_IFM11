@@ -3314,7 +3314,7 @@ class ImagesController extends AppController {
 		$file_db = null;
 		
 	}//manage_IPhone_ImageFiles__Insert_Data
-	
+
 	public function
 	manage_IPhone_ImageFiles() {
 		
@@ -3365,6 +3365,263 @@ class ImagesController extends AppController {
 		*******************************/
 		$this->manage_IPhone_ImageFiles__Insert_Data($db_file);
 // 		$this->manage_IPhone_ImageFiles__Insert_Data();
+		
+	}//manage_IPhone_ImageFiles()
+	
+	public function
+	manage_IPhone_ImageFiles__Insert_Data__OnMac($db_file) {
+// 	manage_IPhone_ImageFiles__Insert_Data() {
+		
+		//debug
+		debug("manage_IPhone_ImageFiles__Insert_Data__OnMac");
+		
+// 		return ;
+		
+		/*******************************
+			list of file names
+		*******************************/
+		// path to image file dir
+		$dpath_ImageFiles = "/Users/mac/Desktop/works/storage/images/from_iphone/renamed";
+// 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\iphone";
+// 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\is13sh";
+		
+		// validate
+		if (! file_exists($dpath_ImageFiles)) {
+			
+			debug("no such dir => $dpath_ImageFiles");
+			
+			return ;
+			
+		}
+		
+		// list
+		$list_Files = array_values(array_diff(
+				scandir($dpath_ImageFiles), array('..', '.')));
+		
+		// filter => items starting with "." char
+		foreach ($list_Files as $key => $element) {
+			if (Utils::startsWith($element, ".")) {
+				
+				unset($list_Files[$key]);
+				
+				debug("unset done => $element($key)");
+				
+			}
+		}
+		
+		// reset keys
+		$list_Files = array_values($list_Files);
+		
+		$lenOf_List_Files = count($list_Files);
+		
+		debug("files => ".$lenOf_List_Files);
+// 		debug("files => ".count($list_Files));
+
+// 		debug($list_Files);
+		debug("list_Files[0] => ".$list_Files[0]);
+		debug("list_Files[1] => ".$list_Files[1]);
+		
+// 		//debug
+// 		return ;
+		
+		/*******************************
+			setup: vars
+		*******************************/
+		$dpath = Utils::get_fpath();
+		
+// 		debug("dpath => $dpath");
+		
+// 		$dpath = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+// 		"C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data";
+		
+		$fname = $db_file;
+// 		$fname = "ifm11_backup_20160107_092216.bk";
+		
+		$fpath = implode(DIRECTORY_SEPARATOR, array($dpath, $fname));
+
+		debug($fpath);
+		
+		//debug
+		debug("fpath => $fpath");
+		
+		/*******************************
+			valid: db file exists
+		*******************************/
+		if (! file_exists($fpath)) {
+			
+			debug("no such db file => $db_file");
+			
+			return ;
+			
+		}//! file_exists($fpath)
+		
+		/*******************************
+		 pdo: setup
+		*******************************/
+		//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+		$file_db = new PDO("sqlite:$fpath");
+			
+		if ($file_db === null) {
+		
+			debug("pdo => null");
+		
+			return null;
+		
+		} else {
+				
+// 			debug("pdo => created");
+				
+		}
+			
+		// Set errormode to exceptions
+		$file_db->setAttribute(PDO::ATTR_ERRMODE,
+				PDO::ERRMODE_EXCEPTION);
+
+		/*******************************
+		 prep: data for insertion
+		*******************************/
+		$sql = "INSERT INTO ifm11 ("
+				."created_at, modified_at, "		// 1,2
+				."date_added, date_modified, "		// 3,4
+				."file_path, file_name"				// 5,6
+						.") "
+								."SELECT "
+// 								."VALUES ("
+										."?, ?, "
+										."?, ?, "
+										."?, ?"
+								." "
+// 								.")"
+				." "
+				."WHERE NOT EXISTS(SELECT 1 FROM ifm11 WHERE file_path = ? AND file_name = ?)"
+			;
+			
+		debug("sql => $sql");
+		
+		$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+		
+		// counter => insertion successful
+		$count = 0;
+		
+		// insert
+		foreach ($list_Files as $elem) {
+		
+			$data = array(
+			
+					$time,		// created_at
+					$time,		// modified_at
+					
+					$time,		// date_added
+					$time,		// date_modified
+					
+					$dpath_ImageFiles,		// file_path
+					$elem,		// file_name
+						
+					$dpath_ImageFiles,		// file_path
+					$elem		// file_name
+						
+			);
+			
+			$qry = $file_db->prepare($sql);
+
+			//ref http://php.net/manual/en/pdostatement.execute.php
+			$res = $qry->execute($data);
+			
+			//debug
+			if ($res === true) {
+	
+				debug("execute => true: ".$elem);
+				
+				// count
+				$count += 1;
+	
+			} else {
+	
+				debug("execute => false: ".$elem);
+	
+			}//if ($res === true)
+					
+		}//foreach ($list_Files as $elem)
+		
+		/*******************************
+			report
+		*******************************/
+		$msg = sprintf("insert: total => %d, done => %d", $lenOf_List_Files, $count);
+				
+		debug($msg);
+		
+		/*******************************
+		 pdo => reset
+		*******************************/
+		$file_db = null;
+		
+		/*******************************
+				report
+		*******************************/
+		debug("manage_IPhone_ImageFiles__Insert_Data__OnMac => done");
+		
+	}//manage_IPhone_ImageFiles__Insert_Data__OnMac($db_file)
+
+	public function
+	manage_IPhone_ImageFiles__OnMac() {
+		
+		/*******************************
+			valid: local server
+		*******************************/
+		if (Utils::get_HostName() != "localhost") {
+		
+			debug("I am not a local server. No op.");
+				
+			return;
+				
+		} else {
+			
+			//debug
+			
+			debug("local server");
+// 			debug("remote server: image_manager__Update_CSV --> under construction");
+			
+// 			return;
+			
+		}
+
+		/*******************************
+			valid: param
+		*******************************/
+		$db_file = @$this->request->query['db_file'];
+		
+		if ($db_file == null) {
+			
+			debug("db file => not designated");
+
+			/*******************************
+			 view
+			 *******************************/
+			$this->render("/Images/manage__i_phone__image_files");
+				
+			return ;
+			
+		} else {//$db_file == null
+			
+			debug("db file => $db_file");
+			
+		}//$db_file == null
+		
+// 		/*******************************
+// 			rename => file names
+// 		*******************************/
+// // 		$this->manage_IPhone_ImageFiles__Change_FileNames();
+
+		/*******************************
+			insert data
+		*******************************/
+		$this->manage_IPhone_ImageFiles__Insert_Data__OnMac($db_file);
+// 		$this->manage_IPhone_ImageFiles__Insert_Data();
+		
+		/*******************************
+				view
+		*******************************/
+		$this->render("/Images/manage__i_phone__image_files");
 		
 	}//manage_IPhone_ImageFiles()
 	
