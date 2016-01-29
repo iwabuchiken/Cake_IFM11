@@ -1,0 +1,32 @@
+#@ECHO OFF
+
+#platform='unknown'
+#unamestr=`uname`
+
+#echo unamestr
+
+#if [[ "$unamestr" == 'Linux' ]]; then
+#   platform='linux'
+#elif [[ "$unamestr" == 'FreeBSD' ]]; then
+#   platform='freebsd'
+
+#fi
+
+
+#unamestr = `uname`
+
+#if [ `uname` == ‘Darwin’ ]; then
+#if [ unamestr == ‘Darwin’ ]; then
+
+#”	echo “DARWIN”
+
+#else
+
+#	echo “not DARWIN”
+
+#fi
+
+#pushd C:\WORKS\Utils\shortcuts\cake_ifm11
+#main.stop.bat
+
+#exit
