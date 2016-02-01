@@ -156,6 +156,11 @@ if [ “$aname”==‘Darwin’ ]; then	#=> true
 
 	kill_process_2 "MacOS/Google Chrome$"
 	kill_process_2 "Contents/MacOS/filezilla$"
+	
+	kill_process_2 "Contents\/MacOS\/Wish"
+	
+	kill_process_2 "Contents\/MacOS\/sqlitebrowser"
+	
 	#kill_process_2 "Contents¥/MacOS¥/filezilla$"
 	
 	#kill_process_2
@@ -169,11 +174,11 @@ fi
 
 echo “done”
 
-/*
-========== bash scripts ==========
+#/*
+#========== bash scripts ==========
 # list of running apps	#ref 
-osascript -e 'tell application "System Events" to get name of (processes where background only is false)'
+#osascript -e 'tell application "System Events" to get name of (processes where background only is false)'
 
 
 
-*/
+#*/
