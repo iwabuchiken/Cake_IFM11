@@ -178,6 +178,7 @@ echo “done”
 #========== bash scripts ==========
 # list of running apps	#ref 
 #osascript -e 'tell application "System Events" to get name of (processes where background only is false)'
+#ps gx | grep “MAMP”
 
 
 
