@@ -87,7 +87,7 @@ public class MyTest_iPhone {
 //			int val = rs.getInt(0);
 		
 		String msg;
-		msg = String.format(Locale.JAPAN, "[%s : %d] val => %d", Thread
+		msg = String.format(Locale.JAPAN, "[%s : %d] is_InDB_FileName => %d", Thread
 				.currentThread().getStackTrace()[1].getFileName(), Thread
 				.currentThread().getStackTrace()[1].getLineNumber(), val);
 

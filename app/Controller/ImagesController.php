@@ -1577,6 +1577,13 @@ class ImagesController extends AppController {
 	public function
 	image_manager() {
 
+		
+// 		//debug
+// 		phpinfo();
+		
+// 		return;
+				// 		PHP Version 5.6.3
+				
 		/*******************************
 			query: update csv
 		*******************************/
@@ -1655,6 +1662,9 @@ class ImagesController extends AppController {
 		
 // 		$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
 
+		//debug
+		debug("\$result=> ".count($result));
+		
 		/*******************************
 			valid: not null
 		*******************************/
@@ -3065,6 +3075,8 @@ class ImagesController extends AppController {
 	public function
 	manage_Sharp_ImageFiles() {
 		
+		
+		
 		/*******************************
 			valid: local server
 		*******************************/
@@ -3381,8 +3393,8 @@ class ImagesController extends AppController {
 			list of file names
 		*******************************/
 		// path to image file dir
-		$dpath_ImageFiles = "/Users/mac/Desktop/works/storage/images/from_iphone/renamed";
-// 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\iphone";
+// 		$dpath_ImageFiles = "/Users/mac/Desktop/works/storage/images/from_iphone/renamed";
+		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\iphone";
 // 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\is13sh";
 		
 		// validate

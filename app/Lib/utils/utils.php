@@ -1029,7 +1029,7 @@
 // 						."WHERE date_added < '$range_End'"
 						;
 			
-//			debug("query => $query");
+			debug("query => $query");
 			
 			$images = $file_db->query(
 						$query
@@ -1044,6 +1044,9 @@
 			// 			$images = $file_db->query('SELECT * FROM ta2 ORDER BY _id DESC');
 				
 			// 			$cnt_Tweets = sqlite_num_rows($images);	//=> "Call to undefined function sqlite_num_rows()"
+			
+			//debug
+			debug("query => done");
 			
 			//ref http://stackoverflow.com/questions/883365/row-count-with-pdo answered May 19 '09 at 15:16
 			$cnt_Images = $images->fetchColumn();	//=> w
@@ -4279,10 +4282,10 @@
 			
 		}//get_AudioLength__LOCAL
 	
-		//////////////////////////
-		// @return
-		// path to "app/Lib/data"
-		//////////////////////////
+		/*
+			@return
+			path to "app/Lib/data"
+		*/
 		public static function
 		get_fpath() {
 			
