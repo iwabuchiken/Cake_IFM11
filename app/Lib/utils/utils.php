@@ -1030,7 +1030,7 @@
 						;
 			
 			debug("query => $query");
-			
+
 			$images = $file_db->query(
 						$query
 // 						"SELECT Count(*) FROM "
