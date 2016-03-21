@@ -1,6 +1,12 @@
 /*
  * javac C:/WORKS/WS/WS_Android/IFM11/src/ifm11/utils/MyTest.java
  * 
+ * <Usage> 
+
+pushd C:\WORKS\WS\Eclipse_Luna\Cake_IFM11
+java -cp ".;lib/data/java/*"  Delete_UnusedPhotos
+
+ * 
  */
 
 // 
@@ -30,16 +36,343 @@ import java.io.FileWriter;
 import java.util.Locale;
 import java.util.Arrays;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
 import java.sql.*;
+
+/*
+pushd C:\WORKS\WS\Eclipse_Luna\Cake_IFM11
+
+javac Delete_UnusedPhotos.java
+
+java -cp ".;lib/data/java/*"  Delete_UnusedPhotos
+
+
+
+ */
 
 public class Delete_UnusedPhotos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Delete_UnusedPhotos.D_21_v_1_0_1();
+		
 	}//public static void main(String[] args)
 
+	public static void D_21_v_1_0_1() {
+		
+		/*
+		 * setup => JDBC
+		 */
+		//////////////////////////////////////////////////////////////////////
+		//
+		// files in the db
+		//
+		//////////////////////////////////////////////////////////////////////
+		///////////////////////////////////
+		//
+		// count
+		//
+		///////////////////////////////////
+		int numOf_UnusedPhotos = get_NumOf_UnusedPhotos();
+		
+		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] numOf_UnusedPhotos => %d", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber(), numOf_UnusedPhotos);
+
+		System.out.println(msg);
+
+		if (numOf_UnusedPhotos < 1) {
+
+			msg = String.format(Locale.JAPAN, "[%s : %d] numOf_UnusedPhotos less than 1 => exiting...", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), numOf_UnusedPhotos);
+			
+			System.out.println(msg);
+			
+			return;
+
+		}//if (numOf_UnusedPhotos < 1)
+		
+		
+		
+		///////////////////////////////////
+		//
+		// build: list of file names
+		//
+		///////////////////////////////////
+		List<String> listOf_FileNames__Unused = find_Photos_All__Unused();
+		
+		msg = String.format(Locale.JAPAN, "[%s : %d] listOf_FileNames__Unused => %d", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber(), 
+				listOf_FileNames__Unused.size());
+
+		System.out.println(msg);
+
+//		for (int i = 0; i < 10; i++) {
+//			
+//			String fname = listOf_FileNames__Unused.get(i);
+//			
+////			String msg;
+//			msg = String.format(Locale.JAPAN, "[%s : %d] fname => %s", Thread
+//					.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber(), fname);
+//
+//			System.out.println(msg);
+//			
+//			
+//		}//for (int i = 0; i < 10; i++)
+
+		///////////////////////////////////
+		//
+		// delete files
+		//
+		///////////////////////////////////
+		int numOf_Deleted_Files = delete_Unused_Photos(listOf_FileNames__Unused);
+		
+//		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] numOf_Deleted_Files => %d", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber(), numOf_Deleted_Files);
+
+		System.out.println(msg);
+		
+		
+		///////////////////////////////////
+		//
+		// report
+		//
+		///////////////////////////////////
+//		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] done", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
+
+		System.out.println(msg);
+		
+		
+	}//D_21_v_1_0_1()
+	
+
+	public static int
+	delete_Unused_Photos(List<String> listOf_FileNames__Unused) {
+
+		String msg;
+		
+		String dpath_iphone = "C:\\Users\\kbuchi\\Desktop\\data\\images\\iphone";
+		
+		int lenOf_listOf_FileNames__Unused = listOf_FileNames__Unused.size();
+		
+		String fname = null;
+		File f = null;
+		
+		int count = 0;
+		
+		for (int i = 0; i < lenOf_listOf_FileNames__Unused; i++) {
+			
+			fname = listOf_FileNames__Unused.get(i);
+			
+			f = new File(dpath_iphone, fname);
+			
+			// judge
+			if (f.exists() == true) {
+
+//				String msg;
+				msg = String.format(Locale.JAPAN, "[%s : %d] file exists => %s", Thread
+						.currentThread().getStackTrace()[1].getFileName(),
+						Thread.currentThread().getStackTrace()[1]
+								.getLineNumber(), f.getAbsolutePath());
+
+				System.out.println(msg);
+
+				// delete
+				boolean res = f.delete();
+				
+				// count 
+				if (res == true) {
+					
+					count += 1;
+
+					msg = String.format(Locale.JAPAN, "[%s : %d] file deleted => %s", Thread
+							.currentThread().getStackTrace()[1].getFileName(),
+							Thread.currentThread().getStackTrace()[1]
+									.getLineNumber(), f.getAbsolutePath());
+
+					System.out.println(msg);
+
+				} else {//if (res == true)
+					
+					msg = String.format(Locale.JAPAN, "[%s : %d] file NOT deleted => %s", Thread
+							.currentThread().getStackTrace()[1].getFileName(),
+							Thread.currentThread().getStackTrace()[1]
+									.getLineNumber(), f.getAbsolutePath());
+
+					System.out.println(msg);
+
+					
+				}//if (res == true)
+				
+			}//if (f.exists() == true)
+			
+		}//for (int i = 0; i < lenOf_listOf_FileNames__Unused; i++)
+		
+		// return
+		return count;
+		
+	}//delete_Unused_Photos()
+	
+	public static ArrayList<String>
+	find_Photos_All__Unused() {
+
+		String msg;
+		
+		//
+		String q = "SELECT * FROM ifm11 "
+				+ "WHERE memos == '-*' "
+				+ "ORDER BY file_name DESC;";
+
+		String db_Directive = "jdbc:sqlite:"
+				+ "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
+				+ "\\ifm11_backup_20160110_080900.bk";
+		
+		//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
+		Connection c = null;
+		
+		Statement stmt = null;
+		
+		ArrayList<String> listOf_FileNames = new ArrayList<String>();
+		
+		try {
+			
+			Class.forName("org.sqlite.JDBC");
+			//ref java.sql.DriverManager
+			
+			c = DriverManager.getConnection(db_Directive);
+			
+			c.setAutoCommit(false);
+			
+			//ref http://stackoverflow.com/questions/7886462/how-to-get-row-count-using-resultset-in-java answered Jun 26 '12 at 5:34
+			stmt = c.createStatement( 
+					ResultSet.TYPE_FORWARD_ONLY, 
+//					ResultSet.TYPE_SCROLL_INSENSITIVE, 
+					ResultSet.CONCUR_READ_ONLY );
+			
+			ResultSet rs = stmt.executeQuery( q );
+			
+			while (rs.next()) {
+				
+	            String fname = rs.getString("file_name");
+//	            int supplierID = rs.getInt("SUP_ID");
+//	            float price = rs.getFloat("PRICE");
+//	            int sales = rs.getInt("SALES");
+//	            int total = rs.getInt("TOTAL");
+//	            System.out.println(coffeeName + "\t" + supplierID +
+//	                               "\t" + price + "\t" + sales +
+//	                               "\t" + total);
+	            
+	            listOf_FileNames.add(fname);
+	            
+	        }
+			
+			// closing ops
+			rs.close();
+			stmt.close();
+			c.close();
+			
+		} catch ( Exception e ) {
+			
+//			String msg;
+			String tmp_s = e.getClass().getName() + ": " + e.getMessage();
+			
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] Exception => %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), tmp_s);
+			
+			System.out.println(msg);
+
+		}
+
+		// return
+		return listOf_FileNames;
+
+	}//find_Photos_All__Unused()
+	
+	public static int
+	get_NumOf_UnusedPhotos() {
+
+		String q2 = "SELECT count(*) FROM ifm11 "
+				+ "WHERE memos == '-*' "
+				+ "ORDER BY file_name DESC;";
+		
+		String db_Directive = "jdbc:sqlite:"
+				+ "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
+				+ "\\ifm11_backup_20160110_080900.bk";
+		
+		//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
+		Connection c = null;
+		
+		Statement stmt = null;
+		
+		try {
+			
+			Class.forName("org.sqlite.JDBC");
+			//ref java.sql.DriverManager
+			
+			c = DriverManager.getConnection(db_Directive);
+			
+			c.setAutoCommit(false);
+			
+			//ref http://stackoverflow.com/questions/7886462/how-to-get-row-count-using-resultset-in-java answered Jun 26 '12 at 5:34
+			stmt = c.createStatement( 
+					ResultSet.TYPE_FORWARD_ONLY, 
+//					ResultSet.TYPE_SCROLL_INSENSITIVE, 
+					ResultSet.CONCUR_READ_ONLY );
+			
+//			ResultSet rs = stmt.executeQuery( query );
+//			ResultSet rs = stmt.executeQuery( q );
+			ResultSet rs = stmt.executeQuery( q2 );
+			
+			
+			int tmp_i = rs.getInt("count(*)");
+			
+//			String msg;
+//			msg = String.format(Locale.JAPAN, "[%s : %d] rs.getInt(\"count(*)\") => %d", Thread
+//					.currentThread().getStackTrace()[1].getFileName(), Thread
+//					.currentThread().getStackTrace()[1].getLineNumber(), tmp_i);
+//
+//			System.out.println(msg);
+			
+			rs.close();
+			stmt.close();
+			c.close();
+			
+			// return
+			return tmp_i;
+			
+		} catch ( Exception e ) {
+			
+			String msg;
+			String tmp_s = e.getClass().getName() + ": " + e.getMessage();
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] Exception => %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber(), tmp_s);
+			
+			System.out.println(msg);
+			
+			return -1;
+			
+		}
+
+	}//get_NumOf_UnusedPhotos()
+	
+	
 	/*******************************
 	 * increment by 1<br>
 	 * "2016-01-11_16-17-02_000.jpg" => "2016-01-11_16-17-02_001.jpg"
