@@ -350,3 +350,24 @@ CREATE TABLE admins (
 	
 );
 
+--------------------------------------------- memos
+DROP TABLE memos;
+
+CREATE TABLE memos (
+
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+	
+	r_id				INTEGER,
+	r_created_at		VARCHAR(30),
+	r_modified_at		VARCHAR(30),
+	
+	title				TEXT,
+	body				TEXT
+	
+);
+

@@ -23,10 +23,10 @@ class MemosController extends AppController {
 		debug("add_memos");
 
 		// get: list of realm db files
-		$aryOf_Realm_DBFiles_Names = Utils::find_All_Realm_DBFiles_Names();
+		$fname_Realm_DBFile_Latest = Utils::find_All_Realm_DBFiles_Names();
 		
-		debug("\$aryOf_Realm_DBFiles_Names");
-		debug($aryOf_Realm_DBFiles_Names);
+		debug("\$fname_Realm_DBFile_Latest");
+		debug($fname_Realm_DBFile_Latest);
 		
 		// memos
 		$resOf_Memos = $this->Memo->find('all');
