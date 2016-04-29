@@ -4349,6 +4349,10 @@
 			
 		}//find_All_Realm_DBFiles_Names()
 		
+		/*
+		 * @return
+		 * 	array(array("id","title","body","created_at","modified_at"),array(),...)
+		 */
 		static function 
 		find_All_Memos__From_CSV($fname_Realm_DBFile_Latest) {
 
@@ -4474,6 +4478,65 @@
 // 			return null;
 			
 		}//find_All_Memos__From_CSV()
+
+		/*
+		 * @return
+		 * 	array(array("id","title","body","created_at","modified_at"),array(),...)
+		 */
+		static function 
+		filter_Memos_From_CSVFile__NotIn_CakeDB($aryOf_Memos__CSV_File) {
+
+			$filtered = array();
+			
+			$lenOf_AryOf_Memos__CSV_File = count($aryOf_Memos__CSV_File);
+			
+			for ($i = 0; $i < $lenOf_AryOf_Memos__CSV_File; $i++) {
+			
+				$memo_csv = $aryOf_Memos__CSV_File[$i];
+
+				$res = Utils::isIn_DB_Memo__By_ID($memo_csv);
+				
+				if ($res == FALSE) {
+					
+					array_push($filtered, $memo_csv);
+					
+				}//$res == FALSE
+				
+			}//for ($i = 0; $i < $lenOf_AryOf_Memos__CSV_File; $i++)
+			
+// 			debug("count(\$filtered) => ".count($filtered));
+			
+			// return
+			return $filtered;
+			
+		}//filter_Memos_From_CSVFile__NotIn_CakeDB($aryOf_Memos__CSV_File)
+		
+		static function isIn_DB_Memo__By_ID($memo_csv) {
+
+			// memo from => Cake db
+			$model = ClassRegistry::init('Memo');
+			
+			$memos = $model->find('all',
+					array(
+						'conditions' =>
+							array(
+								'Memo.r_id' => $memo_csv->r_id)
+					)
+			);
+		
+			//
+			debug("count(\$memos) => "
+					.count($memos)
+					."(\$memo_csv.r_id => ".$memo_csv->r_id.")");
+			
+			
+			// return
+			return count($memos) > 0 ? true : false;
+// 			return false;
+			
+		}//isIn_DB_Memo__By_ID($memo_csv)
+
+// 		static function
 		
 	}//class Utils
 	
