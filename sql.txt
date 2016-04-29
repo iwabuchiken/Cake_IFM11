@@ -12,6 +12,8 @@ pragma table_info(images);
 pragma table_info(admins);
 pragma table_info(audio_files);
 
+pragma table_info(memos);
+
 .exit
 
 DROP TABLE videos;
@@ -44,6 +46,24 @@ CREATE TABLE images(
 );
 
 DROP TABLE images;
+
+--------------------------------------------- memos
+CREATE TABLE memos(
+
+	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+	
+	r_id				INTEGER,
+	r_created_at		VARCHAR(30),
+	r_modified_at		VARCHAR(30),
+	
+	title				TEXT,
+	body				TEXT
+	
+);
+
+DROP TABLE memos;
 
 --------------------------------------------- audio_files
 CREATE TABLE audio_files(
