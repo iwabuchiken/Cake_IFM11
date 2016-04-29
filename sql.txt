@@ -359,9 +359,6 @@ CREATE TABLE memos (
 	created_at	VARCHAR(30),
 	updated_at	VARCHAR(30),
 	
-	created_at			VARCHAR(30),
-	updated_at			VARCHAR(30),
-	
 	r_id				INTEGER,
 	r_created_at		VARCHAR(30),
 	r_modified_at		VARCHAR(30),

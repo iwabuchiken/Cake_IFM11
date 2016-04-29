@@ -4349,6 +4349,131 @@
 			
 		}//find_All_Realm_DBFiles_Names()
 		
+		static function 
+		find_All_Memos__From_CSV($fname_Realm_DBFile_Latest) {
+
+// 			$model = ClassRegistry::init('Image');
+
+			/*******************************
+			file: open
+			*******************************/
+			$dpath_Data = Utils::get_fpath();
+			
+			$fpath_DB = "$dpath_Data"
+						.DIRECTORY_SEPARATOR."csv"
+						.DIRECTORY_SEPARATOR."xcode_memos"
+						.DIRECTORY_SEPARATOR.$fname_Realm_DBFile_Latest
+						;
+				
+			debug("\$fpath_DB => ".$fpath_DB);
+						
+			$csv_File = fopen($fpath_DB, "r");
+// 			$csv_File = fopen($fpath, "r");
+			// 		$csv_File = fopen($fpath_Csv, "r");
+			
+			// validate: null
+			if ($csv_File == null) {
+				
+				debug("csv file => null ($fpath_DB)");
+					
+				return null;
+							
+			}//$csv_File == null
+			
+			// 		debug("\$csv_File => ".($csv_File == null ? "null" : "NOT null"));
+		
+			/*******************************
+			read lines
+			*******************************/
+			$csv_Lines = array();
+		
+			// 		for ($i = 0; $i < 3; $i++) {
+		
+			// 			fgetcsv($csv_File);
+		
+				// 		}
+
+			// headers
+			$data = fgetcsv($csv_File);	// header 1
+			
+			if ($data == FALSE) {
+
+				debug("csv file => header 1 --> missing ($fpath_DB)");
+					
+				return null;
+			
+			}
+			
+			$data = fgetcsv($csv_File);	// header 2
+			
+			if ($data == FALSE) {
+
+				debug("csv file => header 2 --> missing ($fpath_DB)");
+					
+				return null;
+			
+			}
+			
+			//REF fgetcsv http://us3.php.net/manual/en/function.fgetcsv.php
+			while ( ($data = fgetcsv($csv_File) ) !== FALSE ) {
+	
+				array_push($csv_Lines, $data);
+	
+			}
+	
+			debug("csv lines => ".count($csv_Lines));
+
+			// validate
+			if (count($csv_Lines) < 1) {
+
+				debug("csv line => no entries ($fpath_DB)");
+					
+				return null;
+			
+			}
+						
+			//debug
+			if (count($csv_Lines) > 0) {
+				
+				debug("\$csv_Lines[0] => ");
+				debug($csv_Lines[0]);
+				
+			}
+			
+			// convert: csv lines --> ary of memos
+			$aryOf_Memos = array();
+			
+			$lenOf_csv_lines = count($csv_Lines);
+			
+			for ($i = 0; $i < $lenOf_csv_lines; $i ++) {
+				
+				$memo = new Memo();
+				
+				$line = $csv_Lines[$i];
+				
+				$memo->r_id = $line[0];
+				$memo->title = $line[1];
+				$memo->body = $line[2];
+				
+				$memo->r_created_at = $line[3];
+				$memo->r_modified_at = $line[4];
+				
+// 				$memo['r_id'] = $line[0];
+				
+				array_push($aryOf_Memos, $memo);
+				
+			}
+			
+			debug("count(\$aryOf_Memos) => ".count($aryOf_Memos));
+			
+// 			debug($aryOf_Memos[0]);
+// 			debug($aryOf_Memos[1]);
+			
+			// return
+			return count($aryOf_Memos) > 0 ? $aryOf_Memos : null;
+// 			return null;
+			
+		}//find_All_Memos__From_CSV()
 		
 	}//class Utils
 	

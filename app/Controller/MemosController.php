@@ -33,7 +33,12 @@ class MemosController extends AppController {
 		
 		$numOf_Memos = count($resOf_Memos);
 		
-		debug("\$numOf_Memos => ".$numOf_Memos);
+		debug("\$numOf_Memos (Cake DB) => ".$numOf_Memos);
+		
+		// memos --> from csv db
+		$aryOf_Memos__CSV_File = Utils::find_All_Memos__From_CSV($fname_Realm_DBFile_Latest);
+		
+		debug($aryOf_Memos__CSV_File == null ? "null" : "CSV file => ".count($aryOf_Memos__CSV_File));
 		
 		$this->render("/Elements/commons/common_1");
 		
