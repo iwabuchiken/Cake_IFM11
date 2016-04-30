@@ -55,6 +55,17 @@ class MemosController extends AppController {
 		debug("count(\$aryOf_Memos__CSV_File__Filtered) => "
 				.count($aryOf_Memos__CSV_File__Filtered));
 // 		debug("count(\$aryOf_Memos__CSV_File) => ".count($aryOf_Memos__CSV_File));
+
+// 		debug("\$aryOf_Memos__CSV_File[0]->title =>");
+// 		debug($aryOf_Memos__CSV_File[0]->title);
+// 		debug("\$aryOf_Memos__CSV_File[0] =>");
+// 		debug($aryOf_Memos__CSV_File[0]);
+		
+		/*
+		 * insert memos (update if exists)
+		 */
+		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile($aryOf_Memos__CSV_File);
+		
 		
 		/*
 		 * view
