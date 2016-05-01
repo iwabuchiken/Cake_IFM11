@@ -1484,3 +1484,16 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-05-01 03:45:17 Error: [MissingLayoutException] Layout file "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Layouts\defalut_memos.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Layouts\\defalut_memos.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/memos/index
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(510): View->_getLayoutFileName('defalut_memos')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(479): View->renderLayout('', 'defalut_memos')
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MemosController), Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

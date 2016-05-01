@@ -12,9 +12,26 @@ class MemosController extends AppController {
 
 	public function index() {
 		
+		$opt = array(
+
+				'order'		=> "Memo.id ASC"
+				
+		);
 		
+		$resOf_Memos = $this->Memo->find('all', $opt);
 		
-		$this->render("/Elements/commons/common_1");
+		debug(count($resOf_Memos));
+		
+		// set
+		$this->set("memos", $resOf_Memos);
+		
+		/*
+		 * view-related
+		 */
+		// layout
+// 		$this->layout = "default_memos";
+		
+// 		$this->render("/Elements/commons/common_1");
 		
 	}//index
 	
@@ -73,5 +90,13 @@ class MemosController extends AppController {
 		$this->render("/Elements/commons/common_1");
 		
 	}//add_memos
+
+	function beforeFilter() {
+
+		//ref http://stackoverflow.com/questions/7426469/assigning-layout-in-cakephp answered Sep 15 '11 at 6:16
+		parent::beforeFilter();
+		$this->layout = 'default_memos';
+		
+	}
 	
 }
