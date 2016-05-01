@@ -36,7 +36,7 @@
 	
 	<tr>
 	
-		<td colspan="2" class="td_images_FileName">
+		<td colspan="2" class="td_memos_title">
 		
 			<?php 
 
@@ -46,7 +46,8 @@
 							
 		</td>
 	
-		<td colspan="3" class="td_images_FileName">
+		<td colspan="3" class="td_memos_title">
+<!-- 		<td colspan="3" class="td_images_FileName"> -->
 		
 			<?php 
 
@@ -70,7 +71,8 @@
 							
 		</td>
 	
-		<td colspan="2" class="td_border_black">
+<!-- 		<td colspan="2" class="td_border_black"> -->
+		<td colspan="2" class="td_memos_border_black_bg_gray">
 		
 			<?php 
 
@@ -80,7 +82,7 @@
 							
 		</td>
 	
-		<td colspan="2" class="td_border_black">
+		<td colspan="2" class="td_memos_border_black_bg_gray">
 		
 			<?php 
 

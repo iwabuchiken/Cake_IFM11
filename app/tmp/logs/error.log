@@ -1497,3 +1497,21 @@ Stack Trace:
 #4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MemosController), Object(CakeRequest))
 #5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2016-05-01 05:41:54 Error: [MissingTableException] Table memos for model Memo was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'memos',
+  'class' => 'Memo',
+  'ds' => 'default',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/memos
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(3525): Model->setSource('memos')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\MemosController.php(23): Model->find('all', Array)
+#4 [internal function]: MemosController->index()
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MemosController), Array)
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MemosController), Object(CakeRequest))
+#8 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}

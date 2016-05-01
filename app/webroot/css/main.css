@@ -353,6 +353,24 @@ td.td_memos_ID {
 	
 }
 
+td.td_memos_border_black_bg_gray {
+
+	border: 		2px solid black;
+	
+	background:		#a6a6a6;
+	
+}
+
+td.td_memos_title {
+
+	border: 		2px solid green;;
+	
+	background:		#cce0ff;
+	
+	/* ref http://www.w3schools.com/cssref/pr_font_weight.asp */
+	font-weight:			bold;
+	
+}
 
 td.col_title {
 	

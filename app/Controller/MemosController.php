@@ -41,7 +41,8 @@ class MemosController extends AppController {
 
 		$opt = array(
 		
-				'order'		=> "Memo.id ASC"
+				'order'		=> "Memo.r_created_at DESC"
+// 				'order'		=> "Memo.id ASC"
 		
 		);
 		
