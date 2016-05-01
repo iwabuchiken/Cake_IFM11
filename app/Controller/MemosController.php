@@ -12,11 +12,13 @@ class MemosController extends AppController {
 
 	public function index() {
 		
-		$opt = array(
+		$opt = $this->index__opt();
+		
+// 		$opt = array(
 
-				'order'		=> "Memo.id ASC"
+// 				'order'		=> "Memo.id ASC"
 				
-		);
+// 		);
 		
 		$resOf_Memos = $this->Memo->find('all', $opt);
 		
@@ -34,6 +36,19 @@ class MemosController extends AppController {
 // 		$this->render("/Elements/commons/common_1");
 		
 	}//index
+	
+	public function index__opt() {
+
+		$opt = array(
+		
+				'order'		=> "Memo.id ASC"
+		
+		);
+		
+		// return
+		return $opt;
+		
+	}//index__opt()
 	
 	public function add_memos() {
 
@@ -81,8 +96,10 @@ class MemosController extends AppController {
 		/*
 		 * insert memos (update if exists)
 		 */
-		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile($aryOf_Memos__CSV_File);
+		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile__V2($aryOf_Memos__CSV_File);
+// 		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile($aryOf_Memos__CSV_File);
 		
+		debug("\$numOf_Memos__Inserted => ".$numOf_Memos__Inserted);
 		
 		/*
 		 * view

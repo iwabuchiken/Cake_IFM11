@@ -4740,9 +4740,341 @@
 // 			$model->save();
 				
 // 			debug("saved");
-// 			aaa
 			
 		}//insert_Memos_From_CSVFile($aryOf_Memos__CSV_File)
+		
+		static function 
+		insert_Memos_From_CSVFile__V2($aryOf_Memos__CSV_File) {
+
+			/*
+			 * prep
+			 */
+			// num of memos
+			$numOf_Memos = count($aryOf_Memos__CSV_File);
+			
+			// date
+			$date_label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+// 			//debug
+// 			debug($aryOf_Memos__CSV_File[0]);
+
+			/*
+			 * insert
+			*/
+			$numOf_Memos__Saved = 0;
+			$numOf_Memos__Updated = 0;
+			$numOf_Memos__NotSaved = 0;
+			
+			for ($i = 0; $i < $numOf_Memos; $i++) {
+					
+				$memo = $aryOf_Memos__CSV_File[$i];
+				
+				$res = Utils::insert_Memos_From_CSVFile__Insert_1_Memo($memo);
+			
+				if ($res == 1) {
+// 				if ($res == true) {
+					
+					$numOf_Memos__Saved += 1;
+					
+				} else if ($res == 0) {
+					
+					$numOf_Memos__Updated += 1;
+					
+				} else if ($res == -1) {
+					
+					$numOf_Memos__NotSaved += 1;
+					
+				} else {//$res == true
+					
+					debug("insert_Memos_From_CSVFile__Insert_1_Memo => unknown");
+					
+				}//$res == true
+			
+			}//for ($i = 0; $i < $numOf_Memos; $i++)
+				
+			debug("\$numOf_Memos__Saved => ".$numOf_Memos__Saved);
+			debug("\$numOf_Memos__Updated => ".$numOf_Memos__Updated);
+			debug("\$numOf_Memos__NotSaved => ".$numOf_Memos__NotSaved);
+			
+			// return
+			return $numOf_Memos__Saved;
+			
+// 			/*
+// 			 * Memo
+// 			 */
+// 			$memo = $aryOf_Memos__CSV_File[0];
+			
+// 			$model = ClassRegistry::init('Memo');
+
+// 			$model->create();
+			
+// 			$model->set("created_at", $date_label);
+// 			$model->set("updated_at", $date_label);
+// // 			$model->set("modified_at", $date_label);
+			
+// 			$model->set("r_id", $memo->r_id);
+// 			$model->set("r_created_at", $memo->r_created_at);
+// 			$model->set("r_modified_at", $memo->r_modified_at);
+			
+// 			$model->set("title", $memo->title);
+// 			$model->set("body", $memo->body);
+						
+// // 			debug("\$model => ");
+// // 			debug("\$model => ");
+// // 			debug($model);
+// 			debug("\$model->data['Memo']['r_id'] => ");
+// 			debug($model->data['Memo']['r_id']);
+// // 			debug("\$model->data['Memo'] => ");
+// // 			debug($model->data['Memo']);
+// // 			debug("\$model->data => ");
+// // 			debug($model->data);
+// // 			debug("\$model->data->r_id => ");	//=> Notice (8): Trying to get property of non-object
+// // 			debug($model->data->r_id);
+// // 			debug("\$model->data->Memo => ");	//=> Notice (8): Trying to get property of non-object 
+// // 			debug($model->data->Memo);
+// // 			debug($model);
+
+// 			debug("\$model->r_id => '".$model->r_id."'");			
+// 			debug("\$model->data['Memo']['r_id'] => '".$model->data['Memo']['r_id']."'");			
+			
+// 			/*
+// 			 * is in DB
+// 			 */
+// 			$res = Utils::isIn_CakeDB_Memo__By_R_ID($model->data['Memo']['r_id']);
+// // 			$res = Utils::isIn_CakeDB_Memo__By_R_ID($model->r_id);
+			
+// // 			debug("\$res => ".$res);
+
+// // 			debug($res == true ? "is in Cake DB" : "is NOT in Cake DB");
+// 			debug($res == null ? "is NOT in Cake DB" : "is in Cake DB");
+// // 			debug($res == null ? "is in Cake DB" : "is NOT in Cake DB");
+			
+			
+			
+// // 			// build a Memo instance
+// // 			$data = array("Memo");
+			
+			
+// // 			debug("\$data => ");
+// // 			debug($data);
+
+// 			/*
+// 			 * save
+// 			 */
+// 			if ($res == null) {
+// // 			if ($res == false) {
+// // 			if ($res == true) {
+			
+// 				$res2 = $model->save();
+			
+// 			} else {
+			
+// // 				debug("\$res => ");
+// // 				debug($res);
+// 				debug("\$res['Memo']['id'] => ");
+// 				debug($res['Memo']['id']);
+				
+// 				// update id
+// 				$model->set("id", $res['Memo']['id']);
+// // 				$model->set("id", $res['Memo']['r_id']);
+// 				$model->set("created_at", $res['Memo']['created_at']);
+				
+// 				$res2 = $model->save($model->data);
+				
+// 			}//if ($res == true)
+			
+// 			debug($res2 == true ? "res2 => true" : "res2 => false");
+// // 			debug($res2 == true ? "res2 => true" : "res2 => false");
+			
+// 			if ($res2) {
+// // 			if ($model->save()) {
+			
+// 				debug("memo => saved/updated: ");
+// // 				debug("memo => saved: ");
+// 				debug($model->data);
+// // 				debug("memo => saved: ".$model->data->r_id);
+// // 				debug("memo => saved: ".$model->data->Memo->r_id);
+			
+// // 				return true;
+			
+// 			} else {
+			
+// 				debug("memo => NOT saved/updated: ".$model->data->Memo->r_id);
+// // 				debug("memo => NOT saved: ".$model->data->Memo->r_id);
+// // 				debug("image => NOT saved: ".$img['file_name']);
+			
+// // 				return false;
+			
+// 			}
+				
+// 			$model->save();
+				
+// 			debug("saved");
+			
+		}//insert_Memos_From_CSVFile($aryOf_Memos__CSV_File)
+		
+		static function 
+		insert_Memos_From_CSVFile__Insert_1_Memo($memo) {
+
+			/*
+			 * prep
+			 */
+						// date
+			$date_label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+			/*
+			 * Memo
+// 			*/
+// 			$memo = $aryOf_Memos__CSV_File[0];
+				
+			$model = ClassRegistry::init('Memo');
+			
+			$model->create();
+				
+			$model->set("created_at", $date_label);
+			$model->set("updated_at", $date_label);
+			// 			$model->set("modified_at", $date_label);
+				
+			$model->set("r_id", $memo->r_id);
+			$model->set("r_created_at", $memo->r_created_at);
+			$model->set("r_modified_at", $memo->r_modified_at);
+				
+			$model->set("title", $memo->title);
+			$model->set("body", $memo->body);
+			
+			// 			debug("\$model => ");
+			// 			debug("\$model => ");
+			// 			debug($model);
+			debug("\$model->data['Memo']['r_id'] => ");
+			debug($model->data['Memo']['r_id']);
+			// 			debug("\$model->data['Memo'] => ");
+			// 			debug($model->data['Memo']);
+			// 			debug("\$model->data => ");
+			// 			debug($model->data);
+			// 			debug("\$model->data->r_id => ");	//=> Notice (8): Trying to get property of non-object
+			// 			debug($model->data->r_id);
+			// 			debug("\$model->data->Memo => ");	//=> Notice (8): Trying to get property of non-object
+			// 			debug($model->data->Memo);
+			// 			debug($model);
+			
+			debug("\$model->r_id => '".$model->r_id."'");
+			debug("\$model->data['Memo']['r_id'] => '".$model->data['Memo']['r_id']."'");
+				
+			/*
+			 * is in DB
+			*/
+			$res = Utils::isIn_CakeDB_Memo__By_R_ID($model->data['Memo']['r_id']);
+			// 			$res = Utils::isIn_CakeDB_Memo__By_R_ID($model->r_id);
+				
+			// 			debug("\$res => ".$res);
+			
+			// 			debug($res == true ? "is in Cake DB" : "is NOT in Cake DB");
+			debug($res == null ? "is NOT in Cake DB" : "is in Cake DB");
+			// 			debug($res == null ? "is in Cake DB" : "is NOT in Cake DB");
+				
+				
+				
+			// 			// build a Memo instance
+			// 			$data = array("Memo");
+				
+				
+			// 			debug("\$data => ");
+			// 			debug($data);
+			
+			/*
+			 * save
+			*/
+			$numOf_Memos__Saved = 0;
+			$numOf_Memos__Updated = 0;
+			$numOf_Memos__NotSaved = 0;
+			
+			if ($res == null) {
+				// 			if ($res == false) {
+				// 			if ($res == true) {
+					
+				$res2 = $model->save();
+					
+				if ($res2 == true) {
+				
+					debug("memo => saved: ");
+					// 				debug("memo => saved: ");
+					debug($model->data);
+
+					// return
+					return 1;
+					
+				} else {
+				
+					debug("memo => NOT saved: ");
+					// 				debug("memo => saved: ");
+					debug($model->data);
+					
+					// return
+					return -1;
+											
+				}//if ($res2 == true)
+				
+			} else {
+					
+				// 				debug("\$res => ");
+				// 				debug($res);
+				debug("\$res['Memo']['id'] => ");
+				debug($res['Memo']['id']);
+			
+				// update id
+				$model->set("id", $res['Memo']['id']);
+				// 				$model->set("id", $res['Memo']['r_id']);
+				$model->set("created_at", $res['Memo']['created_at']);
+			
+				$res2 = $model->save($model->data);
+
+				if ($res2 == true) {
+				
+					debug("memo => updated: ");
+					// 				debug("memo => saved: ");
+					debug($model->data);
+				
+					// return
+					return 0;
+						
+				} else {
+				
+					debug("memo => NOT updated: ");
+					// 				debug("memo => saved: ");
+					debug($model->data);
+						
+					// return
+					return -1;
+						
+				}//if ($res2 == true)
+				
+			}//if ($res == true)
+				
+// 			debug($res2 == true ? "res2 => true" : "res2 => false");
+// 				// 			debug($res2 == true ? "res2 => true" : "res2 => false");
+				
+// 			if ($res2) {
+// 				// 			if ($model->save()) {
+					
+// 				debug("memo => saved/updated: ");
+// 				// 				debug("memo => saved: ");
+// 				debug($model->data);
+// 				// 				debug("memo => saved: ".$model->data->r_id);
+// 				// 				debug("memo => saved: ".$model->data->Memo->r_id);
+					
+// 				// 				return true;
+					
+// 			} else {
+					
+// 				debug("memo => NOT saved/updated: ".$model->data->Memo->r_id);
+// 				// 				debug("memo => NOT saved: ".$model->data->Memo->r_id);
+// 				// 				debug("image => NOT saved: ".$img['file_name']);
+					
+// 				// 				return false;
+					
+// 			}
+				
+		}//insert_Memos_From_CSVFile__Insert_1_Memo($memo)
 		
 // 		static function
 		
