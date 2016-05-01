@@ -339,6 +339,21 @@ td.td_images_ModifiedAt {
 	
 }
 
+td.td_border_black {
+
+	border: 2px solid black;
+	
+}
+
+td.td_memos_ID {
+
+	/*width:	5%;*/
+	border: 2px solid blue;
+	background:	yellow;
+	
+}
+
+
 td.col_title {
 	
 	background:	LightGreen;
