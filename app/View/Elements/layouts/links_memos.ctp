@@ -16,6 +16,30 @@
 			
 		</td>
 		
+		<td>
+		
+			<?php echo 
+					$this->Html->link(
+								'Memos',
+								array('controller' => 'memos', 
+										'action' => 'index'),
+								array('class' => "button"));
+			?>
+			
+		</td>
+		
+		<td>
+		
+			<?php echo 
+					$this->Html->link(
+								'Add memos',
+								array('controller' => 'memos', 
+										'action' => 'add_memos'),
+								array('class' => "button"));
+			?>
+			
+		</td>
+		
 	</tr>
 	
 	<tr>

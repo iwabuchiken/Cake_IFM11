@@ -87,7 +87,7 @@ class MemosController extends AppController {
 		/*
 		 * view
 		 */
-		$this->render("/Elements/commons/common_1");
+// 		$this->render("/Elements/commons/common_1");
 		
 	}//add_memos
 
