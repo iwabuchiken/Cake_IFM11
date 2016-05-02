@@ -24,8 +24,16 @@ class MemosController extends AppController {
 		
 		debug(count($resOf_Memos));
 		
+		/*
+		 * paginate
+		 */
+		$resOf_Memos__Paginagte = $this->_index__FindMemos__Paginate();
+		
+		debug("count(\$resOf_Memos__Paginagte) => ".count($resOf_Memos__Paginagte));
+		
 		// set
-		$this->set("memos", $resOf_Memos);
+		$this->set("memos", $resOf_Memos__Paginagte);
+// 		$this->set("memos", $resOf_Memos);
 		
 		/*
 		 * view-related
@@ -36,6 +44,46 @@ class MemosController extends AppController {
 // 		$this->render("/Elements/commons/common_1");
 		
 	}//index
+
+	/*
+	 * @return
+	 * result of find
+	 */
+	public function _index__FindMemos__Paginate() {
+
+// 		debug("start paginating...");
+		
+		$opt_order = array("Memo.id" => "ASC");
+		
+		$this->paginate = array(
+		// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
+// 				'conditions' => $opt_conditions,
+				// 					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
+				'limit' => 10,
+// 				'limit' => 4,
+				'order' => $opt_order,
+					
+				// 					'page'	=> 2,
+					
+		// 					'order' => array(
+				// 							'id' => 'asc'
+				// 					)
+		);
+			
+// 		debug("paginator => set");
+		
+// 		return $this->paginate('Memo');
+		$images = $this->paginate('Memo');
+// 		$images = $this->paginate('Image');
+
+		$paginateData = $this->params['paging']['Memo'];
+		
+		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
+		
+		// return
+		return $images;
+		
+	}//_index__FindMemos__Paginate()
 	
 	public function index__opt() {
 

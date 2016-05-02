@@ -7,7 +7,11 @@
 </h1>
 
 <br>
+<br>
 
+<?php echo $this->element('memos/index/_index_pagination')?>
+
+<br>
 <br>
 
 <table>
@@ -28,6 +32,11 @@
 
 </table>
 
+
+<br>
+<br>
+
+<?php echo $this->element('memos/index/_index_pagination')?>
 
 <br>
 <br>

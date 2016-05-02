@@ -94,5 +94,13 @@
 	
 	</tr>
 	
+	<tr>
+		<td colspan="5" style="color: white">
+			blank
+		</td>
+	</tr>
+	
 <?php endforeach; ?>
 <?php unset($memo); ?>
+
+
