@@ -5117,7 +5117,10 @@
 		
 		static function 
 		find_All_Realm_DBFile_Names__UnInserted() {
-			
+
+			/*
+			 * setup => directory
+			 */
 			$dpath_lib = Utils::get_dpath__lib();
 			
 			debug("\$dpath_lib => ".$dpath_lib);
@@ -5125,6 +5128,7 @@
 			/*
 			 * dir --> exists
 			 */
+			//ref http://stackoverflow.com/questions/5425891/how-do-i-check-with-php-if-directory-exists answered Jun 8 '11 at 10:50
 			if (!file_exists($dpath_lib)) {
 				
 				$res = mkdir($dpath_lib, 0755, true);
@@ -5146,6 +5150,75 @@
 				debug("dir exists => $dpath_lib");
 				
 			}//condition
+			
+			/*
+			 * setup: PDO
+			 */
+			/*******************************
+			 pdo: setup
+			*******************************/
+			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+			$fname = "db_admin.sqlite3";
+			
+			$fpath = $dpath_lib.DIRECTORY_SEPARATOR.$fname;
+			
+			$file_db = new PDO("sqlite:$fpath");
+				
+			if ($file_db === null) {
+					
+				debug("pdo => null");
+					
+				return null;
+					
+			} else {
+				
+				debug("pdo => created");
+				
+			}
+				
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+
+			/*
+			 * create table: if not exists
+			 */
+			$stmnt = "CREATE TABLE IF NOT EXISTS
+				realm_db_file_names (
+
+				id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
+				created_at			VARCHAR(30),
+				updated_at			VARCHAR(30),
+				
+				fname				TEXT,
+				numof_items			INT
+				
+			)";
+			
+			$res = $file_db->exec($stmnt);
+			
+			debug("statement => executed ($res)");
+			
+			/*
+			 * table info
+			 */
+			$stmt = $file_db->prepare("SELECT name FROM sqlite_master WHERE type='table'");
+// 			$stmt = $file_db->prepare("SELECT name FROM my_db.sqlite_master WHERE type='table'");
+// 			$stmt = $file_db->prepare(".tables");
+// 			$stmt = $file_db->prepare("pragma table_info(realm_db_file_names)");
+			
+			$stmt->execute();
+// 			$stmt->execute(['200']);
+			
+			$r2 = $stmt->fetchAll();
+			
+			debug($r2);
+			
+			/*******************************
+				pdo => reset
+			*******************************/
+			$file_db = null;
+			
 			
 			// return
 			return array();

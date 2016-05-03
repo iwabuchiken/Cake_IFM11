@@ -8,11 +8,16 @@ sqlite3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\development.sqlite3
 .explain on
 .tables
 
+sqlite3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\data\sqlite\db_admin.sqlite3
+.explain on
+.tables
+
 pragma table_info(images);
 pragma table_info(admins);
 pragma table_info(audio_files);
 
 pragma table_info(memos);
+pragma table_info(realm_db_file_names);
 
 .exit
 
