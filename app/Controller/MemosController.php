@@ -103,52 +103,64 @@ class MemosController extends AppController {
 
 		debug("add_memos");
 
-		/*
-		 * get: name of the latest realm db files
-		 */
-		$fname_Realm_DBFile_Latest = Utils::find_All_Realm_DBFiles_Names();
+		$aryOf_Realm_DBFile_Names__UnInserted = 
+					Utils::find_All_Realm_DBFile_Names__UnInserted();
 		
-		debug("\$fname_Realm_DBFile_Latest");
-		debug($fname_Realm_DBFile_Latest);
+		debug("\$aryOf_Realm_DBFile_Names__UnInserted => ");
+		debug($aryOf_Realm_DBFile_Names__UnInserted);
+		
+		/*
+		 * execute
+		 */
+// 		$this->_add_memos__execute();
+		
+		
+// 		/*
+// 		 * get: name of the latest realm db files
+// 		 */
+// 		$fname_Realm_DBFile_Latest = Utils::find_All_Realm_DBFiles_Names();
+		
+// 		debug("\$fname_Realm_DBFile_Latest");
+// 		debug($fname_Realm_DBFile_Latest);
 
-		/*
-		 * memos --> from Cake db
-		 */
-		$resOf_Memos = $this->Memo->find('all');
+// 		/*
+// 		 * memos --> from Cake db
+// 		 */
+// 		$resOf_Memos = $this->Memo->find('all');
 		
-		$numOf_Memos = count($resOf_Memos);
+// 		$numOf_Memos = count($resOf_Memos);
 		
-		debug("\$numOf_Memos (Cake DB) => ".$numOf_Memos);
+// 		debug("\$numOf_Memos (Cake DB) => ".$numOf_Memos);
 		
-		/*
-		 * memos --> from csv db
-		 */
-		$aryOf_Memos__CSV_File = Utils::find_All_Memos__From_CSV($fname_Realm_DBFile_Latest);
+// 		/*
+// 		 * memos --> from csv db
+// 		 */
+// 		$aryOf_Memos__CSV_File = Utils::find_All_Memos__From_CSV($fname_Realm_DBFile_Latest);
 		
-		debug($aryOf_Memos__CSV_File == null ? "null" : "CSV file => ".count($aryOf_Memos__CSV_File));
+// 		debug($aryOf_Memos__CSV_File == null ? "null" : "CSV file => ".count($aryOf_Memos__CSV_File));
 		
-		/*
-		 * memos: from csv db & not in Cake db
-		 */
-		$aryOf_Memos__CSV_File__Filtered = 
-				Utils::filter_Memos_From_CSVFile__NotIn_CakeDB($aryOf_Memos__CSV_File);
+// 		/*
+// 		 * memos: from csv db & not in Cake db
+// 		 */
+// 		$aryOf_Memos__CSV_File__Filtered = 
+// 				Utils::filter_Memos_From_CSVFile__NotIn_CakeDB($aryOf_Memos__CSV_File);
 		
-		debug("count(\$aryOf_Memos__CSV_File__Filtered) => "
-				.count($aryOf_Memos__CSV_File__Filtered));
-// 		debug("count(\$aryOf_Memos__CSV_File) => ".count($aryOf_Memos__CSV_File));
+// 		debug("count(\$aryOf_Memos__CSV_File__Filtered) => "
+// 				.count($aryOf_Memos__CSV_File__Filtered));
+// // 		debug("count(\$aryOf_Memos__CSV_File) => ".count($aryOf_Memos__CSV_File));
 
-// 		debug("\$aryOf_Memos__CSV_File[0]->title =>");
-// 		debug($aryOf_Memos__CSV_File[0]->title);
-// 		debug("\$aryOf_Memos__CSV_File[0] =>");
-// 		debug($aryOf_Memos__CSV_File[0]);
+// // 		debug("\$aryOf_Memos__CSV_File[0]->title =>");
+// // 		debug($aryOf_Memos__CSV_File[0]->title);
+// // 		debug("\$aryOf_Memos__CSV_File[0] =>");
+// // 		debug($aryOf_Memos__CSV_File[0]);
 		
-		/*
-		 * insert memos (update if exists)
-		 */
-		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile__V2($aryOf_Memos__CSV_File);
-// 		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile($aryOf_Memos__CSV_File);
+// 		/*
+// 		 * insert memos (update if exists)
+// 		 */
+// 		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile__V2($aryOf_Memos__CSV_File);
+// // 		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile($aryOf_Memos__CSV_File);
 		
-		debug("\$numOf_Memos__Inserted => ".$numOf_Memos__Inserted);
+// 		debug("\$numOf_Memos__Inserted => ".$numOf_Memos__Inserted);
 		
 		/*
 		 * view
@@ -157,6 +169,59 @@ class MemosController extends AppController {
 		
 	}//add_memos
 
+	public function 
+	_add_memos__execute($fname_Realm_DBFile_Latest) {
+// 	public function _add_memos__execute() {
+
+		/*
+		 * get: name of the latest realm db files
+		*/
+// 		$fname_Realm_DBFile_Latest = Utils::find_All_Realm_DBFiles_Names();
+		
+		debug("\$fname_Realm_DBFile_Latest");
+		debug($fname_Realm_DBFile_Latest);
+		
+		/*
+		 * memos --> from Cake db
+		*/
+		$resOf_Memos = $this->Memo->find('all');
+		
+		$numOf_Memos = count($resOf_Memos);
+		
+		debug("\$numOf_Memos (Cake DB) => ".$numOf_Memos);
+		
+		/*
+		 * memos --> from csv db
+		*/
+		$aryOf_Memos__CSV_File = Utils::find_All_Memos__From_CSV($fname_Realm_DBFile_Latest);
+		
+		debug($aryOf_Memos__CSV_File == null ? "null" : "CSV file => ".count($aryOf_Memos__CSV_File));
+		
+		/*
+		 * memos: from csv db & not in Cake db
+		*/
+		$aryOf_Memos__CSV_File__Filtered =
+		Utils::filter_Memos_From_CSVFile__NotIn_CakeDB($aryOf_Memos__CSV_File);
+		
+		debug("count(\$aryOf_Memos__CSV_File__Filtered) => "
+				.count($aryOf_Memos__CSV_File__Filtered));
+				// 		debug("count(\$aryOf_Memos__CSV_File) => ".count($aryOf_Memos__CSV_File));
+		
+		// 		debug("\$aryOf_Memos__CSV_File[0]->title =>");
+		// 		debug($aryOf_Memos__CSV_File[0]->title);
+		// 		debug("\$aryOf_Memos__CSV_File[0] =>");
+		// 		debug($aryOf_Memos__CSV_File[0]);
+		
+		/*
+		 * insert memos (update if exists)
+		*/
+		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile__V2($aryOf_Memos__CSV_File);
+		// 		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile($aryOf_Memos__CSV_File);
+		
+		debug("\$numOf_Memos__Inserted => ".$numOf_Memos__Inserted);
+		
+	}//public function add_memos()
+	
 	function beforeFilter() {
 
 		//ref http://stackoverflow.com/questions/7426469/assigning-layout-in-cakephp answered Sep 15 '11 at 6:16

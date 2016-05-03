@@ -1587,3 +1587,13 @@ Stack Trace:
 #6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MemosController), Object(CakeRequest))
 #7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2016-05-03 02:50:55 Error: Fatal Error (64): Cannot redeclare Utils::find_All_Realm_DBFiles_Names() in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 4391]
+2016-05-03 02:50:55 Error: [FatalErrorException] Cannot redeclare Utils::find_All_Realm_DBFiles_Names()
+Request URL: /Eclipse_Luna/Cake_IFM11/memos/add_memos
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 4391)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 4391, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\WORKS\\WS\\Ecl...', 4391, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

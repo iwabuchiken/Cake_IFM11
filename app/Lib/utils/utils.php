@@ -4320,6 +4320,45 @@
 			
 		}//get_fpath()
 	
+		/*
+			@return
+			path to "lib/data/sqlite"
+		*/
+		public static function
+		get_dpath__lib() {
+			
+			$fpath = "";
+				
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+				//ref http://stackoverflow.com/questions/15845928/determine-if-operating-system-is-mac answered Apr 6 '13 at 1:11
+				$user_agent = getenv("HTTP_USER_AGENT");
+				
+				if (strpos($user_agent, "Win") !== FALSE) {
+					
+					$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\sqlite";
+// 					$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+					
+				} else if (strpos($user_agent, "Mac") !== FALSE) {
+					
+					$fpath .= "/Users/mac/Desktop/works/WS/Cake_IFM11/lib/data/sqlite";
+// 					$fpath .= "/Users/mac/Desktop/works/WS/Cake_IFM11/app/Lib/data";
+					
+				} else {
+					
+				}
+				
+			} else {
+					
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/lib/data/sqlite";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+		
+			return $fpath;
+			
+		}//get_fpath()
+	
 		// ref http://stackoverflow.com/questions/834303/startswith-and-endswith-functions-in-php answered May 6 '12 at 18:22
 		static function startsWith($haystack, $needle) {
 			// search backwards starting from haystack length characters from the end
@@ -4330,9 +4369,9 @@
 			return $needle === "" || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== FALSE);
 		}
 		
-		static function find_All_Realm_DBFiles_Names() {
+		static function find_All_Realm_DBFiles_Names($dpath_Data) {
 			
-			$dpath_Data = Utils::get_fpath();
+// 			$dpath_Data = Utils::get_fpath();
 
 			$dpath_DB = "$dpath_Data".DIRECTORY_SEPARATOR."csv".DIRECTORY_SEPARATOR."xcode_memos";
 
@@ -5075,6 +5114,43 @@
 // 			}
 				
 		}//insert_Memos_From_CSVFile__Insert_1_Memo($memo)
+		
+		static function 
+		find_All_Realm_DBFile_Names__UnInserted() {
+			
+			$dpath_lib = Utils::get_dpath__lib();
+			
+			debug("\$dpath_lib => ".$dpath_lib);
+
+			/*
+			 * dir --> exists
+			 */
+			if (!file_exists($dpath_lib)) {
+				
+				$res = mkdir($dpath_lib, 0755, true);
+// 				$res = mkdir($dpath_lib);
+				
+				if ($res == true) {
+				
+					debug("dir created => $dpath_lib");
+				
+				} else {
+				
+					debug("can't create => $dpath_lib");
+					
+				}//if ($res == true)
+				
+				
+			} else {//condition
+				
+				debug("dir exists => $dpath_lib");
+				
+			}//condition
+			
+			// return
+			return array();
+			
+		}//find_All_Realm_DBFile_Names__UnInserted()
 		
 // 		static function
 		
