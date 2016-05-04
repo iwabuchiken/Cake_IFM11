@@ -104,6 +104,8 @@ class CONS {
 	
 	public static $tname_SQLITE_AudioFiles		= "audio_files";
 	
+	public static $tname_Realm_DB_File_Names	= "realm_db_file_names";
+	
 // 	2015/10/26 00:50:00.378
 	public static $query_Range_Start = "2015/10/20 00:00:00.000";
 	

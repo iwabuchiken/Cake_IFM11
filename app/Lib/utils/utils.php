@@ -5121,35 +5121,17 @@
 			/*
 			 * setup => directory
 			 */
-			$dpath_lib = Utils::get_dpath__lib();
+			$res_i = Utils::_find_All_Realm_DBFile_Names__UnInserted__Setup_Directory();
 			
-			debug("\$dpath_lib => ".$dpath_lib);
+			if ($res_i == -1) {
+				
+				return null;
+				
+			} else {//$res_i == -1
 
-			/*
-			 * dir --> exists
-			 */
-			//ref http://stackoverflow.com/questions/5425891/how-do-i-check-with-php-if-directory-exists answered Jun 8 '11 at 10:50
-			if (!file_exists($dpath_lib)) {
+				debug("setup directory => $res_i");
 				
-				$res = mkdir($dpath_lib, 0755, true);
-// 				$res = mkdir($dpath_lib);
-				
-				if ($res == true) {
-				
-					debug("dir created => $dpath_lib");
-				
-				} else {
-				
-					debug("can't create => $dpath_lib");
-					
-				}//if ($res == true)
-				
-				
-			} else {//condition
-				
-				debug("dir exists => $dpath_lib");
-				
-			}//condition
+			}
 			
 			/*
 			 * setup: PDO
@@ -5157,13 +5139,59 @@
 			/*******************************
 			 pdo: setup
 			*******************************/
+			$file_db = Utils::_find_All_Realm_DBFile_Names__UnInserted__Setup_PDO();
+
+			// validate
+			if ($file_db == null) {
+				
+				return null;
+				
+			} else {//
+
+				debug("setup PDO => done");
+				
+			}//$file_db == null
+
+			/*******************************
+				get: db file names => from sqlite db
+			*******************************/
+			$realm_db_file_names__db = Utils::_find_All_DBFile_Names__FromSqliteDB();
+
+			debug($realm_db_file_names__db);
+			
+			/*******************************
+				pdo => reset
+			*******************************/
+			$file_db = null;
+			
+			// return
+			return array();
+			
+		}//find_All_Realm_DBFile_Names__UnInserted()
+
+		/*
+		 * @return
+		 * 	null	=>	1. PDO		--> null
+		 * 				2. fetch	--> returned 0
+		 */
+		static function
+		_find_All_DBFile_Names__FromSqliteDB() {
+			
+			$dpath_lib = Utils::get_dpath__lib();
+				
 			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
 			$fname = "db_admin.sqlite3";
-			
+				
 			$fpath = $dpath_lib.DIRECTORY_SEPARATOR.$fname;
+
+// 			// get: number of entries in the table
+// 			$numOf_Entries =
+// 				Utils::get_NumOfEntries_InTheTable(
+// 						$fpath, CONS::$tname_Realm_DB_File_Names);
+				
 			
 			$file_db = new PDO("sqlite:$fpath");
-				
+			
 			if ($file_db === null) {
 					
 				debug("pdo => null");
@@ -5171,60 +5199,287 @@
 				return null;
 					
 			} else {
-				
-				debug("pdo => created");
-				
+			
+				debug("pdo => created ($fpath)");
+			
 			}
-				
+			
 			// Set errormode to exceptions
 			$file_db->setAttribute(PDO::ATTR_ERRMODE,
 					PDO::ERRMODE_EXCEPTION);
 
-			/*
-			 * create table: if not exists
-			 */
-			$stmnt = "CREATE TABLE IF NOT EXISTS
-				realm_db_file_names (
-
-				id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
-				created_at			VARCHAR(30),
-				updated_at			VARCHAR(30),
+			/*******************************
+				get: number of entries in the table
+			*******************************/
+			$numOf_Entries = 
+					Utils::get_NumOfEntries_InTheTable(
+								$fpath, CONS::$tname_Realm_DB_File_Names);
+			
+			// validate
+			if ($numOf_Entries < 1) {
 				
-				fname				TEXT,
-				numof_items			INT
+				return null;
 				
-			)";
-			
-			$res = $file_db->exec($stmnt);
-			
-			debug("statement => executed ($res)");
-			
-			/*
-			 * table info
-			 */
-			$stmt = $file_db->prepare("SELECT name FROM sqlite_master WHERE type='table'");
-// 			$stmt = $file_db->prepare("SELECT name FROM my_db.sqlite_master WHERE type='table'");
-// 			$stmt = $file_db->prepare(".tables");
-// 			$stmt = $file_db->prepare("pragma table_info(realm_db_file_names)");
-			
-			$stmt->execute();
-// 			$stmt->execute(['200']);
-			
-			$r2 = $stmt->fetchAll();
-			
-			debug($r2);
+			}//$numOf_Entries < 1
 			
 			/*******************************
-				pdo => reset
+				get: file names
+			*******************************/
+// 			$q = "SELECT Count(*) FROM ".CONS::$tname_IFM11
+// 			$q = "SELECT Count(*) FROM "."realm_db_file_names"
+			$q = "SELECT * FROM "."realm_db_file_names"
+				." "
+				."ORDER BY"
+				." "
+				."id"
+				." "
+				."ASC"
+				;
+
+			$st = $file_db->prepare($q);
+			$st->execute();
+				
+			//ref fetchAll http://php.net/manual/en/pdostatement.fetchall.php
+			$result = $st->fetchAll(PDO::FETCH_ASSOC);
+// 			$result = $st->fetch(PDO::FETCH_ASSOC);
+
+
+			debug("\$result[0] =>");
+			debug($result[0]);
+			
+			/*******************************
+				build => array
+			*******************************/
+			$aryOf_Names = array();
+			
+			for ($i = 0; $i < $numOf_Entries; $i++) {
+			
+				$item = $result[$i];
+
+				$name = $item['fname'];
+				
+				array_push($aryOf_Names, $name);
+				
+			}//for ($i = 0; $i < $numOf_Entries; $i++)
+			
+			debug("\$aryOf_Names =>");
+			debug($aryOf_Names);
+			
+			
+// // 			debug("\$result(fetch) =>");
+// 			debug("\$result(fetchAll) =>");
+// // 			debug("\$result =>");
+// 			debug($result);
+
+			
+			
+// 			debug("array_values(\$result) =>");
+// 			debug(array_values($result));
+// 			debug("array_values(\$result)[3] =>");
+// 			debug(array_values($result)[3]);
+			
+// 			$result_Num = $file_db->query($q);
+			
+// 			$fetch = $result_Num->fetchColumn();
+				
+// 			debug("\$fetch =>");
+// 			debug($fetch);
+			
+			/*******************************
+				reset pdo
 			*******************************/
 			$file_db = null;
 			
 			
-			// return
-			return array();
+			/*******************************
+				return
+			*******************************/
+			return $aryOf_Names;
+// 			return array();
+// 			return null;
 			
-		}//find_All_Realm_DBFile_Names__UnInserted()
+		}//_find_All_DBFile_Names__FromSqliteDB()
+
+		static function
+		get_NumOfEntries_InTheTable($fpath, $tname) {
+
+			$file_db = new PDO("sqlite:$fpath");
+			
+			if ($file_db === null) {
+					
+				debug("pdo => null");
+					
+				return null;
+					
+			} else {
+			
+				debug("pdo => created ($fpath)");
+			
+			}
+			
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+
+			/*******************************
+				get: file names
+			*******************************/
+			$q = "SELECT Count(*) FROM ".$tname
+// 				." "
+// 				."ORDER BY"
+// 				." "
+// 				."id"
+// 				." "
+// 				."ASC"
+				;
+
+			$st = $file_db->prepare($q);
+			$st->execute();
+				
+			//ref fetchAll http://php.net/manual/en/pdostatement.fetchall.php
+// 			$result = $st->fetchAll(PDO::FETCH_ASSOC);
+// 			$result = $st->fetchAll(PDO::FETCH_BOTH);
+			$result = $st->fetch(PDO::FETCH_BOTH);
+// 			$result = $st->fetch(PDO::FETCH_ASSOC);
+
+			$numOfEntries = $result[0];
+			
+			debug("\$result(fetch) =>");
+// 			debug("\$result(fetchAll) =>");
+// 			debug("\$result =>");
+			debug($result);			
+
+			debug("\$numOfEntries => $numOfEntries");
+			
+			/*******************************
+				reset pdo
+			*******************************/
+			$file_db = null;
+			
+			/*******************************
+				return
+			*******************************/
+			return $numOfEntries;
+			
+		}//get_NumOfEntries_InTheTable(CONS::$tname_Realm_DB_File_Names)
 		
+		/*
+		 * @return
+		 * 	1		=> dir created
+		 * 	0		=> dir exists
+		 * 	-1		=> dir can't be created
+		 */
+		static function 
+		_find_All_Realm_DBFile_Names__UnInserted__Setup_Directory() {
+
+			$dpath_lib = Utils::get_dpath__lib();
+				
+// 			debug("\$dpath_lib => ".$dpath_lib);
+			
+			/*
+			 * dir --> exists
+			*/
+			//ref http://stackoverflow.com/questions/5425891/how-do-i-check-with-php-if-directory-exists answered Jun 8 '11 at 10:50
+			if (!file_exists($dpath_lib)) {
+			
+				$res = mkdir($dpath_lib, 0755, true);
+				// 				$res = mkdir($dpath_lib);
+			
+				if ($res == true) {
+			
+					debug("dir created => $dpath_lib");
+
+					// return
+					return 1;
+					
+				} else {
+			
+					debug("can't create => $dpath_lib");
+
+					// return
+					return -1;
+						
+				}//if ($res == true)
+			
+			
+			} else {//condition
+			
+				debug("dir exists => $dpath_lib");
+			
+				// return
+				return 0;
+				
+			}//condition
+					
+		}//_find_All_Realm_DBFile_Names__UnInserted__Setup_Directory()
+		
+		static function 
+		_find_All_Realm_DBFile_Names__UnInserted__Setup_PDO() {
+
+			$dpath_lib = Utils::get_dpath__lib();
+				
+			//REF http://www.if-not-true-then-false.com/2012/php-pdo-sqlite3-example/
+			$fname = "db_admin.sqlite3";
+				
+			$fpath = $dpath_lib.DIRECTORY_SEPARATOR.$fname;
+				
+			$file_db = new PDO("sqlite:$fpath");
+			
+			if ($file_db === null) {
+					
+				debug("pdo => null");
+					
+				return null;
+					
+			} else {
+			
+				debug("pdo => created");
+			
+			}
+			
+			// Set errormode to exceptions
+			$file_db->setAttribute(PDO::ATTR_ERRMODE,
+					PDO::ERRMODE_EXCEPTION);
+			
+			/*
+			 * create table: if not exists
+			*/
+			$stmnt = "CREATE TABLE IF NOT EXISTS
+				realm_db_file_names (
+			
+				id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
+				created_at			VARCHAR(30),
+				updated_at			VARCHAR(30),
+			
+				fname				TEXT,
+				numof_items			INT
+			
+			)";
+				
+			$res = $file_db->exec($stmnt);
+				
+			debug("statement => executed ($res)");
+				
+			/*
+			 * table info
+			*/
+			$stmt = $file_db->prepare("SELECT name FROM sqlite_master WHERE type='table'");
+			// 			$stmt = $file_db->prepare("SELECT name FROM my_db.sqlite_master WHERE type='table'");
+			// 			$stmt = $file_db->prepare(".tables");
+			// 			$stmt = $file_db->prepare("pragma table_info(realm_db_file_names)");
+				
+			$stmt->execute();
+			// 			$stmt->execute(['200']);
+				
+			$r2 = $stmt->fetchAll();
+				
+// 			debug($r2);
+				
+			// return
+			return $file_db;
+			
+		}//_find_All_Realm_DBFile_Names__UnInserted__Setup_PDO()
+
 // 		static function
 		
 	}//class Utils

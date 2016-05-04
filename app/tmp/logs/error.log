@@ -1629,3 +1629,56 @@ Stack Trace:
 #5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MemosController), Object(CakeRequest))
 #6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2016-05-04 01:36:15 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 5124]
+2016-05-04 01:36:15 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /Eclipse_Luna/Cake_IFM11/memos/add_memos
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\\WORKS\\WS\\Ecl...', 5124)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\\WORKS\\WS\\Ecl...', 5124, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\\WORKS\\WS\\Ecl...', 5124, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-04 01:36:42 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file
+Request URL: /Eclipse_Luna/Cake_IFM11/memos/add_memos
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(5177): PDO->__construct('sqlite:\\db_admi...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\MemosController.php(107): Utils::find_All_Realm_DBFile_Names__UnInserted()
+#2 [internal function]: MemosController->add_memos()
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MemosController), Array)
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MemosController), Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-05-04 01:47:23 Error: Fatal Error (4): syntax error, unexpected 'return' (T_RETURN) in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 5168]
+2016-05-04 01:47:23 Error: [FatalErrorException] syntax error, unexpected 'return' (T_RETURN)
+Request URL: /Eclipse_Luna/Cake_IFM11/memos/add_memos
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 5168)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 5168, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 5168, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-04 02:03:35 Error: Fatal Error (1): Call to a member function fetch() on null in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 5215]
+2016-05-04 02:03:35 Error: [FatalErrorException] Call to a member function fetch() on null
+Request URL: /Eclipse_Luna/Cake_IFM11/memos/add_memos
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 5215)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 5215, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS\\WS\\Ecl...', 5215, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-04 02:11:24 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: ifm11
+Request URL: /Eclipse_Luna/Cake_IFM11/memos/add_memos
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(5214): PDO->prepare('SELECT Count(*)...')
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(5158): Utils::_find_All_DBFile_Names__FromSqliteDB()
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Controller\MemosController.php(107): Utils::find_All_Realm_DBFile_Names__UnInserted()
+#3 [internal function]: MemosController->add_memos()
+#4 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(MemosController), Array)
+#5 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(MemosController), Object(CakeRequest))
+#7 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

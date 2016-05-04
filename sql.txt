@@ -375,3 +375,9 @@ CREATE TABLE memos (
 
 
 
+==========================================
+--------------------------------------------- realm_db_file_names
+#ref http://www.dbonline.jp/sqlite/insert/index1.html
+INSERT INTO realm_db_file_names(fname) VALUES("aaa");
+INSERT INTO realm_db_file_names(fname) VALUES("bbb");
+INSERT INTO realm_db_file_names(fname) VALUES("ccc");
