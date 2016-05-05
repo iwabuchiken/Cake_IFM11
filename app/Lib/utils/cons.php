@@ -56,6 +56,14 @@ class CONS {
 // 				."/cake_apps/Cake_IFM11/app/Lib/data"
 // 				."/image_files_list";
 	
+// 	public static $dpath_Realm_DB_Files = implode(
+// 								DIRECTORY_SEPARATOR,
+// 								array(
+// 									"app", "Lib", "data", "csv", "xcode_memos"
+// 								) 
+// 						);
+// // 	app\Lib\data\csv\xcode_memos
+
 	/****************************************
 		* csv files
 	****************************************/

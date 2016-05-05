@@ -103,11 +103,29 @@ class MemosController extends AppController {
 
 		debug("add_memos");
 
+		/*******************************
+		 get: db file names => from sqlite db
+		*******************************/
 		$aryOf_Realm_DBFile_Names__UnInserted = 
-					Utils::find_All_Realm_DBFile_Names__UnInserted();
+					Utils::find_All_Realm_DBFile_Names__From_SqliteDB();
 		
 		debug("\$aryOf_Realm_DBFile_Names__UnInserted => ");
 		debug($aryOf_Realm_DBFile_Names__UnInserted);
+
+		/*******************************
+		 get: db file names => from directory
+		*******************************/
+// 		$aryOf_Realm_DBFile_Names__From_Directory =
+// 					Utils::find_All_Realm_DBFile_Names__From_Directory();
+		
+// 		debug("\$aryOf_Realm_DBFile_Names__From_Directory => ");
+// 		debug($aryOf_Realm_DBFile_Names__From_Directory);
+		
+		debug("Utils::get_dpath__Realm_DB_Files() =>");
+		debug(Utils::get_dpath__Realm_DB_Files());
+		
+		debug(file_exists(Utils::get_dpath__Realm_DB_Files()) == true ? "exists" : "NOT exist");
+		
 		
 		/*
 		 * execute

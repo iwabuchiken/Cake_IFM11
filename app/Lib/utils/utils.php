@@ -4359,6 +4359,108 @@
 			
 		}//get_fpath()
 	
+		/*
+			@return
+			path to "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11"
+		*/
+		public static function
+		get_dpath__Project_Root() {
+			
+			$fpath = "";
+				
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+				//ref http://stackoverflow.com/questions/15845928/determine-if-operating-system-is-mac answered Apr 6 '13 at 1:11
+				$user_agent = getenv("HTTP_USER_AGENT");
+				
+				if (strpos($user_agent, "Win") !== FALSE) {
+					
+					$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11";
+// 					$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+					
+				} else if (strpos($user_agent, "Mac") !== FALSE) {
+					
+					$fpath .= "/Users/mac/Desktop/works/WS/Cake_IFM11";
+// 					$fpath .= "/Users/mac/Desktop/works/WS/Cake_IFM11/app/Lib/data";
+					
+				} else {
+					
+				}
+				
+			} else {
+					
+				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+		
+			return $fpath;
+			
+		}//get_fpath()
+	
+		/*
+			@return
+			path to "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data\csv\xcode_memos"
+		*/
+		public static function
+		get_dpath__Realm_DB_Files() {
+			
+			$fpath = "";
+				
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+				//ref http://stackoverflow.com/questions/15845928/determine-if-operating-system-is-mac answered Apr 6 '13 at 1:11
+				$user_agent = getenv("HTTP_USER_AGENT");
+				
+				if (strpos($user_agent, "Win") !== FALSE) {
+					
+					$fpath .= implode(
+							DIRECTORY_SEPARATOR,
+							array(
+								"C:", "WORKS", "WS", "Eclipse_Luna", "Cake_IFM11",
+								"app", "Lib", "data", "csv", "xcode_memos"
+							)
+					);
+// 					$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11";
+// 					$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
+					
+				} else if (strpos($user_agent, "Mac") !== FALSE) {
+
+					$fpath .= implode(
+							DIRECTORY_SEPARATOR,
+							array(
+									"/Users", "mac", "Desktop", "works", "WS", "Cake_IFM11",
+									"app", "Lib", "data", "csv", "xcode_memos"
+							)
+					);
+						
+// 					$fpath .= "/Users/mac/Desktop/works/WS/Cake_IFM11";
+// 					$fpath .= "/Users/mac/Desktop/works/WS/Cake_IFM11/app/Lib/data";
+					
+				} else {
+					
+				}
+				
+			} else {
+
+				$fpath .= implode(
+						DIRECTORY_SEPARATOR,
+						array(
+								"/home", "users", "2", "chips.jp-benfranklin", 
+										"web", "cake_apps", "Cake_IFM11",
+								"app", "Lib", "data", "csv", "xcode_memos"
+						)
+				);
+				
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11";
+// 				$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
+					
+			}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
+		
+			return $fpath;
+			
+		}//get_fpath()
+	
 		// ref http://stackoverflow.com/questions/834303/startswith-and-endswith-functions-in-php answered May 6 '12 at 18:22
 		static function startsWith($haystack, $needle) {
 			// search backwards starting from haystack length characters from the end
@@ -5115,8 +5217,18 @@
 				
 		}//insert_Memos_From_CSVFile__Insert_1_Memo($memo)
 		
+		/*
+		 * @return
+		 * array(
+				(int) 0 => 'aaa',
+				(int) 1 => 'bbb',
+				(int) 2 => 'ccc',
+				(int) 3 => 'realm_data_20160221_163645.csv'
+			)
+		 */
 		static function 
-		find_All_Realm_DBFile_Names__UnInserted() {
+// 		find_All_Realm_DBFile_Names__UnInserted() {
+		find_All_Realm_DBFile_Names__From_SqliteDB() {
 
 			/*
 			 * setup => directory
@@ -5157,7 +5269,7 @@
 			*******************************/
 			$realm_db_file_names__db = Utils::_find_All_DBFile_Names__FromSqliteDB();
 
-			debug($realm_db_file_names__db);
+// 			debug($realm_db_file_names__db);
 			
 			/*******************************
 				pdo => reset
@@ -5165,7 +5277,8 @@
 			$file_db = null;
 			
 			// return
-			return array();
+			return $realm_db_file_names__db;
+// 			return array();
 			
 		}//find_All_Realm_DBFile_Names__UnInserted()
 
@@ -5244,8 +5357,8 @@
 // 			$result = $st->fetch(PDO::FETCH_ASSOC);
 
 
-			debug("\$result[0] =>");
-			debug($result[0]);
+// 			debug("\$result[0] =>");
+// 			debug($result[0]);
 			
 			/*******************************
 				build => array
@@ -5262,28 +5375,8 @@
 				
 			}//for ($i = 0; $i < $numOf_Entries; $i++)
 			
-			debug("\$aryOf_Names =>");
-			debug($aryOf_Names);
-			
-			
-// // 			debug("\$result(fetch) =>");
-// 			debug("\$result(fetchAll) =>");
-// // 			debug("\$result =>");
-// 			debug($result);
-
-			
-			
-// 			debug("array_values(\$result) =>");
-// 			debug(array_values($result));
-// 			debug("array_values(\$result)[3] =>");
-// 			debug(array_values($result)[3]);
-			
-// 			$result_Num = $file_db->query($q);
-			
-// 			$fetch = $result_Num->fetchColumn();
-				
-// 			debug("\$fetch =>");
-// 			debug($fetch);
+// 			debug("\$aryOf_Names =>");
+// 			debug($aryOf_Names);
 			
 			/*******************************
 				reset pdo
@@ -5295,8 +5388,6 @@
 				return
 			*******************************/
 			return $aryOf_Names;
-// 			return array();
-// 			return null;
 			
 		}//_find_All_DBFile_Names__FromSqliteDB()
 
@@ -5325,31 +5416,20 @@
 				get: file names
 			*******************************/
 			$q = "SELECT Count(*) FROM ".$tname
-// 				." "
-// 				."ORDER BY"
-// 				." "
-// 				."id"
-// 				." "
-// 				."ASC"
 				;
 
 			$st = $file_db->prepare($q);
 			$st->execute();
 				
 			//ref fetchAll http://php.net/manual/en/pdostatement.fetchall.php
-// 			$result = $st->fetchAll(PDO::FETCH_ASSOC);
-// 			$result = $st->fetchAll(PDO::FETCH_BOTH);
 			$result = $st->fetch(PDO::FETCH_BOTH);
-// 			$result = $st->fetch(PDO::FETCH_ASSOC);
 
 			$numOfEntries = $result[0];
 			
-			debug("\$result(fetch) =>");
-// 			debug("\$result(fetchAll) =>");
-// 			debug("\$result =>");
-			debug($result);			
+// 			debug("\$result(fetch) =>");
+// 			debug($result);			
 
-			debug("\$numOfEntries => $numOfEntries");
+// 			debug("\$numOfEntries => $numOfEntries");
 			
 			/*******************************
 				reset pdo
@@ -5480,6 +5560,30 @@
 			
 		}//_find_All_Realm_DBFile_Names__UnInserted__Setup_PDO()
 
+		/*
+		 * @return
+		* array(
+				(int) 0 => 'aaa',
+				(int) 1 => 'bbb',
+				(int) 2 => 'ccc',
+				(int) 3 => 'realm_data_20160221_163645.csv'
+		)
+		*/
+		static function
+		// 		find_All_Realm_DBFile_Names__UnInserted() {
+		find_All_Realm_DBFile_Names__From_Directory() {
+
+			
+			
+				
+			// return
+			return $realm_db_file_names__db;
+			// 			return array();
+				
+		}//find_All_Realm_DBFile_Names__From_Directory
+		
+		
+		
 // 		static function
 		
 	}//class Utils
