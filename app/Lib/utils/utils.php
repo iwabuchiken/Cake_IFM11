@@ -4579,7 +4579,7 @@
 	
 			}
 	
-			debug("csv lines => ".count($csv_Lines));
+// 			debug("csv lines => ".count($csv_Lines));
 
 			// validate
 			if (count($csv_Lines) < 1) {
@@ -4590,13 +4590,13 @@
 			
 			}
 						
-			//debug
-			if (count($csv_Lines) > 0) {
+// 			//debug
+// 			if (count($csv_Lines) > 0) {
 				
-				debug("\$csv_Lines[0] => ");
-				debug($csv_Lines[0]);
+// 				debug("\$csv_Lines[0] => ");
+// 				debug($csv_Lines[0]);
 				
-			}
+// 			}
 			
 			// convert: csv lines --> ary of memos
 			$aryOf_Memos = array();
@@ -5244,7 +5244,7 @@
 				
 			} else {//$res_i == -1
 
-				debug("setup directory => $res_i");
+// 				debug("setup directory => $res_i");
 				
 			}
 			
@@ -5263,7 +5263,7 @@
 				
 			} else {//
 
-				debug("setup PDO => done");
+// 				debug("setup PDO => done");
 				
 			}//$file_db == null
 
@@ -5316,7 +5316,7 @@
 					
 			} else {
 			
-				debug("pdo => created ($fpath)");
+// 				debug("pdo => created ($fpath)");
 			
 			}
 			
@@ -5407,7 +5407,7 @@
 					
 			} else {
 			
-				debug("pdo => created ($fpath)");
+// 				debug("pdo => created ($fpath)");
 			
 			}
 			
@@ -5516,7 +5516,7 @@
 					
 			} else {
 			
-				debug("pdo => created");
+// 				debug("pdo => created");
 			
 			}
 			
@@ -5541,7 +5541,7 @@
 				
 			$res = $file_db->exec($stmnt);
 				
-			debug("statement => executed ($res)");
+// 			debug("statement => executed ($res)");
 				
 			/*
 			 * table info
@@ -5590,7 +5590,82 @@
 		}//find_All_Realm_DBFile_Names__From_Directory
 		
 		
-		
+		/*
+		 * @param
+		 * $fname		=> file name only; no file path
+		 */
+		static function 
+		insert_Data__Realm_DBFiles($fname, $numOf_Memos) {
+			
+			/*******************************
+			 pdo: setup
+			*******************************/
+			$file_db = Utils::_find_All_Realm_DBFile_Names__UnInserted__Setup_PDO();
+
+			// validate
+			if ($file_db == null) {
+				
+				return null;
+				
+			} else {//
+
+// 				debug("setup PDO => done");
+				
+			}//$file_db == null
+
+// 			debug($realm_db_file_names__db);
+
+			/*******************************
+				inset data
+			*******************************/
+			$sql = "INSERT INTO ".
+						CONS::$tname_Realm_DB_File_Names
+						." ("
+						."created_at, updated_at, "
+						."fname, numof_items"
+						.") "
+					."VALUES ("
+						."?, ?, "
+						."?, ?"
+						.")";
+			
+			$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
+			
+			$data = array(
+				
+					$time,		// created_at
+					$time,		// modified_at
+					$fname,
+					$numOf_Memos
+					
+			);
+			
+			/*******************************
+				insert data
+			*******************************/
+			//ref http://stackoverflow.com/questions/1176122/how-do-i-insert-into-pdo-sqllite3 answered Jul 24 '09 at 7:14
+			$qry = $file_db->prepare($sql);
+			
+			//ref http://php.net/manual/en/pdostatement.execute.php
+			$res = $qry->execute($data);
+
+			//debug
+			if ($res === true) {
+			
+				debug("execute => true: ".$fname);
+			
+			} else {
+			
+				debug("execute => false: ".$fname);
+				
+			}//if ($res === true)			
+				
+			/*******************************
+				pdo => reset
+			*******************************/
+			$file_db = null;
+			
+		}//insert_Data__Realm_DBFiles($fname, $numOf_Memos)
 // 		static function
 		
 	}//class Utils
