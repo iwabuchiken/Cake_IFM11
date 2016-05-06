@@ -4491,6 +4491,9 @@
 		}//find_All_Realm_DBFiles_Names()
 		
 		/*
+		 * @param
+		 * $fname_Realm_DBFile_Latest
+		 * 		==> file name (NOT the file full path)
 		 * @return
 		 * 	array(Memo(),Memo(),Memo(),...)
 		 * 

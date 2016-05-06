@@ -13,6 +13,9 @@ class MemosController extends AppController {
 	public function index() {
 		
 		$opt = $this->index__opt();
+
+// 		debug("\$opt =>");
+// 		debug($opt);
 		
 // 		$opt = array(
 
@@ -53,7 +56,8 @@ class MemosController extends AppController {
 
 // 		debug("start paginating...");
 		
-		$opt_order = array("Memo.id" => "ASC");
+		$opt_order = array("Memo.r_created_at" => "DESC");
+// 		$opt_order = array("Memo.id" => "ASC");
 		
 		$this->paginate = array(
 		// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
@@ -154,6 +158,7 @@ class MemosController extends AppController {
 		
 			foreach ($aryOf_Realm_DBFile_Names__From_Directory as $item) {
 			
+				//ref in_array http://www.w3schools.com/php/func_array_in_array.asp
 				if (!in_array($item, $aryOf_Realm_DBFile_Names__From_SqliteDB)) {
 					
 					array_push($aryOf_Realm_DBFile_Names__UnInserted, $item);
@@ -168,6 +173,22 @@ class MemosController extends AppController {
 		
 		debug("\$aryOf_Realm_DBFile_Names__UnInserted =>");
 		debug($aryOf_Realm_DBFile_Names__UnInserted);
+		
+		// validate
+		if (count($aryOf_Realm_DBFile_Names__UnInserted) < 1) {
+			
+			$this->set("message", "no new db files for insertion");
+			
+			return;
+			
+		} else {//count($aryOf_Realm_DBFile_Names__From_Directory) < 1
+
+			$this->set("message", 
+					"files for insertion => "
+					.count($aryOf_Realm_DBFile_Names__UnInserted)." files");
+			
+		}//count($aryOf_Realm_DBFile_Names__From_Directory) < 1
+		
 		
 		
 // 		$aryOf_Realm_DBFile_Names__From_Directory =
@@ -185,6 +206,15 @@ class MemosController extends AppController {
 		/*
 		 * execute
 		 */
+		foreach ($aryOf_Realm_DBFile_Names__UnInserted as $item) {
+		
+			$this->_add_memos__execute($item);
+			
+		}//foreach ($aryOf_Realm_DBFile_Names__UnInserted as $item)
+		
+		
+		
+// 		$this->_add_memos__execute();
 // 		$this->_add_memos__execute();
 		
 		
