@@ -112,6 +112,15 @@ class MemosController extends AppController {
 		debug("\$aryOf_Realm_DBFile_Names__From_SqliteDB => ");
 		debug($aryOf_Realm_DBFile_Names__From_SqliteDB);
 
+// 		// validate
+// 		if (count($aryOf_Realm_DBFile_Names__From_SqliteDB) < 1) {
+				
+// 			$this->set("message", "no db files in the sqlite db");
+				
+// 			return;
+				
+// 		}//count($aryOf_Realm_DBFile_Names__From_Directory) < 1
+		
 		/*******************************
 		 get: db file names => from directory
 		*******************************/
@@ -135,15 +144,27 @@ class MemosController extends AppController {
 		*******************************/
 		$aryOf_Realm_DBFile_Names__UnInserted = array();
 		
-		foreach ($aryOf_Realm_DBFile_Names__From_Directory as $item) {
+		// if no entries in the sqlite db
+		//		=> push all items to 'Uninseted' array
+		if (count($aryOf_Realm_DBFile_Names__From_SqliteDB) < 1) {
 		
-			if (!in_array($item, $aryOf_Realm_DBFile_Names__From_SqliteDB)) {
-				
-				array_push($aryOf_Realm_DBFile_Names__UnInserted, $item);
-				
-			}//!in_array($item, $aryOf_Realm_DBFile_Names__From_SqliteDB);
+			$aryOf_Realm_DBFile_Names__UnInserted = $aryOf_Realm_DBFile_Names__From_Directory;
+		
+		} else {
+		
+			foreach ($aryOf_Realm_DBFile_Names__From_Directory as $item) {
 			
-		}//foreach ($aryOf_Realm_DBFile_Names__From_Directory as $item)
+				if (!in_array($item, $aryOf_Realm_DBFile_Names__From_SqliteDB)) {
+					
+					array_push($aryOf_Realm_DBFile_Names__UnInserted, $item);
+					
+				}//!in_array($item, $aryOf_Realm_DBFile_Names__From_SqliteDB);
+				
+			}//foreach ($aryOf_Realm_DBFile_Names__From_Directory as $item)
+			
+		}//if (count($aryOf_Realm_DBFile_Names__From_SqliteDB) < 1)
+		
+		
 		
 		debug("\$aryOf_Realm_DBFile_Names__UnInserted =>");
 		debug($aryOf_Realm_DBFile_Names__UnInserted);

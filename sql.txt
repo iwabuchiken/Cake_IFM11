@@ -151,7 +151,20 @@ CREATE TABLE admins (
 	
 );
 
+--------------------------------------------- realm_db_file_names
+CREATE TABLE realm_db_file_names (
 
+	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+	
+	fname				TEXT,
+	numof_items			INT
+	
+);
+
+
+DROP TABLE realm_db_file_names;
 
 [mysql(lollipop)]======================================
 --------------------------------------------- audio_files
