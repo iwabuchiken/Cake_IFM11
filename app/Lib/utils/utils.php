@@ -5573,12 +5573,16 @@
 		// 		find_All_Realm_DBFile_Names__UnInserted() {
 		find_All_Realm_DBFile_Names__From_Directory() {
 
+			$dpath = Utils::get_dpath__Realm_DB_Files();
 			
-			
+			$scanned_directory = array_values(array_diff(scandir($dpath), array('..', '.')));
 				
+// 			debug($scanned_directory);
+			
 			// return
-			return $realm_db_file_names__db;
-			// 			return array();
+			return $scanned_directory;
+// 			return $realm_db_file_names__db;
+// 			return array();
 				
 		}//find_All_Realm_DBFile_Names__From_Directory
 		
