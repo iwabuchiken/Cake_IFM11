@@ -6,6 +6,9 @@
 	
 </h1>
 
+
+<?php echo $this->element('memos/index/_index_search_string')?>
+
 <br>
 <br>
 
@@ -13,6 +16,7 @@
 
 	if (isset($message_2)) {
 		
+		//ref color http://www.w3schools.com/tags/att_font_color.asp
 		echo "conditions => '<font color='blue'>$message_2</font>'";
 		
 	}//isset($message_2)

@@ -467,6 +467,33 @@ input.submit_image_data_FromList {
 	
 }
 
+input.input_search_string {
+	
+	/*background:		Aquamarine;*/
+	
+	text-align:		left;
+	vertical-align:	middle;
+	
+	width:		200px;
+	
+	line-height:		10px;
+	
+	background:	#aaaaaa;
+	
+}
+
+input.submit_go {
+	
+	/* REF http://hmaster.net/cform5.html */
+	margin-left:	10px;
+	margin-bottom:	5px;
+	
+	vertical-align: middle;
+	
+	/*vertical-align: middle;*/
+	
+}
+
 #image {
     transform-origin: top left; /* IE 10+, Firefox, etc. */
     -webkit-transform-origin: top left; /* Chrome */

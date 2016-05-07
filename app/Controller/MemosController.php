@@ -112,6 +112,11 @@ class MemosController extends AppController {
 		
 		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
 		
+		//ref http://stackoverflow.com/questions/17093612/cakephp-how-to-get-total-number-of-records-retrieved-with-pagination answered Jun 13 '13 at 17:52
+		debug("\$paginateData['count'] => ".$paginateData['count']);
+// 		debug("\$paginateData =>");
+// 		debug($paginateData);
+		
 		// return
 		return $images;
 		
@@ -130,15 +135,45 @@ class MemosController extends AppController {
 		// set search string
 		if (isset($search_string)) {
 		
-			$conditions = array();
+			/*******************************
+				in case of => '*'
+			*******************************/
+			if ($search_string == "*") {
 			
-			$conditions['OR'] = array();
+				// treat in => (isset($search_string)) --> false
+				
+				$conditions = null;
 			
-			array_push($conditions['OR'], array("Memo.title LIKE" => "%$search_string%"));
-			array_push($conditions['OR'], array("Memo.body LIKE" => "%$search_string%"));
+			} else {
 			
-// 			$conditions = array("Memo.title LIKE" => "%$search_string%");
-// 			$conditions = array("Memo.title LIKE" => $search_string);
+				/*******************************
+				 others
+				*******************************/
+				$conditions = array();
+					
+				$conditions['OR'] = array();
+					
+				array_push($conditions['OR'], array("Memo.title LIKE" => "%$search_string%"));
+				array_push($conditions['OR'], array("Memo.body LIKE" => "%$search_string%"));
+					
+				// 			$conditions = array("Memo.title LIKE" => "%$search_string%");
+				// 			$conditions = array("Memo.title LIKE" => $search_string);
+								
+			}//if ($search_string == "*")
+			
+			
+// 			/*******************************
+// 				others
+// 			*******************************/
+// 			$conditions = array();
+			
+// 			$conditions['OR'] = array();
+			
+// 			array_push($conditions['OR'], array("Memo.title LIKE" => "%$search_string%"));
+// 			array_push($conditions['OR'], array("Memo.body LIKE" => "%$search_string%"));
+			
+// // 			$conditions = array("Memo.title LIKE" => "%$search_string%");
+// // 			$conditions = array("Memo.title LIKE" => $search_string);
 		
 		} else {
 		
@@ -149,6 +184,7 @@ class MemosController extends AppController {
 		
 		
 		// set message
+		//ref http://php.net/manual/en/function.serialize.php
 		$this->set("message_2", serialize($conditions));
 // 		$this->set("message_2", $conditions);
 		
