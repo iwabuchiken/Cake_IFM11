@@ -58,21 +58,49 @@ class MemosController extends AppController {
 		
 		$opt_order = array("Memo.r_created_at" => "DESC");
 // 		$opt_order = array("Memo.id" => "ASC");
+
+		$conditions = $this->_index__FindMemos__Paginate__Conditions();
 		
-		$this->paginate = array(
-		// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
-// 				'conditions' => $opt_conditions,
-				// 					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
-				'limit' => 10,
-// 				'limit' => 4,
-				'order' => $opt_order,
+// 		$conditions = array("Memo.title LIKE" => "%食事%");
+		
+		if ($conditions != null) {
+// 		if (isset($conditions)) {
+		
+			$paginate_array = array(
+			
+					'limit'			=> 10,
+					'order'			=> $opt_order,
+					'conditions'	=> $conditions
+			);			
+		
+		} else {
+		
+			$paginate_array = array(
+				
+					'limit' => 10,
+					'order' => $opt_order,
+			);
+			
+		}//if (isset($conditions))
+		
+		debug($paginate_array);
+		
+		$this->paginate = $paginate_array;
+
+// 		$this->paginate = array(
+// 		// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
+// // 				'conditions' => $opt_conditions,
+// 				// 					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
+// 				'limit' => 10,
+// // 				'limit' => 4,
+// 				'order' => $opt_order,
 					
-				// 					'page'	=> 2,
+// 				// 					'page'	=> 2,
 					
-		// 					'order' => array(
-				// 							'id' => 'asc'
-				// 					)
-		);
+// 		// 					'order' => array(
+// 				// 							'id' => 'asc'
+// 				// 					)
+// 		);
 			
 // 		debug("paginator => set");
 		
@@ -89,14 +117,75 @@ class MemosController extends AppController {
 		
 	}//_index__FindMemos__Paginate()
 	
+	public function 
+	_index__FindMemos__Paginate__Conditions() {
+
+		// get => query
+		@$search_string = $this->request->query['search_string'];
+		
+		debug($this->request->query);
+		
+		debug("\$search_string => '$search_string");
+		
+		// set search string
+		if (isset($search_string)) {
+		
+			$conditions = array();
+			
+			$conditions['OR'] = array();
+			
+			array_push($conditions['OR'], array("Memo.title LIKE" => "%$search_string%"));
+			array_push($conditions['OR'], array("Memo.body LIKE" => "%$search_string%"));
+			
+// 			$conditions = array("Memo.title LIKE" => "%$search_string%");
+// 			$conditions = array("Memo.title LIKE" => $search_string);
+		
+		} else {
+		
+			$conditions = null;
+			
+		}//if (isset($search_string))
+		
+		
+		
+		// set message
+		$this->set("message_2", serialize($conditions));
+// 		$this->set("message_2", $conditions);
+		
+		
+		// return
+		return $conditions;
+// 		return null;
+		
+	}//_index__FindMemos__Paginate__Conditions()
+	
 	public function index__opt() {
 
-		$opt = array(
+// 		$conditions = array("Memo.title LIKE" => "%食事%");
 		
-				'order'		=> "Memo.r_created_at DESC"
+		// build option
+		if (isset($conditions)) {
+			
+			$opt = array(
+		
+				'order'			=> "Memo.r_created_at DESC",
+				'conditions'	=> $conditions
 // 				'order'		=> "Memo.id ASC"
 		
-		);
+			);
+			
+		} else {//isset($conditions)
+			
+			$opt = array(
+			
+					'order'		=> "Memo.r_created_at DESC"
+	// 				'order'		=> "Memo.id ASC"
+			
+			);
+			
+		}//isset($conditions)
+		
+// 		debug($opt);
 		
 		// return
 		return $opt;

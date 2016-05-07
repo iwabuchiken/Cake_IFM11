@@ -9,6 +9,18 @@
 <br>
 <br>
 
+<?php 
+
+	if (isset($message_2)) {
+		
+		echo "conditions => '<font color='blue'>$message_2</font>'";
+		
+	}//isset($message_2)
+?>
+
+<br>
+<br>
+
 <?php echo $this->element('memos/index/_index_pagination')?>
 
 <br>

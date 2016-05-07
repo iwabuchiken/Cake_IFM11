@@ -19,172 +19,46 @@ class ImagesController extends AppController {
 		 * sort
 		**********************************/
 		$opt_order = $this->_index__Sort();
-// 		$options_sort = $this->_index__Sort();
 		
-// 		$sort_name = $options_sort[0];
-// 		$sort_direction = $options_sort[1];
-		
-// 		$sort_name = @$this->request->query['sort'];
-		
-// 		if ($sort_name != null && $sort_name != "") {
-		
-// 			$opt_order = array("Image.".$sort_name => $sort_direction);
-// // 			$opt_order = array("Image.".$sort_name => 'desc');
-// // 			$opt_order = array("Image.".$sort_name => 'asc');
-// // 			$opt_order = array($sort_name => 'asc');
-		
-// 		} else {
-		
-// 			$sort_name = "id";
-				
-// 			$opt_order = array($sort_name => 'asc');
-// 			// 			$opt_order = array('id' => 'asc');
-		
-// 		}
-		
-// 		$this->set("sort", $sort_name);
-		
-		//test
-// 		debug($opt_order);
-// 		debug($this->request->query);
-		
-// 		//test
-// 		$this->_test_CreateModel();
-		
-// 		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
-// 		$this->paginate = array(
-// 				'limit' => 4,
-// 				'order' => $opt_order,
-// // 				'order' => array(
-// // 						'id' => 'asc'
-// // 				)
-// 		);
-		
-// 		//log
-// 		Utils::write_Log($this->dpath_Log, "index()", __FILE__, __LINE__);
-		
-// 		$filter_TableName = $this->request->query['filter_table_name'];
 		@$filter_TableName = $this->request->query['filter_table_name'];
+
 		@$filter_Memo = $this->request->query['filter_memo'];
 
 		$opt_conditions = $this->_index__Options();
 
-// 		debug($opt_conditions);
+		debug($opt_conditions);
 		
 		/**********************************
 		* Build: list
 		**********************************/
-// 		if ($filter_TableName != null) {
+		$this->paginate = array(
+				
+				'conditions' => $opt_conditions,
+				
+				'limit' => 4,
+				
+				'order' => $opt_order,
+				
+		);
 			
-// 			debug("filter => not null");
+		$images = $this->paginate('Image');
 
-			$this->paginate = array(
-// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
-					'conditions' => $opt_conditions,
-// 					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
-					'limit' => 4,
-					'order' => $opt_order,
-					
-// 					'page'	=> 2,
-					
-// 					'order' => array(
-// 							'id' => 'asc'
-// 					)
-			);
-			
-			$images = $this->paginate('Image');
-
-// 			debug($this->params['paging']['Image']);
-			
-// 			array(
-// 					'page' => (int) 1,
-// 					'current' => (int) 4,
-// 					'count' => (int) 7,
-// 					'prevPage' => false,
-// 					'nextPage' => true,
-// 					'pageCount' => (int) 2,
-// 					'order' => array(
-// 							'Image.id' => 'asc'
-// 					),
-// 					'limit' => (int) 4,
-// 					'options' => array(
-// 							'order' => array(
-// 									'Image.id' => 'asc'
-// 							)
-// 					),
-// 					'paramType' => 'named'
-// 			)
-
-			$paginateData = $this->params['paging']['Image'];
-			
-// 			debug($paginateData);
-			
-// 			debug($this->paginator->sortDir());	//=> 'Call to a member function sortDir() on null'
-// 			debug($this->Paginator->sortDir());	//=> 'Call to undefined method PaginatorComponent::sortDir()'
-// 			debug($this->Paginator->sort());	//=> 'Call to undefined method PaginatorComponent::sortDir()'
-			
-// 			debug($images);
-			
-// 			$images = $this->_index_Build_ImageList_TableName($filter_TableName);
-// 			$temp = $this->_index_Build_ImageList_TableName($filter_TableName);
-			
-			/**********************************
-			 * total number of images
-			**********************************/
-// 			$this->set('total_num_of_images', $paginateData['count']);
-			
-// 			debug("page count => ".$paginateData['pageCount']);
-			
-			$this->set('total_num_of_images', count($this->Image->find('all')));
-			
-			$this->set('num_of_pages', $paginateData['pageCount']);  
-			
-			$this->set('num_of_images_filtered', $paginateData['count']);  
-// 				count(
-// 					$this->Image->find('all',
-// 							array(
-// 								'conditions' => 
-// 									array(
-// 										'Image.memos LIKE' => "%$filter_TableName%")
-// // 										'Image.file_name LIKE' => "%$filter_TableName%")
-// 							)
-// 					)
-// 				)
-// 			);
-
-// 			debug($temp);
-// 			debug("\$temp => ".count($temp));
-// 			debug("\$temp => ".$temp);
-			
-// 			$images = $this->Image->find('all');
-			
-// 		} else {
-			
-// // 			debug("filter => null");
-			
-// // 			$images = $this->Image->find('all');
-
-// 			$images = $this->paginate('Image');
-
-// 			/**********************************
-// 			 * total number of images
-// 			**********************************/
-// 			$this->set('total_num_of_images', count($this->Image->find('all')));
-					
-// 		}
+		$paginateData = $this->params['paging']['Image'];
 		
+		/**********************************
+		 * total number of images
+		**********************************/
+		$this->set('total_num_of_images', count($this->Image->find('all')));
+		
+		$this->set('num_of_pages', $paginateData['pageCount']);  
+		
+		$this->set('num_of_images_filtered', $paginateData['count']);  
+		
+		/**********************************
+		 * total number of images
+		**********************************/
 		$this->set('images', $images);
-// 		$this->set('images', $this->Image->find('all'));
 
-// 		//REF http://stackoverflow.com/questions/6836990/how-to-get-complete-current-url-for-cakephp answered Jul 29 '11 at 15:18
-// 		debug($this->here);
-// 		debug(Router::url( $this->here, true ));
-// 		debug("/ => ".Router::url('/', true ));
-		
-// 		debug("webroot => ".$this->webroot);
-		 
-// 		debug("HTTP_HOST => ".$_SERVER['HTTP_HOST']);
-		 
 		/**********************************
 		* store: current url
 		**********************************/
@@ -192,35 +66,6 @@ class ImagesController extends AppController {
 		
 		$current_url = Router::url('/', true ).substr($this->here, strlen($this->webroot));
 		$this->Session->write('current_url', $current_url);
-// 		$this->Session->write('current_url', Router::url( $this->here, true ));
-		
-// 		debug("\$current_url => ".$current_url);
-		
-// 		debug(Router::url( $this->here, true ));
-		
-		/**********************************
-		* total number of images
-		**********************************/
-// 		$this->set('total_num_of_images', count($this->Image->find('all')));
-		
-// 		debug($this->request);
-// 		debug($this->request->query);
-		
-// 		//REF http://www.codeofaninja.com/2013/07/pagination-in-cakephp.html
-// 		$this->paginate = array(
-// 				'limit' => 3,
-// 				'order' => array(
-// 						'id' => 'asc'
-// 				)
-// 		);
-		
-// 		// we are using the 'User' model
-// 		$images2 = $this->paginate('Image');
-		
-// // 		debug($images2);
-// // 		debug($images2);
-		
-// 		$this->set('images2', $images2);
 		
 	}
 	
