@@ -243,16 +243,16 @@ class MemosController extends AppController {
 		// 		debug("\$aryOf_Memos__CSV_File[0] =>");
 		// 		debug($aryOf_Memos__CSV_File[0]);
 		
-// 		/*
-// 		 * insert memos (update if exists)
-// 		*/
-// 		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile__V2($aryOf_Memos__CSV_File);
-// 		// 		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile($aryOf_Memos__CSV_File);
+		/*
+		 * insert memos (update if exists)
+		*/
+		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile__V2($aryOf_Memos__CSV_File);
+		// 		$numOf_Memos__Inserted = Utils::insert_Memos_From_CSVFile($aryOf_Memos__CSV_File);
 		
-// 		debug("\$numOf_Memos__Inserted => ".$numOf_Memos__Inserted);
+		debug("\$numOf_Memos__Inserted => ".$numOf_Memos__Inserted);
 		
 		// insert => record
-		$numOf_Memos__Inserted = 0;
+// 		$numOf_Memos__Inserted = 0;
 		
 		$res = Utils::insert_Data__Realm_DBFiles(
 							$fname_Realm_DBFile_Latest, $numOf_Memos__Inserted);

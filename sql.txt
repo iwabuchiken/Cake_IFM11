@@ -165,6 +165,7 @@ CREATE TABLE realm_db_file_names (
 
 
 DROP TABLE realm_db_file_names;
+DELETE FROM realm_db_file_names;
 
 [mysql(lollipop)]======================================
 --------------------------------------------- audio_files
