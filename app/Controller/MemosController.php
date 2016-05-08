@@ -23,9 +23,9 @@ class MemosController extends AppController {
 				
 // 		);
 		
-		$resOf_Memos = $this->Memo->find('all', $opt);
-		
-		debug(count($resOf_Memos));
+	// 		$resOf_Memos = $this->Memo->find('all', $opt);
+			
+	// 		debug(count($resOf_Memos));
 		
 		/*
 		 * paginate
@@ -54,6 +54,22 @@ class MemosController extends AppController {
 	 */
 	public function _index__FindMemos__Paginate() {
 
+		
+		/*******************************
+		 update: url
+		*******************************/
+// 		$this->_index__FindMemos__Paginate__Update_URL();
+		
+		//ref http://stackoverflow.com/questions/11877096/grabbing-the-page-number-in-the-controller-in-cakephp answered Aug 9 '12 at 5:12
+		// 		debug("\$this->params['url'] => ");
+		// 		debug($this->params['url']);		//=> "" (blank)
+		// 		debug("\$this->params => ");
+		// 		debug($this->params);		//=>
+		
+		
+		
+		
+		
 // 		debug("start paginating...");
 		
 		$opt_order = array("Memo.r_created_at" => "DESC");
@@ -66,6 +82,14 @@ class MemosController extends AppController {
 		if ($conditions != null) {
 // 		if (isset($conditions)) {
 		
+// 			// reset page num
+// 			$this->_reset_URL__Page_Number();
+			
+// 			debug("\$this->params->url => ".$this->params->url);
+			
+// 			debug("\$this->Paginator->current(\$model = null) => ".$this->Paginator->current($model = null));
+			
+			// set => array
 			$paginate_array = array(
 			
 					'limit'			=> 10,
@@ -87,22 +111,6 @@ class MemosController extends AppController {
 		
 		$this->paginate = $paginate_array;
 
-// 		$this->paginate = array(
-// 		// 					'conditions' => array('Image.file_name LIKE' => "%$filter_TableName%"),
-// // 				'conditions' => $opt_conditions,
-// 				// 					'conditions' => array('Image.memos LIKE' => "%$filter_TableName%"),
-// 				'limit' => 10,
-// // 				'limit' => 4,
-// 				'order' => $opt_order,
-					
-// 				// 					'page'	=> 2,
-					
-// 		// 					'order' => array(
-// 				// 							'id' => 'asc'
-// 				// 					)
-// 		);
-			
-// 		debug("paginator => set");
 		
 // 		return $this->paginate('Memo');
 		$images = $this->paginate('Memo');
@@ -110,10 +118,32 @@ class MemosController extends AppController {
 
 		$paginateData = $this->params['paging']['Memo'];
 		
-		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
+// 		debug("page => ".$paginateData['page']."/".$paginateData['pageCount']
+// 				." ("."toal memos => ".$paginateData['count'].")"
+// 		);
 		
-		//ref http://stackoverflow.com/questions/17093612/cakephp-how-to-get-total-number-of-records-retrieved-with-pagination answered Jun 13 '13 at 17:52
-		debug("\$paginateData['count'] => ".$paginateData['count']);
+		/*******************************
+			meta data
+		*******************************/
+		$metadata = array(
+				"page"		=> $paginateData['page'],
+				"totalpage"		=> $paginateData['pageCount'],
+				"total memos"	 => $paginateData['count']
+		);
+// 		$metadata = "page => ".$paginateData['page']."/".$paginateData['pageCount']
+// 				." ("."toal memos => ".$paginateData['count'].")";
+		
+		$this->set("metadata", $metadata);
+		
+// 		debug("pages => ".$paginateData['pageCount']
+// 				." / "."toal memos => ".$paginateData['count']
+// 				." / "."current page => ".$paginateData['page']
+// 		);
+		
+// 		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
+		
+// 		//ref http://stackoverflow.com/questions/17093612/cakephp-how-to-get-total-number-of-records-retrieved-with-pagination answered Jun 13 '13 at 17:52
+// 		debug("\$paginateData['count'] => ".$paginateData['count']);
 // 		debug("\$paginateData =>");
 // 		debug($paginateData);
 		
@@ -121,6 +151,45 @@ class MemosController extends AppController {
 		return $images;
 		
 	}//_index__FindMemos__Paginate()
+	
+	public function _reset_URL__Page_Number() {
+		
+		debug("\$this->params->url => ".$this->params->url);
+		
+		$tokens = explode("/", $this->params->url);
+		
+		debug("\$tokens =>");
+		debug($tokens);
+		
+		$lenOf_Tokens = count($tokens);
+		
+		$last_token = $tokens[$lenOf_Tokens - 1];
+		
+		debug("\$tokens(\$lenOf_Tokens - 1) => ".$tokens[$lenOf_Tokens - 1]);
+		
+		if (Utils::startsWith($last_token, "page:")) {
+			
+			$new_url = implode("/", array_slice($tokens, 0, $lenOf_Tokens - 1));
+// 			$new_url = implode("/", array_slice($tokens, $lenOf_Tokens - 1));
+			
+			debug("\$new_url => ".$new_url);
+			
+			$this->params->url = $new_url;
+			
+		}//$last_token.sta
+		
+	}//_reset_URL__Page_Number()
+	
+	public function 
+	_index__FindMemos__Paginate__Update_URL() {
+		
+		debug("\$this->params =>");
+		debug($this->params);
+		debug("\$this->params->url =>");
+		debug($this->params->url);
+		
+	}//_index__FindMemos__Paginate__Update_URL() 
+	
 	
 	public function 
 	_index__FindMemos__Paginate__Conditions() {

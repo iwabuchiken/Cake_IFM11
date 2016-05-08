@@ -23,6 +23,23 @@
 ?>
 
 <br>
+
+<?php 
+
+	if (isset($metadata)) {
+	
+		//ref color http://www.w3schools.com/tags/att_font_color.asp
+		echo "page => <font color='green'>".$metadata['page']."</font>"
+			."/".$metadata['totalpage']
+			." (memos => <font color='green'>".$metadata['total memos']."</font>)"
+		;
+	
+	}//isset($message_2)
+
+?>
+
+
+<br>
 <br>
 
 <?php echo $this->element('memos/index/_index_pagination')?>

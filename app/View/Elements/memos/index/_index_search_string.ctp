@@ -3,7 +3,12 @@
 	$opt_create = array(
 			'div' => false,
 			//REF http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html#options-for-create
-			'type' => 'get');
+			'type' => 'get',
+	
+			//ref http://stackoverflow.com/questions/21736612/how-to-reset-cakephp-paginator-to-page-1
+			'url' => ''
+	
+	);
 	
 	$opt_input = array(
 // 			'type'		=> 'select',
