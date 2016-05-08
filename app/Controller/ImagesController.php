@@ -26,7 +26,7 @@ class ImagesController extends AppController {
 
 		$opt_conditions = $this->_index__Options();
 
-		debug($opt_conditions);
+// 		debug($opt_conditions);
 		
 		/**********************************
 		* Build: list

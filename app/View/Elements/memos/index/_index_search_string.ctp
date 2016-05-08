@@ -13,11 +13,21 @@
 				
 // 			'name'		=> "genre_id",
 
+			'onmouseover'	=> 'this.select()',
+			
 			'label'		=> false,
 			'div'		=> false,
 				
 			'class'		=> 'input_search_string'
 	);
+	
+	// search string
+	if (isset($search_string)) {
+		
+		$opt_input['value'] = $search_string;
+		
+	}//isset($search_string)
+	
 	
 	$opt_end = array(
 			'div' => false,

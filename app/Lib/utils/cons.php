@@ -118,5 +118,15 @@ class CONS {
 	public static $query_Range_Start = "2015/10/20 00:00:00.000";
 	
 	public static $query_Range_End = "2015/10/27 00:00:00.000";
+
+	/*******************************
+		session
+	*******************************/
+	public static $session_Key_Search_String = "search_string";
+
+	/*******************************
+		section: memos
+	*******************************/
+	public static $clear_search_string = "*";
 	
 }//class CONS

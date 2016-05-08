@@ -83,7 +83,7 @@ class MemosController extends AppController {
 			
 		}//if (isset($conditions))
 		
-		debug($paginate_array);
+// 		debug($paginate_array);
 		
 		$this->paginate = $paginate_array;
 
@@ -128,9 +128,27 @@ class MemosController extends AppController {
 		// get => query
 		@$search_string = $this->request->query['search_string'];
 		
-		debug($this->request->query);
+// 		debug($this->request->query);
 		
-		debug("\$search_string => '$search_string");
+// 		debug("\$search_string => '$search_string");
+
+		// get => session value for ---> search_string
+		@$session_Search_String = $this->Session->read(CONS::$session_Key_Search_String);
+		
+// 		debug("\$session_Search_String => \"".$session_Search_String."\"");
+		
+		// set search string
+		if (!isset($search_string) && isset($session_Search_String)) {
+			
+			$search_string = $session_Search_String;
+			
+		} else if (isset($search_string) && !isset($session_Search_String)) {//!isset($search_string) && isset($session_Search_String)
+			
+			$this->Session->write(CONS::$session_Key_Search_String, $search_string);
+			
+		}//!isset($search_string) && isset($session_Search_String)
+		
+// 		debug("\$search_string is now ==> \"".$search_string."\"");
 		
 		// set search string
 		if (isset($search_string)) {
@@ -138,14 +156,26 @@ class MemosController extends AppController {
 			/*******************************
 				in case of => '*'
 			*******************************/
-			if ($search_string == "*") {
+			if ($search_string == CONS::$clear_search_string) {
+				
+// 				debug("\$search_string IS => ".CONS::$clear_search_string);
+				
+// 			if ($search_string == "*") {
 			
 				// treat in => (isset($search_string)) --> false
-				
+				// nullify conditions
 				$conditions = null;
 			
+				// clear session value
+				$this->Session->write(CONS::$session_Key_Search_String, null);
+
+				// update => value for the view
+				$this->set("search_string", null);
+				
 			} else {
 			
+// 				debug("\$search_string is NOT => ".CONS::$clear_search_string);
+				
 				/*******************************
 				 others
 				*******************************/
@@ -158,7 +188,13 @@ class MemosController extends AppController {
 					
 				// 			$conditions = array("Memo.title LIKE" => "%$search_string%");
 				// 			$conditions = array("Memo.title LIKE" => $search_string);
-								
+
+				// set session value
+				$this->Session->write(CONS::$session_Key_Search_String, $search_string);
+
+				// update => value for the view
+				$this->set("search_string", $search_string);
+				
 			}//if ($search_string == "*")
 			
 			
@@ -178,7 +214,13 @@ class MemosController extends AppController {
 		} else {
 		
 			$conditions = null;
+
+			// clear session value
+			$this->Session->write(CONS::$session_Key_Search_String, null);
 			
+			// update => value for the view
+			$this->set("search_string", null);
+				
 		}//if (isset($search_string))
 		
 		
