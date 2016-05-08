@@ -36,7 +36,7 @@
 	
 	<tr>
 	
-		<td colspan="2" class="td_memos_title">
+		<td colspan="4" class="td_memos_title">
 		
 			<?php 
 
@@ -45,8 +45,23 @@
 			?>
 							
 		</td>
+
+		<td colspan="1" rowspan="2" class="td_border_black">
+		
+			<?php 
+
+				echo $memo['Memo']['r_id'];
+				 
+			?>
+							
+		</td>
+		
+	</tr>
 	
-		<td colspan="3" class="td_memos_title">
+	<tr>
+	
+		<td colspan="4" class="td_memos_Body">
+<!-- 		<td colspan="4" class="td_memos_title"> -->
 <!-- 		<td colspan="3" class="td_images_FileName"> -->
 		
 			<?php 
@@ -61,17 +76,18 @@
 	
 	<tr>
 	
-		<td colspan="1" class="td_border_black">
+<!-- 		<td colspan="1" class="td_border_black"> -->
 		
 			<?php 
 
-				echo $memo['Memo']['r_id'];
+// 				echo $memo['Memo']['r_id'];
 				 
 			?>
 							
-		</td>
+<!-- 		</td> -->
 	
 <!-- 		<td colspan="2" class="td_border_black"> -->
+			
 		<td colspan="2" class="td_memos_border_black_bg_gray">
 		
 			<?php 
@@ -82,7 +98,9 @@
 							
 		</td>
 	
-		<td colspan="2" class="td_memos_border_black_bg_gray">
+		<td colspan="3" class="
+		td_memos_border_black_bg_gray">
+<!-- 		<td colspan="2" class="td_memos_border_black_bg_gray"> -->
 		
 			<?php 
 
