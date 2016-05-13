@@ -2,6 +2,8 @@
  * javac C:/WORKS/WS/WS_Android/IFM11/src/ifm11/utils/MyTest.java
  * javac C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\MyTest_iPhone.java
  * 
+ * C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\change_file_names.bat
+ * 
  */
 
 // 
@@ -31,11 +33,16 @@ import java.io.FileWriter;
 import java.util.Locale;
 import java.util.Arrays;
 
+import java.awt.datatransfer.*;
+import java.awt.Toolkit;
+
 //ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
 import java.sql.*;
 
 public class MyTest_iPhone {
 
+	static String text_Clipboard = "";
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -94,6 +101,12 @@ public class MyTest_iPhone {
 
 		System.out.println(msg);
 
+		// build: clipboard text
+		text_Clipboard += msg;
+
+		text_Clipboard += "\n";
+		
+		
 		///////////////////////////////////
 		//
 		// directory
@@ -111,6 +124,30 @@ public class MyTest_iPhone {
 					.currentThread().getStackTrace()[1].getLineNumber());
 
 			System.out.println(msg);
+
+			// build: clipboard text
+			text_Clipboard += msg + "\n";
+
+			
+			
+			///////////////////////////////////
+			//
+			// clipboard
+			//
+			///////////////////////////////////
+			//ref http://stackoverflow.com/questions/6710350/copying-text-to-the-clipboard-using-java answered Jul 15 '11 at 21:23
+			StringSelection stringSelection = new StringSelection(text_Clipboard);
+
+			Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+			
+			clpbrd.setContents(stringSelection, null);
+			
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] clipboard => copied", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+
+			System.out.println(msg);
 			
 			return;
 			
@@ -122,7 +159,10 @@ public class MyTest_iPhone {
 					.currentThread().getStackTrace()[1].getLineNumber(), list_Files.length);
 
 			System.out.println(msg);
-			
+
+			// build: clipboard text
+			text_Clipboard += msg + "\n";
+
 		}//if (list_Files == null )
 
 		///////////////////////////////////
@@ -284,6 +324,29 @@ public class MyTest_iPhone {
 				.currentThread().getStackTrace()[1].getLineNumber());
 
 		System.out.println(msg);
+
+		// build: clipboard text
+		text_Clipboard += msg + "\n";
+
+		///////////////////////////////////
+		//
+		// clipboard
+		//
+		///////////////////////////////////
+		//ref http://stackoverflow.com/questions/6710350/copying-text-to-the-clipboard-using-java answered Jul 15 '11 at 21:23
+		StringSelection stringSelection = new StringSelection(text_Clipboard);
+
+		Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+		
+		clpbrd.setContents(stringSelection, null);
+		
+//		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] clipboard => copied", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
+
+		System.out.println(msg);
+		
 		
 	}//D_20_v_1_1_Process_IPhone_ImageFiles__V4
 	
@@ -350,6 +413,10 @@ public class MyTest_iPhone {
 					.currentThread().getStackTrace()[1].getLineNumber());
 			
 			System.out.println(msg);
+
+			// build: clipboard text
+			text_Clipboard += msg + "\n";
+
 			
 			return null;
 			
@@ -361,7 +428,10 @@ public class MyTest_iPhone {
 					.currentThread().getStackTrace()[1].getLineNumber(), list_Files.length);
 			
 			System.out.println(msg);
-			
+
+			// build: clipboard text
+			text_Clipboard += msg + "\n";
+
 			return list_Files;
 			
 		}//if (list_Files.length < 1)
