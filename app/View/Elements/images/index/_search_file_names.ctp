@@ -28,7 +28,8 @@
 			if (isset($filter_memo)) {
 
 				//REF http://stackoverflow.com/questions/6259371/cakephp-this-form-input-how-to-set-a-select-default-option answered Jun 7 '11 at 0:38
-				$options_File_Name['default'] = $filter_memo;
+				$options_File_Name['default'] = $filter_file_name;
+// 				$options_File_Name['default'] = $filter_memo;
 				
 			}
 			

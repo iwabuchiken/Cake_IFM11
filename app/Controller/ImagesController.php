@@ -31,7 +31,7 @@ class ImagesController extends AppController {
 		/**********************************
 		* Build: list
 		**********************************/
-		$this->paginate = array(
+		$param_Paginate = array(
 				
 				'conditions' => $opt_conditions,
 				
@@ -40,6 +40,20 @@ class ImagesController extends AppController {
 				'order' => $opt_order,
 				
 		);
+		
+// 		debug($param_Paginate);
+		
+		$this->paginate = $param_Paginate;
+		
+// 		$this->paginate = array(
+				
+// 				'conditions' => $opt_conditions,
+				
+// 				'limit' => 4,
+				
+// 				'order' => $opt_order,
+				
+// 		);
 			
 		$images = $this->paginate('Image');
 
@@ -51,6 +65,10 @@ class ImagesController extends AppController {
 		$this->set('total_num_of_images', count($this->Image->find('all')));
 		
 		$this->set('num_of_pages', $paginateData['pageCount']);  
+		
+		$this->set('current_page', $paginateData['page']);  
+		
+// 		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
 		
 		$this->set('num_of_images_filtered', $paginateData['count']);  
 		

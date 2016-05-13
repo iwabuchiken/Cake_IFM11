@@ -67,7 +67,7 @@
 				$param['?'] = "sort=memos";
 			
 				echo $this->Html->link(
-							'Table name',
+							'Memos',
 							$param,
 			// 				array('controller' => 'images', 
 			// 						'action' => 'index',
