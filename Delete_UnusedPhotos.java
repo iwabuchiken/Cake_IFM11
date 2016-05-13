@@ -1,5 +1,6 @@
 /*
  * javac C:/WORKS/WS/WS_Android/IFM11/src/ifm11/utils/MyTest.java
+ * javac C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\Delete_UnusedPhotos.java
  * 
  * <Usage> 
 
@@ -42,6 +43,10 @@ import java.util.List;
 //ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
 import java.sql.*;
 
+import java.awt.datatransfer.*;
+import java.awt.Toolkit;
+
+
 /*
 pushd C:\WORKS\WS\Eclipse_Luna\Cake_IFM11
 
@@ -55,6 +60,19 @@ java -cp ".;lib/data/java/*"  Delete_UnusedPhotos
 
 public class Delete_UnusedPhotos {
 
+	///////////////////////////////////
+	//
+	// clipboard
+	//
+	///////////////////////////////////
+	//ref http://stackoverflow.com/questions/6710350/copying-text-to-the-clipboard-using-java answered Jul 15 '11 at 21:23
+	static StringSelection stringSelection = null;
+//	static StringSelection stringSelection = new StringSelection(text_Clipboard);
+
+	static Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+
+	static String text_Clipboard = "";
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -86,6 +104,9 @@ public class Delete_UnusedPhotos {
 
 		System.out.println(msg);
 
+		// build: clipboard text
+		text_Clipboard += msg + "\n";
+
 		if (numOf_UnusedPhotos < 1) {
 
 			msg = String.format(Locale.JAPAN, "[%s : %d] numOf_UnusedPhotos less than 1 => exiting...", Thread
@@ -93,7 +114,30 @@ public class Delete_UnusedPhotos {
 					.currentThread().getStackTrace()[1].getLineNumber(), numOf_UnusedPhotos);
 			
 			System.out.println(msg);
+
+			// build: clipboard text
+			text_Clipboard += msg + "\n";
+
+			///////////////////////////////////
+			//
+			// clipboard
+			//
+			///////////////////////////////////
+			//ref http://stackoverflow.com/questions/6710350/copying-text-to-the-clipboard-using-java answered Jul 15 '11 at 21:23
+			stringSelection = new StringSelection(text_Clipboard);
+
+//			Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
 			
+			clpbrd.setContents(stringSelection, null);
+
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] clipboard => copied", Thread
+					.currentThread().getStackTrace()[1].getFileName(), Thread
+					.currentThread().getStackTrace()[1].getLineNumber());
+
+			System.out.println(msg);
+
+			// return
 			return;
 
 		}//if (numOf_UnusedPhotos < 1)
@@ -113,6 +157,9 @@ public class Delete_UnusedPhotos {
 				listOf_FileNames__Unused.size());
 
 		System.out.println(msg);
+
+		// build: clipboard text
+		text_Clipboard += msg + "\n";
 
 //		for (int i = 0; i < 10; i++) {
 //			
@@ -142,6 +189,27 @@ public class Delete_UnusedPhotos {
 
 		System.out.println(msg);
 		
+		// build: clipboard text
+		text_Clipboard += msg + "\n";
+
+		///////////////////////////////////
+		//
+		// clipboard
+		//
+		///////////////////////////////////
+		//ref http://stackoverflow.com/questions/6710350/copying-text-to-the-clipboard-using-java answered Jul 15 '11 at 21:23
+		stringSelection = new StringSelection(text_Clipboard);
+
+//		Clipboard clpbrd = Toolkit.getDefaultToolkit().getSystemClipboard();
+		
+		clpbrd.setContents(stringSelection, null);
+
+//		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] clipboard => copied", Thread
+				.currentThread().getStackTrace()[1].getFileName(), Thread
+				.currentThread().getStackTrace()[1].getLineNumber());
+
+		System.out.println(msg);
 		
 		///////////////////////////////////
 		//
@@ -1124,3 +1192,5 @@ public class Delete_UnusedPhotos {
 	}//get_NumOf_Entries_InDB
 	
 }
+
+
