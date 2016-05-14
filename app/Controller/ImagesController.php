@@ -41,7 +41,7 @@ class ImagesController extends AppController {
 				
 		);
 		
-// 		debug($param_Paginate);
+		debug($param_Paginate);
 		
 		$this->paginate = $param_Paginate;
 		
@@ -120,6 +120,8 @@ class ImagesController extends AppController {
 		
 		$sort_direction = @$this->request->query['direction'];
 		
+		debug("\$sort_name => ".$sort_name." / "."\$sort_direction => ".$sort_direction);
+		
 		/*******************************
 			sort name
 		*******************************/
@@ -143,14 +145,20 @@ class ImagesController extends AppController {
 		if ($sort_direction === null || $sort_direction == "") {
 // 		if ($sort_direction === null && $sort_direction == "") {
 
+			debug("\$sort_direction === null || \$sort_direction == \"\" ---> true");
+			
 			// read the sessin value
 			@$session_Direction = $this->Session->read($val_Session_Direction);
 // 			@$session_Direction = $this->Session->read("direction");
 			
-// 			debug("session_Direction => '$session_Direction'");
 			
 			// paginatin => in effect?
 			@$named = $this->request->named;
+			
+			debug("session_Direction => '$session_Direction'");
+			debug(" / "."\$named => ");
+			debug($named);
+			
 			
 			/*******************************
 				current => not set
@@ -158,6 +166,8 @@ class ImagesController extends AppController {
 			*******************************/
 			if ($named != null) {//if ($session_Direction === null)
 
+				debug("\$named != null");
+				
 				if ($session_Direction === null) {
 
 					$sort_direction = $val_Session_Direction__ASC;
@@ -191,6 +201,8 @@ class ImagesController extends AppController {
 			*******************************/
 			} else if ($session_Direction == $val_Session_Direction__ASC) {
 				
+				debug("\$session_Direction == \$val_Session_Direction__ASC");
+				
 				// set var
 				$sort_direction = $val_Session_Direction__DESC;
 				
@@ -203,6 +215,8 @@ class ImagesController extends AppController {
 					--> change to 'asc'
 			*******************************/
 			} else if ($session_Direction == $val_Session_Direction__DESC) {
+				
+				debug("\$session_Direction == \$val_Session_Direction__DESC");
 				
 				// set var
 				$sort_direction = $val_Session_Direction__ASC;
