@@ -86,6 +86,62 @@ class ImagesController extends AppController {
 		$this->Session->write('current_url', $current_url);
 		
 	}
+
+	public function index_2() {
+		
+		/*******************************
+			paginate
+		*******************************/
+		/**********************************
+		 * Build: list
+		**********************************/
+		$param_Paginate = array(
+		
+// 				'conditions' => $opt_conditions,
+		
+				'limit' => 4,
+		
+// 				'order' => $opt_order,
+		
+		);
+		
+// 		debug($param_Paginate);
+		
+		$this->paginate = $param_Paginate;
+		
+		$images = $this->paginate('Image');
+		
+		debug("count(\$images) => ".count($images));
+		
+		$paginateData = $this->params['paging']['Image'];
+		
+		debug("\$paginateData =>");
+		debug($paginateData);
+		
+// 		debug("index_2");
+		
+// 		$this->render("/Elements/plain");
+		
+		/*******************************
+			set: meta data
+		*******************************/
+		$this->set('total_num_of_images', $paginateData['count']);
+		
+		$this->set('num_of_pages', $paginateData['pageCount']);
+		
+		$this->set('current_page', $paginateData['page']);
+		
+		// 		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
+		
+		$this->set('num_of_images_filtered', $paginateData['count']);
+		
+		/**********************************
+		 * set: images
+		**********************************/
+		$this->set('images', $images);
+		
+		
+	}
 	
 	public function
 	_test_CreateModel() {
