@@ -4,7 +4,7 @@
 		
 			$param = array(
 						'controller' => 'images', 
-						'action' => 'index',);
+						'action' => 'index_2',);
 		
 		?>
 		
@@ -13,7 +13,7 @@
 			<?php echo $this->Html->link(
 				'ID',
 				array('controller' => 'images', 
-						'action' => 'index',
+						'action' => 'index_2',
 						'?' => "sort=id"),
 				array('class'	=> 'has_link'));
 			?>
@@ -27,7 +27,7 @@
 			<?php echo $this->Html->link(
 						'File name',
 						array('controller' => 'images', 
-								'action' => 'index',
+								'action' => 'index_2',
 								'?' => "sort=file_name"),
 						array('class'	=> 'has_link'));
 			?>

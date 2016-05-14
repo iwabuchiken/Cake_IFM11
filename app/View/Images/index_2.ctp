@@ -9,6 +9,7 @@
 	
 // 		$total_num_of_images = "abc";
 		
+		//ref pass data http://stackoverflow.com/questions/5523162/cakephp-passing-data-to-element answered Apr 2 '11 at 12:51
 		echo $this->element('images/index_2/index_2_metainfo', 
 					array(
 						'total_num_of_images' => $total_num_of_images,

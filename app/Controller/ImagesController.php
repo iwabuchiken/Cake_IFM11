@@ -90,6 +90,11 @@ class ImagesController extends AppController {
 	public function index_2() {
 		
 		/*******************************
+			setup: params
+		*******************************/
+		$opt_order = $this->_index_2__Sort();
+		
+		/*******************************
 			paginate
 		*******************************/
 		/**********************************
@@ -101,7 +106,7 @@ class ImagesController extends AppController {
 		
 				'limit' => 4,
 		
-// 				'order' => $opt_order,
+				'order' => $opt_order,
 		
 		);
 		
@@ -111,12 +116,12 @@ class ImagesController extends AppController {
 		
 		$images = $this->paginate('Image');
 		
-		debug("count(\$images) => ".count($images));
+// 		debug("count(\$images) => ".count($images));
 		
 		$paginateData = $this->params['paging']['Image'];
 		
-		debug("\$paginateData =>");
-		debug($paginateData);
+// 		debug("\$paginateData =>");
+// 		debug($paginateData);
 		
 // 		debug("index_2");
 		
@@ -342,6 +347,192 @@ class ImagesController extends AppController {
 		return $opt_order;
 		
 	}//_index__Sort
+	
+	public function
+	_index_2__Sort() {
+
+		/*******************************
+			get query
+		*******************************/
+		$sort_name = @$this->request->query['sort'];
+		
+		$sort_direction = @$this->request->query['direction'];
+		
+		debug("\$sort_name => '".$sort_name."' / "."\$sort_direction => '".$sort_direction."'");
+		
+		/*******************************
+			prep: vars
+		*****************************/
+		/*******************************
+		 direction
+		*******************************/
+		$val_Session_Direction = "direction";
+		$val_Session_SortName = "sort_name";
+		
+		$val_Session_Direction__ASC = "asc";
+		$val_Session_Direction__DESC = "desc";
+		
+		$current_Sort = "";
+		$current_Direction = "";
+		
+		$dflt_Session_SortName = "id";
+		
+		/*******************************
+			judge: query::sort_name ?
+		*******************************/
+		$current_Sort = $this->_index_2__Sort__Current_SortName(
+								$sort_name, 
+								$val_Session_SortName, 
+								$dflt_Session_SortName);
+
+		/*******************************
+		 judge: query::sort_direction ?
+		*******************************/
+		$current_Direction = $this->_index_2__Sort__Current_Direction(
+								$sort_direction, 
+								$val_Session_Direction, 
+								$val_Session_Direction__ASC, 
+								$val_Session_Direction__DESC);
+		
+		/*******************************
+			set
+		*******************************/
+// 		$opt_order = array("Image.".$sort_name => $sort_direction);
+		$opt_order = array();
+		
+		$this->set("sort", $current_Sort);
+// 		$this->set("sort", $sort_name);
+		
+		$this->set("direction", $current_Direction);
+// 		$this->set("direction", $sort_direction);
+
+		/*******************************
+			return
+		*******************************/
+		return $opt_order;
+		
+	}//_index_2__Sort
+	
+	public function
+	_index_2__Sort__Current_SortName
+	($sort_name, $val_Session_SortName, $dflt_Session_SortName) {
+
+		if ($sort_name == null) {
+		
+			debug("\$sort_name => null");
+			/*******************************
+			 judge: session => has a value for sort_name?
+			*******************************/
+			// read the sessin value
+			@$session_SortName = $this->Session->read($val_Session_SortName);
+		
+			if ($session_SortName == null) {
+		
+				debug("\$session_SortName => null");
+		
+				// update session value
+				$this->Session->write($val_Session_SortName, $dflt_Session_SortName);
+		
+				$current_Sort = $dflt_Session_SortName;
+		
+			} else {//if ($session_SortName == null)
+		
+				debug("\$session_SortName => $session_SortName");
+		
+				// set the current sort name
+				$current_Sort = $session_SortName;
+		
+			}//if ($session_SortName == null)
+				
+				// 			debug("\$session_SortName => ".$session_SortName);
+				
+		} else {//$sort_name == null
+				
+			debug("request->query['sort'] => ".$this->request->query['sort']);
+				
+			// update: session value
+			// update session value
+			$this->Session->write($val_Session_SortName, $sort_name);
+		
+			// set: current sort name
+			$current_Sort = $sort_name;
+				
+		}//$sort_name == null
+		
+		
+		debug("\$current_Sort => ".$current_Sort);
+		
+		/*******************************
+			return
+		*******************************/
+		return $current_Sort;
+		
+	}//_index_2__Sort__Current_SortName
+	
+	public function
+	_index_2__Sort__Current_Direction(
+				$sort_direction,
+				$val_Session_Direction,
+				$val_Session_Direction__ASC,
+				$val_Session_Direction__DESC) {
+
+		/*******************************
+			vars
+		*******************************/
+		$current_Direction = "";
+		
+		
+		/*******************************
+			judge
+		*******************************/
+		if ($sort_direction == null) {
+			
+			debug("\$sort_direction => null");
+
+			/*******************************
+			 judge: session => has a value for sort_direction?
+			*******************************/
+			// read the sessin value
+			@$session_Direction = $this->Session->read($val_Session_Direction);
+			
+			if ($session_Direction == null) {
+			
+				debug("\$session_SortName => null");
+			
+				// update session value
+				$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
+			
+				$current_Direction = $val_Session_Direction__ASC;
+			
+			} else {//if ($session_SortName == null)
+			
+				debug("\$session_Direction => $session_Direction");
+			
+				// set the current sort name
+				$current_Direction = $session_Direction;
+			
+			}//if ($session_SortName == null)
+			
+			// 			debug("\$session_SortName => ".$session_SortName);
+			
+		} else {//if ($sort_direction == null)
+
+			// update session value
+			$this->Session->write($val_Session_Direction, $sort_direction);
+				
+			$current_Direction = $sort_direction;
+				
+		}//if ($sort_direction == null)
+		
+		/*******************************
+			return
+		*******************************/
+		debug("\$current_Direction => ".$current_Direction);
+		
+		return $current_Direction;
+		
+	}//_index_2__Sort__Current_Direction
+	
 	
 	public function
 	_index__Options() {
