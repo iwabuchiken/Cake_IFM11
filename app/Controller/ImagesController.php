@@ -3,12 +3,15 @@
 class ImagesController extends AppController {
 	
 // 	public $scaffold;
-	
-	public $helpers = array('Html', 'Form');
+
+	//ref http://stackoverflow.com/questions/4252577/cakephp-session-cant-write answered Nov 23 '10 at 3:56
+	public $helpers = array('Html', 'Form', 'Session');
+// 	public $helpers = array('Html', 'Form');
 // 	public $helpers = array('Html', 'Form');
 
 	//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
-	public $components = array('Paginator');
+	public $components = array('Paginator', 'Session');
+// 	public $components = array('Paginator');
 
 	public function index() {
 
@@ -294,7 +297,8 @@ class ImagesController extends AppController {
 				$sort_direction = $val_Session_Direction__ASC;
 				
 				// update session value
-				$this->Session->write(val_Session_Direction, $val_Session_Direction__ASC);
+				$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
+// 				$this->Session->write(val_Session_Direction, $val_Session_Direction__ASC);
 				
 				debug("session_Direction => default");
 				
@@ -371,7 +375,9 @@ class ImagesController extends AppController {
 		/*******************************
 		 direction
 		*******************************/
-		$val_Session_Direction = "direction";
+// 		$val_Session_Direction = "direction";
+		$val_Session_Direction = CONS::$session_Key_Direction;
+		
 		$val_Session_SortName = "sort_name";
 		
 		$val_Session_Direction__ASC = "asc";
@@ -611,7 +617,7 @@ class ImagesController extends AppController {
 		// read the sessin value
 		@$session_Direction = $this->Session->read($val_Session_Direction);
 		
-		debug("\$session_Direction => '".$session_Direction."'");
+		debug("current \$session_Direction => '".$session_Direction."'");
 		
 		// session value => exists?
 		if ($session_Direction != null) {
@@ -639,16 +645,37 @@ class ImagesController extends AppController {
 			
 		} else {//if ($session_Direction != null)
 		
+			debug("\$session_Direction => null");
+			
 			/*******************************
 				set: default
 			*******************************/
+			debug("writing a session value...");
+			
+			debug("\$val_Session_Direction => ".$val_Session_Direction
+					." / "."CONS::\$session_Value__Direction_ASC => "
+					.CONS::$session_Value__Direction_ASC);
+			
 			// update session value
-			$this->Session->write($val_Session_Direction,
+			$res = $this->Session->write($val_Session_Direction,
 					CONS::$session_Value__Direction_ASC);
+			
+// 			debug("CONS::\$session_Value__Direction_ASC => "
+// 					.CONS::$session_Value__Direction_ASC);
+			
+			debug("\$this->Session->write(\$val_Session_Direction => '".$res."'");
 			
 			$current_Direction = CONS::$session_Value__Direction_ASC;
 			
+			//test
+			$tmp = $this->Session->read($val_Session_Direction);
+			
+			debug("\$tmp => '$tmp'");
+			
 		}//if ($session_Direction != null)
+		
+		
+		debug("\$current_Direction => ".$current_Direction);
 		
 		/*******************************
 			return
