@@ -33,6 +33,11 @@
  */
 	Configure::write('debug', 2);
 
+// 	//ref http://stackoverflow.com/questions/10043770/cakephp-2-1-this-session-write-is-not-working answered Apr 6 '12 at 13:35
+// 	Configure::write('Session', array(
+//     'defaults' => 'cake'
+// 	));
+
 /**
  * Configure the Error handler used to handle errors for your application. By default
  * ErrorHandler::handleError() is used. It will display errors using Debugger, when debug > 0
@@ -216,7 +221,8 @@
  *
  */
 	Configure::write('Session', array(
-		'defaults' => 'php'
+		'defaults' => 'cake'
+// 		'defaults' => 'php'
 	));
 
 /**

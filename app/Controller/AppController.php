@@ -32,6 +32,12 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 	
+	//ref http://stackoverflow.com/questions/4252577/cakephp-session-cant-write
+	public $helpers = array('Session');
+
+	public $components = array('Session');
+	
+	
 	/**********************************
 	* vars
 	**********************************/

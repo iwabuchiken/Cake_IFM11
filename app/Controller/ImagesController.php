@@ -5,14 +5,15 @@ class ImagesController extends AppController {
 // 	public $scaffold;
 
 	//ref http://stackoverflow.com/questions/4252577/cakephp-session-cant-write answered Nov 23 '10 at 3:56
-	public $helpers = array('Html', 'Form', 'Session');
-// 	public $helpers = array('Html', 'Form');
+// 	public $helpers = array('Html', 'Form', 'Session');
+	public $helpers = array('Html', 'Form');
 // 	public $helpers = array('Html', 'Form');
 
 	//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
-	public $components = array('Paginator', 'Session');
-// 	public $components = array('Paginator');
+// 	public $components = array('Paginator', 'Session');
+	public $components = array('Paginator');
 
+// 	public function index_2() {
 	public function index() {
 
 // 		//debug
@@ -22,6 +23,14 @@ class ImagesController extends AppController {
 		 * sort
 		**********************************/
 		$opt_order = $this->_index__Sort();
+
+		debug("\$opt_order ...");
+		debug($opt_order);
+		
+// 		$opt_order_2 = $this->_index_2__Sort();
+		
+// 		debug("\$opt_order_2 ...");
+// 		debug($opt_order_2);
 		
 		@$filter_TableName = $this->request->query['filter_table_name'];
 
@@ -88,8 +97,31 @@ class ImagesController extends AppController {
 		$current_url = Router::url('/', true ).substr($this->here, strlen($this->webroot));
 		$this->Session->write('current_url', $current_url);
 		
-	}
+		//test
+		$tmp_url = $this->Session->read('current_url');
+		
+		debug("\$tmp_url => ".$tmp_url);
 
+		//test
+		$session_Key = "abc";
+		
+		$session_Value = "DEF";
+		
+		// write session
+		$this->Session->write($session_Key, $session_Value);
+		
+		// read session
+		$tmp = $this->Session->read($session_Key);
+		
+		debug("\$tmp => ".$tmp);
+
+		//test
+		$this->test_Use_Session(0);
+// 		$this->test_Use_Session(false);
+		
+	}//public function index()
+
+// 	public function index() {
 	public function index_2() {
 		
 		/*******************************
@@ -173,6 +205,43 @@ class ImagesController extends AppController {
 		
 	}
 	
+	public function
+	test_Use_Session($use_plain_view = 0) {
+// 	test_Use_Session($use_plain_view) {
+// 	test_Use_Session() {
+
+		debug("test_Use_Session");
+// 		debug("_test_Use_Session");
+
+		$session_Key = "abcdef";
+// 		$session_Key = "abc";
+		
+		$session_Value = "ABCDEF";
+// 		$session_Value = "DEF";
+		
+		// write session
+		$this->Session->write($session_Key, $session_Value);
+		
+		// read session
+		$tmp = $this->Session->read($session_Key);
+		
+		debug("\$tmp => ".$tmp);
+		
+// 		debug($_SESSION);
+		
+// 		phpinfo();
+		
+		if ($use_plain_view == 1) {
+// 		if ($use_plain_view == true) {
+			
+			$this->render("/Elements/plain");
+			
+		}//$use_plain_view == true
+		
+// 		$this->render("/Elements/plain");
+		
+	}//_test_Use_Session
+	
 	
 	public function
 	_index__Sort() {
@@ -215,6 +284,8 @@ class ImagesController extends AppController {
 			// read the sessin value
 			@$session_Direction = $this->Session->read($val_Session_Direction);
 // 			@$session_Direction = $this->Session->read("direction");
+			
+// 			debug("\$session_Direction => ".$session_Direction);
 			
 			
 			// paginatin => in effect?
