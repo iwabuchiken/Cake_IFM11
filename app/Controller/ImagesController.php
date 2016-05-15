@@ -27,10 +27,16 @@ class ImagesController extends AppController {
 		debug("\$opt_order ...");
 		debug($opt_order);
 		
-// 		$opt_order_2 = $this->_index_2__Sort();
+		//test
+		$opt_order_2 = $this->_index_2__Sort();
 		
-// 		debug("\$opt_order_2 ...");
-// 		debug($opt_order_2);
+		debug("\$opt_order_2 ...");
+		debug($opt_order_2);
+
+// 		//test
+// 		debug("\$_SERVER['REQUEST_URI'] ...");
+// 		debug($_SERVER['REQUEST_URI']);
+		
 		
 		@$filter_TableName = $this->request->query['filter_table_name'];
 
@@ -470,6 +476,33 @@ class ImagesController extends AppController {
 		/*******************************
 			judge: switch direction?
 		*******************************/
+		//test: prep --> pagination page?
+		//ref http://stackoverflow.com/questions/6768793/get-the-full-url-in-php answered Jul 20 '11 at 21:33
+		$uri = $_SERVER['REQUEST_URI'];
+		
+		debug("\$uri => ".$uri);
+		
+		//ref http://stackoverflow.com/questions/4366730/check-if-string-contains-specific-words answered Dec 6 '10 at 13:15
+		$has_Page_Param = strpos($uri, "page:");
+
+// 		debug("\$has_Page_Param => ".$has_Page_Param);
+		
+// 		debug($has_Page_Param === true ? 
+// 					"\$has_Page_Param => true" : "\$has_Page_Param => false");
+		
+// 		if (strpos($a, 'are') !== false) {
+// 			echo 'true';
+// 		}		
+		
+// 		//test
+//		//ref http://book.cakephp.org/3.0/en/views/helpers/paginator.html
+// 		$result = $this->Paginator->templates('number');
+		
+// 		debug("\$this->Paginator->templates('number') => ".$result);
+		
+		
+		
+		
 		if ($switch_direction == null) {
 		
 				debug("\$switch_direction => null");
@@ -493,6 +526,20 @@ class ImagesController extends AppController {
 // 					&& $switch_direction != CONS::$param_Val_Switch_Direction__OFF) {
 				
 				debug("unknown switch_direction value => $switch_direction");
+				
+				/*******************************
+				 judge: query::sort_direction ?
+				*******************************/
+				$current_Direction = $this->_index_2__Sort__Current_Direction(
+						$sort_direction,
+						$val_Session_Direction,
+						$val_Session_Direction__ASC,
+						$val_Session_Direction__DESC);
+								
+			} else if ($has_Page_Param !== false) {
+// 			} else if ($has_Page_Param === true) {
+				
+				debug("pagination param in the uri");
 				
 				/*******************************
 				 judge: query::sort_direction ?
@@ -544,6 +591,9 @@ class ImagesController extends AppController {
 		/*******************************
 			return
 		*******************************/
+		$opt_order = array("Image.".$current_Sort => $current_Direction);
+// 		$opt_order = array("Image.".$sort_name => $sort_direction);
+		
 		return $opt_order;
 		
 	}//_index_2__Sort
