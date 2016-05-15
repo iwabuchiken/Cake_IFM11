@@ -41,7 +41,7 @@ class ImagesController extends AppController {
 				
 		);
 		
-		debug($param_Paginate);
+// 		debug($param_Paginate);
 		
 		$this->paginate = $param_Paginate;
 		
@@ -181,7 +181,7 @@ class ImagesController extends AppController {
 		
 		$sort_direction = @$this->request->query['direction'];
 		
-		debug("\$sort_name => ".$sort_name." / "."\$sort_direction => ".$sort_direction);
+// 		debug("\$sort_name => ".$sort_name." / "."\$sort_direction => ".$sort_direction);
 		
 		/*******************************
 			sort name
@@ -195,7 +195,8 @@ class ImagesController extends AppController {
 		/*******************************
 			direction
 		*******************************/
-		$val_Session_Direction = "direction";
+		$val_Session_Direction = CONS::$session_Key_Direction;
+// 		$val_Session_Direction = "direction";
 		
 		$val_Session_Direction__ASC = "asc";
 		$val_Session_Direction__DESC = "desc";
@@ -206,7 +207,7 @@ class ImagesController extends AppController {
 		if ($sort_direction === null || $sort_direction == "") {
 // 		if ($sort_direction === null && $sort_direction == "") {
 
-			debug("\$sort_direction === null || \$sort_direction == \"\" ---> true");
+// 			debug("\$sort_direction === null || \$sort_direction == \"\" ---> true");
 			
 			// read the sessin value
 			@$session_Direction = $this->Session->read($val_Session_Direction);
@@ -216,9 +217,9 @@ class ImagesController extends AppController {
 			// paginatin => in effect?
 			@$named = $this->request->named;
 			
-			debug("session_Direction => '$session_Direction'");
-			debug(" / "."\$named => ");
-			debug($named);
+// 			debug("session_Direction => '$session_Direction'");
+// 			debug(" / "."\$named => ");
+// 			debug($named);
 			
 			
 			/*******************************
@@ -249,7 +250,7 @@ class ImagesController extends AppController {
 			*******************************/
 			} else if ($session_Direction === null) {
 			
-				debug("\$session_Direction === null");
+// 				debug("\$session_Direction === null");
 				
 				$sort_direction = $val_Session_Direction__ASC;
 
@@ -262,7 +263,7 @@ class ImagesController extends AppController {
 			*******************************/
 			} else if ($session_Direction == $val_Session_Direction__ASC) {
 				
-				debug("\$session_Direction == \$val_Session_Direction__ASC");
+// 				debug("\$session_Direction == \$val_Session_Direction__ASC");
 				
 				// set var
 				$sort_direction = $val_Session_Direction__DESC;
@@ -358,7 +359,11 @@ class ImagesController extends AppController {
 		
 		$sort_direction = @$this->request->query['direction'];
 		
+		$switch_direction = @$this->request->query['switch_direction'];
+		
 		debug("\$sort_name => '".$sort_name."' / "."\$sort_direction => '".$sort_direction."'");
+		
+		debug($this->request->query);
 		
 		/*******************************
 			prep: vars
@@ -386,13 +391,66 @@ class ImagesController extends AppController {
 								$dflt_Session_SortName);
 
 		/*******************************
-		 judge: query::sort_direction ?
+			judge: switch direction?
 		*******************************/
-		$current_Direction = $this->_index_2__Sort__Current_Direction(
-								$sort_direction, 
-								$val_Session_Direction, 
-								$val_Session_Direction__ASC, 
-								$val_Session_Direction__DESC);
+		if ($switch_direction == null) {
+		
+				debug("\$switch_direction => null");
+			
+			/*******************************
+			 judge: query::sort_direction ?
+			*******************************/
+			$current_Direction = $this->_index_2__Sort__Current_Direction(
+					$sort_direction,
+					$val_Session_Direction,
+					$val_Session_Direction__ASC,
+					$val_Session_Direction__DESC);
+						
+		} else {
+		
+			debug("\$switch_direction => '".$switch_direction."'");
+
+			// validate
+			if ($switch_direction != CONS::$param_Val_Switch_Direction__ON) {
+// 			if ($switch_direction != CONS::$param_Val_Switch_Direction__ON 
+// 					&& $switch_direction != CONS::$param_Val_Switch_Direction__OFF) {
+				
+				debug("unknown switch_direction value => $switch_direction");
+				
+				/*******************************
+				 judge: query::sort_direction ?
+				*******************************/
+				$current_Direction = $this->_index_2__Sort__Current_Direction(
+						$sort_direction,
+						$val_Session_Direction,
+						$val_Session_Direction__ASC,
+						$val_Session_Direction__DESC);
+								
+			} else {//$switch_direction != CONS::$param_Val_Switch_Direction__ON && $switch_direction != CONS::$param_Val_Switch_Direction__OFF
+				
+				/*******************************
+				 judge: query::sort_direction ?
+				*******************************/
+				$current_Direction = $this->_index_2__Sort__Switch_Direction(
+						$sort_direction,
+						$val_Session_Direction,
+						$val_Session_Direction__ASC,
+						$val_Session_Direction__DESC);
+			
+			}//$switch_direction != CONS::$param_Val_Switch_Direction__ON && $switch_direction != CONS::$param_Val_Switch_Direction__OFF
+			
+		}//if ($switch_direction == null)
+		
+		
+		
+// 		/*******************************
+// 		 judge: query::sort_direction ?
+// 		*******************************/
+// 		$current_Direction = $this->_index_2__Sort__Current_Direction(
+// 								$sort_direction, 
+// 								$val_Session_Direction, 
+// 								$val_Session_Direction__ASC, 
+// 								$val_Session_Direction__DESC);
 		
 		/*******************************
 			set
@@ -532,6 +590,72 @@ class ImagesController extends AppController {
 		return $current_Direction;
 		
 	}//_index_2__Sort__Current_Direction
+	
+	public function
+	_index_2__Sort__Switch_Direction(
+				$sort_direction,
+				$val_Session_Direction,
+				$val_Session_Direction__ASC,
+				$val_Session_Direction__DESC) {
+
+		/*******************************
+			vars
+		*******************************/
+		$current_Direction = "ASC";
+// 		$current_Direction = "";
+		
+		
+		/*******************************
+			judge
+		*******************************/
+		// read the sessin value
+		@$session_Direction = $this->Session->read($val_Session_Direction);
+		
+		debug("\$session_Direction => '".$session_Direction."'");
+		
+		// session value => exists?
+		if ($session_Direction != null) {
+		
+			// value ==> asc?
+			if ($session_Direction == CONS::$session_Value__Direction_ASC) {
+			
+				// update session value
+				$this->Session->write($val_Session_Direction, 
+							CONS::$session_Value__Direction_DESC);
+
+				$current_Direction = CONS::$session_Value__Direction_DESC;
+				
+			} else {
+			
+				// update session value
+				$this->Session->write($val_Session_Direction,
+						CONS::$session_Value__Direction_ASC);
+				
+				$current_Direction = CONS::$session_Value__Direction_ASC;
+								
+			}//if ($session_Direction)
+			
+			
+			
+		} else {//if ($session_Direction != null)
+		
+			/*******************************
+				set: default
+			*******************************/
+			// update session value
+			$this->Session->write($val_Session_Direction,
+					CONS::$session_Value__Direction_ASC);
+			
+			$current_Direction = CONS::$session_Value__Direction_ASC;
+			
+		}//if ($session_Direction != null)
+		
+		/*******************************
+			return
+		*******************************/
+		return $current_Direction;
+		
+	}//_index_2__Sort__Switch_Direction
 	
 	
 	public function
@@ -741,7 +865,7 @@ class ImagesController extends AppController {
 // 				$tmp2 = array('NOT' => array());
 // 				$tmp2 = array('AND');
 				
-				debug($tmp2);
+// 				debug($tmp2);
 				
 // 				$tmp2['AND'] = [array('Image.memos LIKE' => $filter_String), array('Image.memos LIKE' => $filter_String)];
 				
@@ -819,7 +943,7 @@ class ImagesController extends AppController {
 				$tmp = array('AND' => $tmp);
 				
 // 				debug($tmp);
-				debug($tmp2);
+// 				debug($tmp2);
 				
 // 				$tmp2 = array('AND' => array('Image.memos LIKE' => $filter_String));
 				

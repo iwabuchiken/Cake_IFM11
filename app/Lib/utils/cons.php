@@ -123,7 +123,22 @@ class CONS {
 		session
 	*******************************/
 	public static $session_Key_Search_String = "search_string";
+	
+	public static $session_Key_Switch_Direction = "switch_direction";
+	
+	public static $session_Key_Direction = "direction";
+	
+	public static $session_Value__Direction_ASC = "asc";
+	
+	public static $session_Value__Direction_DESC = "desc";
 
+	/*******************************
+		param values
+	*******************************/
+	public static $param_Val_Switch_Direction__ON = "on";
+	
+	public static $param_Val_Switch_Direction__OFF = "off";
+	
 	/*******************************
 		section: memos
 	*******************************/
