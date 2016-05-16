@@ -1,3 +1,30 @@
+<!-- ref http://www.w3schools.com/tags/tag_script.asp -->
+<script>
+
+// 	var span = $("span.Pg_first");
+// // 	var span = $('Pg_first');
+
+// 	var a = $("a[rel='first']");
+
+// 	alert(a.attr("class"));
+// 	alert(a.attr("rel"));
+// 	alert(a.prop("tagName"));
+// 	alert(a);
+
+	//ref http://stackoverflow.com/questions/5347357/jquery-get-selected-element-tag-name
+// 	alert(span.prop("tagName"));
+// 	alert(span.attr('class'));
+// 	alert(span);
+	
+// 	alert("index");
+
+</script>
+
+<!--
+
+//-->
+</script>
+
 <h1>
 
 	Images 

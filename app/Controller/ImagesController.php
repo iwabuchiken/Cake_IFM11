@@ -22,18 +22,20 @@ class ImagesController extends AppController {
 		/**********************************
 		 * sort
 		**********************************/
+		$opt_order = $this->_index_2__Sort();
 // 		$opt_order = $this->_index__Sort();
 
 // 		debug("\$opt_order ...");
-// 		debug($opt_order);
+		debug("\$opt_order (from _index_2__Sort) ...");
+		debug($opt_order);
 		
-		//test
-		$opt_order_2 = $this->_index_2__Sort();
+// 		//test
+// 		$opt_order_2 = $this->_index_2__Sort();
 		
-		debug("\$opt_order_2 ...");
-		debug($opt_order_2);
+// 		debug("\$opt_order_2 ...");
+// 		debug($opt_order_2);
 
-		$opt_order = $opt_order_2;
+// 		$opt_order = $opt_order_2;
 		
 // 		//test
 // 		debug("\$_SERVER['REQUEST_URI'] ...");
@@ -255,7 +257,8 @@ class ImagesController extends AppController {
 	
 	
 	public function
-	_index__Sort() {
+	_index_2__Sort() {
+// 	_index__Sort() {
 
 		/*******************************
 			get query
@@ -442,7 +445,8 @@ class ImagesController extends AppController {
 	}//_index__Sort
 	
 	public function
-	_index_2__Sort() {
+	_index__Sort() {
+// 	_index_2__Sort() {
 
 		/*******************************
 			get query
@@ -453,8 +457,9 @@ class ImagesController extends AppController {
 		
 		$switch_direction = @$this->request->query['switch_direction'];
 		
-		debug("\$sort_name => '".$sort_name."' / "."\$sort_direction => '".$sort_direction."'");
+// 		debug("\$sort_name => '".$sort_name."' / "."\$sort_direction => '".$sort_direction."'");
 		
+		debug("\$this->request->query ...");
 		debug($this->request->query);
 		
 		/*******************************
@@ -811,7 +816,7 @@ class ImagesController extends AppController {
 			//test
 			$tmp = $this->Session->read($val_Session_Direction);
 			
-			debug("\$tmp => '$tmp'");
+			debug("\$this->Session->read(\$val_Session_Direction) => '$tmp'");
 			
 		}//if ($session_Direction != null)
 		

@@ -401,3 +401,70 @@ update_AudioFiles_Data__FromList(id) {
 	
 }//update_AudioFiles_Data__FromList
 
+
+function modify_Pagination_Tags() {
+	
+	//ref http://stackoverflow.com/questions/406192/get-current-url-in-javascript answered Jan 2 '09 at 6:57
+	var url      = window.location.href; 
+	
+//	alert(url);
+//	alert("modify_Pagination_Tags");
+
+	//ref http://stackoverflow.com/questions/1748541/jquery-find-link-by-rel answered Nov 17 '09 at 12:31
+	var a = $("a[rel='first']");
+	
+//	if (a == null) {
+//		
+//		alert("a => null");
+//		
+//	} else {
+//		
+//		alert("a => not null");
+//		
+//	}
+	if (a.attr('href') == null) {
+		
+//		alert("a.attr('href') => null");
+		
+	} else {
+		
+//		alert("a.attr('href') => not null");
+
+		// set href
+		var href = a.attr('href');
+		
+		//ref http://stackoverflow.com/questions/10586930/remove-string-from-string-jquery answered May 14 '12 at 16:04
+		var href_new = href.replace("switch_direction=on", "");
+//		var href_new = href.replace("switchi_direction=on", "");
+		
+		alert("a.href => " + href + " || " + "new href => " + href_new);
+
+		// set href
+//		a.attr('href') = href_new;
+		a.attr('href', href_new);
+		
+		// validate
+		var a_2 = $("a[rel='first']");
+		
+		var href_a_2 = a_2.attr('href');
+		
+//		alert("a_2.href => " + href_a_2);
+		
+	}
+	
+//	alert(a.prop("tagName"));
+	alert(a.attr('href'));
+//	alert(a.attr('class'));
+//	alert(a);
+	
+}//function modify_Pagination_Tags()
+
+function onload_Ops() {
+
+	alert("onload");
+	
+	modify_Pagination_Tags();
+	
+}//function onload_Ops()
+
+
