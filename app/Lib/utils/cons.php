@@ -143,5 +143,16 @@ class CONS {
 		section: memos
 	*******************************/
 	public static $clear_search_string = "*";
+
+	/*******************************
+	 section: images
+	*******************************/
+	public static $dflt_SortName = "id";
+	
+	public static $dflt_SortDirection = "asc";
+	
+	public static $str_Sort_ASC = "asc";
+	
+	public static $str_Sort_DESC = "desc";
 	
 }//class CONS

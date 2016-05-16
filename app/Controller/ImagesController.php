@@ -22,7 +22,8 @@ class ImagesController extends AppController {
 		/**********************************
 		 * sort
 		**********************************/
-		$opt_order = $this->_index_2__Sort();
+		$opt_order = $this->_index_Order();
+// 		$opt_order = $this->_index_2__Sort();
 // 		$opt_order = $this->_index__Sort();
 
 // 		debug("\$opt_order ...");
@@ -107,30 +108,143 @@ class ImagesController extends AppController {
 		$current_url = Router::url('/', true ).substr($this->here, strlen($this->webroot));
 		$this->Session->write('current_url', $current_url);
 		
-		//test
-		$tmp_url = $this->Session->read('current_url');
-		
-// 		debug("\$tmp_url => ".$tmp_url);
-
-		//test
-		$session_Key = "abc";
-		
-		$session_Value = "DEF";
-		
-		// write session
-		$this->Session->write($session_Key, $session_Value);
-		
-		// read session
-		$tmp = $this->Session->read($session_Key);
-		
-		debug("\$tmp => ".$tmp);
-
-		//test
-		$this->test_Use_Session(0);
-// 		$this->test_Use_Session(false);
-		
 	}//public function index()
 
+	public function
+	_index_Order() {
+	
+		/*******************************
+		 get query
+		*******************************/
+		$sort_name = @$this->request->query['sort'];
+	
+		$sort_direction = @$this->request->query['direction'];
+
+		$dflt_SortName = CONS::$dflt_SortName;	//=> 'id'
+		
+		debug("\$this->request->query ...");
+		debug($this->request->query);
+	
+		/*******************************
+		 prep: vars
+		*****************************/
+		/*******************************
+		 direction
+		*******************************/
+// 		$val_Session_SortName = "sort_name";
+	
+// 		$val_Session_Direction__ASC = "asc";
+// 		$val_Session_Direction__DESC = "desc";
+	
+		$current_Sort = "";
+		$current_Direction = "";
+	
+// 		$dflt_Session_SortName = "id";
+	
+		/*******************************
+		 judge: query::sort_name ?
+		*******************************/
+		$current_Sort = $this->_index_Order__Current_SortName(
+								$sort_name, $dflt_SortName);
+
+		/*******************************
+		 judge: query::sort_direction ?
+		*******************************/
+		$current_Direction = $this->_index_Order__Current_SortDirection(
+// 		$current_Direction = $this->_index_2__Sort__Switch_Direction(
+						$sort_direction);
+					
+		/*******************************
+		 set
+		*******************************/
+			// 		$opt_order = array("Image.".$sort_name => $sort_direction);
+		$opt_order = array();
+	
+		$this->set("sort", $current_Sort);
+		// 		$this->set("sort", $sort_name);
+	
+		$this->set("direction", $current_Direction);
+		// 		$this->set("direction", $sort_direction);
+	
+		/*******************************
+		 return
+		*******************************/
+		$opt_order = array("Image.".$current_Sort => $current_Direction);
+		// 		$opt_order = array("Image.".$sort_name => $sort_direction);
+	
+		return $opt_order;
+	
+	}//_index_Order
+	
+	public function
+	_index_Order__Current_SortName
+	($sort_name, $dflt_SortName) {
+// 	($sort_name, $val_Session_SortName, $dflt_Session_SortName) {
+	
+		if ($sort_name == null) {
+	
+			debug("\$sort_name => null");
+	
+			$current_Sort = $dflt_SortName;
+	
+		} else {//$sort_name == null
+	
+			// set: current sort name
+			$current_Sort = $sort_name;
+	
+		}//$sort_name == null
+	
+	
+		debug("\$current_Sort => ".$current_Sort);
+	
+		/*******************************
+		 return
+		*******************************/
+		return $current_Sort;
+	
+	}//_index_Order__Current_SortName
+	
+	public function
+	_index_Order__Current_SortDirection
+	($sort_direction) {
+	
+		/*******************************
+		 vars
+		*******************************/
+		$current_Direction = "";
+	
+		/*******************************
+		 judge
+		*******************************/
+		if ($sort_direction == null) {
+				
+			$current_Direction = CONS::$dflt_SortDirection;
+	
+		} else {//if ($sort_direction == null)
+
+			if ($sort_direction == CONS::$str_Sort_ASC || $sort_direction == CONS::$str_Sort_DESC) {
+			
+				$current_Direction = $sort_direction;
+			
+			} else {
+			
+				$current_Direction = CONS::$dflt_SortDirection;
+				
+			}//if ($sort_direction == CONS::$str_Sort_ASC || $sort_direction == CONS::$str_Sort_DESC)
+			
+		}////if ($sort_direction == null)
+	
+		/*******************************
+		 return
+		*******************************/
+		debug("\$current_Direction => ".$current_Direction);
+	
+		return $current_Direction;
+	
+	}//_index_Order__Current_SortDirection
+	
+	
+	
 // 	public function index() {
 	public function index_2() {
 		
