@@ -232,6 +232,9 @@ class ImagesController extends AppController {
 		$tmp = $this->Session->read($session_Key);
 		
 		debug("\$tmp => ".$tmp);
+
+// 		//test
+// 		debug($this->Paginator->url());	//=> undefined
 		
 // 		debug($_SESSION);
 		

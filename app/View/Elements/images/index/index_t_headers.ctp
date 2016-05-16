@@ -11,11 +11,16 @@
 		<th colspan="1" class="th_images_blue">
 
 			<?php echo $this->Html->link(
-				'ID',
-				array('controller' => 'images', 
-						'action' => 'index',
-						'?' => "sort=id"),
-				array('class'	=> 'has_link'));
+					'ID',
+					array('controller' => 'images', 
+							'action' => 'index',
+							'?' => "sort=id"),
+					array(
+						'class'	=> 'has_link',
+						'method'	=> 'post',
+					)
+				);
+// 				array('class'	=> 'has_link'));
 			?>
 		
 <!-- 			ID -->
