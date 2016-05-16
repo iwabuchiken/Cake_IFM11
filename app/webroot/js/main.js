@@ -437,7 +437,7 @@ function modify_Pagination_Tags() {
 		var href_new = href.replace("switch_direction=on", "");
 //		var href_new = href.replace("switchi_direction=on", "");
 		
-		alert("a.href => " + href + " || " + "new href => " + href_new);
+//		alert("a.href => " + href + " || " + "new href => " + href_new);
 
 		// set href
 //		a.attr('href') = href_new;
@@ -453,7 +453,7 @@ function modify_Pagination_Tags() {
 	}
 	
 //	alert(a.prop("tagName"));
-	alert(a.attr('href'));
+//	alert(a.attr('href'));
 //	alert(a.attr('class'));
 //	alert(a);
 	
@@ -461,7 +461,7 @@ function modify_Pagination_Tags() {
 
 function onload_Ops() {
 
-	alert("onload");
+//	alert("onload");
 	
 	modify_Pagination_Tags();
 	
