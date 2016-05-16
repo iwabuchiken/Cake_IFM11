@@ -22,10 +22,10 @@ class ImagesController extends AppController {
 		/**********************************
 		 * sort
 		**********************************/
-		$opt_order = $this->_index__Sort();
+// 		$opt_order = $this->_index__Sort();
 
-		debug("\$opt_order ...");
-		debug($opt_order);
+// 		debug("\$opt_order ...");
+// 		debug($opt_order);
 		
 		//test
 		$opt_order_2 = $this->_index_2__Sort();
@@ -33,6 +33,8 @@ class ImagesController extends AppController {
 		debug("\$opt_order_2 ...");
 		debug($opt_order_2);
 
+		$opt_order = $opt_order_2;
+		
 // 		//test
 // 		debug("\$_SERVER['REQUEST_URI'] ...");
 // 		debug($_SERVER['REQUEST_URI']);
@@ -281,6 +283,12 @@ class ImagesController extends AppController {
 		
 		$val_Session_Direction__ASC = "asc";
 		$val_Session_Direction__DESC = "desc";
+		
+		//test
+		// read the sessin value
+		$tmp = $this->Session->read($val_Session_Direction);
+		
+		debug("_index__Sort : session direction => $tmp");
 		
 		/*******************************
 			query is not given
@@ -542,7 +550,7 @@ class ImagesController extends AppController {
 			} else if ($has_Page_Param !== false) {
 // 			} else if ($has_Page_Param === true) {
 				
-				debug("pagination param in the uri");
+				debug("pagination param in the uri ==> not switching the direction");
 				
 				/*******************************
 				 judge: query::sort_direction ?
@@ -748,15 +756,24 @@ class ImagesController extends AppController {
 		
 			// value ==> asc?
 			if ($session_Direction == CONS::$session_Value__Direction_ASC) {
-			
+
+				debug("\$session_Direction => ".CONS::$session_Value__Direction_ASC);
+				
 				// update session value
 				$this->Session->write($val_Session_Direction, 
 							CONS::$session_Value__Direction_DESC);
 
 				$current_Direction = CONS::$session_Value__Direction_DESC;
 				
+				//test
+				$tmp = $this->Session->read($val_Session_Direction);
+				
+				debug("session read => $tmp");
+				
 			} else {
 			
+				debug("\$session_Direction => ".CONS::$session_Value__Direction_DESC);
+				
 				// update session value
 				$this->Session->write($val_Session_Direction,
 						CONS::$session_Value__Direction_ASC);
