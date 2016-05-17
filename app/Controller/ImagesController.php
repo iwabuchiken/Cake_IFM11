@@ -105,9 +105,11 @@ class ImagesController extends AppController {
 		*******************************/
 		$direction = "desc";
 		
-		Utils::build_URL__Sort(CONS::$key_Build_URL__Column_FileName, $direction);
+// 		Utils::build_URL__Sort(CONS::$key_Build_URL__Column_FileName, $direction);
 // 		Utils::build_URL(CONS::$key_Build_URL__Column_FileName);
-// 		Utils::test__Build_URI();
+		Utils::test__Build_URI();
+		
+		
 		
 		/**********************************
 		* store: current url
@@ -133,6 +135,9 @@ class ImagesController extends AppController {
 		
 		debug("\$this->request->query ...");
 		debug($this->request->query);
+		
+		debug("\$this->request ...");
+		debug($this->request);
 	
 		/*******************************
 		 prep: vars

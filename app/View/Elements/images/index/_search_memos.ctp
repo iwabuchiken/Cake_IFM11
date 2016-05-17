@@ -8,7 +8,12 @@
 								array(
 // 										'type'=>'post',
 										'type'=>'get',
-										'action'	=> 'index'
+										'url'	=> "/images/index?".parse_url($_SERVER['REQUEST_URI'])['query'],
+// 										'url'	=> "/?".parse_url($_SERVER['REQUEST_URI'])['query'],
+// 										'url'	=> "?".parse_url($_SERVER['REQUEST_URI'])['query'],
+// 										'url'	=> substr($_SERVER['REQUEST_URI'], 1)
+// 										'url'	=> $_SERVER['REQUEST_URI']
+// 										'action'	=> 'index'
  								)
 			);
 		
@@ -59,6 +64,23 @@
 					'default'	=> CONS::$str_Filter_RadioButtons_Memo_AND
 // 					'options' => array(1 => 'Personal ', 2 => 'Company')
 			));
+			
+			//test
+			?>
+			
+			<input type="hidden" name="Language" value="English">
+			
+			<?php 
+			
+			
+// 			$this->Form->hidden('sort_test', array("value" => "file_name"));	//=> not displayed
+// 			$this->Form->hidden('sort_test', array("value" => "file_name", "id" => "sort_name_hidden"));
+			
+// 			//ref http://stackoverflow.com/questions/19213165/cakephp-hidden-input-field
+// 			$this->Form->input('group_id', 
+// 						array('type' => 'hidden', 'value' => "aaabbb")
+			
+// 			);
 			
 			echo $this->Form->end($options);
 			

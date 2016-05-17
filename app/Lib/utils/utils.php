@@ -5698,6 +5698,7 @@
 			debug(http_build_query($output));
 
 			// file_name
+			//ref http://www.w3schools.com/php/func_array_key_exists.asp
 			if (array_key_exists("sort", $output) == true) {
 				
 				debug("\$output['sort'] => ".$output['sort']);
@@ -5731,7 +5732,7 @@
 			
 			} else {
 			
-				debug("key 'diretion' => not exist");
+				debug("key 'direction' => not exist");
 				
 			}//if (array_key_exists("direction", $output) == true)
 			
@@ -5743,6 +5744,8 @@
 				setup
 			*******************************/
 			$uri = $_SERVER['REQUEST_URI'];
+
+			debug("\$_SERVER['REQUEST_URI'] => ".$uri);
 			
 			$path_and_query = parse_url($uri);
 
@@ -5778,7 +5781,7 @@
 
 				if (isset($query)) {
 				
-					debug("\$query => set");
+// 					debug("\$query => set");
 					
 					//ref http://php.net/manual/en/function.parse-str.php
 					parse_str($query, $output);
@@ -5810,27 +5813,78 @@
 						
 					}//if (array_key_exists("direction", $output) == true)
 				
+					/*******************************
+						setup: filter => memo
+					*******************************/
+					if (array_key_exists(CONS::$str_Filter_Memo, $output) == true) {
+						
+						 $val = $output[CONS::$str_Filter_Memo];
+						 
+						 if ($val == CONS::$str_Filter_Memo_all) {
+						 
+						 	//ref http://php.net/manual/en/function.unset.php
+						 	unset($output[CONS::$str_Filter_Memo]);
+						 	
+						 	debug("\$output[".CONS::$str_Filter_Memo."] => unset");
+// 						 	debug("\$output[".$output[CONS::$str_Filter_Memo]."] => unset");
+						 	debug("\$output is now ...");
+						 	debug($output);
+						 
+						 } else {
+						 	
+						 }//if ($val == CONS::$str_Filter_Memo_all)
+						
+					}//if (array_key_exists("direction", $output) == true)
+				
+					/*******************************
+						setup: filter => file_name
+					*******************************/
+					if (array_key_exists(CONS::$str_Filter_File_Name, $output) == true) {
+						
+						 $val = $output[CONS::$str_Filter_File_Name];
+						 
+						 if ($val == CONS::$str_Filter_File_Name_all) {
+						 
+						 	unset($output[CONS::$str_Filter_File_Name]);
+						 	
+						 	debug("\$output[".$output[CONS::$str_Filter_File_Name]."] => unset");
+						 	debug("\$output is now ...");
+						 	debug($output);
+						 
+						 } else {
+						 	
+						 }//if ($val == CONS::$str_Filter_Memo_all)
+						
+					}//if (array_key_exists("direction", $output) == true)
+				
 				} else {//isset($query)
 				
-					debug("\$query => NOT set");
+// 					debug("\$query => NOT set");
 					
 					/*******************************
 						build: param
 					*******************************/
 // 					$output = array();
 					
-					$output['sort'] = CONS::$key_Param__Column_FileName;
+					$output['sort'] = $key;
+// 					$output['sort'] = CONS::$key_Param__Column_FileName;
 				
-					$output['direction'] = CONS::$key_Param__Sort_Direction__DEFAULT;	//=> 'asc'
+					$output['direction'] = $direction;
+// 					$output['direction'] = CONS::$key_Param__Sort_Direction__DEFAULT;	//=> 'asc'
 				
 				}//isset($query)
 
 				/*******************************
 					build: url
 				*******************************/
+				//ref http://stackoverflow.com/questions/13276226/generate-url-with-parameters-from-an-array answered Nov 7 '12 at 18:59
 				$new_query = http_build_query($output);
 			
-				$new_url = "$path?$new_query";
+// 				$new_url = $_SERVER['HTTP_REFERER']."?$new_query";
+				$new_url = "?$new_query";
+				//ref substr http://php.net/manual/en/function.substr.php
+// 				$new_url = substr($path,1)."?$new_query";
+// 				$new_url = "$path?$new_query";
 				
 			} else {
 			
@@ -5838,6 +5892,10 @@
 				
 			}//if ($key == CONS::$key_Build_URL__Column_FileName)
 
+// 			//test
+// 			debug("\$_SERVER['SERVER_NAME'] => ".$_SERVER['SERVER_NAME']);
+// 			debug("\$_SERVER['HTTP_REFERER'] => ".$_SERVER['HTTP_REFERER']);
+			
 			/*******************************
 				return
 			*******************************/

@@ -34,18 +34,29 @@
 			<?php 
 			
 // 					debug($_SERVER['REQUEST_URI']);
-			
+
+					// sort => asc
+					$direction = "asc";
+					$key = CONS::$key_Build_URL__Column_FileName;
+						
 					echo $this->Html->link(
 						'△',
-						array('controller' => 'images', 
-								'action' => 'index',
-								'?' => "sort=file_name&direction=asc"),
+							
+						Utils::build_URL__Sort($key, $direction),
+// 						array('controller' => 'images', 
+// 								'action' => 'index',
+// 								'?' => "sort=file_name&direction=asc"),
 
 						array('class'	=> 'has_link'));
 
+					// sort => desc
+					$direction = "desc";
+					$key = CONS::$key_Build_URL__Column_FileName;
+					
 					echo $this->Html->link(
 						'▽',
-						"http://localhost/Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc",
+						Utils::build_URL__Sort($key, $direction),
+// 						"http://localhost/Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc",
 // 						array('url' => "http://localhost/Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc")
 // 						array('controller' => 'images', 
 // 								'action' => 'index',

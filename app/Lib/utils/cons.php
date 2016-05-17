@@ -100,6 +100,22 @@ class CONS {
 	public static $str_Filter_TableName = "filter_table_name";
 	public static $str_Filter_TableName_all = "*";
 	
+	// "Utils::build_URL__Sort"-related
+	public static $dflt_SortName = "id";
+	
+	public static $dflt_SortDirection = "asc";
+	
+	public static $str_Sort_ASC = "asc";
+	
+	public static $str_Sort_DESC = "desc";
+	
+	public static $key_Build_URL__Column_FileName = "file_name";
+	
+	public static $key_Param__Column_FileName = "file_name";
+	
+	public static $key_Param__Sort_Direction__DEFAULT = "asc";
+	
+	
 	/*******************************
 		paginate
 	*******************************/
@@ -147,18 +163,18 @@ class CONS {
 	/*******************************
 	 section: images
 	*******************************/
-	public static $dflt_SortName = "id";
+// 	public static $dflt_SortName = "id";
 	
-	public static $dflt_SortDirection = "asc";
+// 	public static $dflt_SortDirection = "asc";
 	
-	public static $str_Sort_ASC = "asc";
+// 	public static $str_Sort_ASC = "asc";
 	
-	public static $str_Sort_DESC = "desc";
+// 	public static $str_Sort_DESC = "desc";
 	
-	public static $key_Build_URL__Column_FileName = "file_name";
+// 	public static $key_Build_URL__Column_FileName = "file_name";
 	
-	public static $key_Param__Column_FileName = "file_name";
+// 	public static $key_Param__Column_FileName = "file_name";
 	
-	public static $key_Param__Sort_Direction__DEFAULT = "asc";
+// 	public static $key_Param__Sort_Direction__DEFAULT = "asc";
 	
 }//class CONS

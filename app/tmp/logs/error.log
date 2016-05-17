@@ -2116,3 +2116,51 @@ Stack Trace:
 #3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2016-05-17 03:37:25 Error: [MissingControllerException] Controller class EclipseLunaController could not be found.
+Exception Attributes: array (
+  'class' => 'EclipseLunaController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/Eclipse_Luna/Cake_IFM11/?filter_memo=plants&RBs_AND_OR_Memo=AND&sort=file_name&direction=desc
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 03:38:24 Error: [MissingControllerException] Controller class EclipseLunaController could not be found.
+Exception Attributes: array (
+  'class' => 'EclipseLunaController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/Eclipse_Luna/Cake_IFM11/?filter_memo=plants&RBs_AND_OR_Memo=AND&sort=file_name&direction=desc
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-17 03:41:45 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 5833]
+2016-05-17 03:41:45 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /Eclipse_Luna/Cake_IFM11/?filter_memo=plants&RBs_AND_OR_Memo=AND
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 5833)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 5833, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 5833, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 03:45:12 Error: [MissingActionException] Action ImagesController::Eclipse_Luna() could not be found.
+Exception Attributes: array (
+  'controller' => 'ImagesController',
+  'action' => 'Eclipse_Luna',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/images/Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=asc
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-17 04:23:55 Error: [MissingControllerException] Controller class EclipseLunaController could not be found.
+Exception Attributes: array (
+  'class' => 'EclipseLunaController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/Eclipse_Luna/Cake_IFM11/?filter_memo=plants&RBs_AND_OR_Memo=AND
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
