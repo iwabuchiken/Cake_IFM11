@@ -5666,7 +5666,190 @@
 			$file_db = null;
 			
 		}//insert_Data__Realm_DBFiles($fname, $numOf_Memos)
+
+		static function test__Build_URI() {
+			
+			//ref http://stackoverflow.com/questions/6768793/get-the-full-url-in-php answered Jul 20 '11 at 21:33
+			//ref http://php.net/manual/en/reserved.variables.server.php
+// 			$this->set("uri", $_SERVER['REQUEST_URI']);
+			
+			debug("QUERY_STRING => ".$_SERVER['QUERY_STRING']);
+			
+			$query = $_SERVER['QUERY_STRING'];
+			
+			debug("REQUEST_URI => ".$_SERVER['REQUEST_URI']);
+			// 		debug("\$_GET['link'] => ".$_GET['link']);
+			
+			//ref http://stackoverflow.com/questions/11480763/how-to-get-parameters-from-this-url-string answered Jul 14 '12 at 3:47
+			debug(parse_url($_SERVER['REQUEST_URI']));
+
+			debug("build url ...");
+			debug(parse_url($_SERVER['REQUEST_URI'])['path']."?".parse_url($_SERVER['REQUEST_URI'])['query']);
+			
+			//ref http://php.net/manual/en/function.parse-str.php
+			parse_str($query, $output);
+			
+			debug("parse_str ... ");
+			debug($output);
+			// 		debug(parse_str($query));
+			// 		debug(parse_str($_SERVER['QUERY_STRING']));
+
+			debug("build query string ...");
+			debug(http_build_query($output));
+
+			// file_name
+			if (array_key_exists("sort", $output) == true) {
+				
+				debug("\$output['sort'] => ".$output['sort']);
+				
+			} else {//if (array_key_exists("sort", $output) == true)
+				
+				debug("no 'sort' key");
+				
+			}//if (array_key_exists("sort", $output) == true)
+			
+			/*******************************
+				query string => edit
+			*******************************/
+			if (array_key_exists("direction", $output) == true) {
+			
+				if (isset($output['direction']) == true) {
+				
+					$output['direction'] = "asc";
+				
+					debug("\$outout => edited ...");
+					
+					debug($output);
+					
+					debug("new query string => ".http_build_query($output));
+					
+				} else {
+				
+					debug("\$output['direction'] => not set");
+					
+				}//if (isset($output['direction']) == true)
+			
+			} else {
+			
+				debug("key 'diretion' => not exist");
+				
+			}//if (array_key_exists("direction", $output) == true)
+			
+		}//test__Build_URI()
+		
+		static function build_URL__Sort($key, $direction) {
+
+			/*******************************
+				setup
+			*******************************/
+			$uri = $_SERVER['REQUEST_URI'];
+			
+			$path_and_query = parse_url($uri);
+
+			$path = $path_and_query['path'];
+			
+			$query = @$path_and_query['query'];
+// 			$query = $path_and_query['query'];
+			
+			$new_url = "";
+			
+			$output = array();
+// 			//test
+// 			if (isset($query)) {
+				
+// 				debug("\$query => set");
+				
+// 			} else {//isset($query)
+				
+// 				debug("\$query => NOT set");
+				
+// 			}//isset($query)
+			
+// 			if (isset($query) && $query == "") {
+				
+// 				debug("\$query => set, and blank");
+				
+// 			}//isset($query)
+			
+			/*******************************
+				build
+			*******************************/
+			if ($key == CONS::$key_Build_URL__Column_FileName) {
+
+				if (isset($query)) {
+				
+					debug("\$query => set");
+					
+					//ref http://php.net/manual/en/function.parse-str.php
+					parse_str($query, $output);
+
+					/*******************************
+						setup: sort name
+					*******************************/
+					if (array_key_exists("sort", $output) == true) {
+							
+						$output['sort'] = CONS::$key_Param__Column_FileName;	//=> 'file_name 
+						
+					} else {//if (array_key_exists("sort", $output) == true)
+						
+						$output['sort'] = CONS::$key_Param__Column_FileName;	//=> 'file_name
+						
+					}//if (array_key_exists("sort", $output) == true)
+				
+					/*******************************
+						setup: sort direction
+					*******************************/
+					if (array_key_exists("direction", $output) == true) {
+						
+						$output['direction'] = $direction;	//=> 'file_name 
+						
+					} else {//if (array_key_exists("direction", $output) == true)
+						
+						$output['direction'] = $direction;	//=> 'asc'
+// 						$output['direction'] = CONS::$dflt_SortDirection;	//=> 'asc'
+						
+					}//if (array_key_exists("direction", $output) == true)
+				
+				} else {//isset($query)
+				
+					debug("\$query => NOT set");
+					
+					/*******************************
+						build: param
+					*******************************/
+// 					$output = array();
+					
+					$output['sort'] = CONS::$key_Param__Column_FileName;
+				
+					$output['direction'] = CONS::$key_Param__Sort_Direction__DEFAULT;	//=> 'asc'
+				
+				}//isset($query)
+
+				/*******************************
+					build: url
+				*******************************/
+				$new_query = http_build_query($output);
+			
+				$new_url = "$path?$new_query";
+				
+			} else {
+			
+				debug("unknown key => $key");
+				
+			}//if ($key == CONS::$key_Build_URL__Column_FileName)
+
+			/*******************************
+				return
+			*******************************/
+			debug("\$new_url => ".$new_url);
+			
+			return $new_url;
+// 			return "";
+			
+		}//static function build_URL($key)
+		
 // 		static function
+
 		
 	}//class Utils
 	

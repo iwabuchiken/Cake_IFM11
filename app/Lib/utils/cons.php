@@ -155,4 +155,10 @@ class CONS {
 	
 	public static $str_Sort_DESC = "desc";
 	
+	public static $key_Build_URL__Column_FileName = "file_name";
+	
+	public static $key_Param__Column_FileName = "file_name";
+	
+	public static $key_Param__Sort_Direction__DEFAULT = "asc";
+	
 }//class CONS

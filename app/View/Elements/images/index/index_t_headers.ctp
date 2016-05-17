@@ -29,12 +29,36 @@
 		
 		<th colspan="3" class="th_images_green">
 
-			<?php echo $this->Html->link(
-						'File name',
+			File name
+		
+			<?php 
+			
+// 					debug($_SERVER['REQUEST_URI']);
+			
+					echo $this->Html->link(
+						'△',
 						array('controller' => 'images', 
 								'action' => 'index',
-								'?' => "sort=file_name"),
+								'?' => "sort=file_name&direction=asc"),
+
 						array('class'	=> 'has_link'));
+
+					echo $this->Html->link(
+						'▽',
+						"http://localhost/Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc",
+// 						array('url' => "http://localhost/Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc")
+// 						array('controller' => 'images', 
+// 								'action' => 'index',
+// 								'?' => "sort=file_name&direction=desc"),
+
+						array('class'	=> 'has_link'));
+
+// 					echo $this->Html->link(
+// 						'File name',
+// 						array('controller' => 'images', 
+// 								'action' => 'index',
+// 								'?' => "sort=file_name"),
+// 						array('class'	=> 'has_link'));
 			?>
 		
 <!-- 			File name -->

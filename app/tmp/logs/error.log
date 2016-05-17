@@ -2086,3 +2086,33 @@ Request URL: /Eclipse_Luna/Cake_IFM11/index?switch_direction=on
 Stack Trace:
 #0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-05-17 01:47:15 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Elements\images\index\index_t_headers.ctp, line 51]
+2016-05-17 01:47:15 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 51, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 51, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 01:47:47 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\View\Elements\images\index\index_t_headers.ctp, line 51]
+2016-05-17 01:47:47 Error: [FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 51, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS\\WS\\Ecl...', 51, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-05-17 02:12:37 Error: Fatal Error (1): Using $this when not in object context in [C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 5674]
+2016-05-17 02:12:37 Error: [FatalErrorException] Using $this when not in object context
+Request URL: /Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc
+Stack Trace:
+#0 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Using $this whe...', 'C:\\WORKS\\WS\\Ecl...', 5674)
+#1 [internal function]: ErrorHandler::handleError(1, 'Using $this whe...', 'C:\\WORKS\\WS\\Ecl...', 5674, Array)
+#2 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Using $this whe...', 'C:\\WORKS\\WS\\Ecl...', 5674, Array)
+#3 C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -83,7 +83,7 @@ class ImagesController extends AppController {
 		$paginateData = $this->params['paging']['Image'];
 		
 		/**********************************
-		 * total number of images
+		 * set: meta data
 		**********************************/
 		$this->set('total_num_of_images', count($this->Image->find('all')));
 		
@@ -96,10 +96,19 @@ class ImagesController extends AppController {
 		$this->set('num_of_images_filtered', $paginateData['count']);  
 		
 		/**********************************
-		 * total number of images
+		 * set: images
 		**********************************/
 		$this->set('images', $images);
 
+		/*******************************
+			set: vars
+		*******************************/
+		$direction = "desc";
+		
+		Utils::build_URL__Sort(CONS::$key_Build_URL__Column_FileName, $direction);
+// 		Utils::build_URL(CONS::$key_Build_URL__Column_FileName);
+// 		Utils::test__Build_URI();
+		
 		/**********************************
 		* store: current url
 		**********************************/
