@@ -8,12 +8,12 @@
 								array(
 // 										'type'=>'post',
 										'type'=>'get',
-										'url'	=> "/images/index?".parse_url($_SERVER['REQUEST_URI'])['query'],
+// 										'url'	=> "/images/index?".parse_url($_SERVER['REQUEST_URI'])['query'],
 // 										'url'	=> "/?".parse_url($_SERVER['REQUEST_URI'])['query'],
 // 										'url'	=> "?".parse_url($_SERVER['REQUEST_URI'])['query'],
 // 										'url'	=> substr($_SERVER['REQUEST_URI'], 1)
 // 										'url'	=> $_SERVER['REQUEST_URI']
-// 										'action'	=> 'index'
+										'action'	=> 'index'
  								)
 			);
 		
@@ -68,7 +68,7 @@
 			//test
 			?>
 			
-			<input type="hidden" name="Language" value="English">
+<!-- 			<input type="hidden" name="Language" value="English"> -->
 			
 			<?php 
 			

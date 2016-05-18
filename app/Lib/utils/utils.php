@@ -5667,76 +5667,76 @@
 			
 		}//insert_Data__Realm_DBFiles($fname, $numOf_Memos)
 
-		static function test__Build_URI() {
+// 		static function test__Build_URI() {
 			
-			//ref http://stackoverflow.com/questions/6768793/get-the-full-url-in-php answered Jul 20 '11 at 21:33
-			//ref http://php.net/manual/en/reserved.variables.server.php
-// 			$this->set("uri", $_SERVER['REQUEST_URI']);
+// 			//ref http://stackoverflow.com/questions/6768793/get-the-full-url-in-php answered Jul 20 '11 at 21:33
+// 			//ref http://php.net/manual/en/reserved.variables.server.php
+// // 			$this->set("uri", $_SERVER['REQUEST_URI']);
 			
-			debug("QUERY_STRING => ".$_SERVER['QUERY_STRING']);
+// 			debug("QUERY_STRING => ".$_SERVER['QUERY_STRING']);
 			
-			$query = $_SERVER['QUERY_STRING'];
+// 			$query = $_SERVER['QUERY_STRING'];
 			
-			debug("REQUEST_URI => ".$_SERVER['REQUEST_URI']);
-			// 		debug("\$_GET['link'] => ".$_GET['link']);
+// 			debug("REQUEST_URI => ".$_SERVER['REQUEST_URI']);
+// 			// 		debug("\$_GET['link'] => ".$_GET['link']);
 			
-			//ref http://stackoverflow.com/questions/11480763/how-to-get-parameters-from-this-url-string answered Jul 14 '12 at 3:47
-			debug(parse_url($_SERVER['REQUEST_URI']));
+// 			//ref http://stackoverflow.com/questions/11480763/how-to-get-parameters-from-this-url-string answered Jul 14 '12 at 3:47
+// 			debug(parse_url($_SERVER['REQUEST_URI']));
 
-			debug("build url ...");
-			debug(parse_url($_SERVER['REQUEST_URI'])['path']."?".parse_url($_SERVER['REQUEST_URI'])['query']);
+// 			debug("build url ...");
+// 			debug(parse_url($_SERVER['REQUEST_URI'])['path']."?".parse_url($_SERVER['REQUEST_URI'])['query']);
 			
-			//ref http://php.net/manual/en/function.parse-str.php
-			parse_str($query, $output);
+// 			//ref http://php.net/manual/en/function.parse-str.php
+// 			parse_str($query, $output);
 			
-			debug("parse_str ... ");
-			debug($output);
-			// 		debug(parse_str($query));
-			// 		debug(parse_str($_SERVER['QUERY_STRING']));
+// 			debug("parse_str ... ");
+// 			debug($output);
+// 			// 		debug(parse_str($query));
+// 			// 		debug(parse_str($_SERVER['QUERY_STRING']));
 
-			debug("build query string ...");
-			debug(http_build_query($output));
+// 			debug("build query string ...");
+// 			debug(http_build_query($output));
 
-			// file_name
-			//ref http://www.w3schools.com/php/func_array_key_exists.asp
-			if (array_key_exists("sort", $output) == true) {
+// 			// file_name
+// 			//ref http://www.w3schools.com/php/func_array_key_exists.asp
+// 			if (array_key_exists("sort", $output) == true) {
 				
-				debug("\$output['sort'] => ".$output['sort']);
+// 				debug("\$output['sort'] => ".$output['sort']);
 				
-			} else {//if (array_key_exists("sort", $output) == true)
+// 			} else {//if (array_key_exists("sort", $output) == true)
 				
-				debug("no 'sort' key");
+// 				debug("no 'sort' key");
 				
-			}//if (array_key_exists("sort", $output) == true)
+// 			}//if (array_key_exists("sort", $output) == true)
 			
-			/*******************************
-				query string => edit
-			*******************************/
-			if (array_key_exists("direction", $output) == true) {
+// 			/*******************************
+// 				query string => edit
+// 			*******************************/
+// 			if (array_key_exists("direction", $output) == true) {
 			
-				if (isset($output['direction']) == true) {
+// 				if (isset($output['direction']) == true) {
 				
-					$output['direction'] = "asc";
+// 					$output['direction'] = "asc";
 				
-					debug("\$outout => edited ...");
+// 					debug("\$outout => edited ...");
 					
-					debug($output);
+// 					debug($output);
 					
-					debug("new query string => ".http_build_query($output));
+// 					debug("new query string => ".http_build_query($output));
 					
-				} else {
+// 				} else {
 				
-					debug("\$output['direction'] => not set");
+// 					debug("\$output['direction'] => not set");
 					
-				}//if (isset($output['direction']) == true)
+// 				}//if (isset($output['direction']) == true)
 			
-			} else {
+// 			} else {
 			
-				debug("key 'direction' => not exist");
+// 				debug("key 'direction' => not exist");
 				
-			}//if (array_key_exists("direction", $output) == true)
+// 			}//if (array_key_exists("direction", $output) == true)
 			
-		}//test__Build_URI()
+// 		}//test__Build_URI()
 		
 		static function build_URL__Sort($key, $direction) {
 
@@ -5745,7 +5745,7 @@
 			*******************************/
 			$uri = $_SERVER['REQUEST_URI'];
 
-			debug("\$_SERVER['REQUEST_URI'] => ".$uri);
+// 			debug("\$_SERVER['REQUEST_URI'] => ".$uri);
 			
 			$path_and_query = parse_url($uri);
 
@@ -5899,7 +5899,7 @@
 			/*******************************
 				return
 			*******************************/
-			debug("\$new_url => ".$new_url);
+// 			debug("\$new_url => ".$new_url);
 			
 			return $new_url;
 // 			return "";

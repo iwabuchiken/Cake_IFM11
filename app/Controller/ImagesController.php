@@ -27,8 +27,8 @@ class ImagesController extends AppController {
 // 		$opt_order = $this->_index__Sort();
 
 // 		debug("\$opt_order ...");
-		debug("\$opt_order (from _index_2__Sort) ...");
-		debug($opt_order);
+// 		debug("\$opt_order (from _index_2__Sort) ...");
+// 		debug($opt_order);
 		
 // 		//test
 // 		$opt_order_2 = $this->_index_2__Sort();
@@ -107,7 +107,7 @@ class ImagesController extends AppController {
 		
 // 		Utils::build_URL__Sort(CONS::$key_Build_URL__Column_FileName, $direction);
 // 		Utils::build_URL(CONS::$key_Build_URL__Column_FileName);
-		Utils::test__Build_URI();
+// 		Utils::test__Build_URI();
 		
 		
 		
@@ -133,11 +133,11 @@ class ImagesController extends AppController {
 
 		$dflt_SortName = CONS::$dflt_SortName;	//=> 'id'
 		
-		debug("\$this->request->query ...");
-		debug($this->request->query);
+// 		debug("\$this->request->query ...");
+// 		debug($this->request->query);
 		
-		debug("\$this->request ...");
-		debug($this->request);
+// 		debug("\$this->request ...");
+// 		debug($this->request);
 	
 		/*******************************
 		 prep: vars

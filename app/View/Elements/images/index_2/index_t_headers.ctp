@@ -4,18 +4,23 @@
 		
 			$param = array(
 						'controller' => 'images', 
-						'action' => 'index_2',);
+						'action' => 'index',);
 		
 		?>
 		
 		<th colspan="1" class="th_images_blue">
 
 			<?php echo $this->Html->link(
-				'ID',
-				array('controller' => 'images', 
-						'action' => 'index_2',
-						'?' => "sort=id"),
-				array('class'	=> 'has_link'));
+					'ID',
+					array('controller' => 'images', 
+							'action' => 'index',
+							'?' => "sort=id"),
+					array(
+						'class'	=> 'has_link',
+						'method'	=> 'post',
+					)
+				);
+// 				array('class'	=> 'has_link'));
 			?>
 		
 <!-- 			ID -->
@@ -24,12 +29,47 @@
 		
 		<th colspan="3" class="th_images_green">
 
-			<?php echo $this->Html->link(
-						'File name',
-						array('controller' => 'images', 
-								'action' => 'index_2',
-								'?' => "sort=file_name"),
+			File name
+		
+			<?php 
+			
+// 					debug($_SERVER['REQUEST_URI']);
+
+					// sort => asc
+					$direction = "asc";
+					$key = CONS::$key_Build_URL__Column_FileName;
+						
+					echo $this->Html->link(
+						'△',
+							
+						Utils::build_URL__Sort($key, $direction),
+// 						array('controller' => 'images', 
+// 								'action' => 'index',
+// 								'?' => "sort=file_name&direction=asc"),
+
 						array('class'	=> 'has_link'));
+
+					// sort => desc
+					$direction = "desc";
+					$key = CONS::$key_Build_URL__Column_FileName;
+					
+					echo $this->Html->link(
+						'▽',
+						Utils::build_URL__Sort($key, $direction),
+// 						"http://localhost/Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc",
+// 						array('url' => "http://localhost/Eclipse_Luna/Cake_IFM11/?sort=file_name&direction=desc")
+// 						array('controller' => 'images', 
+// 								'action' => 'index',
+// 								'?' => "sort=file_name&direction=desc"),
+
+						array('class'	=> 'has_link'));
+
+// 					echo $this->Html->link(
+// 						'File name',
+// 						array('controller' => 'images', 
+// 								'action' => 'index',
+// 								'?' => "sort=file_name"),
+// 						array('class'	=> 'has_link'));
 			?>
 		
 <!-- 			File name -->

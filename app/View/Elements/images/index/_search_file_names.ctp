@@ -8,8 +8,8 @@
 								array(
 // 										'type'=>'post',
 										'type'=>'get',
-										'url'	=> "/?".parse_url($_SERVER['REQUEST_URI'])['query'],
-// 										'action'	=> 'index'
+// 										'url'	=> "/?".parse_url($_SERVER['REQUEST_URI'])['query'],
+										'action'	=> 'index'
  								)
 			);
 		

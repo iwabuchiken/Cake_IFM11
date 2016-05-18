@@ -39,8 +39,13 @@
 					$direction = "asc";
 					$key = CONS::$key_Build_URL__Column_FileName;
 						
+					mb_language("Japanese");
+					
 					echo $this->Html->link(
-						'△',
+// 						"あいうえお",
+						"△",
+// 						mb_convert_encoding('△', 'UTF-8'),
+// 						'△',
 							
 						Utils::build_URL__Sort($key, $direction),
 // 						array('controller' => 'images', 
