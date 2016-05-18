@@ -36,6 +36,31 @@
 			echo $this->Form->input("Memos ('*' for all)", $options_Memo);
 // 			echo $this->Form->input('Memos', $options_Memo);
 			
+			//test
+			if (isset($query_SortName)) {
+				
+// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
+				
+				echo "<input type='hidden' name='sort' value='$query_SortName'>";
+				
+			} else {//isset($sort_name)
+				
+// 				echo "YES";
+				
+			}//isset($sort_name)
+			
+			if (isset($query_SortDirection)) {
+				
+// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
+				
+				echo "<input type='hidden' name='direction' value='$query_SortDirection'>";
+				
+			} else {//isset($sort_name)
+				
+// 				echo "YES";
+				
+			}//isset($sort_name)
+			
 			$options = array(
 					'label' => 'Filter',
 					'div' => array(

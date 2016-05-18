@@ -416,11 +416,22 @@ class ImagesController extends AppController {
 		$sort_direction = @$this->request->query['direction'];
 		
 		$switch_direction = @$this->request->query['switch_direction'];
+
+		/*******************************
+			set: view variables
+		*******************************/
+		if ($sort_name != null) {
+			
+			$this->set("query_SortName", $sort_name);
+			
+		}//$sort_name != null
 		
-		// 		debug("\$sort_name => '".$sort_name."' / "."\$sort_direction => '".$sort_direction."'");
+		if ($sort_direction != null) {
+			
+			$this->set("query_SortDirection", $sort_direction);
+			
+		}//$sort_name != null
 		
-		// 		debug("\$this->request->query ...");
-		// 		debug($this->request->query);
 		
 		/*******************************
 		 prep: vars
