@@ -26,7 +26,8 @@
 // 						'name'	=> 'filter_memo'
 			);
 			
-			if (isset($filter_memo)) {
+			if (isset($filter_file_name)) {
+// 			if (isset($filter_memo)) {
 
 				//REF http://stackoverflow.com/questions/6259371/cakephp-this-form-input-how-to-set-a-select-default-option answered Jun 7 '11 at 0:38
 				$options_File_Name['default'] = $filter_file_name;
@@ -36,6 +37,31 @@
 			
 			echo $this->Form->input("File name ('*' for all)", $options_File_Name);
 // 			echo $this->Form->input('Memos', $options_Memo);
+			
+			//test
+			if (isset($query_SortName)) {
+			
+				// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
+			
+				echo "<input type='hidden' name='sort' value='$query_SortName'>";
+			
+			} else {//isset($sort_name)
+			
+				// 				echo "YES";
+			
+			}//isset($sort_name)
+				
+			if (isset($query_SortDirection)) {
+			
+			// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
+			
+				echo "<input type='hidden' name='direction' value='$query_SortDirection'>";
+			
+			} else {//isset($sort_name)
+			
+				// 				echo "YES";
+			
+			}//isset($sort_name)
 			
 			$options = array(
 					'label' => 'Filter',
