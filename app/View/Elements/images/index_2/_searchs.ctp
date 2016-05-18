@@ -1,19 +1,19 @@
 <tr>
 	<td>
 	
-	<?php echo $this->element('images/index/_search_tables')?>
+	<?php echo $this->element('images/index_2/_search_tables')?>
 	
 	</td>
 	
 	<td>
 	
-	<?php echo $this->element('images/index/_search_memos')?>
+	<?php echo $this->element('images/index_2/_search_memos')?>
 	
 	</td>
 	
 	<td>
 	
-	<?php echo $this->element('images/index/_search_file_names')?>
+	<?php echo $this->element('images/index_2/_search_file_names')?>
 	
 	</td>
 </tr>

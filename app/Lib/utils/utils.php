@@ -5811,10 +5811,10 @@
 						 	//ref http://php.net/manual/en/function.unset.php
 						 	unset($output[CONS::$str_Filter_Memo]);
 						 	
-						 	debug("\$output[".CONS::$str_Filter_Memo."] => unset");
-// 						 	debug("\$output[".$output[CONS::$str_Filter_Memo]."] => unset");
-						 	debug("\$output is now ...");
-						 	debug($output);
+// 						 	debug("\$output[".CONS::$str_Filter_Memo."] => unset");
+// // 						 	debug("\$output[".$output[CONS::$str_Filter_Memo]."] => unset");
+// 						 	debug("\$output is now ...");
+// 						 	debug($output);
 						 
 						 } else {
 						 	
@@ -5835,9 +5835,9 @@
 						 
 						 	unset($output[CONS::$str_Filter_File_Name]);
 						 	
-						 	debug("\$output[".$output[CONS::$str_Filter_File_Name]."] => unset");
-						 	debug("\$output is now ...");
-						 	debug($output);
+// 						 	debug("\$output[".$output[CONS::$str_Filter_File_Name]."] => unset");
+// 						 	debug("\$output is now ...");
+// 						 	debug($output);
 						 
 						 } else {
 						 	

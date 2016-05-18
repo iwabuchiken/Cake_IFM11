@@ -8,7 +8,8 @@
 								array(
 // 										'type'=>'post',
 										'type'=>'get',
-										'action'	=> 'index'
+										'action'	=> 'index_2'
+// 										'action'	=> 'index'
  								)
 			);
 		

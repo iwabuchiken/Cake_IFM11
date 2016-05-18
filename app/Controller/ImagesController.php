@@ -48,6 +48,7 @@ class ImagesController extends AppController {
 		@$filter_Memo = $this->request->query['filter_memo'];
 
 		$opt_conditions = $this->_index__Options();
+// 		$opt_condtions = $this->_index__Options();
 
 // 		debug($opt_conditions);
 		
@@ -280,7 +281,13 @@ class ImagesController extends AppController {
 		/*******************************
 			setup: params
 		*******************************/
-		$opt_order = $this->_index_2__Sort();
+		$opt_order = $this->_index__Sort();
+// 		$opt_order = $this->_index_2__Sort();
+
+		$opt_conditions = $this->_index__Options();
+		
+		debug("\$opt_conditions ...");
+		debug($opt_conditions);
 		
 		/*******************************
 			paginate
@@ -290,7 +297,7 @@ class ImagesController extends AppController {
 		**********************************/
 		$param_Paginate = array(
 		
-// 				'conditions' => $opt_conditions,
+				'conditions' => $opt_conditions,
 		
 				'limit' => 4,
 		
@@ -664,7 +671,7 @@ class ImagesController extends AppController {
 		
 		if ($switch_direction == null) {
 		
-				debug("\$switch_direction => null");
+// 				debug("\$switch_direction => null");
 			
 			/*******************************
 			 judge: query::sort_direction ?
@@ -792,7 +799,7 @@ class ImagesController extends AppController {
 				
 		} else {//$sort_name == null
 				
-			debug("request->query['sort'] => ".$this->request->query['sort']);
+// 			debug("request->query['sort'] => ".$this->request->query['sort']);
 				
 			// update: session value
 			// update session value
