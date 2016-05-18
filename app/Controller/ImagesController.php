@@ -281,13 +281,13 @@ class ImagesController extends AppController {
 		/*******************************
 			setup: params
 		*******************************/
-		$opt_order = $this->_index__Sort();
-// 		$opt_order = $this->_index_2__Sort();
+// 		$opt_order = $this->_index__Sort();
+		$opt_order = $this->_index_2__Sort();
 
 		$opt_conditions = $this->_index__Options();
 		
-		debug("\$opt_conditions ...");
-		debug($opt_conditions);
+// 		debug("\$opt_conditions ...");
+// 		debug($opt_conditions);
 		
 		/*******************************
 			paginate
@@ -407,191 +407,171 @@ class ImagesController extends AppController {
 
 	public function
 	_index_2__Sort() {
-		// 	_index__Sort() {
-	
+
 		/*******************************
 		 get query
 		*******************************/
 		$sort_name = @$this->request->query['sort'];
-	
+		
 		$sort_direction = @$this->request->query['direction'];
-	
-		// 		debug("\$sort_name => ".$sort_name." / "."\$sort_direction => ".$sort_direction);
-	
+		
+		$switch_direction = @$this->request->query['switch_direction'];
+		
+		// 		debug("\$sort_name => '".$sort_name."' / "."\$sort_direction => '".$sort_direction."'");
+		
+		// 		debug("\$this->request->query ...");
+		// 		debug($this->request->query);
+		
 		/*******************************
-		 sort name
-		*******************************/
-		if ($sort_name === null && $sort_name == "") {
-				
-			$sort_name = "id";
-				
-		}
-	
+		 prep: vars
+		*****************************/
 		/*******************************
 		 direction
 		*******************************/
-		$val_Session_Direction = CONS::$session_Key_Direction;
 		// 		$val_Session_Direction = "direction";
-	
+		$val_Session_Direction = CONS::$session_Key_Direction;
+		
+		$val_Session_SortName = "sort_name";
+		
 		$val_Session_Direction__ASC = "asc";
 		$val_Session_Direction__DESC = "desc";
-	
-		//test
-		// read the sessin value
-		$tmp = $this->Session->read($val_Session_Direction);
-	
-		debug("_index__Sort : session direction => $tmp");
-	
+		
+		$current_Sort = "";
+		$current_Direction = "";
+		
+		$dflt_Session_SortName = "id";
+		
 		/*******************************
-		 query is not given
+		 judge: query::sort_name ?
 		*******************************/
-		if ($sort_direction === null || $sort_direction == "") {
-			// 		if ($sort_direction === null && $sort_direction == "") {
-	
-			// 			debug("\$sort_direction === null || \$sort_direction == \"\" ---> true");
-				
-			// read the sessin value
-			@$session_Direction = $this->Session->read($val_Session_Direction);
-			// 			@$session_Direction = $this->Session->read("direction");
-				
-			// 			debug("\$session_Direction => ".$session_Direction);
-				
-				
-			// paginatin => in effect?
-			@$named = $this->request->named;
-				
-			// 			debug("session_Direction => '$session_Direction'");
-			// 			debug(" / "."\$named => ");
-			// 			debug($named);
-				
-				 	
-			/*******************************
-			 current => not set
-			--> set to 'asc' (default)
-			*******************************/
-			if ($named != null) {//if ($session_Direction === null)
-	
-				debug("\$named != null");
-	
-				if ($session_Direction === null) {
-	
-					$sort_direction = $val_Session_Direction__ASC;
-						
-					// update session value
-					$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
-	
-				} else {
-						
-					// set var
-					$sort_direction = $session_Direction;
-	
-				}
-	
-				/*******************************
-					current => not set
-				--> set to 'asc' (default)
-				*******************************/
-			} else if ($session_Direction === null) {
-					
-				// 				debug("\$session_Direction === null");
-	
-				$sort_direction = $val_Session_Direction__ASC;
-	
-				// update session value
-				$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
-	
-				/*******************************
-					current => asc
-				--> change to 'desc'
-				*******************************/
-			} else if ($session_Direction == $val_Session_Direction__ASC) {
-	
-				// 				debug("\$session_Direction == \$val_Session_Direction__ASC");
-	
-				// set var
-				$sort_direction = $val_Session_Direction__DESC;
-	
-				// update session value
-				// 				$this->Session->write("desc");
-				$this->Session->write($val_Session_Direction, $val_Session_Direction__DESC);
-	
-				/*******************************
-					current => desc
-				--> change to 'asc'
-				*******************************/
-			} else if ($session_Direction == $val_Session_Direction__DESC) {
-	
-				debug("\$session_Direction == \$val_Session_Direction__DESC");
-	
-				// set var
-				$sort_direction = $val_Session_Direction__ASC;
-	
-				// update session value
-				$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
-	
-				/*******************************
-					default
-				*******************************/
-			} else {//if ($session_Direction === null)
-					
-				$sort_direction = $val_Session_Direction__ASC;
-	
-				// update session value
-				$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
-				// 				$this->Session->write(val_Session_Direction, $val_Session_Direction__ASC);
-	
-				debug("session_Direction => default");
-	
-			}//if ($session_Direction === null)
-				
-				
-				// 			$sort_direction = $val_Session_Direction__ASC;
-				
-		} else {//if ($sort_direction === null && $sort_direction == "")
-				
-			debug("else");
-				
-			debug("\$sort_direction => $sort_direction");
-				
-		}
-	
-			// 		debug("\$sort_direction => $sort_direction");
-	
-			// 		if ($sort_name != null && $sort_name != ""
-			// 				&& ($sort_direction != null && $sort_direction != "")) {
-	
-			// 			$opt_order = array("Image.".$sort_name => $sort_direction);
-		// 			$opt_order = array("Image.".$sort_name => 'desc');
-		// 			$opt_order = array("Image.".$sort_name => 'asc');
-		// 			$opt_order = array($sort_name => 'asc');
-	
-		// 		} else {
-	
-		// // 			$sort_name = "id";
-	
-		// // 			$sort_direction = "asc";
-			
-		// // 			$opt_order = array($sort_name => $sort_direction);
-		// // 			$opt_order = array($sort_name => 'asc');
-		// 			// 			$opt_order = array('id' => 'asc');
-	
+		$current_Sort = $this->_index_2__Sort__Current_SortName(
+				$sort_name,
+				$val_Session_SortName,
+				$dflt_Session_SortName);
+		
+		/*******************************
+		 judge: switch direction?
+		*******************************/
+		//test: prep --> pagination page?
+		//ref http://stackoverflow.com/questions/6768793/get-the-full-url-in-php answered Jul 20 '11 at 21:33
+		$uri = $_SERVER['REQUEST_URI'];
+		
+		debug("\$uri => ".$uri);
+		
+		//ref http://stackoverflow.com/questions/4366730/check-if-string-contains-specific-words answered Dec 6 '10 at 13:15
+		$has_Page_Param = strpos($uri, "page:");
+		
+		// 		debug("\$has_Page_Param => ".$has_Page_Param);
+		
+		// 		debug($has_Page_Param === true ?
+		// 					"\$has_Page_Param => true" : "\$has_Page_Param => false");
+		
+		// 		if (strpos($a, 'are') !== false) {
+		// 			echo 'true';
 		// 		}
+		
+		// 		//test
+		//		//ref http://book.cakephp.org/3.0/en/views/helpers/paginator.html
+		// 		$result = $this->Paginator->templates('number');
+		
+		// 		debug("\$this->Paginator->templates('number') => ".$result);
+		
+		
+		
+		
+		if ($switch_direction == null) {
+		
+		// 				debug("\$switch_direction => null");
+				
+			/*******************************
+			judge: query::sort_direction ?
+			*******************************/
+			$current_Direction = $this->_index_2__Sort__Current_Direction(
+			$sort_direction,
+			$val_Session_Direction,
+			$val_Session_Direction__ASC,
+			$val_Session_Direction__DESC);
+		
+		} else {
+		
+		debug("\$switch_direction => '".$switch_direction."'");
+		
+			// validate
+			if ($switch_direction != CONS::$param_Val_Switch_Direction__ON) {
+					// 			if ($switch_direction != CONS::$param_Val_Switch_Direction__ON
+						// 					&& $switch_direction != CONS::$param_Val_Switch_Direction__OFF) {
+		
+						debug("unknown switch_direction value => $switch_direction");
+		
+						/*******************************
+						judge: query::sort_direction ?
+						*******************************/
+						$current_Direction = $this->_index_2__Sort__Current_Direction(
+								$sort_direction,
+								$val_Session_Direction,
+								$val_Session_Direction__ASC,
+								$val_Session_Direction__DESC);
+		
+					} else if ($has_Page_Param !== false) {
+					// 			} else if ($has_Page_Param === true) {
+		
+					debug("pagination param in the uri ==> not switching the direction");
+		
+						/*******************************
+				 judge: query::sort_direction ?
+						*******************************/
+						 $current_Direction = $this->_index_2__Sort__Current_Direction(
+						 		$sort_direction,
+						 		$val_Session_Direction,
+						 		$val_Session_Direction__ASC,
+						 		$val_Session_Direction__DESC);
+		
+					} else {//$switch_direction != CONS::$param_Val_Switch_Direction__ON && $switch_direction != CONS::$param_Val_Switch_Direction__OFF
+		
+						/*******************************
+						judge: query::sort_direction ?
+						*******************************/
+						$current_Direction = $this->_index_2__Sort__Switch_Direction(
+						$sort_direction,
+						$val_Session_Direction,
+						$val_Session_Direction__ASC,
+						$val_Session_Direction__DESC);
+							
+					}//$switch_direction != CONS::$param_Val_Switch_Direction__ON && $switch_direction != CONS::$param_Val_Switch_Direction__OFF
+						
+		}//if ($switch_direction == null)
+		
+		
+	
+		// 		/*******************************
+		// 		 judge: query::sort_direction ?
+		// 		*******************************/
+		// 		$current_Direction = $this->_index_2__Sort__Current_Direction(
+		// 								$sort_direction,
+		// 								$val_Session_Direction,
+		// 								$val_Session_Direction__ASC,
+		// 								$val_Session_Direction__DESC);
 	
 		/*******************************
-		 set
+		set
 		*******************************/
-		$opt_order = array("Image.".$sort_name => $sort_direction);
+		// 		$opt_order = array("Image.".$sort_name => $sort_direction);
+		$opt_order = array();
 	
-		$this->set("sort", $sort_name);
+		$this->set("sort", $current_Sort);
+		// 		$this->set("sort", $sort_name);
 	
-		$this->set("direction", $sort_direction);
+		$this->set("direction", $current_Direction);
+		// 		$this->set("direction", $sort_direction);
 	
 		/*******************************
-		 return
+		return
 		*******************************/
-		// 		return $this->_index__Sort();
+		$opt_order = array("Image.".$current_Sort => $current_Direction);
+		// 		$opt_order = array("Image.".$sort_name => $sort_direction);
+	
 		return $opt_order;
-	
+		
 	}//_index__Sort
 			
 	public function
@@ -609,8 +589,8 @@ class ImagesController extends AppController {
 		
 // 		debug("\$sort_name => '".$sort_name."' / "."\$sort_direction => '".$sort_direction."'");
 		
-		debug("\$this->request->query ...");
-		debug($this->request->query);
+// 		debug("\$this->request->query ...");
+// 		debug($this->request->query);
 		
 		/*******************************
 			prep: vars
