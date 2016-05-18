@@ -116,8 +116,23 @@ class ImagesController extends AppController {
 		**********************************/
 		//REF http://book.cakephp.org/2.0/ja/core-libraries/components/sessions.html
 		
-		$current_url = Router::url('/', true ).substr($this->here, strlen($this->webroot));
-		$this->Session->write('current_url', $current_url);
+// 		$current_url = Router::url('/', true ).substr($this->here, strlen($this->webroot));
+// 		$this->Session->write('current_url', $current_url);
+
+// 		//test
+// 		$key = CONS::$key_Build_URL__Column_ID;
+// 		$direction = "desc";
+		
+// 		$tmp = Utils::build_URL__Sort($key, $direction);
+		
+// 		debug("new url => ".$tmp);
+		
+// 		$key = CONS::$key_Build_URL__Column_FileName;
+// 		$direction = "desc";
+		
+// 		$tmp = Utils::build_URL__Sort($key, $direction);
+		
+// 		debug("new url => ".$tmp);
 		
 	}//public function index()
 

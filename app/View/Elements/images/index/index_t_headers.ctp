@@ -9,18 +9,46 @@
 		?>
 		
 		<th colspan="1" class="th_images_blue">
-
-			<?php echo $this->Html->link(
-					'ID',
-					array('controller' => 'images', 
-							'action' => 'index',
-							'?' => "sort=id"),
-					array(
-						'class'	=> 'has_link',
-						'method'	=> 'post',
-					)
+			
+			ID
+			
+			<?php 
+			
+				// sort => asc
+				$direction = "asc";
+				$key = CONS::$key_Build_URL__Column_ID;
+				
+				echo $this->Html->link(
+						"△",
+						Utils::build_URL__Sort($key, $direction),
+						array('class'	=> 'has_link')
 				);
-// 				array('class'	=> 'has_link'));
+				
+				// sort => asc
+				$direction = "desc";
+				$key = CONS::$key_Build_URL__Column_ID;
+				
+				echo $this->Html->link(
+						"▽",
+						Utils::build_URL__Sort($key, $direction),
+						array('class'	=> 'has_link')
+				);
+				
+			
+			?>
+		
+			<?php 
+// 				echo $this->Html->link(
+// 					'ID',
+// 					array('controller' => 'images', 
+// 							'action' => 'index',
+// 							'?' => "sort=id"),
+// 					array(
+// 						'class'	=> 'has_link',
+// 						'method'	=> 'post',
+// 					)
+// 				);
+// // 				array('class'	=> 'has_link'));
 			?>
 		
 <!-- 			ID -->
