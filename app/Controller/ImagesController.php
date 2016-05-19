@@ -23,34 +23,17 @@ class ImagesController extends AppController {
 		 * sort
 		**********************************/
 		$opt_order = $this->_index_Order();
-// 		$opt_order = $this->_index_2__Sort();
-// 		$opt_order = $this->_index__Sort();
 
-// 		debug("\$opt_order ...");
-// 		debug("\$opt_order (from _index_2__Sort) ...");
-// 		debug($opt_order);
-		
-// 		//test
-// 		$opt_order_2 = $this->_index_2__Sort();
-		
-// 		debug("\$opt_order_2 ...");
-// 		debug($opt_order_2);
-
-// 		$opt_order = $opt_order_2;
-		
-// 		//test
-// 		debug("\$_SERVER['REQUEST_URI'] ...");
-// 		debug($_SERVER['REQUEST_URI']);
-		
-		
 		@$filter_TableName = $this->request->query['filter_table_name'];
 
 		@$filter_Memo = $this->request->query['filter_memo'];
 
 		$opt_conditions = $this->_index__Options();
-// 		$opt_condtions = $this->_index__Options();
 
-// 		debug($opt_conditions);
+// 		//test
+// 		$opt_conditions = array("Image.memos LIKE" => array("palnts", "花"));	//=>  General error: 1 near ",": syntax error
+		
+		debug($opt_conditions);
 		
 		/**********************************
 		* Build: list
@@ -284,7 +267,8 @@ class ImagesController extends AppController {
 // 		$opt_order = $this->_index__Sort();
 		$opt_order = $this->_index_2__Sort();
 
-		$opt_conditions = $this->_index__Options();
+		$opt_conditions = $this->_index_2__Options();
+// 		$opt_conditions = $this->_index__Options();
 		
 // 		debug("\$opt_conditions ...");
 // 		debug($opt_conditions);
@@ -467,7 +451,7 @@ class ImagesController extends AppController {
 		//ref http://stackoverflow.com/questions/6768793/get-the-full-url-in-php answered Jul 20 '11 at 21:33
 		$uri = $_SERVER['REQUEST_URI'];
 		
-		debug("\$uri => ".$uri);
+// 		debug("\$uri => ".$uri);
 		
 		//ref http://stackoverflow.com/questions/4366730/check-if-string-contains-specific-words answered Dec 6 '10 at 13:15
 		$has_Page_Param = strpos($uri, "page:");
@@ -770,7 +754,7 @@ class ImagesController extends AppController {
 		
 			if ($session_SortName == null) {
 		
-				debug("\$session_SortName => null");
+// 				debug("\$session_SortName => null");
 		
 				// update session value
 				$this->Session->write($val_Session_SortName, $dflt_Session_SortName);
@@ -779,7 +763,7 @@ class ImagesController extends AppController {
 		
 			} else {//if ($session_SortName == null)
 		
-				debug("\$session_SortName => $session_SortName");
+// 				debug("\$session_SortName => $session_SortName");
 		
 				// set the current sort name
 				$current_Sort = $session_SortName;
@@ -839,7 +823,7 @@ class ImagesController extends AppController {
 			
 			if ($session_Direction == null) {
 			
-				debug("\$session_SortName => null");
+// 				debug("\$session_SortName => null");
 			
 				// update session value
 				$this->Session->write($val_Session_Direction, $val_Session_Direction__ASC);
@@ -848,7 +832,7 @@ class ImagesController extends AppController {
 			
 			} else {//if ($session_SortName == null)
 			
-				debug("\$session_Direction => $session_Direction");
+// 				debug("\$session_Direction => $session_Direction");
 			
 				// set the current sort name
 				$current_Direction = $session_Direction;
@@ -1001,6 +985,41 @@ class ImagesController extends AppController {
 		return $opt_conditions;
 
 	}//_index__Options
+	
+	public function
+	_index_2__Options() {
+
+		/*******************************
+			memo
+		*******************************/
+		$opt_conditions = array();
+		
+// 		$opt_conditions = $this->_index__Options__Memo($opt_conditions);
+		$opt_conditions = $this->_index_2__Options__Memo($opt_conditions);
+		
+		$tmp = $this->_index_2__Options__Memo($opt_conditions);
+
+// 		debug("\$this->_index_2__Options__Memo ...");
+// 		debug($tmp);
+		
+		/*******************************
+			table name
+		*******************************/
+		$opt_conditions = $this->_index__Options__TableName($opt_conditions);
+
+		/*******************************
+			file name
+		*******************************/
+		$opt_conditions = $this->_index__Options__FileName($opt_conditions);
+
+		/**********************************
+		 * return
+		**********************************/
+		
+		return $opt_conditions;
+
+	}//_index_2__Options
+	
 	
 	public function 
 	_index__Options__Memo($opt_conditions) {
@@ -1160,6 +1179,80 @@ class ImagesController extends AppController {
 	}//_index__Options__Memo
 	
 	public function 
+	_index_2__Options__Memo($opt_conditions) {
+
+// 		debug("_index_2__Options__Memo");
+		
+		/*******************************
+			get: AND, OR
+		*******************************/
+		@$AND_OR = $this->request->query[CONS::$str_Filter_RadioButtons_Name_Memo];
+		
+		
+		
+// 		debug($AND_OR);
+		
+		/**********************************
+		 * param: filter: hin
+		**********************************/
+		$filter_memo = CONS::$str_Filter_Memo;
+		
+// 		$opt_conditions = array();
+		
+		@$query_Filter_Memo = $this->request->query[$filter_memo];
+		
+// 		debug("\$query_Filter_Memo => '".$query_Filter_Memo."'");
+		
+		if ($query_Filter_Memo == CONS::$str_Filter_Memo_all) {
+			// 		if ($query_Filter_Hins == "-1") {
+		
+// 			$this->Session->write($filter_memo, null);
+		
+			$this->set("filter_memo", '');
+		
+		} else if ($query_Filter_Memo == null) {//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
+		
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("filter_memo", null);
+	
+		} else {//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
+
+			/*******************************
+				$query_Filter_Memo => "plants　花"
+			*******************************/
+			if ($AND_OR != null) {
+			
+// 				debug("\$AND_OR => NOT null");
+				
+				$opt_conditions = $this->_index_2__Options__Memo_AndOr(
+// 				$opt_conditions = $this->_index__Options__Memo_AndOr(
+						$opt_conditions, $query_Filter_Memo, $AND_OR);
+					
+			} else {
+			
+// 				debug("\$AND_OR => null");
+			
+				$opt_conditions['Image.memos LIKE'] = "%$query_Filter_Memo%";
+			
+			}
+				
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("filter_memo", $query_Filter_Memo);
+		
+		}//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
+		
+		/**********************************
+		 * return
+		**********************************/
+		return $opt_conditions;
+		
+	}//_index_2__Options__Memo
+	
+	public function 
 	_index__Options__Memo_AndOr
 	($opt_conditions, $filter_String, $AND_OR) {
 
@@ -1304,6 +1397,108 @@ class ImagesController extends AppController {
 		return $opt_conditions;
 			
 	}//_index__Options__Memo_AndOr($opt_conditions)
+	
+	public function 
+	_index_2__Options__Memo_AndOr
+	($opt_conditions, $filter_String, $AND_OR) {
+
+// 		debug("_index_2__Options__Memo_AndOr");
+		
+		
+			// replace "　" with " "
+			$filter_String = str_replace("　", " ", $filter_String);
+		
+			// tokenize
+			$tokens = explode(" ", $filter_String);
+				
+			if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_AND) {
+
+				$tmp = array();
+				
+				$tmp2 = array();
+				$tmp2['AND'] = array();
+				$tmp2['NOT'] = array();
+				
+				for ($i = 0; $i < count($tokens); $i++) {
+
+					//REF substr http://stackoverflow.com/questions/2790899/php-how-to-check-if-a-string-starts-with-a-specified-string answered May 7 '10 at 18:46
+					$start_char = mb_substr($tokens[$i], 0, 1);
+					
+					if ($start_char == '-') {
+					
+						$str = mb_substr($tokens[$i], 1, mb_strlen($tokens[$i]) - 1);
+
+						//REF NOT http://cakebaker.42dh.com/2007/04/26/how-to-use-not-in-in-a-condition/
+						array_push($tmp2['NOT'], 
+									array('Image.memos LIKE' => "%$str%"));
+					
+					} else {
+					
+						array_push($tmp2['AND'], array('Image.memos LIKE' => "%$tokens[$i]%"));
+					
+					}
+					
+				}//for ($i = 0; $i < count($tokens); $i++)
+				
+				$tmp = array('AND' => $tmp);
+				
+				$opt_conditions = array($tmp2);
+				
+			} else if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_OR) {//if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_AND)
+					
+// 				debug("\$AND_OR => CONS::\$str_Filter_RadioButtons_Memo_OR");
+				
+// 				$opt_conditions['Image.memos LIKE'] = "%$filter_String%";
+
+				$tmp = array();
+				
+				$tmp2 = array();
+				$tmp2['OR'] = array();
+// 				$tmp2['AND'] = array();
+// 				$tmp2['NOT'] = array();
+				
+				for ($i = 0; $i < count($tokens); $i++) {
+				
+// 					//REF substr http://stackoverflow.com/questions/2790899/php-how-to-check-if-a-string-starts-with-a-specified-string answered May 7 '10 at 18:46
+// 					$start_char = mb_substr($tokens[$i], 0, 1);
+						
+// 					if ($start_char == '-') {
+							
+// 						$str = mb_substr($tokens[$i], 1, mb_strlen($tokens[$i]) - 1);
+				
+// 						//REF NOT http://cakebaker.42dh.com/2007/04/26/how-to-use-not-in-in-a-condition/
+// 						array_push($tmp2['NOT'],
+// 						array('Image.memos LIKE' => "%$str%"));
+							
+// 					} else {
+							
+						array_push($tmp2['OR'], array('Image.memos LIKE' => "%$tokens[$i]%"));
+// 						array_push($tmp2['AND'], array('Image.memos LIKE' => "%$tokens[$i]%"));
+							
+// 					}
+						
+				}//for ($i = 0; $i < count($tokens); $i++)
+				
+				$tmp = array('AND' => $tmp);
+				
+				$opt_conditions = array($tmp2);
+				
+			}//if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_AND)
+		
+		
+// 		} else {
+		
+		
+// 			$opt_conditions['Image.memos LIKE'] = "%$session_Filter%";
+		
+// 		}
+		
+		/*******************************
+			return
+		*******************************/
+		return $opt_conditions;
+			
+	}//_index_2__Options__Memo_AndOr
 	
 	public function 
 	_index__Options__TableName($opt_conditions) {
