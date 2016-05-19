@@ -975,6 +975,8 @@ class ImagesController extends AppController {
 	public function
 	_index__Options() {
 
+// 		debug("_index__Options");
+		
 		/*******************************
 			memo
 		*******************************/
@@ -1003,6 +1005,8 @@ class ImagesController extends AppController {
 	public function 
 	_index__Options__Memo($opt_conditions) {
 
+// 		debug("_index__Options__Memo");
+		
 		/*******************************
 			get: AND, OR
 		*******************************/
@@ -1020,6 +1024,8 @@ class ImagesController extends AppController {
 // 		$opt_conditions = array();
 		
 		@$query_Filter_Memo = $this->request->query[$filter_memo];
+		
+// 		debug("\$query_Filter_Memo => '".$query_Filter_Memo."'");
 		
 		if ($query_Filter_Memo == CONS::$str_Filter_Memo_all) {
 			// 		if ($query_Filter_Hins == "-1") {
@@ -1092,11 +1098,14 @@ class ImagesController extends AppController {
 
 			if ($AND_OR != null) {
 			
+// 				debug("\$AND_OR => NOT null");
+				
 				$opt_conditions = $this->_index__Options__Memo_AndOr(
 						$opt_conditions, $query_Filter_Memo, $AND_OR);
 					
 			} else {
 			
+// 				debug("\$AND_OR => null");
 			
 				$opt_conditions['Image.memos LIKE'] = "%$query_Filter_Memo%";
 			
@@ -1156,8 +1165,15 @@ class ImagesController extends AppController {
 
 // 		if ($AND_OR != null) {
 		
+			// replace "　" with " "
+			$filter_String = str_replace("　", " ", $filter_String);
+		
+// 			debug("replaced => '$filter_String'");
+			
+			// tokenize
 			$tokens = explode(" ", $filter_String);
 				
+// 			debug("\$tokens ...");
 // 			debug($tokens);
 				
 			if ($AND_OR == CONS::$str_Filter_RadioButtons_Memo_AND) {
