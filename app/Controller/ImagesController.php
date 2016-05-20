@@ -270,8 +270,8 @@ class ImagesController extends AppController {
 		$opt_conditions = $this->_index_2__Options();
 // 		$opt_conditions = $this->_index__Options();
 		
-		debug("\$opt_conditions ...");
-		debug($opt_conditions);
+// 		debug("\$opt_conditions ...");
+// 		debug($opt_conditions);
 		
 		/*******************************
 			paginate
@@ -380,7 +380,7 @@ class ImagesController extends AppController {
 		*******************************/
 		@$AND_OR = $this->request->query[CONS::$str_Filter_RadioButtons_Name_Memo];
 
-		debug("\$AND_OR => ".$AND_OR);
+// 		debug("\$AND_OR => ".$AND_OR);
 		
 		if ($AND_OR == null) {
 // 			RBs_AND_OR_Memo
@@ -403,7 +403,7 @@ class ImagesController extends AppController {
 		@$query_Filter_File_Name = $this->request->query[CONS::$str_Filter_File_Name];
 // 		@$query_Filter_File_Name = $this->request->query[$filter_file_name];
 		
-		debug("\$query_Filter_File_Name => ".$query_Filter_File_Name);
+// 		debug("\$query_Filter_File_Name => ".$query_Filter_File_Name);
 		
 		if ($query_Filter_File_Name == CONS::$str_Filter_File_Name_all) {
 		
