@@ -88,6 +88,7 @@ class CONS {
 	public static $str_Filter_Memo = "filter_memo";
 	public static $str_Filter_Memo_all = "*";
 	
+	// RB --> radio button
 	public static $str_Filter_RadioButtons_Name_Memo = "RBs_AND_OR_Memo";
 	public static $str_Filter_RadioButtons_Memo_AND = "AND";
 	public static $str_Filter_RadioButtons_Memo_OR = "OR";
@@ -120,6 +121,9 @@ class CONS {
 	public static $key_Build_URL__Column_ID = "id";
 	
 	public static $key_Param__Column_ID = "id";
+	
+	// page variables
+	public static $pageVar_AndOr_Memo	= "pageVar_AndOr_Memo";
 	
 	
 	/*******************************

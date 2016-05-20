@@ -68,6 +68,25 @@
 				
 			}
 			
+			// filter memo: and/or
+			if (isset($RBs_AND_OR_Memo) && $RBs_AND_OR_Memo != "") {
+// 			if (isset($pageVar_AndOr_Memo) && $pageVar_AndOr_Memo != "") {
+// 			if (isset($filter_memo)) {
+			
+			// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
+			
+				echo "<input type='hidden' 
+						name='".CONS::$str_Filter_RadioButtons_Name_Memo
+						."' value='$RBs_AND_OR_Memo'>";
+// 						name='".CONS::$pageVar_AndOr_Memo
+// 						."' value='$pageVar_AndOr_Memo'>";
+			
+			} else {
+				
+// 				echo "filter memo => NO";
+				
+			}
+			
 			$options = array(
 					'label' => 'Filter',
 					'div' => array(
