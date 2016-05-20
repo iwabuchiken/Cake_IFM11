@@ -33,7 +33,7 @@ class ImagesController extends AppController {
 // 		//test
 // 		$opt_conditions = array("Image.memos LIKE" => array("palnts", "花"));	//=>  General error: 1 near ",": syntax error
 		
-		debug($opt_conditions);
+// 		debug($opt_conditions);
 		
 		/**********************************
 		* Build: list
@@ -196,7 +196,7 @@ class ImagesController extends AppController {
 	
 		if ($sort_name == null) {
 	
-			debug("\$sort_name => null");
+// 			debug("\$sort_name => null");
 	
 			$current_Sort = $dflt_SortName;
 	
@@ -208,7 +208,7 @@ class ImagesController extends AppController {
 		}//$sort_name == null
 	
 	
-		debug("\$current_Sort => ".$current_Sort);
+// 		debug("\$current_Sort => ".$current_Sort);
 	
 		/*******************************
 		 return
@@ -250,7 +250,7 @@ class ImagesController extends AppController {
 		/*******************************
 		 return
 		*******************************/
-		debug("\$current_Direction => ".$current_Direction);
+// 		debug("\$current_Direction => ".$current_Direction);
 	
 		return $current_Direction;
 	
