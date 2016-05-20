@@ -400,7 +400,10 @@ class ImagesController extends AppController {
 		/*******************************
 		 params data: filter file name
 		*******************************/
-		@$query_Filter_File_Name = $this->request->query[$filter_file_name];
+		@$query_Filter_File_Name = $this->request->query[CONS::$str_Filter_File_Name];
+// 		@$query_Filter_File_Name = $this->request->query[$filter_file_name];
+		
+		debug("\$query_Filter_File_Name => ".$query_Filter_File_Name);
 		
 		if ($query_Filter_File_Name == CONS::$str_Filter_File_Name_all) {
 		
@@ -1748,32 +1751,56 @@ class ImagesController extends AppController {
 			**********************************/
 			$this->set("filter_file_name", null);
 	
-		} else {
+		} else {//if ($query_Filter_File_Name == CONS::$str_Filter_File_Name_all)
 
 			/*******************************
 				'AND' key
 			*******************************/
-			if (isset($opt_conditions['AND'])) {
-			
-				debug("\$opt_conditions['AND'] ...");
-				debug($opt_conditions['AND']);
-			
-			} else {
-			
-				debug("\$opt_conditions['AND'] ... => not set");
-				debug($opt_conditions);
+			if (isset($opt_conditions[0]['AND'])) {
 				
-			}//if (isset($opt_conditions['AND']))
+				// push
+				array_push(
+					$opt_conditions[0]['AND'], 
+				
+					array('Image.file_name LIKE' => "%$query_Filter_File_Name%")
+				
+				);
+				
+// 			if (isset($opt_conditions['AND'])) {
 			
+// 				debug("\$opt_conditions['AND'] ...");
+// 				debug($opt_conditions['AND']);
 			
+			} else {//if (isset($opt_conditions[0]['AND']))
+
+				//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
+				$opt_conditions['Image.file_name LIKE'] = "%".$query_Filter_File_Name."%";
+	
+// 				debug("count(\$opt_conditions) => ".count($opt_conditions));
+				
+// 				debug("\$opt_conditions[0] ...");
+// 				debug($opt_conditions[0]);
+				
+// 				if (isset($opt_conditions[0]['AND'])) {
+				
+// 					debug("\$opt_conditions[0]['AND'] ...");
+// 					debug($opt_conditions[0]['AND']);
+				
+// 				} else {
+				
+// 					debug("isset(\$opt_conditions[0]['AND']) => false");
+					
+// 				}//if ($opt_conditions[0]['AND'])
+				
+				
+// 				debug("\$opt_conditions['AND'] ... => not set");
+// 				debug($opt_conditions);
+				
+			}//if (isset($opt_conditions[0]['AND']))
+// 			}//if (isset($opt_conditions['AND']))
 			
-			// 			$opt_conditions['History.line LIKE'] = "%$query_Filter_Hins%";
-		
-			//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
-			// 			$opt_conditions['Image.table_name'] = "DISTINCT ".$query_Filter_Hins;
-			$opt_conditions['Image.file_name LIKE'] = "%".$query_Filter_File_Name."%";
-// 			$opt_conditions['Image.file_name LIKE'] = "%".$session_Filter."%";
-// 			$opt_conditions['Image.file_name'] = $query_Filter_File_Name;
+// 			//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
+// 			$opt_conditions['Image.file_name LIKE'] = "%".$query_Filter_File_Name."%";
 		
 			/**********************************
 			 * set: var
