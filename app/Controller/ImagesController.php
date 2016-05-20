@@ -297,7 +297,7 @@ class ImagesController extends AppController {
 		
 // 		debug("count(\$images) => ".count($images));
 		
-		$paginateData = $this->params['paging']['Image'];
+// 		$paginateData = $this->params['paging']['Image'];
 		
 // 		debug("\$paginateData =>");
 // 		debug($paginateData);
@@ -309,6 +309,34 @@ class ImagesController extends AppController {
 		/*******************************
 			set: meta data
 		*******************************/
+		$this->_index_2__Set_Page_Data();
+		
+// 		$this->set('total_num_of_images', $paginateData['count']);
+		
+// 		$this->set('num_of_pages', $paginateData['pageCount']);
+		
+// 		$this->set('current_page', $paginateData['page']);
+		
+// 		// 		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
+		
+// 		$this->set('num_of_images_filtered', $paginateData['count']);
+		
+		/**********************************
+		 * set: images
+		**********************************/
+		$this->set('images', $images);
+		
+		
+	}
+	
+	public function
+	_index_2__Set_Page_Data() {
+	
+		/*******************************
+			images data
+		*******************************/
+		$paginateData = $this->params['paging']['Image'];
+		
 		$this->set('total_num_of_images', $paginateData['count']);
 		
 		$this->set('num_of_pages', $paginateData['pageCount']);
@@ -318,14 +346,56 @@ class ImagesController extends AppController {
 		// 		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
 		
 		$this->set('num_of_images_filtered', $paginateData['count']);
+
+		/*******************************
+			params data: filter memo
+		*******************************/
+		@$query_Filter_Memo = $this->request->query[CONS::$str_Filter_Memo];
+// 		@$query_Filter_Memo = $this->request->query[$filter_memo];
 		
-		/**********************************
-		 * set: images
-		**********************************/
-		$this->set('images', $images);
+// 		debug("\$query_Filter_Memo => ".$query_Filter_Memo);
+
+// 		debug("\$this->request->query ...");
+// 		debug($this->request->query);
 		
+		if ($query_Filter_Memo == CONS::$str_Filter_Memo_all) {
 		
-	}
+			$this->set("filter_memo", '');
+		
+		} else if ($query_Filter_Memo == null) {//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
+		
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("filter_memo", null);
+	
+		} else {//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
+
+			$this->set("filter_memo", $query_Filter_Memo);
+			
+		}
+
+		/*******************************
+		 params data: filter file name
+		*******************************/
+		@$query_Filter_File_Name = $this->request->query[$filter_file_name];
+		
+		if ($query_Filter_File_Name == CONS::$str_Filter_File_Name_all) {
+		
+			$this->set("filter_file_name", '');
+		
+		} else if ($query_Filter_File_Name == null) {
+		
+			$this->set("filter_file_name", null);
+		
+		} else {
+		
+			$this->set("filter_file_name", $query_Filter_File_Name);
+		
+		}
+		
+	}//_index_2__Set_Page_Data()
+	
 	
 	public function
 	_test_CreateModel() {
@@ -1010,7 +1080,8 @@ class ImagesController extends AppController {
 		/*******************************
 			file name
 		*******************************/
-		$opt_conditions = $this->_index__Options__FileName($opt_conditions);
+		$opt_conditions = $this->_index_2__Options__FileName($opt_conditions);
+// 		$opt_conditions = $this->_index__Options__FileName($opt_conditions);
 
 		/**********************************
 		 * return
@@ -1188,34 +1259,23 @@ class ImagesController extends AppController {
 		*******************************/
 		@$AND_OR = $this->request->query[CONS::$str_Filter_RadioButtons_Name_Memo];
 		
-		
-		
-// 		debug($AND_OR);
-		
 		/**********************************
 		 * param: filter: hin
 		**********************************/
 		$filter_memo = CONS::$str_Filter_Memo;
 		
-// 		$opt_conditions = array();
-		
 		@$query_Filter_Memo = $this->request->query[$filter_memo];
 		
-// 		debug("\$query_Filter_Memo => '".$query_Filter_Memo."'");
-		
 		if ($query_Filter_Memo == CONS::$str_Filter_Memo_all) {
-			// 		if ($query_Filter_Hins == "-1") {
 		
-// 			$this->Session->write($filter_memo, null);
-		
-			$this->set("filter_memo", '');
+// 			$this->set("filter_memo", '');
 		
 		} else if ($query_Filter_Memo == null) {//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
 		
 			/**********************************
 			 * set: var
 			**********************************/
-			$this->set("filter_memo", null);
+// 			$this->set("filter_memo", null);
 	
 		} else {//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
 
@@ -1224,15 +1284,10 @@ class ImagesController extends AppController {
 			*******************************/
 			if ($AND_OR != null) {
 			
-// 				debug("\$AND_OR => NOT null");
-				
 				$opt_conditions = $this->_index_2__Options__Memo_AndOr(
-// 				$opt_conditions = $this->_index__Options__Memo_AndOr(
 						$opt_conditions, $query_Filter_Memo, $AND_OR);
 					
 			} else {
-			
-// 				debug("\$AND_OR => null");
 			
 				$opt_conditions['Image.memos LIKE'] = "%$query_Filter_Memo%";
 			
@@ -1241,7 +1296,7 @@ class ImagesController extends AppController {
 			/**********************************
 			 * set: var
 			**********************************/
-			$this->set("filter_memo", $query_Filter_Memo);
+// 			$this->set("filter_memo", $query_Filter_Memo);
 		
 		}//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
 		
@@ -1641,6 +1696,79 @@ class ImagesController extends AppController {
 		return $opt_conditions;
 		
 	}//_index__Options__FileName
+	
+	public function 
+	_index_2__Options__FileName($opt_conditions) {
+
+		/**********************************
+		 * param: filter: hin
+		**********************************/
+		$filter_file_name = CONS::$str_Filter_File_Name;
+// 		$filter_table_name = CONS::$str_Filter_Memo;
+		
+// 		$opt_conditions = array();
+		
+		@$query_Filter_File_Name = $this->request->query[$filter_file_name];
+		
+		if ($query_Filter_File_Name == CONS::$str_Filter_File_Name_all) {
+			// 		if ($query_Filter_Hins == "-1") {
+		
+			$this->Session->write($filter_file_name, null);
+		
+			$this->set("filter_file_name", '');
+		
+		} else if ($query_Filter_File_Name == null) {
+		
+			@$session_Filter = $this->Session->read($filter_file_name);
+		
+			if ($session_Filter != null) {
+		
+				// 				$opt_conditions['Token.hin'] = "DISTINCT ".$session_Filter;
+				$opt_conditions['Image.file_name LIKE'] = "%".$session_Filter."%";
+// 				$opt_conditions['Image.file_name'] = $session_Filter;
+		
+// 				array('Image.file_name LIKE' => "%$filter_TableName%")
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter_file_name", $session_Filter);
+		
+			} else {
+		
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter_file_name", null);
+		
+			}
+		
+		} else {
+		
+			// 			$opt_conditions['History.line LIKE'] = "%$query_Filter_Hins%";
+		
+			//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
+			// 			$opt_conditions['Image.table_name'] = "DISTINCT ".$query_Filter_Hins;
+			$opt_conditions['Image.file_name LIKE'] = "%".$query_Filter_File_Name."%";
+// 			$opt_conditions['Image.file_name LIKE'] = "%".$session_Filter."%";
+// 			$opt_conditions['Image.file_name'] = $query_Filter_File_Name;
+		
+			$session_Filter = $this->Session->write($filter_file_name, $query_Filter_File_Name);
+		
+			//			debug("session_Filter => written");
+		
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("filter_file_name", $query_Filter_File_Name);
+		
+		}
+		
+		/**********************************
+		 * return
+		**********************************/
+		return $opt_conditions;
+		
+	}//_index_2__Options__FileName
 	
 	public function 
 	_index_Build_ImageList_TableName($filter_TableName) {

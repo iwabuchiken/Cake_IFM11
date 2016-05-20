@@ -3,17 +3,13 @@
 <!-- 	Table name -->
 	<?php
 			//REF get http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html#options-for-create
-	// 		echo $this->Form->create('Image',  array('type' => 'get'));
 			echo $this->Form->create('Image', 
 								array(
-// 										'type'=>'post',
 										'type'=>'get',
 										'action'	=> 'index_2'
-// 										'action'	=> 'index'
  								)
 			);
 		
-	// 		echo $this->Form->input('Memos', array('class'=>'basic_ta_1'));
 			$options_File_Name = array(
 						'class'=>'basic_ta_1',
 						//REF div http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html "Disabling div output:"
@@ -27,41 +23,50 @@
 			);
 			
 			if (isset($filter_file_name)) {
-// 			if (isset($filter_memo)) {
 
 				//REF http://stackoverflow.com/questions/6259371/cakephp-this-form-input-how-to-set-a-select-default-option answered Jun 7 '11 at 0:38
 				$options_File_Name['default'] = $filter_file_name;
-// 				$options_File_Name['default'] = $filter_memo;
 				
 			}
 			
 			echo $this->Form->input("File name ('*' for all)", $options_File_Name);
-// 			echo $this->Form->input('Memos', $options_Memo);
 			
-			//test
+			/*******************************
+				hidden data
+			*******************************/
+			// sort name
 			if (isset($query_SortName)) {
 			
 				// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
 			
 				echo "<input type='hidden' name='sort' value='$query_SortName'>";
 			
-			} else {//isset($sort_name)
-			
-				// 				echo "YES";
-			
-			}//isset($sort_name)
+			}
 				
+			// sort direction
 			if (isset($query_SortDirection)) {
 			
 			// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
 			
 				echo "<input type='hidden' name='direction' value='$query_SortDirection'>";
 			
-			} else {//isset($sort_name)
+			}
 			
-				// 				echo "YES";
+			// filter memo
+			if (isset($filter_memo) && $filter_memo != "") {
+// 			if (isset($filter_memo)) {
 			
-			}//isset($sort_name)
+			// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
+			
+				echo "<input type='hidden' 
+						name='".CONS::$str_Filter_Memo
+						."' value='$filter_memo'>";
+			
+			} else {
+				
+// 				echo "filter memo => NO";
+				
+			}
 			
 			$options = array(
 					'label' => 'Filter',
