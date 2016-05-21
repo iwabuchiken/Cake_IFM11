@@ -394,9 +394,6 @@ class ImagesController extends AppController {
 
 		}//if ($AND_OR == null)
 		
-		
-		
-		
 		/*******************************
 		 params data: filter file name
 		*******************************/
@@ -418,6 +415,26 @@ class ImagesController extends AppController {
 			$this->set("filter_file_name", $query_Filter_File_Name);
 		
 		}
+
+		/*******************************
+		 params data: filter file name: AND_OR
+		*******************************/
+		@$AND_OR__FileName = $this->request->query[CONS::$str_Filter_RadioButtons_Name_File_Name];
+// 		@$AND_OR = $this->request->query[CONS::$str_Filter_RadioButtons_Name_Memo];
+		
+		// 		debug("\$AND_OR => ".$AND_OR);
+		
+		if ($AND_OR__FileName == null) {
+			// 			RBs_AND_OR_Memo
+			$this->set(CONS::$str_Filter_RadioButtons_Name_File_Name, null);
+			// 			$this->set("pageVar_AndOr_Memo", null);
+			// 			$this->set(CONS::$pageVar_AndOr_Memo, null);
+		
+		} else {
+		
+			$this->set(CONS::$str_Filter_RadioButtons_Name_File_Name, $AND_OR__FileName);
+		
+		}//if ($AND_OR == null)
 		
 	}//_index_2__Set_Page_Data()
 	

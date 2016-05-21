@@ -20,6 +20,18 @@
 		
 			<?php echo 
 					$this->Html->link(
+								'Images(2)',
+								array('controller' => 'images', 
+										'action' => 'index_2'),
+								array('class' => "button"));
+			?>
+			
+		</td>
+		
+		<td>
+		
+			<?php echo 
+					$this->Html->link(
 								'Add Image',
 								array('controller' => 'images', 
 										'action' => 'add'),

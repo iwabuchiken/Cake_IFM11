@@ -86,6 +86,42 @@
 // 					'options' => array(1 => 'Personal ', 2 => 'Company')
 			));
 			
+			// filter memo
+			if (isset($filter_file_name) && $filter_file_name != "") {
+				// 			if (isset($filter_memo)) {
+					
+				// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
+					
+				echo "<input type='hidden'
+						name='".CONS::$str_Filter_File_Name
+									."' value='$filter_file_name'>";
+					
+			} else {
+			
+				// 				echo "filter memo => NO";
+			
+			}
+				
+			// filter memo: and/or
+			if (isset($RBs_AND_OR_File_Name) && $RBs_AND_OR_File_Name != "") {
+				// 			if (isset($pageVar_AndOr_Memo) && $pageVar_AndOr_Memo != "") {
+				// 			if (isset($filter_memo)) {
+					
+				// 				echo $this->Form->input($query_SortName, array('type' => 'hidden', 'value' => $query_SortName));
+					
+				echo "<input type='hidden'
+						name='".CONS::$str_Filter_RadioButtons_Name_File_Name
+									."' value='$RBs_AND_OR_File_Name'>";
+				// 						name='".CONS::$pageVar_AndOr_Memo
+				// 						."' value='$pageVar_AndOr_Memo'>";
+					
+			} else {
+			
+				// 				echo "filter memo => NO";
+			
+			}
+				
+			
 			echo $this->Form->end($options);
 			
 // 			echo $this->Form->end('Save Image', array('name'=>'submit_button'));
