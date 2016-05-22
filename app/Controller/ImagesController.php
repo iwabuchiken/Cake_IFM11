@@ -448,7 +448,7 @@ class ImagesController extends AppController {
 		
 		$this->Image->save();
 		
-		debug("model created");
+// 		debug("model created");
 		
 // 			$this->request->data['Image']['created_at'] =
 // 				Utils::get_CurrentTime2(CONS::$timeLabelTypes["basic"]);
@@ -466,7 +466,7 @@ class ImagesController extends AppController {
 // 	test_Use_Session($use_plain_view) {
 // 	test_Use_Session() {
 
-		debug("test_Use_Session");
+// 		debug("test_Use_Session");
 // 		debug("_test_Use_Session");
 
 		$session_Key = "abcdef";
@@ -481,7 +481,7 @@ class ImagesController extends AppController {
 		// read session
 		$tmp = $this->Session->read($session_Key);
 		
-		debug("\$tmp => ".$tmp);
+// 		debug("\$tmp => ".$tmp);
 
 // 		//test
 // 		debug($this->Paginator->url());	//=> undefined
@@ -601,7 +601,7 @@ class ImagesController extends AppController {
 		
 		} else {
 		
-		debug("\$switch_direction => '".$switch_direction."'");
+// 		debug("\$switch_direction => '".$switch_direction."'");
 		
 			// validate
 			if ($switch_direction != CONS::$param_Val_Switch_Direction__ON) {
@@ -733,7 +733,7 @@ class ImagesController extends AppController {
 		//ref http://stackoverflow.com/questions/6768793/get-the-full-url-in-php answered Jul 20 '11 at 21:33
 		$uri = $_SERVER['REQUEST_URI'];
 		
-		debug("\$uri => ".$uri);
+// 		debug("\$uri => ".$uri);
 		
 		//ref http://stackoverflow.com/questions/4366730/check-if-string-contains-specific-words answered Dec 6 '10 at 13:15
 		$has_Page_Param = strpos($uri, "page:");
@@ -771,7 +771,7 @@ class ImagesController extends AppController {
 						
 		} else {
 		
-			debug("\$switch_direction => '".$switch_direction."'");
+// 			debug("\$switch_direction => '".$switch_direction."'");
 
 			// validate
 			if ($switch_direction != CONS::$param_Val_Switch_Direction__ON) {
@@ -857,7 +857,7 @@ class ImagesController extends AppController {
 
 		if ($sort_name == null) {
 		
-			debug("\$sort_name => null");
+// 			debug("\$sort_name => null");
 			/*******************************
 			 judge: session => has a value for sort_name?
 			*******************************/
@@ -898,7 +898,7 @@ class ImagesController extends AppController {
 		}//$sort_name == null
 		
 		
-		debug("\$current_Sort => ".$current_Sort);
+// 		debug("\$current_Sort => ".$current_Sort);
 		
 		/*******************************
 			return
@@ -925,7 +925,7 @@ class ImagesController extends AppController {
 		*******************************/
 		if ($sort_direction == null) {
 			
-			debug("\$sort_direction => null");
+// 				debug("\$sort_direction => null");
 
 			/*******************************
 			 judge: session => has a value for sort_direction?
@@ -965,7 +965,7 @@ class ImagesController extends AppController {
 		/*******************************
 			return
 		*******************************/
-		debug("\$current_Direction => ".$current_Direction);
+// 		debug("\$current_Direction => ".$current_Direction);
 		
 		return $current_Direction;
 		
@@ -1308,7 +1308,7 @@ class ImagesController extends AppController {
 		
 		@$query_Filter_Memo = $this->request->query[$filter_memo];
 		
-		debug("\$query_Filter_Memo => ".$query_Filter_Memo);
+// 		debug("\$query_Filter_Memo => ".$query_Filter_Memo);
 		
 		if ($query_Filter_Memo == CONS::$str_Filter_Memo_all) {
 		
@@ -1323,7 +1323,7 @@ class ImagesController extends AppController {
 	
 		} else {//if ($query_Filter_Memo == CONS::$str_Filter_Memo_all)
 
-			debug("'else' starting...");
+// 			debug("'else' starting...");
 			
 			/*******************************
 				$query_Filter_Memo => "plants　花"
