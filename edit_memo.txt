@@ -90,7 +90,9 @@
 	
 
 	:m :i 1*1 / product / 物干し台　底に、重り
-	>categories:	product biz
+	>categories:	
+	>product:
+	>biz:
 
 13	:m 買ったもの / 説明札 / キャン・ドゥで買った、バッグ
 14	:m RES 230*1 / 風水
@@ -98,13 +100,13 @@
 
 	:m :tome / 自分の tribe
 	m: :tome
-	>thinking:
+	>thinking:　方針
 	
 	
 	:th / すてきな世界を実現　=>　コンピュータ、他
 	>人生:		進路　全般
 	>身体:
-	>:
+	>評論:
 
 129
 
