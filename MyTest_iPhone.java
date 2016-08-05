@@ -396,7 +396,11 @@ public class MyTest_iPhone {
 			@Override
 			public boolean accept(File f) {
 				
-				return f.exists() && f.getName().startsWith("IMG") && f.getName().endsWith("JPG");
+				return f.exists() 
+						&& f.getName().startsWith("IMG") 
+						&& (f.getName().endsWith("JPG") 
+								|| f.getName().endsWith("jpg"));
+//				return f.exists() && f.getName().startsWith("IMG") && f.getName().endsWith("JPG");
 //				return f.exists() && f.getName().startsWith("IMG");
 //				return f.exists() && f.getPath().startsWith("DSC");
 				
