@@ -399,7 +399,9 @@ public class MyTest_iPhone {
 				return f.exists() 
 						&& f.getName().startsWith("IMG") 
 						&& (f.getName().endsWith("JPG") 
-								|| f.getName().endsWith("jpg"));
+								|| f.getName().endsWith("jpg")
+								|| f.getName().endsWith("PNG")
+								|| f.getName().endsWith("png"));
 //				return f.exists() && f.getName().startsWith("IMG") && f.getName().endsWith("JPG");
 //				return f.exists() && f.getName().startsWith("IMG");
 //				return f.exists() && f.getPath().startsWith("DSC");
