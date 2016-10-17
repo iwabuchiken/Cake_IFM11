@@ -26642,3 +26642,231 @@
 [2016/10/14 08:09:25.968] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_07-54-29%' ORDER BY file_name DESC;'
 [2016/10/14 08:09:26.014] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_07-54-29_000.jpg
 [2016/10/14 08:09:26.016] [MyTest_iPhone.java : 297] file = 2016-10-14_07-54-29_000.jpg / in db => 0 / fname_Modified => 2016-10-14_07-54-29_000.jpg
+[2016/10/17 08:41:30.757] [MyTest_iPhone.java : 71] 
+
+============= D_20_v_1_1_Process_IPhone_ImageFiles__V4 =============
+[2016/10/17 08:41:32.816] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_09-01-44%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:32.860] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_09-01-44_000.jpg
+[2016/10/17 08:41:32.868] [MyTest_iPhone.java : 297] file = 2016-10-14_09-01-44_000.jpg / in db => 0 / fname_Modified => 2016-10-14_09-01-44_000.jpg
+[2016/10/17 08:41:32.887] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_09-56-47%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:32.920] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_09-56-47_000.jpg
+[2016/10/17 08:41:32.921] [MyTest_iPhone.java : 297] file = 2016-10-14_09-56-47_000.jpg / in db => 0 / fname_Modified => 2016-10-14_09-56-47_000.jpg
+[2016/10/17 08:41:32.924] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_12-25-10%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:32.958] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_12-25-10_000.jpg
+[2016/10/17 08:41:32.959] [MyTest_iPhone.java : 297] file = 2016-10-14_12-25-10_000.jpg / in db => 0 / fname_Modified => 2016-10-14_12-25-10_000.jpg
+[2016/10/17 08:41:32.962] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_12-26-59%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:32.999] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_12-26-59_000.jpg
+[2016/10/17 08:41:33.002] [MyTest_iPhone.java : 297] file = 2016-10-14_12-26-59_000.jpg / in db => 0 / fname_Modified => 2016-10-14_12-26-59_000.jpg
+[2016/10/17 08:41:33.008] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_12-27-22%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.047] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_12-27-22_000.jpg
+[2016/10/17 08:41:33.049] [MyTest_iPhone.java : 297] file = 2016-10-14_12-27-22_000.jpg / in db => 0 / fname_Modified => 2016-10-14_12-27-22_000.jpg
+[2016/10/17 08:41:33.052] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_12-27-32%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.084] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_12-27-32_000.jpg
+[2016/10/17 08:41:33.086] [MyTest_iPhone.java : 297] file = 2016-10-14_12-27-32_000.jpg / in db => 0 / fname_Modified => 2016-10-14_12-27-32_000.jpg
+[2016/10/17 08:41:33.089] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_12-47-10%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.133] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_12-47-10_000.jpg
+[2016/10/17 08:41:33.135] [MyTest_iPhone.java : 297] file = 2016-10-14_12-47-10_000.jpg / in db => 0 / fname_Modified => 2016-10-14_12-47-10_000.jpg
+[2016/10/17 08:41:33.139] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-01-12%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.179] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-01-12_000.jpg
+[2016/10/17 08:41:33.180] [MyTest_iPhone.java : 297] file = 2016-10-14_13-01-12_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-01-12_000.jpg
+[2016/10/17 08:41:33.183] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-05-55%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.215] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-05-55_000.jpg
+[2016/10/17 08:41:33.217] [MyTest_iPhone.java : 297] file = 2016-10-14_13-05-55_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-05-55_000.jpg
+[2016/10/17 08:41:33.220] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-06-21%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.264] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-06-21_000.jpg
+[2016/10/17 08:41:33.265] [MyTest_iPhone.java : 297] file = 2016-10-14_13-06-21_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-06-21_000.jpg
+[2016/10/17 08:41:33.268] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-06-44%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.321] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-06-44_000.jpg
+[2016/10/17 08:41:33.323] [MyTest_iPhone.java : 297] file = 2016-10-14_13-06-44_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-06-44_000.jpg
+[2016/10/17 08:41:33.327] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-07-08%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.362] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-07-08_000.jpg
+[2016/10/17 08:41:33.363] [MyTest_iPhone.java : 297] file = 2016-10-14_13-07-08_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-07-08_000.jpg
+[2016/10/17 08:41:33.366] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-07-26%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.398] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-07-26_000.jpg
+[2016/10/17 08:41:33.399] [MyTest_iPhone.java : 297] file = 2016-10-14_13-07-26_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-07-26_000.jpg
+[2016/10/17 08:41:33.405] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-07-36%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.437] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-07-36_000.jpg
+[2016/10/17 08:41:33.438] [MyTest_iPhone.java : 297] file = 2016-10-14_13-07-36_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-07-36_000.jpg
+[2016/10/17 08:41:33.441] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-07-39%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.486] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-07-39_000.jpg
+[2016/10/17 08:41:33.488] [MyTest_iPhone.java : 297] file = 2016-10-14_13-07-39_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-07-39_000.jpg
+[2016/10/17 08:41:33.491] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-16-18%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.525] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-16-18_000.jpg
+[2016/10/17 08:41:33.527] [MyTest_iPhone.java : 297] file = 2016-10-14_13-16-18_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-16-18_000.jpg
+[2016/10/17 08:41:33.530] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-16-57%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.567] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-16-57_000.jpg
+[2016/10/17 08:41:33.568] [MyTest_iPhone.java : 297] file = 2016-10-14_13-16-57_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-16-57_000.jpg
+[2016/10/17 08:41:33.571] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-17-06%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.616] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-17-06_000.jpg
+[2016/10/17 08:41:33.618] [MyTest_iPhone.java : 297] file = 2016-10-14_13-17-06_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-17-06_000.jpg
+[2016/10/17 08:41:33.622] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-22-04%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.658] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-22-04_000.jpg
+[2016/10/17 08:41:33.659] [MyTest_iPhone.java : 297] file = 2016-10-14_13-22-04_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-22-04_000.jpg
+[2016/10/17 08:41:33.662] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-42-32%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.696] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-42-32_000.jpg
+[2016/10/17 08:41:33.697] [MyTest_iPhone.java : 297] file = 2016-10-14_13-42-32_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-42-32_000.jpg
+[2016/10/17 08:41:33.702] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-42-42%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.753] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-42-42_000.jpg
+[2016/10/17 08:41:33.754] [MyTest_iPhone.java : 297] file = 2016-10-14_13-42-42_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-42-42_000.jpg
+[2016/10/17 08:41:33.757] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-42-46%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.790] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-42-46_000.jpg
+[2016/10/17 08:41:33.791] [MyTest_iPhone.java : 297] file = 2016-10-14_13-42-46_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-42-46_000.jpg
+[2016/10/17 08:41:33.795] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-43-03%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.827] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-43-03_000.jpg
+[2016/10/17 08:41:33.828] [MyTest_iPhone.java : 297] file = 2016-10-14_13-43-03_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-43-03_000.jpg
+[2016/10/17 08:41:33.832] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-49-40%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.863] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-49-40_000.jpg
+[2016/10/17 08:41:33.865] [MyTest_iPhone.java : 297] file = 2016-10-14_13-49-40_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-49-40_000.jpg
+[2016/10/17 08:41:33.869] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-56-10%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.925] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-56-10_000.jpg
+[2016/10/17 08:41:33.926] [MyTest_iPhone.java : 297] file = 2016-10-14_13-56-10_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-56-10_000.jpg
+[2016/10/17 08:41:33.929] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-59-13%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:33.961] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-59-13_000.jpg
+[2016/10/17 08:41:33.962] [MyTest_iPhone.java : 297] file = 2016-10-14_13-59-13_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-59-13_000.jpg
+[2016/10/17 08:41:33.965] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_13-59-23%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.010] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_13-59-23_000.jpg
+[2016/10/17 08:41:34.012] [MyTest_iPhone.java : 297] file = 2016-10-14_13-59-23_000.jpg / in db => 0 / fname_Modified => 2016-10-14_13-59-23_000.jpg
+[2016/10/17 08:41:34.015] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_14-03-16%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.050] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_14-03-16_000.jpg
+[2016/10/17 08:41:34.051] [MyTest_iPhone.java : 297] file = 2016-10-14_14-03-16_000.jpg / in db => 0 / fname_Modified => 2016-10-14_14-03-16_000.jpg
+[2016/10/17 08:41:34.054] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_14-08-36%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.086] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_14-08-36_000.jpg
+[2016/10/17 08:41:34.087] [MyTest_iPhone.java : 297] file = 2016-10-14_14-08-36_000.jpg / in db => 0 / fname_Modified => 2016-10-14_14-08-36_000.jpg
+[2016/10/17 08:41:34.090] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_14-23-12%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.139] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_14-23-12_000.jpg
+[2016/10/17 08:41:34.141] [MyTest_iPhone.java : 297] file = 2016-10-14_14-23-12_000.jpg / in db => 0 / fname_Modified => 2016-10-14_14-23-12_000.jpg
+[2016/10/17 08:41:34.145] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_14-51-18%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.178] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_14-51-18_000.jpg
+[2016/10/17 08:41:34.180] [MyTest_iPhone.java : 297] file = 2016-10-14_14-51-18_000.jpg / in db => 0 / fname_Modified => 2016-10-14_14-51-18_000.jpg
+[2016/10/17 08:41:34.182] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_15-00-43%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.214] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_15-00-43_000.jpg
+[2016/10/17 08:41:34.215] [MyTest_iPhone.java : 297] file = 2016-10-14_15-00-43_000.jpg / in db => 0 / fname_Modified => 2016-10-14_15-00-43_000.jpg
+[2016/10/17 08:41:34.219] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_15-02-31%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.257] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_15-02-31_000.jpg
+[2016/10/17 08:41:34.258] [MyTest_iPhone.java : 297] file = 2016-10-14_15-02-31_000.jpg / in db => 0 / fname_Modified => 2016-10-14_15-02-31_000.jpg
+[2016/10/17 08:41:34.264] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_17-01-09%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.297] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_17-01-09_000.jpg
+[2016/10/17 08:41:34.298] [MyTest_iPhone.java : 297] file = 2016-10-14_17-01-09_000.jpg / in db => 0 / fname_Modified => 2016-10-14_17-01-09_000.jpg
+[2016/10/17 08:41:34.301] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_17-07-33%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.341] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_17-07-33_000.jpg
+[2016/10/17 08:41:34.343] [MyTest_iPhone.java : 297] file = 2016-10-14_17-07-33_000.jpg / in db => 0 / fname_Modified => 2016-10-14_17-07-33_000.jpg
+[2016/10/17 08:41:34.348] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_17-15-00%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.389] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_17-15-00_000.jpg
+[2016/10/17 08:41:34.390] [MyTest_iPhone.java : 297] file = 2016-10-14_17-15-00_000.jpg / in db => 0 / fname_Modified => 2016-10-14_17-15-00_000.jpg
+[2016/10/17 08:41:34.393] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_17-18-39%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.426] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_17-18-39_000.jpg
+[2016/10/17 08:41:34.427] [MyTest_iPhone.java : 297] file = 2016-10-14_17-18-39_000.jpg / in db => 0 / fname_Modified => 2016-10-14_17-18-39_000.jpg
+[2016/10/17 08:41:34.433] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_17-22-54%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.465] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_17-22-54_000.jpg
+[2016/10/17 08:41:34.467] [MyTest_iPhone.java : 297] file = 2016-10-14_17-22-54_000.jpg / in db => 0 / fname_Modified => 2016-10-14_17-22-54_000.jpg
+[2016/10/17 08:41:34.470] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_20-46-02%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.506] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_20-46-02_000.jpg
+[2016/10/17 08:41:34.508] [MyTest_iPhone.java : 297] file = 2016-10-14_20-46-02_000.jpg / in db => 0 / fname_Modified => 2016-10-14_20-46-02_000.jpg
+[2016/10/17 08:41:34.510] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_22-50-37%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.544] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_22-50-37_000.jpg
+[2016/10/17 08:41:34.546] [MyTest_iPhone.java : 297] file = 2016-10-14_22-50-37_000.jpg / in db => 0 / fname_Modified => 2016-10-14_22-50-37_000.jpg
+[2016/10/17 08:41:34.549] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_23-59-39%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.588] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_23-59-39_000.jpg
+[2016/10/17 08:41:34.589] [MyTest_iPhone.java : 297] file = 2016-10-14_23-59-39_000.jpg / in db => 0 / fname_Modified => 2016-10-14_23-59-39_000.jpg
+[2016/10/17 08:41:34.592] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-14_23-59-44%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.627] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-14_23-59-44_000.jpg
+[2016/10/17 08:41:34.628] [MyTest_iPhone.java : 297] file = 2016-10-14_23-59-44_000.jpg / in db => 0 / fname_Modified => 2016-10-14_23-59-44_000.jpg
+[2016/10/17 08:41:34.644] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_07-42-11%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.677] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_07-42-11_000.jpg
+[2016/10/17 08:41:34.678] [MyTest_iPhone.java : 297] file = 2016-10-15_07-42-11_000.jpg / in db => 0 / fname_Modified => 2016-10-15_07-42-11_000.jpg
+[2016/10/17 08:41:34.681] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_17-37-52%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.715] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_17-37-52_000.jpg
+[2016/10/17 08:41:34.717] [MyTest_iPhone.java : 297] file = 2016-10-15_17-37-52_000.jpg / in db => 0 / fname_Modified => 2016-10-15_17-37-52_000.jpg
+[2016/10/17 08:41:34.720] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_17-46-30%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.761] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_17-46-30_000.jpg
+[2016/10/17 08:41:34.762] [MyTest_iPhone.java : 297] file = 2016-10-15_17-46-30_000.jpg / in db => 0 / fname_Modified => 2016-10-15_17-46-30_000.jpg
+[2016/10/17 08:41:34.768] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_17-49-39%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.818] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_17-49-39_000.jpg
+[2016/10/17 08:41:34.820] [MyTest_iPhone.java : 297] file = 2016-10-15_17-49-39_000.jpg / in db => 0 / fname_Modified => 2016-10-15_17-49-39_000.jpg
+[2016/10/17 08:41:34.823] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_17-58-44%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.883] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_17-58-44_000.jpg
+[2016/10/17 08:41:34.884] [MyTest_iPhone.java : 297] file = 2016-10-15_17-58-44_000.jpg / in db => 0 / fname_Modified => 2016-10-15_17-58-44_000.jpg
+[2016/10/17 08:41:34.887] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_17-58-51%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.920] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_17-58-51_000.jpg
+[2016/10/17 08:41:34.921] [MyTest_iPhone.java : 297] file = 2016-10-15_17-58-51_000.jpg / in db => 0 / fname_Modified => 2016-10-15_17-58-51_000.jpg
+[2016/10/17 08:41:34.924] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_18-04-47%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.957] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_18-04-47_000.jpg
+[2016/10/17 08:41:34.959] [MyTest_iPhone.java : 297] file = 2016-10-15_18-04-47_000.jpg / in db => 0 / fname_Modified => 2016-10-15_18-04-47_000.jpg
+[2016/10/17 08:41:34.961] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_21-28-04%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:34.995] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_21-28-04_000.jpg
+[2016/10/17 08:41:34.996] [MyTest_iPhone.java : 297] file = 2016-10-15_21-28-04_000.jpg / in db => 0 / fname_Modified => 2016-10-15_21-28-04_000.jpg
+[2016/10/17 08:41:35.001] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_21-28-20%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.051] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_21-28-20_000.jpg
+[2016/10/17 08:41:35.053] [MyTest_iPhone.java : 297] file = 2016-10-15_21-28-20_000.jpg / in db => 0 / fname_Modified => 2016-10-15_21-28-20_000.jpg
+[2016/10/17 08:41:35.056] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_21-28-34%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.092] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_21-28-34_000.jpg
+[2016/10/17 08:41:35.093] [MyTest_iPhone.java : 297] file = 2016-10-15_21-28-34_000.jpg / in db => 0 / fname_Modified => 2016-10-15_21-28-34_000.jpg
+[2016/10/17 08:41:35.096] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_21-28-47%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.133] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_21-28-47_000.jpg
+[2016/10/17 08:41:35.134] [MyTest_iPhone.java : 297] file = 2016-10-15_21-28-47_000.jpg / in db => 0 / fname_Modified => 2016-10-15_21-28-47_000.jpg
+[2016/10/17 08:41:35.137] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_21-50-28%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.172] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_21-50-28_000.jpg
+[2016/10/17 08:41:35.174] [MyTest_iPhone.java : 297] file = 2016-10-15_21-50-28_000.jpg / in db => 0 / fname_Modified => 2016-10-15_21-50-28_000.jpg
+[2016/10/17 08:41:35.176] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_22-46-33%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.226] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_22-46-33_000.jpg
+[2016/10/17 08:41:35.228] [MyTest_iPhone.java : 297] file = 2016-10-15_22-46-33_000.jpg / in db => 0 / fname_Modified => 2016-10-15_22-46-33_000.jpg
+[2016/10/17 08:41:35.231] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-15_22-53-40%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.266] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-15_22-53-40_000.jpg
+[2016/10/17 08:41:35.267] [MyTest_iPhone.java : 297] file = 2016-10-15_22-53-40_000.jpg / in db => 0 / fname_Modified => 2016-10-15_22-53-40_000.jpg
+[2016/10/17 08:41:35.270] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_07-48-53%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.313] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_07-48-53_000.jpg
+[2016/10/17 08:41:35.314] [MyTest_iPhone.java : 297] file = 2016-10-16_07-48-53_000.jpg / in db => 0 / fname_Modified => 2016-10-16_07-48-53_000.jpg
+[2016/10/17 08:41:35.316] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_09-05-04%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.365] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_09-05-04_000.jpg
+[2016/10/17 08:41:35.366] [MyTest_iPhone.java : 297] file = 2016-10-16_09-05-04_000.jpg / in db => 0 / fname_Modified => 2016-10-16_09-05-04_000.jpg
+[2016/10/17 08:41:35.370] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_10-20-55%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.410] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_10-20-55_000.jpg
+[2016/10/17 08:41:35.413] [MyTest_iPhone.java : 297] file = 2016-10-16_10-20-55_000.jpg / in db => 0 / fname_Modified => 2016-10-16_10-20-55_000.jpg
+[2016/10/17 08:41:35.415] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_10-24-15%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.450] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_10-24-15_000.jpg
+[2016/10/17 08:41:35.451] [MyTest_iPhone.java : 297] file = 2016-10-16_10-24-15_000.jpg / in db => 0 / fname_Modified => 2016-10-16_10-24-15_000.jpg
+[2016/10/17 08:41:35.453] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_10-30-48%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.505] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_10-30-48_000.jpg
+[2016/10/17 08:41:35.506] [MyTest_iPhone.java : 297] file = 2016-10-16_10-30-48_000.jpg / in db => 0 / fname_Modified => 2016-10-16_10-30-48_000.jpg
+[2016/10/17 08:41:35.509] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_10-32-10%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.545] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_10-32-10_000.jpg
+[2016/10/17 08:41:35.547] [MyTest_iPhone.java : 297] file = 2016-10-16_10-32-10_000.jpg / in db => 0 / fname_Modified => 2016-10-16_10-32-10_000.jpg
+[2016/10/17 08:41:35.549] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_10-32-11%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.590] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_10-32-11_000.jpg
+[2016/10/17 08:41:35.592] [MyTest_iPhone.java : 297] file = 2016-10-16_10-32-11_000.jpg / in db => 0 / fname_Modified => 2016-10-16_10-32-11_000.jpg
+[2016/10/17 08:41:35.596] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_10-52-35%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.639] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_10-52-35_000.jpg
+[2016/10/17 08:41:35.640] [MyTest_iPhone.java : 297] file = 2016-10-16_10-52-35_000.jpg / in db => 0 / fname_Modified => 2016-10-16_10-52-35_000.jpg
+[2016/10/17 08:41:35.642] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_15-22-40%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.677] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_15-22-40_000.jpg
+[2016/10/17 08:41:35.678] [MyTest_iPhone.java : 297] file = 2016-10-16_15-22-40_000.jpg / in db => 0 / fname_Modified => 2016-10-16_15-22-40_000.jpg
+[2016/10/17 08:41:35.681] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_15-23-13%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.730] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_15-23-13_000.jpg
+[2016/10/17 08:41:35.737] [MyTest_iPhone.java : 297] file = 2016-10-16_15-23-13_000.jpg / in db => 0 / fname_Modified => 2016-10-16_15-23-13_000.jpg
+[2016/10/17 08:41:35.741] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_15-24-14%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.781] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_15-24-14_000.jpg
+[2016/10/17 08:41:35.782] [MyTest_iPhone.java : 297] file = 2016-10-16_15-24-14_000.jpg / in db => 0 / fname_Modified => 2016-10-16_15-24-14_000.jpg
+[2016/10/17 08:41:35.785] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_15-26-02%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.831] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_15-26-02_000.jpg
+[2016/10/17 08:41:35.833] [MyTest_iPhone.java : 297] file = 2016-10-16_15-26-02_000.jpg / in db => 0 / fname_Modified => 2016-10-16_15-26-02_000.jpg
+[2016/10/17 08:41:35.837] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_15-40-46%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.881] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_15-40-46_000.jpg
+[2016/10/17 08:41:35.882] [MyTest_iPhone.java : 297] file = 2016-10-16_15-40-46_000.jpg / in db => 0 / fname_Modified => 2016-10-16_15-40-46_000.jpg
+[2016/10/17 08:41:35.885] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_15-41-11%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.920] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_15-41-11_000.jpg
+[2016/10/17 08:41:35.921] [MyTest_iPhone.java : 297] file = 2016-10-16_15-41-11_000.jpg / in db => 0 / fname_Modified => 2016-10-16_15-41-11_000.jpg
+[2016/10/17 08:41:35.924] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_15-43-18%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:35.977] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_15-43-18_000.jpg
+[2016/10/17 08:41:35.978] [MyTest_iPhone.java : 297] file = 2016-10-16_15-43-18_000.jpg / in db => 0 / fname_Modified => 2016-10-16_15-43-18_000.jpg
+[2016/10/17 08:41:35.980] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_15-48-47%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:36.017] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_15-48-47_000.jpg
+[2016/10/17 08:41:36.018] [MyTest_iPhone.java : 297] file = 2016-10-16_15-48-47_000.jpg / in db => 0 / fname_Modified => 2016-10-16_15-48-47_000.jpg
+[2016/10/17 08:41:36.021] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_19-31-56%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:36.057] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_19-31-56_000.jpg
+[2016/10/17 08:41:36.058] [MyTest_iPhone.java : 297] file = 2016-10-16_19-31-56_000.jpg / in db => 0 / fname_Modified => 2016-10-16_19-31-56_000.jpg
+[2016/10/17 08:41:36.061] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_20-30-35%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:36.105] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_20-30-35_000.jpg
+[2016/10/17 08:41:36.107] [MyTest_iPhone.java : 297] file = 2016-10-16_20-30-35_000.jpg / in db => 0 / fname_Modified => 2016-10-16_20-30-35_000.jpg
+[2016/10/17 08:41:36.111] [MyTest_iPhone.java : 229] query => 'SELECT count(*) FROM ifm11 WHERE file_name LIKE '2016-10-16_20-34-36%' ORDER BY file_name DESC;'
+[2016/10/17 08:41:36.156] [MyTest_iPhone.java : 1442] file => not exist: 2016-10-16_20-34-36_000.jpg
+[2016/10/17 08:41:36.157] [MyTest_iPhone.java : 297] file = 2016-10-16_20-34-36_000.jpg / in db => 0 / fname_Modified => 2016-10-16_20-34-36_000.jpg

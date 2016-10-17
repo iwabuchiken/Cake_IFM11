@@ -1,8 +1,8 @@
 /*
  * javac C:/WORKS/WS/WS_Android/IFM11/src/ifm11/utils/MyTest.java
- * javac C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\MyTest_iPhone.java
+ * javac C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\MyTest_iPhone.java
  * 
- * C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\change_file_names.bat
+ * C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\change_file_names.bat
  * 
  */
 
@@ -85,9 +85,9 @@ public class MyTest_iPhone {
 				+ "ORDER BY file_name DESC;";
 
 		String db_Directive = "jdbc:sqlite:"
-				+ "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
+				+ "C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
 				+ "\\ifm11_backup_20160110_080900.bk";
-//		+ "C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data"
+//		+ "C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data"
 
 		int val = is_InDB_FileName(db_Directive, q);
 //			int val = get_NumOf_Entries_InDB(stmt, q);
@@ -179,7 +179,7 @@ public class MyTest_iPhone {
 		
 		String fname_Modified;
 		
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
 		
 		for (File elem : list_Files) {
 			
@@ -363,8 +363,8 @@ public class MyTest_iPhone {
 		// directory
 		//
 		///////////////////////////////////
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
-//		String dpath = "C:\WORKS\Storage\images\iphone\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
+//		String dpath = "C:\WORKS_2\Storage\images\iphone\tmp";
 		
 		File dir = new File(dpath);
 		
@@ -542,7 +542,7 @@ public class MyTest_iPhone {
 		// directory
 		//
 		///////////////////////////////////
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
 		
 		File dir = new File(dpath);
 		
@@ -724,11 +724,11 @@ public class MyTest_iPhone {
 
 			//ref [file path] http://stackoverflow.com/questions/1525444/how-to-connect-sqlite-with-java asked Oct 6 '09 at 13:02
 			String directive_Connection = "jdbc:sqlite:"
-							+ "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
+							+ "C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
 							+ "\\ifm11_backup_20160110_080900.bk";
 			
 			c = DriverManager.getConnection(directive_Connection);
-//			c = DriverManager.getConnection("jdbc:sqlite:C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ifm11_backup_20160110_080900.bk");
+//			c = DriverManager.getConnection("jdbc:sqlite:C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\ifm11_backup_20160110_080900.bk");
 //			c = DriverManager.getConnection("jdbc:sqlite:test.db");
 			
 			c.setAutoCommit(false);
@@ -1041,7 +1041,7 @@ public class MyTest_iPhone {
 		// directory
 		//
 		///////////////////////////////////
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
 		
 		File dir = new File(dpath);
 		
@@ -1112,8 +1112,8 @@ public class MyTest_iPhone {
 	public static void 
 	D_20_v_1_0_s_2__Get_FileName__V3() {
 		
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
-//		String dpath = "C:\WORKS\Storage\images\iphone\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
+//		String dpath = "C:\WORKS_2\Storage\images\iphone\tmp";
 		
 		String fname = "2016-01-11_16-17-05_000.jpg";
 
@@ -1565,7 +1565,7 @@ public class MyTest_iPhone {
 //	public static void 
 	D_20_v_1_0_s_2__Get_FileName__V2() {
 		
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
 //		String dpath = "C:\WORKS\Storage\images\iphone\tmp";
 		
 		String fname = "2016-01-11_16-17-05_000.jpg";
@@ -1824,7 +1824,7 @@ public class MyTest_iPhone {
 //	public static void 
 	D_20_v_1_0_s_2__Get_FileName() {
 		
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
 //		String dpath = "C:\WORKS\Storage\images\iphone\tmp";
 		
 //		String fname = "2016-01-11_16-17-05_00.jpg";
@@ -2128,7 +2128,7 @@ public class MyTest_iPhone {
 	public static void 
 	D_20_v_1_0__Get_FileName() {
 		
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
 //		String dpath = "C:\WORKS\Storage\images\iphone\tmp";
 		
 		String fname = "2016-01-11_16-17-05_000.jpg";
@@ -2255,7 +2255,7 @@ public class MyTest_iPhone {
 		// vars
 		//
 		///////////////////////////////////
-		String dpath = "C:\\WORKS\\Storage\\images\\100SHARP\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\100SHARP\\tmp";
 //		String dpath = "C:\WORKS\Storage\images\100SHARP\tmp";
 		
 		File f = new File(dpath);
@@ -2367,7 +2367,7 @@ public class MyTest_iPhone {
 		// vars
 		//
 		///////////////////////////////////
-		String dpath = "C:\\WORKS\\Storage\\images\\iphone\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
 //		String dpath = "C:\\WORKS\\Storage\\images\\100SHARP\\tmp";
 		
 		File dir = new File(dpath);
@@ -2561,7 +2561,7 @@ public class MyTest_iPhone {
 		// vars
 		//
 		///////////////////////////////////
-		String dpath = "C:\\WORKS\\Storage\\images\\100SHARP\\tmp";
+		String dpath = "C:\\WORKS_2\\Storage\\images\\100SHARP\\tmp";
 		
 		File dir = new File(dpath);
 		
@@ -2804,7 +2804,7 @@ public class MyTest_iPhone {
 		////////////////////////////////
 		String fname = "log.D-20.txt";
 		
-		File fpath_Log = new File("C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11", fname);
+		File fpath_Log = new File("C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11", fname);
 		
 		////////////////////////////////
 

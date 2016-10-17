@@ -2320,7 +2320,7 @@ class ImagesController extends AppController {
 	public function 
 	add_From_DB_File__Local() {
 		
-		$dpath_Src = "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\csv";
+		$dpath_Src = "C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\lib\\data\\csv";
 // 		$dpath_Src = "lib\\data\\csv";
 		
 		$fname_Src = "images.csv";
@@ -3028,18 +3028,6 @@ class ImagesController extends AppController {
 		*******************************/
 		$fpath = Utils::get_fpath();
 		
-// 		$fpath = "";
-			
-// 		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
-		
-// 			$fpath .= "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data";
-		
-// 		} else {
-		
-// 			$fpath .= "/home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Lib/data";
-		
-// 		}//if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local)
-		
 		/*******************************
 		 validate: db file exists
 		*******************************/
@@ -3449,7 +3437,7 @@ class ImagesController extends AppController {
 		*******************************/
 		if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
 				
-			$dpath = "C:\\WORKS\\WS\\Eclipse_Luna"
+			$dpath = "C:\\WORKS_2\\WS\\Eclipse_Luna"
 						."\\Cake_IFM11\\app\\Lib"
 						."\\data";
 				
@@ -3840,7 +3828,7 @@ class ImagesController extends AppController {
 		/*******************************
 		 files list
 		*******************************/
-		$dpath = "C:\\WORKS\\Storage\\images\\100SHARP\\tmp";
+		$dpath = "C:\\WORKS_2\\Storage\\images\\100SHARP\\tmp";
 		
 		$list_Files = array_values(array_diff(
 				scandir($dpath), array('..', '.')));
@@ -4093,7 +4081,7 @@ class ImagesController extends AppController {
 		/*******************************
 		 files list
 		*******************************/
-		$dpath = "C:\\WORKS\\Storage\\images\\100SHARP\\tmp";
+		$dpath = "C:\\WORKS_2\\Storage\\images\\100SHARP\\tmp";
 		
 		$list_Files = array_values(array_diff(
 				scandir($dpath), array('..', '.')));
@@ -4149,7 +4137,8 @@ class ImagesController extends AppController {
 		/*******************************
 			list of file names
 		*******************************/
-		$dpath_ImageFiles = "C:\\Users\\kbuchi\\Desktop\\data\\images\\iphone";
+		$dpath_ImageFiles = "C:\\Users\\iwabuchiken\\data\\images\\iphone";
+// 		$dpath_ImageFiles = "C:\\Users\\kbuchi\\Desktop\\data\\images\\iphone";
 // 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\iphone";
 // 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\is13sh";
 		
@@ -4358,7 +4347,8 @@ class ImagesController extends AppController {
 		*******************************/
 		// path to image file dir
 // 		$dpath_ImageFiles = "/Users/mac/Desktop/works/storage/images/from_iphone/renamed";
-		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\iphone";
+		$dpath_ImageFiles = "C:\Users\iwabuchiken\data\images\iphone";
+// 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\iphone";
 // 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\is13sh";
 		
 		// validate

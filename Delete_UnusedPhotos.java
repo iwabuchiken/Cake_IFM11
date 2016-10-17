@@ -1,6 +1,6 @@
 /*
  * javac C:/WORKS/WS/WS_Android/IFM11/src/ifm11/utils/MyTest.java
- * javac C:\WORKS\WS\Eclipse_Luna\Cake_IFM11\Delete_UnusedPhotos.java
+ * javac C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\Delete_UnusedPhotos.java
  * 
  * <Usage> 
 
@@ -305,7 +305,7 @@ public class Delete_UnusedPhotos {
 				+ "ORDER BY file_name DESC;";
 
 		String db_Directive = "jdbc:sqlite:"
-				+ "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
+				+ "C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
 				+ "\\ifm11_backup_20160110_080900.bk";
 		
 		//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
@@ -379,7 +379,7 @@ public class Delete_UnusedPhotos {
 				+ "ORDER BY file_name DESC;";
 		
 		String db_Directive = "jdbc:sqlite:"
-				+ "C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
+				+ "C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data"
 				+ "\\ifm11_backup_20160110_080900.bk";
 		
 		//ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
@@ -1020,7 +1020,7 @@ public class Delete_UnusedPhotos {
 		////////////////////////////////
 		String fname = "log.D-20.txt";
 		
-		File fpath_Log = new File("C:\\WORKS\\WS\\Eclipse_Luna\\Cake_IFM11", fname);
+		File fpath_Log = new File("C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11", fname);
 		
 		////////////////////////////////
 
