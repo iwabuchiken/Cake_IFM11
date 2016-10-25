@@ -395,9 +395,47 @@ public class MyTest_iPhone {
 			
 			@Override
 			public boolean accept(File f) {
+
+//				//debug
+//				System.out.println("file => " + f.getName());
+//				System.out.println(f.getName().matches("^[A-Z]"));
+////				System.out.println(f.getName().matches("^\\w+"));
+//				
+//				if (f.getName().matches("^\\w+") == true) {
+////					if (f.getName().matches("\\w+") == true) {
+////					if (f.getName().matches("[A-Z]") == true) {
+////					if (f.getName().startsWith("[A-Z]") == true) {
+//					
+//					System.out.println("file starts with => [A-Z]");
+//					
+//				} else {
+//					
+//					System.out.println("file starts NOT with => [A-Z]");
+//					
+//				}
+
+				
+//				//test
+				//ref http://javazuki.com/articles/pattern-and-matcher-usage.html
+////				Pattern pattern = Pattern.compile("^[A-Z]");
+				Pattern pattern = Pattern.compile("^[A-Z]+");
+				Matcher matcher = pattern.matcher(f.getName());
+//				// 
+//				boolean matchResult = matcher.find();
+////				boolean matchResult = matcher.matches();
+//				
+//				System.out.println("file => " + f.getName() + " / " + matchResult);
 				
 				return f.exists() 
-						&& f.getName().startsWith("IMG") 
+						&& (
+							f.getName().startsWith("IMG")
+							|| matcher.find()
+//							|| f.getName().matches("[A-Z]")
+//							|| f.getName().startsWith("[A-Z]")
+//							|| f.getName().startsWith("[A-Z]{2}")
+								
+						)
+						
 						&& (f.getName().endsWith("JPG") 
 								|| f.getName().endsWith("jpg")
 								|| f.getName().endsWith("PNG")
@@ -2976,3 +3014,10 @@ public class MyTest_iPhone {
 	}//get_NumOf_Entries_InDB
 	
 }
+
+
+
+/*
+
+VIKP6685.jpg
+*/
