@@ -2423,3 +2423,146 @@ Stack Trace:
 #5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2017-01-03 08:53:55 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(901): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2623): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 08:56:02 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(901): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2623): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:52:54 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=%3Am+other+%2F+%E9%95%B7%E5%AF%BF%E3%81%AE%E5%AE%B6%E3%80%80%E2%87%92%E3%80%80%E6%9D%A5%E3%81%A6%E3%81%84%E3%82%8B%E4%BA%BA%E3%81%9F%E3%81%A1%E3%80%80%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB&image_id=18411
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18411')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:53:23 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=-%2A&image_id=18412
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18412')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:53:39 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=-%2A&image_id=18413
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18413')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:56:02 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=%3Atome++%2F+%E3%80%8C%E3%81%99%E3%81%94%E3%81%84%E3%80%8D%E3%81%A8%E6%80%9D%E3%81%86%E3%82%82%E3%81%AE%E3%82%92%E3%80%81%E5%A3%B2%E3%82%8D%E3%81%86&image_id=18439
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18439')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:56:38 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=%3Atome++%2F+%E3%80%8C%E3%81%99%E3%81%94%E3%81%84%E3%80%8D%E3%81%A8%E6%80%9D%E3%81%86%E3%82%82%E3%81%AE%E3%82%92%E3%80%81%E5%A3%B2%E3%82%8D%E3%81%86+%7C%7C+%3Am+%3Ath+%2F+%E5%8D%83%E4%BA%BA%E3%81%AB%E4%B8%80%E4%BA%BA%E3%81%8C%E3%80%81%E3%80%8C%E3%82%88%E3%81%97%E3%80%8D%E3%81%A8%E8%A8%80%E3%81%A3%E3%81%A6%E3%81%8F%E3%82%8C%E3%82%8C%E3%81%B0&image_id=18439
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18439')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:57:23 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=%3APHOTO+%E8%A8%98%E9%8C%B2+%2F+%E6%96%87%E6%9B%B8+%2F+%40%E8%87%AA%E5%AE%A4%E3%80%80DiCE%E3%80%80%E8%87%AA%E5%AE%A4+%2F+%E3%82%B0%E3%83%AB%E3%83%A1%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%80%80%E4%BA%BA%E3%81%AE%E5%90%8D%E5%89%8D%E3%83%AA%E3%82%B9%E3%83%88&image_id=18440
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18440')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:58:44 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=%3APHOTO+%E8%A8%98%E9%8C%B2+%2F+%E6%96%87%E6%9B%B8+%2F+%40%E8%87%AA%E5%AE%A4+%2F+%E3%82%B0%E3%83%AB%E3%83%A1%E3%83%80%E3%82%A4%E3%83%8B%E3%83%B3%E3%82%B0%E3%80%80%E4%BA%BA%E3%81%AE%E5%90%8D%E5%89%8D%E3%83%AA%E3%82%B9%E3%83%88&image_id=18440
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18440')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:59:16 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=%3APHOTO+%E8%A8%98%E9%8C%B2+%2F+%E6%96%87%E6%9B%B8+%2F+%40%E8%87%AA%E5%AE%A4%E3%80%80DiCE%E3%80%80%E8%87%AA%E5%AE%A4+%2F+%E4%BC%9A%E8%A8%88%E5%A3%AB%E8%B3%87%E6%A0%BC%E3%80%80%E5%8B%89%E5%BC%B7%E3%80%80%E8%AA%9E%E5%BD%99%E3%81%AE%E3%83%AA%E3%82%B9%E3%83%88&image_id=18441
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18441')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 17:59:47 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=%3APHOTO+%E8%A8%98%E9%8C%B2+%2F+%E6%96%87%E6%9B%B8+%2F+%40%E8%87%AA%E5%AE%A4%E3%80%80DiCE%E3%80%80%E8%87%AA%E5%AE%A4+%2F+%E4%BC%9A%E8%A8%88%E5%A3%AB%E8%B3%87%E6%A0%BC%E3%80%80%E5%8B%89%E5%BC%B7%E3%80%80%E8%AA%9E%E5%BD%99%E3%81%AE%E3%83%AA%E3%82%B9%E3%83%88%E3%80%80%EF%BC%88%E6%89%8B%E6%9B%B8%E3%81%8D%E3%81%AE%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89&image_id=18442
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18442')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 18:01:32 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/update_image_data?memos=%3Am+other+%2F+%E3%83%AA%E3%82%B9%E3%83%88+%2F+%E3%82%84%E3%82%8B%E3%81%93%E3%81%A8%E3%80%80%E3%83%8D%E3%83%83%E3%83%88%E3%82%AB%E3%83%95%E3%82%A7%E3%80%80%E9%83%A8%E5%B1%8B%E3%81%AB%E7%9D%80%E3%81%84%E3%81%9F%E3%82%89&image_id=18497
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(1913): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(3274): Utils::find_Image_ById('18497')
+#2 [internal function]: ImagesController->update_image_data()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-01-03 10:02:08 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(901): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2623): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
