@@ -2620,17 +2620,17 @@ class ImagesController extends AppController {
 		} else {
 			
 			//debug
-			debug("filtering....");
+// 			debug("filtering....");
 		
-			debug("\$sort_ColName => ".$sort_ColName);
-			debug("\$sort_Direction => ".$sort_Direction);
+// 			debug("\$sort_ColName => ".$sort_ColName);
+// 			debug("\$sort_Direction => ".$sort_Direction);
 			
 			$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
 			
 		}//if ($filter_No_Memos != null && $filter_No_Memos ==)
 		
 		//debug
-		debug("\$result=> ".count($result));
+// 		debug("\$result=> ".count($result));
 		
 		/*******************************
 			valid: not null
@@ -2653,7 +2653,7 @@ class ImagesController extends AppController {
 		
 		$images = $result[0];
 
-		debug("images => ".count($images));
+// 		debug("images => ".count($images));
 		
 		/*******************************
 			set: data

@@ -906,7 +906,7 @@
 			// 			$cnt_Tweets = sqlite_num_rows($images);	//=> "Call to undefined function sqlite_num_rows()"
 			
 			//debug
-			debug("query => done");
+// 			debug("query => done");
 			
 			//ref http://stackoverflow.com/questions/883365/row-count-with-pdo answered May 19 '09 at 15:16
 			$cnt_Images = $images->fetchColumn();	//=> w
