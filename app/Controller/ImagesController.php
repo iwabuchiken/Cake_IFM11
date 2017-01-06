@@ -2620,7 +2620,7 @@ class ImagesController extends AppController {
 		} else {
 			
 			//debug
-// 			debug("filtering....");
+			debug("filtering....");
 		
 			debug("\$sort_ColName => ".$sort_ColName);
 			debug("\$sort_Direction => ".$sort_Direction);
@@ -2661,6 +2661,25 @@ class ImagesController extends AppController {
 		$this->set("images", $images);
 		
 		$this->set("numOf_images", $result[1]);
+		
+// 		/*******************************
+// 			debug
+// 		*******************************/
+// 		$count = 0;
+		
+// 		foreach ($images as $row) {
+		
+// 			debug($row);
+			
+// 			$count += 1;
+			
+// 			if ($count > 4) {
+				
+// 				break;
+				
+// 			}
+			
+// 		}//foreach ($images as $row)
 		
 	}//image_manager
 
