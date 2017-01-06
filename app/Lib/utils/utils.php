@@ -787,7 +787,7 @@
 			$fpath = Utils::get_fpath();
 					
 			//debug
-			debug("fpath => $fpath");
+// 			debug("fpath => $fpath");
 			
 			/*******************************
 			 validate: db file exists
@@ -2063,7 +2063,7 @@
 			/*******************************
 			 dir list
 			*******************************/
-			//REF array_values http://stackoverflow.com/questions/7536961/reset-php-array-index Jeremy Banks♦
+			//REF array_values http://stackoverflow.com/questions/7536961/reset-php-array-index Jeremy Banks笙ｦ
 			//REF scan dir http://php.net/manual/en/function.scandir.php#107215
 			$scanned_directory = array_values(array_diff(scandir($dpath), array('..', '.')));
 			// 			$scanned_directory = array_diff(scandir($dpath), array('..', '.'));
@@ -4180,9 +4180,9 @@
 		 * ==> object(Memo) {
 					name => 'Memo'
 					r_id => '137'
-					title => ':end :log 琴'
-					body => '鳥のように
-				千鳥の曲'
+					title => ':end :log 逅ｴ'
+					body => '魑･縺ｮ繧医≧縺ｫ
+				蜊�魑･縺ｮ譖ｲ'
 					r_created_at => '2016/02/21 14:17:32'
 					r_modified_at => '2016/02/21 14:17:59'
 					[protected] _schema => null
@@ -4355,9 +4355,9 @@
 				useDbConfig => 'default'
 				useTable => 'memos'
 				 r_id => '137'
-				title => ':end :log 琴'
-				body => '鳥のように
-			千鳥の曲'
+				title => ':end :log 逅ｴ'
+				body => '魑･縺ｮ繧医≧縺ｫ
+			蜊�魑･縺ｮ譖ｲ'
 				r_created_at => '2016/02/21 14:17:32'
 				r_modified_at => '2016/02/21 14:17:59'
 				[protected] _schema => null

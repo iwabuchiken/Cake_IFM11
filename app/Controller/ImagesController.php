@@ -31,7 +31,7 @@ class ImagesController extends AppController {
 		$opt_conditions = $this->_index__Options();
 
 // 		//test
-// 		$opt_conditions = array("Image.memos LIKE" => array("palnts", "花"));	//=>  General error: 1 near ",": syntax error
+// 		$opt_conditions = array("Image.memos LIKE" => array("palnts", "闃ｱ"));	//=>  General error: 1 near ",": syntax error
 		
 // 		debug($opt_conditions);
 		
@@ -1326,7 +1326,7 @@ class ImagesController extends AppController {
 // 			debug("'else' starting...");
 			
 			/*******************************
-				$query_Filter_Memo => "plants　花"
+				$query_Filter_Memo => "plants縲�闃ｱ"
 			*******************************/
 			if ($AND_OR != null) {
 			
@@ -1359,8 +1359,8 @@ class ImagesController extends AppController {
 
 // 		if ($AND_OR != null) {
 		
-			// replace "　" with " "
-			$filter_String = str_replace("　", " ", $filter_String);
+			// replace "縲�" with " "
+			$filter_String = str_replace("縲�", " ", $filter_String);
 		
 // 			debug("replaced => '$filter_String'");
 			
@@ -1406,10 +1406,10 @@ class ImagesController extends AppController {
 				// 				array(
 				// 						'AND' => array(
 				// 								(int) 0 => array(
-				// 										'Image.memos LIKE' => '食事'
+				// 										'Image.memos LIKE' => '鬟滉ｺ�'
 				// 								),
 				// 								(int) 1 => array(
-				// 										'Image.memos LIKE' => '食事'
+				// 										'Image.memos LIKE' => '鬟滉ｺ�'
 				// 								)
 				// 						)
 				// 				)
@@ -1506,8 +1506,8 @@ class ImagesController extends AppController {
 // 		debug("_index_2__Options__Memo_AndOr");
 		
 		
-			// replace "　" with " "
-			$filter_String = str_replace("　", " ", $filter_String);
+			// replace "縲�" with " "
+			$filter_String = str_replace("縲�", " ", $filter_String);
 		
 			// tokenize
 			$tokens = explode(" ", $filter_String);
@@ -2358,7 +2358,7 @@ class ImagesController extends AppController {
 		// 		(int) 8 => '2014-08-12_12-17-13_686.jpg',
 		// 		(int) 9 => '2014/08/12 12:17:13.000',
 		// 		(int) 10 => '2014/08/12 12:17:14.000',
-		// 		(int) 11 => ':PLANTS　プランター　オクラ',
+		// 		(int) 11 => ':PLANTS縲�繝励Λ繝ｳ繧ｿ繝ｼ縲�繧ｪ繧ｯ繝ｩ',
 		// 		(int) 12 => '',
 		// 		(int) 13 => '',
 		// 		(int) 14 => 'ifm11__PLANTS'
@@ -2541,7 +2541,6 @@ class ImagesController extends AppController {
 	public function
 	image_manager() {
 
-		
 // 		//debug
 // 		phpinfo();
 		
@@ -2619,13 +2618,17 @@ class ImagesController extends AppController {
 								$sort_ColName, $sort_Direction);
 		
 		} else {
+			
+			//debug
+// 			debug("filtering....");
 		
+			debug("\$sort_ColName => ".$sort_ColName);
+			debug("\$sort_Direction => ".$sort_Direction);
+			
 			$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
 			
 		}//if ($filter_No_Memos != null && $filter_No_Memos ==)
 		
-// 		$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
-
 		//debug
 		debug("\$result=> ".count($result));
 		
@@ -2650,6 +2653,8 @@ class ImagesController extends AppController {
 		
 		$images = $result[0];
 
+		debug("images => ".count($images));
+		
 		/*******************************
 			set: data
 		*******************************/

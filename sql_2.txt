@@ -22,7 +22,6 @@ WHERE file_name >= "2017-01-05_02-51-55_011.jpg"
 AND file_name <= "2017-01-05_02-51-55_014.jpg";
 
 UPDATE ifm11 SET memos = 
-"-*" 
-WHERE file_name = "2016-12-31_03-23-03_001.jpg";
+"-*" WHERE file_name = "2016-12-31_03-23-03_001.jpg";
 
 SELECT * FROM ifm11 WHERE modified_at > "2016/09/01" AND memos is null;
