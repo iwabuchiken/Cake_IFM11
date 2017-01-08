@@ -210,10 +210,8 @@ def generate_entries_file
 #  f.close
   
 #  File.open("abc.csv", 'w') do |file|
-  File.open("#{$FNAME_ENTRIES}.csv", 'w') do |file|
-#  File.open("#{$FNAME_ENTRIES}.#{get_time_label()}.csv", 'w') do |file|
-#  File.open("intro.#{get_time_label()}.csv", 'w') do |file|
-#  File.open("intro.csv", 'w') do |file|
+  File.open($FNAME_ENTRIES, 'w') do |file|
+#  File.open("#{$FNAME_ENTRIES}.csv", 'w') do |file|
     
     #debug
     puts "[#{File.basename(__FILE__)}:#{__LINE__}] file => opened"
