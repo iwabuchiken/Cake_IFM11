@@ -104,6 +104,11 @@ def update_records__multiple
   #test
   #ref http://ref.xaio.jp/ruby/classes/string/encode
   Encoding.default_internal = "utf-8"
+  
+  # counter
+  count_inserted = 0
+  
+  count_total = csv_data.size
 
   csv_data.each do |data|
     
@@ -135,13 +140,20 @@ def update_records__multiple
   
     cursor = db.execute(sql)
     puts "[#{File.basename(__FILE__)}:#{__LINE__}] db => executed"
+    
+    # count
+    count_inserted += 1
       
   end#csv_data.each do |data|
 
   # close db
   db.close
   
+  # report
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] db => closed"
+  
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] total = #{count_total} / inserted = #{count_inserted}"
+  
 
 end#update_records__multiple
 
