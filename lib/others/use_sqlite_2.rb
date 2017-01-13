@@ -237,6 +237,11 @@ def generate_entries_file
   end#File.open("intro.#{get_time_label()}.csv", 'w') do |file|
   
   #debug
+#  p result.methods.sort
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] total files => #{files.size.to_i} "
+  
+  
+  #debug
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] write csv => done"
   
   

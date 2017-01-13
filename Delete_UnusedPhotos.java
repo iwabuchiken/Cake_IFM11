@@ -58,8 +58,19 @@ java -cp ".;lib/data/java/*"  Delete_UnusedPhotos
 
  */
 
+
 public class Delete_UnusedPhotos {
 
+	///////////////////////////////////
+	//
+	// class vars
+	//
+	///////////////////////////////////
+	static final String DPATH_IPHONE = "C:\\Users\\iwabuchiken\\data\\images\\iphone";
+//	static final String DPATH_IPHONE = "C:\\Users\\iwabuchiken\\Desktop\\data\\images\\iphone";
+	//C:\Users\iwabuchiken\data\images\iphone
+
+	
 	///////////////////////////////////
 	//
 	// clipboard
@@ -150,8 +161,9 @@ public class Delete_UnusedPhotos {
 		//
 		///////////////////////////////////
 		List<String> listOf_FileNames__Unused = find_Photos_All__Unused();
-		
-		msg = String.format(Locale.JAPAN, "[%s : %d] listOf_FileNames__Unused => %d", Thread
+
+//		msg = String.format(Locale.JAPAN, "[%s : %d] listOf_FileNames__Unused => %d", Thread
+		msg = String.format(Locale.JAPAN, "[%s : %d] listOf_FileNames__Unused => %d !!!", Thread
 				.currentThread().getStackTrace()[1].getFileName(), Thread
 				.currentThread().getStackTrace()[1].getLineNumber(), 
 				listOf_FileNames__Unused.size());
@@ -229,12 +241,32 @@ public class Delete_UnusedPhotos {
 
 	public static int
 	delete_Unused_Photos(List<String> listOf_FileNames__Unused) {
-
-		String msg;
 		
-		String dpath_iphone = "C:\\Users\\kbuchi\\Desktop\\data\\images\\iphone";
+		//debug
+		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] starting => delete_Unused_Photos", Thread
+				.currentThread().getStackTrace()[1].getFileName(),
+				Thread.currentThread().getStackTrace()[1]
+						.getLineNumber());
+		
+		System.out.println(msg);
+
+//		String msg;
+		
+		String dpath_iphone = DPATH_IPHONE;
+//		String dpath_iphone = "C:\\Users\\kbuchi\\Desktop\\data\\images\\iphone";
 		
 		int lenOf_listOf_FileNames__Unused = listOf_FileNames__Unused.size();
+
+		//debug
+//		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] lenOf_listOf_FileNames__Unused => %d", Thread
+				.currentThread().getStackTrace()[1].getFileName(),
+				Thread.currentThread().getStackTrace()[1]
+						.getLineNumber(), lenOf_listOf_FileNames__Unused);
+		
+		System.out.println(msg);
+		
 		
 		String fname = null;
 		File f = null;
@@ -245,7 +277,37 @@ public class Delete_UnusedPhotos {
 			
 			fname = listOf_FileNames__Unused.get(i);
 			
+			//debug
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] fname(%d) => %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(),
+					Thread.currentThread().getStackTrace()[1]
+							.getLineNumber(), i, fname);
+			
+			System.out.println(msg);
+			
+			
 			f = new File(dpath_iphone, fname);
+			
+			//debug
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] f.path => '%s'", Thread
+					.currentThread().getStackTrace()[1].getFileName(),
+					Thread.currentThread().getStackTrace()[1]
+							.getLineNumber(), f.getAbsolutePath());
+			
+			System.out.println(msg);
+			
+			//debug
+//			String msg;
+			msg = String.format(Locale.JAPAN, "[%s : %d] f.exists() => %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(),
+					Thread.currentThread().getStackTrace()[1]
+							.getLineNumber(), f.exists());
+			
+			System.out.println(msg);
+			
+			
 			
 			// judge
 			if (f.exists() == true) {
@@ -260,6 +322,7 @@ public class Delete_UnusedPhotos {
 
 				// delete
 				boolean res = f.delete();
+//				boolean res = false;
 				
 				// count 
 				if (res == true) {
@@ -366,6 +429,30 @@ public class Delete_UnusedPhotos {
 
 		}
 
+		//debug
+//		String msg;
+		msg = String.format(Locale.JAPAN, "[%s : %d] listOf_FileNames => %d", Thread
+				.currentThread().getStackTrace()[1].getFileName(),
+				Thread.currentThread().getStackTrace()[1]
+						.getLineNumber(), listOf_FileNames.size());
+		
+		System.out.println(msg);
+		
+		//debug
+		int size = listOf_FileNames.size();
+		
+		for (int i = 0; i < size; i ++) {
+			
+			msg = String.format(Locale.JAPAN, "[%s : %d] listOf_FileNames(%d) => %s", Thread
+					.currentThread().getStackTrace()[1].getFileName(),
+					Thread.currentThread().getStackTrace()[1]
+							.getLineNumber(), i, listOf_FileNames.get(i));
+			
+			System.out.println(msg);
+			
+		}
+		
+		
 		// return
 		return listOf_FileNames;
 
