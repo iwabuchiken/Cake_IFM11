@@ -240,6 +240,14 @@ def generate_entries_file
 #  p result.methods.sort
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] total files => #{files.size.to_i} "
   
+#  # clipboard
+#  msg = "[#{File.basename(__FILE__)}:#{__LINE__}] total files => #{files.size.to_i} "
+#  
+#  IO.popen('pbcopy', 'w') { |f| f << msg }
+#    
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] clipboard => copied"
+#  
+  
   
   #debug
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] write csv => done"
