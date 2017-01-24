@@ -31,7 +31,9 @@ SELECT * FROM ifm11 WHERE file_name = '2017-01-05_10-47-41_000.jpg' ;
 
 =end
 
-FPATH = "C:/WORKS_2/WS/WS_Others/prog/D-5/2#"
+#FPATH = "C:/WORKS_2/WS/WS_Others/prog/D-5/2#"
+FPATH = "."  #=> permission denied
+#FPATH = "./"  #=> permission denied
 
 #ref http://stackoverflow.com/questions/837123/adding-a-directory-to-load-path-ruby
 libdir = File.expand_path(File.dirname(FPATH))
@@ -174,8 +176,8 @@ def generate_entries_file
   # sort ==> DESC
   files.reverse!
   
-  p files.size  
-  p files[0]
+#  p files.size  
+#  p files[0]
   
   ################################
   #	
