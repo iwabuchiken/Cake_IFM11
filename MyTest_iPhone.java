@@ -2,6 +2,16 @@
  * javac C:/WORKS/WS/WS_Android/IFM11/src/ifm11/utils/MyTest.java
  * javac C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\MyTest_iPhone.java
  * 
+//ref classpath http://gomyownway.hatenablog.com/entry/2012/08/07/205009
+javac -classpath lib\jar\metadata-extractor-2.10.1.jar C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\MyTest_iPhone.java
+
+javac -classpath lib\jar\metadata-extractor-2.6.2.jar C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\MyTest_iPhone.java
+javac -classpath lib\data\java\metadata-extractor-2.6.2.jar C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\MyTest_iPhone.java
+
+pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11
+java -cp ".;lib/data/java/*"  MyTest_iPhone
+
+ * 
  * C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\change_file_names.bat
  * 
  */
@@ -21,7 +31,11 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
+
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.attribute.*;
+
 import java.io.FileFilter;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -38,6 +52,22 @@ import java.awt.Toolkit;
 
 //ref http://www.tutorialspoint.com/sqlite/sqlite_java.htm
 import java.sql.*;
+
+////ref http://taka-2.hatenablog.jp/entry/20091110/p2
+//import com.drew.imaging.jpeg.*;
+//import com.drew.metadata.*;
+//import com.drew.metadata.exif.*;
+
+//ref http://totomo.net/850.htm
+//import com.drew.*;
+import com.drew.imaging.*;
+import com.drew.imaging.jpeg.JpegProcessingException;
+import com.drew.imaging.jpeg.JpegSegmentReader;
+import com.drew.lang.*;
+import com.drew.metadata.*;
+
+//import com.drew.metadata.exif.ExifDirectory;
+
 
 public class MyTest_iPhone {
 
@@ -182,11 +212,134 @@ public class MyTest_iPhone {
 		String dpath = "C:\\WORKS_2\\Storage\\images\\iphone\\tmp";
 		
 		for (File elem : list_Files) {
+
+			try {
+				//test metadata
+				//ref http://totomo.net/850.htm
+				Metadata metadata = ImageMetadataReader.readMetadata(elem);
+	//			Metadata metadata = ImageMetadataReader.readMetadata(jpegFile);
+				
+			      for (Directory directory : metadata.getDirectories()) {
+			    	  
+			          for (Tag tag : directory.getTags()) {
+			        	  
+//			              System.out.println("tag.getTagName() => " + tag.getTagName());
+			              System.out.println(tag);
+			              
+			          }
+		        }
+			      
+			} catch (ImageProcessingException ipe) {
+				
+				ipe.printStackTrace();
+				
+			} catch (IOException  ioe) {
+				
+				ioe.printStackTrace();
+				
+			}//try {
 			
+//			try {
+//				
+//				Metadata metadata = JpegMetadataReader.readMetadata(elem);
+//				
+//				//ref http://totomo.net/850.htm
+//				for (Directory directory : metadata.getDirectories()) {
+//					
+//			          for (Tag tag : directory.getTags()) {
+//			        	  
+//			              System.out.println(tag);
+//			              
+//			          }
+//			      }
+//				
+////				System.out.println("photo date (Date/Time Original) = "
+////						
+////						+ metadata.getDirectories()
+//////						+ metadata.getDirectories(ExifDirectoryBase.class)
+//////						+ metadata.getDirectory(ExifDirectoryBase.class)
+////						
+////							.getString(ExifDirectoryBase.TAG_DATETIME_ORIGINAL));
+//////				+ metadata.getDirectory(ExifDirectory.class)
+//////				.getString(ExifDirectory.TAG_DATETIME_ORIGINAL));
+//////				System.out.println("撮影日(Date/Time Original) = " + metadata.getDirectory(ExifDirectory.class).getString(ExifDirectory.TAG_DATETIME_ORIGINAL));
+//				
+////			} catch (JpegProcessingException jpe) {
+////				
+////				jpe.printStackTrace();
+//				
+////			} catch (IOException ioe) {
+//			} catch (Exception e) {
+//				
+//				e.printStackTrace();
+//				
+//			}
+			
+			// last modified
 			lastModified = elem.lastModified();
+			
+			//debug
+			msg = String.format(Locale.JAPAN, "[%s : %d] elem.lastModified() => '%d'"
+					, Thread.currentThread().getStackTrace()[1].getFileName()
+					, Thread.currentThread().getStackTrace()[1].getLineNumber()
+					, lastModified
+			);
+
+			System.out.println(msg);
+
 			
 			tmp_s_2 = conv_MillSec_to_TimeLabel(lastModified, "file name");
 			
+			msg = String.format(Locale.JAPAN, 
+					"[%s : %d] conv_MillSec_to_TimeLabel(lastModified, \"file name\") => '%s'"
+					, Thread.currentThread().getStackTrace()[1].getFileName()
+					, Thread.currentThread().getStackTrace()[1].getLineNumber()
+					, tmp_s_2
+			);
+
+			System.out.println(msg);
+			
+			//]] debug end
+			
+			//debug
+			Path p = elem.toPath();
+//			Path p = Path.get(elem.getAbsolutePath());	//=> 'シンボルを見つけられません'
+//			Path p = Paths.get(elem.getAbsolutePath());
+			
+			msg = String.format(Locale.JAPAN, 
+					"[%s : %d] elem.getAbsolutePath() => '%s'"
+					, Thread.currentThread().getStackTrace()[1].getFileName()
+					, Thread.currentThread().getStackTrace()[1].getLineNumber()
+					, p.toString()
+			);
+
+			System.out.println(msg);
+
+			try {
+				
+				//ref http://stackoverflow.com/questions/2723838/determine-file-creation-date-in-java answered Jan 22 '13 at 9:56
+				BasicFileAttributes view
+				= Files.getFileAttributeView(p, BasicFileAttributeView.class)
+				.readAttributes();
+				
+				msg = String.format(Locale.JAPAN, 
+						"[%s : %d] view.creationTime().toString() => '%s'"
+						, Thread.currentThread().getStackTrace()[1].getFileName()
+						, Thread.currentThread().getStackTrace()[1].getLineNumber()
+						, view.creationTime().toString()
+				);
+	
+				System.out.println(msg);
+				
+			} catch (IOException ioe) {
+				
+				ioe.printStackTrace();
+				
+			}
+			
+			//]] debug end
+			
+
 			tmp_s = tmp_s_2 + ".jpg";
 //			tmp_s = conv_MillSec_to_TimeLabel(lastModified, "file name") + ".jpg";
 			
