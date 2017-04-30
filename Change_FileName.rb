@@ -132,28 +132,59 @@ def execute_2
    
     fpath = "#{dpath}/#{elem}"
 
-    @exif = EXIFR::JPEG.new(fpath)
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] elem is => #{elem}"
+    
+    #debug
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] elem.split(\".\")[-1] => #{elem.split(".")[-1].downcase}"
+    
+#    @exif = EXIFR::JPEG.new(fpath)
+    
+    #test
+    date_time_original = nil
+    
+    begin
+      
+      @exif = EXIFR::JPEG.new(fpath)
+      
+      date_time_original = @exif.date_time_original
+      
+    rescue
+      
+     puts "[#{File.basename(__FILE__)}:#{__LINE__}] error occurred => #{elem}"
      
+#      @exif.date_time_original = nil
+     
+#     return
+      
+    end
+    
+    #/ test end
+    
+#    #debug
+#    p @exif
+         
     #ref multiline string http://stackoverflow.com/questions/10522414/breaking-up-long-strings-on-multiple-lines-in-ruby-without-stripping-newlines answered May 9 '12 at 21:10
 #    puts "[#{File.basename(__FILE__)}:#{__LINE__}] date_time => "\
 #          "#{@exif.date_time.to_s}"  #=> works
     
-    #debug
-    puts "[#{File.basename(__FILE__)}:#{__LINE__}] calling conv_exifdatetime_2_datelabel_with_millsec elem for => #{elem}"
-
-    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time_original.to_s => #{@exif.date_time_original.to_s}"
-    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time_digitized.to_s => #{@exif.date_time_digitized.to_s}"
-    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time.to_s => #{@exif.date_time.to_s}"
-    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time_original => #{@exif.date_time_original}"
-    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time => #{@exif.date_time}"
+#    #debug
+#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] calling conv_exifdatetime_2_datelabel_with_millsec elem for => #{elem}"
+#
+#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time_original.to_s => #{@exif.date_time_original.to_s}"
+#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time_digitized.to_s => #{@exif.date_time_digitized.to_s}"
+#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time.to_s => #{@exif.date_time.to_s}"
+#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time_original => #{@exif.date_time_original}"
+#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time => #{@exif.date_time}"
 
 #    file = File.open(fpath)
 #    
+    #ref mtime http://stackoverflow.com/questions/10580728/is-it-possible-to-read-a-files-modification-date-with-ruby answered May 14 '12 at 9:39
 #    p File.mtime(fpath)
 #    
 #    file.close
       
-    if @exif.date_time_original == nil
+    if date_time_original == nil
+#    if @exif.date_time_original == nil
 #    if @exif.date_time_original.to_s == nil
     
       puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time_original.to_s == nil"
@@ -171,7 +202,10 @@ def execute_2
     puts "[#{File.basename(__FILE__)}:#{__LINE__}] target_date_time_label => #{target_date_time_label}"
     
     
-    aryOf_pairs << [elem, conv_exifdatetime_2_datelabel_with_millsec(target_date_time_label)]
+    aryOf_pairs << [elem, \
+              conv_exifdatetime_2_datelabel_with_millsec(target_date_time_label)\
+              , elem.split(".")[-1].downcase]
+#    aryOf_pairs << [elem, conv_exifdatetime_2_datelabel_with_millsec(target_date_time_label)]
 #    aryOf_pairs << [elem, conv_exifdatetime_2_datelabel_with_millsec(@exif.date_time_original.to_s)]
 #    aryOf_pairs << [elem, conv_exifdatetime_2_datelabel_with_millsec(@exif.date_time.to_s)]
     
@@ -211,6 +245,13 @@ def execute_2
   aryof_modified_names = aryOf_pairs.collect {|x|   
 
     x[1]  
+  
+  }
+  
+  ############### index 2 : extension
+  aryof_original_extensions = aryOf_pairs.collect {|x|   
+
+    x[2]  
   
   }
   
@@ -268,9 +309,9 @@ def execute_2
     
   }
 
-  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryof_modified_names_tmp =>"
-  
-  p aryof_modified_names_tmp
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryof_modified_names_tmp =>"
+#  
+#  p aryof_modified_names_tmp
   
   ############### build ==> new array
   aryof_modified_names_tmp.each_with_index {|elem, i|
@@ -280,9 +321,9 @@ def execute_2
   }
 
   puts
-  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_pairs_final =>"
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] aryOf_pairs_final =>"
   
-  p aryOf_pairs_final
+#  p aryOf_pairs_final
 
   ################################
   # 
@@ -291,10 +332,12 @@ def execute_2
   ################################
   count = 0
   
-  aryOf_pairs_final.each {|elem|
+  aryOf_pairs_final.each_with_index {|elem, i|
+#  aryOf_pairs_final.each {|elem|
 
     fpath_src = "#{dpath}/#{elem[0]}"
-    fpath_dst = "#{dpath}/#{elem[1]}.jpg"
+    fpath_dst = "#{dpath}/#{elem[1]}.#{aryof_original_extensions[i]}"
+#    fpath_dst = "#{dpath}/#{elem[1]}.jpg"
     
     #debug
 #    puts "[#{File.basename(__FILE__)}:#{__LINE__}] fpath_src = #{fpath_src} / fpath_dst = #{fpath_dst}"
