@@ -1,5 +1,15 @@
 <?php
 
+/*
+C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\
+	=> app diretory
+/cake_apps/Cake_IFM11
+
+ * 
+ * 
+ */
+
+
 class ImagesController extends AppController {
 	
 // 	public $scaffold;
@@ -1080,10 +1090,15 @@ class ImagesController extends AppController {
 		
 		$opt_conditions = $this->_index__Options__Memo($opt_conditions);
 
+// 		/*******************************
+// 			table name
+// 		*******************************/
+// 		$opt_conditions = $this->_index__Options__TableName($opt_conditions);
+
 		/*******************************
-			table name
+			id
 		*******************************/
-		$opt_conditions = $this->_index__Options__TableName($opt_conditions);
+		$opt_conditions = $this->_index__Options__Id($opt_conditions);
 
 		/*******************************
 			file name
@@ -1119,6 +1134,11 @@ class ImagesController extends AppController {
 		*******************************/
 // 		$opt_conditions = $this->_index__Options__TableName($opt_conditions);
 
+		/*******************************
+		 id
+		 *******************************/
+		$opt_conditions = $this->_index__Options__Id($opt_conditions);
+		
 		/*******************************
 			file name
 		*******************************/
@@ -1668,7 +1688,151 @@ class ImagesController extends AppController {
 		**********************************/
 		return $opt_conditions;
 		
-	}//_index__Options__Memo
+	}//_index__Options__TableName($opt_conditions)
+	
+	public function 
+	_index__Options__Id($opt_conditions) {
+
+		
+// 		debug("_index__Options__Id(\$opt_conditions) ==> starting...");
+		
+		/**********************************
+		 * param: filter: hin
+		**********************************/
+		$filter_id = CONS::$str_Filter_Id;
+// 		$filter_id = CONS::$str_Filter_Id;
+// 		$filter_id = CONS::$str_Filter_Memo;
+		
+// 		$opt_conditions = array();
+		
+		@$query_Filter_Id = $this->request->query[$filter_id];
+		
+		/*******************************
+			validate : numeric
+		*******************************/
+		if (!is_numeric($query_Filter_Id)) {
+		
+			debug("query is NOT numeric => '$query_Filter_Id'");
+
+			return;
+			
+		}//if (!is_numeric($query_Filter_Id))
+		;
+		
+		/*******************************
+			validate : float?
+		*******************************/
+		if (strpos($query_Filter_Id, '.') == true) {
+// 		if (is_float($query_Filter_Id)) {
+		
+			debug("query is NOT integer => '$query_Filter_Id'");
+
+			return;
+			
+		}//if (!is_numeric($query_Filter_Id))
+		;
+		
+		/*******************************
+			validate : negative?
+		*******************************/
+		if (((int)$query_Filter_Id) < 1) {
+// 		if (is_float($query_Filter_Id)) {
+		
+			debug("query is a negative number => '$query_Filter_Id'");
+
+			return;
+			
+		}//if (!is_numeric($query_Filter_Id))
+		;
+		
+		/*******************************
+			conditions
+		*******************************/
+		if ($query_Filter_Id == CONS::$str_Filter_TableName_all) {
+			// 		if ($query_Filter_Hins == "-1") {
+		
+// 			debug("\$query_Filter_Id ==> ".CONS::$str_Filter_TableName_all);
+			
+			$this->Session->write($filter_id, null);
+		
+			$this->set("filter_id", '');
+// 			$this->set("filter_table_name", '');
+		
+		} else if ($query_Filter_Id == null) {
+		
+// 			debug("\$query_Filter_Id == null");
+			
+			@$session_Filter = $this->Session->read($filter_id);
+		
+			if ($session_Filter != null) {
+		
+				if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+				
+					$opt_conditions['Image.id'] = $session_Filter;
+// 					$opt_conditions['Image._id'] = $session_Filter;
+				
+				} else {
+					
+					$opt_conditions['Image.id'] = $session_Filter;
+					
+				}
+				
+				// 				$opt_conditions['Token.hin'] = "DISTINCT ".$session_Filter;
+// 				$opt_conditions['Image.table_name'] = $session_Filter;
+		
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter_id", $session_Filter);
+		
+			} else {
+		
+				/**********************************
+				 * set: var
+				**********************************/
+				$this->set("filter_id", null);
+		
+			}
+		
+		} else {
+		
+// 			debug("\$query_Filter_Id ==> NOT null");
+			
+			// 			$opt_conditions['History.line LIKE'] = "%$query_Filter_Hins%";
+		
+			//REF http://book.cakephp.org/2.0/en/models/retrieving-your-data.html
+			// 			$opt_conditions['Image.table_name'] = "DISTINCT ".$query_Filter_Hins;
+// 			$opt_conditions['Image.table_name'] = $query_Filter_Id;
+		
+			if ($_SERVER['SERVER_NAME'] == CONS::$name_Server_Local) {
+			
+				$opt_conditions['Image.id'] = $query_Filter_Id;
+// 				$opt_conditions['Image._id'] = $query_Filter_Id;
+			
+			} else {
+					
+				$opt_conditions['Image.id'] = $query_Filter_Id;
+					
+			}
+				
+			
+			$session_Filter = $this->Session->write($filter_id, $query_Filter_Id);
+		
+			//			debug("session_Filter => written");
+		
+			/**********************************
+			 * set: var
+			**********************************/
+			$this->set("filter_id", $query_Filter_Id);
+		
+		}
+		
+		/**********************************
+		 * return
+		**********************************/
+		return $opt_conditions;
+		
+	}//_index__Options__Id($opt_conditions)
 	
 	public function 
 	_index__Options__FileName($opt_conditions) {

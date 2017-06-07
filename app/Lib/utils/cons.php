@@ -99,6 +99,8 @@ class CONS {
 	public static $str_Filter_RadioButtons_TableName_OR = "OR_TableName";
 	
 	public static $str_Filter_TableName = "filter_table_name";
+	public static $str_Filter_Id = "filter_id";
+	
 	public static $str_Filter_TableName_all = "*";
 	
 	// "Utils::build_URL__Sort"-related

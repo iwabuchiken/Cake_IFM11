@@ -8,7 +8,8 @@
 								array(
 // 										'type'=>'post',
 										'type'=>'get',
-										'action'	=> 'index'
+										'action'	=> 'index_2'
+// 										'action'	=> 'index'
  								)
 			);
 		
@@ -19,17 +20,30 @@
 						'div'	=> false,
 						//REF select http://stackoverflow.com/questions/6912071/select-all-text-on-hover answered Aug 2 '11 at 12:35
 						'onmouseover'	=> 'this.select()',
-						'name'	=> CONS::$str_Filter_TableName
+						'name'	=> CONS::$str_Filter_Id,
+						
+// 						'value'	=> abc
+// 						'default'	=> 'abc'
+						
+// 						'name'	=> CONS::$str_Filter_TableName
 // 						'name'	=> 'filter_table_name'
 			);
 			
-			if (isset($filter_table_name)) {
+			if (isset($filter_id)) {
 			
-				$options_Memo['default'] = $filter_table_name;
+// 				$options_Memo['default'] = 'abc';
+// 				$options_Memo['default'] = $filter_table_name;
+				$options_Memo['default'] = $filter_id;
 			
+			} else {
+				
+// 				debug("filter_id => not set");
+				
 			}
 			
-			echo $this->Form->input("Table name ('*' for all)", $options_Memo);
+// 			echo $this->Form->input("Id!!! ('*' for all)", $options_Memo);
+			echo $this->Form->input("Id ('*' for all)", $options_Memo);
+// 			echo $this->Form->input("Table name ('*' for all)", $options_Memo);
 // 			echo $this->Form->input('Memos', $options_Memo);
 // 			echo $this->Form->input('Table name', array('class'=>'basic_ta_1'));
 			
