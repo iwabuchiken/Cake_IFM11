@@ -1710,7 +1710,9 @@ class ImagesController extends AppController {
 		/*******************************
 			validate : numeric
 		*******************************/
-		if (!is_numeric($query_Filter_Id)) {
+		if ($query_Filter_Id != '' 
+				&& $query_Filter_Id != '*'
+				&& !is_numeric($query_Filter_Id)) {
 		
 			debug("query is NOT numeric => '$query_Filter_Id'");
 
@@ -1722,7 +1724,10 @@ class ImagesController extends AppController {
 		/*******************************
 			validate : float?
 		*******************************/
-		if (strpos($query_Filter_Id, '.') == true) {
+		if ($query_Filter_Id != '' 
+				&& $query_Filter_Id != '*'
+				&& strpos($query_Filter_Id, '.') == true) {
+// 		if (strpos($query_Filter_Id, '.') == true) {
 // 		if (is_float($query_Filter_Id)) {
 		
 			debug("query is NOT integer => '$query_Filter_Id'");
@@ -1735,7 +1740,10 @@ class ImagesController extends AppController {
 		/*******************************
 			validate : negative?
 		*******************************/
-		if (((int)$query_Filter_Id) < 1) {
+		if ($query_Filter_Id != '' 
+				&& $query_Filter_Id != '*'
+				&& ((int)$query_Filter_Id) < 1) {
+// 		if (((int)$query_Filter_Id) < 1) {
 // 		if (is_float($query_Filter_Id)) {
 		
 			debug("query is a negative number => '$query_Filter_Id'");
