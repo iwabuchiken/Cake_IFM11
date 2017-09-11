@@ -4333,7 +4333,8 @@ class ImagesController extends AppController {
 		/*******************************
 			list of file names
 		*******************************/
-		$dpath_ImageFiles = "C:\\Users\\iwabuchiken\\data\\images\\iphone";
+		$dpath_ImageFiles = "C:\\WORKS_2\\WS\\WS_Cake_IFM11\\iphone";
+// 		$dpath_ImageFiles = "C:\\Users\\iwabuchiken\\data\\images\\iphone";
 // 		$dpath_ImageFiles = "C:\\Users\\kbuchi\\Desktop\\data\\images\\iphone";
 // 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\iphone";
 // 		$dpath_ImageFiles = "C:\Users\kbuchi\Desktop\data\images\is13sh";

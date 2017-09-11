@@ -2665,3 +2665,11 @@ Stack Trace:
 #12 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #13 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2017-09-11 04:09:15 Error: Fatal Error (64): Cannot use 'String' as class name as it is reserved in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Utility\String.php, line 24]
+2017-09-11 04:09:16 Error: [FatalErrorException] Cannot use 'String' as class name as it is reserved
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot use 'Str...', 'C:\\WORKS_2\\WS\\E...', 24)
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): ErrorHandler::handleError(64, 'Cannot use 'Str...', 'C:\\WORKS_2\\WS\\E...', 24, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}

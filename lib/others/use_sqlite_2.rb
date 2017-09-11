@@ -168,7 +168,9 @@ def generate_entries_file
   #	files list
   #
   ################################
-  dpath = "C:/Users/iwabuchiken/data/images/iphone"
+  dpath = "C:/WORKS_2/WS/WS_Cake_IFM11/iphone"
+#  dpath = "C:/Users/iwabuchiken/data/images/iphone"
+  
   type = "files"
   
   files = get_dir_list(dpath, type, sort = true)
@@ -184,13 +186,6 @@ def generate_entries_file
   #	write: csv
   #
   ################################
-#  csv_data = CSV.write($FNAME_ENTRIES, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
-  
-#  CSV.open('test.csv','w', encoding: 'utf-8', col_sep: "\t") do |test|
-  #ref http://qiita.com/shizuma/items/7719172eb5e8c29a7d6e
-#  p CSV.generate do |csv|  #=> "`generate': no block given"
-#  result = CSV.generate do |csv|
-  
   #ref http://d.akiroom.com/2013-04/ruby-header-csv/
   header = ["no", "file_name", "memos"]
   
@@ -206,22 +201,7 @@ def generate_entries_file
       
     end#files.each do |name|
      
-#    csv << ["A","B","C"]
-#    csv << ["milk","coffee","water"]
-    
-#  CSV.open('test.csv','w') do |test|
-#   test << ["A","B","C"]
-#   test << ["milk","coffee","water"]
   end#result = CSV.generate do |csv|
-  
-#  p result
-  
-  # write file
-#  f = File.open("abc.csv", 'w')
-#  
-#  f.puts(" UTF-8 に変換できなかった場合は")
-#  
-#  f.close
   
 #  File.open("abc.csv", 'w') do |file|
   File.open($FNAME_ENTRIES, 'w') do |file|
@@ -232,42 +212,15 @@ def generate_entries_file
 
         
     
-#    file.write("このクラスは CSV ファイルやデータに対する完全なインターフェイスを提供します。")
     file.write(result)
-#    file.write(intro_csv)
     
   end#File.open("intro.#{get_time_label()}.csv", 'w') do |file|
   
   #debug
-#  p result.methods.sort
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] total files => #{files.size.to_i} "
-  
-#  # clipboard
-#  msg = "[#{File.basename(__FILE__)}:#{__LINE__}] total files => #{files.size.to_i} "
-#  
-#  IO.popen('pbcopy', 'w') { |f| f << msg }
-#    
-#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] clipboard => copied"
-#  
-  
-  
+
   #debug
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] write csv => done"
-  
-  
-#  ################################
-#  # 
-#  # build sql statement
-#  #
-#  ################################
-#  # execute
-#  fname_db = $FNAME_DB
-#  #  fname_db = "C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/data/#ifm11_backup_20160110_080900.bk.for-use"
-#  #  fname = "C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/data/ifm11_backup_20160110_080900.bk"
-#  
-#  #ref http://www.ownway.info/Ruby/sqlite3-ruby/about
-#  db = SQLite3::Database.new(fname_db)
-  
   
 end#generate_entries_file
 
