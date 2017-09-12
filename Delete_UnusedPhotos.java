@@ -5,6 +5,7 @@
  * <Usage> 
 
 pushd C:\WORKS\WS\Eclipse_Luna\Cake_IFM11
+pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11
 java -cp ".;lib/data/java/*"  Delete_UnusedPhotos
 
  * 
@@ -66,7 +67,10 @@ public class Delete_UnusedPhotos {
 	// class vars
 	//
 	///////////////////////////////////
-	static final String DPATH_IPHONE = "C:\\Users\\iwabuchiken\\data\\images\\iphone";
+	
+	static final String DPATH_IPHONE = "C:\\WORKS_2\\WS\\WS_Cake_IFM11\\iphone";
+//	static final String DPATH_IPHONE = "C:\\WORKS_2\\WS\\WS_Cake_IFM11\\iphone";
+//	static final String DPATH_IPHONE = "C:\\Users\\iwabuchiken\\data\\images\\iphone";
 //	static final String DPATH_IPHONE = "C:\\Users\\iwabuchiken\\Desktop\\data\\images\\iphone";
 	//C:\Users\iwabuchiken\data\images\iphone
 

@@ -237,14 +237,21 @@ def delete_unused_photos
   #ref http://www.ownway.info/Ruby/sqlite3-ruby/about
   db = SQLite3::Database.new(fname_db)
 
+#  sql = "DELETE  FROM ifm11_1 WHERE memos LIKE '-*%';"  #=> TEST : "ifm11_1" ---> not existing
+#      #=> no such table: ifm11_1
+  
   sql = "DELETE  FROM ifm11 WHERE memos LIKE '-*%';"
 #  sql = "DELETE  FROM ifm11 WHERE memos LIKE "-*%";"
-        
+  
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] sql => #{sql}"
   
   cursor = db.execute(sql)
 
-  p cursor
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] db.execute => returned #{cursor.size}"
+  
+  
+#  p cursor
+#  p cursor.size
   
   puts "[#{File.basename(__FILE__)}:#{__LINE__}] db => executed"
 
