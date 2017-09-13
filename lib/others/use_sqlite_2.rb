@@ -88,6 +88,7 @@ def update_records__multiple
   ################################
   #ref http://qiita.com/shizuma/items/7719172eb5e8c29a7d6e#csvread
   csv_data = CSV.read($FNAME_ENTRIES, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
+#  csv_data = CSV.read($FNAME_ENTRIES, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
 #  csv_data = CSV.read($FNAME_MULTIPLE, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
 
   ################################

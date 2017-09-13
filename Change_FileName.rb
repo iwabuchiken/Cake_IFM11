@@ -120,7 +120,8 @@ def execute_2
   #	build: name pair list
   #
   ################################
-  dpath = "C:/WORKS_2/Storage/images/iphone/tmp"
+  dpath = "C:/WORKS_2/WS/WS_Cake_IFM11/tmp"
+#  dpath = "C:/WORKS_2/Storage/images/iphone/tmp"
   
   #ref https://ruby-doc.org/core-2.2.2/Dir.html  
   Dir.chdir(dpath)
@@ -355,5 +356,67 @@ def execute_2
   
 end#execute
 
+def test_20170914_065047
+  
+  ################################
+  #	
+  #	build: name pair list
+  #
+  ################################
+  dpath = "C:/WORKS_2/WS/WS_Cake_IFM11/tmp"
+#  dpath = "C:/WORKS_2/Storage/images/iphone/tmp"
+  
+  #ref https://ruby-doc.org/core-2.2.2/Dir.html  
+  Dir.chdir(dpath)
+  list = Dir.glob("*")
+
+  aryOf_pairs = Array.new
+  
+  list.each_with_index {|elem|
+    
+    fpath = "#{dpath}/#{elem}"
+    
+    puts "[#{File.basename(__FILE__)}:#{__LINE__}] elem => #{elem}"
+    
+    #test
+    date_time_original = nil
+    
+    begin
+      
+      @exif = EXIFR::JPEG.new(fpath)
+      
+      date_time_original = @exif.date_time_original
+      
+      puts "[#{File.basename(__FILE__)}:#{__LINE__}] date_time_original => #{date_time_original}"
+      
+      puts
+      
+    rescue => e
+      
+     puts "[#{File.basename(__FILE__)}:#{__LINE__}] error occurred => #{elem}"
+     p e
+
+     puts     
+      
+    end
+
+    
+  }#list.each_with_index {|elem|
+  
+  #debug
+#  p list
+
+  puts "[#{File.basename(__FILE__)}:#{__LINE__}] test => done"
+  
+    
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] done ==> #{count} files renamed / total = #{aryOf_pairs_final.size} files"
+  
+  
+end#test_20170914_065047
+
 #execute
+
 execute_2
+
+#test_20170914_065047
+
