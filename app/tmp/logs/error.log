@@ -2673,3 +2673,47 @@ Stack Trace:
 #2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #3 [internal function]: App::shutdown()
 #4 {main}
+2017-09-14 02:00:33 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: ifm11
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(901): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2800): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-09-14 02:02:07 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: ifm11
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(901): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2800): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-09-14 02:06:41 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: ifm11
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(901): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2800): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2017-09-14 02:08:47 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such table: ifm11
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(901): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2802): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

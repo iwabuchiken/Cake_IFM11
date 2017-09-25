@@ -25,3 +25,59 @@ UPDATE ifm11 SET memos =
 "-*" WHERE file_name = "2016-12-31_03-23-03_001.jpg";
 
 SELECT * FROM ifm11 WHERE modified_at > "2016/09/01" AND memos is null;
+
+[sqlite3]======================================
+--------------------------------------------- earthquakes
+CREATE TABLE images(
+	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+
+	epicenter			VARCHAR(30),
+	
+	time_occurred		VARCHAR(30),
+	time_announced		VARCHAR(30),
+	
+	magnitude			REAL,
+	
+	max_intensity		INTEGER,
+	
+	latitude			REAL,
+	longitude			REAL,
+	
+	depth				INTEGER,
+	
+	info				VARCHAR(100),
+	
+	intensities			VARCHAR(200)
+	
+);
+
+
+[mysql(lollipop)]======================================
+--------------------------------------------- earthquakes
+CREATE TABLE images(
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at	VARCHAR(30),
+	updated_at	VARCHAR(30),
+	
+	epicenter			VARCHAR(30),
+	
+	time_occurred		VARCHAR(30),
+	time_announced		VARCHAR(30),
+	
+	magnitude			DECIMAL(1,1),
+
+	max_intensity		INTEGER,	
+	
+	latitude			DECIMAL(3,1),
+	longitude			DECIMAL(3,1),
+	
+	depth				INTEGER,
+	
+	info				VARCHAR(100),
+	
+	intensities			VARCHAR(200)
+	
+);
+

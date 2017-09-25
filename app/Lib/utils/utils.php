@@ -825,6 +825,7 @@
 			$fpath .= DIRECTORY_SEPARATOR.$fname;
 				
 			debug("fpath => $fpath");
+			debug("db file name => $fname");
 			
 			/*******************************
 			 pdo: setup
@@ -853,7 +854,7 @@
 			*******************************/
 			$tmp = Utils::get_Admin_Value(CONS::$adminData_Image_data_Range_Start, "val1");
 			
-			debug("val1 => $tmp");
+// 			debug("val1 => $tmp");
 			
 			if ($tmp != null) {
 				
@@ -866,7 +867,7 @@
 			*******************************/
 			$tmp = Utils::get_Admin_Value(CONS::$adminData_Image_data_Range_End, "val1");
 			
-			debug("End => $tmp");
+// 			debug("End => $tmp");
 			
 			if ($tmp != null) {
 				
@@ -912,7 +913,7 @@
 			$cnt_Images = $images->fetchColumn();	//=> w
 			// 			$cnt_Images = count($images);
 				
-			debug("cnt_Images => ".$cnt_Images);
+// 			debug("cnt_Images => ".$cnt_Images);
 
 			/*******************************
 				get: images

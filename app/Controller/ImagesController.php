@@ -2797,6 +2797,8 @@ class ImagesController extends AppController {
 // 			debug("\$sort_ColName => ".$sort_ColName);
 // 			debug("\$sort_Direction => ".$sort_Direction);
 			
+// 			debug("finding images...");
+			
 			$result = Utils::find_All_Images__DateRange($sort_ColName, $sort_Direction);
 			
 		}//if ($filter_No_Memos != null && $filter_No_Memos ==)

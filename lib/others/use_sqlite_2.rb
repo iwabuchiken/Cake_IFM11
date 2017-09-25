@@ -54,7 +54,11 @@ $FNAME_MULTIPLE      = "multiple.csv"
 $FNAME_ENTRIES      = "entries.csv"
 
 #$FNAME_DB = "C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/data/#ifm11_backup_20160110_080900.bk.for-use"
+#$FNAME_DB = "C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/data/ifm11_backup_20160110_080900.bk~"
 $FNAME_DB = "C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/data/ifm11_backup_20160110_080900.bk"
+#C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data\ifm11_backup_20160110_080900.bk
+
+$DPATH_IMAGE_FILE = "C:/WORKS_2/WS/WS_Cake_IFM11/iphone"
 
 ################################
 #	
@@ -103,6 +107,11 @@ def update_records__multiple
   
   #ref http://www.ownway.info/Ruby/sqlite3-ruby/about
   db = SQLite3::Database.new(fname_db)
+  
+  #debug
+  puts
+  p db
+  puts
 
   #test
   #ref http://ref.xaio.jp/ruby/classes/string/encode
@@ -118,7 +127,48 @@ def update_records__multiple
     memos = data["memos"] #=> w.
     fname = data["file_name"]
 
-    # validate
+#    # validate : file ---> not exist
+#    sql = "SELECT * FROM ifm11 WHERE file_name = '?';"
+#              
+##    sql = "SELECT * FROM ifm11 WHERE file_name = '%s';"\
+##              % [fname]
+#    
+#    puts "[#{File.basename(__FILE__)}:#{__LINE__}] sql(query) => #{sql}"
+#    
+#    result = db.execute("SELECT * FROM ifm11 WHERE file_name = '?';", [fname])
+##    result = db.execute(sql, [fname])
+##    result = db.query(sql, [fname])
+#    
+#    p result
+              
+#    db.execute(sql) do |row|
+#    
+#      puts "[#{File.basename(__FILE__)}:#{__LINE__}] row[5] => #{row[5]}"
+#        
+##      p row[5]
+##      p row
+##      p row['file_name']
+#      
+#    end
+#    db.query(sql)
+              
+              
+      
+#    f_FileExists = File.exists?($DPATH_IMAGE_FILE + "/" + fname)
+#    
+#    if f_FileExists == false
+#      
+#      puts "[#{File.basename(__FILE__)}:#{__LINE__}] file NOT exist ... ('#{fname}')"
+#      
+#      next
+#      
+#    else
+#      
+#      puts "[#{File.basename(__FILE__)}:#{__LINE__}] file exists ... ('#{fname}')"
+#      
+#    end
+
+    # validate : memos ---> no entry
     if memos == "" or memos == nil
       
       puts "[#{File.basename(__FILE__)}:#{__LINE__}] skipping the line ... (memo is '#{memos}')"
@@ -141,11 +191,26 @@ def update_records__multiple
     
 #    puts "[#{File.basename(__FILE__)}:#{__LINE__}] sql => #{sql}"
   
-    cursor = db.execute(sql)
-    puts "[#{File.basename(__FILE__)}:#{__LINE__}] db => executed"
+    #debug
+    begin
     
-    # count
-    count_inserted += 1
+      cursor = db.execute(sql)
+      
+      puts "[#{File.basename(__FILE__)}:#{__LINE__}] cursor => #{cursor}"
+      
+      
+      puts "[#{File.basename(__FILE__)}:#{__LINE__}] db => executed"
+      
+      puts 
+      
+      # count
+      count_inserted += 1
+      
+    rescue => e
+      
+      puts "[#{File.basename(__FILE__)}:#{__LINE__}] error => #{e}"
+      
+    end
       
   end#csv_data.each do |data|
 
