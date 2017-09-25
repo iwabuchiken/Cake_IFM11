@@ -2717,3 +2717,133 @@ Stack Trace:
 #5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2017-09-25 06:33:46 Error: Fatal Error (1): Call to undefined function file_get_html() in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\EqsController.php, line 45]
+2017-09-25 06:33:47 Error: [FatalErrorException] Call to undefined function file_get_html()
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 45, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 45, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:36:55 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\simple_html_dom.php' (include_path='C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib;C:\xampp_5.6\php\PEAR') in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AppController.php, line 67]
+2017-09-25 06:36:55 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\simple_html_dom.php' (include_path='C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib;C:\xampp_5.6\php\PEAR')
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require_once() ...', 'C:\\WORKS_2\\WS\\E...', 67)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'C:\\WORKS_2\\WS\\E...', 67, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'C:\\WORKS_2\\WS\\E...', 67, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:37:42 Error: Fatal Error (64): require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\simple_html_dom.php' (include_path='C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib;C:\xampp_5.6\php\PEAR') in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\AppController.php, line 67]
+2017-09-25 06:37:42 Error: [FatalErrorException] require_once() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '\simple_html_dom.php' (include_path='C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib;C:\xampp_5.6\php\PEAR')
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require_once() ...', 'C:\\WORKS_2\\WS\\E...', 67)
+#1 [internal function]: ErrorHandler::handleError(64, 'require_once() ...', 'C:\\WORKS_2\\WS\\E...', 67, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'require_once() ...', 'C:\\WORKS_2\\WS\\E...', 67, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:41:16 Error: Fatal Error (1): Call to a member function find() on array in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\EqsController.php, line 50]
+2017-09-25 06:41:16 Error: [FatalErrorException] Call to a member function find() on array
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 50, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 50, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:43:31 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\EqsController.php, line 51]
+2017-09-25 06:43:31 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 51, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 51, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:46:58 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 61440 bytes) in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Utility\Debugger.php, line 605]
+2017-09-25 06:46:58 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 61440 bytes)
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 605)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 605, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 605, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:49:42 Error: Fatal Error (1): Cannot use object of type simple_html_dom_node as array in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\EqsController.php, line 61]
+2017-09-25 06:49:42 Error: [FatalErrorException] Cannot use object of type simple_html_dom_node as array
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:50:59 Error: Fatal Error (1): Cannot use object of type simple_html_dom_node as array in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\EqsController.php, line 61]
+2017-09-25 06:50:59 Error: [FatalErrorException] Cannot use object of type simple_html_dom_node as array
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:51:19 Error: Fatal Error (1): Cannot use object of type simple_html_dom_node as array in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\EqsController.php, line 61]
+2017-09-25 06:51:19 Error: [FatalErrorException] Cannot use object of type simple_html_dom_node as array
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 61, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 06:57:26 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 48782 bytes) in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Utility\Debugger.php, line 610]
+2017-09-25 06:57:26 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 48782 bytes)
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 07:00:11 Error: Fatal Error (1): Cannot use object of type simple_html_dom_node as array in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\EqsController.php, line 96]
+2017-09-25 07:00:11 Error: [FatalErrorException] Cannot use object of type simple_html_dom_node as array
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 96)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 96, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\\WORKS_2\\WS\\E...', 96, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 07:01:30 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 45884 bytes) in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Utility\Debugger.php, line 610]
+2017-09-25 07:01:30 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 45884 bytes)
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-25 07:12:56 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 45774 bytes) in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Utility\Debugger.php, line 610]
+2017-09-25 07:12:56 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 45774 bytes)
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
