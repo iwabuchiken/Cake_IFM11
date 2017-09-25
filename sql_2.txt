@@ -1,3 +1,13 @@
+pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\
+
+sqlite3 development.sqlite3
+.explain on
+.tables
+
+pragma table_info(eqs);
+
+======================================
+
 UPDATE ifm11 SET memos = ":PHOTO 面白いもの / @溝の口 / デッサン用 / " WHERE file_name >= "2017-01-01_16-10-37_000.jpg
 " AND file_name <= "2017-01-01_18-36-42_000.jpg";
 
@@ -28,7 +38,7 @@ SELECT * FROM ifm11 WHERE modified_at > "2016/09/01" AND memos is null;
 
 [sqlite3]======================================
 --------------------------------------------- earthquakes
-CREATE TABLE images(
+CREATE TABLE eqs (
 	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
 	created_at			VARCHAR(30),
 	updated_at			VARCHAR(30),
@@ -56,7 +66,7 @@ CREATE TABLE images(
 
 [mysql(lollipop)]======================================
 --------------------------------------------- earthquakes
-CREATE TABLE images(
+CREATE TABLE eqs (
 	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	created_at	VARCHAR(30),
 	updated_at	VARCHAR(30),
