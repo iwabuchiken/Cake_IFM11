@@ -19,8 +19,20 @@ class EqsController extends AppController {
 	//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
 	public $components = array('Paginator');
 
-// 	public function index_2() {
 	public function index() {
+
+		/**********************************
+		* Build: list
+		**********************************/
+		$eqs = $this->Eq->find('all');
+		
+		/**********************************
+		 * set: images
+		**********************************/
+
+	}//public function index()
+
+	public function index_2() {
 
 		/**********************************
 		* Build: list
