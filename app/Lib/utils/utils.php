@@ -5348,77 +5348,6 @@
 			
 		}//insert_Data__Realm_DBFiles($fname, $numOf_Memos)
 
-// 		static function test__Build_URI() {
-			
-// 			//ref http://stackoverflow.com/questions/6768793/get-the-full-url-in-php answered Jul 20 '11 at 21:33
-// 			//ref http://php.net/manual/en/reserved.variables.server.php
-// // 			$this->set("uri", $_SERVER['REQUEST_URI']);
-			
-// 			debug("QUERY_STRING => ".$_SERVER['QUERY_STRING']);
-			
-// 			$query = $_SERVER['QUERY_STRING'];
-			
-// 			debug("REQUEST_URI => ".$_SERVER['REQUEST_URI']);
-// 			// 		debug("\$_GET['link'] => ".$_GET['link']);
-			
-// 			//ref http://stackoverflow.com/questions/11480763/how-to-get-parameters-from-this-url-string answered Jul 14 '12 at 3:47
-// 			debug(parse_url($_SERVER['REQUEST_URI']));
-
-// 			debug("build url ...");
-// 			debug(parse_url($_SERVER['REQUEST_URI'])['path']."?".parse_url($_SERVER['REQUEST_URI'])['query']);
-			
-// 			//ref http://php.net/manual/en/function.parse-str.php
-// 			parse_str($query, $output);
-			
-// 			debug("parse_str ... ");
-// 			debug($output);
-// 			// 		debug(parse_str($query));
-// 			// 		debug(parse_str($_SERVER['QUERY_STRING']));
-
-// 			debug("build query string ...");
-// 			debug(http_build_query($output));
-
-// 			// file_name
-// 			//ref http://www.w3schools.com/php/func_array_key_exists.asp
-// 			if (array_key_exists("sort", $output) == true) {
-				
-// 				debug("\$output['sort'] => ".$output['sort']);
-				
-// 			} else {//if (array_key_exists("sort", $output) == true)
-				
-// 				debug("no 'sort' key");
-				
-// 			}//if (array_key_exists("sort", $output) == true)
-			
-// 			/*******************************
-// 				query string => edit
-// 			*******************************/
-// 			if (array_key_exists("direction", $output) == true) {
-			
-// 				if (isset($output['direction']) == true) {
-				
-// 					$output['direction'] = "asc";
-				
-// 					debug("\$outout => edited ...");
-					
-// 					debug($output);
-					
-// 					debug("new query string => ".http_build_query($output));
-					
-// 				} else {
-				
-// 					debug("\$output['direction'] => not set");
-					
-// 				}//if (isset($output['direction']) == true)
-			
-// 			} else {
-			
-// 				debug("key 'direction' => not exist");
-				
-// 			}//if (array_key_exists("direction", $output) == true)
-			
-// 		}//test__Build_URI()
-		
 		static function build_URL__Sort($key, $direction) {
 
 			/*******************************
@@ -5671,8 +5600,205 @@
 			
 		}//static function build_URL($key)
 		
-// 		static function
+		/******************** (20 '*'s)
+		*
+		* @return array of TRs
+		* 			==> array(
+		* 					array(	// TR
+		* 						"td" => array(string, string, ...),
+		* 						"hrefs" => array(string, string, ...),
+		* 					)
+		* 					...
+		* 				)
+		* 
+		* array(
+			(int) 0 => array(
+				'td' => array(
+					(int) 0 => '2017年9月21日 21時35分ごろ',
+					(int) 1 => '2017年9月21日 21時38分',
+					(int) 2 => '福島県沖',
+					(int) 3 => '4.2',
+					(int) 4 => '1'
+				),
+				'hrefs' => array(
+					(int) 0 => '/weather/jp/earthquake/20170921213534.html?e=289'
+				)
+			),
+			(int) 1 => array(
+				'td' => array(
+					(int) 0 => '2017年9月20日 5時42分ごろ',
+					(int) 1 => '2017年9月20日 5時44分',
+					(int) 2 => '福島県沖',
+					(int) 3 => '3.9',
+					(int) 4 => '1'
+				),
+				'hrefs' => array(
+					(int) 0 => '/weather/jp/earthquake/20170920054217.html?e=289'
+				)
+			),
+		*
+		********************/
+		static function get_EQs__ALL() {
+			
+			/******************** (20 '*'s)
+			* get : html
+			********************/
+			$id_Location = 289;
+			
+			$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=$id_Location";
+			
+			//ref C:\WORKS_2\WS\Eclipse_Luna\Cake_NR5\app\Controller\Articles2Controller.php
+			$html = file_get_html($url);
+			
+			/******************** (20 '*'s)
+			* get : ary of TRs
+			********************/
+			$aryOf_TR_Nodes = $html->find('table tr');
 
+			$aryOf_TRs = array();
+			
+			/******************** (20 '*'s)
+			* get : TDs
+			********************/
+			$aryOf_TDs = array();
+
+			$countOf_TRs = 0;
+			
+			foreach ($aryOf_TR_Nodes as $tr) {
+				
+				/******************** (20 '*'s)
+				* vars
+				********************/
+				$ary_Temp = array();
+				// 				(int) 1 => array(
+				// 						(int) 0 => '2017年9月21日 21時35分ごろ',
+				// 						(int) 1 => '2017年9月21日 21時38分',
+				// 						(int) 2 => '福島県沖',
+				// 						(int) 3 => '4.2',
+				// 						(int) 4 => '1'
+				// 				),
+
+				$ary_Temp__Hrefs = array();
+				
+				/******************** (20 '*'s)
+				* count
+				********************/
+				$countOf_TRs += 1;
+				
+// 				debug("TR => $countOf_TRs");
+				
+				/******************** (20 '*'s)
+				* TDs
+				********************/
+				$tds = $tr->find('td');
+
+				foreach ($tds as $td) {
+
+					/******************** (20 '*'s)
+					* td : text
+					********************/
+					array_push($ary_Temp, $td->plaintext);
+					
+					/******************** (20 '*'s)
+					* hrefs : if any
+					********************/
+					$res = $td->find("a");
+					
+					if (count($res) > 0) {
+					
+						foreach ($res as $a) {
+						
+							array_push($ary_Temp__Hrefs, $a->href);;
+							
+						}//foreach ($res as $a)
+						
+						;
+						
+					}//if (count($res) > 0)
+					;
+					
+// 					debug("<a> : ".count($res)." / "
+// 							.(count($res) > 0 ? 
+// // 											"get_class(\$res[0]) : ".get_class($res[0])
+// // 												.
+// 												" '".$res[0]->href."'"
+// // 												.
+// // 												" || "."get_class(\$res[0]->href) : "
+// // 												.get_class($res[0]->href)	//=> string
+												
+// 											: "-"
+// 							)
+// 					);	//=> '<a> : 1 / get_class($res[0]) : simple_html_dom_node'
+// 					//=> '<a> : 1 / get_class($res[0]) : simple_html_dom_node '/weather/jp/earthquake/20170911184102.html?e=289''
+					
+// 					debug("<a> : ".count($res)." / ".get_class($res));	//=> Array
+// 					debug("<a> : ".count($res));
+// 					debug($res);
+					
+// 					debug($td->plaintext);
+					
+				}//foreach ($tds as $td)
+
+				/******************** (20 '*'s)
+				* temp array ---> to TDs
+				********************/
+				array_push(
+						$aryOf_TRs, 
+// 						$aryOf_TDs, 
+						
+						array(
+								"td" => $ary_Temp,
+								"hrefs" => $ary_Temp__Hrefs
+						)
+				
+				);
+				
+// 				array_push($aryOf_TDs, array("td" => $ary_Temp));
+				
+// 				array_push($aryOf_TDs, array("hrefs" => $ary_Temp__Hrefs));
+				
+// 				array_push($aryOf_TDs, $ary_Temp);
+				
+// 				debug("get_class(\$tds[0]) : ".get_class($tds[0]));	//=> 'get_class($tds[0]) : simple_html_dom_node'
+
+// 				debug($tds[0]->plaintext);	//=> '2017年7月20日 9時57分ごろ'
+				
+// 				debug("get_class(\$tds) : ".get_class($tds));	//=> Array
+				
+// 				debug($tr->plaintext);	//=> '     2017年5月2日 7時47分ごろ     2017年5月2日 7時50分     福島県沖     3.9     1   '
+
+// 				debug("count(\$tds) : ".count($tds));	//=> 'count($tds) : 5'
+			
+// 				debug("get_class(\$tr) : ".get_class($tr));	//=> 'get_class($tr) : simple_html_dom_node'
+				
+			}//foreach ($aryOf_TR_Nodes as $tr)
+			
+			/******************** (20 '*'s)
+			* processing
+			********************/
+			$aryOf_TRs__1_Last = array_slice($aryOf_TRs, 1);
+// 			$aryOf_TDs__1_Last = array_slice($aryOf_TDs, 1);
+			
+			/******************** (20 '*'s)
+			* report
+			********************/
+// 			debug("count(\$aryOf_TDs) : ".count($aryOf_TDs));
+			
+			$aryOf_TRs__0_3 = array_slice($aryOf_TRs__1_Last, 0, 5);
+// 			$aryOf_TDs__0_3 = array_slice($aryOf_TDs, 0, 3);
+			
+			debug($aryOf_TRs__0_3);
+			
+			/******************** (20 '*'s)
+			*
+			* return
+			*
+			********************/
+			return $aryOf_TRs__1_Last;
+// 			return null;
+			
+		}//get_EQs__ALL()
+		
 		
 	}//class Utils
 	

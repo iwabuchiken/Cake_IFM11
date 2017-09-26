@@ -2847,3 +2847,43 @@ Stack Trace:
 #3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2017-09-26 09:19:16 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 46565 bytes) in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Utility\Debugger.php, line 610]
+2017-09-26 09:19:17 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 46565 bytes)
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-26 09:19:27 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 46449 bytes) in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Utility\Debugger.php, line 610]
+2017-09-26 09:19:27 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 46449 bytes)
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 610, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-26 09:43:06 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 61440 bytes) in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Utility\Debugger.php, line 605]
+2017-09-26 09:43:06 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 61440 bytes)
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 605)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 605, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'C:\\WORKS_2\\WS\\E...', 605, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-26 09:43:30 Error: Fatal Error (1): Call to undefined function cont() in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 5664]
+2017-09-26 09:43:30 Error: [FatalErrorException] Call to undefined function cont()
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 5664)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 5664, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 5664, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

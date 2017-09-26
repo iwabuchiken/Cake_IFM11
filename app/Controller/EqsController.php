@@ -37,6 +37,15 @@ class EqsController extends AppController {
 		/**********************************
 		* Build: list
 		**********************************/
+		$data_EQs = Utils::get_EQs__ALL();
+
+	}//public function index()
+
+	public function index_2__DEPRECATED() {
+
+		/**********************************
+		* Build: list
+		**********************************/
 		$id_Location = 289;
 		
 		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=$id_Location";
