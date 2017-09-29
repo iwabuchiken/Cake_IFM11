@@ -2887,3 +2887,43 @@ Stack Trace:
 #3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2017-09-29 05:37:43 Error: Fatal Error (1): Call to undefined method Utils::get_ListOf_EpicenterNames() in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\EqsController.php, line 42]
+2017-09-29 05:37:43 Error: [FatalErrorException] Call to undefined method Utils::get_ListOf_EpicenterNames()
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 42, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 42, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-29 06:17:25 Error: Fatal Error (1): Call to a member function find() on boolean in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 5861]
+2017-09-29 06:17:25 Error: [FatalErrorException] Call to a member function find() on boolean
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 5861)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 5861, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 5861, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-29 06:20:04 Error: Fatal Error (1): Call to a member function find() on boolean in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 5863]
+2017-09-29 06:20:04 Error: [FatalErrorException] Call to a member function find() on boolean
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 5863)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 5863, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\WORKS_2\\WS\\E...', 5863, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-09-29 06:32:52 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 6056]
+2017-09-29 06:32:52 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/index_2
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 6056)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 6056, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 6056, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

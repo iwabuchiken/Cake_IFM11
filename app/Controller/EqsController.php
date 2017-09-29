@@ -38,6 +38,8 @@ class EqsController extends AppController {
 		* Build: list
 		**********************************/
 		$data_EQs = Utils::get_EQs__ALL();
+		
+		$aryOf_EpicenterNames = Utils::get_ListOf_EpicenterNames();
 
 	}//public function index()
 
