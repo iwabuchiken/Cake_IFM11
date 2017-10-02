@@ -5,6 +5,9 @@ C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\
 	=> app diretory
 /cake_apps/Cake_IFM11
 
+http://localhost/Eclipse_Luna/Cake_IFM11/eqs/index_2
+http://benfranklin.chips.jp/cake_apps/Cake_IFM11/eqs/index_2
+
  */
 
 
@@ -137,5 +140,147 @@ class EqsController extends AppController {
 
 	}//public function index()
 
+	public function 
+	_add_epicenter_names__SaveData($aryOf_EpicenterNames) {
+		
+		$aryOf_Names = array();
+
+		$lenOf_EpicenterNames = count($aryOf_EpicenterNames);
+
+		// filter array
+		for ($i = 0; $i < $lenOf_EpicenterNames; $i++) {
+		
+			$name_Data = $aryOf_EpicenterNames[$i];
+
+			if ($name_Data != null) {
+			
+				array_push($aryOf_Names, array($i, $name_Data));
+				
+			}//if ($name_Data != null)
+			
+		}//for ($i = 0; $i < $lenOf_EpicenterNames; $i++)
+		
+		//debug
+		for ($i = 0; $i < 10; $i++) {
+		
+			debug("\$aryOf_Names[$i] : ");
+			debug($aryOf_Names[$i]);
+			// 			array(
+			// 					(int) 0 => (int) 189,
+			// 					(int) 1 => '根室半島南東沖'
+			// 			)
+		}//for ($i = 0; $i < 10; $i++)
+		
+	}//public function _add_epicenter_names__SaveData() {
+	
+	public function add_epicenter_names() {
+		
+		/******************** (20 '*'s)
+		* params
+		********************/
+		@$id_Epicenter_Start = $this->request->query['id_start'];
+		@$id_Epicenter_End = $this->request->query['id_end'];
+		
+		@$action = $this->request->query['action'];
+
+		$id_Epicenter_Start_Dflt = 280;
+		$id_Epicenter_End_Dflt = 300;
+
+		$lenOf_NamesList = 400;
+		
+		/******************** (20 '*'s)
+		* validate : start
+		********************/
+		if ($id_Epicenter_Start == '') {
+		
+			debug("\$id_Epicenter_Start => blank' / set to => $id_Epicenter_Start_Dflt");
+
+			$id_Epicenter_Start = $id_Epicenter_Start_Dflt;
+			
+		} else {//if ($id_Epicenter_Start == '')
+			
+			debug("\$id_Epicenter_Start => not blank' : $id_Epicenter_Start");
+			
+		}
+		
+		/******************** (20 '*'s)
+		* validate : end
+		********************/
+		if ($id_Epicenter_End == '') {
+		
+			debug("\$id_Epicenter_End => blank' / set to => $id_Epicenter_End_Dflt");
+
+			$id_Epicenter_End = $id_Epicenter_End_Dflt;
+			
+		} else {//if ($id_Epicenter_End == '')
+			
+			debug("\$id_Epicenter_End => not blank' : $id_Epicenter_End");
+			
+		}//if ($id_Epicenter_End == '') {
+		
+		//test : time
+		$time_Start = microtime(true);
+		
+		$aryOf_EpicenterNames = Utils::get_ListOf_EpicenterNames__Range(
+						$id_Epicenter_Start, 
+						$id_Epicenter_End,
+						$lenOf_NamesList);
+// 		$aryOf_EpicenterNames = Utils::get_ListOf_EpicenterNames();
+
+		//test : time
+		$time_End = microtime(true);
+		
+		//debug
+		debug("start = $time_Start / end = $time_End");
+		
+		debug(
+				"exec time : ".($time_End - $time_Start)
+				." / "
+				
+				."per 1 id : ".($time_End - $time_Start) / ($id_Epicenter_End - $id_Epicenter_Start)
+				
+		);
+		
+// 		debug(array_slice($aryOf_EpicenterNames, 280, 10));
+// 		debug(array_slice($aryOf_EpicenterNames, 0, 10));
+		
+		/******************** (20 '*'s)
+		* set vars
+		********************/
+		$this->set("aryOf_EpicenterNames", $aryOf_EpicenterNames);
+		
+		$this->set("lenOf_NamesList", $lenOf_NamesList);
+
+		/******************** (20 '*'s)
+		* save data
+		********************/
+		if ($action != null && $action == 'save') {
+		
+			$this->_add_epicenter_names__SaveData($aryOf_EpicenterNames);
+		
+		} else {
+		
+			debug("action is not 'save' ===> not saving epicenter data");
+			
+		}//if ($action != null && $action == 'save')
+		
+		
+		
+// 		//debug
+// 		for ($i = $id_Epicenter_Start; $i < $id_Epicenter_End; $i++) {
+		
+// 			debug($aryOf_EpicenterNames[$i]);
+			
+// 		}//for ($i = 0; $i < $id_Epicenter_End; $i++)
+		
+		
+		/**********************************
+		 * view
+		 **********************************/
+// 		$this->render("/Eqs/index_2");
+		
+		
+	}//public function add_epicenter_names() {
+	
 }//class EqsController extends AppController {
 

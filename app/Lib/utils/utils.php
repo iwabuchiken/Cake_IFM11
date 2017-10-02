@@ -5860,7 +5860,7 @@ class Utils {
 		
 		if ($res[0] == 'HTTP/1.0 404 Not Found') {
 		
-			debug("page not found : epicenter id = $id_Location");
+// 			debug("page not found : epicenter id = $id_Location");
 			
 			return null;
 			
@@ -6043,15 +6043,15 @@ class Utils {
 
 			if ($data == null) {
 			
-				debug("data ===> returned null (\$i = $i)");
+// 				debug("data ===> returned null (\$i = $i)");
 				
 				continue;
 			
 			} else {
 			
-				debug("\$i : $i / ".count($data)
-						." / name = "
-						.$data[0]['td'][Utils::$listOf_EQ_Lables['epicenter']]);
+// 				debug("\$i : $i / ".count($data)
+// 						." / name = "
+// 						.$data[0]['td'][Utils::$listOf_EQ_Lables['epicenter']]);
 
 // 				debug($data[0]['td']);
 							// array(
@@ -6075,7 +6075,7 @@ class Utils {
 
 // 		debug($data);
 		
-		debug(array_slice($aryOf_Epicenter_Pairs, 280, 20));
+// 		debug(array_slice($aryOf_Epicenter_Pairs, 280, 20));
 					// array(
 					// 		(int) 0 => '津軽海峡',
 					// 		(int) 1 => '山形県沖',
@@ -6104,6 +6104,48 @@ class Utils {
 		return null;
 		
 	}//get_ListOf_EpicenterNames()
+	
+	static function 
+	get_ListOf_EpicenterNames__Range
+	($id_Epicenter_Start = 280, $id_Epicenter_End = 300, $lenOf_NamesList = 400) {
+
+		/******************** (20 '*'s)
+		* vars
+		********************/
+		//ref http://php.net/manual/en/function.array-fill.php
+		
+		$aryOf_Epicenter_Pairs = array_fill(0, $lenOf_NamesList, null);
+// 		$aryOf_Epicenter_Pairs = array_fill(0, 400, null);
+		
+		/******************** (20 '*'s)
+		* processing
+		********************/
+		for ($i = $id_Epicenter_Start; $i < $id_Epicenter_End; $i++) {
+// 		for ($i = 280; $i < 300; $i++) {
+		
+			$data = Utils::get_EQs__NRecords($i, 5);;
+
+			if ($data == null) {
+			
+// 				debug("data ===> returned null (\$i = $i)");
+				
+				continue;
+			
+			} else {
+			
+				// add data
+				$aryOf_Epicenter_Pairs[$i] = $data[0]['td'][Utils::$listOf_EQ_Lables['epicenter']];
+				
+			}//if ($data == null)
+			
+		}//for ($i = $id_Epicenter_Start; $i < $id_Epicenter_End; $i++)
+		
+		/******************** (20 '*'s)
+		* return
+		********************/
+		return $aryOf_Epicenter_Pairs;
+		
+	}//get_ListOf_EpicenterNames__Range($id_Epicenter_Start, $id_Epicenter_End)
 	
 	
 }//class Utils

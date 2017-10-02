@@ -6,6 +6,8 @@ sqlite3 development.sqlite3
 
 pragma table_info(eqs);
 
+https://mysqladmin.lolipop.jp/pma/index.php?server=136&token=931fe07d2868007a3615756ce093aa67#PMAURL-2:db_sql.php?db=LAA0278957-cakeifm11&table=&server=136&target=&token=931fe07d2868007a3615756ce093aa67
+
 ======================================
 
 UPDATE ifm11 SET memos = ":PHOTO 面白いもの / @溝の口 / デッサン用 / " WHERE file_name >= "2017-01-01_16-10-37_000.jpg
@@ -59,10 +61,88 @@ CREATE TABLE eqs (
 	
 	info				VARCHAR(100),
 	
-	intensities			VARCHAR(200)
+	intensities			VARCHAR(200),
+	
+	pref				VARCHAR(30),
+	
+	region				VARCHAR(30)
 	
 );
 
+ALTER TABLE eqs RENAME TO eqs_old;
+
+INSERT INTO eqs 
+		(
+		
+		created_at,
+		updated_at,
+
+		epicenter,
+		
+		time_occurred	,
+		time_announced	,
+		
+		magnitude,
+		
+		max_intensity	,
+		
+		latitude,
+		longitude,
+		
+		depth	,
+		
+		info	,
+		
+		intensities
+			
+		) 
+	SELECT
+
+		created_at,
+		updated_at,
+
+		epicenter,
+		
+		time_occurred	,
+		time_announced	,
+		
+		magnitude,
+		
+		max_intensity	,
+		
+		latitude,
+		longitude,
+		
+		depth	,
+		
+		info	,
+		
+		intensities
+
+	FROM eqs_old;
+
+DROP TABLE eqs;
+DROP TABLE eqs_old;
+
+ALTER TABLE eqs_old RENAME TO eqs;
+
+--------------------------------------------- epicenters
+CREATE TABLE epicenters (
+	id			INTEGER PRIMARY KEY  AUTOINCREMENT	NOT NULL,
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+
+	name				VARCHAR(30),
+	
+	id_number			INT,
+	
+	pref				VARCHAR(30),
+	
+	region				VARCHAR(30)
+	
+);
+
+DROP TABLE epicenters;
 
 [mysql(lollipop)]======================================
 --------------------------------------------- earthquakes
@@ -80,6 +160,7 @@ CREATE TABLE eqs (
 
 	max_intensity		INTEGER,	
 	
+
 	latitude			DECIMAL(3,1),
 	longitude			DECIMAL(3,1),
 	
@@ -87,7 +168,85 @@ CREATE TABLE eqs (
 	
 	info				VARCHAR(100),
 	
-	intensities			VARCHAR(200)
+	intensities			VARCHAR(200),
+	
+	pref				VARCHAR(30),
+	
+	region				VARCHAR(30)
 	
 );
+
+ALTER TABLE eqs RENAME TO eqs_old;
+
+INSERT INTO eqs 
+		(
+		
+		created_at,
+		updated_at,
+
+		epicenter,
+		
+		time_occurred	,
+		time_announced	,
+		
+		magnitude,
+		
+		max_intensity	,
+		
+		latitude,
+		longitude,
+		
+		depth	,
+		
+		info	,
+		
+		intensities
+					
+		) 
+	SELECT
+
+		created_at,
+		updated_at,
+
+		epicenter,
+		
+		time_occurred	,
+		time_announced	,
+		
+		magnitude,
+		
+		max_intensity	,
+		
+		latitude,
+		longitude,
+		
+		depth	,
+		
+		info	,
+		
+		intensities
+
+	FROM eqs_old;
+
+DROP TABLE eqs;
+
+ALTER TABLE eqs_old RENAME TO eqs;
+
+--------------------------------------------- epicenters
+CREATE TABLE epicenters (
+	id			INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	created_at			VARCHAR(30),
+	updated_at			VARCHAR(30),
+
+	name				VARCHAR(30),
+
+	id_number			INT,
+	
+	pref				VARCHAR(30),
+	
+	region				VARCHAR(30)
+	
+);
+
+DROP TABLE epicenters;
 
