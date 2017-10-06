@@ -6026,6 +6026,215 @@ class Utils {
 		
 	}//static function get_EQs__NRecords
 	
+	/******************** (20 '*'s)
+	* static function get_EQs__NPages
+	* @param $numOf_Pages
+	*			1. Get all records in N pages starting with $numOf_Pages
+	*			2. Dflt ==> 1
+	* @param $id_Epicenter
+	* 			1. e.g. 289 ('福島県沖')
+	*
+	* @return 
+	* 		null	==> page not found
+	* 		null	==> file_get_html() returned false
+	* 		array of TRs
+	* 			==> array(
+	* 					array(	// TR
+	* 						"td" => array(string, string, ...),
+	* 						"hrefs" => array(string, string, ...),
+	* 					)
+	* 					...
+	* 				)
+	* 
+	* <Description>
+	* 
+	* array(
+		(int) 0 => array(
+			'td' => array(
+				(int) 0 => '2017年9月21日 21時35分ごろ',
+				(int) 1 => '2017年9月21日 21時38分',
+				(int) 2 => '福島県沖',
+				(int) 3 => '4.2',
+				(int) 4 => '1'
+			),
+			'hrefs' => array(
+				(int) 0 => '/weather/jp/earthquake/20170921213534.html?e=289'
+			)
+		),
+		(int) 1 => array(
+			'td' => array(
+				(int) 0 => '2017年9月20日 5時42分ごろ',
+				(int) 1 => '2017年9月20日 5時44分',
+				(int) 2 => '福島県沖',
+				(int) 3 => '3.9',
+				(int) 4 => '1'
+			),
+			'hrefs' => array(
+				(int) 0 => '/weather/jp/earthquake/20170920054217.html?e=289'
+			)
+		),
+	*
+	********************/
+	static function get_EQs__NPages
+	($id_Epicenter, $numOf_Pages = 1) {
+		
+		/******************** (20 '*'s)
+		* get : html
+		********************/
+		$id_Location = $id_Epicenter;
+		
+		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=$id_Location";
+		
+		/******************** (20 '*'s)
+		* validate
+		********************/
+		//ref https://stackoverflow.com/questions/6857392/check-whether-a-html-page-exists "answered Jul 28 '11 at 10:41"
+		$res = get_headers($url);
+		
+		if ($res[0] == 'HTTP/1.0 404 Not Found') {
+		
+// 			debug("page not found : epicenter id = $id_Location");
+			
+			return null;
+			
+		}//if ($res[0] == 'HTTP/1.0 404 Not Found')
+		;
+		
+		//ref C:\WORKS_2\WS\Eclipse_Luna\Cake_NR5\app\Controller\Articles2Controller.php
+		$html = file_get_html($url);
+		
+		/******************** (20 '*'s)
+		* validate
+		********************/
+		if ($html == false) {
+		
+			debug("url ==> returned false: epicenter id = $id_Epicenter");
+
+			return null;
+			
+		}//if ($html == false)
+		;
+		
+		/******************** (20 '*'s)
+		* get : ary of TRs
+		********************/
+		$aryOf_TR_Nodes = $html->find('table tr');
+
+		debug("count(\$aryOf_TR_Nodes) : ".count($aryOf_TR_Nodes));
+		
+		$aryOf_TRs = array();
+		
+		/******************** (20 '*'s)
+		* get : TDs
+		********************/
+		$aryOf_TDs = array();
+
+		$countOf_TRs = 0;
+		
+		foreach ($aryOf_TR_Nodes as $tr) {
+			
+			/******************** (20 '*'s)
+			* vars
+			********************/
+			$ary_Temp = array();
+			// 				(int) 1 => array(
+			// 						(int) 0 => '2017年9月21日 21時35分ごろ',
+			// 						(int) 1 => '2017年9月21日 21時38分',
+			// 						(int) 2 => '福島県沖',
+			// 						(int) 3 => '4.2',
+			// 						(int) 4 => '1'
+			// 				),
+
+			$ary_Temp__Hrefs = array();
+			
+			/******************** (20 '*'s)
+			* count
+			********************/
+			$countOf_TRs += 1;
+
+// 			/******************** (20 '*'s)
+// 			* validate : more than number of records required?
+// 			********************/
+// 			if ($countOf_TRs > $numOf_Records + 1) {
+// // 			if ($countOf_TRs > $numOf_Records) {
+			
+// 				break;
+				
+// 			}//if ($countOf_TRs > $numOf_Records)
+			
+			/******************** (20 '*'s)
+			* TDs
+			********************/
+			$tds = $tr->find('td');
+			
+			$numOf_TDs = count($tds);
+
+			for ($i = 0; $i < $numOf_TDs; $i ++) {
+
+				$td = $tds[$i];
+				
+				/******************** (20 '*'s)
+				* td : text
+				********************/
+				array_push($ary_Temp, $td->plaintext);
+				
+				/******************** (20 '*'s)
+				* hrefs : if any
+				********************/
+				$res = $td->find("a");
+				
+				if (count($res) > 0) {
+				
+					foreach ($res as $a) {
+					
+						array_push($ary_Temp__Hrefs, $a->href);;
+						
+					}//foreach ($res as $a)
+					
+				}//if (count($res) > 0)
+				
+			}//foreach ($tds as $td)
+
+			/******************** (20 '*'s)
+			* temp array ---> to TDs
+			********************/
+			array_push(
+					$aryOf_TRs, 
+					
+					array(
+							"td" => $ary_Temp,
+							"hrefs" => $ary_Temp__Hrefs
+					)
+			
+			);
+			
+		}//foreach ($aryOf_TR_Nodes as $tr)
+		
+		/******************** (20 '*'s)
+		* processing
+		********************/
+		$aryOf_TRs__1_Last = array_slice($aryOf_TRs, 1);
+		
+		/******************** (20 '*'s)
+		* report
+		********************/
+// 			debug("count(\$aryOf_TDs) : ".count($aryOf_TDs));
+		debug("\$countOf_TRs =>  ".$countOf_TRs);
+		
+// 		$aryOf_TRs__0_3 = array_slice($aryOf_TRs__1_Last, 0, 5);
+// // 			$aryOf_TDs__0_3 = array_slice($aryOf_TDs, 0, 3);
+		
+// // 		debug($aryOf_TRs__0_3);
+		
+		/******************** (20 '*'s)
+		*
+		* return
+		*
+		********************/
+		return $aryOf_TRs__1_Last;
+		
+	}//static function get_EQs__NPages
+	
 	static function get_ListOf_EpicenterNames() {
 
 		/******************** (20 '*'s)

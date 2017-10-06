@@ -1,3 +1,7 @@
+
+
+var flag_Show_Links_EQs = 0;
+
 function rotate_image2(deg) {
 	
 	// alert("rotate");
@@ -467,4 +471,32 @@ function onload_Ops() {
 	
 }//function onload_Ops()
 
+function show_hide_Links_EQs() {
+	
+//	alert("show/hide");
 
+	var tbl = $('table#tbl_Links_Eqs');
+	
+	if (flag_Show_Links_EQs == 0) {
+		
+		// show the table
+		//ref https://stackoverflow.com/questions/1875403/jquery-how-to-get-the-style-display-attribute-none-block
+		tbl.css('display', 'block');
+//		tbl.setAttribute('display', 'block');
+//		tbl.style.display = 'block';
+		
+		// change flag
+		flag_Show_Links_EQs = 1;
+		
+	} else {
+
+		// show the tbl
+		tbl.css('display', 'none');
+//		tbl.style.display = 'none';
+		
+		// change flag
+		flag_Show_Links_EQs = 0;
+
+	}
+	
+}

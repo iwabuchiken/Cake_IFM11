@@ -40,9 +40,17 @@ class EqsController extends AppController {
 		/**********************************
 		* Build: list
 		**********************************/
-		$data_EQs = Utils::get_EQs__ALL();
+		$numOf_Pages = 1;
 		
-		$aryOf_EpicenterNames = Utils::get_ListOf_EpicenterNames();
+		$id_Epicenter = 289;
+		
+		$data_EQs = Utils::get_EQs__NPages($id_Epicenter, $numOf_Pages);
+		
+// 		debug($data_EQs);
+		
+// 		$data_EQs = Utils::get_EQs__ALL();
+		
+// 		$aryOf_EpicenterNames = Utils::get_ListOf_EpicenterNames();
 
 	}//public function index()
 
