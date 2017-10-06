@@ -85,6 +85,9 @@
 <!-- 			</p> -->
 <!-- 		</div> -->
 	</div>
+	
+	<?php echo $this->element('layouts/links_eqs'); ?>
+	
 	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>
