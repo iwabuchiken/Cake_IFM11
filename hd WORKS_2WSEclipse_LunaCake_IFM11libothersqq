@@ -1,0 +1,120 @@
+[33mcommit e6de9351d8883f5739da668b9592b71e96435b47[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Thu Sep 14 07:17:33 2017 +0900
+
+    Prog / D-34 3#3 / Cake_IFM11 fix-2 / adjust to WS_Cake_IFM11 / 20170914_065047
+    
+    steps=~1.1
+    ---
+    file name ---> program uses the update datetime instead of photo datetime
+    PROB : "#<NameError: uninitialized constant EXIFR::JPEG>"
+    
+            ==> done
+
+[33mcommit 9e2b5fa57092710aa38952c1264134f90d49d5e5[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Tue Sep 12 14:16:47 2017 +0900
+
+    Prog / D-34 3#2 / Cake_IFM11 fix-2 / adjust to WS_Cake_IFM11 / 20170912_141434
+    
+    steps=~2.1
+    ---
+    TEST
+    #) delete unused photos ---> java file
+    
+            ==> done
+
+[33mcommit 1089a44fa9ef3c6eb5ce58e30c65dbe6a402c0c5[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Mon Sep 11 13:50:28 2017 +0900
+
+    Prog / D-34 3#1 / Cake_IFM11 fix-2 / adjust to WS_Cake_IFM11 / 20170911_124131
+    
+    steps=~2.2
+    ---
+    #) insert ===> data
+    
+            ==> done
+
+[33mcommit 57b89df2e4355b218e2ee7f96b873a78e78ceb72[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Mon Sep 11 13:24:28 2017 +0900
+
+    Prog / D-34 3#1 / Cake_IFM11 fix-2 / adjust to WS_Cake_IFM11 / 20170911_124131
+    
+    steps=~2.1
+    ---
+    1. #) test ---> PDO related
+    
+            ==> done
+
+[33mcommit 04b7e90c937843df82a41a004ceb4fe180179218[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Wed Jun 7 12:38:47 2017 +0900
+
+    Prog / D-33 16#1 / Cake_NR5 update-1 / search by id / 20170607_094808
+    
+    steps=~3
+    ------------
+    search by id
+    ==> fix controller codes
+    
+            ==> done
+
+[33mcommit c2f0b3d6bf20f3a3c8334954f642463048eecb60[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Sun Apr 30 01:44:16 2017 +0900
+
+    Prog / D-34 1#2 / Cake_IFM11 fix-1 / convert file name / 20170429_234529
+    
+    steps=~1.2
+    ------------
+    C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\Change_FileName.rb
+    new method : conv_exifdatetime_2_datelabel_with_millsec(exifdatetime)
+    #) rename file
+    
+            ==> done
+
+[33mcommit c3df3d4854f66fe5999a302dc12314dfd55ae97c[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Sat Apr 29 23:47:20 2017 +0900
+
+    Prog / D-34 1#1 / Cake_IFM11 fix-1 / convert file name / 20170429_165205
+    
+    steps=~3
+    ------------
+    class MyTest_iPhone --> D_20_v_1_1_Process_IPhone_ImageFiles__V4() ---> elem.lastModified()
+    debug ---> the value ?
+    
+    install --> "metadata-extractor"
+    http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22com.drewnoakes%22%20AND%20a%3A%22metadata-extractor%22
+    
+    tut http://taka-2.hatenablog.jp/entry/20091110/p2
+    http://totomo.net/850.htm
+    Use --> exif with Ruby
+    
+            ==> done
+
+[33mcommit 2c56bb5f4459695f66528d617ca2b369de21cb24[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Thu May 19 13:09:24 2016 +0900
+
+    D-25
+    
+    s-6#1/steps.~5
+    ---
+    1. OR directive => fix
+    
+        ==> done
+
+[33mcommit 4ab3875d43550bdb8f2e33d846ca77e40515c878[m
+Author: iwabuchiken <iwabuchi.k.2010@gmail.com>
+Date:   Fri May 13 12:47:44 2016 +0900
+
+    D-23
+    
+    s-1#1
+    ---
+    1. fix-4: search + sort
+    
+        ==> done
