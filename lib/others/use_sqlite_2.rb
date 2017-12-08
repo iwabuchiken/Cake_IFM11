@@ -40,7 +40,9 @@ libdir = File.expand_path(File.dirname(FPATH))
 
 $LOAD_PATH.unshift(FPATH) unless $LOAD_PATH.include?(libdir)
 
-require 'utils.20161228_123529'
+#require 'utils.20161228_123529'
+require 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/lib/others/utils.20161228_123529'
+
 
 ################################
 # 
