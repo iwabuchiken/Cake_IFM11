@@ -1,4 +1,4 @@
-
+//alert("main.js");
 
 var flag_Show_Links_EQs = 0;
 
@@ -500,3 +500,28 @@ function show_hide_Links_EQs() {
 	}
 	
 }
+
+function project_Numbering() {
+
+	_url = "http://localhost/Eclipse_Luna/Cake_IFM11/projects/python_commands";
+	
+	$.ajax({
+		
+	    url: _url,
+	    type: "GET",
+	    //REF http://stackoverflow.com/questions/1916309/pass-multiple-parameters-to-jquery-ajax-call answered Dec 16 '09 at 17:37
+//	    data: {memos: memos, image_id: image_id},
+	    
+	    timeout: 10000
+	    
+	}).done(function(data, status, xhr) {
+		
+		alert(data);
+		
+	}).fail(function(xhr, status, error) {
+		
+		alert(xhr.status);
+		
+	});
+	
+}//function project_Numbering() {

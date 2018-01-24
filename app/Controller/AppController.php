@@ -77,7 +77,7 @@ class AppController extends Controller {
 		
 		if ($current_Controller_Name == 'projects') {
 			
-			debug("'projects' controller. Changing the layout...");
+// 			debug("'projects' controller. Changing the layout...");
 			
 			$this->layout = 'projects';
 		}

@@ -23,7 +23,14 @@ class ProjectsController extends AppController {
 	
 	public function index() {
 
-// 		debug($this->params['controller']);
+		
+	}//public function index()
+
+	public function python_commands() {
+
+		$this->layout = 'projects_plain';
+		
+		$this->render("/Projects/index/python_commands");
 		
 	}//public function index()
 
