@@ -2937,3 +2937,15 @@ Stack Trace:
 #3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-01-24 05:35:09 Error: [MissingViewException] View file "C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\View\Projects\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\View\\Projects\\index.ctp',
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/projects
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ProjectsController), Object(CakeRequest))
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
