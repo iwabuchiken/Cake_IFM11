@@ -69,6 +69,19 @@ class AppController extends Controller {
 		// 		require_once $this->path_Utils.DS."db_util.php";
 	
 // 		$this->Auth->allow('index', 'view');
+
+		##### projects controller
+		#ref before filter https://stackoverflow.com/questions/4180655/change-admin-layout-in-cakephp
+		#ref controller name https://stackoverflow.com/questions/13034267/in-viewcakephp-the-proper-way-to-get-current-controller "answered Oct 24 '12 at 0:31"
+		$current_Controller_Name = $this->params['controller'];
+		
+		if ($current_Controller_Name == 'projects') {
+			
+			debug("'projects' controller. Changing the layout...");
+			
+			$this->layout = 'projects';
+		}
+// 		debug($this->params['controller']);
 	
 	}
 	

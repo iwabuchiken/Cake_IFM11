@@ -18,8 +18,12 @@ class ProjectsController extends AppController {
 	//REF http://book.cakephp.org/2.0/en/core-libraries/components/pagination.html
 	public $components = array('Paginator');
 
+	### layout
+// 	$this->layout = 'layout_projects';
+	
 	public function index() {
 
+// 		debug($this->params['controller']);
 		
 	}//public function index()
 
