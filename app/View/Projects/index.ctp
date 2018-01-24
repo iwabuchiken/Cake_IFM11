@@ -26,10 +26,5 @@
 
 <div id="index_area_memo">
 
-<?php 
-
-	
-
-?>
 
 </div><!-- <div id="index_area_memo"> -->

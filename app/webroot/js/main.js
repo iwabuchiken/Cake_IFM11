@@ -503,20 +503,45 @@ function show_hide_Links_EQs() {
 
 function project_Numbering() {
 
-	_url = "http://localhost/Eclipse_Luna/Cake_IFM11/projects/python_commands";
+//	alert("numbering");
 	
+	/***************************
+		get vars
+	 ***************************/
+	var _dpath = $('input#pc_numbering_Dpath').val();
+	var _fname = $('input#pc_numbering_Fname').val();
+//	var dpath = $('input#pc_numbering_dpath').html();
+//	var dpath = $('input#pc_numbering_dpath').text();
+	
+//	alert("dpath -> '" + dpath + "'");
+//	
+//	console.log("dpath -> '" + dpath + "'");
+//	
+//	//debug
+//	return;
+	
+	_url = "http://localhost/Eclipse_Luna/Cake_IFM11/projects/pc_numbering_EXECUTE";
+//	_url = "http://localhost/Eclipse_Luna/Cake_IFM11/projects/python_commands";
+	
+	
+	/***************************
+		ajaxing
+	 ***************************/
 	$.ajax({
 		
 	    url: _url,
 	    type: "GET",
 	    //REF http://stackoverflow.com/questions/1916309/pass-multiple-parameters-to-jquery-ajax-call answered Dec 16 '09 at 17:37
 //	    data: {memos: memos, image_id: image_id},
+	    data: {dpath : _dpath, fname : _fname},
 	    
 	    timeout: 10000
 	    
 	}).done(function(data, status, xhr) {
 		
-		alert(data);
+//		alert(data);
+		$('#PC_Numbering_Area_Memo').html(data);
+//		$('#index_area_memo').html(data);
 		
 	}).fail(function(xhr, status, error) {
 		

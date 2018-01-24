@@ -15,6 +15,13 @@
 		
 		<th colspan="1" class="th_red">
 			
+			Go
+			
+			
+		</th>
+		
+		<th colspan="1" class="th_red">
+			
 			Memos
 			
 			

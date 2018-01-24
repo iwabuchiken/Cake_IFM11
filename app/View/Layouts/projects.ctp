@@ -66,10 +66,51 @@
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
+			
+			
+			
 		</div>
+		
+			<?php 
+// 			echo $this->Html->link('projects',
+// 				array(
+// 					'controller' => 'projects', 
+// 					'action' => 'index'
+// 				)
+// 			); 
+	?>
+		
+		
 	</div>
 	
-	<?php //echo $this->element('sql_dump'); ?>
 	
+	
+	<?php //echo $this->element('sql_dump'); ?>
+	<br>
+<br>
+
+<button id="btn_Links_EQs" onclick="show_hide_Links_EQs();" value="push">
+
+Push(EQs)
+</button>
+
+<table id="tbl_Links_Eqs" style="display : none;">
+	<tr>
+	
+		<td>
+		
+			<?php echo 
+					$this->Html->link(
+								'projects',
+								array('controller' => 'projects', 
+										'action' => 'index'),
+								array('class' => "button"));
+			?>
+			
+		</td>
+		
+	</tr>
+	
+</table>
 </body>
 </html>

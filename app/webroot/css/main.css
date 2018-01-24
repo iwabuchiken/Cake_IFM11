@@ -260,6 +260,22 @@ div.pagination {
 	
 }
 
+div#index_area_memo {
+	
+	background: #A4F7B6;
+	
+}
+
+div#PC_Numbering_Area_Memo {
+	
+	background: #A4F7B6;
+	
+	/*ref https://www.w3schools.com/CSSref/pr_dim_min-height.asp*/
+	min-height: 50px;
+	
+}/*div#PC_Numbering_Area_Memo {*/
+
+
 /* REF http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
 @viewport {
     zoom: 1.0;
@@ -574,5 +590,15 @@ button.zoom_button {
 	font-size: 15px;
 	background-color: yellow;
 	font-weight: bold;
+	
+}
+
+button.btn_Links {
+	
+	font-size: 30px;
+	background-color: yellow;
+	font-weight: bold;
+	
+	padding    : 5px;
 	
 }
