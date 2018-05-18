@@ -2487,6 +2487,11 @@ class ImagesController extends AppController {
 		
 		debug($res_Add_Data);
 		
+		/*******************************
+			set vars
+		*******************************/
+		$this->set("message", $res_Add_Data);
+		
 	}//add_From_DB_File
 	
 	public function 

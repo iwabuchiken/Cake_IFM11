@@ -2995,3 +2995,67 @@ Stack Trace:
 #3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2018-04-21 11:08:12 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\View\Elements\image_manager\result_rows.ctp, line 14]
+2018-04-21 11:08:13 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\\WORKS_2\\WS\\E...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\\WORKS_2\\WS\\E...', 14, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\\WORKS_2\\WS\\E...', 14, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-04-21 18:08:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php, line 4450]
+2018-04-21 18:08:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Eclipse_Luna/Cake_IFM11/images/manage_IPhone_ImageFiles?db_file=ifm11_backup_20160110_080900.bk
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\\WORKS_2\\WS\\E...', 4450)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\\WORKS_2\\WS\\E...', 4450, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\\WORKS_2\\WS\\E...', 4450, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-04-28 06:07:32 Error: [PDOException] SQLSTATE[HY000]: General error: 10 disk I/O error
+Request URL: /Eclipse_Luna/Cake_IFM11/images/manage_IPhone_ImageFiles?db_file=ifm11_backup_20160110_080900.bk
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(4450): PDOStatement->execute(Array)
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(4530): ImagesController->manage_IPhone_ImageFiles__Insert_Data('ifm11_backup_20...')
+#2 [internal function]: ImagesController->manage_IPhone_ImageFiles()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-04-27 23:07:36 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(902): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2802): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-04-27 23:14:08 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(902): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2802): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2018-05-04 15:41:15 Error: [PDOException] SQLSTATE[HY000]: General error: 26 file is encrypted or is not a database
+Request URL: /Eclipse_Luna/Cake_IFM11/images/image_manager
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php(902): PDO->query('SELECT Count(*)...')
+#1 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ImagesController.php(2802): Utils::find_All_Images__DateRange('_id', 'DESC')
+#2 [internal function]: ImagesController->image_manager()
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ImagesController), Array)
+#4 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
+#6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
