@@ -2490,7 +2490,19 @@ class ImagesController extends AppController {
 		/*******************************
 			set vars
 		*******************************/
-		$this->set("message", $res_Add_Data);
+		$dataOf_Add_New_Data = "";
+		
+// 		foreach ($res_Add_Data as $item) {
+		foreach ($res_Add_Data as $key => $value) {
+		
+			$dataOf_Add_New_Data .= "$key => $value\n";
+			
+		}//foreach ($res_Add_Data as $item)
+		
+		
+		
+		$this->set("message", $dataOf_Add_New_Data);
+// 		$this->set("message", $res_Add_Data);
 		
 	}//add_From_DB_File
 	

@@ -3,7 +3,7 @@ add_From_DB_File
 <br>
 <hr>
 
-	<textarea>
+	<textarea onmouseover="this.select()" style="width : 50%;">
 	
 		<?php echo $message; ?>
 	
