@@ -279,9 +279,9 @@ class ImagesController extends AppController {
 
 		$opt_conditions = $this->_index_2__Options();
 // 		$opt_conditions = $this->_index__Options();
-		
-// 		debug("\$opt_conditions ...");
-// 		debug($opt_conditions);
+
+// 		#debug
+// 		debug("index_2()");
 		
 		/*******************************
 			paginate
@@ -305,39 +305,24 @@ class ImagesController extends AppController {
 		
 		$images = $this->paginate('Image');
 		
-// 		debug("count(\$images) => ".count($images));
-		
-// 		$paginateData = $this->params['paging']['Image'];
-		
-// 		debug("\$paginateData =>");
-// 		debug($paginateData);
-		
-// 		debug("index_2");
-		
-// 		$this->render("/Elements/plain");
-		
 		/*******************************
 			set: meta data
 		*******************************/
 		$this->_index_2__Set_Page_Data();
-		
-// 		$this->set('total_num_of_images', $paginateData['count']);
-		
-// 		$this->set('num_of_pages', $paginateData['pageCount']);
-		
-// 		$this->set('current_page', $paginateData['page']);
-		
-// 		// 		debug("\$paginateData['pageCount'] => ".$paginateData['pageCount']);
-		
-// 		$this->set('num_of_images_filtered', $paginateData['count']);
 		
 		/**********************************
 		 * set: images
 		**********************************/
 		$this->set('images', $images);
 		
+		/**********************************
+		 * set: dirpath for image files
+		 **********************************/
+		$dpath_Image_File = "http://benfranklin.chips.jp/cake_apps/images/ifm11/";
 		
-	}
+		$this->set('dpath_Image_File', $dpath_Image_File);
+		
+	}//public function index_2() {
 	
 	public function
 	_index_2__Set_Page_Data() {
@@ -2029,10 +2014,24 @@ class ImagesController extends AppController {
 			throw new NotFoundException(__('Invalid image'));
 		}
 	
-// 		debug("id => ".$id);
-		
+
+		/**********************************
+		 * set: image
+		 **********************************/
 		$this->set('image', $image);
 		
+		/**********************************
+		 * set: dirpath for image files
+		 **********************************/
+		$url_Dpath_Image_File = "http://benfranklin.chips.jp/cake_apps/images/ifm11/";
+		
+		$this->set('url_Dpath_Image_File', $url_Dpath_Image_File);
+		
+// 		debug("set : $url_Dpath_Image_File");
+		
+		/**********************************
+		 * set: url
+		 **********************************/
 		$current_url = $this->Session->read('current_url');
 		
 		$this->set('current_url', $current_url);

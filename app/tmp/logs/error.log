@@ -3100,3 +3100,39 @@ Stack Trace:
 #5 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ImagesController), Object(CakeRequest))
 #6 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2018-12-02 15:09:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/img/abc2014-08-18_22-43-39_563.jpg
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-12-02 15:09:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/img/abc2014-08-09_06-24-36_505.jpg_20140818_111723
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-12-02 15:09:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/img/abc2014-08-12_12-17-06_960.jpg
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-12-02 15:09:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /Eclipse_Luna/Cake_IFM11/img/abc2014-08-12_12-16-50_77.jpg
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
