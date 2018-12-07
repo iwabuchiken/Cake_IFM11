@@ -6356,6 +6356,91 @@ class Utils {
 		
 	}//get_ListOf_EpicenterNames__Range($id_Epicenter_Start, $id_Epicenter_End)
 	
+	/******************** (20 '*'s)
+	* at : 2018/12/07 13:32:38
+	* 
+	* @return
+		* 		array(
+					(int) 0 => array(
+						(int) 0 => '小学校',
+						(int) 1 => 'しょうがっこう'
+					),
+					(int) 1 => array(
+						(int) 0 => '学習指導',
+						(int) 1 => 'がくしゅうしどう'
+					),
+					(int) 2 => array(
+						(int) 0 => '要領',
+						(int) 1 => 'ようりょう'
+					)
+				)
+	* 
+	********************/
+	static function get_Rubis($txt) {
+		
+		$url_Request = "https://jlp.yahooapis.jp/FuriganaService/V1/furigana?appid=dj00aiZpPXlIWUpoTVpGSVFBRiZzPWNvbnN1bWVyc2VjcmV0Jng9N2E-&grade=1&sentence=$txt";
+
+		$xml = simplexml_load_file($url_Request);
+		
+		$lo_Words = $xml->Result->WordList->Word;
+		
+		$aryOf_WordPair = array();
+		
+// 		debug("\$lo_Words => " . count($lo_Words));
+// 		debug($lo_Words);
+		
+		foreach ($lo_Words as $item) {
+			
+			/******************** (20 '*'s)
+			* push
+			********************/
+			array_push($aryOf_WordPair, array((string)($item->Surface), (string)($item->Furigana)));
+			
+// 			debug($item);
+			/******************** (20 '*'s)
+			* surface : defined?
+			********************/
+// 			//ref defined https://secure.php.net/manual/en/function.defined.php
+// 			//ref string casting https://stackoverflow.com/questions/28098/tostring-equivalent-in-php
+// 			$condition_1 = defined((string)($item->Surface));
+// 			$condition_2 = defined($item->Furigana);
+// // 			$condition_1 = defined($item->Surface);
+// // 			$condition_2 = defined($item->Furigana);
+			
+// 			$surface = $condition_1 ? (string)($item->Surface) : "NULL";
+// 			$furigana = $condition_2 ? (string)($item->Furigana) : "NULL";
+			
+// 			debug(($condition_1) ? "yes 1" : "no 1");
+			
+// 			debug($surface);
+// 			debug($furigana);
+			
+// 			debug((string)($item->Surface));
+// // 			debug($item->Furigana);
+			
+// // 			if ($condition_1 && $condition_2) {
+			
+// // 				array_push($aryOf_WordPair, array((string)($item->Surface), (string)($item->Furigana)));
+
+// // 			} else if ($condition_1) {
+				
+// // 				array_push($aryOf_WordPair, array((string)($item->Surface), (string)($item->Furigana)));
+				
+// // 			}//if ($item->)
+// // 			;
+			
+		}//foreach ($lo_Words as $item)
+		
+		//debug
+// 		debug($aryOf_WordPair);
+		
+		/******************** (20 '*'s)
+		* return
+		********************/
+		return $aryOf_WordPair;
+		
+		
+	}//static function get_Rubis($txt) {
 	
 }//class Utils
 	

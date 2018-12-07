@@ -3136,3 +3136,23 @@ Request URL: /Eclipse_Luna/Cake_IFM11/img/abc2014-08-12_12-16-50_77.jpg
 Stack Trace:
 #0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-12-07 05:17:41 Error: Fatal Error (1): Call to undefined function len() in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 6367]
+2018-12-07 05:17:41 Error: [FatalErrorException] Call to undefined function len()
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/show_epicenters
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 6367)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 6367, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\WORKS_2\\WS\\E...', 6367, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-12-07 05:24:51 Error: Fatal Error (4): syntax error, unexpected '(string)' (string) (T_STRING_CAST), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\utils\utils.php, line 6382]
+2018-12-07 05:24:51 Error: [FatalErrorException] syntax error, unexpected '(string)' (string) (T_STRING_CAST), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /Eclipse_Luna/Cake_IFM11/eqs/show_epicenters
+Stack Trace:
+#0 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 6382)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 6382, Array)
+#2 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\WORKS_2\\WS\\E...', 6382, Array)
+#3 C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

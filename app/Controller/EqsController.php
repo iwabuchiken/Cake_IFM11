@@ -289,6 +289,71 @@ class EqsController extends AppController {
 		
 		
 	}//public function add_epicenter_names() {
+
+	public function _show_epicenters__TEST() {
+		
+		/******************** (20 '*'s)
+		* get : rubis
+		********************/
+		$txt = "小学校学習指導要領";
+		
+		$aryOf_WordPair = Utils::get_Rubis($txt);
+		
+		debug($aryOf_WordPair);
+		
+// 		$txt = "小学校学習指導要領";
+		
+// 		//ref https://developer.yahoo.co.jp/webapi/jlp/furigana/v1/furigana.html
+// 		$url_Request = "https://jlp.yahooapis.jp/FuriganaService/V1/furigana?appid=dj00aiZpPXlIWUpoTVpGSVFBRiZzPWNvbnN1bWVyc2VjcmV0Jng9N2E-&grade=1&sentence=$txt";
+		
+// 		//ref https://pulogu.net/blog/020-computer/php/php-xml-data-read-parse-test/
+// 		$xml = simplexml_load_file($url_Request);
+		
+// 		debug($xml);
+// 		debug("\$xml->Result");
+// 		debug($xml->Result);
+// 		debug("\$xml->Result->WordList");
+// 		debug($xml->Result->WordList);
+// 		debug("Word => " . count($xml->Result->WordList->Word));
+		// 		debug("Word => " . count($xml->Word));
+		// 		debug($xml->resultset);
+		
+		// 		var_dump( $xml->resultset );
+		// 		var_dump( $xml );
+		// 		var_dump( $xml );
+		// 		debug(var_dump( $xml ));
+		// 		<ResultSet xmlns="urn:yahoo:jp:jlp:FuriganaService" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:yahoo:jp:jlp:FuriganaService https://jlp.yahooapis.jp/FuriganaService/V1/furigana.xsd">
+		// 		<Result>
+		// 		<WordList>
+		// 		<Word>
+		// 			<Surface>小学校</Surface>
+		// 			<Furigana>しょうがっこう</Furigana>
+		// 			<Roman>syougakkou</Roman>
+		// 		</Word>
+		// 		<Word>
+		// 			<Surface>学習指導</Surface>
+		// 			<Furigana>がくしゅうしどう</Furigana>
+		// 			<Roman>gakusyuusidou</Roman>
+		// 		</Word>
+		// 		<Word>
+		// 			<Surface>要領</Surface>
+		// 			<Furigana>ようりょう</Furigana>
+		// 			<Roman>youryou</Roman>
+		// 		</Word>
+		// 		</WordList>
+		// 		</Result>
+		// 		</ResultSet>
+		
+	}//public function _show_epicenters__TEST() {
+	
+	public function show_epicenters() {
+		
+		/******************** (20 '*'s)
+		* test : rubi
+		********************/
+		$this->_show_epicenters__TEST();
+	
+	}
 	
 }//class EqsController extends AppController {
 
