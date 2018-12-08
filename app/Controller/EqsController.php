@@ -9,7 +9,8 @@ http://localhost/Eclipse_Luna/Cake_IFM11/eqs/index_2
 http://benfranklin.chips.jp/cake_apps/Cake_IFM11/eqs/index_2
 
  */
-
+// include('simple_html_dom.php');
+		// include(simple_html_dom.php): failed to open stream: No such file or directory
 
 class EqsController extends AppController {
 	
@@ -290,16 +291,314 @@ class EqsController extends AppController {
 		
 	}//public function add_epicenter_names() {
 
-	public function _show_epicenters__TEST() {
+	public function _show_epicenters__TEST__2() {
 		
 		/******************** (20 '*'s)
-		* get : rubis
-		********************/
+		 * get : rubis
+		 ********************/
 		$txt = "小学校学習指導要領";
 		
 		$aryOf_WordPair = Utils::get_Rubis($txt);
 		
 		debug($aryOf_WordPair);
+		
+		/******************** (20 '*'s)
+		 * get : remote html
+		********************/
+		/******************** (20 '*'s)
+		 * prep
+		********************/
+		$page_Start = 100;
+		
+		$id_Epicenter = 289;
+		
+		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=$id_Epicenter&sort=1&key=1&b=$page_Start";
+		// 		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=289&sort=1&key=1&b=201"
+		
+		//ref http://simplehtmldom.sourceforge.net/
+		$html = file_get_html($url);
+		
+		/******************** (20 '*'s)
+		* test : 1 : table
+		********************/
+		$table = $html->find('table');
+		
+// 		debug("get_class(\$table) => " . get_class($table));
+					//get_class() expects parameter 1 to be object, array given
+		debug("count(\$table) => " . count($table));
+
+		/******************** (20 '*'s)
+		 * test : 2 : tr
+		 ********************/
+		$table_TRs = $table->find('tr');
+		
+		debug("count(\$table_TRs) => " . count($table_TRs));
+					//Error: Call to a member function find() on array
+		
+		
+	}//public function _show_epicenters__TEST__2() {
+	
+	public function _show_epicenters__TEST__3() {
+		
+		/******************** (20 '*'s)
+		 * get : rubis
+		 ********************/
+		$txt = "小学校学習指導要領";
+		
+		$aryOf_WordPair = Utils::get_Rubis($txt);
+		
+		debug($aryOf_WordPair);
+		
+		/******************** (20 '*'s)
+		 * get : remote html
+		********************/
+		/******************** (20 '*'s)
+		 * prep
+		********************/
+		$page_Start = 100;
+		
+		$id_Epicenter = 289;
+		
+		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=$id_Epicenter&sort=1&key=1&b=$page_Start";
+		// 		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=289&sort=1&key=1&b=201"
+		
+		//ref http://simplehtmldom.sourceforge.net/
+// 		$html = file_get_html($url);
+		$html_Content = file_get_contents($url);
+		
+		debug("substr(\$html_Content, 0, 20) => " . substr($html_Content, 0, 20));
+				// 		'substr($html_Content, 0, 20) => <!DOCTYPE html>
+				// 		<htm'
+				
+// 		debug("get_class(\$html_Content) => " . get_class($html_Content));
+					//Warning (2): get_class() expects parameter 1 to be object, string given
+		
+		//ref https://stackoverflow.com/questions/29010892/unable-to-load-url-in-domdocument
+		$xmlDoc3 = new DOMDocument();
+		$xmlDoc3->load($html_Content);
+		
+		debug("get_class(\$xmlDoc3) => " . get_class($xmlDoc3));
+					//'get_class($xmlDoc3) => DOMDocument'
+				
+		/******************** (20 '*'s)
+		* test : 1 : table
+		********************/
+		$table = $xmlDoc3->getElementsByTagName('table');
+		
+		debug("get_class(\$table) => " . get_class($table));
+					//'get_class($table) => DOMNodeList'
+		
+// 		debug("get_class(\$table[0]) => " . get_class($table[0]));
+					//'get_class($table[0]) => EqsController'
+				
+		/******************** (20 '*'s)
+		* test : 2 : tr
+		********************/
+		//ref http://jp2.php.net/manual/en/book.dom.php#118227
+		$table_TRs = $xmlDoc3->getElementsByTagName('table');
+		
+		debug("get_class(\$table_TRs) => " . get_class($table_TRs));
+					//'get_class($table_TRs) => DOMNodeList'
+
+		debug("count(\$table_TRs) => " . count($table_TRs));
+		
+		/******************** (20 '*'s)
+		 * test : 3 : first item in the TR list
+		 ********************/
+		$table_TRs_0 = $table_TRs->item(0);
+		
+		debug("get_class(\$table_TRs_0) => " . get_class($table_TRs_0));
+					//'get_class($table_TRs_0) => EqsController'
+					
+		/******************** (20 '*'s)
+		 * test : 4 : get : table
+		 ********************/
+		//ref https://www.tutorialspoint.com/php/php_dom_parser_example.htm
+		$table_0 = $table->item(0);
+		
+		debug("get_class(\$table_0) => " . get_class($table_0));
+					//'get_class($table_0) => EqsController'
+				
+// 		$trs = $table_0->getElementsByTagName('tr');
+					//Error: Call to a member function getElementsByTagName() on null
+// 		debug("get_class(\$trs) => " . get_class($trs));
+					
+					
+		/******************** (20 '*'s)
+		 * test : X : show the node contents
+		 ********************/
+		
+		
+	}//public function _show_epicenters__TEST__3() {
+	
+	public function _show_epicenters__TEST__4() {
+		
+		/******************** (20 '*'s)
+		 * get : rubis
+		 ********************/
+		$txt = "小学校学習指導要領";
+		
+		$aryOf_WordPair = Utils::get_Rubis($txt);
+		
+		debug($aryOf_WordPair);
+		
+		/******************** (20 '*'s)
+		 * get : remote html
+		********************/
+		/******************** (20 '*'s)
+		 * prep
+		********************/
+		$page_Start = 100;
+		
+		$id_Epicenter = 289;
+		
+		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=$id_Epicenter&sort=1&key=1&b=$page_Start";
+		// 		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=289&sort=1&key=1&b=201"
+		
+		//ref http://simplehtmldom.sourceforge.net/
+// 		$html = file_get_html($url);
+		$html_Content = file_get_contents($url);
+		
+// 		debug("substr(\$html_Content, 0, 20) => " . substr($html_Content, 0, 20));
+				// 		'substr($html_Content, 0, 20) => <!DOCTYPE html>
+				// 		<htm'
+				
+// 		debug("get_class(\$html_Content) => " . get_class($html_Content));
+					//Warning (2): get_class() expects parameter 1 to be object, string given
+		
+		//ref https://stackoverflow.com/questions/29010892/unable-to-load-url-in-domdocument
+		$dom_Root = new DOMDocument();
+// 		$xmlDoc3->load($html_Content);
+
+		//ref http://www.touchoftechnology.com/php-warning-domdocumentloadhtml-htmlparseentityref-expecting-entity-line-2416/
+		//ref search https://duckduckgo.com/?q=php+domdocument+%22expecting+%27%3B%27+in+Entity%22&atb=v84-1__&ia=web
+		$html_Content = preg_replace("/&(?!(?:apos|quot|[gl]t|amp);|#)/", '&amp;', $html_Content);
+		
+		//ref https://www.pahoo.org/e-soul/webtech/php02/php02-41-01.shtm
+		$dom_Root->loadHTML(mb_convert_encoding($html_Content, 'HTML-ENTITIES', 'auto'));
+// 		$xmlDoc3->loadHTML(mb_convert_encoding($html_Content, 'UTF-8'));
+// 		$xmlDoc3->loadHTML($html_Content);
+// 		$xmlDoc3->loadHTML($url);
+
+		
+		debug("get_class(\$dom_Root) => " . get_class($dom_Root));
+					//'get_class($dom_Root) => DOMDocument'
+					
+		debug("substr(\$html_Content, 0, 50) => " . substr($html_Content, 0, 50));
+		
+		/******************** (20 '*'s)
+		* test : 1 : table
+		********************/
+		//ref http://blog.malrone.info/archives/7865
+		debug($dom_Root->childNodes->length);
+
+		/******************** (20 '*'s)
+		 * test : 2 : childNodes
+		 ********************/
+		$root_Childs = $dom_Root->childNodes;
+		
+		debug("get_class(\$root_Childs) => " . get_class($root_Childs));
+					//'get_class($root_Childs) => DOMNodeList'
+					
+		/******************** (20 '*'s)
+		 * test : 2 : childNodes : item 0
+		 ********************/
+		$childs_0 = $root_Childs->item(0);
+		
+		debug("get_class(\$childs_0) => " . get_class($childs_0));
+					//'get_class($childs_0) => DOMDocumentType'
+		
+		debug("childs_0->nodeName => " . $childs_0->nodeName);
+					//'childs_0->nodeName => html'
+		
+		debug("get_class(\$childs_0) => " . get_class($childs_0));
+					//Warning (4096): Object of class DOMDocumentType could not be converted to string
+		
+		debug("\$childs_0 => " . $childs_0);
+					//'$childs_0 => '
+				
+		debug("\$childs_0->nodeValue => " . $childs_0->nodeValue);
+					//'$childs_0->nodeValue => '
+		
+		
+	}//public function _show_epicenters__TEST__4() {
+	
+	public function _show_epicenters__TEST() {
+		
+
+		/******************** (20 '*'s)
+		 * TEST : 
+		 ********************/
+		$this->_show_epicenters__TEST__4();
+// 		$this->_show_epicenters__TEST__3();
+// 		$this->_show_epicenters__TEST__2();
+		
+// 		/******************** (20 '*'s)
+// 		* get : rubis
+// 		********************/
+// 		$txt = "小学校学習指導要領";
+		
+// 		$aryOf_WordPair = Utils::get_Rubis($txt);
+		
+// 		debug($aryOf_WordPair);
+		
+// 		/******************** (20 '*'s)
+// 		 * get : remote html
+// 		 ********************/
+// 		/******************** (20 '*'s)
+// 		 * TEST : 1
+// 		 ********************/
+// 		$page_Start = 100;
+		
+// 		$id_Epicenter = 289;
+		
+// 		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=$id_Epicenter&sort=1&key=1&b=$page_Start";
+// // 		$url = "https://typhoon.yahoo.co.jp/weather/jp/earthquake/list/?e=289&sort=1&key=1&b=201"
+
+// 		//ref http://simplehtmldom.sourceforge.net/
+// 		$html = file_get_html($url);
+		
+// 		//ref http://www.php.net/manual/en/book.dom.php
+// 		$dom = new DOMDocument('1.0','UTF-8');
+		
+// 		$html = file_get_contents($url);
+		
+// 		//ref https://stackoverflow.com/questions/29010892/unable-to-load-url-in-domdocument#29011072
+// 		$dom->load($html);
+		
+// 		$table = $dom->getElementsByTagName('table');
+		
+// 		/******************** (20 '*'s)
+// 		* test : 'table'
+// 		********************/
+// 		debug("get_class(\$table) => ".get_class($table));
+// 					//'get_class($table) => DOMNodeList'
+		
+// 		debug("count(\$table) => ".count($table));
+		
+// 		/******************** (20 '*'s)
+// 		* test : 'table'->item
+// 		********************/
+// // 		$table_Item = $table->item;
+// 					//Undefined property: DOMNodeList::$item
+// 		$table_Item_0 = $table->item(0);
+		
+// 		debug("get_class(\$table_Item_0) => ".get_class($table_Item_0));
+		
+// 		debug("count(\$table_Item_0) => ".count($table_Item_0));
+// 		debug("get_class(\$table_Item) => ".get_class($table_Item));
+		
+// 		debug("count(\$table_Item) => ".count($table_Item));
+		
+// 		$node_Val = $table->item($i)->nodeValue;
+		
+// 		$dom->loadHTML('<html><body><div><p>p1</p><p>p2</p></div></body></html>');
+		
+		//ref get class https://secure.php.net/manual/en/function.get-class.php
+// 		debug(get_class($html));
+
+		
+		
 		
 // 		$txt = "小学校学習指導要領";
 		
