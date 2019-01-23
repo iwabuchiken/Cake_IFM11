@@ -2466,6 +2466,8 @@ class ImagesController extends AppController {
 						.$last_Added_From_DBFile
 // 						.CONS::$last_Added_From_DBFile
 						."'";
+		//ccc
+		debug("\$whereArgs => '$whereArgs'");
 		
 		$result = Utils::find_All_Images__WhereArgs("file_name", "DESC", $whereArgs);
 // 		$result = Utils::find_All_Images__WhereArgs("modified_at", "DESC", $whereArgs);

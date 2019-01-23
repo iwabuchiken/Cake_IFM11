@@ -1604,7 +1604,7 @@ class Utils {
 		//ref http://stackoverflow.com/questions/883365/row-count-with-pdo answered May 19 '09 at 15:16
 		$cnt_Images = $images->fetchColumn();	//=> w
 		// 			$cnt_Images = count($images);
-			
+		//ccc
 		debug("cnt_Images => ".$cnt_Images);
 
 		/*******************************
@@ -1656,20 +1656,22 @@ class Utils {
 		*******************************/
 		$count = 0;
 		
-// 			foreach ($result as $row) {
-			
-// 				debug($row);
-			
-// 				$count += 1;
-			
-// 				if ($count > 2) {
-				
-// 					break;
-				
-// 				}//$count > 5
-			
-// 			}
+// 		foreach ($result as $row) {
 		
+// 			debug($row);
+		
+// 			$count += 1;
+		
+// // 			if ($count > 2) {
+			
+// // 				break;
+			
+// // 			}//$count > 5
+		
+// 		}
+
+		debug("\$count => $count");
+			
 		/*******************************
 			pdo => reset
 		*******************************/
@@ -2491,6 +2493,20 @@ class Utils {
 			$file_name = $img['file_name'];
 			
 			$res_B = Utils::isIn_DB_Image_Data_By_FileName($file_name);
+			
+			//debug
+			if ($res_B == true) {
+			
+				debug("\$res_B => true : $file_name");
+			
+			} else {
+			
+				debug("\$res_B => false : $file_name");
+				
+			}//if ($res_B == true)
+			
+			
+			
 			
 // 				debug($img);
 			
