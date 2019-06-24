@@ -109,8 +109,7 @@
 			
 				echo $row['file_name'];
 			
-			?>
-		</td>
+			?></td>
 		
 <?php 
 // 		debug($row);
