@@ -104,8 +104,7 @@
 	</tr>
 	
 	<tr>
-		<td class="image_data_File_Name" colspan="3">
-			<?php 
+		<td class="image_data_File_Name" colspan="3"><?php 
 			
 				echo $row['file_name'];
 			

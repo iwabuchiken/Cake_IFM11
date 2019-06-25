@@ -397,6 +397,13 @@ class ImagesController extends AppController {
 		
 // 		debug("\$query_Filter_File_Name => ".$query_Filter_File_Name);
 		
+		// modify : 20190624_155333
+		//debug("strlen(\$query_Filter_File_Name) => ".strlen($query_Filter_File_Name));
+		
+		//$query_Filter_File_Name = trim($query_Filter_File_Name);
+		
+		//debug("strlen(\$query_Filter_File_Name) (trimmed) => ".strlen($query_Filter_File_Name));
+		
 		if ($query_Filter_File_Name == CONS::$str_Filter_File_Name_all) {
 		
 			$this->set("filter_file_name", '');

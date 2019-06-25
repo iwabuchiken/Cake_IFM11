@@ -1,0 +1,39 @@
+utils.php	===> review : L.2500
+
+# review : Utils::add_ImageData_From_DB_File__NewData($model, $img)
+
+# review : Utils::isIn_DB_Image_Data_By_FileName($file_name)	
+	
+	==> image file exists or not ---> in lollipop DB
+	
+validate : 2019-06-24_11-38-44_000.mov
+
+	SELECT * FROM `images` WHERE file_name = "2019-06-24_11-38-44_000.mov";
+	
+		==> Showing rows 0 - 0 (1 total, Query took 0.0368 sec) [id: 34647 - 34647]
+
+	
+================== 2
+http://benfranklin.chips.jp/cake_apps/Cake_IFM11/?filter_file_name=+2019-06-24_11-57-51_000.jpg&RBs_AND_OR_File_Name=AND
+
+	filter file name ===> trim file name
+		
+		ImagesController :: L.395
+		
+		https://www.php.net/manual/en/function.trim.php
+		
+		# CODING
+		
+		upload
+		
+		TEST	==> http://benfranklin.chips.jp/cake_apps/Cake_IFM11/?filter_file_name=+2019-06-24_11-57-51_000.jpg&RBs_AND_OR_File_Name=AND
+				==> with file name " 2019-06-24_11-57-51_000.jpg" (a space char at the head)
+			==> ERROR : "Parse error: syntax error, unexpected '=' in /home/users/2/chips.jp-benfranklin/web/cake_apps/Cake_IFM11/app/Controller/ImagesController.php on line 401"
+			
+			FIX	==> CODING : 20190624_155333
+					upload
+			TEST ===> n/c
+			
+			
+			
+	
