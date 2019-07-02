@@ -1,8 +1,8 @@
-pushd "C:\Program Files\Mozilla Firefox"
-start firefox.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index"
-start firefox.exe "http://localhost/Eclipse_Luna/Cake_IFM11/images/image_manager"
+REM pushd "C:\Program Files\Mozilla Firefox"
+REM start firefox.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index"
+REM start firefox.exe "http://localhost/Eclipse_Luna/Cake_IFM11/images/image_manager"
 
-goto end
+REM goto end
 
 pushd "C:\Program Files (x86)\Google\Chrome\Application"
 start chrome.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index"
