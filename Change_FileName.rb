@@ -191,6 +191,7 @@ def execute_2
       puts "[#{File.basename(__FILE__)}:#{__LINE__}] @exif.date_time_original.to_s == nil"
       
       target_date_time_label = File.mtime(fpath).to_s
+      #target_date_time_label = File.atime(fpath).to_s	#=> 20191002_070627
 #      target_date_time_label = File.mtime(fpath)
     
     else#if (@exif.date_time_original.to_s == nil)
