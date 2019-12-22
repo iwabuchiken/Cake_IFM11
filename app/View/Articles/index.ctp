@@ -5,7 +5,43 @@
 
 <h1>
 
-	Articles 
+	Articles (<?php echo $query_Article_Genre; ?>)
+	
+	<?php 
+	
+	
+	echo $this->Html->link(
+						"national",
+						"http://localhost/Eclipse_Luna/Cake_IFM11/articles/index?query_Article_Genre=national",
+						array('class'	=> 'has_link')
+				);
+	
+	echo "  ";
+	
+	echo $this->Html->link(
+						"Int'l",
+						"http://localhost/Eclipse_Luna/Cake_IFM11/articles/index?query_Article_Genre=international",
+						array('class'	=> 'has_link')
+				);
+	
+	echo "  ";
+	
+	echo $this->Html->link(
+						"politics",
+						"http://localhost/Eclipse_Luna/Cake_IFM11/articles/index?query_Article_Genre=politics",
+						array('class'	=> 'has_link')
+				);
+	
+	echo "  ";
+	
+	echo $this->Html->link(
+						"business",
+						"http://localhost/Eclipse_Luna/Cake_IFM11/articles/index?query_Article_Genre=business",
+						array('class'	=> 'has_link')
+				);
+	
+	?>
+	
 	<br>
 	<br>
 	<textarea style="width:30%; height:50px;" onmouseover="this.select();">$strOf_Article_Type =</textarea>

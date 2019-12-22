@@ -189,4 +189,15 @@ class CONS {
 	
 // 	public static $key_Param__Sort_Direction__DEFAULT = "asc";
 	
+	/*******************************
+	 
+	 Articles controller
+	 
+	 *******************************/
+	/*******************************
+		basics
+	 *******************************/
+	public static $aryOf_Genre_Names = ["politics", "national", "international", "business"];
+
+
 }//class CONS
