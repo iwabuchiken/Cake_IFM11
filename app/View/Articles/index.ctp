@@ -6,8 +6,14 @@
 <h1>
 
 	Articles 
+	<br>
+	<br>
+	<textarea style="width:30%; height:50px;" onmouseover="this.select();">$strOf_Article_Type =</textarea>
+	<br>
+	<textarea style="width:100%; height:50px" onmouseover="this.select();">sakura C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Controller\ArticlesController.php
+</textarea>
 	
-	
+	<br>
 	<br>
 	<a name="top"></a><a href="#bottom" class="navi_top_bottom">Bottom</a>
 	
