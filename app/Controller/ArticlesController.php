@@ -396,6 +396,7 @@ function categorize_Articles($lo_Articles) {
 	 * step : 2
 	 	build : keyword list
 	 ****************/
+	//_20191222_152658:next
 	$lo_KWs_Intl_1 = [
 				"日韓"
 				, "北朝鮮"
