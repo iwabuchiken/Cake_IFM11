@@ -368,6 +368,151 @@ function endsWith($haystack, $needle) {
 }
 
 /*****************************************
+ * get_Article_Group
+ *
+ * at	: 2019/12/24 11:51:48
+ *
+ * ref	:
+ *
+ *****************************************/
+// function get_Article_Group($lo_Articles, $lo_Articles_Others) {
+function get_Article_Group(
+// 		$lo_Articles
+// 		, $lo_Articles_Others
+		$lo_Articles_Others
+		, $lo_KWs_Intl_1
+		, $labelOf_Article_Groups_Intl_1
+		) {
+//_20191224_115157:caller
+//_20191224_115203:head
+//_20191224_115207:wl
+
+	/******************
+	 * step : 0
+	 	prep : vars
+	 ****************/
+	$lo_Articles_Others__new = [];
+	
+	/******************
+	 * step : 2
+	 build : keyword list
+	 ****************/
+	//_20191222_152658:next
+// 	$lo_KWs_Intl_1 = [
+// 			"日韓"
+// 			, "北朝鮮"
+// 			, "朝鮮"
+// 			, "韓国"
+// 	];
+	
+	$lo_Article_Groups_Intl_1 = [];
+	
+// 	$labelOf_Article_Groups_Intl_1 = "Korea";
+	
+	// judge
+// 	$lenOf_LO_Articles = count($lo_Articles);
+	$lenOf_LO_Articles = count($lo_Articles_Others);
+	
+	// 	foreach ($lo_Articles as $article) {
+	for ($i = 0; $i < $lenOf_LO_Articles; $i++) {
+	
+		// get : instance
+		$article = $lo_Articles_Others[$i];
+// 		$article = $lo_Articles[$i];
+	
+		$line = $article[0];
+		
+		debug("\$lo_KWs_Intl_1 =>");
+		debug($lo_KWs_Intl_1);
+		
+		foreach ($lo_KWs_Intl_1 as $kw) {
+	
+			$judge = has_String($line, $kw);
+				
+			if ($judge == true) {
+					
+				// append
+				array_push($lo_Article_Groups_Intl_1, $article);
+	
+				// 				// remove from the main list
+				// 				$lo_Articles_COPY = array_diff($lo_Articles_COPY, [$article]);
+				// // 				$lo_Articles_COPY = array_diff($lo_Articles_COPY, $article);
+	
+				// next
+				break;
+				// 				continue;
+	
+			}//if ($judge == true)
+			;
+				
+		}//foreach ($lo_KWs_Intl_1 as $kw)
+	
+	
+	
+	}//foreach ($lo_Articles as $article)
+	
+	// remove from the main list
+	/******************
+	 * step : X
+	 build list : Others
+	 ****************/
+	/******************
+	 * step : X : 1
+	 prep : vars
+	 ****************/
+	// L3
+	// 	$lo_Articles_Others = [];
+	
+	// L1'
+	$lo_Article_Groups_Intl_1__Lines = [];
+	foreach ($lo_Article_Groups_Intl_1 as $article) {
+	
+		array_push($lo_Article_Groups_Intl_1__Lines, $article[0]);
+	
+	}//foreach ($lo_Article_Groups_Intl_1 as $article)
+	
+	// L2'
+	$lo_Articles__Lines = [];
+	foreach ($lo_Articles as $article) {
+	
+		array_push($lo_Articles__Lines, $article[0]);
+	
+	}//foreach ($lo_Article_Groups_Intl_1 as $article)
+	
+	// lines in the orig ?
+// 	foreach ($lo_Articles as $article) {
+	foreach ($lo_Articles_Others as $article) {
+	
+		$line = $article[0];
+	
+		// in array ?
+		if (! in_array($line, $lo_Article_Groups_Intl_1__Lines)) {
+	
+// 			array_push($lo_Articles_Others, $article);
+			array_push($lo_Articles_Others__new, $article);
+				
+		}//if (! in_array($line, $lo_Article_Groups_Intl_1__Lines))
+		;
+	
+	}//foreach ($lo_Articles as $article)
+	
+	debug("count(\$lo_Articles_Others) =>");
+	debug(count($lo_Articles_Others));
+
+	/******************
+	 * step : X2
+	 * 	return
+	 ****************/
+	$valOf_Ret = [$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1, $lo_Articles_Others__new];
+// 	$valOf_Ret = [$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1, $lo_Articles_Others];
+// 	$valOf_Ret = [$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1];
+	
+	// return
+	return $valOf_Ret;
+	
+}//function get_Article_Group() {
+
+/*****************************************
  * categorize_Articles($lo_Articles)
  * 
  * at	: 2019/12/22 14:49:21
@@ -381,6 +526,15 @@ function categorize_Articles($lo_Articles) {
 //_20191222_142950:wl
 
 	/******************
+	 * step : 0 : 0.1
+	 	prep : vars
+	 ****************/
+	$lo_Article_Groups = [];
+	
+	$lo_Articles_Others = $lo_Articles;
+// 	$lo_Articles_Others = [];
+	
+	/******************
 	 * step : 0 : 1
 	 	DUP : array
 	 ****************/
@@ -391,105 +545,197 @@ function categorize_Articles($lo_Articles) {
 	 * step : 1
 	 	load : keyword file
 	 ****************/
+// 	$lo_LO_KWs = array(
+// // 			$lo_KWs_Intl_1 = [
+// 			array(
+// 					"日韓"
+// 					, "北朝鮮"
+// 					, "朝鮮"
+// 					, "韓国"
+// 			)
+// 	);
+	$lo_LO_KWs = [
+// 			$lo_KWs_Intl_1 = [
+			["日韓"
+					, "北朝鮮"
+					, "朝鮮"
+					, "韓国"]
+		, ["中国", "香港"]
+	];
 	
+	$lo_LabelsOf_Article_Group = [
+			"Korea"
+			, "China"
+			
+	];
+	
+	
+	// length
+	$lenOf_LO_LO_KWs = count($lo_LO_KWs);
+
 	/******************
 	 * step : 2
 	 	build : keyword list
 	 ****************/
-	//_20191222_152658:next
-	$lo_KWs_Intl_1 = [
-				"日韓"
-				, "北朝鮮"
-				, "朝鮮"
-				, "韓国"
-			];
+	for ($i = 0; $i < $lenOf_LO_LO_KWs; $i++) {
+		/******************
+		 * step : 2 : 1.1
+		 	unpack : kw list
+		 ****************/	
+		$lo_KWs = $lo_LO_KWs[$i];
+		/******************
+		 * step : 2 : 1.2
+		 	unpack : group label
+		 ****************/	
+		$labelOf_Group = $lo_LabelsOf_Article_Group[$i];
+		
+		/******************
+		 * step : 2 : 1.2
+		 	get : group
+		 ****************/	
+		//_20191224_115157:caller
+		$valOf_Ret = get_Article_Group(
+		// 			$lo_Articles, $lo_Articles_Others
+// 				$lo_Articles
+// 				, $lo_Articles_Others
+				$lo_Articles_Others
+				, $lo_KWs
+				, $labelOf_Group
+		);
+		
+		$labelOf_Article_Groups_Intl_1 =	$valOf_Ret[0];
+		$lo_Article_Groups_Intl_1 =			$valOf_Ret[1];
+		$lo_Articles_Others =				$valOf_Ret[2];
+		
+		// push
+		array_push($lo_Article_Groups, [$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1]);		
+		
+	}//for ($i = 0; $i < $lenOf_LO_LO_KWs; $i++)
 	
-	$lo_Article_Groups_Intl_1 = [];
 	
-	$labelOf_Article_Groups_Intl_1 = "Korea";
+// 	$lo_KWs_Intl_1 = [
+// 				"日韓"
+// 				, "北朝鮮"
+// 				, "朝鮮"
+// 				, "韓国"
+// 			];	
 	
-	// judge
-	$lenOf_LO_Articles = count($lo_Articles);
+// 	$labelOf_Article_Groups_Intl_1 = "Korea";
 	
+// 	//_20191224_115157:caller
+// 	$valOf_Ret = get_Article_Group(
+// // 			$lo_Articles, $lo_Articles_Others
+// 			$lo_Articles
+// 			, $lo_Articles_Others
+// 			, $lo_KWs_Intl_1
+// 			, $labelOf_Article_Groups_Intl_1
+// 			);
+	
+// 	$labelOf_Article_Groups_Intl_1 =	$valOf_Ret[0];
+// 	$lo_Article_Groups_Intl_1 =			$valOf_Ret[1];
+// 	$lo_Articles_Others =				$valOf_Ret[2];
+	
+// 	// push
+// 	array_push($lo_Article_Groups, [$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1]);
+	
+// 	/******************
+// 	 * step : 2
+// 	 	build : keyword list
+// 	 ****************/
+// 	//_20191222_152658:next
+// 	$lo_KWs_Intl_1 = [
+// 				"日韓"
+// 				, "北朝鮮"
+// 				, "朝鮮"
+// 				, "韓国"
+// 			];
+	
+// 	$lo_Article_Groups_Intl_1 = [];
+	
+// 	$labelOf_Article_Groups_Intl_1 = "Korea";
+	
+// 	// judge
+// 	$lenOf_LO_Articles = count($lo_Articles);
+	
+// // 	foreach ($lo_Articles as $article) {
+// 	for ($i = 0; $i < $lenOf_LO_Articles; $i++) {
+		
+// 		// get : instance
+// 		$article = $lo_Articles[$i];
+	
+// 		$line = $article[0];
+		
+// 		foreach ($lo_KWs_Intl_1 as $kw) {
+		
+// 			$judge = has_String($line, $kw);
+			
+// 			if ($judge == true) {
+			
+// 				// append
+// 				array_push($lo_Article_Groups_Intl_1, $article);
+				
+// // 				// remove from the main list
+// // 				$lo_Articles_COPY = array_diff($lo_Articles_COPY, [$article]);
+// // // 				$lo_Articles_COPY = array_diff($lo_Articles_COPY, $article);
+				
+// 				// next
+// 				break;
+// // 				continue;
+				
+// 			}//if ($judge == true)
+// 			;
+			
+// 		}//foreach ($lo_KWs_Intl_1 as $kw)
+		
+		
+		
+// 	}//foreach ($lo_Articles as $article)
+	
+// 	// remove from the main list
+// 	/******************
+// 	 * step : X
+// 		build list : Others
+// 	 ****************/
+// 	/******************
+// 	 * step : X : 1
+// 		prep : vars
+// 	 ****************/
+// 	// L3
+// // 	$lo_Articles_Others = [];
+	
+// 	// L1'
+// 	$lo_Article_Groups_Intl_1__Lines = [];
+// 	foreach ($lo_Article_Groups_Intl_1 as $article) {
+	
+// 		array_push($lo_Article_Groups_Intl_1__Lines, $article[0]);
+		
+// 	}//foreach ($lo_Article_Groups_Intl_1 as $article)
+	
+// 	// L2'
+// 	$lo_Articles__Lines = [];
 // 	foreach ($lo_Articles as $article) {
-	for ($i = 0; $i < $lenOf_LO_Articles; $i++) {
-		
-		// get : instance
-		$article = $lo_Articles[$i];
 	
-		$line = $article[0];
+// 		array_push($lo_Articles__Lines, $article[0]);
 		
-		foreach ($lo_KWs_Intl_1 as $kw) {
+// 	}//foreach ($lo_Article_Groups_Intl_1 as $article)
+	
+// 	// lines in the orig ?
+// 	foreach ($lo_Articles as $article) {
+	
+// 		$line = $article[0];
 		
-			$judge = has_String($line, $kw);
+// 		// in array ?
+// 		if (! in_array($line, $lo_Article_Groups_Intl_1__Lines)) {
+		
+// 			array_push($lo_Articles_Others, $article);
 			
-			if ($judge == true) {
-			
-				// append
-				array_push($lo_Article_Groups_Intl_1, $article);
-				
-// 				// remove from the main list
-// 				$lo_Articles_COPY = array_diff($lo_Articles_COPY, [$article]);
-// // 				$lo_Articles_COPY = array_diff($lo_Articles_COPY, $article);
-				
-				// next
-				break;
-// 				continue;
-				
-			}//if ($judge == true)
-			;
-			
-		}//foreach ($lo_KWs_Intl_1 as $kw)
+// 		}//if (! in_array($line, $lo_Article_Groups_Intl_1__Lines))
+// 		;
 		
-		
-		
-	}//foreach ($lo_Articles as $article)
+// 	}//foreach ($lo_Articles as $article)
 	
-	// remove from the main list
-	/******************
-	 * step : X
-		build list : Others
-	 ****************/
-	/******************
-	 * step : X : 1
-		prep : vars
-	 ****************/
-	// L3
-	$lo_Articles_Others = [];
-	
-	// L1'
-	$lo_Article_Groups_Intl_1__Lines = [];
-	foreach ($lo_Article_Groups_Intl_1 as $article) {
-	
-		array_push($lo_Article_Groups_Intl_1__Lines, $article[0]);
-		
-	}//foreach ($lo_Article_Groups_Intl_1 as $article)
-	
-	// L2'
-	$lo_Articles__Lines = [];
-	foreach ($lo_Articles as $article) {
-	
-		array_push($lo_Articles__Lines, $article[0]);
-		
-	}//foreach ($lo_Article_Groups_Intl_1 as $article)
-	
-	// lines in the orig ?
-	foreach ($lo_Articles as $article) {
-	
-		$line = $article[0];
-		
-		// in array ?
-		if (! in_array($line, $lo_Article_Groups_Intl_1__Lines)) {
-		
-			array_push($lo_Articles_Others, $article);
-			
-		}//if (! in_array($line, $lo_Article_Groups_Intl_1__Lines))
-		;
-		
-	}//foreach ($lo_Articles as $article)
-	
-	debug("count(\$lo_Articles_Others) =>");
-	debug(count($lo_Articles_Others));
+// 	debug("count(\$lo_Articles_Others) =>");
+// 	debug(count($lo_Articles_Others));
 	
 	
 // 	debug("\$lo_Article_Groups_Intl_1 =>");
@@ -527,16 +773,26 @@ function categorize_Articles($lo_Articles) {
 // // 			["others", "link"]
 // 	];
 
-	$lo_Article_Groups = [
+
+	/******************
+	 * step : X2
+		build list : $lo_Article_Groups
+	 ****************/
+// 	[$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1] = ;
+// 	array_push($lo_Article_Groups, [$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1]);
+	array_push($lo_Article_Groups, ["Jp", $lo_Articles_Jp]);
+	array_push($lo_Article_Groups, ["Others", $lo_Articles_Others]);
 	
-// 			["main", $lo_Articles]
-			[$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1]
-			, ["Jp", $lo_Articles_Jp]
-			, ["others", $lo_Articles_Others]
-// 			, $lo_Articles_Others
-// 			, ["Others", $lo_Articles_Others]
+	// 	$lo_Article_Groups = [
 	
-	];
+// // 			["main", $lo_Articles]
+// 			[$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1]
+// 			, ["Jp", $lo_Articles_Jp]
+// 			, ["others", $lo_Articles_Others]
+// // 			, $lo_Articles_Others
+// // 			, ["Others", $lo_Articles_Others]
+	
+// 	];
 	
 	return $lo_Article_Groups;
 	
