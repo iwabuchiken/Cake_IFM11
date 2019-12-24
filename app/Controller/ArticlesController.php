@@ -422,8 +422,8 @@ function get_Article_Group(
 	
 		$line = $article[0];
 		
-		debug("\$lo_KWs_Intl_1 =>");
-		debug($lo_KWs_Intl_1);
+// 		debug("\$lo_KWs_Intl_1 =>");
+// 		debug($lo_KWs_Intl_1);
 		
 		foreach ($lo_KWs_Intl_1 as $kw) {
 	
@@ -473,6 +473,7 @@ function get_Article_Group(
 	
 	// L2'
 	$lo_Articles__Lines = [];
+	
 	foreach ($lo_Articles as $article) {
 	
 		array_push($lo_Articles__Lines, $article[0]);
@@ -560,12 +561,16 @@ function categorize_Articles($lo_Articles) {
 					, "北朝鮮"
 					, "朝鮮"
 					, "韓国"]
-		, ["中国", "香港"]
+		, ["中国", "香港", "北京", "習氏", "上海"]
+		, ["シリア", "イラン", "サウジ", "アフガン"]
+		, ["ベネチア", "仏軍", "ギリシャ"]
 	];
 	
 	$lo_LabelsOf_Article_Group = [
 			"Korea"
 			, "China"
+			, "islam world"
+			, "europe"
 			
 	];
 	

@@ -136,8 +136,16 @@
 		    
 		    <td>
 		    	<?php 
-		    	
-		    		echo $aryOf_Article[0];
+
+			    	echo $this->Html->link(
+			    			$aryOf_Article[0],
+			    			$aryOf_Article[1],
+			    			array('class'	=> 'has_link'
+			    					, 'target'	=> '_blank'
+				    				
+			    			)
+			    	);
+// 		    		echo $aryOf_Article[0];
 		    	
 		    	?>
 		    </td>
