@@ -8,7 +8,8 @@ REM ================================
 :opera
 	pushd "C:\WORKS_2\Programs\opera"
 	
-	start launcher.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index"
+REM 	start launcher.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index"
+	start launcher.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2"
 	start launcher.exe "http://localhost/Eclipse_Luna/Cake_IFM11/images/image_manager"
 
 	goto end
