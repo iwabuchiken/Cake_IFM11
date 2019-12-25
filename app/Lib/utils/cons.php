@@ -199,5 +199,12 @@ class CONS {
 	 *******************************/
 	public static $aryOf_Genre_Names = ["politics", "national", "international", "business"];
 
+	/*******************************
+	 	genre names
+	 *******************************/
+	public static $strOf_Genre_Name__Intl = "international";
+	public static $strOf_Genre_Name__National = "national";
+	public static $strOf_Genre_Name__Politics = "politics";
+	public static $strOf_Genre_Name__Business = "business";
 
 }//class CONS

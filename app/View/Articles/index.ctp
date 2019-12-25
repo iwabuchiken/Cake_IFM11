@@ -71,6 +71,24 @@
 	  	
 // 	  	$cntOf_Loop = 1;
 	  	
+	  	$lenOf_Articles_ALL = 0;
+	  	
+	  	foreach ($lo_Article_Groups as $group) {
+	  	
+// 	  		foreach ($group as $article) {
+	  		foreach ($group[1] as $article) {
+	  		
+	  			$lenOf_Articles_ALL += 1;
+	  			
+	  		}//foreach ($group as $article)
+	  		
+	  		;
+	  		
+	  	}//foreach ($lo_Article_Groups as $group)
+	  	
+	  	debug("\$lenOf_Articles_ALL => " . $lenOf_Articles_ALL);
+	  	
+	  	
 // 	  	//debug
 // 	  	debug("\$lo_Article_Groups[0][0] ==> ");
 // 	  	debug($lo_Article_Groups[0][0]);
@@ -102,6 +120,7 @@
 		  	<?php 
 		  	
 		  		echo $strOf_Group_Title;
+		  		echo " ($lenOf_LO_Group / " . round($lenOf_LO_Group / $lenOf_Articles_ALL, 2) . ")";
 		  	
 		  	?>
 	  	
