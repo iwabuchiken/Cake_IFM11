@@ -1102,6 +1102,9 @@ function categorize_Articles__Intl($lo_Articles) {
 // 					, "韓国"
 // 			)
 // 	);
+
+	//_20191226_123516:next
+	
 	$lo_LO_KWs = [				// , ""
 // 			$lo_KWs_Intl_1 = [
 			["日韓"
