@@ -826,6 +826,241 @@ function categorize_Articles__Business($lo_Articles) {
 }//function categorize_Articles__Intl($lo_Articles) {
 
 /*****************************************
+ * categorize_Articles__Politics($lo_Articles)
+ * 
+ * at	: 2019/12/26 12:15:53
+ * 
+ * ref	: 
+ * 
+ *****************************************/
+function categorize_Articles__Politics($lo_Articles) {
+//_20191226_121559:caller
+//_20191226_121600:head
+//_20191226_121601:wl
+
+	/******************
+	 * step : 0 : 0.1
+	 	prep : vars
+	 ****************/
+	$lo_Article_Groups = [];
+	
+	$lo_Articles_Others = $lo_Articles;
+	
+	/******************
+	 * step : 0 : 1
+	 	DUP : array
+	 ****************/
+	//ref http://tobysoft.net/wiki/index.php?PHP%2F%C7%DB%CE%F3%28array%29%A4%F2%A5%B3%A5%D4%A1%BC%28%CA%A3%C0%BD%29%A4%B9%A4%EB%CA%FD%CB%A1%A4%CB%A4%C4%A4%A4%A4%C6
+	$lo_Articles_COPY = $lo_Articles;
+	
+	/******************
+	 * step : 1
+	 	load : keyword file
+	 ****************/
+	$lo_LO_KWs = [				// , ""
+			["日韓", "北朝鮮", "朝鮮", "韓国"]
+		, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
+		, ["日本", "日中韓"]
+		, ["労災"]
+// 		, ["議員", "知事", "村長", "市長", "首相"]		// politics
+		, ["知事", "村長", "市長", "首相", "内閣", "次官", "政権", "外務省"]		// government
+		, ["議員", "立憲", "議長"]							// legislative
+		, ["裁判", "地裁", "判決", "地検", "汚職"]
+		, ["がん", "診療"]
+		, ["火災"]
+		, ["沖縄", "辺野古", "普天間"]
+		, ["米軍", "外交", "領土"]		// intl
+		, ["オスプレイ", "ＩＲ"]		// issues
+	];
+	
+	$lo_LabelsOf_Article_Group = [
+			"Korea"
+			, "China"
+			, "japan"
+			, "labor"
+// 			, "politics"
+			, "government"
+			, "legislative"
+			, "legal"
+			, "health"
+			, "incidents"
+			, "okinawa"
+			, "intl"
+			, "issues"
+			
+	];
+	
+	
+	// length
+	$lenOf_LO_LO_KWs = count($lo_LO_KWs);
+
+	/******************
+	 * step : 2
+	 	build : keyword list
+	 ****************/
+	for ($i = 0; $i < $lenOf_LO_LO_KWs; $i++) {
+		/******************
+		 * step : 2 : 1.1
+		 	unpack : kw list
+		 ****************/	
+		$lo_KWs = $lo_LO_KWs[$i];
+		/******************
+		 * step : 2 : 1.2
+		 	unpack : group label
+		 ****************/	
+		$labelOf_Group = $lo_LabelsOf_Article_Group[$i];
+		
+		/******************
+		 * step : 2 : 1.2
+		 	get : group
+		 ****************/	
+		//_20191224_115157:caller
+		$valOf_Ret = get_Article_Group(
+// 				, $lo_Articles_Others
+				$lo_Articles_Others
+				, $lo_KWs
+				, $labelOf_Group
+		);
+		
+		$labelOf_Article_Groups_Intl_1 =	$valOf_Ret[0];
+		$lo_Article_Groups_Intl_1 =			$valOf_Ret[1];
+		$lo_Articles_Others =				$valOf_Ret[2];
+		
+		// push
+		array_push($lo_Article_Groups, [$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1]);		
+		
+	}//for ($i = 0; $i < $lenOf_LO_LO_KWs; $i++)
+	
+	$lo_Articles_Jp = [
+
+			["yes", "and"]
+	];
+
+	/******************
+	 * step : X2
+		build list : $lo_Article_Groups
+	 ****************/
+	array_push($lo_Article_Groups, ["Jp", $lo_Articles_Jp]);
+	array_push($lo_Article_Groups, ["Others", $lo_Articles_Others]);
+	
+	return $lo_Article_Groups;
+	
+}//function categorize_Articles__Politics($lo_Articles) {
+
+
+/*****************************************
+ * categorize_Articles__National($lo_Articles)
+ * 
+ * at	: 2019/12/26 12:00:09
+ * 
+ * ref	: 
+ * 
+ *****************************************/
+function categorize_Articles__National($lo_Articles) {
+//_20191226_120108:caller
+//_20191226_120105:head
+//_20191226_120108:wl
+
+	/******************
+	 * step : 0 : 0.1
+	 	prep : vars
+	 ****************/
+	$lo_Article_Groups = [];
+	
+	$lo_Articles_Others = $lo_Articles;
+	
+	/******************
+	 * step : 0 : 1
+	 	DUP : array
+	 ****************/
+	//ref http://tobysoft.net/wiki/index.php?PHP%2F%C7%DB%CE%F3%28array%29%A4%F2%A5%B3%A5%D4%A1%BC%28%CA%A3%C0%BD%29%A4%B9%A4%EB%CA%FD%CB%A1%A4%CB%A4%C4%A4%A4%A4%C6
+	$lo_Articles_COPY = $lo_Articles;
+	
+	/******************
+	 * step : 1
+	 	load : keyword file
+	 ****************/
+	$lo_LO_KWs = [				// , ""
+			["日韓", "北朝鮮", "朝鮮", "韓国"]
+		, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
+		, ["日本"]
+		, ["労災"]
+		, ["議員", "知事", "村長", "市長"]
+		, ["裁判", "地裁", "判決", "地検", "汚職"]
+		, ["がん", "診療"]
+		, ["火災"]
+	];
+	
+	$lo_LabelsOf_Article_Group = [
+			"Korea"
+			, "China"
+			, "japan"
+			, "labor"
+			, "politics"
+			, "legal"
+			, "health"
+			, "incidents"
+			
+	];
+	
+	
+	// length
+	$lenOf_LO_LO_KWs = count($lo_LO_KWs);
+
+	/******************
+	 * step : 2
+	 	build : keyword list
+	 ****************/
+	for ($i = 0; $i < $lenOf_LO_LO_KWs; $i++) {
+		/******************
+		 * step : 2 : 1.1
+		 	unpack : kw list
+		 ****************/	
+		$lo_KWs = $lo_LO_KWs[$i];
+		/******************
+		 * step : 2 : 1.2
+		 	unpack : group label
+		 ****************/	
+		$labelOf_Group = $lo_LabelsOf_Article_Group[$i];
+		
+		/******************
+		 * step : 2 : 1.2
+		 	get : group
+		 ****************/	
+		//_20191224_115157:caller
+		$valOf_Ret = get_Article_Group(
+// 				, $lo_Articles_Others
+				$lo_Articles_Others
+				, $lo_KWs
+				, $labelOf_Group
+		);
+		
+		$labelOf_Article_Groups_Intl_1 =	$valOf_Ret[0];
+		$lo_Article_Groups_Intl_1 =			$valOf_Ret[1];
+		$lo_Articles_Others =				$valOf_Ret[2];
+		
+		// push
+		array_push($lo_Article_Groups, [$labelOf_Article_Groups_Intl_1, $lo_Article_Groups_Intl_1]);		
+		
+	}//for ($i = 0; $i < $lenOf_LO_LO_KWs; $i++)
+	
+	$lo_Articles_Jp = [
+
+			["yes", "and"]
+	];
+
+	/******************
+	 * step : X2
+		build list : $lo_Article_Groups
+	 ****************/
+	array_push($lo_Article_Groups, ["Jp", $lo_Articles_Jp]);
+	array_push($lo_Article_Groups, ["Others", $lo_Articles_Others]);
+	
+	return $lo_Article_Groups;
+	
+}//categorize_Articles__National
+
+/*****************************************
  * categorize_Articles__Intl($lo_Articles)
  * 
  * at	: 2019/12/25 14:01:03
@@ -1172,8 +1407,24 @@ function categorize_Articles($lo_Articles, $strOf_Genre_Name) {
 		$lo_Article_Groups = categorize_Articles__Business($lo_Articles);
 		
 		//_20191225_142602:next
+	} else if ($strOf_Genre_Name == CONS::$strOf_Genre_Name__National) {
+		/******************
+		 * step : 1 : 1
+		 intl
+		 ****************/
+		//_20191226_120108:caller
+		$lo_Article_Groups = categorize_Articles__National($lo_Articles);
 		
+// 		debug("categorizing ==> national");
 	
+	} else if ($strOf_Genre_Name == CONS::$strOf_Genre_Name__Politics) {
+		/******************
+		 * step : 1 : 1
+		 intl
+		 ****************/
+		//_20191226_121559:caller
+		$lo_Article_Groups = categorize_Articles__Politics($lo_Articles);
+		
 	} else {
 		/******************
 		 * step : 1 : X
