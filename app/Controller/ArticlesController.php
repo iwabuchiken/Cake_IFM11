@@ -1168,7 +1168,10 @@ function categorize_Articles($lo_Articles, $strOf_Genre_Name) {
 		 * step : 1 : 1
 		 	intl
 		 ****************/
+		//_20191225_140154:caller
 		$lo_Article_Groups = categorize_Articles__Business($lo_Articles);
+		
+		//_20191225_142602:next
 		
 	
 	} else {
