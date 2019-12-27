@@ -1062,6 +1062,183 @@ function categorize_Articles__National($lo_Articles) {
 
 /*****************************************
  * categorize_Articles__Intl($lo_Articles)
+ *
+ * at	: 2019/12/25 14:01:03
+ *
+ * ref	:
+ *
+ *****************************************/
+function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
+//_20191227_163004:caller
+//_20191227_163006:head
+//_20191227_163007:wl
+
+	/******************
+	 * step : 1
+	 	dispatch
+	 ****************/
+// 	if (true) {
+	if ($strOf_Genre_Name == CONS::$strOf_Genre_Name__Intl) {
+		/******************
+		 * step : 1 : 1
+		 	intl
+		 ****************/
+		/******************
+		 * step : 1 : 1.1
+		 	load external fle
+		 ****************/
+		//_20191227_164606:tmp
+		//ref https://stackoverflow.com/questions/1091107/how-to-join-filesystem-path-strings-in-php
+		$fpath_External_File = join("\\", 
+					[CONS::$dpath_Articles_Keywords_External_Files, 
+						CONS::$fname_Articles_Keywords_External_Files]);
+		
+		debug("\$fpath_External_File => $fpath_External_File");
+		
+		$lo_Lines_Raw = file($fpath_External_File);
+		
+		debug("\$lo_Lines_Raw =>");
+		debug($lo_Lines_Raw);
+		
+		$lo_Lines_Filtered = [];
+		
+		foreach ($lo_Lines_Raw as $line) {
+			
+			// condition
+			$cond_1 = startsWith($line, "#");
+			$cond_2 = ($line == null);
+			$cond_3 = ($line == "");
+			$cond_4 = ($line == "\r");
+			$cond_5 = ($line == "\r\n");
+			
+// 						&& (! $line == "");
+// 			$cond_1 = (! startsWith($line, "#"))
+// 						&& (! $line == null);
+// // 						&& (! $line == "");
+			
+			if ($cond_1) {
+				
+				debug("line starts with '#' ('$line')"); continue;
+// 				array_push($lo_Lines_Filtered, $line);
+				
+			}//if (! startsWith($line, "#"))
+				
+			if ($cond_2) {
+				
+				debug("line is null ('$line')"); continue;
+				
+			}//if (! startsWith($line, "#"))
+			
+			if ($cond_3) { debug("line is blank ('$line')"); continue; }//if (! startsWith($line, "#"))
+				
+			if ($cond_4) { debug("line is \\r ('$line')"); continue; }//if (! startsWith($line, "#"))
+				
+			if ($cond_5) { debug("line is \\r\\n ('$line')"); continue; }//if (! startsWith($line, "#"))
+			
+			debug("line is '$line' (len = " . count($line));
+			
+			// push
+			array_push($lo_Lines_Filtered, $line);
+			
+		}//foreach ($lo_Lines_Raw as $line)
+		
+		debug("\$lo_Lines_Filtered =>");
+		debug($lo_Lines_Filtered);
+		
+		// set : labels line
+		foreach ($lo_Lines_Filtered as $line) {
+			
+			// tokenize
+			$tokens = explode(CONS::$strOf_Keyword_Line_Delimiter, $line);
+			
+			// lo_LabelsOf_Article_Group__Intl
+			if ($tokens[0] == CONS::$strOf_LO_LabelsOf_Article_Group__Intl) {
+			
+				$lo_LabelsOf_Article_Group = explode(" ", $tokens[1]);
+				
+			}//if ($tokens[0] == CONS::$strOf_LO_LabelsOf_Article_Group__Intl)
+			;
+			
+			//_20191227_171440:next
+			
+		}//foreach ($lo_Lines_Filtered as $line)
+		
+		
+		
+		$lo_LO_KWs = [				// , ""
+		// 			$lo_KWs_Intl_1 = [
+				["日韓"
+						, "北朝鮮"
+						, "朝鮮"
+						, "韓国"]
+				, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
+				, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
+				, ["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
+				, ["日本"]
+		];
+		
+// 		$lo_LabelsOf_Article_Group = [
+// 				"Korea"
+// 				, "China"
+// 				, "islam world"
+// 				, "europe"
+// 				, "japan"
+			
+// 		];
+		
+	}//if (true)
+	else {
+		/******************
+		 * step : X : 1
+		 		unknown
+		 ****************/
+		debug("unknown genre name ('$strOf_Genre_Name'). using default ");
+		
+		$lo_LO_KWs = [				// , ""
+				// 			$lo_KWs_Intl_1 = [
+				["日韓"
+						, "北朝鮮"
+						, "朝鮮"
+						, "韓国"]
+				, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
+				, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
+				, ["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
+				, ["日本"]
+		];
+		
+		$lo_LabelsOf_Article_Group = [
+				"Korea"
+				, "China"
+				, "islam world"
+				, "europe"
+				, "japan"
+		
+		];
+		
+		
+		
+	}
+
+	/******************
+	 * step : 2
+	 		return
+	 ****************/
+	/******************
+	 * step : 2.1
+	 		build : return val
+	 ****************/
+	$valOf_Ret = [$lo_LO_KWs, $lo_LabelsOf_Article_Group];
+	
+	/******************
+	 * step : 2.2
+	 		return
+	 ****************/
+	return $valOf_Ret;
+	
+}//function categorize_Articles__Intl__Prep_KWs($lo_Articles) {
+
+/*****************************************
+ * categorize_Articles__Intl($lo_Articles)
  * 
  * at	: 2019/12/25 14:01:03
  * 
@@ -1093,6 +1270,23 @@ function categorize_Articles__Intl($lo_Articles) {
 	 * step : 1
 	 	load : keyword file
 	 ****************/
+	/******************
+	 * step : 1.1
+	 	receive : keyword list
+	 ****************/
+	$strOf_Genre_Name = CONS::$strOf_Genre_Name__Intl;
+	
+	//_20191227_163004:caller
+// 	$valOf_Ret = [$lo_LO_KWs, $lo_LabelsOf_Article_Group];
+	$valOf_Ret__Received = categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name);
+	
+	/******************
+	 * step : 1.2
+	 	unpack : returned value
+	 ****************/
+	$lo_LO_KWs =					$valOf_Ret__Received[0];
+	$lo_LabelsOf_Article_Group =	$valOf_Ret__Received[1];
+	
 // 	$lo_LO_KWs = array(
 // // 			$lo_KWs_Intl_1 = [
 // 			array(
@@ -1105,26 +1299,26 @@ function categorize_Articles__Intl($lo_Articles) {
 
 	//_20191226_123516:next
 	
-	$lo_LO_KWs = [				// , ""
-// 			$lo_KWs_Intl_1 = [
-			["日韓"
-					, "北朝鮮"
-					, "朝鮮"
-					, "韓国"]
-		, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
-		, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
-		, ["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
-		, ["日本"]
-	];
+// 	$lo_LO_KWs = [				// , ""
+// // 			$lo_KWs_Intl_1 = [
+// 			["日韓"
+// 					, "北朝鮮"
+// 					, "朝鮮"
+// 					, "韓国"]
+// 		, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
+// 		, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
+// 		, ["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
+// 		, ["日本"]
+// 	];
 	
-	$lo_LabelsOf_Article_Group = [
-			"Korea"
-			, "China"
-			, "islam world"
-			, "europe"
-			, "japan"
+// 	$lo_LabelsOf_Article_Group = [
+// 			"Korea"
+// 			, "China"
+// 			, "islam world"
+// 			, "europe"
+// 			, "japan"
 			
-	];
+// 	];
 	
 	
 	// length

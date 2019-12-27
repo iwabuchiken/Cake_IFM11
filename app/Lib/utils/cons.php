@@ -189,11 +189,11 @@ class CONS {
 	
 // 	public static $key_Param__Sort_Direction__DEFAULT = "asc";
 	
-	/*******************************
+	/**************************************************************
 	 
 	 Articles controller
 	 
-	 *******************************/
+	 **************************************************************/
 	/*******************************
 		basics
 	 *******************************/
@@ -207,4 +207,19 @@ class CONS {
 	public static $strOf_Genre_Name__Politics = "politics";
 	public static $strOf_Genre_Name__Business = "business";
 
+	/*******************************
+	 	keywords
+	 *******************************/
+	public static $strOf_Keyword_Line_Delimiter = "=";
+	
+	public static $strOf_LO_LabelsOf_Article_Group__Intl  = "lo_LabelsOf_Article_Group__Intl";
+	
+	/*******************************
+	 	paths, file names
+	 *******************************/
+	public static $dpath_Articles_Keywords_External_Files = 
+						"C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\article_keywords";
+	
+	public static $fname_Articles_Keywords_External_Files = "articles_keyword_lists.dat";
+	
 }//class CONS
