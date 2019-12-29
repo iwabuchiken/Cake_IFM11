@@ -1097,8 +1097,8 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 		
 		$lo_Lines_Raw = file($fpath_External_File);
 		
-		debug("\$lo_Lines_Raw =>");
-		debug($lo_Lines_Raw);
+// 		debug("\$lo_Lines_Raw =>");
+// 		debug($lo_Lines_Raw);
 		
 		$lo_Lines_Filtered = [];
 		
@@ -1118,39 +1118,67 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 			
 			if ($cond_1) {
 				
-				debug("line starts with '#' ('$line')"); continue;
+// 				debug("line starts with '#' ('$line')"); continue;
 // 				array_push($lo_Lines_Filtered, $line);
 				
 			}//if (! startsWith($line, "#"))
 				
 			if ($cond_2) {
 				
-				debug("line is null ('$line')"); continue;
+// 				debug("line is null ('$line')"); continue;
 				
 			}//if (! startsWith($line, "#"))
 			
-			if ($cond_3) { debug("line is blank ('$line')"); continue; }//if (! startsWith($line, "#"))
+			if ($cond_3) { //debug("line is blank ('$line')");
+					 continue; }//if (! startsWith($line, "#"))
 				
-			if ($cond_4) { debug("line is \\r ('$line')"); continue; }//if (! startsWith($line, "#"))
+			if ($cond_4) { //debug("line is \\r ('$line')"); 
+					continue; }//if (! startsWith($line, "#"))
 				
-			if ($cond_5) { debug("line is \\r\\n ('$line')"); continue; }//if (! startsWith($line, "#"))
+			if ($cond_5) { //debug("line is \\r\\n ('$line')"); 
+					continue; }//if (! startsWith($line, "#"))
 			
-			debug("line is '$line' (len = " . count($line));
+// 			debug("line is '$line' (len = " . count($line));
 			
 			// push
 			array_push($lo_Lines_Filtered, $line);
 			
 		}//foreach ($lo_Lines_Raw as $line)
 		
-		debug("\$lo_Lines_Filtered =>");
-		debug($lo_Lines_Filtered);
+// 		debug("\$lo_Lines_Filtered =>");
+// 		debug($lo_Lines_Filtered);
+
+		/******************
+		 * step : 
+		 	keyword list ==> init
+		 ****************/
+		$lo_LO_KWs = [				// , ""
+				// 			$lo_KWs_Intl_1 = [
+// 				["日韓"
+// 						, "北朝鮮"
+// 						, "朝鮮"
+// 						, "韓国"]
+// 				, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
+				["中国", "香港", "北京", "習氏", "上海", "天安門"]
+				, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
+				, ["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
+				, ["日本"]
+		];
 		
 		// set : labels line
 		foreach ($lo_Lines_Filtered as $line) {
 			
+			/******************
+			 * step : 
+			 		tokenize
+			 ****************/
 			// tokenize
 			$tokens = explode(CONS::$strOf_Keyword_Line_Delimiter, $line);
 			
+			/******************
+			 * step : 
+			 		labels
+			 ****************/
 			// lo_LabelsOf_Article_Group__Intl
 			if ($tokens[0] == CONS::$strOf_LO_LabelsOf_Article_Group__Intl) {
 			
@@ -1159,23 +1187,73 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 			}//if ($tokens[0] == CONS::$strOf_LO_LabelsOf_Article_Group__Intl)
 			;
 			
+			/******************
+			 * step : X
+			 		keywords
+			 ****************/
+			if (startsWith($tokens[0], CONS::$strOf_KW)) {
+					
+// 				$tokens_kw_line = explode("", $tokens[0]);
+// // 				$tokens_kw_line = explode(" ", $tokens[0]);
+			
+// 				debug("\$tokens_kw_line[0] => " . $tokens_kw_line[0]);
+				
+				/******************
+				 * step : X : 1
+				 		prep : label, keywords
+				 ****************/
+				$str_tmp = $tokens[0];
+// 				$str_tmp = rtrim($tokens[0], "\r\n");
+				
+				$strOf_Label = explode("_", $str_tmp)[2];
+// 				$strOf_Label = explode("_", $tokens[0])[2];
+// 				$strOf_Label = explode("_", $tokens_kw_line[0])[2];
+				
+				$str_tmp = rtrim($tokens[1], "\r\n");
+				
+				$lo_KW = explode(" ", $str_tmp);
+// 				$lo_KW = explode(" ", $tokens[1]);
+				
+// 				debug("\$tokens =>");
+// 				debug($tokens);
+				
+// 				debug("\$line => '$line'");
+				
+// 				debug("\$tokens[0] => '" . $tokens[0] . "'");
+// 				debug("\$tokens[1] => '" . $tokens[1] . "'");
+				
+				debug("\$strOf_Label => " . $strOf_Label);
+				debug("\$lo_KW =>");
+				debug($lo_KW);
+
+				/******************
+				 * step : X : 2
+				 		label, keywords ==> append
+				 ****************/
+				array_push($lo_LabelsOf_Article_Group, $strOf_Label);
+				
+				array_push($lo_LO_KWs, $lo_KW);
+				
+			}//if ($tokens[0] == CONS::$strOf_LO_LabelsOf_Article_Group__Intl)
+					
 			//_20191227_171440:next
 			
 		}//foreach ($lo_Lines_Filtered as $line)
 		
+		debug("for-each ==> done : \$lo_LabelsOf_Article_Group =>");
+		debug($lo_LabelsOf_Article_Group);
 		
-		
-		$lo_LO_KWs = [				// , ""
-		// 			$lo_KWs_Intl_1 = [
-				["日韓"
-						, "北朝鮮"
-						, "朝鮮"
-						, "韓国"]
-				, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
-				, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
-				, ["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
-				, ["日本"]
-		];
+// 		$lo_LO_KWs = [				// , ""
+// 		// 			$lo_KWs_Intl_1 = [
+// 				["日韓"
+// 						, "北朝鮮"
+// 						, "朝鮮"
+// 						, "韓国"]
+// 				, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
+// 				, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
+// 				, ["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
+// 				, ["日本"]
+// 		];
 		
 // 		$lo_LabelsOf_Article_Group = [
 // 				"Korea"

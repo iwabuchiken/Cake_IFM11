@@ -214,9 +214,14 @@ class CONS {
 	
 	public static $strOf_LO_LabelsOf_Article_Group__Intl  = "lo_LabelsOf_Article_Group__Intl";
 	
+	public static $strOf_KW  = "kw_";
+// 	public static $strOf_LO_KW_group_Korea  = "kw_Intl_Korea";
+// 	public static $strOf_LO_KW_group_Korea  = "kw_group_Korea";
+	
 	/*******************************
 	 	paths, file names
 	 *******************************/
+	//C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data\article_keywords\articles_keyword_lists.dat
 	public static $dpath_Articles_Keywords_External_Files = 
 						"C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\article_keywords";
 	
