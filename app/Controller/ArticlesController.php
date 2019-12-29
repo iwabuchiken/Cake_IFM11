@@ -1159,10 +1159,11 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 // 						, "朝鮮"
 // 						, "韓国"]
 // 				, ["中国", "香港", "北京", "習氏", "上海", "天安門"]
-				["中国", "香港", "北京", "習氏", "上海", "天安門"]
-				, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
-				, ["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
-				, ["日本"]
+// 				["中国", "香港", "北京", "習氏", "上海", "天安門"]
+// 				, ["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
+// 				["シリア", "イラン", "サウジ", "アフガン", "パレスチナ"]
+// 				["ベネチア", "仏軍", "ギリシャ", "ソ連", "ノートルダム", "ベルリン"]
+				["日本"]
 		];
 		
 		// set : labels line
@@ -1222,9 +1223,9 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 // 				debug("\$tokens[0] => '" . $tokens[0] . "'");
 // 				debug("\$tokens[1] => '" . $tokens[1] . "'");
 				
-				debug("\$strOf_Label => " . $strOf_Label);
-				debug("\$lo_KW =>");
-				debug($lo_KW);
+// 				debug("\$strOf_Label => " . $strOf_Label);
+// 				debug("\$lo_KW =>");
+// 				debug($lo_KW);
 
 				/******************
 				 * step : X : 2
@@ -1240,8 +1241,8 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 			
 		}//foreach ($lo_Lines_Filtered as $line)
 		
-		debug("for-each ==> done : \$lo_LabelsOf_Article_Group =>");
-		debug($lo_LabelsOf_Article_Group);
+// 		debug("for-each ==> done : \$lo_LabelsOf_Article_Group =>");
+// 		debug($lo_LabelsOf_Article_Group);
 		
 // 		$lo_LO_KWs = [				// , ""
 // 		// 			$lo_KWs_Intl_1 = [
@@ -1678,6 +1679,7 @@ function categorize_Articles($lo_Articles, $strOf_Genre_Name) {
 		 * step : 1 : 1
 		 	intl
 		 ****************/
+		//_20191229_162036:next
 		//_20191225_140154:caller
 		$lo_Article_Groups = categorize_Articles__Business($lo_Articles);
 		
