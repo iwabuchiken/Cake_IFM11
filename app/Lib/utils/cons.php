@@ -226,5 +226,6 @@ class CONS {
 						"C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\data\\article_keywords";
 	
 	public static $fname_Articles_Keywords_External_Files = "articles_keyword_lists.dat";
+	public static $fname_Articles_Keywords_External_Files__Politics = "articles_keyword_lists_politics.dat";
 	
 }//class CONS
