@@ -1061,6 +1061,168 @@ function categorize_Articles__National($lo_Articles) {
 }//categorize_Articles__National
 
 /*****************************************
+ * categorize_Articles__Intl__Prep_KWs__Politics()
+ *
+ * at	: 2019/12/25 14:01:03
+ *
+ * ref	:
+ *
+ *****************************************/
+// function categorize_Articles__Intl__Prep_KWs__Politics() {
+function categorize_Articles__Intl__Prep_KWs__Politics($__fname_Keywords) {
+//_20191230_165220:caller
+//_20191230_165222:head
+//_20191230_165226:wl
+
+	/******************
+	 * step : 1 : 1.1
+	 load external fle
+	 ****************/
+	//_20191227_164606:tmp
+	//ref https://stackoverflow.com/questions/1091107/how-to-join-filesystem-path-strings-in-php
+	$fpath_External_File = join("\\",
+	[CONS::$dpath_Articles_Keywords_External_Files
+	, $__fname_Keywords]);
+	// 	CONS::$fname_Articles_Keywords_External_Files]);
+
+	debug("\$fpath_External_File => $fpath_External_File");
+
+	$lo_Lines_Raw = file($fpath_External_File);
+
+	// 		debug("\$lo_Lines_Raw =>");
+	// 		debug($lo_Lines_Raw);
+
+	$lo_Lines_Filtered = [];
+
+	foreach ($lo_Lines_Raw as $line) {
+			
+		// condition
+		$cond_1 = startsWith($line, "#");
+		$cond_2 = ($line == null);
+		$cond_3 = ($line == "");
+		$cond_4 = ($line == "\r");
+		$cond_5 = ($line == "\r\n");
+			
+		// 						&& (! $line == "");
+		// 			$cond_1 = (! startsWith($line, "#"))
+		// 						&& (! $line == null);
+		// // 						&& (! $line == "");
+			
+// 		if ($cond_1) {
+
+// 			// 				debug("line starts with '#' ('$line')"); continue;
+// 			// 				array_push($lo_Lines_Filtered, $line);
+
+// 		}//if (! startsWith($line, "#"))
+
+// 		if ($cond_2) {
+
+// 			// 				debug("line is null ('$line')"); continue;
+
+// 		}//if (! startsWith($line, "#"))
+			
+		if ($cond_3) { continue; }//if (! startsWith($line, "#"))
+		if ($cond_4) { continue; }//if (! startsWith($line, "#"))
+		if ($cond_5) { continue; }//if (! startsWith($line, "#"))
+
+		// push
+		array_push($lo_Lines_Filtered, $line);
+
+	}//foreach ($lo_Lines_Raw as $line)
+
+	// 		debug("\$lo_Lines_Filtered =>");
+	// 		debug($lo_Lines_Filtered);
+
+	/******************
+	 * step :
+	 	lists ==> declare, init
+	 ****************/
+	$lo_LO_KWs = [];
+	$lo_LabelsOf_Article_Group = [];
+
+	// set : labels line
+	foreach ($lo_Lines_Filtered as $line) {
+			
+// 		debug("\$line => '$line'");
+		
+		/******************
+		 * step :
+		 tokenize
+		 ****************/
+		// tokenize
+		$tokens = explode(CONS::$strOf_Keyword_Line_Delimiter, $line);
+			
+		/******************
+		 * step :
+		 labels
+		****************/
+// 		// lo_LabelsOf_Article_Group__Intl
+// 		if ($tokens[0] == CONS::$strOf_LO_LabelsOf_Article_Group__Intl) {
+
+// 			$lo_LabelsOf_Article_Group = explode(" ", $tokens[1]);
+
+// 		}//if ($tokens[0] == CONS::$strOf_LO_LabelsOf_Article_Group__Intl)
+// 		;
+			
+		/******************
+		 * step : X
+		 keywords
+		 ****************/
+		if (startsWith($tokens[0], CONS::$strOf_KW)) {
+			
+// 			debug("line starts with ==> CONS::\$strOf_KW");
+			
+			/******************
+			 * step : X : 1
+			 prep : label, keywords
+			 ****************/
+			$str_tmp = $tokens[0];
+			// 				$str_tmp = rtrim($tokens[0], "\r\n");
+
+			$strOf_Label = explode("_", $str_tmp)[2];
+			// 				$strOf_Label = explode("_", $tokens[0])[2];
+			// 				$strOf_Label = explode("_", $tokens_kw_line[0])[2];
+
+			$str_tmp = rtrim($tokens[1], "\r\n");
+
+			$lo_KW = explode(" ", $str_tmp);
+			// 				$lo_KW = explode(" ", $tokens[1]);
+
+			// 				debug("\$tokens =>");
+			// 				debug($tokens);
+
+			// 				debug("\$line => '$line'");
+
+			// 				debug("\$tokens[0] => '" . $tokens[0] . "'");
+			// 				debug("\$tokens[1] => '" . $tokens[1] . "'");
+
+			// 				debug("\$strOf_Label => " . $strOf_Label);
+			// 				debug("\$lo_KW =>");
+			// 				debug($lo_KW);
+
+			/******************
+			 * step : X : 2
+			 label, keywords ==> append
+			****************/
+			array_push($lo_LabelsOf_Article_Group, $strOf_Label);
+
+			array_push($lo_LO_KWs, $lo_KW);
+
+		}//if ($tokens[0] == CONS::$strOf_LO_LabelsOf_Article_Group__Intl)
+			
+	}//foreach ($lo_Lines_Filtered as $line)
+
+	/******************
+	 * step : X
+		return
+	 ****************/
+	return [$lo_LO_KWs, $lo_LabelsOf_Article_Group];
+
+}//function categorize_Articles__Intl__Prep_KWs__Politics() {
+
+
+
+/*****************************************
  * categorize_Articles__Intl__Prep_KWs__Intl()
  *
  * at	: 2019/12/25 14:01:03
@@ -1293,7 +1455,7 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 		 							CONS::$fname_Articles_Keywords_External_Files);
 // 		 $valOf_Ret_Received = categorize_Articles__Intl__Prep_KWs__Intl();
 		 
-		 debug("categorize_Articles__Intl__Prep_KWs__Intl ==> comp");
+// 		 debug("categorize_Articles__Intl__Prep_KWs__Intl ==> comp");
 		 
 		 $lo_LO_KWs = $valOf_Ret_Received[0];
 		 $lo_LabelsOf_Article_Group = $valOf_Ret_Received[1];
@@ -1305,18 +1467,23 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 		 * step : 1 : 1
 		 	intl
 		 ****************/
+		//_20191230_130255:next
 		//_20191230_122006:caller
-		 $valOf_Ret_Received = categorize_Articles__Intl__Prep_KWs__Intl(
-		 							CONS::$fname_Articles_Keywords_External_Files__Politics);
-// 		 $valOf_Ret_Received = categorize_Articles__Intl__Prep_KWs__Intl();
-		 
-		 debug("categorize_Articles__Intl__Prep_KWs__Intl ==> comp");
-		 
-		 $lo_LO_KWs = $valOf_Ret_Received[0];
-		 $lo_LabelsOf_Article_Group = $valOf_Ret_Received[1];
-		 
-		 //_20191230_124954:tmp
-		 
+// 		 $valOf_Ret_Received = categorize_Articles__Intl__Prep_KWs__Intl(
+		//_20191230_165220:caller
+		$valOf_Ret_Received = categorize_Articles__Intl__Prep_KWs__Politics(
+									CONS::$fname_Articles_Keywords_External_Files__Politics);
+// 		$valOf_Ret_Received = categorize_Articles__Intl__Prep_KWs__Intl();
+		
+		debug("categorize_Articles__Intl__Prep_KWs__Politics ==> comp");
+		
+		$lo_LO_KWs = $valOf_Ret_Received[0];
+		$lo_LabelsOf_Article_Group = $valOf_Ret_Received[1];
+		
+		//_20191230_124954:tmp
+		
+		//_20191230_171952:next
+		
 	}//if (true)
 	else {
 		/******************
@@ -1411,6 +1578,7 @@ function categorize_Articles__Intl($lo_Articles, $__strOf_Genre_Name) {
 	
 	//_20191227_163004:caller
 // 	$valOf_Ret = [$lo_LO_KWs, $lo_LabelsOf_Article_Group];
+	//_20191230_164308:tmp
 	$valOf_Ret__Received = categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name);
 	
 	/******************
