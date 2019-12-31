@@ -39,7 +39,10 @@
 
 		
 		echo $this->Html->css('cake.generic');
+		
 		echo $this->Html->css('main');
+		echo $this->Html->css('libfx');
+		
 		echo $this->Html->css('jquery-ui.structure');
 		echo $this->Html->css('jquery-ui.theme');
 		
@@ -54,6 +57,8 @@
 
 		// d3
 		echo $this->Html->script('http://d3js.org/d3.v3.min.js');
+		
+		echo $this->Html->script('libfx');
 		
 	?>
 </head>

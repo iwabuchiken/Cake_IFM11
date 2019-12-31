@@ -6458,5 +6458,17 @@ class Utils {
 		
 	}//static function get_Rubis($txt) {
 	
+	static function has_String($haystack, $needle) {
+	
+		$judge = (strpos( $haystack, $needle ) !== false);
+	
+		return $judge;
+	
+		// 	if( strpos( $haystack, $needle ) !== false) {
+		// 		echo "\"bar\" exists in the haystack variable";
+		// 	}
+	
+	}//function has_String($haystack, $needle) {	
+	
 }//class Utils
 	
