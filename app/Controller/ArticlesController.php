@@ -1484,6 +1484,36 @@ function categorize_Articles__Intl__Prep_KWs($strOf_Genre_Name) {
 		
 		//_20191230_171952:next
 		
+	} else if ($strOf_Genre_Name == CONS::$strOf_Genre_Name__National) {
+		//_20191230_124954:tmp
+		/******************
+		 * step : 1 : 1
+		 intl
+		 ****************/
+		//_20191230_165220:caller
+		$valOf_Ret_Received = categorize_Articles__Intl__Prep_KWs__Politics(
+				CONS::$fname_Articles_Keywords_External_Files__National);
+	
+		debug("categorize_Articles__Intl__Prep_KWs__National ==> comp");
+	
+		$lo_LO_KWs = $valOf_Ret_Received[0];
+		$lo_LabelsOf_Article_Group = $valOf_Ret_Received[1];
+	
+	} else if ($strOf_Genre_Name == CONS::$strOf_Genre_Name__Business) {
+		//_20191230_124954:tmp
+		/******************
+		 * step : 1 : 1
+		 intl
+		 ****************/
+		//_20191230_165220:caller
+		$valOf_Ret_Received = categorize_Articles__Intl__Prep_KWs__Politics(
+				CONS::$fname_Articles_Keywords_External_Files__Business);
+	
+		debug("categorize_Articles__Intl__Prep_KWs__Business ==> comp");
+	
+		$lo_LO_KWs = $valOf_Ret_Received[0];
+		$lo_LabelsOf_Article_Group = $valOf_Ret_Received[1];
+	
 	}//if (true)
 	else {
 		/******************
@@ -1700,27 +1730,33 @@ function categorize_Articles($lo_Articles, $strOf_Genre_Name) {
 	} else if ($strOf_Genre_Name == CONS::$strOf_Genre_Name__Business) {
 		/******************
 		 * step : 1 : 1
-		 	intl
+		 	business
 		 ****************/
-		//_20191229_162036:next
-		//_20191225_140154:caller
-		$lo_Article_Groups = categorize_Articles__Business($lo_Articles);
+		//_20191230_124721:tmp
+		//_20191226_121559:caller
+		$lo_Article_Groups = categorize_Articles__Intl($lo_Articles, CONS::$strOf_Genre_Name__Business);
+		
+// 		//_20191229_162036:next
+// 		//_20191225_140154:caller
+// 		$lo_Article_Groups = categorize_Articles__Business($lo_Articles);
 		
 		//_20191225_142602:next
 	} else if ($strOf_Genre_Name == CONS::$strOf_Genre_Name__National) {
 		/******************
 		 * step : 1 : 1
-		 intl
+		 		national
 		 ****************/
+		//_20191231_150644:tmp
 		//_20191226_120108:caller
-		$lo_Article_Groups = categorize_Articles__National($lo_Articles);
+		$lo_Article_Groups = categorize_Articles__Intl($lo_Articles, CONS::$strOf_Genre_Name__National);
+// 		$lo_Article_Groups = categorize_Articles__National($lo_Articles);
 		
 // 		debug("categorizing ==> national");
 	
 	} else if ($strOf_Genre_Name == CONS::$strOf_Genre_Name__Politics) {
 		/******************
 		 * step : 1 : 1
-		 intl
+		 		politics
 		 ****************/
 		//_20191230_124721:tmp
 		//_20191226_121559:caller

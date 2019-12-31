@@ -227,5 +227,7 @@ class CONS {
 	
 	public static $fname_Articles_Keywords_External_Files = "articles_keyword_lists.dat";
 	public static $fname_Articles_Keywords_External_Files__Politics = "articles_keyword_lists_politics.dat";
+	public static $fname_Articles_Keywords_External_Files__National = "articles_keyword_lists_national.dat";
+	public static $fname_Articles_Keywords_External_Files__Business = "articles_keyword_lists_business.dat";
 	
 }//class CONS
