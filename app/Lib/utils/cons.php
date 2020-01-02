@@ -21,9 +21,7 @@ class CONS {
 	public static $name_Server_Local = "localhost";
 	
 	/******************************
-	
 		Paths and names
-	
 	******************************/
 	public static $dname_Utils		= "utils";
 	public static $dname_Log			= "log";
@@ -64,6 +62,12 @@ class CONS {
 // 						);
 // // 	app\Lib\data\csv\xcode_memos
 
+	/******************************
+	 	Paths and names : fx_admin
+	 ******************************/
+	public static $dpath_Log_Fx_Admin = "Log_Fx_Admin";
+	public static $fname_Log_Fx_Admin = "log_fx_admin.log";
+	
 	/****************************************
 		* csv files
 	****************************************/

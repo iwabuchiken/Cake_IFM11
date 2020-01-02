@@ -198,6 +198,136 @@ class Utils {
 	}//function write_Log($dpath, $text, $file, $line)
 	
 	public static function 
+	write_Log__Fx_Admin($dpath_Log, $fname_Log, $text, $fname_Working, $line) {
+	
+		$max_LineNum = CONS::$logFile_maxLineNum;
+	
+		$path_LogFile = join(
+				DS,
+				array($dpath_Log, $fname_Log));
+// 				array($dpath, CONS::$fname_Log));
+// 					array($dpath, "log.txt"));
+	
+		/****************************************
+			* Dir exists?
+		****************************************/
+		if (!file_exists($dpath_Log)) {
+				
+			mkdir($dpath_Log, $mode=0777, $recursive=true);
+				
+		}
+	
+		/****************************************
+			* File exists?
+		****************************************/
+		if (!file_exists($path_LogFile)) {
+				
+			// 			mkdir($path_LogFile, $mode=0777);
+			//REF touch http://php.net/touch
+			$res = touch($path_LogFile);
+				
+			if ($res == false) {
+	
+				return;
+	
+			}
+				
+		}
+	
+		/****************************************
+			* File => longer than the max num?
+		****************************************/
+		//REF read content http://www.php.net/manual/en/function.file.php
+		$lines = file($path_LogFile);
+	
+		$fname_Working_Length = count($lines);
+	
+		$log_File = null;
+	
+		if ($fname_Working_Length > $max_LineNum) {
+	
+			$dname = dirname($path_LogFile);
+			
+			$fname = null;
+			
+			if (Utils::get_HostName() == "localhost") {
+				
+				$fname = CONS::$fname_Log_trunk
+							.CONS::$fname_Log_Suffix_Local
+							."_".Utils::get_CurrentTime2(
+									CONS::$timeLabelTypes['serial'])
+							.CONS::$fname_Log_ext;
+				
+			} else {
+				
+				$fname = CONS::$fname_Log_trunk
+							.CONS::$fname_Log_Suffix_Remote
+							."_".Utils::get_CurrentTime2(
+									CONS::$timeLabelTypes['serial'])
+							.CONS::$fname_Log_ext;
+				
+			}
+				
+			$new_name = join(
+					DS,
+					array(
+							$dname,
+							$fname
+// // 								"log"
+// 								CONS::$fname_Log_trunk
+// 								.CONS::fna
+// 								."_".Utils::get_CurrentTime2(
+// 										CONS::$timeLabelTypes['serial'])
+// 								.CONS::$fname_Log_ext
+// // 								.".txt"
+					)
+			);
+	
+			$res = rename($path_LogFile, $new_name);
+				
+		} else {
+				
+		}
+	
+		/******************************
+		
+			modify: file name
+		
+		******************************/
+		$tmp = strpos(strtolower($fname_Working), "c");
+		
+		if ($tmp == 0) {
+			
+			$fname_Working = str_replace(ROOT, "", $fname_Working);
+			
+		}
+		
+		/****************************************
+			* File: open
+		****************************************/
+		$log_File = fopen($path_LogFile, "a");
+	
+		/****************************************
+			* Write
+		****************************************/
+		// 		//REF replace http://oshiete.goo.ne.jp/qa/3163848.html
+		// 		$file = str_replace(ROOT.DS, "", $file);
+	
+		$time = Utils::get_CurrentTime();
+	
+		// 		$full_Text = "[$time : $file : $line] %% $text"."\n";
+		$full_Text = "[$time : $fname_Working : $line] $text"."\n";
+	
+		$res = fwrite($log_File, $full_Text);
+		
+		/****************************************
+			* File: Close
+		****************************************/
+		fclose($log_File);
+			
+	}//write_Log__Fx_Admin($dpath_Log, $text, $fname_Working, $line)
+	
+	public static function 
 	get_CurrentTime() {
 		//REF http://stackoverflow.com/questions/470617/get-current-date-and-time-in-php
 		date_default_timezone_set('Asia/Tokyo');
