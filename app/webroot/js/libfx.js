@@ -1,3 +1,7 @@
+var cname_Div_Index_Area_Result = "#A4F7B6";
+var cname_Yellow = "yellow";
+
+
 //alert("libfx.js");
 
 function show_aleret() {
@@ -23,6 +27,31 @@ function process_log_file() {
 		step : 1
 			prep
 	 ***************************/
+	console.log("process_log_file ==> starting...");
+	
+	/***************************
+		step : 1 : 1
+			div area ==> bg change
+	 ***************************/
+//	var div_area_result = $('area_result');
+	var div_area_result = $('#area_result');
+
+	//_20200103_123607:tmp
+	div_area_result.css("background", cname_Yellow);
+	
+	//	
+//	// animation
+//	div_area_result
+//		.fadeIn(200).fadeOut(200)
+//		.fadeIn(200).fadeOut(200)
+//		
+//		.fadeIn(200).fadeOut(200)
+//		.fadeIn(200).fadeOut(200)
+//		
+//		.fadeIn(200).fadeOut(200)
+//		.fadeIn(200).fadeOut(200)
+//		
+//		.fadeIn(200);
 	
 	/***************************
 		step : X : 0
@@ -71,14 +100,41 @@ function process_log_file() {
 			step : X : 2 : 1
 				prep
 		 ***************************/
-		var div_area_result = $('#area_result');
+//		var div_area_result = $('#area_result');
 		
 		/***************************
 			step : X : 2 : 2
 				set html
 		 ***************************/
+		/***************************
+			step : X : 2 : 2.1
+				set html
+		 ***************************/
 		div_area_result.html(data);
+
+		/***************************
+			step : X : 2 : 2.2
+				notice : bg ==> back to orig
+		 ***************************/
+		div_area_result.css("background", cname_Div_Index_Area_Result);
 		
+		/***************************
+			step : X : 2 : 2.3
+				notice : animation
+		 ***************************/
+		//ref C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\mm\static\mm\js\main.js
+		// animation
+		div_area_result
+			.fadeIn(200).fadeOut(200)
+			.fadeIn(200).fadeOut(200)
+			
+			.fadeIn(200).fadeOut(200)
+			.fadeIn(200).fadeOut(200)
+			
+			.fadeIn(200).fadeOut(200)
+			.fadeIn(200).fadeOut(200)
+			
+			.fadeIn(200);
 		
 //		alert(data);
 		

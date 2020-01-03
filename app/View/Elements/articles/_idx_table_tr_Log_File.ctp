@@ -25,7 +25,7 @@
 			
 			//ref https://stackoverflow.com/questions/20740668/creating-buttons-with-links-using-cakephps-html-form-helpers
 			echo $this->Form->button(
-					'Click me!!!'
+					'Click me'
 					, $optFor_Btn
 					
 			);
