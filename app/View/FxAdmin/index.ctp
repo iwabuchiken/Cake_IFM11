@@ -13,33 +13,43 @@
 
 <hr>
 
+<table>
+
+	<?php echo $this->element('articles/_idx_table_tr_Log_File')?>
+	
+<!--   <tr> -->
+<!--     <td>Row 1: Col 1</td> -->
+<!--     <td>Row 1: Col 2</td> -->
+<!--   </tr> -->
+</table>
+
 	<?php 
 		
-		$optFor_Link = array(
+// 		$optFor_Link = array(
 				
-					'class' => 'button'
-					, 'onclick' => 'test()'
+// 					'class' => 'button'
+// 					, 'onclick' => 'test()'
 				
-		);
+// 		);
 		
-		//ref https://stackoverflow.com/questions/13491421/cakephp-create-simple-buttons-that-redirects-to-views
-// 		echo $this->Html->link('Click Here', '', $optFor_Link);	//=> href="/Eclipse_Luna/Cake_IFM11/fx_admin"
+// 		//ref https://stackoverflow.com/questions/13491421/cakephp-create-simple-buttons-that-redirects-to-views
+// // 		echo $this->Html->link('Click Here', '', $optFor_Link);	//=> href="/Eclipse_Luna/Cake_IFM11/fx_admin"
 	
 		
-		$optFor_Btn = array(
+// 		$optFor_Btn = array(
 		
-				'type'		=> 'button',
-				'onclick'	=> 'process_log_file();'
-				, 'class'	=> "btn_Links"
+// 				'type'		=> 'button',
+// 				'onclick'	=> 'process_log_file();'
+// 				, 'class'	=> "btn_Links"
 				
-		);
+// 		);
 		
-		//ref https://stackoverflow.com/questions/20740668/creating-buttons-with-links-using-cakephps-html-form-helpers
-		echo $this->Form->button(
-				'Click me'
-				, $optFor_Btn
+// 		//ref https://stackoverflow.com/questions/20740668/creating-buttons-with-links-using-cakephps-html-form-helpers
+// 		echo $this->Form->button(
+// 				'Click me'
+// 				, $optFor_Btn
 				
-		);
+// 		);
 		
 	?>
 	
