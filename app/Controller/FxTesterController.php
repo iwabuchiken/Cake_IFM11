@@ -44,5 +44,24 @@ class FxTesterController extends AppController {
 		
 	}//public function index()
 
+	public function fx_tester_T_1() {
+		
+// 		debug("php : fx_tester_T_1");
+
+		/******************** (20 '*'s)
+		 * step : X
+		 * 	set : values for view
+		 *
+		 ********************/
+		$time_current = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+		// variables
+		$this->set("time_current", $time_current);
+		
+		// layout
+		$this->layout = "plain";
+		
+	}//public function fx_tester_T_1() {
+	
 }//class FxTesterController extends AppController {
 

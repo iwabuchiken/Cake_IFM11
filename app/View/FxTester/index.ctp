@@ -15,7 +15,7 @@
 
 	<table>
 	
-		<?php echo $this->element('fx_testers/_idx_table_tr_Log_File')?>
+		<?php echo $this->element('fx_testers/_idx_table_tr_Tester-1')?>
 		<?php //echo $this->element('articles/_idx_table_tr_Log_File')?>
 		
 	</table>

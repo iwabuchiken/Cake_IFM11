@@ -29,4 +29,19 @@ div#div_Tester_Index_Area_Result {
 	
 }/*div#div_Tester_Index_Area_Result {*/
 
+td.fx-tester_index_td_title {
+	
+	/*ref https://www.w3schools.com/colors/colors_names.asp*/
+	background: AntiqueWhite;
+	
+	/*ref https://www.w3schools.com/CSSref/pr_dim_min-height.asp*/
+	min-height: 50px;
+	
+	font-size: 25px;
+	
+	margin		: 30px;
+	padding		: 15px;
+	
+}/*td.fx-tester_index_td_title {*/
+
 
