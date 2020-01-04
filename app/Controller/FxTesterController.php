@@ -49,6 +49,20 @@ class FxTesterController extends AppController {
 // 		debug("php : fx_tester_T_1");
 
 		/******************** (20 '*'s)
+		 * step : 1
+		 * 	prep : BarData
+		 *
+		 ********************/
+		//ref https://www.php.net/manual/en/language.oop5.php
+		$bd = new BarData;
+		
+// 		debug("BarData ==> instance gen-ed");
+		
+		$val_Pr_Open = $bd->pr_Open;
+		
+		debug("\$val_Pr_Open => " . $val_Pr_Open);
+		
+		/******************** (20 '*'s)
 		 * step : X
 		 * 	set : values for view
 		 *

@@ -61,6 +61,8 @@ class AppController extends Controller {
 		require_once $this->dpath_Utils.DS."cons.php";
 	
 		require_once $this->dpath_Utils.DS."utils.php";
+		
+		require_once $this->dpath_Utils.DS."BarData.php";
 	
 		require_once $this->dpath_Utils.DS."mp3file.class.php";
 	
