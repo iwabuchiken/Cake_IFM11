@@ -58,7 +58,8 @@ class FxTesterController extends AppController {
 		
 // 		debug("BarData ==> instance gen-ed");
 		
-		$val_Pr_Open = $bd->pr_Open;
+		$val_Pr_Open = $bd->price_Open;
+// 		$val_Pr_Open = $bd->pr_Open;
 		
 		debug("\$val_Pr_Open => " . $val_Pr_Open);
 		
