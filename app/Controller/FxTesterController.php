@@ -55,10 +55,45 @@ class FxTesterController extends AppController {
 		 ********************/
 		/******************** (20 '*'s)
 		 * step : 1 : 1
-		 	get : list of bardats
+		 	get : list of bardatas
 		 *
 		 ********************/
+		/********************
+		 * step : 1 : 1.1
+		 	get : list
+		 ********************/
 		$lo_BarDatas = Libfx::get_ListOf_BarDatas();
+		
+		/********************
+		 * step : 1 : 1.2
+		 	validate
+		 ********************/
+		if ($lo_BarDatas == -1) {
+		
+			// message
+			debug("\$lo_BarDatas ==> returned -1");
+			/********************
+			 * step : X
+			 * 	set : values for view
+			 *
+			 ********************/
+			$time_current = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+			
+			// variables
+			$this->set("time_current", $time_current);
+			
+			// layout
+			$this->layout = "plain";
+			
+			// exit func
+			return ;
+			
+		} else {//if ($lo_BarDatas == -1)
+			
+			debug("Libfx::get_ListOf_BarDatas() ==> returned : len is " . count($lo_BarDatas));
+			
+		}//if ($lo_BarDatas == -1)
+		
 		
 // 		debug("\$lo_BarDatas => " . $lo_BarDatas);
 		//_20200105_145737:tmp
