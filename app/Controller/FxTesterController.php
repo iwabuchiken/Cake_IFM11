@@ -77,6 +77,8 @@ class FxTesterController extends AppController {
 		$this->layout = "plain";
 		
 	}//public function fx_tester_T_1() {
+
+	//_20200104_163637:next
 	
 }//class FxTesterController extends AppController {
 
