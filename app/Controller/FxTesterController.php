@@ -53,15 +53,26 @@ class FxTesterController extends AppController {
 		 * 	prep : BarData
 		 *
 		 ********************/
-		//ref https://www.php.net/manual/en/language.oop5.php
-		$bd = new BarData;
+		/******************** (20 '*'s)
+		 * step : 1 : 1
+		 	get : list of bardats
+		 *
+		 ********************/
+		$lo_BarDatas = Libfx::get_ListOf_BarDatas();
 		
-// 		debug("BarData ==> instance gen-ed");
+// 		debug("\$lo_BarDatas => " . $lo_BarDatas);
+		//_20200105_145737:tmp
 		
-		$val_Pr_Open = $bd->price_Open;
-// 		$val_Pr_Open = $bd->pr_Open;
 		
-		debug("\$val_Pr_Open => " . $val_Pr_Open);
+// 		//ref https://www.php.net/manual/en/language.oop5.php
+// 		$bd = new BarData;
+		
+// // 		debug("BarData ==> instance gen-ed");
+		
+// 		$val_Pr_Open = $bd->price_Open;
+// // 		$val_Pr_Open = $bd->pr_Open;
+		
+// 		debug("\$val_Pr_Open => " . $val_Pr_Open);
 		
 		/******************** (20 '*'s)
 		 * step : X
