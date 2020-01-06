@@ -101,7 +101,7 @@ class Libfx {
 		debug("count(\$lo_BarDatas) => " . count($lo_BarDatas));
 // 		debug("\$lo_BarDatas[0] =>");
 // 		debug($lo_BarDatas[0]);
-		debug("\$lo_BarDatas[0]->price_Open => " . $lo_BarDatas[0]->price_Open);
+// 		debug("\$lo_BarDatas[0]->price_Open => " . $lo_BarDatas[0]->price_Open);
 		
 		/********************
 		* step : 4
@@ -159,7 +159,14 @@ class Libfx {
 					
 		} else {//if ($fin__File_CSV == false)
 			
-			debug("file opened => $fpath_File_CSV");
+			$msg = "file opened => $fpath_File_CSV";
+			
+			debug($msg);
+			
+			Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg
+				, __FILE__, __LINE__);
 			
 		}//if ($fin__File_CSV == false)
 			
@@ -216,13 +223,13 @@ class Libfx {
 		fclose($fin__File_CSV);
 		
 		debug("file ==> closed");
-		debug("\$row => $row");
-		debug("count(\$lo_CSV_Lines) => " . count($lo_CSV_Lines));
+// 		debug("\$row => $row");
+// 		debug("count(\$lo_CSV_Lines) => " . count($lo_CSV_Lines));
 		
 		$lenOf_LO_CSV_Lines = count($lo_CSV_Lines);
 		
-		debug("\$lo_CSV_Lines[0] =>");
-		debug($lo_CSV_Lines[0]);
+// 		debug("\$lo_CSV_Lines[0] =>");
+// 		debug($lo_CSV_Lines[0]);
 		
 // 		debug("\$lo_CSV_Lines[\$lenOf_LO_CSV_Lines - 1] =>");
 // 		debug($lo_CSV_Lines[$lenOf_LO_CSV_Lines - 1]);
@@ -237,8 +244,8 @@ class Libfx {
 		//_20200105_171832:caller
 		$lo_BarDatas = Libfx::conv_CSV_Lines_To_BarDatas($lo_CSV_Lines, $lenOf_Header_Lines);
 		
-		//test
-		$lo_BarDatas = -1;
+// 		//test
+// 		$lo_BarDatas = -1;
 		
 		// return
 		return $lo_BarDatas;

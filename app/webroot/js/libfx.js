@@ -194,11 +194,15 @@ function fx_tester_T_1() {
 	
 	if (hostname == "benfranklin.chips.jp") {
 		
-		url = "/cake_apps/Cake_IFM11/fx_tester/fx_tester_T_1";
+		url = "/cake_apps/Cake_IFM11/fx_test/fx_tester_T_1";
+//		url = "/cake_apps/Cake_IFM11/fx_ea_tester/fx_tester_T_1";
+//		url = "/cake_apps/Cake_IFM11/fx_tester/fx_tester_T_1";
 		
 	} else {//if (hostname == "benfranklin.chips.jp") {
 	
-		url = "/Eclipse_Luna/Cake_IFM11/fx_tester/fx_tester_T_1";
+		url = "/Eclipse_Luna/Cake_IFM11/fx_test/fx_tester_T_1";
+//		url = "/Eclipse_Luna/Cake_IFM11/fx_ea_tester/fx_tester_T_1";
+//		url = "/Eclipse_Luna/Cake_IFM11/fx_tester/fx_tester_T_1";
 	
 	}//if (hostname == "benfranklin.chips.jp") {
 	
