@@ -11,7 +11,8 @@ class LibEaTester {
 	* fx_tester_T_1__Exec
 	* 	at : 2020/01/06 13:10:56
 	********************/
-	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
 		//_20200106_142418:caller
 		//_20200106_142421:head
 		//_20200106_142425:wl
@@ -53,6 +54,55 @@ class LibEaTester {
 					, __FILE__, __LINE__);
 			
 			//_20200106_143611:next
+			/********************
+			 * step : B : j2 : Y : 2
+			 * 		flag ==> True
+			 ********************/
+			// change ==> flag
+			$flg_Position = true;
+			
+			/********************
+			 * step : B : j2 : Y : 3
+			 * 		calc
+			 ********************/
+			$bd = $lo_BarDatas[$idxOf_Loop];
+			
+			$pr_Open = $bd->price_Open;
+			
+			$val_TP			= 0.10;
+			$val_SL			= 0.05;
+			$val_SPREAD		= 0.03;
+			
+			$pr_TP			= $bd->price_Open + ($val_TP + $val_SPREAD);
+			$pr_SL			= $bd->price_Open - ($val_SL + $val_SPREAD);
+			
+			//debug
+			$msg = "\n"; $msg .= "(* step : B : j2 : Y : 3) calc ==> comp";
+			
+			$msg .= "\n"; $msg .= "\$pr_Open = $pr_Open\n\$pr_TP = $pr_TP\n\$pr_SL = $pr_SL\n" .
+					"\$val_TP = $val_TP\n\$val_SL = $val_SL\n\$val_SPREAD = $val_SPREAD";
+			
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg
+					, __FILE__, __LINE__);
+				
+			
+			/********************
+			 * step : B : j2 : Y : 4
+			 * 		Pos ==> init
+			 ********************/
+			//_20200106_175914:next
+					
+// 			//test
+// 			$pos = new Pos;
+			
+// 			$bd = $lo_BarDatas[$idxOf_Loop];
+			
+// 			$pos->st_pr = $bd->price_Open;
+			
+// 			debug("\$pos->st_pr ==> " . $pos->st_pr);
 			
 		} else {
 			/********************
@@ -74,7 +124,21 @@ class LibEaTester {
 			
 		}//if ($resultOf_Detect_Pattern == true)
 		
+		/********************
+		 * step : C : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : C : X : 1
+		 * 		set
+		 ********************/
+		$valOf_Ret = [$flg_Position];
 		
+		/********************
+		 * step : C : X : 2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
 		
 		
 	}//public static function loop_J1_N($lo_BarDatas, $flg_Position) {
@@ -171,7 +235,12 @@ class LibEaTester {
 				 * 		position ==> NOT taken
 				 ********************/
 				//_20200106_142418:caller
-				LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position);
+				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i);
+				
+				// unpack
+				$flg_Position = $valOf_Ret[0];
+				
+				debug("\$flg_Position => " . $flg_Position);
 				
 // 				/********************
 // 				 * step : B : j1 : N : 1
