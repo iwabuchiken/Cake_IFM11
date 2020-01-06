@@ -94,6 +94,7 @@ class FxTesterController extends AppController {
 			
 		}//if ($lo_BarDatas == -1)
 		
+		//_20200105_174937:next
 		
 // 		debug("\$lo_BarDatas => " . $lo_BarDatas);
 		//_20200105_145737:tmp
