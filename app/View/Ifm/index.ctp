@@ -75,7 +75,10 @@
 	            
 	            </td>
 	            
-	            <td id="<?php echo $item[0]; ?>" name="<?php echo $item[1]; ?>">
+	            <td id="td_Label_<?php echo $item[0]; ?>" name="<?php echo $item[1]; ?>"
+	            	
+	            	style="background-color: white;"
+	            	>
 	            
 	                <?php echo $item[2]; ?>
 	                
@@ -84,7 +87,7 @@
 	            <td>
 	            
 	                <button 
-	                       onclick="im_Action('<?php echo $item[0]; ?>')"
+	                       onclick="ifm_Actions('<?php echo $item[0]; ?>')"
 	                       class="bt_Basic_2_Size20"
 	                       >
 	                   GO
@@ -109,7 +112,8 @@
 <hr>
 
 	
-	<div id="area_result">
+<!-- 	<div id="area_result"> -->
+	<div id="div_Ifm_Index_area_result">
 		
 		result
 	

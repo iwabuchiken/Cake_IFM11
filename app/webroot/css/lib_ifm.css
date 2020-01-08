@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 
-div#area_result {
+div#div_Ifm_Index_area_result {
 	
 	background: #A4F7B6;
 	
@@ -13,7 +13,7 @@ div#area_result {
 	margin	: 10px;
 	padding		: 5px;
 	
-}/*div#area_result {*/
+}/*div#div_Ifm_Index_area_result {*/
 
 div#div_Tester_Index_Area_Result {
 	
@@ -53,6 +53,8 @@ table#tbl_ifm_index_main {
 	border     : 3px solid #aaaaaa;
 	
 	margin     : 20px;
+	
+	width		: 50%;
 	
 	/*float      : left;*/
 
@@ -138,6 +140,8 @@ table#tbl_Im_Actions__Body {
     
     height         : 100px;
 	
+	width		: 50%;
+	
 }/*table#tbl_Im_Actions__Body {*/
 
 button.bt_Basic_2_Size20 {
@@ -153,3 +157,16 @@ button.bt_Basic_2_Size20 {
 	
 }
 
+button.bt_Basic_2_Size20:hover {
+    
+    background-color: #3e8e41;
+    
+}
+
+button.bt_Basic_2_Size20:active {
+    
+    /*ref active https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate3*/
+
+    background-color: #6ebe71;
+    
+}
