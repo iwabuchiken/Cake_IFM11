@@ -40,6 +40,17 @@ class IfmController extends AppController {
 		 * step : 1.1 : 1
 		 * 		get : param
 		 ****************/
+		/******************
+		 * step : X
+		 * 		set : vars for view
+		 ****************/
+		$lo_Commands = [
+			[1, "aaa", "AAA"]
+			, [2, "bbb", "BBB"]
+		];
+		
+		// set
+		$this->set("lo_Commands", $lo_Commands);
 		
 	}//public function index()
 

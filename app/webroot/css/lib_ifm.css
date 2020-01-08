@@ -1,0 +1,155 @@
+@CHARSET "UTF-8";
+
+
+div#area_result {
+	
+	background: #A4F7B6;
+	
+	/*ref https://www.w3schools.com/CSSref/pr_dim_min-height.asp*/
+	min-height: 50px;
+	
+	font-size: 25px;
+	
+	margin	: 10px;
+	padding		: 5px;
+	
+}/*div#area_result {*/
+
+div#div_Tester_Index_Area_Result {
+	
+	background: #A4F7B6;
+	
+	/*ref https://www.w3schools.com/CSSref/pr_dim_min-height.asp*/
+	min-height: 50px;
+	
+	font-size: 25px;
+	
+	margin	: 10px;
+	padding		: 5px;
+	
+}/*div#div_Tester_Index_Area_Result {*/
+
+td.fx-tester_index_td_title {
+	
+	/*ref https://www.w3schools.com/colors/colors_names.asp*/
+	background: AntiqueWhite;
+	
+	/*ref https://www.w3schools.com/CSSref/pr_dim_min-height.asp*/
+	min-height: 50px;
+	
+	font-size: 25px;
+	
+	margin		: 30px;
+	padding		: 15px;
+	
+}/*td.fx-tester_index_td_title {*/
+
+table#tbl_ifm_index_main {
+	
+	/*border     : 1;*/
+	/*border     : 1px solid black;*/
+	/* ref template for css files https://stackoverflow.com/questions/7900575/how-to-add-css-autocomplete-to-eclipse */
+	/*ref table border http://www.html.am/html-codes/tables/table-border.cfm*/
+	border     : 3px solid #aaaaaa;
+	
+	margin     : 20px;
+	
+	/*float      : left;*/
+
+	
+}/*table#tbl_ifm_index_main {*/
+
+table#tbl_ifm_index_main tr td {
+    
+    background-color   : #ffffff;
+    
+    text-align     : left;
+    
+    border     : 1px solid #aaaaaa;
+    
+    padding    : 5px;
+    
+}/*table#tbl_ifm_index_main tr td*/
+
+table#tbl_ifm_index_main tr th {
+    
+	/*ref https://www.w3schools.com/CSSref/pr_background-color.asp*/
+	background-color   : #22ffff;
+	
+	text-align     : center;
+	
+	border     : 1px solid #aaaaaa;
+	
+	padding    : 5px;
+    
+}/*table#tbl_ifm_index_main tr td*/
+
+
+div#div_Ifm_Index_Input_Area {
+	
+	background     : Thistle; 
+	
+	width          : 200px;
+	
+	min-height: 50px;
+	
+	margin-right   : 200px;
+	margin-left    : 20px;
+	
+	/*ref float https://www.w3schools.com/CSSref/tryit.asp?filename=trycss_float*/
+
+	float          : right;
+	
+	padding        : 5px;
+	
+}/*div#div_Ifm_Index_Input_Area {*/
+
+input#ipt_Ifm_Index_Input_Area {
+	
+	height: 30px;
+    width:  150px;
+    /*width:  250px;*/
+
+    /*ref color names https://html-color-codes.info/color-names/*/
+    background: LemonChiffon;
+    
+    margin-top: 10px;
+    
+    margin-left     : 20px;
+    margin-right    : 200px;
+    
+    padding     : 5px;
+	
+	/*float       : right;*/
+
+}/*input#ipt_Ifm_Index_Input_Area {*/
+
+table#tbl_Im_Actions__Body {
+	
+	/*border     : 1;*/
+	/*border     : 1px solid black;*/
+	/* ref template for css files https://stackoverflow.com/questions/7900575/how-to-add-css-autocomplete-to-eclipse */
+	/*ref table border http://www.html.am/html-codes/tables/table-border.cfm*/
+	border     : 1px solid #aaaaaa;
+	
+	margin     : 20px;
+	
+	overflow       :scroll;
+    
+    height         : 100px;
+	
+}/*table#tbl_Im_Actions__Body {*/
+
+button.bt_Basic_2_Size20 {
+	
+	font-size: 20px;
+	
+	background-color: yellow;
+	
+	font-weight: bold;
+	
+	padding    : 5px;
+	
+	
+}
+

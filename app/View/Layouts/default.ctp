@@ -42,6 +42,7 @@
 		
 		echo $this->Html->css('main');
 		echo $this->Html->css('libfx');
+		echo $this->Html->css('lib_ifm');
 		
 		echo $this->Html->css('jquery-ui.structure');
 		echo $this->Html->css('jquery-ui.theme');
@@ -59,6 +60,7 @@
 		echo $this->Html->script('http://d3js.org/d3.v3.min.js');
 		
 		echo $this->Html->script('libfx');
+		echo $this->Html->script('lib_ifm');
 		
 	?>
 </head>
