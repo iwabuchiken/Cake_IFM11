@@ -233,5 +233,128 @@ class CONS {
 	public static $fname_Articles_Keywords_External_Files__Politics = "articles_keyword_lists_politics.dat";
 	public static $fname_Articles_Keywords_External_Files__National = "articles_keyword_lists_national.dat";
 	public static $fname_Articles_Keywords_External_Files__Business = "articles_keyword_lists_business.dat";
+
+	/**************************************************************
+		Ifm controller
+		at : 2020/01/09 08:11:24
+	**************************************************************/
+	public static $OP_0_1	= "0-1";      # 0-1) start xampp, filezilla, open folder, open files.bat
+	public static $OP_1	= "1";          # 1) change_file_names.bat
+	public static $OP_1_2	= "1-2";      # 1-2) Delete_in-db-existing-files.bat
+	public static $OP_1_3	= "1-3";      # 1-3) Delete temporary-purpose files
+	
+	public static $OP_2_0	= "2-0";      # 2-0) edit_memos.9-0.bat
+	public static $OP_4	= "4";          # 4) edit_memos.8.open-csv-file.bat - ショートカット
+	public static $OP_5	= "5";          # 5) edit_memos.3.insert-to-db.bat - ショートカット
+	
+	public static $OP_7	= "7";      # 7) edit_memos.12.delete-image-files.bat - ショートカット
+	public static $OP_8	= "8";      # 8) edit_memos.4.delete-photos.bat - ショートカット
+	public static $OP_9	= "9";      # 9) edit_memos.13.validate-admin-value.bat - ショートカット
+	public static $OP_9_1	= "9-1";	# "9-1) upload db file.txt";
+	
+	public static $OP_10	= "10";	# "edit_memos.14.add-data-to-remote.bat";
+	public static $OP_10_1	= "10-1";	# "10-1) edit_memos.14.add-data-to-remote.history.txt";
+	
+	public static $OP_11	= "11";	# "edit_memos.15.validate-update.bat";
+	public static $OP_11_0	= "11-0";	# "11-0) update date.txt";
+	public static $OP_11_1	= "11-1";	# "11-1) open update page.bat";
+	
+	public static $OP_12	= "12";	# "edit_memos.5.copy-image-files.bat";
+	public static $OP_13	= "13";	# "13) image_move-uploaded-files.bat";
+	
+	public static $OP_14	= "14";	# "upload image files";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	
+	public static $OP_15	= "15";	# "close apps";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	public static $OP_16	= "16";	# "9-2) upload db file";
+
+	// strings
+	public static $OP_0_1_String_1	= "0-1) start xampp, filezilla, open folder, open files.bat";
+
+	public static $OP_1_String_1	= "1) change_file_names.bat";
+	public static $OP_1_2_String_1	= "1-2) Delete_in-db-existing-files.bat";
+	public static $OP_1_3_String_1	= "";
+
+	public static $OP_2_0_String_1	= "2-0) edit_memos.9-0.bat";
+	public static $OP_4_String_1	= "4) edit_memos.8.open-csv-file.bat - ショートカット";
+	public static $OP_5_String_1	= "edit_memos.3.insert-to-db.bat";
+
+	public static $OP_7_String_1	= "edit_memos.12.delete-image-files.bat";
+	public static $OP_8_String_1	= "edit_memos.4.delete-photos.bat";
+	public static $OP_9_String_1	= "edit_memos.13.validate-admin-value.bat";
+
+	public static $OP_9_1_String_1	= "9-1) upload db file.txt";
+	public static $OP_9_2_String_1	= "9-2) upload db file";
+	public static $OP_10_String_1	= "edit_memos.14.add-data-to-remote.bat";
+
+	public static $OP_10_1_String_1	= "10-1) edit_memos.14.add-data-to-remote.history.txt";
+	public static $OP_11_String_1	= "edit_memos.15.validate-update.bat";
+	public static $OP_11_0_String_1	= "11-0) update date.txt";
+
+	public static $OP_11_1_String_1	= "11-1) open update page.bat";
+	public static $OP_12_String_1	= "edit_memos.5.copy-image-files.bat";
+	public static $OP_13_String_1	= "13) image_move-uploaded-files.bat";
+
+	public static $OP_14_String_1	= "14) upload image files";
+	public static $OP_15_String_1	= "15) close-apps.bat";
+	
+	// strings 2
+	public static $OP_0_1_String_2	= "start apps";
+	// 				[0_1_String_2	= "start apps";
+	public static $OP_1_String_2	= "change_file_names";
+	public static $OP_1_2_String_2	= "Delete_in-db-existing-files";
+	public static $OP_1_3_String_2	= "*Delete temporary-purpose files*";
+	
+	public static $OP_2_0_String_2	= "start editing";
+	public static $OP_4_String_2	= "open csv file";
+	public static $OP_5_String_2	= "insert to db";
+		
+	public static $OP_7_String_2	= "delete image files";
+	public static $OP_8_String_2	= "delete db entries";
+	public static $OP_9_String_2	= "validate admin value";
+	
+	public static $OP_9_1_String_2	= "***";
+	public static $OP_9_2_String_2	= "upload db file";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	public static $OP_10_String_2	= "data ==> to remote";
+	
+	public static $OP_10_1_String_2	= "data ==> to file";
+	public static $OP_11_String_2	= "validate updates";
+	public static $OP_11_0_String_2	= "update data ==> to file";
+	
+	public static $OP_11_1_String_2	= "open update page";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	public static $OP_12_String_2		= "copy image files";    #
+	public static $OP_13_String_2		= "move uploaded images";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	
+	public static $OP_14_String_2	= "upload image files";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	public static $OP_15_String_2	= "close apps";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+			
+// 	"0-1) start xampp, filezilla, open folder, open files.bat", "start apps"
+// 	// 				["0-1) start xampp, filezilla, open folder, open files.bat", "start apps"
+// 	"1) change_file_names.bat", "change_file_names"
+// 	"1-2) Delete_in-db-existing-files.bat", "Delete_in-db-existing-files"
+// 	"", "*Delete temporary-purpose files*"
+	
+// 	"2-0) edit_memos.9-0.bat", "start editing"
+// 	"4) edit_memos.8.open-csv-file.bat - ショートカット", "open csv file"
+// 	"edit_memos.3.insert-to-db.bat", "insert to db"
+		
+// 	"edit_memos.12.delete-image-files.bat", "delete image files"
+// 	"edit_memos.4.delete-photos.bat", "delete db entries"
+// 	"edit_memos.13.validate-admin-value.bat", "validate admin value"
+	
+// 	"9-1) upload db file.txt", "***"
+// 	"9-2) upload db file", "upload db file"    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+// 	"edit_memos.14.add-data-to-remote.bat", "data ==> to remote"
+	
+// 	"10-1) edit_memos.14.add-data-to-remote.history.txt", "data ==> to file"
+// 	"edit_memos.15.validate-update.bat", "validate updates"
+// 	"11-0) update date.txt", "update data ==> to file"
+	
+// 	"11-1) open update page.bat", "open update page"    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+// 	"edit_memos.5.copy-image-files.bat", "copy image files"    #
+// 	"13) image_move-uploaded-files.bat", "move uploaded images"    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	
+// 	"14) upload image files", "upload image files"    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+// 	"15) close-apps.bat", "close apps"    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	
 	
 }//class CONS

@@ -239,6 +239,17 @@ function ifm_Actions(_param) {
 		_data = {action : _param};
 	
 	}//if (_param == "11-0")
+	
+	//debug
+	console.log("_param => '" + _param + "'" + " " + "('" + $.trim(td.text()) + "')");
+	
+	//ref https://iwb.jp/jquery-trim/
+//	console.log("td => '" + $.trim(td.text()) + "'");
+//	console.log("td.text() => '" + td.text() + "'");
+//	console.log("td.html() => '" + td.html().val() + "'");
+//	console.log("td.html() => '" + td.html() + "'");
+	
+	
 	/***************************
 		step : X : 0
 			ajax ==> prep
