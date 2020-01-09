@@ -8,6 +8,78 @@ require_once 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/cons.php';
 class LibEaTester {
 	
 	/********************
+	* get_Bar_Type
+	* 	at : 2020/01/09 17:56:19
+	********************/
+// 	public static function get_Bar_Type($pos, $bd) {
+	public static function get_Bar_Type($pos, $bd, $typeOf_Position) {
+		//_20200109_175550:caller
+		//_20200109_175554:head
+		//_20200109_175557:wl
+		
+		debug("get_Bar_Type");
+		
+		/********************
+		* step : j1
+		* 		position ==> SELL or BUY ?
+		********************/
+		if ($typeOf_Position == "SELL") {
+			/********************
+			* step : j1 : A1
+			* 		SELL
+			********************/
+			$msg	= "\n";
+			
+			$msg	.= "(get_Bar_Type : step : j1 : A1 : SELL)";
+			$msg	.= "\n";
+			
+			$msg	.= "\$typeOf_Position => SELL";
+			$msg	.= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+				
+// 			debug("\$typeOf_Position => SELL");
+			
+		} else if ($typeOf_Position == "BUY") {
+			/********************
+			* step : j1 : A2
+			* 		BUY
+			********************/
+			$msg	= "\n";
+			
+			$msg	.= "(get_Bar_Type : step : j1 : A2 : BUY)";
+			$msg	.= "\n";
+			
+			$msg	.= "\$typeOf_Position => BUY";
+			$msg	.= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+			
+			//_20200109_181021:next
+		
+		} else {
+			/********************
+			* step : j1 : AX
+			* 		unknown
+			********************/
+			$msg	= "\n";
+			
+			$msg	.= "(get_Bar_Type : step : j1 : AX : unknown) : '$typeOf_Position'";
+			$msg	.= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+				
+		}//if ($typeOf_Position == "SELL")
+		
+	}//public static function get_Bar_Type($pos, $bd) {
+	
+	/********************
 	* j2_Y_4_2
 	* 	at : 2020/01/07 15:24:28
 	********************/
@@ -47,6 +119,9 @@ class LibEaTester {
 		$msg .= "\n";
 		
 		$msg .= "\$pos->pr_TP\t" . $pos->pr_TP . "\t" . "\$pos->pr_SL\t" . $pos->pr_SL;
+		$msg .= "\n";
+			
+		$msg .= "\$pos->trail_starting_idx\t" . $pos->trail_starting_idx . "\t" . "\$pos->trail_starting_pr\t" . $pos->trail_starting_pr;
 		$msg .= "\n";
 			
 		Utils::write_Log__Fx_Admin(
@@ -223,56 +298,18 @@ class LibEaTester {
 			 ********************/
 			//_20200107_152525:caller
 			LibEaTester::j2_Y_4_2($pos, $idxOf_Loop, $bd, $val_TP, $val_SL, $val_SPREAD, $pr_TP, $pr_SL);
-			
-// 			$pos->st_idx	= $idxOf_Loop;
-// 			$pos->st_pr		= $bd->price_Open;
-			
-// 			$pos->cu_idx	= $idxOf_Loop;
-// 			$pos->cu_pr		= $bd->price_Close;
-			
-// 			// position ==> BUY
-// 			$pos->rf_idx	= $idxOf_Loop;
-// 			$pos->rf_pr		= $bd->price_High;
-			
-// 			$pos->val_TP		= $val_TP;
-// 			$pos->val_SL		= $val_SL;
-// 			$pos->val_SPREAD		= $val_SPREAD;
-			
-// 			$pos->pr_TP		= $pr_TP;
-// 			$pos->pr_SL		= $pr_SL;
-			
-// 			//debug
-// 			$msg = "\n"; $msg .= "(step : B : j2 : Y : 4) Pos ==> init comp. !!!!";
-// 			$msg .= "\n";
-			
-// 			 $msg .= "\$pos->st_idx\t" . $pos->st_idx . "\t" . "\$pos->st_pr\t" . $pos->st_pr;
-// 			$msg .= "\n";
-				
-// 			 $msg .= "\$pos->val_TP\t" . $pos->val_TP . "\t" . "\$pos->val_SL\t" . $pos->val_SL;
-// 			$msg .= "\n";
-				
-// 			 $msg .= "\$pos->pr_TP\t" . $pos->pr_TP . "\t" . "\$pos->pr_SL\t" . $pos->pr_SL;
-// 			$msg .= "\n";
-			
-// 			Utils::write_Log__Fx_Admin(
-// 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 					, $msg, __FILE__, __LINE__);
-				
-// 			//test
-// 			$pos = new Pos;
-			
-// 			$bd = $lo_BarDatas[$idxOf_Loop];
-			
-// 			$pos->st_pr = $bd->price_Open;
-			
-// 			debug("\$pos->st_pr ==> " . $pos->st_pr);
 
 			/********************
 			 * step : B : j2 : Y : 5
 			 * 		get ==> bar type
 			 ********************/
 			//_20200107_153029:next
-					
+			//_20200109_175550:caller
+			$typeOf_Position = "BUY";
+			
+			LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
+			
+			
 		} else {
 			/********************
 			 * step : B : j2 : N

@@ -243,6 +243,7 @@ class CONS {
 	public static $OP_1_2	= "1-2";      # 1-2) Delete_in-db-existing-files.bat
 	public static $OP_1_3	= "1-3";      # 1-3) Delete temporary-purpose files
 	
+	//_20200109_135951:next
 	public static $OP_2_0	= "2-0";      # 2-0) edit_memos.9-0.bat
 	public static $OP_4	= "4";          # 4) edit_memos.8.open-csv-file.bat - ショートカット
 	public static $OP_5	= "5";          # 5) edit_memos.3.insert-to-db.bat - ショートカット
