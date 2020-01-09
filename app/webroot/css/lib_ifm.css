@@ -1,6 +1,22 @@
 @CHARSET "UTF-8";
 
 
+div#div_Ifm_Index_Actions__Entries {
+	
+	/*background: #A4F7B6;*/
+	
+	/*ref http://kowaza.boo.jp/03table/table-07-0scroll.html*/
+	height	:300px;
+	
+	width	:40%;
+	
+	overflow-y:scroll;
+	
+	margin	: 10px;
+	padding		: 5px;
+	
+}/*div#div_Ifm_Index_Actions__Entries {*/
+
 div#div_Ifm_Index_area_result {
 	
 	background: #A4F7B6;
@@ -8,10 +24,14 @@ div#div_Ifm_Index_area_result {
 	/*ref https://www.w3schools.com/CSSref/pr_dim_min-height.asp*/
 	min-height: 50px;
 	
+	max-height: 150px;
+	
 	font-size: 25px;
 	
 	margin	: 10px;
 	padding		: 5px;
+	
+	overflow-y:scroll;
 	
 }/*div#div_Ifm_Index_area_result {*/
 
@@ -136,11 +156,11 @@ table#tbl_Im_Actions__Body {
 	
 	margin     : 20px;
 	
-	overflow       :scroll;
+	/*overflow       :scroll;*/
     
     height         : 100px;
 	
-	width		: 50%;
+	width		: 100%;
 	
 }/*table#tbl_Im_Actions__Body {*/
 

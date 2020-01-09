@@ -169,18 +169,62 @@ class IfmController extends AppController {
 		
 	}//public function set_LO_Commands() {
 	
+	public function ifm_Actions__0_1() {
+		//_20200109_125733:caller
+		//_20200109_125737:head
+		//_20200109_125741:wl
+		
+		debug("ifm_Actions__0_1 ==> starting...");
+		
+		// exec external
+		$lo_Exec_Result = array();
+		
+// 		$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
+// 		$strOf_Command = "call \"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
+// 		$strOf_Command = "start \"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
+		
+// 		$strOf_Command_File = "0-1) start xampp, filezilla, open folder, open files.bat\"";
+		
+// 		$strOf_Command_Full = "$strOf_Command\\$strOf_Command_File";
+		$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\" 
+				. "0-1) start xampp, filezilla, open folder, open files.bat\"";
+// 		$strOf_Command = "dir /?";
+// 		$strOf_Command = "dir";
+		
+		$res = system($strOf_Command);
+// 		$res = exec($strOf_Command, $lo_Exec_Result);
+// 		$res = exec("dir", $lo_Exec_Result);
+		
+		debug("\$res =>");
+		debug(mb_convert_encoding($res, "utf-8"));
+// 		debug($res);
+		
+		debug("\$lo_Exec_Result =>");
+		debug($lo_Exec_Result);
+		
+	}//ifm_Actions__0_1()
+
 	public function ifm_Actions() {
 		//_20200108_131334:caller
 		//_20200108_131357:head
 		//_20200108_131403:wl
 
 		/******************
+		 * step : 0
+		 * 		prep : vars
+		 ****************/
+		$lo_Messages = array();
+		
+		/******************
 		 * step : 1 : 1
 		 * 		prep : url params
 		 ****************/
 		@$query_Action = $this->request->query['action'];
 		
-		debug("\$query_Action => '" . $query_Action . "'");
+		$msg = "\$query_Action => '" . $query_Action . "'";
+		debug($msg);
+		
+		array_push($lo_Messages, $msg);
 		
 		/******************
 		 * step : 1 : 2
@@ -199,11 +243,65 @@ class IfmController extends AppController {
 		 ****************/
 		//_20200108_142438:next
 		if ($query_Action == CONS::$OP_0_1) {
-		
-			debug("starting apps...");
+
+			//0-1) start xampp, filezilla, open folder, open files.bat
 			
-			//_20200109_093814:next
+			$msg = "starting => '" . CONS::$OP_0_1_String_2. "'";
+			debug($msg);
+			
+			array_push($lo_Messages, $msg);
+				
+			$this->ifm_Actions__0_1();
+			
+// 			//_20200109_093814:next
 // 			$this->ifm_Actions__0_1();
+			
+		} else if ($query_Action == CONS::$OP_1) {
+
+			//1) change_file_names.bat
+			
+			$msg = "starting => '" . CONS::$OP_1_String_2. "'";
+			debug($msg);
+				
+			array_push($lo_Messages, $msg);
+				
+			$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\" 
+					. CONS::$OP_1_String_1;
+			
+			$msg = "\$strOf_Command => " . $strOf_Command;
+			debug($msg);
+			
+			array_push($lo_Messages, $msg);
+				
+			$res = system($strOf_Command);
+			
+			debug("\$res =>");
+			debug(mb_convert_encoding($res, "utf-8"));
+			
+			// to message
+			array_push($lo_Messages, $res);
+															
+		} else if ($query_Action == CONS::$OP_1_2) {
+			
+			//1-2) Delete_in-db-existing-files.bat
+			
+			$msg = "starting => '" . CONS::$OP_1_2_String_2. "'";
+			debug($msg);
+			array_push($lo_Messages, $msg);
+			
+			$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\" 
+					. CONS::$OP_1_2_String_1;
+			
+			$msg = "\$strOf_Command => " . $strOf_Command;
+			debug($msg);
+			array_push($lo_Messages, $msg);
+			
+// 			$res = system($strOf_Command);
+			
+// 			debug("\$res =>");
+// 			debug(mb_convert_encoding($res, "utf-8"));
+		
+		//_20200109_135917:next
 			
 		} else {
 		
@@ -211,6 +309,12 @@ class IfmController extends AppController {
 			
 		}//if ($query_Action == CONS::$OP_0_1)
 		
+		
+		/********************
+		* step :
+		* 	set : vals --> template
+		********************/
+		$this->set("lo_Messages", $lo_Messages);
 		
 		/********************
 		* step :
