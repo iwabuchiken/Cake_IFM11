@@ -264,9 +264,27 @@ class IfmController extends AppController {
 			debug($msg);
 				
 			array_push($lo_Messages, $msg);
-				
-			$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\" 
-					. CONS::$OP_1_String_1;
+			
+			//log
+			$time = Utils::get_CurrentTime();
+			
+// 			$full_Text = "[$time : $fname_Working : $line] $text"."\n";
+			
+			$fpath_Console_Output = "C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\log_console_output.txt";
+			
+// 			$strOf_Command = "echo '\n' >> $fpath_Console_Output";
+			$strOf_Command = "echo \"\" >> $fpath_Console_Output";
+			$strOf_Command .= " && ";
+			
+// 			$strOf_Command = "echo \n[$time : " . __FILE__ . " : " . __LINE__ . "] >> C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\log_console_output.txt";
+			$strOf_Command .= "echo [$time : " . __FILE__ . " : " . __LINE__ . "] >> C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\log_console_output.txt";
+			$strOf_Command .= " && ";
+			
+// 			$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\" 
+			$strOf_Command .= "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\" 
+					. CONS::$OP_1_String_1 . "\""
+					. " >> $fpath_Console_Output"
+					;
 			
 			$msg = "\$strOf_Command => " . $strOf_Command;
 			debug($msg);
@@ -302,7 +320,7 @@ class IfmController extends AppController {
 // 			debug(mb_convert_encoding($res, "utf-8"));
 		
 		//_20200109_135917:next
-			
+		
 		} else {
 		
 			debug("unknown action => '" . $query_Action . "'");
