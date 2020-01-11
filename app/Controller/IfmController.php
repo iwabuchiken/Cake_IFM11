@@ -175,32 +175,66 @@ class IfmController extends AppController {
 		//_20200109_125741:wl
 		
 		debug("ifm_Actions__0_1 ==> starting...");
-		
-		// exec external
-		$lo_Exec_Result = array();
-		
-// 		$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
-// 		$strOf_Command = "call \"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
-// 		$strOf_Command = "start \"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
-		
-// 		$strOf_Command_File = "0-1) start xampp, filezilla, open folder, open files.bat\"";
-		
-// 		$strOf_Command_Full = "$strOf_Command\\$strOf_Command_File";
-		$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\" 
-				. "0-1) start xampp, filezilla, open folder, open files.bat\"";
-// 		$strOf_Command = "dir /?";
-// 		$strOf_Command = "dir";
-		
+
+		//log
+		$time = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+// 		$time = Utils::get_CurrentTime();
+			
+		// 			$full_Text = "[$time : $fname_Working : $line] $text"."\n";
+			
+		$fpath_Console_Output = "C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\log\\log_console_output.[start-apps][$time].txt";
+// 		$fpath_Console_Output = "C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\log_console_output.[start-apps][$time].txt";
+			
+		// 			$strOf_Command = "echo '\n' >> $fpath_Console_Output";
+// 		$strOf_Command = "echo \"\" >> $fpath_Console_Output";
+		$strOf_Command = "echo. >> $fpath_Console_Output";
+		$strOf_Command .= " && ";
+			
+		// 			$strOf_Command = "echo \n[$time : " . __FILE__ . " : " . __LINE__ . "] >> C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\log_console_output.txt";
+		$strOf_Command .= "echo [$time : " . __FILE__ . " : " . __LINE__ . "] >> $fpath_Console_Output";
+		$strOf_Command .= " && ";
+			
+// 		// 			$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\"
+		$strOf_Command .= "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\"
+				. CONS::$OP_0_1_String_1 . "\""
+// 				. CONS::$OP_1_String_1 . "\""
+						. " >> $fpath_Console_Output"
+						;
+							
+		$msg = "\$strOf_Command => " . $strOf_Command;
+		debug($msg);
+			
+// 		array_push($lo_Messages, $msg);
+
 		$res = system($strOf_Command);
-// 		$res = exec($strOf_Command, $lo_Exec_Result);
-// 		$res = exec("dir", $lo_Exec_Result);
 		
-		debug("\$res =>");
-		debug(mb_convert_encoding($res, "utf-8"));
-// 		debug($res);
 		
-		debug("\$lo_Exec_Result =>");
-		debug($lo_Exec_Result);
+		
+// 		// exec external
+// 		$lo_Exec_Result = array();
+		
+// // 		$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
+// // 		$strOf_Command = "call \"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
+// // 		$strOf_Command = "start \"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands";	//=> not starting
+		
+// // 		$strOf_Command_File = "0-1) start xampp, filezilla, open folder, open files.bat\"";
+		
+// // 		$strOf_Command_Full = "$strOf_Command\\$strOf_Command_File";
+// 		$strOf_Command = "\"C:\\WORKS_2\\WS\\WS_Cake_IFM11\\commands\\" 
+// 				. "0-1) start xampp, filezilla, open folder, open files.bat\"";
+// // 		$strOf_Command = "dir /?";
+// // 		$strOf_Command = "dir";
+		
+// 		$res = system($strOf_Command);
+// // 		$res = exec($strOf_Command, $lo_Exec_Result);
+// // 		$res = exec("dir", $lo_Exec_Result);
+		
+// 		debug("\$res =>");
+// 		debug(mb_convert_encoding($res, "utf-8"));
+// // 		debug($res);
+		
+// 		debug("\$lo_Exec_Result =>");
+// 		debug($lo_Exec_Result);
 		
 	}//ifm_Actions__0_1()
 
@@ -257,7 +291,9 @@ class IfmController extends AppController {
 // 			$this->ifm_Actions__0_1();
 			
 		} else if ($query_Action == CONS::$OP_1) {
-
+			
+			//_20200111_184149:next
+			
 			//1) change_file_names.bat
 			
 			$msg = "starting => '" . CONS::$OP_1_String_2. "'";
