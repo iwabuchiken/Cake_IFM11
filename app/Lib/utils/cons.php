@@ -68,6 +68,16 @@ class CONS {
 	public static $dpath_Log_Fx_Admin = "Log_Fx_Admin";
 	public static $fname_Log_Fx_Admin = "log_fx_admin.log";
 	
+	/************************************************************
+	 	lib_ea_tester
+	 ************************************************************/
+	/******************************
+	 	bar types
+	 ******************************/
+	public static	$strOf_BarType__SL = "C8";
+	
+	
+	
 	/****************************************
 		* csv files
 	****************************************/

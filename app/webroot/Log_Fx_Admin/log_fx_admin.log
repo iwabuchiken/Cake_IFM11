@@ -1503,3 +1503,976 @@ $typeOf_Position => BUY
 [01/09/2020 18:09:13 : \app\Lib\utils\fx\lib_ea_tester.php : 420] 
 (step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
 breaking the loop...
+[01/12/2020 12:46:27 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 219] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 245] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 280] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 129] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 60] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:46:27 : \app\Lib\utils\fx\lib_ea_tester.php : 421] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 12:54:18 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 219] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 245] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 280] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 129] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 60] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 447] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 12:54:18 : \app\Lib\utils\fx\lib_ea_tester.php : 421] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:41:04 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:41:04 : \app\Lib\utils\fx\lib_ea_tester.php : 265] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:41:04 : \app\Lib\utils\fx\lib_ea_tester.php : 291] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:41:04 : \app\Lib\utils\fx\lib_ea_tester.php : 326] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:41:04 : \app\Lib\utils\fx\lib_ea_tester.php : 175] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:41:04 : \app\Lib\utils\fx\lib_ea_tester.php : 95] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:41:14 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 265] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 291] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 326] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 175] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 95] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 108] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 493] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:41:14 : \app\Lib\utils\fx\lib_ea_tester.php : 467] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:42:28 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 267] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 293] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 328] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 177] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 97] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 110] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 495] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:42:28 : \app\Lib\utils\fx\lib_ea_tester.php : 469] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:43:45 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 268] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 294] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 329] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 178] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 98] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 111] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 496] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:43:45 : \app\Lib\utils\fx\lib_ea_tester.php : 470] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:45:34 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 269] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 295] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 330] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 179] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 99] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 112] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:34 : \app\Lib\utils\fx\lib_ea_tester.php : 471] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:45:41 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 269] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 295] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 330] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 179] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 99] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 112] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:41 : \app\Lib\utils\fx\lib_ea_tester.php : 471] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:45:59 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 269] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 295] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 330] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 179] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 99] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 112] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 497] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:45:59 : \app\Lib\utils\fx\lib_ea_tester.php : 471] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:46:21 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 296] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 331] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 180] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 113] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 498] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:46:21 : \app\Lib\utils\fx\lib_ea_tester.php : 472] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:47:19 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 271] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 297] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 332] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 181] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 101] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 114] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 499] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:19 : \app\Lib\utils\fx\lib_ea_tester.php : 473] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:47:33 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 272] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 298] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 333] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 182] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 102] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 115] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:33 : \app\Lib\utils\fx\lib_ea_tester.php : 474] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:47:46 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 272] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 298] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 333] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 182] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 102] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 115] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:46 : \app\Lib\utils\fx\lib_ea_tester.php : 474] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 13:47:54 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 272] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 298] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 333] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 182] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.1	$pos->val_SL	0.05
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	0
+
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 102] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 115] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 500] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 13:47:54 : \app\Lib\utils\fx\lib_ea_tester.php : 474] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 14:00:09 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 332] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 358] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 393] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 242] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1.000	$pos->trail_starting_pr	0.000
+
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 159] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 86] 
+(get_Bar_Type : step : j1 : N : 1) 78.75700000000001 <= 78.701
+$bd->price_Low	78.757
+$pos->pr_SL	78.701
+$bd->price_Low - $pos->pr_SL	0.056
+
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 172] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:00:09 : \app\Lib\utils\fx\lib_ea_tester.php : 534] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 14:02:03 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 332] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 358] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 393] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 242] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1.000	$pos->trail_starting_pr	0.000
+
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 159] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 86] 
+(get_Bar_Type : step : j1 : N : 1) 78.75700000000001 > 78.701 (not SL)
+$bd->price_Low	78.757
+$pos->pr_SL	78.701
+$bd->price_Low - $pos->pr_SL	0.056
+
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 172] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 560] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:02:03 : \app\Lib\utils\fx\lib_ea_tester.php : 534] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 14:12:19 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 413] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 439] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 474] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 323] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1.000	$pos->trail_starting_pr	0.000
+
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 240] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	78.757
+$pos->pr_SL	78.701
+$bd->price_Low - $pos->pr_SL	0.056
+
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->pr_High < $pos->pr_TP (TP)
+$bd->pr_High	0.000
+$pos->pr_TP	78.871
+$bd->pr_High - $pos->pr_TP	-78.871
+
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 253] $typeOf_Bar => 
+
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:12:19 : \app\Lib\utils\fx\lib_ea_tester.php : 615] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 14:13:44 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 413] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 439] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 474] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 323] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1.000	$pos->trail_starting_pr	0.000
+
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 240] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	78.757
+$pos->pr_SL	78.701
+$bd->price_Low - $pos->pr_SL	0.056
+
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (TP)
+$bd->price_High	78.762
+$pos->pr_TP	78.871
+$bd->price_High - $pos->pr_TP	-0.109
+
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 253] $typeOf_Bar => 
+
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:13:44 : \app\Lib\utils\fx\lib_ea_tester.php : 615] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 14:14:00 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 413] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 439] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 474] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 323] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1.000	$pos->trail_starting_pr	0.000
+
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 240] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	78.757
+$pos->pr_SL	78.701
+$bd->price_Low - $pos->pr_SL	0.056
+
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (TP)
+$bd->price_High	78.762
+$pos->pr_TP	78.871
+$bd->price_High - $pos->pr_TP	-0.109
+
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 253] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:00 : \app\Lib\utils\fx\lib_ea_tester.php : 615] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/12/2020 14:14:32 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 413] 
+(step : B : j1 : N : 1) position ==> NOT taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 439] 
+(step : B : j2 : Y : 1) pattern ==> detected
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 474] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 323] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1.000	$pos->trail_starting_pr	0.000
+
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 240] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	78.757
+$pos->pr_SL	78.701
+$bd->price_Low - $pos->pr_SL	0.056
+
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	78.762
+$pos->pr_TP	78.871
+$bd->price_High - $pos->pr_TP	-0.109
+
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 253] $typeOf_Bar => UNKNOWN
+
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 641] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/12/2020 14:14:32 : \app\Lib\utils\fx\lib_ea_tester.php : 615] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...

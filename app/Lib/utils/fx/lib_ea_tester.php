@@ -11,6 +11,188 @@ class LibEaTester {
 	* get_Bar_Type
 	* 	at : 2020/01/09 17:56:19
 	********************/
+	public static function get_Bar_Type__BUY($pos, $bd) {
+		//_20200112_133506:caller
+		//_20200112_133510:head
+		//_20200112_133513:wl
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
+		$strOf_Bar_Type = "UNKNOWN";
+		
+		/********************
+		 * step : 1
+		 * 		prep : conditions ==> for j1
+		 ********************/
+		$cond_1 = ($bd->price_Low <= $pos->pr_SL);
+		
+		
+// 		debug("\$cond_1 => '". ($cond_1 == true ? "yes" : "no") . "'");
+		
+// 		debug("\$bd->price_Low = " . number_format($bd->price_Low, 3) . " / " . "\$pos->pr_SL = " . number_format($pos->pr_SL, 3));
+		
+		/********************
+		 * step : j1
+		 * 		$bd->price_Low <= $pos->pr_SL ?
+		 ********************/
+		if ($cond_1 == true) {
+			/********************
+			 * step : j1 : Y
+			 * 		$bd->price_Low <= $pos->pr_SL
+			 ********************/
+			/********************
+			 * step : j1 : Y : 1
+			 * 		log
+			 ********************/
+			//_20200112_135454:tmp
+			$msg	= "\n";
+			
+			$msg	.= "(get_Bar_Type : step : j1 : Y : 1) \$bd->price_Low <= \$pos->pr_SL (SL)";
+			$msg	.= "\n";
+			
+			$msg	.= "\$bd->price_Low\t" . number_format($bd->price_Low, 3);
+			$msg	.= "\n";
+			
+			$msg	.= "\$pos->pr_SL\t" . number_format($pos->pr_SL, 3);
+			$msg	.= "\n";
+			
+			$msg	.= "\$bd->price_Low - \$pos->pr_SL\t" . number_format($bd->price_Low - $pos->pr_SL, 3);
+			$msg	.= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+		
+			/********************
+			 * step : j1 : Y : 2
+			 * 		set : bar type string
+			 ********************/
+			// C8
+			$strOf_Bar_Type = CONS::$strOf_BarType__SL;
+// 			$strOf_Bar_Type = "C8";
+			
+		} else {
+			/********************
+			 * step : j1 : N
+			 * 		$bd->price_Low > $pos->pr_SL
+			 ********************/
+			/********************
+			 * step : j1 : N : 1
+			 * 		log
+			 ********************/
+			$msg	= "\n";
+				
+			$msg	.= "(get_Bar_Type : step : j1 : N : 1) \$bd->price_Low > \$pos->pr_SL (not SL)";
+			$msg	.= "\n";
+
+			$msg	.= "\$bd->price_Low\t" . number_format($bd->price_Low, 3);
+			$msg	.= "\n";
+				
+			$msg	.= "\$pos->pr_SL\t" . number_format($pos->pr_SL, 3);
+			$msg	.= "\n";
+				
+			$msg	.= "\$bd->price_Low - \$pos->pr_SL\t" . number_format($bd->price_Low - $pos->pr_SL, 3);
+			$msg	.= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+
+			/********************
+			 * step : j1 : N : 2
+			 * 		set : conditions
+			 ********************/
+			$cond_2 = ($bd->price_High >= $pos->pr_TP);
+
+			/********************
+			 * step : j2
+			 * 		$bd->price_High >= $pos->pr_TP ?
+			 ********************/
+			if ($cond_2 == true) {
+				/********************
+				 * step : j2 : Y
+				 * 		$bd->price_High >= $pos->pr_TP
+				 ********************/
+				/********************
+				 * step : j2 : Y : 1
+				 * 		log
+				 ********************/
+				$msg	= "\n";
+				
+				$msg	.= "(get_Bar_Type : step : j2 : Y : 1) \$bd->price_High >= \$pos->pr_TP (TP)";
+				$msg	.= "\n";
+				
+				$msg	.= "\$bd->price_High\t" . number_format($bd->price_High, 3);
+				$msg	.= "\n";
+				
+				$msg	.= "\$pos->pr_TP\t" . number_format($pos->pr_TP, 3);
+				$msg	.= "\n";
+				
+				$msg	.= "\$bd->price_High - \$pos->pr_TP\t" . number_format($bd->price_High - $pos->pr_TP, 3);
+				$msg	.= "\n";
+				
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, $msg, __FILE__, __LINE__);
+			
+			} else {
+				/********************
+				 * step : j2 : N
+				 * 		$bd->price_High < $pos->pr_TP
+				 ********************/
+				/********************
+				 * step : j2 : N : 1
+				 * 		log
+				 ********************/
+				$msg	= "\n";
+				
+				$msg	.= "(get_Bar_Type : step : j2 : Y : 1) \$bd->price_High < \$pos->pr_TP (not TP)";
+				$msg	.= "\n";
+				
+				$msg	.= "\$bd->price_High\t" . number_format($bd->price_High, 3);
+				$msg	.= "\n";
+				
+				$msg	.= "\$pos->pr_TP\t" . number_format($pos->pr_TP, 3);
+				$msg	.= "\n";
+				
+				$msg	.= "\$bd->price_High - \$pos->pr_TP\t" . number_format($bd->price_High - $pos->pr_TP, 3);
+				$msg	.= "\n";
+				
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, $msg, __FILE__, __LINE__);
+				
+				//_20200112_142119:next
+				
+			}//if ($cond_2 == true)
+					
+		}//if ($cond_1 == true)
+		
+		
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		set val
+		 ********************/
+		$valOf_Ret = [$strOf_Bar_Type];
+// 		$valOf_Ret = ["UNKNOWN"];
+		
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
+		
+	}//get_Bar_Type__BUY($pos, $bd)
+	
+	/********************
+	* get_Bar_Type
+	* 	at : 2020/01/09 17:56:19
+	********************/
 // 	public static function get_Bar_Type($pos, $bd) {
 	public static function get_Bar_Type($pos, $bd, $typeOf_Position) {
 		//_20200109_175550:caller
@@ -60,7 +242,18 @@ class LibEaTester {
 					, $msg, __FILE__, __LINE__);
 			
 			//_20200109_181021:next
-		
+			//_20200112_133506:caller
+			$valOf_Ret = LibEaTester::get_Bar_Type__BUY($pos, $bd);
+			
+			$typeOf_Bar = $valOf_Ret[0];
+
+			$msg	= "\$typeOf_Bar => $typeOf_Bar";
+			$msg	.= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+				
 		} else {
 			/********************
 			* step : j1 : AX
@@ -112,16 +305,19 @@ class LibEaTester {
 		$msg = "\n"; $msg .= "(step : B : j2 : Y : 4) Pos ==> init comp. !!";
 		$msg .= "\n";
 			
-		$msg .= "\$pos->st_idx\t" . $pos->st_idx . "\t" . "\$pos->st_pr\t" . $pos->st_pr;
+		$msg .= "\$pos->st_idx\t" . $pos->st_idx . "\t" . "\$pos->st_pr\t" . number_format($pos->st_pr, 3);
 		$msg .= "\n";
 		
-		$msg .= "\$pos->val_TP\t" . $pos->val_TP . "\t" . "\$pos->val_SL\t" . $pos->val_SL;
+		$msg .= "\$pos->val_TP\t" . number_format($pos->val_TP, 3)
+						. "\t" . "\$pos->val_SL\t" . number_format($pos->val_SL, 3);
 		$msg .= "\n";
 		
-		$msg .= "\$pos->pr_TP\t" . $pos->pr_TP . "\t" . "\$pos->pr_SL\t" . $pos->pr_SL;
+		$msg .= "\$pos->pr_TP\t" . number_format($pos->pr_TP, 3)
+						. "\t" . "\$pos->pr_SL\t" . number_format($pos->pr_SL, 3);
 		$msg .= "\n";
 			
-		$msg .= "\$pos->trail_starting_idx\t" . $pos->trail_starting_idx . "\t" . "\$pos->trail_starting_pr\t" . $pos->trail_starting_pr;
+		$msg .= "\$pos->trail_starting_idx\t" . number_format($pos->trail_starting_idx, 3)
+						. "\t" . "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
 		$msg .= "\n";
 			
 		Utils::write_Log__Fx_Admin(
