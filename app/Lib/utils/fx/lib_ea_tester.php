@@ -278,7 +278,13 @@ class LibEaTester {
 	********************/
 // 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
 // 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
-	public static function j2_Y_4_2($pos, $idxOf_Loop, $bd, $val_TP, $val_SL, $val_SPREAD, $pr_TP, $pr_SL) {
+	public static function j2_Y_4_2(
+			$pos, $idxOf_Loop, $bd
+			, $val_TP, $val_SL, $val_SPREAD
+			, $pr_TP, $pr_SL
+			, $val_Trail_Starting
+			) {
+// 			$pos, $idxOf_Loop, $bd, $val_TP, $val_SL, $val_SPREAD, $pr_TP, $pr_SL) {
 		//_20200107_152525:caller
 		//_20200107_152528:head
 		//_20200107_152532:wl
@@ -300,6 +306,11 @@ class LibEaTester {
 		$pos->pr_TP		= $pr_TP;
 		$pos->pr_SL		= $pr_SL;
 		
+		$pos->val_Trail_Starting		= $val_Trail_Starting;
+		
+		$pos->trail_starting_pr		= $pos->val_Trail_Starting + $pos->st_pr;
+		
+		
 		//report
 		//debug
 		$msg = "\n"; $msg .= "(step : B : j2 : Y : 4) Pos ==> init comp. !!";
@@ -316,14 +327,13 @@ class LibEaTester {
 						. "\t" . "\$pos->pr_SL\t" . number_format($pos->pr_SL, 3);
 		$msg .= "\n";
 			
-		$msg .= "\$pos->trail_starting_idx\t" . number_format($pos->trail_starting_idx, 3)
+		$msg .= "\$pos->trail_starting_idx\t" . $pos->trail_starting_idx
 						. "\t" . "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
 		$msg .= "\n";
 			
 		Utils::write_Log__Fx_Admin(
 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 				, $msg, __FILE__, __LINE__);
-		
 		
 	}//public static function j2_Y_4_2() {
 		
@@ -380,8 +390,56 @@ class LibEaTester {
 	}//public static function init_Pos()
 	
 	/********************
-	* fx_tester_T_1__Exec
-	* 	at : 2020/01/06 13:10:56
+	* show_Basic_Pos_Data
+	* 	at : 2020/01/12 17:44:31
+	********************/
+// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
+// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
+	public static function show_Basic_Pos_Data($pos, $fname, $file_line) {
+		//_20200112_173841:caller
+		//_20200112_173843:head
+		//_20200112_173846:wl
+
+		//report
+		//debug
+		$msg = "\n"; $msg .= "(show_Basic_Pos_Data)";
+		$msg .= "\n";
+			
+		$msg .= "\$pos->st_idx\t" . $pos->st_idx . "\t" . "\$pos->st_pr\t" . number_format($pos->st_pr, 3);
+		$msg .= "\n";
+		
+		$msg .= "\$pos->cu_idx\t" . $pos->cu_idx . "\t" . "\$pos->cu_pr\t" . number_format($pos->cu_pr, 3);
+		$msg .= "\n";
+		
+		$msg .= "\$pos->rf_idx\t" . $pos->rf_idx . "\t" . "\$pos->rf_pr\t" . number_format($pos->rf_pr, 3);
+		$msg .= "\n";
+		
+		$msg .= "\$pos->ext_idx\t" . $pos->ext_idx . "\t" . "\$pos->ext_pr\t" . number_format($pos->ext_pr, 3);
+		$msg .= "\n";
+		
+		$msg .= "\$pos->val_TP\t" . number_format($pos->val_TP, 3)
+		. "\t" . "\$pos->val_SL\t" . number_format($pos->val_SL, 3)
+		. "\t" . "\$pos->val_SPREAD\t" . number_format($pos->val_SPREAD, 3);
+		$msg .= "\n";
+		
+		$msg .= "\$pos->pr_TP\t" . number_format($pos->pr_TP, 3)
+		. "\t" . "\$pos->pr_SL\t" . number_format($pos->pr_SL, 3);
+		$msg .= "\n";
+			
+		$msg .= "\$pos->trail_starting_idx\t" . $pos->trail_starting_idx
+		. "\t" . "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
+		$msg .= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, $fname, $file_line);
+		
+	}//public static function show_Basic_Pos_Data($pos, __FILE__, __LINE__) {
+		
+	/********************
+	* loop_J1_N
+	* 	at : 2020/01/12 17:44:40
 	********************/
 // 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
 // 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
@@ -463,6 +521,9 @@ class LibEaTester {
 			$pr_TP			= $bd->price_Open + ($val_TP + $val_SPREAD);
 			$pr_SL			= $bd->price_Open - ($val_SL + $val_SPREAD);
 			
+			$val_Trail_Starting	= CONS::$val_Trail_Starting;
+// 			$val_Trail_Starting	= 0.4;
+			
 			//debug
 			$msg = "\n"; $msg .= "(* step : B : j2 : Y : 3) calc ==> comp";
 			
@@ -493,8 +554,19 @@ class LibEaTester {
 			 * 		set ==> new vals
 			 ********************/
 			//_20200107_152525:caller
-			LibEaTester::j2_Y_4_2($pos, $idxOf_Loop, $bd, $val_TP, $val_SL, $val_SPREAD, $pr_TP, $pr_SL);
+			LibEaTester::j2_Y_4_2(
+							$pos, $idxOf_Loop, $bd
+							, $val_TP, $val_SL, $val_SPREAD
+							, $pr_TP, $pr_SL
+							, $val_Trail_Starting
+					);
+// 			LibEaTester::j2_Y_4_2($pos, $idxOf_Loop, $bd, $val_TP, $val_SL, $val_SPREAD, $pr_TP, $pr_SL);
 
+			//debug
+			//_20200112_173733:tmp
+			//_20200112_173841:caller
+			LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
+			
 			/********************
 			 * step : B : j2 : Y : 5
 			 * 		get ==> bar type

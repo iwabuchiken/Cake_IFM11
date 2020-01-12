@@ -66,6 +66,9 @@ class Pos {
 	public $val_SL	= 0.0;
 	public $val_SPREAD	= 0.0;
 	
+	public $val_Trail_Starting	= -1;
+// 	public $val_Trail_Starting	= 0.4;
+	
 	public $pr_TP	= 0.0;
 	public $pr_SL	= 0.0;
 // 	public $ts_TP	= 0.0;
