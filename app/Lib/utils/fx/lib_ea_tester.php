@@ -10,6 +10,9 @@ class LibEaTester {
 	/********************
 	* get_Bar_Type
 	* 	at : 2020/01/09 17:56:19
+	* 
+	* @return : [$strOf_Bar_Type]
+	* 
 	********************/
 	public static function get_Bar_Type__BUY($pos, $bd) {
 		//_20200112_133506:caller
@@ -344,6 +347,9 @@ class LibEaTester {
 	/********************
 	* get_Bar_Type
 	* 	at : 2020/01/09 17:56:19
+	* 
+	* @return : $valOf_Ret = $typeOf_Bar;
+	* 
 	********************/
 // 	public static function get_Bar_Type($pos, $bd) {
 	public static function get_Bar_Type($pos, $bd, $typeOf_Position) {
@@ -352,6 +358,12 @@ class LibEaTester {
 		//_20200109_175557:wl
 		
 		debug("get_Bar_Type");
+		
+		/********************
+		* step : 0
+		* 		prep : vars
+		********************/
+		$typeOf_Bar = "";
 		
 		/********************
 		* step : j1
@@ -395,9 +407,9 @@ class LibEaTester {
 			
 			//_20200109_181021:next
 			//_20200112_133506:caller
-			$valOf_Ret = LibEaTester::get_Bar_Type__BUY($pos, $bd);
+			$valOf_Ret__received = LibEaTester::get_Bar_Type__BUY($pos, $bd);
 			
-			$typeOf_Bar = $valOf_Ret[0];
+			$typeOf_Bar = $valOf_Ret__received[0];
 
 			$msg	= "\$typeOf_Bar => $typeOf_Bar";
 			$msg	.= "\n";
@@ -423,6 +435,21 @@ class LibEaTester {
 		}//if ($typeOf_Position == "SELL")
 		
 		//_20200113_124813:next
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		prep
+		 ********************/
+		$valOf_Ret = $typeOf_Bar;
+		
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
 		
 	}//public static function get_Bar_Type($pos, $bd) {
 	
@@ -729,10 +756,20 @@ class LibEaTester {
 			//_20200109_175550:caller
 			$typeOf_Position = "BUY";
 			
-			LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
+			$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
 			
+			$typeOf_Bar = $valOf_Ret__received;
 			
-		} else {
+			//debug
+			$msg = "\n"; $msg .= "(step : B : j2 : Y : 5) get ==> bar type ; $typeOf_Bar";
+			$msg .= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg
+					, __FILE__, __LINE__);
+				
+		} else {//if ($resultOf_Detect_Pattern == true) {
 			/********************
 			 * step : B : j2 : N
 			 * 		pattern ==> NOT detected
@@ -748,7 +785,7 @@ class LibEaTester {
 					, $msg
 					, __FILE__, __LINE__);
 				
-			
+			//_20200113_175050:next
 			
 		}//if ($resultOf_Detect_Pattern == true)
 		
