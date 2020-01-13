@@ -75,6 +75,10 @@ class CONS {
 	 	bar types
 	 ******************************/
 	public static	$strOf_BarType__SL = "C8";
+	public static	$strOf_BarType__TP = "C3";
+	
+	public static	$strOf_BarType__C4 = "C4";	# $bd->price_High <> $bd->price_Close
+	public static	$strOf_BarType__C5 = "C5";	# $bd->price_High == $bd->price_Close
 	
 	/******************************
 	 	prices

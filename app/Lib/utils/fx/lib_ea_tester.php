@@ -135,7 +135,7 @@ class LibEaTester {
 				Utils::write_Log__Fx_Admin(
 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 						, $msg, __FILE__, __LINE__);
-			
+				
 			} else {
 				/********************
 				 * step : j2 : N
@@ -164,7 +164,159 @@ class LibEaTester {
 						, $msg, __FILE__, __LINE__);
 				
 				//_20200112_142119:next
+				/********************
+				 * step : j2 : N : 2
+				 * 		conditions
+				 ********************/
+				$cond_3	= ($bd->price_High >= $pos->trail_starting_pr);
 				
+				/********************
+				 * step : j3
+				 * 		$bd->price_High >= $pos->$trail_starting_pr ? (trail start ?)
+				********************/
+				if ($cond_3 == true) {
+					/********************
+					 * step : j3 : Y
+					 * 		$bd->price_High >= $pos->$trail_starting_pr (trail ==> start)
+					 ********************/
+					/********************
+					 * step : j3 : Y : 1
+					 * 		log
+					 ********************/
+					$msg	.= "\n";
+					$msg	= "(step : j3 : Y : 1)";
+					$msg	.= " ";
+// 					$msg	.= "\n";
+					$msg	.= "\$bd->price_High >= \$pos->trail_starting_pr (trail ==> start)";
+					$msg	.= "\n";
+						
+					$msg	.= "\$bd->price_High\t" . number_format($bd->price_High, 3);
+					$msg	.= "\n";
+						
+					$msg	.= "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
+					$msg	.= "\n";
+						
+					Utils::write_Log__Fx_Admin(
+							CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+							, $msg, __FILE__, __LINE__);
+				
+				} else {
+					/********************
+					 * step : j3 : N
+					 * 		$bd->price_High < $pos->$trail_starting_pr (trail ==> NOT start)
+					 ********************/
+					/********************
+					 * step : j3 : N : 1
+					 * 		log
+					 ********************/
+					$msg	= "\n";
+					$msg	.= "(step : j3 : N : 1)";
+					$msg	.= " ";
+					
+					$msg	.= "\$bd->price_High < \$pos->trail_starting_pr (trail ==> NOT start)";
+					$msg	.= "\n";
+				
+					$msg	.= "\$bd->price_High\t" . number_format($bd->price_High, 3);
+					$msg	.= "\n";
+				
+					$msg	.= "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
+					$msg	.= "\n";
+				
+					Utils::write_Log__Fx_Admin(
+							CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+							, $msg, __FILE__, __LINE__);
+				
+					/********************
+					 * step : j3 : N : 2
+					 * 		conditions
+					 ********************/
+					$cond_4	= ($bd->price_High == $bd->price_Close);
+					
+					/********************
+					 * step : j4
+					 * 		$bd->price_High == $bd->price_Close ?
+					 ********************/
+					if ($cond_4 == true) {
+						/********************
+						 * step : j4 : Y
+						 * 		$bd->price_High == $bd->price_Close ==> C5
+						 ********************/
+						/********************
+						 * step : j4 : Y : 1
+						 * 		log
+						 ********************/
+						$msg	= "\n";
+						$msg	.= "(step : j4 : Y : 1)";
+						$msg	.= " ";
+							
+						$msg	.= "\$bd->price_High == \$bd->price_Close";
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_High\t" . number_format($bd->price_High, 3);
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_Close\t" . number_format($bd->price_Close, 3);
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_Close - \$bd->price_High\t"
+									 . number_format($bd->price_Close - $bd->price_High, 3);
+						$msg	.= "\n";
+						
+						Utils::write_Log__Fx_Admin(
+								CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+								, $msg, __FILE__, __LINE__);
+
+						/********************
+						 * step : j4 : Y : 2
+						 * 		set : bar type
+						 ********************/
+						$strOf_Bar_Type = CONS::$strOf_BarType__C5;
+						
+					} else {
+						/********************
+						 * step : j4 : N
+						 * 		$bd->price_High <> $bd->price_Close ==> C4
+						 ********************/
+						/********************
+						 * step : j4 : N : 1
+						 * 		log
+						 ********************/
+						$msg	.= "\n";
+						$msg	= "(step : j4 : N : 1)";
+						$msg	.= " ";
+							
+						$msg	= "\$bd->price_High <> \$bd->price_Close";
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_High\t" . number_format($bd->price_High, 3);
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_Close\t" . number_format($bd->price_Close, 3);
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_Close - \$bd->price_High\t"
+								. number_format($bd->price_Close - $bd->price_High, 3);
+						$msg	.= "\n";
+						
+						Utils::write_Log__Fx_Admin(
+								CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+								, $msg, __FILE__, __LINE__);
+						
+						/********************
+						 * step : j4 : N : 2
+						 * 		set : bar type
+						 ********************/
+						$strOf_Bar_Type = CONS::$strOf_BarType__C4;
+						
+					}//if ($cond_4 == true)
+					
+					
+					
+					
+						
+				}//if ($cond_3 == true)
+				
+								
 			}//if ($cond_2 == true)
 					
 		}//if ($cond_1 == true)
@@ -269,6 +421,8 @@ class LibEaTester {
 					, $msg, __FILE__, __LINE__);
 				
 		}//if ($typeOf_Position == "SELL")
+		
+		//_20200113_124813:next
 		
 	}//public static function get_Bar_Type($pos, $bd) {
 	
