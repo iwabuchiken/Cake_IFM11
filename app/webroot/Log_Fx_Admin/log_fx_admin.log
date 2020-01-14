@@ -1593,3 +1593,6 @@ $flg_Position => false
 [01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 890] 
 (step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
 breaking the loop...
+[01/14/2020 13:02:15 : \app\Controller\FxAdminController.php : 85] $fpath_MT4_Log_Files ==> C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20191224_073459[eap-2.id-1].[AUDJPY-1].dir\*
+[01/14/2020 13:02:15 : \app\Controller\FxAdminController.php : 128] 
+count(lo_MT4_Log_Files__Filtered) ==> 18

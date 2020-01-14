@@ -68,6 +68,9 @@ class CONS {
 	public static $dpath_Log_Fx_Admin = "Log_Fx_Admin";
 	public static $fname_Log_Fx_Admin = "log_fx_admin.log";
 	
+	public static $dpath_Log_Fx_Admin__Ticket_Num = "Log_Fx_Admin__Ticket_Num";
+	public static $fname_Log_Fx_Admin__Ticket_Num = "log_fx_admin__Ticket_Num.log";
+	
 	/************************************************************
 	 	lib_ea_tester
 	 ************************************************************/

@@ -53,6 +53,93 @@ class FxAdminController extends AppController {
 	* 		php : process_log_file
 	********************/
 	public function process_log_file__Get_ListOf_Ticket_Nums() {
+		//_20200114_130535:caller
+		//_20200114_130555:head
+		//_20200114_130558:wl
+		
+		/******************** (20 '*'s)
+		* step 1 : 0
+		* 	prep : log
+		********************/
+		$msg	= "\n";
+		
+		$msg	.= "process_log_file__Get_ListOf_Ticket_Nums => starting...";
+		$msg	.= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+// 				basename(CONS::$dpath_Log_Fx_Admin), CONS::$fname_Log_Fx_Admin__Ticket_Num
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin__Ticket_Num
+// 				CONS::$dpath_Log_Fx_Admin__Ticket_Num, CONS::$fname_Log_Fx_Admin__Ticket_Num
+// 				, $msg, basename(__FILE__), __LINE__);
+				, $msg, __FILE__, __LINE__);
+		
+		debug($msg);
+		
+		/********************
+		* step 1
+		* 	get : file handler
+		********************/
+		/********************
+		* step 1 : 1
+		* 	prep : vars
+		********************/
+		$dpath_MT4_Log_Files = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+				. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs"
+				."\\20191224_073459[eap-2.id-1].[AUDJPY-1].dir";
+		
+		$fname_MT4_Log_File = "[ea-3].(20191224_073459).log.(20191224_084212).copy";
+		
+		$fpath_MT4_Log_File = join(DS, 
+					array(
+							$dpath_MT4_Log_Files
+							, $fname_MT4_Log_File
+							
+					));
+		
+		/********************
+		* step 1 : 2
+		* 	file : open
+		********************/
+		$fin_MT4_Log_Files = fopen($fpath_MT4_Log_File, "r");
+		
+		//_20200114_132944:next
+		
+		/********************
+		* step 3
+		* 	file : close
+		********************/
+		fclose($fin_MT4_Log_Files);
+	
+		//debug
+		$msg	= "\n";
+		
+		$msg	.= "(step 3) file ==> closed";
+		$msg	.= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin__Ticket_Num
+				, $msg, __FILE__, __LINE__);
+		
+		/********************
+		 * step 1 : 1.4
+		 * 	filter
+		 ********************/
+		
+		/********************
+		 * step 1 : 1.3.X
+		 * 	file : close
+		 ********************/
+// 		fclose($fin_MT4_Log_File__Target);
+		
+	}//public function process_log_file__Get_ListOf_Ticket_Nums() {
+	
+	/******************** (20 '*'s)
+	* public function process_log_file__Get_ListOf_Ticket_Nums()
+	* at : 2020/01/03 12:52:13
+	* caller
+	* 		php : process_log_file
+	********************/
+	public function process_log_file__Get_ListOf_Ticket_Nums__DEPRECATED_20200114_130507() {
 		//_20200103_134838:caller
 		//_20200103_134919:head
 		//_20200103_134926:wl
@@ -203,7 +290,7 @@ class FxAdminController extends AppController {
 		 ********************/
 // 		fclose($fin_MT4_Log_File__Target);
 		
-	}//public function process_log_file__Get_ListOf_Ticket_Nums() {
+	}//public function process_log_file__Get_ListOf_Ticket_Nums__DEPRECATED_20200114_130507
 	
 	/******************** (20 '*'s)
 	* public function process_log_file()
@@ -217,6 +304,7 @@ class FxAdminController extends AppController {
 		* 	get : list of ticket nums from ==> log file (L1)
 		* 
 		********************/
+		//_20200114_130535:caller
 		$this->process_log_file__Get_ListOf_Ticket_Nums();
 		
 		/******************** (20 '*'s)
