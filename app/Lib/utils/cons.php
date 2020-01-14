@@ -72,6 +72,11 @@ class CONS {
 	 	lib_ea_tester
 	 ************************************************************/
 	/******************************
+	 	general
+	 ******************************/
+	public static 	$strOf_Pattern_Detection__Undetected = "UNDETECTED";
+	
+	/******************************
 	 	bar types
 	 ******************************/
 	public static	$strOf_BarType__SL = "C8";

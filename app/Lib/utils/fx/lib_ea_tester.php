@@ -630,7 +630,7 @@ class LibEaTester {
 		//_20200106_142421:head
 		//_20200106_142425:wl
 		/********************
-		 * step : 0
+		 * step : 0 : 1
 		 * 		prep : unpack
 		 * 		$lo_Vals = [
 				'val_TP'	=> 0.10
@@ -643,10 +643,16 @@ class LibEaTester {
 		$val_SPREAD		= $lo_Vals['val_SPREAD'];
 		
 		/********************
+		 * step : 0 : 2
+		 * 		vars
+		 ********************/
+		$typeOf_Bar = "";
+		
+		/********************
 		 * step : B : j1 : N : 1
 		 * 		log
 		 ********************/
-		$msg = "\n"; $msg .= "(step : B : j1 : N : 1) position ==> NOT taken";
+		$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken";
 			
 		Utils::write_Log__Fx_Admin(
 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
@@ -657,7 +663,9 @@ class LibEaTester {
 		 * step : B : j1 : N : 2
 		 * 		detect : pattern
 		 ********************/
-		$resultOf_Detect_Pattern = true;
+		//_20200114_115250:tmp
+// 		$resultOf_Detect_Pattern = true;
+		$resultOf_Detect_Pattern = false;
 		
 		/********************
 		 * step : B : j2
@@ -672,7 +680,7 @@ class LibEaTester {
 			 * step : B : j2 : Y : 1
 			 * 		log
 			 ********************/
-			$msg = "\n"; $msg .= "(step : B : j2 : Y : 1) pattern ==> detected";
+			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected";
 				
 			Utils::write_Log__Fx_Admin(
 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
@@ -761,7 +769,7 @@ class LibEaTester {
 			$typeOf_Bar = $valOf_Ret__received;
 			
 			//debug
-			$msg = "\n"; $msg .= "(step : B : j2 : Y : 5) get ==> bar type ; $typeOf_Bar";
+			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; $typeOf_Bar";
 			$msg .= "\n";
 			
 			Utils::write_Log__Fx_Admin(
@@ -778,7 +786,7 @@ class LibEaTester {
 			 * step : B : j2 : N : 1
 			 * 		log
 			 ********************/
-			$msg = "\n"; $msg .= "(step : B : j2 : N : 1) pattern ==> NOT detected";
+			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected";
 			
 			Utils::write_Log__Fx_Admin(
 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
@@ -786,6 +794,9 @@ class LibEaTester {
 					, __FILE__, __LINE__);
 				
 			//_20200113_175050:next
+			
+			//_
+			$typeOf_Bar = CONS::$strOf_Pattern_Detection__Undetected;
 			
 		}//if ($resultOf_Detect_Pattern == true)
 		
@@ -797,7 +808,9 @@ class LibEaTester {
 		 * step : C : X : 1
 		 * 		set
 		 ********************/
-		$valOf_Ret = [$flg_Position, $pos];
+		//_20200114_121654:next
+		$valOf_Ret = [$flg_Position, $pos, $typeOf_Bar];
+// 		$valOf_Ret = [$flg_Position, $pos];
 // 		$valOf_Ret = [$flg_Position];
 		
 		/********************
@@ -825,7 +838,7 @@ class LibEaTester {
 		// len
 		$lenOf_LO_BarDatas = count($lo_BarDatas);
 		
-		debug("\$lenOf_LO_BarDatas => " . $lenOf_LO_BarDatas);
+// 		debug("\$lenOf_LO_BarDatas => " . $lenOf_LO_BarDatas);
 		
 		// flags
 // 		$flg_Position = true;
@@ -861,8 +874,16 @@ class LibEaTester {
 		for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++) {
 			/********************
 			* step : B : 1
-			* 		
+			* 		loop start
 			********************/
+			$msg = "(step : B : 1) ========================= [loop : \$i = $i]";
+			$msg .= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+				
+			
 			/********************
 			* step : B : 2
 			* 		stopper
@@ -910,16 +931,45 @@ class LibEaTester {
 				 * step : B : j1 : N
 				 * 		position ==> NOT taken
 				 ********************/
+				/********************
+				 * step : B : j1 : N : 1
+				 * 		log
+				 ********************/
+				//debug
+				$msg = "\n";
+				
+				$msg .= "(step : B : j1 : N : 1) position ==> NOT taken";
+				$msg .= "\n";
+				
 				//_20200106_142418:caller
 				//$valOf_Ret = [$flg_Position, $pos];
 // 				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos);
 				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
 				
+				/********************
+				 * step : C : post-j1 : 1
+				 * 		log
+				 ********************/
 				// unpack
 				$flg_Position	= $valOf_Ret[0];
 				$pos			= $valOf_Ret[1];
 				
-				debug("\$flg_Position => " . $flg_Position);
+				//debug
+				$msg = "\n";
+				
+				$msg .= "(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned";
+				$msg .= "\n";
+				
+				//ref https://stackoverflow.com/questions/2795177/how-to-convert-boolean-to-string
+				$msg .= "\$flg_Position => " . var_export($flg_Position, true);
+// 				$msg .= "\$flg_Position => " . $flg_Position;
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, $msg, __FILE__, __LINE__);
+				
+// 				debug($msg);
 				
 // 				/********************
 // 				 * step : B : j1 : N : 1
