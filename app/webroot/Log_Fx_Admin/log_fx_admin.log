@@ -1,2295 +1,22 @@
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 394] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
+[01/16/2020 16:40:07 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 16:40:07 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
 
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 626] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
+[01/16/2020 16:40:07 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 16:40:07 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
 
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 300] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 219] $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 313] $typeOf_Bar => UNKNOWN
-
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 773] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:03:24 : \app\Lib\utils\fx\lib_ea_tester.php : 747] 
+[01/16/2020 16:40:07 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
 (step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
 breaking the loop...
-[01/13/2020 12:39:16 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 614] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 640] 
-(step : B : j2 : Y : 1) pattern ==> detected
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 678] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 477] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
+[01/16/2020 16:55:09 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
 
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 709] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 383] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 227] $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 267] $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 396] $typeOf_Bar => UNKNOWN
-
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:39:16 : \app\Lib\utils\fx\lib_ea_tester.php : 830] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/13/2020 12:40:08 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 614] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 640] 
-(step : B : j2 : Y : 1) pattern ==> detected
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 678] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 477] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 709] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 383] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 227] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 267] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 396] $typeOf_Bar => UNKNOWN
-
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 856] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:40:08 : \app\Lib\utils\fx\lib_ea_tester.php : 830] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/13/2020 12:44:42 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 625] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 651] 
-(step : B : j2 : Y : 1) pattern ==> detected
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 689] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 488] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 720] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 394] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 227] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 267] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 407] $typeOf_Bar => C5
-
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 867] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 12:44:42 : \app\Lib\utils\fx\lib_ea_tester.php : 841] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/13/2020 17:33:10 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 627] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 653] 
-(step : B : j2 : Y : 1) pattern ==> detected
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 691] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 490] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 722] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 394] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 100] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 164] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 227] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 267] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 407] $typeOf_Bar => C5
-
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 869] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:33:11 : \app\Lib\utils\fx\lib_ea_tester.php : 843] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/13/2020 17:43:19 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 680] 
-(step : B : j2 : Y : 1) pattern ==> detected
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 718] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 749] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 770] 
-(step : B : j2 : Y : 5) get ==> bar type ; C
-
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:43:19 : \app\Lib\utils\fx\lib_ea_tester.php : 880] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/13/2020 17:44:02 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 680] 
-(step : B : j2 : Y : 1) pattern ==> detected
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 718] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 749] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 770] 
-(step : B : j2 : Y : 5) get ==> bar type ; C5
-
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/13/2020 17:44:02 : \app\Lib\utils\fx\lib_ea_tester.php : 880] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 11:38:55 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 680] 
-(step : B : j2 : Y : 1) pattern ==> detected
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 718] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 749] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 770] 
-(step : B : j2 : Y : 5) get ==> bar type ; C5
-
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 906] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/14/2020 11:38:56 : \app\Lib\utils\fx\lib_ea_tester.php : 880] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 11:53:37 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:53:37 : \app\Lib\utils\fx\lib_ea_tester.php : 882] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 11:56:47 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 935] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => 
-
-[01/14/2020 11:56:47 : \app\Lib\utils\fx\lib_ea_tester.php : 882] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 11:58:16 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 937] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 11:58:16 : \app\Lib\utils\fx\lib_ea_tester.php : 882] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 12:00:50 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 1]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 2]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 3]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 4]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 5]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 6]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 7]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 8]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 9]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 10]
-
-[01/14/2020 12:00:50 : \app\Lib\utils\fx\lib_ea_tester.php : 890] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 12:02:51 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 1]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 2]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 3]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 4]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 5]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 6]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 7]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 8]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 9]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 945] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 10]
-
-[01/14/2020 12:02:51 : \app\Lib\utils\fx\lib_ea_tester.php : 890] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 12:04:18 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 1]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 2]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 3]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 4]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 5]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 6]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 7]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 8]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 9]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 873] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-(step : B : 1) ========================= [loop : $i = 10]
-
-[01/14/2020 12:04:18 : \app\Lib\utils\fx\lib_ea_tester.php : 890] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 12:04:37 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 948] 
-(step : B : j1 : N) position ==> NOT taken
-LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/14/2020 12:04:37 : \app\Lib\utils\fx\lib_ea_tester.php : 890] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 12:10:25 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/14/2020 12:10:25 : \app\Lib\utils\fx\lib_ea_tester.php : 890] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 12:11:27 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 654] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 788] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 959] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 873] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/14/2020 12:11:27 : \app\Lib\utils\fx\lib_ea_tester.php : 890] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/14/2020 13:02:15 : \app\Controller\FxAdminController.php : 85] $fpath_MT4_Log_Files ==> C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20191224_073459[eap-2.id-1].[AUDJPY-1].dir\*
-[01/14/2020 13:02:15 : \app\Controller\FxAdminController.php : 128] 
-count(lo_MT4_Log_Files__Filtered) ==> 18
-[01/16/2020 13:37:52 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:37:52 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:37:53 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 13:39:22 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 970] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position => false
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:39:22 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 13:47:10 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 977] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1() / $pos->st_pr = 0
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:47:10 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 13:49:25 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:49:25 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-()
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:49:26 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 13:49:44 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 978] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1-1 / $pos->st_pr = 0
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:49:44 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 13:51:18 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 794] 
-(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	false
-$pos : st_idx = -1(-1) / $pos->st_pr = 0
-$typeOf_Bar	UNDETECTED
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:51:18 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 13:52:44 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
 (loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 688] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 688] 
 (loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 726] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 726] 
 (* step : B : j2 : Y : 3) calc ==> comp
 $pr_Open = 78.761
 $pr_TP = 78.871
@@ -2297,14 +24,14 @@ $pr_SL = 78.701
 $val_TP = 0.1
 $val_SL = 0.05
 $val_SPREAD = 0.01
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
 (step : B : j2 : Y : 4) Pos ==> init comp. !!
 $pos->st_idx	0	$pos->st_pr	78.761
 $pos->val_TP	0.100	$pos->val_SL	0.050
 $pos->pr_TP	78.871	$pos->pr_SL	78.701
 $pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 757] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 757] 
 (show_Basic_Pos_Data)
 $pos->st_idx	0	$pos->st_pr	78.761
 $pos->cu_idx	0	$pos->cu_pr	78.762
@@ -2314,478 +41,371 @@ $pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
 $pos->pr_TP	78.871	$pos->pr_SL	78.701
 $pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
 (get_Bar_Type : step : j1 : A2 : BUY)
 $typeOf_Position => BUY
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
 (get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
 $bd->price_Low	78.757
 $pos->pr_SL	78.701
 $bd->price_Low - $pos->pr_SL	0.056
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
 (get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
 $bd->price_High	78.762
 $pos->pr_TP	78.871
 $bd->price_High - $pos->pr_TP	-0.109
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
 (step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
 $bd->price_High	78.762
 $pos->trail_starting_pr	78.801
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
 (step : j4 : Y : 1) $bd->price_High == $bd->price_Close
 $bd->price_High	78.762
 $bd->price_Close	78.762
 $bd->price_Close - $bd->price_High	0.000
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 778] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 778] 
 (loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C5
 
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	true
-$pos : st_idx = 0(NO ENTRY) / $pos->st_pr = 78.761
-$typeOf_Bar	C5
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:52:44 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 13:54:15 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 688] 
-(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 726] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 757] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 778] 
-(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C5
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 981] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	true
-$pos : st_idx = 0()) / $pos->st_pr = 78.761
-$typeOf_Bar	C5
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:54:15 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 13:55:06 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 688] 
-(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 726] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 757] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
-
-[01/16/2020 13:55:06 : \app\Lib\utils\fx\lib_ea_tester.php : 778] 
-(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C5
-
-[01/16/2020 13:59:22 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 688] 
-(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 726] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 757] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 778] 
-(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C5
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 985] 
-(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
-$flg_Position	true
-$typeOf_Bar	C5
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
-(step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
-
-[01/16/2020 13:59:22 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
-(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
-breaking the loop...
-[01/16/2020 14:00:04 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
-(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 688] 
-(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 726] 
-(* step : B : j2 : Y : 3) calc ==> comp
-$pr_Open = 78.761
-$pr_TP = 78.871
-$pr_SL = 78.701
-$val_TP = 0.1
-$val_SL = 0.05
-$val_SPREAD = 0.01
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
-(step : B : j2 : Y : 4) Pos ==> init comp. !!
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->val_TP	0.100	$pos->val_SL	0.050
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 757] 
-(show_Basic_Pos_Data)
-$pos->st_idx	0	$pos->st_pr	78.761
-$pos->cu_idx	0	$pos->cu_pr	78.762
-$pos->rf_idx	0	$pos->rf_pr	78.762
-$pos->ext_idx	-1	$pos->ext_pr	0.000
-$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
-$pos->pr_TP	78.871	$pos->pr_SL	78.701
-$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
-(get_Bar_Type : step : j1 : A2 : BUY)
-$typeOf_Position => BUY
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
-(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
-$bd->price_Low	78.757
-$pos->pr_SL	78.701
-$bd->price_Low - $pos->pr_SL	0.056
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
-(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
-$bd->price_High	78.762
-$pos->pr_TP	78.871
-$bd->price_High - $pos->pr_TP	-0.109
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
-(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
-$bd->price_High	78.762
-$pos->trail_starting_pr	78.801
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
-(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
-$bd->price_High	78.762
-$bd->price_Close	78.762
-$bd->price_Close - $bd->price_High	0.000
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 778] 
-(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C5
-
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 987] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 993] 
 (step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
 $flg_Position	true
 $pos : st_idx = 0(2019.04.24 12:30)) / $pos->st_pr = 78.761
 $typeOf_Bar	C5
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
 (step : B : j1 : Y : 1) position ==> taken
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
 
-[01/16/2020 14:00:04 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
+[01/16/2020 16:55:09 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/16/2020 17:01:22 : \app\Lib\utils\libfx.php : 169] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 0]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 660] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 688] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 726] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 78.761
+$pr_TP = 78.871
+$pr_SL = 78.701
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 517] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 757] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	78.761
+$pos->cu_idx	0	$pos->cu_pr	78.762
+$pos->rf_idx	0	$pos->rf_pr	78.762
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	78.871	$pos->pr_SL	78.701
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	78.801
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 406] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	78.757
+$pos->pr_SL	78.701
+$bd->price_Low - $pos->pr_SL	0.056
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	78.762
+$pos->pr_TP	78.871
+$bd->price_High - $pos->pr_TP	-0.109
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	78.762
+$pos->trail_starting_pr	78.801
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 270] 
+(step : j4 : Y : 1) $bd->price_High == $bd->price_Close
+$bd->price_High	78.762
+$bd->price_Close	78.762
+$bd->price_Close - $bd->price_High	0.000
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 419] $typeOf_Bar => C5
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 778] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C5
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 993] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 0(2019.04.24 12:30)) / $pos->st_pr = 78.761
+$typeOf_Bar	C5
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 0(2019.04.24 12:30)) / $pos->st_pr = 78.761
+$typeOf_Bar	C5
+(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 1]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 2]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 3]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 4]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 5]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 6]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 7]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 8]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 9]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 927] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 1026] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 884] (step : B : 1) ========================= [loop : $i = 10]
+
+[01/16/2020 17:01:22 : \app\Lib\utils\fx\lib_ea_tester.php : 901] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/16/2020 17:27:36 : \app\Lib\utils\libfx.php : 170] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-18000).20200116_171429.[SLICE-30].csv
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 0]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 661] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 689] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 727] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.94199999999999
+$pr_TP = 76.052
+$pr_SL = 75.882
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 758] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.933
+$pos->pr_SL	75.882
+$bd->price_Low - $pos->pr_SL	0.051
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.970
+$pos->pr_TP	76.052
+$bd->price_High - $pos->pr_TP	-0.082
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.970
+$pos->trail_starting_pr	75.982
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.970
+$bd->price_Close	75.955
+$bd->price_Close - $bd->price_High	-0.015
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 779] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 0(2020.01.16 10:00)) / $pos->st_pr = 75.94199999999999
+$typeOf_Bar	C4
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 0(2020.01.16 10:00)) / $pos->st_pr = 75.94199999999999
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 1]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 2]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 3]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 4]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 5]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 6]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 7]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 8]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 9]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 928] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 1027] 
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 885] (step : B : 1) ========================= [loop : $i = 10]
+
+[01/16/2020 17:27:36 : \app\Lib\utils\fx\lib_ea_tester.php : 902] 
 (step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
 breaking the loop...

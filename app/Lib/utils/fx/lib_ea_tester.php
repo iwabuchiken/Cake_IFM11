@@ -248,6 +248,7 @@ class LibEaTester {
 						 * step : j4 : Y : 1
 						 * 		log
 						 ********************/
+						//_20200116_170153:fix
 						$msg	= "\n";
 						$msg	.= "(step : j4 : Y : 1)";
 						$msg	.= " ";
@@ -1018,9 +1019,61 @@ class LibEaTester {
 			 * 		log
 			 ********************/
 			//_20200116_142816:next
+			$msg .= "(step : D : 1 : 1) for-loop : continue admin";
+			$msg .= "\n";
 			
-	
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
 					
+			/********************
+			 * step : D : 1 : 2
+			 * 		dispatch
+			 ********************/
+			if ($typeOf_Bar == CONS::$strOf_Pattern_Detection__Undetected) {
+				/********************
+				 * step : D : 1 : 2-1
+				 * 		UNDETECTED
+				 ********************/
+				//_20200116_173730:next
+			
+			} else if ($typeOf_Bar == CONS::$strOf_BarType__C4) {
+				/********************
+				 * step : D : 1 : 2-2
+				 * 		C4
+				 ********************/
+				
+			} else if ($typeOf_Bar == CONS::$strOf_BarType__C5) {
+				/********************
+				 * step : D : 1 : 2-3
+				 * 		C5
+				 ********************/
+				
+			} else if ($typeOf_Bar == CONS::$strOf_BarType__SL) {
+				/********************
+				 * step : D : 1 : 2-4
+				 * 		SL
+				 ********************/
+				
+			} else if ($typeOf_Bar == CONS::$strOf_BarType__TP) {
+				/********************
+				 * step : D : 1 : 2-5
+				 * 		TP
+				 ********************/
+				
+			} else {
+				/********************
+				 * step : D : 1 : 2-X
+				 * 		unknown bar type
+				 ********************/
+			
+				
+			}//if ($typeOf_Bar == )
+			
+			
+			
+			
+			
 		}//for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++)
 		
 	}//public static function fx_tester_T_1__Exec($lo_BarDatas)
