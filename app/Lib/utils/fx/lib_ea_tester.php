@@ -664,8 +664,8 @@ class LibEaTester {
 		 * 		detect : pattern
 		 ********************/
 		//_20200114_115250:tmp
-// 		$resultOf_Detect_Pattern = true;
-		$resultOf_Detect_Pattern = false;
+		$resultOf_Detect_Pattern = true;
+// 		$resultOf_Detect_Pattern = false;
 		
 		/********************
 		 * step : B : j2
@@ -925,6 +925,12 @@ class LibEaTester {
 				Utils::write_Log__Fx_Admin(
 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 						, $msg, __FILE__, __LINE__);
+				
+				/********************
+				 * step : B : j1 : Y : 2
+				 * 		processing : j1_Y_2
+				 ********************/
+				
 			
 			} else {
 				/********************
@@ -944,6 +950,8 @@ class LibEaTester {
 				//_20200106_142418:caller
 				//$valOf_Ret = [$flg_Position, $pos];
 // 				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos);
+
+				// $valOf_Ret = [$flg_Position, $pos, $typeOf_Bar]
 				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
 				
 				/********************
@@ -953,6 +961,7 @@ class LibEaTester {
 				// unpack
 				$flg_Position	= $valOf_Ret[0];
 				$pos			= $valOf_Ret[1];
+				$typeOf_Bar		= $valOf_Ret[2];
 				
 				//debug
 				$msg = "\n";
@@ -961,10 +970,24 @@ class LibEaTester {
 				$msg .= "\n";
 				
 				//ref https://stackoverflow.com/questions/2795177/how-to-convert-boolean-to-string
-				$msg .= "\$flg_Position => " . var_export($flg_Position, true);
-// 				$msg .= "\$flg_Position => " . $flg_Position;
+// 				$msg .= "\$flg_Position => " . var_export($flg_Position, true);
+				$msg .= "\$flg_Position\t" . var_export($flg_Position, true);
+				$msg .= "\n";
+				
+// 				debug("\$pos->st_idx => " . $pos->st_idx);
+// 				debug($lo_BarDatas[$pos->st_idx]);
+// 				debug($lo_BarDatas[$pos->st_idx]);
+				
+				$msg .= "\$pos : st_idx = " . $pos->st_idx
+						 . "(" . (($pos->st_idx >= 0) ? $lo_BarDatas[$pos->st_idx]->dateTime . ")" : "NO ENTRY") . ")"
+// 						 . "(" . (($pos->st_idx >= 0) ? $lo_BarDatas[$pos->st_idx]['$dateTime'] . ")" : "NO ENTRY") . ")"
+						. " / "
+						. "\$pos->st_pr = " . $pos->st_pr;
 				$msg .= "\n";
 					
+				$msg .= "\$typeOf_Bar\t$typeOf_Bar";
+				$msg .= "\n";
+				
 				Utils::write_Log__Fx_Admin(
 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 						, $msg, __FILE__, __LINE__);
@@ -986,7 +1009,17 @@ class LibEaTester {
 				
 			}//if ($flg_Position == true)
 			
+			/********************
+			 * step : D : 1
+			 * 		for-loop : continue admin
+			 ********************/
+			/********************
+			 * step : D : 1 : 1
+			 * 		log
+			 ********************/
+			//_20200116_142816:next
 			
+	
 					
 		}//for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++)
 		
