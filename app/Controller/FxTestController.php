@@ -57,6 +57,20 @@ class FxTestController extends AppController {
 		//_20200106_131002:wl
 
 		/******************** (20 '*'s)
+		 * step : 0 : 1
+		 * 	debug
+		 ********************/
+		$msg = "\n";
+		$msg .= "\n";
+		$msg .= "******************************** fx_tester_T_1() ********************************";
+		$msg .= "\n";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
+		/******************** (20 '*'s)
 		 * step : 1
 		 * 	prep : BarData
 		 *
@@ -108,8 +122,43 @@ class FxTestController extends AppController {
 		 * step : 2
 		 		tester ==> exec
 		 ********************/
+		//_20200117_125541:next
 		//_20200106_130954:caller
-		LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
+		$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
+		
+		// unpack
+		$flg_Position	= $valOf_Ret__received[0];
+		$pos			= $valOf_Ret__received[1];
+		$typeOf_Bar		= $valOf_Ret__received[2];
+		$numOf_Loop		= $valOf_Ret__received[3];
+		
+		//debug
+		$msg = "(controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)";
+		$msg .= "\n";
+		
+		$msg .= "tester ==> exec ==> comp";
+		$msg .= "\n";
+			
+		$msg .= "\$flg_Position\t" . (($flg_Position == true ? "true" : "false"))
+				. "\n"
+				. "\$typeOf_Bar\t" . $typeOf_Bar
+				. "\n"
+				. "\$pos->st_idx\t" . $pos->st_idx
+				. "\n"
+				. "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime
+				. "\n"
+				. "\$numOf_Loop\t" . $numOf_Loop
+				. "\n"
+				;
+		$msg .= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
+		
+		
+// 		LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
 // 		$this->fx_tester_T_1__Exec($lo_BarDatas);
 		
 		/******************** (20 '*'s)

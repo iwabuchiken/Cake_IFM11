@@ -809,8 +809,18 @@ class LibEaTester {
 		 * step : C : X : 1
 		 * 		set
 		 ********************/
+		//test:20200117_122008
+		$msg = "\n"; $msg .= "(loop_J1_N :: step : C : X : 1) TESTING... ==> \$typeOf_Bar set to --> "
+						. CONS::$strOf_BarType__SL . "(CONS::\$strOf_BarType__SL)";
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg
+				, __FILE__, __LINE__);
+		
+		$valOf_Ret = [$flg_Position, $pos, CONS::$strOf_BarType__SL];
 		//_20200114_121654:next
-		$valOf_Ret = [$flg_Position, $pos, $typeOf_Bar];
+// 		$valOf_Ret = [$flg_Position, $pos, $typeOf_Bar];
 // 		$valOf_Ret = [$flg_Position, $pos];
 // 		$valOf_Ret = [$flg_Position];
 		
@@ -863,6 +873,9 @@ class LibEaTester {
 				, 'val_SL'	=> 0.05
 				, 'val_SPREAD'	=> 0.01
 		];
+
+		// valof return
+		$valOf_Ret__received = [];
 		
 		/********************
 		* step : B
@@ -953,17 +966,17 @@ class LibEaTester {
 // 				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos);
 
 				// $valOf_Ret = [$flg_Position, $pos, $typeOf_Bar]
-				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
+				$valOf_Ret__received = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
 				
 				/********************
 				 * step : C : post-j1 : 1
 				 * 		log
 				 ********************/
 				// unpack
-				$flg_Position	= $valOf_Ret[0];
-				$pos			= $valOf_Ret[1];
-				$typeOf_Bar		= $valOf_Ret[2];
-				
+				$flg_Position	= $valOf_Ret__received[0];
+				$pos			= $valOf_Ret__received[1];
+				$typeOf_Bar		= $valOf_Ret__received[2];
+
 				//debug
 				$msg = "\n";
 				
@@ -1019,7 +1032,7 @@ class LibEaTester {
 			 * 		log
 			 ********************/
 			//_20200116_142816:next
-			$msg .= "(step : D : 1 : 1) for-loop : continue admin";
+			$msg = "(step : D : 1 : 1) for-loop : continue admin";
 			$msg .= "\n";
 			
 			Utils::write_Log__Fx_Admin(
@@ -1042,6 +1055,14 @@ class LibEaTester {
 				 * step : D : 1 : 2-2
 				 * 		C4
 				 ********************/
+				$msg = "(step : D : 1 : 2-2) C4";
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, $msg, __FILE__, __LINE__);
+				
+				LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
 				
 			} else if ($typeOf_Bar == CONS::$strOf_BarType__C5) {
 				/********************
@@ -1054,6 +1075,46 @@ class LibEaTester {
 				 * step : D : 1 : 2-4
 				 * 		SL
 				 ********************/
+				/********************
+				 * step : D : 1 : 2-4 : 1
+				 * 		log
+				 ********************/
+				$msg = "(step : D : 1 : 2-4 : 1) SL";
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, $msg, __FILE__, __LINE__);
+				
+				LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
+				
+				/********************
+				 * step : D : 1 : 2-4 : 2
+				 * 		set val : loop num
+				 ********************/
+				$msg = "(step : D : 1 : 2-4 : 2) set val : loop num";
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, $msg, __FILE__, __LINE__);
+				
+				$valOf_Ret__received[3] = $i;
+				
+				/********************
+				 * step : D : 1 : 2-4 : 3
+				 * 		loop ==> break
+				 ********************/
+				$msg = "(step : D : 1 : 2-4 : 3) for-loop ==> breaking... (\$i = $i)";
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, $msg, __FILE__, __LINE__);
+				
+				break;
+				
+// 				LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
 				
 			} else if ($typeOf_Bar == CONS::$strOf_BarType__TP) {
 				/********************
@@ -1071,10 +1132,23 @@ class LibEaTester {
 			}//if ($typeOf_Bar == )
 			
 			
-			
-			
-			
 		}//for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++)
+
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		prep
+		 ********************/
+		$valOf_Ret = $valOf_Ret__received;
+		
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
 		
 	}//public static function fx_tester_T_1__Exec($lo_BarDatas)
 		
