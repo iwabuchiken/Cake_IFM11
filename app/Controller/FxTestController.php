@@ -62,7 +62,11 @@ class FxTestController extends AppController {
 		 ********************/
 		$msg = "\n";
 		$msg .= "\n";
-		$msg .= "******************************** fx_tester_T_1() ********************************";
+		$msg .= "******************************** fx_tester_T_1() "
+				. "[" 
+				. Utils::get_CurrentTime()
+				. "] "
+				. "********************************";
 		$msg .= "\n";
 		$msg .= "\n";
 		
@@ -122,39 +126,124 @@ class FxTestController extends AppController {
 		 * step : 2
 		 		tester ==> exec
 		 ********************/
-		//_20200117_125541:next
-		//_20200106_130954:caller
-		$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
+		// counter
+		$cntOf_While = 0;
+		$maxOf_While_Loop = 5;
 		
-		// unpack
-		$flg_Position	= $valOf_Ret__received[0];
-		$pos			= $valOf_Ret__received[1];
-		$typeOf_Bar		= $valOf_Ret__received[2];
-		$numOf_Loop		= $valOf_Ret__received[3];
+		//_20200117_125541:next
+		while (true) {
+			
+			/********************
+			 * step : 2 : 1
+			 		exec
+			 ********************/
+			//_20200106_130954:caller
+			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
+			
+			/********************
+			 * step : 2 : 2
+			 		unpack ==> received vals
+			 ********************/
+			// unpack
+			$flg_Position	= $valOf_Ret__received[0];
+			$pos			= $valOf_Ret__received[1];
+			$typeOf_Bar		= $valOf_Ret__received[2];
+			$numOf_Loop		= $valOf_Ret__received[3];
+			
+			/********************
+			 * step : 2 : 3
+			 		log
+			 ********************/
+			//debug
+			$msg = "(controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)";
+			$msg .= "\n";
+			
+			$msg .= "tester ==> exec ==> comp";
+			$msg .= "\n";
+				
+			$msg .= "\$flg_Position\t" . (($flg_Position == true ? "true" : "false"))
+					. "\n";
+			
+			$msg .= "\$typeOf_Bar\t" . $typeOf_Bar
+					. "\n";
+			
+			$msg .= "\$pos->st_idx\t" . $pos->st_idx
+							. "\n";
+			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime
+									. "\n";
+
+			$msg .= "\$numOf_Loop\t" . $numOf_Loop
+					. "\n";
+			
+			$msg .= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+			CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+			, $msg, __FILE__, __LINE__);
+
+			/********************
+			 * step : 2 : 4
+			 		judge : continue while ?
+			 ********************/
+			//test
+			if (true) {
+			
+				break;
+				
+			}//if (true)
+			;
+// 			break;
+			
+			/********************
+			 * step : 2 : 5
+			 		counter
+			 ********************/
+			//_20200118_155832:next
+			$cntOf_While += 1;
+			
+		}//while (true) { 
 		
 		//debug
-		$msg = "(controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)";
-		$msg .= "\n";
-		
-		$msg .= "tester ==> exec ==> comp";
-		$msg .= "\n";
-			
-		$msg .= "\$flg_Position\t" . (($flg_Position == true ? "true" : "false"))
-				. "\n"
-				. "\$typeOf_Bar\t" . $typeOf_Bar
-				. "\n"
-				. "\$pos->st_idx\t" . $pos->st_idx
-				. "\n"
-				. "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime
-				. "\n"
-				. "\$numOf_Loop\t" . $numOf_Loop
-				. "\n"
-				;
+		$msg = "while ==> comp";
 		$msg .= "\n";
 			
 		Utils::write_Log__Fx_Admin(
 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 				, $msg, __FILE__, __LINE__);
+		
+		
+// 		//_20200106_130954:caller
+// 		$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
+		
+// 		// unpack
+// 		$flg_Position	= $valOf_Ret__received[0];
+// 		$pos			= $valOf_Ret__received[1];
+// 		$typeOf_Bar		= $valOf_Ret__received[2];
+// 		$numOf_Loop		= $valOf_Ret__received[3];
+		
+// 		//debug
+// 		$msg = "(controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)";
+// 		$msg .= "\n";
+		
+// 		$msg .= "tester ==> exec ==> comp";
+// 		$msg .= "\n";
+			
+// 		$msg .= "\$flg_Position\t" . (($flg_Position == true ? "true" : "false"))
+// 				. "\n"
+// 				. "\$typeOf_Bar\t" . $typeOf_Bar
+// 				. "\n"
+// 				. "\$pos->st_idx\t" . $pos->st_idx
+// 				. "\n"
+// 				. "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime
+// 				. "\n"
+// 				. "\$numOf_Loop\t" . $numOf_Loop
+// 				. "\n"
+// 				;
+// 		$msg .= "\n";
+			
+// 		Utils::write_Log__Fx_Admin(
+// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 				, $msg, __FILE__, __LINE__);
 		
 		
 		

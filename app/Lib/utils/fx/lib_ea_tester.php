@@ -809,18 +809,18 @@ class LibEaTester {
 		 * step : C : X : 1
 		 * 		set
 		 ********************/
-		//test:20200117_122008
-		$msg = "\n"; $msg .= "(loop_J1_N :: step : C : X : 1) TESTING... ==> \$typeOf_Bar set to --> "
-						. CONS::$strOf_BarType__SL . "(CONS::\$strOf_BarType__SL)";
+// 		//test:20200117_122008
+// 		$msg = "\n"; $msg .= "(loop_J1_N :: step : C : X : 1) TESTING... ==> \$typeOf_Bar set to --> "
+// 						. CONS::$strOf_BarType__SL . "(CONS::\$strOf_BarType__SL)";
 			
-		Utils::write_Log__Fx_Admin(
-				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-				, $msg
-				, __FILE__, __LINE__);
+// 		Utils::write_Log__Fx_Admin(
+// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 				, $msg
+// 				, __FILE__, __LINE__);
 		
-		$valOf_Ret = [$flg_Position, $pos, CONS::$strOf_BarType__SL];
+// 		$valOf_Ret = [$flg_Position, $pos, CONS::$strOf_BarType__SL];
 		//_20200114_121654:next
-// 		$valOf_Ret = [$flg_Position, $pos, $typeOf_Bar];
+		$valOf_Ret = [$flg_Position, $pos, $typeOf_Bar];
 // 		$valOf_Ret = [$flg_Position, $pos];
 // 		$valOf_Ret = [$flg_Position];
 		
@@ -877,6 +877,9 @@ class LibEaTester {
 		// valof return
 		$valOf_Ret__received = [];
 		
+		// for-loop index
+		$idxOf_For_Loop = -1;
+		
 		/********************
 		* step : B
 		* 		for-loop
@@ -886,6 +889,13 @@ class LibEaTester {
 		* 		setup
 		********************/
 		for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++) {
+			
+			/********************
+			* step : B : 0
+			* 		prep
+			********************/
+			$idxOf_For_Loop = $i;
+			
 			/********************
 			* step : B : 1
 			* 		loop start
@@ -1142,6 +1152,9 @@ class LibEaTester {
 		 * step : X : 1
 		 * 		prep
 		 ********************/
+		// loop index
+		$valOf_Ret__received[3] = $idxOf_For_Loop;
+		
 		$valOf_Ret = $valOf_Ret__received;
 		
 		/********************
