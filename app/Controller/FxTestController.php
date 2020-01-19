@@ -120,15 +120,37 @@ class FxTestController extends AppController {
 			
 		}//if ($lo_BarDatas == -1)
 		
+		//debug
+		//_20200119_183513:tmp
+		$msg = "\$lo_BarDatas[0]->dateTime\t" . $lo_BarDatas[0]->dateTime;
+		$msg .= "\$lo_BarDatas[count(\$lo_BarDatas) - 1]->dateTime\t" . $lo_BarDatas[count($lo_BarDatas) - 1]->dateTime;
+		$msg .= "\n";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
+		//_20200119_184045:next
+		
 		//_20200105_174937:next
 		
 		/********************
 		 * step : 2
 		 		tester ==> exec
 		 ********************/
+		/********************
+		 * step : 2 : 0
+		 		prep : vars
+		 ********************/
 		// counter
 		$cntOf_While = 0;
-		$maxOf_While_Loop = 5;
+		$maxOf_While_Loop = 3;
+// 		$maxOf_While_Loop = 5;
+		
+		// list
+		$lo_Pos = array();
+		
 		
 		//_20200117_125541:next
 		while (true) {
@@ -149,6 +171,12 @@ class FxTestController extends AppController {
 			$pos			= $valOf_Ret__received[1];
 			$typeOf_Bar		= $valOf_Ret__received[2];
 			$numOf_Loop		= $valOf_Ret__received[3];
+			
+			/********************
+			 * step : 2 : 2.1
+			 		received vals ==> to list
+			 ********************/
+			array_push($lo_Pos, $pos);
 			
 			/********************
 			 * step : 2 : 3
@@ -183,34 +211,84 @@ class FxTestController extends AppController {
 
 			/********************
 			 * step : 2 : 4
-			 		judge : continue while ?
-			 ********************/
-			//test
-			if (true) {
-			
-				break;
-				
-			}//if (true)
-			;
-// 			break;
-			
-			/********************
-			 * step : 2 : 5
 			 		counter
 			 ********************/
 			//_20200118_155832:next
 			$cntOf_While += 1;
 			
+			/********************
+			 * step : 2 : 5
+			 		stopper
+			 ********************/
+			if ($cntOf_While >= $maxOf_While_Loop) {
+			
+				$msg = "\$cntOf_While\t" . $cntOf_While
+					. " / "
+					. "\$maxOf_While_Loop\t" . $maxOf_While_Loop
+					. "\n";
+				
+				$msg .= "breaking the while loop...";
+				$msg .= "\n";
+				
+				Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+				
+				// break
+				break;
+				
+			}//if ($cntOf_While >= $maxOf_While_Loop)
+			;
+			
 		}//while (true) { 
 		
+		/********************
+		 * step : 3
+		 		post-while
+		 ********************/
+		/********************
+		 * step : 3 : 1
+		 		log
+		 ********************/
 		//debug
-		$msg = "while ==> comp";
+		$msg = "(step : 3 : 1) while ==> comp";
+		$msg .= "\n";
+			
+		$msg .= "count(\$lo_Pos)\t" . count($lo_Pos);
 		$msg .= "\n";
 			
 		Utils::write_Log__Fx_Admin(
 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 				, $msg, __FILE__, __LINE__);
 		
+		/********************
+		 * step : 3 : 2
+		 		debug : list of "pos"-s
+		 ********************/
+		$lenOf_LO_Pos = count($lo_Pos);
+		
+		//show
+		$msg = "\n";
+		
+		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
+		
+			$pos = $lo_Pos[$i];
+			
+			$msg .= "\$pos->st_idx\t" . $pos->st_idx;
+			$msg .= " / ";
+			$msg .= "\$pos->st_pr\t" . $pos->st_pr;
+			$msg .= "\n";
+			
+			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
+			$msg .= "\n";
+			$msg .= "\n";
+			
+		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
+		
+		//debug : write
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
 		
 // 		//_20200106_130954:caller
 // 		$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
