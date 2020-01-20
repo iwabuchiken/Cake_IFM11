@@ -255,5 +255,224 @@ class Libfx {
 		
 	}//public static function get_ListOf_BarDatas() {
 	
+	/********************
+	 * reverse_LO_BarDatas
+	 *
+	 * @return
+	 * 		-1		fopen ==> returned false
+	 *
+	 ********************/
+	public static function reverse_LO_BarDatas($lo_BarDatas, $strOf_Direction) {
+		//_20200120_151446:caller
+		//_20200120_151450:head
+		//_20200120_151453:wl
+
+		/********************
+		 * step : 0
+		 		prep : log
+		 ********************/		
+		$msg = "reverse_LO_BarDatas";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
+		/********************
+		 * step : 0 : 2
+		 		prep : vars
+		 ********************/		
+		$lenOf_LO_BarDatas = count($lo_BarDatas);
+		
+		/********************
+		 * step : 1
+		 		get : first, last elements
+		 ********************/		
+		$elem_First = $lo_BarDatas[0];
+		$elem_Last = $lo_BarDatas[count($lo_BarDatas) - 1];
+		
+		$msg = "\$elem_First->dateTime\t" . $elem_First->dateTime;
+		$msg .= "\n";
+		
+		$msg = "\$elem_Last->dateTime\t" . $elem_Last->dateTime;
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
+		/********************
+		 * step : 2
+		 		judge : current sorting order
+		 ********************/
+		$strOf_Direction__Current = "";
+		
+		/********************
+		 * step : 2.1
+		 		conditions
+		 ********************/
+		$cond_1 = ($elem_First->dateTime < $elem_Last->dateTime);
+		
+		/********************
+		 * step : 2.2
+		 		judge
+		 ********************/
+		if ($cond_1 == true) {
+		
+			$msg = "order ==> ascending";
+			$msg .= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+			
+			// set
+			$strOf_Direction__Current = CONS::$strOf_Sort_Direction_LO_BarDatas__ASC;
+			
+		} else {
+		
+			$msg = "order ==> descending";
+			$msg .= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+				
+			// set
+			$strOf_Direction__Current = CONS::$strOf_Sort_Direction_LO_BarDatas__DSC;
+				
+		}//if ($cond_1 == true)
+		
+		/********************
+		 * step : j1
+		 		dispatch
+		 ********************/
+		/********************
+		 * step : j1 : 1
+		 		conditions
+		 ********************/
+		$cond_1 = ($strOf_Direction__Current == CONS::$strOf_Sort_Direction_LO_BarDatas__ASC
+					&& $strOf_Direction == CONS::$strOf_Sort_Direction_LO_BarDatas__ASC);
+		
+		$cond_2 = ($strOf_Direction__Current == CONS::$strOf_Sort_Direction_LO_BarDatas__DSC
+					&& $strOf_Direction == CONS::$strOf_Sort_Direction_LO_BarDatas__ASC);
+		
+		$cond_3 = ($strOf_Direction__Current == CONS::$strOf_Sort_Direction_LO_BarDatas__ASC
+					&& $strOf_Direction == CONS::$strOf_Sort_Direction_LO_BarDatas__DSC);
+		
+		$cond_4 = ($strOf_Direction__Current == CONS::$strOf_Sort_Direction_LO_BarDatas__DSC
+					&& $strOf_Direction == CONS::$strOf_Sort_Direction_LO_BarDatas__DSC);
+		
+		/********************
+		 * step : j1 : 2
+		 		dispatch ==> exec
+		 ********************/
+		$lo_BarDatas__Processed = array();
+		
+		if ($cond_1 == true) {
+		
+			$msg = "param = ASC / current = ASC";
+			$msg .= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+			
+			// set
+			$lo_BarDatas__Processed = $lo_BarDatas;
+		
+		} else if ($cond_2 == true) {
+			
+// 			$msg = "current = ASC / param = DSC";
+			$msg = "current = DSC / param = ASC";
+// 			$msg = "current = DSC / param = ASC (coding...)";
+			$msg .= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+				
+			// build
+// 			$lo_BarDatas__Processed = $lo_BarDatas;
+			for ($i = $lenOf_LO_BarDatas - 1; $i >= 0; $i --) {
+// 			for ($i = $lenOf_LO_BarDatas; $i > 0; $i --) {
+// 			for ($i = $lenOf_LO_BarDatas; $i >= 0; $i --) {
+			
+				// elem
+				$item = $lo_BarDatas[$i];
+				
+				array_push($lo_BarDatas__Processed, $item);
+				
+			}//for ($i = $lenOf_LO_BarDatas; $i >= 0; $i --) {
+			
+		} else if ($cond_3 == true) {
+			
+// 			$msg = "current = ASC / param = DSC (coding...)";
+			$msg = "current = ASC / param = DSC";
+			$msg .= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+
+			// build
+			for ($i = $lenOf_LO_BarDatas - 1; $i >= 0; $i --) {
+					
+				// elem
+				$item = $lo_BarDatas[$i];
+			
+				array_push($lo_BarDatas__Processed, $item);
+			
+			}//for ($i = $lenOf_LO_BarDatas; $i >= 0; $i --) {
+					
+// 			// set
+// 			$lo_BarDatas__Processed = $lo_BarDatas;
+			
+		} else if ($cond_4 == true) {
+			
+			$msg = "current = DSC / param = DSC";
+			$msg .= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+				
+			// set
+			$lo_BarDatas__Processed = $lo_BarDatas;
+			
+		} else {
+		
+			$msg = "unknown combination : current = '$strOf_Direction__Current' / param = '$strOf_Direction'";
+			$msg .= "\n";
+			$msg .= "==> default : no processing";
+			$msg .= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+			
+			// set
+			$lo_BarDatas__Processed = $lo_BarDatas;
+			
+		}//if ($cond_1 == true)
+		
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		set val
+		 ********************/
+		$valOf_Ret = $lo_BarDatas__Processed;
+		
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
+		
+	}//reverse_LO_BarDatas($lo_BarDatas, $strOf_Direction)
+	
 }//class Libfx
 	

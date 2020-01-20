@@ -62,11 +62,23 @@ class CONS {
 // 						);
 // // 	app\Lib\data\csv\xcode_memos
 
+	/************************************************************
+	 	fx_admin 
+	 ************************************************************/
 	/******************************
-	 	Paths and names : fx_admin
+	 	fx_admin : utils
+	 ******************************/
+	// ascending, datetime
+	public static $strOf_Sort_Direction_LO_BarDatas__ASC = "ascending";
+	// descending, datetime
+	public static $strOf_Sort_Direction_LO_BarDatas__DSC = "descending";
+	
+	/******************************
+	 	fx_admin : Paths and names 
 	 ******************************/
 	public static $dpath_Log_Fx_Admin = "Log_Fx_Admin";
 	public static $fname_Log_Fx_Admin = "log_fx_admin.log";
+// 	public static final $fname_Log_Fx_Admin__Orig = "log_fx_admin.log";	//=> "Error: Cannot declare property CONS::$fname_Log_Fx_Admin__Orig final, the final modifier is allowed only for methods and classes"
 	
 	public static $dpath_Log_Fx_Admin__Ticket_Num = "Log_Fx_Admin__Ticket_Num";
 	public static $fname_Log_Fx_Admin__Ticket_Num = "log_fx_admin__Ticket_Num.log";

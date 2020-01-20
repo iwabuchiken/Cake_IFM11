@@ -56,6 +56,19 @@ class FxTestController extends AppController {
 		//_20200106_130959:head
 		//_20200106_131002:wl
 
+		/********************
+		 * step : 0 : 0
+		 * 		prep : log file name
+		 ********************/
+		//"log_fx_admin.log"
+		$tokensOf_fname_Log = explode(".", CONS::$fname_Log_Fx_Admin);
+		
+		$strOf_Time_Label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+		CONS::$fname_Log_Fx_Admin = "$tokensOf_fname_Log[0].[tester_T_1]" 
+								. "." . "($strOf_Time_Label)"
+								. "." . $tokensOf_fname_Log[1];
+		
 		/******************** (20 '*'s)
 		 * step : 0 : 1
 		 * 	debug
@@ -122,9 +135,10 @@ class FxTestController extends AppController {
 		
 		//debug
 		//_20200119_183513:tmp
-		$msg = "\$lo_BarDatas[0]->dateTime\t" . $lo_BarDatas[0]->dateTime;
-		$msg .= "\$lo_BarDatas[count(\$lo_BarDatas) - 1]->dateTime\t" . $lo_BarDatas[count($lo_BarDatas) - 1]->dateTime;
+		$msg = "\n";
+		$msg .= "\$lo_BarDatas[0]->dateTime\t" . $lo_BarDatas[0]->dateTime;
 		$msg .= "\n";
+		$msg .= "\$lo_BarDatas[count(\$lo_BarDatas) - 1]->dateTime\t" . $lo_BarDatas[count($lo_BarDatas) - 1]->dateTime;
 		$msg .= "\n";
 		
 		Utils::write_Log__Fx_Admin(
@@ -132,6 +146,23 @@ class FxTestController extends AppController {
 				, $msg, __FILE__, __LINE__);
 		
 		//_20200119_184045:next
+// 		Libfx::reverse_LO_BarDatas($lo_BarDatas, CONS::$strOf_Sort_Direction_LO_BarDatas__ASC);
+		$lo_BarDatas = Libfx::reverse_LO_BarDatas($lo_BarDatas, CONS::$strOf_Sort_Direction_LO_BarDatas__ASC);
+		
+		//debug
+		$msg = "\n";
+		$msg .= "sorting ==> comp";
+		$msg .= "\n";
+		$msg .= "\$lo_BarDatas[0]->dateTime\t" . $lo_BarDatas[0]->dateTime;
+		$msg .= "\n";
+		$msg .= "\$lo_BarDatas[count(\$lo_BarDatas) - 1]->dateTime\t" . $lo_BarDatas[count($lo_BarDatas) - 1]->dateTime;
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
+		
 		
 		//_20200105_174937:next
 		

@@ -618,7 +618,42 @@ class LibEaTester {
 				, $msg, $fname, $file_line);
 		
 	}//public static function show_Basic_Pos_Data($pos, __FILE__, __LINE__) {
-		
+
+	/********************
+	 * show_Basic_Pos_Data
+	 * 	at : 2020/01/12 17:44:31
+	 ********************/
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
+	public static function show_Basic_BarData_Data($bd, $fname, $file_line) {
+		//_20200120_161219:caller
+		//_20200120_161225:head
+		//_20200120_161228:wl
+	
+		//report
+		//debug
+		$msg = "\n"; $msg .= "(show_Basic_BarData_Data)";
+		$msg .= "\n";
+			
+		$msg .= "\$bd->dateTime\t" . $bd->dateTime;
+		$msg .= "\n";
+	
+		$msg .= "\$bd->price_Open\t" . number_format($bd->price_Open, 3);
+		$msg .= "\n";
+	
+		$msg .= "\$bd->price_Close\t" . number_format($bd->price_Close, 3);
+		$msg .= "\n";
+		$msg .= "\n";
+	
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, $fname, $file_line);
+	
+	}//public static function show_Basic_BarData_Data($pos, $fname, $file_line)
+	
+	
 	/********************
 	* loop_J1_N
 	* 	at : 2020/01/12 17:44:40
@@ -896,6 +931,7 @@ class LibEaTester {
 			********************/
 			$idxOf_For_Loop = $i;
 			
+			
 			/********************
 			* step : B : 1
 			* 		loop start
@@ -907,6 +943,13 @@ class LibEaTester {
 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 					, $msg, __FILE__, __LINE__);
 				
+			/********************
+			* step : B : 1 : 1
+			* 		debug : show bar data
+			********************/
+			LibEaTester::show_Basic_BarData_Data(
+								$lo_BarDatas[$i]
+								, CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin);
 			
 			/********************
 			* step : B : 2

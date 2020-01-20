@@ -1,0 +1,1045 @@
+[01/20/2020 16:24:11 : \app\Controller\FxTestController.php : 88] 
+
+******************************** fx_tester_T_1() [01/20/2020 16:24:11] ********************************
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\libfx.php : 170] file opened => C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-18000).20200116_171429.[SLICE-30].csv
+[01/20/2020 16:24:11 : \app\Controller\FxTestController.php : 146] 
+$lo_BarDatas[0]->dateTime	2020.01.16 10:00
+$lo_BarDatas[count($lo_BarDatas) - 1]->dateTime	2020.01.16 02:45
+
+[01/20/2020 16:24:11 : \app\Lib\utils\libfx.php : 279] reverse_LO_BarDatas
+
+[01/20/2020 16:24:11 : \app\Lib\utils\libfx.php : 296] $elem_Last->dateTime	2020.01.16 02:45
+
+[01/20/2020 16:24:11 : \app\Lib\utils\libfx.php : 333] order ==> descending
+
+[01/20/2020 16:24:11 : \app\Lib\utils\libfx.php : 386] current = ASC / param = DSC (coding...)
+
+[01/20/2020 16:24:11 : \app\Controller\FxTestController.php : 163] 
+sorting ==> comp
+$lo_BarDatas[0]->dateTime	2020.01.16 10:00
+$lo_BarDatas[count($lo_BarDatas) - 1]->dateTime	2020.01.16 02:45
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 0]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 10:00
+$bd->price_Open	75.942
+$bd->price_Close	75.955
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 696] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 724] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 762] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.94199999999999
+$pr_TP = 76.052
+$pr_SL = 75.882
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 793] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.933
+$pos->pr_SL	75.882
+$bd->price_Low - $pos->pr_SL	0.051
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.970
+$pos->pr_TP	76.052
+$bd->price_High - $pos->pr_TP	-0.082
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.970
+$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.970
+$bd->price_Close	75.955
+$bd->price_Close - $bd->price_High	-0.015
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 814] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1060] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 0(2020.01.16 10:00)) / $pos->st_pr = 75.94199999999999
+$typeOf_Bar	C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 1]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 2]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 3]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 4]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 5]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 6]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 7]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 8]
+
+[01/20/2020 16:24:11 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:11 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 9]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 10]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 968] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/20/2020 16:24:12 : \app\Controller\FxTestController.php : 241] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	0
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 10:00
+$numOf_Loop	10
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 0]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 10:00
+$bd->price_Open	75.942
+$bd->price_Close	75.955
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 696] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 724] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 762] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.94199999999999
+$pr_TP = 76.052
+$pr_SL = 75.882
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 793] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.933
+$pos->pr_SL	75.882
+$bd->price_Low - $pos->pr_SL	0.051
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.970
+$pos->pr_TP	76.052
+$bd->price_High - $pos->pr_TP	-0.082
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.970
+$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.970
+$bd->price_Close	75.955
+$bd->price_Close - $bd->price_High	-0.015
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 814] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1060] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 0(2020.01.16 10:00)) / $pos->st_pr = 75.94199999999999
+$typeOf_Bar	C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 1]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 2]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 3]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 4]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 5]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 6]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 7]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 8]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 9]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 10]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 968] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/20/2020 16:24:12 : \app\Controller\FxTestController.php : 241] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	0
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 10:00
+$numOf_Loop	10
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 0]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 10:00
+$bd->price_Open	75.942
+$bd->price_Close	75.955
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 696] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 724] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 762] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.94199999999999
+$pr_TP = 76.052
+$pr_SL = 75.882
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 793] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.933
+$pos->pr_SL	75.882
+$bd->price_Low - $pos->pr_SL	0.051
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.970
+$pos->pr_TP	76.052
+$bd->price_High - $pos->pr_TP	-0.082
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.970
+$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.970
+$bd->price_Close	75.955
+$bd->price_Close - $bd->price_High	-0.015
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 814] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1060] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 0(2020.01.16 10:00)) / $pos->st_pr = 75.94199999999999
+$typeOf_Bar	C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 1]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 2]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 3]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 4]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 5]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 6]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 7]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 8]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 9]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 994] 
+(step : B : j1 : Y : 1) position ==> taken
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1093] (step : D : 1 : 1) for-loop : continue admin
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1116] (step : D : 1 : 2-2) C4
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 1118] 
+(show_Basic_Pos_Data)
+$pos->st_idx	0	$pos->st_pr	75.942
+$pos->cu_idx	0	$pos->cu_pr	75.955
+$pos->rf_idx	0	$pos->rf_pr	75.970
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.052	$pos->pr_SL	75.882
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.982
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 944] (step : B : 1) ========================= [loop : $i = 10]
+
+[01/20/2020 16:24:12 : Log_Fx_Admin : log_fx_admin.[tester_T_1].(20200120_162411).log] 
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+[01/20/2020 16:24:12 : \app\Lib\utils\fx\lib_ea_tester.php : 968] 
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[01/20/2020 16:24:12 : \app\Controller\FxTestController.php : 241] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	0
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 10:00
+$numOf_Loop	10
+
+
+[01/20/2020 16:24:12 : \app\Controller\FxTestController.php : 266] $cntOf_While	3 / $maxOf_While_Loop	3
+breaking the while loop...
+
+[01/20/2020 16:24:12 : \app\Controller\FxTestController.php : 293] (step : 3 : 1) while ==> comp
+count($lo_Pos)	3
+
+[01/20/2020 16:24:12 : \app\Controller\FxTestController.php : 322] 
+$pos->st_idx	0 / $pos->st_pr	75.94199999999999
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 10:00
+
+$pos->st_idx	0 / $pos->st_pr	75.94199999999999
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 10:00
+
+$pos->st_idx	0 / $pos->st_pr	75.94199999999999
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 10:00
+
+
