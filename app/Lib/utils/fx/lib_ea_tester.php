@@ -872,7 +872,8 @@ class LibEaTester {
 	* fx_tester_T_1__Exec
 	* 	at : 2020/01/06 13:10:56
 	********************/
-	public static function fx_tester_T_1__Exec($lo_BarDatas) {
+// 	public static function fx_tester_T_1__Exec($lo_BarDatas) {
+	public static function fx_tester_T_1__Exec($lo_BarDatas, $_num_Loop_Start) {
 		//_20200106_130954:caller
 		//_20200106_130959:head
 		//_20200106_131002:wl
@@ -897,7 +898,8 @@ class LibEaTester {
 		$maxOf_Loop = 10;
 		
 		// loop control
-		$num_Loop_Start = 0;
+		$num_Loop_Start = $_num_Loop_Start;
+// 		$num_Loop_Start = 0;
 		
 		// Pos instance
 		$pos = new Pos;
@@ -923,6 +925,14 @@ class LibEaTester {
 		* step : B : 0
 		* 		setup
 		********************/
+		//debug:20200121_171036
+		$msg	= "\$_num_Loop_Start\t" . $_num_Loop_Start;
+		$msg	.= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
 		for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++) {
 			
 			/********************

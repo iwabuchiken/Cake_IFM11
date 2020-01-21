@@ -184,6 +184,12 @@ class FxTestController extends AppController {
 		
 		
 		//_20200117_125541:next
+		
+		// num of loop start
+		//_20200121_170907:tmp
+		$num_Loop_Start = 0;
+		
+		
 		while (true) {
 			
 			/********************
@@ -191,7 +197,8 @@ class FxTestController extends AppController {
 			 		exec
 			 ********************/
 			//_20200106_130954:caller
-			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
+			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas, $num_Loop_Start);
+// 			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
 			
 			/********************
 			 * step : 2 : 2
@@ -202,6 +209,8 @@ class FxTestController extends AppController {
 			$pos			= $valOf_Ret__received[1];
 			$typeOf_Bar		= $valOf_Ret__received[2];
 			$numOf_Loop		= $valOf_Ret__received[3];
+			
+			//_20200121_172537:next
 			
 			/********************
 			 * step : 2 : 2.1
@@ -269,8 +278,45 @@ class FxTestController extends AppController {
 				break;
 				
 			}//if ($cntOf_While >= $maxOf_While_Loop)
-			;
+
+			/********************
+			 * step : 2 : 6
+			 		update ==> $_num_Loop_Start
+			 ********************/
+			/********************
+			 * step : 2 : 6.1
+			 		log
+			 ********************/
+			//_20200121_171609:tmp
+			$num_Latest_Pos_Start_Idx = $pos->st_idx;
+
+			//debug
+			$msg = "\$num_Latest_Pos_Start_Idx\t" . $num_Latest_Pos_Start_Idx;
+			$msg .= "\n";
 			
+// 			Utils::write_Log__Fx_Admin(
+// 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 					, $msg, __FILE__, __LINE__);
+				
+			/********************
+			 * step : 2 : 6.2
+			 		update
+			 ********************/
+			//debug
+			$msg .= "\$num_Loop_Start (current)\t" . $num_Loop_Start;
+			$msg .= "\n";
+			
+			// update
+			$num_Loop_Start = $num_Latest_Pos_Start_Idx + 1;
+
+			//debug
+			$msg .= "\$num_Loop_Start (updated)\t" . $num_Loop_Start;
+			$msg .= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg, __FILE__, __LINE__);
+				
 		}//while (true) { 
 		
 		/********************

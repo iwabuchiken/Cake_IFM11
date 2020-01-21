@@ -316,7 +316,8 @@ class Utils {
 		$time = Utils::get_CurrentTime();
 	
 		// 		$full_Text = "[$time : $file : $line] %% $text"."\n";
-		$full_Text = "[$time : $fname_Working : $line] $text"."\n";
+		$full_Text = "[$time : " . basename($fname_Working) . " : $line] $text"."\n";
+// 		$full_Text = "[$time : $fname_Working : $line] $text"."\n";
 	
 		$res = fwrite($log_File, $full_Text);
 		
