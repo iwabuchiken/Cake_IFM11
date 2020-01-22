@@ -174,9 +174,16 @@ class FxTestController extends AppController {
 		 * step : 2 : 0
 		 		prep : vars
 		 ********************/
+		// stopper ==> while loop
+		$num_Loop_Stopper = 3;
+		
+		// len : bardatas
+		$lenOf_LO_BarDatas = count($lo_BarDatas);
+		
 		// counter
 		$cntOf_While = 0;
-		$maxOf_While_Loop = 3;
+		$maxOf_While_Loop = $lenOf_LO_BarDatas - $num_Loop_Stopper;
+// 		$maxOf_While_Loop = 3;
 // 		$maxOf_While_Loop = 5;
 		
 		// list
@@ -188,7 +195,6 @@ class FxTestController extends AppController {
 		// num of loop start
 		//_20200121_170907:tmp
 		$num_Loop_Start = 0;
-		
 		
 		while (true) {
 			
@@ -260,6 +266,7 @@ class FxTestController extends AppController {
 			 * step : 2 : 5
 			 		stopper
 			 ********************/
+			//_20200122_182820:next
 			if ($cntOf_While >= $maxOf_While_Loop) {
 			
 				$msg = "\$cntOf_While\t" . $cntOf_While
