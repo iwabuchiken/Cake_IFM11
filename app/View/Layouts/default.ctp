@@ -43,6 +43,7 @@
 		echo $this->Html->css('main');
 		echo $this->Html->css('libfx');
 		echo $this->Html->css('lib_ifm');
+		echo $this->Html->css('lib_ip');
 		
 		echo $this->Html->css('jquery-ui.structure');
 		echo $this->Html->css('jquery-ui.theme');
@@ -61,6 +62,7 @@
 		
 		echo $this->Html->script('libfx');
 		echo $this->Html->script('lib_ifm');
+		echo $this->Html->script('lib_ip');
 		
 	?>
 </head>
