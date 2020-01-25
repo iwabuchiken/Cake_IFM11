@@ -121,105 +121,28 @@ function hexc(colorval) {
 }//function hexc(colorval) {
 
 //_20200124_180147:next
-function ifm_Actions(_param) {
+function ip_proc_actions(_param) {
 	
-//	alert("ifm_Actions");
+//	alert("_param => '" + _param + "'");
 
 	/***************************
 		step : 1
 			prep
 	 ***************************/
-	console.log("ifm_Actions ==> starting...!!");
-
-	/***************************
-		validate : update date
-	 ***************************/
-	var _update;
-	
-	if ((_param == "11-0") ||
-		(_param == "10-1")) {
-	//	if (_param == "11-0") {
-	
-		var tag_Date = $("input#ipt_Ifm_Index_Input_Area");
-//		var tag_Date = $("input#ipt_IM_Update_Date");
-		
-		_update = tag_Date.val();
-	//	var update = tag_Date.val();
-		
-		if (_update == "") {
-	
-			alert("update ==> blank");
-	
-			return;
-			
-		} else if (_update == null) {
-	
-			alert("update ==> null");
-	
-			return;
-			
-		} else {
-			
-	//		alert("_update ==> '" + _update + "'");
-			
-		}//if (update == "")
-	
-	}//if (_param == "11-0")
-	/***************************
-		step : 0 : 1
-			list entry ==> bg color change
-			ref : C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\mm\static\mm\js\main.js
-	 ***************************/
-	var td = $("td#td_Label_" + _param);
-	
-	//test
-	var x = td.css('backgroundColor');
-	var hex = hexc(x);
-	
-	console.log("hex => " + hex);
-
-	/***************************
-	 * step : 0 : 2
-		set : color
-	 ***************************/
-	var color_New = "";
-	
-//	if (hex == "#ffffff") {
-	if (hex == cname_White) {
-	
-		color_New = "#ffff00";
-	
-	} else {
-	
-		color_New = cname_White;
-//		color_New = "#ffffff";
-	
-	}//if (hex == "#ffffff")
-	
-	
-	td.css("background", color_New);
-
-	/***************************
-	 * step : 0 : 3
-		return : if set to white
-	 ***************************/
-	if (color_New == "#ffffff") {
-		
-		console.log("color_New ==> \"#ffffff\"; returning...");
-		
-		return;
-		
-	}
+	console.log("ip_proc_1 ==> starting...!!");
 
 	/***************************
 		step : 1 : 1
-			div area ==> bg change
+			result area
 	 ***************************/
-	//var div_area_result = $('area_result');
-	var div_area_result = $('#div_Ifm_Index_area_result');
+	var html_Div_Area_Result = $('div#div_IP_Index_Area_Result');
+
+	// change : bg col
+	html_Div_Area_Result.css("background", cname_Yellow);
 	
-	//_20200103_123607:tmp
-	div_area_result.css("background", cname_Yellow);
+	/***************************
+		validate : update date
+	 ***************************/
 
 	/***************************
 	 * step : 2
@@ -227,28 +150,24 @@ function ifm_Actions(_param) {
 	 ***************************/
 	var _data;
 	
-	//ref multiple conditions https://stackoverflow.com/questions/8710442/how-to-specify-multiple-conditions-in-an-if-statement-in-javascript answered Jan 3 '12 at 9:58
-	if ((_param == "11-0") || 
-			(_param == "10-1")) {
-	//	if (_param == "11-0") {
+	_data = {action : _param};
 	
-		_data = {action : _param, update : _update};
-	
-	} else {
-	
-		_data = {action : _param};
-	
-	}//if (_param == "11-0")
-	
-	//debug
-	console.log("_param => '" + _param + "'" + " " + "('" + $.trim(td.text()) + "')");
-	
-	//ref https://iwb.jp/jquery-trim/
-//	console.log("td => '" + $.trim(td.text()) + "'");
-//	console.log("td.text() => '" + td.text() + "'");
-//	console.log("td.html() => '" + td.html().val() + "'");
-//	console.log("td.html() => '" + td.html() + "'");
-	
+//	
+//	//ref multiple conditions https://stackoverflow.com/questions/8710442/how-to-specify-multiple-conditions-in-an-if-statement-in-javascript answered Jan 3 '12 at 9:58
+//	if ((_param == "11-0") || 
+//			(_param == "10-1")) {
+//	//	if (_param == "11-0") {
+//	
+//		_data = {action : _param, update : _update};
+//	
+//	} else {
+//	
+//		_data = {action : _param};
+//	
+//	}//if (_param == "11-0")
+//	
+//	//debug
+//	console.log("_param => '" + _param + "'" + " " + "('" + $.trim(td.text()) + "')");
 	
 	/***************************
 		step : X : 0
@@ -264,12 +183,12 @@ function ifm_Actions(_param) {
 	
 	if (hostname == "benfranklin.chips.jp") {
 		
-		url = "/cake_apps/Cake_IFM11/ifm/ifm_actions";
+		url = "/cake_apps/Cake_IFM11/ip/ip_proc_actions";
 //		url = "/cake_apps/Cake_IFM11/fx_admin/process_log_file";
 		
 	} else {//if (hostname == "benfranklin.chips.jp") {
 	
-		url = "/Eclipse_Luna/Cake_IFM11/ifm/ifm_actions";
+		url = "/Eclipse_Luna/Cake_IFM11/ip/ip_proc_actions";
 	
 	}//if (hostname == "benfranklin.chips.jp") {
 	
@@ -309,13 +228,13 @@ function ifm_Actions(_param) {
 			step : X : 2 : 2.1
 				set html
 		 ***************************/
-		div_area_result.html(data);
+		html_Div_Area_Result.html(data);
 	
 		/***************************
 			step : X : 2 : 2.2
 				notice : bg ==> back to orig
 		 ***************************/
-		div_area_result.css("background", cname_Div_Index_Area_Result);
+		html_Div_Area_Result.css("background", cname_Div_Index_Area_Result);
 		
 		/***************************
 			step : X : 2 : 2.3
@@ -323,7 +242,7 @@ function ifm_Actions(_param) {
 		 ***************************/
 		//ref C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\mm\static\mm\js\main.js
 		// animation
-		div_area_result
+		html_Div_Area_Result
 			.fadeIn(200).fadeOut(200)
 			.fadeIn(200).fadeOut(200)
 			
@@ -340,8 +259,28 @@ function ifm_Actions(_param) {
 			step : X : 3
 				ajax ==> error
 		 ***************************/
-		alert(xhr.status);
+		//ref https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest
+		var msg = "xhr.status => '"
+			+ xhr.status 
+			+ "'" + " / " + "error => '" + error + "'"
+			+ "'" + " / " + "xhr.statusText => '" + xhr.statusText + "'";
+		
+//		alert( msg
+//				);
+//		alert("xhr.status => '" + xhr.status + "'" + " / " + "error => '" + error + "'");
+		
+		/***************************
+			step : X : 3 : 1
+				result area : bg col
+		 ***************************/
+		html_Div_Area_Result.css("background", cname_Red);
+		
+		/***************************
+			step : X : 3 : 2
+				result area : html
+		 ***************************/
+		html_Div_Area_Result.html(msg);
 		
 	});	
 
-}//function ifm_Actions() {
+}//function ip_proc_actions(_param) {

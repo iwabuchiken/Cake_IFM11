@@ -19,7 +19,7 @@
 			
 					'type'		=> 'button'
 					//_20200104_155203:caller
-					, 'onclick'	=> 'fx_tester_T_1();'
+					, 'onclick'	=> "ip_proc_actions('proc-1');"
 					, 'class'	=> "btn_Links"
 					
 			);

@@ -40,5 +40,37 @@ class IPController extends AppController {
 		
 	}//public function index()
 
+	/******************
+	 * ip_proc_actions
+	 * 
+	 * 	at : 2020/01/25 17:21:18
+	 	caller : function ip_proc_actions(_param) (js file)
+	 	
+	 ****************/
+	public function ip_proc_actions() {
+		//_20200125_172001:head
+		//_20200125_172004:caller
+		//_20200125_172007:wl
+		/********************
+		* step : 1 : params
+		********************/
+		//_20200125_173157:next
+// 		@$query_Article_Genre = $this->request->query['query_Article_Genre'];
+
+		/********************
+		* step : X : display
+		********************/
+		// layout
+		$this->layout = "plain";
+		
+		/********************
+		* step : X : debug
+		********************/
+		$tlabel = Utils::get_CurrentTime();
+		
+		$this->set("tlabel" , $tlabel);
+		
+	}//public function ip_proc_actions() {
+	
 }//class FxTesterController extends AppController {
 
