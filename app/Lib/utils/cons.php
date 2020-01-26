@@ -120,7 +120,7 @@ class CONS {
 	****************************************/
 
 	/*******************************
-		Images
+		Images (Cake_IFM)
 	*******************************/
 	// filter: file_name
 	public static $str_Filter_File_Name = "filter_file_name";
@@ -399,5 +399,10 @@ class CONS {
 // 	"14) upload image files", "upload image files"    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
 // 	"15) close-apps.bat", "close apps"    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
 	
+	/**************************************************************
+	 IP controller
+	 	at : 2020/01/26 17:53:36
+	 **************************************************************/
+	public static $label_IP_Proc_ID__1	= "proc-1";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
 	
 }//class CONS

@@ -52,11 +52,69 @@ class IPController extends AppController {
 		//_20200125_172004:caller
 		//_20200125_172007:wl
 		/********************
+		* step : 0
+		* 		prep : vars
+		********************/
+		$msg_from_controller = "";
+		
+		/********************
 		* step : 1 : params
 		********************/
 		//_20200125_173157:next
-// 		@$query_Article_Genre = $this->request->query['query_Article_Genre'];
+		@$action = $this->request->query['action'];
 
+		//debug
+		if ($action == null) {
+		
+// 			debug();
+			
+			// set : message
+			$msg_from_controller = "param : action ==> null ; nop";
+			
+			$this->set("msg_from_controller" , $msg_from_controller);
+			
+		} else if ($action == "") {
+		
+// 			debug("param : action ==> blank");
+
+			// set : message
+			$msg_from_controller = "param : action ==> blank ; nop";
+			
+			$this->set("msg_from_controller" , $msg_from_controller);
+							
+		} else {
+		
+			debug("param:action => '" . $action . "'");
+			
+			/********************
+			 * step : 2
+			 * 		dispatch
+			 ********************/
+			if ($action == CONS::$label_IP_Proc_ID__1) {
+			
+				// set : message
+				$msg_from_controller = "param is ==> " . CONS::$label_IP_Proc_ID__1
+						. " / starting...";
+				
+// 				debug($msg_from_controller);
+				$this->set("msg_from_controller" , $msg_from_controller);
+				
+				//_20200126_181129:next
+				
+			} else {
+			
+				// set : message
+				$msg_from_controller = "param is ==> unknown";
+				
+				$this->set("msg_from_controller" , $msg_from_controller);
+				
+				
+			}//if ($action == CONS::$label_IP_Proc_ID__1)
+			
+		}//if ($action == null)
+		
+		
+		
 		/********************
 		* step : X : display
 		********************/
@@ -64,11 +122,19 @@ class IPController extends AppController {
 		$this->layout = "plain";
 		
 		/********************
+		* step : X
+		* 		set ==> view vars
+		********************/
+		// time label
+		$tlabel = Utils::get_CurrentTime();
+		$this->set("tlabel" , $tlabel);
+		
+		// param : action
+		
+		
+		/********************
 		* step : X : debug
 		********************/
-		$tlabel = Utils::get_CurrentTime();
-		
-		$this->set("tlabel" , $tlabel);
 		
 	}//public function ip_proc_actions() {
 	

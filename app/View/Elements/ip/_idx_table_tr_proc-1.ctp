@@ -19,7 +19,8 @@
 			
 					'type'		=> 'button'
 					//_20200104_155203:caller
-					, 'onclick'	=> "ip_proc_actions('proc-1');"
+					, 'onclick'	=> "ip_proc_actions('". CONS::$label_IP_Proc_ID__1 . "');"
+// 					, 'onclick'	=> "ip_proc_actions('proc-1');"
 					, 'class'	=> "btn_Links"
 					
 			);
@@ -39,7 +40,9 @@
 	</td>
 	
 	<td class="fx-tester_index_td_title">
-		Proc-1
+	
+		<?php echo CONS::$label_IP_Proc_ID__1; ?>
+		
 	</td>
 	
 </tr>
