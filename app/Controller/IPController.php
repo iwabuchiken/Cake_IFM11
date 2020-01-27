@@ -47,6 +47,55 @@ class IPController extends AppController {
 	 	caller : function ip_proc_actions(_param) (js file)
 	 	
 	 ****************/
+	public function ip_proc_actions__Proc_1() {
+		//_20200127_174455:head
+		//_20200127_174500:caller
+		//_20200127_174504:wl
+		/********************
+		* step : 0
+		* 		prep : vars
+		********************/
+// 		//test
+// 		phpinfo();
+		
+		$dpath_Image_File = "C:/WORKS_2/WS/WS_Others.Art/JVEMV6/46_art/6_visual-arts/5_free-painting/images";
+		$fname_Image_File = "test_20200127_175307.png";
+		
+		$fpath_Image_File = join("/", array($dpath_Image_File, $fname_Image_File));
+		
+		//_20200127_181527:next
+		$im_inp = ImageCreateFromPNG($fpath_Image_File);
+// 		$im_inp = ImageCreateFromJPEG($fpath_Image_File);
+		
+		ImageDestroy($im_inp);
+		
+		
+		/********************
+		* step : X
+		* 		return
+		********************/
+		/********************
+		* step : X : 1
+		* 		val
+		********************/
+		$valOf_Return = array("<br>ip_proc_actions__Proc_1 ==> comp");
+// 		$valOf_Return = array("ip_proc_actions__Proc_1 ==> comp");
+		
+		/********************
+		* step : X : 2
+		* 		return
+		********************/
+		return $valOf_Return;
+		
+	}//public function ip_proc_actions__Proc_1() {
+	
+	/******************
+	 * ip_proc_actions
+	 * 
+	 * 	at : 2020/01/25 17:21:18
+	 	caller : function ip_proc_actions(_param) (js file)
+	 	
+	 ****************/
 	public function ip_proc_actions() {
 		//_20200125_172001:head
 		//_20200125_172004:caller
@@ -96,15 +145,20 @@ class IPController extends AppController {
 				$msg_from_controller = "param is ==> " . CONS::$label_IP_Proc_ID__1
 						. " / starting...";
 				
+				//_20200126_181129:next
+				//_20200127_174500:caller
+				//$valOf_Return = array("ip_proc_actions__Proc_1 ==> comp");
+				$valOf_Return__received = $this->ip_proc_actions__Proc_1();
+				
+				$msg_from_controller .= $valOf_Return__received[0];
+				
 // 				debug($msg_from_controller);
 				$this->set("msg_from_controller" , $msg_from_controller);
-				
-				//_20200126_181129:next
 				
 			} else {
 			
 				// set : message
-				$msg_from_controller = "param is ==> unknown";
+				$msg_from_controller = "param is ==> unknown : '$action'";
 				
 				$this->set("msg_from_controller" , $msg_from_controller);
 				
