@@ -55,8 +55,17 @@ class Utils {
 // 					return date('Y/m/d H:i:s', time());
 	
 			case CONS::$timeLabelTypes["serial"]:
-	
-				return date('Ymd_His', time());
+				
+				//ref https://stackoverflow.com/questions/17909871/getting-date-format-m-d-y-his-u-from-milliseconds
+				$t = microtime(true);
+				$micro = sprintf("%06d",($t - floor($t)) * 1000000);
+				$d = new DateTime( date('Y-m-d H:i:s.'.$micro, $t) );
+				
+				
+// 				print $d->format("Y-m-d H:i:s.u")
+				
+				return $d->format("Ymd_His_u");
+// 				return date('Ymd_His', time());
 					
 			default:
 	
@@ -252,11 +261,17 @@ class Utils {
 			
 			if (Utils::get_HostName() == "localhost") {
 				
-				$fname = CONS::$fname_Log_trunk
-							.CONS::$fname_Log_Suffix_Local
-							."_".Utils::get_CurrentTime2(
+				//_20200128_171830:tmp
+				$fname = $fname_Log
+							.".(".Utils::get_CurrentTime2(
 									CONS::$timeLabelTypes['serial'])
-							.CONS::$fname_Log_ext;
+							. ")"
+							.CONS::$fname_Log_ext_Log;
+// 				$fname = CONS::$fname_Log_trunk
+// 							.CONS::$fname_Log_Suffix_Local
+// 							."_".Utils::get_CurrentTime2(
+// 									CONS::$timeLabelTypes['serial'])
+// 							.CONS::$fname_Log_ext;
 				
 			} else {
 				

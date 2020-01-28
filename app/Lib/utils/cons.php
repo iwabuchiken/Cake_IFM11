@@ -30,6 +30,7 @@ class CONS {
 	public static $fname_Log			= "log.txt";
 	public static $fname_Log_trunk		= "log";
 	public static $fname_Log_ext		= ".txt";
+	public static $fname_Log_ext_Log		= ".log";
 	public static $fname_Log_Suffix_Local	= "_local";
 	public static $fname_Log_Suffix_Remote	= "_remote";
 	
