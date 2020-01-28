@@ -41,6 +41,132 @@ class IPController extends AppController {
 	}//public function index()
 
 	/******************
+	 * ip_proc_actions__Proc_1__Copy_Simple
+	 *
+	 * 	at : 2020/01/28 14:09:31
+	 caller : function ip_proc_actions(_param) (js file)
+	  
+	 ****************/
+	public function ip_proc_actions__Proc_1__Copy_Partial($fpath_Image_File) {
+		//_20200128_141640:head
+		//_20200128_141644:caller
+		//_20200128_141647:wl
+
+		/********************
+		* step : 0
+		* 		prep : vars
+		********************/
+		$fpath_Out_Image_File = "$fpath_Image_File.("
+		. Utils::get_CurrentTime2(CONS::$timeLabelTypes['serial'])
+		. ").png";
+		
+		/********************
+		* step : 1 : 1
+		* 		image ==> create : source
+		********************/
+		$im_inp = ImageCreateFromPNG($fpath_Image_File);
+		// 		$im_inp = ImageCreateFromJPEG($fpath_Image_File);
+	
+		$ix = ImageSX($im_inp);
+		$iy = ImageSY($im_inp);
+	
+		/********************
+		* step : 1 : 2
+		* 		image ==> create : dst
+		********************/
+		//ref http://tsuttayo.jpn.org/php/gd/
+		$im_out = ImageCreateTrueColor($ix, $iy);
+	
+		/********************
+		* step : 2 : 1
+		* 		image ==> copy (whole)
+		********************/
+		// copy : whole
+		$res = ImageCopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
+		// 		$res = imagecopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
+	
+		debug("imagecopy (whole) ==> "
+				. ($res ? "comp : $fpath_Out_Image_File" : "failed : $fpath_Out_Image_File"));
+	
+		/********************
+		* step : 2 : 2
+		* 		image ==> copy (partial)
+		********************/
+		//_20200128_142027:next
+		// vars
+		$d_start_x = $ix / 2;
+		$d_start_y = $iy / 2;
+		
+		$copy_w = $ix / 4;
+		$copy_h = $iy / 3;
+		
+		// copy : partial
+		$res = ImageCopy($im_out, $im_inp, $d_start_x, $d_start_y, 0, 0, $copy_w, $copy_h);
+// 		$res = ImageCopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
+	
+		debug("imagecopy (partial) ==> "
+				. ($res ? "comp : $fpath_Out_Image_File" : "failed : $fpath_Out_Image_File"));
+	
+		/********************
+		* step : 3
+		* 		image ==> out
+		********************/
+		// out
+		$res = ImagePNG($im_out, $fpath_Out_Image_File);
+	
+		debug("ImagePNG ==> "
+				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
+	
+		// destroy
+		ImageDestroy($im_inp);
+	
+	}//public function ip_proc_actions__Proc_1__Copy_Partial($fpath_Image_File) {
+	
+	
+	/******************
+	 * ip_proc_actions__Proc_1__Copy_Simple	
+	 * 
+	 * 	at : 2020/01/28 14:09:31
+	 	caller : function ip_proc_actions(_param) (js file)
+	 	
+	 ****************/
+	public function ip_proc_actions__Proc_1__Copy_Simple($fpath_Image_File) {
+		//_20200128_140511:head
+		//_20200128_140514:caller
+		//_20200128_140518:wl
+
+		$im_inp = ImageCreateFromPNG($fpath_Image_File);
+		// 		$im_inp = ImageCreateFromJPEG($fpath_Image_File);
+		
+		$ix = ImageSX($im_inp);
+		$iy = ImageSY($im_inp);
+		
+		//ref http://tsuttayo.jpn.org/php/gd/
+		$im_out = ImageCreateTrueColor($ix, $iy);
+		
+		$fpath_Out_Image_File = "$fpath_Image_File.("
+		. Utils::get_CurrentTime2(CONS::$timeLabelTypes['serial'])
+		. ").png";
+		
+		// copy
+		$res = ImageCopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
+		// 		$res = imagecopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
+		
+		debug("imagecopy ==> "
+				. ($res ? "comp : $fpath_Out_Image_File" : "failed : $fpath_Out_Image_File"));
+		
+		// out
+		$res = ImagePNG($im_out, $fpath_Out_Image_File);
+		
+		debug("ImagePNG ==> "
+				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
+		
+		// destroy
+		ImageDestroy($im_inp);
+		
+	}//public function ip_proc_actions__Proc_1__Copy_Simple($im_inp) {
+	
+	/******************
 	 * ip_proc_actions
 	 * 
 	 * 	at : 2020/01/25 17:21:18
@@ -67,7 +193,29 @@ class IPController extends AppController {
 		$im_inp = ImageCreateFromPNG($fpath_Image_File);
 // 		$im_inp = ImageCreateFromJPEG($fpath_Image_File);
 		
+		$ix = ImageSX($im_inp);
+		$iy = ImageSY($im_inp);
+		
+		debug("\$ix : $ix / \$iy : $iy");
+		
+		//debug
+// 		debug(get_class($im_inp));
+		
 		ImageDestroy($im_inp);
+		
+		/********************
+		* step : 2 : 1
+		* 		ip_proc_actions__Proc_1__Copy_Simple
+		********************/
+		$this->ip_proc_actions__Proc_1__Copy_Simple($fpath_Image_File);
+// 		ip_proc_actions__Proc_1__Copy_Simple($im_inp);
+		
+		/********************
+		* step : 2 : 2
+		* 		ip_proc_actions__Proc_1__Copy_Partial
+		********************/
+		$this->ip_proc_actions__Proc_1__Copy_Partial($fpath_Image_File);
+// 		ip_proc_actions__Proc_1__Copy_Simple($im_inp);
 		
 		
 		/********************
