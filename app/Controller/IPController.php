@@ -43,6 +43,120 @@ class IPController extends AppController {
 	/******************
 	 * ip_proc_actions__Proc_1__Copy_Simple
 	 *
+	 * 	at : 2020/01/29 15:52:46
+	 caller : function ip_proc_actions(_param) (js file)
+	  
+	 ****************/
+	public function get_Params_For__Image_Copy($ix, $iy) {
+		//_20200129_155312:head
+		//_20200129_155316:caller
+		//_20200129_155320:wl
+
+		//ref https://www.php.net/manual/en/function.rand.php
+		//_20200129_155122:tmp
+		/********************
+		* step : 1
+		* 	get : basic data
+		********************/
+		$rand_X_Src = rand(0, $ix);
+		$rand_Y_Src = rand(0, $iy);
+		
+		$rand_X_Dst = rand(0, $ix);
+		$rand_Y_Dst = rand(0, $iy);
+		
+		$rand_W = rand($ix / 4 * 1 , $ix / 4 * 3);
+		$rand_H = rand($iy / 4 * 1 , $iy / 4 * 3);
+// 		$rand_W = rand($ix / 1 , $ix / 3);
+// 		$rand_H = rand($iy / 1 , $iy / 3);
+		
+		debug("\$ix = $ix / \$iy = $iy");
+		
+		debug("\$rand_X_Src = $rand_X_Src / \$rand_Y_Src = $rand_Y_Src");
+		debug("\$rand_X_Dst = $rand_X_Dst / \$rand_Y_Dst = $rand_Y_Dst");
+		debug("\$rand_W = $rand_W / \$rand_H = $rand_H");
+		
+		debug("\$rand_X_Src + \$rand_W = " . ($rand_X_Src + $rand_W));
+		debug("\$rand_Y_Src + \$rand_H = " . ($rand_Y_Src + $rand_H));
+		
+		debug("\$rand_X_Dst + \$rand_W = " . ($rand_X_Dst + $rand_W));
+		debug("\$rand_Y_Dst + \$rand_H = " . ($rand_Y_Dst + $rand_H));
+		
+		/********************
+		* step : 1
+		* 		width
+		********************/
+		/********************
+		* step : 1.1
+		* 		src
+		********************/
+		// width of the copy area
+		$cond_1 = ($rand_X_Src + $rand_W) > $ix;
+		
+		$W_new = ($cond_1) ? ($ix - $rand_X_Src) : $rand_W;
+		
+// 		// min value
+// 		$W_new = ($W_new < 50) ? 50 : $W_new;
+		
+		debug("\$W_new (src) = " . $W_new);
+		
+		/********************
+		* step : 1.2
+		* 		dst
+		********************/
+		$cond_1 = ($rand_X_Dst + $W_new) > $ix;
+// 		$cond_1 = ($rand_X_Dst + $rand_W) > $ix;
+		
+		$W_new = ($cond_1) ? ($ix - $rand_X_Dst) : $W_new;
+		
+// 		// min value
+// 		$W_new = ($W_new < 50) ? 50 : $W_new;
+		
+		debug("\$W_new (dst) = " . $W_new);
+		
+		
+		/********************
+		 * step : 2
+		 * 		height
+		 ********************/
+		/********************
+		 * step : 2.1
+		 * 		src
+		 ********************/
+		// height of the copy area
+		$cond_2 = ($rand_Y_Src + $rand_H) > $iy;
+		
+		$H_new = ($cond_2) ? ($iy - $rand_Y_Src) : $rand_H;
+		
+// 		// min value
+// 		$H_new = ($H_new < 50) ? 50 : $H_new;
+		
+		debug("\$H_new (src) = " . $H_new);
+
+		/********************
+		 * step : 2.2
+		 * 		dst
+		 ********************/
+		$cond_2 = ($rand_Y_Dst + $H_new) > $iy;
+		// 		$cond_1 = ($rand_X_Dst + $rand_W) > $ix;
+		
+		$H_new = ($cond_2) ? ($iy - $rand_Y_Dst) : $H_new;
+		
+		// 		// min value
+		// 		$W_new = ($W_new < 50) ? 50 : $W_new;
+		
+		debug("\$H_new (dst) = " . $H_new);
+		
+		/********************
+		 * step : 3
+		 * 		return
+		 ********************/
+		//_20200129_160752:next
+		
+	}//public function get_Params_For__Image_Copy($ix, $iy) {
+	
+	/******************
+	 * ip_proc_actions__Proc_1__Copy_Simple
+	 *
 	 * 	at : 2020/01/28 14:09:31
 	 caller : function ip_proc_actions(_param) (js file)
 	  
@@ -92,6 +206,17 @@ class IPController extends AppController {
 		* step : 2 : 2
 		* 		image ==> copy (partial)
 		********************/
+		/********************
+		* step : 2 : 2.1
+		* 		prep : vars
+		********************/
+		//_20200129_155316:caller
+		$this->get_Params_For__Image_Copy($ix, $iy);
+		
+		/********************
+		* step : 2 : 2.2
+		* 		image ==> copy (partial)
+		********************/
 		//_20200128_142027:next
 		// vars
 		$d_start_x = $ix / 2;
@@ -111,14 +236,15 @@ class IPController extends AppController {
 		* step : 3
 		* 		image ==> out
 		********************/
-		// out
-		$res = ImagePNG($im_out, $fpath_Out_Image_File);
+// 		// out
+// 		$res = ImagePNG($im_out, $fpath_Out_Image_File);
 	
-		debug("ImagePNG ==> "
-				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
+// 		debug("ImagePNG ==> "
+// 				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
 	
 		// destroy
 		ImageDestroy($im_inp);
+		ImageDestroy($im_out);
 	
 	}//public function ip_proc_actions__Proc_1__Copy_Partial($fpath_Image_File) {
 	
@@ -207,7 +333,8 @@ class IPController extends AppController {
 		* step : 2 : 1
 		* 		ip_proc_actions__Proc_1__Copy_Simple
 		********************/
-		$this->ip_proc_actions__Proc_1__Copy_Simple($fpath_Image_File);
+		//_20200128_140514:caller
+// 		$this->ip_proc_actions__Proc_1__Copy_Simple($fpath_Image_File);
 // 		ip_proc_actions__Proc_1__Copy_Simple($im_inp);
 		
 		/********************
