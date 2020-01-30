@@ -151,11 +151,145 @@ class IPController extends AppController {
 		 * 		return
 		 ********************/
 		//_20200129_160752:next
+		/********************
+		* step : 3 : 1
+		* 		val
+		********************/
+		$valOf_Return = array(
+				
+				$rand_X_Src, $rand_Y_Src
+				, $rand_X_Dst, $rand_Y_Dst
+				, $W_new, $H_new
+		);
+// 		$valOf_Return = array("ip_proc_actions__Proc_1 ==> comp");
+		
+		/********************
+		* step : 3 : 2
+		* 		return
+		********************/
+		return $valOf_Return;
 		
 	}//public function get_Params_For__Image_Copy($ix, $iy) {
+
+	/******************
+	 * ip_proc_actions__Proc_1__Copy_Partial
+	 *
+	 * 	at : 2020/01/28 14:09:31
+	 caller : function ip_proc_actions(_param) (js file)
+	  
+	 ****************/
+	public function ip_proc_actions__Proc_1__Copy_Partial_Multiple
+	($fpath_Image_File, $_num_Partial = 4) {
+		//_20200130_142154:head
+		//_20200130_142156:caller
+		//_20200130_142200:wl
+	
+		/********************
+			* step : 0
+			* 		prep : vars
+			********************/
+		$fpath_Out_Image_File = "$fpath_Image_File.("
+		. Utils::get_CurrentTime2(CONS::$timeLabelTypes['serial'])
+		. ").png";
+	
+		/********************
+			* step : 1 : 1
+			* 		image ==> create : source
+			********************/
+		$im_inp = ImageCreateFromPNG($fpath_Image_File);
+		// 		$im_inp = ImageCreateFromJPEG($fpath_Image_File);
+	
+		$ix = ImageSX($im_inp);
+		$iy = ImageSY($im_inp);
+	
+		/********************
+			* step : 1 : 2
+			* 		image ==> create : dst
+		********************/
+		//ref http://tsuttayo.jpn.org/php/gd/
+		$im_out = ImageCreateTrueColor($ix, $iy);
+	
+		/********************
+			* step : 2 : 1
+			* 		image ==> copy (whole)
+		********************/
+		// copy : whole
+		$res = ImageCopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
+		// 		$res = imagecopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
+	
+		debug("imagecopy (whole) ==> "
+				. ($res ? "comp : $fpath_Out_Image_File" : "failed : $fpath_Out_Image_File"));
+	
+		/********************
+			* step : 2 : 2
+			* 		image ==> copy (partial)
+		********************/
+		$num_Partial = $_num_Partial;
+// 		$num_Partial = 4;
+		
+		for ($i = 0; $i < $num_Partial; $i++) {
+		
+			/********************
+				* step : 2 : 2.1
+				* 		prep : vars
+			********************/
+			//_20200129_155316:caller
+			$valOf_Ret__received = $this->get_Params_For__Image_Copy($ix, $iy);
+			// 		$rand_X_Src, $rand_Y_Src
+			// 		, $rand_X_Dst, $rand_Y_Dst
+			// 		, $W_new, $H_new
+		
+			$rand_X_Src	= $valOf_Ret__received[0];
+			$rand_Y_Src	= $valOf_Ret__received[1];
+			$rand_X_Dst	= $valOf_Ret__received[2];
+			$rand_Y_Dst	= $valOf_Ret__received[3];
+			$W_new		= $valOf_Ret__received[4];
+			$H_new		= $valOf_Ret__received[5];
+		
+			debug("get_Params_For__Image_Copy ==> returned");
+			debug("\$W_new = $W_new / \$H_new = $H_new");
+			debug("\$rand_X_Dst = $rand_X_Dst / \$rand_Y_Dst = $rand_Y_Dst");
+		
+		
+			/********************
+				* step : 2 : 2.2
+				* 		image ==> copy (partial)
+			********************/
+			//_20200128_142027:next
+			// vars
+			$d_start_x = $ix / 2;
+			$d_start_y = $iy / 2;
+		
+			$copy_w = $ix / 4;
+			$copy_h = $iy / 3;
+		
+			// copy : partial
+			$res = ImageCopy($im_out, $im_inp, $rand_X_Dst, $rand_Y_Dst, $rand_X_Src, $rand_Y_Src, $W_new, $H_new);
+			// 		$res = ImageCopy($im_out, $im_inp, $d_start_x, $d_start_y, 0, 0, $copy_w, $copy_h);
+			// 		$res = ImageCopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
+		
+			debug("imagecopy (partial) ==> "
+					. ($res ? "comp : $fpath_Out_Image_File" : "failed : $fpath_Out_Image_File"));			
+		}//for ($i = 0; $i < $num_Partial; $i++)
+		
+		/********************
+			* step : 3
+			* 		image ==> out
+		********************/
+		// out
+		$res = ImagePNG($im_out, $fpath_Out_Image_File);
+	
+		debug("ImagePNG ==> "
+				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
+	
+		// destroy
+		ImageDestroy($im_inp);
+		ImageDestroy($im_out);
+	
+	}//public function ip_proc_actions__Proc_1__Copy_Partial_Multiple($fpath_Image_File)
 	
 	/******************
-	 * ip_proc_actions__Proc_1__Copy_Simple
+	 * ip_proc_actions__Proc_1__Copy_Partial
 	 *
 	 * 	at : 2020/01/28 14:09:31
 	 caller : function ip_proc_actions(_param) (js file)
@@ -211,7 +345,22 @@ class IPController extends AppController {
 		* 		prep : vars
 		********************/
 		//_20200129_155316:caller
-		$this->get_Params_For__Image_Copy($ix, $iy);
+		$valOf_Ret__received = $this->get_Params_For__Image_Copy($ix, $iy);
+		// 		$rand_X_Src, $rand_Y_Src
+		// 		, $rand_X_Dst, $rand_Y_Dst
+		// 		, $W_new, $H_new
+		
+		$rand_X_Src	= $valOf_Ret__received[0];
+		$rand_Y_Src	= $valOf_Ret__received[1];
+		$rand_X_Dst	= $valOf_Ret__received[2];
+		$rand_Y_Dst	= $valOf_Ret__received[3];
+		$W_new		= $valOf_Ret__received[4];
+		$H_new		= $valOf_Ret__received[5];
+		
+		debug("get_Params_For__Image_Copy ==> returned");
+		debug("\$W_new = $W_new / \$H_new = $H_new");
+		debug("\$rand_X_Dst = $rand_X_Dst / \$rand_Y_Dst = $rand_Y_Dst");
+		
 		
 		/********************
 		* step : 2 : 2.2
@@ -226,7 +375,8 @@ class IPController extends AppController {
 		$copy_h = $iy / 3;
 		
 		// copy : partial
-		$res = ImageCopy($im_out, $im_inp, $d_start_x, $d_start_y, 0, 0, $copy_w, $copy_h);
+		$res = ImageCopy($im_out, $im_inp, $rand_X_Dst, $rand_Y_Dst, $rand_X_Src, $rand_Y_Src, $W_new, $H_new);
+// 		$res = ImageCopy($im_out, $im_inp, $d_start_x, $d_start_y, 0, 0, $copy_w, $copy_h);
 // 		$res = ImageCopy($im_out, $im_inp, 0, 0, 0, 0, $ix, $iy);
 	
 		debug("imagecopy (partial) ==> "
@@ -236,11 +386,11 @@ class IPController extends AppController {
 		* step : 3
 		* 		image ==> out
 		********************/
-// 		// out
-// 		$res = ImagePNG($im_out, $fpath_Out_Image_File);
+		// out
+		$res = ImagePNG($im_out, $fpath_Out_Image_File);
 	
-// 		debug("ImagePNG ==> "
-// 				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
+		debug("ImagePNG ==> "
+				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
 	
 		// destroy
 		ImageDestroy($im_inp);
@@ -311,7 +461,9 @@ class IPController extends AppController {
 // 		phpinfo();
 		
 		$dpath_Image_File = "C:/WORKS_2/WS/WS_Others.Art/JVEMV6/46_art/6_visual-arts/5_free-painting/images";
-		$fname_Image_File = "test_20200127_175307.png";
+		$fname_Image_File = "test_20200130_144805.png";
+// 		$fname_Image_File = "test_20200130_143634.png";
+// 		$fname_Image_File = "test_20200127_175307.png";
 		
 		$fpath_Image_File = join("/", array($dpath_Image_File, $fname_Image_File));
 		
@@ -341,7 +493,17 @@ class IPController extends AppController {
 		* step : 2 : 2
 		* 		ip_proc_actions__Proc_1__Copy_Partial
 		********************/
-		$this->ip_proc_actions__Proc_1__Copy_Partial($fpath_Image_File);
+		//_20200130_142156:caller
+// 		$num_Partial = 80;
+// 		$num_Partial = 50;
+		$num_Partial = 20;
+// 		$num_Partial = 8;
+		
+		//ref https://webkaru.net/php/functions-default-values/
+		$this->ip_proc_actions__Proc_1__Copy_Partial_Multiple($fpath_Image_File, $num_Partial);
+		
+		//_20200128_141644:caller
+// 		$this->ip_proc_actions__Proc_1__Copy_Partial($fpath_Image_File);
 // 		ip_proc_actions__Proc_1__Copy_Simple($im_inp);
 		
 		
