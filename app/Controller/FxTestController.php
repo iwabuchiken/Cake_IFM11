@@ -358,26 +358,28 @@ class FxTestController extends AppController {
 		 * step : 3 : 2
 		 		debug : list of "pos"-s
 		 ********************/
-		$lenOf_LO_Pos = count($lo_Pos);
+		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas);
 		
-		//show
-		$msg = "\n";
+// 		$lenOf_LO_Pos = count($lo_Pos);
 		
-		//_20200128_174019:next
-		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
+// 		//show
+// 		$msg = "\n";
 		
-			$pos = $lo_Pos[$i];
+// 		//_20200128_174019:next
+// 		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
+		
+// 			$pos = $lo_Pos[$i];
 			
-			$msg .= "\$pos->st_idx\t" . $pos->st_idx;
-			$msg .= " / ";
-			$msg .= "\$pos->st_pr\t" . $pos->st_pr;
-			$msg .= "\n";
+// 			$msg .= "\$pos->st_idx\t" . $pos->st_idx;
+// 			$msg .= " / ";
+// 			$msg .= "\$pos->st_pr\t" . $pos->st_pr;
+// 			$msg .= "\n";
 			
-			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
-			$msg .= "\n";
-			$msg .= "\n";
+// 			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
+// 			$msg .= "\n";
+// 			$msg .= "\n";
 			
-		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
+// 		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
 		
 		//debug : write
 		Utils::write_Log__Fx_Admin(

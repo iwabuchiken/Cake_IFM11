@@ -358,7 +358,7 @@ class LibEaTester {
 		//_20200109_175554:head
 		//_20200109_175557:wl
 		
-		debug("get_Bar_Type");
+// 		debug("get_Bar_Type");
 		
 		/********************
 		* step : 0
@@ -620,7 +620,117 @@ class LibEaTester {
 	}//public static function show_Basic_Pos_Data($pos, __FILE__, __LINE__) {
 
 	/********************
-	 * show_Basic_Pos_Data
+	 * show_Basic_Pos_Data__Build_Lines
+	 * 	at : 2020/01/12 17:44:31
+	 ********************/
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
+	public static function show_Basic_Pos_Data__Build_Lines($pos, $fname, $file_line) {
+		//_20200112_173841:caller
+		//_20200112_173843:head
+		//_20200112_173846:wl
+	
+		//report
+		//debug
+		$msg = "\n"; $msg .= "(show_Basic_Pos_Data)";
+		$msg .= "\n";
+			
+		$msg .= "\$pos->st_idx\t" . $pos->st_idx . "\t" . "\$pos->st_pr\t" . number_format($pos->st_pr, 3);
+		$msg .= "\n";
+	
+		$msg .= "\$pos->cu_idx\t" . $pos->cu_idx . "\t" . "\$pos->cu_pr\t" . number_format($pos->cu_pr, 3);
+		$msg .= "\n";
+	
+		$msg .= "\$pos->rf_idx\t" . $pos->rf_idx . "\t" . "\$pos->rf_pr\t" . number_format($pos->rf_pr, 3);
+		$msg .= "\n";
+	
+		$msg .= "\$pos->ext_idx\t" . $pos->ext_idx . "\t" . "\$pos->ext_pr\t" . number_format($pos->ext_pr, 3);
+		$msg .= "\n";
+	
+		$msg .= "\$pos->val_TP\t" . number_format($pos->val_TP, 3)
+		. "\t" . "\$pos->val_SL\t" . number_format($pos->val_SL, 3)
+		. "\t" . "\$pos->val_SPREAD\t" . number_format($pos->val_SPREAD, 3);
+		$msg .= "\n";
+	
+		$msg .= "\$pos->pr_TP\t" . number_format($pos->pr_TP, 3)
+		. "\t" . "\$pos->pr_SL\t" . number_format($pos->pr_SL, 3);
+		$msg .= "\n";
+			
+		$msg .= "\$pos->trail_starting_idx\t" . $pos->trail_starting_idx
+		. "\t" . "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
+		$msg .= "\n";
+			
+		// return
+		return $msg;
+		
+// 		Utils::write_Log__Fx_Admin(
+// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 				, $msg, $fname, $file_line);
+	
+	}//public static function show_Basic_Pos_Data__Build_Lines($pos, $fname, $file_line) {
+	
+	/********************
+	 * show_LO_Pos_Data__Build_Lines
+	 * 	at : 2020/01/30 18:10:48
+	 ********************/
+	public static function show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas) {
+		//_20200130_181154:caller
+		//_20200130_181158:head
+		//_20200130_181201:wl
+	
+		$lenOf_LO_Pos = count($lo_Pos);
+		
+		//show
+		$msg = "\n";
+		
+		//_20200128_174019:next
+		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
+		
+			$pos = $lo_Pos[$i];
+			
+			$msg .= "-----------------------------------";
+			$msg .= "\n";
+			
+			//_20200130_182020:next
+			// start
+			$msg .= "\$pos->st_idx\t" . $pos->st_idx;
+			$msg .= " / ";
+			$msg .= "\$pos->st_pr\t" . $pos->st_pr;
+			$msg .= "\n";
+			
+			// current
+			$msg .= "\$pos->cu_idx\t" . $pos->cu_idx;
+			$msg .= " / ";
+			$msg .= "\$pos->cu_pr\t" . $pos->cu_pr;
+			$msg .= "\n";
+			
+			// exit
+			$msg .= "\$pos->ext_idx\t" . $pos->ext_idx;
+			$msg .= " / ";
+			$msg .= "\$pos->ext_pr\t" . $pos->ext_pr;
+			$msg .= "\n";
+			
+			// date time
+			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
+			$msg .= "\n";
+			$msg .= "\n";
+			
+		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
+		
+		//debug
+		$msg .= "len => $lenOf_LO_Pos";
+		
+		
+		// return
+		return $msg;
+	
+	}//public static function show_LO_Pos_Data__Build_Lines($lo_Pos) {
+	
+	
+	
+	/********************
+	 * show_Basic_BarData_Data
 	 * 	at : 2020/01/12 17:44:31
 	 ********************/
 	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
@@ -652,6 +762,42 @@ class LibEaTester {
 				, $msg, $fname, $file_line);
 	
 	}//public static function show_Basic_BarData_Data($pos, $fname, $file_line)
+	
+	/********************
+	 * show_Basic_BarData_Data__Build_lines
+	 * 	at : 2020/01/30 17:55:52
+	 ********************/
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
+	public static function show_Basic_BarData_Data__Build_lines($bd, $fname, $file_line) {
+		//_20200120_161219:caller
+		//_20200120_161225:head
+		//_20200120_161228:wl
+	
+		//report
+		//debug
+		$msg = "\n"; $msg .= "(show_Basic_BarData_Data)";
+		$msg .= "\n";
+			
+		$msg .= "\$bd->dateTime\t" . $bd->dateTime;
+		$msg .= "\n";
+	
+		$msg .= "\$bd->price_Open\t" . number_format($bd->price_Open, 3);
+		$msg .= "\n";
+	
+		$msg .= "\$bd->price_Close\t" . number_format($bd->price_Close, 3);
+		$msg .= "\n";
+		$msg .= "\n";
+	
+		// return
+		return $msg;
+			
+// 		Utils::write_Log__Fx_Admin(
+// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 				, $msg, $fname, $file_line);
+	
+	}//public static function show_Basic_BarData_Data__Build_lines($bd, $fname, $file_line)
 	
 	
 	/********************
@@ -879,6 +1025,13 @@ class LibEaTester {
 		//_20200106_131002:wl
 		
 		/********************
+		* step : A : 0
+		* 		prep : log lines
+		********************/
+		//_20200130_175642:marker
+		$lo_Log_Lines = array();
+		
+		/********************
 		* step : A : 1
 		* 		prep
 		********************/
@@ -928,10 +1081,13 @@ class LibEaTester {
 		//debug:20200121_171036
 		$msg	= "\$_num_Loop_Start\t" . $_num_Loop_Start;
 		$msg	.= "\n";
-			
-		Utils::write_Log__Fx_Admin(
-				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-				, $msg, __FILE__, __LINE__);
+
+		// append
+		array_push($lo_Log_Lines, $msg);
+		
+// 		Utils::write_Log__Fx_Admin(
+// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 				, $msg, __FILE__, __LINE__);
 		
 		for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++) {
 			
@@ -949,18 +1105,24 @@ class LibEaTester {
 			$msg = "(step : B : 1) ========================= [loop : \$i = $i]";
 			$msg .= "\n";
 			
-			Utils::write_Log__Fx_Admin(
-					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-					, $msg, __FILE__, __LINE__);
+			// append
+			array_push($lo_Log_Lines, $msg);
+				
+// 			Utils::write_Log__Fx_Admin(
+// 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 					, $msg, __FILE__, __LINE__);
 				
 			/********************
 			* step : B : 1 : 1
 			* 		debug : show bar data
 			********************/
-			LibEaTester::show_Basic_BarData_Data(
+			$msg = LibEaTester::show_Basic_BarData_Data__Build_lines(
 								$lo_BarDatas[$i]
 								, CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin);
-			
+
+			// append
+			array_push($lo_Log_Lines, $msg);
+				
 			/********************
 			* step : B : 2
 			* 		stopper
@@ -973,12 +1135,16 @@ class LibEaTester {
 
 				$msg = "\n"; $msg .= "(step : B : 2) stopper : loop ==> maxed out : \$cntOf_Loop = $cntOf_Loop / \$maxOf_Loop = $maxOf_Loop";
 				$msg .= "\n"; $msg .= "breaking the loop...";
-				Utils::write_Log__Fx_Admin(
-						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-						, $msg, __FILE__, __LINE__);
 				
-				debug("loop ==> maxed out : \$cntOf_Loop = $cntOf_Loop / \$maxOf_Loop = $maxOf_Loop");
-				debug("breaking the loop...");
+				// append
+				array_push($lo_Log_Lines, $msg);
+				
+// 				Utils::write_Log__Fx_Admin(
+// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 						, $msg, __FILE__, __LINE__);
+				
+// 				debug("loop ==> maxed out : \$cntOf_Loop = $cntOf_Loop / \$maxOf_Loop = $maxOf_Loop");
+// 				debug("breaking the loop...");
 				
 				break;
 				
@@ -999,9 +1165,13 @@ class LibEaTester {
 				 * 		log
 				 ********************/
 				$msg = "\n"; $msg .= "(step : B : j1 : Y : 1) position ==> taken";
-				Utils::write_Log__Fx_Admin(
-						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-						, $msg, __FILE__, __LINE__);
+
+				// append
+				array_push($lo_Log_Lines, $msg);
+				
+// 				Utils::write_Log__Fx_Admin(
+// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 						, $msg, __FILE__, __LINE__);
 				
 				/********************
 				 * step : B : j1 : Y : 2
@@ -1023,6 +1193,15 @@ class LibEaTester {
 				
 				$msg .= "(step : B : j1 : N : 1) position ==> NOT taken";
 				$msg .= "\n";
+				
+				// append
+				array_push($lo_Log_Lines, $msg);
+
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, join("", $lo_Log_Lines), __FILE__, __LINE__);
+				
+				$lo_Log_Lines = array();
 				
 				//_20200106_142418:caller
 				//$valOf_Ret = [$flg_Position, $pos];
@@ -1065,9 +1244,12 @@ class LibEaTester {
 				$msg .= "\$typeOf_Bar\t$typeOf_Bar";
 				$msg .= "\n";
 				
-				Utils::write_Log__Fx_Admin(
-						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-						, $msg, __FILE__, __LINE__);
+				// append
+				array_push($lo_Log_Lines, $msg);
+				
+// 				Utils::write_Log__Fx_Admin(
+// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 						, $msg, __FILE__, __LINE__);
 				
 // 				debug($msg);
 				
@@ -1097,10 +1279,13 @@ class LibEaTester {
 			//_20200116_142816:next
 			$msg = "(step : D : 1 : 1) for-loop : continue admin";
 			$msg .= "\n";
-			
-			Utils::write_Log__Fx_Admin(
-					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-					, $msg, __FILE__, __LINE__);
+
+			// append
+			array_push($lo_Log_Lines, $msg);
+				
+// 			Utils::write_Log__Fx_Admin(
+// 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 					, $msg, __FILE__, __LINE__);
 					
 			/********************
 			 * step : D : 1 : 2
@@ -1121,11 +1306,14 @@ class LibEaTester {
 				$msg = "(step : D : 1 : 2-2) C4";
 				$msg .= "\n";
 					
-				Utils::write_Log__Fx_Admin(
-						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-						, $msg, __FILE__, __LINE__);
+// 				Utils::write_Log__Fx_Admin(
+// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 						, $msg, __FILE__, __LINE__);
 				
-				LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
+				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, __FILE__, __LINE__);
+				
+				// append
+				array_push($lo_Log_Lines, $msg);
 				
 			} else if ($typeOf_Bar == CONS::$strOf_BarType__C5) {
 				/********************
@@ -1145,11 +1333,15 @@ class LibEaTester {
 				$msg = "(step : D : 1 : 2-4 : 1) SL";
 				$msg .= "\n";
 					
-				Utils::write_Log__Fx_Admin(
-						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-						, $msg, __FILE__, __LINE__);
+// 				Utils::write_Log__Fx_Admin(
+// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 						, $msg, __FILE__, __LINE__);
 				
-				LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
+				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, __FILE__, __LINE__);
+// 				LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
+				
+				// append
+				array_push($lo_Log_Lines, $msg);
 				
 				/********************
 				 * step : D : 1 : 2-4 : 2
@@ -1158,9 +1350,12 @@ class LibEaTester {
 				$msg = "(step : D : 1 : 2-4 : 2) set val : loop num";
 				$msg .= "\n";
 					
-				Utils::write_Log__Fx_Admin(
-						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-						, $msg, __FILE__, __LINE__);
+// 				Utils::write_Log__Fx_Admin(
+// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 						, $msg, __FILE__, __LINE__);
+
+				// append
+				array_push($lo_Log_Lines, $msg);
 				
 				$valOf_Ret__received[3] = $i;
 				
@@ -1170,10 +1365,13 @@ class LibEaTester {
 				 ********************/
 				$msg = "(step : D : 1 : 2-4 : 3) for-loop ==> breaking... (\$i = $i)";
 				$msg .= "\n";
-					
-				Utils::write_Log__Fx_Admin(
-						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-						, $msg, __FILE__, __LINE__);
+				
+				// append
+				array_push($lo_Log_Lines, $msg);
+				
+// 				Utils::write_Log__Fx_Admin(
+// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 						, $msg, __FILE__, __LINE__);
 				
 				break;
 				
@@ -1196,6 +1394,14 @@ class LibEaTester {
 			
 			
 		}//for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++)
+
+		/********************
+		 * step : ??
+		 * 		log
+		 ********************/
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, join("", $lo_Log_Lines), __FILE__, __LINE__);
 
 		/********************
 		 * step : X
