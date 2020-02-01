@@ -684,37 +684,87 @@ class LibEaTester {
 		//show
 		$msg = "\n";
 		
+		$msg .= "st_idx\tst_pr";
+		$msg .= "\t";
+		
+		$msg .= "cu_idx\tcu_pr";
+		$msg .= "\t";
+		
+		$msg .= "ext_idx\text_pr";
+		$msg .= "\t";
+		
+		$msg .= "rf_idx\trf_pr";
+		$msg .= "\t";
+		
+		$msg .= "base_idx\tbase_pr";
+		$msg .= "\t";
+		
+		$msg .= "\n";
+		
 		//_20200128_174019:next
 		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
 		
 			$pos = $lo_Pos[$i];
 			
-			$msg .= "-----------------------------------";
-			$msg .= "\n";
+// 			$msg .= "-----------------------------------";
+// 			$msg .= "\n";
 			
 			//_20200130_182020:next
 			// start
-			$msg .= "\$pos->st_idx\t" . $pos->st_idx;
-			$msg .= " / ";
-			$msg .= "\$pos->st_pr\t" . $pos->st_pr;
-			$msg .= "\n";
+			$msg .= $pos->st_idx . "\t" . $pos->st_pr;
+			$msg .= "\t";
 			
 			// current
-			$msg .= "\$pos->cu_idx\t" . $pos->cu_idx;
-			$msg .= " / ";
-			$msg .= "\$pos->cu_pr\t" . $pos->cu_pr;
-			$msg .= "\n";
+			$msg .= $pos->cu_idx . "\t" . $pos->cu_pr;
+			$msg .= "\t";
 			
 			// exit
-			$msg .= "\$pos->ext_idx\t" . $pos->ext_idx;
-			$msg .= " / ";
-			$msg .= "\$pos->ext_pr\t" . $pos->ext_pr;
-			$msg .= "\n";
+			$msg .= $pos->ext_idx . "\t" . $pos->ext_pr;
+			$msg .= "\t";
 			
-			// date time
-			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
+			// refer
+			$msg .= $pos->rf_idx . "\t" . $pos->rf_pr;
+			$msg .= "\t";
+			
+			// base
+			$msg .= $pos->base_idx . "\t" . $pos->base_pr;
+			$msg .= "\t";
+			
+			// separator
 			$msg .= "\n";
-			$msg .= "\n";
+						
+// 			// exit
+// 			$msg .= "\$pos->ext_idx\t" . $pos->ext_idx;
+// 			$msg .= " / ";
+// 			$msg .= "\$pos->ext_pr\t" . $pos->ext_pr;
+// 			$msg .= "\n";
+			
+// 			// date time
+// 			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
+// 			$msg .= "\n";
+// 			$msg .= "\n";
+			
+// 			$msg .= "\$pos->st_idx\t" . $pos->st_idx;
+// 			$msg .= " / ";
+// 			$msg .= "\$pos->st_pr\t" . $pos->st_pr;
+// 			$msg .= "\n";
+			
+// 			// current
+// 			$msg .= "\$pos->cu_idx\t" . $pos->cu_idx;
+// 			$msg .= " / ";
+// 			$msg .= "\$pos->cu_pr\t" . $pos->cu_pr;
+// 			$msg .= "\n";
+			
+// 			// exit
+// 			$msg .= "\$pos->ext_idx\t" . $pos->ext_idx;
+// 			$msg .= " / ";
+// 			$msg .= "\$pos->ext_pr\t" . $pos->ext_pr;
+// 			$msg .= "\n";
+			
+// 			// date time
+// 			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
+// 			$msg .= "\n";
+// 			$msg .= "\n";
 			
 		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
 		
@@ -1020,9 +1070,9 @@ class LibEaTester {
 	********************/
 // 	public static function fx_tester_T_1__Exec($lo_BarDatas) {
 	public static function fx_tester_T_1__Exec($lo_BarDatas, $_num_Loop_Start) {
-		//_20200106_130954:caller
-		//_20200106_130959:head
-		//_20200106_131002:wl
+		//_20200201_160828:caller
+		//_20200201_160833:head
+		//_20200201_160836:wl
 		
 		/********************
 		* step : A : 0
@@ -1089,6 +1139,7 @@ class LibEaTester {
 // 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 // 				, $msg, __FILE__, __LINE__);
 		
+		//_20200201_163626:next
 		for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++) {
 			
 			/********************

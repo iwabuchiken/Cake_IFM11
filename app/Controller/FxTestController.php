@@ -68,6 +68,23 @@ class FxTestController extends AppController {
 		CONS::$fname_Log_Fx_Admin = "$tokensOf_fname_Log[0].[tester_T_1]" 
 								. "." . "($strOf_Time_Label)"
 								. "." . $tokensOf_fname_Log[1];
+
+		/********************
+		 * step : 0 : 1
+		 * 		prep : log dir
+		 ********************/
+		//_20200201_161421:tmp
+		$tmp_Dpath_Log_Fx_Admin__orig = CONS::$dpath_Log_Fx_Admin;
+		
+// 		CONS::$dpath_Log_Fx_Admin .= CONS::$dpath_Log_Fx_Admin . "/"
+		CONS::$dpath_Log_Fx_Admin .= "/"
+								. "log."
+								. $strOf_Time_Label . ".dir"
+								;
+// 		CONS::$dpath_Log_Fx_Admin .= "log."
+// 								. CONS::$dpath_Log_Fx_Admin . "/"
+// 								. $strOf_Time_Label . ".dir"
+// 								;
 		
 		/******************** (20 '*'s)
 		 * step : 0 : 1
@@ -211,7 +228,7 @@ class FxTestController extends AppController {
 			 * step : 2 : 1
 			 		exec
 			 ********************/
-			//_20200106_130954:caller
+			//_20200201_160828:caller
 			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas, $num_Loop_Start);
 // 			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
 			
@@ -358,6 +375,7 @@ class FxTestController extends AppController {
 		 * step : 3 : 2
 		 		debug : list of "pos"-s
 		 ********************/
+		//_20200130_181154:caller
 		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas);
 		
 // 		$lenOf_LO_Pos = count($lo_Pos);
@@ -382,8 +400,10 @@ class FxTestController extends AppController {
 // 		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
 		
 		//debug : write
+		$fname = CONS::$fname_Log_Fx_Admin . CONS::$fname_Log_Fx_Admin__List_Of_Pos__Suffix;
+		
 		Utils::write_Log__Fx_Admin(
-				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				CONS::$dpath_Log_Fx_Admin, $fname
 				, $msg, __FILE__, __LINE__);
 		
 // 		//_20200106_130954:caller
@@ -424,7 +444,7 @@ class FxTestController extends AppController {
 // 		LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
 // 		$this->fx_tester_T_1__Exec($lo_BarDatas);
 		
-		/******************** (20 '*'s)
+		/********************
 		 * step : X
 		 * 	set : values for view
 		 *
@@ -436,6 +456,15 @@ class FxTestController extends AppController {
 		
 		// layout
 		$this->layout = "plain";
+		
+		/********************
+		 * step : X
+		 * 	set : CONS::$dpath_Log_Fx_Admin
+		 *
+		 ********************/
+		// log file dir ==> back to orig
+		CONS::$dpath_Log_Fx_Admin = $tmp_Dpath_Log_Fx_Admin__orig;
+		
 		
 	}//public function fx_tester_T_1() {
 

@@ -1,0 +1,3116 @@
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	11
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 05:30
+$numOf_Loop	21
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	11
+$num_Loop_Start (current)	11
+$num_Loop_Start (updated)	12
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	12
+(step : B : 1) ========================= [loop : $i = 12]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 05:45
+$bd->price_Open	75.919
+$bd->price_Close	75.912
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.919
+$pr_TP = 76.029
+$pr_SL = 75.859
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.878
+$pos->pr_SL	75.859
+$bd->price_Low - $pos->pr_SL	0.019
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.923
+$pos->pr_TP	76.029
+$bd->price_High - $pos->pr_TP	-0.106
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.923
+$pos->trail_starting_pr	75.959
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.923
+$bd->price_Close	75.912
+$bd->price_Close - $bd->price_High	-0.011
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 12(2020.01.16 05:45)) / $pos->st_pr = 75.919
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 13]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:00
+$bd->price_Open	75.913
+$bd->price_Close	75.896
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 14]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:15
+$bd->price_Open	75.896
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 15]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:30
+$bd->price_Open	75.934
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 16]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:45
+$bd->price_Open	75.918
+$bd->price_Close	75.914
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 17]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:00
+$bd->price_Open	75.915
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 18]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:15
+$bd->price_Open	75.923
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 19]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	12	$pos->st_pr	75.919
+$pos->cu_idx	12	$pos->cu_pr	75.912
+$pos->rf_idx	12	$pos->rf_pr	75.923
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.029	$pos->pr_SL	75.859
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.959
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	12
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 05:45
+$numOf_Loop	22
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	12
+$num_Loop_Start (current)	12
+$num_Loop_Start (updated)	13
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	13
+(step : B : 1) ========================= [loop : $i = 13]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:00
+$bd->price_Open	75.913
+$bd->price_Close	75.896
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.913
+$pr_TP = 76.023
+$pr_SL = 75.853
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.885
+$pos->pr_SL	75.853
+$bd->price_Low - $pos->pr_SL	0.032
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.914
+$pos->pr_TP	76.023
+$bd->price_High - $pos->pr_TP	-0.109
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.914
+$pos->trail_starting_pr	75.953
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.914
+$bd->price_Close	75.896
+$bd->price_Close - $bd->price_High	-0.018
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 13(2020.01.16 06:00)) / $pos->st_pr = 75.913
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 14]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:15
+$bd->price_Open	75.896
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 15]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:30
+$bd->price_Open	75.934
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 16]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:45
+$bd->price_Open	75.918
+$bd->price_Close	75.914
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 17]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:00
+$bd->price_Open	75.915
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 18]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:15
+$bd->price_Open	75.923
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 19]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	13	$pos->st_pr	75.913
+$pos->cu_idx	13	$pos->cu_pr	75.896
+$pos->rf_idx	13	$pos->rf_pr	75.914
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.023	$pos->pr_SL	75.853
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.953
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	13
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 06:00
+$numOf_Loop	23
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	13
+$num_Loop_Start (current)	13
+$num_Loop_Start (updated)	14
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	14
+(step : B : 1) ========================= [loop : $i = 14]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:15
+$bd->price_Open	75.896
+$bd->price_Close	75.934
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.896
+$pr_TP = 76.006
+$pr_SL = 75.836
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	14	$pos->st_pr	75.896
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.006	$pos->pr_SL	75.836
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.936
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	14	$pos->st_pr	75.896
+$pos->cu_idx	14	$pos->cu_pr	75.934
+$pos->rf_idx	14	$pos->rf_pr	75.954
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.006	$pos->pr_SL	75.836
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.936
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.896
+$pos->pr_SL	75.836
+$bd->price_Low - $pos->pr_SL	0.060
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.954
+$pos->pr_TP	76.006
+$bd->price_High - $pos->pr_TP	-0.052
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 204] (step : j3 : Y : 1) $bd->price_High >= $pos->trail_starting_pr (trail ==> start)
+$bd->price_High	75.954
+$pos->trail_starting_pr	75.936
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => UNKNOWN
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; UNKNOWN
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 14(2020.01.16 06:15)) / $pos->st_pr = 75.896
+$typeOf_Bar	UNKNOWN
+(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 15]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:30
+$bd->price_Open	75.934
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 16]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:45
+$bd->price_Open	75.918
+$bd->price_Close	75.914
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 17]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:00
+$bd->price_Open	75.915
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 18]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:15
+$bd->price_Open	75.923
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 19]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	UNKNOWN
+$pos->st_idx	14
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 06:15
+$numOf_Loop	24
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	14
+$num_Loop_Start (current)	14
+$num_Loop_Start (updated)	15
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	15
+(step : B : 1) ========================= [loop : $i = 15]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:30
+$bd->price_Open	75.934
+$bd->price_Close	75.918
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.934
+$pr_TP = 76.044
+$pr_SL = 75.874
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.914
+$pos->pr_SL	75.874
+$bd->price_Low - $pos->pr_SL	0.040
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.934
+$pos->pr_TP	76.044
+$bd->price_High - $pos->pr_TP	-0.110
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.934
+$pos->trail_starting_pr	75.974
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.934
+$bd->price_Close	75.918
+$bd->price_Close - $bd->price_High	-0.016
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 15(2020.01.16 06:30)) / $pos->st_pr = 75.934
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 16]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:45
+$bd->price_Open	75.918
+$bd->price_Close	75.914
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 17]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:00
+$bd->price_Open	75.915
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 18]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:15
+$bd->price_Open	75.923
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 19]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	15	$pos->st_pr	75.934
+$pos->cu_idx	15	$pos->cu_pr	75.918
+$pos->rf_idx	15	$pos->rf_pr	75.934
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.044	$pos->pr_SL	75.874
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.974
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	15
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 06:30
+$numOf_Loop	25
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	15
+$num_Loop_Start (current)	15
+$num_Loop_Start (updated)	16
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	16
+(step : B : 1) ========================= [loop : $i = 16]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 06:45
+$bd->price_Open	75.918
+$bd->price_Close	75.914
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.91800000000001
+$pr_TP = 76.028
+$pr_SL = 75.858
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.911
+$pos->pr_SL	75.858
+$bd->price_Low - $pos->pr_SL	0.053
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.945
+$pos->pr_TP	76.028
+$bd->price_High - $pos->pr_TP	-0.083
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.945
+$pos->trail_starting_pr	75.958
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.945
+$bd->price_Close	75.914
+$bd->price_Close - $bd->price_High	-0.031
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 16(2020.01.16 06:45)) / $pos->st_pr = 75.91800000000001
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 17]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:00
+$bd->price_Open	75.915
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 18]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:15
+$bd->price_Open	75.923
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 19]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	16	$pos->st_pr	75.918
+$pos->cu_idx	16	$pos->cu_pr	75.914
+$pos->rf_idx	16	$pos->rf_pr	75.945
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.028	$pos->pr_SL	75.858
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.958
+(step : B : 1) ========================= [loop : $i = 26]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	16
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 06:45
+$numOf_Loop	26
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	16
+$num_Loop_Start (current)	16
+$num_Loop_Start (updated)	17
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	17
+(step : B : 1) ========================= [loop : $i = 17]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:00
+$bd->price_Open	75.915
+$bd->price_Close	75.922
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.91500000000001
+$pr_TP = 76.025
+$pr_SL = 75.855
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.913
+$pos->pr_SL	75.855
+$bd->price_Low - $pos->pr_SL	0.058
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.940
+$pos->pr_TP	76.025
+$bd->price_High - $pos->pr_TP	-0.085
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.940
+$pos->trail_starting_pr	75.955
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.940
+$bd->price_Close	75.922
+$bd->price_Close - $bd->price_High	-0.018
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 17(2020.01.16 07:00)) / $pos->st_pr = 75.91500000000001
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 18]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:15
+$bd->price_Open	75.923
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 19]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 26]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	17	$pos->st_pr	75.915
+$pos->cu_idx	17	$pos->cu_pr	75.922
+$pos->rf_idx	17	$pos->rf_pr	75.940
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.025	$pos->pr_SL	75.855
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.955
+(step : B : 1) ========================= [loop : $i = 27]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	17
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 07:00
+$numOf_Loop	27
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	17
+$num_Loop_Start (current)	17
+$num_Loop_Start (updated)	18
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	18
+(step : B : 1) ========================= [loop : $i = 18]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:15
+$bd->price_Open	75.923
+$bd->price_Close	75.913
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.923
+$pr_TP = 76.033
+$pr_SL = 75.863
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.913
+$pos->pr_SL	75.863
+$bd->price_Low - $pos->pr_SL	0.050
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.935
+$pos->pr_TP	76.033
+$bd->price_High - $pos->pr_TP	-0.098
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.935
+$pos->trail_starting_pr	75.963
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.935
+$bd->price_Close	75.913
+$bd->price_Close - $bd->price_High	-0.022
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 18(2020.01.16 07:15)) / $pos->st_pr = 75.923
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 19]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 26]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 27]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	18	$pos->st_pr	75.923
+$pos->cu_idx	18	$pos->cu_pr	75.913
+$pos->rf_idx	18	$pos->rf_pr	75.935
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 28]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	18
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 07:15
+$numOf_Loop	28
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	18
+$num_Loop_Start (current)	18
+$num_Loop_Start (updated)	19
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	19
+(step : B : 1) ========================= [loop : $i = 19]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:30
+$bd->price_Open	75.914
+$bd->price_Close	75.922
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.914
+$pr_TP = 76.024
+$pr_SL = 75.854
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.908
+$pos->pr_SL	75.854
+$bd->price_Low - $pos->pr_SL	0.054
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.926
+$pos->pr_TP	76.024
+$bd->price_High - $pos->pr_TP	-0.098
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.926
+$pos->trail_starting_pr	75.954
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.926
+$bd->price_Close	75.922
+$bd->price_Close - $bd->price_High	-0.004
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 19(2020.01.16 07:30)) / $pos->st_pr = 75.914
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 26]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 27]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 28]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	19	$pos->st_pr	75.914
+$pos->cu_idx	19	$pos->cu_pr	75.922
+$pos->rf_idx	19	$pos->rf_pr	75.926
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.024	$pos->pr_SL	75.854
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.954
+(step : B : 1) ========================= [loop : $i = 29]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 10:00
+$bd->price_Open	75.942
+$bd->price_Close	75.955
+
+
+(step : B : 2) stopper : loop ==> maxed out : $cntOf_Loop = 11 / $maxOf_Loop = 10
+breaking the loop...
+[02/01/2020 16:16:05 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	19
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 07:30
+$numOf_Loop	29
+
+
+[02/01/2020 16:16:05 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	19
+$num_Loop_Start (current)	19
+$num_Loop_Start (updated)	20
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 1202] $_num_Loop_Start	20
+(step : B : 1) ========================= [loop : $i = 20]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 07:45
+$bd->price_Open	75.922
+$bd->price_Close	75.934
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:05 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:05 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.922
+$pr_TP = 76.032
+$pr_SL = 75.862
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:05 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.918
+$pos->pr_SL	75.862
+$bd->price_Low - $pos->pr_SL	0.056
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.939
+$pos->pr_TP	76.032
+$bd->price_High - $pos->pr_TP	-0.093
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.939
+$pos->trail_starting_pr	75.962
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.939
+$bd->price_Close	75.934
+$bd->price_Close - $bd->price_High	-0.005
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:05 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 20(2020.01.16 07:45)) / $pos->st_pr = 75.922
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 26]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 27]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 28]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+(step : B : 1) ========================= [loop : $i = 29]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 10:00
+$bd->price_Open	75.942
+$bd->price_Close	75.955
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	20	$pos->st_pr	75.922
+$pos->cu_idx	20	$pos->cu_pr	75.934
+$pos->rf_idx	20	$pos->rf_pr	75.939
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.032	$pos->pr_SL	75.862
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.962
+
+[02/01/2020 16:16:06 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	20
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 07:45
+$numOf_Loop	29
+
+
+[02/01/2020 16:16:06 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	20
+$num_Loop_Start (current)	20
+$num_Loop_Start (updated)	21
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 1202] $_num_Loop_Start	21
+(step : B : 1) ========================= [loop : $i = 21]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:00
+$bd->price_Open	75.935
+$bd->price_Close	75.923
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:06 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:06 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.935
+$pr_TP = 76.045
+$pr_SL = 75.875
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:06 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.900
+$pos->pr_SL	75.875
+$bd->price_Low - $pos->pr_SL	0.025
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.937
+$pos->pr_TP	76.045
+$bd->price_High - $pos->pr_TP	-0.108
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.937
+$pos->trail_starting_pr	75.975
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.937
+$bd->price_Close	75.923
+$bd->price_Close - $bd->price_High	-0.014
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 21(2020.01.16 08:00)) / $pos->st_pr = 75.935
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+(step : B : 1) ========================= [loop : $i = 26]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+(step : B : 1) ========================= [loop : $i = 27]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+(step : B : 1) ========================= [loop : $i = 28]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+(step : B : 1) ========================= [loop : $i = 29]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 10:00
+$bd->price_Open	75.942
+$bd->price_Close	75.955
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	21	$pos->st_pr	75.935
+$pos->cu_idx	21	$pos->cu_pr	75.923
+$pos->rf_idx	21	$pos->rf_pr	75.937
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.045	$pos->pr_SL	75.875
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.975
+
+[02/01/2020 16:16:06 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	21
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 08:00
+$numOf_Loop	29
+
+
+[02/01/2020 16:16:06 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	21
+$num_Loop_Start (current)	21
+$num_Loop_Start (updated)	22
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 1202] $_num_Loop_Start	22
+(step : B : 1) ========================= [loop : $i = 22]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:15
+$bd->price_Open	75.923
+$bd->price_Close	75.892
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:06 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:06 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.923
+$pr_TP = 76.033
+$pr_SL = 75.863
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:06 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.887
+$pos->pr_SL	75.863
+$bd->price_Low - $pos->pr_SL	0.024
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.928
+$pos->pr_TP	76.033
+$bd->price_High - $pos->pr_TP	-0.105
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.928
+$pos->trail_starting_pr	75.963
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.928
+$bd->price_Close	75.892
+$bd->price_Close - $bd->price_High	-0.036
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 22(2020.01.16 08:15)) / $pos->st_pr = 75.923
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 26]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 27]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 28]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+(step : B : 1) ========================= [loop : $i = 29]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 10:00
+$bd->price_Open	75.942
+$bd->price_Close	75.955
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	22	$pos->st_pr	75.923
+$pos->cu_idx	22	$pos->cu_pr	75.892
+$pos->rf_idx	22	$pos->rf_pr	75.928
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.033	$pos->pr_SL	75.863
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.963
+
+[02/01/2020 16:16:06 : FxTestController.php : 277] (controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)
+tester ==> exec ==> comp
+$flg_Position	true
+$typeOf_Bar	C4
+$pos->st_idx	22
+$lo_BarDatas[$pos->st_idx]->dateTime	2020.01.16 08:15
+$numOf_Loop	29
+
+
+[02/01/2020 16:16:06 : FxTestController.php : 346] $num_Latest_Pos_Start_Idx	22
+$num_Loop_Start (current)	22
+$num_Loop_Start (updated)	23
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 1202] $_num_Loop_Start	23
+(step : B : 1) ========================= [loop : $i = 23]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:30
+$bd->price_Open	75.892
+$bd->price_Close	75.918
+
+
+(step : B : j1 : N : 1) position ==> NOT taken
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 842] 
+(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken
+[02/01/2020 16:16:06 : lib_ea_tester.php : 870] 
+(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected
+[02/01/2020 16:16:06 : lib_ea_tester.php : 908] 
+(* step : B : j2 : Y : 3) calc ==> comp
+$pr_Open = 75.892
+$pr_TP = 76.002
+$pr_SL = 75.832
+$val_TP = 0.1
+$val_SL = 0.05
+$val_SPREAD = 0.01
+[02/01/2020 16:16:06 : lib_ea_tester.php : 518] 
+(step : B : j2 : Y : 4) Pos ==> init comp. !!
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->val_TP	0.100	$pos->val_SL	0.050
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 939] 
+(show_Basic_Pos_Data)
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->cu_idx	23	$pos->cu_pr	75.918
+$pos->rf_idx	23	$pos->rf_pr	75.929
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 407] 
+(get_Bar_Type : step : j1 : A2 : BUY)
+$typeOf_Position => BUY
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 103] 
+(get_Bar_Type : step : j1 : N : 1) $bd->price_Low > $pos->pr_SL (not SL)
+$bd->price_Low	75.885
+$pos->pr_SL	75.832
+$bd->price_Low - $pos->pr_SL	0.053
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 167] 
+(get_Bar_Type : step : j2 : Y : 1) $bd->price_High < $pos->pr_TP (not TP)
+$bd->price_High	75.929
+$pos->pr_TP	76.002
+$bd->price_High - $pos->pr_TP	-0.073
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 230] 
+(step : j3 : N : 1) $bd->price_High < $pos->trail_starting_pr (trail ==> NOT start)
+$bd->price_High	75.929
+$pos->trail_starting_pr	75.932
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 307] $bd->price_High <> $bd->price_Close
+$bd->price_High	75.929
+$bd->price_Close	75.918
+$bd->price_Close - $bd->price_High	-0.011
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 420] $typeOf_Bar => C4
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 960] 
+(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; C4
+
+[02/01/2020 16:16:06 : lib_ea_tester.php : 1404] 
+(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned
+$flg_Position	true
+$pos : st_idx = 23(2020.01.16 08:30)) / $pos->st_pr = 75.892
+$typeOf_Bar	C4
+(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->cu_idx	23	$pos->cu_pr	75.918
+$pos->rf_idx	23	$pos->rf_pr	75.929
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+(step : B : 1) ========================= [loop : $i = 24]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 08:45
+$bd->price_Open	75.917
+$bd->price_Close	75.928
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->cu_idx	23	$pos->cu_pr	75.918
+$pos->rf_idx	23	$pos->rf_pr	75.929
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+(step : B : 1) ========================= [loop : $i = 25]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:00
+$bd->price_Open	75.929
+$bd->price_Close	75.913
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->cu_idx	23	$pos->cu_pr	75.918
+$pos->rf_idx	23	$pos->rf_pr	75.929
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+(step : B : 1) ========================= [loop : $i = 26]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:15
+$bd->price_Open	75.912
+$bd->price_Close	75.923
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->cu_idx	23	$pos->cu_pr	75.918
+$pos->rf_idx	23	$pos->rf_pr	75.929
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+(step : B : 1) ========================= [loop : $i = 27]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:30
+$bd->price_Open	75.923
+$bd->price_Close	75.935
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->cu_idx	23	$pos->cu_pr	75.918
+$pos->rf_idx	23	$pos->rf_pr	75.929
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+(step : B : 1) ========================= [loop : $i = 28]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 09:45
+$bd->price_Open	75.934
+$bd->price_Close	75.940
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->cu_idx	23	$pos->cu_pr	75.918
+$pos->rf_idx	23	$pos->rf_pr	75.929
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+(step : B : 1) ========================= [loop : $i = 29]
+
+(show_Basic_BarData_Data)
+$bd->dateTime	2020.01.16 10:00
+$bd->price_Open	75.942
+$bd->price_Close	75.955
+
+
+(step : B : j1 : Y : 1) position ==> taken(step : D : 1 : 1) for-loop : continue admin
+(step : D : 1 : 2-2) C4
+
+(show_Basic_Pos_Data)
+$pos->st_idx	23	$pos->st_pr	75.892
+$pos->cu_idx	23	$pos->cu_pr	75.918
+$pos->rf_idx	23	$pos->rf_pr	75.929
+$pos->ext_idx	-1	$pos->ext_pr	0.000
+$pos->val_TP	0.100	$pos->val_SL	0.050	$pos->val_SPREAD	0.010
+$pos->pr_TP	76.002	$pos->pr_SL	75.832
+$pos->trail_starting_idx	-1	$pos->trail_starting_pr	75.932
+
