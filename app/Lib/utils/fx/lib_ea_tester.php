@@ -412,7 +412,7 @@ class LibEaTester {
 			
 			$typeOf_Bar = $valOf_Ret__received[0];
 
-			$msg	= "\$typeOf_Bar => $typeOf_Bar";
+			$msg	= "(get_Bar_Type : step : j1 : A2 (continued))\$typeOf_Bar => $typeOf_Bar";
 			$msg	.= "\n";
 			
 			Utils::write_Log__Fx_Admin(
@@ -848,19 +848,231 @@ class LibEaTester {
 // 				, $msg, $fname, $file_line);
 	
 	}//public static function show_Basic_BarData_Data__Build_lines($bd, $fname, $file_line)
+
+	/********************
+	 * loop_J1_N
+	 * 	at : 2020/01/12 17:44:40
+	 ********************/
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
+	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
+	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos, $lo_Vals) {
+		//_20200106_142418:caller
+		//_20200106_142421:head
+		//_20200106_142425:wl
+		/********************
+		 * step : 0 : 1
+		 * 		prep : unpack
+		 * 		$lo_Vals = [
+		 'val_TP'	=> 0.10
+		 , 'val_SL'	=> 0.05
+		 , 'val_SPREAD'	=> 0.01
+			];
+			********************/
+		$val_TP			= $lo_Vals['val_TP'];
+		$val_SL			= $lo_Vals['val_SL'];
+		$val_SPREAD		= $lo_Vals['val_SPREAD'];
+	
+		/********************
+		 * step : 0 : 2
+		 * 		vars
+		********************/
+		$typeOf_Bar = "";
+	
+		/********************
+		 * step : B : j1 : N : 1
+		 * 		log
+		 ********************/
+		$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken";
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg
+				, __FILE__, __LINE__);
+	
+		/********************
+		 * step : B : j1 : N : 2
+		 * 		detect : pattern
+		********************/
+		//_20200114_115250:tmp
+		$resultOf_Detect_Pattern = true;
+		// 		$resultOf_Detect_Pattern = false;
+	
+		/********************
+		 * step : B : j2
+		 * 		pattern ==> detected ?
+		 ********************/
+		if ($resultOf_Detect_Pattern == true) {
+			/********************
+			 * step : B : j2 : Y
+			 * 		pattern ==> detected
+			 ********************/
+			/********************
+			 * step : B : j2 : Y : 1
+			 * 		log
+			 ********************/
+			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected";
+	
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg
+					, __FILE__, __LINE__);
+				
+			//_20200106_143611:next
+			/********************
+			 * step : B : j2 : Y : 2
+			 * 		flag ==> True
+			********************/
+			// change ==> flag
+			$flg_Position = true;
+				
+			/********************
+			 * step : B : j2 : Y : 3
+			 * 		calc
+			 ********************/
+			$bd = $lo_BarDatas[$idxOf_Loop];
+				
+			$pr_Open = $bd->price_Open;
+				
+			// 			$val_TP			= 0.10;
+			// 			$val_SL			= 0.05;
+			// 			$val_SPREAD		= 0.03;
+				
+			$pr_TP			= $bd->price_Open + ($val_TP + $val_SPREAD);
+			$pr_SL			= $bd->price_Open - ($val_SL + $val_SPREAD);
+				
+			$val_Trail_Starting	= CONS::$val_Trail_Starting;
+			// 			$val_Trail_Starting	= 0.4;
+				
+			//debug
+			$msg = "\n"; $msg .= "(* step : B : j2 : Y : 3) calc ==> comp";
+				
+			$msg .= "\n"; $msg .= "\$pr_Open = $pr_Open\n\$pr_TP = $pr_TP\n\$pr_SL = $pr_SL\n" .
+			"\$val_TP = $val_TP\n\$val_SL = $val_SL\n\$val_SPREAD = $val_SPREAD";
+				
+	
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg
+					, __FILE__, __LINE__);
+	
+				
+			/********************
+			 * step : B : j2 : Y : 4
+			 * 		Pos ==> init
+			 * $st_idx,$st_pr,$cu_idx,$cu_pr,$rf_idx,$rf_pr,$ext_idx,$ext_pr,$base_idx,$base_pr,$trail_starting_idx,$trail_starting_pr,$val_TP,$val_SL,$val_SPREAD,$pr_TP,$pr_SL
+			********************/
+			/********************
+			 * step : B : j2 : Y : 4.1
+			 * 		default vals
+			********************/
+			//_20200106_175914:next
+			$pos = LibEaTester::init_Pos();
+				
+			/********************
+			 * step : B : j2 : Y : 4.2
+			 * 		set ==> new vals
+			********************/
+			//_20200107_152525:caller
+			LibEaTester::j2_Y_4_2(
+					$pos, $idxOf_Loop, $bd
+					, $val_TP, $val_SL, $val_SPREAD
+					, $pr_TP, $pr_SL
+					, $val_Trail_Starting
+			);
+			// 			LibEaTester::j2_Y_4_2($pos, $idxOf_Loop, $bd, $val_TP, $val_SL, $val_SPREAD, $pr_TP, $pr_SL);
+	
+			//debug
+			//_20200112_173733:tmp
+			//_20200112_173841:caller
+			LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
+				
+			/********************
+			 * step : B : j2 : Y : 5
+			 * 		get ==> bar type
+			********************/
+			//_20200107_153029:next
+			//_20200109_175550:caller
+			$typeOf_Position = "BUY";
+				
+			$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
+				
+			$typeOf_Bar = $valOf_Ret__received;
+				
+			//debug
+			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; $typeOf_Bar";
+			$msg .= "\n";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg
+					, __FILE__, __LINE__);
+	
+		} else {//if ($resultOf_Detect_Pattern == true) {
+			/********************
+			 * step : B : j2 : N
+			 * 		pattern ==> NOT detected
+			 ********************/
+			/********************
+			 * step : B : j2 : N : 1
+			 * 		log
+			 ********************/
+			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected";
+				
+			Utils::write_Log__Fx_Admin(
+					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+					, $msg
+					, __FILE__, __LINE__);
+	
+			//_20200113_175050:next
+				
+			//_
+			$typeOf_Bar = CONS::$strOf_Pattern_Detection__Undetected;
+				
+		}//if ($resultOf_Detect_Pattern == true)
+	
+		/********************
+		 * step : C : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : C : X : 1
+		 * 		set
+		 ********************/
+		// 		//test:20200117_122008
+		// 		$msg = "\n"; $msg .= "(loop_J1_N :: step : C : X : 1) TESTING... ==> \$typeOf_Bar set to --> "
+		// 						. CONS::$strOf_BarType__SL . "(CONS::\$strOf_BarType__SL)";
+			
+		// 		Utils::write_Log__Fx_Admin(
+		// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+		// 				, $msg
+		// 				, __FILE__, __LINE__);
+	
+		// 		$valOf_Ret = [$flg_Position, $pos, CONS::$strOf_BarType__SL];
+		//_20200114_121654:next
+		$valOf_Ret = [$flg_Position, $pos, $typeOf_Bar];
+		// 		$valOf_Ret = [$flg_Position, $pos];
+		// 		$valOf_Ret = [$flg_Position];
+	
+		/********************
+		 * step : C : X : 2
+		 * 		return
+		********************/
+		return $valOf_Ret;
+	
+	
+	}//public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+	
 	
 	
 	/********************
 	* loop_J1_N
 	* 	at : 2020/01/12 17:44:40
 	********************/
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
-	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos, $lo_Vals) {
-		//_20200106_142418:caller
-		//_20200106_142421:head
-		//_20200106_142425:wl
+	public static function loop_J1_Y($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos, $lo_Vals) {
+		//_20200202_145137:caller
+		//_20200202_145140:head
+		//_20200202_145143:wl
 		/********************
 		 * step : 0 : 1
 		 * 		prep : unpack
@@ -880,158 +1092,47 @@ class LibEaTester {
 		 ********************/
 		$typeOf_Bar = "";
 		
+		$lo_Log_Lines = array();
+		
+		// bar data
+		$bd = $lo_BarDatas[$idxOf_Loop];
+		
 		/********************
-		 * step : B : j1 : N : 1
+		 * step : B : j1 : Y : 1
 		 * 		log
 		 ********************/
-		$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j1 : N : 1) position ==> NOT taken";
+		$msg = "\n"; $msg .= "(loop_J1_Y :: step : B : j1 : Y : 1) position ==> taken";
 			
+		array_push($lo_Log_Lines, $msg);
+		
+// 		Utils::write_Log__Fx_Admin(
+// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 				, $msg
+// 				, __FILE__, __LINE__);
+		
+			
+				
+		/********************
+		 * step : B : j1 : Y : 2
+		 * 		get ==> bar type
+		 ********************/
+		//_20200107_153029:next
+		//_20200109_175550:caller
+		$typeOf_Position = "BUY";
+		
+		$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
+		
+		$typeOf_Bar = $valOf_Ret__received;
+		
+		//debug
+		$msg = "\n"; $msg .= "(loop_J1_Y :: step : B : j1 : Y : 2) get ==> bar type ; $typeOf_Bar";
+		$msg .= "\n";
+		
 		Utils::write_Log__Fx_Admin(
 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 				, $msg
 				, __FILE__, __LINE__);
-		
-		/********************
-		 * step : B : j1 : N : 2
-		 * 		detect : pattern
-		 ********************/
-		//_20200114_115250:tmp
-		$resultOf_Detect_Pattern = true;
-// 		$resultOf_Detect_Pattern = false;
-		
-		/********************
-		 * step : B : j2
-		 * 		pattern ==> detected ?
-		 ********************/
-		if ($resultOf_Detect_Pattern == true) {
-			/********************
-			 * step : B : j2 : Y
-			 * 		pattern ==> detected
-			 ********************/
-			/********************
-			 * step : B : j2 : Y : 1
-			 * 		log
-			 ********************/
-			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : Y : 1) pattern ==> detected";
 				
-			Utils::write_Log__Fx_Admin(
-					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-					, $msg
-					, __FILE__, __LINE__);
-			
-			//_20200106_143611:next
-			/********************
-			 * step : B : j2 : Y : 2
-			 * 		flag ==> True
-			 ********************/
-			// change ==> flag
-			$flg_Position = true;
-			
-			/********************
-			 * step : B : j2 : Y : 3
-			 * 		calc
-			 ********************/
-			$bd = $lo_BarDatas[$idxOf_Loop];
-			
-			$pr_Open = $bd->price_Open;
-			
-// 			$val_TP			= 0.10;
-// 			$val_SL			= 0.05;
-// 			$val_SPREAD		= 0.03;
-			
-			$pr_TP			= $bd->price_Open + ($val_TP + $val_SPREAD);
-			$pr_SL			= $bd->price_Open - ($val_SL + $val_SPREAD);
-			
-			$val_Trail_Starting	= CONS::$val_Trail_Starting;
-// 			$val_Trail_Starting	= 0.4;
-			
-			//debug
-			$msg = "\n"; $msg .= "(* step : B : j2 : Y : 3) calc ==> comp";
-			
-			$msg .= "\n"; $msg .= "\$pr_Open = $pr_Open\n\$pr_TP = $pr_TP\n\$pr_SL = $pr_SL\n" .
-					"\$val_TP = $val_TP\n\$val_SL = $val_SL\n\$val_SPREAD = $val_SPREAD";
-			
-				
-			Utils::write_Log__Fx_Admin(
-					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-					, $msg
-					, __FILE__, __LINE__);
-				
-			
-			/********************
-			 * step : B : j2 : Y : 4
-			 * 		Pos ==> init
-			 * $st_idx,$st_pr,$cu_idx,$cu_pr,$rf_idx,$rf_pr,$ext_idx,$ext_pr,$base_idx,$base_pr,$trail_starting_idx,$trail_starting_pr,$val_TP,$val_SL,$val_SPREAD,$pr_TP,$pr_SL
-			 ********************/
-			/********************
-			 * step : B : j2 : Y : 4.1
-			 * 		default vals
-			 ********************/
-			//_20200106_175914:next
-			$pos = LibEaTester::init_Pos();
-			
-			/********************
-			 * step : B : j2 : Y : 4.2
-			 * 		set ==> new vals
-			 ********************/
-			//_20200107_152525:caller
-			LibEaTester::j2_Y_4_2(
-							$pos, $idxOf_Loop, $bd
-							, $val_TP, $val_SL, $val_SPREAD
-							, $pr_TP, $pr_SL
-							, $val_Trail_Starting
-					);
-// 			LibEaTester::j2_Y_4_2($pos, $idxOf_Loop, $bd, $val_TP, $val_SL, $val_SPREAD, $pr_TP, $pr_SL);
-
-			//debug
-			//_20200112_173733:tmp
-			//_20200112_173841:caller
-			LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
-			
-			/********************
-			 * step : B : j2 : Y : 5
-			 * 		get ==> bar type
-			 ********************/
-			//_20200107_153029:next
-			//_20200109_175550:caller
-			$typeOf_Position = "BUY";
-			
-			$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
-			
-			$typeOf_Bar = $valOf_Ret__received;
-			
-			//debug
-			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : Y : 5) get ==> bar type ; $typeOf_Bar";
-			$msg .= "\n";
-			
-			Utils::write_Log__Fx_Admin(
-					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-					, $msg
-					, __FILE__, __LINE__);
-				
-		} else {//if ($resultOf_Detect_Pattern == true) {
-			/********************
-			 * step : B : j2 : N
-			 * 		pattern ==> NOT detected
-			 ********************/
-			/********************
-			 * step : B : j2 : N : 1
-			 * 		log
-			 ********************/
-			$msg = "\n"; $msg .= "(loop_J1_N :: step : B : j2 : N : 1) pattern ==> NOT detected";
-			
-			Utils::write_Log__Fx_Admin(
-					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-					, $msg
-					, __FILE__, __LINE__);
-				
-			//_20200113_175050:next
-			
-			//_
-			$typeOf_Bar = CONS::$strOf_Pattern_Detection__Undetected;
-			
-		}//if ($resultOf_Detect_Pattern == true)
-		
 		/********************
 		 * step : C : X
 		 * 		return
@@ -1062,7 +1163,7 @@ class LibEaTester {
 		return $valOf_Ret;
 		
 		
-	}//public static function loop_J1_N($lo_BarDatas, $flg_Position) {
+	}//public static function loop_J1_Y
 	
 	/********************
 	* fx_tester_T_1__Exec
@@ -1228,8 +1329,36 @@ class LibEaTester {
 				 * step : B : j1 : Y : 2
 				 * 		processing : j1_Y_2
 				 ********************/
+				//_20200202_144153:tmp
+				$msg = "\n"; $msg .= "(step : B : j1 : Y : 2) processing : j1_Y_2";
 				
-			
+				// append
+				array_push($lo_Log_Lines, $msg);
+				
+				//debug
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, join("", $lo_Log_Lines), __FILE__, __LINE__);
+				
+				$lo_Log_Lines = array();
+				
+				//_20200106_142418:caller
+				//$valOf_Ret = [$flg_Position, $pos];
+				// 				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos);
+				
+				// $valOf_Ret = [$flg_Position, $pos, $typeOf_Bar]
+				//_20200202_145137:caller
+				$valOf_Ret__received = LibEaTester::loop_J1_Y($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
+				
+// 				/********************
+// 				 * step : C : post-j1 : 1
+// 				 * 		log
+// 				********************/
+// 				// unpack
+// 				$flg_Position	= $valOf_Ret__received[0];
+// 				$pos			= $valOf_Ret__received[1];
+// 				$typeOf_Bar		= $valOf_Ret__received[2];
+				
 			} else {
 				/********************
 				 * step : B : j1 : N
@@ -1261,6 +1390,7 @@ class LibEaTester {
 				// $valOf_Ret = [$flg_Position, $pos, $typeOf_Bar]
 				$valOf_Ret__received = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
 				
+				//_20200202_151340:next
 				/********************
 				 * step : C : post-j1 : 1
 				 * 		log
