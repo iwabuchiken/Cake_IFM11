@@ -626,17 +626,30 @@ class LibEaTester {
 	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
 	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
 	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
-	public static function show_Basic_Pos_Data__Build_Lines($pos, $fname, $file_line) {
+	public static function show_Basic_Pos_Data__Build_Lines
+	($pos, $lo_BarDatas, $fname, $file_line) {
+// 	public static function show_Basic_Pos_Data__Build_Lines($pos, $fname, $file_line) {
 		//_20200112_173841:caller
 		//_20200112_173843:head
 		//_20200112_173846:wl
-	
+		/********************
+		* step : 1
+		* 		prep : bardata
+		********************/
+		$bd = $lo_BarDatas[$pos->st_idx];
+		
 		//report
 		//debug
-		$msg = "\n"; $msg .= "(show_Basic_Pos_Data)";
+// 		$msg = "\n"; $msg .= "(show_Basic_Pos_Data)";
+		$msg = "\n"; $msg .= "(show_Basic_Pos_Data__Build_Lines)";
 		$msg .= "\n";
 			
-		$msg .= "\$pos->st_idx\t" . $pos->st_idx . "\t" . "\$pos->st_pr\t" . number_format($pos->st_pr, 3);
+		$msg .= "\$pos->st_idx\t" . $pos->st_idx 
+				. "\t" 
+				. "\$pos->st_pr\t" . number_format($pos->st_pr, 3)
+				. "\t"
+				. "\$lo_BarDatas[$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime
+				;
 		$msg .= "\n";
 	
 		$msg .= "\$pos->cu_idx\t" . $pos->cu_idx . "\t" . "\$pos->cu_pr\t" . number_format($pos->cu_pr, 3);
@@ -1189,11 +1202,8 @@ class LibEaTester {
 		// len
 		$lenOf_LO_BarDatas = count($lo_BarDatas);
 		
-// 		debug("\$lenOf_LO_BarDatas => " . $lenOf_LO_BarDatas);
-		
 		// flags
 // 		$flg_Position = true;
-// 		debug("debug : \$flg_Position ==> true : " . $flg_Position);
 		$flg_Position = false;
 		
 		// counter
@@ -1236,10 +1246,6 @@ class LibEaTester {
 		// append
 		array_push($lo_Log_Lines, $msg);
 		
-// 		Utils::write_Log__Fx_Admin(
-// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 				, $msg, __FILE__, __LINE__);
-		
 		//_20200201_163626:next
 		for ($i = $num_Loop_Start; $i < $lenOf_LO_BarDatas; $i++) {
 			
@@ -1259,10 +1265,6 @@ class LibEaTester {
 			
 			// append
 			array_push($lo_Log_Lines, $msg);
-				
-// 			Utils::write_Log__Fx_Admin(
-// 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 					, $msg, __FILE__, __LINE__);
 				
 			/********************
 			* step : B : 1 : 1
@@ -1291,13 +1293,6 @@ class LibEaTester {
 				// append
 				array_push($lo_Log_Lines, $msg);
 				
-// 				Utils::write_Log__Fx_Admin(
-// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 						, $msg, __FILE__, __LINE__);
-				
-// 				debug("loop ==> maxed out : \$cntOf_Loop = $cntOf_Loop / \$maxOf_Loop = $maxOf_Loop");
-// 				debug("breaking the loop...");
-				
 				break;
 				
 			}//if ($cntOf_Loop > $maxOf_Loop)
@@ -1320,10 +1315,6 @@ class LibEaTester {
 
 				// append
 				array_push($lo_Log_Lines, $msg);
-				
-// 				Utils::write_Log__Fx_Admin(
-// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 						, $msg, __FILE__, __LINE__);
 				
 				/********************
 				 * step : B : j1 : Y : 2
@@ -1384,70 +1375,74 @@ class LibEaTester {
 				$lo_Log_Lines = array();
 				
 				//_20200106_142418:caller
-				//$valOf_Ret = [$flg_Position, $pos];
-// 				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos);
-
-				// $valOf_Ret = [$flg_Position, $pos, $typeOf_Bar]
 				$valOf_Ret__received = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
 				
-				//_20200202_151340:next
-				/********************
-				 * step : C : post-j1 : 1
-				 * 		log
-				 ********************/
-				// unpack
-				$flg_Position	= $valOf_Ret__received[0];
-				$pos			= $valOf_Ret__received[1];
-				$typeOf_Bar		= $valOf_Ret__received[2];
-
-				//debug
-				$msg = "\n";
-				
-				$msg .= "(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned";
-				$msg .= "\n";
-				
-				//ref https://stackoverflow.com/questions/2795177/how-to-convert-boolean-to-string
-// 				$msg .= "\$flg_Position => " . var_export($flg_Position, true);
-				$msg .= "\$flg_Position\t" . var_export($flg_Position, true);
-				$msg .= "\n";
-				
-// 				debug("\$pos->st_idx => " . $pos->st_idx);
-// 				debug($lo_BarDatas[$pos->st_idx]);
-// 				debug($lo_BarDatas[$pos->st_idx]);
-				
-				$msg .= "\$pos : st_idx = " . $pos->st_idx
-						 . "(" . (($pos->st_idx >= 0) ? $lo_BarDatas[$pos->st_idx]->dateTime . ")" : "NO ENTRY") . ")"
-// 						 . "(" . (($pos->st_idx >= 0) ? $lo_BarDatas[$pos->st_idx]['$dateTime'] . ")" : "NO ENTRY") . ")"
-						. " / "
-						. "\$pos->st_pr = " . $pos->st_pr;
-				$msg .= "\n";
-					
-				$msg .= "\$typeOf_Bar\t$typeOf_Bar";
-				$msg .= "\n";
-				
-				// append
-				array_push($lo_Log_Lines, $msg);
-				
-// 				Utils::write_Log__Fx_Admin(
-// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 						, $msg, __FILE__, __LINE__);
-				
-// 				debug($msg);
-				
+// 				//_20200202_151340:next
 // 				/********************
-// 				 * step : B : j1 : N : 1
+// 				 * step : C : post-j1 : 1
 // 				 * 		log
 // 				 ********************/
-// 				$msg = "\n"; $msg .= "(step : B : j1 : N : 1) position ==> NOT taken";
+// 				// unpack
+// 				$flg_Position	= $valOf_Ret__received[0];
+// 				$pos			= $valOf_Ret__received[1];
+// 				$typeOf_Bar		= $valOf_Ret__received[2];
+
+// 				//debug
+// 				$msg = "\n";
+				
+// 				$msg .= "(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned";
+// 				$msg .= "\n";
+				
+// 				//ref https://stackoverflow.com/questions/2795177/how-to-convert-boolean-to-string
+// 				$msg .= "\$flg_Position\t" . var_export($flg_Position, true);
+// 				$msg .= "\n";
+				
+// 				$msg .= "\$pos : st_idx = " . $pos->st_idx
+// 						 . "(" . (($pos->st_idx >= 0) ? $lo_BarDatas[$pos->st_idx]->dateTime . ")" : "NO ENTRY") . ")"
+// 						. " / "
+// 						. "\$pos->st_pr = " . $pos->st_pr;
+// 				$msg .= "\n";
 					
-// 				Utils::write_Log__Fx_Admin(
-// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 						, $msg
-// 						, __FILE__, __LINE__);
+// 				$msg .= "\$typeOf_Bar\t$typeOf_Bar";
+// 				$msg .= "\n";
 				
-				
+// 				// append
+// 				array_push($lo_Log_Lines, $msg);
 				
 			}//if ($flg_Position == true)
+
+			//_20200202_151340:next
+			/********************
+			 * step : C : post-j1 : 1
+			 * 		log
+			 ********************/
+			// unpack
+			$flg_Position	= $valOf_Ret__received[0];
+			$pos			= $valOf_Ret__received[1];
+			$typeOf_Bar		= $valOf_Ret__received[2];
+			
+			//debug
+			$msg = "\n";
+			$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+			
+			$msg .= "(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned";
+			$msg .= "\n";
+			
+			//ref https://stackoverflow.com/questions/2795177/how-to-convert-boolean-to-string
+			$msg .= "\$flg_Position\t" . var_export($flg_Position, true);
+			$msg .= "\n";
+			
+			$msg .= "\$pos : st_idx = " . $pos->st_idx
+			. "(" . (($pos->st_idx >= 0) ? $lo_BarDatas[$pos->st_idx]->dateTime . ")" : "NO ENTRY") . ")"
+					. " / "
+					. "\$pos->st_pr = " . $pos->st_pr;
+			$msg .= "\n";
+				
+			$msg .= "\$typeOf_Bar\t$typeOf_Bar";
+			$msg .= "\n";
+			
+			// append
+			array_push($lo_Log_Lines, $msg);
 			
 			/********************
 			 * step : D : 1
@@ -1464,10 +1459,6 @@ class LibEaTester {
 			// append
 			array_push($lo_Log_Lines, $msg);
 				
-// 			Utils::write_Log__Fx_Admin(
-// 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 					, $msg, __FILE__, __LINE__);
-					
 			/********************
 			 * step : D : 1 : 2
 			 * 		dispatch
@@ -1486,12 +1477,14 @@ class LibEaTester {
 				 ********************/
 				$msg = "(step : D : 1 : 2-2) C4";
 				$msg .= "\n";
-					
-// 				Utils::write_Log__Fx_Admin(
-// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 						, $msg, __FILE__, __LINE__);
 				
-				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, __FILE__, __LINE__);
+				$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+				$msg .= "\n";
+				
+				$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+				$msg .= "\n";
+					
+				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
 				
 				// append
 				array_push($lo_Log_Lines, $msg);
@@ -1513,13 +1506,14 @@ class LibEaTester {
 				 ********************/
 				$msg = "(step : D : 1 : 2-4 : 1) SL";
 				$msg .= "\n";
-					
-// 				Utils::write_Log__Fx_Admin(
-// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 						, $msg, __FILE__, __LINE__);
+
+				$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+				$msg .= "\n";
 				
-				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, __FILE__, __LINE__);
-// 				LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
+				$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+				$msg .= "\n";
+
+				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
 				
 				// append
 				array_push($lo_Log_Lines, $msg);
@@ -1531,10 +1525,6 @@ class LibEaTester {
 				$msg = "(step : D : 1 : 2-4 : 2) set val : loop num";
 				$msg .= "\n";
 					
-// 				Utils::write_Log__Fx_Admin(
-// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 						, $msg, __FILE__, __LINE__);
-
 				// append
 				array_push($lo_Log_Lines, $msg);
 				
@@ -1542,17 +1532,20 @@ class LibEaTester {
 				
 				/********************
 				 * step : D : 1 : 2-4 : 3
+				 * 		pos data ==> update
+				 ********************/
+				//_20200203_142642:next
+				
+				
+				/********************
+				 * step : D : 1 : 2-4 : X
 				 * 		loop ==> break
 				 ********************/
-				$msg = "(step : D : 1 : 2-4 : 3) for-loop ==> breaking... (\$i = $i)";
+				$msg = "(step : D : 1 : 2-4 : X) for-loop ==> breaking... (\$i = $i)";
 				$msg .= "\n";
 				
 				// append
 				array_push($lo_Log_Lines, $msg);
-				
-// 				Utils::write_Log__Fx_Admin(
-// 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 						, $msg, __FILE__, __LINE__);
 				
 				break;
 				
@@ -1563,13 +1556,70 @@ class LibEaTester {
 				 * step : D : 1 : 2-5
 				 * 		TP
 				 ********************/
+				/********************
+				 * step : D : 1 : 2-5 : 1
+				 * 		log
+				 ********************/
+				$msg = "(step : D : 1 : 2-5 : 1) TP";
+				$msg .= "\n";
+
+				$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+				$msg .= "\n";
 				
+				$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+				$msg .= "\n";
+				
+				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+				
+				// append
+				array_push($lo_Log_Lines, $msg);
+				
+				/********************
+				 * step : D : 1 : 2-5 : 2
+				 * 		set val : loop num
+				********************/
+				$msg = "(step : D : 1 : 2-5 : 2) set val : loop num";
+				$msg .= "\n";
+					
+				// append
+				array_push($lo_Log_Lines, $msg);
+				
+				$valOf_Ret__received[3] = $i;
+				
+				/********************
+				 * step : D : 1 : 2-5 : 3
+				 * 		loop ==> break
+				 ********************/
+				$msg = "(step : D : 1 : 2-5 : 3) for-loop ==> breaking... (\$i = $i)";
+				$msg .= "\n";
+				
+				// append
+				array_push($lo_Log_Lines, $msg);
+				
+				break;		
+						
 			} else {
 				/********************
 				 * step : D : 1 : 2-X
 				 * 		unknown bar type
 				 ********************/
-			
+				/********************
+				 * step : D : 1 : 2-X : 1
+				 * 		log
+				 ********************/
+				$msg = "(step : D : 1 : 2-X : 1) unknown bar type";
+				$msg .= "\n";
+
+				$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+				$msg .= "\n";
+				
+				$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+				$msg .= "\n";
+				
+				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+				
+				// append
+				array_push($lo_Log_Lines, $msg);
 				
 			}//if ($typeOf_Bar == )
 			
