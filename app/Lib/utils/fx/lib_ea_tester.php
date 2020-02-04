@@ -697,19 +697,24 @@ class LibEaTester {
 		//show
 		$msg = "\n";
 		
-		$msg .= "st_idx\tst_pr";
+// 		$msg .= "st_idx\tst_pr";
+		$msg .= "st_idx\tst_pr\tdatetime";
 		$msg .= "\t";
 		
-		$msg .= "cu_idx\tcu_pr";
+// 		$msg .= "cu_idx\tcu_pr";
+		$msg .= "cu_idx\tcu_pr\tdatetime";
 		$msg .= "\t";
 		
-		$msg .= "ext_idx\text_pr";
+		$msg .= "ext_idx\text_pr\tdatetime";
 		$msg .= "\t";
 		
 		$msg .= "rf_idx\trf_pr";
 		$msg .= "\t";
 		
 		$msg .= "base_idx\tbase_pr";
+		$msg .= "\t";
+		
+		$msg .= "ext_status";
 		$msg .= "\t";
 		
 		$msg .= "\n";
@@ -724,60 +729,51 @@ class LibEaTester {
 			
 			//_20200130_182020:next
 			// start
-			$msg .= $pos->st_idx . "\t" . $pos->st_pr;
+			$msg .= $pos->st_idx . "\t" . $pos->st_pr
+					. "\t"
+					. (($pos->st_idx > 0) ? $lo_BarDatas[$pos->st_idx]->dateTime : "-")
+				
+				;
 			$msg .= "\t";
 			
 			// current
-			$msg .= $pos->cu_idx . "\t" . $pos->cu_pr;
+			$msg .= $pos->cu_idx . "\t" . $pos->cu_pr
+					. "\t"
+					. (($pos->cu_idx > 0) ? $lo_BarDatas[$pos->cu_idx]->dateTime : "-")
+					;
 			$msg .= "\t";
 			
-			// exit
-			$msg .= $pos->ext_idx . "\t" . $pos->ext_pr;
+// 			// exit
+// 			debug("\$i = $i / \$pos->ext_idx = " . $pos->ext_idx
+// 					. " / "
+// 					. (($pos->ext_idx > 0) ? "more than 0" : "less")
+					
+// 					);
+			
+			$msg .= $pos->ext_idx . "\t" . $pos->ext_pr
+					. "\t"
+					. (($pos->ext_idx > 0) ? $lo_BarDatas[$pos->ext_idx]->dateTime : "-")
+// 					. ($pos->ext_idx > 0) ? $lo_BarDatas[$pos->ext_idx]->dateTime : "-"
+					;
 			$msg .= "\t";
 			
 			// refer
-			$msg .= $pos->rf_idx . "\t" . $pos->rf_pr;
+			$msg .= $pos->rf_idx . "\t" . $pos->rf_pr
+					. "\t"
+					. (($pos->rf_idx > 0) ? $lo_BarDatas[$pos->rf_idx]->dateTime : "-")
+				;
 			$msg .= "\t";
 			
 			// base
 			$msg .= $pos->base_idx . "\t" . $pos->base_pr;
 			$msg .= "\t";
 			
+			// exit status
+			$msg .= $pos->ext_status;
+			$msg .= "\t";
+			
 			// separator
 			$msg .= "\n";
-						
-// 			// exit
-// 			$msg .= "\$pos->ext_idx\t" . $pos->ext_idx;
-// 			$msg .= " / ";
-// 			$msg .= "\$pos->ext_pr\t" . $pos->ext_pr;
-// 			$msg .= "\n";
-			
-// 			// date time
-// 			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
-// 			$msg .= "\n";
-// 			$msg .= "\n";
-			
-// 			$msg .= "\$pos->st_idx\t" . $pos->st_idx;
-// 			$msg .= " / ";
-// 			$msg .= "\$pos->st_pr\t" . $pos->st_pr;
-// 			$msg .= "\n";
-			
-// 			// current
-// 			$msg .= "\$pos->cu_idx\t" . $pos->cu_idx;
-// 			$msg .= " / ";
-// 			$msg .= "\$pos->cu_pr\t" . $pos->cu_pr;
-// 			$msg .= "\n";
-			
-// 			// exit
-// 			$msg .= "\$pos->ext_idx\t" . $pos->ext_idx;
-// 			$msg .= " / ";
-// 			$msg .= "\$pos->ext_pr\t" . $pos->ext_pr;
-// 			$msg .= "\n";
-			
-// 			// date time
-// 			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
-// 			$msg .= "\n";
-// 			$msg .= "\n";
 			
 		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
 		
@@ -1255,7 +1251,6 @@ class LibEaTester {
 			********************/
 			$idxOf_For_Loop = $i;
 			
-			
 			/********************
 			* step : B : 1
 			* 		loop start
@@ -1296,7 +1291,6 @@ class LibEaTester {
 				break;
 				
 			}//if ($cntOf_Loop > $maxOf_Loop)
-			;
 
 			/********************
 			 * step : B : j1
@@ -1333,22 +1327,8 @@ class LibEaTester {
 				
 				$lo_Log_Lines = array();
 				
-				//_20200106_142418:caller
-				//$valOf_Ret = [$flg_Position, $pos];
-				// 				$valOf_Ret = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos);
-				
-				// $valOf_Ret = [$flg_Position, $pos, $typeOf_Bar]
 				//_20200202_145137:caller
 				$valOf_Ret__received = LibEaTester::loop_J1_Y($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
-				
-// 				/********************
-// 				 * step : C : post-j1 : 1
-// 				 * 		log
-// 				********************/
-// 				// unpack
-// 				$flg_Position	= $valOf_Ret__received[0];
-// 				$pos			= $valOf_Ret__received[1];
-// 				$typeOf_Bar		= $valOf_Ret__received[2];
 				
 			} else {
 				/********************
@@ -1376,38 +1356,6 @@ class LibEaTester {
 				
 				//_20200106_142418:caller
 				$valOf_Ret__received = LibEaTester::loop_J1_N($lo_BarDatas, $flg_Position, $i, $pos, $lo_Vals);
-				
-// 				//_20200202_151340:next
-// 				/********************
-// 				 * step : C : post-j1 : 1
-// 				 * 		log
-// 				 ********************/
-// 				// unpack
-// 				$flg_Position	= $valOf_Ret__received[0];
-// 				$pos			= $valOf_Ret__received[1];
-// 				$typeOf_Bar		= $valOf_Ret__received[2];
-
-// 				//debug
-// 				$msg = "\n";
-				
-// 				$msg .= "(step : C : post-j1 : 1) LibEaTester::loop_J1_N ==> returned";
-// 				$msg .= "\n";
-				
-// 				//ref https://stackoverflow.com/questions/2795177/how-to-convert-boolean-to-string
-// 				$msg .= "\$flg_Position\t" . var_export($flg_Position, true);
-// 				$msg .= "\n";
-				
-// 				$msg .= "\$pos : st_idx = " . $pos->st_idx
-// 						 . "(" . (($pos->st_idx >= 0) ? $lo_BarDatas[$pos->st_idx]->dateTime . ")" : "NO ENTRY") . ")"
-// 						. " / "
-// 						. "\$pos->st_pr = " . $pos->st_pr;
-// 				$msg .= "\n";
-					
-// 				$msg .= "\$typeOf_Bar\t$typeOf_Bar";
-// 				$msg .= "\n";
-				
-// 				// append
-// 				array_push($lo_Log_Lines, $msg);
 				
 			}//if ($flg_Position == true)
 
@@ -1475,6 +1423,10 @@ class LibEaTester {
 				 * step : D : 1 : 2-2
 				 * 		C4
 				 ********************/
+				/********************
+				 * step : D : 1 : 2-2 : 1
+				 * 		log
+				 ********************/
 				$msg = "(step : D : 1 : 2-2) C4";
 				$msg .= "\n";
 				
@@ -1488,6 +1440,12 @@ class LibEaTester {
 				
 				// append
 				array_push($lo_Log_Lines, $msg);
+
+				/********************
+				 * step : D : 1 : 2-2 : 2
+				 * 		pos : update
+				 ********************/
+				//_20200204_150943:next
 				
 			} else if ($typeOf_Bar == CONS::$strOf_BarType__C5) {
 				/********************
@@ -1535,7 +1493,26 @@ class LibEaTester {
 				 * 		pos data ==> update
 				 ********************/
 				//_20200203_142642:next
+				/********************
+				 * step : D : 1 : 2-4 : 3.1
+				 * 		prep
+				 ********************/
+				$bd = $lo_BarDatas[$i];
 				
+				/********************
+				 * step : D : 1 : 2-4 : 3.2
+				 * 		update data
+				 ********************/
+				// param : current
+				$pos->cu_idx = $i;
+				$pos->cu_pr = $pos->pr_SL;
+				
+				// param : exit
+				$pos->ext_idx = $i;
+				$pos->ext_pr = $pos->pr_SL;
+				
+				// exit status
+				$pos->ext_status = CONS::$strOf_Exit_Status__SL;
 				
 				/********************
 				 * step : D : 1 : 2-4 : X
@@ -1548,8 +1525,6 @@ class LibEaTester {
 				array_push($lo_Log_Lines, $msg);
 				
 				break;
-				
-// 				LibEaTester::show_Basic_Pos_Data($pos, __FILE__, __LINE__);
 				
 			} else if ($typeOf_Bar == CONS::$strOf_BarType__TP) {
 				/********************

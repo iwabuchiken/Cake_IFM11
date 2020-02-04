@@ -76,15 +76,10 @@ class FxTestController extends AppController {
 		//_20200201_161421:tmp
 		$tmp_Dpath_Log_Fx_Admin__orig = CONS::$dpath_Log_Fx_Admin;
 		
-// 		CONS::$dpath_Log_Fx_Admin .= CONS::$dpath_Log_Fx_Admin . "/"
 		CONS::$dpath_Log_Fx_Admin .= "/"
 								. "log."
 								. $strOf_Time_Label . ".dir"
 								;
-// 		CONS::$dpath_Log_Fx_Admin .= "log."
-// 								. CONS::$dpath_Log_Fx_Admin . "/"
-// 								. $strOf_Time_Label . ".dir"
-// 								;
 		
 		/******************** (20 '*'s)
 		 * step : 0 : 1
@@ -146,8 +141,6 @@ class FxTestController extends AppController {
 			
 		} else {//if ($lo_BarDatas == -1)
 			
-// 			debug("Libfx::get_ListOf_BarDatas() ==> returned : len is " . count($lo_BarDatas));
-
 			$msg	= "(step : 1 : 1.2) Libfx::get_ListOf_BarDatas() ==> returned valid";
 			$msg	.= "Libfx::get_ListOf_BarDatas() ==> returned : len is " . count($lo_BarDatas);
 			$msg	.= "\n";
@@ -171,7 +164,6 @@ class FxTestController extends AppController {
 				, $msg, __FILE__, __LINE__);
 		
 		//_20200119_184045:next
-// 		Libfx::reverse_LO_BarDatas($lo_BarDatas, CONS::$strOf_Sort_Direction_LO_BarDatas__ASC);
 		$lo_BarDatas = Libfx::reverse_LO_BarDatas($lo_BarDatas, CONS::$strOf_Sort_Direction_LO_BarDatas__ASC);
 		
 		//debug
@@ -186,10 +178,6 @@ class FxTestController extends AppController {
 		Utils::write_Log__Fx_Admin(
 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 				, $msg, __FILE__, __LINE__);
-		
-		
-		
-		//_20200105_174937:next
 		
 		/********************
 		 * step : 2
@@ -216,8 +204,6 @@ class FxTestController extends AppController {
 		$lo_Pos = array();
 		
 		
-		//_20200117_125541:next
-		
 		// num of loop start
 		//_20200121_170907:tmp
 		$num_Loop_Start = 0;
@@ -230,7 +216,6 @@ class FxTestController extends AppController {
 			 ********************/
 			//_20200201_160828:caller
 			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas, $num_Loop_Start);
-// 			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
 			
 			/********************
 			 * step : 2 : 2
@@ -241,8 +226,6 @@ class FxTestController extends AppController {
 			$pos			= $valOf_Ret__received[1];
 			$typeOf_Bar		= $valOf_Ret__received[2];
 			$numOf_Loop		= $valOf_Ret__received[3];
-			
-			//_20200121_172537:next
 			
 			/********************
 			 * step : 2 : 2.1
@@ -327,10 +310,6 @@ class FxTestController extends AppController {
 			$msg = "\$num_Latest_Pos_Start_Idx\t" . $num_Latest_Pos_Start_Idx;
 			$msg .= "\n";
 			
-// 			Utils::write_Log__Fx_Admin(
-// 					CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 					, $msg, __FILE__, __LINE__);
-				
 			/********************
 			 * step : 2 : 6.2
 			 		update
@@ -378,71 +357,12 @@ class FxTestController extends AppController {
 		//_20200130_181154:caller
 		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas);
 		
-// 		$lenOf_LO_Pos = count($lo_Pos);
-		
-// 		//show
-// 		$msg = "\n";
-		
-// 		//_20200128_174019:next
-// 		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
-		
-// 			$pos = $lo_Pos[$i];
-			
-// 			$msg .= "\$pos->st_idx\t" . $pos->st_idx;
-// 			$msg .= " / ";
-// 			$msg .= "\$pos->st_pr\t" . $pos->st_pr;
-// 			$msg .= "\n";
-			
-// 			$msg .= "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime;
-// 			$msg .= "\n";
-// 			$msg .= "\n";
-			
-// 		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
-		
 		//debug : write
 		$fname = CONS::$fname_Log_Fx_Admin . CONS::$fname_Log_Fx_Admin__List_Of_Pos__Suffix;
 		
 		Utils::write_Log__Fx_Admin(
 				CONS::$dpath_Log_Fx_Admin, $fname
 				, $msg, __FILE__, __LINE__);
-		
-// 		//_20200106_130954:caller
-// 		$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
-		
-// 		// unpack
-// 		$flg_Position	= $valOf_Ret__received[0];
-// 		$pos			= $valOf_Ret__received[1];
-// 		$typeOf_Bar		= $valOf_Ret__received[2];
-// 		$numOf_Loop		= $valOf_Ret__received[3];
-		
-// 		//debug
-// 		$msg = "(controller::fx_tester_T_1 : step : D : 1 : 2-4 : 2)";
-// 		$msg .= "\n";
-		
-// 		$msg .= "tester ==> exec ==> comp";
-// 		$msg .= "\n";
-			
-// 		$msg .= "\$flg_Position\t" . (($flg_Position == true ? "true" : "false"))
-// 				. "\n"
-// 				. "\$typeOf_Bar\t" . $typeOf_Bar
-// 				. "\n"
-// 				. "\$pos->st_idx\t" . $pos->st_idx
-// 				. "\n"
-// 				. "\$lo_BarDatas[\$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime
-// 				. "\n"
-// 				. "\$numOf_Loop\t" . $numOf_Loop
-// 				. "\n"
-// 				;
-// 		$msg .= "\n";
-			
-// 		Utils::write_Log__Fx_Admin(
-// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
-// 				, $msg, __FILE__, __LINE__);
-		
-		
-		
-// 		LibEaTester::fx_tester_T_1__Exec($lo_BarDatas);
-// 		$this->fx_tester_T_1__Exec($lo_BarDatas);
 		
 		/********************
 		 * step : X
@@ -464,7 +384,6 @@ class FxTestController extends AppController {
 		 ********************/
 		// log file dir ==> back to orig
 		CONS::$dpath_Log_Fx_Admin = $tmp_Dpath_Log_Fx_Admin__orig;
-		
 		
 	}//public function fx_tester_T_1() {
 

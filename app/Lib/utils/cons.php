@@ -102,6 +102,12 @@ class CONS {
 	
 	public static	$strOf_BarType__C4 = "C4";	# $bd->price_High <> $bd->price_Close
 	public static	$strOf_BarType__C5 = "C5";	# $bd->price_High == $bd->price_Close
+
+	/******************************
+	 	exit status (Pos)
+	 ******************************/
+	public static	$strOf_Exit_Status__SL = "SL";
+	public static	$strOf_Exit_Status__TP = "TP";
 	
 	/******************************
 	 	prices
