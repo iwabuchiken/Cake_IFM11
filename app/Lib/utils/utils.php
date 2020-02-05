@@ -382,6 +382,38 @@ class Utils {
 	}
 
 	public static function
+	conv_Microtime_to_Float ($micro_time) {
+		//_20200205_144001:caller
+		//_20200205_144005:head
+		//_20200205_144007:wl
+		//ref https://stackoverflow.com/questions/16825240/how-to-convert-microtime-to-hhmmssuu
+		list($usec, $sec) = explode(' ', $micro_time);
+		
+		//ref test_codes_20200205_144054 (FxTestController)
+		$val_Usec = (float) $usec;
+		$val_Sec = (int) $sec;
+		
+		return $val_Sec + $val_Usec;
+		
+	}//conv_Microtime_to_Float ($micro_time) {
+		
+	public static function
+	conv_Microtime_to_TimeLabel ($micro_time) {
+		//_20200205_141903:caller
+		//_20200205_141906:head
+		//_20200205_141910:wl
+		
+		list($usec, $sec) = explode(' ', $micro_time); //split the microtime on space
+// 		list($usec, $sec) = explode(' ', microtime()); //split the microtime on space
+		//with two tokens $usec and $sec
+		
+		$usec = str_replace("0.", ".", $usec);     //remove the leading '0.' from usec
+		
+		return date('Y/d/m H:i:s', $sec) . $usec;
+		
+	}//conv_Microtime_to_TimeLabel ($micro_time) {
+	
+	public static function
 	conv_Float_to_TimeLabel ($float_time) {
 			
 		// 			$integer = (int) $float_time;
@@ -430,6 +462,34 @@ class Utils {
 		// 			$time    = "$hours:$minutes:"
 		// 						.number_format(($seconds + $decimal), 3, '.', '');
 		// 			$time    = "$integer.$decimal";
+			
+		return $time;
+			
+	}//conv_Float_to_TimeLabel ($float_time)
+	
+	/********************
+	* conv_Float_to_TimeLabel_2
+	* 
+	* at 2020/02/05 15:02:49
+	* @return "2020/02/05 15:02:49.000"
+	********************/
+	public static function
+	conv_Float_to_TimeLabel_2 ($float_time, $numOf_Digits = 4) {
+		//_20200205_150055:caller
+		//_20200205_150058:head
+		//_20200205_150101:wl
+		
+		$int = floor($float_time);
+		
+		$float = $float_time - $int;
+		
+		$float_digits = explode(".", sprintf("%." . $numOf_Digits . "f", $float))[1];
+// 		$float_digits = explode(".", sprintf("%.$numOf_Digitsf", $float))[1];
+// 		$float_digits = explode(".", sprintf("%.4f", $float))[1];
+		
+		//ref https://stackoverflow.com/questions/12291195/trying-to-convert-from-seconds-to-date
+		$time = date('Y/m/d H:i:s', floor($float_time)) . "." . $float_digits;
+// 		$time = date('Y/m/d H:i:s', floor($float_time)) . "." . $float;
 			
 		return $time;
 			

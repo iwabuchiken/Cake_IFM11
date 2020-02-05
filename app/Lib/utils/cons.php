@@ -122,7 +122,8 @@ class CONS {
 	/****************************************
 		* csv files
 	****************************************/
-	public static $logFile_maxLineNum = 3000;
+	public static $logFile_maxLineNum = 9000;
+// 	public static $logFile_maxLineNum = 3000;
 
 	/****************************************
 		* Session keys

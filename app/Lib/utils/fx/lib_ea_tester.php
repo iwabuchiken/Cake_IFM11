@@ -24,6 +24,8 @@ class LibEaTester {
 		 ********************/
 		$strOf_Bar_Type = "UNKNOWN";
 		
+		//_20200205_151924:next
+		
 		/********************
 		 * step : 1
 		 * 		prep : conditions ==> for j1
@@ -51,7 +53,7 @@ class LibEaTester {
 			//_20200112_135454:tmp
 			$msg	= "\n";
 			
-			$msg	.= "(get_Bar_Type : step : j1 : Y : 1) \$bd->price_Low <= \$pos->pr_SL (SL)";
+			$msg	.= "(get_Bar_Type__BUY : step : j1 : Y : 1) \$bd->price_Low <= \$pos->pr_SL (SL)";
 			$msg	.= "\n";
 			
 			$msg	.= "\$bd->price_Low\t" . number_format($bd->price_Low, 3);
@@ -86,7 +88,7 @@ class LibEaTester {
 			 ********************/
 			$msg	= "\n";
 				
-			$msg	.= "(get_Bar_Type : step : j1 : N : 1) \$bd->price_Low > \$pos->pr_SL (not SL)";
+			$msg	.= "(get_Bar_Type__BUY : step : j1 : N : 1) \$bd->price_Low > \$pos->pr_SL (not SL)";
 			$msg	.= "\n";
 
 			$msg	.= "\$bd->price_Low\t" . number_format($bd->price_Low, 3);
@@ -123,7 +125,7 @@ class LibEaTester {
 				 ********************/
 				$msg	= "\n";
 				
-				$msg	.= "(get_Bar_Type : step : j2 : Y : 1) \$bd->price_High >= \$pos->pr_TP (TP)";
+				$msg	.= "(get_Bar_Type__BUY : step : j2 : Y : 1) \$bd->price_High >= \$pos->pr_TP (TP)";
 				$msg	.= "\n";
 				
 				$msg	.= "\$bd->price_High\t" . number_format($bd->price_High, 3);
@@ -150,7 +152,7 @@ class LibEaTester {
 				 ********************/
 				$msg	= "\n";
 				
-				$msg	.= "(get_Bar_Type : step : j2 : Y : 1) \$bd->price_High < \$pos->pr_TP (not TP)";
+				$msg	.= "(get_Bar_Type__BUY : step : j2 : Y : 1) \$bd->price_High < \$pos->pr_TP (not TP)";
 				$msg	.= "\n";
 				
 				$msg	.= "\$bd->price_High\t" . number_format($bd->price_High, 3);
@@ -711,7 +713,10 @@ class LibEaTester {
 		$msg .= "rf_idx\trf_pr";
 		$msg .= "\t";
 		
-		$msg .= "base_idx\tbase_pr";
+		$msg .= "base_idx\tbase_pr\tdatetime";
+		$msg .= "\t";
+		
+		$msg .= "cu_status";
 		$msg .= "\t";
 		
 		$msg .= "ext_status";
@@ -766,6 +771,10 @@ class LibEaTester {
 			
 			// base
 			$msg .= $pos->base_idx . "\t" . $pos->base_pr;
+			$msg .= "\t";
+			
+			// current status
+			$msg .= $pos->cu_status;
 			$msg .= "\t";
 			
 			// exit status
@@ -1446,6 +1455,25 @@ class LibEaTester {
 				 * 		pos : update
 				 ********************/
 				//_20200204_150943:next
+				// current
+				$pos->cu_idx = $i;
+				$pos->cu_pr = $lo_BarDatas[$i]->price_Close;
+				
+				$pos->cu_status = CONS::$strOf_BarType__C4;
+				
+				$msg = "(step : D : 1 : 2-2 : 2) pos ==> updated";
+				$msg .= "\n";
+				
+				$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+				$msg .= "\n";
+				
+				$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+				$msg .= "\n";
+					
+				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+				
+				// append
+				array_push($lo_Log_Lines, $msg);
 				
 			} else if ($typeOf_Bar == CONS::$strOf_BarType__C5) {
 				/********************

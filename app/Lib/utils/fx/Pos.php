@@ -75,6 +75,7 @@ class Pos {
 // 	public $ts_SL	= 0.0;
 
 	public $ext_status = null;
+	public $cu_status = null;
 	
 }//class Pos {
 

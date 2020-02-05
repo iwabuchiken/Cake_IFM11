@@ -47,6 +47,25 @@ class FxTestController extends AppController {
 		
 	}//public function index()
 
+	public function test_codes_20200205_144054() {
+		//_20200205_144054:caller
+		//_20200205_144056:head
+		//_20200205_144059:wl
+		
+		$st = microtime();
+		
+		list($msec, $usec) = explode(" ", $st);
+		
+		$val_Msec = (float) $msec;
+		$val_Usec = (int) $usec;
+		
+		debug("\$val_Usec = $val_Usec / \$val_Msec = $val_Msec (\$val_Msec + 3 = " . ($val_Msec + 3));
+		
+		debug("\$val_Usec + \$val_Msec = " . ($val_Usec + $val_Msec));
+		
+		
+	}
+	
 	/********************
 	* fx_tester_T_1
 	* 	at : (before) 2020/01/06 13:09:11
@@ -55,7 +74,12 @@ class FxTestController extends AppController {
 		//_20200106_130954:caller
 		//_20200106_130959:head
 		//_20200106_131002:wl
-
+		
+// 		//test
+// 		$this->test_codes_20200205_144054();
+		
+// 		return ;
+		
 		/********************
 		 * step : 0 : 0
 		 * 		prep : log file name
@@ -80,7 +104,36 @@ class FxTestController extends AppController {
 								. "log."
 								. $strOf_Time_Label . ".dir"
 								;
+								
+		/********************
+		 * step : 0 : 0 : -1
+		 * 		prep : time
+		 ********************/
+		// measrue time
+		//ref https://stackoverflow.com/questions/6245971/accurate-way-to-measure-execution-times-of-php-scripts
+		$time_Start = microtime();
+		$time_Start_In_Float = Utils::conv_Microtime_to_Float($time_Start);
 		
+		$time_Start_In_TimeLabel = Utils::conv_Float_to_TimeLabel_2($time_Start_In_Float);
+// 		$time_Start_In_TimeLabel = Utils::conv_Float_to_TimeLabel($time_Start_In_Float);
+		
+// 		$time_Start = microtime(true);
+		
+		$msg = "----------------------------";
+		$msg .= "\n";
+		$msg .= "time start : $time_Start_In_TimeLabel (float = $time_Start_In_Float)";
+		$msg .= "\n";
+		
+		//debug : write
+		$fname = CONS::$fname_Log_Fx_Admin;
+		// 		$fname = CONS::$fname_Log_Fx_Admin . CONS::$fname_Log_Fx_Admin__List_Of_Pos__Suffix;
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, $fname
+				, $msg, __FILE__, __LINE__);
+		
+		
+								
 		/******************** (20 '*'s)
 		 * step : 0 : 1
 		 * 	debug
@@ -379,6 +432,44 @@ class FxTestController extends AppController {
 		
 		/********************
 		 * step : X
+		 * 		time
+		 ********************/
+// 		$time_End = microtime(true);
+		$time_End = microtime();
+		$time_End_In_Float = Utils::conv_Microtime_to_Float($time_End);
+		$time_End_In_TimeLabel = Utils::conv_Float_to_TimeLabel($time_End_In_Float);
+		
+		$time_End_In_TimeLabel_2 = Utils::conv_Float_to_TimeLabel_2($time_End_In_Float, 6);
+// 		$time_End_In_TimeLabel_2 = Utils::conv_Float_to_TimeLabel_2($time_End_In_Float);
+// 		$time_End_In_TimeLabel_2 = date('Y/m/d H:i:s', floor($time_End_In_Float));;
+		
+		//ref https://stackoverflow.com/questions/16825240/how-to-convert-microtime-to-hhmmssuu
+		$time_elapsed_In_Float = $time_End_In_Float - $time_Start_In_Float;
+		$time_elapsed_In_TimeLabel = Utils::conv_Float_to_TimeLabel($time_elapsed_In_Float);
+// 		$time_elapsed_In_Float = $time_End - $time_Start;
+		
+		
+		$msg = "-----------------------------------";
+		$msg .= "\n";
+		$msg .= "time end : $time_End / float = $time_End_In_Float / time label = $time_End_In_TimeLabel"
+				. " / label 2 = $time_End_In_TimeLabel_2"
+				;
+		$msg .= "\n";
+		
+		$msg .= "elapsed : " . $time_elapsed_In_TimeLabel;
+// 		$msg .= "time end : $time_End (elapsed : " . Utils::conv_Microtime_to_TimeLabel($time_elapsed) . ")";
+		$msg .= "\n";
+		
+		//debug : write
+		$fname = CONS::$fname_Log_Fx_Admin;
+// 		$fname = CONS::$fname_Log_Fx_Admin . CONS::$fname_Log_Fx_Admin__List_Of_Pos__Suffix;
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, $fname
+				, $msg, __FILE__, __LINE__);
+		
+		/********************
+		 * step : X
 		 * 	set : CONS::$dpath_Log_Fx_Admin
 		 *
 		 ********************/
@@ -391,3 +482,14 @@ class FxTestController extends AppController {
 	
 }//class FxTesterController extends AppController {
 
+/***************************
+//ref https://stackoverflow.com/questions/17391811/how-to-execute-in-php-interactive-mode
+// 2020/02/05 14:54:13
+
+<?php
+	echo microtime();
+?>
+
+
+
+****************************/
