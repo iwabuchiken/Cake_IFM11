@@ -171,7 +171,7 @@ class LibEaTester {
 				//_20200112_142119:next
 				/********************
 				 * step : j2 : N : 2
-				 * 		conditions
+				 * 		conditions ==> trail_starting_pr
 				 ********************/
 				$cond_3	= ($bd->price_High >= $pos->trail_starting_pr);
 				
@@ -204,7 +204,13 @@ class LibEaTester {
 					Utils::write_Log__Fx_Admin(
 							CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 							, $msg, __FILE__, __LINE__);
-				
+					
+					/********************
+					 * step : j3.1
+					 * 		post-trail-start
+					 ********************/
+					//_20200206_173649:next
+								
 				} else {
 					/********************
 					 * step : j3 : N
