@@ -14,7 +14,8 @@ class LibEaTester {
 	* @return : [$strOf_Bar_Type]
 	* 
 	********************/
-	public static function get_Bar_Type__BUY($pos, $bd) {
+// 	public static function get_Bar_Type__BUY($pos, $bd) {
+	public static function get_Bar_Type__BUY($pos, $bd, $lo_BarDatas) {
 		//_20200112_133506:caller
 		//_20200112_133510:head
 		//_20200112_133513:wl
@@ -189,7 +190,9 @@ class LibEaTester {
 					 * 		log
 					 ********************/
 					$msg	.= "\n";
-					$msg	= "(step : j3 : Y : 1)";
+					
+					$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+					$msg	.= "(step : j3 : Y : 1)";
 					$msg	.= " ";
 // 					$msg	.= "\n";
 					$msg	.= "\$bd->price_High >= \$pos->trail_starting_pr (trail ==> start)";
@@ -200,17 +203,67 @@ class LibEaTester {
 						
 					$msg	.= "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
 					$msg	.= "\n";
-						
+					
+					/********************
+					 * step : j3 : Y : 2
+					 * 		update ==> vals
+					 ********************/
+					//_20200207_174611:tmp
+					/********************
+					 * step : j3 : Y : 2 : 1
+					 * 		$pos->trail_starting_pr
+					 ********************/
+					$pos->trail_starting_pr = $bd->price_High;
+
+					$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+					$msg	.= "(step : j3 : Y : 2 : 1)";
+					$msg	.= "\n";
+					
+					$msg	.= "\$pos->trail_starting_pr ==> updated : $pos->trail_starting_pr";
+								
+					/********************
+					 * step : j3 : Y : 2 : 2
+					 * 		$pos->$pr_TP, $pr_SL
+					 ********************/
+					//_20200207_175505:tmp
+// 					$pr_TP			= $bd->price_Open + ($val_TP + $val_SPREAD);
+// 					$pr_SL			= $bd->price_Open - ($val_SL + $val_SPREAD);
+
+					$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+					$msg	.= "(step : j3 : Y : 2 : 2)";
+					$msg	.= "\n";
+	
+					$msg	.= "updating SL, TP; current vals are :";
+					$msg	.= "\n";
+					
+					$msg	.= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+					
+					// update
+					$pos->pr_TP = $pos->trail_starting_pr + ($pos->val_TP + $pos->val_SPREAD);
+					$pos->pr_SL = $pos->trail_starting_pr - ($pos->val_SL + $pos->val_SPREAD);
+					
+
+					$msg	.= "TP, SL ==> updated";
+					$msg	.= "\n";
+					
+					$msg	.= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+
+					/********************
+					 * step : j3 : Y : 3
+					 * 		post trail-start
+					 ********************/
+					//_20200207_181346:next
+								
+// 					/********************
+// 					 * step : j3.1
+// 					 * 		post-trail-start
+// 					 ********************/
+// 					//_20200206_173649:next
+								
 					Utils::write_Log__Fx_Admin(
 							CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 							, $msg, __FILE__, __LINE__);
-					
-					/********************
-					 * step : j3.1
-					 * 		post-trail-start
-					 ********************/
-					//_20200206_173649:next
-								
+
 				} else {
 					/********************
 					 * step : j3 : N
@@ -361,7 +414,8 @@ class LibEaTester {
 	* 
 	********************/
 // 	public static function get_Bar_Type($pos, $bd) {
-	public static function get_Bar_Type($pos, $bd, $typeOf_Position) {
+// 	public static function get_Bar_Type($pos, $bd, $typeOf_Position) {
+	public static function get_Bar_Type($pos, $bd, $typeOf_Position, $lo_BarDatas) {
 		//_20200109_175550:caller
 		//_20200109_175554:head
 		//_20200109_175557:wl
@@ -416,7 +470,8 @@ class LibEaTester {
 			
 			//_20200109_181021:next
 			//_20200112_133506:caller
-			$valOf_Ret__received = LibEaTester::get_Bar_Type__BUY($pos, $bd);
+			$valOf_Ret__received = LibEaTester::get_Bar_Type__BUY($pos, $bd, $lo_BarDatas);
+// 			$valOf_Ret__received = LibEaTester::get_Bar_Type__BUY($pos, $bd);
 			
 			$typeOf_Bar = $valOf_Ret__received[0];
 
@@ -498,6 +553,7 @@ class LibEaTester {
 		
 		$pos->val_Trail_Starting		= $val_Trail_Starting;
 		
+		//_20200207_174733:tmp
 		$pos->trail_starting_pr		= $pos->val_Trail_Starting + $pos->st_pr;
 		
 		
@@ -962,6 +1018,7 @@ class LibEaTester {
 			// 			$val_SL			= 0.05;
 			// 			$val_SPREAD		= 0.03;
 				
+			//_20200207_175834:ref
 			$pr_TP			= $bd->price_Open + ($val_TP + $val_SPREAD);
 			$pr_SL			= $bd->price_Open - ($val_SL + $val_SPREAD);
 				
@@ -1019,7 +1076,8 @@ class LibEaTester {
 			//_20200109_175550:caller
 			$typeOf_Position = "BUY";
 				
-			$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
+			$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position, $lo_BarDatas);
+// 			$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
 				
 			$typeOf_Bar = $valOf_Ret__received;
 				
@@ -1144,7 +1202,8 @@ class LibEaTester {
 		//_20200109_175550:caller
 		$typeOf_Position = "BUY";
 		
-		$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
+		$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position, $lo_BarDatas);
+// 		$valOf_Ret__received = LibEaTester::get_Bar_Type($pos, $bd, $typeOf_Position);
 		
 		$typeOf_Bar = $valOf_Ret__received;
 		
