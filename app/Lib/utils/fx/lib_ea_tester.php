@@ -253,7 +253,132 @@ class LibEaTester {
 					 * 		post trail-start
 					 ********************/
 					//_20200207_181346:next
-								
+					/********************
+					 * step : j3.1
+					 * 		pr_Close <= new SL ?
+					 ********************/
+					/********************
+					 * step : j3.1 : 1
+					 * 		conditions
+					 ********************/
+					// case : C6 (SL)
+					$cond_5_1 = $bd->price_Close <= $pos->pr_SL;
+					
+					// case : C2 --> trailing-start update
+					$cond_5_2 = $bd->price_Close > $pos->trail_starting_pr;
+					
+					/********************
+					 * step : j3.1 : 2
+					 * 		judge
+					 ********************/
+					if ($cond_5_1 == true) {
+						/********************
+						 * step : j3.1 : Y1 : C6
+						 * 		$bd->price_Close <= $pos->pr_SL
+						 ********************/
+						/********************
+						 * step : j3.1 : Y1 : 1
+						 * 		log
+						 ********************/
+						$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						$msg	.= "(step : j3.1 : Y1 : 1)";
+						$msg	.= "\$bd->price_Close <= \$pos->pr_SL";
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_Close\t" .  $bd->price_Close;
+						$msg	.= "\n";
+					
+						$msg	.= "\$pos->pr_SL\t" .  $pos->pr_SL;
+						$msg	.= "\n";
+						
+						$msg	.= "diff\t" .  ($bd->price_Close - $pos->pr_SL);
+						$msg	.= "\n";
+						
+						/********************
+						 * step : j3.1 : Y1 : 2
+						 * 		set : bar type
+						 ********************/
+						//_20200208_182737:next
+						
+					} else {//if ($cond_5_1 == true) {
+						/********************
+						 * step : j3.1 : N1 : C6
+						 * 		$bd->price_Close > $pos->pr_SL
+						 ********************/
+						/********************
+						 * step : j3.1 : N1 : 1
+						 * 		log
+						 ********************/
+						$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						$msg	.= "(step : j3.1 : N1 : 1)";
+						$msg	.= "\$bd->price_Close > \$pos->pr_SL";
+						$msg	.= "\n";
+						$msg	.= "\n";
+						
+					}//if ($cond_5_1 == true) {
+					
+// 					} else if ($cond_5_2 == true) {
+					if ($cond_5_2 == true) {
+						/********************
+						 * step : j3.1 : Y2 (C2)
+						 * 		$bd->price_Close > $pos->trail_starting_pr
+						 ********************/
+						/********************
+						 * step : j3.1 : Y2 : 1
+						 * 		log
+						 ********************/
+						$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						$msg	.= "(step : j3.1 : Y2 : 1)";
+						$msg	.= "\$bd->price_Close > \$pos->trail_starting_pr";
+						$msg	.= "\n";
+
+						$msg	.= "\$bd->price_Close\t" .  $bd->price_Close;
+						$msg	.= "\n";
+							
+						$msg	.= "\$pos->trail_starting_pr\t" .  $pos->trail_starting_pr;
+						$msg	.= "\n";
+						
+						$msg	.= "diff\t" .  ($bd->price_Close - $pos->trail_starting_pr);
+						$msg	.= "\n";
+							
+					} else {//if ($cond_5_2 == true) {
+						/********************
+						 * step : j3.1 : N2 (C2)
+						 * 		$bd->price_Close > $pos->trail_starting_pr
+						 ********************/
+						/********************
+						 * step : j3.1 : N2 : 1
+						 * 		log
+						 ********************/
+						$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						$msg	.= "(step : j3.1 : N2 : 1)";
+						$msg	.= "\$bd->price_Close <= \$pos->trail_starting_pr";
+						$msg	.= "\n";
+						$msg	.= "\n";
+						
+					}//if ($cond_5_2 == true) {
+						
+// 					} else {
+					if ($cond_5_1 == false && $cond_5_2 == false) {
+					
+						/********************
+						 * step : j3.1 : N
+						 * 		$bd->price_Close > $pos->pr_SL
+						 ********************/
+						/********************
+						 * step : j3.1 : N : 1
+						 * 		log
+						 ********************/
+						$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						$msg	.= "(step : j3.1 : N : 1)";
+						$msg	.= "(\$bd->price_Close > \$pos->pr_SL) or (\$bd->price_Close > \$pos->trail_starting_pr)";
+// 						$msg	.= "\$bd->price_Close > \$pos->pr_SL";
+						$msg	.= "\n";
+						
+// 					} else {//if ($cond_5_1 == false && $cond_5_2 == false)
+						
+					}//if ($cond_5_1 == false && $cond_5_2 == false)
+						
 // 					/********************
 // 					 * step : j3.1
 // 					 * 		post-trail-start
