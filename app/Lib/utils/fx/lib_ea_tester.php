@@ -267,6 +267,12 @@ class LibEaTester {
 					// case : C2 --> trailing-start update
 					$cond_5_2 = $bd->price_Close > $pos->trail_starting_pr;
 					
+					//20200209_171319:tmp
+					// case : C1 --> (Close <= trailing-start) and (Close > SL)
+					$cond_5_3 = ($bd->price_Close <= $pos->trail_starting_pr)
+								&& ($bd->price_Close > $pos->pr_SL)
+					;
+					
 					/********************
 					 * step : j3.1 : 2
 					 * 		judge
@@ -299,6 +305,13 @@ class LibEaTester {
 						 * 		set : bar type
 						 ********************/
 						//_20200208_182737:next
+						$strOf_Bar_Type = CONS::$strOf_BarType__SL;
+
+						$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						$msg	.= "(step : j3.1 : Y1 : 2)";
+						$msg	.= "\$strOf_Bar_Type ==> set : $strOf_Bar_Type";
+						$msg	.= "\n";
+						
 						
 					} else {//if ($cond_5_1 == true) {
 						/********************
@@ -378,7 +391,72 @@ class LibEaTester {
 // 					} else {//if ($cond_5_1 == false && $cond_5_2 == false)
 						
 					}//if ($cond_5_1 == false && $cond_5_2 == false)
+
+					if ($cond_5_3 == true) {
+						/********************
+						 * step : j3.1 : Y3
+						 * 		C1 ==> (Close < trail-start) && (Close > SL)
+						 ********************/
+						/********************
+						 * step : j3.1 : Y3 : 1
+						 * 		log
+						 ********************/
+						$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						$msg	.= "(step : j3.1 : Y3 : 1)";
+						$msg	.= "(\$bd->price_Close > \$pos->pr_SL) && (\$bd->price_Close <= \$pos->trail_starting_pr)";
+						// 						$msg	.= "\$bd->price_Close > \$pos->pr_SL";
+						$msg	.= "\n";
 						
+						$msg	.= "\$bd->price_Close = " . $bd->price_Close 
+									. " / " . "\$pos->pr_SL = " . $pos->pr_SL;
+						$msg	.= "\n";
+						$msg	.= "\$bd->price_Close - \$pos->pr_SL = " . ($bd->price_Close - $pos->pr_SL);
+						$msg	.= "\n";
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_Close = " . $bd->price_Close 
+									. " / " . "\$pos->trail_starting_pr = " . $pos->trail_starting_pr;
+						$msg	.= "\n";
+						
+						$msg	.= "\$bd->price_Close - \$pos->trail_starting_pr = "
+									. ($bd->price_Close - $pos->trail_starting_pr);
+						$msg	.= "\n";
+						$msg	.= "\n";
+
+						/********************
+						 * step : j3.1 : Y3 : 2
+						 * 		set : bar type
+						 ********************/
+						//_20200209_172711:tmp
+						$strOf_Bar_Type = CONS::$strOf_BarType__C1;
+
+						/********************
+						 * step : j3.1 : Y3 : 3
+						 * 		pos ==> update
+						 ********************/
+						//_20200209_173057:tmp
+						//_20200209_173427:next
+						
+						
+						
+					} else {//if ($cond_5_3 == true) {
+						/********************
+						 * step : j3.1 : N3
+						 * 		C1 ==> (Close < trail-start) && (Close > SL)
+						 ********************/
+						/********************
+						 * step : j3.1 : N3 : 1
+						 * 		log
+						 ********************/
+						$msg	.= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						$msg	.= "(step : j3.1 : N3 : 1)";
+						$msg	.= "(\$bd->price_Close > \$pos->pr_SL) && (\$bd->price_Close <= \$pos->trail_starting_pr) :==> NO";
+						// 						$msg	.= "\$bd->price_Close > \$pos->pr_SL";
+						$msg	.= "\n";
+						
+						
+					}//if ($cond_5_3 == true) {
+								
 // 					/********************
 // 					 * step : j3.1
 // 					 * 		post-trail-start
