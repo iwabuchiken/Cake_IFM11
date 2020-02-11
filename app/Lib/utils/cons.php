@@ -118,7 +118,12 @@ class CONS {
 	/******************************
 	 	Paths and names : fx : testers
 	 ******************************/
-	public static 	$fname_FX_Tester_CSV_File = "44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-18000).20200116_171429.[SLICE-30].csv";
+	//_20200211_151350:tmp
+	public static 	$fname_FX_Tester_CSV_File = 
+				"44_5.1_10_rawdata.(AUDJPY).(Period-M15)"
+				. ".(NumOfUnits-18000).(Bars-18000)"
+				. ".20200116_171429.[SLICE-100].csv";
+// 	public static 	$fname_FX_Tester_CSV_File = "44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-18000).20200116_171429.[SLICE-30].csv";
 	
 	/****************************************
 		* csv files

@@ -437,6 +437,11 @@ class LibEaTester {
 						//_20200209_173057:tmp
 						//_20200209_173427:next
 						
+// 						/********************
+// 						 * step : j3.1 : Y3 : 3.1
+// 						 * 		current status
+// 						 ********************/
+// 						$pos->cu_status = CONS::$strOf_BarType__C1;
 						
 						
 					} else {//if ($cond_5_3 == true) {
@@ -1450,7 +1455,171 @@ class LibEaTester {
 		
 		
 	}//public static function loop_J1_Y
+
+	/********************
+	 * public static function proc_Post_Loop__C1
+	 * 	at : 2020/02/11 14:51:12
+	 ********************/
+	// 	public static function fx_tester_T_1__Exec($lo_BarDatas) {
+	public static function proc_Post_Loop__C1
+	($pos, $i, $lo_BarDatas, $valOf_Ret__received, $lo_Log_Lines) {
+		//_20200211_145228:caller
+		//_20200211_145230:head
+		//_20200211_145233:wl
+
+		/********************
+		 * step : D : 1 : 2-6 : 1
+		 * 		log
+		 ********************/
+		$msg = "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+		$msg .= "\n";
+		
+		$msg .= "(step : D : 1 : 2-6 : 1) C1";
+		$msg .= "\n";
+		
+		$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+		$msg .= "\n";
+		
+		$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+		
+// 		// append
+// 		array_push($lo_Log_Lines, $msg);
+
+		/********************
+		 * step : D : 1 : 2-6 : 1.2
+		 * 		current status
+		 ********************/
+		//_20200211_150000:tmp
+		$pos->cu_status = CONS::$strOf_BarType__C1;
+
+		$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+		$msg .= "\n";
+		
+		$msg .= "(step : D : 1 : 2-6 : 1.2)";
+		$msg .= "\n";
+		$msg .= "current status ==> set";
+		$msg .= "\n";
+		
+		$msg .= "\$pos->cu_status\t" . $pos->cu_status;
+		$msg .= "\n";
+		$msg .= "\n";
+		
+// 		$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+// 		$msg .= "\n";
+		
+// 		$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+		
+		/********************
+		 * step : D : 1 : 2-6 : 2
+		 * 		set val : loop num
+		********************/
+		$msg .= "(step : D : 1 : 2-6 : 2) set val : loop num";
+		$msg .= "\n";
+		$msg .= "\n";
+			
+		// append
+		array_push($lo_Log_Lines, $msg);
+		
+		$valOf_Ret__received[3] = $i;
 	
+		/********************
+			* return
+		********************/
+		$valOf_Return = array($valOf_Ret__received, $lo_Log_Lines);
+	
+		// return
+		return $valOf_Return;
+	
+	}//public static function proc_Post_Loop__C1
+	
+	
+	/********************
+	* proc_Post_Loop__SL
+	* 	at : 2020/02/11 14:51:12
+	********************/
+// 	public static function fx_tester_T_1__Exec($lo_BarDatas) {
+	public static function proc_Post_Loop__SL
+	($pos, $i, $lo_BarDatas, $valOf_Ret__received, $lo_Log_Lines) {
+		//_20200211_143333:caller
+		//_20200211_143335:head
+		//_20200211_143339:wl
+
+		/********************
+		 * step : D : 1 : 2-4 : 1
+		 * 		log
+		 ********************/
+		$msg = "(step : D : 1 : 2-4 : 1) SL";
+		$msg .= "\n";
+		
+		$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+		$msg .= "\n";
+		
+		$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+		$msg .= "\n";
+		
+		$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+		
+		// append
+		array_push($lo_Log_Lines, $msg);
+		
+		/********************
+		 * step : D : 1 : 2-4 : 2
+		 * 		set val : loop num
+		********************/
+		$msg = "(step : D : 1 : 2-4 : 2) set val : loop num";
+		$msg .= "\n";
+			
+		// append
+		array_push($lo_Log_Lines, $msg);
+		
+		$valOf_Ret__received[3] = $i;
+		
+		/********************
+		 * step : D : 1 : 2-4 : 3
+		 * 		pos data ==> update
+		 ********************/
+		//_20200203_142642:next
+		/********************
+		 * step : D : 1 : 2-4 : 3.1
+		 * 		prep
+		 ********************/
+		$bd = $lo_BarDatas[$i];
+		
+		/********************
+		 * step : D : 1 : 2-4 : 3.2
+		 * 		update data
+		********************/
+		// param : current
+		$pos->cu_idx = $i;
+		$pos->cu_pr = $pos->pr_SL;
+		
+		// param : exit
+		$pos->ext_idx = $i;
+		$pos->ext_pr = $pos->pr_SL;
+		
+		// exit status
+		$pos->ext_status = CONS::$strOf_Exit_Status__SL;
+		
+		/********************
+		 * step : D : 1 : 2-4 : X
+		 * 		loop ==> break
+		 ********************/
+		$msg = "(step : D : 1 : 2-4 : X) for-loop ==> breaking... (\$i = $i)";
+		$msg .= "\n";
+		
+		// append
+		array_push($lo_Log_Lines, $msg);
+		
+		/********************
+		* return
+		********************/
+		$valOf_Return = array($msg, $lo_Log_Lines);
+		
+		// return
+		return $valOf_Return;
+		
+	}//public static function proc_Post_Loop__SL
+		
 	/********************
 	* fx_tester_T_1__Exec
 	* 	at : 2020/01/06 13:10:56
@@ -1750,79 +1919,95 @@ class LibEaTester {
 				 ********************/
 				
 			} else if ($typeOf_Bar == CONS::$strOf_BarType__SL) {
+				//_20200211_142905:tmp
 				/********************
 				 * step : D : 1 : 2-4
 				 * 		SL
 				 ********************/
-				/********************
-				 * step : D : 1 : 2-4 : 1
-				 * 		log
-				 ********************/
-				$msg = "(step : D : 1 : 2-4 : 1) SL";
-				$msg .= "\n";
+				//_20200211_143333:caller
+				//$valOf_Return = array($msg, $lo_Log_Lines)
+				$tmp_ValOf_Ret__received = LibEaTester::proc_Post_Loop__SL(
+									$pos, $i, $lo_BarDatas
+// 									$pos, $bd, $i, $lo_BarDatas
+									, $valOf_Ret__received, $lo_Log_Lines);
+				
+				$msg = $tmp_ValOf_Ret__received[0];
+				$lo_Log_Lines = $tmp_ValOf_Ret__received[1];
 
-				$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
-				$msg .= "\n";
-				
-				$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
-				$msg .= "\n";
-
-				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
-				
-				// append
-				array_push($lo_Log_Lines, $msg);
-				
-				/********************
-				 * step : D : 1 : 2-4 : 2
-				 * 		set val : loop num
-				 ********************/
-				$msg = "(step : D : 1 : 2-4 : 2) set val : loop num";
-				$msg .= "\n";
-					
-				// append
-				array_push($lo_Log_Lines, $msg);
-				
-				$valOf_Ret__received[3] = $i;
-				
-				/********************
-				 * step : D : 1 : 2-4 : 3
-				 * 		pos data ==> update
-				 ********************/
-				//_20200203_142642:next
-				/********************
-				 * step : D : 1 : 2-4 : 3.1
-				 * 		prep
-				 ********************/
-				$bd = $lo_BarDatas[$i];
-				
-				/********************
-				 * step : D : 1 : 2-4 : 3.2
-				 * 		update data
-				 ********************/
-				// param : current
-				$pos->cu_idx = $i;
-				$pos->cu_pr = $pos->pr_SL;
-				
-				// param : exit
-				$pos->ext_idx = $i;
-				$pos->ext_pr = $pos->pr_SL;
-				
-				// exit status
-				$pos->ext_status = CONS::$strOf_Exit_Status__SL;
-				
-				/********************
-				 * step : D : 1 : 2-4 : X
-				 * 		loop ==> break
-				 ********************/
-				$msg = "(step : D : 1 : 2-4 : X) for-loop ==> breaking... (\$i = $i)";
-				$msg .= "\n";
-				
-				// append
-				array_push($lo_Log_Lines, $msg);
-				
+				// break
 				break;
 				
+				
+// 				/********************
+// 				 * step : D : 1 : 2-4 : 1
+// 				 * 		log
+// 				 ********************/
+// 				$msg = "(step : D : 1 : 2-4 : 1) SL";
+// 				$msg .= "\n";
+
+// 				$msg .= "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+// 				$msg .= "\n";
+				
+// 				$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+// 				$msg .= "\n";
+
+// 				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+				
+// 				// append
+// 				array_push($lo_Log_Lines, $msg);
+				
+// 				/********************
+// 				 * step : D : 1 : 2-4 : 2
+// 				 * 		set val : loop num
+// 				 ********************/
+// 				$msg = "(step : D : 1 : 2-4 : 2) set val : loop num";
+// 				$msg .= "\n";
+					
+// 				// append
+// 				array_push($lo_Log_Lines, $msg);
+				
+// 				$valOf_Ret__received[3] = $i;
+				
+// 				/********************
+// 				 * step : D : 1 : 2-4 : 3
+// 				 * 		pos data ==> update
+// 				 ********************/
+// 				//_20200203_142642:next
+// 				/********************
+// 				 * step : D : 1 : 2-4 : 3.1
+// 				 * 		prep
+// 				 ********************/
+// 				$bd = $lo_BarDatas[$i];
+				
+// 				/********************
+// 				 * step : D : 1 : 2-4 : 3.2
+// 				 * 		update data
+// 				 ********************/
+// 				// param : current
+// 				$pos->cu_idx = $i;
+// 				$pos->cu_pr = $pos->pr_SL;
+				
+// 				// param : exit
+// 				$pos->ext_idx = $i;
+// 				$pos->ext_pr = $pos->pr_SL;
+				
+// 				// exit status
+// 				$pos->ext_status = CONS::$strOf_Exit_Status__SL;
+				
+// 				/********************
+// 				 * step : D : 1 : 2-4 : X
+// 				 * 		loop ==> break
+// 				 ********************/
+// 				$msg = "(step : D : 1 : 2-4 : X) for-loop ==> breaking... (\$i = $i)";
+// 				$msg .= "\n";
+				
+// 				// append
+// 				array_push($lo_Log_Lines, $msg);
+				
+// 				break;
+				
 			} else if ($typeOf_Bar == CONS::$strOf_BarType__TP) {
+				//_20200211_150944:next
 				/********************
 				 * step : D : 1 : 2-5
 				 * 		TP
@@ -1868,7 +2053,68 @@ class LibEaTester {
 				array_push($lo_Log_Lines, $msg);
 				
 				break;		
-						
+
+			} else if ($typeOf_Bar == CONS::$strOf_BarType__C1) {
+				/********************
+				 * step : D : 1 : 2-6
+				 * 		C1
+				 ********************/
+				//_20200211_144929:tmp
+				//_20200211_145228:caller
+				$tmp_ValOf_Ret__received = LibEaTester::proc_Post_Loop__C1(
+						$pos, $i, $lo_BarDatas
+						// 									$pos, $bd, $i, $lo_BarDatas
+						, $valOf_Ret__received, $lo_Log_Lines);
+				
+				//$valOf_Return = array($valOf_Ret__received, $lo_Log_Lines);
+// 				$msg = $tmp_ValOf_Ret__received[0];
+				$valOf_Ret__received = $tmp_ValOf_Ret__received[0];
+				$lo_Log_Lines = $tmp_ValOf_Ret__received[1];
+				
+// 				/********************
+// 				 * step : D : 1 : 2-6 : 1
+// 				 * 		log
+// 				 ********************/
+// 				$msg = "[" . Utils::get_CurrentTime() . " : " . basename(__FILE__) . " : " . __LINE__ . "]\n";
+// 				$msg .= "\n";
+				
+// 				$msg .= "(step : D : 1 : 2-6 : 1) C1";
+// 				$msg .= "\n";
+
+// 				$msg .= "calling ==> LibEaTester::show_Basic_Pos_Data__Build_Lines";
+// 				$msg .= "\n";
+				
+// 				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $lo_BarDatas, __FILE__, __LINE__);
+				
+// 				// append
+// 				array_push($lo_Log_Lines, $msg);
+				
+// 				/********************
+// 				 * step : D : 1 : 2-6 : 2
+// 				 * 		set val : loop num
+// 				********************/
+// 				$msg = "(step : D : 1 : 2-6 : 2) set val : loop num";
+// 				$msg .= "\n";
+					
+// 				// append
+// 				array_push($lo_Log_Lines, $msg);
+				
+// 				$valOf_Ret__received[3] = $i;
+				
+// 				/********************
+// 				 * step : D : 1 : 2-6 : 3
+// 				 * 		loop ==> break
+// 				 ********************/
+// 				$msg = "(step : D : 1 : 2-6 : 3) for-loop ==> breaking... (\$i = $i)";
+// 				$msg .= "\n";
+				
+// 				// append
+// 				array_push($lo_Log_Lines, $msg);
+				
+// 				break;		
+
+			//_20200211_142607:tmp
+			
 			} else {
 				/********************
 				 * step : D : 1 : 2-X
