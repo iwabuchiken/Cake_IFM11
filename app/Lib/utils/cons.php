@@ -87,6 +87,11 @@ class CONS {
 	public static $fname_Log_Fx_Admin__Ticket_Num = "log_fx_admin__Ticket_Num.log";
 	
 	/************************************************************
+	 	detect patterns
+	 ************************************************************/
+	public static $strOf_DetectPattern_Name__DP_All = "dp-all";
+	
+	/************************************************************
 	 	lib_ea_tester
 	 ************************************************************/
 	/******************************
@@ -119,6 +124,8 @@ class CONS {
 	 	Paths and names : fx : testers
 	 ******************************/
 	//_20200211_151350:tmp
+	public static 	$dpath_FX_Tester_CSV_File = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw";
+
 	public static 	$fname_FX_Tester_CSV_File = 
 				"44_5.1_10_rawdata.(AUDJPY).(Period-M15)"
 				. ".(NumOfUnits-18000).(Bars-18000)"
@@ -128,7 +135,8 @@ class CONS {
 	/****************************************
 		* csv files
 	****************************************/
-	public static $logFile_maxLineNum = 9000;
+	public static $logFile_maxLineNum = 18000;
+// 	public static $logFile_maxLineNum = 9000;
 // 	public static $logFile_maxLineNum = 3000;
 
 	/****************************************

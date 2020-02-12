@@ -118,7 +118,7 @@ class LibEaTester {
 			if ($cond_2 == true) {
 				/********************
 				 * step : j2 : Y
-				 * 		$bd->price_High >= $pos->pr_TP
+				 * 		$bd->price_High >= $pos->pr_TP (TP)
 				 ********************/
 				/********************
 				 * step : j2 : Y : 1
@@ -141,6 +141,13 @@ class LibEaTester {
 				Utils::write_Log__Fx_Admin(
 						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 						, $msg, __FILE__, __LINE__);
+				
+				/********************
+				 * step : j2 : Y : 2
+				 * 		set : bar type string
+				 ********************/
+				//_20200212_133542:next
+				
 				
 			} else {
 				/********************
@@ -959,15 +966,85 @@ class LibEaTester {
 	 * show_LO_Pos_Data__Build_Lines
 	 * 	at : 2020/01/30 18:10:48
 	 ********************/
-	public static function show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas) {
+	public static function show_LO_Pos_Data__Build_Lines
+	(
+// 			$lo_Pos, $lo_BarDatas, $nameOf_DP = ""
+			$lo_Pos, $lo_BarDatas
+			, $nameOf_DP
+			, $_dpath_File_CSV, $_fname_File_CSV
+				
+			) {
 		//_20200130_181154:caller
 		//_20200130_181158:head
 		//_20200130_181201:wl
-	
+		
+		/********************
+		* step : 1
+		* 		meta data
+		********************/
+		/********************
+		* step : 1.1
+		* 		len
+		********************/
+		// num of Pos entries
 		$lenOf_LO_Pos = count($lo_Pos);
 		
-		//show
+		// num of total bardatas
+		$lenOf_LO_BarDatas = count($lo_BarDatas);
+		
+		/********************
+		* step : 1.2
+		* 		SL entries
+		********************/
+		$numOf_SLs = 0;
+		
+		foreach ($lo_Pos as $pos) {
+		
+			// judge
+			if ($pos->ext_status == CONS::$strOf_Exit_Status__SL) {
+			
+				$numOf_SLs += 1;
+				
+			}//if ($pos->exit_status == CONS::$strOf_Exit_Status__SL)
+			;
+			
+		}//foreach ($lo_Pos as $pos)
+		
+		// lines
+			
+		// detect pattern name
 		$msg = "\n";
+		$msg .= "\$nameOf_DP\t" . $nameOf_DP;
+		$msg .= "\n";
+		
+		// csv file
+		$msg .= "\$_dpath_File_CSV\t" . $_dpath_File_CSV;
+		$msg .= "\n";
+		
+		$msg .= "\$_fname_File_CSV\t" . $_fname_File_CSV;
+		$msg .= "\n";
+		
+		
+		
+		// entries
+		$msg .= "\$lo_BarDatas\t" . count($lo_BarDatas);
+		$msg .= "\n";
+		
+		$msg .= "\$lo_Pos\t" . count($lo_Pos) . " / of all bds = " . number_format(($lenOf_LO_Pos / $lenOf_LO_BarDatas),3);;
+		$msg .= "\n";
+		
+		$msg .= "\$numOf_SLs\t" . $numOf_SLs . " / of all Pos = " . number_format(($numOf_SLs / $lenOf_LO_Pos),3);
+		$msg .= "\n";
+		
+		
+		
+		/********************
+		* step : 2
+		* 		header
+		********************/
+		//show
+		$msg .= "\n";
+// 		$msg = "\n";
 		
 // 		$msg .= "st_idx\tst_pr";
 		$msg .= "st_idx\tst_pr\tdatetime";
@@ -994,6 +1071,10 @@ class LibEaTester {
 		
 		$msg .= "\n";
 		
+		/********************
+		* step : 3
+		* 		entries
+		********************/
 		//_20200128_174019:next
 		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
 		

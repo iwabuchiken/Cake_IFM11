@@ -166,7 +166,13 @@ class FxTestController extends AppController {
 		 * step : 1 : 1.1
 		 	get : list
 		 ********************/
-		$lo_BarDatas = Libfx::get_ListOf_BarDatas();
+		//_20200212_132137:tmp
+		$_dpath_File_CSV = CONS::$dpath_FX_Tester_CSV_File;
+		
+		$_fname_File_CSV = CONS::$fname_FX_Tester_CSV_File;
+		
+		$lo_BarDatas = Libfx::get_ListOf_BarDatas($_dpath_File_CSV, $_fname_File_CSV);
+// 		$lo_BarDatas = Libfx::get_ListOf_BarDatas();
 		
 		/********************
 		 * step : 1 : 1.2
@@ -408,7 +414,15 @@ class FxTestController extends AppController {
 		 		debug : list of "pos"-s
 		 ********************/
 		//_20200130_181154:caller
-		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas);
+		//_20200212_124817:tmp
+		$nameOf_DP = CONS::$strOf_DetectPattern_Name__DP_All;
+		
+		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines(
+							$lo_Pos, $lo_BarDatas
+							, $nameOf_DP
+							, $_dpath_File_CSV, $_fname_File_CSV
+						);
+// 		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas);
 		
 		//debug : write
 		$fname = CONS::$fname_Log_Fx_Admin . CONS::$fname_Log_Fx_Admin__List_Of_Pos__Suffix;

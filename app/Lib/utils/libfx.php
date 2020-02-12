@@ -118,7 +118,8 @@ class Libfx {
 	* 		-1		fopen ==> returned false
 	* 
 	********************/
-	public static function get_ListOf_BarDatas() {
+	public static function get_ListOf_BarDatas
+	($_dpath_File_CSV, $_fname_File_CSV) {
 		//_20200105_125406:caller
 		//_20200105_125411:head
 		//_20200105_125417:wl
@@ -131,9 +132,11 @@ class Libfx {
 		* 	open
 		********************/
 		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
-		$dpath_File_CSV = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw";
+		$dpath_File_CSV = $_dpath_File_CSV;
+// 		$dpath_File_CSV = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw";
 		
-		$fname_File_CSV = CONS::$fname_FX_Tester_CSV_File;
+		$fname_File_CSV = $_fname_File_CSV;
+// 		$fname_File_CSV = CONS::$fname_FX_Tester_CSV_File;
 // 		$fname_File_CSV = "44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv";
 		
 		$fpath_File_CSV = $path_LogFile = join(
