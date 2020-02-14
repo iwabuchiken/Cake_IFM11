@@ -129,7 +129,12 @@ class CONS {
 	public static 	$fname_FX_Tester_CSV_File = 
 				"44_5.1_10_rawdata.(AUDJPY).(Period-M15)"
 				. ".(NumOfUnits-18000).(Bars-18000)"
-				. ".20200116_171429.[SLICE-100].csv";
+				. ".20200116_171429.[SLICE-500].csv";
+// 				. ".20200116_171429.[SLICE-300].csv";
+// 	public static 	$fname_FX_Tester_CSV_File = 
+// 				"44_5.1_10_rawdata.(AUDJPY).(Period-M15)"
+// 				. ".(NumOfUnits-18000).(Bars-18000)"
+// 				. ".20200116_171429.[SLICE-100].csv";
 // 	public static 	$fname_FX_Tester_CSV_File = "44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-18000).20200116_171429.[SLICE-30].csv";
 	
 	/****************************************
