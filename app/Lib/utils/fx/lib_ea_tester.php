@@ -1001,8 +1001,22 @@ class LibEaTester {
 		$numOf_SLs = 0;
 		$numOf_TPs = 0;
 		
+		$sumOf_DiffOf_Exit_Price_less_Start_Price = 0;
+		
+		// ext_idx = -1
+		$numOf_Ext_Idx_Minus_1 = 0;
+		
+		/********************
+		* step : 1.2 : 2
+		* 		stats
+		********************/
+		//_20200214_134655:tmp
 		foreach ($lo_Pos as $pos) {
 		
+			/********************
+			* step : 1.2 : 2 : 1
+			* 		SL entries
+			********************/
 			// judge
 			if ($pos->ext_status == CONS::$strOf_Exit_Status__SL) {
 			
@@ -1010,6 +1024,10 @@ class LibEaTester {
 				
 			}//if ($pos->exit_status == CONS::$strOf_Exit_Status__SL)
 
+			/********************
+			* step : 1.2 : 2 : 2
+			* 		TP entries
+			********************/
 			// judge
 			if ($pos->ext_status == CONS::$strOf_Exit_Status__TP) {
 			
@@ -1018,10 +1036,34 @@ class LibEaTester {
 			}//if ($pos->exit_status == CONS::$strOf_Exit_Status__SL)
 			;
 			
+			/********************
+			* step : 1.2 : 2 : 3
+			* 		st_price - ext_price
+			********************/
+			if ($pos->ext_pr != 0) {
+			
+				$sumOf_DiffOf_Exit_Price_less_Start_Price += ($pos->ext_pr - $pos->st_pr);
+				
+			}//if ($pos->ext_price != 0)
+			
+			/********************
+			* step : 1.2 : 2 : 4
+			* 		ext_idx = -1
+			********************/
+			if ($pos->ext_idx == -1) {
+			
+				$numOf_Ext_Idx_Minus_1 += 1;
+				
+			}//if ($pos->ext_price != 0)
+			
 		}//foreach ($lo_Pos as $pos)
 		
 		// lines
 			
+		/********************
+		* step : 1.2 : 3
+		* 		meta data
+		********************/
 		// detect pattern name
 		$msg = "\n";
 		$msg .= "\$nameOf_DP\t" . $nameOf_DP;
@@ -1034,19 +1076,24 @@ class LibEaTester {
 		$msg .= "\$_fname_File_CSV\t" . $_fname_File_CSV;
 		$msg .= "\n";
 		
-		
-		
 		// entries
 		$msg .= "\$lo_BarDatas\t" . count($lo_BarDatas);
 		$msg .= "\n";
 		
-		$msg .= "\$lo_Pos\t" . count($lo_Pos) . " / of all bds = " . number_format(($lenOf_LO_Pos / $lenOf_LO_BarDatas),3);;
+		$msg .= "\$lo_Pos\t" . count($lo_Pos) . "\t" . "of all bds" . "\t" . number_format(($lenOf_LO_Pos / $lenOf_LO_BarDatas),3);;
+// 		$msg .= "\$lo_Pos\t" . count($lo_Pos) . " / of all bds = " . number_format(($lenOf_LO_Pos / $lenOf_LO_BarDatas),3);;
 		$msg .= "\n";
 		
-		$msg .= "\$numOf_SLs\t" . $numOf_SLs . " / of all Pos = " . number_format(($numOf_SLs / $lenOf_LO_Pos),3);
+		$msg .= "\$numOf_SLs\t" . $numOf_SLs. "\t" . "of all Pos". "\t" . number_format(($numOf_SLs / $lenOf_LO_Pos),3);
 		$msg .= "\n";
 		
-		$msg .= "\$numOf_TPs\t" . $numOf_TPs . " / of all Pos = " . number_format(($numOf_TPs / $lenOf_LO_Pos),3);
+		$msg .= "\$numOf_TPs\t" . $numOf_TPs. "\t" . "of all Pos". "\t" . number_format(($numOf_TPs / $lenOf_LO_Pos),3);
+		$msg .= "\n";
+		
+		$msg .= "sum : start - exit\t" . number_format($sumOf_DiffOf_Exit_Price_less_Start_Price,3);
+		$msg .= "\n";
+		
+		$msg .= "\ext_idx = -1\t" . $numOf_Ext_Idx_Minus_1;
 		$msg .= "\n";
 		
 		
@@ -1080,6 +1127,9 @@ class LibEaTester {
 		$msg .= "\t";
 		
 		$msg .= "ext_status";
+		$msg .= "\t";
+		
+		$msg .= "exit - start";
 		$msg .= "\t";
 		
 		$msg .= "\n";
@@ -1143,6 +1193,10 @@ class LibEaTester {
 			
 			// exit status
 			$msg .= $pos->ext_status;
+			$msg .= "\t";
+			
+			// exit price - start price
+			$msg .= $pos->ext_pr - $pos->st_pr;
 			$msg .= "\t";
 			
 			// separator
@@ -1913,18 +1967,18 @@ class LibEaTester {
 			$cntOf_Loop += 1;
 			
 			//_20200213_140009:next
-			// judge
-			if ($cntOf_Loop > $maxOf_Loop) {
+// 			// judge
+// 			if ($cntOf_Loop > $maxOf_Loop) {
 
-				$msg = "\n"; $msg .= "(step : B : 2) stopper : loop ==> maxed out : \$cntOf_Loop = $cntOf_Loop / \$maxOf_Loop = $maxOf_Loop";
-				$msg .= "\n"; $msg .= "breaking the loop...";
+// 				$msg = "\n"; $msg .= "(step : B : 2) stopper : loop ==> maxed out : \$cntOf_Loop = $cntOf_Loop / \$maxOf_Loop = $maxOf_Loop";
+// 				$msg .= "\n"; $msg .= "breaking the loop...";
 				
-				// append
-				array_push($lo_Log_Lines, $msg);
+// 				// append
+// 				array_push($lo_Log_Lines, $msg);
 				
-				break;
+// 				break;
 				
-			}//if ($cntOf_Loop > $maxOf_Loop)
+// 			}//if ($cntOf_Loop > $maxOf_Loop)
 
 			/********************
 			 * step : B : j1

@@ -168,6 +168,7 @@ class Libfx {
 			debug($msg);
 			
 			Utils::write_Log__Fx_Admin(
+// 				$_dpath_File_CSV, $_fname_File_CSV
 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
 				, $msg
 				, __FILE__, __LINE__);
