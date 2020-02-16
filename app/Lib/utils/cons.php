@@ -125,11 +125,17 @@ class CONS {
 	 ******************************/
 	//_20200211_151350:tmp
 	public static 	$dpath_FX_Tester_CSV_File = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw";
-
+	
+	//_20200216_183601:tmp
 	public static 	$fname_FX_Tester_CSV_File = 
-				"44_5.1_10_rawdata.(AUDJPY).(Period-M15)"
-				. ".(NumOfUnits-18000).(Bars-18000)"
-				. ".20200116_171429.[SLICE-500].csv";
+				"(AUDJPY).(M15)" 
+				. ".20200216_180151." 
+				. "[20200203_0000-20200207_2345]" 
+				. ".csv";
+// 	public static 	$fname_FX_Tester_CSV_File = 
+// 				"44_5.1_10_rawdata.(AUDJPY).(Period-M15)"
+// 				. ".(NumOfUnits-18000).(Bars-18000)"
+// 				. ".20200116_171429.[SLICE-500].csv";
 // 				. ".20200116_171429.[SLICE-300].csv";
 // 	public static 	$fname_FX_Tester_CSV_File = 
 // 				"44_5.1_10_rawdata.(AUDJPY).(Period-M15)"

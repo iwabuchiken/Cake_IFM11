@@ -1076,6 +1076,12 @@ class LibEaTester {
 		$msg .= "\$_fname_File_CSV\t" . $_fname_File_CSV;
 		$msg .= "\n";
 		
+		// datetime : start/end
+		$msg .= "start\t" . $lo_BarDatas[0]->dateTime;
+		$msg .= "\n";
+		$msg .= "end\t" . $lo_BarDatas[count($lo_BarDatas) - 1]->dateTime;
+		$msg .= "\n";
+		
 		// entries
 		$msg .= "\$lo_BarDatas\t" . count($lo_BarDatas);
 		$msg .= "\n";
