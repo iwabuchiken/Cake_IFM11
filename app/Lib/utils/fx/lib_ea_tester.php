@@ -737,8 +737,6 @@ class LibEaTester {
 	* j2_Y_4_2
 	* 	at : 2020/01/07 15:24:28
 	********************/
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
 	public static function j2_Y_4_2(
 			$pos, $idxOf_Loop, $bd
 			, $val_TP, $val_SL, $val_SPREAD
@@ -803,8 +801,6 @@ class LibEaTester {
 	* init_Pos
 	* 	at : 2020/01/07 15:24:28
 	********************/
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
 	public static function init_Pos() {
 		//_20200107_145547:caller
 		//_20200107_145550:head
@@ -855,9 +851,6 @@ class LibEaTester {
 	* show_Basic_Pos_Data
 	* 	at : 2020/01/12 17:44:31
 	********************/
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
-// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
 	public static function show_Basic_Pos_Data($pos, $fname, $file_line) {
 		//_20200112_173841:caller
 		//_20200112_173843:head
@@ -903,9 +896,6 @@ class LibEaTester {
 	 * show_Basic_Pos_Data__Build_Lines
 	 * 	at : 2020/01/12 17:44:31
 	 ********************/
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
 	public static function show_Basic_Pos_Data__Build_Lines
 	($pos, $lo_BarDatas, $fname, $file_line) {
 // 	public static function show_Basic_Pos_Data__Build_Lines($pos, $fname, $file_line) {
@@ -1064,6 +1054,7 @@ class LibEaTester {
 		* step : 1.2 : 3
 		* 		meta data
 		********************/
+		//_20200219_172930:next
 		// detect pattern name
 		$msg = "\n";
 		$msg .= "\$nameOf_DP\t" . $nameOf_DP;
@@ -1227,9 +1218,6 @@ class LibEaTester {
 	 * show_Basic_BarData_Data
 	 * 	at : 2020/01/12 17:44:31
 	 ********************/
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
 	public static function show_Basic_BarData_Data($bd, $fname, $file_line) {
 		//_20200120_161219:caller
 		//_20200120_161225:head
@@ -1261,9 +1249,6 @@ class LibEaTester {
 	 * show_Basic_BarData_Data__Build_lines
 	 * 	at : 2020/01/30 17:55:52
 	 ********************/
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position) {
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop) {
-	// 	public static function loop_J1_N($lo_BarDatas, $flg_Position, $idxOf_Loop, $pos) {
 	public static function show_Basic_BarData_Data__Build_lines($bd, $fname, $file_line) {
 		//_20200120_161219:caller
 		//_20200120_161225:head
@@ -1910,6 +1895,7 @@ class LibEaTester {
 		$pos = new Pos;
 		
 		// list of vals
+		//_20200219_172815:next
 		$lo_Vals = [
 				'val_TP'	=> 0.10
 				, 'val_SL'	=> 0.05
