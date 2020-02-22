@@ -417,6 +417,7 @@ class FxTestController extends AppController {
 		//_20200212_124817:tmp
 		$nameOf_DP = CONS::$strOf_DetectPattern_Name__DP_All;
 		
+		//_20200222_182249:tmp
 		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines(
 							$lo_Pos, $lo_BarDatas
 							, $nameOf_DP

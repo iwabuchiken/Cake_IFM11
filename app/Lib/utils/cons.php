@@ -147,6 +147,16 @@ class CONS {
 // 				. ".(NumOfUnits-18000).(Bars-18000)"
 // 				. ".20200116_171429.[SLICE-100].csv";
 // 	public static 	$fname_FX_Tester_CSV_File = "44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-18000).20200116_171429.[SLICE-30].csv";
+
+	/******************************
+	 	pos vals
+	 ******************************/
+// 	public static $val_TP = 1.0;
+	public static $val_TP = 1.3;
+	
+	public static $val_SL = 0.5;
+	
+	/************************************************************lib_ea_tester */
 	
 	/****************************************
 		* csv files

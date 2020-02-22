@@ -1093,6 +1093,18 @@ class LibEaTester {
 		$msg .= "\ext_idx = -1\t" . $numOf_Ext_Idx_Minus_1;
 		$msg .= "\n";
 		
+		// TP, SL
+		$pos = $lo_Pos[0];
+		
+		$val_TP = $pos->val_TP;
+		$val_SL = $pos->val_SL;
+		
+		$msg .= "\$val_TP\t" . $val_TP;
+		$msg .= "\n";
+		
+		$msg .= "\$val_SL\t" . $val_SL;
+		$msg .= "\n";
+		
 		
 		
 		/********************
@@ -1897,8 +1909,10 @@ class LibEaTester {
 		// list of vals
 		//_20200219_172815:next
 		$lo_Vals = [
-				'val_TP'	=> 0.10
-				, 'val_SL'	=> 0.05
+				'val_TP'	=> CONS::$val_TP
+				, 'val_SL'	=> CONS::$val_SL
+// 				'val_TP'	=> 0.10
+// 				, 'val_SL'	=> 0.05
 				, 'val_SPREAD'	=> 0.01
 		];
 
