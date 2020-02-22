@@ -269,6 +269,7 @@ class FxTestController extends AppController {
 		
 		while (true) {
 			
+			//_20200222_192407:next
 			/********************
 			 * step : 2 : 1
 			 		exec
