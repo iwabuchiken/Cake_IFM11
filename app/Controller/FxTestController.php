@@ -262,7 +262,30 @@ class FxTestController extends AppController {
 		// list
 		$lo_Pos = array();
 		
+// 		/********************
+// 		 * step : 2 : 0.1
+// 		 		list of pos : meta, header
+// 		 ********************/
+// 		$nameOf_DP = CONS::$strOf_DetectPattern_Name__DP_All;
 		
+// 		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines__MetaData_and_Header(
+// 				$lo_Pos, $lo_BarDatas
+// 				, $nameOf_DP
+// 				, $_dpath_File_CSV, $_fname_File_CSV
+// 		);
+// 		// 		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas);
+		
+// 		//debug : write
+// 		$fname = CONS::$fname_Log_Fx_Admin . CONS::$fname_Log_Fx_Admin__List_Of_Pos__Suffix;
+		
+// 		Utils::write_Log__Fx_Admin(
+// 				CONS::$dpath_Log_Fx_Admin, $fname
+// 				, $msg, __FILE__, __LINE__);
+		
+		/********************
+		 * step : 2 : 0.2
+		 		while
+		 ********************/
 		// num of loop start
 		//_20200121_170907:tmp
 		$num_Loop_Start = 0;
@@ -287,6 +310,21 @@ class FxTestController extends AppController {
 			$typeOf_Bar		= $valOf_Ret__received[2];
 			$numOf_Loop		= $valOf_Ret__received[3];
 			
+// 			/********************
+// 			 * step : 2 : 2.0
+// 			 		$pos ==> to file
+// 			 ********************/
+// 			$msg_tmp = LibEaTester::show_LO_Pos_Data__Build_Lines__Entries($pos, $lo_BarDatas);
+
+// 			//debug : write
+// 			$fname = CONS::$fname_Log_Fx_Admin . CONS::$fname_Log_Fx_Admin__List_Of_Pos__Suffix;
+			
+// 			$flg_Add_File_Line = false;
+			
+// 			Utils::write_Log__Fx_Admin(
+// 					CONS::$dpath_Log_Fx_Admin, $fname
+// 					, $msg_tmp, __FILE__, __LINE__, $flg_Add_File_Line);
+				
 			/********************
 			 * step : 2 : 2.1
 			 		received vals ==> to list
@@ -419,6 +457,7 @@ class FxTestController extends AppController {
 		$nameOf_DP = CONS::$strOf_DetectPattern_Name__DP_All;
 		
 		//_20200222_182249:tmp
+		//_20200130_181154:caller
 		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines(
 							$lo_Pos, $lo_BarDatas
 							, $nameOf_DP

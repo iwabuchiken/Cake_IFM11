@@ -1224,6 +1224,295 @@ class LibEaTester {
 	
 	}//public static function show_LO_Pos_Data__Build_Lines($lo_Pos) {
 	
+	/********************
+	 * show_LO_Pos_Data__Build_Lines
+	 * 	at : 2020/01/30 18:10:48
+	 ********************/
+	public static function show_LO_Pos_Data__Build_Lines__Entries
+	(
+// 			$lo_Pos, $lo_BarDatas, $nameOf_DP = ""
+			$_pos, $lo_BarDatas
+// 			, $nameOf_DP
+// 			, $_dpath_File_CSV, $_fname_File_CSV
+				
+			) {
+		//_20200223_131724:caller
+		//_20200223_131729:head
+		//_20200223_131732:wl
+		
+		
+		/********************
+		* step : 0
+		* 		prep
+		********************/
+		$msg = "";
+		
+		/********************
+		* step : 3
+		* 		entries
+		********************/
+		$pos = $_pos;
+		
+		//_20200130_182020:next
+		// start
+		$msg .= $pos->st_idx . "\t" . $pos->st_pr
+				. "\t"
+				. (($pos->st_idx > 0) ? $lo_BarDatas[$pos->st_idx]->dateTime : "-")
+			
+			;
+		$msg .= "\t";
+		
+		// current
+		$msg .= $pos->cu_idx . "\t" . $pos->cu_pr
+				. "\t"
+				. (($pos->cu_idx > 0) ? $lo_BarDatas[$pos->cu_idx]->dateTime : "-")
+				;
+		$msg .= "\t";
+		
+		$msg .= $pos->ext_idx . "\t" . $pos->ext_pr
+				. "\t"
+				. (($pos->ext_idx > 0) ? $lo_BarDatas[$pos->ext_idx]->dateTime : "-")
+				;
+		$msg .= "\t";
+		
+		// refer
+		$msg .= $pos->rf_idx . "\t" . $pos->rf_pr
+				. "\t"
+				. (($pos->rf_idx > 0) ? $lo_BarDatas[$pos->rf_idx]->dateTime : "-")
+			;
+		$msg .= "\t";
+		
+		// base
+		$msg .= $pos->base_idx . "\t" . $pos->base_pr;
+		$msg .= "\t";
+		
+		// current status
+		$msg .= $pos->cu_status;
+		$msg .= "\t";
+		
+		// exit status
+		$msg .= $pos->ext_status;
+		$msg .= "\t";
+		
+		// exit price - start price
+		$msg .= $pos->ext_pr - $pos->st_pr;
+		$msg .= "\t";
+		
+		// separator
+		$msg .= "\n";
+			
+		// return
+		return $msg;
+	
+	}//public static function show_LO_Pos_Data__Build_Lines__Entries
+	
+	/********************
+	 * show_LO_Pos_Data__Build_Lines__MetaData_and_Header
+	 * 	at : 2020/02/23 13:09:37
+	 ********************/
+	public static function show_LO_Pos_Data__Build_Lines__MetaData_and_Header
+	(
+	// 			$lo_Pos, $lo_BarDatas, $nameOf_DP = ""
+			$lo_Pos, $lo_BarDatas
+			, $nameOf_DP
+			, $_dpath_File_CSV, $_fname_File_CSV
+	
+	) {
+		//_20200130_181154:caller
+		//_20200130_181158:head
+		//_20200130_181201:wl
+	
+		/********************
+			* step : 1
+			* 		meta data
+			********************/
+		/********************
+			* step : 1.1
+			* 		len
+			********************/
+		// num of Pos entries
+		$lenOf_LO_Pos = count($lo_Pos);
+	
+		// num of total bardatas
+		$lenOf_LO_BarDatas = count($lo_BarDatas);
+	
+		/********************
+			* step : 1.2
+			* 		SL entries
+			* 		TP entries
+		********************/
+		$numOf_SLs = 0;
+		$numOf_TPs = 0;
+	
+		$sumOf_DiffOf_Exit_Price_less_Start_Price = 0;
+	
+		// ext_idx = -1
+		$numOf_Ext_Idx_Minus_1 = 0;
+	
+		/********************
+			* step : 1.2 : 2
+			* 		stats
+			********************/
+		//_20200214_134655:tmp
+		foreach ($lo_Pos as $pos) {
+	
+			/********************
+				* step : 1.2 : 2 : 1
+				* 		SL entries
+				********************/
+			// judge
+			if ($pos->ext_status == CONS::$strOf_Exit_Status__SL) {
+					
+				$numOf_SLs += 1;
+	
+			}//if ($pos->exit_status == CONS::$strOf_Exit_Status__SL)
+	
+			/********************
+				* step : 1.2 : 2 : 2
+				* 		TP entries
+				********************/
+			// judge
+			if ($pos->ext_status == CONS::$strOf_Exit_Status__TP) {
+					
+				$numOf_TPs += 1;
+	
+			}//if ($pos->exit_status == CONS::$strOf_Exit_Status__SL)
+			;
+				
+			/********************
+				* step : 1.2 : 2 : 3
+				* 		st_price - ext_price
+				********************/
+			if ($pos->ext_pr != 0) {
+					
+				$sumOf_DiffOf_Exit_Price_less_Start_Price += ($pos->ext_pr - $pos->st_pr);
+	
+			}//if ($pos->ext_price != 0)
+				
+			/********************
+				* step : 1.2 : 2 : 4
+				* 		ext_idx = -1
+				********************/
+			if ($pos->ext_idx == -1) {
+					
+				$numOf_Ext_Idx_Minus_1 += 1;
+	
+			}//if ($pos->ext_price != 0)
+				
+		}//foreach ($lo_Pos as $pos)
+	
+		// lines
+			
+		/********************
+			* step : 1.2 : 3
+			* 		meta data
+			********************/
+		//_20200219_172930:next
+		// detect pattern name
+		$msg = "\n";
+		$msg .= "\$nameOf_DP\t" . $nameOf_DP;
+		$msg .= "\n";
+	
+		// csv file
+		$msg .= "\$_dpath_File_CSV\t" . $_dpath_File_CSV;
+		$msg .= "\n";
+	
+		$msg .= "\$_fname_File_CSV\t" . $_fname_File_CSV;
+		$msg .= "\n";
+	
+		// datetime : start/end
+		$msg .= "start\t" . $lo_BarDatas[0]->dateTime;
+		$msg .= "\n";
+		$msg .= "end\t" . $lo_BarDatas[count($lo_BarDatas) - 1]->dateTime;
+		$msg .= "\n";
+	
+		// entries
+		$msg .= "\$lo_BarDatas\t" . count($lo_BarDatas);
+		$msg .= "\n";
+	
+// 		$msg .= "\$lo_Pos\t" . count($lo_Pos) . "\t" . "of all bds" . "\t" . number_format(($lenOf_LO_Pos / $lenOf_LO_BarDatas),3);;
+// 		// 		$msg .= "\$lo_Pos\t" . count($lo_Pos) . " / of all bds = " . number_format(($lenOf_LO_Pos / $lenOf_LO_BarDatas),3);;
+// 		$msg .= "\n";
+	
+// 		$msg .= "\$numOf_SLs\t" . $numOf_SLs. "\t" . "of all Pos". "\t" . number_format(($numOf_SLs / $lenOf_LO_Pos),3);
+// 		$msg .= "\n";
+	
+// 		$msg .= "\$numOf_TPs\t" . $numOf_TPs. "\t" . "of all Pos". "\t" . number_format(($numOf_TPs / $lenOf_LO_Pos),3);
+// 		$msg .= "\n";
+	
+// 		$msg .= "sum : start - exit\t" . number_format($sumOf_DiffOf_Exit_Price_less_Start_Price,3);
+// 		$msg .= "\n";
+	
+// 		$msg .= "\ext_idx = -1\t" . $numOf_Ext_Idx_Minus_1;
+// 		$msg .= "\n";
+	
+// 		// TP, SL
+// 		$pos = $lo_Pos[0];
+	
+// 		$val_TP = $pos->val_TP;
+// 		$val_SL = $pos->val_SL;
+	
+// 		$msg .= "\$val_TP\t" . $val_TP;
+// 		$msg .= "\n";
+	
+// 		$msg .= "\$val_SL\t" . $val_SL;
+// 		$msg .= "\n";
+	
+// // 		$msg .= "len => $lenOf_LO_Pos";
+// 		$msg .= "\$lenOf_LO_Pos\t" . $lenOf_LO_Pos;
+// 		$msg .= "\n";
+	
+		/********************
+			* step : 2
+			* 		header
+			********************/
+		//show
+		$msg .= "\n";
+		// 		$msg = "\n";
+	
+		// 		$msg .= "st_idx\tst_pr";
+		$msg .= "st_idx\tst_pr\tdatetime";
+		$msg .= "\t";
+	
+		// 		$msg .= "cu_idx\tcu_pr";
+		$msg .= "cu_idx\tcu_pr\tdatetime";
+		$msg .= "\t";
+	
+		$msg .= "ext_idx\text_pr\tdatetime";
+		$msg .= "\t";
+	
+		$msg .= "rf_idx\trf_pr";
+		$msg .= "\t";
+	
+		$msg .= "base_idx\tbase_pr\tdatetime";
+		$msg .= "\t";
+	
+		$msg .= "cu_status";
+		$msg .= "\t";
+	
+		$msg .= "ext_status";
+		$msg .= "\t";
+	
+		$msg .= "exit - start";
+		$msg .= "\t";
+	
+		$msg .= "\n";
+	
+		//_20200214_150433:next
+	
+		/********************
+			* step : 3
+			* 		entries
+			********************/
+		//_20200128_174019:next
+	
+// 		//debug
+// 		$msg .= "len => $lenOf_LO_Pos";
+		
+		// return
+		return $msg;
+	
+	}//public static function show_LO_Pos_Data__Build_Lines($lo_Pos) {
 	
 	
 	/********************

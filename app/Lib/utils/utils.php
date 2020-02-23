@@ -207,7 +207,12 @@ class Utils {
 	}//function write_Log($dpath, $text, $file, $line)
 	
 	public static function 
-	write_Log__Fx_Admin($dpath_Log, $fname_Log, $text, $fname_Working, $line) {
+// 	write_Log__Fx_Admin($dpath_Log, $fname_Log, $text, $fname_Working, $line) {
+	write_Log__Fx_Admin
+	(
+			$dpath_Log, $fname_Log, $text
+			, $fname_Working, $line
+			, $flg_Add_File_Line = true) {
 	
 		$max_LineNum = CONS::$logFile_maxLineNum;
 	
@@ -331,7 +336,22 @@ class Utils {
 		$time = Utils::get_CurrentTime();
 	
 		// 		$full_Text = "[$time : $file : $line] %% $text"."\n";
-		$full_Text = "[$time : " . basename($fname_Working) . " : $line] $text"."\n";
+		
+		// build : text line
+		if ($flg_Add_File_Line == true) {
+		
+			$full_Text = "[$time : " . basename($fname_Working) . " : $line] $text"
+					 . "\n";
+		
+		} else {
+		
+			$full_Text = "$text"
+					 . "\n";
+			
+		}//if ($flg_Add_File_Line == true)
+		
+		
+// 		$full_Text = "[$time : " . basename($fname_Working) . " : $line] $text"."\n";
 // 		$full_Text = "[$time : $fname_Working : $line] $text"."\n";
 	
 		$res = fwrite($log_File, $full_Text);
