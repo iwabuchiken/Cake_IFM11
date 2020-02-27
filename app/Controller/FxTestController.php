@@ -169,6 +169,7 @@ class FxTestController extends AppController {
 		//_20200212_132137:tmp
 		$_dpath_File_CSV = CONS::$dpath_FX_Tester_CSV_File;
 		
+		//_20200227_142412:next
 		$_fname_File_CSV = CONS::$fname_FX_Tester_CSV_File;
 		
 		$lo_BarDatas = Libfx::get_ListOf_BarDatas($_dpath_File_CSV, $_fname_File_CSV);

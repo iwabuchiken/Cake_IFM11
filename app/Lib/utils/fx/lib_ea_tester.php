@@ -1207,7 +1207,19 @@ class LibEaTester {
 			$msg .= "\t";
 			
 			// exit price - start price
-			$msg .= $pos->ext_pr - $pos->st_pr;
+			//_20200227_140717:tmp
+			if ($pos->ext_idx == -1) {
+			
+				$msg .= 0;
+			
+			} else {
+			
+				$msg .= $pos->ext_pr - $pos->st_pr;
+				
+			}//if ($pos->ext_idx == -1)
+			
+			
+// 			$msg .= $pos->ext_pr - $pos->st_pr;
 			$msg .= "\t";
 			
 			// separator
