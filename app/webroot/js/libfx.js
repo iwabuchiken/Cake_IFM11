@@ -168,6 +168,19 @@ function fx_tester_T_1() {
 			prep
 	 ***************************/
 	console.log("fx_tester_T_1 ==> starting...");
+
+	/***************************
+		step : 1 : 0
+			file name
+	 ***************************/
+	var tag_TA_Fx_Test_Index_Tester_1 = $('textarea#ta_Fx_Test_Index_Tester_1');
+//	var tag_TA_Fx_Test_Index_Tester_1 = $('#ta_Fx_Test_Index_Tester_1');
+	
+	var txtOf_tag_TA_Fx_Test_Index_Tester_1 = tag_TA_Fx_Test_Index_Tester_1.val();
+	
+	alert("tag_TA_Fx_Test_Index_Tester_1 => " + txtOf_tag_TA_Fx_Test_Index_Tester_1);
+	
+//	return;
 	
 	/***************************
 		step : 1 : 1
@@ -217,6 +230,7 @@ function fx_tester_T_1() {
 	    //REF http://stackoverflow.com/questions/1916309/pass-multiple-parameters-to-jquery-ajax-call answered Dec 16 '09 at 17:37
 	//    data: {id: id},
 	//    data: {memos: memos, image_id: image_id},
+	    data: {_txtOf_tag_TA_Fx_Test_Index_Tester_1: txtOf_tag_TA_Fx_Test_Index_Tester_1},
 	    
 	    timeout: 10000
 	    

@@ -132,9 +132,24 @@ class FxTestController extends AppController {
 				CONS::$dpath_Log_Fx_Admin, $fname
 				, $msg, __FILE__, __LINE__);
 		
+		/********************
+		 * step : 0 : 0 : A : 1
+		 * 	params
+		 ********************/
+		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query['_txtOf_tag_TA_Fx_Test_Index_Tester_1'];
 		
-								
-		/******************** (20 '*'s)
+// 		$msg = "\$query_tag_TA_Fx_Test_Index_Tester_1 => " . $query_tag_TA_Fx_Test_Index_Tester_1;
+// 		$msg .= "\n";
+		
+// 		debug($msg);
+		
+// 		return ;
+		
+// 		Utils::write_Log__Fx_Admin(
+// 				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+// 				, $msg, __FILE__, __LINE__);
+		
+		/********************
 		 * step : 0 : 1
 		 * 	debug
 		 ********************/
@@ -170,7 +185,12 @@ class FxTestController extends AppController {
 		$_dpath_File_CSV = CONS::$dpath_FX_Tester_CSV_File;
 		
 		//_20200227_142412:next
-		$_fname_File_CSV = CONS::$fname_FX_Tester_CSV_File;
+		$_fname_File_CSV = $query_tag_TA_Fx_Test_Index_Tester_1;
+// 		$_fname_File_CSV = CONS::$fname_FX_Tester_CSV_File;
+		
+		debug("\$_fname_File_CSV => " . $_fname_File_CSV);
+		
+// 		return ;
 		
 		$lo_BarDatas = Libfx::get_ListOf_BarDatas($_dpath_File_CSV, $_fname_File_CSV);
 // 		$lo_BarDatas = Libfx::get_ListOf_BarDatas();

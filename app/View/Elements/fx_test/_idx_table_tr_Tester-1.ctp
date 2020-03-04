@@ -40,6 +40,11 @@
 	
 	<td class="fx-tester_index_td_title">
 		Tester-1
+		<textarea 
+				rows="2" cols="30"
+				onmouseover="this.select();"
+				id="ta_Fx_Test_Index_Tester_1"
+			>(AUDJPY).(M5).20200227_131436.[20200109_0005-20200109_2355].csv</textarea>
 	</td>
 	
 </tr>
