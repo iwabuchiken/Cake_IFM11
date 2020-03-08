@@ -1141,9 +1141,13 @@ class LibEaTester {
 		$msg .= "exit - start";
 		$msg .= "\t";
 		
+		//_20200214_150433:next
+		// BB location
+		$msg .= "BB loc";
+		$msg .= "\t";
+		
 		$msg .= "\n";
 		
-		//_20200214_150433:next
 		
 		/********************
 		* step : 3
@@ -1157,6 +1161,10 @@ class LibEaTester {
 // 			$msg .= "-----------------------------------";
 // 			$msg .= "\n";
 			
+			/********************
+			* step : 3 : 1
+			* 		start index
+			********************/
 			//_20200130_182020:next
 			// start
 			$msg .= $pos->st_idx . "\t" . $pos->st_pr
@@ -1164,7 +1172,11 @@ class LibEaTester {
 					. (($pos->st_idx > 0) ? $lo_BarDatas[$pos->st_idx]->dateTime : "-")
 				
 				;
-			$msg .= "\t";
+			/********************
+			* step : 3 : 2
+			* 		current
+			********************/
+				$msg .= "\t";
 			
 			// current
 			$msg .= $pos->cu_idx . "\t" . $pos->cu_pr
@@ -1180,6 +1192,10 @@ class LibEaTester {
 					
 // 					);
 			
+			/********************
+			* step : 3 : 3
+			* 		exit
+			********************/
 			$msg .= $pos->ext_idx . "\t" . $pos->ext_pr
 					. "\t"
 					. (($pos->ext_idx > 0) ? $lo_BarDatas[$pos->ext_idx]->dateTime : "-")
@@ -1187,6 +1203,10 @@ class LibEaTester {
 					;
 			$msg .= "\t";
 			
+			/********************
+			* step : 3 : 4
+			* 		refer
+			********************/
 			// refer
 			$msg .= $pos->rf_idx . "\t" . $pos->rf_pr
 					. "\t"
@@ -1194,18 +1214,34 @@ class LibEaTester {
 				;
 			$msg .= "\t";
 			
+			/********************
+			* step : 3 : 5
+			* 		base
+			********************/
 			// base
 			$msg .= $pos->base_idx . "\t" . $pos->base_pr;
 			$msg .= "\t";
 			
+			/********************
+			* step : 3 : 6
+			* 		status : current
+			********************/
 			// current status
 			$msg .= $pos->cu_status;
 			$msg .= "\t";
 			
+			/********************
+			* step : 3 : 6.2
+			* 		status : exit
+			********************/
 			// exit status
 			$msg .= $pos->ext_status;
 			$msg .= "\t";
 			
+			/********************
+			* step : 3 : 7
+			* 		diff
+			********************/
 			// exit price - start price
 			//_20200227_140717:tmp
 			if ($pos->ext_idx == -1) {
@@ -1221,7 +1257,15 @@ class LibEaTester {
 			
 // 			$msg .= $pos->ext_pr - $pos->st_pr;
 			$msg .= "\t";
-			
+
+			/********************
+			 * step : 3 : 8
+			 * 		BB location
+			 ********************/
+			//_20200308_141440:tmp
+			//_20200308_142828:caller
+			$msg .= LibEaTester::get_BB_Location($pos, $lo_BarDatas);
+					
 			// separator
 			$msg .= "\n";
 			
@@ -2757,6 +2801,114 @@ class LibEaTester {
 		return $valOf_Ret;
 		
 	}//public static function fx_tester_T_1__Exec($lo_BarDatas)
+
+	//_20200308_150534:ref
+	/********************
+	* get_BB_Location
+	* 	at : 2020/03/08 14:15:33
+	********************/
+// 	public static function fx_tester_T_1__Exec($lo_BarDatas) {
+	public static function get_BB_Location($pos, $lo_BarDatas) {
+//_20200308_142828:caller
+//_20200308_142832:head
+//_20200308_142835:wl
+
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
 		
+		/********************
+		 * step : 1.1
+		 * 		get : index num
+		 ********************/
+		if ($pos->ext_idx == -1) {
+		
+			$numOf_Index = $pos->cu_idx;
+		
+		} else {
+		
+			$numOf_Index = $pos->ext_idx;
+			
+		}//if ($pos->ext_idx == )
+		
+// 		/********************
+// 		 * step : 2
+// 		 * 		get : target price
+// 		 ********************/
+// 		$pr_Target = $bd->price_Close;
+		
+// 		if ($pos->ext_idx == -1) {
+		
+// 			$pr_Target = $pos->cu_pr;
+		
+// 		} else {
+		
+// 			$pr_Target = $pos->ext_pr;
+				
+// 		}//if ($pos->ext_idx == )
+		
+		/********************
+		 * step : 3
+		 * 		get : $bd
+		 ********************/
+		$bd = $lo_BarDatas[$numOf_Index];
+
+		/********************
+		 * step : 2
+		 * 		get : target price
+		 ********************/
+		$pr_Target = $bd->price_Close;
+		
+		
+		/********************
+		 * step : 4
+		 * 		get : BB prices
+		 ********************/
+		
+		/********************
+		 * step : 5
+		 * 		judge
+		 ********************/
+		if ($pr_Target >= $bd->bb_2S) {
+		
+			$labelOf_BB_Zone = "Z1";
+		
+		} else if ($pr_Target >= $bd->bb_1S) {
+		
+			$labelOf_BB_Zone = "Z2";
+		
+		} else if ($pr_Target >= $bd->bb_Main) {
+		
+			$labelOf_BB_Zone = "Z3";
+		
+		} else if ($pr_Target >= $bd->bb_M1S) {
+		
+			$labelOf_BB_Zone = "Z4";
+		
+		} else if ($pr_Target >= $bd->bb_M2S) {
+		
+			$labelOf_BB_Zone = "Z5";
+		
+		} else if ($pr_Target < $bd->bb_M2S) {
+		
+			$labelOf_BB_Zone = "Z6";
+		
+		} else {
+		
+			$labelOf_BB_Zone = "UNKNOWN_ZONE";
+			
+		}//if ($pr_Target >= $bd->bb_2S)
+		
+		/********************
+		 * step : 6
+		 * 		return
+		 ********************/
+		$valOf_Ret = $labelOf_BB_Zone;
+		
+		// return
+		return $valOf_Ret;
+		
+	}//public static function get_BB_Location($pos, $lo_BarDatas) {
 }//class Libfx
 	

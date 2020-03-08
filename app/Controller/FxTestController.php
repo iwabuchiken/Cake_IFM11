@@ -136,7 +136,8 @@ class FxTestController extends AppController {
 		 * step : 0 : 0 : A : 1
 		 * 	params
 		 ********************/
-		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query['_txtOf_tag_TA_Fx_Test_Index_Tester_1'];
+		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query[CONS::$param_Val_TA_Fx_Test_Index_Tester_1];
+// 		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query['_txtOf_tag_TA_Fx_Test_Index_Tester_1'];
 		
 // 		$msg = "\$query_tag_TA_Fx_Test_Index_Tester_1 => " . $query_tag_TA_Fx_Test_Index_Tester_1;
 // 		$msg .= "\n";
@@ -318,6 +319,7 @@ class FxTestController extends AppController {
 			 * step : 2 : 1
 			 		exec
 			 ********************/
+			//_20200308_150453:tmp
 			//_20200201_160828:caller
 			$valOf_Ret__received = LibEaTester::fx_tester_T_1__Exec($lo_BarDatas, $num_Loop_Start);
 			

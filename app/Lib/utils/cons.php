@@ -124,13 +124,15 @@ class CONS {
 	 	Paths and names : fx : testers
 	 ******************************/
 	//_20200211_151350:tmp
+	// C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
 	public static 	$dpath_FX_Tester_CSV_File = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw";
 	
 	//_20200216_183601:tmp
 	public static 	$fname_FX_Tester_CSV_File = 
 				"(AUDJPY).(M5)"
 				. ".20200227_131436."
-				."[20200108_0005-20200108_2355]"
+				."[20200113_0005-20200113_2355]"
+// 				."[20200108_0005-20200108_2355]"
 // 				."[20200107_0005-20200107_2355]"
 // 				."[20200106_0005-20200106_2355]"
 						
@@ -164,6 +166,13 @@ class CONS {
 	
 	public static $val_SL = 0.05;
 // 	public static $val_SL = 0.5;
+	
+	/*******************************
+		param values
+	*******************************/
+	// "TA" : textarea
+	public static $param_Val_TA_Fx_Test_Index_Tester_1 = "_txtOf_tag_TA_Fx_Test_Index_Tester_1";
+		
 	
 	/************************************************************lib_ea_tester */
 	
