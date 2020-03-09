@@ -2215,7 +2215,6 @@ class LibEaTester {
 	* fx_tester_T_1__Exec
 	* 	at : 2020/01/06 13:10:56
 	********************/
-// 	public static function fx_tester_T_1__Exec($lo_BarDatas) {
 	public static function fx_tester_T_1__Exec($lo_BarDatas, $_num_Loop_Start) {
 		//_20200201_160828:caller
 		//_20200201_160833:head
@@ -2807,7 +2806,6 @@ class LibEaTester {
 	* get_BB_Location
 	* 	at : 2020/03/08 14:15:33
 	********************/
-// 	public static function fx_tester_T_1__Exec($lo_BarDatas) {
 	public static function get_BB_Location($pos, $lo_BarDatas) {
 //_20200308_142828:caller
 //_20200308_142832:head
@@ -2910,5 +2908,99 @@ class LibEaTester {
 		return $valOf_Ret;
 		
 	}//public static function get_BB_Location($pos, $lo_BarDatas) {
+
+	/********************
+	* get_BB_Location
+	* 	at : 2020/03/08 14:15:33
+	********************/
+	public static function get_BB_Location__Past_5_Bars($pos, $lo_BarDatas) {
+//_20200309_160525:caller
+//_20200309_160532:head
+//_20200309_160534:wl
+
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
+		
+		/********************
+		 * step : 1.1
+		 * 		get : index num
+		 ********************/
+		if ($pos->ext_idx == -1) {
+		
+			$numOf_Index = $pos->cu_idx;
+		
+		} else {
+		
+			$numOf_Index = $pos->ext_idx;
+			
+		}//if ($pos->ext_idx == )
+		
+		/********************
+		 * step : 3
+		 * 		get : $bd
+		 ********************/
+		$lo_BDs__Target = $lo_BarDatas[$numOf_Index];
+		$bd = $lo_BarDatas[$numOf_Index];
+
+		/********************
+		 * step : 2
+		 * 		get : target price
+		 ********************/
+		$pr_Target = $bd->price_Close;
+		
+		
+		/********************
+		 * step : 4
+		 * 		get : BB prices
+		 ********************/
+		
+		/********************
+		 * step : 5
+		 * 		judge
+		 ********************/
+		if ($pr_Target >= $bd->bb_2S) {
+		
+			$labelOf_BB_Zone = "Z1";
+		
+		} else if ($pr_Target >= $bd->bb_1S) {
+		
+			$labelOf_BB_Zone = "Z2";
+		
+		} else if ($pr_Target >= $bd->bb_Main) {
+		
+			$labelOf_BB_Zone = "Z3";
+		
+		} else if ($pr_Target >= $bd->bb_M1S) {
+		
+			$labelOf_BB_Zone = "Z4";
+		
+		} else if ($pr_Target >= $bd->bb_M2S) {
+		
+			$labelOf_BB_Zone = "Z5";
+		
+		} else if ($pr_Target < $bd->bb_M2S) {
+		
+			$labelOf_BB_Zone = "Z6";
+		
+		} else {
+		
+			$labelOf_BB_Zone = "UNKNOWN_ZONE";
+			
+		}//if ($pr_Target >= $bd->bb_2S)
+		
+		/********************
+		 * step : 6
+		 * 		return
+		 ********************/
+		$valOf_Ret = $labelOf_BB_Zone;
+		
+		// return
+		return $valOf_Ret;
+		
+	}//public static function get_BB_Location__Past_5_Bars($pos, $lo_BarDatas) {
+
+	
 }//class Libfx
 	
