@@ -494,6 +494,13 @@ class FxTestController extends AppController {
 		Utils::write_Log__Fx_Admin(
 				CONS::$dpath_Log_Fx_Admin, $fname
 				, $msg, __FILE__, __LINE__);
+
+		/********************
+		 * step : 3 : 2.2
+		 debug : list of "pos"-s ==> filtered
+		 	==> same ext_idx --> omitted
+		 ********************/
+		//_20200310_142830:next
 		
 		/********************
 		 * step : X

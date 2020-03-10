@@ -1265,6 +1265,10 @@ class LibEaTester {
 			//_20200308_141440:tmp
 			//_20200308_142828:caller
 			$msg .= LibEaTester::get_BB_Location($pos, $lo_BarDatas);
+			
+			//test
+			//_20200310_140423:tmp
+			LibEaTester::get_BB_Location__Past_5_Bars($pos, $lo_BarDatas);
 					
 			// separator
 			$msg .= "\n";
@@ -2922,6 +2926,7 @@ class LibEaTester {
 		 * step : 0 : 1
 		 * 		prep : vars
 		 ********************/
+		$numOf_Total_Bars = 5;
 		
 		/********************
 		 * step : 1.1
@@ -2939,16 +2944,49 @@ class LibEaTester {
 		
 		/********************
 		 * step : 3
-		 * 		get : $bd
+		 * 		get : listt of BDs
+		 * 
+		* array_slice($lo_BDs, ($i - $x), ($x + 1))
+		* 
+		* 		==> slice out --> the bar $lo_BDs[$i] and the previous $x num of bars, ($x + 1) in total
 		 ********************/
-		$lo_BDs__Target = $lo_BarDatas[$numOf_Index];
-		$bd = $lo_BarDatas[$numOf_Index];
+		$lo_BDs__Target = array_slice(
+					$lo_BarDatas
+					, ($numOf_Index - ($numOf_Total_Bars - 1))
+					, $numOf_Total_Bars
+					);
+		
+// 		$bd = $lo_BarDatas[$numOf_Index];
 
+		//debug
+		$bd_Base = $lo_BarDatas[$pos->cu_idx];
+		
+		$bd_First = $lo_BDs__Target[count($lo_BDs__Target) - 1];
+		$bd_Last = $lo_BDs__Target[0];
+		
+		$msg = "get_BB_Location__Past_5_Bars";
+		$msg .= "\n";
+				
+		$msg .= sprintf(
+					"\$bd_Base->dateTime = %s / \$lo_BDs__Target[count(\$lo_BDs__Target) - 1] = %s / \$lo_BDs__Target[0] = %s"
+// 					"\$bd_Base->dateTime = %s / \$bd_First->dateTime = %s / \$bd_Last->dateTime = %s"
+					, $bd_Base->dateTime, $bd_First->dateTime, $bd_Last->dateTime);
+// 					"\$bd_Base->dateTime = %s / \$bd_Last->dateTime = %s"
+// 					, $bd_Base->dateTime, $bd_Last->dateTime);
+		
+		$msg .= "\n";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
+		
 		/********************
 		 * step : 2
 		 * 		get : target price
 		 ********************/
-		$pr_Target = $bd->price_Close;
+// 		$pr_Target = $bd->price_Close;
 		
 		
 		/********************
@@ -2956,48 +2994,15 @@ class LibEaTester {
 		 * 		get : BB prices
 		 ********************/
 		
-		/********************
-		 * step : 5
-		 * 		judge
-		 ********************/
-		if ($pr_Target >= $bd->bb_2S) {
-		
-			$labelOf_BB_Zone = "Z1";
-		
-		} else if ($pr_Target >= $bd->bb_1S) {
-		
-			$labelOf_BB_Zone = "Z2";
-		
-		} else if ($pr_Target >= $bd->bb_Main) {
-		
-			$labelOf_BB_Zone = "Z3";
-		
-		} else if ($pr_Target >= $bd->bb_M1S) {
-		
-			$labelOf_BB_Zone = "Z4";
-		
-		} else if ($pr_Target >= $bd->bb_M2S) {
-		
-			$labelOf_BB_Zone = "Z5";
-		
-		} else if ($pr_Target < $bd->bb_M2S) {
-		
-			$labelOf_BB_Zone = "Z6";
-		
-		} else {
-		
-			$labelOf_BB_Zone = "UNKNOWN_ZONE";
-			
-		}//if ($pr_Target >= $bd->bb_2S)
 		
 		/********************
 		 * step : 6
 		 * 		return
 		 ********************/
-		$valOf_Ret = $labelOf_BB_Zone;
+// 		$valOf_Ret = $labelOf_BB_Zone;
 		
-		// return
-		return $valOf_Ret;
+// 		// return
+// 		return $valOf_Ret;
 		
 	}//public static function get_BB_Location__Past_5_Bars($pos, $lo_BarDatas) {
 
