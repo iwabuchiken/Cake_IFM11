@@ -501,6 +501,37 @@ class FxTestController extends AppController {
 		 	==> same ext_idx --> omitted
 		 ********************/
 		//_20200310_142830:next
+		//_20200311_141839:caller
+		$lo_Pos__Filtered = LibEaTester::filter_LO_Pos__No_Dup($lo_Pos, $lo_BarDatas);
+// 		$lo_Pos__Filtered = LibEaTester::filter_LO_Pos__No_Dup($lo_Pos);
+		
+		//debug
+		$msg = "fx_tester_T_1 (step : 3 : 2.2)";
+		$msg .= "\n";
+			
+		$msg .= "count(\$lo_Pos__Filtered) = ". count($lo_Pos__Filtered);
+		$msg .= "\n";
+		$msg .= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
+		
+		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines(
+				$lo_Pos__Filtered, $lo_BarDatas
+				, $nameOf_DP
+				, $_dpath_File_CSV, $_fname_File_CSV
+		);
+		// 		$msg = LibEaTester::show_LO_Pos_Data__Build_Lines($lo_Pos, $lo_BarDatas);
+		
+		//debug : write
+		$fname = CONS::$fname_Log_Fx_Admin . CONS::$fname_Log_Fx_Admin__List_Of_Pos__Suffix__Filtered;
+		
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, $fname
+				, $msg, __FILE__, __LINE__);
+		
 		
 		/********************
 		 * step : X

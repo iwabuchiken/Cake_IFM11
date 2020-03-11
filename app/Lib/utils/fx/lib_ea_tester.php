@@ -1268,6 +1268,8 @@ class LibEaTester {
 			
 			//test
 			//_20200310_140423:tmp
+			//_20200309_160525:caller
+			//_20200311_151906
 			LibEaTester::get_BB_Location__Past_5_Bars($pos, $lo_BarDatas);
 					
 			// separator
@@ -3006,6 +3008,109 @@ class LibEaTester {
 		
 	}//public static function get_BB_Location__Past_5_Bars($pos, $lo_BarDatas) {
 
+	/********************
+	 * get_BB_Location
+	 * 	at : 2020/03/08 14:15:33
+	 * 
+	 * @return $valOf_Ret = $lo_Pos__Filtered
+	 * 
+	 ********************/
+	public static function filter_LO_Pos__No_Dup($lo_Pos, $lo_BarDatas) {
+//_20200311_141839:caller
+//_20200311_141849:head
+//_20200311_141852:wl
+		
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
+		$lo_Indices__Filtered = array();	// L2
+		
+		$lo_Pos__Filtered = array();		// L3
+		
+		/********************
+		 * step : A
+		 * 		for-loop
+		 ********************/
+		foreach ($lo_Pos as $pos) {
+		
+			/********************
+			 * step : A : 1
+			 * 		get : pos
+			 ********************/
+			/********************
+			 * step : A : 2
+			 * 		get : index ---> n1
+			 ********************/
+			$numOf_Cu_Idx = $pos->cu_idx;
+
+			/********************
+			 * step : A : j1
+			 * 		judge : cu_idx ==> in $lo_Indices ?
+			 ********************/
+			$cond_1 = in_array($numOf_Cu_Idx, $lo_Indices__Filtered);
+			
+			if ($cond_1 == true) {
+				/********************
+				 * step : A : j1 : Y
+				 * 		judge : cu_idx ==> in $lo_Indices
+				 ********************/
+				continue;
+				
+			
+			} else {
+				/********************
+				 * step : A : j1 : N
+				 * 		judge : cu_idx ==> NOT in $lo_Indices
+				 ********************/
+				//debug
+				$msg = "filter_LO_Pos__No_Dup (step : A : j1 : N)";
+				$msg .= "\n";
+				
+				$bd = $lo_BarDatas[$numOf_Cu_Idx];
+				
+				$msg .= sprintf("\$numOf_Cu_Idx = %s / \$bd->dateTime = %s", $numOf_Cu_Idx, $bd->dateTime);
+				
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+						, $msg, __FILE__, __LINE__);
+// 						, $msg, $fname, $file_line);
+				
+				
+				/********************
+				 * step : A : j1 : N : 1
+				 * 		push
+				 ********************/
+				// $pos
+				array_push($lo_Pos__Filtered, $pos);
+				
+				// index
+				array_push($lo_Indices__Filtered, $numOf_Cu_Idx);
+				
+			}//if ($cond_1 == true)
+			
+		}//foreach ($lo_Pos as $pos)
+		
+		/********************
+		 * step : B : 1
+		 * 		return
+		 ********************/
+		/********************
+		 * step : B : 1.1
+		 * 		set : val
+		 ********************/
+		$valOf_Ret = $lo_Pos__Filtered;
+		
+		/********************
+		 * step : B : 1.2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
+		
+	}//filter_LO_Pos__No_Dup($lo_Pos)
+	
 	
 }//class Libfx
 	

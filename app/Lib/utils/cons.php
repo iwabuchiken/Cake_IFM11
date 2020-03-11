@@ -82,6 +82,7 @@ class CONS {
 // 	public static final $fname_Log_Fx_Admin__Orig = "log_fx_admin.log";	//=> "Error: Cannot declare property CONS::$fname_Log_Fx_Admin__Orig final, the final modifier is allowed only for methods and classes"
 
 	public static $fname_Log_Fx_Admin__List_Of_Pos__Suffix = ".[list-of-pos].log";
+	public static $fname_Log_Fx_Admin__List_Of_Pos__Suffix__Filtered = ".[list-of-pos].[filtered].log";
 	
 	public static $dpath_Log_Fx_Admin__Ticket_Num = "Log_Fx_Admin__Ticket_Num";
 	public static $fname_Log_Fx_Admin__Ticket_Num = "log_fx_admin__Ticket_Num.log";
