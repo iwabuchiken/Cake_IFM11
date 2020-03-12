@@ -1146,6 +1146,15 @@ class LibEaTester {
 		$msg .= "BB loc";
 		$msg .= "\t";
 		
+		// BB locations : 5 bars, starting with the last bar, backwards
+		//_20200312_142228:tmp
+		$msg .= "BB locs";
+		$msg .= "\t";
+		$msg .= "\t";
+		$msg .= "\t";
+		$msg .= "\t";
+		$msg .= "\t";
+		
 		$msg .= "\n";
 		
 		
@@ -1262,16 +1271,26 @@ class LibEaTester {
 			 * step : 3 : 8
 			 * 		BB location
 			 ********************/
+			/********************
+			 * step : 3 : 8.1
+			 * 		BB location : last bar
+			 ********************/
 			//_20200308_141440:tmp
 			//_20200308_142828:caller
 			$msg .= LibEaTester::get_BB_Location($pos, $lo_BarDatas);
 			
+			$msg .= "\t";
+			
+			/********************
+			 * step : 3 : 8.2
+			 * 		BB locations : st_idx, and the prev 4 bars, 5 bars in total
+			 ********************/
 			//test
 			//_20200310_140423:tmp
 			//_20200309_160525:caller
 			//_20200311_151906
-			LibEaTester::get_BB_Location__Past_5_Bars($pos, $lo_BarDatas);
-					
+			$msg .= LibEaTester::get_BB_Location__Past_5_Bars($pos, $lo_BarDatas);
+
 			// separator
 			$msg .= "\n";
 			
@@ -2916,6 +2935,99 @@ class LibEaTester {
 	}//public static function get_BB_Location($pos, $lo_BarDatas) {
 
 	/********************
+	* get_BB_Location__By_Index
+	* 	at : 2020/03/12 14:33:18
+	********************/
+	public static function get_BB_Location__By_Bd($bd_Target) {
+// 	public static function get_BB_Location__By_Bd($bd_Target, $lo_BarDatas) {
+//_20200312_143405:caller
+//_20200312_143409:head
+//_20200312_143411:wl
+
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
+		
+		/********************
+		 * step : 1.1
+		 * 		get : index num
+		 ********************/
+// 		if ($pos->ext_idx == -1) {
+		
+// 			$numOf_Index = $pos->cu_idx;
+		
+// 		} else {
+		
+// 			$numOf_Index = $pos->ext_idx;
+			
+// 		}//if ($pos->ext_idx == )
+		
+		/********************
+		 * step : 3
+		 * 		get : $bd
+		 ********************/
+		$bd = $bd_Target;
+// 		$bd = $lo_BarDatas[$numOf_Index];
+
+		/********************
+		 * step : 2
+		 * 		get : target price
+		 ********************/
+		$pr_Target = $bd->price_Close;
+		
+		
+		/********************
+		 * step : 4
+		 * 		get : BB prices
+		 ********************/
+		
+		/********************
+		 * step : 5
+		 * 		judge
+		 ********************/
+		if ($pr_Target >= $bd->bb_2S) {
+		
+			$labelOf_BB_Zone = "Z1";
+		
+		} else if ($pr_Target >= $bd->bb_1S) {
+		
+			$labelOf_BB_Zone = "Z2";
+		
+		} else if ($pr_Target >= $bd->bb_Main) {
+		
+			$labelOf_BB_Zone = "Z3";
+		
+		} else if ($pr_Target >= $bd->bb_M1S) {
+		
+			$labelOf_BB_Zone = "Z4";
+		
+		} else if ($pr_Target >= $bd->bb_M2S) {
+		
+			$labelOf_BB_Zone = "Z5";
+		
+		} else if ($pr_Target < $bd->bb_M2S) {
+		
+			$labelOf_BB_Zone = "Z6";
+		
+		} else {
+		
+			$labelOf_BB_Zone = "UNKNOWN_ZONE";
+			
+		}//if ($pr_Target >= $bd->bb_2S)
+		
+		/********************
+		 * step : 6
+		 * 		return
+		 ********************/
+		$valOf_Ret = $labelOf_BB_Zone;
+		
+		// return
+		return $valOf_Ret;
+		
+	}//public static function get_BB_Location__By_Bd($bd, $lo_BarDatas) {
+
+	/********************
 	* get_BB_Location
 	* 	at : 2020/03/08 14:15:33
 	********************/
@@ -2934,15 +3046,18 @@ class LibEaTester {
 		 * step : 1.1
 		 * 		get : index num
 		 ********************/
-		if ($pos->ext_idx == -1) {
+		$numOf_Index = $pos->st_idx;
 		
-			$numOf_Index = $pos->cu_idx;
+// 		//_20200312_142316:tmp
+// 		if ($pos->ext_idx == -1) {
 		
-		} else {
+// 			$numOf_Index = $pos->cu_idx;
 		
-			$numOf_Index = $pos->ext_idx;
+// 		} else {
+		
+// 			$numOf_Index = $pos->ext_idx;
 			
-		}//if ($pos->ext_idx == )
+// 		}//if ($pos->ext_idx == )
 		
 		/********************
 		 * step : 3
@@ -2988,23 +3103,58 @@ class LibEaTester {
 		 * step : 2
 		 * 		get : target price
 		 ********************/
-// 		$pr_Target = $bd->price_Close;
+		/********************
+		 * step : 2 : 1
+		 * 		prep : vars
+		 ********************/
+		$lo_BB_Zone_Names = array();
 		
+		$lenOf_LO_BDs__Target = count($lo_BDs__Target);
 		
 		/********************
-		 * step : 4
-		 * 		get : BB prices
+		 * step : 2 : 2
+		 * 		for-loop
 		 ********************/
+		for ($i = 0; $i < $lenOf_LO_BDs__Target; $i++) {
+			/********************
+			 * step : 2 : 2.1
+			 * 		bd
+			 ********************/
+			$bd = $lo_BDs__Target[$i];
 		
+			/********************
+			 * step : 2 : 2.2
+			 * 		get : BB zone name
+			 ********************/
+			$nameOf_BB_Zone = LibEaTester::get_BB_Location__By_Bd($bd);
+			
+			/********************
+			 * step : 2 : 2.3
+			 * 		push
+			 ********************/
+			array_push($lo_BB_Zone_Names, $nameOf_BB_Zone);
+			
+		}//for ($i = 0; $i < $lenOf_LO_BDs__Target; $i++)
+		
+		/********************
+		 * step : 3
+		 * 		build : string
+		 ********************/
+		$strOf_BB_Zone_Names = join("\t", $lo_BB_Zone_Names);
+// 		$strOf_BB_Zone_Names = join("-", $lo_BB_Zone_Names);
 		
 		/********************
 		 * step : 6
 		 * 		return
 		 ********************/
-// 		$valOf_Ret = $labelOf_BB_Zone;
+		$valOf_Ret = $strOf_BB_Zone_Names;
+		
+// 		$bd_st = $lo_BarDatas[$pos->st_idx];
+		
+// 		$valOf_Ret = "\$bd_st->dateTime = " . $bd_st->dateTime;
 		
 // 		// return
-// 		return $valOf_Ret;
+		return $valOf_Ret;
 		
 	}//public static function get_BB_Location__Past_5_Bars($pos, $lo_BarDatas) {
 

@@ -173,7 +173,14 @@ class CONS {
 	*******************************/
 	// "TA" : textarea
 	public static $param_Val_TA_Fx_Test_Index_Tester_1 = "_txtOf_tag_TA_Fx_Test_Index_Tester_1";
-		
+
+	/*******************************
+	 	numbers
+	 *******************************/
+// 	public static $numOf_While_Loop_Start = 10;
+	public static $numOf_While_Loop_Start = 6;
+// 	public static $numOf_While_Loop_Start = 3;
+// 	public static $numOf_While_Loop_Start = 6;
 	
 	/************************************************************lib_ea_tester */
 	

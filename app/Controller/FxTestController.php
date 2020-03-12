@@ -310,7 +310,17 @@ class FxTestController extends AppController {
 		 ********************/
 		// num of loop start
 		//_20200121_170907:tmp
-		$num_Loop_Start = 0;
+		$num_Loop_Start = CONS::$numOf_While_Loop_Start;
+// 		$num_Loop_Start = 0;
+
+		//debug
+		$msg	= "\$num_Loop_Start = " . $num_Loop_Start;
+		$msg	.= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				CONS::$dpath_Log_Fx_Admin, CONS::$fname_Log_Fx_Admin
+				, $msg, __FILE__, __LINE__);
+		
 		
 		while (true) {
 			
