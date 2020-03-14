@@ -2986,29 +2986,30 @@ class LibEaTester {
 		 * step : 5
 		 * 		judge
 		 ********************/
+		//_20200314_183141:tmp
 		if ($pr_Target >= $bd->bb_2S) {
 		
-			$labelOf_BB_Zone = "Z1";
+			$labelOf_BB_Zone = "1";
 		
 		} else if ($pr_Target >= $bd->bb_1S) {
 		
-			$labelOf_BB_Zone = "Z2";
+			$labelOf_BB_Zone = "2";
 		
 		} else if ($pr_Target >= $bd->bb_Main) {
 		
-			$labelOf_BB_Zone = "Z3";
+			$labelOf_BB_Zone = "3";
 		
 		} else if ($pr_Target >= $bd->bb_M1S) {
 		
-			$labelOf_BB_Zone = "Z4";
+			$labelOf_BB_Zone = "4";
 		
 		} else if ($pr_Target >= $bd->bb_M2S) {
 		
-			$labelOf_BB_Zone = "Z5";
+			$labelOf_BB_Zone = "5";
 		
 		} else if ($pr_Target < $bd->bb_M2S) {
 		
-			$labelOf_BB_Zone = "Z6";
+			$labelOf_BB_Zone = "6";
 		
 		} else {
 		
