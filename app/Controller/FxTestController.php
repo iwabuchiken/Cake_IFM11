@@ -94,6 +94,21 @@ class FxTestController extends AppController {
 								. "." . $tokensOf_fname_Log[1];
 
 		/********************
+		 * step : 0 : 0 : A : 1
+		 * 	params
+		 ********************/
+		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query[CONS::$param_Val_TA_Fx_Test_Index_Tester_1];
+
+		// 				[0] => (AUDJPY)
+		// 				[1] => (M5)
+		// 				[2] => 20200227_131436
+		// 				[3] => [20200115_0005-20200115_2355]
+		// 				[4] => csv
+		
+		$tokens = explode(".", $query_tag_TA_Fx_Test_Index_Tester_1);
+		
+		
+		/********************
 		 * step : 0 : 1
 		 * 		prep : log dir
 		 ********************/
@@ -102,7 +117,12 @@ class FxTestController extends AppController {
 		
 		CONS::$dpath_Log_Fx_Admin .= "/"
 								. "log."
-								. $strOf_Time_Label . ".dir"
+								. $strOf_Time_Label 
+								. "." . $tokens[0]
+								. "." . $tokens[1]
+								. "." . $tokens[3]
+								. ".dir"
+// 								. $strOf_Time_Label . ".dir"
 								;
 								
 		/********************
@@ -132,11 +152,12 @@ class FxTestController extends AppController {
 				CONS::$dpath_Log_Fx_Admin, $fname
 				, $msg, __FILE__, __LINE__);
 		
-		/********************
-		 * step : 0 : 0 : A : 1
-		 * 	params
-		 ********************/
-		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query[CONS::$param_Val_TA_Fx_Test_Index_Tester_1];
+// 		/********************
+// 		 * step : 0 : 0 : A : 1
+// 		 * 	params
+// 		 ********************/
+// 		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query[CONS::$param_Val_TA_Fx_Test_Index_Tester_1];
+
 // 		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query['_txtOf_tag_TA_Fx_Test_Index_Tester_1'];
 		
 // 		$msg = "\$query_tag_TA_Fx_Test_Index_Tester_1 => " . $query_tag_TA_Fx_Test_Index_Tester_1;

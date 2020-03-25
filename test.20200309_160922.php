@@ -7,6 +7,46 @@ php -f C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\test.20200309_160922.php
 ********************/
 
 	/********************
+	* function test_Get_Info_From_Csv_File_Name() {
+	* 
+	* 	get info
+	* 	==> from file name "(AUDJPY).(M5).20200227_131436.[20200115_0005-20200115_2355].csv"
+	* 
+	* 		==> [AUDJPY, M5]
+	* 
+	* 	at : 20200325_152912
+	*  
+	********************/
+	//_20200309_162909:ref
+	function test_Get_Info_From_Csv_File_Name() {
+		
+		$msg = "[" . basename(__FILE__) . ":" . __LINE__ . "]";
+// 		$msg = "[" . __FILE__ . ":" . __LINE__ . "]";
+		
+		print($msg);
+		
+		/********************
+		* step : 1
+		********************/
+		$fname = "(AUDJPY).(M5).20200227_131436.[20200115_0005-20200115_2355].csv";
+		
+		$tokens = explode(".", $fname);
+		
+		print_r($tokens);
+		// 		[test.20200309_160922.php:23]Array
+		// 		(
+		// 				[0] => (AUDJPY)
+		// 				[1] => (M5)
+		// 				[2] => 20200227_131436
+		// 				[3] => [20200115_0005-20200115_2355]
+		// 				[4] => csv
+		// 		)
+		
+	}//function test_Get_Info_From_Csv_File_Name() {
+	
+	
+	
+	/********************
 	* function test_Slice_Array() {
 	* 
 	* 	$lo_BDs = [1,2,3,4,5,6,7,8,9]
@@ -63,6 +103,8 @@ php -f C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\test.20200309_160922.php
 		print_r(array_slice($lo_Chars, (8 - 4), (4 + 1)));
 		
 	}//test_Slice_Array()
+
+	
 	
 	/********************
 	* execute()
@@ -72,7 +114,9 @@ php -f C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\test.20200309_160922.php
 	function
 	execute() {
 		
-		test_Slice_Array();
+		test_Get_Info_From_Csv_File_Name();
+		
+// 		test_Slice_Array();
 		
 	}//execute
 	
