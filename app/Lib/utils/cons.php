@@ -173,6 +173,11 @@ class CONS {
 	*******************************/
 	// "TA" : textarea
 	public static $param_Val_TA_Fx_Test_Index_Tester_1 = "_txtOf_tag_TA_Fx_Test_Index_Tester_1";
+	
+	// fx_tester_T_1 (FxTestController)
+	public static $param_Tester_T_1__Order_Genre = "_Tester_T_1__Order_Genre";
+	public static $param_Tester_T_1__Order_Genre__SELL = "_Tester_T_1__Order_Genre__SELL";
+	public static $param_Tester_T_1__Order_Genre__BUY = "_Tester_T_1__Order_Genre__BUY";
 
 	/*******************************
 	 	numbers
