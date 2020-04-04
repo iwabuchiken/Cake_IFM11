@@ -139,7 +139,8 @@ class Libfx {
 // 		$fname_File_CSV = CONS::$fname_FX_Tester_CSV_File;
 // 		$fname_File_CSV = "44_5.1_10_rawdata.(AUDJPY).(Period-M15).(NumOfUnits-18000).(Bars-ALL-20190424_184417).20190311_081029.[SLICE-30].csv";
 		
-		$fpath_File_CSV = $path_LogFile = join(
+// 		$fpath_File_CSV = $path_LogFile = join(
+		$fpath_File_CSV = join(
 				DS,
 				array($dpath_File_CSV, $fname_File_CSV));
 

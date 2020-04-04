@@ -186,6 +186,19 @@ class CONS {
 	public static $numOf_While_Loop_Start = 6;
 // 	public static $numOf_While_Loop_Start = 3;
 // 	public static $numOf_While_Loop_Start = 6;
+
+	/************************************************************ FxUtilitiesController */
+	/*******************************
+		param values
+	 *******************************/
+	// get_ListOf_Orders_From_Statement
+	public static $param_Dpath_Statement_File	= "param_Dpath_Statement_File";
+	public static $param_Fname_Statement_File	= "param_Fname_Statement_File";
+	
+	public static $param_Dpath_Statement_File__Dflt	= "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Report_Trades";
+	public static $param_Fname_Statement_File__Dflt	= "DetailedStatement.(20190115_000717).(e-j,M1).htm";
+// 	public static $param_Fname_Statement_File__Dflt	= "DetailedStatement.[20190207_184152].(e-j,M1).htm";
+	
 	
 	/************************************************************lib_ea_tester */
 	
