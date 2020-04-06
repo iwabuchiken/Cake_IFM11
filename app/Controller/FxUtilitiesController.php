@@ -19,6 +19,12 @@ class FxUtilitiesController extends AppController {
 	/********************
 	 * get_ListOf_Orders_From_Statement
 	 * 	at : 2020/04/04 12:37:34
+	 * 
+	 * @param param_Dpath_Statement_File
+	 * @param param_Fname_Statement_File
+	 * 
+	 * <descrip>
+	 * 		1. file gen-ed at : C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\Log_Fx_Admin\data.[fx-utils].XXX.dir
 	 ********************/
 	//_20200329_132038:tmp
 // 	public function get_ListOf_Orders_From_Statement($dpath, $fname) {
@@ -71,115 +77,120 @@ class FxUtilitiesController extends AppController {
 		
 		$fpath_Statement_File = join(DS, array($query_Param_Dpath_Statement_File, $query_Param_Fname_Statement_File));
 		
-		// read content
-		//ref https://www.php.net/manual/en/function.file-get-contents.php
-		$linesOf_Statememt_File = file_get_contents($fpath_Statement_File);
+		//$valOf_Return = [$lo_TRs_Of_Orders];
+		$valOf_Return = Libfx::get_ListOf_Orders_From_Statement($fpath_Statement_File);
 		
-// 		debug("count(\$linesOf_Statememt_File) : " . count($linesOf_Statememt_File));
-		//ref https://www.php.net/manual/en/function.substr.php
-// 		debug("substr(\$linesOf_Statememt_File, 0, 10) : '" . substr($linesOf_Statememt_File, 0, 10) . "'");
+		$lo_TRs_Of_Orders = $valOf_Return[0];
 		
-// 		$fin__Statement_File = fopen($fpath_Statement_File, $modeOf_Open_File);
+// 		// read content
+// 		//ref https://www.php.net/manual/en/function.file-get-contents.php
+// 		$linesOf_Statememt_File = file_get_contents($fpath_Statement_File);
 		
-// 		debug("file opened => " . $fpath_Statement_File);
-// 		debug("(status = " . $fin__Statement_File . ")");
+// // 		debug("count(\$linesOf_Statememt_File) : " . count($linesOf_Statememt_File));
+// 		//ref https://www.php.net/manual/en/function.substr.php
+// // 		debug("substr(\$linesOf_Statememt_File, 0, 10) : '" . substr($linesOf_Statememt_File, 0, 10) . "'");
+		
+// // 		$fin__Statement_File = fopen($fpath_Statement_File, $modeOf_Open_File);
+		
+// // 		debug("file opened => " . $fpath_Statement_File);
+// // 		debug("(status = " . $fin__Statement_File . ")");
 
 		
 		
-		/********************
-		 * step : 3
-		 * 	html : parse
-		 ********************/
-		/********************
-		 * step : 3.1
-		 * 	get : html
-		 ********************/
-		$doc = new DOMDocument();
+// 		/********************
+// 		 * step : 3
+// 		 * 	html : parse
+// 		 ********************/
+// 		/********************
+// 		 * step : 3.1
+// 		 * 	get : html
+// 		 ********************/
+// 		$doc = new DOMDocument();
 		
-		$doc->loadHTML($linesOf_Statememt_File);
+// 		$doc->loadHTML($linesOf_Statememt_File);
 		
-		$TRs = $doc->getElementsByTagName('tr');
+// 		$TRs = $doc->getElementsByTagName('tr');
 		
-		$cntOf_TRs = 0;
+// 		$cntOf_TRs = 0;
 		
-		foreach ($TRs as $tr) {
+// 		foreach ($TRs as $tr) {
 		
-			$cntOf_TRs += 1;
+// 			$cntOf_TRs += 1;
 			
-		}//foreach ($TRs as $tr)
+// 		}//foreach ($TRs as $tr)
 		
-		debug("\$cntOf_TRs : " . $cntOf_TRs);
+// 		debug("\$cntOf_TRs : " . $cntOf_TRs);
 
-		$maxOf_ForEach__TRs = $cntOf_TRs;
-// 		$maxOf_ForEach__TRs = 10;
+// 		$maxOf_ForEach__TRs = $cntOf_TRs;
+// // 		$maxOf_ForEach__TRs = 10;
 		
-		// get : subnode --> "td"
-		for ($i = 0; $i < $cntOf_TRs; $i++) {
+// 		// get : subnode --> "td"
+// 		for ($i = 0; $i < $cntOf_TRs; $i++) {
 		
-			// stopper
-			if ($i > $maxOf_ForEach__TRs) break;
+// 			// stopper
+// 			if ($i > $maxOf_ForEach__TRs) break;
 			
-			// get tag : TR
-			//ref https://stackoverflow.com/questions/3627489/php-parse-html-code
-			$tr = $TRs->item($i);
-// 			$tr = $TRs->childNodes[0];
+// 			// get tag : TR
+// 			//ref https://stackoverflow.com/questions/3627489/php-parse-html-code
+// 			$tr = $TRs->item($i);
+// // 			$tr = $TRs->childNodes[0];
 			
-// 			debug("(\$i = $i) \$tr->nodeValue : " . $tr->nodeValue);
+// // 			debug("(\$i = $i) \$tr->nodeValue : " . $tr->nodeValue);
 			
-			//test
-			$tr_Child_Nodes = $tr->childNodes;
+// 			//test
+// 			$tr_Child_Nodes = $tr->childNodes;
 			
-			$TDs = $tr->getElementsByTagName('td');
+// 			$TDs = $tr->getElementsByTagName('td');
 			
-			// numeric ?
-			$is_Nove_Value_Numeric = is_numeric($tr_Child_Nodes->item(0)->nodeValue);
+// 			// numeric ?
+// 			$is_Nove_Value_Numeric = is_numeric($tr_Child_Nodes->item(0)->nodeValue);
 			
-// 			debug("\$tr_Child_Nodes->item(0)->nodeValue : " . $tr_Child_Nodes->item(0)->nodeValue
+// // 			debug("\$tr_Child_Nodes->item(0)->nodeValue : " . $tr_Child_Nodes->item(0)->nodeValue
 					
-// 					. "(" . "numerical => " 
-// 					. ( $is_Nove_Value_Numeric? "true" : "false" . ")")
-// 					);
+// // 					. "(" . "numerical => " 
+// // 					. ( $is_Nove_Value_Numeric? "true" : "false" . ")")
+// // 					);
 			
-			// push
-			$tds_Item_2 = $TDs->item(2);
+// 			// push
+// 			$tds_Item_2 = $TDs->item(2);
 			
-			$keyWord_Omit = "balance";
+// 			$keyWord_Omit = "balance";
 			
-			debug("\$tr->nodeValue : " . $tr->nodeValue . " / \$tds_Item_2 : " . $tds_Item_2->nodeValue);
+// 			debug("\$tr->nodeValue : " . $tr->nodeValue . " / \$tds_Item_2 : " . $tds_Item_2->nodeValue);
 			
-			debug(($tds_Item_2->nodeValue != $keyWord_Omit) ? "omit : TRUE" : "omit : FALSE");
-			debug("\$tds_Item_2->nodeValue == \$keyWord_Omit --> " . (($tds_Item_2->nodeValue == $keyWord_Omit) ? "omit : TRUE" : "omit : FALSE"));
-// 			debug(($tds_Item_2 !== $keyWord_Omit) ? "omit : TRUE" : "omit : FALSE");
-// 			debug("strcmp(\$tds_Item_2, \$keyWord_Omit)" . strcmp($tds_Item_2, $keyWord_Omit));
-// // 			debug(($tds_Item_2 != $keyWord_Omit) ? "omit : TRUE" : "omit : FALSE");
+// 			debug(($tds_Item_2->nodeValue != $keyWord_Omit) ? "omit : TRUE" : "omit : FALSE");
+// 			debug("\$tds_Item_2->nodeValue == \$keyWord_Omit --> " . (($tds_Item_2->nodeValue == $keyWord_Omit) ? "omit : TRUE" : "omit : FALSE"));
+// // 			debug(($tds_Item_2 !== $keyWord_Omit) ? "omit : TRUE" : "omit : FALSE");
+// // 			debug("strcmp(\$tds_Item_2, \$keyWord_Omit)" . strcmp($tds_Item_2, $keyWord_Omit));
+// // // 			debug(($tds_Item_2 != $keyWord_Omit) ? "omit : TRUE" : "omit : FALSE");
 			
-// 			debug("\$is_Nove_Value_Numeric : " . ($is_Nove_Value_Numeric == true ? "TRUE" : "FALSE"));
+// // 			debug("\$is_Nove_Value_Numeric : " . ($is_Nove_Value_Numeric == true ? "TRUE" : "FALSE"));
 			
-// 			if ($is_Nove_Value_Numeric == true) {
-// 			if ($is_Nove_Value_Numeric == true && $tds_Item_2 != $keyWord_Omit) {
-// 			if ($is_Nove_Value_Numeric == true && $tds_Item_2 !== $keyWord_Omit) {
+// // 			if ($is_Nove_Value_Numeric == true) {
+// // 			if ($is_Nove_Value_Numeric == true && $tds_Item_2 != $keyWord_Omit) {
+// // 			if ($is_Nove_Value_Numeric == true && $tds_Item_2 !== $keyWord_Omit) {
 
-			$cond_1 = $is_Nove_Value_Numeric == true;
-			$cond_2 = !($tds_Item_2->nodeValue == $keyWord_Omit);
+// 			$cond_1 = $is_Nove_Value_Numeric == true;
+// 			$cond_2 = !($tds_Item_2->nodeValue == $keyWord_Omit);
 			
-			if ( $cond_1 && $cond_2) {
+// 			if ( $cond_1 && $cond_2) {
 			
-				array_push($lo_TRs_Of_Orders, $tr);
+// 				array_push($lo_TRs_Of_Orders, $tr);
 				
-			} else {//if ($is_Nove_Value_Numeric == true)
+// 			} else {//if ($is_Nove_Value_Numeric == true)
 				
-// 				debug("(\$i = $i : \$is_Nove_Value_Numeric == false (\"" . $tr_Child_Nodes->item(0)->nodeValue . "\")");
+// // 				debug("(\$i = $i : \$is_Nove_Value_Numeric == false (\"" . $tr_Child_Nodes->item(0)->nodeValue . "\")");
 				
-			}//if ($is_Nove_Value_Numeric == true)
-			;
+// 			}//if ($is_Nove_Value_Numeric == true)
+// 			;
 			
-// 			// subnodes
-// 			$TR_TDs = 
+// // 			// subnodes
+// // 			$TR_TDs = 
 			
-		}//for ($i = 0; $i < $cntOf_TRs; $i++)
+// 		}//for ($i = 0; $i < $cntOf_TRs; $i++)
 		
 		
-		debug("count(\$lo_TRs_Of_Orders) : " . count($lo_TRs_Of_Orders));
+// 		debug("count(\$lo_TRs_Of_Orders) : " . count($lo_TRs_Of_Orders));
 		
 		//_20200404_140552:next
 // 		//debug
@@ -365,6 +376,9 @@ class FxUtilitiesController extends AppController {
 		
 	}//public function get_ListOf_Orders_From_Statement(dpath, fname) {
 
+	
+	//_20200406_100650:next
+	
 }//class FxUtilitiesController extends AppController {
 
 /***************************
