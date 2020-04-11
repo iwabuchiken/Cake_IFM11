@@ -199,6 +199,14 @@ class CONS {
 	public static $param_Fname_Statement_File__Dflt	= "DetailedStatement.(20190115_000717).(e-j,M1).htm";
 // 	public static $param_Fname_Statement_File__Dflt	= "DetailedStatement.[20190207_184152].(e-j,M1).htm";
 	
+	// util_2__Extract_Ticket_Numbers
+	public static $param_Dpath_File_EA_Log			= "param_Dpath_File_EA_Log";
+	public static $param_Dpath_File_EA_Log__Dflt	= 
+								"C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+								. "\\34B08C83A5AAE27A4079DE708E60511E"
+								. "\\MQL4\\Files\\Logs"
+								. "\\storage_Logs"
+								. "\\20191224_073409[eap-2.id-1].[AUDJPY-1].dir";
 	
 	/************************************************************lib_ea_tester */
 	

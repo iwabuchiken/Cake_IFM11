@@ -28,6 +28,91 @@ class FxUtilitiesController extends AppController {
 	 ********************/
 	//_20200329_132038:tmp
 // 	public function get_ListOf_Orders_From_Statement($dpath, $fname) {
+	public function util_2__Extract_Ticket_Numbers() {
+		//_20200411_174210:caller
+		//_20200411_174216:head
+		//_20200411_174219:wl
+		/********************
+		* step : 0
+		* 	vars
+		********************/
+		
+		/********************
+		* step : 1
+		* 	params : statement file
+		********************/
+		// get : param vals
+		@$query_Param_Dpath_File_EA_Log = $this->request->query[CONS::$param_Dpath_File_EA_Log];
+				// CONS::$param_Dpath_File_EA_Log : "param_Dpath_File_EA_Log"
+		
+		// default
+		if ($query_Param_Dpath_File_EA_Log == null) {
+		
+			debug("\$query_Param_Dpath_File_EA_Log == null");
+			
+			$query_Param_Dpath_File_EA_Log = CONS::$param_Dpath_File_EA_Log__Dflt;
+			
+			debug("CONS::\$param_Dpath_File_EA_Log__Dflt = " . CONS::$param_Dpath_File_EA_Log__Dflt);
+			
+		}//if ($query_Param_Dpath_File_EA_Log == null)
+
+		//debug
+		debug("\$query_Param_Dpath_File_EA_Log = " . $query_Param_Dpath_File_EA_Log);
+
+		/********************
+		 * step : 2
+		 * 		get : dir list
+		 ********************/
+		$lo_MT4_Log_Files = array_diff(scandir($query_Param_Dpath_File_EA_Log . "/"), [".", ".."]);
+		
+		debug("\$lo_MT4_Log_Files : ");
+		
+		debug($lo_MT4_Log_Files);
+		
+		//_20200411_181313:next
+		
+		/********************
+		* set : view vals
+		********************/
+		/********************
+		* set : view vals : 1
+		* 		current time
+		********************/
+		$time_Current = Utils::get_CurrentTime();
+		
+		$this->set("time_Current", $time_Current);
+		
+		/********************
+		* set : view vals : 2
+		* 		source file
+		********************/
+		$tmp_str = "EA log file";
+		$tmp_str .= "<br>";
+		
+		$tmp_str .= "dpath = " . $query_Param_Dpath_File_EA_Log;
+		$tmp_str .= "<br>";
+		
+		$this->set("message", $tmp_str);
+		
+		/********************
+		* set : layout
+		********************/
+		$this->layout = "plain";
+		
+	}//public function util_2__Extract_Ticket_Numbers() {
+	
+	/********************
+	 * get_ListOf_Orders_From_Statement
+	 * 	at : 2020/04/04 12:37:34
+	 * 
+	 * @param param_Dpath_Statement_File
+	 * @param param_Fname_Statement_File
+	 * 
+	 * <descrip>
+	 * 		1. file gen-ed at : C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\Log_Fx_Admin\data.[fx-utils].XXX.dir
+	 ********************/
+	//_20200329_132038:tmp
+// 	public function get_ListOf_Orders_From_Statement($dpath, $fname) {
 	public function get_ListOf_Orders_From_Statement() {
 		//_20200404_123046:caller
 		//_20200404_123048:head

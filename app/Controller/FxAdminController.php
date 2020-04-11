@@ -171,6 +171,7 @@ class FxAdminController extends AppController {
 					, $msg
 					, __FILE__, __LINE__);
 		
+		//_20200411_180506:ref
 		//ref https://www.codewall.co.uk/list-files-in-directory-with-php/
 		$lo_MT4_Log_Files = array_diff(scandir($dpath_MT4_Log_Files . "/"), [".", ".."]);
 // 		$lo_MT4_Log_Files = array_diff(scandir($dpath_MT4_Log_Files . "/", 1), [".", ".."]);
