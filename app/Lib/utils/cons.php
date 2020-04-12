@@ -207,6 +207,12 @@ class CONS {
 								. "\\MQL4\\Files\\Logs"
 								. "\\storage_Logs"
 								. "\\20191224_073409[eap-2.id-1].[AUDJPY-1].dir";
+
+	/*******************************
+	 	regex
+	 *******************************/
+	public static $regStr_Position_Taken = '/position ==> taken/';
+	public static $regStr_Ticket_Num_String = '/= (\d+)/';
 	
 	/************************************************************lib_ea_tester */
 	
