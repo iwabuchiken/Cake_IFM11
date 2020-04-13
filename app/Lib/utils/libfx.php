@@ -627,6 +627,304 @@ class Libfx {
 		
 		
 	}//public static function get_ListOf_Orders_From_Statement($fpath_Statement_File) {
+
+	/********************
+	 * extract_Ticket_Numbers
+	 * 
+	 * at : 2020/04/13 15:47:30
+	 *
+	 * @return
+	 * 		array of ticket numbers
+			// 			array(
+			// 				(int) 0 => (int) 19572576,
+			// 				(int) 1 => (int) 19573570,
+			// 				(int) 2 => (int) 19574058,
+			// 				(int) 3 => (int) 19592951
+			// 			)
+	 *
+	 ********************/
+	public static function extract_Ticket_Numbers($dpath_File_EA_Log) {
+		//_20200413_154657:caller
+		//_20200413_154703:head
+		//_20200413_154707:wl
+	
+		/********************
+			* step : 0
+			* 		vars
+		********************/
+
+		/********************
+		 * step : 2
+		 * 		get : dir list
+		 ********************/
+		//ref https://stackoverflow.com/questions/591094/how-do-you-reindex-an-array-in-php
+		$tmp_Ary = array_diff(scandir($dpath_File_EA_Log . "/"), [".", ".."]);
+		
+		$lo_MT4_Log_Files = array_values($tmp_Ary);
+		
+		$lenOf_LO_MT4_Log_Files = count($lo_MT4_Log_Files);
+		
+		// 		debug("\$lo_MT4_Log_Files : ($lenOf_LO_MT4_Log_Files) files");
+		
+		// 		debug($lo_MT4_Log_Files);
+		
+		//_20200411_181313:next
+		/********************
+		 * step : 3
+		 * 		build : array
+		********************/
+		/********************
+		 * step : 3.1
+		 * 		prep
+		********************/
+		$lo_MT4_Log_Files__Filtered = array();
+		
+		/********************
+		 * step : 3.2
+		 * 		filter
+		********************/
+		// filter
+		for ($i = 0; $i < $lenOf_LO_MT4_Log_Files; $i++) {
+		
+			// get item
+			$fname = $lo_MT4_Log_Files[$i];
+				
+			// conditions
+			$cond_1 = Utils::endsWith($fname, ".copy");
+			$cond_2 = Utils::endsWith($fname, ".log");
+				
+			// judge
+			if ($cond_1 || $cond_2) {
+					
+				array_push($lo_MT4_Log_Files__Filtered, $fname);
+		
+			}//if ($cond_1 || $cond_2)
+				
+		}//for ($i = 0; $i < $lenOf_LO_MT4_Log_Files; $i++)
+		
+			// 		//debug
+			// 		debug("\$lo_MT4_Log_Files__Filtered : ");
+		
+			// 		debug($lo_MT4_Log_Files__Filtered);
+		
+		/********************
+		 * step : 3.3
+		 * 		re-order
+		 ********************/
+		//ref https://stackoverflow.com/questions/589601/pop-first-element-of-array-instead-of-last-reversed-array-pop
+		$lo_MT4_Log_Files__Filtered_Final = array();
+		
+		// index : 1 - last
+		$lo_MT4_Log_Files__Filtered_Final = array_slice($lo_MT4_Log_Files__Filtered, 1);
+		// 		array_push($lo_MT4_Log_Files__Filtered_Final, array_slice($lo_MT4_Log_Files__Filtered, 1));
+		
+		// index : first
+		array_push($lo_MT4_Log_Files__Filtered_Final, $lo_MT4_Log_Files__Filtered[0]);
+		
+		
+		//debug
+		debug("\$lo_MT4_Log_Files__Filtered_Final : ");
+		
+		debug($lo_MT4_Log_Files__Filtered_Final);
+		
+		/********************
+		 * step : 4
+		 * 		for-loop-1
+		********************/
+		/********************
+		 * step : 4.1
+		 * 		prep
+		********************/
+		// length
+		$lenOf_LO_MT4_Log_Files__Filtered_Final = count($lo_MT4_Log_Files__Filtered_Final);
+		
+		// array : list of ticket numbers
+		$lo_Tiket_Nums = array();
+		
+		/********************
+		 * step : 4.2
+		 * 		loop
+		********************/
+		for ($i = 0; $i < $lenOf_LO_MT4_Log_Files__Filtered_Final; $i++) {
+				
+			/********************
+			 * step : 4.2 : 1
+			 * 		build : fpath
+			 ********************/
+			// file name
+			$fname = $lo_MT4_Log_Files__Filtered_Final[$i];
+				
+			// build path
+			$fpath = join(DS, array($dpath_File_EA_Log, $fname));
+				
+// 			//debug
+// 			debug("\$fpath : " . $fpath);
+		
+			/********************
+			 * step : 4.2 : 2
+			 * 		load lines (file : open)
+			********************/
+			//ref https://www.php.net/manual/en/function.file.php
+			$linesOf_File_Content = file($fpath);
+			// 	(int) 169 => '[2019.12.24 07:36:25 / ea-3.mq4:423](step : j1 : N : 1) new bar --> NO
+			// 	(int) 170 => '[2019.12.24 07:36:28 / ea-3.mq4:423](step : j1 : N : 1) new bar --> NO
+				
+			/********************
+			 * step : 5
+			 * 		for-loop-2
+			********************/
+			foreach ($linesOf_File_Content as $index => $line) {
+				/********************
+				 * step : 5.1
+				 * 		prep
+				 ********************/
+				// 				$strOf_Patterns = '/taken/';
+				$strOf_Patterns = CONS::$regStr_Position_Taken;
+		
+				// 				$strOf_Patterns = '/position ==> taken/';
+					
+				// 				//debug
+				// 				debug("\$line : " . $line);
+				// 						//'$line : [2019.12.24 07:35:04 / ea-3.mq4:354](step : j3 : Y : 2) position ==> taken : res_ea_3_i = 19572576
+		
+				/********************
+				 * step : 5.2
+				 * 		exec matches
+				 ********************/
+				$res_i = preg_match($strOf_Patterns, $line, $matches);
+		
+				/********************
+				 * step : 5.3 : j1
+				 * 		matches ?
+				********************/
+				//debug
+				if ($res_i == 1) {
+					/********************
+					 * step : 5.3 : j1 : Y
+					 * 		matches
+					 ********************/
+					/********************
+					 * step : 5.3 : j1 : Y : 1
+					 * 		log
+					 ********************/
+					//debug
+					// 					debug("(step : 5.3 : j1 : Y : 1) matches : \$res_i = $res_i");
+						
+					/********************
+					 * step : 6 : j2
+					 * 		match : ticket number string ?
+					 ********************/
+					/********************
+					 * step : 6 : j2: 0
+					 * 		prep
+					 ********************/
+					/********************
+					 * step : 6 : j2: 1
+					 * 		exec : matching
+					 ********************/
+					$strOf_Patterns_2 = CONS::$regStr_Ticket_Num_String;
+					// 					$strOf_Patterns_2 = '/= (\d+)/';
+						
+					$res_i_2 = preg_match($strOf_Patterns_2, $line, $matches_2);
+						
+					// 					//debug
+					// 					debug("\$matches_2 =>");
+					// 					debug($matches_2);
+					// array(
+					// 		(int) 0 => '= 19576806',
+					// 		(int) 1 => '19576806'
+					// )
+						
+					/********************
+					 * step : 6 : j2: 2
+					 * 		matched ?
+					********************/
+					if ($res_i_2 == 1) {
+						/********************
+						 * step : 6 : j2: 2 : Y
+						 * 		matched
+						 ********************/
+						/********************
+						 * step : 6 : j2: 2 : Y : 1
+						 * 		log
+						 ********************/
+						// 						debug("matched : \$strOf_Patterns_2 => $strOf_Patterns_2 (\$res_i_2 = $res_i_2");
+							
+						// 						//debug
+						// 						debug("\$matches_2 =>");
+						// 						debug($matches_2);
+		
+						/********************
+						 * step : 6 : j2: 2 : Y : 2
+						 * 		append
+						 ********************/
+						array_push($lo_Tiket_Nums, (int) $matches_2[1]);
+							
+					} else {
+						/********************
+						 * step : 6 : j2: 2 : N
+						 * 		NOT matched
+						 ********************/
+							
+		
+		
+					}//if ($res_i_2 == 1)
+						
+						 	
+						 	 	
+					/********************
+					 * step : 6 : j2: 2
+					 * 		matched ?
+					 ********************/
+						
+				} else {//if ($res_i == 1)
+					/********************
+					 * step : 5.3 : j1 : N
+					 * 		NOT matches
+					 ********************/
+		
+				}//if ($res_i == 1)
+				;
+		
+					// 				//debug
+					// 				debug($matches);
+		
+		
+			}//foreach ($linesOf_File_Content as $index => )
+				
+				// 			//debug
+				// 			debug($linesOf_File_Content);
+				
+				// 			$fin_Log = fopen($fpath, "r");
+				
+				// 			debug("file ==> opened : $fin_Log");
+				
+				// 			/********************
+				// 			 * step : 4.2 : 3
+				// 			 * 		file : load content
+				// 			 ********************/
+				
+				
+				// 			/********************
+				// 			 * step : 4.2 : X
+				// 			 * 		file : close
+				// 			 ********************/
+				// 			fclose($fin_Log);
+				
+		}//for ($i = 0; $i < $lenOf_LO_MT4_Log_Files__Filtered_Final; $i++)
+		
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		$valOf_Ret = $lo_Tiket_Nums;
+		
+		// return
+		return $valOf_Ret;
+		
+		
+	}//public static function extract_Ticket_Numbers() {
+	
 	
 }//class Libfx
 	
