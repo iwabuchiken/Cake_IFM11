@@ -211,8 +211,11 @@ class CONS {
 	/*******************************
 	 	regex
 	 *******************************/
-	public static $regStr_Position_Taken = '/position ==> taken/';
-	public static $regStr_Ticket_Num_String = '/= (\d+)/';
+	// "buy ==> exec : take_Position__Buy --> 23952647"
+	public static $regStr_Position_Taken = '/exec : take_Position__Buy -->/';
+// 	public static $regStr_Position_Taken = '/position ==> taken/';
+	public static $regStr_Ticket_Num_String = '/--> (\d+)/';
+// 	public static $regStr_Ticket_Num_String = '/= (\d+)/';
 	
 	/************************************************************lib_ea_tester */
 	

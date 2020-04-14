@@ -660,6 +660,8 @@ class Libfx {
 		//ref https://stackoverflow.com/questions/591094/how-do-you-reindex-an-array-in-php
 		$tmp_Ary = array_diff(scandir($dpath_File_EA_Log . "/"), [".", ".."]);
 		
+		debug("count(\$tmp_Ary) : " . count($tmp_Ary));
+		
 		$lo_MT4_Log_Files = array_values($tmp_Ary);
 		
 		$lenOf_LO_MT4_Log_Files = count($lo_MT4_Log_Files);
@@ -695,17 +697,24 @@ class Libfx {
 				
 			// judge
 			if ($cond_1 || $cond_2) {
-					
+				
+// 				//debug
+// 				debug("\$cond_1 || \$cond_2 ==> true : $fname");
+				
 				array_push($lo_MT4_Log_Files__Filtered, $fname);
 		
 			}//if ($cond_1 || $cond_2)
 				
 		}//for ($i = 0; $i < $lenOf_LO_MT4_Log_Files; $i++)
 		
-			// 		//debug
-			// 		debug("\$lo_MT4_Log_Files__Filtered : ");
+// 		//debug
+// 		debug("\$lo_MT4_Log_Files__Filtered : " . "(" . count($lo_MT4_Log_Files__Filtered) . " items)");
+// // 		debug("\$lo_MT4_Log_Files__Filtered : ");
+
+// 		debug($lo_MT4_Log_Files__Filtered);
 		
-			// 		debug($lo_MT4_Log_Files__Filtered);
+// 		debug("\$lo_MT4_Log_Files__Filtered[0] : ");
+// 		debug($lo_MT4_Log_Files__Filtered[0]);
 		
 		/********************
 		 * step : 3.3
@@ -718,9 +727,17 @@ class Libfx {
 		$lo_MT4_Log_Files__Filtered_Final = array_slice($lo_MT4_Log_Files__Filtered, 1);
 		// 		array_push($lo_MT4_Log_Files__Filtered_Final, array_slice($lo_MT4_Log_Files__Filtered, 1));
 		
+// 		//debug
+// 		debug("\$lo_MT4_Log_Files__Filtered_Final : ");
+		
+// 		debug($lo_MT4_Log_Files__Filtered_Final);
+		
+		
 		// index : first
 		array_push($lo_MT4_Log_Files__Filtered_Final, $lo_MT4_Log_Files__Filtered[0]);
 		
+		debug("\$lo_MT4_Log_Files__Filtered[0] : ");
+		debug($lo_MT4_Log_Files__Filtered[0]);
 		
 		//debug
 		debug("\$lo_MT4_Log_Files__Filtered_Final : ");
@@ -737,6 +754,8 @@ class Libfx {
 		********************/
 		// length
 		$lenOf_LO_MT4_Log_Files__Filtered_Final = count($lo_MT4_Log_Files__Filtered_Final);
+		
+		debug("\$lenOf_LO_MT4_Log_Files__Filtered_Final : " . $lenOf_LO_MT4_Log_Files__Filtered_Final);
 		
 		// array : list of ticket numbers
 		$lo_Tiket_Nums = array();
