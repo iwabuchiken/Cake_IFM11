@@ -62,16 +62,21 @@ class AppController extends Controller {
 	
 		require_once $this->dpath_Utils.DS."utils.php";
 		
-		require_once $this->dpath_Utils.DS."fx/lib_ea_tester.php";
-		
 		require_once $this->dpath_Utils.DS."libfx.php";
 		
 		require_once $this->dpath_Utils.DS."BarData.php";
-		require_once $this->dpath_Utils.DS."fx/Pos.php";
 	
 		require_once $this->dpath_Utils.DS."mp3file.class.php";
 	
 		require_once $this->dpath_Utils.DS."simple_html_dom.php";
+
+		/********************
+		 * dir : Cake_IFM11\app\Lib\utils\fx
+		 ********************/
+		require_once $this->dpath_Utils.DS."fx/lib_ea_tester.php";
+		require_once $this->dpath_Utils.DS."fx/lib_fx_admin.php";
+		require_once $this->dpath_Utils.DS."fx/Pos.php";
+		
 		
 		// 		require_once $this->path_Utils.DS."db_util.php";
 	
