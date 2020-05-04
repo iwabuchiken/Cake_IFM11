@@ -5,7 +5,7 @@ move C:\WORKS_2\WS\WS_Cake_IFM11\iphone\* C:\WORKS_2\WS\WS_Cake_IFM11\iphone_to_
 
 REM 2019/10/28 09:12:23
 start C:\WORKS_2\WS\WS_Cake_IFM11\commands\16)_move-mov-files.bat
-start C:\WORKS_2\WS\WS_Others.Art\JVEMV6\46_art\11_guitar\memos_guitar.odt
+REM start C:\WORKS_2\WS\WS_Others.Art\JVEMV6\46_art\11_guitar\memos_guitar.odt
 
 
 REM pause
