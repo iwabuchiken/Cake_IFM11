@@ -83,6 +83,99 @@ class LibFxAdmin {
 		$charOf_Delimiter = ";";
 		
 		debug(explode($charOf_Delimiter, $linesOf_File_Content__BarData[0]));
+
+		/********************
+		 * step : 2.1
+		 * 		sort bar data
+		 ********************/
+		/********************
+		 * step : 2.1 : 1
+		 * 		check : current sort order
+		 ********************/
+		/********************
+		 * step : 2.1 : 1.1
+		 * 		get : tokens
+		 ********************/
+		//_20200504_164530:tmp
+		$lenOf_LinesOf_File_Content__BarData = count($linesOf_File_Content__BarData);
+		
+		// tokenizer char
+		$charOf_Tokenizer = ";";
+		
+		// first line
+		$line_First = $linesOf_File_Content__BarData[0];
+		
+		$tokensOf_Line_First = explode($charOf_Tokenizer, $line_First);
+		
+// 		debug("\$tokensOf_Line_First =>");
+// 		debug($tokensOf_Line_First);
+		
+		// last line
+		$line_Last = $linesOf_File_Content__BarData[$lenOf_LinesOf_File_Content__BarData - 1];
+		
+		$tokensOf_Line_Last = explode($charOf_Tokenizer, $line_Last);
+
+// 		debug("\$tokensOf_Line_Last =>");
+// 		debug($tokensOf_Line_Last);
+		
+		//_20200504_164929:tmp:upto
+
+		/********************
+		 * step : 2.1 : 2
+		 * 		compare : dates
+		 ********************/
+		$numOf_Index__Compare_Dates_Of_BarData = 14;
+		
+		$cond_tmp = ($tokensOf_Line_First[$numOf_Index__Compare_Dates_Of_BarData]
+				
+					<= $tokensOf_Line_Last[$numOf_Index__Compare_Dates_Of_BarData]
+				);
+		
+		debug("bardata lines : sort ==> " . (($cond_tmp) ? "A-Z" : "Z-A"));
+		debug("first bardata : " . $tokensOf_Line_First[$numOf_Index__Compare_Dates_Of_BarData]);
+		debug("last bardata : " . $tokensOf_Line_Last[$numOf_Index__Compare_Dates_Of_BarData]);
+		
+		/********************
+		 * step : 2.1 : 3
+		 * 		sort
+		 ********************/
+		if ($cond_tmp == false) {
+		
+			$linesOf_File_Content__BarData = array_reverse($linesOf_File_Content__BarData);
+			
+			debug("\$linesOf_File_Content__BarData ==> reversed");
+			
+			$line_First = $linesOf_File_Content__BarData[0];
+			
+			$tokensOf_Line_First = explode($charOf_Tokenizer, $line_First);
+			
+			// 		debug("\$tokensOf_Line_First =>");
+			// 		debug($tokensOf_Line_First);
+			
+			// last line
+			$line_Last = $linesOf_File_Content__BarData[$lenOf_LinesOf_File_Content__BarData - 1];
+			
+			$tokensOf_Line_Last = explode($charOf_Tokenizer, $line_Last);
+			
+			$numOf_Index__Compare_Dates_Of_BarData = 14;
+			
+			$cond_tmp = ($tokensOf_Line_First[$numOf_Index__Compare_Dates_Of_BarData]
+			
+					<= $tokensOf_Line_Last[$numOf_Index__Compare_Dates_Of_BarData]
+			);
+			
+			debug("bardata lines : sort ==> " . (($cond_tmp) ? "A-Z" : "Z-A"));
+			debug("first bardata : " . $tokensOf_Line_First[$numOf_Index__Compare_Dates_Of_BarData]);
+			debug("last bardata : " . $tokensOf_Line_Last[$numOf_Index__Compare_Dates_Of_BarData]);
+			
+			
+		}//if ($cond_tmp == false)
+		;
+		
+		//_20200504_170016:upto
+		//_20200504_170156:next
+		//debug
+		return -1;
 		
 		/********************
 		 * step : 3
