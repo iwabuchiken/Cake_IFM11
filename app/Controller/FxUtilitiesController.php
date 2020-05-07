@@ -16,6 +16,174 @@ C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\
 class FxUtilitiesController extends AppController {
 
 	/********************
+	 * util_3__Gen_Trading_Result_List
+	 * 
+	 * 	at : 
+	 * 
+	 * @param 
+	 * 
+	 * <descrip>
+	 * 		1. url
+	 * 		==> http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_2__Extract_Ticket_Numbers&param_Dpath_File_EA_Log=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\storage_Logs\20191224_073409[eap-2.id-1].[AUDJPY-1].dir
+	 ********************/
+	//_20200412_133400:next
+	//_20200329_132038:tmp
+// 	public function get_ListOf_Orders_From_Statement($dpath, $fname) {
+	public function util_3__Gen_Trading_Result_List() {
+		//_20200506_111925:caller
+		//_20200506_111928:head
+		//_20200506_111931:wl
+		/********************
+		* step : 0
+		* 	vars
+		********************/
+		/********************
+		* step : 1
+		* 	from tickets data ==> list of tickets
+		********************/
+		$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes" 
+								. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+								. "\\Files\\Logs\\"
+								. "20200505_140459[eap-2.id-1].[AUDJPY-5].dir";
+		
+		$fname_File_Tickets_Data = "[ea-4_tester-1].(20200505_140459).(tickets-data).log";
+		
+		// get list
+		$lo_Tickets_From_Tickets_Data_File = 
+				LibFxAdmin::get_LO_Tickets_From_Tickets_Data_File(
+							$dpath_File_Tickets_Data
+							, $fname_File_Tickets_Data
+						);
+
+		/********************
+		 * step : 2
+		 * 	from report file ==> list of tickets
+		 ********************/
+		//_20200506_125146:tmp
+		// paths
+		$dpath_File_Statement = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
+				. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+				. "\\Logs\\logs_trading"
+						;
+		
+		$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
+		
+		
+		$lo_Tickets_From_Statement_File = 
+				Libfx::get_ListOf_Orders_From_Statement__ListOf_Tokens(
+						$dpath_File_Statement
+						, $fname_File_Statement
+						);
+		
+		/********************
+		 * step : 3
+		 * 		build : combined list
+		 ********************/
+		/********************
+		 * step : 3 : 0
+		 * 		for-loop : Ticket data file
+		 ********************/
+		$cntOf_Ticket_Num_Match = 0;
+		
+		foreach ($lo_Tickets_From_Tickets_Data_File as $line_Tickets_Data_File) {
+		
+			/********************
+			 * step : 3 : 1
+			 * 		get : ticket num
+			 ********************/
+			$n1 = $line_Tickets_Data_File[0];
+			
+			/********************
+			 * step : 3 : 2
+			 * 		for-loop : report list
+			 ********************/
+			foreach ($lo_Tickets_From_Statement_File as $line_Statement_File) {
+				/********************
+				 * step : 3 : 2.1
+				 * 		ticket num
+				 ********************/
+				$n2 = $line_Statement_File[0];
+			
+				/********************
+				 * step : 3 : 2.2 : j1
+				 * 		compare : n1, n2
+				 ********************/
+				if ($n1 == $n2) {
+					/********************
+					 * step : 3 : 2.2 : j1 : Y
+					 * 		n1 = n2
+					 ********************/
+// 					debug("match : Tickets data : $n1 / Statement file : $n2");
+					
+					// count
+					$cntOf_Ticket_Num_Match += 1;
+					
+					/********************
+					 * step : 3 : 2.2 : j1 : Y : 1
+					 * 		build : combined line
+					 ********************/
+					//_20200506_133102:next
+					
+					/********************
+					 * step : 3 : 2.2 : j1 : Y : 2
+					 * 		append
+					 ********************/
+					
+					
+					break;
+				
+				} else {
+				
+					
+					
+				}//if ($n1 == $n2)
+				
+				
+				;
+				
+			}//foreach ($lo_Tickets_From_Statement_File as $line_Statement_File)
+			
+		}//foreach ($lo_Tickets_From_Tickets_Data_File as $line_Tickets_Data_File)
+		
+		//debug
+		debug("\$cntOf_Ticket_Num_Match : " . $cntOf_Ticket_Num_Match);
+
+		/********************
+		 * step : 4
+		 * 		write to file
+		 ********************/
+		
+		
+		/********************
+		 * set : view vals : 1
+		 * 		current time
+		 ********************/
+		$time_Current = Utils::get_CurrentTime();
+		
+		$this->set("time_Current", $time_Current);
+		
+		/********************
+		 * set : view vals : 2
+		 * 		source file
+		********************/
+		$tmp_str = "\$dpath_File_Tickets_Data : $dpath_File_Tickets_Data";
+		$tmp_str .= "<br>";
+		
+		$tmp_str .= "\$fname_File_Tickets_Data : $fname_File_Tickets_Data";
+		$tmp_str .= "<br>";
+		
+		
+		$this->set("message", $tmp_str);
+		
+		/********************
+		 * set : layout
+		 ********************/
+		$this->layout = "plain";
+
+		
+	}//util_3__Gen_Trading_Result_List
+	
+	/********************
 	 * util_2__Extract_Ticket_Numbers
 	 * 	at : 
 	 * 
