@@ -85,6 +85,9 @@ class FxUtilitiesController extends AppController {
 		 ********************/
 		$cntOf_Ticket_Num_Match = 0;
 		
+		// list
+		$lo_Line_Combined = array();
+		
 		foreach ($lo_Tickets_From_Tickets_Data_File as $line_Tickets_Data_File) {
 		
 			/********************
@@ -119,27 +122,29 @@ class FxUtilitiesController extends AppController {
 					$cntOf_Ticket_Num_Match += 1;
 					
 					/********************
+					 * step : 3 : 2.2 : j1 : Y : 0.1
+					 * 		modify : $line_Statement_File ==> price string
+					 ********************/
+					//ref https://www.w3schools.com/PHP/func_string_str_replace.asp
+					$line_Statement_File[10] = intval(str_replace(" ", "", $line_Statement_File[10]));
+// 					$line_Statement_File[10] = str_replace(" ", "", $line_Statement_File[10]);
+					
+					/********************
 					 * step : 3 : 2.2 : j1 : Y : 1
 					 * 		build : combined line
 					 ********************/
 					//_20200506_133102:next
+					$line_Combined = array_merge($line_Tickets_Data_File, $line_Statement_File);
 					
 					/********************
 					 * step : 3 : 2.2 : j1 : Y : 2
 					 * 		append
 					 ********************/
-					
+					array_push($lo_Line_Combined, $line_Combined);
 					
 					break;
 				
-				} else {
-				
-					
-					
-				}//if ($n1 == $n2)
-				
-				
-				;
+				} else { }//if ($n1 == $n2)
 				
 			}//foreach ($lo_Tickets_From_Statement_File as $line_Statement_File)
 			
@@ -147,12 +152,105 @@ class FxUtilitiesController extends AppController {
 		
 		//debug
 		debug("\$cntOf_Ticket_Num_Match : " . $cntOf_Ticket_Num_Match);
-
+	
+		debug("\$lo_Line_Combined[0] =>");
+		debug($lo_Line_Combined[0]);
+		
 		/********************
 		 * step : 4
 		 * 		write to file
 		 ********************/
+		/********************
+		 * step : 4 : 1
+		 * 		prep : meta info
+		 ********************/
+		//_20200507_165449:tmp
+		$lo_Lines_Meta_Info = 
+				LibFxAdmin::get_Meta_Info_From_Tickets_Data_File(
+						$dpath_File_Tickets_Data
+						, $fname_File_Tickets_Data
+						);
+
+// 		//debug
+// 		debug("\$lo_Lines_Meta_Info =>");
+// 		debug($lo_Lines_Meta_Info);
 		
+		/********************
+		 * step : 4 : 2
+		 * 		file : open
+		 ********************/
+		$tlabel = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+		$fname_File_Combined_Data = "[ea-4_tester-1].(20200507_140530).(combined-data).($tlabel).dat";
+		
+		$fpath_File_Combined_Data = join(DS, array($dpath_File_Tickets_Data, $fname_File_Combined_Data));
+		
+		$fout_File_Combined_Data = fopen($fpath_File_Combined_Data, "w");
+		
+		/********************
+		 * step : 4 : 3
+		 * 		file : write
+		 ********************/
+		/********************
+		 * step : 4 : 3.1
+		 * 		meta
+		 ********************/
+		$string_tmp = "[" . Utils::get_CurrentTime() 
+					. " / "
+					. basename(__FILE__)
+					. ":"
+					. __LINE__ . "]";
+		
+		$string_tmp .= "\n";
+		
+		fwrite($fout_File_Combined_Data, $string_tmp);
+		
+		foreach ($lo_Lines_Meta_Info as $line) {
+		
+			fwrite($fout_File_Combined_Data, $line);
+			
+			fwrite($fout_File_Combined_Data, "\n");
+			
+		}//foreach ($lo_Lines_Meta_Info as $line)
+		
+		// file path
+		fwrite($fout_File_Combined_Data, "this file\t$fname_File_Combined_Data");
+		fwrite($fout_File_Combined_Data, "\n");
+		
+		fwrite($fout_File_Combined_Data, "dpath\t$dpath_File_Tickets_Data");
+		fwrite($fout_File_Combined_Data, "\n");
+		
+		// separator
+		fwrite($fout_File_Combined_Data, "\n");
+		
+		/********************
+		 * step : 4 : 3.2
+		 * 		body
+		 ********************/
+		$cntOf_Loop = 1;
+		
+		foreach ($lo_Line_Combined as $line) {
+		
+			// serial num
+			fwrite($fout_File_Combined_Data, strval($cntOf_Loop) . "\t");
+// 			fwrite($fout_File_Combined_Data, strval($cntOf_Loop));
+			
+			fwrite($fout_File_Combined_Data, join("\t", $line));
+// 			fwrite($fout_File_Combined_Data, $line);
+			
+			// separator line
+			fwrite($fout_File_Combined_Data, "\n");
+			
+			// counter
+			$cntOf_Loop += 1;
+						
+		}//foreach ($lo_Line_Combined as $line)
+		
+		/********************
+		 * step : 4 : 4
+		 * 		file : close
+		 ********************/
+		fclose($fout_File_Combined_Data);
 		
 		/********************
 		 * set : view vals : 1

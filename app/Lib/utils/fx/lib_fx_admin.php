@@ -775,6 +775,120 @@ class LibFxAdmin {
 	}//public static function get_LO_Tickets_From_Tickets_Data_File
 
 	/********************
+	 * get_Meta_Info_From_Tickets_Data_File
+	 *
+	 * 	at : 2020/05/07 16:58:26
+	 *
+	 * @return :
+	 *		array(
+	 (int) 0 => array(
+	 (int) 0 => '24877371',
+	 (int) 1 => '2020.05.05 08:10:00',
+	 (int) 2 => '68.688',
+	 (int) 3 => '68.663',
+	 (int) 4 => '68.702',
+	 ...
+	 (int) 30 => '3',
+	 (int) 31 => '3'
+	
+	 ********************/
+	public static function get_Meta_Info_From_Tickets_Data_File(
+	
+			$_dpath_File_Tickets_Data
+			, $_fname_File_Tickets_Data
+	
+	) {
+		//_20200506_113043:caller
+		//_20200506_113049:head
+		//_20200506_113052:wl
+		/********************
+		 * step : 1 : 1
+		 * 		prep : vars
+		 ********************/
+	
+		/********************
+		 * step : 2
+		 * 		file : load lines
+		 ********************/
+		/********************
+		 * step : 2 : 1
+		 * 		path
+		 ********************/
+		$fpath = join(DS, array($_dpath_File_Tickets_Data, $_fname_File_Tickets_Data));
+	
+		/********************
+		 * step : 2 : 2
+		 * 		file exists
+		********************/
+		$result_b = file_exists($fpath);
+	
+		// open file
+		if ($result_b == false) {
+				
+			debug("file ==> NOT exist : $fpath");
+				
+			return false;
+				
+		} else { debug("file ==> exists : $fpath"); }//if ($result_b == false) {
+	
+		/********************
+		 * step : 2 : 3
+		 * 		load : lines
+		 ********************/
+		$linesOf_File_Content = file($fpath);
+	
+		/********************
+		 * step : 3
+		 * 		lines == filter
+		********************/
+		$lo_Lines_Meta_Info = array();
+		
+		foreach ($linesOf_File_Content as $line) {
+		
+			// modify string
+			$line = preg_replace('/\n/', '', $line);
+			$line = preg_replace('/\r/', '', $line);
+// 			$line = preg_replace('/\r\n/', '', $line);
+// 			$line = preg_replace('/\s/', '', $line);
+			
+			// condition
+// 			$cond_1 = (Utils::startsWith($line, "[") == false) && (count_chars($line, 1) > 0);
+// 			$cond_1 = (Utils::startsWith($line, "[") == false) && (count($line) > 0);
+// 			$cond_1 = (Utils::startsWith($line, "[") == false) && (empty($line) == false);
+			$cond_1 = (Utils::startsWith($line, "[") == false) && ($line != '');
+// 			$cond_1 = (Utils::startsWith($line, "[") == false) && ($line != null);
+// 			$cond_1 = (Utils::startsWith($line, "[") == false) && ($line != "");
+// 			$cond_1 = (Utils::startsWith($line, "[") == false);
+			
+			// judge
+			if ($cond_1 == true) {
+				
+// 				debug("strlen(\$line) : " . strlen($line) . "('$line')");
+				
+// 				debug("(count_chars(\$line, 1) => ");
+// 				debug(count_chars($line, 1));
+// 				debug("(count_chars(\$line, 1) => " . (count_chars($line, 1)) . "('$line')");
+// 				debug("count(\$line) => " . count($line) . "('$line')");
+				
+				array_push($lo_Lines_Meta_Info, $line);
+				
+			}//if ($cond_1 == true)
+			
+		}//foreach ($linesOf_File_Content as $line)
+		
+		/********************
+		 * step : 5
+		 * 		return
+		 ********************/
+		// set val
+		$valOf_Ret = $lo_Lines_Meta_Info;
+	
+		// return
+		return $valOf_Ret;
+	
+	}//get_Meta_Info_From_Tickets_Data_File
+	
+	/********************
 	 * get_LO_Tickets_From_Tickets_Report_File
 	 *
 	 * 	at : 2020/05/06 12:34:27
