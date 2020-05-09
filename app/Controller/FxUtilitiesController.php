@@ -38,15 +38,54 @@ class FxUtilitiesController extends AppController {
 		* 	vars
 		********************/
 		/********************
+		* step : 0.1
+		* 	params
+		********************/
+		//_20200509_123705:tmp
+		@$query_Param_Dpath_File_Tickets_Data = $this->request->query[CONS::$param_Dpath_File_Tickets_Data];
+		
+		@$query_Param_Fname_File_Tickets_Data = $this->request->query[CONS::$param_Fname_File_Tickets_Data];
+		
+		@$query_Param_Fname_File_Statement = $this->request->query[CONS::$param_Fname_File_Statement];
+		
+		
+		/********************
 		* step : 1
 		* 	from tickets data ==> list of tickets
 		********************/
-		$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes" 
-								. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
-								. "\\Files\\Logs\\"
-								. "20200505_140459[eap-2.id-1].[AUDJPY-5].dir";
+		$dpath_File_Tickets_Data = "";
+		$fname_File_Tickets_Data = "";
 		
-		$fname_File_Tickets_Data = "[ea-4_tester-1].(20200505_140459).(tickets-data).log";
+		if ($query_Param_Dpath_File_Tickets_Data == null) {
+		
+			$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
+					. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+					. "\\Files\\Logs\\"
+							. "20200505_140459[eap-2.id-1].[AUDJPY-5].dir";
+				
+		} else {
+		
+			$dpath_File_Tickets_Data = $query_Param_Dpath_File_Tickets_Data;
+			
+		}//if ($query_Param_Dpath_File_Tickets_Data == null)
+		
+		
+// 		$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes" 
+// 								. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+// 								. "\\Files\\Logs\\"
+// 								. "20200505_140459[eap-2.id-1].[AUDJPY-5].dir";
+
+		if ($query_Param_Dpath_File_Tickets_Data == null) {
+		
+			$fname_File_Tickets_Data = "[ea-4_tester-1].(20200505_140459).(tickets-data).log";
+		
+		} else {
+		
+			$fname_File_Tickets_Data = $query_Param_Fname_File_Tickets_Data;
+				
+		}//if ($query_Param_Dpath_File_Tickets_Data == null)
+		
+// 		$fname_File_Tickets_Data = "[ea-4_tester-1].(20200505_140459).(tickets-data).log";
 		
 		// get list
 		$lo_Tickets_From_Tickets_Data_File = 
@@ -63,10 +102,19 @@ class FxUtilitiesController extends AppController {
 		// paths
 		$dpath_File_Statement = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
 				. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
-				. "\\Logs\\logs_trading"
-						;
+				. "\\Logs\\logs_trading";
 		
-		$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
+		if ($query_Param_Fname_File_Statement == null) {
+		
+			$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
+		
+		} else {//$query_Param_Fname_File_Statement
+		
+			$fname_File_Statement = $query_Param_Fname_File_Statement;
+		
+		}//if ($query_Param_Fname_File_Statement == null)
+		
+// 		$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
 		
 		
 		$lo_Tickets_From_Statement_File = 

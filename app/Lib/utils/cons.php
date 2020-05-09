@@ -208,6 +208,14 @@ class CONS {
 								. "\\storage_Logs"
 								. "\\20191224_073409[eap-2.id-1].[AUDJPY-1].dir";
 
+	// util_3__Gen_Trading_Result_List
+	public static $param_Dpath_File_Tickets_Data		= "param_Dpath_File_Tickets_Data";
+	public static $param_Fname_File_Tickets_Data		= "param_Fname_File_Tickets_Data";
+	
+	public static $param_Dpath_File_Statement		= "param_Dpath_File_Statement";
+	public static $param_Fname_File_Statement		= "param_Fname_File_Statement";
+	
+	
 	/*******************************
 	 	regex
 	 *******************************/
