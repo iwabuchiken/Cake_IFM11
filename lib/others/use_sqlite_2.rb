@@ -98,7 +98,11 @@ def update_records__multiple
   csv_data = CSV.read($FNAME_ENTRIES, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
 #  csv_data = CSV.read($FNAME_ENTRIES, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
 #  csv_data = CSV.read($FNAME_MULTIPLE, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
-
+  
+  #debug:20200516_101657
+  #puts "[#{File.basename(__FILE__)}:#{__LINE__}] csv_data[0] => '#{csv_data[0]}'"
+  #puts "[#{File.basename(__FILE__)}:#{__LINE__}] csv_data[1] => '#{csv_data[1]}'"
+  
   ################################
   # 
   # build sql statement
