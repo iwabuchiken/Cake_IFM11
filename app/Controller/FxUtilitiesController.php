@@ -61,6 +61,7 @@ class FxUtilitiesController extends AppController {
 			$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
 					. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
 					. "\\Files\\Logs\\"
+					. "\\" . "storage_Logs" . "\\"
 							. "20200505_140459[eap-2.id-1].[AUDJPY-5].dir";
 				
 		} else {
@@ -106,7 +107,8 @@ class FxUtilitiesController extends AppController {
 		
 		if ($query_Param_Fname_File_Statement == null) {
 		
-			$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
+			$fname_File_Statement = "DetailedStatement.[20200516_122618].htm";
+// 			$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
 		
 		} else {//$query_Param_Fname_File_Statement
 		
