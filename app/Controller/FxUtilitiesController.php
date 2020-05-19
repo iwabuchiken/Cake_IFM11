@@ -778,6 +778,67 @@ class FxUtilitiesController extends AppController {
 	
 	//_20200406_100650:next
 	
+	/********************
+	 * tasks_26_Gen_Combined_Trade_Result_List
+	 *
+	 * 	at : 2020/05/19 19:02:57
+	 *
+	 * @return :
+	
+	 ********************/
+	public function
+	tasks_26_Gen_Combined_Trade_Result_List() {
+		//_20200519_190242:caller
+		//_20200519_190247:head
+		//_20200519_190250:wl
+		/********************
+		 * step : 1 : 1
+		 * 		prep : vars
+		 ********************/
+
+		/********************
+		 * step : 2
+		 * 		external : load
+		 ********************/
+		//_20200519_191713:tmp
+		$dpath_File_Dat = "";
+		$fname_File_Dat = "";
+		
+		$fpath_File_Dat = join(DS, array($dpath_File_Dat, $fname_File_Dat));
+		
+		$fin_File_Dat = fopen($fpath_File_Dat, "r");
+
+		//_20200519_192026:next
+		
+		/********************
+		 * step : X
+		 * 		external : close
+		 ********************/
+		fclose($fin_File_Dat);
+		
+		/********************
+		 * set : view vals : 1
+		 * 		current time
+		 ********************/
+		$time_Current = Utils::get_CurrentTime();
+		
+		$this->set("time_Current", $time_Current);
+		
+		/********************
+		 * set : view vals : 2
+		 * 		message
+		********************/
+		$tmp_str = "tasks_26_Gen_Combined_Trade_Result_List ==> comp.";
+		$tmp_str .= "<br>";
+		
+		
+		$this->set("message", $tmp_str);
+		
+	}//tasks_26_Gen_Combined_Trade_Result_List
+	
+	
+	
+	
 }//class FxUtilitiesController extends AppController {
 
 /***************************

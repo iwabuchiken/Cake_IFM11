@@ -911,6 +911,30 @@ class LibFxAdmin {
 		 ********************/
 	
 	}//public static function get_LO_Tickets_From_Tickets_Report_File(
+
+	/********************
+	 * tasks_26_Gen_Combined_Trade_Result_List
+	 *
+	 * 	at : 2020/05/19 19:02:57
+	 *
+	 * @return :
+	
+	 ********************/
+	public static function tasks_26_Gen_Combined_Trade_Result_List(
+	
+			$_dpath_File_Report
+			, $_fname_File_Report
+	
+	) {
+		//_20200519_190242:caller
+		//_20200519_190247:head
+		//_20200519_190250:wl
+		/********************
+		 * step : 1 : 1
+		 * 		prep : vars
+		 ********************/
+		
+	}//tasks_26_Gen_Combined_Trade_Result_List
 	
 }//class Libfx
 	
