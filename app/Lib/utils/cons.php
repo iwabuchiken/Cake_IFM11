@@ -524,4 +524,14 @@ class CONS {
 	 **************************************************************/
 	public static $label_IP_Proc_ID__1	= "proc-1";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
 	
+	/*
+	*20200517_135205
+	*
+	*	proc-2
+	*
+	*		png file, transparency
+	 * 
+	 * */
+	public static $label_IP_Proc_ID__2	= "proc-2";    # C:\WORKS_2\WS\WS_Cake_IFM11\commands
+	
 }//class CONS

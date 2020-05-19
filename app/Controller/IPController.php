@@ -460,7 +460,9 @@ class IPController extends AppController {
 // 		//test
 // 		phpinfo();
 		
-		$dpath_Image_File = "C:/WORKS_2/WS/WS_Others.Art/JVEMV6/46_art/6_visual-arts/5_free-painting/images";
+		// C:\WORKS_2\WS\WS_Others.Art\JVEMV6\46_art\6_visual-arts\5_free-painting\images
+		$dpath_Image_File = "C:/WORKS_2/WS/WS_Others.Art/JVEMV6/46_art/6_visual-arts/5_free-painting/images/storage";
+// 		$dpath_Image_File = "C:/WORKS_2/WS/WS_Others.Art/JVEMV6/46_art/6_visual-arts/5_free-painting/images";
 		$fname_Image_File = "test_20200130_144805.png";
 // 		$fname_Image_File = "test_20200130_143634.png";
 // 		$fname_Image_File = "test_20200127_175307.png";
@@ -525,6 +527,138 @@ class IPController extends AppController {
 		return $valOf_Return;
 		
 	}//public function ip_proc_actions__Proc_1() {
+
+	/******************
+	 * ip_proc_actions__Proc_2
+	 *
+	 * 	at : 2020/05/17 13:57:22
+	  
+	 ****************/
+	public function ip_proc_actions__Proc_2() {
+		//_20200517_135524:head
+		//_20200517_135527:caller
+		//_20200517_135530:wl
+		/********************
+		* step : 0
+		* 		prep : vars
+		********************/
+		// C:\WORKS_2\WS\WS_Others.Art\JVEMV6\46_art\6_visual-arts\5_free-painting\images
+		$dpath_Image_File = "C:/WORKS_2/WS/WS_Others.Art/JVEMV6/46_art/6_visual-arts/5_free-painting/images";
+		
+// 		$fname_Image_File = "46_6.5_7.(L-2.2).png";
+// 		$fname_Image_File = "46_6.5_7.[L-2.2].png";
+		$fname_Image_File = "46#6.5_7.[L-2.2].png";
+	
+		$fpath_Image_File = join("/", array($dpath_Image_File, $fname_Image_File));
+	
+		/********************
+		* step : 1
+		* 		image : load
+		********************/
+		$im_inp = ImageCreateFromPNG($fpath_Image_File);
+	
+		$ix = ImageSX($im_inp);
+		$iy = ImageSY($im_inp);
+	
+		debug("\$ix : $ix / \$iy : $iy");
+	
+		/********************
+		* step : 2
+		* 		image : alpha
+		********************/
+		//_20200517_150409:next
+		
+// 		$val_Transparency = 30;
+		$val_Transparency = 90;
+// 		$val_Transparency = 127;
+		
+		//ref https://www.php.net/manual/en/function.imagesavealpha.php
+		$transparent = imagecolorallocatealpha( $im_inp, 0, 0, 0, $val_Transparency );
+
+		/********************
+		 * step : 3
+		 * 		image : save
+		 ********************/
+		/********************
+		 * step : 3 : 1
+		 * 		file path
+		 ********************/
+		$fpath_Out_Image_File = 
+					$fpath_Image_File
+
+					."("
+					."alpha_transparent=$val_Transparency"
+					. ")"
+					. "."
+					
+					."("
+					. Utils::get_CurrentTime2(CONS::$timeLabelTypes['serial'])
+					. ")"
+					. "."
+							
+					."png";
+
+		//ref https://stackoverflow.com/questions/17271742/create-a-transparent-png-file-using-php
+		$img = $im_inp;
+// 		$img = imagecreatetruecolor(200, 200);
+		imagesavealpha($img, true);
+		$color = imagecolorallocatealpha($img, 0, 0, 0, $val_Transparency);
+// 		$color = imagecolorallocatealpha($img, 0, 0, 0, 127);
+		imagefill($img, 0, 0, $color);
+// 		imagepng($img, $fpath_Out_Image_File);
+		$res = imagepng($img, $fpath_Out_Image_File);
+		
+		debug("ImagePNG ==> "
+				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
+		
+		
+// 		imagepng($img, 'test.png');
+		
+// 		/********************
+// 		 * step : 3 : 2
+// 		 * 		alpha
+// 		 ********************/
+// 		//ref https://www.php.net/manual/en/function.imagesavealpha.php
+// 		$res = imagesavealpha($im_inp, true);
+		
+// // 		$res = ImagePNG($transparent, $fpath_Out_Image_File);
+// // 		$res = ImagePNG($transparent, $fpath_Out_Image_File);
+		
+// 		debug("imagesavealpha ==> " . ($res == true) ? "returned true" : "returned false");
+		
+// 		/********************
+// 		 * step : 3 : 3
+// 		 * 		save
+// 		 ********************/
+// 		$res = ImagePNG($im_inp, $fpath_Out_Image_File);
+	
+// 		debug("ImagePNG ==> "
+// 				. ($res ? "saved : $fpath_Out_Image_File" : "save png ==> failed : $fpath_Out_Image_File"));
+				
+		/********************
+		* step : X
+		* 		image : discard
+		********************/
+		ImageDestroy($im_inp);
+	
+		/********************
+			* step : X
+			* 		return
+		********************/
+		/********************
+			* step : X : 1
+			* 		val
+		********************/
+		$valOf_Return = array("<br>ip_proc_actions__Proc_2 ==> comp");
+	
+		/********************
+			* step : X : 2
+			* 		return
+		********************/
+		return $valOf_Return;
+	
+	}//public function ip_proc_actions__Proc_2() {
+	
 	
 	/******************
 	 * ip_proc_actions
@@ -576,6 +710,7 @@ class IPController extends AppController {
 			 * step : 2
 			 * 		dispatch
 			 ********************/
+			//_20200517_134326:tmp
 			if ($action == CONS::$label_IP_Proc_ID__1) {
 			
 				// set : message
@@ -591,7 +726,22 @@ class IPController extends AppController {
 				
 // 				debug($msg_from_controller);
 				$this->set("msg_from_controller" , $msg_from_controller);
+			
+			} else if ($action == CONS::$label_IP_Proc_ID__2) {
+				//_20200517_135355:tmp
+				// set : message
+				$msg_from_controller = "param is ==> " . CONS::$label_IP_Proc_ID__2
+						. " / starting...";
 				
+				
+				//_20200517_135527:caller
+				$valOf_Return__received = $this->ip_proc_actions__Proc_2();
+				
+				$msg_from_controller .= $valOf_Return__received[0];
+				
+// 				debug($msg_from_controller);
+				$this->set("msg_from_controller" , $msg_from_controller);
+			
 			} else {
 			
 				// set : message
