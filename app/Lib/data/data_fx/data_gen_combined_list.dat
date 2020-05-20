@@ -6,20 +6,24 @@
 #param_Dpath_File_Tickets_Data=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\storage_Logs\20200506_133310[eap-2.id-1].[AUDJPY-5].dir
 #param_Dpath_File_Tickets_Data=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\storage_Logs\20200505_140459[eap-2.id-1].[AUDJPY-5].dir
 #param_Dpath_File_Tickets_Data=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\storage_Logs\20200506_133310[eap-2.id-1].[AUDJPY-5].dir
-param_Dpath_File_Tickets_Data=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20200518_143757[eap-2.id-1].[AUDJPY-5].dir
+#param_Dpath_File_Tickets_Data=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20200518_143757[eap-2.id-1].[AUDJPY-5].dir
+param_Dpath_File_Tickets_Data=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20200519_114942[eap-2.id-1].[AUDJPY-5].dir
 
 #####################
 # 	ticket data : fname
 #	20200520_120045
 #####################
-param_Fname_File_Tickets_Data=[ea-4_tester-1].(20200518_143757).(tickets-data).log
+#param_Fname_File_Tickets_Data=[ea-4_tester-1].(20200518_143757).(tickets-data).log
 #param_Fname_File_Tickets_Data=[ea-4_tester-1].(20200506_133310).(tickets-data).log
 #param_Fname_File_Tickets_Data=[ea-4_tester-1].(20200505_140459).(tickets-data).log
+param_Fname_File_Tickets_Data=[ea-4_tester-1].(20200519_114942).(tickets-data).log
 
 #####################
 # 	statement file : file name
 #	20200520_120045
 #####################
 #param_Fname_File_Statement=DetailedStatement.[20200509_123535].htm
-param_Fname_File_Statement=DetailedStatement.(20200520_134013).htm
+#param_Fname_File_Statement=DetailedStatement.(20200520_134013).htm
 #param_Fname_File_Statement=DetailedStatement.(20200518_231004).htm
+param_Fname_File_Statement=DetailedStatement.(20200520_161545).htm
+
