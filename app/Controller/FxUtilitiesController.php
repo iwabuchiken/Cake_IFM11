@@ -777,6 +777,116 @@ class FxUtilitiesController extends AppController {
 
 	
 	//_20200406_100650:next
+
+	/********************
+	 * tasks_26_Gen_Combined_Trade_Result_List
+	 *
+	 * 	at : 2020/05/19 19:02:57
+	 *
+	 * @return :
+	
+	 ********************/
+	public function
+	tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List() {
+		//_20200520_120600:caller
+		//_20200520_120606:head
+		//_20200520_120608:wl
+		/********************
+		 * step : 1 : 1
+		 * 		prep : vars
+		 ********************/
+
+		/********************
+		 * step : 2
+		 * 		external : load
+		 ********************/
+		/********************
+		 * step : 2 : 1
+		 * 		open
+		 ********************/
+		//_20200519_191713:tmp
+		$dpath_File_Dat = "C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data\data_fx";
+		$fname_File_Dat = "data_gen_combined_list.dat";
+		
+		$fpath_File_Dat = join(DS, array($dpath_File_Dat, $fname_File_Dat));
+		
+		debug("\$fpath_File_Dat => " . $fpath_File_Dat);
+		
+		$fin_File_Dat = fopen($fpath_File_Dat, "r");
+		
+		/********************
+		 * step : 2 : 2
+		 * 		read lines
+		********************/
+		$lo_Lines_File_Dat = [];
+		
+		if ($fin_File_Dat) {
+		
+			while (($line = fgets($fin_File_Dat)) !== false) {
+		
+				// remove
+				$line = preg_replace('/\r/', '', $line);
+				$line = preg_replace('/\n/', '', $line);
+		
+				// omit lines
+				if (Utils::startsWith($line, "#")) {
+		
+					continue;
+						
+				}//if (Utils::startsWith()
+				;
+		
+				// push line
+				if ($line !== '') {
+						
+					debug("\$line : " . "'" . $line . "'");
+						
+					array_push($lo_Lines_File_Dat, $line);
+						
+				}//if ($line !== '')
+				;
+					// 				array_push($lo_Lines_File_Dat, $line);
+		
+			}
+		
+			// 			fclose($fin_File_Dat);
+		
+		} else {
+			// error opening the file.
+			debug("\$fin_File_Dat ==> false");
+		
+		}
+		
+		debug("count(\$lo_Lines_File_Dat) => " . count($lo_Lines_File_Dat));
+		
+		//_20200519_192026:next
+		
+		/********************
+		 * step : 2 : X
+		 * 		close
+		********************/
+		fclose($fin_File_Dat);
+		
+		/********************
+		 * step : 3
+		 * 		get : param vals
+		********************/
+		$lo_Keywords = [];
+		
+		foreach ($lo_Lines_File_Dat as $line) {
+		
+			$tokens = explode("=", $line);
+				
+			// push
+			$lo_Keywords[$tokens[0]] = $tokens[1];
+				
+			// 			debug($tokens);
+				
+		}//foreach ($lo_Lines_File_Dat as $line)
+		
+		debug($lo_Keywords);
+		
+	}//tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List() {
 	
 	/********************
 	 * tasks_26_Gen_Combined_Trade_Result_List
@@ -795,26 +905,9 @@ class FxUtilitiesController extends AppController {
 		 * step : 1 : 1
 		 * 		prep : vars
 		 ********************/
+		$this->tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List();
 
-		/********************
-		 * step : 2
-		 * 		external : load
-		 ********************/
-		//_20200519_191713:tmp
-		$dpath_File_Dat = "";
-		$fname_File_Dat = "";
-		
-		$fpath_File_Dat = join(DS, array($dpath_File_Dat, $fname_File_Dat));
-		
-		$fin_File_Dat = fopen($fpath_File_Dat, "r");
-
-		//_20200519_192026:next
-		
-		/********************
-		 * step : X
-		 * 		external : close
-		 ********************/
-		fclose($fin_File_Dat);
+		//_20200520_120413:tmp
 		
 		/********************
 		 * set : view vals : 1
