@@ -101,9 +101,10 @@ class FxUtilitiesController extends AppController {
 		 ********************/
 		//_20200506_125146:tmp
 		// paths
-		$dpath_File_Statement = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
-				. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
-				. "\\Logs\\logs_trading";
+		$dpath_File_Statement = CONS::$dpath_File_Detailed_Statement;
+// 		$dpath_File_Statement = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
+// 				. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+// 				. "\\Logs\\logs_trading";
 		
 		if ($query_Param_Fname_File_Statement == null) {
 		
@@ -784,10 +785,20 @@ class FxUtilitiesController extends AppController {
 	 * 	at : 2020/05/19 19:02:57
 	 *
 	 * @return :
+			array(
+			'param_Dpath_File_Tickets_Data' => 'C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20200506_133310[eap-2.id-1].[AUDJPY-5].dir',
+			'param_Fname_File_Tickets_Data' => '[ea-4_tester-1].(20200506_133310).(tickets-data).log',
+			'param_Fname_File_Statement' => 'DetailedStatement.[20200509_123535].htm'
+			)
 	
 	 ********************/
 	public function
-	tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List() {
+	tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List(
+			
+			$dpath_File_Dat
+			, $fname_File_Dat
+			
+			) {
 		//_20200520_120600:caller
 		//_20200520_120606:head
 		//_20200520_120608:wl
@@ -805,14 +816,16 @@ class FxUtilitiesController extends AppController {
 		 * 		open
 		 ********************/
 		//_20200519_191713:tmp
-		$dpath_File_Dat = "C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data\data_fx";
-		$fname_File_Dat = "data_gen_combined_list.dat";
+// 		$dpath_File_Dat = "C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data\data_fx";
+// 		$fname_File_Dat = "data_gen_combined_list.dat";
 		
 		$fpath_File_Dat = join(DS, array($dpath_File_Dat, $fname_File_Dat));
 		
 		debug("\$fpath_File_Dat => " . $fpath_File_Dat);
 		
-		$fin_File_Dat = fopen($fpath_File_Dat, "r");
+		$lo_File_Content = file($fpath_File_Dat);
+// 		$lo_File_Content = file($fpath_File_Dat, "r");
+// 		$fin_File_Dat = fopen($fpath_File_Dat, "r");
 		
 		/********************
 		 * step : 2 : 2
@@ -820,9 +833,11 @@ class FxUtilitiesController extends AppController {
 		********************/
 		$lo_Lines_File_Dat = [];
 		
-		if ($fin_File_Dat) {
+// 		if ($fin_File_Dat) {
 		
-			while (($line = fgets($fin_File_Dat)) !== false) {
+			foreach ($lo_File_Content as $line) {
+			
+// 			while (($line = fgets($fin_File_Dat)) !== false) {
 		
 				// remove
 				$line = preg_replace('/\r/', '', $line);
@@ -849,23 +864,15 @@ class FxUtilitiesController extends AppController {
 		
 			}
 		
-			// 			fclose($fin_File_Dat);
+// 		} else {
+// 			// error opening the file.
+// 			debug("\$fin_File_Dat ==> false");
 		
-		} else {
-			// error opening the file.
-			debug("\$fin_File_Dat ==> false");
-		
-		}
+// 		}
 		
 		debug("count(\$lo_Lines_File_Dat) => " . count($lo_Lines_File_Dat));
 		
 		//_20200519_192026:next
-		
-		/********************
-		 * step : 2 : X
-		 * 		close
-		********************/
-		fclose($fin_File_Dat);
 		
 		/********************
 		 * step : 3
@@ -884,7 +891,16 @@ class FxUtilitiesController extends AppController {
 				
 		}//foreach ($lo_Lines_File_Dat as $line)
 		
-		debug($lo_Keywords);
+// 		debug($lo_Keywords);
+
+		/********************
+		 * step : 4
+		 * 		return
+		 ********************/
+		$valOf_Ret = $lo_Keywords;
+		
+		// return
+		return $valOf_Ret;
 		
 	}//tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List() {
 	
@@ -905,9 +921,44 @@ class FxUtilitiesController extends AppController {
 		 * step : 1 : 1
 		 * 		prep : vars
 		 ********************/
-		$this->tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List();
+		/********************
+		 * step : 2
+		 * 		get : list of keywords
+		 ********************/
+		$dpath_File_Dat = "C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\data\data_fx";
+		$fname_File_Dat = "data_gen_combined_list.dat";
+		
+		$lo_Keywords = $this->tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List(
+					
+				$dpath_File_Dat
+				, $fname_File_Dat
+				
+				);
+// 		$lo_Keywords = $this->tasks_26_Gen_Combined_Trade_Result_List__Get_Keyword_List();
 
-		//_20200520_120413:tmp
+		/********************
+		 * step : 3
+		 * 		build : url
+		 ********************/
+		$url = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List?"
+				. "param_Dpath_File_Tickets_Data="
+						. $lo_Keywords['param_Dpath_File_Tickets_Data']
+// 				. "\&"
+				. "&#38;"
+				. "param_Fname_File_Tickets_Data="
+						. $lo_Keywords['param_Fname_File_Tickets_Data']
+// 				. "&"
+				. "&#38;"
+				. "param_Fname_File_Statement="
+						. $lo_Keywords['param_Fname_File_Statement']
+				;
+		
+		$url = "<a href='$url' target='_blank'>$url</a>";
+		
+		debug("\$url = " . $url);
+		
+// 		debug($lo_Keywords);
+		
 		
 		/********************
 		 * set : view vals : 1
@@ -924,8 +975,26 @@ class FxUtilitiesController extends AppController {
 		$tmp_str = "tasks_26_Gen_Combined_Trade_Result_List ==> comp.";
 		$tmp_str .= "<br>";
 		
+		$tmp_str .= "setup file : ";
+		$tmp_str .= join(DS, array($dpath_File_Dat, $fname_File_Dat));
+		$tmp_str .= "<br>";
+		
+		$tmp_str .= "dpath for gen-ed file : " . $lo_Keywords['param_Dpath_File_Tickets_Data'];
+		
+		
+		
+		// url
+// 		$tmp_str .= $this->Url->build($url, true);
+// 		$tmp_str = $url;
+// 		$tmp_str .= $url;
+// 		$tmp_str .= "<br>";
+		
 		
 		$this->set("message", $tmp_str);
+// 		$this->set("message", $tmp_str);
+		
+		// url
+		$this->set("url", $url);
 		
 	}//tasks_26_Gen_Combined_Trade_Result_List
 	

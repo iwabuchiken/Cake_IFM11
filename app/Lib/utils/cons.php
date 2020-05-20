@@ -224,6 +224,17 @@ class CONS {
 // 	public static $regStr_Position_Taken = '/position ==> taken/';
 	public static $regStr_Ticket_Num_String = '/--> (\d+)/';
 // 	public static $regStr_Ticket_Num_String = '/= (\d+)/';
+
+	/*******************************
+	 	paths
+	 *******************************/
+	public static $dpath_File_Detailed_Statement = "C:\\Users\\iwabuchiken\\AppData\\Roaming"
+						."\\MetaQuotes\\Terminal"
+						."\\34B08C83A5AAE27A4079DE708E60511E"
+						."\\MQL4\\Files" . "\\Report_Trades";
+// 	public static $dpath_File_Detailed_Statement = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
+// 				. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+// 				. "\\Logs\\logs_trading";
 	
 	/************************************************************lib_ea_tester */
 	

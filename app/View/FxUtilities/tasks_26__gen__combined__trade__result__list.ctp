@@ -4,4 +4,8 @@ time = <?php echo $time_Current; ?>
 
 <br>
 <br>
-message = '<?php echo $message; ?>'
+message = <?php echo $message; ?>
+
+<br>
+<br>
+<?php echo $url; ?>
