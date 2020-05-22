@@ -639,6 +639,108 @@ class LibFxAdmin {
 	}//public static function slice_Raw_Data_By_Week() {
 
 	/********************
+	 * slice_Raw_Data_By_Day__V2
+	 * 
+	 * 	at : 2020/04/26 13:08:46
+	 *
+	 * @return : 
+	 *
+	 ********************/
+	public static function slice_Raw_Data_By_Day__V2(
+			
+			$_dpath_Raw_File_Src
+			, $_fname_Raw_File_Src
+			, $_dpath_Sliced_Files
+			
+			) {
+		//_20200522_165547:caller
+		//_20200522_165549:head
+		//_20200522_165552:wl
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
+		//_20200425_164407:tmp
+		debug("\$_dpath_Raw_File_Src : " . $_dpath_Raw_File_Src);
+
+		/********************
+		 * step : 1
+		 * 		load file
+		 ********************/
+		/********************
+		 * step : 1 : 1
+		 * 		validate : file exists
+		 ********************/
+		// file path
+		$fpath = join("\\", array($_dpath_Raw_File_Src, $_fname_Raw_File_Src));
+		
+		debug($fpath);
+		
+		// validate
+		$result_b = file_exists($fpath);
+		
+		debug("\$fpath => " . $fpath);
+		
+		debug(($result_b == true) ? "exists" : "NOT exist");
+
+		/********************
+		 * step : 2
+		 * 		get : file lines
+		 ********************/
+		//ref https://www.php.net/manual/en/function.file.php
+		$linesOf_File_Content = file($fpath);
+		
+		debug("count(\$linesOf_File_Content) : " . count($linesOf_File_Content));
+		
+		debug("\$linesOf_File_Content[0] : " . $linesOf_File_Content[0]);
+		
+		/********************
+		 * step : Z
+		 * 		TEST
+		 ********************/
+		//test : conv to list of bardatas : 20200522_170150
+		$lenOf_Header_Lines = 2;
+		
+		//array($lo_BarDatas, array_slice($lo_CSV_Lines, 0, $lenOf_Header_Lines))
+		$valOf_Ret__Received = Libfx::conv_CSV_Lines_To_BarDatas__V2(
+										$linesOf_File_Content, $lenOf_Header_Lines);
+		
+		$lo_BarDatas		= $valOf_Ret__Received[0];
+		$lo_HeaderLines		= $valOf_Ret__Received[1];
+		
+		//_20200522_170915:tmp
+		debug("\$lo_HeaderLines =>");
+		debug($lo_HeaderLines);
+		
+		//_20200522_171234:next
+		debug("\$lo_BarDatas[0] =>");
+		debug($lo_BarDatas[0]);
+		
+
+		/********************
+		 * step : 3
+		 * 		get : day of the week
+		 ********************/
+		
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		set : val
+		 ********************/
+		$valOf_Ret = -1;
+		
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
+		
+	}//slice_Raw_Data_By_Day__V2
+
+	/********************
 	 * get_LO_Tickets_From_Tickets_Data_File
 	 * 
 	 * 	at : 2020/05/06 12:30:57

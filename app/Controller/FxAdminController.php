@@ -477,6 +477,74 @@ class FxAdminController extends AppController {
 	
 	}//public function slice_Raw_Data_By_Week() {
 	
+	/********************
+	 * public function _slice_Raw_Data_By_Day
+	 * at : 2020/05/22 16:50:26
+	 * 
+	 * caller
+	 *
+	 ********************/
+	public function _slice_Raw_Data_By_Day(
+			
+			$_dpath_Raw_File_Src
+			, $_fname_Raw_File_Src
+			, $_dpath_Sliced_Files
+				
+			
+			) {
+		//_20200522_165010:caller
+		//_20200522_165017:head
+		//_20200522_165020:wl
+	
+		/********************
+		 * step : 1
+		 * 		prep : vars
+		 ********************/
+		//44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200227_131436.csv
+		$_dpath_Raw_File_Src = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+				. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files"
+						. "\\Research\\obs\\44_\\44_5.1_10\\obs\\44_";
+	
+		$_fname_Raw_File_Src = 
+					"44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200521_154244.csv";
+				
+// 		$_fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
+// 				. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
+	
+		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
+		$_dpath_Sliced_Files = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL"
+				. "\\Admin_Projects\\curr\\data\\csv_raw";
+	
+		/********************
+		 * step : 2
+		 * 		slice
+		 ********************/
+		$result_i = LibFxAdmin::slice_Raw_Data_By_Day__V2(
+				$_dpath_Raw_File_Src
+				, $_fname_Raw_File_Src
+				, $_dpath_Sliced_Files
+		);
+	
+// 		debug("slice_Raw_Data_By_Week ==> rerulst_i : $result_i");
+	
+		/********************
+			* step : X
+			* 		vars --> for view
+		********************/
+		$time_current = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+	
+		// variables
+		$this->set("time_current", $time_current);
+	
+		/********************
+			* step : X
+			* 		view
+		********************/
+		// layout
+		$this->layout = "plain";
+	
+	}//_slice_Raw_Data_By_Day(
+	
 	
 	/******************** (20 '*'s)
 	 * public function slice_Raw_Data()
@@ -509,7 +577,9 @@ class FxAdminController extends AppController {
 		 * step : 2
 		 * 		slice
 		 ********************/
-		if (true) {
+		$flag_tmp = false;
+		
+		if ($flag_tmp) {
 		
 // 			$result_i = LibFxAdmin::slice_Raw_Data_By_Week(
 			$result_i = $this->_slice_Raw_Data_By_Week(
@@ -519,6 +589,16 @@ class FxAdminController extends AppController {
 			);
 		
 			debug("slice_Raw_Data_By_Week ==> rerulst_i : $result_i");
+			
+		} else {//if (true)
+			
+			$result_i = $this->_slice_Raw_Data_By_Day(
+					$dpath_Raw_File_Src
+					, $fname_Raw_File_Src
+					, $dpath_Sliced_Files
+			);
+			
+			debug("slice_Raw_Data_By_Day ==> rerulst_i : $result_i");
 			
 		}//if (true)
 	
