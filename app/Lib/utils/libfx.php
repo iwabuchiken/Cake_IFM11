@@ -5,7 +5,7 @@ require_once 'cons.php';
 class Libfx {
 	
 	/********************
-	* get_ListOf_BarDatas
+	* conv_CSV_Lines_To_BarDatas
 	* 
 	* @return
 	* 		-1		fopen ==> returned false

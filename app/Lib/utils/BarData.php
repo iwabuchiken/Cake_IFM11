@@ -17,6 +17,9 @@ class BarData {
 	public $rsi      = -1.0;
 	public $mfi      = -1.0;
 	
+	//_20200522_120533:tmp
+	public $force      = -1.0;
+	
 	public $bb_2S       = -1.0;
 	public $bb_1S       = -1.0;
 	public $bb_Main     = -1.0;

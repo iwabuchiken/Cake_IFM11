@@ -412,6 +412,139 @@ class FxAdminController extends AppController {
 		$this->layout = "plain";
 		
 	}//public function slice_Raw_Data_By_Week() {
+
+	/******************** (20 '*'s)
+	 * public function slice_Raw_Data_By_Week()
+	 * at : 2020/04/25 16:17:22
+	 * caller
+	 *
+	 ********************/
+	public function _slice_Raw_Data_By_Week(
+			
+			$_dpath_Raw_File_Src
+			, $_fname_Raw_File_Src
+			, $_dpath_Sliced_Files
+				
+			
+			) {
+		//_20200522_115343:caller
+		//_20200522_115347:head
+		//_20200522_115350:wl
+	
+		/********************
+		 * step : 1
+		 * 		prep : vars
+		 ********************/
+		//44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200227_131436.csv
+		$_dpath_Raw_File_Src = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+				. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files"
+						. "\\Research\\obs\\44_\\44_5.1_10\\obs\\44_";
+	
+		$_fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
+				. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
+	
+		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
+		$_dpath_Sliced_Files = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL"
+				. "\\Admin_Projects\\curr\\data\\csv_raw";
+	
+		/********************
+		 * step : 2
+		 * 		slice
+		 ********************/
+		$result_i = LibFxAdmin::slice_Raw_Data_By_Week(
+				$_dpath_Raw_File_Src
+				, $_fname_Raw_File_Src
+				, $_dpath_Sliced_Files
+		);
+	
+		debug("slice_Raw_Data_By_Week ==> rerulst_i : $result_i");
+	
+		/********************
+			* step : X
+			* 		vars --> for view
+		********************/
+		$time_current = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+	
+		// variables
+		$this->set("time_current", $time_current);
+	
+		/********************
+			* step : X
+			* 		view
+		********************/
+		// layout
+		$this->layout = "plain";
+	
+	}//public function slice_Raw_Data_By_Week() {
+	
+	
+	/******************** (20 '*'s)
+	 * public function slice_Raw_Data()
+	 * at : 2020/05/22 11:52:26
+	 * caller
+	 *
+	 ********************/
+	public function slice_Raw_Data() {
+		//_20200522_115730:caller
+		//_20200522_115734:head
+		//_20200522_115737:wl
+	
+		/********************
+		 * step : 1
+		 * 		prep : vars
+		 ********************/
+		//44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200227_131436.csv
+		$dpath_Raw_File_Src = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+				. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files"
+						. "\\Research\\obs\\44_\\44_5.1_10\\obs\\44_";
+	
+		$fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
+				. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
+	
+		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
+		$dpath_Sliced_Files = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL"
+				. "\\Admin_Projects\\curr\\data\\csv_raw";
+	
+		/********************
+		 * step : 2
+		 * 		slice
+		 ********************/
+		if (true) {
+		
+// 			$result_i = LibFxAdmin::slice_Raw_Data_By_Week(
+			$result_i = $this->_slice_Raw_Data_By_Week(
+					$dpath_Raw_File_Src
+					, $fname_Raw_File_Src
+					, $dpath_Sliced_Files
+			);
+		
+			debug("slice_Raw_Data_By_Week ==> rerulst_i : $result_i");
+			
+		}//if (true)
+	
+		/********************
+			* step : X
+			* 		vars --> for view
+		********************/
+		$time_current = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+	
+		// variables
+		$this->set("time_current", $time_current);
+	
+		/********************
+			* step : X
+			* 		view
+		********************/
+		// layout
+		$this->layout = "plain";
+		
+		// template
+		//ref https://stackoverflow.com/questions/11711385/rendering-controller-to-a-different-view-in-cakephp#11715695
+		$this -> render('slice__raw__data__by__week');	//=> works : View\FxAdmin\slice__raw__data__by__week.ctp
+// 		$this -> render('FxAdmin/slice__raw__data__by__week');
+		
+	}//slice_Raw_Data
+	
 	
 }//class ArticlesController extends AppController {
 
