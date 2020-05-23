@@ -96,6 +96,8 @@ class LibFxAdmin {
 		 * step : 2.1 : 1.1
 		 * 		get : tokens
 		 ********************/
+		//_20200523_163753:ref
+		
 		//_20200504_164530:tmp
 		$lenOf_LinesOf_File_Content__BarData = count($linesOf_File_Content__BarData);
 		
@@ -639,6 +641,77 @@ class LibFxAdmin {
 	}//public static function slice_Raw_Data_By_Week() {
 
 	/********************
+	 * test_Libfx_Conv_CSV_Lines_To_BarDatas__V2
+	 * 
+	 * 	at : 2020/05/23 16:23:24
+	 *
+	 * @return : 
+	 *
+	 ********************/
+	public static function test_Libfx_Conv_CSV_Lines_To_BarDatas__V2(
+			
+			$linesOf_File_Content
+			
+			) {
+		//_20200523_162220:caller
+		//_20200523_162233:head
+		//_20200523_162237:wl
+		
+		//test : conv to list of bardatas : 20200522_170150
+		$lenOf_Header_Lines = 2;
+		
+		//array($lo_BarDatas, array_slice($lo_CSV_Lines, 0, $lenOf_Header_Lines))
+		$valOf_Ret__Received = Libfx::conv_CSV_Lines_To_BarDatas__V2(
+										$linesOf_File_Content, $lenOf_Header_Lines);
+		
+		$lo_BarDatas		= $valOf_Ret__Received[0];
+		$lo_HeaderLines		= $valOf_Ret__Received[1];
+		
+		//_20200522_170915:tmp
+		debug("\$lo_HeaderLines =>");
+		debug($lo_HeaderLines);
+		
+		//_20200522_171234:next
+		debug("\$lo_BarDatas[0] =>");
+		debug($lo_BarDatas[0]);
+		
+	}//test_Libfx_Conv_CSV_Lines_To_BarDatas__V2
+		
+	/********************
+	 * sort_CSV_Lines_BarData__By_Date
+	 * 
+	 * 	at : 2020/05/23 16:29:17
+	 *
+	 * @return : 
+	 *
+	 ********************/
+	public static function sort_CSV_Lines_BarData__By_Date(
+			
+			$lo_CSV_Lines_BarData
+			, $sort_Direction = "ascending"
+			
+			) {
+		//_20200523_162935:caller
+		//_20200523_162940:head
+		//_20200523_162943:wl
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
+		//debug
+		debug("\$lo_CSV_Lines_BarData[0] =>");
+		debug($lo_CSV_Lines_BarData[0]);
+
+		$lenOf_LO_CSV_Lines_BarData = count($lo_CSV_Lines_BarData);
+		
+		debug("\$lo_CSV_Lines_BarData[\$lenOf_LO_CSV_Lines_BarData - 1] =>");
+		debug($lo_CSV_Lines_BarData[$lenOf_LO_CSV_Lines_BarData - 1]);
+		
+		//_20200523_164309:next
+		
+	}//sort_CSV_Lines_BarData__By_Date
+		
+	/********************
 	 * slice_Raw_Data_By_Day__V2
 	 * 
 	 * 	at : 2020/04/26 13:08:46
@@ -662,7 +735,10 @@ class LibFxAdmin {
 		 ********************/
 		//_20200425_164407:tmp
 		debug("\$_dpath_Raw_File_Src : " . $_dpath_Raw_File_Src);
-
+		
+		// num of header lines
+		$numOf_Header_Lines = 2;
+		
 		/********************
 		 * step : 1
 		 * 		load file
@@ -698,29 +774,18 @@ class LibFxAdmin {
 		 * step : Z
 		 * 		TEST
 		 ********************/
-		//test : conv to list of bardatas : 20200522_170150
-		$lenOf_Header_Lines = 2;
-		
-		//array($lo_BarDatas, array_slice($lo_CSV_Lines, 0, $lenOf_Header_Lines))
-		$valOf_Ret__Received = Libfx::conv_CSV_Lines_To_BarDatas__V2(
-										$linesOf_File_Content, $lenOf_Header_Lines);
-		
-		$lo_BarDatas		= $valOf_Ret__Received[0];
-		$lo_HeaderLines		= $valOf_Ret__Received[1];
-		
-		//_20200522_170915:tmp
-		debug("\$lo_HeaderLines =>");
-		debug($lo_HeaderLines);
-		
-		//_20200522_171234:next
-		debug("\$lo_BarDatas[0] =>");
-		debug($lo_BarDatas[0]);
-		
+// 		LibFxAdmin::test_Libfx_Conv_CSV_Lines_To_BarDatas__V2($linesOf_File_Content);
+// // 		$this->test_Libfx_Conv_CSV_Lines_To_BarDatas__V2($linesOf_File_Content, $lenOf_Header_Lines);
 
 		/********************
 		 * step : 3
-		 * 		get : day of the week
+		 * 		list of CSV lines ==> sort
 		 ********************/
+		//_20200523_163505:tmp
+		//_20200523_162935:caller
+		LibFxAdmin::sort_CSV_Lines_BarData__By_Date(
+						array_slice($linesOf_File_Content, $numOf_Header_Lines));
+// 		LibFxAdmin::sort_CSV_Lines_BarData__By_Date($linesOf_File_Content);
 		
 		/********************
 		 * step : X

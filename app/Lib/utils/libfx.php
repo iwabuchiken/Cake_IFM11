@@ -135,10 +135,17 @@ class Libfx {
 		// list
 		$lo_BarDatas = [];
 	
+		//debug:20200523_161125
+		debug("\$lo_CSV_Lines[0 + \$lenOf_Header_Lines] =>");
+		debug($lo_CSV_Lines[0 + $lenOf_Header_Lines]);
+		
 		/********************
 			* step : 0 : 2
 			* 	for-loop
 		********************/
+		//
+		$charOf_CSV_Delimiter = ";";
+		
 		// 		for ($i = 0; $i < $lenOf_LO_CSV_Lines; $i++) {
 		for ($i = 0 + $lenOf_Header_Lines; $i < $lenOf_LO_CSV_Lines; $i++) {
 			/********************
@@ -149,7 +156,13 @@ class Libfx {
 			// 			$line = $lenOf_LO_CSV_Lines[$i];
 				
 			$lenOf_Line = count($line);
-			
+
+			/********************
+			 * step : 1.1
+			 * 		tokenise
+			 ********************/
+			$tokens = explode($charOf_CSV_Delimiter, $line);
+					
 			/********************
 				* step : 2
 				* 	gen ==> instance of bardata
@@ -178,29 +191,29 @@ class Libfx {
 			********************/
 			$bd = new BarData;
 				
-			$bd->no = $line[0];
-			$bd->price_Open = $line[1];
-			$bd->price_High = $line[2];
-			$bd->price_Low = $line[3];
-			$bd->price_Close = $line[4];
+			$bd->no = $tokens[0];
+			$bd->price_Open = $tokens[1];
+			$bd->price_High = $tokens[2];
+			$bd->price_Low = $tokens[3];
+			$bd->price_Close = $tokens[4];
 				
-			$bd->rsi = $line[5];
-			$bd->mfi = $line[6];
+			$bd->rsi = $tokens[5];
+			$bd->mfi = $tokens[6];
 			
 			//_20200522_164054:tmp
-			$bd->force		= $line[7];
+			$bd->force		= $tokens[7];
 				
-			$bd->bb_2S		= $line[8];
-			$bd->bb_1S		= $line[9];
-			$bd->bb_Main	= $line[10];
-			$bd->bb_M1S		= $line[11];
-			$bd->bb_M2S		= $line[12];
+			$bd->bb_2S		= $tokens[8];
+			$bd->bb_1S		= $tokens[9];
+			$bd->bb_Main	= $tokens[10];
+			$bd->bb_M1S		= $tokens[11];
+			$bd->bb_M2S		= $tokens[12];
 				
-			$bd->diff_OC		= $line[13];
-			$bd->diff_HL		= $line[14];
+			$bd->diff_OC		= $tokens[13];
+			$bd->diff_HL		= $tokens[14];
 				
-			$bd->dateTime		= $line[15];
-			$bd->dateTime_Local	= $line[16];
+			$bd->dateTime		= $tokens[15];
+			$bd->dateTime_Local	= $tokens[16];
 				
 			/********************
 				* step : 3
