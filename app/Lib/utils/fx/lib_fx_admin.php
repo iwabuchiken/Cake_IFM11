@@ -910,7 +910,7 @@ class LibFxAdmin {
 
 		/********************
 		 * step : 3
-		 * 		list of CSV lines ==> sort
+		 * 		list of CSV lines ==> sort : A-Z
 		 ********************/
 		//debug
 		debug("\$linesOf_File_Content__Data[0] =>");
@@ -923,15 +923,176 @@ class LibFxAdmin {
 // 						array_slice($linesOf_File_Content, $numOf_Header_Lines));
 // 		LibFxAdmin::sort_CSV_Lines_BarData__By_Date($linesOf_File_Content);
 		
-		//debug
-		debug("\$linesOf_File_Content__Data__New[0] =>");
-		debug($linesOf_File_Content__Data__New[0]);
+// 		//debug
+// 		debug("\$linesOf_File_Content__Data__New[0] =>");
+// 		debug($linesOf_File_Content__Data__New[0]);
 		
 		/********************
 		 * step : 4
 		 * 		slice ==> by day
 		 ********************/
+		/********************
+		 * step : 4 : 1
+		 * 		prep : vars
+		 ********************/
 		//_20200524_115655:next
+		$lo_CSV_Lines_By_Day = array();
+		
+		$lo_CSV_Lines_Temp = array();
+		
+		// delimiter
+		$charOf_Delimiter_CSV = ";";
+		
+		//_20200524_162513:tmp
+		$maxOf_Iteration = 700;
+// 		$maxOf_Iteration = 500;
+// 		$maxOf_Iteration = 5;
+		
+		$cntOf_Iteration = 0;
+		
+		$day_Prev = "";
+		
+		$day_Current = "";
+		
+		/********************
+		 * step : 4 : 2
+		 * 		iterate
+		 ********************/
+		foreach ($linesOf_File_Content__Data__New as $line) {
+			/********************
+			 * step : 4 : 2 : 0
+			 * 		admin
+			 ********************/
+			$cntOf_Iteration += 1;
+			
+			/********************
+			 * step : 4 : 2 : 1
+			 * 		tokens
+			 ********************/
+			$tokensOf_CSV_Line = explode($charOf_Delimiter_CSV, $line);
+			
+			// len
+			$lenOf_Tokens = count($tokensOf_CSV_Line);
+			
+			//debug:20200524_160552
+// 			if ($cntOf_Iteration > $maxOf_Iteration) {
+			
+// // 				debug("\$tokensOf_CSV_Line[\$lenOf_Tokens - 2] => " 
+// // 						. $tokensOf_CSV_Line[$lenOf_Tokens - 2]);
+				
+// // 						//=>	2020.05.18 00:05
+// 				// break
+// 				debug("iteration => maxed : $maxOf_Iteration");
+				
+// 				break;
+				
+// 			}//if ($cntOf_Iteration < $maxOf_Iteration)
+			;
+			
+			/********************
+			 * step : 4 : 2 : 3
+			 * 		prep : datetime
+			 ********************/
+			$stringOf_Datetime = $tokensOf_CSV_Line[15];
+					//=>	2020.05.18 00:15'
+					
+// 			//debug
+// 			debug("\$stringOf_Datetime => " . $stringOf_Datetime);
+
+			$tokens_Datetime = explode(" ", $stringOf_Datetime);
+			
+			$tokens_Date = explode(".", $tokens_Datetime[0]);
+			
+// 			debug("\$tokens_Date =>");
+// 			debug($tokens_Date);
+				// 			(int) 0 => '2020',
+				// 			(int) 1 => '05',
+				// 			(int) 2 => '18'		
+			
+			/********************
+			 * step : 4 : 2 : 4
+			 * 		judge
+			 ********************/
+			// condition
+			$cond_1 = ($tokens_Date[2] == $day_Prev);
+			
+			// judge
+			if ($cond_1 == true) {
+			
+// 				debug("\$tokens_Date[2] == \$day_Prev : " . $tokens_Date[2] . " / $day_Prev");
+				
+				// append
+				array_push($lo_CSV_Lines_Temp, $line);
+				
+			} else {//if ($cond_1 == true)
+				
+				//_20200524_164203:tmp
+				debug("\$cond_1 ==> false : $line");
+				
+				// $lo_Tmp ==> append to : $lo_CSV_Lines_By_Day
+				array_push($lo_CSV_Lines_By_Day, $lo_CSV_Lines_Temp);
+				
+				// $lo_Tmp ==> reset
+				$lo_CSV_Lines_Temp = array();
+				
+				// $line ==> append to : $lo_Tmp
+				array_push($lo_CSV_Lines_Temp, $line);
+				
+				// $day_Prev ==> update : date of the current $line
+// 				//debug
+// 				debug("\$day_Prev => now : $day_Prev");
+				
+				
+				$day_Prev = $tokens_Date[2];
+				
+// 				//debug
+// 				debug("\$day_Prev => updated : $day_Prev");
+				
+			}//if ($cond_1 == true)
+			
+		}//foreach ($linesOf_File_Content__Data__New as $line)
+		
+		//_20200524_164445:fix
+		/********************
+		 * step : 4 : 2 : 5
+		 * 		last datetime
+		 ********************/
+		if (count($lo_CSV_Lines_Temp) > 0) {
+		
+			array_push($lo_CSV_Lines_By_Day, $lo_CSV_Lines_Temp);
+			
+		}//if (count($lo_CSV_Lines_Temp) > 0)
+		
+		//debug
+		debug("count(\$lo_CSV_Lines_By_Day) => " . count($lo_CSV_Lines_By_Day));
+		
+		//_20200524_162938:tmp
+		$lenOf_LO_CSV_Lines_By_Day = count($lo_CSV_Lines_By_Day);
+		
+		// $lo_CSV_Lines_By_Day ==> remove the first entry, which is an empty array
+		if ($lenOf_LO_CSV_Lines_By_Day > 1) {
+		
+			$lo_CSV_Lines_By_Day__Final = array_slice($lo_CSV_Lines_By_Day, 1, $lenOf_LO_CSV_Lines_By_Day);
+			
+		} else {//if ($lenOf_LO_CSV_Lines_By_Day > 1)
+			
+			$lo_CSV_Lines_By_Day__Final = $lo_CSV_Lines_By_Day;
+			
+		}//if ($lenOf_LO_CSV_Lines_By_Day > 1)
+		;
+		
+		foreach ($lo_CSV_Lines_By_Day__Final as $lines_Day) {
+// 		foreach ($lo_CSV_Lines_By_Day as $lines_Day) {
+		
+// 			debug("\$lines_Day =>");
+// 			debug($lines_Day);
+			debug("\$lines_Day[0] =>");
+			debug($lines_Day[0]);
+			
+		}//foreach ($lo_CSV_Lines_By_Day as $lines_Day)
+		
+		
+		
 		
 		/********************
 		 * step : X
