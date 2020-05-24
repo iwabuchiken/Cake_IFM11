@@ -698,14 +698,135 @@ class LibFxAdmin {
 		 * step : 0 : 1
 		 * 		prep : vars
 		 ********************/
-		//debug
-		debug("\$lo_CSV_Lines_BarData[0] =>");
-		debug($lo_CSV_Lines_BarData[0]);
-
+		// tokenizer char
+		$charOf_Tokenizer = ";";
+		
+		// len of list
 		$lenOf_LO_CSV_Lines_BarData = count($lo_CSV_Lines_BarData);
 		
-		debug("\$lo_CSV_Lines_BarData[\$lenOf_LO_CSV_Lines_BarData - 1] =>");
-		debug($lo_CSV_Lines_BarData[$lenOf_LO_CSV_Lines_BarData - 1]);
+		// first line
+		$line_First = $lo_CSV_Lines_BarData[0];
+
+		// last line
+		$line_Last = $lo_CSV_Lines_BarData[$lenOf_LO_CSV_Lines_BarData - 1];
+
+		// tokenize line : first
+		$tokensOf_Line_First = explode($charOf_Tokenizer, $line_First);
+		
+		// tokenize line : last
+		$tokensOf_Line_Last = explode($charOf_Tokenizer, $line_Last);
+
+// 		//debug
+// 		debug("\$tokensOf_Line_First =>");
+// 		debug($tokensOf_Line_First);
+		
+		// datetime : first line
+		$valOf_Datetime__First = $tokensOf_Line_First[15];
+		
+		// datetime : last line
+		$valOf_Datetime__Last = $tokensOf_Line_Last[15];
+		
+// 		//debug:20200524_112305
+// 		debug("\$valOf_Datetime__First = $valOf_Datetime__First / \$valOf_Datetime__Last = $valOf_Datetime__Last");
+		
+
+		/********************
+		 * step : 1
+		 * 		compare : datetime
+		 ********************/
+		$cond_1 = ($valOf_Datetime__First > $valOf_Datetime__Last);
+// 		$cond_1 = ($valOf_Datetime__First >= $valOf_Datetime__Last);
+		
+// 		//debug:20200524_112536
+// 		debug(($cond_1 == true) ? "first > last" : "first < last");
+
+		/********************
+		 * step : 2
+		 * 		judge
+		 ********************/
+		$cond_2 = ($cond_1 == true)
+					&& ($sort_Direction == CONS::$strOf_Sort_Direction_LO_BarDatas__ASC);
+		
+// 		//debug:20200524_112849
+// 		debug(($cond_2 == true) ? "list : first > last / param ==> " . CONS::$strOf_Sort_Direction_LO_BarDatas__ASC
+// 							. "( ==> sorting starts...)"
+// 							 : "sort ==> not sorting");
+
+		/********************
+		 * step : 3
+		 * 		sort
+		 ********************/
+		//_20200524_113854:tmp
+		if ($cond_2 == true) {
+			
+			// reverse
+			$lo_CSV_Lines_BarData__New = array_reverse($lo_CSV_Lines_BarData);
+			
+		} else {//if ($cond_2 == true)
+			
+			// not reverse
+			$lo_CSV_Lines_BarData__New = $lo_CSV_Lines_BarData;
+			
+		}//if ($cond_2 == true)
+		
+		/********************
+		 * step : 4
+		 * 		validate
+		 ********************/
+		// len of list
+		$lenOf_LO_CSV_Lines_BarData__New = count($lo_CSV_Lines_BarData__New);
+		
+		// first line
+		$line_First = $lo_CSV_Lines_BarData__New[0];
+		
+		// last line
+		$line_Last = $lo_CSV_Lines_BarData__New[$lenOf_LO_CSV_Lines_BarData__New - 1];
+		
+		// tokenize line : first
+		$tokensOf_Line_First = explode($charOf_Tokenizer, $line_First);
+		
+		// tokenize line : last
+		$tokensOf_Line_Last = explode($charOf_Tokenizer, $line_Last);
+		
+		// 		//debug
+		// 		debug("\$tokensOf_Line_First =>");
+		// 		debug($tokensOf_Line_First);
+		
+		// datetime : first line
+		$valOf_Datetime__First = $tokensOf_Line_First[15];
+		
+		// datetime : last line
+		$valOf_Datetime__Last = $tokensOf_Line_Last[15];
+		
+// 		//debug:20200524_114454
+// 		debug("\$valOf_Datetime__First (New) = $valOf_Datetime__First "
+// 				. "/ \$valOf_Datetime__Last (New) = $valOf_Datetime__Last");
+
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		set : val
+		 ********************/
+		$valOf_Ret = $lo_CSV_Lines_BarData__New;
+		
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
+				
+		
+// 		//debug
+// 		debug("\$lo_CSV_Lines_BarData[0] =>");
+// 		debug($lo_CSV_Lines_BarData[0]);
+
+// 		$lenOf_LO_CSV_Lines_BarData = count($lo_CSV_Lines_BarData);
+		
+// 		debug("\$lo_CSV_Lines_BarData[\$lenOf_LO_CSV_Lines_BarData - 1] =>");
+// 		debug($lo_CSV_Lines_BarData[$lenOf_LO_CSV_Lines_BarData - 1]);
 		
 		//_20200523_164309:next
 		
@@ -768,7 +889,17 @@ class LibFxAdmin {
 		
 		debug("count(\$linesOf_File_Content) : " . count($linesOf_File_Content));
 		
-		debug("\$linesOf_File_Content[0] : " . $linesOf_File_Content[0]);
+// 		debug("\$linesOf_File_Content[0] : " . $linesOf_File_Content[0]);
+
+		/********************
+		 * step : 2 : 2
+		 * 		lines : header, data
+		 ********************/
+		$linesOf_File_Content__Header = 
+				array_slice($linesOf_File_Content, 0, $numOf_Header_Lines);
+		
+		$linesOf_File_Content__Data = 
+				array_slice($linesOf_File_Content, $numOf_Header_Lines);
 		
 		/********************
 		 * step : Z
@@ -781,11 +912,26 @@ class LibFxAdmin {
 		 * step : 3
 		 * 		list of CSV lines ==> sort
 		 ********************/
+		//debug
+		debug("\$linesOf_File_Content__Data[0] =>");
+		debug($linesOf_File_Content__Data[0]);
+		
 		//_20200523_163505:tmp
 		//_20200523_162935:caller
-		LibFxAdmin::sort_CSV_Lines_BarData__By_Date(
-						array_slice($linesOf_File_Content, $numOf_Header_Lines));
+		$linesOf_File_Content__Data__New = 
+					LibFxAdmin::sort_CSV_Lines_BarData__By_Date($linesOf_File_Content__Data);
+// 						array_slice($linesOf_File_Content, $numOf_Header_Lines));
 // 		LibFxAdmin::sort_CSV_Lines_BarData__By_Date($linesOf_File_Content);
+		
+		//debug
+		debug("\$linesOf_File_Content__Data__New[0] =>");
+		debug($linesOf_File_Content__Data__New[0]);
+		
+		/********************
+		 * step : 4
+		 * 		slice ==> by day
+		 ********************/
+		//_20200524_115655:next
 		
 		/********************
 		 * step : X

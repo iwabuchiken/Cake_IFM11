@@ -506,7 +506,8 @@ class FxAdminController extends AppController {
 						. "\\Research\\obs\\44_\\44_5.1_10\\obs\\44_";
 	
 		$_fname_Raw_File_Src = 
-					"44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200521_154244.csv";
+					"44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200521_154244.[SLICE-1_0518-0521].csv";
+// 					"44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200521_154244.csv";
 				
 // 		$_fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
 // 				. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
