@@ -74,6 +74,9 @@ class CONS {
 	// descending, datetime
 	public static $strOf_Sort_Direction_LO_BarDatas__DSC = "descending";
 	
+	// delimiter : csv line
+	public static $charOf_Sort_Delimiter_CSV_Line = ";";
+	
 	/******************************
 	 	fx_admin : Paths and names 
 	 ******************************/

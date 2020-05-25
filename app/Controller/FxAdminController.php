@@ -520,15 +520,208 @@ class FxAdminController extends AppController {
 		 * step : 2
 		 * 		slice
 		 ********************/
+		/********************
+		 * step : 2 : 1
+		 * 		get : lines
+		 ********************/
 		//_20200524_165246:next
-		$result_i = LibFxAdmin::slice_Raw_Data_By_Day__V2(
+// 		$result_i = LibFxAdmin::slice_Raw_Data_By_Day__V2(
+
+		$valOf_Ret__Rcvd = LibFxAdmin::slice_Raw_Data_By_Day__V2(
 				$_dpath_Raw_File_Src
 				, $_fname_Raw_File_Src
 				, $_dpath_Sliced_Files
 		);
-	
+		// 		array($linesOf_File_Content__Header, $lo_CSV_Lines_By_Day__Final)
+		
+		// unpack
+		$linesOf_File_Content__Header	= $valOf_Ret__Rcvd[0];
+		$lo_CSV_Lines_By_Day__Final		= $valOf_Ret__Rcvd[1];
+		
+		// len
+		$lenOf_LO_CSV_Lines_By_Day__Final = count($lo_CSV_Lines_By_Day__Final);
+		
+		
+// 		//debug
+// 		debug("\$linesOf_File_Content__Header =>");
+// 		debug($linesOf_File_Content__Header);
+		
+// 		//debug
+// 		for ($i = 0; $i < $lenOf_LO_CSV_Lines_By_Day__Final; $i++) {
+		
+// 			$entry = $lo_CSV_Lines_By_Day__Final[$i];
+			
+// 			debug("\$i = $i");
+// 			debug($entry[0]);
+			
+// 		}//for ($i = 0; $i < $lenOf_LO_CSV_Lines_By_Day__Final; $i++)
+		
+		
+		
 // 		debug("slice_Raw_Data_By_Week ==> rerulst_i : $result_i");
-	
+
+		/********************
+		 * step : 3
+		 * 		write to file
+		 ********************/
+		//_20200525_161041:tmp
+		/********************
+		 * step : 3 : 0
+		 * 		prep
+		 ********************/
+		/********************
+		 * step : 3 : 0 : 1
+		 * 		pair, period
+		 ********************/
+		// 		array(
+		// 				(int) 0 => 'Pair=AUDJPY;Period=M5;Days=55000;Shift=1;Bars=55000;Time=20200521_154244
+		// ',
+		// 				(int) 1 => 'no;Open;High;Low;Close;RSI;MFI;Force;BB.2s;BB.1s;BB.main;BB.-1s;BB.-2s;Diff;High/Low;datetime
+		// '
+		// 		)
+		
+		
+		
+		$charOf_Delimiter_CSV_File = CONS::$charOf_Sort_Delimiter_CSV_Line;
+		
+		$lineOf_Header_Lines_First = $linesOf_File_Content__Header[0];
+		
+		$tokensOf_Header_Lines_First = explode($charOf_Delimiter_CSV_File, $lineOf_Header_Lines_First);
+		
+		$token_Pair		= $tokensOf_Header_Lines_First[0];
+		$token_Period	= $tokensOf_Header_Lines_First[1];
+		
+// 		//debug
+// 		debug("\$token_Pair = $token_Pair, \$token_Period = $token_Period");
+// 				//'$token_Pair = Pair=AUDJPY, $token_Period = Period=M5'
+		
+		$tokens_Pair = explode("=", $token_Pair);
+		$tokens_Period = explode("=", $token_Period);
+		
+		debug("\$tokens_Pair[1] = $tokens_Pair[1], \$tokens_Period[1] = $tokens_Period[1]");
+				//'$tokens_Pair[1] = AUDJPY, $tokens_Period[1] = M5'
+
+		/********************
+		 * step : 3 : 0 : 1.1
+		 * 		date : first
+		 ********************/
+		$line_CSV = $lo_CSV_Lines_By_Day__Final[0][0];
+		
+// 		debug("\$line_CSV => $line_CSV");
+
+		$tokensOf_Line_CSV = explode(CONS::$charOf_Sort_Delimiter_CSV_Line, $line_CSV);
+		
+		$token_Datetime = $tokensOf_Line_CSV[15];
+		
+		debug("\$token_Datetime => $token_Datetime");
+				//'$token_Datetime => 2020.05.18 00:05'
+
+		$tokensOf_Datetime = explode(" ", $token_Datetime);
+		
+		$tokensOf_Date = explode(".", $tokensOf_Datetime[0]);
+		
+		$strOf_Datetime_For_Dirname = join("-", $tokensOf_Date);
+		
+		debug("\$strOf_Datetime_For_Dirname => $strOf_Datetime_For_Dirname");
+				//'$strOf_Datetime_For_Dirname => 2020-05-18'
+
+		/********************
+		 * step : 3 : 0 : 1.2
+		 * 		date : last
+		 ********************/
+		$lenOf_tmp = count($lo_CSV_Lines_By_Day__Final);
+		
+		$line_CSV = $lo_CSV_Lines_By_Day__Final[$lenOf_tmp - 1][0];
+		
+		// 		debug("\$line_CSV => $line_CSV");
+		
+		$tokensOf_Line_CSV = explode(CONS::$charOf_Sort_Delimiter_CSV_Line, $line_CSV);
+		
+		$token_Datetime = $tokensOf_Line_CSV[15];
+		
+		debug("\$token_Datetime => $token_Datetime");
+		//'$token_Datetime => 2020.05.18 00:05'
+		
+		$tokensOf_Datetime = explode(" ", $token_Datetime);
+		
+		$tokensOf_Date = explode(".", $tokensOf_Datetime[0]);
+		
+		$strOf_Datetime_For_Dirname__Last_Date = join("-", $tokensOf_Date);
+		
+		debug("\$strOf_Datetime_For_Dirname__Last_Date => $strOf_Datetime_For_Dirname__Last_Date");
+		//'$strOf_Datetime_For_Dirname => 2020-05-18'
+		
+		/********************
+		 * step : 3 : 0 : 2
+		 * 		main folder name
+		 ********************/
+		$time_label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+		$dirname_Slice = "(slice-by-day)"
+				. "."
+				. "(" . $tokens_Pair[1] . "-" . $tokens_Period[1] . ")"
+				
+				. "."
+				. "(" . $strOf_Datetime_For_Dirname
+						. "_"
+						. $strOf_Datetime_For_Dirname__Last_Date
+						. ")"
+						
+				. "." . "($time_label)";
+		
+		//debug
+		debug("\$dirname_Slice => $dirname_Slice");
+		
+		/********************
+		 * step : 3 : 0 : 3
+		 * 		build : path for main folder
+		 ********************/
+		$dpath_Sliced_Files__Eigen = join("\\", array($_dpath_Sliced_Files, $dirname_Slice));
+		
+		//debug
+		debug("\$dpath_Sliced_Files__Eigen => $dpath_Sliced_Files__Eigen");
+		
+		/********************
+		 * step : 3 : 0 : 4
+		 * 		dir : make
+		 ********************/
+		if (!file_exists($dpath_Sliced_Files__Eigen)) {
+				
+			$result_bool = mkdir($dpath_Sliced_Files__Eigen, $mode=0777, $recursive=true);
+			
+			debug(($result_bool == true) ? 
+					"dir created => $dpath_Sliced_Files__Eigen"
+					 : "dir NOT created!! ==> $dpath_Sliced_Files__Eigen");
+				
+		} else {
+			
+			debug("dir exists => $dpath_Sliced_Files__Eigen");
+			
+		}//if (!file_exists($dpath_Sliced_Files__Eigen)) {
+		
+		//_20200525_164903:tmp
+		
+		/********************
+		 * step : 3 : X
+		 * 		iterate
+		 ********************/
+		for ($i = 0; $i < $lenOf_LO_CSV_Lines_By_Day__Final; $i++) {
+		
+			$entry = $lo_CSV_Lines_By_Day__Final[$i];
+			
+// 			debug("\$i = $i");
+// 			debug($entry[0]);
+					//'690;70.011;70.011;69.994;69.994;54.50943;40.98804;-0.008500000000000001;70.04900000000001;7
+		
+			/********************
+			 * step : 3 : 1
+			 * 		build : file name
+			 ********************/
+			
+			
+		}//for ($i = 0; $i < $lenOf_LO_CSV_Lines_By_Day__Final; $i++)
+				
+		
 		/********************
 			* step : X
 			* 		vars --> for view

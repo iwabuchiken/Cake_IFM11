@@ -838,6 +838,7 @@ class LibFxAdmin {
 	 * 	at : 2020/04/26 13:08:46
 	 *
 	 * @return : 
+	 *			array($linesOf_File_Content__Header, $lo_CSV_Lines_By_Day__Final)
 	 *
 	 ********************/
 	public static function slice_Raw_Data_By_Day__V2(
@@ -1063,6 +1064,10 @@ class LibFxAdmin {
 			
 		}//if (count($lo_CSV_Lines_Temp) > 0)
 		
+		/********************
+		 * step : 4 : 3
+		 * 		$lo_CSV_Lines_By_Day ==> delete first entry
+		 ********************/
 		//debug
 		debug("count(\$lo_CSV_Lines_By_Day) => " . count($lo_CSV_Lines_By_Day));
 		
@@ -1081,6 +1086,7 @@ class LibFxAdmin {
 		}//if ($lenOf_LO_CSV_Lines_By_Day > 1)
 		;
 		
+		//debug
 		foreach ($lo_CSV_Lines_By_Day__Final as $lines_Day) {
 // 		foreach ($lo_CSV_Lines_By_Day as $lines_Day) {
 		
@@ -1091,8 +1097,7 @@ class LibFxAdmin {
 			
 		}//foreach ($lo_CSV_Lines_By_Day as $lines_Day)
 		
-		
-		
+		//_20200525_160049:tmp
 		
 		/********************
 		 * step : X
@@ -1102,7 +1107,8 @@ class LibFxAdmin {
 		 * step : X : 1
 		 * 		set : val
 		 ********************/
-		$valOf_Ret = -1;
+		$valOf_Ret = array($linesOf_File_Content__Header, $lo_CSV_Lines_By_Day__Final);
+// 		$valOf_Ret = -1;
 		
 		/********************
 		 * step : X : 2
