@@ -832,7 +832,186 @@ class LibFxAdmin {
 		//_20200523_164309:next
 		
 	}//sort_CSV_Lines_BarData__By_Date
+
+	/********************
+	 * sort_CSV_Lines_BarData__By_Date
+	 *
+	 * 	at : 2020/05/23 16:29:17
+	 *
+	 * @return :
+	 *
+	 ********************/
+	public static function sort_CSV_Lines_BarData__By_Date__V2(
+				
+			$lo_CSV_Lines_BarData
+			, $sort_Direction = "ascending"
 		
+	) {
+		//_20200526_182641:caller
+		//_20200526_182645:head
+		//_20200526_182648:wl
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
+		// tokenizer char
+		$charOf_Tokenizer = ";";
+	
+		// len of list
+		$lenOf_LO_CSV_Lines_BarData = count($lo_CSV_Lines_BarData);
+	
+		// first line
+		$line_First = $lo_CSV_Lines_BarData[0];
+	
+		// last line
+		$line_Last = $lo_CSV_Lines_BarData[$lenOf_LO_CSV_Lines_BarData - 1];
+	
+		// tokenize line : first
+		$tokensOf_Line_First = explode($charOf_Tokenizer, $line_First);
+	
+		// tokenize line : last
+		$tokensOf_Line_Last = explode($charOf_Tokenizer, $line_Last);
+	
+		// datetime : first line
+		$valOf_Datetime__First = $tokensOf_Line_First[15];
+	
+		// datetime : last line
+		$valOf_Datetime__Last = $tokensOf_Line_Last[15];
+
+		debug("pre-sorting");
+
+		//debug
+		debug("\$valOf_Datetime__First (current) = $valOf_Datetime__First "
+				. "/ \$valOf_Datetime__Last (current) = $valOf_Datetime__Last");
+		
+		/********************
+		 * step : 1
+		* 		compare : datetime
+		********************/
+		//_20200526_115755:tmp
+		$cond_1 = ($valOf_Datetime__First > $valOf_Datetime__Last);
+		
+		/********************
+		 * step : 2
+		* 		judge
+		********************/
+		//_20200526_183618:tmp
+		
+		// default val
+		$cond_Final__Exec_Sort = false;
+		
+		/********************
+		 * step : 2 : 1
+		* 		param : ascending
+		* 		list : first > last (e.g. : first = 05.20, last = 05.18)
+		********************/
+		if (
+			   ($sort_Direction == CONS::$strOf_Sort_Direction_LO_BarDatas__ASC)
+			&& ($valOf_Datetime__First > $valOf_Datetime__Last)
+				) {
+			
+			// flag ==> true
+			$cond_Final__Exec_Sort = true;
+					
+		}
+
+		/********************
+		 * step : 2 : 2
+		 * 		param : descending
+		 * 		list : first < last (e.g. : first = 05.18, last = 05.20)
+		 ********************/
+		if (
+				($sort_Direction == CONS::$strOf_Sort_Direction_LO_BarDatas__DSC)
+				&& ($valOf_Datetime__First < $valOf_Datetime__Last)
+		) {
+				
+			// flag ==> true
+			$cond_Final__Exec_Sort = true;
+				
+		}
+		
+		/********************
+		 * step : 3
+		* 		sort
+		********************/
+		//_20200524_113854:tmp
+// 		if ($cond_2 == true) {
+		if ($cond_Final__Exec_Sort == true) {
+				
+			// reverse
+			$lo_CSV_Lines_BarData__New = array_reverse($lo_CSV_Lines_BarData);
+				
+		} else {//if ($cond_2 == true)
+				
+			// not reverse
+			$lo_CSV_Lines_BarData__New = $lo_CSV_Lines_BarData;
+				
+		}//if ($cond_2 == true)
+	
+		/********************
+		 * step : 4
+		 * 		validate
+		 ********************/
+		// len of list
+		$lenOf_LO_CSV_Lines_BarData__New = count($lo_CSV_Lines_BarData__New);
+	
+		// first line
+		$line_First = $lo_CSV_Lines_BarData__New[0];
+	
+		// last line
+		$line_Last = $lo_CSV_Lines_BarData__New[$lenOf_LO_CSV_Lines_BarData__New - 1];
+	
+		// tokenize line : first
+		$tokensOf_Line_First = explode($charOf_Tokenizer, $line_First);
+	
+		// tokenize line : last
+		$tokensOf_Line_Last = explode($charOf_Tokenizer, $line_Last);
+	
+		// 		//debug
+		// 		debug("\$tokensOf_Line_First =>");
+		// 		debug($tokensOf_Line_First);
+	
+		// datetime : first line
+		$valOf_Datetime__First = $tokensOf_Line_First[15];
+	
+		// datetime : last line
+		$valOf_Datetime__Last = $tokensOf_Line_Last[15];
+	
+		//debug:20200524_114454
+		debug("\$valOf_Datetime__First (New) = $valOf_Datetime__First "
+				. "/ \$valOf_Datetime__Last (New) = $valOf_Datetime__Last");
+	
+		/********************
+		 * step : X
+		* 		return
+		********************/
+		/********************
+		 * step : X : 1
+		* 		set : val
+		********************/
+		$valOf_Ret = $lo_CSV_Lines_BarData__New;
+	
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		return $valOf_Ret;
+	
+	
+		// 		//debug
+		// 		debug("\$lo_CSV_Lines_BarData[0] =>");
+		// 		debug($lo_CSV_Lines_BarData[0]);
+	
+		// 		$lenOf_LO_CSV_Lines_BarData = count($lo_CSV_Lines_BarData);
+	
+		// 		debug("\$lo_CSV_Lines_BarData[\$lenOf_LO_CSV_Lines_BarData - 1] =>");
+		// 		debug($lo_CSV_Lines_BarData[$lenOf_LO_CSV_Lines_BarData - 1]);
+	
+		//_20200523_164309:next
+	
+	}//public static function sort_CSV_Lines_BarData__By_Date__V2
+	
+	
 	/********************
 	 * slice_Raw_Data_By_Day__V2
 	 * 

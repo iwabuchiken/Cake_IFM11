@@ -849,12 +849,16 @@ class FxAdminController extends AppController {
 			$lo_CSV_Lines = $lo_CSV_Lines_By_Day__Final[$i];
 			
 			//_20200526_115844:next
+			$sort_Direction = CONS::$strOf_Sort_Direction_LO_BarDatas__DSC;
+			
+			$lo_CSV_Lines__Sorted = LibFxAdmin::sort_CSV_Lines_BarData__By_Date__V2($lo_CSV_Lines, $sort_Direction);
 			
 			/********************
 			 * step : 4 : 2 : 5.2
 			 * 		write : lines
 			 ********************/
-			foreach ($lo_CSV_Lines as $lineOf_CSV) {
+// 			foreach ($lo_CSV_Lines as $lineOf_CSV) {
+			foreach ($lo_CSV_Lines__Sorted as $lineOf_CSV) {
 			
 				fwrite($fout, $lineOf_CSV);
 				
@@ -901,6 +905,12 @@ class FxAdminController extends AppController {
 		//_20200522_115734:head
 		//_20200522_115737:wl
 	
+		/********************
+		 * step : 0
+		 * 		parameters
+		 ********************/
+		//_20200526_184754:next
+		
 		/********************
 		 * step : 1
 		 * 		prep : vars
