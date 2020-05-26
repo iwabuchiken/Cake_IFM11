@@ -483,6 +483,7 @@ class FxAdminController extends AppController {
 	 * 
 	 * caller
 	 *
+	 *	http://localhost/Eclipse_Luna/Cake_IFM11/fx_admin/slice_Raw_Data
 	 ********************/
 	public function _slice_Raw_Data_By_Day(
 			
@@ -657,9 +658,15 @@ class FxAdminController extends AppController {
 		 ********************/
 		$time_label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
 		
-		$dirname_Slice = "(slice-by-day)"
+		$strOf_Genre_Name = "slice-by-day";
+		
+		$strOf_Pair_Period = $tokens_Pair[1] . "-" . $tokens_Period[1];
+		
+// 		$dirname_Slice = "(slice-by-day)"
+		$dirname_Slice = "(" . $strOf_Genre_Name . ")"
 				. "."
-				. "(" . $tokens_Pair[1] . "-" . $tokens_Period[1] . ")"
+				. "(" . $strOf_Pair_Period . ")"
+// 				. "(" . $tokens_Pair[1] . "-" . $tokens_Period[1] . ")"
 				
 				. "."
 				. "(" . $strOf_Datetime_For_Dirname
@@ -703,8 +710,10 @@ class FxAdminController extends AppController {
 		
 		/********************
 		 * step : 3 : X
-		 * 		iterate
+		 * 		iterate : file name
 		 ********************/
+		$lo_File_Name_Sliced_By_Day = array();
+		
 		for ($i = 0; $i < $lenOf_LO_CSV_Lines_By_Day__Final; $i++) {
 		
 			$entry = $lo_CSV_Lines_By_Day__Final[$i];
@@ -717,10 +726,150 @@ class FxAdminController extends AppController {
 			 * step : 3 : 1
 			 * 		build : file name
 			 ********************/
+			/********************
+			 * step : 3 : 1 : 1
+			 * 		get : datetime
+			 ********************/
+			$tokens = explode($charOf_Delimiter_CSV_File, $entry[0]);
+// 			$tokens = explode($charOf_Delimiter_CSV_File, $entry);
 			
+			$strOf_Datetime = $tokens[15];
+			
+// 			debug("\$strOf_Datetime => " . $strOf_Datetime);
+// 					//'$strOf_Datetime => 2020.05.18 00:05'
+
+			$tokensOf_Datetime = explode(" ", $strOf_Datetime);
+			
+// 			debug("\$tokensOf_Datetime[0] => " . $tokensOf_Datetime[0]);
+					//'$tokensOf_Datetime[0] => 2020.05.18'
+			
+			$tokensOf_Date = explode(".", $tokensOf_Datetime[0]);
+			
+			$strOf_Datetime__Final = join("-", $tokensOf_Date);
+			
+			debug("\$strOf_Datetime__Final => " . $strOf_Datetime__Final);
+
+			/********************
+			 * step : 3 : 1 : 2
+			 * 		build
+			 ********************/
+			$fname__Final = "($strOf_Genre_Name).($strOf_Pair_Period).($strOf_Datetime__Final).($time_label).csv";
+			
+			/********************
+			 * step : 3 : 2
+			 * 		append
+			 ********************/
+			array_push($lo_File_Name_Sliced_By_Day, $fname__Final);
+			
+// 			debug("\$fname__Final => " . $fname__Final);
+			
+// 			$tokensOf_Date = explode(".", $tokensOf_Datetime[0]);
+			
+// 			$token_Datetime = $tokensOf_Line_CSV[15];
+			
+// 			debug("\$token_Datetime => $token_Datetime");
+// 			//'$token_Datetime => 2020.05.18 00:05'
+			
+// 			$tokensOf_Datetime = explode(" ", $token_Datetime);
+			
+// 			$tokensOf_Date = explode(".", $tokensOf_Datetime[0]);
+			
+// 			$strOf_Datetime_For_Dirname__Last_Date = join("-", $tokensOf_Date);
+// 				// 			$tokens = explode($charOf_Delimiter_CSV_File, $entry);
+			
+// 			$strOf_Datetime = $tokens[15];
+// 			
 			
 		}//for ($i = 0; $i < $lenOf_LO_CSV_Lines_By_Day__Final; $i++)
+		
+		//debug
+// 		debug("\$lo_File_Name_Sliced_By_Day =>");
+// 		debug($lo_File_Name_Sliced_By_Day);
+		
+		/********************
+		 * step : 4
+		 * 		iterate : write to file
+		 ********************/
+		/********************
+		 * step : 4 : 1
+		 * 		prep
+		 ********************/
+		$lenOf_LO_File_Name_Sliced_By_Day = count($lo_File_Name_Sliced_By_Day);
+		
+		/********************
+		 * step : 4 : 2
+		 * 		iterate
+		 ********************/
+		for ($i = 0; $i < $lenOf_LO_File_Name_Sliced_By_Day; $i++) {
+			/********************
+			 * step : 4 : 2 : 1
+			 * 		get : entry
+			 ********************/
+			$entry = $lo_File_Name_Sliced_By_Day[$i];
+			
+			/********************
+			 * step : 4 : 2 : 2
+			 * 		build : full path
+			 ********************/
+			$fpath_Out_CSV_By_Day = join(DIRECTORY_SEPARATOR, array($dpath_Sliced_Files__Eigen, $entry));
+			
+			//_20200526_114404:tmp
+			debug("\$fpath_Out_CSV_By_Day =>");
+			debug($fpath_Out_CSV_By_Day);
+			
+			/********************
+			 * step : 4 : 2 : 3
+			 * 		file : open
+			 ********************/
+			//_20200526_114428:tmp
+			$fout = fopen($fpath_Out_CSV_By_Day, "w");
+			
+			/********************
+			 * step : 4 : 2 : 4
+			 * 		write : header
+			 ********************/
+			//_20200526_114637:tmp
+			foreach ($linesOf_File_Content__Header as $line) {
+			
+				fwrite($fout, $line);
 				
+			}//foreach ($linesOf_File_Content__Header as $line)
+			
+// 			fwrite($fout, "\n");
+			
+			/********************
+			 * step : 4 : 2 : 5
+			 * 		write : data
+			 ********************/
+			//_20200526_115023:tmp
+			/********************
+			 * step : 4 : 2 : 5.1
+			 * 		get : list of csv lines
+			 ********************/
+			$lo_CSV_Lines = $lo_CSV_Lines_By_Day__Final[$i];
+			
+			//_20200526_115844:next
+			
+			/********************
+			 * step : 4 : 2 : 5.2
+			 * 		write : lines
+			 ********************/
+			foreach ($lo_CSV_Lines as $lineOf_CSV) {
+			
+				fwrite($fout, $lineOf_CSV);
+				
+// 				fwrite($fout, "\n");
+				
+			}//foreach ($lo_CSV_Lines as $lineOf_CSV)
+			
+			/********************
+			 * step : 4 : 2 : X
+			 * 		file : close
+			 ********************/
+			fclose($fout);
+		
+		}//for ($i = 0; $i < $lenOf_LO_File_Name_Sliced_By_Day; $i++)
+		
 		
 		/********************
 			* step : X

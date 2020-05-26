@@ -734,6 +734,7 @@ class LibFxAdmin {
 		 * step : 1
 		 * 		compare : datetime
 		 ********************/
+		//_20200526_115755:tmp
 		$cond_1 = ($valOf_Datetime__First > $valOf_Datetime__Last);
 // 		$cond_1 = ($valOf_Datetime__First >= $valOf_Datetime__Last);
 		
@@ -1086,16 +1087,16 @@ class LibFxAdmin {
 		}//if ($lenOf_LO_CSV_Lines_By_Day > 1)
 		;
 		
-		//debug
-		foreach ($lo_CSV_Lines_By_Day__Final as $lines_Day) {
-// 		foreach ($lo_CSV_Lines_By_Day as $lines_Day) {
+// 		//debug
+// 		foreach ($lo_CSV_Lines_By_Day__Final as $lines_Day) {
+// // 		foreach ($lo_CSV_Lines_By_Day as $lines_Day) {
 		
-// 			debug("\$lines_Day =>");
-// 			debug($lines_Day);
-			debug("\$lines_Day[0] =>");
-			debug($lines_Day[0]);
+// // 			debug("\$lines_Day =>");
+// // 			debug($lines_Day);
+// 			debug("\$lines_Day[0] =>");
+// 			debug($lines_Day[0]);
 			
-		}//foreach ($lo_CSV_Lines_By_Day as $lines_Day)
+// 		}//foreach ($lo_CSV_Lines_By_Day as $lines_Day)
 		
 		//_20200525_160049:tmp
 		
