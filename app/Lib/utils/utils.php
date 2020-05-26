@@ -77,6 +77,155 @@ class Utils {
 	
 	}//function get_CurrentTime2($labelType)
 
+	/********************
+	* write_Log__Simple
+	* at : 2020/05/26 08:20:58
+	* caller
+	* 		
+	* @return
+	********************/
+	public static function
+	write_Log__Simple($dpath, $fname, $text, $file, $line) {
+// 	write_Log__Simple($dpath, $text, $file, $line) {
+	
+		$max_LineNum = CONS::$logFile_maxLineNum;
+	
+		$path_LogFile = join(
+				//ref https://stackoverflow.com/questions/26881333/when-to-use-directory-separator-in-php-code
+				DIRECTORY_SEPARATOR,
+// 				DS,
+				array($dpath, $fname));
+// 				array($dpath, CONS::$fname_Log));
+		// 					array($dpath, "log.txt"));
+	
+		//debug
+		$msg_tmp = "[" . basename(__FILE__) . ":" . __LINE__ . "]";
+		$msg_tmp .= " "
+					. "\$path_LogFile => $path_LogFile";
+		
+		echo $msg_tmp;
+		
+		/****************************************
+		 * Dir exists?
+		****************************************/
+		if (!file_exists($dpath)) {
+	
+			mkdir($dpath, $mode=0777, $recursive=true);
+	
+		}
+	
+		/****************************************
+		 * File exists?
+			****************************************/
+		if (!file_exists($path_LogFile)) {
+	
+			// 			mkdir($path_LogFile, $mode=0777);
+			//REF touch http://php.net/touch
+			$res = touch($path_LogFile);
+	
+			if ($res == false) {
+	
+				return;
+	
+			}
+	
+		}
+	
+// 		/****************************************
+// 		 * File => longer than the max num?
+// 			****************************************/
+// 		//REF read content http://www.php.net/manual/en/function.file.php
+// 		$lines = file($path_LogFile);
+	
+// 		$file_Length = count($lines);
+	
+// 		$log_File = null;
+	
+// 		if ($file_Length > $max_LineNum) {
+	
+// 			$dname = dirname($path_LogFile);
+				
+// 			$fname = null;
+				
+// 			if (Utils::get_HostName() == "localhost") {
+	
+// 				$fname = CONS::$fname_Log_trunk
+// 				.CONS::$fname_Log_Suffix_Local
+// 				."_".Utils::get_CurrentTime2(
+// 						CONS::$timeLabelTypes['serial'])
+// 						.CONS::$fname_Log_ext;
+	
+// 			} else {
+	
+// 				$fname = CONS::$fname_Log_trunk
+// 				.CONS::$fname_Log_Suffix_Remote
+// 				."_".Utils::get_CurrentTime2(
+// 						CONS::$timeLabelTypes['serial'])
+// 						.CONS::$fname_Log_ext;
+	
+// 			}
+	
+// 			$new_name = join(
+// 					DS,
+// 					array(
+// 							$dname,
+// 							$fname
+// 							// // 								"log"
+// 					// 								CONS::$fname_Log_trunk
+// 					// 								.CONS::fna
+// 					// 								."_".Utils::get_CurrentTime2(
+// 							// 										CONS::$timeLabelTypes['serial'])
+// 					// 								.CONS::$fname_Log_ext
+// 					// // 								.".txt"
+// 					)
+// 			);
+	
+// 			$res = rename($path_LogFile, $new_name);
+	
+// 		} else {
+	
+// 		}
+	
+// 		/******************************
+	
+// 		modify: file name
+	
+// 		******************************/
+// 		$tmp = strpos(strtolower($file), "c");
+	
+// 		if ($tmp == 0) {
+				
+// 			$file = str_replace(ROOT, "", $file);
+				
+// 		}
+	
+		/****************************************
+		 * File: open
+			****************************************/
+		$log_File = fopen($path_LogFile, "a");
+	
+		/****************************************
+		 * Write
+		****************************************/
+		// 		//REF replace http://oshiete.goo.ne.jp/qa/3163848.html
+		// 		$file = str_replace(ROOT.DS, "", $file);
+	
+		$time = Utils::get_CurrentTime();
+	
+		// 		$full_Text = "[$time : $file : $line] %% $text"."\n";
+		$full_Text = "[$time : $file : $line] $text"."\n";
+	
+		$res = fwrite($log_File, $full_Text);
+	
+		/****************************************
+		 * File: Close
+		****************************************/
+		fclose($log_File);
+			
+	}//write_Log__Simple($dpath, $text, $file, $line)
+	
+	
+	
 	public static function 
 	write_Log($dpath, $text, $file, $line) {
 	
