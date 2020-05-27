@@ -67,6 +67,11 @@ class CONS {
 	 	fx_admin 
 	 ************************************************************/
 	/******************************
+	 	fx_admin : params
+	 ******************************/
+	public static $param_Slice_Raw_Data__Fname_Raw_File_Src = "param_Slice_Raw_Data__Fname_Raw_File_Src";
+				
+	/******************************
 	 	fx_admin : utils
 	 ******************************/
 	// ascending, datetime

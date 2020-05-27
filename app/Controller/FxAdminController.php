@@ -501,22 +501,27 @@ class FxAdminController extends AppController {
 		 * step : 1
 		 * 		prep : vars
 		 ********************/
-		//44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200227_131436.csv
-		$_dpath_Raw_File_Src = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
-				. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files"
-						. "\\Research\\obs\\44_\\44_5.1_10\\obs\\44_";
+// 		//44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200227_131436.csv
+// 		$_dpath_Raw_File_Src = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+// 				. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files"
+// 						. "\\Research\\obs\\44_\\44_5.1_10\\obs\\44_";
 	
-		$_fname_Raw_File_Src = 
-					"44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200521_154244.[SLICE-1_0518-0521].csv";
-// 					"44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200521_154244.csv";
+// 		$_fname_Raw_File_Src = 
+// 					"44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200521_154244.[SLICE-1_0518-0521].csv";
+// // 					"44_5.1_10_rawdata.(AUDJPY).(Period-M5).(NumOfUnits-55000).(Bars-55000).20200521_154244.csv";
 				
-// 		$_fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
-// 				. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
+// // 		$_fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
+// // 				. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
 	
-		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
-		$_dpath_Sliced_Files = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL"
-				. "\\Admin_Projects\\curr\\data\\csv_raw";
+// 		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
+// 		$_dpath_Sliced_Files = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL"
+// 				. "\\Admin_Projects\\curr\\data\\csv_raw";
 	
+		debug("\$_fname_Raw_File_Src => " . $_fname_Raw_File_Src);
+		
+// 		//debug
+// 		return;
+		
 		/********************
 		 * step : 2
 		 * 		slice
@@ -906,10 +911,24 @@ class FxAdminController extends AppController {
 		//_20200522_115737:wl
 	
 		/********************
-		 * step : 0
+		 * step : 0 : 1
 		 * 		parameters
 		 ********************/
+		/********************
+		 * step : 0 : 1 : 1
+		 * 		Fname_Raw_File_Src
+		 ********************/
 		//_20200526_184754:next
+		//$fname_Raw_File_Src
+		//param_Slice_Raw_Data__Fname_Raw_File_Src
+		@$query_Slice_Raw_Data__Fname_Raw_File_Src = 
+					$this->request->query[CONS::$param_Slice_Raw_Data__Fname_Raw_File_Src];
+// 		@$query_Article_Genre = $this->request->query['fname_Raw_File_Src'];
+		
+		debug(($query_Slice_Raw_Data__Fname_Raw_File_Src == null) ?
+					 "\$query_Slice_Raw_Data__Fname_Raw_File_Src => null"
+					 : "\$query_Slice_Raw_Data__Fname_Raw_File_Src => NOT null : $query_Slice_Raw_Data__Fname_Raw_File_Src");
+// 		debug("\$query_Slice_Raw_Data__Fname_Raw_File_Src => " . $query_Slice_Raw_Data__Fname_Raw_File_Src);
 		
 		/********************
 		 * step : 1
@@ -920,41 +939,104 @@ class FxAdminController extends AppController {
 				. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files"
 						. "\\Research\\obs\\44_\\44_5.1_10\\obs\\44_";
 	
-		$fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
-				. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
+		// fname_Raw_File_Src
+		if ($query_Slice_Raw_Data__Fname_Raw_File_Src == null) {
+		
+			$fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)" 
+							. ".(NumOfUnits-55000).(Bars-55000)" 
+							. ".20200521_154244.[SLICE-1_0518-0521].csv";
+// 			$fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
+// 					. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
+		
+		} else {
+		
+			$fname_Raw_File_Src = $query_Slice_Raw_Data__Fname_Raw_File_Src;
+			
+		}//if ($query_Slice_Raw_Data__Fname_Raw_File_Src == null)
+		
+		
+// 		$fname_Raw_File_Src = "44_5.1_10_rawdata.(AUDJPY).(Period-M5)."
+// 				. "(NumOfUnits-55000).(Bars-55000).20200227_131436.csv";
 	
 		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
 		$dpath_Sliced_Files = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL"
 				. "\\Admin_Projects\\curr\\data\\csv_raw";
 	
 		/********************
-		 * step : 2
-		 * 		slice
+		 * step : 1 : 2
+		 * 		validate : source file --> exists
 		 ********************/
-		$flag_tmp = false;
+		$fpath_Raw_File_Src = join(DIRECTORY_SEPARATOR, array($dpath_Raw_File_Src, $fname_Raw_File_Src));
 		
-		if ($flag_tmp) {
+		// condition
+		$cond_1 = file_exists($fpath_Raw_File_Src);
 		
-// 			$result_i = LibFxAdmin::slice_Raw_Data_By_Week(
-			$result_i = $this->_slice_Raw_Data_By_Week(
-					$dpath_Raw_File_Src
-					, $fname_Raw_File_Src
-					, $dpath_Sliced_Files
-			);
+		// judge
+		if ($cond_1 == true) {
 		
-			debug("slice_Raw_Data_By_Week ==> rerulst_i : $result_i");
+			/********************
+			 * step : 2
+			 * 		slice
+			 ********************/
+			$flag_tmp = false;
 			
-		} else {//if (true)
+			if ($flag_tmp) {
 			
-			$result_i = $this->_slice_Raw_Data_By_Day(
-					$dpath_Raw_File_Src
-					, $fname_Raw_File_Src
-					, $dpath_Sliced_Files
-			);
+	// 			$result_i = LibFxAdmin::slice_Raw_Data_By_Week(
+				$result_i = $this->_slice_Raw_Data_By_Week(
+						$dpath_Raw_File_Src
+						, $fname_Raw_File_Src
+						, $dpath_Sliced_Files
+				);
 			
-			debug("slice_Raw_Data_By_Day ==> rerulst_i : $result_i");
+				debug("slice_Raw_Data_By_Week ==> rerulst_i : $result_i");
+				
+			} else {//if (true)
+				
+				$result_i = $this->_slice_Raw_Data_By_Day(
+						$dpath_Raw_File_Src
+						, $fname_Raw_File_Src
+						, $dpath_Sliced_Files
+				);
+				
+				debug("slice_Raw_Data_By_Day ==> rerulst_i : $result_i");
+				
+			}//if (true)			
+				
+		} else {//if ($cond_1 == true)
 			
-		}//if (true)
+			debug("file ==> NOT exist : $fpath_Raw_File_Src");
+			
+		}//if ($cond_1 == true)
+		
+// 		/********************
+// 		 * step : 2
+// 		 * 		slice
+// 		 ********************/
+// 		$flag_tmp = false;
+		
+// 		if ($flag_tmp) {
+		
+// // 			$result_i = LibFxAdmin::slice_Raw_Data_By_Week(
+// 			$result_i = $this->_slice_Raw_Data_By_Week(
+// 					$dpath_Raw_File_Src
+// 					, $fname_Raw_File_Src
+// 					, $dpath_Sliced_Files
+// 			);
+		
+// 			debug("slice_Raw_Data_By_Week ==> rerulst_i : $result_i");
+			
+// 		} else {//if (true)
+			
+// 			$result_i = $this->_slice_Raw_Data_By_Day(
+// 					$dpath_Raw_File_Src
+// 					, $fname_Raw_File_Src
+// 					, $dpath_Sliced_Files
+// 			);
+			
+// 			debug("slice_Raw_Data_By_Day ==> rerulst_i : $result_i");
+			
+// 		}//if (true)
 	
 		/********************
 			* step : X

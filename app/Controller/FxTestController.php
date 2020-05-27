@@ -1256,6 +1256,69 @@ class FxTestController extends AppController {
 	}//public function fx_tester_T_1() {
 
 	//_20200104_163637:next
+
+	/********************
+	 * 
+	 * fx_tester_T_1_V2
+	 * 	at : 2020/05/27 10:23:18
+	 * 
+	 ********************/
+	// 	public function fx_tester_T_1_TMP() {
+	public function fx_tester_T_1_V2() {
+		//_20200527_102334:caller
+		//_20200527_102338:head
+		//_20200527_102341:wl
+	
+		/********************
+		 * step : 0 : -1
+		 * 		dispatch : BUY, SELL
+		 ********************/
+		/********************
+		 * step : 0 : -1.1
+		 * 		param
+		 ********************/
+		@$query_Order_Genre = $this->request->query[CONS::$param_Tester_T_1__Order_Genre];
+		
+		/********************
+		 * step : 0 : -1.2
+		 * 		dispatch
+		 ********************/
+		if ($query_Order_Genre == CONS::$param_Tester_T_1__Order_Genre__BUY) {
+	
+			debug("calling --> fx_tester_T_1__Order_Buy");
+			
+			//_20200527_103506:next
+// 			$this->fx_tester_T_1__Order_Buy();
+				
+		} else if ($query_Order_Genre == CONS::$param_Tester_T_1__Order_Genre__SELL) {
+				
+			debug("calling --> fx_tester_T_1__Order_Sell");
+	
+		} else {
+	
+			debug("calling --> NOT");
+				
+		}//if ($query_Order_Genre == CONS::$param_Tester_T_1__Order_Genre__BUY)
+	
+		
+		/********************
+		 * step : X
+		 * 	set : values for view
+		 *
+		 ********************/
+		$time_current = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+		// variables
+		$this->set("time_current", $time_current);
+		
+		// layout
+		$this->layout = "plain";
+		
+		// debug
+		return ;
+	
+	}//public function fx_tester_T_1_V2() {
+	
 	
 }//class FxTesterController extends AppController {
 
