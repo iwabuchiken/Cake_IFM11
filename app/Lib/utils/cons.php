@@ -86,6 +86,7 @@ class CONS {
 	 	fx_admin : Paths and names 
 	 ******************************/
 	public static $dpath_Log_Fx_Admin = "Log_Fx_Admin";
+	
 	public static $fname_Log_Fx_Admin = "log_fx_admin.log";
 // 	public static final $fname_Log_Fx_Admin__Orig = "log_fx_admin.log";	//=> "Error: Cannot declare property CONS::$fname_Log_Fx_Admin__Orig final, the final modifier is allowed only for methods and classes"
 
@@ -100,6 +101,9 @@ class CONS {
 	 ************************************************************/
 	public static $strOf_DetectPattern_Name__DP_All = "dp-all";
 	
+	/************************************************************
+	 	FxTestController
+	 ************************************************************/
 	/************************************************************
 	 	lib_ea_tester
 	 ************************************************************/
@@ -132,6 +136,13 @@ class CONS {
 	/******************************
 	 	Paths and names : fx : testers
 	 ******************************/
+	public static $dpath_Log_Fx_Tester = "Log_Fx_Tester";
+	
+	// fx_tester_T_1__Order_Buy__V2
+	public static $fname_Log_Fx_Tester			= "log_fx_tester.log";
+	public static $fname_Log_Fx_Tester__Trunk = "log_fx_tester";
+	public static $fname_Log_Fx_Tester__Ext = ".log";
+	
 	//_20200211_151350:tmp
 	// C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
 	public static 	$dpath_FX_Tester_CSV_File = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw";
@@ -186,6 +197,8 @@ class CONS {
 	public static $param_Tester_T_1__Order_Genre = "_Tester_T_1__Order_Genre";
 	public static $param_Tester_T_1__Order_Genre__SELL = "_Tester_T_1__Order_Genre__SELL";
 	public static $param_Tester_T_1__Order_Genre__BUY = "_Tester_T_1__Order_Genre__BUY";
+	
+	public static $param_Tester_T_1__Source_CSV_File_Name = "Tester_T_1__Source_CSV_File_Name";
 
 	/*******************************
 	 	numbers

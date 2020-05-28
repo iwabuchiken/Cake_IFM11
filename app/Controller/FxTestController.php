@@ -93,6 +93,7 @@ class FxTestController extends AppController {
 		 * step : 0 : 0 : A : 1
 		 * 	params
 		********************/
+		//_20200528_140405:ref
 		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query[CONS::$param_Val_TA_Fx_Test_Index_Tester_1];
 		
 		// 				[0] => (AUDJPY)
@@ -621,6 +622,214 @@ class FxTestController extends AppController {
 		CONS::$dpath_Log_Fx_Admin = $tmp_Dpath_Log_Fx_Admin__orig;
 		
 	}//public function fx_tester_T_1__Order_Buy()
+	
+	/********************
+	* fx_tester_T_1__Order_Buy__V2
+	* 	at : 2020/05/28 13:20:24
+	********************/
+	//_20200329_132038:tmp
+	public function fx_tester_T_1__Order_Buy__V2() {
+//_20200528_132029:caller
+//_20200528_132032:head
+//_20200528_132036:wl
+
+		//_20200528_140426:tmp
+		/********************
+		 * step : 0 : 0 : A : 1
+		 * 	params
+		 ********************/
+		//_20200528_140405:ref
+// 		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query[CONS::$param_Val_TA_Fx_Test_Index_Tester_1];
+		@$query_Tester_T_1__Source_CSV_File_Name = $this->request->query[CONS::$param_Tester_T_1__Source_CSV_File_Name];
+		
+		// 				[0] => (AUDJPY)
+		// 				[1] => (M5)
+		// 				[2] => 20200227_131436
+		// 				[3] => [20200115_0005-20200115_2355]
+		// 				[4] => csv
+		
+		// default
+		$fname_Source_CSV__Default = "(slice-by-day).(AUDJPY-M5).(2020-05-13).(20200527_095823_351450).csv";
+		
+		
+		if ($query_Tester_T_1__Source_CSV_File_Name == null) {
+		
+			debug("\$query_Tester_T_1__Source_CSV_File_Name => null");
+			
+			$fname_Source_CSV = $fname_Source_CSV__Default;
+			
+		} else if (preg_match("/.+\..+\..+/", $query_Tester_T_1__Source_CSV_File_Name, $matches) == 1) {//if ($query_Tester_T_1__Source_CSV_File_Name == null)
+			
+			debug("\$query_Tester_T_1__Source_CSV_File_Name ==> match : $query_Tester_T_1__Source_CSV_File_Name");
+			
+			$fname_Source_CSV = $query_Tester_T_1__Source_CSV_File_Name;
+			
+		} else {//if ($query_Tester_T_1__Source_CSV_File_Name == null)
+
+			debug("\$query_Tester_T_1__Source_CSV_File_Name ==> NOT match !!" 
+					. " : $query_Tester_T_1__Source_CSV_File_Name"
+					. "\n"
+					. "using the default csv file name => $fname_Source_CSV__Default"
+					);
+			
+			$fname_Source_CSV = $fname_Source_CSV__Default;
+// 			$fname_Source_CSV = $query_Tester_T_1__Source_CSV_File_Name;
+			
+		}//if ($query_Tester_T_1__Source_CSV_File_Name == null)
+		
+		$tokens = explode(".", $fname_Source_CSV);
+// 		$tokens = explode(".", $query_tag_TA_Fx_Test_Index_Tester_1);
+		
+		debug("\$tokens =>");
+		debug($tokens);
+		
+		
+		//_20200528_140148:tmp
+		/********************
+		 * step : 0 : 1
+		 * 		prep : log dir
+		 ********************/
+		// time label
+		$strOf_Time_Label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+		//_20200201_161421:tmp
+		$tmp_Dpath_Log_Fx_Admin__orig = CONS::$dpath_Log_Fx_Admin;
+		
+// 		CONS::$dpath_Log_Fx_Admin .= "/"
+// 				. "log."
+// 				. $strOf_Time_Label
+// 				. "." . $tokens[0]
+// 				. "." . $tokens[1]
+// 				. "." . $tokens[3]
+// 				. ".dir";
+		
+		/********************
+		 * step : 0 : 0
+		 * 		prep : log file name
+		 ********************/
+		//"log_fx_admin.log"
+// 		$tokensOf_fname_Log = "log_Tester_1__Order_Buy__V2";
+// 		$tokensOf_fname_Log = "log_Tester";
+// 		$tokensOf_fname_Log = explode(".", CONS::$fname_Log_Fx_Admin);
+		
+// 		debug("\$tokensOf_fname_Log =>");
+// 		debug($tokensOf_fname_Log);
+		
+// 		$strOf_Time_Label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+// 		CONS::$fname_Log_Fx_Admin = "$tokensOf_fname_Log[0].[tester_T_1]"
+		CONS::$fname_Log_Fx_Tester = 
+				CONS::$fname_Log_Fx_Tester__Trunk 
+				. "." . "(T-1).(Order-Buy-V2)"
+				. "." . "($strOf_Time_Label)"
+				. CONS::$fname_Log_Fx_Tester__Ext;
+// 		. "." . $tokensOf_fname_Log[1];
+		
+		//debug
+		debug("CONS::\$fname_Log_Fx_Tester => " . CONS::$fname_Log_Fx_Tester);
+		
+		/********************
+		 * step : 0 : 0 : A : 1
+		 * 	params
+		********************/
+		
+		/********************
+		 * step : 0 : 0 : -1
+		 * 		prep : time
+		 ********************/
+		// measrue time
+		//ref https://stackoverflow.com/questions/6245971/accurate-way-to-measure-execution-times-of-php-scripts
+		$time_Start = microtime();
+		$time_Start_In_Float = Utils::conv_Microtime_to_Float($time_Start);
+		
+		$time_Start_In_TimeLabel = Utils::conv_Float_to_TimeLabel_2($time_Start_In_Float);
+		
+		
+		/********************
+		 * step : 0 : 1
+		 * 	debug
+		********************/
+		
+		/******************** (20 '*'s)
+		 * step : 1
+		 * 	prep : BarData
+		 *
+		********************/
+		/******************** (20 '*'s)
+		 * step : 1 : 1
+		 get : list of bardatas
+		 *
+		********************/
+		/********************
+		 * step : 1 : 1.1
+		 get : list
+		********************/
+		
+		/********************
+		 * step : 1 : 1.2
+		 validate
+		********************/
+		
+		/********************
+		 * step : 2
+		 tester ==> exec
+		********************/
+		/********************
+		 * step : 2 : 0
+		 prep : vars
+		********************/
+		
+		/********************
+		 * step : 2 : 0.2
+		 while
+		********************/
+		
+		/********************
+		 * step : 3
+		 post-while
+		 ********************/
+		
+		
+		/********************
+		 * step : X
+		 * 	set : values for view
+		 *
+		********************/
+		$time_current = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+		// variables
+		$this->set("time_current", $time_current);
+		
+		// layout
+		$this->layout = "plain";
+		
+		/********************
+		 * step : X
+		 * 		time
+		 ********************/
+		// 		$time_End = microtime(true);
+		$time_End = microtime();
+		$time_End_In_Float = Utils::conv_Microtime_to_Float($time_End);
+		$time_End_In_TimeLabel = Utils::conv_Float_to_TimeLabel($time_End_In_Float);
+		
+		$time_End_In_TimeLabel_2 = Utils::conv_Float_to_TimeLabel_2($time_End_In_Float, 6);
+		// 		$time_End_In_TimeLabel_2 = Utils::conv_Float_to_TimeLabel_2($time_End_In_Float);
+		// 		$time_End_In_TimeLabel_2 = date('Y/m/d H:i:s', floor($time_End_In_Float));;
+		
+		//ref https://stackoverflow.com/questions/16825240/how-to-convert-microtime-to-hhmmssuu
+		$time_elapsed_In_Float = $time_End_In_Float - $time_Start_In_Float;
+		$time_elapsed_In_TimeLabel = Utils::conv_Float_to_TimeLabel($time_elapsed_In_Float);
+
+		//debug
+		debug("\$time_elapsed_In_TimeLabel => $time_elapsed_In_TimeLabel");
+		
+		/********************
+		 * step : X
+		 * 	set : CONS::$dpath_Log_Fx_Admin
+		 *
+		********************/
+		
+	}//public function fx_tester_T_1__Order_Buy__V2() {
 	
 	/********************
 	* fx_tester_T_1
@@ -1289,6 +1498,8 @@ class FxTestController extends AppController {
 			
 			//_20200527_103506:next
 // 			$this->fx_tester_T_1__Order_Buy();
+			//_20200528_132029:caller
+			$this->fx_tester_T_1__Order_Buy__V2();
 				
 		} else if ($query_Order_Genre == CONS::$param_Tester_T_1__Order_Genre__SELL) {
 				
@@ -1296,7 +1507,9 @@ class FxTestController extends AppController {
 	
 		} else {
 	
-			debug("calling --> NOT");
+			debug("calling --> NOT : " . (($query_Order_Genre == null) ? 
+							"\$query_Order_Genre => null" : $query_Order_Genre));
+// 			debug("calling --> NOT");
 				
 		}//if ($query_Order_Genre == CONS::$param_Tester_T_1__Order_Genre__BUY)
 	
