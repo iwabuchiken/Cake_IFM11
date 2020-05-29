@@ -791,44 +791,6 @@ class FxTestController extends AppController {
 		
 		$fname_Source_CSV	= $valOfRet__Received[0]; 
 		
-// 		//_20200528_140405:ref
-// // 		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query[CONS::$param_Val_TA_Fx_Test_Index_Tester_1];
-// 		@$query_Tester_T_1__Source_CSV_File_Name = $this->request->query[CONS::$param_Tester_T_1__Source_CSV_File_Name];
-		
-// 		// 				[0] => (AUDJPY)
-// 		// 				[1] => (M5)
-// 		// 				[2] => 20200227_131436
-// 		// 				[3] => [20200115_0005-20200115_2355]
-// 		// 				[4] => csv
-		
-// 		// default
-// 		$fname_Source_CSV__Default = "(slice-by-day).(AUDJPY-M5).(2020-05-13).(20200527_095823_351450).csv";
-		
-		
-// 		if ($query_Tester_T_1__Source_CSV_File_Name == null) {
-		
-// 			debug("\$query_Tester_T_1__Source_CSV_File_Name => null");
-			
-// 			$fname_Source_CSV = $fname_Source_CSV__Default;
-			
-// 		} else if (preg_match("/.+\..+\..+/", $query_Tester_T_1__Source_CSV_File_Name, $matches) == 1) {//if ($query_Tester_T_1__Source_CSV_File_Name == null)
-			
-// 			debug("\$query_Tester_T_1__Source_CSV_File_Name ==> match : $query_Tester_T_1__Source_CSV_File_Name");
-			
-// 			$fname_Source_CSV = $query_Tester_T_1__Source_CSV_File_Name;
-			
-// 		} else {//if ($query_Tester_T_1__Source_CSV_File_Name == null)
-
-// 			debug("\$query_Tester_T_1__Source_CSV_File_Name ==> NOT match !!" 
-// 					. " : $query_Tester_T_1__Source_CSV_File_Name"
-// 					. "\n"
-// 					. "using the default csv file name => $fname_Source_CSV__Default"
-// 					);
-			
-// 			$fname_Source_CSV = $fname_Source_CSV__Default;
-// // 			$fname_Source_CSV = $query_Tester_T_1__Source_CSV_File_Name;
-			
-// 		}//if ($query_Tester_T_1__Source_CSV_File_Name == null)
 		
 		$tokens = explode(".", $fname_Source_CSV);
 // 		$tokens = explode(".", $query_tag_TA_Fx_Test_Index_Tester_1);
@@ -862,52 +824,6 @@ class FxTestController extends AppController {
 		$dpath_Log_Fx_Tester__Full	= $valOfRet__Received[0];
 		$dpath_Log_Fx_Tester		= $valOfRet__Received[1];
 		$dname_Log_Tester			= $valOfRet__Received[2];
-		
-// 		/********************
-// 		 * step : 0 : 1 : 1
-// 		 * 		prep
-// 		 ********************/
-// 		// time label
-// 		$strOf_Time_Label = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
-		
-// 		//_20200529_181231:tmp
-// 		$dpath_Log_Fx_Tester = CONS::$dpath_Log_Fx_Tester;
-		
-// 		/********************
-// 		 * step : 0 : 1 : 2
-// 		 * 		build path
-// 		 ********************/
-// 		$strOf_Tester_Name = "tester-1_v2";
-		
-// 		$dname_Log_Tester = "($strOf_Tester_Name)."
-// 						. $tokens[1] 
-// 						. "."
-// 						. $tokens[2]
-// 						. "(" . $strOf_Time_Label . ")"
-// 						. ".log";
-		
-// 		debug("\$dname_Log_Tester => $dname_Log_Tester");
-
-// 		// dpath
-// 		$dpath_Log_Fx_Tester__Full = join(DIRECTORY_SEPARATOR, array($dpath_Log_Fx_Tester, $dname_Log_Tester));
-		
-// 		/********************
-// 		 * step : 0 : 1 : 3
-// 		 * 		gen : dir
-// 		 ********************/
-// 		if (!file_exists($dpath_Log_Fx_Tester__Full)) {
-				
-// 			$result_bool = mkdir($dpath_Log_Fx_Tester__Full, $mode=0777, $recursive=true);
-			
-// 			debug(($result_bool == true) ? 
-// 					"dir created => $dpath_Log_Fx_Tester__Full"
-// 					 : "dir NOT created!! ==> $dpath_Log_Fx_Tester__Full");
-				
-// 		} else {
-			
-// 			debug("dir exists => $dpath_Log_Fx_Tester__Full");
-			
-// 		}//if (!file_exists($dpath_Sliced_Files__Eigen)) {
 		
 		/********************
 		 * step : 0 : 0
@@ -961,6 +877,8 @@ class FxTestController extends AppController {
 		 * 	prep : BarData
 		 *
 		********************/
+		//_20200529_185258:next
+		
 		/******************** (20 '*'s)
 		 * step : 1 : 1
 		 get : list of bardatas
