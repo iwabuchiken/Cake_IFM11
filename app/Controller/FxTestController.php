@@ -659,7 +659,7 @@ class FxTestController extends AppController {
 				. "(" . $_strOf_Time_Label . ")"
 						. ".log";
 		
-		debug("\$dname_Log_Tester => $dname_Log_Tester");
+// 		debug("\$dname_Log_Tester => $dname_Log_Tester");
 		
 		// dpath
 		$dpath_Log_Fx_Tester__Full = join(DIRECTORY_SEPARATOR, array($dpath_Log_Fx_Tester, $dname_Log_Tester));
@@ -712,6 +712,10 @@ class FxTestController extends AppController {
 		//_20200528_132032:head
 		//_20200528_132036:wl
 
+		/********************
+		 * step : 1
+		 * 		param : CONS::$param_Tester_T_1__Source_CSV_File_Name
+		 ********************/
 		//_20200528_140405:ref
 		// 		@$query_tag_TA_Fx_Test_Index_Tester_1 = $this->request->query[CONS::$param_Val_TA_Fx_Test_Index_Tester_1];
 		@$query_Tester_T_1__Source_CSV_File_Name = $this->request->query[CONS::$param_Tester_T_1__Source_CSV_File_Name];
@@ -734,7 +738,7 @@ class FxTestController extends AppController {
 				
 		} else if (preg_match("/.+\..+\..+/", $query_Tester_T_1__Source_CSV_File_Name, $matches) == 1) {//if ($query_Tester_T_1__Source_CSV_File_Name == null)
 				
-			debug("\$query_Tester_T_1__Source_CSV_File_Name ==> match : $query_Tester_T_1__Source_CSV_File_Name");
+// 			debug("\$query_Tester_T_1__Source_CSV_File_Name ==> match : $query_Tester_T_1__Source_CSV_File_Name");
 				
 			$fname_Source_CSV = $query_Tester_T_1__Source_CSV_File_Name;
 				
@@ -752,6 +756,36 @@ class FxTestController extends AppController {
 		}//if ($query_Tester_T_1__Source_CSV_File_Name == null)
 
 		/********************
+		 * step : 2
+		 * 		param : CONS::$param_Tester_T_1__Source_CSV_File_Name
+		 ********************/
+		@$query_Tester_T_1__Source_CSV_Dpath = $this->request->query[CONS::$param_Tester_T_1__Source_CSV_Dpath];
+		
+		// 				[0] => (AUDJPY)
+		// 				[1] => (M5)
+		// 				[2] => 20200227_131436
+		// 				[3] => [20200115_0005-20200115_2355]
+		// 				[4] => csv
+		
+		// default
+		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_132553_216136)
+		$dpath_Source_CSV__Default = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw\\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_132553_216136)";		
+
+		if ($query_Tester_T_1__Source_CSV_Dpath == null) {
+		
+			debug("\$query_Tester_T_1__Source_CSV_Dpath => null");
+		
+			$dpath_Source_CSV = $dpath_Source_CSV__Default;
+		
+		} else {//if ($query_Tester_T_1__Source_CSV_File_Name == null)
+		
+		
+			$dpath_Source_CSV = $query_Tester_T_1__Source_CSV_Dpath;
+// 			$dpath_Source_CSV = $dpath_Source_CSV__Default;
+		
+		}//if ($query_Tester_T_1__Source_CSV_File_Name == null)
+		
+		/********************
 		 * step : X
 		 * 		return
 		 ********************/
@@ -759,7 +793,7 @@ class FxTestController extends AppController {
 		 * step : X : 1
 		 * 		prep
 		 ********************/
-		$valOf_Ret = array($fname_Source_CSV);
+		$valOf_Ret = array($fname_Source_CSV, $dpath_Source_CSV);
 		
 		/********************
 		 * step : X : 2
@@ -790,13 +824,15 @@ class FxTestController extends AppController {
 		$valOfRet__Received = FxTestController::fx_tester_T_1__Order_Buy__V2__Params();
 		
 		$fname_Source_CSV	= $valOfRet__Received[0]; 
+		$dpath_Source_CSV	= $valOfRet__Received[1]; 
 		
+		debug("\$fname_Source_CSV = $fname_Source_CSV / \$dpath_Source_CSV = $dpath_Source_CSV");
 		
 		$tokens = explode(".", $fname_Source_CSV);
 // 		$tokens = explode(".", $query_tag_TA_Fx_Test_Index_Tester_1);
 		
-		debug("\$tokens =>");
-		debug($tokens);
+// 		debug("\$tokens =>");
+// 		debug($tokens);
 			// 		(int) 0 => '(slice-by-day)',
 			// 		(int) 1 => '(AUDJPY-M5)',
 			// 		(int) 2 => '(2020-05-13)',
@@ -825,6 +861,9 @@ class FxTestController extends AppController {
 		$dpath_Log_Fx_Tester		= $valOfRet__Received[1];
 		$dname_Log_Tester			= $valOfRet__Received[2];
 		
+		//debug
+// 		debug("\$dpath_Log_Fx_Tester__Full => " . $dpath_Log_Fx_Tester__Full);
+		
 		/********************
 		 * step : 0 : 0
 		 * 		prep : log file name
@@ -848,7 +887,18 @@ class FxTestController extends AppController {
 // 		. "." . $tokensOf_fname_Log[1];
 		
 		//debug
-		debug("CONS::\$fname_Log_Fx_Tester => " . CONS::$fname_Log_Fx_Tester);
+// 		debug("CONS::\$fname_Log_Fx_Tester => " . CONS::$fname_Log_Fx_Tester);
+		
+		//_20200530_130239:tmp
+		//test
+		$msg = "fx_tester_T_1__Order_Buy__V2 ==> starts";
+		$msg .= "\n";
+		
+// 		debug("\$dpath_Log_Fx_Tester__Full = $dpath_Log_Fx_Tester__Full / CONS::\$fname_Log_Fx_Tester = " . CONS::$fname_Log_Fx_Tester);
+		
+		Utils::write_Log__Fx_Admin(
+				$dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
 		
 		/********************
 		 * step : 0 : 0 : A : 1
@@ -872,46 +922,36 @@ class FxTestController extends AppController {
 		 * 	debug
 		********************/
 		
-		/******************** (20 '*'s)
+		/********************
 		 * step : 1
-		 * 	prep : BarData
-		 *
+		 * 	get : list of bardatas
 		********************/
 		//_20200529_185258:next
+		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_132553_216136)
+// 		$dpath_File_CSV = "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw\\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_132553_216136)";
+		$dpath_File_CSV = $dpath_Source_CSV;
 		
-		/******************** (20 '*'s)
-		 * step : 1 : 1
-		 get : list of bardatas
-		 *
-		********************/
-		/********************
-		 * step : 1 : 1.1
-		 get : list
-		********************/
+		//_20200530_133828:tmp
+		debug("calling ==> Libfx::get_ListOf_BarDatas__V2");
 		
-		/********************
-		 * step : 1 : 1.2
-		 validate
-		********************/
+		$valOf_Ret__Received = Libfx::get_ListOf_BarDatas__V2(
+						$dpath_File_CSV, $fname_Source_CSV
+						, $dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				);
 		
+		// unpack
+		$lo_BarDatas		= $valOf_Ret__Received[0];
+		$lo_HeaderLines		= $valOf_Ret__Received[1];
+		
+		//debug
+		debug("\$lo_HeaderLines =>");
+		debug($lo_HeaderLines);
+
 		/********************
 		 * step : 2
-		 tester ==> exec
-		********************/
-		/********************
-		 * step : 2 : 0
-		 prep : vars
-		********************/
-		
-		/********************
-		 * step : 2 : 0.2
-		 while
-		********************/
-		
-		/********************
-		 * step : 3
-		 post-while
+		 * 	testing
 		 ********************/
+		//_20200530_143853:next
 		
 		
 		/********************

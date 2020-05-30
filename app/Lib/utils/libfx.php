@@ -390,6 +390,121 @@ class Libfx {
 // 		return null;
 		
 	}//public static function get_ListOf_BarDatas() {
+
+	/********************
+	 * get_ListOf_BarDatas__V2
+	 * 
+	 * at : 2020/05/30 13:17:17
+	 * 
+	 * @return
+	 * 		-1		csv file ==> not exist
+	 *
+	 ********************/
+	public static function get_ListOf_BarDatas__V2
+	($_dpath_File_CSV, $_fname_File_CSV
+		, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+		, $_numOf_Meta_And_Header_Lines = 2) {
+		//_20200530_131731:caller
+		//_20200530_131736:head
+		//_20200530_131739:wl
+		/********************
+			* step : 1
+			* 	open : file
+			********************/
+		/********************
+			* step : 1 : 1
+			* 	path
+		********************/
+		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw
+		$dpath_File_CSV = $_dpath_File_CSV;
+	
+		$fname_File_CSV = $_fname_File_CSV;
+	
+		$fpath_File_CSV = join(
+// 				DS,
+				DIRECTORY_SEPARATOR,
+				array($dpath_File_CSV, $fname_File_CSV));
+	
+		/********************
+			* step : 1 : 2
+			* 	validate
+		********************/
+		if (!file_exists($fpath_File_CSV)) {
+			
+			$msg = "\nsource csv file ==> NOT exist : $fpath_File_CSV";
+			$msg .= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+					, $msg, __FILE__, __LINE__);
+			
+			// return
+			return -1;
+			
+		} else {
+			
+			$msg = "\nsource csv file ==> exists : $fpath_File_CSV";
+			$msg .= "\n";
+			
+			Utils::write_Log__Fx_Admin(
+					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+					, $msg, __FILE__, __LINE__);
+			
+		}//if (!file_exists($fpath_File_CSV)) {
+		
+		/********************
+			* step : 1 : 3
+			* 	load : lines
+		********************/
+		$lo_CSV_File_Lines = file($fpath_File_CSV);
+		
+		$lenOf_LO_CSV_File_Lines = count($lo_CSV_File_Lines);
+		
+
+		$msg = "\n";
+		$msg .= "\$lenOf_LO_CSV_File_Lines : $lenOf_LO_CSV_File_Lines";
+		$msg .= "\n";
+		
+		debug($msg);
+			
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+		
+		/********************
+		 * step : 2
+		 * 	header + meta lines
+		 ********************/
+		$linesOf_Meta_And_Headers = array_slice($lo_CSV_File_Lines, 0, $_numOf_Meta_And_Header_Lines);
+		
+		debug("\$linesOf_Meta_And_Headers =>");
+		debug($linesOf_Meta_And_Headers);
+		
+		$linesOf_Data = array_slice($lo_CSV_File_Lines, $_numOf_Meta_And_Header_Lines);
+		
+		
+	
+		/********************
+		 * step : 3
+		 * 	conv ==> CSV lines to --> bardatas
+		********************/
+		//_20200530_143426:tmp
+// 		$lo_BarDatas = null;
+		//_20200105_171832:caller
+		//array($lo_BarDatas, $lo_HeaderLines)
+		$valOf_Ret__Received = Libfx::conv_CSV_Lines_To_BarDatas__V2(
+						$lo_CSV_File_Lines, $_numOf_Meta_And_Header_Lines);
+		
+// 		// unpack
+// 		$lo_BarDatas		= $valOf_Ret__Received[0];
+// 		$lo_HeaderLines		= $valOf_Ret__Received[1];
+		
+		// return
+		return $valOf_Ret__Received;
+// 		return $lo_BarDatas;
+	
+	}//get_ListOf_BarDatas__V2
+	
 	
 	/********************
 	 * reverse_LO_BarDatas
