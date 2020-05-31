@@ -9,6 +9,8 @@ C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\
  * 
  */
 
+require_once 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/fx/PD.php';
+
 
 // class ImagesController extends AppController {
 // class FxEaTesterController extends AppController {
@@ -805,6 +807,173 @@ class FxTestController extends AppController {
 	}//fx_tester_T_1__Order_Buy__V2__Params
 	
 	/********************
+	* fx_tester_T_1__Order_Buy__V2__While_Loop
+	* 	at : 2020/05/28 13:20:24
+	********************/
+	//_20200329_132038:tmp
+	public function fx_tester_T_1__Order_Buy__V2__While_Loop(
+			
+			$_lo_BarDatas, $_lo_HeaderLines
+			
+			, $_cntOf_Loop_While, $_maxOf_Loop_While
+			, $_flag_Position
+			
+			, $_nameOf_DP
+			
+			, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+			
+			
+			
+			) {
+//_20200531_132111:caller
+//_20200531_132115:head
+//_20200531_132117:wl
+
+// 		//debug
+// 		debug("\$_lo_BarDatas[0] =>");
+// 		debug($_lo_BarDatas[0]);
+		
+// 		debug("\$_lo_BarDatas[count(\$_lo_BarDatas) - 1] =>");
+// 		debug($_lo_BarDatas[count($_lo_BarDatas) - 1]);
+
+		/********************
+		 * step : 1
+		 * 		prep : vars
+		 ********************/
+		$flag_Pattern_Detected = false;
+		
+		
+		/********************
+		 * step : 2
+		 * 		loop
+		 ********************/
+		while (true) {
+				
+			/********************
+			 * step : 2 : 0
+			 * 		stopper
+			 ********************/
+			if ($_cntOf_Loop_While > $_maxOf_Loop_While) {
+					
+				debug("(while)(step : 2 : 0) while-loop ==> maxed : count = $_cntOf_Loop_While, max = $_maxOf_Loop_While");
+		
+				// break
+				break;
+		
+			}//if ($cntOf_Loop_While > $maxOf_Loop_While)
+			
+			//_20200531_142253:next
+			
+			/********************
+			 * step : 2 : 1
+			 * 		prep
+			 ********************/
+			/********************
+			 * step : 2 : j1
+			 * 		position ==> taken ?
+			 ********************/
+			/********************
+			 * step : 2 : j1 : 1
+			 * 		conditions
+			 ********************/
+			$cond_1__Position_Taken = ($_flag_Position == true);
+				
+			if ($cond_1__Position_Taken == true) {
+				/********************
+				 * step : 2 : j1 : Y
+				 * 		position ==> taken
+				 ********************/
+				/********************
+				 * step : 2 : j1 : Y : 1
+				 * 		log
+				 ********************/
+				$msg = "(while)(step : 2 : j1 : Y : 1)";
+				$msg .= "\n";
+				
+				debug($msg);
+				
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+					
+			} else {
+				/********************
+				 * step : 2 : j1 : N
+				 * 		position ==> NOT taken
+				 ********************/
+				/********************
+				 * step : 2 : j1 : N : 1
+				 * 		log
+				 ********************/
+				$msg = "(while)(step : 2 : j1 : N : 1)";
+				$msg .= "\n";
+				
+				debug($msg);
+				
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+
+				/********************
+				 * step : 2 : j2
+				 * 		pattern ==> detected ?
+				 ********************/
+				if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All) {
+					/********************
+					 * step : 2 : j2 : choice-1
+					 * 		pattern ==> detected : detect all
+					 ********************/
+					$msg = "(while)(step : 2 : j2 : choice-1)";
+					$msg .= "\n";
+					
+					$msg .= "detection starts...";
+					$msg .= "\n";
+						
+						
+					// flag
+					$flag_Pattern_Detected = PD::dp_ALL();
+					
+					$msg .= "result => " . (($flag_Pattern_Detected == true) ? "true" : "false");
+					
+					debug($msg);
+						
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+				
+				} else {
+					/********************
+					 * step : 2 : j2 : choice-X
+					 * 		pattern ==> unknown
+					 ********************/
+					$msg = "unknown PD name : $_nameOf_DP";
+					
+					$msg .= "\n";
+					$msg .= "breaking from the while loop";
+					
+					debug($msg);
+					
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+					
+					break;
+					
+				}//if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All)
+				
+			}//if ($cond_1__Position_Taken == true)
+				
+			/********************
+			 * step : 2 : 2 : X
+			 * 		counter : increment
+			 ********************/
+			$_cntOf_Loop_While += 1;
+				
+		}//while (true) {
+		
+	}//fx_tester_T_1__Order_Buy__V2__While_Loop
+	
+	/********************
 	* fx_tester_T_1__Order_Buy__V2
 	* 	at : 2020/05/28 13:20:24
 	********************/
@@ -943,16 +1112,97 @@ class FxTestController extends AppController {
 		$lo_BarDatas		= $valOf_Ret__Received[0];
 		$lo_HeaderLines		= $valOf_Ret__Received[1];
 		
-		//debug
-		debug("\$lo_HeaderLines =>");
-		debug($lo_HeaderLines);
+// 		//debug
+// 		debug("\$lo_HeaderLines =>");
+// 		debug($lo_HeaderLines);
+		
+		debug("count(\$lo_BarDatas) => " . count($lo_BarDatas));
 
+// 		if (count($lo_BarDatas) > 0) {
+		
+// 			debug("\$lo_BarDatas[0] =>");
+// 			debug($lo_BarDatas[0]);
+		
+// 		} else {
+		
+// 			debug("count(\$lo_BarDatas) ==> < 0");
+			
+// 		}//if (count($lo_BarDatas) > 0) {
+		
 		/********************
 		 * step : 2
 		 * 	testing
 		 ********************/
 		//_20200530_143853:next
+		/********************
+		 * step : 2 : 1
+		 * 		prep : vars
+		 ********************/
+		$lenOf_LO_BarDatas = count($lo_BarDatas);
 		
+		$cntOf_Loop_While = 0;
+		
+		$maxOf_Loop_While = 20;
+		
+		// flags
+		// 	position
+		$flag_Position = false;
+
+		/********************
+		 * step : 2 : 1 : 2
+		 * 		list ==> reverse
+		 ********************/
+// 		//debug
+// 		debug("\$lo_BarDatas[0] =>");
+// 		debug($lo_BarDatas[0]);
+
+// 		debug("\$lo_BarDatas[count(\$lo_BarDatas) - 1] =>");
+// 		debug($lo_BarDatas[count($lo_BarDatas) - 1]);
+
+		
+		$lo_BarDatas__Order_A_Z = Libfx::reverse_LO_BarDatas(
+						$lo_BarDatas, CONS::$strOf_Sort_Direction_LO_BarDatas__ASC);
+		
+		//debug
+		debug("\$lo_BarDatas ==> order : A-Z");
+		
+// 		//debug
+// 		debug("\$lo_BarDatas__Order_A_Z[0] =>");
+// 		debug($lo_BarDatas__Order_A_Z[0]);
+
+// 		debug("\$lo_BarDatas__Order_A_Z[count(\$lo_BarDatas__Order_A_Z) - 1] =>");
+// 		debug($lo_BarDatas__Order_A_Z[count($lo_BarDatas__Order_A_Z) - 1]);
+				
+		/********************
+		 * step : 2 : 2
+		 * 		while-loop
+		 ********************/
+		//debug
+		$msg = "(step : 2 : 2) while-loop ==> starts";
+		$msg .= "\n";
+		
+		debug($msg);
+		
+		Utils::write_Log__Fx_Admin(
+				$dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+		
+		
+		$nameOf_DP = CONS::$nameOf_DP__Detect_All;
+		
+		//_20200531_132021:tmp
+		//_20200531_132111:caller
+		FxTestController::fx_tester_T_1__Order_Buy__V2__While_Loop(
+					$lo_BarDatas__Order_A_Z, $lo_HeaderLines
+// 					$lo_BarDatas, $lo_HeaderLines
+
+					, $cntOf_Loop_While, $maxOf_Loop_While
+					, $flag_Position
+
+					, $nameOf_DP
+				
+					, $dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				);
 		
 		/********************
 		 * step : X

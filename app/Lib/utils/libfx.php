@@ -135,9 +135,9 @@ class Libfx {
 		// list
 		$lo_BarDatas = [];
 	
-		//debug:20200523_161125
-		debug("\$lo_CSV_Lines[0 + \$lenOf_Header_Lines] =>");
-		debug($lo_CSV_Lines[0 + $lenOf_Header_Lines]);
+// 		//debug:20200523_161125
+// 		debug("\$lo_CSV_Lines[0 + \$lenOf_Header_Lines] =>");
+// 		debug($lo_CSV_Lines[0 + $lenOf_Header_Lines]);
 		
 		/********************
 			* step : 0 : 2
@@ -477,8 +477,8 @@ class Libfx {
 		 ********************/
 		$linesOf_Meta_And_Headers = array_slice($lo_CSV_File_Lines, 0, $_numOf_Meta_And_Header_Lines);
 		
-		debug("\$linesOf_Meta_And_Headers =>");
-		debug($linesOf_Meta_And_Headers);
+// 		debug("\$linesOf_Meta_And_Headers =>");
+// 		debug($linesOf_Meta_And_Headers);
 		
 		$linesOf_Data = array_slice($lo_CSV_File_Lines, $_numOf_Meta_And_Header_Lines);
 		
@@ -511,6 +511,8 @@ class Libfx {
 	 *
 	 * @return
 	 * 		-1		fopen ==> returned false
+	 *
+	 *		$valOf_Ret = $lo_BarDatas__Processed;
 	 *
 	 ********************/
 	public static function reverse_LO_BarDatas($lo_BarDatas, $strOf_Direction) {
