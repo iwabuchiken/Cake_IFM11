@@ -818,6 +818,7 @@ class FxTestController extends AppController {
 	fx_tester_T_1__Order_Buy__V2__For_Loop(
 
 				$idxOf_ForLoop_Start, $_lo_BarDatas
+				, $_nameOf_DP
 				, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 			
 			) {
@@ -841,6 +842,9 @@ class FxTestController extends AppController {
 		$maxOf_Loop = 10;
 		
 		$cntOf_Loop = 0;
+
+		// position
+		$pos = LibEaTester::init_Pos();
 		
 		/********************
 		 * step : 2
@@ -868,6 +872,9 @@ class FxTestController extends AppController {
 			 * step : 2 : 0
 			 * 		prep
 			 ********************/
+			// bardata
+			$bardata_This = $_lo_BarDatas[$i];
+			
 			/********************
 			 * step : 2 : 0 : 0
 			 * 		log
@@ -913,7 +920,7 @@ class FxTestController extends AppController {
 			 ********************/
 			/********************
 			 * step : 2 : j1 : 1
-			 * 		conditions
+			 * 		conditions : position ==> taken?
 			 ********************/
 			$cond_1__Position_Taken = ($flag_Position_Taken == true);
 			
@@ -926,7 +933,10 @@ class FxTestController extends AppController {
 				 * step : 2 : j1 : Y : 1
 				 * 		log
 				 ********************/
-				$msg = "(while)(step : 2 : j1 : Y : 1)";
+				$msg = "(for)(step : 2 : j1 : Y : 1)";
+				$msg .= "\n";
+				
+				$msg .= "position ==> taken";
 				$msg .= "\n";
 			
 				debug($msg);
@@ -957,6 +967,146 @@ class FxTestController extends AppController {
 						, $msg, __FILE__, __LINE__);
 			
 				//_20200601_101636:next
+				/********************
+				 * step : 2 : j2
+				 * 		pattern ==> detected ?
+				 ********************/
+				if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All) {
+					/********************
+					 * step : 2 : j2 : choice-1
+					 * 		pattern ==> detected : detect all
+					 ********************/
+					$msg = "(for)(step : 2 : j2 : choice-1)";
+					$msg .= "\n";
+	
+					$msg .= "detection starts...";
+					$msg .= "\n";
+
+
+					// result
+					$resultOf_PD_dp_ALL = PD::dp_ALL();
+// 					$flag_Pattern_Detected = PD::dp_ALL();
+	
+// 					$msg .= "result => " . (($flag_Pattern_Detected == true) ? "true" : "false");
+	
+// 					debug($msg);
+
+// 					Utils::write_Log__Fx_Admin(
+// 							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 							, $msg, __FILE__, __LINE__);
+
+					if ($resultOf_PD_dp_ALL == true) {
+						/********************
+						 * step : 2 : j2 : choice-1 : Y
+						 * 		pattern ==> detected
+						 ********************/
+						/********************
+						 * step : 2 : j2 : choice-1 : Y : 1
+						 * 		log
+						 ********************/
+						//_20200601_142250:tmp
+						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 1)";
+						$msg .= "\n";
+						$msg .= "pattern ==> detected : " . CONS::$nameOf_DP__Detect_All;
+						$msg .= "\n";
+					
+						debug($msg);
+					
+// 						Utils::write_Log__Fx_Admin(
+// 								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 								, $msg, __FILE__, __LINE__);
+
+						/********************
+						 * step : 2 : j2 : choice-1 : Y : 2
+						 * 		flag ==> set : true ($flag_Pattern_Detected)
+						 ********************/
+						$flag_Pattern_Detected = true;
+						
+						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 2)";
+						$msg .= "\n";
+						$msg .= "\$flag_Pattern_Detected ==> set to true : " . (($flag_Pattern_Detected == true) ? "true" : "false");
+						$msg .= "\n";
+							
+						debug($msg);
+
+						/********************
+						 * step : 2 : j2 : choice-1 : Y : 3
+						 * 		position ==> init
+						 ********************/
+						//_20200601_150706:tmp
+						$pos->st_idx	= $i;
+						$pos->st_pr	= $bardata_This->price_Open;
+// 						$pos['st_idx']	= $i;
+// 						$pos['st_pr']	= $bardata_This['price_Open'];
+						
+						// log
+						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 3)";
+						$msg .= "\n";
+						$msg .= "position ==> init : st_pr = " . $pos->st_pr;
+						$msg .= "\n";
+						
+						debug($msg);
+
+						/********************
+						 * step : 2 : j2 : choice-1 : Y : 4
+						 * 		flag
+						 ********************/
+						//_20200601_151123:tmp
+						$flag_Position_Taken = true;
+
+						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 4)";
+						$msg .= "\n";
+						$msg .= "\$flag_Position_Taken ==> true : " 
+									. (($flag_Position_Taken == true) ? "true" : "false");
+						$msg .= "\n";
+						
+						debug($msg);
+						
+					} else {//if ($resultOf_PD_dp_ALL == true) {
+						/********************
+						 * step : 2 : j2 : choice-1 : N
+						 * 		pattern ==> detected
+						 ********************/
+						/********************
+						 * step : 2 : j2 : choice-1 : N : 1
+						 * 		log
+						 ********************/
+						$msg .= "(for)(step : 2 : j2 : choice-1 : N : 1)";
+						$msg .= "\n";
+						$msg .= "pattern ==> NOT detected : " . CONS::$nameOf_DP__Detect_All;
+						$msg .= "\n";
+						
+						debug($msg);
+							
+						
+						
+						
+					}//if ($resultOf_PD_dp_ALL == true) {
+					
+					// write log
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+					
+				} else {
+					/********************
+					 * step : 2 : j2 : choice-X
+					 * 		pattern ==> unknown
+					 ********************/
+					$msg = "unknown PD name : $_nameOf_DP";
+	
+					$msg .= "\n";
+					$msg .= "breaking from the while loop";
+	
+					debug($msg);
+	
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+	
+					break;
+	
+				}//if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All)				
 				
 			}//if ($cond_1__Position_Taken == true)
 
@@ -970,6 +1120,21 @@ class FxTestController extends AppController {
 
 		/********************
 		 * step : 2 : X
+		 * 		for-loop ==> exited
+		 ********************/
+		$msg .= "(for)(step : 2 : X)";
+		$msg .= "\n";
+		$msg .= "for-loop ==> exited : \$i = $i";
+		$msg .= "\n";
+		
+		debug($msg);
+	
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+		
+		/********************
+		 * step : 2 : X
 		 * 		return
 		 ********************/
 		/********************
@@ -977,6 +1142,7 @@ class FxTestController extends AppController {
 		 * 		val
 		 ********************/
 		//_20200601_101537:tmp
+		//_20200601_152352:tmp
 		$valOf_Ret = array($cntOf_Loop, $i);
 		
 		/********************
@@ -1032,6 +1198,8 @@ class FxTestController extends AppController {
 		// counter
 		$cntOf_Loop_Total = 0;
 		
+// 		$cntOf_Looop_While = 0;
+		
 		/********************
 		 * step : 2
 		 * 		loop
@@ -1054,14 +1222,33 @@ class FxTestController extends AppController {
 			//_20200531_142253:next
 			
 			/********************
+			 * step : 2 : 0 : 1
+			 * 		while-loop : show count
+			 ********************/
+			$msg = "(while)(step : 2 : 0 : 1)";
+			$msg .= "\n";
+			$msg .= "while-loop : show count ==> $_cntOf_Loop_While";
+			$msg .= "\n";
+			
+			debug($msg);
+			
+			Utils::write_Log__Fx_Admin(
+					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+					, $msg, __FILE__, __LINE__);
+				
+			/********************
 			 * step : 2 : 1
 			 * 		for-loop
 			 ********************/
 			//_20200601_093740:caller
 			//$valOf_Ret = array($cntOf_Loop, $i)
+			
 			$valOf_Ret_Received = FxTestController::fx_tester_T_1__Order_Buy__V2__For_Loop(
+					
 						$idxOf_ForLoop_Start, $_lo_BarDatas
+						, $_nameOf_DP
 						, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+					
 					);
 			
 			// unpack
@@ -1072,7 +1259,10 @@ class FxTestController extends AppController {
 			$cntOf_Loop_Total += $cntOf_Loop_This;
 
 			//log
-			$msg = "\$cntOf_Loop_This = $cntOf_Loop_This / \$cntOf_Loop_Total = $cntOf_Loop_Total";
+			$msg = "back to while-loop";
+			$msg .= "\n";
+			
+			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This / \$cntOf_Loop_Total = $cntOf_Loop_Total";
 			$msg .= "\n";
 				
 			debug($msg);
