@@ -939,7 +939,7 @@ class FxTestController extends AppController {
 				$msg .= "position ==> taken";
 				$msg .= "\n";
 			
-				debug($msg);
+// 				debug($msg);
 			
 				Utils::write_Log__Fx_Admin(
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
@@ -1010,7 +1010,7 @@ class FxTestController extends AppController {
 						$msg .= "pattern ==> detected : " . CONS::$nameOf_DP__Detect_All;
 						$msg .= "\n";
 					
-						debug($msg);
+// 						debug($msg);
 					
 // 						Utils::write_Log__Fx_Admin(
 // 								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
@@ -1027,7 +1027,7 @@ class FxTestController extends AppController {
 						$msg .= "\$flag_Pattern_Detected ==> set to true : " . (($flag_Pattern_Detected == true) ? "true" : "false");
 						$msg .= "\n";
 							
-						debug($msg);
+// 						debug($msg);
 
 						/********************
 						 * step : 2 : j2 : choice-1 : Y : 3
@@ -1039,13 +1039,15 @@ class FxTestController extends AppController {
 // 						$pos['st_idx']	= $i;
 // 						$pos['st_pr']	= $bardata_This['price_Open'];
 						
+						//next:20200603_164949
+						
 						// log
 						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 3)";
 						$msg .= "\n";
 						$msg .= "position ==> init : st_pr = " . $pos->st_pr;
 						$msg .= "\n";
 						
-						debug($msg);
+// 						debug($msg);
 
 						/********************
 						 * step : 2 : j2 : choice-1 : Y : 4
@@ -1060,7 +1062,7 @@ class FxTestController extends AppController {
 									. (($flag_Position_Taken == true) ? "true" : "false");
 						$msg .= "\n";
 						
-						debug($msg);
+// 						debug($msg);
 						
 					} else {//if ($resultOf_PD_dp_ALL == true) {
 						/********************
@@ -1076,7 +1078,7 @@ class FxTestController extends AppController {
 						$msg .= "pattern ==> NOT detected : " . CONS::$nameOf_DP__Detect_All;
 						$msg .= "\n";
 						
-						debug($msg);
+// 						debug($msg);
 							
 						
 						
@@ -1143,7 +1145,13 @@ class FxTestController extends AppController {
 		 ********************/
 		//_20200601_101537:tmp
 		//_20200601_152352:tmp
-		$valOf_Ret = array($cntOf_Loop, $i);
+		//code:20200603_162633
+		//test:dummy value 20200603_162835
+		$idxOf_Position_Start = $i * 3;
+// 		$idxOf_Position_Start = $i * 2;
+		
+		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start);
+// 		$valOf_Ret = array($cntOf_Loop, $i);
 		
 		/********************
 		 * step : X : 2
@@ -1242,7 +1250,8 @@ class FxTestController extends AppController {
 			 ********************/
 			//_20200601_093740:caller
 			//$valOf_Ret = array($cntOf_Loop, $i)
-			
+			//array($cntOf_Loop, $i, $idxOf_Position_Start)
+			//coding:20200603_162557
 			$valOf_Ret_Received = FxTestController::fx_tester_T_1__Order_Buy__V2__For_Loop(
 					
 						$idxOf_ForLoop_Start, $_lo_BarDatas
@@ -1252,8 +1261,9 @@ class FxTestController extends AppController {
 					);
 			
 			// unpack
-			$cntOf_Loop_This = $valOf_Ret_Received[0];
-			$idxOf_ForLoop_Last = $valOf_Ret_Received[1];
+			$cntOf_Loop_This		= $valOf_Ret_Received[0];
+			$idxOf_ForLoop_Last		= $valOf_Ret_Received[1];
+			$idxOf_Position_Start	= $valOf_Ret_Received[2];
 			
 			// 
 			$cntOf_Loop_Total += $cntOf_Loop_This;
@@ -1262,118 +1272,58 @@ class FxTestController extends AppController {
 			$msg = "back to while-loop";
 			$msg .= "\n";
 			
-			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This / \$cntOf_Loop_Total = $cntOf_Loop_Total";
+			//coding:20200603_162120
+			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This" 
+					. " " . "/ \$cntOf_Loop_Total = $cntOf_Loop_Total"
+					. " " . "/ \$idxOf_ForLoop_Last = $idxOf_ForLoop_Last"
+					. " " . "/ \$idxOf_Position_Start = $idxOf_Position_Start";
+// 			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This / \$cntOf_Loop_Total = $cntOf_Loop_Total";
 			$msg .= "\n";
 				
-			debug($msg);
+// 			debug($msg);
 				
+// 			Utils::write_Log__Fx_Admin(
+// 					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 					, $msg, __FILE__, __LINE__);
+				
+			//coding:20200603_163513
+			//test
+			$idxOf_ForLoop_Start = $idxOf_Position_Start + 1;
+// 			$idxOf_ForLoop_Start += 1;
+
+			$msg .= "\$idxOf_ForLoop_Start ==> updated : $idxOf_ForLoop_Start";
+			$msg .= "\n";
+			
 			Utils::write_Log__Fx_Admin(
 					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 					, $msg, __FILE__, __LINE__);
+			
+			/********************
+			 * step : 2 : 2
+			 * 		validate : for-loop start < length of $_lo_BarDatas
+			 ********************/
+			//code:20200603_164105
+			if ($idxOf_ForLoop_Start >= $lenOf_LO_BarDatas) {
+			
+				$msg .= "\$idxOf_ForLoop_Start >= \$lenOf_LO_BarDatas ($idxOf_ForLoop_Start / $lenOf_LO_BarDatas)";
+				$msg .= "\n";
 				
-			//test
-			$idxOf_ForLoop_Start += 1;
+				$msg .= "breaking from the while loop...";
+				$msg .= "\n";
+				
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+				
+				// break
+				break;
+									
+			}//if ($idxOf_ForLoop_Start >= $lenOf_LO_BarDatas)
 			
 			/********************
 			 * step : 2 : 1
 			 * 		prep
 			 ********************/
-// 			/********************
-// 			 * step : 2 : j1
-// 			 * 		position ==> taken ?
-// 			 ********************/
-// 			/********************
-// 			 * step : 2 : j1 : 1
-// 			 * 		conditions
-// 			 ********************/
-// 			$cond_1__Position_Taken = ($_flag_Position == true);
-				
-// 			if ($cond_1__Position_Taken == true) {
-// 				/********************
-// 				 * step : 2 : j1 : Y
-// 				 * 		position ==> taken
-// 				 ********************/
-// 				/********************
-// 				 * step : 2 : j1 : Y : 1
-// 				 * 		log
-// 				 ********************/
-// 				$msg = "(while)(step : 2 : j1 : Y : 1)";
-// 				$msg .= "\n";
-				
-// 				debug($msg);
-				
-// 				Utils::write_Log__Fx_Admin(
-// 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-// 						, $msg, __FILE__, __LINE__);
-					
-// 			} else {
-// 				/********************
-// 				 * step : 2 : j1 : N
-// 				 * 		position ==> NOT taken
-// 				 ********************/
-// 				/********************
-// 				 * step : 2 : j1 : N : 1
-// 				 * 		log
-// 				 ********************/
-// 				$msg = "(while)(step : 2 : j1 : N : 1)";
-// 				$msg .= "\n";
-				
-// 				debug($msg);
-				
-// 				Utils::write_Log__Fx_Admin(
-// 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-// 						, $msg, __FILE__, __LINE__);
-
-// 				/********************
-// 				 * step : 2 : j2
-// 				 * 		pattern ==> detected ?
-// 				 ********************/
-				//_20200601_101723:ref
-// 				if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All) {
-// 					/********************
-// 					 * step : 2 : j2 : choice-1
-// 					 * 		pattern ==> detected : detect all
-// 					 ********************/
-// 					$msg = "(while)(step : 2 : j2 : choice-1)";
-// 					$msg .= "\n";
-					
-// 					$msg .= "detection starts...";
-// 					$msg .= "\n";
-						
-						
-// 					// flag
-// 					$flag_Pattern_Detected = PD::dp_ALL();
-					
-// 					$msg .= "result => " . (($flag_Pattern_Detected == true) ? "true" : "false");
-					
-// 					debug($msg);
-						
-// 					Utils::write_Log__Fx_Admin(
-// 							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-// 							, $msg, __FILE__, __LINE__);
-				
-// 				} else {
-// 					/********************
-// 					 * step : 2 : j2 : choice-X
-// 					 * 		pattern ==> unknown
-// 					 ********************/
-// 					$msg = "unknown PD name : $_nameOf_DP";
-					
-// 					$msg .= "\n";
-// 					$msg .= "breaking from the while loop";
-					
-// 					debug($msg);
-					
-// 					Utils::write_Log__Fx_Admin(
-// 							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-// 							, $msg, __FILE__, __LINE__);
-					
-// 					break;
-					
-// 				}//if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All)
-				
-// 			}//if ($cond_1__Position_Taken == true)
-				
 			/********************
 			 * step : 2 : 2 : X
 			 * 		counter : increment
