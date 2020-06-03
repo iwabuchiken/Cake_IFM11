@@ -259,6 +259,11 @@
 		fclose($fout);
 		
 		$commnad_line = "C:\\WORKS_2\\Programs\\sakura\\sakura.exe $fpath_Tmp";
+		//$commnad_line = "call C:\\WORKS_2\\Programs\\sakura\\sakura.exe $fpath_Tmp";
+		//$commnad_line = "start C:\\WORKS_2\\Programs\\sakura\\sakura.exe $fpath_Tmp";
+
+		//debug
+		debug_Message("commnad_line : $commnad_line", basename(__FILE__), __LINE__);
 
 		//debug
 		debug_Message("opening file : $fpath_Tmp", basename(__FILE__), __LINE__);
