@@ -105,6 +105,12 @@ class CONS {
 	 	FxTestController
 	 ************************************************************/
 	/******************************
+	 	strings
+	 ******************************/
+	public static	$strOf_Position_Type__BUY = "BUY";
+	public static	$strOf_Position_Type__SELL = "SELL";
+	
+	/******************************
 	 	names
 	 ******************************/
 	public static	$nameOf_DP__Detect_All = "dp_ALL";
@@ -220,7 +226,8 @@ class CONS {
 // 	public static $numOf_While_Loop_Start = 3;
 // 	public static $numOf_While_Loop_Start = 6;
 
-	/************************************************************ FxUtilitiesController */
+	/************************************************************ 
+	 * FxUtilitiesController */
 	/*******************************
 		param values
 	 *******************************/

@@ -8,18 +8,69 @@ require_once 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/cons.php';
 class LibEaTester_2 {
 	
 	/********************
-	 * extract_Ticket_Numbers
+	 * set_Vals_To_Pos__First_Occasion
 	 *
-	 * at : 2020/04/13 15:47:30
+	 * at : 2020/06/04 17:53:11
 	 *
-	 * @return
-	 * 		array of ticket numbers
-	 // 			array(
-	 // 				(int) 0 => (int) 19572576,
-	 // 				(int) 1 => (int) 19573570,
-	 // 				(int) 2 => (int) 19574058,
-	 // 				(int) 3 => (int) 19592951
-	 // 			)
+	 * @return void
+	 *
+	 ********************/
+// 	public static function set_Vals_To_Pos($pos, $i, $bardata) {
+	public static function 
+	is_SL($_bardata, $_pr_SL, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+		//caller:20200604_175459
+		//head:20200604_175507
+		//wl:20200604_175511
+
+		/********************
+		 * step : 1
+		 * 		prep
+		 ********************/
+		$pr_Close = $_bardata->price_Close;
+		
+		/********************
+		 * step : 2
+		 * 		cond.
+		 ********************/
+		 if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY) {
+		 	
+		 	$cond_1 = ($pr_Close <= $_pr_SL);
+		 	
+		 } else if ($_strOf_Position_Type == CONS::$strOf_Position_Type__SELL) {
+		 
+		 	$cond_1 = ($pr_Close >= $_pr_SL);
+		 
+		 } else {
+
+		 	$msg = "unknown position type : $_strOf_Position_Type";
+		 	$msg .= "\n";
+		 	
+		 	$msg .= "using default ==> BUY";
+		 	$msg .= "\n";
+		 	
+		 	// write log
+		 	Utils::write_Log__Fx_Admin(
+		 			$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+		 			, $msg, $_dpath_Log, $_fname_Log);
+		 	
+		 	$cond_1 = ($pr_Close >= $_pr_SL);
+		 	
+		 }//if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY)
+		 
+		 /********************
+		  * step : 3
+		  * 	judge
+		  ********************/
+		return $cond_1;
+		
+	}//is_SL($bardata, $_dpath_Log, $_fname_Log) {
+		
+	/********************
+	 * set_Vals_To_Pos__First_Occasion
+	 *
+	 * at : 2020/06/04 17:53:11
+	 *
+	 * @return void
 	 *
 	 ********************/
 // 	public static function set_Vals_To_Pos($pos, $i, $bardata) {

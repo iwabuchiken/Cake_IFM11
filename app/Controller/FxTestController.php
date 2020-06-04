@@ -1098,11 +1098,34 @@ class FxTestController extends AppController {
 
 						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 4)";
 						$msg .= "\n";
-						$msg .= "\$flag_Position_Taken ==> true : " 
+						$msg .= "\$flag_Position_Taken ==> set to true : " 
 									. (($flag_Position_Taken == true) ? "true" : "false");
 						$msg .= "\n";
 						
 // 						debug($msg);
+
+						//code:20200604_174850
+						/********************
+						 * step : 2 : j2 : choice-1 : j3.1
+						 * 		this bar ==> SL ?
+						 ********************/
+						/********************
+						 * step : 2 : j2 : choice-1 : j3.1 : 1
+						 * 		conditions
+						 ********************/
+						$cond_2__Is_SL = LibEaTester_2::is_SL(
+								$bardata_This
+								, $pos->pr_SL
+								, CONS::$strOf_Position_Type__BUY
+								, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								);
+						//log
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]\n";
+						
+						$msg .= "is_SL ==> " . (($cond_2__Is_SL == true) ? "true" : "false");
+						$msg .= "\n";
+						
+						//next:20200604_181437
 						
 					} else {//if ($resultOf_PD_dp_ALL == true) {
 						/********************
