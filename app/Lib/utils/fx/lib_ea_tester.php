@@ -911,7 +911,12 @@ class LibEaTester {
 		//report
 		//debug
 // 		$msg = "\n"; $msg .= "(show_Basic_Pos_Data)";
-		$msg = "\n"; $msg .= "(show_Basic_Pos_Data__Build_Lines)";
+		$msg = "\n";
+		$msg .= "[" . basename(__FILE__) . ":" . __LINE__ . "]";
+		$msg .= "\n";
+		
+		$msg .= "(show_Basic_Pos_Data__Build_Lines)";
+// 		$msg = "\n"; $msg .= "(show_Basic_Pos_Data__Build_Lines)";
 		$msg .= "\n";
 			
 		$msg .= "\$pos->st_idx\t" . $pos->st_idx 
@@ -922,7 +927,11 @@ class LibEaTester {
 				;
 		$msg .= "\n";
 	
-		$msg .= "\$pos->cu_idx\t" . $pos->cu_idx . "\t" . "\$pos->cu_pr\t" . number_format($pos->cu_pr, 3);
+		$msg .= "\$pos->cu_idx\t" . $pos->cu_idx . "\t" . "\$pos->cu_pr\t" . number_format($pos->cu_pr, 3)
+				. "\t"
+				. "\$lo_BarDatas[$pos->cu_idx]->dateTime\t" . $lo_BarDatas[$pos->cu_idx]->dateTime
+		
+				;
 		$msg .= "\n";
 	
 		$msg .= "\$pos->rf_idx\t" . $pos->rf_idx . "\t" . "\$pos->rf_pr\t" . number_format($pos->rf_pr, 3);
@@ -943,6 +952,7 @@ class LibEaTester {
 		$msg .= "\$pos->trail_starting_idx\t" . $pos->trail_starting_idx
 		. "\t" . "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
 		$msg .= "\n";
+		$msg .= "(/show_Basic_Pos_Data__Build_Lines)";
 			
 		// return
 		return $msg;
@@ -1741,6 +1751,7 @@ class LibEaTester {
 			 * step : B : j2 : Y : 3
 			 * 		calc
 			 ********************/
+			//ref:20200604_122301
 			$bd = $lo_BarDatas[$idxOf_Loop];
 				
 			$pr_Open = $bd->price_Open;

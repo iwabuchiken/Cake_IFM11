@@ -11,6 +11,11 @@ C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\
 
 require_once 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/fx/PD.php';
 
+require_once 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/fx/lib_ea_tester_2.php';
+
+// $val_TP			= 0.10;
+// $val_SL			= 0.05;
+// $val_SPREAD		= 0.03;
 
 // class ImagesController extends AppController {
 // class FxEaTesterController extends AppController {
@@ -18,7 +23,7 @@ class FxTestController extends AppController {
 // class FxEaTesterController extends AppController {
 // class FxTesterController extends AppController {
 
-	
+		
 // 	public $scaffold;
 
 	//ref http://stackoverflow.com/questions/4252577/cakephp-session-cant-write answered Nov 23 '10 at 3:56
@@ -879,7 +884,8 @@ class FxTestController extends AppController {
 			 * step : 2 : 0 : 0
 			 * 		log
 			 ********************/
-			$msg = "========================================[loop : $i";	// "=" x 40
+// 			$msg = "========================================[loop : $i";	// "=" x 40
+			$msg = "===================================[for-loop : $i";	// "=" x 35
 			$msg .= "\n";
 			
 			Utils::write_Log__Fx_Admin(
@@ -945,6 +951,8 @@ class FxTestController extends AppController {
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 						, $msg, __FILE__, __LINE__);
 					
+				//next:20200604_131159
+				
 			} else {
 				/********************
 				 * step : 2 : j1 : N
@@ -1033,19 +1041,51 @@ class FxTestController extends AppController {
 						 * step : 2 : j2 : choice-1 : Y : 3
 						 * 		position ==> init
 						 ********************/
-						//_20200601_150706:tmp
-						$pos->st_idx	= $i;
-						$pos->st_pr	= $bardata_This->price_Open;
-// 						$pos['st_idx']	= $i;
-// 						$pos['st_pr']	= $bardata_This['price_Open'];
+// 						/********************
+// 						 * step : 2 : j2 : choice-1 : Y : 3 : 1
+// 						 * 		calc
+// 						 ********************/
+// 						//ref //ref:20200604_122301 / LibEaTester
+// 						$pr_TP			= $bd->price_Open + ($val_TP + $val_SPREAD);
+// 						$pr_SL			= $bd->price_Open - ($val_SL + $val_SPREAD);
+						
+						/********************
+						 * step : 2 : j2 : choice-1 : Y : 3 : 2
+						 * 		set vals
+						 ********************/
+						//caller:20200604_123001
+						//code:20200604_123320
+// 						LibEaTester_2::set_Vals_To_Pos(
+						LibEaTester_2::set_Vals_To_Pos__First_Occasion(
+									$pos
+									, $i
+									, $bardata_This
+									, CONS::$val_FxTester_TP
+									, CONS::$val_FxTester_SL
+									, CONS::$val_FxTester_SPREAD
+						);
+// 						LibEaTester_2::set_Vals_To_Pos($pos, $i, $bardata_This, $val_TP, $val_SL, $val_SPREAD);
+						
+// 						//_20200601_150706:tmp
+// 						$pos->st_idx	= $i;
+// 						$pos->st_pr	= $bardata_This->price_Open;
+// // 						$pos['st_idx']	= $i;
+// // 						$pos['st_pr']	= $bardata_This['price_Open'];
 						
 						//next:20200603_164949
 						
 						// log
-						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 3)";
-						$msg .= "\n";
-						$msg .= "position ==> init : st_pr = " . $pos->st_pr;
-						$msg .= "\n";
+						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $_lo_BarDatas, __FILE__, __LINE__);
+// 						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 3 : 2) set vals";
+// 						$msg .= "\n";
+						
+// 						$msg .= sprintf("st_pr\t%.03f\t(id = %d)", $pos->st_pr, $pos->st_idx);
+// // 						$msg .= "position ==> init : st_pr = " . $pos->st_pr;
+// 						$msg .= "\n";
+						
+// 						$msg .= sprintf("cu_pr\t%.03f\t(id = %d)", $pos->cu_pr, $pos->cu_idx);
+// // 						$msg .= "position ==> init : cu_pr = " . $pos->cu_pr;
+// 						$msg .= "\n";
 						
 // 						debug($msg);
 
@@ -1235,7 +1275,9 @@ class FxTestController extends AppController {
 			 ********************/
 			$msg = "(while)(step : 2 : 0 : 1)";
 			$msg .= "\n";
-			$msg .= "while-loop : show count ==> $_cntOf_Loop_While";
+			$msg .= "\n";
+			$msg .= "####==================== while : $_cntOf_Loop_While ====================###";
+// 			$msg .= "while-loop : show count ==> $_cntOf_Loop_While";
 			$msg .= "\n";
 			
 			debug($msg);

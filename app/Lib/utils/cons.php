@@ -138,6 +138,11 @@ class CONS {
 	 ******************************/
 	public static 	$val_Trail_Starting = 0.04;
 	
+	//code:20200604_125131
+	public static 	$val_FxTester_TP			= 0.10;
+	public static 	$val_FxTester_SL			= 0.05;
+	public static 	$val_FxTester_SPREAD		= 0.03;
+	
 	/******************************
 	 	Paths and names : fx : testers
 	 ******************************/
