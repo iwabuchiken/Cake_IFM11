@@ -1106,11 +1106,11 @@ class FxTestController extends AppController {
 
 						//code:20200604_174850
 						/********************
-						 * step : 2 : j2 : choice-1 : j3.1
+						 * step : 2 : j2 : choice-1 : j3-1
 						 * 		this bar ==> SL ?
 						 ********************/
 						/********************
-						 * step : 2 : j2 : choice-1 : j3.1 : 1
+						 * step : 2 : j2 : choice-1 : j3-1 : 1
 						 * 		conditions
 						 ********************/
 						$cond_2__Is_SL = LibEaTester_2::is_SL(
@@ -1119,13 +1119,153 @@ class FxTestController extends AppController {
 								, CONS::$strOf_Position_Type__BUY
 								, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 								);
-						//log
-						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]\n";
+// 						//log
+// 						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]\n";
 						
-						$msg .= "is_SL ==> " . (($cond_2__Is_SL == true) ? "true" : "false");
-						$msg .= "\n";
+// 						$msg .= "is_SL ==> " . (($cond_2__Is_SL == true) ? "true" : "false");
+// 						$msg .= "\n";
+						
+// 						$msg .= sprintf(
+// 									"\$bardata_This->price_Close\t%.03f\n\$pos->pr_SL\t%.03f"
+// 									, $bardata_This->price_Close, $pos->pr_SL
+// 								);
+						
+// 						$msg .= "\n";
 						
 						//next:20200604_181437
+						/********************
+						 * step : 2 : j2 : choice-1 : j3-1 : 2
+						 * 		judge ==> is SL ?
+						 ********************/
+						if ($cond_2__Is_SL == true) {
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y
+							 * 		judge ==> is SL
+							 ********************/
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 1
+							 * 		log
+							 ********************/
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "] (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 1)";
+							$msg .= "\n";
+	
+							$msg .= "is_SL ==> true";
+							$msg .= "\n";
+	
+							$msg .= sprintf(
+										"\$bardata_This->price_Close\t%.03f\n\$pos->pr_SL\t%.03f"
+										, $bardata_This->price_Close, $pos->pr_SL
+									);
+	
+							$msg .= "\n";
+						
+						} else {
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-1 : 2 : N
+							 * 		judge ==> is NOT SL
+							 ********************/
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-1 : 2 : N : 1
+							 * 		log
+							 ********************/
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "] (step : 2 : j2 : choice-1 : j3-1 : 2 : N : 1)";
+							$msg .= "\n";
+							
+							$msg .= "is_SL ==> false";
+							$msg .= "\n";
+							
+							$msg .= sprintf(
+									"\$bardata_This->price_Close\t%.03f\n\$pos->pr_SL\t%.03f"
+									, $bardata_This->price_Close, $pos->pr_SL
+							);
+							
+							$msg .= "\n";
+							
+							// separator line
+							$msg .= "\n";
+
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-2
+							 * 		TP ?
+							 ********************/
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-2 : 1
+							 * 		conditions
+							 ********************/
+							//code:20200605_123445
+							$cond_3__Is_TP = LibEaTester_2::is_TP(
+									$bardata_This
+									, $pos->pr_TP
+									, CONS::$strOf_Position_Type__BUY
+									, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							);
+							
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-2 : 2
+							 * 		judge ==> is TP ?
+							 ********************/
+							if ($cond_3__Is_TP) {
+								/********************
+								 * step : 2 : j2 : choice-1 : j3-2 : 2 : Y
+								 * 		judge ==> is TP
+								 ********************/
+								/********************
+								 * step : 2 : j2 : choice-1 : j3-3 : 2 : Y : 1
+								 * 		log
+								 ********************/
+								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]" 
+										. " (step : 2 : j2 : choice-1 : j3-2 : 2 : Y : 1)";
+								$msg .= "\n";
+								
+								$msg .= "is_TP ==> true";
+								$msg .= "\n";
+								
+								$msg .= sprintf(
+										"\$bardata_This->price_Close\t%.03f\n\$pos->pr_TP\t%.03f"
+										, $bardata_This->price_Close, $pos->pr_TP
+								);
+								
+								$msg .= "\n";
+								
+								
+							
+							} else {
+							
+								/********************
+								 * step : 2 : j2 : choice-1 : j3-2 : 2 : N
+								 * 		judge ==> is NOT TP
+								 ********************/
+								/********************
+								 * step : 2 : j2 : choice-1 : j3-3 : 2 : N : 1
+								 * 		log
+								 ********************/
+								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+										. " (step : 2 : j2 : choice-1 : j3-2 : 2 : N : 1)";
+								$msg .= "\n";
+								
+								$msg .= "is_TP ==> false";
+								$msg .= "\n";
+								
+								$msg .= sprintf(
+										"\$bardata_This->price_Close\t%.03f\n\$pos->pr_TP\t%.03f"
+										, $bardata_This->price_Close, $pos->pr_TP
+								);
+								
+								$msg .= "\n";
+								
+								//next:20200605_125122
+								
+								
+							}//if ($cond_3__Is_TP)
+							
+							
+							
+											
+							
+							
+						}//if ($cond_2__Is_SL == true)
+						
+						
 						
 					} else {//if ($resultOf_PD_dp_ALL == true) {
 						/********************

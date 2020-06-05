@@ -6,9 +6,67 @@ require_once 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/cons.php';
 // require_once 'cons.php';
 	
 class LibEaTester_2 {
+
+	/********************
+	 * is_TP
+	 *
+	 * at : 2020/06/05 12:35:59
+	 *
+	 * @return boolean
+	 *
+	 ********************/
+	// 	public static function set_Vals_To_Pos($pos, $i, $bardata) {
+	public static function
+	is_TP($_bardata, $_pr_TP, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+		//caller:20200605_123614	
+		//head:20200605_123619
+		//wl:20200605_123623
+	
+		/********************
+		 * step : 1
+		 * 		prep
+		 ********************/
+		$pr_Close = $_bardata->price_Close;
+	
+		/********************
+		 * step : 2
+		 * 		cond.
+		 ********************/
+		if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY) {
+	
+			$cond_1 = ($pr_Close >= $_pr_TP);
+	
+		} else if ($_strOf_Position_Type == CONS::$strOf_Position_Type__SELL) {
+				
+			$cond_1 = ($pr_Close <= $_pr_TP);
+				
+		} else {
+	
+			$msg = "unknown position type : $_strOf_Position_Type";
+			$msg .= "\n";
+	
+			$msg .= "using default ==> BUY";
+			$msg .= "\n";
+	
+			// write log
+			Utils::write_Log__Fx_Admin(
+					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+					, $msg, $_dpath_Log, $_fname_Log);
+	
+			$cond_1 = ($pr_Close >= $_pr_TP);
+	
+		}//if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY)
+			
+		/********************
+		 * step : 3
+		 * 	judge
+		 ********************/
+		return $cond_1;
+	
+	}//is_TP
 	
 	/********************
-	 * set_Vals_To_Pos__First_Occasion
+	 * is_SL
 	 *
 	 * at : 2020/06/04 17:53:11
 	 *
@@ -53,7 +111,8 @@ class LibEaTester_2 {
 		 			$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 		 			, $msg, $_dpath_Log, $_fname_Log);
 		 	
-		 	$cond_1 = ($pr_Close >= $_pr_SL);
+		 	$cond_1 = ($pr_Close <= $_pr_SL);
+// 		 	$cond_1 = ($pr_Close >= $_pr_SL);
 		 	
 		 }//if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY)
 		 
