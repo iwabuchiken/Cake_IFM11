@@ -8,6 +8,106 @@ require_once 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/cons.php';
 class LibEaTester_2 {
 
 	/********************
+	 * is_Trailing($_bardata, $pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log)
+	 *
+	 * at : 2020/06/05 12:35:59
+	 *
+	 * @return boolean
+	 *
+	 ********************/
+	// 	public static function set_Vals_To_Pos($pos, $i, $bardata) {
+	public static function
+	is_Trailing($_bardata, $pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+		//caller:20200606_181304	
+		//head:20200606_181307
+		//wl:20200606_181311
+		/********************
+		 * step : 1
+		 * 		prep : vars
+		 ********************/
+		$pr_Close = $_bardata->price_Close;
+		
+		/********************
+		 * step : 1 : 1
+		 * 		prep : trail starting price
+		 ********************/
+		if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY) {
+		
+			$pr_Trail_Start = $pos->st_pr + $pos->val_Trail_Starting + $pos->val_SPREAD;
+		
+		} else if ($_strOf_Position_Type == CONS::$strOf_Position_Type__SELL) {
+			
+			$pr_Trail_Start = $pos->st_pr - $pos->val_Trail_Starting - $pos->val_SPREAD;
+			
+		} else {
+		
+			$msg = "[FUNC : is_Trailing]";
+			$msg .= "\n";
+			
+			$msg .= "unknown position type : $_strOf_Position_Type";
+			$msg .= "\n";
+			
+			$msg .= "using default val : CONS::\$strOf_Position_Type__BUY (CONS::$strOf_Position_Type__BUY)";
+			$msg .= "\n";
+			
+			// separator
+			$msg .= "\n";
+			
+			//debug : write
+			Utils::write_Log__Fx_Admin(
+					$_dpath_Log, $_fname_Log
+					, $msg, __FILE__, __LINE__);
+
+			// set val
+			$pr_Trail_Start = $pos->st_pr + $pos->val_Trail_Starting + $pos->val_SPREAD;
+			
+		}//if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY)
+
+		/********************
+		 * step : 2
+		 * 		judge
+		 ********************/
+		if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY) {
+		
+			$cond_1_Trail_Start = ($pr_Close >= $pr_Trail_Start);
+		
+		} else if ($_strOf_Position_Type == CONS::$strOf_Position_Type__SELL) {
+				
+			$cond_1_Trail_Start = ($pr_Close <= $pr_Trail_Start);
+				
+		} else {
+		
+			$msg = "[FUNC : is_Trailing]";
+			$msg .= "\n";
+				
+			$msg .= "unknown position type : \$cond_1_Trail_Start ==> set to true (default)";
+			$msg .= "\n";
+				
+			// separator
+			$msg .= "\n";
+				
+			//debug : write
+			Utils::write_Log__Fx_Admin(
+					$_dpath_Log, $_fname_Log
+					, $msg, __FILE__, __LINE__);
+		
+			// set val
+			$cond_1_Trail_Start = true;
+				
+		}//if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY)		
+
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		return $cond_1_Trail_Start;
+		
+		//dummy
+// 		return false;
+		
+	}//is_Trailing($_bardata, $pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+	
+	/********************
 	 * is_TP
 	 *
 	 * at : 2020/06/05 12:35:59
@@ -134,7 +234,19 @@ class LibEaTester_2 {
 	 ********************/
 // 	public static function set_Vals_To_Pos($pos, $i, $bardata) {
 	public static function 
-	set_Vals_To_Pos__First_Occasion($_pos, $_i, $_bardata, $_val_TP, $_val_SL, $_val_SPREAD) {
+	set_Vals_To_Pos__First_Occasion(
+			$_pos
+			, $_i
+			, $_bardata
+			
+			, $_strOf_Position_Type
+			
+			, $_val_TP
+			, $_val_SL
+			, $_val_SPREAD
+			, $_val_FxTester_Trail_Starting_Diff
+		) {
+// 	($_pos, $_i, $_bardata, $_val_TP, $_val_SL, $_val_SPREAD) {
 		//caller:20200604_123001
 		//head:20200604_123006
 		//wl:20200604_123014
@@ -175,6 +287,18 @@ class LibEaTester_2 {
 		 ********************/
 		$_pos->pr_TP		= $pr_TP;
 		$_pos->pr_SL		= $pr_SL;
+
+		/********************
+		 * step : 5
+		 * 		$val_Trail_Starting
+		 ********************/
+		$_pos->val_Trail_Starting	= $_val_FxTester_Trail_Starting_Diff;
+
+		/********************
+		 * step : 6
+		 * 		$position_type
+		 ********************/
+		$_pos->position_type	= $_strOf_Position_Type;
 		
 	}//set_Vals_To_Pos__First_Occasion
 	

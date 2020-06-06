@@ -66,6 +66,10 @@ class Pos {
 	public $val_SL	= 0.0;
 	public $val_SPREAD	= 0.0;
 	
+	/********************
+	 * step : X
+	 * 		$val_Trail_Starting
+	 ********************/
 	public $val_Trail_Starting	= -1;
 // 	public $val_Trail_Starting	= 0.4;
 	
@@ -76,6 +80,9 @@ class Pos {
 
 	public $ext_status = null;
 	public $cu_status = null;
+	
+	// position type
+	public $position_type	= null;
 	
 }//class Pos {
 

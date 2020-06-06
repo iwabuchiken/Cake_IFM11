@@ -952,7 +952,28 @@ class LibEaTester {
 		$msg .= "\$pos->trail_starting_idx\t" . $pos->trail_starting_idx
 		. "\t" . "\$pos->trail_starting_pr\t" . number_format($pos->trail_starting_pr, 3);
 		$msg .= "\n";
+
+		/********************
+		 * step : X
+		 * 		val_Trail_Starting
+		 ********************/
+		$msg .= "\$pos->val_Trail_Starting\t" . number_format($pos->val_Trail_Starting, 3);
+		$msg .= "\n";
+		
+		/********************
+		 * step : X
+		 * 		$position_type
+		 ********************/
+		//code:20200606_183214:c
+		$msg .= "\$pos->val_Trail_Starting\t" . $pos->position_type;
+		$msg .= "\n";
+		
+		
 		$msg .= "(/show_Basic_Pos_Data__Build_Lines)";
+		$msg .= "\n";
+		
+		// separator
+		$msg .= "\n";
 			
 		// return
 		return $msg;

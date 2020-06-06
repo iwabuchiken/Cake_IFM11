@@ -149,6 +149,8 @@ class CONS {
 	public static 	$val_FxTester_SL			= 0.05;
 	public static 	$val_FxTester_SPREAD		= 0.03;
 	
+	public static 	$val_FxTester_Trail_Starting_Diff		= 0.04;
+	
 	/******************************
 	 	Paths and names : fx : testers
 	 ******************************/

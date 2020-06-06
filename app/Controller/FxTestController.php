@@ -1056,13 +1056,18 @@ class FxTestController extends AppController {
 						//caller:20200604_123001
 						//code:20200604_123320
 // 						LibEaTester_2::set_Vals_To_Pos(
+						//code:20200606_181945:c
 						LibEaTester_2::set_Vals_To_Pos__First_Occasion(
 									$pos
 									, $i
 									, $bardata_This
+									
+									, CONS::$strOf_Position_Type__BUY
+									
 									, CONS::$val_FxTester_TP
 									, CONS::$val_FxTester_SL
 									, CONS::$val_FxTester_SPREAD
+									, CONS::$val_FxTester_Trail_Starting_Diff
 						);
 // 						LibEaTester_2::set_Vals_To_Pos($pos, $i, $bardata_This, $val_TP, $val_SL, $val_SPREAD);
 						
@@ -1254,6 +1259,75 @@ class FxTestController extends AppController {
 								$msg .= "\n";
 								
 								//next:20200606_115039:n
+								/********************
+								 * step : 2 : j2 : choice-1 : j3-3
+								 * 		trailing ==> start ?
+								 ********************/
+								/********************
+								 * step : 2 : j2 : choice-1 : j3-3 : 1
+								 * 		conditions
+								 ********************/
+								$cond_4_Trailing_Start = LibEaTester_2::is_Trailing(
+											$bardata_This
+											, $pos
+											, CONS::$strOf_Position_Type__BUY
+											, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+										);
+								if ($cond_4_Trailing_Start == true) {
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : Y
+									 * 		trailing ==> start
+									 ********************/
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : Y : 1
+									 * 		log
+									 ********************/
+									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+											. " (step : 2 : j2 : choice-1 : j3-3 : Y : 1)";
+									$msg .= "\n";
+									
+									$msg .= "is_Trailing ==> true";
+									$msg .= "\n";
+									
+									$msg .= sprintf(
+											"\$bardata_This->price_Close\t%.03f\n\$pos->trail_starting_pr\t%.03f"
+											, $bardata_This->price_Close
+											, $pos->st_pr + $pos->val_Trail_Starting + $pos->val_SPREAD
+// 											, $bardata_This->price_Close, $pos->trail_starting_pr
+									);
+									
+									$msg .= "\n";
+								
+								} else {
+								
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : N
+									 * 		trailing ==> start
+									 ********************/
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : N : 1
+									 * 		log
+									 ********************/
+									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+											. " (step : 2 : j2 : choice-1 : j3-3 : N : 1)";
+									$msg .= "\n";
+										
+									$msg .= "is_Trailing ==> false";
+									$msg .= "\n";
+										
+									$msg .= sprintf(
+											"\$bardata_This->price_Close\t%.03f\n\$pos->trail_starting_pr\t%.03f"
+											, $bardata_This->price_Close
+											, $pos->st_pr + $pos->val_Trail_Starting + $pos->val_SPREAD
+// 											, $bardata_This->price_Close, $pos->trail_starting_pr
+									);
+
+									$msg .= "\n";
+
+									//next:20200606_185920:n
+									
+									
+								}//if ($cond_4_Trailing_Start == true)
 								
 								//next:20200605_125122
 								/********************
