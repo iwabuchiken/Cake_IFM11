@@ -178,5 +178,27 @@ class LibEaTester_2 {
 		
 	}//set_Vals_To_Pos__First_Occasion
 	
+	/********************
+	 * update_Pos
+	 *
+	 * at : 2020/06/06 11:33:58
+	 *
+	 * @return void
+	 *
+	 ********************/
+	// 	public static function set_Vals_To_Pos($pos, $i, $bardata) {
+	public static function
+	update_Pos($_bardata, $_pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+//caller:20200606_113407
+//head:20200606_113413
+//wl:20200606_113416
+	
+		/********************
+		 * step : 1
+		 * 		prep
+		 ********************/
+		
+	}//update_Pos($_bardata, $_pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+	
 }//class Libfx
 	

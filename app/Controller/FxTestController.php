@@ -1253,8 +1253,41 @@ class FxTestController extends AppController {
 								
 								$msg .= "\n";
 								
-								//next:20200605_125122
+								//next:20200606_115039:n
 								
+								//next:20200605_125122
+								/********************
+								 * step : 2 : j2 : choice-1 : j3-3 : 2 : N : 2
+								 * 		pos ==> update
+								 ********************/
+								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+										. " (step : 2 : j2 : choice-1 : j3-2 : 2 : N : 2)";
+								$msg .= "\n";
+								
+								$msg .= "updating pos...";
+								$msg .= "\n";
+								$msg .= "\n";
+								
+								//code:20200606_113647
+								LibEaTester_2::update_Pos(
+											$bardata_This
+											, $pos
+											, CONS::$strOf_Position_Type__BUY
+											, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+										);
+								
+								// log
+								$msg	.="[" . basename(__FILE__) . " : " . __LINE__ . "]";
+								$msg .= "\n";
+								$msg .= "calling : LibEaTester::show_Basic_Pos_Data__Build_Lines";
+								$msg .= "\n";
+								
+								$msg	.= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+														$pos, $_lo_BarDatas, __FILE__, __LINE__);
+// 								$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $_lo_BarDatas, __FILE__, __LINE__);
+
+								// separator line
+								$msg .= "\n";
 								
 							}//if ($cond_3__Is_TP)
 							
