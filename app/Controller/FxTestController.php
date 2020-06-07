@@ -851,6 +851,10 @@ class FxTestController extends AppController {
 		// position
 		$pos = LibEaTester::init_Pos();
 		
+		// status : for-loop exit
+		//code:20200607_153202:c
+		$statusOf_For_Loop_Exit = 0;
+		
 		/********************
 		 * step : 2
 		 * 		for-loop
@@ -1325,49 +1329,63 @@ class FxTestController extends AppController {
 									$msg .= "\n";
 
 									//next:20200606_185920:n
+// 									//test:20200607_154149:t
+// 									$statusOf_For_Loop_Exit = CONS::$statusOf_For_Loop_Exit__Break_Caller_While_Loop_Also;
+// // 									$statusOf_For_Loop_Exit = CONS::$statusOf_For_Loop_Exit__Debug_Stop;
+									
+// 									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 									$msg .= "\n";
+									
+// 									$msg .= "testing : \$statusOf_For_Loop_Exit ==> set to " 
+// 											. $statusOf_For_Loop_Exit;
+// // 											. CONS::$statusOf_For_Loop_Exit__Debug_Stop;
+// 									$msg .= "\n";
+									
+// 									$msg .= "breaking from for-loop...";
+// 									$msg .= "\n";
+										
+// 									//test
+// 									break;
 									
 									
 								}//if ($cond_4_Trailing_Start == true)
 								
-								//next:20200605_125122
-								/********************
-								 * step : 2 : j2 : choice-1 : j3-3 : 2 : N : 2
-								 * 		pos ==> update
-								 ********************/
-								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
-										. " (step : 2 : j2 : choice-1 : j3-2 : 2 : N : 2)";
-								$msg .= "\n";
+// 								//next:20200605_125122
+// 								/********************
+// 								 * step : 2 : j2 : choice-1 : j3-3 : 2 : N : 2
+// 								 * 		pos ==> update
+// 								 ********************/
+// 								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+// 										. " (step : 2 : j2 : choice-1 : j3-3 : 2 : N : 2)";
+// 								$msg .= "\n";
 								
-								$msg .= "updating pos...";
-								$msg .= "\n";
-								$msg .= "\n";
+// 								$msg .= "updating pos...";
+// 								$msg .= "\n";
+// 								$msg .= "\n";
 								
-								//code:20200606_113647
-								LibEaTester_2::update_Pos(
-											$bardata_This
-											, $pos
-											, CONS::$strOf_Position_Type__BUY
-											, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-										);
+// 								//code:20200606_113647
+// 								LibEaTester_2::update_Pos(
+// 											$bardata_This
+// 											, $pos
+// 											, CONS::$strOf_Position_Type__BUY
+// 											, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 										);
 								
-								// log
-								$msg	.="[" . basename(__FILE__) . " : " . __LINE__ . "]";
-								$msg .= "\n";
-								$msg .= "calling : LibEaTester::show_Basic_Pos_Data__Build_Lines";
-								$msg .= "\n";
+// 								// log
+// 								$msg	.="[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 								$msg .= "\n";
+// 								$msg .= "calling : LibEaTester::show_Basic_Pos_Data__Build_Lines";
+// 								$msg .= "\n";
 								
-								$msg	.= LibEaTester::show_Basic_Pos_Data__Build_Lines(
-														$pos, $_lo_BarDatas, __FILE__, __LINE__);
-// 								$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $_lo_BarDatas, __FILE__, __LINE__);
+// 								$msg	.= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+// 														$pos, $_lo_BarDatas, __FILE__, __LINE__);
+// // 								$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $_lo_BarDatas, __FILE__, __LINE__);
 
-								// separator line
-								$msg .= "\n";
+// 								// separator line
+// 								$msg .= "\n";
 								
 							}//if ($cond_3__Is_TP)
 							
-							
-							
-											
 							
 							
 						}//if ($cond_2__Is_SL == true)
@@ -1427,6 +1445,12 @@ class FxTestController extends AppController {
 			 * 		counter
 			 ********************/
 			$cntOf_Loop += 1;
+
+			/********************
+			 * step : 2 : X
+			 * 		exit status
+			 ********************/
+			$statusOf_For_Loop_Exit = CONS::$statusOf_For_Loop_Exit__Reached_Loop_Last_Line;
 					
 		}//for ($i = $idxOf_ForLoop_Start; $i < $lenOf_LO_BarDatas; $i++) {
 
@@ -1434,13 +1458,25 @@ class FxTestController extends AppController {
 		 * step : 2 : X
 		 * 		for-loop ==> exited
 		 ********************/
-		$msg .= "(for)(step : 2 : X)";
+		// flash $msg content
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+		
+		// renew $msg
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= "\n";
+		
 		$msg .= "\n";
 		$msg .= "for-loop ==> exited : \$i = $i";
 		$msg .= "\n";
 		
 		debug($msg);
 	
+		// status : exit
+		$msg .= "\$statusOf_For_Loop_Exit => " . $statusOf_For_Loop_Exit;
+		$msg .= "\n";
+		
 		Utils::write_Log__Fx_Admin(
 				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 				, $msg, __FILE__, __LINE__);
@@ -1459,8 +1495,10 @@ class FxTestController extends AppController {
 		//test:dummy value 20200603_162835
 		$idxOf_Position_Start = $i * 3;
 // 		$idxOf_Position_Start = $i * 2;
-		
-		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start);
+
+		//code:20200607_155305:c
+		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit);
+// 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start);
 // 		$valOf_Ret = array($cntOf_Loop, $i);
 		
 		/********************
@@ -1563,6 +1601,7 @@ class FxTestController extends AppController {
 			//_20200601_093740:caller
 			//$valOf_Ret = array($cntOf_Loop, $i)
 			//array($cntOf_Loop, $i, $idxOf_Position_Start)
+			//$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit)
 			//coding:20200603_162557
 			$valOf_Ret_Received = FxTestController::fx_tester_T_1__Order_Buy__V2__For_Loop(
 					
@@ -1576,6 +1615,9 @@ class FxTestController extends AppController {
 			$cntOf_Loop_This		= $valOf_Ret_Received[0];
 			$idxOf_ForLoop_Last		= $valOf_Ret_Received[1];
 			$idxOf_Position_Start	= $valOf_Ret_Received[2];
+			
+			//code:20200607_155156:c
+			$statusOf_For_Loop_Exit	= $valOf_Ret_Received[3];
 			
 			// 
 			$cntOf_Loop_Total += $cntOf_Loop_This;
@@ -1612,6 +1654,10 @@ class FxTestController extends AppController {
 			
 			/********************
 			 * step : 2 : 2
+			 * 		validate
+			 ********************/
+			/********************
+			 * step : 2 : 2 : 1
 			 * 		validate : for-loop start < length of $_lo_BarDatas
 			 ********************/
 			//code:20200603_164105
@@ -1631,11 +1677,38 @@ class FxTestController extends AppController {
 				break;
 									
 			}//if ($idxOf_ForLoop_Start >= $lenOf_LO_BarDatas)
-			
+
 			/********************
-			 * step : 2 : 1
-			 * 		prep
+			 * step : 2 : 2 : 2
+			 * 		validate : $statusOf_For_Loop_Exit
 			 ********************/
+			//code:20200607_155707:c
+			$cond_1 = ($statusOf_For_Loop_Exit == CONS::$statusOf_For_Loop_Exit__Break_Caller_While_Loop_Also);
+			
+			if ($cond_1 == true) {
+					
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= "\n";
+				
+				$msg .= "\$statusOf_For_Loop_Exit => $statusOf_For_Loop_Exit";
+				$msg .= "\n";
+			
+				$msg .= "breaking from the while loop, also...";
+				$msg .= "\n";
+			
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+			
+				// break
+				break;
+					
+			}//if ($cond_1 == true) {
+					
+// 			/********************
+// 			 * step : 2 : 1
+// 			 * 		prep
+// 			 ********************/
 			/********************
 			 * step : 2 : 2 : X
 			 * 		counter : increment
@@ -1876,6 +1949,18 @@ class FxTestController extends AppController {
 				
 					, $dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
 				);
+		
+		//log
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= "\n";
+		
+		$msg .= "FxTestController::fx_tester_T_1__Order_Buy__V2__While_Loop ==> returned";
+		$msg .= "\n";
+			
+		// write log
+		Utils::write_Log__Fx_Admin(
+				$dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
 		
 		/********************
 		 * step : X

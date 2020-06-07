@@ -134,6 +134,17 @@ class CONS {
 	public static	$strOf_BarType__C5 = "C5";	# $bd->price_High == $bd->price_Close
 
 	/******************************
+	 	exit status : loops
+	 ******************************/
+	//code:20200607_153129
+	public static	$statusOf_For_Loop_Exit__Debug_Stop		= -1;
+	
+	public static	$statusOf_For_Loop_Exit__Reached_Loop_Last_Line	= 9;
+	
+	//code:20200607_155050:c
+	public static	$statusOf_For_Loop_Exit__Break_Caller_While_Loop_Also	= -2;
+	
+	/******************************
 	 	exit status (Pos)
 	 ******************************/
 	public static	$strOf_Exit_Status__SL = "SL";
