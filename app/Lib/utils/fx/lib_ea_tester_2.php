@@ -303,6 +303,81 @@ class LibEaTester_2 {
 	}//set_Vals_To_Pos__First_Occasion
 	
 	/********************
+	 * update_Pos__First_Bar
+	 *
+	 * at : 2020/06/08 13:54:04
+	 *
+	 * @return void
+	 *
+	 ********************/
+	// 	public static function set_Vals_To_Pos($pos, $i, $bardata) {
+	public static function
+	update_Pos__First_Bar(
+			$_bardata
+			, $_pos
+			, $idxOf_For_Loop
+			, $_strOf_Position_Type
+			, $_dpath_Log, $_fname_Log
+			
+			) {
+//caller:20200608_135413
+//head:20200608_135418
+//wl:20200608_135422
+	
+		/********************
+		 * step : 1
+		 * 		prep
+		 ********************/
+		
+		//code:20200608_135648:c
+		$msg = "\n";
+		
+		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= "\n";
+		
+		$msg .= "update_Pos__First_Bar ==> starting...";
+		$msg .= "\n";
+		
+		/********************
+		 * step : 2
+		 * 		update
+		 ********************/
+		/********************
+		 * step : 2
+		 * 		current
+		 ********************/
+		//debug
+		$msg .= "\$_pos->cu_pr (before)" . "\t" . number_format($_pos->cu_pr, 3);
+		$msg .= "\n";
+		
+		//code:20200608_140904:c
+		$_pos->cu_idx	= $idxOf_For_Loop;
+		$_pos->cu_pr	= $_bardata->price_Close;
+
+		//debug
+		$msg .= "\$_pos->cu_pr (after)" . "\t" . number_format($_pos->cu_pr, 3);
+		$msg .= "\n";
+		
+
+		/********************
+		 * step : X
+		 * 		debug
+		 ********************/
+		$msg .= "\n";
+		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= "\n";
+		
+		$msg .= "update_Pos__First_Bar ==> exiting...";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log, $_fname_Log
+				, $msg, __FILE__, __LINE__);
+		
+		
+	}//update_Pos__First_Bar($_bardata, $_pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+	
+	/********************
 	 * update_Pos
 	 *
 	 * at : 2020/06/06 11:33:58

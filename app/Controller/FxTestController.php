@@ -855,6 +855,11 @@ class FxTestController extends AppController {
 		//code:20200607_153202:c
 		$statusOf_For_Loop_Exit = 0;
 		
+		// status : for-loop execution
+		//	e.g.
+		//		"complete/j3-3:N:3" (status string / location id label)
+		$statusOf_For_Loop_Execution = 0;
+		
 		/********************
 		 * step : 2
 		 * 		for-loop
@@ -1329,6 +1334,54 @@ class FxTestController extends AppController {
 									$msg .= "\n";
 
 									//next:20200606_185920:n
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : N : 2
+									 * 		pos ==> update
+									 ********************/
+									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+											. " (step : 2 : j2 : choice-1 : j3-3 : 2 : N : 2)";
+									$msg .= "\n";
+	
+									$msg .= "updating pos...";
+									$msg .= "\n";
+									$msg .= "\n";
+	
+									//log ==> flash
+									Utils::write_Log__Fx_Admin(
+											$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+											, $msg, __FILE__, __LINE__);
+										
+									//code:20200606_113647
+									//code:20200608_135549
+// 									LibEaTester_2::update_Pos(
+									LibEaTester_2::update_Pos__First_Bar(
+												$bardata_This
+												, $pos
+												, $i
+												, CONS::$strOf_Position_Type__BUY
+												, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+											);
+									
+									// log
+// 									$msg	.="[" . basename(__FILE__) . " : " . __LINE__ . "]";
+									$msg	="[" . basename(__FILE__) . " : " . __LINE__ . "]";
+									$msg .= "\n";
+									$msg .= "calling : LibEaTester::show_Basic_Pos_Data__Build_Lines";
+									$msg .= "\n";
+	
+									$msg	.= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+															$pos, $_lo_BarDatas, __FILE__, __LINE__);
+	// 								$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $_lo_BarDatas, __FILE__, __LINE__);
+	
+									// separator line
+									$msg .= "\n";
+						
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : N : 3
+									 * 		next loop
+									 ********************/
+									//next:20200608_141713:n
+														
 // 									//test:20200607_154149:t
 // 									$statusOf_For_Loop_Exit = CONS::$statusOf_For_Loop_Exit__Break_Caller_While_Loop_Also;
 // // 									$statusOf_For_Loop_Exit = CONS::$statusOf_For_Loop_Exit__Debug_Stop;
@@ -1627,10 +1680,14 @@ class FxTestController extends AppController {
 			$msg .= "\n";
 			
 			//coding:20200603_162120
-			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This" 
-					. " " . "/ \$cntOf_Loop_Total = $cntOf_Loop_Total"
-					. " " . "/ \$idxOf_ForLoop_Last = $idxOf_ForLoop_Last"
-					. " " . "/ \$idxOf_Position_Start = $idxOf_Position_Start";
+			$msg .= "\$cntOf_Loop_This\t$cntOf_Loop_This" 
+					. " " . "\n\$cntOf_Loop_Total\t$cntOf_Loop_Total"
+					. " " . "\n\$idxOf_ForLoop_Last\t$idxOf_ForLoop_Last"
+					. " " . "\n\$idxOf_Position_Start\t$idxOf_Position_Start"
+					. " " . "\n\$statusOf_For_Loop_Exit\t$statusOf_For_Loop_Exit";
+// 					. " " . "/ \$cntOf_Loop_Total = $cntOf_Loop_Total"
+// 					. " " . "/ \$idxOf_ForLoop_Last = $idxOf_ForLoop_Last"
+// 					. " " . "/ \$idxOf_Position_Start = $idxOf_Position_Start";
 // 			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This / \$cntOf_Loop_Total = $cntOf_Loop_Total";
 			$msg .= "\n";
 				
