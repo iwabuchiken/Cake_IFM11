@@ -143,6 +143,12 @@ class CONS {
 	
 	//code:20200607_155050:c
 	public static	$statusOf_For_Loop_Exit__Break_Caller_While_Loop_Also	= -2;
+
+	/******************************
+	 	status : for-loop
+	 ******************************/
+	//code:20200607_153129
+	public static	$statusOf_For_Loop_Execution__J2_Choice_1_J3_3_N3_1		= "j2 : choice-1 : j3-3 : N : 3.1";
 	
 	/******************************
 	 	exit status (Pos)

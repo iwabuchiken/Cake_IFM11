@@ -1380,8 +1380,27 @@ class FxTestController extends AppController {
 									 * step : 2 : j2 : choice-1 : j3-3 : N : 3
 									 * 		next loop
 									 ********************/
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : N : 3.1
+									 * 		set ==> val
+									 ********************/
 									//next:20200608_141713:n
-														
+									$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J2_Choice_1_J3_3_N3_1;
+
+									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+											. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
+									$msg .= "\n";
+									
+									$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+									$msg .= "\n";
+										
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : N : 3.2
+									 * 		continue
+									 ********************/
+									continue;
+									
+									
 // 									//test:20200607_154149:t
 // 									$statusOf_For_Loop_Exit = CONS::$statusOf_For_Loop_Exit__Break_Caller_While_Loop_Also;
 // // 									$statusOf_For_Loop_Exit = CONS::$statusOf_For_Loop_Exit__Debug_Stop;
@@ -1528,6 +1547,11 @@ class FxTestController extends AppController {
 	
 		// status : exit
 		$msg .= "\$statusOf_For_Loop_Exit => " . $statusOf_For_Loop_Exit;
+		$msg .= "\n";
+		
+		//code:20200609_163152:c
+		// status : for-loop execution
+		$msg .= "\$statusOf_For_Loop_Execution => " . $statusOf_For_Loop_Execution;
 		$msg .= "\n";
 		
 		Utils::write_Log__Fx_Admin(
