@@ -149,6 +149,10 @@ class CONS {
 	 ******************************/
 	//code:20200607_153129
 	public static	$statusOf_For_Loop_Execution__J2_Choice_1_J3_3_N3_1		= "j2 : choice-1 : j3-3 : N : 3.1";
+	public static	$statusOf_For_Loop_Execution__J1_Y1		= "j1 : Y : 1";
+	public static	$statusOf_For_Loop_Execution__J2_N		= "j2 : choice-X : N";
+	
+	public static	$statusOf_For_Loop_Execution__Last_Line_Of_For_Loop		= "Last_Line_Of_For_Loop";
 	
 	/******************************
 	 	exit status (Pos)

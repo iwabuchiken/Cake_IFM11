@@ -956,11 +956,31 @@ class FxTestController extends AppController {
 			
 // 				debug($msg);
 			
+// 				Utils::write_Log__Fx_Admin(
+// 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 						, $msg, __FILE__, __LINE__);
+					
+				//next:20200604_131159
+				$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J1_Y1;
+				$msg .= "\n";
+				
+// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
+					
+				$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+				$msg .= "\n";
+				
+				$msg .= "breaking... (coding not yet)";
+				$msg .= "\n";
+
 				Utils::write_Log__Fx_Admin(
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 						, $msg, __FILE__, __LINE__);
 					
-				//next:20200604_131159
+				// flash
+				$msg = "";
+				
+				break;
 				
 			} else {
 				/********************
@@ -988,7 +1008,9 @@ class FxTestController extends AppController {
 				 * step : 2 : j2
 				 * 		pattern ==> detected ?
 				 ********************/
+				//code:20200610_115528:c
 				if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All) {
+// 				if (false) {
 					/********************
 					 * step : 2 : j2 : choice-1
 					 * 		pattern ==> detected : detect all
@@ -1173,6 +1195,9 @@ class FxTestController extends AppController {
 	
 							$msg .= "\n";
 						
+							//next:20200610_122943:n
+							
+							
 						} else {
 							/********************
 							 * step : 2 : j2 : choice-1 : j3-1 : 2 : N
@@ -1398,6 +1423,9 @@ class FxTestController extends AppController {
 									 * step : 2 : j2 : choice-1 : j3-3 : N : 3.2
 									 * 		continue
 									 ********************/
+// 									//test
+// 									break;
+									
 									continue;
 									
 									
@@ -1490,23 +1518,48 @@ class FxTestController extends AppController {
 							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 							, $msg, __FILE__, __LINE__);
 					
-				} else {
+				} else {//if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All) {
 					/********************
-					 * step : 2 : j2 : choice-X
+					 * step : 2 : j2 : choice-X : N
 					 * 		pattern ==> unknown
 					 ********************/
-					$msg = "unknown PD name : $_nameOf_DP";
-	
+					/********************
+					 * step : 2 : j2 : choice-X : N : 1
+					 * 		log
+					 ********************/
+					$msg = "(step : 2 : j2 : choice-X : N : 1)";
 					$msg .= "\n";
-					$msg .= "breaking from the while loop";
-	
-					debug($msg);
-	
+					
+					$msg .= "unknown PD name : $_nameOf_DP";
+					$msg .= "\n";
+
+					//code:20200610_115412:c
+					/********************
+					 * step : 2 : j2 : choice-X : N : 2
+					 * 		set : status ==> for-loop exectution
+					 ********************/
+					// 					$msg .= "breaking from the while loop";
+					$msg .= "for-loop continues...";
+					$msg .= "\n";
+
+					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J2_N;
+					$msg .= "\n";
+					
+					$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+					$msg .= "\n";
+						
+// 					debug($msg);
+					
 					Utils::write_Log__Fx_Admin(
 							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 							, $msg, __FILE__, __LINE__);
-	
-					break;
+					
+					// flash
+					$msg = "";
+					
+					// continue
+					continue;
+// 					break;
 	
 				}//if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All)				
 				
@@ -1520,6 +1573,12 @@ class FxTestController extends AppController {
 
 			/********************
 			 * step : 2 : X
+			 * 		status : for-loop
+			 ********************/
+			$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__Last_Line_Of_For_Loop;
+			
+			/********************
+			 * step : 2 : X
 			 * 		exit status
 			 ********************/
 			$statusOf_For_Loop_Exit = CONS::$statusOf_For_Loop_Exit__Reached_Loop_Last_Line;
@@ -1531,9 +1590,14 @@ class FxTestController extends AppController {
 		 * 		for-loop ==> exited
 		 ********************/
 		// flash $msg content
-		Utils::write_Log__Fx_Admin(
-				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-				, $msg, __FILE__, __LINE__);
+		if ($msg != null && count($msg) > 0) {
+		
+			Utils::write_Log__Fx_Admin(
+					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+					, $msg, __FILE__, __LINE__);
+			
+		}//if ($msg != null && count($msg) > 0)
+		;
 		
 		// renew $msg
 		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
