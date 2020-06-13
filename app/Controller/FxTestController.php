@@ -961,6 +961,7 @@ class FxTestController extends AppController {
 // 						, $msg, __FILE__, __LINE__);
 					
 				//next:20200604_131159
+				//ref:20200613_143927:r
 				$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J1_Y1;
 				$msg .= "\n";
 				
@@ -979,6 +980,8 @@ class FxTestController extends AppController {
 					
 				// flash
 				$msg = "";
+				
+				//next:20200613_151214:n
 				
 				break;
 				
@@ -1174,6 +1177,8 @@ class FxTestController extends AppController {
 						 * 		judge ==> is SL ?
 						 ********************/
 						if ($cond_2__Is_SL == true) {
+						//test:dummy
+// 						if (true) {
 							/********************
 							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y
 							 * 		judge ==> is SL
@@ -1182,7 +1187,8 @@ class FxTestController extends AppController {
 							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 1
 							 * 		log
 							 ********************/
-							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "] (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 1)";
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+									. " (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 1)";
 							$msg .= "\n";
 	
 							$msg .= "is_SL ==> true";
@@ -1196,7 +1202,23 @@ class FxTestController extends AppController {
 							$msg .= "\n";
 						
 							//next:20200610_122943:n
+							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar1_Y1;
+							$msg .= "\n";
 							
+							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "\n";
+							
+							$msg .= "breaking... (coding not yet)";
+							$msg .= "\n";
+							
+							Utils::write_Log__Fx_Admin(
+									$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+									, $msg, __FILE__, __LINE__);
+								
+							// flash
+							$msg = "";
+							
+							break;
 							
 						} else {
 							/********************
@@ -1243,13 +1265,16 @@ class FxTestController extends AppController {
 							 * step : 2 : j2 : choice-1 : j3-2 : 2
 							 * 		judge ==> is TP ?
 							 ********************/
-							if ($cond_3__Is_TP) {
+							//test:dummy
+// 							if (true) {
+							if ($cond_3__Is_TP == true) {
+// 							if ($cond_3__Is_TP) {
 								/********************
 								 * step : 2 : j2 : choice-1 : j3-2 : 2 : Y
 								 * 		judge ==> is TP
 								 ********************/
 								/********************
-								 * step : 2 : j2 : choice-1 : j3-3 : 2 : Y : 1
+								 * step : 2 : j2 : choice-1 : j3-2 : 2 : Y : 1
 								 * 		log
 								 ********************/
 								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]" 
@@ -1266,7 +1291,27 @@ class FxTestController extends AppController {
 								
 								$msg .= "\n";
 								
+								//code:20200613_145831:c
+								$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar2_Y1;
+								$msg .= "\n";
 								
+								// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+								// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
+									
+								$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+								$msg .= "\n";
+								
+								$msg .= "breaking... (coding not yet)";
+								$msg .= "\n";
+								
+								Utils::write_Log__Fx_Admin(
+										$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+										, $msg, __FILE__, __LINE__);
+									
+								// flash
+								$msg = "";
+								
+								break;
 							
 							} else {
 							
@@ -1292,6 +1337,9 @@ class FxTestController extends AppController {
 								
 								$msg .= "\n";
 								
+								// separator
+								$msg .= "\n";
+								
 								//next:20200606_115039:n
 								/********************
 								 * step : 2 : j2 : choice-1 : j3-3
@@ -1307,6 +1355,8 @@ class FxTestController extends AppController {
 											, CONS::$strOf_Position_Type__BUY
 											, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 										);
+								//test
+// 								if (true) {
 								if ($cond_4_Trailing_Start == true) {
 									/********************
 									 * step : 2 : j2 : choice-1 : j3-3 : Y
@@ -1332,6 +1382,25 @@ class FxTestController extends AppController {
 									
 									$msg .= "\n";
 								
+									//code:20200613_150624:c
+									$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar3_Y1;
+									$msg .= "\n";
+									
+									$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+									$msg .= "\n";
+									
+									$msg .= "breaking... (coding not yet)";
+									$msg .= "\n";
+									
+									Utils::write_Log__Fx_Admin(
+											$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+											, $msg, __FILE__, __LINE__);
+										
+									// flash
+									$msg = "";
+									
+									break;
+										
 								} else {
 								
 									/********************
