@@ -399,5 +399,239 @@ class LibEaTester_2 {
 		
 	}//update_Pos($_bardata, $_pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
 	
+	/********************
+	 * judge_Bar_SL_TP_Trail
+	 *
+	 * at : 2020/06/14 12:55:58
+	 *
+	 * @return void
+	 ********************/
+	public static function
+	judge_Bar_SL_TP_Trail__BUY($bardata, $pos, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester) {
+//caller:20200614_125632
+//head:20200614_125635
+//wl:20200614_125639
+	
+	/********************
+	 * step : 1
+	 * 		prep
+	 ********************/
+	/********************
+	 * step : 1 : 1
+	 * 		prep : vars
+	 ********************/
+	$price_SL = $pos->pr_SL;
+	$price_TP = $pos->pr_TP;
+	$price_Trail_Starting = $pos->trail_starting_pr;
+	
+	// start
+	$price_Start = $pos->st_pr;
+	$idx_Start = $pos->st_idx;
+	
+	// current (previous close)
+	$price_Current = $pos->cu_pr;
+	$idx_Current = $pos->cu_idx;
+	
+	// bar data
+	$price_Close = $bardata->price_Close;
+	
+	/********************
+	 * step : 1 : 2
+	 * 		debug
+	 ********************/
+	//code:20200614_132656:c
+	//log
+	$msg = "\n";
+	
+	$msg .= $msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+	$msg .= "\n";
+	
+	$msg .= "(judge_Bar_SL_TP_Trail__BUY)";
+	$msg .= "\n";
+	
+	$msg .= sprintf("\$price_SL\t%.03f\n\$price_TP\t%.03f\n\$price_Trail_Starting\t%.03f"
+				, $price_SL, $price_TP, $price_Trail_Starting
+			);
+	$msg .= "\n";
+	
+	$msg .= sprintf("\$pos->val_Trail_Starting\t%.03f"
+				, $pos->val_Trail_Starting
+			);
+	$msg .= "\n";
+	
+	$msg .= sprintf("\$price_Start\t%.03f (idx = %d)"
+				, $price_Start, $idx_Start
+			);
+	$msg .= "\n";
+	
+	$msg .= sprintf("\$price_Current\t%.03f (idx = %d)"
+				, $price_Current, $idx_Current
+			);
+	$msg .= "\n";
+	
+	$msg .= sprintf("\$price_Close\t%.03f"
+				, $price_Close
+			);
+	$msg .= "\n";
+	
+	// separator
+	$msg .= "\n";
+	
+	Utils::write_Log__Fx_Admin(
+			$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+			, $msg, __FILE__, __LINE__);
+	
+	/********************
+	 * step : 2
+	 * 		judge : SL
+	 ********************/
+	/********************
+	 * step : 2 : 1
+	 * 		judge
+	 ********************/
+	//code:20200614_134638:c
+	$cond_1__Is_SL = LibEaTester_2::is_SL(
+			$bardata
+			, $pos->pr_SL
+			, CONS::$strOf_Position_Type__BUY
+			, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+			);
+
+	$msg = "\n";
+	
+	$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+	$msg .= "\n";
+	$msg .= "(step : 2 ==> judge : SL)";
+	$msg .= "\n";
+	
+	$msg .= ($cond_1__Is_SL == true) ? "is_SL ==> true" : "is_SL ==> false";
+	$msg .= "\n";
+	
+	// separator
+	$msg .= "\n";
+
+	Utils::write_Log__Fx_Admin(
+			$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+			, $msg, __FILE__, __LINE__);
+
+	/********************
+	 * step : 2 : 2
+	 * 		return
+	 ********************/
+	if ($cond_1__Is_SL == true) {
+	
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		prep
+		 ********************/
+		$strOf_BarResult = CONS::$strOf_BarResult__SL;
+			
+		// dummy
+		$valOf_Ret = array($strOf_BarResult);
+	
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		// return
+		return $valOf_Ret;
+					
+	}//if ($cond_1__Is_SL == true)
+	;
+
+	//code:20200614_135039:c
+	/********************
+	 * step : 3
+	 * 		judge : TP
+	 ********************/
+	/********************
+	 * step : 3 : 1
+	 * 		judge
+	 ********************/
+	$cond_2__Is_TP = LibEaTester_2::is_TP(
+			$bardata
+			, $pos->pr_TP
+			, CONS::$strOf_Position_Type__BUY
+			, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+	);
+	
+	$msg = "\n";
+	
+	$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+	$msg .= "\n";
+	$msg .= "(step : 3 ==> judge : TP)";
+	$msg .= "\n";
+	
+	$msg .= ($cond_2__Is_TP == true) ? "is_TP ==> true" : "is_TP ==> false";
+	$msg .= "\n";
+	
+	// separator
+	$msg .= "\n";
+	
+	Utils::write_Log__Fx_Admin(
+			$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+			, $msg, __FILE__, __LINE__);
+	
+	/********************
+	 * step : 3 : 2
+	 * 		return
+	 ********************/
+	if ($cond_2__Is_TP == true) {
+	
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		prep
+		 ********************/
+		$strOf_BarResult = CONS::$strOf_BarResult__TP;
+			
+		// dummy
+		$valOf_Ret = array($strOf_BarResult);
+	
+		/********************
+		 * step : X : 2
+		 * 		return
+		********************/
+		// return
+		return $valOf_Ret;
+			
+	}//if ($cond_2__Is_TP == true)	
+		
+	/********************
+	 * step : X
+	 * 		judge : Trail
+	 ********************/
+	//code:20200614_135508:c
+	
+	
+	/********************
+	 * step : X
+	 * 		return
+	 ********************/
+	/********************
+	 * step : X : 1
+	 * 		prep
+	 ********************/
+	$strOf_BarResult = CONS::$strOf_BarResult__SL;
+		
+	// dummy
+	$valOf_Ret = array($strOf_BarResult);
+
+	/********************
+	 * step : X : 2
+	 * 		return
+	 ********************/
+	// return
+	return $valOf_Ret;
+	
+	}//judge_Bar_SL_TP_Trail__BUY($bardata, $pos, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester) {
+	
 }//class Libfx
 	

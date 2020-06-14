@@ -134,6 +134,16 @@ class CONS {
 	public static	$strOf_BarType__C5 = "C5";	# $bd->price_High == $bd->price_Close
 
 	/******************************
+	 	bar results
+	 	20200614_130036
+	 ******************************/
+	public static	$strOf_BarResult__SL = "SL";
+	public static	$strOf_BarResult__TP = "TP";
+	public static	$strOf_BarResult__Trail = "Trail";
+	
+	public static	$strOf_BarResult__Within = "Within";
+	
+	/******************************
 	 	exit status : loops
 	 ******************************/
 	//code:20200607_153129
@@ -150,6 +160,7 @@ class CONS {
 	//code:20200607_153129
 	public static	$statusOf_For_Loop_Execution__J2_Choice_1_J3_3_N3_1		= "j2 : choice-1 : j3-3 : N : 3.1";
 	public static	$statusOf_For_Loop_Execution__J1_Y1		= "j1 : Y : 1";
+	public static	$statusOf_For_Loop_Execution__J1_Y3		= "j1 : Y : 3";
 	public static	$statusOf_For_Loop_Execution__J2_N		= "j2 : choice-X : N";
 	
 	public static	$statusOf_For_Loop_Execution__J3bar1_Y1		= "j3-1 : 2 : Y : 1";

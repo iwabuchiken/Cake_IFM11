@@ -948,7 +948,10 @@ class FxTestController extends AppController {
 				 * step : 2 : j1 : Y : 1
 				 * 		log
 				 ********************/
-				$msg = "(for)(step : 2 : j1 : Y : 1)";
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+				
+				$msg .= "(for)(step : 2 : j1 : Y : 1)";
 				$msg .= "\n";
 				
 				$msg .= "position ==> taken";
@@ -960,19 +963,6 @@ class FxTestController extends AppController {
 // 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 // 						, $msg, __FILE__, __LINE__);
 					
-				//next:20200604_131159
-				//ref:20200613_143927:r
-				$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J1_Y1;
-				$msg .= "\n";
-				
-// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
-// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
-					
-				$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
-				$msg .= "\n";
-				
-				$msg .= "breaking... (coding not yet)";
-				$msg .= "\n";
 
 				Utils::write_Log__Fx_Admin(
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
@@ -982,7 +972,52 @@ class FxTestController extends AppController {
 				$msg = "";
 				
 				//next:20200613_151214:n
+				/********************
+				 * step : 2 : j1 : Y : 3
+				 * 		probe ==> bar result
+				 ********************/
+				//caller:20200614_125632
+				//$valOf_Ret = array($strOf_BarResult);
+				$valOf_Ret__Recieved = LibEaTester_2::judge_Bar_SL_TP_Trail__BUY(
+							$bardata
+							, $pos
+							, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester);
 				
+				// unpack
+				$strOf_BarResult = $valOf_Ret__Recieved[0];
+				
+				//log
+				$msg = "\n";
+				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+				
+				$msg .= "(for)(step : 2 : j1 : Y : 3)";
+				$msg .= "\n";
+				
+				$msg .= "bar result ==> $strOf_BarResult";
+				$msg .= "\n";
+
+				//next:20200604_131159
+				//ref:20200613_143927:r
+				$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J1_Y3;
+				$msg .= "\n";
+
+				// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+				// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
+					
+				$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+				$msg .= "\n";
+				
+				$msg .= "breaking... (coding not yet)";
+				$msg .= "\n";
+				
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+	
+				// flash
+				$msg = "";
+
 				break;
 				
 			} else {
