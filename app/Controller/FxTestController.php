@@ -976,6 +976,15 @@ class FxTestController extends AppController {
 				 * 		$pos ==> update
 				 ********************/
 				//next:20200615_141145:n
+				LibEaTester_2::update_Pos(
+						$bardata_This
+						, $pos
+						, $i
+						, CONS::$strOf_Position_Type__BUY
+						, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				);
+				
+				
 				
 				/********************
 				 * step : 2 : j1 : Y : 4
@@ -1008,6 +1017,8 @@ class FxTestController extends AppController {
 				$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J1_Y3;
 				$msg .= "\n";
 
+				//next:20200615_164609:n
+				
 				// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
 				// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
 					

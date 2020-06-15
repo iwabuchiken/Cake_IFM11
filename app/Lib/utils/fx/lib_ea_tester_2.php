@@ -181,6 +181,22 @@ class LibEaTester_2 {
 		//wl:20200604_175511
 
 		/********************
+		 * step : X
+		 * 		debug
+		 ********************/
+		//debug
+		$msg = "\n";
+		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= "\n";
+		
+		$msg .= "(is_SL) starting...";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log, $_fname_Log
+				, $msg, __FILE__, __LINE__);
+		
+		/********************
 		 * step : 1
 		 * 		prep
 		 ********************/
@@ -215,7 +231,24 @@ class LibEaTester_2 {
 // 		 	$cond_1 = ($pr_Close >= $_pr_SL);
 		 	
 		 }//if ($_strOf_Position_Type == CONS::$strOf_Position_Type__BUY)
+
 		 
+		 /********************
+		  * step : X
+		  * 		debug
+		  ********************/
+		 //debug
+		 $msg = "\n";
+		 $msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		 $msg .= "\n";
+		 
+		 $msg .= "(is_SL) ending...";
+		 $msg .= "\n";
+		 
+		 Utils::write_Log__Fx_Admin(
+		 		$_dpath_Log, $_fname_Log
+		 		, $msg, __FILE__, __LINE__);
+		 	
 		 /********************
 		  * step : 3
 		  * 	judge
@@ -387,7 +420,8 @@ class LibEaTester_2 {
 	 ********************/
 	// 	public static function set_Vals_To_Pos($pos, $i, $bardata) {
 	public static function
-	update_Pos($_bardata, $_pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+// 	update_Pos($_bardata, $_pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
+	update_Pos($_bardata, $_pos, $idxOf_Loop, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
 //caller:20200606_113407
 //head:20200606_113413
 //wl:20200606_113416
@@ -396,6 +430,69 @@ class LibEaTester_2 {
 		 * step : 1
 		 * 		prep
 		 ********************/
+
+		/********************
+		 * step : X
+		 * 		debug
+		 ********************/
+		$msg = "\n";
+		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= "\n";
+		
+		$msg .= "(update_Pos) starting...";
+		$msg .= "\n";
+		
+// 		$msg .= "\$_dpath_Log = $_dpath_Log";
+// 		$msg .= "\n";
+		
+// 		$msg .= "\$_fname_Log = $_fname_Log";
+// 		$msg .= "\n";
+		
+// 		debug($msg);
+		
+// 		Utils::write_Log__Fx_Admin(
+// 				$_dpath_Log, $_fname_Log
+// 				, $msg, __FILE__, __LINE__);
+
+// 		$msg = "\n";
+// 		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 		$msg .= "\n";
+		
+// 		$msg .= "(update_Pos) ending...";
+// 		$msg .= "\n";
+		
+// 		debug($msg);
+		
+		/********************
+		 * step : 2
+		 * 		$pos ==> update
+		 ********************/
+		/********************
+		 * step : 2 : 1
+		 * 		$pos : current
+		 ********************/
+		//code:20200615_163128:c
+		// index
+		$_pos->cu_idx	= $idxOf_Loop;
+		
+		// price
+		$_pos->cu_pr		= $_bardata->price_Close;
+
+		//debug
+		$msg = "\n";
+		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= "\n";
+
+		/********************
+		 * step : X
+		 * 		debug
+		 ********************/
+		$msg .= "(update_Pos) ending...";
+		$msg .= "\n";
+
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log, $_fname_Log
+				, $msg, __FILE__, __LINE__);
 		
 	}//update_Pos($_bardata, $_pos, $_strOf_Position_Type, $_dpath_Log, $_fname_Log) {
 	
@@ -407,7 +504,8 @@ class LibEaTester_2 {
 	 * @return void
 	 ********************/
 	public static function
-	judge_Bar_SL_TP_Trail__BUY($bardata, $pos, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester) {
+	judge_Bar_SL_TP_Trail__BUY
+	($bardata, $pos, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester) {
 //caller:20200614_125632
 //head:20200614_125635
 //wl:20200614_125639
@@ -416,6 +514,23 @@ class LibEaTester_2 {
 	 * step : 1
 	 * 		prep
 	 ********************/
+
+// 	/********************
+// 	 * step : X
+// 	 * 		debug
+// 	 ********************/
+// 	//debug
+// 	$msg = "\n";
+// 	$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 	$msg .= "\n";
+	
+// 	$msg .= "(judge_Bar_SL_TP_Trail__BUY) starting...";
+// 	$msg .= "\n";
+	
+// 	Utils::write_Log__Fx_Admin(
+// 			$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 			, $msg, __FILE__, __LINE__);
+	
 	/********************
 	 * step : 1 : 1
 	 * 		prep : vars
