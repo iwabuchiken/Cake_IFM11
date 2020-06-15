@@ -44,22 +44,28 @@ class Pos {
  */
 	public $st_idx	= -1;
 	public $st_pr	= 0.0;
+	public $st_dateTime	= "";
 
 	public $cu_idx	= -1;
 	public $cu_pr	= 0.0;
+	public $cu_dateTime	= "";
 	
 	public $rf_idx	= -1;
 	public $rf_pr	= 0.0;
+	public $rf_dateTime	= "";
 	
 	// the bar to exit;
 	public $ext_idx	= -1;
 	public $ext_pr	= 0.0;
+	public $ext_dateTime	= "";
 	
 	public $base_idx	= -1;
 	public $base_pr	= 0.0;
+	public $base_dateTime	= "";
 	
 	public $trail_starting_idx	= -1;
 	public $trail_starting_pr	= 0.0;
+	public $trail_starting_dateTime	= "";
 	
 	# values, margins;
 	public $val_TP	= 0.0;

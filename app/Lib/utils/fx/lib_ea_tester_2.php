@@ -431,6 +431,8 @@ class LibEaTester_2 {
 	// current (previous close)
 	$price_Current = $pos->cu_pr;
 	$idx_Current = $pos->cu_idx;
+
+	$bardata_Date_Time = $bardata->dateTime;
 	
 	// bar data
 	$price_Close = $bardata->price_Close;
@@ -471,6 +473,11 @@ class LibEaTester_2 {
 	
 	$msg .= sprintf("\$price_Close\t%.03f"
 				, $price_Close
+			);
+	$msg .= "\n";
+	
+	$msg .= sprintf("\$bardata_Date_Time\t%s"
+				, $bardata_Date_Time
 			);
 	$msg .= "\n";
 	
@@ -605,11 +612,71 @@ class LibEaTester_2 {
 	}//if ($cond_2__Is_TP == true)	
 		
 	/********************
-	 * step : X
+	 * step : 4
 	 * 		judge : Trail
 	 ********************/
 	//code:20200614_135508:c
+	/********************
+	 * step : 4 : 1
+	 * 		judge
+	 ********************/
+	$cond_3__Is_Trail = LibEaTester_2::is_Trailing(
+			$bardata
+			, $pos
+			, CONS::$strOf_Position_Type__BUY
+			, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+			);
+// 	$cond_3__Is_Trail = LibEaTester_2::is_TP(
+// 			$bardata
+// 			, $pos->pr_TP
+// 			, CONS::$strOf_Position_Type__BUY
+// 			, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 	);
 	
+	$msg = "\n";
+	
+	$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+	$msg .= "\n";
+	$msg .= "(step : 4 ==> judge : Trail)";
+	$msg .= "\n";
+	
+	$msg .= ($cond_3__Is_Trail == true) ? "is_Trail ==> true" : "is_Trail ==> false";
+	$msg .= "\n";
+	
+	// separator
+	$msg .= "\n";
+	
+	Utils::write_Log__Fx_Admin(
+			$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+			, $msg, __FILE__, __LINE__);	
+
+	/********************
+	 * step : 4 : 2
+	 * 		return
+	 ********************/
+	if ($cond_3__Is_Trail == true) {
+	
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		/********************
+		 * step : 4 : 2 : 1
+		 * 		prep
+		 ********************/
+		$strOf_BarResult = CONS::$strOf_BarResult__Trail;
+			
+		// dummy
+		$valOf_Ret = array($strOf_BarResult);
+	
+		/********************
+		 * step : 4 : 2 : 2
+		 * 		return
+		********************/
+		// return
+		return $valOf_Ret;
+			
+	}//if ($cond_3__Is_Trail == true)
 	
 	/********************
 	 * step : X

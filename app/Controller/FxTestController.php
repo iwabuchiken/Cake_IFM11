@@ -971,11 +971,17 @@ class FxTestController extends AppController {
 				// flash
 				$msg = "";
 				
-				//next:20200613_151214:n
 				/********************
 				 * step : 2 : j1 : Y : 3
+				 * 		$pos ==> update
+				 ********************/
+				//next:20200615_141145:n
+				
+				/********************
+				 * step : 2 : j1 : Y : 4
 				 * 		probe ==> bar result
 				 ********************/
+				//next:20200613_151214:n
 				//caller:20200614_125632
 				//$valOf_Ret = array($strOf_BarResult);
 				$valOf_Ret__Recieved = LibEaTester_2::judge_Bar_SL_TP_Trail__BUY(
@@ -991,7 +997,7 @@ class FxTestController extends AppController {
 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 				$msg .= " ";
 				
-				$msg .= "(for)(step : 2 : j1 : Y : 3)";
+				$msg .= "(for)(step : 2 : j1 : Y : 4)";
 				$msg .= "\n";
 				
 				$msg .= "bar result ==> $strOf_BarResult";
@@ -1738,8 +1744,8 @@ class FxTestController extends AppController {
 		//_20200601_152352:tmp
 		//code:20200603_162633
 		//test:dummy value 20200603_162835
-		$idxOf_Position_Start = $i * 3;
-// 		$idxOf_Position_Start = $i * 2;
+// 		$idxOf_Position_Start = $i * 3;
+		$idxOf_Position_Start = $i * 2;
 
 		//code:20200607_155305:c
 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit);
