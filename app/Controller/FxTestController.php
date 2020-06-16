@@ -2016,6 +2016,8 @@ class FxTestController extends AppController {
 			$idxOf_ForLoop_Start = $idxOf_Position_Start + 1;
 // 			$idxOf_ForLoop_Start += 1;
 
+
+
 			//next:20200616_114510:n
 			$msg .= "\$idxOf_ForLoop_Start ==> updated : $idxOf_ForLoop_Start";
 			$msg .= "\n";
