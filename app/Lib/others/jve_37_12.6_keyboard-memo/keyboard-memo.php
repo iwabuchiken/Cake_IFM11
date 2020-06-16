@@ -115,7 +115,8 @@
 		 * 		vars
 		 ****************/
 		//C:\WORKS_2\WS\WS_Others.Art\JVEMV6\46_art\8_kb
-		$dpath_Memo_File = "C:\\WORKS_2\\WS\\WS_Others.Art\\JVEMV6\\46_art\\8_kb";
+		//$dpath_Memo_File = "C:\\WORKS_2\\WS\\WS_Others.Art\\JVEMV6\\46_art\\8_kb";
+		$dpath_Memo_File = "C:\\WORKS_2\\WS\\WS_Others.Art\\JVEMV6\\46_art\\8_kb\\memo_string";
 		
 		$fname_Memo_File = "kb_memo_template.txt";
 		

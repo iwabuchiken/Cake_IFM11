@@ -984,7 +984,16 @@ class FxTestController extends AppController {
 						, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 				);
 				
+				//ref:20200613_143927:r
+				$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J1_Y3;
+				$msg .= "\n";
 				
+				
+				// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+				// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
+					
+				$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+				$msg .= "\n";
 				
 				/********************
 				 * step : 2 : j1 : Y : 4
@@ -1012,30 +1021,137 @@ class FxTestController extends AppController {
 				$msg .= "bar result ==> $strOf_BarResult";
 				$msg .= "\n";
 
-				//next:20200604_131159
-				//ref:20200613_143927:r
-				$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J1_Y3;
-				$msg .= "\n";
-
-				//next:20200615_164609:n
-				
-				// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
-				// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
-					
-				$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
-				$msg .= "\n";
-				
-				$msg .= "breaking... (coding not yet)";
-				$msg .= "\n";
-				
 				Utils::write_Log__Fx_Admin(
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 						, $msg, __FILE__, __LINE__);
-	
+					
 				// flash
 				$msg = "";
+				
+				//next:20200604_131159
+				
+				//next:20200615_164609:n
+				/********************
+				 * step : 2 : j4
+				 * 		bar result ==> within ?
+				 ********************/
+				/********************
+				 * step : 2 : j4 : 0 : 1
+				 * 		conditions
+				 ********************/
+				//code:20200616_111328:c
+				$cond_5__Within = ($strOf_BarResult == CONS::$strOf_BarResult__Within);
+				
+				/********************
+				 * step : 2 : j4 : 0 : 2
+				 * 		judge
+				 ********************/
+				if ($cond_5__Within == true) {
+					/********************
+					 * step : 2 : j4 : Y
+					 * 		bar result ==> within
+					 ********************/
+					/********************
+					 * step : 2 : j4 : Y : 1
+					 * 		log
+					 ********************/
+					$msg = "\n";
+					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+					$msg .= " ";
+					
+					$msg .= "(for)(step : 2 : j4 : Y : 1)";
+					$msg .= "\n";
+						
+					$msg .= "bar result ==> within : $strOf_BarResult";
+					$msg .= "\n";
+					$msg .= "\n";
+						
+					/********************
+					 * step : 2 : j4 : Y : 2
+					 * 		set ==> status
+					 ********************/
+					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J4_Y2;
+				
+					/********************
+					 * step : 2 : j4 : Y : 3
+					 * 		continue ==> looop
+					 ********************/
+					//code:20200616_112306:c
 
-				break;
+					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+					$msg .= "\n";
+					
+					$msg .= "(for)(step : 2 : j4 : Y : 2)";
+					$msg .= "continue the loop...";
+					$msg .= "\n";
+					
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+					
+					// flash
+					$msg = "";
+					
+					// continue
+					continue;
+					
+				} else {
+					/********************
+					 * step : 2 : j4 : N
+					 * 		bar result ==> within
+					 ********************/
+					/********************
+					 * step : 2 : j4 : N : 1
+					 * 		log
+					 ********************/
+					$msg = "\n";
+					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+					$msg .= " ";
+						
+					$msg .= "(for)(step : 2 : j4 : N : 1)";
+					$msg .= "\n";
+					
+					$msg .= "bar result ==> NOT within : $strOf_BarResult";
+					$msg .= "\n";
+						
+					/********************
+					 * step : 2 : j4 : N : 2
+					 * 		set ==> status
+					 ********************/
+					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J4_N2;
+
+					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+					$msg .= "\n";
+					
+					$msg .= "breaking... (coding not yet)";
+					$msg .= "\n";
+					
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+					
+					// flash
+					$msg = "";
+					
+					break;
+						
+				}//if ($cond_5__Within == true)
+				
+				
+// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 				$msg .= "\n";
+				
+// 				$msg .= "breaking... (coding not yet)";
+// 				$msg .= "\n";
+				
+// 				Utils::write_Log__Fx_Admin(
+// 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 						, $msg, __FILE__, __LINE__);
+	
+// 				// flash
+// 				$msg = "";
+
+// 				break;
 				
 			} else {
 				/********************
@@ -1794,13 +1910,6 @@ class FxTestController extends AppController {
 //_20200531_132115:head
 //_20200531_132117:wl
 
-// 		//debug
-// 		debug("\$_lo_BarDatas[0] =>");
-// 		debug($_lo_BarDatas[0]);
-		
-// 		debug("\$_lo_BarDatas[count(\$_lo_BarDatas) - 1] =>");
-// 		debug($_lo_BarDatas[count($_lo_BarDatas) - 1]);
-
 		/********************
 		 * step : 1
 		 * 		prep : vars
@@ -1873,6 +1982,8 @@ class FxTestController extends AppController {
 					
 					);
 			
+			//next:20200616_114358:n
+			
 			// unpack
 			$cntOf_Loop_This		= $valOf_Ret_Received[0];
 			$idxOf_ForLoop_Last		= $valOf_Ret_Received[1];
@@ -1900,17 +2011,12 @@ class FxTestController extends AppController {
 // 			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This / \$cntOf_Loop_Total = $cntOf_Loop_Total";
 			$msg .= "\n";
 				
-// 			debug($msg);
-				
-// 			Utils::write_Log__Fx_Admin(
-// 					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-// 					, $msg, __FILE__, __LINE__);
-				
 			//coding:20200603_163513
 			//test
 			$idxOf_ForLoop_Start = $idxOf_Position_Start + 1;
 // 			$idxOf_ForLoop_Start += 1;
 
+			//next:20200616_114510:n
 			$msg .= "\$idxOf_ForLoop_Start ==> updated : $idxOf_ForLoop_Start";
 			$msg .= "\n";
 			

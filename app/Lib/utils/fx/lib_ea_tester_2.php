@@ -799,9 +799,10 @@ class LibEaTester_2 {
 	 ********************/
 	/********************
 	 * step : X : 1
-	 * 		prep
+	 * 		prep : set ==> default
 	 ********************/
-	$strOf_BarResult = CONS::$strOf_BarResult__SL;
+	$strOf_BarResult = CONS::$strOf_BarResult__Within;
+// 	$strOf_BarResult = CONS::$strOf_BarResult__SL;
 		
 	// dummy
 	$valOf_Ret = array($strOf_BarResult);
