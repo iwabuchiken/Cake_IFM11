@@ -1120,6 +1120,8 @@ class FxTestController extends AppController {
 					 ********************/
 					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J4_N2;
 
+					//next:20200618_172639:n
+					
 					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 					$msg .= "\n";
 					
@@ -1855,6 +1857,11 @@ class FxTestController extends AppController {
 		$msg .= "\$statusOf_For_Loop_Execution => " . $statusOf_For_Loop_Execution;
 		$msg .= "\n";
 		
+		//code:20200618_171436:c
+		// status : $pos ==> st_idx
+		$msg .= "\$pos->st_idx => " . $pos->st_idx;
+		$msg .= "\n";
+		
 		Utils::write_Log__Fx_Admin(
 				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 				, $msg, __FILE__, __LINE__);
@@ -1875,7 +1882,8 @@ class FxTestController extends AppController {
 		$idxOf_Position_Start = $i * 2;
 
 		//code:20200607_155305:c
-		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit);
+		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit, $pos);
+// 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit);
 // 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start);
 // 		$valOf_Ret = array($cntOf_Loop, $i);
 		
@@ -1929,7 +1937,7 @@ class FxTestController extends AppController {
 		
 		/********************
 		 * step : 2
-		 * 		loop
+		 * 		loop : while
 		 ********************/
 		while (true) {
 				
@@ -1939,8 +1947,14 @@ class FxTestController extends AppController {
 			 ********************/
 			if ($_cntOf_Loop_While > $_maxOf_Loop_While) {
 					
-				debug("(while)(step : 2 : 0) while-loop ==> maxed : count = $_cntOf_Loop_While, max = $_maxOf_Loop_While");
+				$msg = "(while)(step : 2 : 0) while-loop ==> maxed" 
+						. " " . ": count = $_cntOf_Loop_While, max = $_maxOf_Loop_While";
+				debug($msg);
 		
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+				
 				// break
 				break;
 		
@@ -1973,6 +1987,7 @@ class FxTestController extends AppController {
 			//$valOf_Ret = array($cntOf_Loop, $i)
 			//array($cntOf_Loop, $i, $idxOf_Position_Start)
 			//$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit)
+			//$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit, $pos)
 			//coding:20200603_162557
 			$valOf_Ret_Received = FxTestController::fx_tester_T_1__Order_Buy__V2__For_Loop(
 					
@@ -1982,12 +1997,24 @@ class FxTestController extends AppController {
 					
 					);
 			
+			/********************
+			 * step : 2 : 2
+			 * 		post for-loop
+			 ********************/
+			/********************
+			 * step : 2 : 2 : 1
+			 * 		unpack
+			 ********************/
 			//next:20200616_114358:n
 			
 			// unpack
 			$cntOf_Loop_This		= $valOf_Ret_Received[0];
 			$idxOf_ForLoop_Last		= $valOf_Ret_Received[1];
-			$idxOf_Position_Start	= $valOf_Ret_Received[2];
+			
+			$pos_Tmp				= $valOf_Ret_Received[4];
+			
+			$idxOf_Position_Start	= $pos_Tmp->st_idx;
+// 			$idxOf_Position_Start	= $valOf_Ret_Received[2];
 			
 			//code:20200607_155156:c
 			$statusOf_For_Loop_Exit	= $valOf_Ret_Received[3];
@@ -2011,6 +2038,10 @@ class FxTestController extends AppController {
 // 			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This / \$cntOf_Loop_Total = $cntOf_Loop_Total";
 			$msg .= "\n";
 				
+			/********************
+			 * step : 2 : 2 : 2
+			 * 		increment ==> $idxOf_ForLoop_Start
+			 ********************/
 			//coding:20200603_163513
 			//test
 			$idxOf_ForLoop_Start = $idxOf_Position_Start + 1;
