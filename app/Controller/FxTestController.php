@@ -1113,6 +1113,9 @@ class FxTestController extends AppController {
 					
 					$msg .= "bar result ==> NOT within : $strOf_BarResult";
 					$msg .= "\n";
+					
+					// separator
+					$msg .= "\n";
 						
 					/********************
 					 * step : 2 : j4 : N : 2
@@ -1121,21 +1124,135 @@ class FxTestController extends AppController {
 					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J4_N2;
 
 					//next:20200618_172639:n
+					/********************
+					 * step : 2 : j5
+					 * 		bar result ?
+					 ********************/
+					if ($strOf_BarResult == CONS::$strOf_BarResult__Trail) {
+						/********************
+						 * step : 2 : j5 : choice-1(Trail)
+						 * 		Trail
+						 ********************/
+						/********************
+						 * step : 2 : j5 : choice-1(Trail) : 1
+						 * 		log
+						 ********************/
+						$msg = "\n";
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= " ";
+						
+						$msg .= "(for)(step : 2 : j5 : choice-1(Trail) : 1)";
+						$msg .= "\n";
+							
+						$msg .= "bar result ==> " . CONS::$strOf_BarResult__Trail;
+						$msg .= "\n";
+
+						//debug:20200619_163356:d
+						/********************
+						 * step : 2 : j5 : choice-1(Trail) : 1
+						 * 		log
+						 ********************/
+						$msg .= "\n";
+						
+						$msg .= sprintf("price_Close\t%.03f", $bardata->price_Close);
+						$msg .= "\n";
+						
+						$msg .= sprintf("\$pos->pr_SL\t%.03f", $pos->pr_SL);
+						$msg .= "\n";
+						
+						$msg .= sprintf("\$pos->pr_TP\t%.03f", $pos->pr_TP);
+						$msg .= "\n";
+						
+						$msg .= sprintf("\$pos->val_Trail_Starting\t%.03f", $pos->val_Trail_Starting);
+						$msg .= "\n";
+						
+						$msg .= sprintf("\$pos->st_pr\t%.03f (%s)", $pos->st_pr, $_lo_BarDatas[$pos->st_idx]->dateTime);
+						$msg .= "\n";
+						
+						$price_Trail_Starting =$pos->st_pr + $pos->val_Trail_Starting + $pos->val_SPREAD; 
+						
+						$msg .= sprintf("\$pos->st_pr + \$pos->val_Trail_Starting + \$pos->val_SPREAD\t%.03f"
+									, $price_Trail_Starting
+								);
+						$msg .= "\n";
+						
+						$msg .= sprintf("\$bardata->price_Close - (st_pr + val_Trail_Starting + SPREAD)\t%.03f"
+									, $bardata->price_Close - ($price_Trail_Starting));
+// 									, $bardata->price_Close - ($pos->st_pr + $pos->val_Trail_Starting);
+						$msg .= "\n";
+
+						/********************
+						 * step : 2 : j5 : choice-1(Trail) : 2
+						 * 		pos->SL,TP ==> update
+						 ********************/
+						$pr_SL_New = $bardata->price_Close - ($pos->val_SL + $pos->val_SPREAD);
+						$pr_TP_New = $bardata->price_Close + ($pos->val_TP + $pos->val_SPREAD);
+						
+						$msg .= sprintf("\$pr_SL_New\t%.03f", $pr_SL_New);
+						$msg .= "\n";
+						
+						$msg .= sprintf("\$pr_TP_New\t%.03f", $pr_TP_New);
+						$msg .= "\n";
+						
+						//next:20200619_170455:n
+						
+						
+						$msg .= "breaking... (coding not yet)";
+						$msg .= "\n";
+							
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+							
+						// flash
+						$msg = "";
+							
+						break;
+						
+					} else {
+						/********************
+						 * step : 2 : j5 : others
+						 * 		
+						 ********************/
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5 : others)";
+						$msg .= "\n";
+						
+						$msg .= "breaking... (coding not yet)";
+						$msg .= "\n";
+							
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+							
+						// flash
+						$msg = "";
+							
+						break;
+						
+						
+						
+					}//if ($strOf_BarResult == CONS::$strOf_BarResult__Trail)
 					
-					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
-					$msg .= "\n";
 					
-					$msg .= "breaking... (coding not yet)";
-					$msg .= "\n";
 					
-					Utils::write_Log__Fx_Admin(
-							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-							, $msg, __FILE__, __LINE__);
 					
-					// flash
-					$msg = "";
+// 					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 					$msg .= "\n";
 					
-					break;
+// 					$msg .= "breaking... (coding not yet)";
+// 					$msg .= "\n";
+					
+// 					Utils::write_Log__Fx_Admin(
+// 							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 							, $msg, __FILE__, __LINE__);
+					
+// 					// flash
+// 					$msg = "";
+					
+// 					break;
 						
 				}//if ($cond_5__Within == true)
 				
