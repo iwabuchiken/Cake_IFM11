@@ -1166,12 +1166,21 @@ class FxTestController extends AppController {
 						$msg .= sprintf("\$pos->val_Trail_Starting\t%.03f", $pos->val_Trail_Starting);
 						$msg .= "\n";
 						
+						//code:20200620_114800:c
+						// $trail_starting
+						$msg .= sprintf("\$pos->trail_starting_idx\t%d", $pos->trail_starting_idx);
+						$msg .= "\n";
+						
+						$msg .= sprintf("\$pos->trail_starting_pr\t%.03f", $pos->trail_starting_pr);
+						$msg .= "\n";
+						
 						$msg .= sprintf("\$pos->st_pr\t%.03f (%s)", $pos->st_pr, $_lo_BarDatas[$pos->st_idx]->dateTime);
 						$msg .= "\n";
 						
 						$price_Trail_Starting =$pos->st_pr + $pos->val_Trail_Starting + $pos->val_SPREAD; 
 						
-						$msg .= sprintf("\$pos->st_pr + \$pos->val_Trail_Starting + \$pos->val_SPREAD\t%.03f"
+// 						$msg .= sprintf("\$pos->st_pr + \$pos->val_Trail_Starting + \$pos->val_SPREAD\t%.03f"
+						$msg .= sprintf("\$price_Trail_Starting : \$pos->st_pr + \$pos->val_Trail_Starting + \$pos->val_SPREAD\t%.03f"
 									, $price_Trail_Starting
 								);
 						$msg .= "\n";
@@ -1185,14 +1194,67 @@ class FxTestController extends AppController {
 						 * step : 2 : j5 : choice-1(Trail) : 2
 						 * 		pos->SL,TP ==> update
 						 ********************/
-						$pr_SL_New = $bardata->price_Close - ($pos->val_SL + $pos->val_SPREAD);
-						$pr_TP_New = $bardata->price_Close + ($pos->val_TP + $pos->val_SPREAD);
+						$msg .= "\n";
+// 						$msg = "\n";
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= " ";
 						
-						$msg .= sprintf("\$pr_SL_New\t%.03f", $pr_SL_New);
+						$msg .= "(for)(step : 2 : j5 : choice-1(Trail) : 2)";
 						$msg .= "\n";
 						
-						$msg .= sprintf("\$pr_TP_New\t%.03f", $pr_TP_New);
-						$msg .= "\n";
+						//code:20200620_115732:c
+						// judge : condition
+						$difOf_Price_Close_And_Trail_Starting_Price = 
+											$bardata->price_Close - $pos->trail_starting_pr;
+						
+						$cond_6_Trai_Update = ($difOf_Price_Close_And_Trail_Starting_Price > 0);
+						
+// 						//test:20200620_120258:t
+// 						$cond_6_Trai_Update = false;
+						
+						// judge
+						if ($cond_6_Trai_Update == true) {
+						
+							$msg .= sprintf(
+									"pos->SL,TP ==> updating (\$difOf_Price_Close_And_Trail_Starting_Price\t%.03f"
+									, $difOf_Price_Close_And_Trail_Starting_Price
+									);
+							$msg .= "\n";
+							
+							$pr_SL_New = $bardata->price_Close - ($pos->val_SL + $pos->val_SPREAD);
+							$pr_TP_New = $bardata->price_Close + ($pos->val_TP + $pos->val_SPREAD);
+							
+							$msg .= sprintf("\$pr_SL_New\t%.03f", $pr_SL_New);
+							$msg .= "\n";
+							
+							$msg .= sprintf("\$pr_TP_New\t%.03f", $pr_TP_New);
+							$msg .= "\n";
+							
+							//next:20200620_120543:n
+													
+						} else {
+						
+							$msg .= "pos->SL,TP ==> NOT updating";
+							$msg .= "\n";
+							
+							$msg .= sprintf("\$difOf_Price_Close_And_Trail_Starting_Price\t%.03f"
+										, $difOf_Price_Close_And_Trail_Starting_Price);
+							$msg .= "\n";
+							
+						}//if ($cond_6_Trai_Update == true)
+						
+						
+// 						$msg .= "pos->SL,TP ==> updating...";
+// 						$msg .= "\n";
+						
+// 						$pr_SL_New = $bardata->price_Close - ($pos->val_SL + $pos->val_SPREAD);
+// 						$pr_TP_New = $bardata->price_Close + ($pos->val_TP + $pos->val_SPREAD);
+						
+// 						$msg .= sprintf("\$pr_SL_New\t%.03f", $pr_SL_New);
+// 						$msg .= "\n";
+						
+// 						$msg .= sprintf("\$pr_TP_New\t%.03f", $pr_TP_New);
+// 						$msg .= "\n";
 						
 						//next:20200619_170455:n
 						
