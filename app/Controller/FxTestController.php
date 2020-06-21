@@ -1130,28 +1130,28 @@ class FxTestController extends AppController {
 					 ********************/
 					if ($strOf_BarResult == CONS::$strOf_BarResult__Trail) {
 						/********************
-						 * step : 2 : j5 : choice-1(Trail)
+						 * step : 2 : j5.1 : choice-1(Trail)
 						 * 		Trail
 						 ********************/
 						/********************
-						 * step : 2 : j5 : choice-1(Trail) : 1
+						 * step : 2 : j5.1 : choice-1(Trail) : 1
 						 * 		log
 						 ********************/
 						$msg = "\n";
 						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 						$msg .= " ";
 						
-						$msg .= "(for)(step : 2 : j5 : choice-1(Trail) : 1)";
+						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 1)";
 						$msg .= "\n";
 							
 						$msg .= "bar result ==> " . CONS::$strOf_BarResult__Trail;
 						$msg .= "\n";
 
 						//debug:20200619_163356:d
-						/********************
-						 * step : 2 : j5 : choice-1(Trail) : 1
-						 * 		log
-						 ********************/
+// 						/********************
+// 						 * step : 2 : j5.1 : choice-1(Trail) : 1
+// 						 * 		log
+// 						 ********************/
 						$msg .= "\n";
 						
 						$msg .= sprintf("price_Close\t%.03f", $bardata->price_Close);
@@ -1191,15 +1191,19 @@ class FxTestController extends AppController {
 						$msg .= "\n";
 
 						/********************
-						 * step : 2 : j5 : choice-1(Trail) : 2
-						 * 		pos->SL,TP ==> update
+						 * step : 2 : j5.1-1
+						 * 		pos->SL,TP ==> update ?
 						 ********************/
 						$msg .= "\n";
 // 						$msg = "\n";
 						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 						$msg .= " ";
 						
-						$msg .= "(for)(step : 2 : j5 : choice-1(Trail) : 2)";
+						$msg .= "(for)(step : 2 : j5.1-1)";
+// 						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 2)";
+						$msg .= "\n";
+						
+						$msg .= "pos->SL,TP ==> update ?";
 						$msg .= "\n";
 						
 						//code:20200620_115732:c
@@ -1207,14 +1211,30 @@ class FxTestController extends AppController {
 						$difOf_Price_Close_And_Trail_Starting_Price = 
 											$bardata->price_Close - $pos->trail_starting_pr;
 						
-						$cond_6_Trai_Update = ($difOf_Price_Close_And_Trail_Starting_Price > 0);
+						$cond_6_Trail_Update = ($difOf_Price_Close_And_Trail_Starting_Price > 0);
 						
 // 						//test:20200620_120258:t
-// 						$cond_6_Trai_Update = false;
+// 						$cond_6_Trail_Update = false;
 						
 						// judge
-						if ($cond_6_Trai_Update == true) {
-						
+						if ($cond_6_Trail_Update == true) {
+							/********************
+							 * step : 2 : j5.1-1 : Y
+							 * 		pos->SL,TP ==> update
+							 ********************/
+							/********************
+							 * step : 2 : j5.1-1 : Y : 1
+							 * 		log
+							 ********************/
+							$msg .= "\n";
+							// 						$msg = "\n";
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+							$msg .= " ";
+							
+							$msg .= "(for)(step : 2 : j5.1-1 : Y : 1)";
+							// 						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 2)";
+							$msg .= "\n";
+								
 							$msg .= sprintf(
 									"pos->SL,TP ==> updating (\$difOf_Price_Close_And_Trail_Starting_Price\t%.03f"
 									, $difOf_Price_Close_And_Trail_Starting_Price
@@ -1231,9 +1251,80 @@ class FxTestController extends AppController {
 							$msg .= "\n";
 							
 							//next:20200620_120543:n
-													
+							/********************
+							 * step : 2 : j5.1-1 : Y : 2
+							 * 		$pos ==> update
+							 ********************/
+							//code:20200621_120039:c
+							// log
+							$msg .= "\n";
+							// 						$msg = "\n";
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+							$msg .= " ";
+								
+							$msg .= "(for)(step : 2 : j5.1-1 : Y : 2)";
+							// 						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 2)";
+							$msg .= "\n";
+							
+							$msg .= "\$pos ==> before update";
+							$msg .= "\n";
+
+							// log
+							$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+									$pos, $_lo_BarDatas, __FILE__, __LINE__);
+								
+							// update
+							$pos->pr_SL = $pr_SL_New;
+							$pos->pr_TP = $pr_TP_New;
+								
+							$pos->trail_starting_idx	= $i;
+							$pos->trail_starting_pr		= $bardata->price_Close;
+
+							// log
+							$msg .= "\$pos ==> updated";
+							$msg .= "\n";
+							
+							// separator
+							$msg .= "\n";
+								
+							$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+											$pos, $_lo_BarDatas, __FILE__, __LINE__);
+							
+							/********************
+							 * step : 2 : j5.1-1 : Y : 3
+							 * 		set ==> loop status
+							 ********************/
+							//code:20200621_121020:c
+							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_1_Y3;
+							$msg .= "\n";
+							
+							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "\n";
+
+							/********************
+							 * step : 2 : j5.1-1 : Y : 4
+							 * 		loop ==> continue
+							 ********************/
+							//next:20200621_121506:n
+											
 						} else {
-						
+							/********************
+							 * step : 2 : j5.1-1 : N
+							 * 		pos->SL,TP ==> NOT update
+							 ********************/
+							/********************
+							 * step : 2 : j5.1-1 : N : 1
+							 * 		log
+							 ********************/
+							$msg .= "\n";
+							// 						$msg = "\n";
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+							$msg .= " ";
+								
+							$msg .= "(for)(step : 2 : j5.1-1 : N : 1)";
+							// 						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 2)";
+							$msg .= "\n";
+								
 							$msg .= "pos->SL,TP ==> NOT updating";
 							$msg .= "\n";
 							
@@ -1241,7 +1332,7 @@ class FxTestController extends AppController {
 										, $difOf_Price_Close_And_Trail_Starting_Price);
 							$msg .= "\n";
 							
-						}//if ($cond_6_Trai_Update == true)
+						}//if ($cond_6_Trail_Update == true)
 						
 						
 // 						$msg .= "pos->SL,TP ==> updating...";
