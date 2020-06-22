@@ -1306,7 +1306,21 @@ class FxTestController extends AppController {
 							 * 		loop ==> continue
 							 ********************/
 							//next:20200621_121506:n
-											
+							$msg .= "\n";
+							// 						$msg = "\n";
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+							$msg .= " ";
+								
+							$msg .= "(for)(step : 2 : j5.1-1 : Y : 4)";
+							// 						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 2)";
+							$msg .= "\n";
+							
+							$msg .= "continue loop...";
+							$msg .= "\n";
+							
+							// continue
+							continue;
+							
 						} else {
 							/********************
 							 * step : 2 : j5.1-1 : N
@@ -1362,6 +1376,8 @@ class FxTestController extends AppController {
 							
 						break;
 						
+						//next:20200622_134838:n
+						
 					} else {
 						/********************
 						 * step : 2 : j5 : others
@@ -1372,6 +1388,14 @@ class FxTestController extends AppController {
 							
 						$msg .= "(for)(step : 2 : j5 : others)";
 						$msg .= "\n";
+
+						//debug
+						
+						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+										$pos
+										, $_lo_BarDatas
+										, __FILE__, __LINE__);
+
 						
 						$msg .= "breaking... (coding not yet)";
 						$msg .= "\n";
