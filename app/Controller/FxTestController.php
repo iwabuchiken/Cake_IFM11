@@ -1017,7 +1017,8 @@ class FxTestController extends AppController {
 				
 				$msg .= "(for)(step : 2 : j1 : Y : 4)";
 				$msg .= "\n";
-				
+
+				//fix:20200623_110432:f
 				$msg .= "bar result ==> $strOf_BarResult";
 				$msg .= "\n";
 
@@ -1041,6 +1042,22 @@ class FxTestController extends AppController {
 				 ********************/
 				//code:20200616_111328:c
 				$cond_5__Within = ($strOf_BarResult == CONS::$strOf_BarResult__Within);
+				
+				//debug:20200623_110526:d
+				$msg .= "//debug:20200623_110526:d";
+				$msg .= "\n";
+				$msg .= "\$cond_5__Within ==> " . (($cond_5__Within == true) ? "true" : "false");
+// 				$msg .= "\$cond_5__Within ==> $cond_5__Within";
+				$msg .= "\n";
+				
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+
+				// flash
+				$msg = "";
+				
+				
 				
 				/********************
 				 * step : 2 : j4 : 0 : 2
@@ -1123,6 +1140,14 @@ class FxTestController extends AppController {
 					 ********************/
 					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J4_N2;
 
+					//log
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+					
+					// flash
+					$msg = "";
+					
 					//next:20200618_172639:n
 					/********************
 					 * step : 2 : j5
@@ -1216,6 +1241,14 @@ class FxTestController extends AppController {
 // 						//test:20200620_120258:t
 // 						$cond_6_Trail_Update = false;
 						
+						//log
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+						
+						// flash
+						$msg = "";
+						
 						// judge
 						if ($cond_6_Trail_Update == true) {
 							/********************
@@ -1226,7 +1259,8 @@ class FxTestController extends AppController {
 							 * step : 2 : j5.1-1 : Y : 1
 							 * 		log
 							 ********************/
-							$msg .= "\n";
+// 							$msg .= "\n";
+							$msg = "\n";
 							// 						$msg = "\n";
 							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 							$msg .= " ";
@@ -1317,7 +1351,15 @@ class FxTestController extends AppController {
 							
 							$msg .= "continue loop...";
 							$msg .= "\n";
+
+							//log
+							Utils::write_Log__Fx_Admin(
+									$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+									, $msg, __FILE__, __LINE__);
 							
+							// flash
+							$msg = "";
+								
 							// continue
 							continue;
 							
@@ -1330,7 +1372,8 @@ class FxTestController extends AppController {
 							 * step : 2 : j5.1-1 : N : 1
 							 * 		log
 							 ********************/
-							$msg .= "\n";
+// 							$msg .= "\n";
+							$msg = "\n";
 							// 						$msg = "\n";
 							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 							$msg .= " ";
@@ -1345,6 +1388,20 @@ class FxTestController extends AppController {
 							$msg .= sprintf("\$difOf_Price_Close_And_Trail_Starting_Price\t%.03f"
 										, $difOf_Price_Close_And_Trail_Starting_Price);
 							$msg .= "\n";
+							
+							//log
+							Utils::write_Log__Fx_Admin(
+									$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+									, $msg, __FILE__, __LINE__);
+							
+							// flash
+							$msg = "";
+
+							/********************
+							 * step : 2 : j5.1-1 : N : 2
+							 * 		set ==> loop status
+							 ********************/
+							//next:20200623_112457:n
 							
 						}//if ($cond_6_Trail_Update == true)
 						
@@ -1373,7 +1430,14 @@ class FxTestController extends AppController {
 							
 						// flash
 						$msg = "";
-							
+
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+						
+						// flash
+						$msg = "";
+						
 						break;
 						
 						//next:20200622_134838:n
@@ -1383,7 +1447,8 @@ class FxTestController extends AppController {
 						 * step : 2 : j5 : others
 						 * 		
 						 ********************/
-						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 						$msg .= "\n";
 							
 						$msg .= "(for)(step : 2 : j5 : others)";
@@ -1409,12 +1474,7 @@ class FxTestController extends AppController {
 							
 						break;
 						
-						
-						
 					}//if ($strOf_BarResult == CONS::$strOf_BarResult__Trail)
-					
-					
-					
 					
 // 					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 // 					$msg .= "\n";
@@ -1469,7 +1529,10 @@ class FxTestController extends AppController {
 				Utils::write_Log__Fx_Admin(
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 						, $msg, __FILE__, __LINE__);
-			
+				
+				// flash
+				$msg = "";
+				
 				//_20200601_101636:next
 				/********************
 				 * step : 2 : j2
@@ -1501,6 +1564,13 @@ class FxTestController extends AppController {
 // 							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 // 							, $msg, __FILE__, __LINE__);
 
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+					
+					// flash
+					$msg = "";
+						
 					if ($resultOf_PD_dp_ALL == true) {
 						/********************
 						 * step : 2 : j2 : choice-1 : Y
@@ -1511,7 +1581,7 @@ class FxTestController extends AppController {
 						 * 		log
 						 ********************/
 						//_20200601_142250:tmp
-						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 1)";
+						$msg = "(for)(step : 2 : j2 : choice-1 : Y : 1)";
 						$msg .= "\n";
 						$msg .= "pattern ==> detected : " . CONS::$nameOf_DP__Detect_All;
 						$msg .= "\n";
@@ -1533,6 +1603,13 @@ class FxTestController extends AppController {
 						$msg .= "\$flag_Pattern_Detected ==> set to true : " . (($flag_Pattern_Detected == true) ? "true" : "false");
 						$msg .= "\n";
 							
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+						
+						// flash
+						$msg = "";
+						
 // 						debug($msg);
 
 						/********************
@@ -1578,7 +1655,8 @@ class FxTestController extends AppController {
 						//next:20200603_164949
 						
 						// log
-						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $_lo_BarDatas, __FILE__, __LINE__);
+// 						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $_lo_BarDatas, __FILE__, __LINE__);
+						$msg = LibEaTester::show_Basic_Pos_Data__Build_Lines($pos, $_lo_BarDatas, __FILE__, __LINE__);
 // 						$msg .= "(for)(step : 2 : j2 : choice-1 : Y : 3 : 2) set vals";
 // 						$msg .= "\n";
 						
@@ -1604,6 +1682,13 @@ class FxTestController extends AppController {
 						$msg .= "\$flag_Position_Taken ==> set to true : " 
 									. (($flag_Position_Taken == true) ? "true" : "false");
 						$msg .= "\n";
+
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+						
+						// flash
+						$msg = "";
 						
 // 						debug($msg);
 
@@ -1651,7 +1736,8 @@ class FxTestController extends AppController {
 							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 1
 							 * 		log
 							 ********************/
-							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+// 							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+							$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]"
 									. " (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 1)";
 							$msg .= "\n";
 	
@@ -1693,7 +1779,8 @@ class FxTestController extends AppController {
 							 * step : 2 : j2 : choice-1 : j3-1 : 2 : N : 1
 							 * 		log
 							 ********************/
-							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "] (step : 2 : j2 : choice-1 : j3-1 : 2 : N : 1)";
+							$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "] (step : 2 : j2 : choice-1 : j3-1 : 2 : N : 1)";
+// 							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "] (step : 2 : j2 : choice-1 : j3-1 : 2 : N : 1)";
 							$msg .= "\n";
 							
 							$msg .= "is_SL ==> false";
@@ -1709,6 +1796,13 @@ class FxTestController extends AppController {
 							// separator line
 							$msg .= "\n";
 
+							Utils::write_Log__Fx_Admin(
+									$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+									, $msg, __FILE__, __LINE__);
+							
+							// flash
+							$msg = "";
+								
 							/********************
 							 * step : 2 : j2 : choice-1 : j3-2
 							 * 		TP ?
@@ -1741,7 +1835,8 @@ class FxTestController extends AppController {
 								 * step : 2 : j2 : choice-1 : j3-2 : 2 : Y : 1
 								 * 		log
 								 ********************/
-								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]" 
+// 								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]" 
+								$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]" 
 										. " (step : 2 : j2 : choice-1 : j3-2 : 2 : Y : 1)";
 								$msg .= "\n";
 								
@@ -1787,7 +1882,8 @@ class FxTestController extends AppController {
 								 * step : 2 : j2 : choice-1 : j3-3 : 2 : N : 1
 								 * 		log
 								 ********************/
-								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+// 								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+								$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]"
 										. " (step : 2 : j2 : choice-1 : j3-2 : 2 : N : 1)";
 								$msg .= "\n";
 								
@@ -1803,6 +1899,13 @@ class FxTestController extends AppController {
 								
 								// separator
 								$msg .= "\n";
+								
+								Utils::write_Log__Fx_Admin(
+										$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+										, $msg, __FILE__, __LINE__);
+								
+								// flash
+								$msg = "";
 								
 								//next:20200606_115039:n
 								/********************
@@ -1830,7 +1933,8 @@ class FxTestController extends AppController {
 									 * step : 2 : j2 : choice-1 : j3-3 : Y : 1
 									 * 		log
 									 ********************/
-									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+// 									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+									$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]"
 											. " (step : 2 : j2 : choice-1 : j3-3 : Y : 1)";
 									$msg .= "\n";
 									
@@ -1875,7 +1979,8 @@ class FxTestController extends AppController {
 									 * step : 2 : j2 : choice-1 : j3-3 : N : 1
 									 * 		log
 									 ********************/
-									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+// 									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+									$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]"
 											. " (step : 2 : j2 : choice-1 : j3-3 : N : 1)";
 									$msg .= "\n";
 										
@@ -1909,6 +2014,9 @@ class FxTestController extends AppController {
 											$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 											, $msg, __FILE__, __LINE__);
 										
+									//flash
+									$msg = "";
+									
 									//code:20200606_113647
 									//code:20200608_135549
 // 									LibEaTester_2::update_Pos(
@@ -1958,7 +2066,14 @@ class FxTestController extends AppController {
 									 ********************/
 // 									//test
 // 									break;
+
+									Utils::write_Log__Fx_Admin(
+											$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+											, $msg, __FILE__, __LINE__);
 									
+									// flash
+									$msg = "";
+										
 									continue;
 									
 									
@@ -2034,6 +2149,8 @@ class FxTestController extends AppController {
 						 * step : 2 : j2 : choice-1 : N : 1
 						 * 		log
 						 ********************/
+						$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 						$msg .= "(for)(step : 2 : j2 : choice-1 : N : 1)";
 						$msg .= "(for)(step : 2 : j2 : choice-1 : N : 1)";
 						$msg .= "\n";
 						$msg .= "pattern ==> NOT detected : " . CONS::$nameOf_DP__Detect_All;
@@ -2041,16 +2158,20 @@ class FxTestController extends AppController {
 						
 // 						debug($msg);
 							
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
 						
-						
+						// flash
+						$msg = "";
 						
 					}//if ($resultOf_PD_dp_ALL == true) {
 					
-					// write log
-					Utils::write_Log__Fx_Admin(
-							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-							, $msg, __FILE__, __LINE__);
-					
+// 					// write log
+// 					Utils::write_Log__Fx_Admin(
+// 							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 							, $msg, __FILE__, __LINE__);
+
 				} else {//if ($_nameOf_DP == CONS::$nameOf_DP__Detect_All) {
 					/********************
 					 * step : 2 : j2 : choice-X : N
@@ -2159,6 +2280,9 @@ class FxTestController extends AppController {
 		Utils::write_Log__Fx_Admin(
 				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 				, $msg, __FILE__, __LINE__);
+		
+		// flash
+		$msg = "";
 		
 		/********************
 		 * step : 2 : X
