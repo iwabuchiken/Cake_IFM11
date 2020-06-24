@@ -1115,7 +1115,7 @@ class FxTestController extends AppController {
 				} else {
 					/********************
 					 * step : 2 : j4 : N
-					 * 		bar result ==> within
+					 * 		bar result ==> NOT within
 					 ********************/
 					/********************
 					 * step : 2 : j4 : N : 1
@@ -1389,6 +1389,40 @@ class FxTestController extends AppController {
 										, $difOf_Price_Close_And_Trail_Starting_Price);
 							$msg .= "\n";
 							
+							/********************
+							 * step : 2 : j5.1-1 : N : 2
+							 * 		set ==> loop status
+							 ********************/
+							//next:20200623_112457:n
+							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_1_N2;
+							$msg .= "\n";
+								
+							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "\n";
+								
+
+							/********************
+							 * step : 2 : j5.1-1 : N : 3
+							 * 		continue
+							 ********************/
+							$msg .= "\n";
+							// 						$msg = "\n";
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+							$msg .= " ";
+							
+							$msg .= "(for)(step : 2 : j5.1-1 : N : 3)";
+							// 						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 2)";
+							$msg .= "\n";
+							
+							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_1_N3;
+							$msg .= "\n";
+							
+							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "\n";
+								
+							$msg .= "continuing...";
+							$msg .= "\n";
+								
 							//log
 							Utils::write_Log__Fx_Admin(
 									$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
@@ -1397,11 +1431,9 @@ class FxTestController extends AppController {
 							// flash
 							$msg = "";
 
-							/********************
-							 * step : 2 : j5.1-1 : N : 2
-							 * 		set ==> loop status
-							 ********************/
-							//next:20200623_112457:n
+							// continue
+							continue;
+							
 							
 						}//if ($cond_6_Trail_Update == true)
 						
@@ -1421,7 +1453,8 @@ class FxTestController extends AppController {
 						//next:20200619_170455:n
 						
 						
-						$msg .= "breaking... (coding not yet)";
+// 						$msg .= "breaking... (coding not yet)";
+						$msg = "breaking... (coding not yet)";
 						$msg .= "\n";
 							
 						Utils::write_Log__Fx_Admin(
@@ -1442,6 +1475,56 @@ class FxTestController extends AppController {
 						
 						//next:20200622_134838:n
 						
+					} else if ($strOf_BarResult == CONS::$strOf_BarResult__SL) {
+						/********************
+						 * step : 2 : j5.1-2(SL)
+						 * 		SL
+						 ********************/
+						/********************
+						 * step : 2 : j5.1-2(SL) : 1
+						 * 		log
+						 ********************/
+						//code:20200624_172551:c
+						$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5.1-2(SL) : 1)";
+						$msg .= "\n";
+						
+						$difOf_Price_SL_And_Price_Start = $pos->pr_SL - $pos->st_pr;
+						
+						$msg .= sprintf(
+								
+								"\$difOf_Price_SL_And_Price_Start\t%.03f"
+								, $difOf_Price_SL_And_Price_Start
+								
+								);
+
+						/********************
+						 * step : 2 : j5.1-2(SL) : 2
+						 * 		$pos, $bardata ==> append
+						 ********************/
+						//next:20200624_173926:n
+						
+						
+						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+								$pos
+								, $_lo_BarDatas
+								, __FILE__, __LINE__);
+						
+						
+						$msg .= "breaking... (coding not yet)";
+						$msg .= "\n";
+							
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+							
+						// flash
+						$msg = "";
+							
+						break;
+												
 					} else {
 						/********************
 						 * step : 2 : j5 : others
