@@ -1502,18 +1502,26 @@ class FxTestController extends AppController {
 
 						/********************
 						 * step : 2 : j5.1-2(SL) : 2
-						 * 		$pos, $bardata ==> append
+						 * 		set ==> status 
 						 ********************/
 						//next:20200624_173926:n
+						$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_2_2;
+
+						$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5.1-2(SL) : 2)";
+						$msg .= "\n";
 						
+						$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+						$msg .= "\n";						
 						
 						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
 								$pos
 								, $_lo_BarDatas
 								, __FILE__, __LINE__);
 						
-						
-						$msg .= "breaking... (coding not yet)";
+						$msg .= "breaking from for-loop... SL";
 						$msg .= "\n";
 							
 						Utils::write_Log__Fx_Admin(
@@ -2382,6 +2390,7 @@ class FxTestController extends AppController {
 // 		$idxOf_Position_Start = $i * 3;
 		$idxOf_Position_Start = $i * 2;
 
+		//next:20200625_131641:n
 		//code:20200607_155305:c
 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit, $pos);
 // 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit);
