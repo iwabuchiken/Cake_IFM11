@@ -2392,7 +2392,16 @@ class FxTestController extends AppController {
 
 		//next:20200625_131641:n
 		//code:20200607_155305:c
-		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit, $pos);
+		$valOf_Ret = array(
+				$cntOf_Loop
+				, $i
+				, $idxOf_Position_Start
+				, $statusOf_For_Loop_Exit
+				, $pos
+				, $statusOf_For_Loop_Execution
+				
+		);
+// 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit, $pos);
 // 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit);
 // 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start);
 // 		$valOf_Ret = array($cntOf_Loop, $i);
@@ -2445,6 +2454,13 @@ class FxTestController extends AppController {
 		
 // 		$cntOf_Looop_While = 0;
 		
+		// status
+		$statusOf_While_Loop_Execution = "";
+		
+		//code:20200627_124329:c
+		// list of $pos
+		$lo_Pos = array();
+		
 		/********************
 		 * step : 2
 		 * 		loop : while
@@ -2456,7 +2472,10 @@ class FxTestController extends AppController {
 			 * 		stopper
 			 ********************/
 			if ($_cntOf_Loop_While > $_maxOf_Loop_While) {
-					
+				/********************
+				 * step : 2 : 0 : 0.1
+				 * 		stopper
+				 ********************/
 				$msg = "(while)(step : 2 : 0) while-loop ==> maxed" 
 						. " " . ": count = $_cntOf_Loop_While, max = $_maxOf_Loop_While";
 				debug($msg);
@@ -2498,6 +2517,12 @@ class FxTestController extends AppController {
 			//array($cntOf_Loop, $i, $idxOf_Position_Start)
 			//$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit)
 			//$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit, $pos)
+				// $cntOf_Loop		//0
+				// , $i		//1
+				// , $idxOf_Position_Start			//2
+				// , $statusOf_For_Loop_Exit		//3
+				// , $pos		//4
+				// , $statusOf_For_Loop_Execution		//5
 			//coding:20200603_162557
 			$valOf_Ret_Received = FxTestController::fx_tester_T_1__Order_Buy__V2__For_Loop(
 					
@@ -2523,6 +2548,11 @@ class FxTestController extends AppController {
 			
 			$pos_Tmp				= $valOf_Ret_Received[4];
 			
+			//code:20200627_122803:c
+			$statusOf_For_Loop_Execution	= $valOf_Ret_Received[5];
+			
+			
+			
 			$idxOf_Position_Start	= $pos_Tmp->st_idx;
 // 			$idxOf_Position_Start	= $valOf_Ret_Received[2];
 			
@@ -2547,7 +2577,62 @@ class FxTestController extends AppController {
 // 					. " " . "/ \$idxOf_Position_Start = $idxOf_Position_Start";
 // 			$msg .= "\$cntOf_Loop_This = $cntOf_Loop_This / \$cntOf_Loop_Total = $cntOf_Loop_Total";
 			$msg .= "\n";
+
+			Utils::write_Log__Fx_Admin(
+					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+					, $msg, __FILE__, __LINE__);
+			
 				
+			/********************
+			 * step : 2 : 2 : 1.1
+			 * 		check : for-loop ended with?
+			 ********************/
+			//debug
+			if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_2_2) {
+				/********************
+				 * step : 2 : 2 : 1.1 : 1
+				 * 		check : for-loop ended with ==> SL
+				 ********************/
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+			
+				$msg .= "(while)(step : 2 : 2 : 1.1 : 1)";
+				$msg .= "\n";
+			
+				$msg .= "for-loop ended with ==> SL (\$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution)";
+				$msg .= "\n";
+			
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+
+				/********************
+				 * step : 2 : 2 : 1.1 : 2
+				 * 		$pos ==> append
+				 ********************/
+				//code:20200627_124427:c
+				array_push($lo_Pos, $pos_Tmp);
+				
+			} else {//if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_2_2)
+				/********************
+				 * step : 2 : 2 : 1.1 : X
+				 * 		check : for-loop ended with ==> ??
+				 ********************/
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+			
+				$msg .= "(while)(step : 2 : 2 : 1.1 : X)";
+				$msg .= "\n";
+			
+				$msg .= "for-loop ended with ==> \$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution";
+				$msg .= "\n";
+			
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+				
+			}//if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_2_2)
+					
 			/********************
 			 * step : 2 : 2 : 2
 			 * 		increment ==> $idxOf_ForLoop_Start
@@ -2560,13 +2645,19 @@ class FxTestController extends AppController {
 
 
 			//next:20200616_114510:n
+			$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+			$msg .= " ";
+				
+			$msg .= "(while)(step : 2 : 2 : 2)";
+			$msg .= "\n";
+				
 			$msg .= "\$idxOf_ForLoop_Start ==> updated : $idxOf_ForLoop_Start";
 			$msg .= "\n";
 			
 			Utils::write_Log__Fx_Admin(
 					$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 					, $msg, __FILE__, __LINE__);
-			
+
 			/********************
 			 * step : 2 : 2
 			 * 		validate
@@ -2631,6 +2722,35 @@ class FxTestController extends AppController {
 			$_cntOf_Loop_While += 1;
 				
 		}//while (true) {
+		
+		/********************
+		 * step : 3
+		 * 		post while-loop
+		 ********************/
+		//code:20200627_124756:c
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= "\n";
+		
+		$msg .= "(while)(step : 3)";
+		$msg .= "\n";
+	
+		$msg .= "post while-loop";
+		$msg .= "\n";
+	
+		$msg .= sprintf("count(\$lo_Pos)\t%d", count($lo_Pos));
+		$msg .= "\n";
+	
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+		
+		aaa
+		/********************
+		 * step : X
+		 * 		return
+		 ********************/
+		
+		
 		
 	}//fx_tester_T_1__Order_Buy__V2__While_Loop
 	
@@ -2876,6 +2996,14 @@ class FxTestController extends AppController {
 		Utils::write_Log__Fx_Admin(
 				$dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
 				, $msg, __FILE__, __LINE__);
+		
+		/********************
+		 * step : 3
+		 * 		post testing : write to file ==> list of $pos
+		 ********************/
+		//next:20200627_130504:n
+		
+		
 		
 		/********************
 		 * step : X
