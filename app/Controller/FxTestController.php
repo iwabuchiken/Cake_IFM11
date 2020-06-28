@@ -1314,6 +1314,8 @@ class FxTestController extends AppController {
 							$pos->trail_starting_idx	= $i;
 							$pos->trail_starting_pr		= $bardata->price_Close;
 
+							//next:20200628_124338:n
+							
 							// log
 							$msg .= "\$pos ==> updated";
 							$msg .= "\n";
@@ -1500,6 +1502,8 @@ class FxTestController extends AppController {
 								
 								);
 
+						//next:20200628_124405:n
+						
 						/********************
 						 * step : 2 : j5.1-2(SL) : 2
 						 * 		set ==> status 
@@ -1723,6 +1727,7 @@ class FxTestController extends AppController {
 						//code:20200604_123320
 // 						LibEaTester_2::set_Vals_To_Pos(
 						//code:20200606_181945:c
+						//debug:20200628_121707:d
 						LibEaTester_2::set_Vals_To_Pos__First_Occasion(
 									$pos
 									, $i
@@ -2744,13 +2749,23 @@ class FxTestController extends AppController {
 				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 				, $msg, __FILE__, __LINE__);
 		
-		aaa
 		/********************
 		 * step : X
 		 * 		return
 		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		prep
+		 ********************/
+		$valOf_Ret = array($lo_Pos);
 		
-		
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		// return
+		return $valOf_Ret;
+				
 		
 	}//fx_tester_T_1__Order_Buy__V2__While_Loop
 	
@@ -2972,8 +2987,10 @@ class FxTestController extends AppController {
 		$nameOf_DP = CONS::$nameOf_DP__Detect_All;
 		
 		//_20200531_132021:tmp
+		//$valOf_Ret = array($lo_Pos);
 		//_20200531_132111:caller
-		FxTestController::fx_tester_T_1__Order_Buy__V2__While_Loop(
+// 		FxTestController::fx_tester_T_1__Order_Buy__V2__While_Loop(
+		$valOf_Ret__received = FxTestController::fx_tester_T_1__Order_Buy__V2__While_Loop(
 					$lo_BarDatas__Order_A_Z, $lo_HeaderLines
 // 					$lo_BarDatas, $lo_HeaderLines
 
@@ -2996,14 +3013,108 @@ class FxTestController extends AppController {
 		Utils::write_Log__Fx_Admin(
 				$dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
 				, $msg, __FILE__, __LINE__);
+
+		/********************
+		 * step : 2 : 3
+		 * 		post while-loop : unpack
+		 ********************/
+		// unpack
+		//$valOf_Ret = array($lo_Pos);
+		$lo_Pos		= $valOf_Ret__received[0];
+		
+		//debug
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= " ";
+		
+		$msg = "(step : 2 : 3) post while-loop : unpack";
+		$msg .= "\n";
+			
+		$msg .= "count(\$lo_Pos)\t" . count($lo_Pos);
+		$msg .= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				$dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
 		
 		/********************
 		 * step : 3
 		 * 		post testing : write to file ==> list of $pos
 		 ********************/
+		//code:20200628_121021:c
 		//next:20200627_130504:n
+// 		debug("\$tokens =>");
+// 		debug($tokens);
+// 			// 		array(
+// 			// 				(int) 0 => '(slice-by-day)',
+// 			// 				(int) 1 => '(AUDJPY-M5)',
+// 			// 				(int) 2 => '(2020-05-13)',
+// 			// 				(int) 3 => '(20200530_134010_951771)',
+// 			// 				(int) 4 => 'csv'
+// 			// 		)		
+			
+// 		debug("\$strOf_Time_Label => $strOf_Time_Label");
+// 			//'$strOf_Time_Label => 20200628_115555_569696'
+			
+		/********************
+		 * step : 3 : 1
+		 * 		prep : vars
+		 ********************/		
+		$label_ListOf_Pos = "list-of-pos";
 		
+		$fname_ListOf_Pos = "$label_ListOf_Pos.($strOf_Time_Label).dat";
 		
+		$lenOf_LO_Pos = count($lo_Pos);
+		
+		/********************
+		 * step : 3 : 2
+		 * 		header
+		 ********************/		
+		$content = "\n";
+		
+		$content .= "source csv\t$fname_Source_CSV";
+		$content .= "\n";
+		$content .= "this file\t$fname_ListOf_Pos";
+		$content .= "\n";
+		
+		$content .= "st_idx\tst_pr\tdatetime";
+		$content .= "\n";
+		
+		/********************
+		 * step : 3 : 3
+		 * 		data
+		 ********************/		
+		// data
+		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
+		
+			// pos
+			$pos = $lo_Pos[$i];
+			
+			$content .= sprintf("%d\t%.03f\t%s", $pos->st_idx, $pos->st_pr, $pos-> st_dateTime);
+			$content .= "\n";
+			
+		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
+		
+		/********************
+		 * step : 3 : 3
+		 * 		write
+		 ********************/		
+		Utils::write_Log__Fx_Admin(
+				$dpath_Log_Fx_Tester__Full, $fname_ListOf_Pos
+				, $content, __FILE__, __LINE__);
+
+		//debug
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= " ";
+		
+		$msg = "(step : 3 : 3)";
+		$msg .= "\n";
+			
+		$msg .= "write to file ==> comp ($fname_ListOf_Pos)";
+		$msg .= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				$dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
 		
 		/********************
 		 * step : X
@@ -3037,6 +3148,20 @@ class FxTestController extends AppController {
 
 		//debug
 		debug("\$time_elapsed_In_TimeLabel => $time_elapsed_In_TimeLabel");
+
+		//debug
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= " ";
+		
+		$msg = "(step : X)";
+		$msg .= "\n";
+			
+		$msg .= "\$time_elapsed_In_TimeLabel => $time_elapsed_In_TimeLabel";
+		$msg .= "\n";
+			
+		Utils::write_Log__Fx_Admin(
+				$dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
 		
 		/********************
 		 * step : X

@@ -333,6 +333,13 @@ class LibEaTester_2 {
 		 ********************/
 		$_pos->position_type	= $_strOf_Position_Type;
 		
+		/********************
+		 * step : 7
+		 * 		datatime
+		 ********************/
+		//code:20200628_121827:c
+		$_pos->st_dateTime		= $_bardata->dateTime;
+		
 	}//set_Vals_To_Pos__First_Occasion
 	
 	/********************
@@ -478,6 +485,10 @@ class LibEaTester_2 {
 		// price
 		$_pos->cu_pr		= $_bardata->price_Close;
 
+		// datetime
+		//code:20200628_122723:c
+		$_pos->cu_dateTime		= $_bardata->dateTime;
+		
 		//debug
 		$msg = "\n";
 		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";

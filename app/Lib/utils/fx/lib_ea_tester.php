@@ -923,12 +923,19 @@ class LibEaTester {
 				. "\t" 
 				. "\$pos->st_pr\t" . number_format($pos->st_pr, 3)
 				. "\t"
+				. "\$pos->st_dateTime\t" . $pos->st_dateTime
+				. "\t"
 				. "\$lo_BarDatas[$pos->st_idx]->dateTime\t" . $lo_BarDatas[$pos->st_idx]->dateTime
 				;
 		$msg .= "\n";
 	
-		$msg .= "\$pos->cu_idx\t" . $pos->cu_idx . "\t" . "\$pos->cu_pr\t" . number_format($pos->cu_pr, 3)
+		$msg .= "\$pos->cu_idx\t" . $pos->cu_idx 
+				. "\t" 
+				. "\$pos->cu_pr\t" . number_format($pos->cu_pr, 3)
 				. "\t"
+				. "\$pos->st_dateTime\t" . $pos->st_dateTime
+				. "\t"						
+						
 				. "\$lo_BarDatas[$pos->cu_idx]->dateTime\t" . $lo_BarDatas[$pos->cu_idx]->dateTime
 		
 				;
