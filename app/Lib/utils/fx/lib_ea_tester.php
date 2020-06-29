@@ -933,7 +933,7 @@ class LibEaTester {
 				. "\t" 
 				. "\$pos->cu_pr\t" . number_format($pos->cu_pr, 3)
 				. "\t"
-				. "\$pos->st_dateTime\t" . $pos->st_dateTime
+				. "\$pos->cu_dateTime\t" . $pos->cu_dateTime
 				. "\t"						
 						
 				. "\$lo_BarDatas[$pos->cu_idx]->dateTime\t" . $lo_BarDatas[$pos->cu_idx]->dateTime

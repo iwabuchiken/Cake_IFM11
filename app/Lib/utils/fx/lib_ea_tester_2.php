@@ -299,12 +299,18 @@ class LibEaTester_2 {
 		$_pos->st_idx	= $_i;
 		$_pos->st_pr		= $_bardata->price_Open;
 		
+		//code:20200628_121827:c
+		$_pos->st_dateTime		= $_bardata->dateTime;
+		
 		/********************
 		 * step : 2
 		 * 		current
 		 ********************/
 		$_pos->cu_idx	= $_i;
-		$_pos->cu_pr		= $_bardata->price_Open;
+		$_pos->cu_pr		= $_bardata->price_Close;
+// 		$_pos->cu_pr		= $_bardata->price_Open;
+		
+		$_pos->cu_dateTime		= $_bardata->dateTime;
 		
 		/********************
 		 * step : 3
@@ -333,12 +339,12 @@ class LibEaTester_2 {
 		 ********************/
 		$_pos->position_type	= $_strOf_Position_Type;
 		
-		/********************
-		 * step : 7
-		 * 		datatime
-		 ********************/
-		//code:20200628_121827:c
-		$_pos->st_dateTime		= $_bardata->dateTime;
+// 		/********************
+// 		 * step : 7
+// 		 * 		datatime
+// 		 ********************/
+// 		//code:20200628_121827:c
+// 		$_pos->st_dateTime		= $_bardata->dateTime;
 		
 	}//set_Vals_To_Pos__First_Occasion
 	
@@ -490,7 +496,7 @@ class LibEaTester_2 {
 		$_pos->cu_dateTime		= $_bardata->dateTime;
 		
 		//debug
-		$msg = "\n";
+		$msg .= "\n";
 		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 		$msg .= "\n";
 

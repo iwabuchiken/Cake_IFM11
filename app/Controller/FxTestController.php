@@ -986,13 +986,49 @@ class FxTestController extends AppController {
 				
 				//ref:20200613_143927:r
 				$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J1_Y3;
+// 				$msg .= "\n";
+				$msg = "\n";
+				
+				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+				
+				$msg .= "(for)(step : 2 : j1 : Y : 3)";
+				$msg .= "\n";
+				
+				$msg .= "\$pos ==> update";
+				$msg .= "\n";
+
+				//debug:20200629_153448:d
+				$msg .= "\n";
+				$msg .= "(debug)";
+				$msg .= "\n";
+				
+				$msg .= sprintf("\$bardata_This->dateTime\t%s\n\$pos->cu_dateTime\t%s", $bardata_This->dateTime, $pos->cu_dateTime);
 				$msg .= "\n";
 				
 				
-				// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+					
+				// flash
+				$msg = "";
+				
+				$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+									$pos, $_lo_BarDatas, __FILE__, __LINE__);
+
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+					
+				// flash
+				$msg = "";
+				
+								// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
 				// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
 					
-				$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+// 				$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+				$msg = "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 				$msg .= "\n";
 				
 				/********************
@@ -1511,7 +1547,8 @@ class FxTestController extends AppController {
 						//next:20200624_173926:n
 						$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_2_2;
 
-						$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 						$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 						$msg .= "\n";
 							
 						$msg .= "(for)(step : 2 : j5.1-2(SL) : 2)";
@@ -1766,6 +1803,13 @@ class FxTestController extends AppController {
 						
 // 						debug($msg);
 
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+						
+						// flash
+						$msg = "";
+						
 						/********************
 						 * step : 2 : j2 : choice-1 : Y : 4
 						 * 		flag
@@ -3069,6 +3113,8 @@ class FxTestController extends AppController {
 		 * step : 3 : 2
 		 * 		header
 		 ********************/		
+		//next:20200629_155516:n
+		
 		$content = "\n";
 		
 		$content .= "source csv\t$fname_Source_CSV";
@@ -3078,6 +3124,7 @@ class FxTestController extends AppController {
 		
 		$content .= "st_idx\tst_pr\tdatetime";
 		$content .= "\n";
+		
 		
 		/********************
 		 * step : 3 : 3

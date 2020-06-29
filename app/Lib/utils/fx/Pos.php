@@ -90,6 +90,9 @@ class Pos {
 	// position type
 	public $position_type	= null;
 	
+	// location in the for-loop : string
+	public $loc_in_For_Loop	= null;
+	
 }//class Pos {
 
 // $st_idx,$st_pr,$cu_idx,$cu_pr,$rf_idx,$rf_pr,$ext_idx,$ext_pr,$base_idx,$base_pr,$trail_starting_idx,$trail_starting_pr,$val_TP,$val_SL,$val_SPREAD,$pr_TP,$pr_SL
