@@ -3084,6 +3084,8 @@ class FxTestController extends AppController {
 		 * step : 3
 		 * 		post testing : write to file ==> list of $pos
 		 ********************/
+		//next:20200630_141510:n
+		
 		//code:20200628_121021:c
 		//next:20200627_130504:n
 // 		debug("\$tokens =>");
@@ -3117,12 +3119,44 @@ class FxTestController extends AppController {
 		
 		$content = "\n";
 		
+		/********************
+		 * step : 3 : 2 : 1
+		 * 		header : meta info
+		 ********************/		
+		// meta info
 		$content .= "source csv\t$fname_Source_CSV";
 		$content .= "\n";
 		$content .= "this file\t$fname_ListOf_Pos";
 		$content .= "\n";
 		
+		//next:	20200630_141350:n
+		
+		
+		// separator
+		$content .= "\n";
+		
+		/********************
+		 * step : 3 : 2 : 2
+		 * 		header : column names
+		 ********************/		
+		// serial num
+		$content .= "no" . "\t";
+		
+		// starting bar
 		$content .= "st_idx\tst_pr\tdatetime";
+		
+		$content .= "\t";
+// 		$content .= "\n";
+		
+		// current
+		$content .= "cu_idx\tcu_pr\tdatetime";
+		
+		$content .= "\t";
+		
+		// SL, TP, diff
+		$content .= "pos.SL\tpos.TP\tdiff.SL~start";
+		
+		// return char
 		$content .= "\n";
 		
 		
@@ -3132,17 +3166,55 @@ class FxTestController extends AppController {
 		 ********************/		
 		// data
 		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
-		
+			/********************
+			 * step : 3 : 3 : 0
+			 * 		prep
+			 ********************/
 			// pos
 			$pos = $lo_Pos[$i];
 			
+			/********************
+			 * step : 3 : 3 : 1
+			 * 		serial num
+			 ********************/
+			$content	.= ($i + 1);
+			$content .= "\t";
+			
+			/********************
+			 * step : 3 : 3 : 2
+			 * 		starting bar
+			 ********************/
 			$content .= sprintf("%d\t%.03f\t%s", $pos->st_idx, $pos->st_pr, $pos-> st_dateTime);
+			$content .= "\t";
+			
+			/********************
+			 * step : 3 : 3 : 3
+			 * 		current bar
+			 ********************/
+			$content .= sprintf("%d\t%.03f\t%s", $pos->cu_idx, $pos->cu_pr, $pos-> cu_dateTime);
+			
+			$content .= "\t";
+			
+			/********************
+			 * step : 3 : 3 : 4
+			 * 		SL, TP, diff
+			 ********************/
+			$diffOf_Price_SL_Start = $pos->pr_SL - $pos->st_pr;
+			
+			$content .= sprintf("%.03f\t%.03f\t%.03f", $pos->pr_SL, $pos->pr_TP, $diffOf_Price_SL_Start);
+			
+			$content .= "\t";
+			
+			/********************
+			 * step : 3 : 3 : X
+			 * 		return char
+			 ********************/
 			$content .= "\n";
 			
 		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
 		
 		/********************
-		 * step : 3 : 3
+		 * step : 3 : 4
 		 * 		write
 		 ********************/		
 		Utils::write_Log__Fx_Admin(
