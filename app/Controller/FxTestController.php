@@ -2814,6 +2814,195 @@ class FxTestController extends AppController {
 	}//fx_tester_T_1__Order_Buy__V2__While_Loop
 	
 	/********************
+	* fx_tester_T_1__Order_Buy__V2__Write_List_Of_Pos()
+	* 
+	* 	at : 2020/05/28 13:20:24
+	********************/
+	//_20200329_132038:tmp
+	public function fx_tester_T_1__Order_Buy__V2__Write_List_Of_Pos
+	(
+			$_strOf_Time_Label
+			, $_lo_Pos
+			, $_fname_Source_CSV
+			, $_dpath_Log_Fx_Tester__Full
+			
+			, $_nameOf_DP
+			, $_lo_BarDatas__Order_A_Z
+			
+			) {
+//_20200701_154609:caller
+//_20200701_154619:head
+//_20200701_154622:wl
+
+		//_20200528_140426:tmp
+		/********************
+		 * step : 1
+		 * 	prep
+		 ********************/
+		/********************
+		 * step : 3 : 1
+		 * 		prep : vars
+		 ********************/
+		$label_ListOf_Pos = "list-of-pos";
+		
+		$_fname_ListOf_Pos = "$label_ListOf_Pos.($_strOf_Time_Label).dat";
+		
+		$lenOf_LO_Pos = count($_lo_Pos);
+		
+		/********************
+		 * step : 3 : 2
+		 * 		header
+		********************/
+		//next:20200629_155516:n
+		
+		$content = "\n";
+		
+		/********************
+		 * step : 3 : 2 : 1
+		 * 		header : meta info
+		 ********************/
+		// meta info
+		$content .= "source csv\t$_fname_Source_CSV";
+		$content .= "\n";
+		$content .= "this file\t$_fname_ListOf_Pos";
+		$content .= "\n";
+		$content .= "this file\t$_fname_ListOf_Pos";
+		$content .= "\n";
+		
+		//next:20200630_141350:n
+		// SL, TP
+// 		$content .= "val_SL\t" . $_lo_Pos[0]->val_SL;
+		$content .= sprintf("val_SL\t%.02f", $_lo_Pos[0]->val_SL);
+		$content .= "\n";
+		$content .= sprintf("val_TP\t%.02f", $_lo_Pos[0]->val_TP);
+		$content .= "\n";
+		$content .= sprintf("val_SPREAD\t%.02f", $_lo_Pos[0]->val_SPREAD);
+		$content .= "\n";
+		
+		// dp name
+		$content .= "nameOf_DP\t$_nameOf_DP";
+		$content .= "\n";
+
+		// starting, ending
+		$lenOf_LO_BarData = count($_lo_BarDatas__Order_A_Z);
+		
+		$content .= "starting bar\t" . $_lo_BarDatas__Order_A_Z[0]->dateTime;
+		$content .= "\n";
+		$content .= "ending bar\t" . $_lo_BarDatas__Order_A_Z[$lenOf_LO_BarData - 1]->dateTime;
+		$content .= "\n";
+		
+		// separator
+		$content .= "\n";
+		
+		/********************
+		 * step : 3 : 2 : 2
+		 * 		header : column names
+		 ********************/
+		// serial num
+		$content .= "no" . "\t";
+		
+		// starting bar
+		$content .= "st_idx\tst_pr\tdatetime";
+		
+		$content .= "\t";
+		// 		$content .= "\n";
+		
+		// current
+		$content .= "cu_idx\tcu_pr\tdatetime";
+		
+		$content .= "\t";
+		
+		//next:20200701_163805:n
+		
+		// SL, TP, diff
+		$content .= "pos.SL\tpos.TP\tdiff.SL~start";
+		
+		// return char
+		$content .= "\n";
+		
+		
+		/********************
+		 * step : 3 : 3
+		 * 		data
+		 ********************/
+		// data
+		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
+			/********************
+			 * step : 3 : 3 : 0
+			 * 		prep
+			 ********************/
+			// pos
+			$pos = $_lo_Pos[$i];
+				
+			/********************
+			 * step : 3 : 3 : 1
+			 * 		serial num
+			********************/
+			$content	.= ($i + 1);
+			$content .= "\t";
+				
+			/********************
+			 * step : 3 : 3 : 2
+			 * 		starting bar
+			 ********************/
+			$content .= sprintf("%d\t%.03f\t%s", $pos->st_idx, $pos->st_pr, $pos-> st_dateTime);
+			$content .= "\t";
+				
+			/********************
+			 * step : 3 : 3 : 3
+			 * 		current bar
+			 ********************/
+			$content .= sprintf("%d\t%.03f\t%s", $pos->cu_idx, $pos->cu_pr, $pos-> cu_dateTime);
+				
+			$content .= "\t";
+				
+			/********************
+			 * step : 3 : 3 : 4
+			 * 		SL, TP, diff
+			 ********************/
+			$diffOf_Price_SL_Start = $pos->pr_SL - $pos->st_pr;
+				
+			$content .= sprintf("%.03f\t%.03f\t%.03f", $pos->pr_SL, $pos->pr_TP, $diffOf_Price_SL_Start);
+				
+			$content .= "\t";
+				
+			/********************
+			 * step : 3 : 3 : X
+			 * 		return char
+			 ********************/
+			$content .= "\n";
+				
+		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
+		
+		/********************
+		 * step : 3 : 4
+		 * 		write
+		 ********************/
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_ListOf_Pos
+// 				$dpath_Log_Fx_Tester__Full, $_fname_ListOf_Pos
+				, $content, __FILE__, __LINE__);
+
+		/********************
+		 * step : 4
+		 * 		return
+		 ********************/
+		/********************
+		 * step : X : 1
+		 * 		prep
+		 ********************/
+		$valOf_Ret = array($_fname_ListOf_Pos);
+		
+		/********************
+		 * step : X : 2
+		 * 		return
+		 ********************/
+		// return
+		return $valOf_Ret;
+		
+	}//public function fx_tester_T_1__Order_Buy__V2__Write_List_Of_Pos() {
+	
+	/********************
 	* fx_tester_T_1__Order_Buy__V2
 	* 	at : 2020/05/28 13:20:24
 	********************/
@@ -3085,6 +3274,20 @@ class FxTestController extends AppController {
 		 * 		post testing : write to file ==> list of $pos
 		 ********************/
 		//next:20200630_141510:n
+		//_20200701_154609:caller
+		$valOf_Ret__received = $this->fx_tester_T_1__Order_Buy__V2__Write_List_Of_Pos(
+				
+				$strOf_Time_Label
+				, $lo_Pos
+				, $fname_Source_CSV
+				, $dpath_Log_Fx_Tester__Full
+				
+				, $nameOf_DP
+				, $lo_BarDatas__Order_A_Z
+				);
+		
+		// unpack
+		$fname_ListOf_Pos	= $valOf_Ret__received[0];
 		
 		//code:20200628_121021:c
 		//next:20200627_130504:n
@@ -3101,125 +3304,125 @@ class FxTestController extends AppController {
 // 		debug("\$strOf_Time_Label => $strOf_Time_Label");
 // 			//'$strOf_Time_Label => 20200628_115555_569696'
 			
-		/********************
-		 * step : 3 : 1
-		 * 		prep : vars
-		 ********************/		
-		$label_ListOf_Pos = "list-of-pos";
+// 		/********************
+// 		 * step : 3 : 1
+// 		 * 		prep : vars
+// 		 ********************/		
+// 		$label_ListOf_Pos = "list-of-pos";
 		
-		$fname_ListOf_Pos = "$label_ListOf_Pos.($strOf_Time_Label).dat";
+// 		$fname_ListOf_Pos = "$label_ListOf_Pos.($strOf_Time_Label).dat";
 		
-		$lenOf_LO_Pos = count($lo_Pos);
+// 		$lenOf_LO_Pos = count($lo_Pos);
 		
-		/********************
-		 * step : 3 : 2
-		 * 		header
-		 ********************/		
-		//next:20200629_155516:n
+// 		/********************
+// 		 * step : 3 : 2
+// 		 * 		header
+// 		 ********************/		
+// 		//next:20200629_155516:n
 		
-		$content = "\n";
+// 		$content = "\n";
 		
-		/********************
-		 * step : 3 : 2 : 1
-		 * 		header : meta info
-		 ********************/		
-		// meta info
-		$content .= "source csv\t$fname_Source_CSV";
-		$content .= "\n";
-		$content .= "this file\t$fname_ListOf_Pos";
-		$content .= "\n";
-		
-		//next:	20200630_141350:n
-		
-		
-		// separator
-		$content .= "\n";
-		
-		/********************
-		 * step : 3 : 2 : 2
-		 * 		header : column names
-		 ********************/		
-		// serial num
-		$content .= "no" . "\t";
-		
-		// starting bar
-		$content .= "st_idx\tst_pr\tdatetime";
-		
-		$content .= "\t";
+// 		/********************
+// 		 * step : 3 : 2 : 1
+// 		 * 		header : meta info
+// 		 ********************/		
+// 		// meta info
+// 		$content .= "source csv\t$fname_Source_CSV";
+// 		$content .= "\n";
+// 		$content .= "this file\t$fname_ListOf_Pos";
 // 		$content .= "\n";
 		
-		// current
-		$content .= "cu_idx\tcu_pr\tdatetime";
-		
-		$content .= "\t";
-		
-		// SL, TP, diff
-		$content .= "pos.SL\tpos.TP\tdiff.SL~start";
-		
-		// return char
-		$content .= "\n";
+// 		//next:	20200630_141350:n
 		
 		
-		/********************
-		 * step : 3 : 3
-		 * 		data
-		 ********************/		
-		// data
-		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
-			/********************
-			 * step : 3 : 3 : 0
-			 * 		prep
-			 ********************/
-			// pos
-			$pos = $lo_Pos[$i];
-			
-			/********************
-			 * step : 3 : 3 : 1
-			 * 		serial num
-			 ********************/
-			$content	.= ($i + 1);
-			$content .= "\t";
-			
-			/********************
-			 * step : 3 : 3 : 2
-			 * 		starting bar
-			 ********************/
-			$content .= sprintf("%d\t%.03f\t%s", $pos->st_idx, $pos->st_pr, $pos-> st_dateTime);
-			$content .= "\t";
-			
-			/********************
-			 * step : 3 : 3 : 3
-			 * 		current bar
-			 ********************/
-			$content .= sprintf("%d\t%.03f\t%s", $pos->cu_idx, $pos->cu_pr, $pos-> cu_dateTime);
-			
-			$content .= "\t";
-			
-			/********************
-			 * step : 3 : 3 : 4
-			 * 		SL, TP, diff
-			 ********************/
-			$diffOf_Price_SL_Start = $pos->pr_SL - $pos->st_pr;
-			
-			$content .= sprintf("%.03f\t%.03f\t%.03f", $pos->pr_SL, $pos->pr_TP, $diffOf_Price_SL_Start);
-			
-			$content .= "\t";
-			
-			/********************
-			 * step : 3 : 3 : X
-			 * 		return char
-			 ********************/
-			$content .= "\n";
-			
-		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
+// 		// separator
+// 		$content .= "\n";
 		
-		/********************
-		 * step : 3 : 4
-		 * 		write
-		 ********************/		
-		Utils::write_Log__Fx_Admin(
-				$dpath_Log_Fx_Tester__Full, $fname_ListOf_Pos
-				, $content, __FILE__, __LINE__);
+// 		/********************
+// 		 * step : 3 : 2 : 2
+// 		 * 		header : column names
+// 		 ********************/		
+// 		// serial num
+// 		$content .= "no" . "\t";
+		
+// 		// starting bar
+// 		$content .= "st_idx\tst_pr\tdatetime";
+		
+// 		$content .= "\t";
+// // 		$content .= "\n";
+		
+// 		// current
+// 		$content .= "cu_idx\tcu_pr\tdatetime";
+		
+// 		$content .= "\t";
+		
+// 		// SL, TP, diff
+// 		$content .= "pos.SL\tpos.TP\tdiff.SL~start";
+		
+// 		// return char
+// 		$content .= "\n";
+		
+		
+// 		/********************
+// 		 * step : 3 : 3
+// 		 * 		data
+// 		 ********************/		
+// 		// data
+// 		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
+// 			/********************
+// 			 * step : 3 : 3 : 0
+// 			 * 		prep
+// 			 ********************/
+// 			// pos
+// 			$pos = $lo_Pos[$i];
+			
+// 			/********************
+// 			 * step : 3 : 3 : 1
+// 			 * 		serial num
+// 			 ********************/
+// 			$content	.= ($i + 1);
+// 			$content .= "\t";
+			
+// 			/********************
+// 			 * step : 3 : 3 : 2
+// 			 * 		starting bar
+// 			 ********************/
+// 			$content .= sprintf("%d\t%.03f\t%s", $pos->st_idx, $pos->st_pr, $pos-> st_dateTime);
+// 			$content .= "\t";
+			
+// 			/********************
+// 			 * step : 3 : 3 : 3
+// 			 * 		current bar
+// 			 ********************/
+// 			$content .= sprintf("%d\t%.03f\t%s", $pos->cu_idx, $pos->cu_pr, $pos-> cu_dateTime);
+			
+// 			$content .= "\t";
+			
+// 			/********************
+// 			 * step : 3 : 3 : 4
+// 			 * 		SL, TP, diff
+// 			 ********************/
+// 			$diffOf_Price_SL_Start = $pos->pr_SL - $pos->st_pr;
+			
+// 			$content .= sprintf("%.03f\t%.03f\t%.03f", $pos->pr_SL, $pos->pr_TP, $diffOf_Price_SL_Start);
+			
+// 			$content .= "\t";
+			
+// 			/********************
+// 			 * step : 3 : 3 : X
+// 			 * 		return char
+// 			 ********************/
+// 			$content .= "\n";
+			
+// 		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
+		
+// 		/********************
+// 		 * step : 3 : 4
+// 		 * 		write
+// 		 ********************/		
+// 		Utils::write_Log__Fx_Admin(
+// 				$dpath_Log_Fx_Tester__Full, $fname_ListOf_Pos
+// 				, $content, __FILE__, __LINE__);
 
 		//debug
 		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
