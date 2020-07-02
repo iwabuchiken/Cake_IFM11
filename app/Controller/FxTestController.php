@@ -52,6 +52,39 @@ class FxTestController extends AppController {
 		 * 		get : param
 		 ****************/
 		
+		/******************
+		 * step : X
+		 * 		set : vars for ==> view (simple)
+		 ****************/
+		$lo_URLs = array(
+				
+				array(
+					"44#10.2.2 : tester_1__V2"
+					, "http://localhost/Eclipse_Luna/Cake_IFM11/fx_test/fx_tester_T_1_V2"
+						. "?_Tester_T_1__Order_Genre=_Tester_T_1__Order_Genre__BUY"
+						. "&Tester_T_1__Source_CSV_File_Name=(slice-by-day).(AUDJPY-M5).(2020-05-13)"
+							. ".(20200530_134010_951771).csv"
+						. "&Tester_T_1__Source_CSV_Dpath="
+							. "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw"
+							. "\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_134010_951771)")
+				
+		);
+		
+		
+		$this->set("lo_URLs", $lo_URLs);
+		
+		/******************
+		 * step : X
+		 * 		view
+		 ****************/
+		$path_View = "index_simple";
+		$path_Layout = "plain";
+		
+		debug("rendering... $path_View");
+		
+		//ref https://duckduckgo.com/?q=cake+php+different+view&t=opera&ia=web&iai=r1-0&page=1&adx=prdsdb&sexp=%7B"v7exp"%3A"a"%2C"sltexp"%3A"b"%2C"prodexp"%3A"a"%2C"prdsdexp"%3A"b"%2C"rgiexp"%3A"b"%2C"bfexp"%3A"b"%7D
+		$this->render($path_View, $path_Layout);
+		
 	}//public function index()
 
 	public function test_codes_20200205_144054() {
@@ -2866,8 +2899,8 @@ class FxTestController extends AppController {
 		$content .= "\n";
 		$content .= "this file\t$_fname_ListOf_Pos";
 		$content .= "\n";
-		$content .= "this file\t$_fname_ListOf_Pos";
-		$content .= "\n";
+// 		$content .= "this file\t$_fname_ListOf_Pos";
+// 		$content .= "\n";
 		
 		//next:20200630_141350:n
 		// SL, TP
