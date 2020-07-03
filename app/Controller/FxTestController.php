@@ -2966,13 +2966,14 @@ class FxTestController extends AppController {
 		$content .= "ending bar\t" . $_lo_BarDatas__Order_A_Z[$lenOf_LO_BarData - 1]->dateTime;
 		$content .= "\n";
 
-// 		/********************
-// 		 * step : 3 : 2 : 1.5
-// 		 * 		sum of plus, minus
-// 		 ********************/
-// 		$sumOf_Plus		= 0;
-// 		$sumOf_Minus	= 0;
+		/********************
+		 * step : 3 : 2 : 1.5
+		 * 		sum of plus, minus
+		 ********************/
+		$sumOf_Plus		= 0;
+		$sumOf_Minus	= 0;
 		
+		//next:20200703_172455:n
 		
 		
 		
