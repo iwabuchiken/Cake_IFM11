@@ -1594,7 +1594,33 @@ class FxTestController extends AppController {
 								$pos
 								, $_lo_BarDatas
 								, __FILE__, __LINE__);
+
+						/********************
+						 * step : 2 : j5.1-2(SL) : 2.2
+						 * 		set ==> status : $pos->ext_status
+						 ********************/
+						//code:20200703_171215:c
+						// set
+						$pos->ext_status = CONS::$strOf_Exit_Status_Pos__SL;
+
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5.1-2(SL) : 2.2)";
+						$msg .= "\n";
 						
+						$msg .= "set ==> status : \$pos->ext_status (". $pos->ext_status . ")";
+						$msg .= "\n";
+						
+						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+								$pos
+								, $_lo_BarDatas
+								, __FILE__, __LINE__);
+						
+						/********************
+						 * step : 2 : j5.1-2(SL) : 3
+						 * 		break
+						 ********************/
 						$msg .= "breaking from for-loop... SL";
 						$msg .= "\n";
 							
@@ -2894,6 +2920,10 @@ class FxTestController extends AppController {
 		 * step : 3 : 2 : 1
 		 * 		header : meta info
 		 ********************/
+		/********************
+		 * step : 3 : 2 : 1.1
+		 * 		file names
+		 ********************/
 		// meta info
 		$content .= "source csv\t$_fname_Source_CSV";
 		$content .= "\n";
@@ -2902,6 +2932,10 @@ class FxTestController extends AppController {
 // 		$content .= "this file\t$_fname_ListOf_Pos";
 // 		$content .= "\n";
 		
+		/********************
+		 * step : 3 : 2 : 1.2
+		 * 		SL, TP, SPREAD
+		 ********************/
 		//next:20200630_141350:n
 		// SL, TP
 // 		$content .= "val_SL\t" . $_lo_Pos[0]->val_SL;
@@ -2911,11 +2945,19 @@ class FxTestController extends AppController {
 		$content .= "\n";
 		$content .= sprintf("val_SPREAD\t%.02f", $_lo_Pos[0]->val_SPREAD);
 		$content .= "\n";
-		
+
+		/********************
+		 * step : 3 : 2 : 1.3
+		 * 		dp name
+		 ********************/
 		// dp name
 		$content .= "nameOf_DP\t$_nameOf_DP";
 		$content .= "\n";
 
+		/********************
+		 * step : 3 : 2 : 1.4
+		 * 		datetime
+		 ********************/
 		// starting, ending
 		$lenOf_LO_BarData = count($_lo_BarDatas__Order_A_Z);
 		
@@ -2923,6 +2965,16 @@ class FxTestController extends AppController {
 		$content .= "\n";
 		$content .= "ending bar\t" . $_lo_BarDatas__Order_A_Z[$lenOf_LO_BarData - 1]->dateTime;
 		$content .= "\n";
+
+// 		/********************
+// 		 * step : 3 : 2 : 1.5
+// 		 * 		sum of plus, minus
+// 		 ********************/
+// 		$sumOf_Plus		= 0;
+// 		$sumOf_Minus	= 0;
+		
+		
+		
 		
 		// separator
 		$content .= "\n";
@@ -2931,22 +2983,46 @@ class FxTestController extends AppController {
 		 * step : 3 : 2 : 2
 		 * 		header : column names
 		 ********************/
+		/********************
+		 * step : 3 : 2 : 2 : 1
+		 		serial num
+		 ********************/
 		// serial num
 		$content .= "no" . "\t";
 		
+		/********************
+		 * step : 3 : 2 : 2 : 2
+		 		bar : starting
+		 ********************/
 		// starting bar
 		$content .= "st_idx\tst_pr\tdatetime";
 		
 		$content .= "\t";
 		// 		$content .= "\n";
 		
+		/********************
+		 * step : 3 : 2 : 2 : 3
+		 		bar : current
+		 ********************/
 		// current
 		$content .= "cu_idx\tcu_pr\tdatetime";
 		
 		$content .= "\t";
 		
+		/********************
+		 * step : 3 : 2 : 2 : X
+		 		pos.ext_status
+		 ********************/
+		$content .= "pos.ext_status";
+		
+		$content .= "\t";
+		
 		//next:20200701_163805:n
 		
+		/********************
+		 * step : 3 : 2 : 2 : 4
+		 		SL, TP, diff
+		 ********************/
 		// SL, TP, diff
 		$content .= "pos.SL\tpos.TP\tdiff.SL~start";
 		
@@ -2989,6 +3065,16 @@ class FxTestController extends AppController {
 				
 			$content .= "\t";
 				
+			/********************
+			 * step : 3 : 3 : X
+			 * 		pos.ext_status
+			 ********************/
+			//code:20200703_172006:c
+			$content .= $pos->ext_status;
+			
+			$content .= "\t";
+				
+			
 			/********************
 			 * step : 3 : 3 : 4
 			 * 		SL, TP, diff

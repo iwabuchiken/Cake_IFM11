@@ -184,6 +184,9 @@ class CONS {
 	public static	$strOf_Exit_Status__SL = "SL";
 	public static	$strOf_Exit_Status__TP = "TP";
 	
+	public static	$strOf_Exit_Status_Pos__SL = "SL";
+	public static	$strOf_Exit_Status_Pos__TP = "TP";
+	
 	/******************************
 	 	prices
 	 ******************************/

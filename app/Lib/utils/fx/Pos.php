@@ -84,7 +84,7 @@ class Pos {
 // 	public $ts_TP	= 0.0;
 // 	public $ts_SL	= 0.0;
 
-	public $ext_status = null;
+	public $ext_status = "";
 	public $cu_status = null;
 	
 	// position type

@@ -972,7 +972,14 @@ class LibEaTester {
 		 * 		$position_type
 		 ********************/
 		//code:20200606_183214:c
-		$msg .= "\$pos->val_Trail_Starting\t" . $pos->position_type;
+		$msg .= "\$pos->position_type\t" . $pos->position_type;
+		$msg .= "\n";
+		
+		/********************
+		 * step : X
+		 * 		exit_status
+		 ********************/
+		$msg .= "\$pos->ext_status\t" . $pos->ext_status;
 		$msg .= "\n";
 		
 		
