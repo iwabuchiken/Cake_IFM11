@@ -2981,6 +2981,116 @@ class LibEaTester {
 	}//public static function get_BB_Location($pos, $lo_BarDatas) {
 
 	/********************
+	* get_BB_Location
+	* 	at : 2020/07/05 16:46:12
+	********************/
+	public static function 
+	get_BB_Location__By_Price_Index_ListOfBD($_index, $_price, $lo_BarDatas) {
+//_20200308_142828:caller
+//_20200308_142832:head
+//_20200308_142835:wl
+
+		/********************
+		 * step : 0 : 1
+		 * 		prep : vars
+		 ********************/
+		
+		/********************
+		 * step : 1.1
+		 * 		get : index num
+		 ********************/
+		$numOf_Index	= $_index;
+// 		if ($pos->ext_idx == -1) {
+		
+// 			$numOf_Index = $pos->cu_idx;
+		
+// 		} else {
+		
+// 			$numOf_Index = $pos->ext_idx;
+			
+// 		}//if ($pos->ext_idx == )
+		
+// 		/********************
+// 		 * step : 2
+// 		 * 		get : target price
+// 		 ********************/
+// 		$pr_Target = $bd->price_Close;
+		
+// 		if ($pos->ext_idx == -1) {
+		
+// 			$pr_Target = $pos->cu_pr;
+		
+// 		} else {
+		
+// 			$pr_Target = $pos->ext_pr;
+				
+// 		}//if ($pos->ext_idx == )
+		
+		/********************
+		 * step : 3
+		 * 		get : $bd
+		 ********************/
+		$bd = $lo_BarDatas[$numOf_Index];
+
+		/********************
+		 * step : 2
+		 * 		get : target price
+		 ********************/
+		$pr_Target = $_price;
+// 		$pr_Target = $bd->price_Close;
+		
+		
+		/********************
+		 * step : 4
+		 * 		get : BB prices
+		 ********************/
+		
+		/********************
+		 * step : 5
+		 * 		judge
+		 ********************/
+		if ($pr_Target >= $bd->bb_2S) {
+		
+			$labelOf_BB_Zone = "Z1";
+		
+		} else if ($pr_Target >= $bd->bb_1S) {
+		
+			$labelOf_BB_Zone = "Z2";
+		
+		} else if ($pr_Target >= $bd->bb_Main) {
+		
+			$labelOf_BB_Zone = "Z3";
+		
+		} else if ($pr_Target >= $bd->bb_M1S) {
+		
+			$labelOf_BB_Zone = "Z4";
+		
+		} else if ($pr_Target >= $bd->bb_M2S) {
+		
+			$labelOf_BB_Zone = "Z5";
+		
+		} else if ($pr_Target < $bd->bb_M2S) {
+		
+			$labelOf_BB_Zone = "Z6";
+		
+		} else {
+		
+			$labelOf_BB_Zone = "UNKNOWN_ZONE";
+			
+		}//if ($pr_Target >= $bd->bb_2S)
+		
+		/********************
+		 * step : 6
+		 * 		return
+		 ********************/
+		$valOf_Ret = $labelOf_BB_Zone;
+		
+		// return
+		return $valOf_Ret;
+		
+	}//get_BB_Location__By_Price_Index_ListOfBD($pos, $lo_BarDatas)
+
+	/********************
 	* get_BB_Location__By_Index
 	* 	at : 2020/03/12 14:33:18
 	********************/

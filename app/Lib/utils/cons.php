@@ -192,9 +192,13 @@ class CONS {
 	 ******************************/
 	public static 	$val_Trail_Starting = 0.04;
 	
-	//code:20200604_125131
-	public static 	$val_FxTester_TP			= 0.10;
-	public static 	$val_FxTester_SL			= 0.05;
+	//code:20200705_165300:c
+// 	public static 	$val_FxTester_TP			= 0.08;
+	public static 	$val_FxTester_TP			= 0.07;
+	public static 	$val_FxTester_SL			= 0.04;
+// 	//code:20200604_125131
+// 	public static 	$val_FxTester_TP			= 0.10;
+// 	public static 	$val_FxTester_SL			= 0.05;
 	//next:20200630_141227:n
 	public static 	$val_FxTester_SPREAD		= 0.01;
 // 	public static 	$val_FxTester_SPREAD		= 0.03;

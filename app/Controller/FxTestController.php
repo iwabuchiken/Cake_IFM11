@@ -1632,7 +1632,9 @@ class FxTestController extends AppController {
 						$msg = "";
 							
 						break;
-												
+
+					//next:20200705_170803:n
+						
 					} else {
 						/********************
 						 * step : 2 : j5 : others
@@ -2973,9 +2975,51 @@ class FxTestController extends AppController {
 		$sumOf_Plus		= 0;
 		$sumOf_Minus	= 0;
 		
+		/********************
+		 * step : 3 : 2 : 1.5 : 2
+		 * 		calc
+		 ********************/
 		//next:20200703_172455:n
+		for ($i = 0; $i < $lenOf_LO_Pos; $i++) {
+			/********************
+			 * step : 3 : 2 : 1.5 : 2 : 1
+			 * 		prep : $pos
+			 ********************/
+			$pos_tmp = $_lo_Pos[$i];
+			
+			/********************
+			 * step : 3 : 2 : 1.5 : 2 : 2
+			 * 		SL
+			 ********************/
+			if ($pos_tmp->ext_status == CONS::$strOf_Exit_Status_Pos__SL) {
+			
+				if ($pos_tmp->pr_SL < $pos_tmp->st_pr) {
+				
+					$sumOf_Minus += ($pos_tmp->pr_SL - $pos_tmp->st_pr);
+				
+				} else {
+				
+					$sumOf_Plus += ($pos_tmp->pr_SL - $pos_tmp->st_pr);
+					
+				}//if ($pos_tmp->pr_SL < $pos_tmp->st_pr)
+				
+				;
+				
+			}//if ($pos_tmp->ext_status == CONS::$strOf_Exit_Status_Pos__SL)
+			
+		}//for ($i = 0; $i < $lenOf_LO_Pos; $i++)
 		
+		/********************
+		 * step : 3 : 2 : 1.5 : 3
+		 * 		output
+		 ********************/
+		$content .= sprintf("\$sumOf_Plus\t%.03f", $sumOf_Plus);
+// 		$content .= "\$sumOf_Plus\t$sumOf_Plus";
+		$content .= "\n";
 		
+// 		$content .= "\$sumOf_Minus\t$sumOf_Minus";
+		$content .= sprintf("\$sumOf_Minus\t%.03f", $sumOf_Minus);
+		$content .= "\n";
 		
 		// separator
 		$content .= "\n";
@@ -2996,7 +3040,8 @@ class FxTestController extends AppController {
 		 		bar : starting
 		 ********************/
 		// starting bar
-		$content .= "st_idx\tst_pr\tdatetime";
+		$content .= "st_idx\tst_pr\tBB.loc\tdatetime";
+// 		$content .= "st_idx\tst_pr\tdatetime";
 		
 		$content .= "\t";
 		// 		$content .= "\n";
@@ -3006,7 +3051,8 @@ class FxTestController extends AppController {
 		 		bar : current
 		 ********************/
 		// current
-		$content .= "cu_idx\tcu_pr\tdatetime";
+		$content .= "cu_idx\tcu_pr\tBB.loc\tdatetime";
+// 		$content .= "cu_idx\tcu_pr\tdatetime";
 		
 		$content .= "\t";
 		
@@ -3055,14 +3101,43 @@ class FxTestController extends AppController {
 			 * step : 3 : 3 : 2
 			 * 		starting bar
 			 ********************/
-			$content .= sprintf("%d\t%.03f\t%s", $pos->st_idx, $pos->st_pr, $pos-> st_dateTime);
+			$strOf_BB_Loc__Start = LibEaTester::get_BB_Location__By_Price_Index_ListOfBD(
+							$pos->st_idx
+							, $pos->st_pr
+							, $_lo_BarDatas__Order_A_Z);
+			
+			$content .= sprintf(
+// 					"%d\t%.03f\t%s"
+					"%d\t%.03f\t%s\t%s"
+					, $pos->st_idx
+					, $pos->st_pr
+					
+					//code:20200705_163622:c
+					, $strOf_BB_Loc__Start
+					
+					, $pos-> st_dateTime
+					);
 			$content .= "\t";
 				
 			/********************
 			 * step : 3 : 3 : 3
 			 * 		current bar
 			 ********************/
-			$content .= sprintf("%d\t%.03f\t%s", $pos->cu_idx, $pos->cu_pr, $pos-> cu_dateTime);
+			$strOf_BB_Loc__Current = LibEaTester::get_BB_Location__By_Price_Index_ListOfBD(
+							$pos->cu_idx
+							, $pos->cu_pr
+							, $_lo_BarDatas__Order_A_Z);
+			
+			$content .= sprintf(
+					"%d\t%.03f\t%s\t%s"
+					, $pos->cu_idx
+					, $pos->cu_pr
+					
+					, $strOf_BB_Loc__Current
+										
+					, $pos-> cu_dateTime
+					
+					);
 				
 			$content .= "\t";
 				
