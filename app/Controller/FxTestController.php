@@ -1222,6 +1222,35 @@ class FxTestController extends AppController {
 					 * step : 2 : j5
 					 * 		bar result ?
 					 ********************/
+					//debug:20200707_162540:d
+					$strOf_BarResult = CONS::$strOf_BarResult__TP;
+// 					$strOf_BarResult == CONS::$strOf_BarResult__TP;
+					
+					$msg = "\n";
+					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+					$msg .= " ";
+					
+					$msg .= "(for)(step : 2 : j5)";
+					$msg .= "\n";
+					
+					$msg .= "(//debug:20200707_162540:d)";
+					$msg .= "\n";
+						
+					$msg .= "bar result ==> NOT within : $strOf_BarResult";
+					$msg .= "\n";
+						
+					// separator
+					$msg .= "\n";
+					
+					//log
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+						
+					// flash
+					$msg = "";
+						
+					
 					if ($strOf_BarResult == CONS::$strOf_BarResult__Trail) {
 						/********************
 						 * step : 2 : j5.1 : choice-1(Trail)
@@ -1633,8 +1662,95 @@ class FxTestController extends AppController {
 							
 						break;
 
-					//next:20200705_170803:n
+					} else if ($strOf_BarResult == CONS::$strOf_BarResult__TP) {
+						/********************
+						 * step : 2 : j5.1-3(TP)
+						 * 		TP
+						 ********************/
+						/********************
+						 * step : 2 : j5.1-3(TP) : 1
+						 * 		log
+						 ********************/
+						//code:20200624_172551:c
+						$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5.1-3(TP) : 1)";
+						$msg .= "\n";
 						
+						$difOf_Price_TP_And_Price_Start = $pos->pr_TP - $pos->st_pr;
+						
+						$msg .= sprintf(
+								
+								"\$difOf_Price_TP_And_Price_Start\t%.03f"
+								, $difOf_Price_TP_And_Price_Start
+								
+								);
+
+						//next:20200628_124405:n
+						
+						/********************
+						 * step : 2 : j5.1-3(TP) : 2
+						 * 		set ==> status 
+						 ********************/
+						//next:20200624_173926:n
+						$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_3_2;
+
+// 						$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5.1-3(TP) : 2)";
+						$msg .= "\n";
+						
+						$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+						$msg .= "\n";						
+						
+						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+								$pos
+								, $_lo_BarDatas
+								, __FILE__, __LINE__);
+
+						/********************
+						 * step : 2 : j5.1-3(TP) : 2.2
+						 * 		set ==> status : $pos->ext_status
+						 ********************/
+						//code:20200703_171215:c
+						// set
+						$pos->ext_status = CONS::$strOf_Exit_Status_Pos__TP;
+
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5.1-3(TP) : 2.2)";
+						$msg .= "\n";
+						
+						$msg .= "set ==> status : \$pos->ext_status (". $pos->ext_status . ")";
+						$msg .= "\n";
+						
+						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+								$pos
+								, $_lo_BarDatas
+								, __FILE__, __LINE__);
+						
+						/********************
+						 * step : 2 : j5.1-3(TP) : 3
+						 * 		break
+						 ********************/
+						$msg .= "breaking from for-loop... TP";
+						$msg .= "\n";
+							
+						Utils::write_Log__Fx_Admin(
+								$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+								, $msg, __FILE__, __LINE__);
+							
+						// flash
+						$msg = "";
+							
+						break;
+
+					//next:20200705_170803:n
+
 					} else {
 						/********************
 						 * step : 2 : j5 : others
@@ -2722,6 +2838,8 @@ class FxTestController extends AppController {
 				 ********************/
 				//code:20200627_124427:c
 				array_push($lo_Pos, $pos_Tmp);
+				
+			//code:20200707_163926:c
 				
 			} else {//if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_2_2)
 				/********************

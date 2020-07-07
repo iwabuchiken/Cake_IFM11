@@ -175,6 +175,7 @@ class CONS {
 	public static	$statusOf_For_Loop_Execution__J5_1_1_N3		= "j5.1-1 : N : 3";
 	
 	public static	$statusOf_For_Loop_Execution__J5_1_2_2		= "j5.1-2(SL) : 2";
+	public static	$statusOf_For_Loop_Execution__J5_1_3_2		= "j5.1-3(TP) : 2";
 	
 	public static	$statusOf_For_Loop_Execution__Last_Line_Of_For_Loop		= "Last_Line_Of_For_Loop";
 	
