@@ -858,12 +858,40 @@ class FxTestController extends AppController {
 				$idxOf_ForLoop_Start, $_lo_BarDatas
 				, $_nameOf_DP
 				, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				
+				, $_lo_Params_For_Pos
 			
 			) {
 //_20200601_093740:caller
 //_20200601_093744:head
 //_20200601_093747:wl
 
+		/********************
+		 * step : 0
+		 * 		prep : unpack
+		 ********************/
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= " ";
+		
+		$msg .= "<fx_tester_T_1__Order_Buy__V2__For_Loop>";
+		$msg .= "\n";
+		
+		$msg .= "(step : 0) prep : unpack";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+			
+		// flash
+		$msg = "";
+		
+		//code:20200708_145853:c
+		$val_FxTester_TP		= $_lo_Params_For_Pos[0];
+		$val_FxTester_SL		= $_lo_Params_For_Pos[1];
+		$val_FxTester_SPREAD	= $_lo_Params_For_Pos[2];
+		$val_FxTester_Trail_Starting_Diff	= $_lo_Params_For_Pos[3];
+		
 		/********************
 		 * step : 1
 		 * 		prep : vars
@@ -882,6 +910,7 @@ class FxTestController extends AppController {
 		$cntOf_Loop = 0;
 
 		// position
+		//mark:20200708_145104:m
 		$pos = LibEaTester::init_Pos();
 		
 		// status : for-loop exit
@@ -1942,6 +1971,7 @@ class FxTestController extends AppController {
 // 						LibEaTester_2::set_Vals_To_Pos(
 						//code:20200606_181945:c
 						//debug:20200628_121707:d
+						//mark:20200708_145301:m
 						LibEaTester_2::set_Vals_To_Pos__First_Occasion(
 									$pos
 									, $i
@@ -1949,10 +1979,14 @@ class FxTestController extends AppController {
 									
 									, CONS::$strOf_Position_Type__BUY
 									
-									, CONS::$val_FxTester_TP
-									, CONS::$val_FxTester_SL
-									, CONS::$val_FxTester_SPREAD
-									, CONS::$val_FxTester_Trail_Starting_Diff
+									, $val_FxTester_TP
+									, $val_FxTester_SL
+									, $val_FxTester_SPREAD
+									, $val_FxTester_Trail_Starting_Diff
+// 									, CONS::$val_FxTester_TP
+// 									, CONS::$val_FxTester_SL
+// 									, CONS::$val_FxTester_SPREAD
+// 									, CONS::$val_FxTester_Trail_Starting_Diff
 						);
 // 						LibEaTester_2::set_Vals_To_Pos($pos, $i, $bardata_This, $val_TP, $val_SL, $val_SPREAD);
 						
@@ -2631,6 +2665,22 @@ class FxTestController extends AppController {
 // 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start, $statusOf_For_Loop_Exit);
 // 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start);
 // 		$valOf_Ret = array($cntOf_Loop, $i);
+
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= " ";
+		
+		$msg .= "</fx_tester_T_1__Order_Buy__V2__For_Loop>";
+		$msg .= "\n";
+		
+		$msg .= "(step : X : 1) returning...";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+			
+		// flash
+		$msg = "";
 		
 		/********************
 		 * step : X : 2
@@ -2656,13 +2706,41 @@ class FxTestController extends AppController {
 			
 			, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 			
-			
+			//code:20200708_150858:c
+			, $_lo_Params_For_Pos
 			
 			) {
 //_20200531_132111:caller
 //_20200531_132115:head
 //_20200531_132117:wl
 
+		/********************
+		 * step : 0
+		 * 		prep : unpack
+		 ********************/
+		//code:20200708_151035:c
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= " ";
+		
+		$msg .= "<fx_tester_T_1__Order_Buy__V2__While_Loop>";
+		$msg .= "\n";
+		
+		$msg .= "(step : 0) prep : unpack";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+			
+		// flash
+		$msg = "";
+		
+		//code:20200708_145853:c
+		$val_FxTester_TP		= $_lo_Params_For_Pos[0];
+		$val_FxTester_SL		= $_lo_Params_For_Pos[1];
+		$val_FxTester_SPREAD	= $_lo_Params_For_Pos[2];
+		$val_FxTester_Trail_Starting_Diff	= $_lo_Params_For_Pos[3];
+		
 		/********************
 		 * step : 1
 		 * 		prep : vars
@@ -2750,11 +2828,25 @@ class FxTestController extends AppController {
 				// , $pos		//4
 				// , $statusOf_For_Loop_Execution		//5
 			//coding:20200603_162557
+			$lo_Params_For_Pos = $_lo_Params_For_Pos;
+// 			$lo_Params_For_Pos = array(
+					
+// 					CONS::$val_FxTester_TP
+// 					, CONS::$val_FxTester_SL
+// 					, CONS::$val_FxTester_SPREAD
+// 						, CONS::$val_FxTester_Trail_Starting_Diff
+								
+					
+// 			);
+			
+			
 			$valOf_Ret_Received = FxTestController::fx_tester_T_1__Order_Buy__V2__For_Loop(
 					
 						$idxOf_ForLoop_Start, $_lo_BarDatas
 						, $_nameOf_DP
 						, $_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+					
+						, $lo_Params_For_Pos
 					
 					);
 			
@@ -3002,17 +3094,48 @@ class FxTestController extends AppController {
 	(
 			$_strOf_Time_Label
 			, $_lo_Pos
+			
 			, $_fname_Source_CSV
 			, $_dpath_Log_Fx_Tester__Full
+			, $_fname_Log_Fx_Tester
+			
 			
 			, $_nameOf_DP
 			, $_lo_BarDatas__Order_A_Z
+			
+			, $_lo_Params_For_Pos
 			
 			) {
 //_20200701_154609:caller
 //_20200701_154619:head
 //_20200701_154622:wl
 
+		/********************
+		 * step : 0
+		 * 		prep : unpack
+		 ********************/
+		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg .= " ";
+		
+		$msg .= "<fx_tester_T_1__Order_Buy__V2__Write_List_Of_Pos>";
+		$msg .= "\n";
+		
+		$msg .= "(step : 0) prep : unpack";
+		$msg .= "\n";
+		
+		Utils::write_Log__Fx_Admin(
+				$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+				, $msg, __FILE__, __LINE__);
+			
+		// flash
+		$msg = "";
+		
+		//code:20200708_145853:c
+		$val_FxTester_TP		= $_lo_Params_For_Pos[0];
+		$val_FxTester_SL		= $_lo_Params_For_Pos[1];
+		$val_FxTester_SPREAD	= $_lo_Params_For_Pos[2];
+		$val_FxTester_Trail_Starting_Diff	= $_lo_Params_For_Pos[3];
+		
 		//_20200528_140426:tmp
 		/********************
 		 * step : 1
@@ -3059,11 +3182,18 @@ class FxTestController extends AppController {
 		//next:20200630_141350:n
 		// SL, TP
 // 		$content .= "val_SL\t" . $_lo_Pos[0]->val_SL;
-		$content .= sprintf("val_SL\t%.02f", $_lo_Pos[0]->val_SL);
+		//fix:20200708_144808:f
+		
+// 		$content .= sprintf("val_SL\t%.02f", $_lo_Pos[0]->val_SL);
+		$content .= sprintf("val_SL\t%.02f", $val_FxTester_SL);
 		$content .= "\n";
-		$content .= sprintf("val_TP\t%.02f", $_lo_Pos[0]->val_TP);
+		
+		$content .= sprintf("val_TP\t%.02f", $val_FxTester_TP);
+// 		$content .= sprintf("val_TP\t%.02f", $_lo_Pos[0]->val_TP);
 		$content .= "\n";
-		$content .= sprintf("val_SPREAD\t%.02f", $_lo_Pos[0]->val_SPREAD);
+		
+		$content .= sprintf("val_SPREAD\t%.02f", $val_FxTester_SPREAD);
+// 		$content .= sprintf("val_SPREAD\t%.02f", $_lo_Pos[0]->val_SPREAD);
 		$content .= "\n";
 
 		/********************
@@ -3397,6 +3527,8 @@ class FxTestController extends AppController {
 				. CONS::$fname_Log_Fx_Tester__Ext;
 // 		. "." . $tokensOf_fname_Log[1];
 		
+		$fname_Log_Fx_Tester = CONS::$fname_Log_Fx_Tester;
+		
 		//debug
 // 		debug("CONS::\$fname_Log_Fx_Tester => " . CONS::$fname_Log_Fx_Tester);
 		
@@ -3534,6 +3666,17 @@ class FxTestController extends AppController {
 		
 		//_20200531_132021:tmp
 		//$valOf_Ret = array($lo_Pos);
+		
+		$lo_Params_For_Pos = array(
+
+				CONS::$val_FxTester_TP
+				, CONS::$val_FxTester_SL
+				, CONS::$val_FxTester_SPREAD
+					, CONS::$val_FxTester_Trail_Starting_Diff
+
+
+		);
+		
 		//_20200531_132111:caller
 // 		FxTestController::fx_tester_T_1__Order_Buy__V2__While_Loop(
 		$valOf_Ret__received = FxTestController::fx_tester_T_1__Order_Buy__V2__While_Loop(
@@ -3546,6 +3689,10 @@ class FxTestController extends AppController {
 					, $nameOf_DP
 				
 					, $dpath_Log_Fx_Tester__Full, CONS::$fname_Log_Fx_Tester
+				
+					//code:20200708_151241:c
+					, $lo_Params_For_Pos
+				
 				);
 		
 		//log
@@ -3588,15 +3735,22 @@ class FxTestController extends AppController {
 		 ********************/
 		//next:20200630_141510:n
 		//_20200701_154609:caller
+		//code:20200708_151919:c
 		$valOf_Ret__received = $this->fx_tester_T_1__Order_Buy__V2__Write_List_Of_Pos(
 				
 				$strOf_Time_Label
 				, $lo_Pos
+				
 				, $fname_Source_CSV
 				, $dpath_Log_Fx_Tester__Full
+				//code:20200708_152631:c
+				, $fname_Log_Fx_Tester
 				
 				, $nameOf_DP
 				, $lo_BarDatas__Order_A_Z
+				
+				, $lo_Params_For_Pos
+				
 				);
 		
 		// unpack
