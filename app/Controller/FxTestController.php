@@ -2881,9 +2881,18 @@ class FxTestController extends AppController {
 			$cntOf_Loop_Total += $cntOf_Loop_This;
 
 			//log
-			$msg = "back to while-loop";
-			$msg .= "\n";
+			$msg = "\n";
+			$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+			$msg .= " ";
 			
+			$msg .= "(while)(step : 2 : 2) post for-loop";
+// 			$msg .= "(step : 2 : 2) post for-loop";
+			$msg .= "\n";
+				
+			$msg .= "back to while-loop";
+// 			$msg = "back to while-loop";
+			$msg .= "\n";
+
 			//coding:20200603_162120
 			$msg .= "\$cntOf_Loop_This\t$cntOf_Loop_This" 
 					. " " . "\n\$cntOf_Loop_Total\t$cntOf_Loop_Total"
@@ -2919,7 +2928,10 @@ class FxTestController extends AppController {
 			
 				$msg .= "for-loop ended with ==> SL (\$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution)";
 				$msg .= "\n";
-			
+
+				$msg .= sprintf("\$pos_Tmp->ext_status\t%s", $pos_Tmp->ext_status);
+				$msg .= "\n";
+				
 				Utils::write_Log__Fx_Admin(
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 						, $msg, __FILE__, __LINE__);
@@ -2932,13 +2944,47 @@ class FxTestController extends AppController {
 				array_push($lo_Pos, $pos_Tmp);
 				
 			//code:20200707_163926:c
+			} else if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_3_2) {
+					/********************
+					 * step : 2 : 2 : 1.2
+					 * 		check : for-loop ended with ==> TP
+					 ********************/
+					/********************
+					 * step : 2 : 2 : 1.2 : 1
+					 * 		log
+					 ********************/
+					$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+					$msg .= " ";
+						
+					$msg .= "(while)(step : 2 : 2 : 1.2 : 1)";
+					$msg .= "\n";
+						
+					$msg .= "for-loop ended with ==> TP (\$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution)";
+					$msg .= "\n";
+						
+					$msg .= sprintf("\$pos_Tmp->ext_status\t%s", $pos_Tmp->ext_status);
+					$msg .= "\n";
+						
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+				
+					//next:20200709_150122:n
+// 					/********************
+// 					 * step : 2 : 2 : 1.2 : 2
+// 					 * 		$pos ==> append
+// 					********************/
+// 					//code:20200627_124427:c
+// 					array_push($lo_Pos, $pos_Tmp);
+				
 				
 			} else {//if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_2_2)
 				/********************
 				 * step : 2 : 2 : 1.1 : X
 				 * 		check : for-loop ended with ==> ??
 				 ********************/
-				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg = "\n";
+				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 				$msg .= " ";
 			
 				$msg .= "(while)(step : 2 : 2 : 1.1 : X)";
@@ -2947,6 +2993,9 @@ class FxTestController extends AppController {
 				$msg .= "for-loop ended with ==> \$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution";
 				$msg .= "\n";
 			
+				$msg .= sprintf("\$pos_Tmp->ext_status\t%s", $pos_Tmp->ext_status);
+				$msg .= "\n";
+						
 				Utils::write_Log__Fx_Admin(
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 						, $msg, __FILE__, __LINE__);
@@ -2965,7 +3014,8 @@ class FxTestController extends AppController {
 
 
 			//next:20200616_114510:n
-			$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+			$msg = "\n";
+			$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 			$msg .= " ";
 				
 			$msg .= "(while)(step : 2 : 2 : 2)";
