@@ -274,6 +274,8 @@ class CONS {
 	public static $param_Tester_T_1__Source_CSV_File_Name = "Tester_T_1__Source_CSV_File_Name";
 
 	public static $param_Tester_T_1__Source_CSV_Dpath = "Tester_T_1__Source_CSV_Dpath";
+	
+	public static $param_Tester_T_1__MaxOf_While_Loop = "Tester_T_1__MaxOf_While_Loop";
 
 	/*******************************
 	 	numbers

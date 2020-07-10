@@ -61,12 +61,20 @@ class FxTestController extends AppController {
 				array(
 					"44#10.2.2 : tester_1__V2"
 					, "http://localhost/Eclipse_Luna/Cake_IFM11/fx_test/fx_tester_T_1_V2"
+						
 						. "?_Tester_T_1__Order_Genre=_Tester_T_1__Order_Genre__BUY"
+						
 						. "&Tester_T_1__Source_CSV_File_Name=(slice-by-day).(AUDJPY-M5).(2020-05-13)"
 							. ".(20200530_134010_951771).csv"
+						
 						. "&Tester_T_1__Source_CSV_Dpath="
 							. "C:\\WORKS_2\\WS\\WS_Others.prog\\prog\\D-7\\2_2\\VIRTUAL\\Admin_Projects\\curr\\data\\csv_raw"
-							. "\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_134010_951771)")
+							. "\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_134010_951771)"
+// 							. "\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_134010_951771)")
+						//code:20200710_123548:c
+// 						. "&Tester_T_1__Source_CSV_Dpath="
+						. "&" . CONS::$param_Tester_T_1__MaxOf_While_Loop . "="
+							. "20")
 				
 		);
 		
@@ -748,6 +756,10 @@ class FxTestController extends AppController {
 	//_20200329_132038:tmp
 	public function 
 	fx_tester_T_1__Order_Buy__V2__Params() {
+//_20200710_122450:caller
+//_20200710_122454:head
+//_20200710_122457:wl
+		
 		//_20200528_132029:caller
 		//_20200528_132032:head
 		//_20200528_132036:wl
@@ -825,6 +837,38 @@ class FxTestController extends AppController {
 		
 		}//if ($query_Tester_T_1__Source_CSV_File_Name == null)
 		
+		//code:20200710_121940:c
+		/********************
+		 * step : 3
+		 * 		param : CONS::$param_Tester_T_1__MaxOf_While_Loop
+		 ********************/
+		@$query_Tester_T_1__MaxOf_While_Loop = $this->request->query[CONS::$param_Tester_T_1__MaxOf_While_Loop];
+// 		@$query_Tester_T_1__Source_CSV_Dpath = $this->request->query[CONS::$param_Tester_T_1__Source_CSV_Dpath];
+		
+		// 				[0] => (AUDJPY)
+		// 				[1] => (M5)
+		// 				[2] => 20200227_131436
+		// 				[3] => [20200115_0005-20200115_2355]
+		// 				[4] => csv
+		
+		// default
+		//C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_132553_216136)
+		$maxOf_While_Loop__Default = 20;
+		
+		if ($query_Tester_T_1__MaxOf_While_Loop == null) {
+		
+			debug("\$query_Tester_T_1__MaxOf_While_Loop => null");
+		
+			$maxOf_While_Loop = $maxOf_While_Loop__Default;
+		
+		} else {//if ($query_Tester_T_1__Source_CSV_File_Name == null)
+		
+			$maxOf_While_Loop = $query_Tester_T_1__MaxOf_While_Loop;
+		
+			debug("\$query_Tester_T_1__MaxOf_While_Loop => set : $maxOf_While_Loop");
+			
+		}//if ($query_Tester_T_1__Source_CSV_File_Name == null)		
+			
 		/********************
 		 * step : X
 		 * 		return
@@ -833,7 +877,8 @@ class FxTestController extends AppController {
 		 * step : X : 1
 		 * 		prep
 		 ********************/
-		$valOf_Ret = array($fname_Source_CSV, $dpath_Source_CSV);
+		$valOf_Ret = array($fname_Source_CSV, $dpath_Source_CSV, $maxOf_While_Loop);
+// 		$valOf_Ret = array($fname_Source_CSV, $dpath_Source_CSV);
 		
 		/********************
 		 * step : X : 2
@@ -876,7 +921,7 @@ class FxTestController extends AppController {
 		$msg .= "<fx_tester_T_1__Order_Buy__V2__For_Loop>";
 		$msg .= "\n";
 		
-		$msg .= "(step : 0) prep : unpack";
+		$msg .= "(for)(step : 0) prep : unpack";
 		$msg .= "\n";
 		
 		Utils::write_Log__Fx_Admin(
@@ -929,7 +974,7 @@ class FxTestController extends AppController {
 		$i = $idxOf_ForLoop_Start;
 		
 		//debug:20200601_094308
-		$msg = "(for-loop)(step : 2)";
+		$msg = "(for)(step : 2)";
 		$msg .= "\n";
 		
 		$msg .= "for-loop starting at the index of : $idxOf_ForLoop_Start";
@@ -2532,7 +2577,7 @@ class FxTestController extends AppController {
 					 * step : 2 : j2 : choice-X : N : 1
 					 * 		log
 					 ********************/
-					$msg = "(step : 2 : j2 : choice-X : N : 1)";
+					$msg = "(for)(step : 2 : j2 : choice-X : N : 1)";
 					$msg .= "\n";
 					
 					$msg .= "unknown PD name : $_nameOf_DP";
@@ -2672,7 +2717,7 @@ class FxTestController extends AppController {
 		$msg .= "</fx_tester_T_1__Order_Buy__V2__For_Loop>";
 		$msg .= "\n";
 		
-		$msg .= "(step : X : 1) returning...";
+		$msg .= "(for)(step : X : 1) returning...";
 		$msg .= "\n";
 		
 		Utils::write_Log__Fx_Admin(
@@ -2970,13 +3015,27 @@ class FxTestController extends AppController {
 							, $msg, __FILE__, __LINE__);
 				
 					//next:20200709_150122:n
-// 					/********************
-// 					 * step : 2 : 2 : 1.2 : 2
-// 					 * 		$pos ==> append
-// 					********************/
-// 					//code:20200627_124427:c
-// 					array_push($lo_Pos, $pos_Tmp);
-				
+					/********************
+					 * step : 2 : 2 : 1.2 : 2
+					 * 		$pos ==> append
+					********************/
+					//code:20200627_124427:c
+					$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+					$msg .= " ";
+					
+					$msg .= "(while)(step : 2 : 2 : 1.2 : 2)";
+					$msg .= "\n";
+					
+					$msg .= "\$pos ==> appending...";
+					$msg .= "\n";
+					
+					Utils::write_Log__Fx_Admin(
+							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+							, $msg, __FILE__, __LINE__);
+						
+					array_push($lo_Pos, $pos_Tmp);
+								
+				//next:20200710_125950:n
 				
 			} else {//if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_2_2)
 				/********************
@@ -3511,11 +3570,14 @@ class FxTestController extends AppController {
 		 * 	params
 		 ********************/
 		//_20200529_183406:tmp
-		//_20200528_132029:caller
+		//_20200710_122450:caller
 		$valOfRet__Received = FxTestController::fx_tester_T_1__Order_Buy__V2__Params();
 		
 		$fname_Source_CSV	= $valOfRet__Received[0]; 
 		$dpath_Source_CSV	= $valOfRet__Received[1]; 
+		
+		//code:20200710_123750:c
+		$_maxOf_While_Loop	= $valOfRet__Received[2]; 
 		
 		debug("\$fname_Source_CSV = $fname_Source_CSV / \$dpath_Source_CSV = $dpath_Source_CSV");
 		
@@ -3666,7 +3728,9 @@ class FxTestController extends AppController {
 		
 		$cntOf_Loop_While = 0;
 		
-		$maxOf_Loop_While = 20;
+		//code:20200710_122726:c
+		$maxOf_Loop_While = $_maxOf_While_Loop;
+// 		$maxOf_Loop_While = 20;
 		
 		// flags
 		// 	position
