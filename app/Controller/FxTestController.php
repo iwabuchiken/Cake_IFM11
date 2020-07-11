@@ -1159,11 +1159,17 @@ class FxTestController extends AppController {
 				$msg .= " ";
 				
 				$msg .= "(for)(step : 2 : j1 : Y : 4)";
-				$msg .= "\n";
+				$msg .= " ";
 
 				//fix:20200623_110432:f
 				$msg .= "bar result ==> $strOf_BarResult";
 				$msg .= "\n";
+// 				$msg .= "(for)(step : 2 : j1 : Y : 4)";
+// 				$msg .= "\n";
+
+// 				//fix:20200623_110432:f
+// 				$msg .= "bar result ==> $strOf_BarResult";
+// 				$msg .= "\n";
 
 				Utils::write_Log__Fx_Admin(
 						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
@@ -1326,6 +1332,7 @@ class FxTestController extends AppController {
 						
 					
 					if ($strOf_BarResult == CONS::$strOf_BarResult__Trail) {
+						//ref:20200711_151408:r
 						/********************
 						 * step : 2 : j5.1 : choice-1(Trail)
 						 * 		Trail
@@ -2362,6 +2369,9 @@ class FxTestController extends AppController {
 										
 									// flash
 									$msg = "";
+									
+									//mark:20200711_145904:m
+									
 									
 									break;
 										
