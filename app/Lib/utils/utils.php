@@ -489,8 +489,14 @@ class Utils {
 		// build : text line
 		if ($flg_Add_File_Line == true) {
 		
-			$full_Text = "[$time : " . basename($fname_Working) . " : $line] $text"
-					 . "\n";
+			$full_Text = "[$time : " . basename($fname_Working) . " : $line] ";
+			
+			$full_Text .= $text;
+					
+			$full_Text .= "\n";
+			
+// 			$full_Text = "[$time : " . basename($fname_Working) . " : $line] $text"
+// 					 . "\n";
 		
 		} else {
 		

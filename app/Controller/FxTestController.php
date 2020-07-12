@@ -2371,8 +2371,100 @@ class FxTestController extends AppController {
 									$msg = "";
 									
 									//mark:20200711_145904:m
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : Y : 2
+									 * 		$pos ==> update
+									 ********************/
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : Y : 2.1
+									 * 		set : vals
+									 ********************/
+									$pr_SL_New = $bardata_This->price_Close - ($pos->val_SL + $pos->val_SPREAD);
+									$pr_TP_New = $bardata_This->price_Close + ($pos->val_TP + $pos->val_SPREAD);
+										
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : Y : 2.2
+									 * 		update
+									 ********************/
+									//code:20200621_120039:c
+									// log
+									$msg .= "\n";
+									// 						$msg = "\n";
+									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+									$msg .= " ";
 									
+									$msg .= "(for)(step : 2 : j2 : choice-1 : j3-3 : Y : 2)";
+									// 						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 2)";
+									$msg .= "\n";
+										
+									$msg .= "\$pos ==> before update";
+									$msg .= "\n";
 									
+									// log
+									$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+											$pos, $_lo_BarDatas, __FILE__, __LINE__);
+									
+									// update
+									$pos->pr_SL = $pr_SL_New;
+									$pos->pr_TP = $pr_TP_New;
+									
+									$pos->trail_starting_idx	= $i;
+									$pos->trail_starting_pr		= $bardata_This->price_Close;
+									
+									//next:20200628_124338:n
+										
+									// log
+									$msg .= "\$pos ==> updated";
+									$msg .= "\n";
+										
+									// separator
+									$msg .= "\n";
+									
+									$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+											$pos, $_lo_BarDatas, __FILE__, __LINE__);
+									
+									//mark:20200712_130059:m
+									/********************
+									 * step : 2 : j2 : choice-1 : j3-3 : Y : 3
+									 * 		set ==> loop status 
+									 ********************/
+									$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar3_Y3;
+									$msg .= "\n";
+									
+									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+									$msg .= " ";
+										
+									$msg .= "(for)(step : 2 : j2 : choice-1 : j3-3 : Y : 3)";
+									$msg .= "\n";
+										
+									$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> "
+											. $statusOf_For_Loop_Execution;
+									$msg .= "\n";
+									
+									// separator
+									$msg .= "\n";
+									
+									//next:20200712_130832:n
+									
+									/********************
+									 * debug : breaking the loop
+									 ********************/
+									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+									$msg .= " ";
+									
+									$msg .= "breaking... (coding not yet)";
+									$msg .= "\n";
+										
+									// separator
+									$msg .= "\n";
+									
+									Utils::write_Log__Fx_Admin(
+											$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+											, $msg, __FILE__, __LINE__);
+									
+									// flash
+									$msg = "";
+										
 									break;
 										
 								} else {
@@ -2721,7 +2813,8 @@ class FxTestController extends AppController {
 // 		$valOf_Ret = array($cntOf_Loop, $i, $idxOf_Position_Start);
 // 		$valOf_Ret = array($cntOf_Loop, $i);
 
-		$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+		$msg = "\n";
+		$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 		$msg .= " ";
 		
 		$msg .= "</fx_tester_T_1__Order_Buy__V2__For_Loop>";
