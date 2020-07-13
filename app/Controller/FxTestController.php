@@ -56,6 +56,8 @@ class FxTestController extends AppController {
 		 * step : X
 		 * 		set : vars for ==> view (simple)
 		 ****************/
+		$maxOf_While_Loop = 40;
+		
 		$lo_URLs = array(
 				
 				array(
@@ -74,7 +76,8 @@ class FxTestController extends AppController {
 						//code:20200710_123548:c
 // 						. "&Tester_T_1__Source_CSV_Dpath="
 						. "&" . CONS::$param_Tester_T_1__MaxOf_While_Loop . "="
-							. "20")
+							. "$maxOf_While_Loop")
+// 							. "20")
 				
 		);
 		
@@ -1302,9 +1305,9 @@ class FxTestController extends AppController {
 					 * step : 2 : j5
 					 * 		bar result ?
 					 ********************/
-					//debug:20200707_162540:d
-					$strOf_BarResult = CONS::$strOf_BarResult__TP;
-// 					$strOf_BarResult == CONS::$strOf_BarResult__TP;
+// 					//debug:20200707_162540:d
+// 					$strOf_BarResult = CONS::$strOf_BarResult__TP;
+// // 					$strOf_BarResult == CONS::$strOf_BarResult__TP;
 					
 					$msg = "\n";
 					$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
@@ -1313,8 +1316,8 @@ class FxTestController extends AppController {
 					$msg .= "(for)(step : 2 : j5)";
 					$msg .= "\n";
 					
-					$msg .= "(//debug:20200707_162540:d)";
-					$msg .= "\n";
+// 					$msg .= "(//debug:20200707_162540:d)";
+// 					$msg .= "\n";
 						
 					$msg .= "bar result ==> NOT within : $strOf_BarResult";
 					$msg .= "\n";
@@ -1513,9 +1516,11 @@ class FxTestController extends AppController {
 							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_1_Y3;
 							$msg .= "\n";
 							
-							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+// 							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 							$msg .= "\n";
 
+							//ref:20200713_134506:r
 							/********************
 							 * step : 2 : j5.1-1 : Y : 4
 							 * 		loop ==> continue
@@ -1578,7 +1583,7 @@ class FxTestController extends AppController {
 							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_1_N2;
 							$msg .= "\n";
 								
-							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 							$msg .= "\n";
 								
 
@@ -2445,27 +2450,53 @@ class FxTestController extends AppController {
 									$msg .= "\n";
 									
 									//next:20200712_130832:n
-									
 									/********************
-									 * debug : breaking the loop
+									 * step : 2 : j2 : choice-1 : j3-3 : Y : 4
+									 * 		loop ==> continue
 									 ********************/
+									$msg .= "\n";
+									// 						$msg = "\n";
 									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
 									$msg .= " ";
 									
-									$msg .= "breaking... (coding not yet)";
+									$msg .= "(for)(step : 2 : j2 : choice-1 : j3-3 : Y : 4)";
+									// 						$msg .= "(for)(step : 2 : j5.1 : choice-1(Trail) : 2)";
 									$msg .= "\n";
 										
-									// separator
+									$msg .= "continue loop...";
 									$msg .= "\n";
 									
+									//log
 									Utils::write_Log__Fx_Admin(
 											$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 											, $msg, __FILE__, __LINE__);
-									
+										
 									// flash
 									$msg = "";
+
+									// continue
+									continue;
 										
-									break;
+// 									/********************
+// 									 * debug : breaking the loop
+// 									 ********************/
+// 									$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+// 									$msg .= " ";
+									
+// 									$msg .= "breaking... (coding not yet)";
+// 									$msg .= "\n";
+										
+// 									// separator
+// 									$msg .= "\n";
+									
+// 									Utils::write_Log__Fx_Admin(
+// 											$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+// 											, $msg, __FILE__, __LINE__);
+									
+// 									// flash
+// 									$msg = "";
+										
+// 									break;
 										
 								} else {
 								
