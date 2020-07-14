@@ -1138,7 +1138,7 @@ class FxTestController extends AppController {
 				// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
 					
 // 				$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
-				$msg = "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+				$msg = "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 				$msg .= "\n";
 				
 				/********************
@@ -1603,7 +1603,7 @@ class FxTestController extends AppController {
 							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_1_N3;
 							$msg .= "\n";
 							
-							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 							$msg .= "\n";
 								
 							$msg .= "continuing...";
@@ -1702,7 +1702,7 @@ class FxTestController extends AppController {
 						$msg .= "(for)(step : 2 : j5.1-2(SL) : 2)";
 						$msg .= "\n";
 						
-						$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+						$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 						$msg .= "\n";						
 						
 						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
@@ -1789,7 +1789,7 @@ class FxTestController extends AppController {
 						$msg .= "(for)(step : 2 : j5.1-3(TP) : 2)";
 						$msg .= "\n";
 						
-						$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+						$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 						$msg .= "\n";						
 						
 						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
@@ -2159,16 +2159,56 @@ class FxTestController extends AppController {
 	
 							$msg .= "\n";
 						
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 2
+							 * 		set ==> status
+							 ********************/
 							//next:20200610_122943:n
-							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar1_Y1;
+							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar1_Y2;
+// 							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar1_Y1;
+
 							$msg .= "\n";
 							
-							$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+									. " (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 2)";
+							$msg .= "\n";
+								
+							$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+							$msg .= "\n";
+
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 2.2
+							 * 		set ==> status : $pos->ext_status
+							 ********************/
+							//code:20200714_155353:
+							// log
+							$msg .= "\n";
+								
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+									. " (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 2.2)";
 							$msg .= "\n";
 							
-							$msg .= "breaking... (coding not yet)";
+							$msg .= "set ==> status : \$pos->ext_status : " . $pos->ext_status;
 							$msg .= "\n";
 							
+							// set
+							$pos->ext_status = CONS::$strOf_Exit_Status_Pos__SL; 
+							
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 3
+							 * 		break ==> for-loop
+							 ********************/
+// 							$msg .= "breaking... (coding not yet)";
+// 							$msg .= "\n";
+
+							$msg .= "\n";
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+									. " (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 3)";
+							$msg .= "\n";
+
+							$msg .= "breaking from for-loop... SL (first bar) : " . $bardata_This->dateTime;
+							$msg .= "\n";
+								
 							Utils::write_Log__Fx_Admin(
 									$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
 									, $msg, __FILE__, __LINE__);
@@ -2265,7 +2305,7 @@ class FxTestController extends AppController {
 								// 				$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
 								// 						. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
 									
-								$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+								$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 								$msg .= "\n";
 								
 								$msg .= "breaking... (coding not yet)";
@@ -2362,7 +2402,7 @@ class FxTestController extends AppController {
 									$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar3_Y1;
 									$msg .= "\n";
 									
-									$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+									$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 									$msg .= "\n";
 									
 									$msg .= "breaking... (coding not yet)";
@@ -2577,7 +2617,7 @@ class FxTestController extends AppController {
 									 ********************/
 									/********************
 									 * step : 2 : j2 : choice-1 : j3-3 : N : 3.1
-									 * 		set ==> val
+									 * 		set ==> loop status
 									 ********************/
 									//next:20200608_141713:n
 									$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J2_Choice_1_J3_3_N3_1;
@@ -2586,7 +2626,7 @@ class FxTestController extends AppController {
 											. " (step : 2 : j2 : choice-1 : j3-3 : N : 3.1)";
 									$msg .= "\n";
 									
-									$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+									$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 									$msg .= "\n";
 										
 									/********************
@@ -2728,7 +2768,7 @@ class FxTestController extends AppController {
 					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J2_N;
 					$msg .= "\n";
 					
-					$msg .= "set ==> val : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
+					$msg .= "set ==> loop status : \$statusOf_For_Loop_Execution --> $statusOf_For_Loop_Execution";
 					$msg .= "\n";
 						
 // 					debug($msg);
@@ -3124,53 +3164,99 @@ class FxTestController extends AppController {
 				
 			//code:20200707_163926:c
 			} else if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_3_2) {
-					/********************
-					 * step : 2 : 2 : 1.2
-					 * 		check : for-loop ended with ==> TP
-					 ********************/
-					/********************
-					 * step : 2 : 2 : 1.2 : 1
-					 * 		log
-					 ********************/
-					$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
-					$msg .= " ";
-						
-					$msg .= "(while)(step : 2 : 2 : 1.2 : 1)";
-					$msg .= "\n";
-						
-					$msg .= "for-loop ended with ==> TP (\$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution)";
-					$msg .= "\n";
-						
-					$msg .= sprintf("\$pos_Tmp->ext_status\t%s", $pos_Tmp->ext_status);
-					$msg .= "\n";
-						
-					Utils::write_Log__Fx_Admin(
-							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-							, $msg, __FILE__, __LINE__);
+				/********************
+				 * step : 2 : 2 : 1.2
+				 * 		check : for-loop ended with ==> TP
+				 ********************/
+				/********************
+				 * step : 2 : 2 : 1.2 : 1
+				 * 		log
+				 ********************/
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+					
+				$msg .= "(while)(step : 2 : 2 : 1.2 : 1)";
+				$msg .= "\n";
+					
+				$msg .= "for-loop ended with ==> TP (\$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution)";
+				$msg .= "\n";
+					
+				$msg .= sprintf("\$pos_Tmp->ext_status\t%s", $pos_Tmp->ext_status);
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+			
+				//next:20200709_150122:n
+				/********************
+				 * step : 2 : 2 : 1.2 : 2
+				 * 		$pos ==> append
+				********************/
+				//code:20200627_124427:c
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
 				
-					//next:20200709_150122:n
-					/********************
-					 * step : 2 : 2 : 1.2 : 2
-					 * 		$pos ==> append
-					********************/
-					//code:20200627_124427:c
-					$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
-					$msg .= " ";
+				$msg .= "(while)(step : 2 : 2 : 1.2 : 2)";
+				$msg .= "\n";
+				
+				$msg .= "\$pos ==> appending...";
+				$msg .= "\n";
+				
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
 					
-					$msg .= "(while)(step : 2 : 2 : 1.2 : 2)";
-					$msg .= "\n";
-					
-					$msg .= "\$pos ==> appending...";
-					$msg .= "\n";
-					
-					Utils::write_Log__Fx_Admin(
-							$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
-							, $msg, __FILE__, __LINE__);
-						
-					array_push($lo_Pos, $pos_Tmp);
+				array_push($lo_Pos, $pos_Tmp);
 								
 				//next:20200710_125950:n
-				
+
+// 			} else if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_3_2) {
+			} else if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J3bar1_Y2) {
+				//code:20200714_155841:c
+				/********************
+				 * step : 2 : 2 : 1.3
+				 * 		check : for-loop ended with ==> SL (1st bar)
+				 ********************/
+				/********************
+				 * step : 2 : 2 : 1.3 : 1
+				 * 		log
+				 ********************/
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+			
+				$msg .= "(while)(step : 2 : 2 : 1.3 : 1)";
+				$msg .= "\n";
+			
+				$msg .= "for-loop ended with ==> SL (1st bar) (\$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution)";
+				$msg .= "\n";
+			
+				$msg .= sprintf("\$pos_Tmp->ext_status\t%s", $pos_Tmp->ext_status);
+				$msg .= "\n";
+			
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+			
+				/********************
+				 * step : 2 : 2 : 1.3 : 2
+				 * 		$pos ==> append
+				********************/
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+					
+				$msg .= "(while)(step : 2 : 2 : 1.3 : 2)";
+				$msg .= "\n";
+					
+				$msg .= "\$pos ==> appending...";
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+			
+				array_push($lo_Pos, $pos_Tmp);
+						
 			} else {//if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_2_2)
 				/********************
 				 * step : 2 : 2 : 1.1 : X
