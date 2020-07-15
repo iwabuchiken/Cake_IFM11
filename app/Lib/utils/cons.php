@@ -167,6 +167,7 @@ class CONS {
 	public static	$statusOf_For_Loop_Execution__J3bar1_Y2		= "j3-1 : 2 : Y : 2";
 	
 	public static	$statusOf_For_Loop_Execution__J3bar2_Y1		= "j3-2 : 2 : Y : 1";
+	public static	$statusOf_For_Loop_Execution__J3bar2_Y2		= "j3-2 : 2 : Y : 2";
 	
 	public static	$statusOf_For_Loop_Execution__J3bar3_Y1		= "j3-3 : Y : 1";
 	public static	$statusOf_For_Loop_Execution__J3bar3_Y3		= "j3-3 : Y : 3";
@@ -190,7 +191,10 @@ class CONS {
 	public static	$strOf_Exit_Status__TP = "TP";
 	
 	public static	$strOf_Exit_Status_Pos__SL = "SL";
+	public static	$strOf_Exit_Status_Pos__SL_1st_Bar = "SL.1";
+	
 	public static	$strOf_Exit_Status_Pos__TP = "TP";
+	public static	$strOf_Exit_Status_Pos__TP_1st_Bar = "TP.1";
 	
 	/******************************
 	 	prices
