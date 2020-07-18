@@ -2277,8 +2277,8 @@ class FxTestController extends AppController {
 							 ********************/
 							//test:dummy
 							//test:dummy:20200715_161548
-							if (true) {
-// 							if ($cond_3__Is_TP == true) {
+// 							if (true) {
+							if ($cond_3__Is_TP == true) {
 // 							if ($cond_3__Is_TP) {
 								//mark:20200715_160308:m
 								/********************
@@ -3311,6 +3311,51 @@ class FxTestController extends AppController {
 				array_push($lo_Pos, $pos_Tmp);
 						
 				//next:20200715_162421:n
+			} else if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J3bar2_Y2) {
+				//code:20200714_155841:c
+				/********************
+				 * step : 2 : 2 : 1.4
+				 * 		check : for-loop ended with ==> TP (1st bar)
+				 ********************/
+				/********************
+				 * step : 2 : 2 : 1.4 : 1
+				 * 		log
+				 ********************/
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+					
+				$msg .= "(while)(step : 2 : 2 : 1.4 : 1)";
+				$msg .= "\n";
+				
+				//code:20200718_131156:c
+				$msg .= "for-loop ended with ==> TP (1st bar) (\$statusOf_For_Loop_Execution = $statusOf_For_Loop_Execution)";
+				$msg .= "\n";
+					
+				$msg .= sprintf("\$pos_Tmp->ext_status\t%s", $pos_Tmp->ext_status);
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+					
+				/********************
+				 * step : 2 : 2 : 1.4 : 2
+				 * 		$pos ==> append
+				********************/
+				$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+				$msg .= " ";
+					
+				$msg .= "(while)(step : 2 : 2 : 1.4 : 2)";
+				$msg .= "\n";
+					
+				$msg .= "\$pos ==> appending...";
+				$msg .= "\n";
+					
+				Utils::write_Log__Fx_Admin(
+						$_dpath_Log_Fx_Tester__Full, $_fname_Log_Fx_Tester
+						, $msg, __FILE__, __LINE__);
+					
+				array_push($lo_Pos, $pos_Tmp);
 				
 			} else {//if ($statusOf_For_Loop_Execution == CONS::$statusOf_For_Loop_Execution__J5_1_2_2)
 				/********************
@@ -3705,6 +3750,18 @@ class FxTestController extends AppController {
 		// SL, TP, diff
 		$content .= "pos.SL\tpos.TP\tdiff.SL~start";
 		
+// 		// return char
+// 		$content .= "\n";
+		
+		/********************
+		 * step : 3 : 2 : 2 : 5
+		 		gain/loss
+		 ********************/
+		//code: 20200718_132830:c
+		$content .= "\t";
+		$content .= "gain/loss";
+
+		
 		// return char
 		$content .= "\n";
 		
@@ -3792,7 +3849,32 @@ class FxTestController extends AppController {
 			$content .= sprintf("%.03f\t%.03f\t%.03f", $pos->pr_SL, $pos->pr_TP, $diffOf_Price_SL_Start);
 				
 			$content .= "\t";
+
+			/********************
+			 * step : 3 : 3 : 5
+			 * 		gain/loss
+			 ********************/
+			//code:20200718_133041:c
+			// column separator
+			$content .= "\t";
+			
+			$label_Pos_Exit_Status = $pos->ext_status;
+			
+			if ($label_Pos_Exit_Status == CONS::$strOf_Exit_Status__SL) {
+			
+				$valOf_Gain_Loss = $pos->pr_SL - $pos->st_pr;
 				
+				$content .= sprintf("%.03f", $valOf_Gain_Loss);
+				
+				//next:20200718_134240:n
+				
+			} else {//if ($label_ListOf_Pos)
+				
+				// default string
+				$content .= "-";
+				
+			}//if ($label_ListOf_Pos)
+					
 			/********************
 			 * step : 3 : 3 : X
 			 * 		return char
