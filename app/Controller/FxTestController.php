@@ -1844,6 +1844,8 @@ class FxTestController extends AppController {
 								, $_lo_BarDatas
 								, __FILE__, __LINE__);
 						
+						//next:20200719_123242:n
+						
 						/********************
 						 * step : 2 : j5.1-3(TP) : 3
 						 * 		break
