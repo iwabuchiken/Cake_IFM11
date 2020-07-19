@@ -1237,7 +1237,7 @@ class FxTestController extends AppController {
 						
 					/********************
 					 * step : 2 : j4 : Y : 2
-					 * 		set ==> status
+					 * 		set ==> status : for-loop-execution
 					 ********************/
 					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J4_Y2;
 				
@@ -1288,7 +1288,7 @@ class FxTestController extends AppController {
 						
 					/********************
 					 * step : 2 : j4 : N : 2
-					 * 		set ==> status
+					 * 		set ==> status : for-loop-execution
 					 ********************/
 					$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J4_N2;
 
@@ -1690,7 +1690,7 @@ class FxTestController extends AppController {
 						
 						/********************
 						 * step : 2 : j5.1-2(SL) : 2
-						 * 		set ==> status 
+						 * 		set ==> status : for-loop-execution
 						 ********************/
 						//next:20200624_173926:n
 						$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_2_2;
@@ -1725,6 +1725,31 @@ class FxTestController extends AppController {
 						$msg .= "\n";
 						
 						$msg .= "set ==> status : \$pos->ext_status (". $pos->ext_status . ")";
+						$msg .= "\n";
+						
+// 						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
+// 								$pos
+// 								, $_lo_BarDatas
+// 								, __FILE__, __LINE__);
+						
+						//code:20200719_120552:c
+						/********************
+						 * step : 2 : j5.1-2(SL) : 2.3
+						 * 		set ==> val : $pos->ext_pr
+						 ********************/
+						//code:20200703_171215:c
+						// set
+						$pos->ext_pr = $pos->pr_SL;
+						
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5.1-2(SL) : 2.3)";
+						$msg .= "\n";
+						
+						$msg .= "set ==> val : \$pos->ext_pr : ". sprintf("%.03f", $pos->ext_pr);
+// 						$msg .= "set ==> val : \$pos->ext_pr (". sprintf("%.03f", $pos->ext_pr) . ")";
+// 						$msg .= "set ==> val : \$pos->ext_pr (". $pos->ext_pr . ")";
 						$msg .= "\n";
 						
 						$msg .= LibEaTester::show_Basic_Pos_Data__Build_Lines(
@@ -1777,7 +1802,7 @@ class FxTestController extends AppController {
 						
 						/********************
 						 * step : 2 : j5.1-3(TP) : 2
-						 * 		set ==> status 
+						 * 		set ==> status : for-loop-execution
 						 ********************/
 						//next:20200624_173926:n
 						$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J5_1_3_2;
@@ -2149,7 +2174,8 @@ class FxTestController extends AppController {
 									. " (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 1)";
 							$msg .= "\n";
 	
-							$msg .= "is_SL ==> true";
+							$msg .= "is_SL (1st bar) ==> true";
+// 							$msg .= "is_SL ==> true";
 							$msg .= "\n";
 	
 							$msg .= sprintf(
@@ -2162,7 +2188,7 @@ class FxTestController extends AppController {
 							//ref:20200715_160558:r
 							/********************
 							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 2
-							 * 		set ==> status
+							 * 		set ==> status : for-loop-execution
 							 ********************/
 							//next:20200610_122943:n
 							$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar1_Y2;
@@ -2198,6 +2224,24 @@ class FxTestController extends AppController {
 							$msg .= "set ==> status : \$pos->ext_status : " . $pos->ext_status;
 							$msg .= "\n";
 							
+							//code:20200719_121553:c
+							/********************
+							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 2.3
+							 * 		set ==> val : $pos->ext_pr
+							 ********************/
+							// set
+							$pos->ext_pr = $pos->pr_SL;
+								
+							// log
+							$msg .= "\n";
+							
+							$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+									. " (step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 2.2)";
+							$msg .= "\n";
+								
+							$msg .= "set ==> val : \$pos->ext_pr : " . sprintf("%.03f", $pos->ext_pr);
+							$msg .= "\n";
+								
 							/********************
 							 * step : 2 : j2 : choice-1 : j3-1 : 2 : Y : 3
 							 * 		break ==> for-loop
@@ -2306,7 +2350,7 @@ class FxTestController extends AppController {
 
 								/********************
 								 * step : 2 : j2 : choice-1 : j3-2 : 2 : Y : 2
-								 * 		set ==> status
+								 * 		set ==> status : for-loop-execution
 								 ********************/
 								//code:20200613_145831:c
 								$statusOf_For_Loop_Execution = CONS::$statusOf_For_Loop_Execution__J3bar2_Y2;
@@ -3668,7 +3712,13 @@ class FxTestController extends AppController {
 			 * step : 3 : 2 : 1.5 : 2 : 2
 			 * 		SL
 			 ********************/
-			if ($pos_tmp->ext_status == CONS::$strOf_Exit_Status_Pos__SL) {
+			//code:20200719_114227:c
+			// conditions
+			$cond_1__SL = ($pos_tmp->ext_status == CONS::$strOf_Exit_Status_Pos__SL);
+			$cond_1__SL1 = ($pos_tmp->ext_status == CONS::$strOf_Exit_Status_Pos__SL_1st_Bar);
+			
+			if ($cond_1__SL == true || $cond_1__SL1 == true) {
+// 			if ($pos_tmp->ext_status == CONS::$strOf_Exit_Status_Pos__SL) {
 			
 				if ($pos_tmp->pr_SL < $pos_tmp->st_pr) {
 				
@@ -3738,6 +3788,15 @@ class FxTestController extends AppController {
 		 		pos.ext_status
 		 ********************/
 		$content .= "pos.ext_status";
+		
+		$content .= "\t";
+		
+		//code:20200719_120044:c
+		/********************
+		 * step : 3 : 2 : 2 : X
+		 		pos.ext_pr
+		 ********************/
+		$content .= "pos.ext_pr";
 		
 		$content .= "\t";
 		
@@ -3839,6 +3898,16 @@ class FxTestController extends AppController {
 			
 			$content .= "\t";
 				
+			/********************
+			 * step : 3 : 3 : X.2
+			 * 		pos.ext_pr
+			 ********************/
+			//code:20200703_172006:c
+			$content .= sprintf("%.03f", $pos->ext_pr);
+// 			$content .= $pos->ext_pr;
+			
+			$content .= "\t";
+				
 			
 			/********************
 			 * step : 3 : 3 : 4
@@ -3860,13 +3929,28 @@ class FxTestController extends AppController {
 			
 			$label_Pos_Exit_Status = $pos->ext_status;
 			
-			if ($label_Pos_Exit_Status == CONS::$strOf_Exit_Status__SL) {
+			// conditions
+			$cond_1__SL = ($pos->ext_status == CONS::$strOf_Exit_Status_Pos__SL);
+			$cond_1__SL1 = ($pos->ext_status == CONS::$strOf_Exit_Status_Pos__SL_1st_Bar);
+			
+			$cond_2__TP = ($pos->ext_status == CONS::$strOf_Exit_Status_Pos__TP);
+			$cond_2__TP1 = ($pos->ext_status == CONS::$strOf_Exit_Status_Pos__TP_1st_Bar);
+				
+			
+			if ($cond_1__SL == true || $cond_1__SL1 == true) {
+// 			if ($label_Pos_Exit_Status == CONS::$strOf_Exit_Status__SL) {
 			
 				$valOf_Gain_Loss = $pos->pr_SL - $pos->st_pr;
 				
 				$content .= sprintf("%.03f", $valOf_Gain_Loss);
 				
 				//next:20200718_134240:n
+
+			} else if ($cond_2__TP == true || $cond_2__TP1 == true) {
+					
+				$valOf_Gain_Loss = $pos->pr_TP - $pos->st_pr;
+			
+				$content .= sprintf("%.03f", $valOf_Gain_Loss);
 				
 			} else {//if ($label_ListOf_Pos)
 				
