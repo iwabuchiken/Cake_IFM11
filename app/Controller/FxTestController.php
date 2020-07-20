@@ -1845,6 +1845,23 @@ class FxTestController extends AppController {
 								, __FILE__, __LINE__);
 						
 						//next:20200719_123242:n
+						/********************
+						 * step : 2 : j5.1-3(TP) : 2.3
+						 * 		set ==> val : $pos->ext_pr
+						 ********************/
+						// set
+						$pos->ext_pr = $pos->pr_TP;
+						
+						$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+						$msg .= "\n";
+							
+						$msg .= "(for)(step : 2 : j5.1-3(TP) : 2.3)";
+						$msg .= "\n";
+						
+						$msg .= "set ==> val : \$pos->ext_pr : ". sprintf("%.03f", $pos->ext_pr);
+						// 						$msg .= "set ==> val : \$pos->ext_pr (". sprintf("%.03f", $pos->ext_pr) . ")";
+						// 						$msg .= "set ==> val : \$pos->ext_pr (". $pos->ext_pr . ")";
+						$msg .= "\n";						
 						
 						/********************
 						 * step : 2 : j5.1-3(TP) : 3
@@ -2323,6 +2340,9 @@ class FxTestController extends AppController {
 							 ********************/
 							//test:dummy
 							//test:dummy:20200715_161548
+// 							$msg = "[" . basename(__FILE__) . " : " . __LINE__ . "]"
+// 									. " //test:dummy:20200715_161548";
+// 							$msg .= "\n";							
 // 							if (true) {
 							if ($cond_3__Is_TP == true) {
 // 							if ($cond_3__Is_TP) {
@@ -2383,7 +2403,26 @@ class FxTestController extends AppController {
 									
 								$msg .= "set ==> status : \$pos->ext_status : " . $pos->ext_status;
 								$msg .= "\n";
+								
+								//code:20200720_113108:c
+								/********************
+								 * step : 2 : j2 : choice-1 : j3-2 : 2 : Y : 2.3
+								 * 		set ==> val : $pos->ext_pr
+								 ********************/
+								// set
+								$pos->ext_pr = $pos->pr_TP;
+								
+								$msg .= "[" . basename(__FILE__) . " : " . __LINE__ . "]";
+								$msg .= "\n";
 									
+								$msg .= "(for)(step : 2 : j2 : choice-1 : j3-2 : 2 : Y : 2.3)";
+								$msg .= "\n";
+								
+								$msg .= "set ==> val : \$pos->ext_pr : ". sprintf("%.03f", $pos->ext_pr);
+								// 						$msg .= "set ==> val : \$pos->ext_pr (". sprintf("%.03f", $pos->ext_pr) . ")";
+								// 						$msg .= "set ==> val : \$pos->ext_pr (". $pos->ext_pr . ")";
+								$msg .= "\n";
+								
 								/********************
 								 * step : 2 : j2 : choice-1 : j3-2 : 2 : Y : 3
 								 * 		break ==> for-loop
@@ -3803,6 +3842,13 @@ class FxTestController extends AppController {
 		$content .= "\t";
 		
 		//next:20200701_163805:n
+		/********************
+		 * step : 3 : 2 : 2 : X
+		 		pos.ext_pr : BB.loc
+		 ********************/
+		$content .= "BB.loc";
+		
+		$content .= "\t";
 		
 		/********************
 		 * step : 3 : 2 : 2 : 4
@@ -3909,7 +3955,20 @@ class FxTestController extends AppController {
 // 			$content .= $pos->ext_pr;
 			
 			$content .= "\t";
-				
+
+			//code:20200720_115512:c
+			/********************
+			 * step : 3 : 3 : X.3
+			 		pos.ext_pr : BB.loc
+			 ********************/
+			$strOf_BB_Loc__Exit_Price = LibEaTester::get_BB_Location__By_Price_Index_ListOfBD(
+					$pos->cu_idx
+					, $pos->ext_pr
+					, $_lo_BarDatas__Order_A_Z);
+
+			$content .= $strOf_BB_Loc__Current;
+
+			$content .= "\t";
 			
 			/********************
 			 * step : 3 : 3 : 4
@@ -3923,11 +3982,11 @@ class FxTestController extends AppController {
 
 			/********************
 			 * step : 3 : 3 : 5
-			 * 		gain/loss
+			 * 		gain/loss ==> calc
 			 ********************/
 			//code:20200718_133041:c
 			// column separator
-			$content .= "\t";
+// 			$content .= "\t";
 			
 			$label_Pos_Exit_Status = $pos->ext_status;
 			
@@ -3938,11 +3997,12 @@ class FxTestController extends AppController {
 			$cond_2__TP = ($pos->ext_status == CONS::$strOf_Exit_Status_Pos__TP);
 			$cond_2__TP1 = ($pos->ext_status == CONS::$strOf_Exit_Status_Pos__TP_1st_Bar);
 				
-			
+			//code:20200720_114122:c
 			if ($cond_1__SL == true || $cond_1__SL1 == true) {
 // 			if ($label_Pos_Exit_Status == CONS::$strOf_Exit_Status__SL) {
 			
-				$valOf_Gain_Loss = $pos->pr_SL - $pos->st_pr;
+				$valOf_Gain_Loss = $pos->ext_pr - $pos->st_pr;
+// 				$valOf_Gain_Loss = $pos->pr_SL - $pos->st_pr;
 				
 				$content .= sprintf("%.03f", $valOf_Gain_Loss);
 				
@@ -3950,7 +4010,8 @@ class FxTestController extends AppController {
 
 			} else if ($cond_2__TP == true || $cond_2__TP1 == true) {
 					
-				$valOf_Gain_Loss = $pos->pr_TP - $pos->st_pr;
+				$valOf_Gain_Loss = $pos->ext_pr - $pos->st_pr;
+// 				$valOf_Gain_Loss = $pos->pr_TP - $pos->st_pr;
 			
 				$content .= sprintf("%.03f", $valOf_Gain_Loss);
 				
