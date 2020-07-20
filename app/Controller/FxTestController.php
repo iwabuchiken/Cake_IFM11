@@ -3606,6 +3606,7 @@ class FxTestController extends AppController {
 	//_20200329_132038:tmp
 	public function fx_tester_T_1__Order_Buy__V2__Write_List_Of_Pos
 	(
+			
 			$_strOf_Time_Label
 			, $_lo_Pos
 			
