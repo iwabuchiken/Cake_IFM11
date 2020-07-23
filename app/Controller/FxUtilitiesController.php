@@ -274,6 +274,8 @@ class FxUtilitiesController extends AppController {
 		// separator
 		fwrite($fout_File_Combined_Data, "\n");
 		
+		//next:20200723_144733:n
+		
 		/********************
 		 * step : 4 : 3.2
 		 * 		body
@@ -445,7 +447,7 @@ class FxUtilitiesController extends AppController {
 		// get : param vals
 		@$query_Param_Dpath_Statement_File = $this->request->query[CONS::$param_Dpath_Statement_File];
 		@$query_Param_Fname_Statement_File = $this->request->query[CONS::$param_Fname_Statement_File];
-		
+
 		// default
 		if ($query_Param_Dpath_Statement_File == null) {
 		
@@ -639,6 +641,7 @@ class FxUtilitiesController extends AppController {
 			 * 		setup
 			 ********************/
 			// paths
+			//C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\webroot\Log_Fx_Admin
 			$dpath_Dst_Data_File = "C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\webroot\\Log_Fx_Admin"
 					
 					. "\\" . $dname;
