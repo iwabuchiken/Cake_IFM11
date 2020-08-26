@@ -469,8 +469,12 @@
 		
 		$fname_Dst = "knoten_memo_string.($tlabel).txt";
 		
+		debug_Message("\$fname_Dst : $fname_Dst", basename(__FILE__), __LINE__);
+		
 		//$fpath_Tmp = join(DIRECTORY_SEPARATOR, array($dpath_Memo_File, "memo_string.($tlabel).txt"));
-		$fpath_Tmp = join(DIRECTORY_SEPARATOR, array($dpath_Memo_File, fname_Dst));
+		$fpath_Tmp = join(DIRECTORY_SEPARATOR, array($dpath_Memo_File, $fname_Dst));
+		
+		debug_Message("\$fpath_Tmp : $fpath_Tmp", basename(__FILE__), __LINE__);
 		
 		$fout = fopen($fpath_Tmp, "w");
 		
@@ -527,7 +531,7 @@
 	function main_operation() {
 		//debug
 		//$msg = "count(\$argv) : " . count($argv);
-		
+		//
 		//debug_Message("\n", basename(__FILE__), __LINE__);
 		
 		//return;
@@ -537,10 +541,14 @@
 			if ($argv[1] == 1) {
 			
 				debug_Message("\n", basename(__FILE__), __LINE__);
+
+				echo "param is 1; starting ==> gen_Memo_String_From_File__Knoten()";
 				
-				echo "param is 1; starting ==> gen_Memo_String_From_File()";
+				gen_Memo_String_From_File__Knoten();
 				
-				gen_Memo_String_From_File();
+				//echo "param is 1; starting ==> gen_Memo_String_From_File()";
+				//
+				//gen_Memo_String_From_File();
 
 			} else if ($argv[1] == 2) {
 			
@@ -561,8 +569,9 @@
 			}//if ($argv[1] == 1)
 			
 		} else {
-		
-			gen_Memo_String_From_File();
+			
+			gen_Memo_String_From_File__Knoten();
+			//gen_Memo_String_From_File();
 			
 		}//if (count($argv) > 1)
 		
