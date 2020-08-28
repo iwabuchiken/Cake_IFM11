@@ -5292,5 +5292,7 @@ class FxTestController extends AppController {
 ?>
 
 
+http://localhost/Eclipse_Luna/Cake_IFM11/fx_test/fx_tester_T_1_V2?_Tester_T_1__Order_Genre=_Tester_T_1__Order_Genre__BUY&Tester_T_1__Source_CSV_File_Name=(slice-by-day).(AUDJPY-M5).(2020-05-13).(20200530_134010_951771).csv&Tester_T_1__Source_CSV_Dpath=C:\WORKS_2\WS\WS_Others.prog\prog\D-7\2_2\VIRTUAL\Admin_Projects\curr\data\csv_raw\(slice-by-day).(AUDJPY-M5).(2020-05-13_2020-05-21).(20200530_134010_951771)&Tester_T_1__MaxOf_While_Loop=40
+
 
 ****************************/
