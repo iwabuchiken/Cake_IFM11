@@ -46,8 +46,11 @@ class FxUtilitiesController extends AppController {
 		
 		@$query_Param_Fname_File_Tickets_Data = $this->request->query[CONS::$param_Fname_File_Tickets_Data];
 		
+		// statement file : file name
 		@$query_Param_Fname_File_Statement = $this->request->query[CONS::$param_Fname_File_Statement];
 		
+		// statement file : dpath
+		@$query_Param_Dpath_File_Statement = $this->request->query[CONS::$param_Dpath_File_Statement];
 		
 		/********************
 		* step : 1
@@ -101,10 +104,40 @@ class FxUtilitiesController extends AppController {
 		 ********************/
 		//_20200506_125146:tmp
 		// paths
-		$dpath_File_Statement = CONS::$dpath_File_Detailed_Statement;
+		if ($query_Param_Dpath_File_Tickets_Data == null) {
+		
+			$dpath_File_Statement = CONS::$dpath_File_Detailed_Statement;
+		
+		} else if ($query_Param_Dpath_File_Tickets_Data == "") {
+		
+			debug("\$query_Param_Dpath_File_Tickets_Data ==> blank");
+			
+			$dpath_File_Statement = CONS::$dpath_File_Detailed_Statement;
+		
+		} else {
+		
+			debug("\$query_Param_Dpath_File_Tickets_Data ==> not null : string len = " . count($query_Param_Dpath_File_Statement));
+			
+			$dpath_File_Statement = $query_Param_Dpath_File_Statement;
+
+		}//if ($query_Param_Dpath_File_Tickets_Data == null)
+		
+		//debug
+		$string_tmp = "[" . Utils::get_CurrentTime() . " / "
+				. basename(__FILE__) . ":" . __LINE__ . "]";
+		
+		$string_tmp .= "\n";
+		
+		$string_tmp .= "\$dpath_File_Statement ==> set to : $dpath_File_Statement";
+		
+		debug($string_tmp);
+		
+// 		$dpath_File_Statement = CONS::$dpath_File_Detailed_Statement;
 // 		$dpath_File_Statement = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
 // 				. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
 // 				. "\\Logs\\logs_trading";
+		
+
 		
 		if ($query_Param_Fname_File_Statement == null) {
 		
@@ -125,6 +158,8 @@ class FxUtilitiesController extends AppController {
 						$dpath_File_Statement
 						, $fname_File_Statement
 						);
+		//marker:20200829_112857
+		
 		
 		/********************
 		 * step : 3
@@ -139,8 +174,25 @@ class FxUtilitiesController extends AppController {
 		// list
 		$lo_Line_Combined = array();
 		
-		foreach ($lo_Tickets_From_Tickets_Data_File as $line_Tickets_Data_File) {
+// 		//test:20200829_112126
+// 		$cntOf_Test = 0;
 		
+// 		$maxOf_CntOf_Test = 1;
+		
+		foreach ($lo_Tickets_From_Tickets_Data_File as $line_Tickets_Data_File) {
+
+// 			//code:20200829_111212
+// 			if ($cntOf_Test < $maxOf_CntOf_Test) {
+			
+// 				debug("\$line_Tickets_Data_File ==>");
+				
+// 				debug($line_Tickets_Data_File);
+				
+// 				// count
+// 				$cntOf_Test += 1;
+				
+// 			}//if ($cntOf_Test < $maxOf_CntOf_Test)
+				
 			/********************
 			 * step : 3 : 1
 			 * 		get : ticket num
@@ -265,16 +317,44 @@ class FxUtilitiesController extends AppController {
 		}//foreach ($lo_Lines_Meta_Info as $line)
 		
 		// file path
-		fwrite($fout_File_Combined_Data, "this file\t$fname_File_Combined_Data");
+// 		fwrite($fout_File_Combined_Data, "this file\t$fname_File_Combined_Data");
+		fwrite($fout_File_Combined_Data, "combined file(this)\t$fname_File_Combined_Data");
 		fwrite($fout_File_Combined_Data, "\n");
 		
 		fwrite($fout_File_Combined_Data, "dpath\t$dpath_File_Tickets_Data");
 		fwrite($fout_File_Combined_Data, "\n");
 		
-		// separator
-		fwrite($fout_File_Combined_Data, "\n");
+// 		// separator
+// 		fwrite($fout_File_Combined_Data, "\n");
 		
 		//next:20200723_144733:n
+		
+		/********************
+		 * step : 4 : 3.1 : 2
+		 * 	from report file ==> "buy" or "sell"
+		 ********************/
+		//code:20200829_110037
+// 		debug($lo_Line_Combined[0]);
+		fwrite($fout_File_Combined_Data, "order_type\t" . $lo_Line_Combined[0][100]);
+		fwrite($fout_File_Combined_Data, "\n");
+
+		/********************
+		 * step : 4 : 3.1 : 4
+		 * 	separator lines
+		 ********************/
+		// separator : 1 lines
+// 		fwrite($fout_File_Combined_Data, "\n");
+		fwrite($fout_File_Combined_Data, "\n");
+		
+		/********************
+		 * step : 4 : 3.1 : 3
+		 * 	column names
+		 ********************/
+		//code:20200829_114700
+		$string_tmp = "s.n.\tticket-num\tcurr.datetime\tClose.-12\tClose.-11\tClose.-10\tClose.-9\tClose.-8\tClose.-7\tClose.-6\tClose.-5\tClose.-4\tClose.-3\tClose.-2\tClose.-1\tu/d.-12\tu/d.-11\tu/d.-10\tu/d.-9\tu/d.-8\tu/d.-7\tu/d.-6\tu/d.-5\tu/d.-4\tu/d.-3\tu/d.-2\tu/d.-1\twidth.-12\twidth.-11\twidth.-10\twidth.-9\twidth.-8\twidth.-7\twidth.-6\twidth.-5\twidth.-4\twidth.-3\twidth.-2\twidth.-1\tw-level.-12\tw-level.-11\tw-level.-10\tw-level.-9\tw-level.-8\tw-level.-7\tw-level.-6\tw-level.-5\tw-level.-4\tw-level.-3\tw-level.-2\tw-level.-1\tMFI.-12\tMFI.-11\tMFI.-10\tMFI.-9\tMFI.-8\tMFI.-7\tMFI.-6\tMFI.-5\tMFI.-4\tMFI.-3\tMFI.-2\tMFI.-1\tRSI.-12\tRSI.-11\tRSI.-10\tRSI.-9\tRSI.-8\tRSI.-7\tRSI.-6\tRSI.-5\tRSI.-4\tRSI.-3\tRSI.-2\tRSI.-1\tForce.-12\tForce.-11\tForce.-10\tForce.-9\tForce.-8\tForce.-7\tForce.-6\tForce.-5\tForce.-4\tForce.-3\tForce.-2\tForce.-1\tBB-loc.-12\tBB-loc.-11\tBB-loc.-10\tBB-loc.-9\tBB-loc.-8\tBB-loc.-7\tBB-loc.-6\tBB-loc.-5\tBB-loc.-4\tBB-loc.-3\tBB-loc.-2\tBB-loc.-1\tticket\topen-time\ttype\tsize\titem\tprice\tSL\tTP\tclose-time\tprice\tprofit";
+
+		fwrite($fout_File_Combined_Data, $string_tmp);
+		fwrite($fout_File_Combined_Data, "\n");
 		
 		/********************
 		 * step : 4 : 3.2
@@ -321,6 +401,9 @@ class FxUtilitiesController extends AppController {
 		$tmp_str .= "<br>";
 		
 		$tmp_str .= "\$fname_File_Tickets_Data : $fname_File_Tickets_Data";
+		$tmp_str .= "<br>";
+		
+		$tmp_str .= "\$fpath_File_Combined_Data : $fpath_File_Combined_Data";
 		$tmp_str .= "<br>";
 		
 		

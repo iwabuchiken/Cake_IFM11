@@ -1025,7 +1025,7 @@ class Libfx {
 			$TDs = $tr->getElementsByTagName('td');
 		
 			$lenOf_TDs = $TDs->length;
-		
+
 			$lo_TD_Vals = array();
 		
 			/********************

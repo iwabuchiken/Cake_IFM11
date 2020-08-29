@@ -322,6 +322,7 @@ class CONS {
 	public static $param_Dpath_File_Statement		= "param_Dpath_File_Statement";
 	public static $param_Fname_File_Statement		= "param_Fname_File_Statement";
 	
+	//http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List?param_Dpath_File_Tickets_Data=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20200825_111429[eap-2.id-1].[AUDJPY-5].dir&param_Fname_File_Tickets_Data=[ea-4_tester-1].(20200825_111429).(tickets-data).log&param_Fname_File_Statement=DetailedStatement.[a-j,M5].[id=20117143].[20200826_143940].htm
 	
 	/*******************************
 	 	regex
