@@ -91,6 +91,8 @@ class FxUtilitiesController extends AppController {
 		
 // 		$fname_File_Tickets_Data = "[ea-4_tester-1].(20200505_140459).(tickets-data).log";
 		
+		
+		//debug:20200902_133409
 		// get list
 		$lo_Tickets_From_Tickets_Data_File = 
 				LibFxAdmin::get_LO_Tickets_From_Tickets_Data_File(
@@ -152,7 +154,7 @@ class FxUtilitiesController extends AppController {
 		
 // 		$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
 		
-		
+		//debug:20200902_133713
 		$lo_Tickets_From_Statement_File = 
 				Libfx::get_ListOf_Orders_From_Statement__ListOf_Tokens(
 						$dpath_File_Statement
@@ -160,6 +162,21 @@ class FxUtilitiesController extends AppController {
 						);
 		//marker:20200829_112857
 		
+		/********************
+		 * step : 2 : 2
+		 * 	from report file ==> account id
+		 ********************/
+		//code:20200902_131317
+		$strOf_Account_Id_From_Statement_File =
+				Libfx::get_Account_Id_From_Statement__ListOf_Tokens(
+						$dpath_File_Statement
+						, $fname_File_Statement
+				);
+		
+		debug("\$strOf_Account_Id_From_Statement_File : " . $strOf_Account_Id_From_Statement_File);
+		
+// 		//debug:20200902_133455
+// 		return ;
 		
 		/********************
 		 * step : 3
@@ -298,6 +315,10 @@ class FxUtilitiesController extends AppController {
 		 * step : 4 : 3.1
 		 * 		meta
 		 ********************/
+		/********************
+		 * step : 4 : 3.1 : 1
+		 * 		basics
+		 ********************/
 		$string_tmp = "[" . Utils::get_CurrentTime() 
 					. " / "
 					. basename(__FILE__)
@@ -315,14 +336,24 @@ class FxUtilitiesController extends AppController {
 			fwrite($fout_File_Combined_Data, "\n");
 			
 		}//foreach ($lo_Lines_Meta_Info as $line)
+
+		/********************
+		 * step : 4 : 3.1 : 2
+		 * 		meta : combined file name
+		 ********************/
+		$string_tmp = "combined file(this)\t$fname_File_Combined_Data";
+		$string_tmp .= "\n";
+		
+		$string_tmp .= "dpath\t$dpath_File_Tickets_Data";
+		$string_tmp .= "\n";
 		
 		// file path
 // 		fwrite($fout_File_Combined_Data, "this file\t$fname_File_Combined_Data");
-		fwrite($fout_File_Combined_Data, "combined file(this)\t$fname_File_Combined_Data");
-		fwrite($fout_File_Combined_Data, "\n");
+// 		fwrite($fout_File_Combined_Data, "combined file(this)\t$fname_File_Combined_Data");
+// 		fwrite($fout_File_Combined_Data, "\n");
 		
-		fwrite($fout_File_Combined_Data, "dpath\t$dpath_File_Tickets_Data");
-		fwrite($fout_File_Combined_Data, "\n");
+// 		fwrite($fout_File_Combined_Data, "dpath\t$dpath_File_Tickets_Data");
+// 		fwrite($fout_File_Combined_Data, "\n");
 		
 // 		// separator
 // 		fwrite($fout_File_Combined_Data, "\n");
@@ -331,20 +362,33 @@ class FxUtilitiesController extends AppController {
 		
 		/********************
 		 * step : 4 : 3.1 : 2
-		 * 	from report file ==> "buy" or "sell"
+		 * 		meta : "buy" or "sell" (from report file)
 		 ********************/
 		//code:20200829_110037
 // 		debug($lo_Line_Combined[0]);
-		fwrite($fout_File_Combined_Data, "order_type\t" . $lo_Line_Combined[0][100]);
+
+		$string_tmp .= "order_type\t" . $lo_Line_Combined[0][100];
+		$string_tmp .= "\n";
+		
+// 		fwrite($fout_File_Combined_Data, "order_type\t" . $lo_Line_Combined[0][100]);
 		fwrite($fout_File_Combined_Data, "\n");
 
+		/********************
+		 * step : 4 : 3.1 : 3
+		 * 		meta : account id
+		 ********************/
+		//code:20200902_135521
+		$string_tmp .= "account : \t" . $strOf_Account_Id_From_Statement_File;
+		$string_tmp .= "\n";
+		
 		/********************
 		 * step : 4 : 3.1 : 4
 		 * 	separator lines
 		 ********************/
 		// separator : 1 lines
+		$string_tmp .= "\n";
 // 		fwrite($fout_File_Combined_Data, "\n");
-		fwrite($fout_File_Combined_Data, "\n");
+		fwrite($fout_File_Combined_Data, $string_tmp);
 		
 		/********************
 		 * step : 4 : 3.1 : 3
@@ -362,22 +406,33 @@ class FxUtilitiesController extends AppController {
 		 ********************/
 		$cntOf_Loop = 1;
 		
+		// string for writing
+		// init string
+		$string_tmp = "";
+		
 		foreach ($lo_Line_Combined as $line) {
 		
 			// serial num
-			fwrite($fout_File_Combined_Data, strval($cntOf_Loop) . "\t");
-// 			fwrite($fout_File_Combined_Data, strval($cntOf_Loop));
+			$string_tmp .= strval($cntOf_Loop) . "\t";
+// 			fwrite($fout_File_Combined_Data, strval($cntOf_Loop) . "\t");
+// // 			fwrite($fout_File_Combined_Data, strval($cntOf_Loop));
 			
-			fwrite($fout_File_Combined_Data, join("\t", $line));
-// 			fwrite($fout_File_Combined_Data, $line);
+			$string_tmp .= join("\t", $line);
+			
+// 			fwrite($fout_File_Combined_Data, join("\t", $line));
+// // 			fwrite($fout_File_Combined_Data, $line);
 			
 			// separator line
-			fwrite($fout_File_Combined_Data, "\n");
+			$string_tmp .= "\n";
+// 			fwrite($fout_File_Combined_Data, "\n");
 			
 			// counter
 			$cntOf_Loop += 1;
 						
 		}//foreach ($lo_Line_Combined as $line)
+		
+		// write : string
+		fwrite($fout_File_Combined_Data, $string_tmp);
 		
 		/********************
 		 * step : 4 : 4

@@ -1073,6 +1073,129 @@ class Libfx {
 	
 	
 	}//get_ListOf_Orders_From_Statement__ListOf_Tokens
+
+	/********************
+	 * get_ListOf_Orders_From_Statement__ListOf_Tokens
+	 *
+	 * at : 2020/05/06 13:12:44
+	 *
+	 *	@param : $_dpath_File_Statement
+	 *				==> e.g. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
+	 . "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+	 . "\\Logs\\logs_trading"
+	 @param : $_fname_File_Statement
+	 ==> e.g. "DetailedStatement.[20200506_094419].[a-j,M5].htm"
+	 *
+	 * @return
+	 * 		-1		fopen ==> returned false
+	 *
+	 * 		array(
+	 (int) 0 => array(
+	 (int) 0 => '24811963',
+	 (int) 1 => '2020.05.01 12:15:04',
+	 (int) 2 => 'buy',
+	 ...
+	 (int) 9 => '68.934',
+	 (int) 10 => '-1 100'
+	 ),
+	 (int) 1 => array(
+	 (int) 0 => '24811973',
+	 (int) 1 => '2020.05.01 12:16:00',
+	 (int) 2 => 'buy',
+	 (int) 3 => '1.00',	 *
+	 ...
+	
+	 Ticket
+	 Open Time
+	 Type
+	 Size
+	 Item
+	 Price
+	 S / L
+	 T / P
+	 Close Time
+	 Price
+	 Profit
+	
+	 ********************/
+	public static function
+	// 	get_ListOf_Orders_From_Statement__ListOf_Tokens($fpath_Statement_File) {
+	get_Account_Id_From_Statement__ListOf_Tokens(
+				
+			$_dpath_File_Statement
+			, $_fname_File_Statement
+				
+	) {
+		//_20200902_131802:caller
+		//_20200902_131803:head
+		//_20200902_131804:wl
+	
+		/********************
+		 * step : 1
+		 * 		prep : vars
+		 ********************/
+		// path
+		$fpath_Statement_File = join(DS, array($_dpath_File_Statement, $_fname_File_Statement));
+	
+		/********************
+		 * step : 2
+		 * 		load content
+		 ********************/
+		//ref https://www.php.net/manual/en/function.file-get-contents.php
+		$linesOf_Statememt_File = file_get_contents($fpath_Statement_File);
+	
+		/********************
+		 * step : 3
+		 * 	extract
+		********************/
+		$strOf_Pattern = "/Account: (\d+)/";
+		
+		$aryOf_Matches = array();
+		
+		/********************
+		 * step : 3 : 1
+		 * 	exec : match
+		********************/
+		$result_tmp = preg_match($strOf_Pattern, $linesOf_Statememt_File, $aryOf_Matches);
+		
+		debug("\$result_tmp (preg_match) : " . $result_tmp);
+
+		/********************
+		 * step : 3 : 2
+		 * 	match ==> result
+		 ********************/
+		$resultOf_Match = "";
+		
+		if ($result_tmp == 1) {
+		
+			debug("\$aryOf_Matches =>");
+			debug($aryOf_Matches);
+			
+			$resultOf_Match = $aryOf_Matches[1];
+		
+		} else if ($result_tmp == 0) {
+			
+			$resultOf_Match = "no-match";
+			
+		} else {
+		
+			$resultOf_Match = "error";
+			
+		}//if ($result_tmp == 1)
+		
+		/********************
+		 * return
+			********************/
+		$valOf_Return = $resultOf_Match;
+	
+		/********************
+		 * return : 2
+		 * 	return
+			********************/
+		return $valOf_Return;
+	
+	}//get_Account_Id_From_Statement__ListOf_Tokens
+	
 	
 	
 	/********************
