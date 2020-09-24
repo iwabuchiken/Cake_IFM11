@@ -29,6 +29,247 @@ class FxUtilitiesController extends AppController {
 	//_20200412_133400:next
 	//_20200329_132038:tmp
 // 	public function get_ListOf_Orders_From_Statement($dpath, $fname) {
+	public function util_3__Gen_Trading_Result_List__Gen_Stats
+	(
+			$lo_Line_Combined
+			
+			) {
+		//caller:20200924_115443
+		//head:20200924_115457
+		//wl:20200924_115500
+		/********************
+		 * step : 3a : 1
+		 * 		total
+		 ********************/
+		$numOf_Entries_Total = count($lo_Line_Combined);
+		
+		debug("\$numOf_Entries_Total ==> " . $numOf_Entries_Total);
+		
+		/********************
+		 * step : 3a : 2
+		 * 		order : minus
+		 ********************/
+		$cntOf_Order_Minus = 0;
+		$cntOf_Order_Plus = 0;
+		
+		foreach ($lo_Line_Combined as $line) {
+		
+			$profit = $line[108];
+			
+			// judge
+			if ($profit < 0) {
+			
+				$cntOf_Order_Minus += 1;
+				
+			} else {//if ($profit < 0)
+				
+				$cntOf_Order_Plus += 1;
+				
+			}//if ($profit < 0)
+			;
+			
+		}//foreach ($lo_Line_Combined as $line)
+		
+		$numOf_Entries_Total = count($lo_Line_Combined);
+		
+		$msg = sprintf("\$cntOf_Order_Minus = %d, \$cntOf_Order_Plus = %d"
+
+					, $cntOf_Order_Minus, $cntOf_Order_Plus
+				
+				);
+		
+		debug("\$numOf_Entries_Total ==> " . $msg);
+
+		/********************
+		 * step : 3a : 3.1
+		 * 		minus order : BB.loc ==> 1~6
+		 ********************/
+		//code:20200924_115713
+		$lenOf_Combined_List = count($lo_Line_Combined);
+		
+		// counter
+		$aryOf_CntOf_Order_Minus_BBLoc = array();
+// 		$aryOf_CntOf_Order_Minus_BBLoc = array(6);
+		
+		$lenOf_AryOf_CntOf_Order_Minus_BBLoc = 6;
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			$aryOf_CntOf_Order_Minus_BBLoc[$i] = 0;
+			
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		
+// 		foreach ($aryOf_CntOf_Order_Minus_BBLoc as $tmp) {
+		
+// 			$tmp = 0;
+			
+// 		}//foreach ($aryOf_CntOf_Order_Minus_BBLoc as $tmp)
+		
+		
+// 		$aryOf_CntOf_Order_Minus_BBLoc_1 = 0;
+// 		$aryOf_CntOf_Order_Minus_BBLoc_2 = 0;
+// 		$aryOf_CntOf_Order_Minus_BBLoc_3 = 0;
+// 		$aryOf_CntOf_Order_Minus_BBLoc_4 = 0;
+// 		$aryOf_CntOf_Order_Minus_BBLoc_5 = 0;
+// 		$aryOf_CntOf_Order_Minus_BBLoc_6 = 0;
+		
+		for ($i = 0; $i < $lenOf_Combined_List; $i++) {
+			/********************
+			 * step : 3a : 3.1 : 1
+			 * 		get : line
+			 ********************/
+			$line = $lo_Line_Combined[$i];
+			
+			/********************
+			 * step : 3a : 3.1 : 2
+			 * 		set : conditions
+			 ********************/
+			$cond_1_1		= ($line[97] == 1);		// BB.loc-1
+			$cond_1_2		= ($line[97] == 2);		// BB.loc-1
+			$cond_1_3		= ($line[97] == 3);		// BB.loc-1
+			$cond_1_4		= ($line[97] == 4);		// BB.loc-1
+			$cond_1_5		= ($line[97] == 5);		// BB.loc-1
+			$cond_1_6		= ($line[97] == 6);		// BB.loc-1
+			
+			$cond_2_1		= ($line[108] < 0);		// end in minus
+			
+			/********************
+			 * step : 3a : 3.1 : 3
+			 * 		judge
+			 ********************/
+			//code:20200924_121037
+			if ($cond_1_1 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[0] += 1;
+			} else if ($cond_1_2 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[1] += 1;
+			} else if ($cond_1_3 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[2] += 1;
+			} else if ($cond_1_4 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[3] += 1;
+			} else if ($cond_1_5 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[4] += 1;
+			} else if ($cond_1_6 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[5] += 1;
+// 			if ($cond_1_1 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_1 += 1;
+
+// 			} else if ($cond_1_2 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_2 += 1;
+			
+// 			} else if ($cond_1_3 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_3 += 1;
+				
+// 			} else if ($cond_1_4 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_4 += 1;
+				
+// 			} else if ($cond_1_5 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_5 += 1;
+				
+// 			} else if ($cond_1_6 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_6 += 1;
+				
+			}//if ($cond_1 == true && $cond_2_1 == true)
+			;
+			
+		}//for ($i = 0; $i < $lenOf_Combined_List; $i++)
+		
+		//debug
+		$msg = "";
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			$msg .= "\$aryOf_CntOf_Order_Minus_BBLoc_" . ($i + 1) 
+					. " = " 
+					. $aryOf_CntOf_Order_Minus_BBLoc[$i] 
+					. "\n";
+			
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		
+// 		$msg = sprintf(
+				
+// 				"\$aryOf_CntOf_Order_Minus_BBLoc_1 = %d\n\$aryOf_CntOf_Order_Minus_BBLoc_2 = %d\n\$aryOf_CntOf_Order_Minus_BBLoc_3 = %d"
+// 				. ",\$aryOf_CntOf_Order_Minus_BBLoc_4 = %d\n\$aryOf_CntOf_Order_Minus_BBLoc_5 = %d\n\$aryOf_CntOf_Order_Minus_BBLoc_6 = %d"
+				
+// 				, $aryOf_CntOf_Order_Minus_BBLoc[0]
+// 				, $aryOf_CntOf_Order_Minus_BBLoc[1]
+// 				, $aryOf_CntOf_Order_Minus_BBLoc[2]
+// 				, $aryOf_CntOf_Order_Minus_BBLoc[3]
+// 				, $aryOf_CntOf_Order_Minus_BBLoc[4]
+// 				, $aryOf_CntOf_Order_Minus_BBLoc[5]
+// // 				, $aryOf_CntOf_Order_Minus_BBLoc_1, $aryOf_CntOf_Order_Minus_BBLoc_2, $aryOf_CntOf_Order_Minus_BBLoc_3
+// // 				, $aryOf_CntOf_Order_Minus_BBLoc_4, $aryOf_CntOf_Order_Minus_BBLoc_5, $aryOf_CntOf_Order_Minus_BBLoc_6
+// 				);
+		
+		debug($msg);
+				
+		/********************
+		 * step : 3a : 3.2
+		 * 		plus order : BB.loc ==> 1~6
+		 ********************/
+		//code:20200924_122109
+		/********************
+		 * step : 3a : 3.2 : 1
+		 * 		prep
+		 ********************/
+		// counter
+		$aryOf_CntOf_Order_Plus_BBLoc = array();
+		
+		$lenOf_AryOf_CntOf_Order_Plus_BBLoc = 6;
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Plus_BBLoc; $i++) {
+		
+			$aryOf_CntOf_Order_Plus_BBLoc[$i] = 0;
+			
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Plus_BBLoc; $i++)
+		
+		
+		/********************
+		 * step : 3a : 3.2 : 2
+		 * 		count
+		 ********************/
+		for ($i = 0; $i < $lenOf_Combined_List; $i++) {
+			/********************
+			 * step : 3a : 3.1 : 1
+			 * 		get : line
+			 ********************/
+			$line = $lo_Line_Combined[$i];
+			
+			/********************
+			 * step : 3a : 3.1 : 2
+			 * 		set : conditions
+			 ********************/
+			$cond_1_1		= ($line[97] == 1);		// BB.loc-1
+			$cond_1_2		= ($line[97] == 2);		// BB.loc-1
+			$cond_1_3		= ($line[97] == 3);		// BB.loc-1
+			$cond_1_4		= ($line[97] == 4);		// BB.loc-1
+			$cond_1_5		= ($line[97] == 5);		// BB.loc-1
+			$cond_1_6		= ($line[97] == 6);		// BB.loc-1
+			
+			$cond_2_1		= ($line[108] >= 0);		// end in minus
+			
+			/********************
+			 * step : 3a : 3.1 : 3
+			 * 		judge
+			 ********************/
+			//code:20200924_121037
+			if ($cond_1_1 == true && $cond_2_1 == true) { 		$aryOf_CntOf_Order_Plus_BBLoc[0] += 1;
+			} else if ($cond_1_2 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[1] += 1;
+			} else if ($cond_1_3 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[2] += 1;
+			} else if ($cond_1_4 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[3] += 1;
+			} else if ($cond_1_5 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[4] += 1;
+			} else if ($cond_1_6 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[5] += 1;
+				
+			}//if ($cond_1 == true && $cond_2_1 == true)
+			;
+			
+		}//for ($i = 0; $i < $lenOf_Combined_List; $i++)
+		
+		//debug
+		$msg = "";
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Plus_BBLoc; $i++) {
+		
+			$msg .= "\$aryOf_CntOf_Order_Plus_BBLoc_" . ($i + 1) 
+					. " = " 
+					. $aryOf_CntOf_Order_Plus_BBLoc[$i] 
+					. "\n";
+			
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Plus_BBLoc; $i++)
+		
+		debug($msg);
+				
+	}//util_3__Gen_Trading_Result_List__Gen_Stats()
+	
 	public function util_3__Gen_Trading_Result_List() {
 		//_20200506_111925:caller
 		//_20200506_111928:head
@@ -275,6 +516,13 @@ class FxUtilitiesController extends AppController {
 	
 		debug("\$lo_Line_Combined[0] =>");
 		debug($lo_Line_Combined[0]);
+		
+		/********************
+		 * step : 3a
+		 * 		gen stats data
+		 ********************/
+		//code:20200924_112838
+		$this->util_3__Gen_Trading_Result_List__Gen_Stats($lo_Line_Combined);
 		
 		/********************
 		 * step : 4
