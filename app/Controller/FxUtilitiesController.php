@@ -1404,6 +1404,8 @@ class FxUtilitiesController extends AppController {
 			* step : 1 : 1
 			* 		get : strings
 			********************/
+		//next:20200926_172225
+		
 		//next:20200925_120949
 		$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
 						."\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs";
