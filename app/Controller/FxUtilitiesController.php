@@ -1386,9 +1386,97 @@ class FxUtilitiesController extends AppController {
 		$this->set("url", $url);
 		
 	}//tasks_26_Gen_Combined_Trade_Result_List
+
+	
+	/********************
+	 * build_URL()
+	 * 	at : 2020/09/25 11:48:20
+	 * 	[2] res free# JVEMV6 44#TASKS_49 / 44. currency / TASKS-49. combined-list-gen-stats / 20200925_105653
+	 ********************/
+	function
+	build_URL() {
+	
+		/********************
+			* step : 1
+			* 		get : strings
+			********************/
+		//next:20200925_120949
+		$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
+	
+		$nameOf_TicketsData_Log_File	= "[ea-4_tester-1].(20200909_115319).(tickets-data).log";
+	
+		$nameOf_Statement_File		= "DetailedStatement.[m5].[20200921_154212].htm";
+	
+		/********************
+			* step : 2
+			* 		build : url
+			********************/
+		$strOf_url = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List"
+				. "?param_Dpath_File_Tickets_Data="
+						. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+						."\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs\\"
+						. $nameOf_Dir
+					."&param_Fname_File_Tickets_Data="
+						. $nameOf_TicketsData_Log_File
+					."&param_Fname_File_Statement="
+						. $nameOf_Statement_File
+					."&param_Dpath_File_Statement="
+						. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+						. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs\\"
+						. $nameOf_Dir;
+	
+		// return
+		return $strOf_url;
+	
+	}//build_URL
 	
 	
+	/********************
+	 * tasks_26_Gen_Combined_Trade_Result_List
+	 *
+	 * 	at : 2020/05/19 19:02:57
+	 *
+	 * @return :
 	
+	 ********************/
+	public function
+	tasks_50_Gen_URL_For_Combined_Trade_Result_List() {
+		//caller:20200926_154500
+		//head:20200926_154503
+		//wl:20200926_154506
+		/********************
+		 * step : 1 : 1
+		 * 		prep : vars
+		 ********************/
+		/********************
+		 * step : 2
+		 * 		build : url
+		 ********************/
+		// url
+		$url_built = $this->build_URL();
+		
+		debug("\$url_built ==> '" . $url_built . "'");
+
+		/********************
+		 * step : 3
+		 * 		set : template vars
+		 ********************/
+		/********************
+		 * step : 3 : 1
+		 * 		url
+		 ********************/
+		$this->set("url_built", $url_built);
+
+		/********************
+		 * step : 3 : X
+		 * 		other vars
+		 ********************/
+		// time
+		$time_Current = Utils::get_CurrentTime();
+		
+		$this->set("time_Current", $time_Current);
+		
+	}//tasks_50_Gen_URL_For_Combined_Trade_Result_List()
 	
 }//class FxUtilitiesController extends AppController {
 
