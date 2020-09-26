@@ -1392,38 +1392,168 @@ class FxUtilitiesController extends AppController {
 	 * build_URL()
 	 * 	at : 2020/09/25 11:48:20
 	 * 	[2] res free# JVEMV6 44#TASKS_49 / 44. currency / TASKS-49. combined-list-gen-stats / 20200925_105653
+	 * 
+	 * dummy url : 
+	 * 			http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/tasks_50_Gen_URL_For_Combined_Trade_Result_List?param_NameOf_Dir=20200909_115319[eap-2.id-1].[AUDJPY-5].dir
+	 * 
 	 ********************/
 	function
 	build_URL() {
 	
 		/********************
-			* step : 1
+			* step : 1 : 1
 			* 		get : strings
 			********************/
 		//next:20200925_120949
+		$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+						."\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs";
+		
+		$dpath_File_Statement = $dpath_File_Tickets_Data;
+
+		// dir name
+		@$query_Param_NameOf_Dir = $this->request->query[CONS::$param_NameOf_Dir];
+		
+		
+		
 		$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
+		
+		if ($query_Param_NameOf_Dir == null) {
+		
+			$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
+		
+			debug("\$query_Param_NameOf_Dir ==> null ~~> use default dir name");
+			
+		} else {
+		
+			$nameOf_Dir					= $query_Param_NameOf_Dir;
+			
+			debug("\$nameOf_Dir ==> set to : $nameOf_Dir");
+			
+		}//if ($query_Param_NameOf_Dir == null)
+		
+		
+// 		$nameOf_TicketsData_Log_File	= "[ea-4_tester-1].(20200909_115319).(tickets-data).log";
+		$nameOf_TicketsData_Log_File	= "";
 	
-		$nameOf_TicketsData_Log_File	= "[ea-4_tester-1].(20200909_115319).(tickets-data).log";
-	
-		$nameOf_Statement_File		= "DetailedStatement.[m5].[20200921_154212].htm";
-	
+		$nameOf_Statement_File		= "";
+// 		$nameOf_Statement_File		= "DetailedStatement.[m5].[20200921_154212].htm";
+		
+		$strOf_url_Main = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List";
+
+		// dir fullpath
+		$dpath_Target = $dpath_File_Tickets_Data . "\\" . $nameOf_Dir;
+		
+		/********************
+		 * step : 1 : 1 : 2
+		 * 		validate : dir path
+		 ********************/
+		if (is_dir($dpath_Target) === false) {
+		
+			//debug
+			debug("ERROR : \$dpath_Target ==> not a dir : $dpath_Target");
+					
+			return  -1;
+			
+		}//if ($nameOf_TicketsData_Log_File == "")
+		
+		
+		/********************
+		 * step : 1 : 2
+		 * 		strings : file names
+		 ********************/
+		// prep
+		$handleOf_Dir = opendir($dpath_File_Tickets_Data . "\\" . $nameOf_Dir);
+// 		$handleOf_Dir = opendir($dpath_File_Tickets_Data);
+		
+		debug("\$dpath_File_Tickets_Data ==> " . $dpath_File_Tickets_Data);
+		
+		// tickets log
+		while (($file = readdir($handleOf_Dir)) !== false){
+// 			echo "filename:" . $file . "<br>";
+// 			debug("\$file ==> " . $file);
+			
+// 			debug("Utils::in_String(\$file, \"(tickets-data)\") ==> " . ((Utils::in_String($file, "(tickets-data)")) == true ? "true" : "false"));
+// // 			debug("Utils::in_String(\$file, "(tickets-data)") ==> " . ((Utils::in_String($file, "(tickets-data)")) == true ? "true" : "false"));
+			
+// // 			debug("stristr(\$file, \"(tickets-data)\") === true ==> " . ((stristr($file, "(tickets-data)") === true) ? "FOUND" : "not found"));
+// 			debug("stristr(\$file, \"(tickets-data)\") === false ==> " . ((stristr($file, "(tickets-data)") === false) ? "not found" : "FOUND"));
+// // 			debug("stristr(\$file, \"(tickets-data)\") === false ==> " . ((stristr($file, "(tickets-data)") === false) ? "false" : "true"));
+			
+			// judge : tickets-data
+			if (Utils::in_String($file, "(tickets-data)")) {
+			
+				$nameOf_TicketsData_Log_File = $file;
+			
+				debug("tickets log ==> found : " . $file);
+				
+			}//if (Utils::in_String($file, "(tickets-data)")) {
+			
+			// judge : statement file
+			if (Utils::in_String($file, "DetailedStatement")
+					
+					&& Utils::in_String($file, ".htm")
+					
+					) {
+			
+				$nameOf_Statement_File = $file;
+			
+				debug("statement file ==> found : " . $file);
+				
+				
+			}//if (Utils::in_String($file, "(tickets-data)")) {
+			
+		}
+		
+		closedir($handleOf_Dir);
+		
+		/********************
+		 * step : 1 : 3
+		 * 		validate
+		 ********************/
+		if ($nameOf_TicketsData_Log_File == "") {
+		
+			//debug
+			debug("ERROR : \$nameOf_TicketsData_Log_File ==> blank");
+					
+			return  -1;
+			
+		}//if ($nameOf_TicketsData_Log_File == "")
+		
+		if ($nameOf_Statement_File == "") {
+		
+			//debug
+			debug("ERROR : \$nameOf_Statement_File ==> blank");
+					
+			return  -1;
+			
+		}//if ($nameOf_TicketsData_Log_File == "")
+		
 		/********************
 			* step : 2
 			* 		build : url
 			********************/
-		$strOf_url = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List"
-				. "?param_Dpath_File_Tickets_Data="
-						. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
-						."\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs\\"
+// 		$strOf_url = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List"
+// 				. "?param_Dpath_File_Tickets_Data="
+// 						. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+// 						."\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs\\"
+// 						. $nameOf_Dir
+// 		$strOf_url = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List"
+		$strOf_url = $strOf_url_Main
+				. "?param_Dpath_File_Tickets_Data=" . $dpath_File_Tickets_Data
+						. "\\"
 						. $nameOf_Dir
-					."&param_Fname_File_Tickets_Data="
-						. $nameOf_TicketsData_Log_File
-					."&param_Fname_File_Statement="
-						. $nameOf_Statement_File
+						
+					."&param_Fname_File_Tickets_Data=" . $nameOf_TicketsData_Log_File
+						
+					."&param_Fname_File_Statement=" . $nameOf_Statement_File
+						
 					."&param_Dpath_File_Statement="
-						. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
-						. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs\\"
+						. $dpath_File_Statement
+						. "\\"
 						. $nameOf_Dir;
+// 						. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+// 						. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs\\"
+// 						. $nameOf_Dir;
 	
 		// return
 		return $strOf_url;
@@ -1491,3 +1621,6 @@ class FxUtilitiesController extends AppController {
 
 
 ****************************/
+
+
+// C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs

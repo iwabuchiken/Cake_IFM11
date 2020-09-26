@@ -4539,6 +4539,43 @@ class Utils {
 		
 	}//get_fpath()
 	
+	/********************
+	* in_String
+	* at : 2020/09/26 16:56:46
+	* 
+	* <usage>
+	* 	@param : $str_main ==> "have a rather twisted task"
+	* 	@param : $str_target ==> "twisted"
+	* 
+	* 	@return
+	* 		false ==> not found
+	* 		true ==> found
+	********************/
+	// ref https://www.php.net/manual/ja/function.stristr.php
+	static function in_String($str_main, $str_target) {
+		
+		$valOf_Ret = false;
+		
+		if (stristr($str_main, $str_target) === false ) {
+			
+// 			debug("stristr ==> false");
+			
+// 			$valOf_Ret == true;
+			
+		} else {
+			
+// 			debug("stristr ==> NOT false");
+			
+			$valOf_Ret = true;
+// 			$valOf_Ret == true;
+			
+		}
+		
+		// return
+		return $valOf_Ret;
+		
+	}//static function in_String($str_main, $str_target) {
+	
 	// ref http://stackoverflow.com/questions/834303/startswith-and-endswith-functions-in-php answered May 6 '12 at 18:22
 	static function startsWith($haystack, $needle) {
 		// search backwards starting from haystack length characters from the end
