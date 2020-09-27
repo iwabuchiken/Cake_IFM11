@@ -1389,61 +1389,31 @@ class FxUtilitiesController extends AppController {
 
 	
 	/********************
-	 * build_URL()
-	 * 	at : 2020/09/25 11:48:20
-	 * 	[2] res free# JVEMV6 44#TASKS_49 / 44. currency / TASKS-49. combined-list-gen-stats / 20200925_105653
+	 * build_URL__Get_Url()
+	 * 	at : 2020/09/27 11:07:24
+	 * 	[25] res free# JVEMV6 44#6.2_X / 44. currency / 6. obs / 2. demo result data / 20200927_110318
 	 * 
 	 * dummy url : 
 	 * 			http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/tasks_50_Gen_URL_For_Combined_Trade_Result_List?param_NameOf_Dir=20200909_115319[eap-2.id-1].[AUDJPY-5].dir
 	 * 
 	 ********************/
 	function
-	build_URL() {
-	
-		/********************
+	build_URL__Get_Url($dpath_File_Tickets_Data_, $nameOf_Dir_, $dpath_File_Statement_) {
+//caller:20200927_111759
+//head:20200927_111804
+//wl:20200927_111808
+				/********************
 			* step : 1 : 1
 			* 		get : strings
 			********************/
-		//next:20200926_172225
-		
-		//next:20200925_120949
-		$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
-						."\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs";
-		
-		$dpath_File_Statement = $dpath_File_Tickets_Data;
-
-		// dir name
-		@$query_Param_NameOf_Dir = $this->request->query[CONS::$param_NameOf_Dir];
-		
-		
-		
-		$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
-		
-		if ($query_Param_NameOf_Dir == null) {
-		
-			$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
-		
-			debug("\$query_Param_NameOf_Dir ==> null ~~> use default dir name");
-			
-		} else {
-		
-			$nameOf_Dir					= $query_Param_NameOf_Dir;
-			
-			debug("\$nameOf_Dir ==> set to : $nameOf_Dir");
-			
-		}//if ($query_Param_NameOf_Dir == null)
-		
-		
-// 		$nameOf_TicketsData_Log_File	= "[ea-4_tester-1].(20200909_115319).(tickets-data).log";
 		$nameOf_TicketsData_Log_File	= "";
 	
 		$nameOf_Statement_File		= "";
-// 		$nameOf_Statement_File		= "DetailedStatement.[m5].[20200921_154212].htm";
 		
 		$strOf_url_Main = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List";
 
 		// dir fullpath
-		$dpath_Target = $dpath_File_Tickets_Data . "\\" . $nameOf_Dir;
+		$dpath_Target = $dpath_File_Tickets_Data_ . "\\" . $nameOf_Dir_;
 		
 		/********************
 		 * step : 1 : 1 : 2
@@ -1458,28 +1428,17 @@ class FxUtilitiesController extends AppController {
 			
 		}//if ($nameOf_TicketsData_Log_File == "")
 		
-		
 		/********************
 		 * step : 1 : 2
 		 * 		strings : file names
 		 ********************/
 		// prep
-		$handleOf_Dir = opendir($dpath_File_Tickets_Data . "\\" . $nameOf_Dir);
-// 		$handleOf_Dir = opendir($dpath_File_Tickets_Data);
+		$handleOf_Dir = opendir($dpath_File_Tickets_Data_ . "\\" . $nameOf_Dir_);
 		
-		debug("\$dpath_File_Tickets_Data ==> " . $dpath_File_Tickets_Data);
+		debug("\$dpath_File_Tickets_Data_ ==> " . $dpath_File_Tickets_Data_);
 		
 		// tickets log
 		while (($file = readdir($handleOf_Dir)) !== false){
-// 			echo "filename:" . $file . "<br>";
-// 			debug("\$file ==> " . $file);
-			
-// 			debug("Utils::in_String(\$file, \"(tickets-data)\") ==> " . ((Utils::in_String($file, "(tickets-data)")) == true ? "true" : "false"));
-// // 			debug("Utils::in_String(\$file, "(tickets-data)") ==> " . ((Utils::in_String($file, "(tickets-data)")) == true ? "true" : "false"));
-			
-// // 			debug("stristr(\$file, \"(tickets-data)\") === true ==> " . ((stristr($file, "(tickets-data)") === true) ? "FOUND" : "not found"));
-// 			debug("stristr(\$file, \"(tickets-data)\") === false ==> " . ((stristr($file, "(tickets-data)") === false) ? "not found" : "FOUND"));
-// // 			debug("stristr(\$file, \"(tickets-data)\") === false ==> " . ((stristr($file, "(tickets-data)") === false) ? "false" : "true"));
 			
 			// judge : tickets-data
 			if (Utils::in_String($file, "(tickets-data)")) {
@@ -1534,31 +1493,120 @@ class FxUtilitiesController extends AppController {
 			* step : 2
 			* 		build : url
 			********************/
-// 		$strOf_url = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List"
-// 				. "?param_Dpath_File_Tickets_Data="
-// 						. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
-// 						."\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs\\"
-// 						. $nameOf_Dir
-// 		$strOf_url = "http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List"
 		$strOf_url = $strOf_url_Main
-				. "?param_Dpath_File_Tickets_Data=" . $dpath_File_Tickets_Data
+				. "?param_Dpath_File_Tickets_Data=" . $dpath_File_Tickets_Data_
 						. "\\"
-						. $nameOf_Dir
+						. $nameOf_Dir_
 						
 					."&param_Fname_File_Tickets_Data=" . $nameOf_TicketsData_Log_File
 						
 					."&param_Fname_File_Statement=" . $nameOf_Statement_File
 						
 					."&param_Dpath_File_Statement="
-						. $dpath_File_Statement
+						. $dpath_File_Statement_
 						. "\\"
-						. $nameOf_Dir;
-// 						. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
-// 						. "\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs\\"
-// 						. $nameOf_Dir;
+						. $nameOf_Dir_;
 	
 		// return
 		return $strOf_url;
+				
+	}//build_URL__Get_Url
+	
+	/********************
+	 * build_URL()
+	 * 	at : 2020/09/25 11:48:20
+	 * 	[2] res free# JVEMV6 44#TASKS_49 / 44. currency / TASKS-49. combined-list-gen-stats / 20200925_105653
+	 * 
+	 * dummy url : 
+	 * 			http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/tasks_50_Gen_URL_For_Combined_Trade_Result_List?param_NameOf_Dir=20200909_115319[eap-2.id-1].[AUDJPY-5].dir
+	 * 
+	 ********************/
+	function
+	build_URL($aryOf_Dir_Names_) {
+//caller:20200926_112330
+//head:20200926_112333
+//wl:20200926_112336
+
+				/********************
+			* step : 1 : 1
+			* 		get : strings
+			********************/
+		//next:20200926_172225
+		
+		//next:20200925_120949
+		$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes\\Terminal"
+						."\\34B08C83A5AAE27A4079DE708E60511E\\MQL4\\Files\\Logs";
+		
+		$dpath_File_Statement = $dpath_File_Tickets_Data;
+
+		// dir name
+		@$query_Param_NameOf_Dir = $this->request->query[CONS::$param_NameOf_Dir];
+		
+		
+		
+		$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
+		
+		if ($query_Param_NameOf_Dir == null) {
+		
+			$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
+		
+			debug("\$query_Param_NameOf_Dir ==> null ~~> use default dir name");
+			
+		} else {
+		
+			$nameOf_Dir					= $query_Param_NameOf_Dir;
+			
+			debug("\$nameOf_Dir ==> set to : $nameOf_Dir");
+			
+		}//if ($query_Param_NameOf_Dir == null)
+		
+		/********************
+		* step : 2
+		* 		get : url
+		********************/
+		//code:20200927_111940
+		$aryOf_Urls = array();
+
+// 		// dummy
+// 		$aryOf_Dir_Names_ = array(
+				
+// 				"20200909_115319[eap-2.id-1].[AUDJPY-5].dir"
+// 				, "20200910_093548[eap-2.id-1].[AUDJPY-5].dir"
+				
+// 		);
+		
+		// get urls
+		foreach ($aryOf_Dir_Names_ as $name) {
+		
+			//fix:20200927_114737
+			$tmp = $this->build_URL__Get_Url($dpath_File_Tickets_Data, $name, $dpath_File_Statement);
+// 			$tmp = $this->build_URL__Get_Url($dpath_File_Tickets_Data, $nameOf_Dir, $dpath_File_Statement);
+			
+			// append
+			if ($tmp != -1) {
+			
+				array_push($aryOf_Urls, $tmp);
+				
+			}//if ($tmp != -1)
+			
+		}//foreach ($aryOf_Dir_Names_ as $name)
+		
+		debug("\$aryOf_Urls =>");
+		debug($aryOf_Urls);
+// 		debug("\$aryOf_Dir_Names_ =>");
+// 		debug($aryOf_Dir_Names_);
+
+		
+		/********************
+		* step : 3
+		* 		return
+		********************/
+		// set vars
+		$valOf_Ret = $aryOf_Urls;
+// 		$valOf_Ret = $aryOf_Dir_Names_;
+
+		// return
+		return $valOf_Ret;
 	
 	}//build_URL
 	
@@ -1584,10 +1632,30 @@ class FxUtilitiesController extends AppController {
 		 * step : 2
 		 * 		build : url
 		 ********************/
-		// url
-		$url_built = $this->build_URL();
+		// dummy
+		//marker:20200927_115533
+		//next:20200927_115739
+		$aryOf_Dir_Names = array(
 		
-		debug("\$url_built ==> '" . $url_built . "'");
+// 				"20200909_115319[eap-2.id-1].[AUDJPY-5].dir"
+				
+				"20200910_093548[eap-2.id-1].[AUDJPY-5].dir"
+				
+				, "20200911_045656[eap-2.id-1].[AUDJPY-5].dir"
+				
+				, "20200914_094747[eap-2.id-1].[AUDJPY-5].dir"
+		
+		);
+		
+		// url
+		//code:20200927_112725
+		//caller:20200926_112330
+		$url_built = $this->build_URL($aryOf_Dir_Names);
+// 		$url_built = $this->build_URL();
+		
+		debug("\$url_built ==> '");
+		debug($url_built);
+// 		debug("\$url_built ==> '" . $url_built . "'");
 
 		/********************
 		 * step : 3
@@ -1598,6 +1666,13 @@ class FxUtilitiesController extends AppController {
 		 * 		url
 		 ********************/
 		$this->set("url_built", $url_built);
+
+		/********************
+		 * step : 3 : 2
+		 * 		dir names
+		 ********************/
+		//code:20200927_113830
+		$this->set("aryOf_Dir_Names", $aryOf_Dir_Names);
 
 		/********************
 		 * step : 3 : X
