@@ -1544,21 +1544,21 @@ class FxUtilitiesController extends AppController {
 		
 		
 		
-		$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
+// 		$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
 		
-		if ($query_Param_NameOf_Dir == null) {
+// 		if ($query_Param_NameOf_Dir == null) {
 		
-			$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
+// 			$nameOf_Dir					= "20200909_115319[eap-2.id-1].[AUDJPY-5].dir";
 		
-			debug("\$query_Param_NameOf_Dir ==> null ~~> use default dir name");
+// 			debug("\$query_Param_NameOf_Dir ==> null ~~> use default dir name");
 			
-		} else {
+// 		} else {
 		
-			$nameOf_Dir					= $query_Param_NameOf_Dir;
+// 			$nameOf_Dir					= $query_Param_NameOf_Dir;
 			
-			debug("\$nameOf_Dir ==> set to : $nameOf_Dir");
+// 			debug("\$nameOf_Dir ==> set to : $nameOf_Dir");
 			
-		}//if ($query_Param_NameOf_Dir == null)
+// 		}//if ($query_Param_NameOf_Dir == null)
 		
 		/********************
 		* step : 2
@@ -1612,6 +1612,82 @@ class FxUtilitiesController extends AppController {
 	
 	
 	/********************
+	 * tasks_50_Gen_URL_For_Combined_Trade_Result_List__Get_Dir_List
+	 *
+	 * 	at : 2020/09/28 10:47:16
+	 *
+	 * @return :
+	 * 		-1		list file ==> not exist
+	
+	 ********************/
+	public function
+	tasks_50_Gen_URL_For_Combined_Trade_Result_List__Get_Dir_List() {
+//caller:20200928_104440
+//head:20200928_104443
+//wl:20200928_104447
+		/********************
+		 * step : 1
+		 * 		prep : vars
+		 ********************/
+		$dpath_File_Dir_List = "C:\\WORKS_2\\WS\\WS_Others.JVEMV6\\JVEMV6\\44_currency\\10_prog-php\\2_tester";
+		
+		$fname_File_Dir_List = "list-of-dirs_gen-combined-list.txt";
+		
+		$fpath_File_Dir_List = join(DS, array($dpath_File_Dir_List, $fname_File_Dir_List));
+
+		/********************
+		 * step : 2
+		 * 		validate
+		 ********************/
+		if (file_exists($fpath_File_Dir_List) == false) {
+		
+			//debug
+			debug("list file ==> NOT exist : $fpath_File_Dir_List");
+			
+			return -1;
+			
+		}//if (file_exists($fpath_File_Dir_List) == true) {
+		
+		/********************
+		 * step : 3
+		 * 		get : list
+		 ********************/
+		/********************
+		 * step : 3 : 1
+		 * 		file : load content
+		 ********************/
+		$aryOf_File_Content = file($fpath_File_Dir_List);
+		
+		debug("\$aryOf_File_Content => ");
+		debug($aryOf_File_Content);
+		
+		/********************
+		 * step : 3 : 2
+		 * 		lines ==> trim
+		 ********************/
+		//code:20200928_110737
+		$aryOf_File_Content__Final = array();
+		
+		foreach ($aryOf_File_Content as $line) {
+		
+			array_push($aryOf_File_Content__Final, trim($line));
+			
+		}//foreach ($aryOf_File_Content as $line)
+		
+		/********************
+		 * step : 4
+		 * 		return
+		 ********************/
+		//
+		$valOf_Ret = $aryOf_File_Content__Final;
+// 		$valOf_Ret = $aryOf_File_Content;
+		
+		// return
+		return $valOf_Ret;
+		
+	}//tasks_50_Gen_URL_For_Combined_Trade_Result_List__Get_Dir_List
+	
+	/********************
 	 * tasks_26_Gen_Combined_Trade_Result_List
 	 *
 	 * 	at : 2020/05/19 19:02:57
@@ -1635,17 +1711,19 @@ class FxUtilitiesController extends AppController {
 		// dummy
 		//marker:20200927_115533
 		//next:20200927_115739
-		$aryOf_Dir_Names = array(
+		$aryOf_Dir_Names = $this->tasks_50_Gen_URL_For_Combined_Trade_Result_List__Get_Dir_List();
 		
-// 				"20200909_115319[eap-2.id-1].[AUDJPY-5].dir"
-				
-				"20200910_093548[eap-2.id-1].[AUDJPY-5].dir"
-				
-				, "20200911_045656[eap-2.id-1].[AUDJPY-5].dir"
-				
-				, "20200914_094747[eap-2.id-1].[AUDJPY-5].dir"
+// 		$aryOf_Dir_Names = array(
 		
-		);
+// // 				"20200909_115319[eap-2.id-1].[AUDJPY-5].dir"
+				
+// 				"20200910_093548[eap-2.id-1].[AUDJPY-5].dir"
+				
+// 				, "20200911_045656[eap-2.id-1].[AUDJPY-5].dir"
+				
+// 				, "20200914_094747[eap-2.id-1].[AUDJPY-5].dir"
+		
+// 		);
 		
 		// url
 		//code:20200927_112725

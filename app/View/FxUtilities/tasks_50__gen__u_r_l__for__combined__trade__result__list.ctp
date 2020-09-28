@@ -4,12 +4,26 @@ time = <?php echo $time_Current; ?>
 
 <br>
 <br>
-url_built = <?php 
+url_built = 
+
+<br>
+
+<?php 
 		
 		//code:20200927_112743
 		$lenOf_Url_built = count($url_built);
-		
+?>
+
+<table>
+
+<?php
 		for ($i = 0; $i < $lenOf_Url_built; $i ++) {
+	?>
+
+	<tr>
+		<td>
+
+<?php 
 // 		foreach ($url_built as $strOf_Url) {
 		
 			/********************
@@ -30,7 +44,12 @@ url_built = <?php
 // 			echo $strOf_Url__Full;
 			
 			echo "<br>";
-			
+
+?>
+		</td>
+	</tr>
+
+<?php
 		}//foreach ($url_built as $strOf_Url)
 		
 		
@@ -41,6 +60,12 @@ url_built = <?php
 // 		echo $strOf_Url_Link;
 		
 		?>
+  
+  
+  </tr>
+</table>
+
+
 
 <br>
 <br>
