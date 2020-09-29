@@ -34,9 +34,9 @@ class FxUtilitiesController extends AppController {
 			$lo_Line_Combined
 			
 			) {
-		//caller:20200924_115443
-		//head:20200924_115457
-		//wl:20200924_115500
+//caller:20200924_115443
+//head:20200924_115457
+//wl:20200924_115500
 		/********************
 		 * step : 3a : 1
 		 * 		total
