@@ -25,6 +25,16 @@ class FxUtilitiesController extends AppController {
 	 * <descrip>
 	 * 		1. url
 	 * 		==> http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_2__Extract_Ticket_Numbers&param_Dpath_File_EA_Log=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\storage_Logs\20191224_073409[eap-2.id-1].[AUDJPY-1].dir
+	 * 
+	 * @return
+	 * 		$aryOf_Stats_Data
+		 * 		total
+		 * 		cntOf_Order_Plus
+		 * 		cntOf_Order_Minus
+		 * 		
+		 * 		aryOf_CntOf_Order_Minus_BBLoc
+		 * 		aryOf_CntOf_Order_Plus_BBLoc
+	 * 
 	 ********************/
 	//_20200412_133400:next
 	//_20200329_132038:tmp
@@ -38,12 +48,21 @@ class FxUtilitiesController extends AppController {
 //head:20200924_115457
 //wl:20200924_115500
 		/********************
+		 * step : 3a : 0
+		 * 		prep : vars
+		 ********************/
+		$aryOf_Stats_Data = array();
+		
+		/********************
 		 * step : 3a : 1
 		 * 		total
 		 ********************/
 		$numOf_Entries_Total = count($lo_Line_Combined);
 		
 		debug("\$numOf_Entries_Total ==> " . $numOf_Entries_Total);
+		
+		// add to array
+		$aryOf_Stats_Data['total'] = $numOf_Entries_Total;
 		
 		/********************
 		 * step : 3a : 2
@@ -66,7 +85,6 @@ class FxUtilitiesController extends AppController {
 				$cntOf_Order_Plus += 1;
 				
 			}//if ($profit < 0)
-			;
 			
 		}//foreach ($lo_Line_Combined as $line)
 		
@@ -80,6 +98,15 @@ class FxUtilitiesController extends AppController {
 		
 		debug("\$numOf_Entries_Total ==> " . $msg);
 
+		// add to array
+		$aryOf_Stats_Data['cntOf_Order_Plus'] = $cntOf_Order_Plus;
+		$aryOf_Stats_Data['cntOf_Order_Minus'] = $cntOf_Order_Minus;
+		
+		
+		/********************
+		 * step : 3a : 3
+		 * 		BB.loc ==> count
+		 ********************/
 		/********************
 		 * step : 3a : 3.1
 		 * 		minus order : BB.loc ==> 1~6
@@ -98,21 +125,6 @@ class FxUtilitiesController extends AppController {
 			$aryOf_CntOf_Order_Minus_BBLoc[$i] = 0;
 			
 		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
-		
-		
-// 		foreach ($aryOf_CntOf_Order_Minus_BBLoc as $tmp) {
-		
-// 			$tmp = 0;
-			
-// 		}//foreach ($aryOf_CntOf_Order_Minus_BBLoc as $tmp)
-		
-		
-// 		$aryOf_CntOf_Order_Minus_BBLoc_1 = 0;
-// 		$aryOf_CntOf_Order_Minus_BBLoc_2 = 0;
-// 		$aryOf_CntOf_Order_Minus_BBLoc_3 = 0;
-// 		$aryOf_CntOf_Order_Minus_BBLoc_4 = 0;
-// 		$aryOf_CntOf_Order_Minus_BBLoc_5 = 0;
-// 		$aryOf_CntOf_Order_Minus_BBLoc_6 = 0;
 		
 		for ($i = 0; $i < $lenOf_Combined_List; $i++) {
 			/********************
@@ -145,17 +157,6 @@ class FxUtilitiesController extends AppController {
 			} else if ($cond_1_4 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[3] += 1;
 			} else if ($cond_1_5 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[4] += 1;
 			} else if ($cond_1_6 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[5] += 1;
-// 			if ($cond_1_1 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_1 += 1;
-
-// 			} else if ($cond_1_2 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_2 += 1;
-			
-// 			} else if ($cond_1_3 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_3 += 1;
-				
-// 			} else if ($cond_1_4 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_4 += 1;
-				
-// 			} else if ($cond_1_5 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_5 += 1;
-				
-// 			} else if ($cond_1_6 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc_6 += 1;
 				
 			}//if ($cond_1 == true && $cond_2_1 == true)
 			;
@@ -175,23 +176,25 @@ class FxUtilitiesController extends AppController {
 		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
 		
 		
-// 		$msg = sprintf(
-				
-// 				"\$aryOf_CntOf_Order_Minus_BBLoc_1 = %d\n\$aryOf_CntOf_Order_Minus_BBLoc_2 = %d\n\$aryOf_CntOf_Order_Minus_BBLoc_3 = %d"
-// 				. ",\$aryOf_CntOf_Order_Minus_BBLoc_4 = %d\n\$aryOf_CntOf_Order_Minus_BBLoc_5 = %d\n\$aryOf_CntOf_Order_Minus_BBLoc_6 = %d"
-				
-// 				, $aryOf_CntOf_Order_Minus_BBLoc[0]
-// 				, $aryOf_CntOf_Order_Minus_BBLoc[1]
-// 				, $aryOf_CntOf_Order_Minus_BBLoc[2]
-// 				, $aryOf_CntOf_Order_Minus_BBLoc[3]
-// 				, $aryOf_CntOf_Order_Minus_BBLoc[4]
-// 				, $aryOf_CntOf_Order_Minus_BBLoc[5]
-// // 				, $aryOf_CntOf_Order_Minus_BBLoc_1, $aryOf_CntOf_Order_Minus_BBLoc_2, $aryOf_CntOf_Order_Minus_BBLoc_3
-// // 				, $aryOf_CntOf_Order_Minus_BBLoc_4, $aryOf_CntOf_Order_Minus_BBLoc_5, $aryOf_CntOf_Order_Minus_BBLoc_6
-// 				);
-		
 		debug($msg);
+
+		/********************
+		 * step : 3a : 3.1 : X
+		 * 		set to return val
+		 ********************/
+		// declare : index
+		$aryOf_Stats_Data['aryOf_CntOf_Order_Minus_BBLoc'] = array();
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			$aryOf_Stats_Data['aryOf_CntOf_Order_Minus_BBLoc'][$i] = $aryOf_CntOf_Order_Minus_BBLoc[$i];
 				
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+// 		//debug:20200929_150150
+// 		debug("\$aryOf_Stats_Data['aryOf_CntOf_Order_Minus_BBLoc'] =>");
+// 		debug($aryOf_Stats_Data['aryOf_CntOf_Order_Minus_BBLoc']);
+		
 		/********************
 		 * step : 3a : 3.2
 		 * 		plus order : BB.loc ==> 1~6
@@ -219,13 +222,13 @@ class FxUtilitiesController extends AppController {
 		 ********************/
 		for ($i = 0; $i < $lenOf_Combined_List; $i++) {
 			/********************
-			 * step : 3a : 3.1 : 1
+			 * step : 3a : 3.2 : 1
 			 * 		get : line
 			 ********************/
 			$line = $lo_Line_Combined[$i];
 			
 			/********************
-			 * step : 3a : 3.1 : 2
+			 * step : 3a : 3.2 : 2
 			 * 		set : conditions
 			 ********************/
 			$cond_1_1		= ($line[97] == 1);		// BB.loc-1
@@ -238,7 +241,7 @@ class FxUtilitiesController extends AppController {
 			$cond_2_1		= ($line[108] >= 0);		// end in minus
 			
 			/********************
-			 * step : 3a : 3.1 : 3
+			 * step : 3a : 3.2 : 3
 			 * 		judge
 			 ********************/
 			//code:20200924_121037
@@ -268,6 +271,42 @@ class FxUtilitiesController extends AppController {
 		
 		debug($msg);
 				
+		/********************
+		 * step : 3a : 3.2 : X
+		 * 		set to return val
+		 ********************/
+		$aryOf_Stats_Data['aryOf_CntOf_Order_Plus_BBLoc'] = array();
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Plus_BBLoc; $i++) {
+		
+			$aryOf_Stats_Data['aryOf_CntOf_Order_Plus_BBLoc'][$i] = $aryOf_CntOf_Order_Plus_BBLoc[$i];
+				
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+// 		$valOf_Ret['aryOf_CntOf_Order_Minus_BBLoc'] = $aryOf_CntOf_Order_Minus_BBLoc;
+		
+		//debug:20200929_150150
+		debug("\$aryOf_Stats_Data['aryOf_CntOf_Order_Plus_BBLoc'] =>");
+		debug($aryOf_Stats_Data['aryOf_CntOf_Order_Plus_BBLoc']);
+		
+// 		$valOf_Ret['aryOf_CntOf_Order_Plus_BBLoc'] = $aryOf_CntOf_Order_Plus_BBLoc;
+		
+		/********************
+		 * step : 3a : X
+		 * 		return
+		 ********************/
+		// set vars
+		$valOf_Ret = $aryOf_Stats_Data;
+		
+		//debug:20200929_145654
+		debug("\$valOf_Ret['aryOf_CntOf_Order_Minus_BBLoc'] ==> ");
+		debug($valOf_Ret['aryOf_CntOf_Order_Minus_BBLoc']);
+		
+		
+		// return
+		return $valOf_Ret;
+		
+		
 	}//util_3__Gen_Trading_Result_List__Gen_Stats()
 	
 	public function util_3__Gen_Trading_Result_List() {
@@ -521,8 +560,32 @@ class FxUtilitiesController extends AppController {
 		 * step : 3a
 		 * 		gen stats data
 		 ********************/
+		/********************
+		 * step : 3a : 1
+		 * 		get data
+		 ********************/
 		//code:20200924_112838
-		$this->util_3__Gen_Trading_Result_List__Gen_Stats($lo_Line_Combined);
+// 		* 		$aryOf_Stats_Data
+	// 		* 		total
+	// 		* 		cntOf_Order_Plus
+	// 		* 		cntOf_Order_Minus
+		//caller:20200924_115443
+		$valOf_Ret_Rcvd = $this->util_3__Gen_Trading_Result_List__Gen_Stats($lo_Line_Combined);
+		
+		/********************
+		 * step : 3a : 2
+		 * 		unpack
+		 ********************/
+		$numOf_Total			= $valOf_Ret_Rcvd['total'];
+		$cntOf_Order_Minus		= $valOf_Ret_Rcvd['cntOf_Order_Minus'];
+		$cntOf_Order_Plus		= $valOf_Ret_Rcvd['cntOf_Order_Plus'];
+		
+		$aryOf_CntOf_Order_Minus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Minus_BBLoc'];
+		$aryOf_CntOf_Order_Plus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Plus_BBLoc'];
+		
+		//debug:20200929_145424
+		debug("\$aryOf_CntOf_Order_Minus_BBLoc =>");
+		debug($aryOf_CntOf_Order_Minus_BBLoc);
 		
 		/********************
 		 * step : 4
@@ -683,10 +746,77 @@ class FxUtilitiesController extends AppController {
 		fwrite($fout_File_Combined_Data, $string_tmp);
 		
 		/********************
+		 * step : 3.3
+		 * 		stats data
+		 ********************/
+		//code:20200929_141416
+		/********************
+		 * step : 3.3 : 1
+		 * 		total, plus, minus
+		 ********************/
+		// flash
+		$string_tmp = "";
+		
+		// separator
+		$string_tmp .= "\n";
+		$string_tmp .= "\n";
+		
+		// total
+		$string_tmp .= "total=\t$numOf_Total";
+		$string_tmp .= "\n";
+		
+		// minus
+		$string_tmp .= "loss=\t$cntOf_Order_Minus";
+		$string_tmp .= "\n";
+		
+		// plus
+		$string_tmp .= "gain=\t$cntOf_Order_Plus";
+		$string_tmp .= "\n";
+
+		// separator
+		$string_tmp .= "\n";
+
+		/********************
+		 * step : 3.3 : 2
+		 * 		BB.loc ==> count
+		 ********************/
+		//debug:20200929_145219
+		debug("\$aryOf_CntOf_Order_Minus_BBLoc ==>");
+		debug($aryOf_CntOf_Order_Minus_BBLoc);
+		
+		//code:20200929_144730
+		$lenOf_AryOf_CntOf_Order_Minus_BBLoc	= count($aryOf_CntOf_Order_Minus_BBLoc);
+
+		// column names
+		$string_tmp	.= "BB.loc\tloss(<0)\tgain(>=0)";
+		$string_tmp	.= "\n";
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			// get entry
+			$cntOf_BBLoc_Minus		= $aryOf_CntOf_Order_Minus_BBLoc[$i];
+			$cntOf_BBLoc_Plus		= $aryOf_CntOf_Order_Plus_BBLoc[$i];
+			
+			// string
+			$string_tmp		.= ($i + 1) . "\t" . $cntOf_BBLoc_Minus . "\t" . $cntOf_BBLoc_Plus;
+			
+			$string_tmp		.= "\n";
+			
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		// separator
+		$string_tmp .= "\n";
+		$string_tmp .= "\n";
+		
+		// write : string
+		fwrite($fout_File_Combined_Data, $string_tmp);
+		
+		/********************
 		 * step : 4 : 4
 		 * 		file : close
 		 ********************/
 		fclose($fout_File_Combined_Data);
+		
 		
 		/********************
 		 * set : view vals : 1
@@ -706,11 +836,15 @@ class FxUtilitiesController extends AppController {
 		$tmp_str .= "\$fname_File_Tickets_Data : $fname_File_Tickets_Data";
 		$tmp_str .= "<br>";
 		
-		$tmp_str .= "\$fpath_File_Combined_Data : $fpath_File_Combined_Data";
-		$tmp_str .= "<br>";
+// 		$tmp_str_2 = "\$fpath_File_Combined_Data : $fpath_File_Combined_Data";
+		$tmp_str_2 = $fpath_File_Combined_Data;
+// 		$tmp_str_2 .= "<br>";
+// 		$tmp_str .= "\$fpath_File_Combined_Data : $fpath_File_Combined_Data";
+// 		$tmp_str .= "<br>";
 		
 		
 		$this->set("message", $tmp_str);
+		$this->set("message_2", $tmp_str_2);
 		
 		/********************
 		 * set : layout
