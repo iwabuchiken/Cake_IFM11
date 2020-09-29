@@ -150,6 +150,8 @@ class FxUtilitiesController extends AppController {
 			 * step : 3a : 3.1 : 3
 			 * 		judge
 			 ********************/
+			//next:20200929_151352
+			
 			//code:20200924_121037
 			if ($cond_1_1 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[0] += 1;
 			} else if ($cond_1_2 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[1] += 1;
