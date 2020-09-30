@@ -111,6 +111,14 @@ class FxUtilitiesController extends AppController {
 		 * step : 3a : 3.1
 		 * 		minus order : BB.loc ==> 1~6
 		 ********************/
+		/********************
+		 * step : 3a : 3.1 : 0
+		 * 		prep : vars
+		 ********************/
+		/********************
+		 * step : 3a : 3.1 : 0.1
+		 * 		$aryOf_CntOf_Order_Minus_BBLoc
+		 ********************/
 		//code:20200924_115713
 		$lenOf_Combined_List = count($lo_Line_Combined);
 		
@@ -120,12 +128,34 @@ class FxUtilitiesController extends AppController {
 		
 		$lenOf_AryOf_CntOf_Order_Minus_BBLoc = 6;
 		
+		// init
 		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
 		
 			$aryOf_CntOf_Order_Minus_BBLoc[$i] = 0;
 			
 		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+
+		/********************
+		 * step : 3a : 3.1 : 0.2
+		 * 		$sumOf_Orders_Minus, Plus
+		 ********************/
+		// sum
+		$aryOf_SumOf_Orders_Minus		= array();
+		$aryOf_SumOf_Orders_Plus		= array();
 		
+		// init
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			$aryOf_SumOf_Orders_Minus[$i]	= 0;
+			$aryOf_SumOf_Orders_Plus[$i]	= 0;
+				
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		
+		/********************
+		 * step : 3a : 3.1 : ??
+		 * 		for-loop
+		 ********************/
 		for ($i = 0; $i < $lenOf_Combined_List; $i++) {
 			/********************
 			 * step : 3a : 3.1 : 1
@@ -153,12 +183,29 @@ class FxUtilitiesController extends AppController {
 			//next:20200929_151352
 			
 			//code:20200924_121037
-			if ($cond_1_1 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[0] += 1;
-			} else if ($cond_1_2 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[1] += 1;
-			} else if ($cond_1_3 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[2] += 1;
-			} else if ($cond_1_4 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[3] += 1;
-			} else if ($cond_1_5 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[4] += 1;
-			} else if ($cond_1_6 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Minus_BBLoc[5] += 1;
+			if ($cond_1_1 == true && $cond_2_1 == true) { 
+				$aryOf_CntOf_Order_Minus_BBLoc[0] += 1;
+				$aryOf_SumOf_Orders_Minus[0]	+= $line[108];
+				
+			} else if ($cond_1_2 == true && $cond_2_1 == true) { 
+				$aryOf_CntOf_Order_Minus_BBLoc[1] += 1;
+				$aryOf_SumOf_Orders_Minus[1]	+= $line[108];
+				
+			} else if ($cond_1_3 == true && $cond_2_1 == true) { 
+				$aryOf_CntOf_Order_Minus_BBLoc[2] += 1;
+				$aryOf_SumOf_Orders_Minus[2]	+= $line[108];
+				
+			} else if ($cond_1_4 == true && $cond_2_1 == true) { 
+				$aryOf_CntOf_Order_Minus_BBLoc[3] += 1;
+				$aryOf_SumOf_Orders_Minus[3]	+= $line[108];
+				
+			} else if ($cond_1_5 == true && $cond_2_1 == true) { 
+				$aryOf_CntOf_Order_Minus_BBLoc[4] += 1;
+				$aryOf_SumOf_Orders_Minus[4]	+= $line[108];
+				
+			} else if ($cond_1_6 == true && $cond_2_1 == true) { 
+				$aryOf_CntOf_Order_Minus_BBLoc[5] += 1;
+				$aryOf_SumOf_Orders_Minus[5]	+= $line[108];
 				
 			}//if ($cond_1 == true && $cond_2_1 == true)
 			;
@@ -175,6 +222,21 @@ class FxUtilitiesController extends AppController {
 					. $aryOf_CntOf_Order_Minus_BBLoc[$i] 
 					. "\n";
 			
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		
+		debug($msg);
+
+		//debug
+		$msg = "";
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			$msg .= "\$aryOf_SumOf_Orders_Minus_" . ($i + 1) 
+					. " = " 
+					. $aryOf_SumOf_Orders_Minus[$i] 
+					. "\n";
+
 		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
 		
 		
@@ -246,13 +308,32 @@ class FxUtilitiesController extends AppController {
 			 * step : 3a : 3.2 : 3
 			 * 		judge
 			 ********************/
+			//$aryOf_SumOf_Orders_Minus[0]	+= $line[108];
 			//code:20200924_121037
-			if ($cond_1_1 == true && $cond_2_1 == true) { 		$aryOf_CntOf_Order_Plus_BBLoc[0] += 1;
-			} else if ($cond_1_2 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[1] += 1;
-			} else if ($cond_1_3 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[2] += 1;
-			} else if ($cond_1_4 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[3] += 1;
-			} else if ($cond_1_5 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[4] += 1;
-			} else if ($cond_1_6 == true && $cond_2_1 == true) { $aryOf_CntOf_Order_Plus_BBLoc[5] += 1;
+			//code:20200930_113705
+			if ($cond_1_1 == true && $cond_2_1 == true) { 		
+						$aryOf_CntOf_Order_Plus_BBLoc[0] += 1;
+						$aryOf_SumOf_Orders_Plus[0]	+= $line[108];
+						
+			} else if ($cond_1_2 == true && $cond_2_1 == true) { 
+						$aryOf_CntOf_Order_Plus_BBLoc[1] += 1;
+						$aryOf_SumOf_Orders_Plus[1]	+= $line[108];
+
+			} else if ($cond_1_3 == true && $cond_2_1 == true) { 
+						$aryOf_CntOf_Order_Plus_BBLoc[2] += 1;
+						$aryOf_SumOf_Orders_Plus[2]	+= $line[108];
+
+			} else if ($cond_1_4 == true && $cond_2_1 == true) { 
+						$aryOf_CntOf_Order_Plus_BBLoc[3] += 1;
+						$aryOf_SumOf_Orders_Plus[3]	+= $line[108];
+
+			} else if ($cond_1_5 == true && $cond_2_1 == true) { 
+						$aryOf_CntOf_Order_Plus_BBLoc[4] += 1;
+						$aryOf_SumOf_Orders_Plus[4]	+= $line[108];
+
+			} else if ($cond_1_6 == true && $cond_2_1 == true) { 
+						$aryOf_CntOf_Order_Plus_BBLoc[5] += 1;
+						$aryOf_SumOf_Orders_Plus[5]	+= $line[108];
 				
 			}//if ($cond_1 == true && $cond_2_1 == true)
 			;
@@ -272,10 +353,29 @@ class FxUtilitiesController extends AppController {
 		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Plus_BBLoc; $i++)
 		
 		debug($msg);
-				
+		
+		//debug
+		$msg = "";
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Plus_BBLoc; $i++) {
+		
+			$msg .= "\$aryOf_SumOf_Orders_Plus_" . ($i + 1)
+			. " = "
+					. $aryOf_SumOf_Orders_Plus[$i]
+					. "\n";
+		
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Plus_BBLoc; $i++)
+		
+		
+		debug($msg);
+		
 		/********************
 		 * step : 3a : 3.2 : X
 		 * 		set to return val
+		 ********************/
+		/********************
+		 * step : 3a : 3.2 : X.1
+		 * 		aryOf_CntOf_Order_Plus_BBLoc
 		 ********************/
 		$aryOf_Stats_Data['aryOf_CntOf_Order_Plus_BBLoc'] = array();
 		
@@ -292,6 +392,13 @@ class FxUtilitiesController extends AppController {
 		debug($aryOf_Stats_Data['aryOf_CntOf_Order_Plus_BBLoc']);
 		
 // 		$valOf_Ret['aryOf_CntOf_Order_Plus_BBLoc'] = $aryOf_CntOf_Order_Plus_BBLoc;
+
+		/********************
+		 * step : 3a : 3.2 : X.2
+		 * 		$aryOf_SumOf_Orders_Minus, Plus
+		 ********************/
+		$aryOf_Stats_Data['aryOf_SumOf_Orders_Minus']	= $aryOf_SumOf_Orders_Minus;
+		$aryOf_Stats_Data['aryOf_SumOf_Orders_Plus']	= $aryOf_SumOf_Orders_Plus;
 		
 		/********************
 		 * step : 3a : X
@@ -582,12 +689,23 @@ class FxUtilitiesController extends AppController {
 		$cntOf_Order_Minus		= $valOf_Ret_Rcvd['cntOf_Order_Minus'];
 		$cntOf_Order_Plus		= $valOf_Ret_Rcvd['cntOf_Order_Plus'];
 		
+		// BB.loc : count of orders
 		$aryOf_CntOf_Order_Minus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Minus_BBLoc'];
 		$aryOf_CntOf_Order_Plus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Plus_BBLoc'];
-		
+
 		//debug:20200929_145424
 		debug("\$aryOf_CntOf_Order_Minus_BBLoc =>");
 		debug($aryOf_CntOf_Order_Minus_BBLoc);
+		
+		// BB.loc : sums
+		$aryOf_SumOf_Orders_Minus	 = $valOf_Ret_Rcvd['aryOf_SumOf_Orders_Minus'];
+		$aryOf_SumOf_Orders_Plus	 = $valOf_Ret_Rcvd['aryOf_SumOf_Orders_Plus'];
+// 		$aryOf_Stats_Data['aryOf_SumOf_Orders_Minus']
+
+		//debug:20200929_145424
+		debug("\$aryOf_SumOf_Orders_Minus =>");
+		debug($aryOf_SumOf_Orders_Minus);
+		
 		
 		/********************
 		 * step : 4
@@ -804,6 +922,32 @@ class FxUtilitiesController extends AppController {
 			
 			$string_tmp		.= "\n";
 			
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		// separator
+		$string_tmp .= "\n";
+		$string_tmp .= "\n";
+
+		/********************
+		 * step : 3.3 : 3
+		 * 		BB.loc ==> sums
+		 ********************/
+		//code:20200930_115626
+		// column names
+		$string_tmp	.= "BB.loc\tsum(loss)\tsum(gain)";
+		$string_tmp	.= "\n";
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			// get entry
+			$sumOf_BBLoc_Minus		= $aryOf_SumOf_Orders_Minus[$i];
+			$sumOf_BBLoc_Plus		= $aryOf_SumOf_Orders_Plus[$i];
+				
+			// string
+			$string_tmp		.= ($i + 1) . "\t" . $sumOf_BBLoc_Minus . "\t" . $sumOf_BBLoc_Plus;
+				
+			$string_tmp		.= "\n";
+				
 		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
 		
 		// separator
