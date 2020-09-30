@@ -27,14 +27,28 @@ url_built =
 // 		foreach ($url_built as $strOf_Url) {
 		
 			/********************
+			* step : 0
+			* 		prep : vars
+			********************/
+			$setOf_URL_and_Dirname = $url_built[$i];
+			
+// 			debug("\$setOf_URL_and_Dirname =>");
+// 			debug($setOf_URL_and_Dirname);
+
+			/********************
 			* step : 1
 			* 		get : entry
 			********************/
 			// url
-			$strOf_Url = $url_built[$i];
+			//code:20200930_161937
+			$strOf_Url = $setOf_URL_and_Dirname[1];
+// 			$strOf_Url = $url_built[$i][1];
+// 			$strOf_Url = $url_built[$i];
 			
 			// dir name
-			$strOf_Dir_Name = $aryOf_Dir_Names[$i];
+			$strOf_Dir_Name = $setOf_URL_and_Dirname[0];
+// 			$strOf_Dir_Name = $aryOf_Dir_Names[$i][0];
+// 			$strOf_Dir_Name = $aryOf_Dir_Names[$i];
 			
 			// build : link string
 			$tag_Url_Link = "<a href='$strOf_Url' target=_blank>$strOf_Dir_Name</a>";;

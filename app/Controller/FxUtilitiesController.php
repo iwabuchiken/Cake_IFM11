@@ -1715,7 +1715,7 @@ class FxUtilitiesController extends AppController {
 		// prep
 		$handleOf_Dir = opendir($dpath_File_Tickets_Data_ . "\\" . $nameOf_Dir_);
 		
-		debug("\$dpath_File_Tickets_Data_ ==> " . $dpath_File_Tickets_Data_);
+// 		debug("\$dpath_File_Tickets_Data_ ==> " . $dpath_File_Tickets_Data_);
 		
 		// tickets log
 		while (($file = readdir($handleOf_Dir)) !== false){
@@ -1725,7 +1725,7 @@ class FxUtilitiesController extends AppController {
 			
 				$nameOf_TicketsData_Log_File = $file;
 			
-				debug("tickets log ==> found : " . $file);
+// 				debug("tickets log ==> found : " . $file);
 				
 			}//if (Utils::in_String($file, "(tickets-data)")) {
 			
@@ -1738,7 +1738,7 @@ class FxUtilitiesController extends AppController {
 			
 				$nameOf_Statement_File = $file;
 			
-				debug("statement file ==> found : " . $file);
+// 				debug("statement file ==> found : " . $file);
 				
 				
 			}//if (Utils::in_String($file, "(tickets-data)")) {
@@ -1844,7 +1844,10 @@ class FxUtilitiesController extends AppController {
 		* step : 2
 		* 		get : url
 		********************/
+		//code:20200930_161257
 		//code:20200927_111940
+		$aryOf_SetOf_Url_and_Dirname = array();
+		
 		$aryOf_Urls = array();
 
 // 		// dummy
@@ -1860,29 +1863,45 @@ class FxUtilitiesController extends AppController {
 		
 			//fix:20200927_114737
 			$tmp = $this->build_URL__Get_Url($dpath_File_Tickets_Data, $name, $dpath_File_Statement);
+// 			$tmp = $this->build_URL__Get_Url($dpath_File_Tickets_Data, $name, $dpath_File_Statement);
 // 			$tmp = $this->build_URL__Get_Url($dpath_File_Tickets_Data, $nameOf_Dir, $dpath_File_Statement);
+			
+// 			//debug:20200930_160627
+// 			debug("\$name => " . $name);
+			
+// 			debug("url ==> " . $tmp);
+			
 			
 			// append
 			if ($tmp != -1) {
 			
+				array_push($aryOf_SetOf_Url_and_Dirname, array($name, $tmp));
+				
 				array_push($aryOf_Urls, $tmp);
 				
 			}//if ($tmp != -1)
 			
 		}//foreach ($aryOf_Dir_Names_ as $name)
 		
-		debug("\$aryOf_Urls =>");
-		debug($aryOf_Urls);
-// 		debug("\$aryOf_Dir_Names_ =>");
-// 		debug($aryOf_Dir_Names_);
+// 		debug("\$aryOf_Urls =>");
+// 		debug($aryOf_Urls);
+// // 		debug("\$aryOf_Dir_Names_ =>");
+// // 		debug($aryOf_Dir_Names_);
 
-		
+// 		//debug
+// 		debug("\$aryOf_SetOf_Url_and_Dirname =>");
+// 		debug($aryOf_SetOf_Url_and_Dirname);
+		// 		(int) 3 => array(
+		// 				(int) 0 => '20200917_082627[eap-2.id-1].[AUDJPY-5].dir',
+		// 				(int) 1 => 'http://localhost/Eclipse_Luna/Cake_IFM11/fx_utilities/util_3__Gen_Trading_Result_List?param_Dpath_File_Tickets_Data=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20200917_082627[eap-2.id-1].[AUDJPY-5].dir&param_Fname_File_Tickets_Data=[ea-4_tester-1].(20200917_082627).(tickets-data).log&param_Fname_File_Statement=DetailedStatement.[m5].[20200921_154212].htm&param_Dpath_File_Statement=C:\Users\iwabuchiken\AppData\Roaming\MetaQuotes\Terminal\34B08C83A5AAE27A4079DE708E60511E\MQL4\Files\Logs\20200917_082627[eap-2.id-1].[AUDJPY-5].dir'
+		// 		),
 		/********************
 		* step : 3
 		* 		return
 		********************/
 		// set vars
-		$valOf_Ret = $aryOf_Urls;
+		$valOf_Ret = $aryOf_SetOf_Url_and_Dirname;
+// 		$valOf_Ret = $aryOf_Urls;
 // 		$valOf_Ret = $aryOf_Dir_Names_;
 
 		// return
@@ -1938,8 +1957,8 @@ class FxUtilitiesController extends AppController {
 		 ********************/
 		$aryOf_File_Content = file($fpath_File_Dir_List);
 		
-		debug("\$aryOf_File_Content => ");
-		debug($aryOf_File_Content);
+// 		debug("\$aryOf_File_Content => ");
+// 		debug($aryOf_File_Content);
 		
 		/********************
 		 * step : 3 : 2
@@ -1958,6 +1977,10 @@ class FxUtilitiesController extends AppController {
 		 * step : 4
 		 * 		return
 		 ********************/
+// 		//debug:20200930_160331
+// 		debug("\$aryOf_File_Content__Final =>");
+// 		debug($aryOf_File_Content__Final);
+		
 		//
 		$valOf_Ret = $aryOf_File_Content__Final;
 // 		$valOf_Ret = $aryOf_File_Content;
@@ -2011,9 +2034,9 @@ class FxUtilitiesController extends AppController {
 		$url_built = $this->build_URL($aryOf_Dir_Names);
 // 		$url_built = $this->build_URL();
 		
-		debug("\$url_built ==> '");
-		debug($url_built);
-// 		debug("\$url_built ==> '" . $url_built . "'");
+// 		debug("\$url_built ==> '");
+// 		debug($url_built);
+// // 		debug("\$url_built ==> '" . $url_built . "'");
 
 		/********************
 		 * step : 3
@@ -2025,6 +2048,9 @@ class FxUtilitiesController extends AppController {
 		 ********************/
 		$this->set("url_built", $url_built);
 
+// 		debug("\$url_built => ");
+// 		debug($url_built);
+		
 		/********************
 		 * step : 3 : 2
 		 * 		dir names
