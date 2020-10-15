@@ -2,6 +2,9 @@
 
 /*
 
+pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
+php session-3.php
+
 php C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD\session-3.php
 	
 	at : 2020/10/13 14:46:04
@@ -22,8 +25,8 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 
 // 	echo "yes";
 	
+	require 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/cons.php';
 	require 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/utils.php';
-// 	require 'C:/WORKS_2/WS/Eclipse_Luna/Cake_IFM11/app/Lib/utils/cons.php';
 
 	$dpath_Log_File = "C:\\WORKS_2\\WS\\Eclipse_Luna\\Cake_IFM11\\app\\Lib\\others\\37#26_D7QD";
 	
@@ -144,9 +147,17 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 				, $msg, basename(__FILE__), __LINE__);
 		
 	}//function test_1() {
-	
-	function test_2_Multi_Ops($aryOf_SetOf_Ops, $aryOf_Op_Nums) {
-		
+
+	/********************
+	* test_2_Multi_Ops($aryOf_SetOf_Ops, $aryOf_Op_Nums)
+	* 
+	* @return
+	* 	array(
+	* 		$strOf_Target = 1234
+	* 		, $aryOf_Op_Nums	1-2-1
+			, $strOf_Target__tmp = 1432
+	********************/
+	function test_2_Multi_Ops($aryOf_SetOf_Ops, $aryOf_Op_Nums, $_strOf_Target	= "1234") {
 		/********************
 		* step : 1
 		* 	prep
@@ -158,10 +169,14 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 		global $dpath_Log_File, $fname_Log_File;
 		
 		// target string
-		$strOf_Target	= "1234";
+		$strOf_Target	= $_strOf_Target;
+// 		$strOf_Target	= "1234";
 		
 		$strOf_Target__tmp = $strOf_Target;
 
+		// list
+		$aryOf_Results = array();
+		
 		//debug
 		$msg	= "\n";
 		
@@ -266,7 +281,15 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 		Utils::write_Log__Simple(
 				$dpath_Log_File, $fname_Log_File
 				, $msg, basename(__FILE__), __LINE__);
+
+		/********************
+		 * return
+		 ********************/
+		// prep : val
+		$valOf_Ret = array($strOf_Target, join("-", $aryOf_Op_Nums), $strOf_Target__tmp);
 		
+		// return
+		return $valOf_Ret;
 		
 	}//function test_2_Multi_Ops($aryOf_SetOf_Ops, $aryOf_Op_Nums) {
 	
@@ -375,6 +398,276 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 		
 	}//function main_operation() {
 	
+	function get_AryOf_Op_Nums() {
+
+		$aryOf_Op_Nums	= array(
+		
+				/********************
+				 * AXX
+		********************/
+				array(0, 0, 0)
+				, array(0, 0, 1)
+				, array(0, 0, 2)
+		
+				, array(0, 1, 0)
+				, array(0, 1, 1)
+				, array(0, 1, 2)
+		
+				, array(0, 2, 0)
+				, array(0, 2, 1)
+				, array(0, 2, 2)
+		
+				/********************
+				 * BXX
+		********************/
+				, array(1, 0, 0)			//$aryOf_Op_Nums__BAA
+				, array(1, 0, 1)
+				, array(1, 0, 2)
+		
+				, array(1, 1, 0)
+				, array(1, 1, 1)
+				, array(1, 1, 2)
+		
+				, array(1, 2, 0)
+				, array(1, 2, 1)
+				, array(1, 2, 2)
+		
+				/********************
+				 * CXX
+		********************/
+				, array(2, 0, 0)
+				, array(2, 0, 1)
+				, array(2, 0, 2)
+		
+				, array(2, 1, 0)
+				, array(2, 1, 1)
+				, array(2, 1, 2)
+		
+				, array(2, 2, 0)
+				, array(2, 2, 1)
+				, array(2, 2, 2)
+		
+		);
+		
+		// return
+		return $aryOf_Op_Nums;
+
+	}//function get_AryOf_Op_Nums() {
+	
+	/********************
+	* get_AryOf_Op_Nums__V2
+	* at : 2020/10/15 15:52:18
+	********************/
+	function get_AryOf_Op_Nums__V2() {
+
+		/********************
+		* step : 1
+		* 		prep : vars
+		********************/
+		$aryOf_Op_Nums	= array();
+		
+		$numOf_Digits = 4;
+// 		$numOf_Digits = 3;
+		
+		/********************
+		 * step : 2
+		 * 		gen
+		 ********************/
+		$aryOf_Tmp = array();
+
+// 		$k = 1;
+// 		$k = 0;
+		
+		// v-3.0
+		for ($k = 0; $k < 3; $k++) {
+		
+			for ($j = 0; $j < 3; $j++) {
+	// 		for ($j = 0; $j < 2; $j++) {
+				// 			for ($j = 0; $j < 3; $j++) {
+					
+	// 			// digit : 0
+	// 			array_push($aryOf_Tmp, $k);
+	// // 			array_push($aryOf_Tmp, 0);
+				
+				for ($i = 0; $i < 2; $i++) {
+	// 			for ($i = 0; $i < 3; $i++) {
+		
+					array_push($aryOf_Tmp, 0);
+						
+				}//for ($i = 0; $i < 4; $i++)
+	
+				// digit : 2
+				array_push($aryOf_Tmp, $k);
+				// 			array_push($aryOf_Tmp, 0);
+						
+				array_push($aryOf_Tmp, $j);
+					
+				// push ==> to : $aryOf_Op_Nums
+				array_push($aryOf_Op_Nums, $aryOf_Tmp);
+					
+				// $aryOf_Tmp ==> clear
+				$aryOf_Tmp = array();
+					
+			}//for ($j = 0; $j < 3; $j++)
+
+		}//for ($k = 0; $k < 3; $k++)
+			
+					
+		// v-2.0
+// 		for ($k = 0; $k < 2; $k++) {
+		
+// 			// push : 0
+// 			array_push($aryOf_Tmp, 0);
+			
+// 			for ($j = 0; $j < 2; $j++) {
+// // 			for ($j = 0; $j < 3; $j++) {
+			
+// 				for ($i = 0; $i < 3; $i++) {
+						
+// 					array_push($aryOf_Tmp, 0);
+			
+// 				}//for ($i = 0; $i < 4; $i++)
+					
+// 				array_push($aryOf_Tmp, $j);
+					
+// 				// push ==> to : $aryOf_Op_Nums
+// 				array_push($aryOf_Op_Nums, $aryOf_Tmp);
+					
+// 				// $aryOf_Tmp ==> clear
+// 				$aryOf_Tmp = array();
+					
+// 			}//for ($j = 0; $j < 3; $j++)
+
+// 		}//for ($k = 0; $k < 2; $k++)
+		
+		
+		
+		// v-1.0
+// 		for ($j = 0; $j < 3; $j++) {
+		
+// 			for ($i = 0; $i < 3; $i++) {
+			
+// 				array_push($aryOf_Tmp, 0);
+				
+// 			}//for ($i = 0; $i < 4; $i++)
+			
+// 			array_push($aryOf_Tmp, $j);
+			
+// 			// push ==> to : $aryOf_Op_Nums
+// 			array_push($aryOf_Op_Nums, $aryOf_Tmp);
+			
+// 			// $aryOf_Tmp ==> clear
+// 			$aryOf_Tmp = array();
+			
+// 		}//for ($j = 0; $j < 3; $j++)
+		
+// 		for ($i = 0; $i < $numOf_Digits; $i++) {
+		
+// 			for ($j = 0; $j < $numOf_Digits; $j++) {
+			
+// 				for ($k = 0; $k < $numOf_Digits; $k++) {
+				
+// 					// append
+// 					array_push($aryOf_Op_Nums, array($i, $j, $k));
+					
+// 				}//for ($k = 0; $k < $numOf_Digits; $k++)
+// 				;
+				
+// 			}//for ($j = 0; $j < $numOf_Digits; $j++)
+// 			;
+			
+// 		}//for ($i = 0; $i < $numOf_Digits; $i++)
+		
+		
+		
+		// return
+		return $aryOf_Op_Nums;
+
+	}//function get_AryOf_Op_Nums__V2() {
+	
+	function main_operation__V2() {
+		
+		/********************
+		* test_2_Multi_Ops
+		* 		prep
+		********************/
+		/********************
+		* test_2_Multi_Ops
+		* 		prep : 1. set of ops
+		********************/
+		$aryOf_SetOf_Ops = array(
+				
+				array	(0,	1)
+				, array	(1,	2)
+				, array	(2,	3)
+		);
+
+		/********************
+		* test_2_Multi_Ops
+		* 		prep : 2. set of sequence nums
+		********************/
+		//code:20201015_151422
+// 		$aryOf_Op_Nums__BXX	= get_AryOf_Op_Nums__V2();
+		$aryOf_Op_Nums__BXX	= get_AryOf_Op_Nums();
+		
+		//debug
+		$message = "calling ==> get_AryOf_Op_Nums__V2";
+		debug_Message($message, basename(__FILE__), __LINE__);
+
+		print_r($aryOf_Op_Nums__BXX);
+// 		return;
+		
+
+		$lenOf_AryOf_Op_Nums__BXX = count($aryOf_Op_Nums__BXX);
+		
+		/********************
+		 * test_2_Multi_Ops
+		 * 		prep : 3. vars
+		 ********************/
+		$aryOf_Log_Lines = array();
+		
+		global $dpath_Log_File;
+
+		// target string
+// 		$strOf_Target	= "abcd";
+		$strOf_Target	= "1234";
+		
+		/********************
+		* test_2_Multi_Ops
+		* 		execute
+		********************/
+		// execute : iteration
+		for ($i = 0; $i < $lenOf_AryOf_Op_Nums__BXX; $i++) {
+		
+			/********************
+			* step : 1
+			* 		get : entry
+			********************/
+			$aryOf_Op_Nums = $aryOf_Op_Nums__BXX[$i];
+			
+			$tmp = test_2_Multi_Ops($aryOf_SetOf_Ops, $aryOf_Op_Nums, $strOf_Target);
+// 			$tmp = test_2_Multi_Ops($aryOf_SetOf_Ops, $aryOf_Op_Nums);
+			$tmp_new = join("\t", $tmp);
+			
+			array_push($aryOf_Log_Lines, $tmp_new);
+			
+		}//for ($i = 0; $i < $lenOf_AryOf_Op_Nums__BXX; $i++)
+		
+		// build : log string
+		$strOf_Log_Lines	=	"\n";
+		$strOf_Log_Lines	.=	join("\n", $aryOf_Log_Lines);
+		
+		// file name
+		$fname_Dat = "D7QD.data.[" . Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]) . "]" . ".dat";
+		
+		Utils::write_Log__Simple(
+				$dpath_Log_File, $fname_Dat
+				, $strOf_Log_Lines, basename(__FILE__), __LINE__);
+// 				, $tmp, basename(__FILE__), __LINE__);
+		
+		
+	}//function main_operation__V2() {
+	
 	/********************
 	* 	main
 	* 
@@ -383,7 +676,8 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 	* 		no param ==> gen_Memo_String_From_File()
 	********************/
 	//_20200526_095214:next
-	main_operation();
+	main_operation__V2();
+// 	main_operation();
 	
 // 	gen_Memo_String_From_File();
 	

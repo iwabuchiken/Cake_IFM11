@@ -98,12 +98,12 @@ class Utils {
 // 				array($dpath, CONS::$fname_Log));
 		// 					array($dpath, "log.txt"));
 	
-		//debug
-		$msg_tmp = "[" . basename(__FILE__) . ":" . __LINE__ . "]";
-		$msg_tmp .= " "
-					. "\$path_LogFile => $path_LogFile";
+// 		//debug
+// 		$msg_tmp = "[" . basename(__FILE__) . ":" . __LINE__ . "]";
+// 		$msg_tmp .= " "
+// 					. "\$path_LogFile => $path_LogFile";
 		
-		echo $msg_tmp;
+// 		echo $msg_tmp;
 		
 		/****************************************
 		 * Dir exists?
