@@ -1,0 +1,1927 @@
+[10/13/2020 14:48:12 : session-3.php : 29] 
+[10/13/2020 14:49:45 : session-3.php : 34] log file ==> D7QD.log
+[10/13/2020 14:59:14 : session-3.php : 84] log file ==> D7QD.log
+[10/13/2020 14:59:14 : session-3.php : 115] $strOf_Target : 1234
+position pair : 0/1
+transposed : 2134
+[10/13/2020 15:00:04 : session-3.php : 84] log file ==> D7QD.log
+[10/13/2020 15:00:04 : session-3.php : 115] $strOf_Target : 1234
+position pair : 0/1
+transposed : 2134
+[10/13/2020 15:04:01 : session-3.php : 84] log file ==> D7QD.log
+[10/13/2020 15:04:01 : session-3.php : 131] $strOf_Target : 1234
+position pair : 0/1
+
+transposed : 
+$strOf_Target__Transposed_1_2	2134
+$strOf_Target__Transposed_2_3	2314
+$strOf_Target__Transposed_3_4	2341
+
+[10/13/2020 15:18:32 : session-3.php : 179] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:18:32 : session-3.php : 179] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:18:32 : session-3.php : 179] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:21:04 : session-3.php : 184] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:21:04 : session-3.php : 184] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:21:04 : session-3.php : 184] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:22:50 : session-3.php : 184] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:22:50 : session-3.php : 184] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:22:50 : session-3.php : 184] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:23:22 : session-3.php : 183] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:23:22 : session-3.php : 212] 
+;(before)$strOf_Target__tmp	1234
+;transposing...
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:23:22 : session-3.php : 183] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:23:22 : session-3.php : 212] 
+;(before)$strOf_Target__tmp	2134
+;transposing...
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:23:22 : session-3.php : 183] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:23:22 : session-3.php : 212] 
+;(before)$strOf_Target__tmp	2314
+;transposing...
+;(after)$strOf_Target__tmp	2341
+;
+;
+[10/13/2020 15:24:44 : session-3.php : 183] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:24:44 : session-3.php : 212] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:24:44 : session-3.php : 183] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:24:44 : session-3.php : 212] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:24:44 : session-3.php : 183] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:24:44 : session-3.php : 212] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2341
+;
+;
+[10/13/2020 15:27:30 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-2
+
+[10/13/2020 15:27:30 : session-3.php : 204] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:27:30 : session-3.php : 233] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:27:30 : session-3.php : 204] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:27:30 : session-3.php : 233] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:27:30 : session-3.php : 204] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:27:30 : session-3.php : 233] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2341
+;
+;
+[10/13/2020 15:28:31 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-0
+
+[10/13/2020 15:28:31 : session-3.php : 204] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:28:31 : session-3.php : 233] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:28:31 : session-3.php : 204] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:28:31 : session-3.php : 233] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:28:31 : session-3.php : 204] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:28:31 : session-3.php : 233] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2341
+;
+;
+[10/13/2020 15:30:11 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-0
+
+[10/13/2020 15:30:11 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:30:11 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:30:11 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:30:11 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:30:11 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:30:11 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3214
+;
+;
+[10/13/2020 15:32:16 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-0
+
+[10/13/2020 15:32:16 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:32:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:32:16 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:32:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:32:16 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:32:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3214
+;
+;
+[10/13/2020 15:32:16 : session-3.php : 255] --------------------- final report
+;$strOf_Target = 1234 / $strOf_Target__tmp = 3214
+;
+;
+[10/13/2020 15:32:31 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-0
+
+[10/13/2020 15:32:31 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:32:31 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:32:31 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:32:31 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:32:31 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:32:31 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3214
+;
+;
+[10/13/2020 15:32:31 : session-3.php : 256] 
+;--------------------- final report
+;$strOf_Target = 1234 / $strOf_Target__tmp = 3214
+;
+;
+[10/13/2020 15:33:04 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-0
+
+[10/13/2020 15:33:04 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:33:04 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:33:05 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:33:05 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:33:05 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:33:05 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3214
+;
+;
+[10/13/2020 15:33:05 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 3214
+;
+;
+[10/13/2020 15:33:33 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-2
+
+[10/13/2020 15:33:33 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:33:33 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:33:33 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:33:33 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:33:33 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:33:33 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2341
+;
+;
+[10/13/2020 15:33:33 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 2341
+;
+;
+[10/13/2020 15:33:55 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-0
+
+[10/13/2020 15:33:55 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:33:55 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:33:55 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:33:55 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:33:55 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:33:55 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3214
+;
+;
+[10/13/2020 15:33:55 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 3214
+;
+;
+[10/13/2020 15:34:26 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-1
+
+[10/13/2020 15:34:26 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:34:26 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:34:26 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:34:26 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:34:26 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:34:26 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:34:26 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 2134
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-2-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 1243
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2413
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-2-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 2413
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:35:57 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:35:57 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-2-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 2134
+;
+;
+[10/13/2020 15:37:14 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:37:14 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:37:14 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:37:14 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:37:14 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:37:14 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3214
+;
+;
+[10/13/2020 15:37:14 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 3214
+;
+;
+[10/13/2020 15:37:14 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:37:14 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:37:15 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:37:15 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:37:15 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:37:15 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:37:15 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 2134
+;
+;
+[10/13/2020 15:37:15 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:37:15 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:37:15 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:37:15 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:37:15 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:37:15 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2341
+;
+;
+[10/13/2020 15:37:15 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 2341
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-0
+
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3214
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 3214
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-1
+
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 2134
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-1-2
+
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2314
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:41:16 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2314
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2341
+;
+;
+[10/13/2020 15:41:16 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-1-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 2341
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-2-0
+
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-2-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 1243
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-2-1
+
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2413
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-2-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 2413
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-2-2
+
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:43:06 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:43:06 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-2-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 2134
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-0-0
+
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3124
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	3124
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-0-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 1324
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-0-1
+
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3124
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	3124
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	3214
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-0-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 3214
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-0-2
+
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3124
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:46:27 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	3124
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	3142
+;
+;
+[10/13/2020 15:46:27 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-0-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 3142
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-0-0
+
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-0-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 1243
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-0-1
+
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	2413
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-0-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 2413
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-0-2
+
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2143
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:51:03 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2143
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:51:03 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-0-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 2134
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-0-0
+
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	1234
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-0-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 2134
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-0-1
+
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	1234
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-0-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 1324
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	0-0-2
+
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	0
+target position pair	0 / 1
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	2134
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	1
+target position pair	0 / 1
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	2134
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	1234
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:54:10 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:54:10 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	0-0-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 1243
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-1-0
+
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1423
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1423
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	4123
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-1-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 4123
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-1-1
+
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1423
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1423
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-1-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 1243
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 174] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-1-2
+
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1423
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 205] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 15:58:07 : session-3.php : 234] 
+;(before)$strOf_Target__tmp	1423
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1432
+;
+;
+[10/13/2020 15:58:07 : session-3.php : 259] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-1-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 1432
+;
+;
+[10/13/2020 16:08:53 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-2-0
+
+[10/13/2020 16:08:53 : session-3.php : 214] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 16:08:53 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 16:08:53 : session-3.php : 214] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 16:08:53 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1342
+;
+;
+[10/13/2020 16:08:53 : session-3.php : 214] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 16:08:53 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1342
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3142
+;
+;
+[10/13/2020 16:08:53 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-2-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 3142
+;
+;
+[10/13/2020 16:08:53 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-2-1
+
+[10/13/2020 16:08:53 : session-3.php : 214] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 16:08:53 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 16:08:53 : session-3.php : 214] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 16:08:53 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1342
+;
+;
+[10/13/2020 16:08:53 : session-3.php : 214] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1342
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1432
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-2-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 1432
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-2-2
+
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1342
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1342
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-2-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 1324
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-1-0
+
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1423
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1423
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	4123
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-1-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 4123
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-1-1
+
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1423
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1423
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-1-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 1243
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	2-1-2
+
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	0
+target position pair	2 / 3
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1243
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	1
+target position pair	1 / 2
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1243
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1423
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 214] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 16:08:54 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1423
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1432
+;
+;
+[10/13/2020 16:08:54 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	2-1-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 1432
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-2-0
+
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1342
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	2
+target position pair	0 / 1
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1342
+;transposing... (0 / 1)
+;(after)$strOf_Target__tmp	3142
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-2-0
+$strOf_Target = 1234 / $strOf_Target__tmp = 3142
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-2-1
+
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1342
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	2
+target position pair	1 / 2
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1342
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1432
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-2-1
+$strOf_Target = 1234 / $strOf_Target__tmp = 1432
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 183] 
+========================================= test_2_Multi_Ops
+$strOf_Target	1234
+$aryOf_Op_Nums	1-2-2
+
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	0
+target position pair	1 / 2
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1234
+;transposing... (1 / 2)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	1
+target position pair	2 / 3
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1324
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1342
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 214] 
+$i	2
+target position pair	2 / 3
+
+;
+[10/13/2020 16:09:15 : session-3.php : 243] 
+;(before)$strOf_Target__tmp	1342
+;transposing... (2 / 3)
+;(after)$strOf_Target__tmp	1324
+;
+;
+[10/13/2020 16:09:15 : session-3.php : 268] 
+;--------------------- final report
+;$aryOf_Op_Nums	1-2-2
+$strOf_Target = 1234 / $strOf_Target__tmp = 1324
+;
+;
