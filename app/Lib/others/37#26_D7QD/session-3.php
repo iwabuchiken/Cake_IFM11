@@ -458,6 +458,135 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 	* get_AryOf_Op_Nums__V2
 	* at : 2020/10/15 15:52:18
 	********************/
+	function conv_Hex_2_Three($num, $numOf_Digits) {
+		
+		/********************
+		* step : 0
+		********************/
+		/********************
+		* step : 0 : 1
+		* 	vars
+		********************/
+		$aryOf_Digits = array();
+		
+		$numOf_Current_Digit = 0;
+		
+		$num_tmp = $num;
+		
+		/********************
+		* step : 0 : 2
+		* 	init
+		********************/
+		for ($i = 0; $i < $numOf_Digits; $i++) {
+		
+			array_push($aryOf_Digits, 0);
+			
+		}//for ($i = 0; $i < $numOf_Digits; $i++)
+		
+		/********************
+		* step : 1
+		********************/
+		$base_num = 3;
+		
+// 		$div		= $num_tmp / $base_num;
+		$div		= (int)($num_tmp / $base_num);
+		$residue	= $num_tmp % $base_num;
+		
+		//debug
+		$message = sprintf("\$num_tmp = %d\n\$base_num = %d\n\$div = %d\n\$residue = %d\n\$numOf_Current_Digit = %d"
+						, $num_tmp, $base_num, $div, $residue, $numOf_Current_Digit);
+		debug_Message($message, basename(__FILE__), __LINE__);
+
+		/********************
+		* j1
+		********************/
+		if ($div == 0) {
+			/********************
+			 * j1 : Y : 1
+			 ********************/
+			$aryOf_Digits[$numOf_Current_Digit] = $residue;
+			
+			//debug
+			$message	= "(j1 : Y : 1)";
+			$message	.= "\n";
+			
+			$message	.= "\$aryOf_Digits : " . join("-", $aryOf_Digits);
+			$message	.= "\n";
+			
+			debug_Message($message, basename(__FILE__), __LINE__);
+
+			/********************
+			 * j1 : Y : 2
+			 ********************/
+			$numOf_Current_Digit	+= 1;
+
+			//debug
+			$message	= "(j1 : Y : 2)";
+			$message	.= "\n";
+				
+			$message	.= "\$numOf_Current_Digit ==> incremented : $numOf_Current_Digit";
+			$message	.= "\n";
+				
+			debug_Message($message, basename(__FILE__), __LINE__);
+				
+			//debug
+			break;
+			
+		} else {//if ($div == 0)
+			/********************
+			 * j1 : N : 1
+			 ********************/
+			$aryOf_Digits[$numOf_Current_Digit] = $residue;
+				
+			//debug
+			$message	= "(j1 : N : 1)";
+			$message	.= "\n";
+				
+			$message	.= "\$aryOf_Digits : " . join("-", $aryOf_Digits);
+			$message	.= "\n";
+				
+			debug_Message($message, basename(__FILE__), __LINE__);
+
+			/********************
+			 * j1 : N : 2
+			 * 		target ==> update
+			 ********************/			
+			$num_tmp	= $div;
+
+			//debug
+			$message	= "(j1 : N : 2)";
+			$message	.= "\n";
+			
+			$message	.= "\$num_tmp ==> updated : $num_tmp";
+			$message	.= "\n";
+			
+			debug_Message($message, basename(__FILE__), __LINE__);
+
+			/********************
+			 * j1 : N : 3
+			 * 		index ==> increment
+			 ********************/
+			$numOf_Current_Digit	+= 1;
+
+			//debug
+			$message	= "(j1 : N : 3)";
+			$message	.= "\n";
+				
+			$message	.= "\$numOf_Current_Digit ==> updated : $numOf_Current_Digit";
+			$message	.= "\n";
+				
+			debug_Message($message, basename(__FILE__), __LINE__);
+				
+					
+		}//if ($div == 0)
+		;
+		
+	}//function conv_Hex_2_Three($num) {
+
+	/********************
+	* get_AryOf_Op_Nums__V2
+	* at : 2020/10/15 15:52:18
+	********************/
 	function get_AryOf_Op_Nums__V2() {
 
 		/********************
@@ -477,40 +606,152 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 
 // 		$k = 1;
 // 		$k = 0;
-		
-		// v-3.0
-		for ($k = 0; $k < 3; $k++) {
-		
-			for ($j = 0; $j < 3; $j++) {
-	// 		for ($j = 0; $j < 2; $j++) {
-				// 			for ($j = 0; $j < 3; $j++) {
-					
-	// 			// digit : 0
-	// 			array_push($aryOf_Tmp, $k);
-	// // 			array_push($aryOf_Tmp, 0);
-				
-				for ($i = 0; $i < 2; $i++) {
-	// 			for ($i = 0; $i < 3; $i++) {
-		
-					array_push($aryOf_Tmp, 0);
-						
-				}//for ($i = 0; $i < 4; $i++)
-	
-				// digit : 2
-				array_push($aryOf_Tmp, $k);
-				// 			array_push($aryOf_Tmp, 0);
-						
-				array_push($aryOf_Tmp, $j);
-					
-				// push ==> to : $aryOf_Op_Nums
-				array_push($aryOf_Op_Nums, $aryOf_Tmp);
-					
-				// $aryOf_Tmp ==> clear
-				$aryOf_Tmp = array();
-					
-			}//for ($j = 0; $j < 3; $j++)
 
-		}//for ($k = 0; $k < 3; $k++)
+		// v-5.0	// 20201016_143012
+		$i		= 0;
+		$j		= 0;
+		
+		$a1		= array();
+// 		$a2		= array();
+		
+		$maxOf_Num_Val	= 2;
+
+		// v-6.0	// 20201016_145540
+		$num			= 11;
+		$numOf_Digits	= 4;
+		
+		$strOf_Num = conv_Hex_2_Three($num, $numOf_Digits);
+		
+// 		// v-5.0	// 20201016_143012
+// 		while ($i <= $maxOf_Num_Val) {
+			
+// 			while ($j <= $maxOf_Num_Val) {
+				
+// 				// push
+// 				array_push($a1, $i);
+				
+// 				// increment
+// 				$j += 1;
+				
+// 			}//while ($j <= $maxOf_Num_Val) {
+			
+// 			// increment
+// 			$i += 1;
+			
+// 		}//while ($i <= $maxOf_Num_Val) {
+		
+// 		// v-4.1	// 20201016_142102
+// 		for ($m = 0; $m < 3; $m ++) {
+			
+// 			for ($l = 0; $l < 3; $l ++) {
+					
+// 				for ($k = 0; $k < 3; $k++) {
+						
+// 					for ($j = 0; $j < 3; $j++) {
+							
+// 	// 					// digit : 0
+// 	// 					for ($i = 0; $i < 1; $i++) {
+// 	// 						// 					for ($i = 0; $i < 2; $i++) {
+								
+// 	// 						array_push($aryOf_Tmp, 0);
+								
+// 	// 					}//for ($i = 0; $i < 4; $i++)
+							
+// 						// digit : 0
+// 						array_push($aryOf_Tmp, $m);
+							
+// 						// digit : 1
+// 						array_push($aryOf_Tmp, $l);
+							
+// 						// digit : 2
+// 						array_push($aryOf_Tmp, $k);
+// 						// 			array_push($aryOf_Tmp, 0);
+							
+// 						array_push($aryOf_Tmp, $j);
+			
+// 						// push ==> to : $aryOf_Op_Nums
+// 						array_push($aryOf_Op_Nums, $aryOf_Tmp);
+			
+// 						// $aryOf_Tmp ==> clear
+// 						$aryOf_Tmp = array();
+			
+// 					}//for ($j = 0; $j < 3; $j++)
+						
+// 				}//for ($k = 0; $k < 3; $k++)
+			
+// 			}//for ($l = 0; $l < 3; $l ++) {		
+		
+// 		}//for ($m = 0; $m < 3; $m ++) {
+			
+// 		// v-4.0	// 20201016_142102
+// 		for ($l = 0; $l < 3; $l ++) {
+			
+// 			for ($k = 0; $k < 3; $k++) {
+			
+// 				for ($j = 0; $j < 3; $j++) {
+			
+// 					// digit : 0
+// 					for ($i = 0; $i < 1; $i++) {
+// // 					for ($i = 0; $i < 2; $i++) {
+			
+// 						array_push($aryOf_Tmp, 0);
+			
+// 					}//for ($i = 0; $i < 4; $i++)
+			
+// 					// digit : 1
+// 					array_push($aryOf_Tmp, $l);
+					
+// 					// digit : 2
+// 					array_push($aryOf_Tmp, $k);
+// 					// 			array_push($aryOf_Tmp, 0);
+			
+// 					array_push($aryOf_Tmp, $j);
+						
+// 					// push ==> to : $aryOf_Op_Nums
+// 					array_push($aryOf_Op_Nums, $aryOf_Tmp);
+						
+// 					// $aryOf_Tmp ==> clear
+// 					$aryOf_Tmp = array();
+						
+// 				}//for ($j = 0; $j < 3; $j++)
+			
+// 			}//for ($k = 0; $k < 3; $k++)
+
+// 		}//for ($l = 0; $l < 3; $l ++) {
+		
+// 		// v-3.0
+// 		for ($k = 0; $k < 3; $k++) {
+		
+// 			for ($j = 0; $j < 3; $j++) {
+// 	// 		for ($j = 0; $j < 2; $j++) {
+// 				// 			for ($j = 0; $j < 3; $j++) {
+					
+// 	// 			// digit : 0
+// 	// 			array_push($aryOf_Tmp, $k);
+// 	// // 			array_push($aryOf_Tmp, 0);
+				
+// 				for ($i = 0; $i < 2; $i++) {
+// 	// 			for ($i = 0; $i < 3; $i++) {
+		
+// 					array_push($aryOf_Tmp, 0);
+						
+// 				}//for ($i = 0; $i < 4; $i++)
+	
+// 				// digit : 2
+// 				array_push($aryOf_Tmp, $k);
+// 				// 			array_push($aryOf_Tmp, 0);
+						
+// 				array_push($aryOf_Tmp, $j);
+					
+// 				// push ==> to : $aryOf_Op_Nums
+// 				array_push($aryOf_Op_Nums, $aryOf_Tmp);
+					
+// 				// $aryOf_Tmp ==> clear
+// 				$aryOf_Tmp = array();
+					
+// 			}//for ($j = 0; $j < 3; $j++)
+
+// 		}//for ($k = 0; $k < 3; $k++)
 			
 					
 		// v-2.0
@@ -607,15 +848,15 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 		* 		prep : 2. set of sequence nums
 		********************/
 		//code:20201015_151422
-// 		$aryOf_Op_Nums__BXX	= get_AryOf_Op_Nums__V2();
-		$aryOf_Op_Nums__BXX	= get_AryOf_Op_Nums();
+		$aryOf_Op_Nums__BXX	= get_AryOf_Op_Nums__V2();
+// 		$aryOf_Op_Nums__BXX	= get_AryOf_Op_Nums();
 		
 		//debug
 		$message = "calling ==> get_AryOf_Op_Nums__V2";
 		debug_Message($message, basename(__FILE__), __LINE__);
 
 		print_r($aryOf_Op_Nums__BXX);
-// 		return;
+		return;
 		
 
 		$lenOf_AryOf_Op_Nums__BXX = count($aryOf_Op_Nums__BXX);
