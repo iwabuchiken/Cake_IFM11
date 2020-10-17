@@ -459,7 +459,8 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 	* at : 2020/10/15 15:52:18
 	********************/
 	function conv_Hex_2_Three($num, $numOf_Digits) {
-		
+//head:20201017_135952
+//caller:20201017_135955
 		/********************
 		* step : 0
 		********************/
@@ -488,98 +489,157 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 		********************/
 		$base_num = 3;
 		
-// 		$div		= $num_tmp / $base_num;
-		$div		= (int)($num_tmp / $base_num);
-		$residue	= $num_tmp % $base_num;
+		// while
+		while ($numOf_Current_Digit - 1 < $numOf_Digits) {
 		
+			//code:20201017_135027
+	// 		$div		= $num_tmp / $base_num;
+			$div		= (int)($num_tmp / $base_num);
+			$residue	= $num_tmp % $base_num;
+			
+			//debug
+			$message = sprintf(
+							
+							"\$num_tmp = %d\n"
+							."\$base_num = %d\n"
+							."\$div = %d\n"
+							."\$residue = %d" . "\n"
+							."\$numOf_Current_Digit = %d" . "\n"
+							."\$numOf_Digits\t%d"
+					
+							, $num_tmp
+							, $base_num
+							, $div
+							, $residue
+							, $numOf_Current_Digit
+							, $numOf_Digits
+						
+						);
+			
+			debug_Message($message, basename(__FILE__), __LINE__);
+	
+			/********************
+			* j1
+			********************/
+			if ($div == 0) {
+				/********************
+				 * j1 : Y : 1
+				 ********************/
+				$aryOf_Digits[$numOf_Current_Digit] = $residue;
+				
+				//debug
+				$message	= "(j1 : Y : 1)";
+				$message	.= "\n";
+				
+				$message	.= "\$aryOf_Digits : " . join("-", $aryOf_Digits);
+				$message	.= "\n";
+				
+				debug_Message($message, basename(__FILE__), __LINE__);
+	
+				/********************
+				 * j1 : Y : 2
+				 ********************/
+				$numOf_Current_Digit	+= 1;
+	
+				//debug
+				$message	= "(j1 : Y : 2)";
+				$message	.= "\n";
+					
+				$message	.= "\$numOf_Current_Digit ==> incremented : $numOf_Current_Digit";
+				$message	.= "\n";
+					
+				debug_Message($message, basename(__FILE__), __LINE__);
+					
+				//debug
+				$message	= "breaking the while loop...";
+				$message	.= "\n";
+					
+				debug_Message($message, basename(__FILE__), __LINE__);
+				
+				break;
+				
+			} else {//if ($div == 0)
+				/********************
+				 * j1 : N : 1
+				 ********************/
+				$aryOf_Digits[$numOf_Current_Digit] = $residue;
+					
+				//debug
+				$message	= "(j1 : N : 1)";
+				$message	.= "\n";
+					
+				$message	.= "\$aryOf_Digits : " . join("-", $aryOf_Digits);
+				$message	.= "\n";
+					
+				debug_Message($message, basename(__FILE__), __LINE__);
+	
+				/********************
+				 * j1 : N : 2
+				 * 		target ==> update
+				 ********************/			
+				$num_tmp	= $div;
+	
+				//debug
+				$message	= "(j1 : N : 2)";
+				$message	.= "\n";
+				
+				$message	.= "\$num_tmp ==> updated : $num_tmp";
+				$message	.= "\n";
+				
+				debug_Message($message, basename(__FILE__), __LINE__);
+	
+				/********************
+				 * j1 : N : 3
+				 * 		index ==> increment
+				 ********************/
+				$numOf_Current_Digit	+= 1;
+	
+				//debug
+				$message	= "(j1 : N : 3)";
+				$message	.= "\n";
+					
+				$message	.= "\$numOf_Current_Digit ==> updated : $numOf_Current_Digit";
+				$message	.= "\n";
+					
+				debug_Message($message, basename(__FILE__), __LINE__);
+					
+						
+			}//if ($div == 0)
+	
+			
+		}//while ($numOf_Current_Digit - 1 < $numOf_Digits) {
+	
 		//debug
-		$message = sprintf("\$num_tmp = %d\n\$base_num = %d\n\$div = %d\n\$residue = %d\n\$numOf_Current_Digit = %d"
-						, $num_tmp, $base_num, $div, $residue, $numOf_Current_Digit);
+		$message	= "post while loop : \$numOf_Current_Digit\t$numOf_Current_Digit";
+		$message	.= "\n";
+			
 		debug_Message($message, basename(__FILE__), __LINE__);
 
 		/********************
-		* j1
-		********************/
-		if ($div == 0) {
-			/********************
-			 * j1 : Y : 1
-			 ********************/
-			$aryOf_Digits[$numOf_Current_Digit] = $residue;
-			
-			//debug
-			$message	= "(j1 : Y : 1)";
-			$message	.= "\n";
-			
-			$message	.= "\$aryOf_Digits : " . join("-", $aryOf_Digits);
-			$message	.= "\n";
-			
-			debug_Message($message, basename(__FILE__), __LINE__);
+		 * step : B1
+		 * 		reverse
+		 ********************/
+		$aryOf_Digits__Final = array_reverse($aryOf_Digits);
 
-			/********************
-			 * j1 : Y : 2
-			 ********************/
-			$numOf_Current_Digit	+= 1;
-
-			//debug
-			$message	= "(j1 : Y : 2)";
-			$message	.= "\n";
-				
-			$message	.= "\$numOf_Current_Digit ==> incremented : $numOf_Current_Digit";
-			$message	.= "\n";
-				
-			debug_Message($message, basename(__FILE__), __LINE__);
-				
-			//debug
-			break;
+		//debug
+		$message	= "\n";
+		
+		$message	.= "\$aryOf_Digits\t" . join("-", $aryOf_Digits);
+		$message	.= "\n";
 			
-		} else {//if ($div == 0)
-			/********************
-			 * j1 : N : 1
-			 ********************/
-			$aryOf_Digits[$numOf_Current_Digit] = $residue;
-				
-			//debug
-			$message	= "(j1 : N : 1)";
-			$message	.= "\n";
-				
-			$message	.= "\$aryOf_Digits : " . join("-", $aryOf_Digits);
-			$message	.= "\n";
-				
-			debug_Message($message, basename(__FILE__), __LINE__);
-
-			/********************
-			 * j1 : N : 2
-			 * 		target ==> update
-			 ********************/			
-			$num_tmp	= $div;
-
-			//debug
-			$message	= "(j1 : N : 2)";
-			$message	.= "\n";
+		$message	.= "\$aryOf_Digits__Final\t" . join("-", $aryOf_Digits__Final);
+		$message	.= "\n";
 			
-			$message	.= "\$num_tmp ==> updated : $num_tmp";
-			$message	.= "\n";
-			
-			debug_Message($message, basename(__FILE__), __LINE__);
-
-			/********************
-			 * j1 : N : 3
-			 * 		index ==> increment
-			 ********************/
-			$numOf_Current_Digit	+= 1;
-
-			//debug
-			$message	= "(j1 : N : 3)";
-			$message	.= "\n";
-				
-			$message	.= "\$numOf_Current_Digit ==> updated : $numOf_Current_Digit";
-			$message	.= "\n";
-				
-			debug_Message($message, basename(__FILE__), __LINE__);
-				
-					
-		}//if ($div == 0)
-		;
+		debug_Message($message, basename(__FILE__), __LINE__);
+		
+		/********************
+		 * return
+		 ********************/
+		// set : val
+		$valOf_Ret = $aryOf_Digits__Final;
+		
+		// return
+		return $valOf_Ret;
 		
 	}//function conv_Hex_2_Three($num) {
 
@@ -598,6 +658,25 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 		$numOf_Digits = 4;
 // 		$numOf_Digits = 3;
 		
+		$numOf_Base		= 3;
+		
+		$numOf_Max		= pow($numOf_Base, $numOf_Digits);
+		
+		//debug
+		$message	= "\n";
+		
+		$message	.= sprintf(
+					
+					"\$numOf_Base\t%d\n\$numOf_Digits\t%d\n\$numOf_Max\t%d\n"
+				
+					, $numOf_Base, $numOf_Digits, $numOf_Max
+				
+				);
+		
+		$message	.= "\n";
+			
+		debug_Message($message, basename(__FILE__), __LINE__);
+				
 		/********************
 		 * step : 2
 		 * 		gen
@@ -617,12 +696,29 @@ pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\37#26_D7QD
 		$maxOf_Num_Val	= 2;
 
 		// v-6.0	// 20201016_145540
-		$num			= 11;
+		$num			= 21;
+// 		$num			= 11;
 		$numOf_Digits	= 4;
 		
-		$strOf_Num = conv_Hex_2_Three($num, $numOf_Digits);
+		//caller:20201017_135955
+		$valOf_Ret__Rcvd = conv_Hex_2_Three($num, $numOf_Digits);
+// 		$strOf_Num = conv_Hex_2_Three($num, $numOf_Digits);
+
+		//debug
+		$message	= "\n";
 		
-// 		// v-5.0	// 20201016_143012
+		$message	.= sprintf(
+					
+					"\$num\t%d\n\$numOf_Digits\t%d\n\$valOf_Ret__Rcvd\t%s"
+					, $num, $numOf_Digits
+					, join("-", $valOf_Ret__Rcvd)
+				
+				);
+		
+		$message	.= "\n";
+			
+		debug_Message($message, basename(__FILE__), __LINE__);
+		// 		// v-5.0	// 20201016_143012
 // 		while ($i <= $maxOf_Num_Val) {
 			
 // 			while ($j <= $maxOf_Num_Val) {
