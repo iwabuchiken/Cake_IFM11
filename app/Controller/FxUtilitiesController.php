@@ -1000,6 +1000,614 @@ class FxUtilitiesController extends AppController {
 		
 	}//util_3__Gen_Trading_Result_List
 	
+	public function util_3__Gen_Trading_Result_List__V2() {
+		//caller:20201030_134507
+		//head:20201030_134523
+		//wl:20201030_134526
+		/********************
+		* step : 0
+		* 	vars
+		********************/
+		/********************
+		* step : 0.1
+		* 	params
+		********************/
+		//_20200509_123705:tmp
+		@$query_Param_Dpath_File_Tickets_Data = $this->request->query[CONS::$param_Dpath_File_Tickets_Data];
+		
+		@$query_Param_Fname_File_Tickets_Data = $this->request->query[CONS::$param_Fname_File_Tickets_Data];
+		
+		// statement file : file name
+		@$query_Param_Fname_File_Statement = $this->request->query[CONS::$param_Fname_File_Statement];
+		
+		// statement file : dpath
+		@$query_Param_Dpath_File_Statement = $this->request->query[CONS::$param_Dpath_File_Statement];
+		
+		/********************
+		* step : 1
+		* 	from tickets data ==> list of tickets
+		********************/
+		$dpath_File_Tickets_Data = "";
+		$fname_File_Tickets_Data = "";
+		
+		if ($query_Param_Dpath_File_Tickets_Data == null) {
+		
+			$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
+					. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+					. "\\Files\\Logs\\"
+					. "\\" . "storage_Logs" . "\\"
+							. "20200505_140459[eap-2.id-1].[AUDJPY-5].dir";
+				
+		} else {
+		
+			$dpath_File_Tickets_Data = $query_Param_Dpath_File_Tickets_Data;
+			
+		}//if ($query_Param_Dpath_File_Tickets_Data == null)
+		
+		
+// 		$dpath_File_Tickets_Data = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes" 
+// 								. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+// 								. "\\Files\\Logs\\"
+// 								. "20200505_140459[eap-2.id-1].[AUDJPY-5].dir";
+
+		if ($query_Param_Dpath_File_Tickets_Data == null) {
+		
+			$fname_File_Tickets_Data = "[ea-4_tester-1].(20200505_140459).(tickets-data).log";
+		
+		} else {
+		
+			$fname_File_Tickets_Data = $query_Param_Fname_File_Tickets_Data;
+				
+		}//if ($query_Param_Dpath_File_Tickets_Data == null)
+		
+// 		$fname_File_Tickets_Data = "[ea-4_tester-1].(20200505_140459).(tickets-data).log";
+		
+		
+		//debug:20201030_135128
+		debug("\$fname_File_Tickets_Data ==> " . $fname_File_Tickets_Data);
+		debug("\$dpath_File_Tickets_Data ==> " . $dpath_File_Tickets_Data);
+		
+		$tmp_File_Exists = file_exists(join(DS, array($dpath_File_Tickets_Data, $fname_File_Tickets_Data)));
+		
+		debug("file exists? ==> " . (($tmp_File_Exists == true) ? "yes" : "no"));
+		
+// 		return ;
+		
+		// get list
+		$lo_Tickets_From_Tickets_Data_File = 
+				LibFxAdmin::get_LO_Tickets_From_Tickets_Data_File(
+							$dpath_File_Tickets_Data
+							, $fname_File_Tickets_Data
+						);
+
+		//debug:20201030_141336
+// 		debug("\$lo_Tickets_From_Tickets_Data_File[0] ==> " . $lo_Tickets_From_Tickets_Data_File[0]);
+		debug("\$lo_Tickets_From_Tickets_Data_File[0] ==> ");
+		debug($lo_Tickets_From_Tickets_Data_File[0]);
+
+		// get : col names
+		$aryOf_Col_Names_From_Tickets_Data_File =
+				LibFxAdmin::get_LO_Tickets_Column_Names_From_Tickets_Data_File(
+						$dpath_File_Tickets_Data
+						, $fname_File_Tickets_Data
+				);
+		
+		//debug:20201030_142625
+		debug("\$aryOf_Col_Names_From_Tickets_Data_File ==> ");
+		debug($aryOf_Col_Names_From_Tickets_Data_File);
+		
+		return;
+		
+		//next:20201030_143116
+		/********************
+		 * step : 2
+		 * 	from report file ==> list of tickets
+		 ********************/
+		// paths
+		if ($query_Param_Dpath_File_Tickets_Data == null) {
+		
+			$dpath_File_Statement = CONS::$dpath_File_Detailed_Statement;
+		
+		} else if ($query_Param_Dpath_File_Tickets_Data == "") {
+		
+			debug("\$query_Param_Dpath_File_Tickets_Data ==> blank");
+			
+			$dpath_File_Statement = CONS::$dpath_File_Detailed_Statement;
+		
+		} else {
+		
+			debug("\$query_Param_Dpath_File_Tickets_Data ==> not null : string len = " . count($query_Param_Dpath_File_Statement));
+			
+			$dpath_File_Statement = $query_Param_Dpath_File_Statement;
+
+		}//if ($query_Param_Dpath_File_Tickets_Data == null)
+		
+		//debug
+		$string_tmp = "[" . Utils::get_CurrentTime() . " / "
+				. basename(__FILE__) . ":" . __LINE__ . "]";
+		
+		$string_tmp .= "\n";
+		
+		$string_tmp .= "\$dpath_File_Statement ==> set to : $dpath_File_Statement";
+		
+		debug($string_tmp);
+		
+// 		$dpath_File_Statement = CONS::$dpath_File_Detailed_Statement;
+// 		$dpath_File_Statement = "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
+// 				. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+// 				. "\\Logs\\logs_trading";
+		
+
+		
+		if ($query_Param_Fname_File_Statement == null) {
+		
+			$fname_File_Statement = "DetailedStatement.[20200516_122618].htm";
+// 			$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
+		
+		} else {//$query_Param_Fname_File_Statement
+		
+			$fname_File_Statement = $query_Param_Fname_File_Statement;
+		
+		}//if ($query_Param_Fname_File_Statement == null)
+		
+// 		$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
+		
+		
+		$lo_Tickets_From_Statement_File = 
+				Libfx::get_ListOf_Orders_From_Statement__ListOf_Tokens(
+						$dpath_File_Statement
+						, $fname_File_Statement
+						);
+		
+		
+		/********************
+		 * step : 2 : 2
+		 * 	from report file ==> account id
+		 ********************/
+		
+		$strOf_Account_Id_From_Statement_File =
+				Libfx::get_Account_Id_From_Statement__ListOf_Tokens(
+						$dpath_File_Statement
+						, $fname_File_Statement
+				);
+		
+		debug("\$strOf_Account_Id_From_Statement_File : " . $strOf_Account_Id_From_Statement_File);
+		
+
+// 		return ;
+		
+		/********************
+		 * step : 3
+		 * 		build : combined list
+		 ********************/
+		/********************
+		 * step : 3 : 0
+		 * 		for-loop : Ticket data file
+		 ********************/
+		$cntOf_Ticket_Num_Match = 0;
+		
+		// list
+		$lo_Line_Combined = array();
+		
+
+// 		$cntOf_Test = 0;
+		
+// 		$maxOf_CntOf_Test = 1;
+		
+		foreach ($lo_Tickets_From_Tickets_Data_File as $line_Tickets_Data_File) {
+
+
+// 			if ($cntOf_Test < $maxOf_CntOf_Test) {
+			
+// 				debug("\$line_Tickets_Data_File ==>");
+				
+// 				debug($line_Tickets_Data_File);
+				
+// 				// count
+// 				$cntOf_Test += 1;
+				
+// 			}//if ($cntOf_Test < $maxOf_CntOf_Test)
+				
+			/********************
+			 * step : 3 : 1
+			 * 		get : ticket num
+			 ********************/
+			$n1 = $line_Tickets_Data_File[0];
+			
+			/********************
+			 * step : 3 : 2
+			 * 		for-loop : report list
+			 ********************/
+			foreach ($lo_Tickets_From_Statement_File as $line_Statement_File) {
+				/********************
+				 * step : 3 : 2.1
+				 * 		ticket num
+				 ********************/
+				$n2 = $line_Statement_File[0];
+			
+				/********************
+				 * step : 3 : 2.2 : j1
+				 * 		compare : n1, n2
+				 ********************/
+				if ($n1 == $n2) {
+					/********************
+					 * step : 3 : 2.2 : j1 : Y
+					 * 		n1 = n2
+					 ********************/
+// 					debug("match : Tickets data : $n1 / Statement file : $n2");
+					
+					// count
+					$cntOf_Ticket_Num_Match += 1;
+					
+					/********************
+					 * step : 3 : 2.2 : j1 : Y : 0.1
+					 * 		modify : $line_Statement_File ==> price string
+					 ********************/
+					//ref https://www.w3schools.com/PHP/func_string_str_replace.asp
+					$line_Statement_File[10] = intval(str_replace(" ", "", $line_Statement_File[10]));
+// 					$line_Statement_File[10] = str_replace(" ", "", $line_Statement_File[10]);
+					
+					/********************
+					 * step : 3 : 2.2 : j1 : Y : 1
+					 * 		build : combined line
+					 ********************/
+					//_20200506_133102:next
+					$line_Combined = array_merge($line_Tickets_Data_File, $line_Statement_File);
+					
+					/********************
+					 * step : 3 : 2.2 : j1 : Y : 2
+					 * 		append
+					 ********************/
+					array_push($lo_Line_Combined, $line_Combined);
+					
+					break;
+				
+				} else { }//if ($n1 == $n2)
+				
+			}//foreach ($lo_Tickets_From_Statement_File as $line_Statement_File)
+			
+		}//foreach ($lo_Tickets_From_Tickets_Data_File as $line_Tickets_Data_File)
+		
+		//debug
+		debug("\$cntOf_Ticket_Num_Match : " . $cntOf_Ticket_Num_Match);
+	
+		debug("\$lo_Line_Combined[0] =>");
+		debug($lo_Line_Combined[0]);
+		
+		/********************
+		 * step : 3a
+		 * 		gen stats data
+		 ********************/
+		/********************
+		 * step : 3a : 1
+		 * 		get data
+		 ********************/
+		
+// 		* 		$aryOf_Stats_Data
+	// 		* 		total
+	// 		* 		cntOf_Order_Plus
+	// 		* 		cntOf_Order_Minus
+		//caller:20200924_115443
+		$valOf_Ret_Rcvd = $this->util_3__Gen_Trading_Result_List__Gen_Stats($lo_Line_Combined);
+		
+		/********************
+		 * step : 3a : 2
+		 * 		unpack
+		 ********************/
+		$numOf_Total			= $valOf_Ret_Rcvd['total'];
+		$cntOf_Order_Minus		= $valOf_Ret_Rcvd['cntOf_Order_Minus'];
+		$cntOf_Order_Plus		= $valOf_Ret_Rcvd['cntOf_Order_Plus'];
+		
+		// BB.loc : count of orders
+		$aryOf_CntOf_Order_Minus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Minus_BBLoc'];
+		$aryOf_CntOf_Order_Plus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Plus_BBLoc'];
+
+		
+		debug("\$aryOf_CntOf_Order_Minus_BBLoc =>");
+		debug($aryOf_CntOf_Order_Minus_BBLoc);
+		
+		// BB.loc : sums
+		$aryOf_SumOf_Orders_Minus	 = $valOf_Ret_Rcvd['aryOf_SumOf_Orders_Minus'];
+		$aryOf_SumOf_Orders_Plus	 = $valOf_Ret_Rcvd['aryOf_SumOf_Orders_Plus'];
+// 		$aryOf_Stats_Data['aryOf_SumOf_Orders_Minus']
+
+		
+		debug("\$aryOf_SumOf_Orders_Minus =>");
+		debug($aryOf_SumOf_Orders_Minus);
+		
+		
+		/********************
+		 * step : 4
+		 * 		write to file
+		 ********************/
+		/********************
+		 * step : 4 : 1
+		 * 		prep : meta info
+		 ********************/
+		//_20200507_165449:tmp
+		$lo_Lines_Meta_Info = 
+				LibFxAdmin::get_Meta_Info_From_Tickets_Data_File(
+						$dpath_File_Tickets_Data
+						, $fname_File_Tickets_Data
+						);
+
+// 		//debug
+// 		debug("\$lo_Lines_Meta_Info =>");
+// 		debug($lo_Lines_Meta_Info);
+		
+		/********************
+		 * step : 4 : 2
+		 * 		file : open
+		 ********************/
+		$tlabel = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
+		
+		$fname_File_Combined_Data = "[ea-4_tester-1].(20200507_140530).(combined-data).($tlabel).dat";
+		
+		$fpath_File_Combined_Data = join(DS, array($dpath_File_Tickets_Data, $fname_File_Combined_Data));
+		
+		$fout_File_Combined_Data = fopen($fpath_File_Combined_Data, "w");
+		
+		/********************
+		 * step : 4 : 3
+		 * 		file : write
+		 ********************/
+		/********************
+		 * step : 4 : 3.1
+		 * 		meta
+		 ********************/
+		/********************
+		 * step : 4 : 3.1 : 1
+		 * 		basics
+		 ********************/
+		$string_tmp = "[" . Utils::get_CurrentTime() 
+					. " / "
+					. basename(__FILE__)
+					. ":"
+					. __LINE__ . "]";
+		
+		$string_tmp .= "\n";
+		
+		fwrite($fout_File_Combined_Data, $string_tmp);
+		
+		foreach ($lo_Lines_Meta_Info as $line) {
+		
+			fwrite($fout_File_Combined_Data, $line);
+			
+			fwrite($fout_File_Combined_Data, "\n");
+			
+		}//foreach ($lo_Lines_Meta_Info as $line)
+
+		/********************
+		 * step : 4 : 3.1 : 2
+		 * 		meta : combined file name
+		 ********************/
+		$string_tmp = "combined file(this)\t$fname_File_Combined_Data";
+		$string_tmp .= "\n";
+		
+		$string_tmp .= "dpath\t$dpath_File_Tickets_Data";
+		$string_tmp .= "\n";
+		
+		// file path
+// 		fwrite($fout_File_Combined_Data, "this file\t$fname_File_Combined_Data");
+// 		fwrite($fout_File_Combined_Data, "combined file(this)\t$fname_File_Combined_Data");
+// 		fwrite($fout_File_Combined_Data, "\n");
+		
+// 		fwrite($fout_File_Combined_Data, "dpath\t$dpath_File_Tickets_Data");
+// 		fwrite($fout_File_Combined_Data, "\n");
+		
+// 		// separator
+// 		fwrite($fout_File_Combined_Data, "\n");
+		
+		/********************
+		 * step : 4 : 3.1 : 2
+		 * 		meta : "buy" or "sell" (from report file)
+		 ********************/
+		
+// 		debug($lo_Line_Combined[0]);
+
+		$string_tmp .= "order_type\t" . $lo_Line_Combined[0][100];
+		$string_tmp .= "\n";
+		
+// 		fwrite($fout_File_Combined_Data, "order_type\t" . $lo_Line_Combined[0][100]);
+		fwrite($fout_File_Combined_Data, "\n");
+
+		/********************
+		 * step : 4 : 3.1 : 3
+		 * 		meta : account id
+		 ********************/
+		
+		$string_tmp .= "account : \t" . $strOf_Account_Id_From_Statement_File;
+		$string_tmp .= "\n";
+		
+		/********************
+		 * step : 4 : 3.1 : 4
+		 * 	separator lines
+		 ********************/
+		// separator : 1 lines
+		$string_tmp .= "\n";
+// 		fwrite($fout_File_Combined_Data, "\n");
+		fwrite($fout_File_Combined_Data, $string_tmp);
+		
+		/********************
+		 * step : 4 : 3.1 : 3
+		 * 	column names
+		 ********************/
+		
+		$string_tmp = "s.n.\tticket-num\tcurr.datetime\tClose.-12\tClose.-11\tClose.-10\tClose.-9\tClose.-8\tClose.-7\tClose.-6\tClose.-5\tClose.-4\tClose.-3\tClose.-2\tClose.-1\tu/d.-12\tu/d.-11\tu/d.-10\tu/d.-9\tu/d.-8\tu/d.-7\tu/d.-6\tu/d.-5\tu/d.-4\tu/d.-3\tu/d.-2\tu/d.-1\twidth.-12\twidth.-11\twidth.-10\twidth.-9\twidth.-8\twidth.-7\twidth.-6\twidth.-5\twidth.-4\twidth.-3\twidth.-2\twidth.-1\tw-level.-12\tw-level.-11\tw-level.-10\tw-level.-9\tw-level.-8\tw-level.-7\tw-level.-6\tw-level.-5\tw-level.-4\tw-level.-3\tw-level.-2\tw-level.-1\tMFI.-12\tMFI.-11\tMFI.-10\tMFI.-9\tMFI.-8\tMFI.-7\tMFI.-6\tMFI.-5\tMFI.-4\tMFI.-3\tMFI.-2\tMFI.-1\tRSI.-12\tRSI.-11\tRSI.-10\tRSI.-9\tRSI.-8\tRSI.-7\tRSI.-6\tRSI.-5\tRSI.-4\tRSI.-3\tRSI.-2\tRSI.-1\tForce.-12\tForce.-11\tForce.-10\tForce.-9\tForce.-8\tForce.-7\tForce.-6\tForce.-5\tForce.-4\tForce.-3\tForce.-2\tForce.-1\tBB-loc.-12\tBB-loc.-11\tBB-loc.-10\tBB-loc.-9\tBB-loc.-8\tBB-loc.-7\tBB-loc.-6\tBB-loc.-5\tBB-loc.-4\tBB-loc.-3\tBB-loc.-2\tBB-loc.-1\tticket\topen-time\ttype\tsize\titem\tprice\tSL\tTP\tclose-time\tprice\tprofit";
+
+		fwrite($fout_File_Combined_Data, $string_tmp);
+		fwrite($fout_File_Combined_Data, "\n");
+		
+		/********************
+		 * step : 4 : 3.2
+		 * 		body
+		 ********************/
+		$cntOf_Loop = 1;
+		
+		// string for writing
+		// init string
+		$string_tmp = "";
+		
+		foreach ($lo_Line_Combined as $line) {
+		
+			// serial num
+			$string_tmp .= strval($cntOf_Loop) . "\t";
+// 			fwrite($fout_File_Combined_Data, strval($cntOf_Loop) . "\t");
+// // 			fwrite($fout_File_Combined_Data, strval($cntOf_Loop));
+			
+			$string_tmp .= join("\t", $line);
+			
+// 			fwrite($fout_File_Combined_Data, join("\t", $line));
+// // 			fwrite($fout_File_Combined_Data, $line);
+			
+			// separator line
+			$string_tmp .= "\n";
+// 			fwrite($fout_File_Combined_Data, "\n");
+			
+			// counter
+			$cntOf_Loop += 1;
+						
+		}//foreach ($lo_Line_Combined as $line)
+		
+		// write : string
+		fwrite($fout_File_Combined_Data, $string_tmp);
+		
+		/********************
+		 * step : 3.3
+		 * 		stats data
+		 ********************/
+		
+		/********************
+		 * step : 3.3 : 1
+		 * 		total, plus, minus
+		 ********************/
+		// flash
+		$string_tmp = "";
+		
+		// separator
+		$string_tmp .= "\n";
+		$string_tmp .= "\n";
+		
+		// total
+		$string_tmp .= "total=\t$numOf_Total";
+		$string_tmp .= "\n";
+		
+		// minus
+		$string_tmp .= "loss=\t$cntOf_Order_Minus";
+		$string_tmp .= "\n";
+		
+		// plus
+		$string_tmp .= "gain=\t$cntOf_Order_Plus";
+		$string_tmp .= "\n";
+
+		// separator
+		$string_tmp .= "\n";
+
+		/********************
+		 * step : 3.3 : 2
+		 * 		BB.loc ==> count
+		 ********************/
+		
+		debug("\$aryOf_CntOf_Order_Minus_BBLoc ==>");
+		debug($aryOf_CntOf_Order_Minus_BBLoc);
+		
+		
+		$lenOf_AryOf_CntOf_Order_Minus_BBLoc	= count($aryOf_CntOf_Order_Minus_BBLoc);
+
+		// column names
+		$string_tmp	.= "BB.loc\tloss(<0)\tgain(>=0)";
+		$string_tmp	.= "\n";
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			// get entry
+			$cntOf_BBLoc_Minus		= $aryOf_CntOf_Order_Minus_BBLoc[$i];
+			$cntOf_BBLoc_Plus		= $aryOf_CntOf_Order_Plus_BBLoc[$i];
+			
+			// string
+			$string_tmp		.= ($i + 1) . "\t" . $cntOf_BBLoc_Minus . "\t" . $cntOf_BBLoc_Plus;
+			
+			$string_tmp		.= "\n";
+			
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		// separator
+		$string_tmp .= "\n";
+		$string_tmp .= "\n";
+
+		/********************
+		 * step : 3.3 : 3
+		 * 		BB.loc ==> sums
+		 ********************/
+		
+		// column names
+		$string_tmp	.= "BB.loc\tsum(loss)\tsum(gain)";
+		$string_tmp	.= "\n";
+		
+		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+		
+			// get entry
+			$sumOf_BBLoc_Minus		= $aryOf_SumOf_Orders_Minus[$i];
+			$sumOf_BBLoc_Plus		= $aryOf_SumOf_Orders_Plus[$i];
+				
+			// string
+			$string_tmp		.= ($i + 1) . "\t" . $sumOf_BBLoc_Minus . "\t" . $sumOf_BBLoc_Plus;
+				
+			$string_tmp		.= "\n";
+				
+		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		// separator
+		$string_tmp .= "\n";
+		$string_tmp .= "\n";
+		
+		// write : string
+		fwrite($fout_File_Combined_Data, $string_tmp);
+		
+		/********************
+		 * step : 4 : 4
+		 * 		file : close
+		 ********************/
+		fclose($fout_File_Combined_Data);
+		
+		
+		/********************
+		 * set : view vals : 1
+		 * 		current time
+		 ********************/
+		$time_Current = Utils::get_CurrentTime();
+		
+		$this->set("time_Current", $time_Current);
+		
+		/********************
+		 * set : view vals : 2
+		 * 		source file
+		********************/
+		$tmp_str = "\$dpath_File_Tickets_Data : $dpath_File_Tickets_Data";
+		$tmp_str .= "<br>";
+		
+		$tmp_str .= "\$fname_File_Tickets_Data : $fname_File_Tickets_Data";
+		$tmp_str .= "<br>";
+		
+// 		$tmp_str_2 = "\$fpath_File_Combined_Data : $fpath_File_Combined_Data";
+		$tmp_str_2 = $fpath_File_Combined_Data;
+// 		$tmp_str_2 .= "<br>";
+// 		$tmp_str .= "\$fpath_File_Combined_Data : $fpath_File_Combined_Data";
+// 		$tmp_str .= "<br>";
+		
+		
+		$this->set("message", $tmp_str);
+		$this->set("message_2", $tmp_str_2);
+		
+		/********************
+		 * set : layout, view
+		 ********************/
+		$this->layout = "plain";
+		
+		$this -> render('FxUtilities/util_3___gen__trading__result__list.ctp');
+		
+	}//public function util_3__Gen_Trading_Result_List__V2
+	
 	/********************
 	 * util_2__Extract_Ticket_Numbers
 	 * 	at : 

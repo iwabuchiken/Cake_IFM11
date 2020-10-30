@@ -1435,6 +1435,125 @@ class LibFxAdmin {
 	}//public static function get_LO_Tickets_From_Tickets_Data_File
 
 	/********************
+	 * get_LO_Tickets_From_Tickets_Data_File
+	 * 
+	 * 	at : 2020/05/06 12:30:57
+	 *
+	 * @return :
+	 *		array(
+				(int) 0 => array(
+					(int) 0 => '24877371',
+					(int) 1 => '2020.05.05 08:10:00',
+					(int) 2 => '68.688',
+					(int) 3 => '68.663',
+					(int) 4 => '68.702',
+					...
+					(int) 30 => '3',
+					(int) 31 => '3'
+		
+	 ********************/
+	public static function get_LO_Tickets_Column_Names_From_Tickets_Data_File(
+				
+			$_dpath_File_Tickets_Data
+			, $_fname_File_Tickets_Data
+
+	) {
+		//caller:20201030_142117
+		//head:20201030_142133
+		//wl:20201030_142137
+		/********************
+		 * step : 1 : 1
+		 * 		prep : vars
+		 ********************/
+		$lineOf_Col_Names = array();
+		
+		/********************
+		 * step : 2
+		 * 		file : load lines
+		 ********************/
+		/********************
+		 * step : 2 : 1
+		 * 		path
+		 ********************/
+		$fpath = join(DS, array($_dpath_File_Tickets_Data, $_fname_File_Tickets_Data));
+		
+		/********************
+		 * step : 2 : 2
+		 * 		file exists
+		 ********************/
+		$result_b = file_exists($fpath);
+		
+		// open file
+		if ($result_b == false) {
+			
+			debug("file ==> NOT exist : $fpath");
+			
+			return false;
+			
+		} else {//if ($result_b == false) {
+			
+			debug("file ==> exists : $fpath");
+				
+			
+		}//if ($result_b == false) {
+		
+		/********************
+		 * step : 2 : 3
+		 * 		load : lines
+		 ********************/
+		$linesOf_File_Content = file($fpath);
+		
+		/********************
+		 * step : 3
+		 * 		lines == filter
+		********************/
+		/********************
+		 * step : 3 : 1
+		 * 		for-loop
+		********************/
+		$lo_LineOf_Ticket_Data = array();
+		
+		$strOf_Patterns = '/^\[.+\]\tticket/';
+// 		$strOf_Patterns = '/^\[.+\]\t\d+\t/';
+		
+		foreach ($linesOf_File_Content as $line) {
+			/********************
+			 * step : 3 : 1
+			 * 		for-loop
+			 ********************/
+			$res_i = preg_match($strOf_Patterns, $line, $matches);
+			
+			if ($res_i >= 1) {
+			
+				// save val
+				$lineOf_Col_Names = $line;
+				
+				break;
+				
+			}//if (Utils::startsWith($line, $needle))
+			;
+			
+			
+		}//foreach ($linesOf_File_Content as $line) {
+		
+		debug("count(\$lo_LineOf_Ticket_Data) : " . count($lo_LineOf_Ticket_Data));
+		
+		debug("\$lineOf_Col_Names => ");
+		debug($lineOf_Col_Names);
+		
+		/********************
+		 * step : 5
+		 * 		return
+		 ********************/
+		// set val
+		$valOf_Ret = $lineOf_Col_Names;
+		
+		// return
+		return $valOf_Ret;
+		
+	}//get_LO_Tickets_Column_Names_From_Tickets_Data_File
+
+	/********************
 	 * get_Meta_Info_From_Tickets_Data_File
 	 *
 	 * 	at : 2020/05/07 16:58:26
