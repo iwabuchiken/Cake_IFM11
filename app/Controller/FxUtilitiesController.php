@@ -1027,6 +1027,10 @@ class FxUtilitiesController extends AppController {
 		* step : 1
 		* 	from tickets data ==> list of tickets
 		********************/
+		/********************
+		* step : 1 : 1
+		* 	list of tickets
+		********************/
 		$dpath_File_Tickets_Data = "";
 		$fname_File_Tickets_Data = "";
 		
@@ -1085,19 +1089,37 @@ class FxUtilitiesController extends AppController {
 		debug("\$lo_Tickets_From_Tickets_Data_File[0] ==> ");
 		debug($lo_Tickets_From_Tickets_Data_File[0]);
 
+		/********************
+		 * step : 1 : 2
+		 * 	col names
+		 ********************/
+		//code:20201031_135338
 		// get : col names
 		$aryOf_Col_Names_From_Tickets_Data_File =
 				LibFxAdmin::get_LO_Tickets_Column_Names_From_Tickets_Data_File(
 						$dpath_File_Tickets_Data
 						, $fname_File_Tickets_Data
 				);
-		
+
 		//debug:20201030_142625
-		debug("\$aryOf_Col_Names_From_Tickets_Data_File ==> ");
+// 		debug("\$aryOf_Col_Names_From_Tickets_Data_File ==> ");
+		debug("\$aryOf_Col_Names_From_Tickets_Data_File ==> " . $aryOf_Col_Names_From_Tickets_Data_File);
 		debug($aryOf_Col_Names_From_Tickets_Data_File);
 		
-		return;
+		// explode
+		$tokenOf_Col_Names = explode("\t", $aryOf_Col_Names_From_Tickets_Data_File);
 		
+		debug("\$tokenOf_Col_Names =>");
+		debug($tokenOf_Col_Names);
+		
+		// slice
+		$tokenOf_Col_Names__Target	= array_slice($tokenOf_Col_Names, 1, count($tokenOf_Col_Names) - 2);
+		
+		debug("\$tokenOf_Col_Names__Target =>");
+		debug($tokenOf_Col_Names__Target);
+		
+// 		return;
+
 		//next:20201030_143116
 		/********************
 		 * step : 2
@@ -1137,7 +1159,9 @@ class FxUtilitiesController extends AppController {
 // 				. "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
 // 				. "\\Logs\\logs_trading";
 		
-
+		//debug:20201031_140015
+// 		return;
+		
 		
 		if ($query_Param_Fname_File_Statement == null) {
 		
@@ -1151,7 +1175,13 @@ class FxUtilitiesController extends AppController {
 		}//if ($query_Param_Fname_File_Statement == null)
 		
 // 		$fname_File_Statement = "DetailedStatement.[20200506_094419].[a-j,M5].htm";
-		
+
+		$tmp_File_Exists = file_exists(join(DS, array($dpath_File_Statement, $fname_File_Statement)));
+
+		debug("file exists? ==> " . (($tmp_File_Exists == true) ? "yes" : "no"));
+
+		//debug:20201031_140350
+// 		return ;
 		
 		$lo_Tickets_From_Statement_File = 
 				Libfx::get_ListOf_Orders_From_Statement__ListOf_Tokens(
@@ -1159,6 +1189,24 @@ class FxUtilitiesController extends AppController {
 						, $fname_File_Statement
 						);
 		
+		//debug:20201031_140625
+		debug("\$lo_Tickets_From_Statement_File[0] =>");
+		debug($lo_Tickets_From_Statement_File[0]);		
+		// 		array(
+		// 				(int) 0 => '28975174',
+		// 				(int) 1 => '2020.10.29 09:10:02',
+		// 				(int) 2 => 'buy',
+		// 				(int) 3 => '1.00',
+		// 				(int) 4 => 'audjpy',
+		// 				(int) 5 => '73.762',
+		// 				(int) 6 => '73.798',
+		// 				(int) 7 => '73.948',
+		// 				(int) 8 => '2020.10.29 09:51:56',
+		// 				(int) 9 => '73.798',
+		// 				(int) 10 => '3 600'
+		// 		)		
+		
+// 		return ;
 		
 		/********************
 		 * step : 2 : 2
@@ -1273,6 +1321,13 @@ class FxUtilitiesController extends AppController {
 	
 		debug("\$lo_Line_Combined[0] =>");
 		debug($lo_Line_Combined[0]);
+		
+		//debug:20201031_142118
+		
+		
+		return ;
+		
+		//next:20201031_142359
 		
 		/********************
 		 * step : 3a

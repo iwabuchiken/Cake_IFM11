@@ -991,12 +991,23 @@ class Libfx {
 			// push
 			$tds_Item_2 = $TDs->item(2);
 				
+// 			debug("get_class(\$tds_Item_2) ==> ");
+// 			debug(get_class($tds_Item_2));
+			
+// 			debug("\$tds_Item_2 =>");
+// 			debug($tds_Item_2);
+			
 			$keyWord_Omit = "balance";
 	
 			$cond_1 = $is_Nove_Value_Numeric == true;
 				
-			$cond_2 = !($tds_Item_2->nodeValue == $keyWord_Omit);
+// 			$cond_2 = !($tds_Item_2->nodeValue == $keyWord_Omit);
+			$cond_2 = ($tds_Item_2 == null) ? true : !($tds_Item_2->nodeValue == $keyWord_Omit);
+// 			$cond_2 = ($tds_Item_2 == null) ? "\$tds_Item_2 ==> null" : !($tds_Item_2->nodeValue == $keyWord_Omit);
 	
+// 			debug("(\$cond_2) ? \"true\" : \"false\" ==> ");
+// 			debug(($cond_2) ? "true" : "false");
+			
 			if ( $cond_1 && $cond_2) {
 					
 				array_push($lo_TRs_Of_Orders, $tr);
