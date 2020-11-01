@@ -1113,6 +1113,7 @@ class FxUtilitiesController extends AppController {
 		debug($tokenOf_Col_Names);
 		
 		// slice
+		//marker:20201101_154316
 		$tokenOf_Col_Names__Target	= array_slice($tokenOf_Col_Names, 1, count($tokenOf_Col_Names) - 2);
 		
 		debug("\$tokenOf_Col_Names__Target =>");
@@ -1207,6 +1208,12 @@ class FxUtilitiesController extends AppController {
 		// 		)		
 		
 // 		return ;
+		//code:20201101_161108
+// 		// col names
+// 		Libfx::get_ListOf_Col_Names_From_Statement__ListOf_Tokens(
+// 				$dpath_File_Statement
+// 				, $fname_File_Statement
+// 		);
 		
 		/********************
 		 * step : 2 : 2
@@ -1325,7 +1332,7 @@ class FxUtilitiesController extends AppController {
 		//debug:20201031_142118
 		
 		
-		return ;
+// 		return ;
 		
 		//next:20201031_142359
 		
@@ -1342,33 +1349,34 @@ class FxUtilitiesController extends AppController {
 	// 		* 		total
 	// 		* 		cntOf_Order_Plus
 	// 		* 		cntOf_Order_Minus
-		//caller:20200924_115443
-		$valOf_Ret_Rcvd = $this->util_3__Gen_Trading_Result_List__Gen_Stats($lo_Line_Combined);
+		//code:20201101_152723
+// 		//caller:20200924_115443
+// 		$valOf_Ret_Rcvd = $this->util_3__Gen_Trading_Result_List__Gen_Stats($lo_Line_Combined);
 		
-		/********************
-		 * step : 3a : 2
-		 * 		unpack
-		 ********************/
-		$numOf_Total			= $valOf_Ret_Rcvd['total'];
-		$cntOf_Order_Minus		= $valOf_Ret_Rcvd['cntOf_Order_Minus'];
-		$cntOf_Order_Plus		= $valOf_Ret_Rcvd['cntOf_Order_Plus'];
+// 		/********************
+// 		 * step : 3a : 2
+// 		 * 		unpack
+// 		 ********************/
+// 		$numOf_Total			= $valOf_Ret_Rcvd['total'];
+// 		$cntOf_Order_Minus		= $valOf_Ret_Rcvd['cntOf_Order_Minus'];
+// 		$cntOf_Order_Plus		= $valOf_Ret_Rcvd['cntOf_Order_Plus'];
 		
-		// BB.loc : count of orders
-		$aryOf_CntOf_Order_Minus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Minus_BBLoc'];
-		$aryOf_CntOf_Order_Plus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Plus_BBLoc'];
+// 		// BB.loc : count of orders
+// 		$aryOf_CntOf_Order_Minus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Minus_BBLoc'];
+// 		$aryOf_CntOf_Order_Plus_BBLoc	 = $valOf_Ret_Rcvd['aryOf_CntOf_Order_Plus_BBLoc'];
 
 		
-		debug("\$aryOf_CntOf_Order_Minus_BBLoc =>");
-		debug($aryOf_CntOf_Order_Minus_BBLoc);
+// 		debug("\$aryOf_CntOf_Order_Minus_BBLoc =>");
+// 		debug($aryOf_CntOf_Order_Minus_BBLoc);
 		
-		// BB.loc : sums
-		$aryOf_SumOf_Orders_Minus	 = $valOf_Ret_Rcvd['aryOf_SumOf_Orders_Minus'];
-		$aryOf_SumOf_Orders_Plus	 = $valOf_Ret_Rcvd['aryOf_SumOf_Orders_Plus'];
-// 		$aryOf_Stats_Data['aryOf_SumOf_Orders_Minus']
+// 		// BB.loc : sums
+// 		$aryOf_SumOf_Orders_Minus	 = $valOf_Ret_Rcvd['aryOf_SumOf_Orders_Minus'];
+// 		$aryOf_SumOf_Orders_Plus	 = $valOf_Ret_Rcvd['aryOf_SumOf_Orders_Plus'];
+// // 		$aryOf_Stats_Data['aryOf_SumOf_Orders_Minus']
 
 		
-		debug("\$aryOf_SumOf_Orders_Minus =>");
-		debug($aryOf_SumOf_Orders_Minus);
+// 		debug("\$aryOf_SumOf_Orders_Minus =>");
+// 		debug($aryOf_SumOf_Orders_Minus);
 		
 		
 		/********************
@@ -1386,9 +1394,20 @@ class FxUtilitiesController extends AppController {
 						, $fname_File_Tickets_Data
 						);
 
-// 		//debug
+// 		//debug:20201101_152826
 // 		debug("\$lo_Lines_Meta_Info =>");
 // 		debug($lo_Lines_Meta_Info);
+// 			// 		array(
+// 			// 				(int) 0 => 'symbol	AUDJPY',
+// 			// 				(int) 1 => 'period	1',
+// 			// 				(int) 2 => 'dp	dp_2__All_True',
+// 			// 				(int) 3 => 'this file	[ea-4_tester-1].(20201029_150748).(tickets-data).log',
+// 			// 				(int) 4 => 'symbol	AUDJPY',
+// 			// 				(int) 5 => 'period	5',
+// 			// 				(int) 6 => 'dp	dp_2__All_True',
+// 			// 				(int) 7 => 'this file	[ea-4_tester-1].(20201029_150748).(tickets-data).log'
+// 			// 		)		
+// 		return ;
 		
 		/********************
 		 * step : 4 : 2
@@ -1487,8 +1506,20 @@ class FxUtilitiesController extends AppController {
 		 * step : 4 : 3.1 : 3
 		 * 	column names
 		 ********************/
+		//code:20201101_154159
+		$strOf_Col_Names__Target	= "s.n." . "\t";
 		
-		$string_tmp = "s.n.\tticket-num\tcurr.datetime\tClose.-12\tClose.-11\tClose.-10\tClose.-9\tClose.-8\tClose.-7\tClose.-6\tClose.-5\tClose.-4\tClose.-3\tClose.-2\tClose.-1\tu/d.-12\tu/d.-11\tu/d.-10\tu/d.-9\tu/d.-8\tu/d.-7\tu/d.-6\tu/d.-5\tu/d.-4\tu/d.-3\tu/d.-2\tu/d.-1\twidth.-12\twidth.-11\twidth.-10\twidth.-9\twidth.-8\twidth.-7\twidth.-6\twidth.-5\twidth.-4\twidth.-3\twidth.-2\twidth.-1\tw-level.-12\tw-level.-11\tw-level.-10\tw-level.-9\tw-level.-8\tw-level.-7\tw-level.-6\tw-level.-5\tw-level.-4\tw-level.-3\tw-level.-2\tw-level.-1\tMFI.-12\tMFI.-11\tMFI.-10\tMFI.-9\tMFI.-8\tMFI.-7\tMFI.-6\tMFI.-5\tMFI.-4\tMFI.-3\tMFI.-2\tMFI.-1\tRSI.-12\tRSI.-11\tRSI.-10\tRSI.-9\tRSI.-8\tRSI.-7\tRSI.-6\tRSI.-5\tRSI.-4\tRSI.-3\tRSI.-2\tRSI.-1\tForce.-12\tForce.-11\tForce.-10\tForce.-9\tForce.-8\tForce.-7\tForce.-6\tForce.-5\tForce.-4\tForce.-3\tForce.-2\tForce.-1\tBB-loc.-12\tBB-loc.-11\tBB-loc.-10\tBB-loc.-9\tBB-loc.-8\tBB-loc.-7\tBB-loc.-6\tBB-loc.-5\tBB-loc.-4\tBB-loc.-3\tBB-loc.-2\tBB-loc.-1\tticket\topen-time\ttype\tsize\titem\tprice\tSL\tTP\tclose-time\tprice\tprofit";
+		$strOf_Col_Names__Target	.= join("\t", $tokenOf_Col_Names__Target);
+		
+		$strOf_Col_Names__Target	.= "\t";
+		$strOf_Col_Names__Target	.= "Ticket\tOpen Time\tType\tSize\tItem\tPrice\tS / L\tT / P\tClose Time\tPrice\tProfit";
+		
+// 		// separator
+// 		$strOf_Col_Names__Target	.= "\n";
+		
+		$string_tmp = $strOf_Col_Names__Target;
+// 		$string_tmp = join("\t", $tokenOf_Col_Names__Target);
+// 		$string_tmp = "s.n.\tticket-num\tcurr.datetime\tClose.-12\tClose.-11\tClose.-10\tClose.-9\tClose.-8\tClose.-7\tClose.-6\tClose.-5\tClose.-4\tClose.-3\tClose.-2\tClose.-1\tu/d.-12\tu/d.-11\tu/d.-10\tu/d.-9\tu/d.-8\tu/d.-7\tu/d.-6\tu/d.-5\tu/d.-4\tu/d.-3\tu/d.-2\tu/d.-1\twidth.-12\twidth.-11\twidth.-10\twidth.-9\twidth.-8\twidth.-7\twidth.-6\twidth.-5\twidth.-4\twidth.-3\twidth.-2\twidth.-1\tw-level.-12\tw-level.-11\tw-level.-10\tw-level.-9\tw-level.-8\tw-level.-7\tw-level.-6\tw-level.-5\tw-level.-4\tw-level.-3\tw-level.-2\tw-level.-1\tMFI.-12\tMFI.-11\tMFI.-10\tMFI.-9\tMFI.-8\tMFI.-7\tMFI.-6\tMFI.-5\tMFI.-4\tMFI.-3\tMFI.-2\tMFI.-1\tRSI.-12\tRSI.-11\tRSI.-10\tRSI.-9\tRSI.-8\tRSI.-7\tRSI.-6\tRSI.-5\tRSI.-4\tRSI.-3\tRSI.-2\tRSI.-1\tForce.-12\tForce.-11\tForce.-10\tForce.-9\tForce.-8\tForce.-7\tForce.-6\tForce.-5\tForce.-4\tForce.-3\tForce.-2\tForce.-1\tBB-loc.-12\tBB-loc.-11\tBB-loc.-10\tBB-loc.-9\tBB-loc.-8\tBB-loc.-7\tBB-loc.-6\tBB-loc.-5\tBB-loc.-4\tBB-loc.-3\tBB-loc.-2\tBB-loc.-1\tticket\topen-time\ttype\tsize\titem\tprice\tSL\tTP\tclose-time\tprice\tprofit";
 
 		fwrite($fout_File_Combined_Data, $string_tmp);
 		fwrite($fout_File_Combined_Data, "\n");
@@ -1527,90 +1558,92 @@ class FxUtilitiesController extends AppController {
 		// write : string
 		fwrite($fout_File_Combined_Data, $string_tmp);
 		
-		/********************
-		 * step : 3.3
-		 * 		stats data
-		 ********************/
+// 		/********************
+// 		 * step : 3.3
+// 		 * 		stats data
+// 		 ********************/
 		
-		/********************
-		 * step : 3.3 : 1
-		 * 		total, plus, minus
-		 ********************/
-		// flash
-		$string_tmp = "";
+// 		/********************
+// 		 * step : 3.3 : 1
+// 		 * 		total, plus, minus
+// 		 ********************/
+// 		// flash
+// 		$string_tmp = "";
 		
-		// separator
-		$string_tmp .= "\n";
-		$string_tmp .= "\n";
+// 		// separator
+// 		$string_tmp .= "\n";
+// 		$string_tmp .= "\n";
 		
-		// total
-		$string_tmp .= "total=\t$numOf_Total";
-		$string_tmp .= "\n";
+// 		// total
+// 		$string_tmp .= "total=\t$numOf_Total";
+// 		$string_tmp .= "\n";
 		
-		// minus
-		$string_tmp .= "loss=\t$cntOf_Order_Minus";
-		$string_tmp .= "\n";
+// 		// minus
+// 		$string_tmp .= "loss=\t$cntOf_Order_Minus";
+// 		$string_tmp .= "\n";
 		
-		// plus
-		$string_tmp .= "gain=\t$cntOf_Order_Plus";
-		$string_tmp .= "\n";
+// 		// plus
+// 		$string_tmp .= "gain=\t$cntOf_Order_Plus";
+// 		$string_tmp .= "\n";
 
-		// separator
-		$string_tmp .= "\n";
+// 		// separator
+// 		$string_tmp .= "\n";
 
-		/********************
-		 * step : 3.3 : 2
-		 * 		BB.loc ==> count
-		 ********************/
+// 		/********************
+// 		 * step : 3.3 : 2
+// 		 * 		BB.loc ==> count
+// 		 ********************/
 		
-		debug("\$aryOf_CntOf_Order_Minus_BBLoc ==>");
-		debug($aryOf_CntOf_Order_Minus_BBLoc);
+// 		debug("\$aryOf_CntOf_Order_Minus_BBLoc ==>");
+// 		debug($aryOf_CntOf_Order_Minus_BBLoc);
 		
 		
-		$lenOf_AryOf_CntOf_Order_Minus_BBLoc	= count($aryOf_CntOf_Order_Minus_BBLoc);
+// 		$lenOf_AryOf_CntOf_Order_Minus_BBLoc	= count($aryOf_CntOf_Order_Minus_BBLoc);
 
-		// column names
-		$string_tmp	.= "BB.loc\tloss(<0)\tgain(>=0)";
-		$string_tmp	.= "\n";
+// 		// column names
+// 		$string_tmp	.= "BB.loc\tloss(<0)\tgain(>=0)";
+// 		$string_tmp	.= "\n";
 		
-		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+// 		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
 		
-			// get entry
-			$cntOf_BBLoc_Minus		= $aryOf_CntOf_Order_Minus_BBLoc[$i];
-			$cntOf_BBLoc_Plus		= $aryOf_CntOf_Order_Plus_BBLoc[$i];
+// 			// get entry
+// 			$cntOf_BBLoc_Minus		= $aryOf_CntOf_Order_Minus_BBLoc[$i];
+// 			$cntOf_BBLoc_Plus		= $aryOf_CntOf_Order_Plus_BBLoc[$i];
 			
-			// string
-			$string_tmp		.= ($i + 1) . "\t" . $cntOf_BBLoc_Minus . "\t" . $cntOf_BBLoc_Plus;
+// 			// string
+// 			$string_tmp		.= ($i + 1) . "\t" . $cntOf_BBLoc_Minus . "\t" . $cntOf_BBLoc_Plus;
 			
-			$string_tmp		.= "\n";
+// 			$string_tmp		.= "\n";
 			
-		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+// 		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
 		
-		// separator
-		$string_tmp .= "\n";
-		$string_tmp .= "\n";
+// 		// separator
+// 		$string_tmp .= "\n";
+// 		$string_tmp .= "\n";
 
-		/********************
-		 * step : 3.3 : 3
-		 * 		BB.loc ==> sums
-		 ********************/
+// 		/********************
+// 		 * step : 3.3 : 3
+// 		 * 		BB.loc ==> sums
+// 		 ********************/
 		
-		// column names
-		$string_tmp	.= "BB.loc\tsum(loss)\tsum(gain)";
-		$string_tmp	.= "\n";
+// 		// column names
+// 		$string_tmp	.= "BB.loc\tsum(loss)\tsum(gain)";
+// 		$string_tmp	.= "\n";
 		
-		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
+// 		for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++) {
 		
-			// get entry
-			$sumOf_BBLoc_Minus		= $aryOf_SumOf_Orders_Minus[$i];
-			$sumOf_BBLoc_Plus		= $aryOf_SumOf_Orders_Plus[$i];
+// 			// get entry
+// 			$sumOf_BBLoc_Minus		= $aryOf_SumOf_Orders_Minus[$i];
+// 			$sumOf_BBLoc_Plus		= $aryOf_SumOf_Orders_Plus[$i];
 				
-			// string
-			$string_tmp		.= ($i + 1) . "\t" . $sumOf_BBLoc_Minus . "\t" . $sumOf_BBLoc_Plus;
+// 			// string
+// 			$string_tmp		.= ($i + 1) . "\t" . $sumOf_BBLoc_Minus . "\t" . $sumOf_BBLoc_Plus;
 				
-			$string_tmp		.= "\n";
+// 			$string_tmp		.= "\n";
 				
-		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+// 		}//for ($i = 0; $i < $lenOf_AryOf_CntOf_Order_Minus_BBLoc; $i++)
+		
+		//debug:20201101_153213
 		
 		// separator
 		$string_tmp .= "\n";
@@ -1625,6 +1658,7 @@ class FxUtilitiesController extends AppController {
 		 ********************/
 		fclose($fout_File_Combined_Data);
 		
+		debug("file written (combined-data) ==> $fpath_File_Combined_Data");
 		
 		/********************
 		 * set : view vals : 1

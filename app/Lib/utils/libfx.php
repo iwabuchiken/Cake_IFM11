@@ -1086,6 +1086,187 @@ class Libfx {
 	}//get_ListOf_Orders_From_Statement__ListOf_Tokens
 
 	/********************
+	 * get_ListOf_Col_Names_From_Statement__ListOf_Tokens
+	 *
+	 * at : 2020/11/01 15:59:24
+	 *
+	 *	@param : $_dpath_File_Statement
+	 *				==> e.g. "C:\\Users\\iwabuchiken\\AppData\\Roaming\\MetaQuotes"
+	 . "\\Terminal\\34B08C83A5AAE27A4079DE708E60511E\\MQL4"
+	 . "\\Logs\\logs_trading"
+	 @param : $_fname_File_Statement
+	 ==> e.g. "DetailedStatement.[20200506_094419].[a-j,M5].htm"
+	 *
+	 * @return
+	 * 		-1		fopen ==> returned false
+	 *
+	 * 		array(
+	 (int) 0 => array(
+	 (int) 0 => '24811963',
+	 (int) 1 => '2020.05.01 12:15:04',
+	 (int) 2 => 'buy',
+	 ...
+	 (int) 9 => '68.934',
+	 (int) 10 => '-1 100'
+	 ),
+	 (int) 1 => array(
+	 (int) 0 => '24811973',
+	 (int) 1 => '2020.05.01 12:16:00',
+	 (int) 2 => 'buy',
+	 (int) 3 => '1.00',	 *
+	 ...
+	
+	 Ticket
+	 Open Time
+	 Type
+	 Size
+	 Item
+	 Price
+	 S / L
+	 T / P
+	 Close Time
+	 Price
+	 Profit
+	
+	 ********************/
+	public static function
+	// 	get_ListOf_Orders_From_Statement__ListOf_Tokens($fpath_Statement_File) {
+	get_ListOf_Col_Names_From_Statement__ListOf_Tokens(
+				
+			$_dpath_File_Statement
+			, $_fname_File_Statement
+				
+	) {
+		//caller:20201101_155955
+		//head:20201101_155959
+		//wl:20201101_160002
+	
+		/********************
+		 * step : 1
+		 * 		prep : vars
+		 ********************/
+		$lo_TRs_Of_Orders = array();
+	
+		// path
+		$fpath_Statement_File = join(DS, array($_dpath_File_Statement, $_fname_File_Statement));
+	
+		// read content
+		//ref https://www.php.net/manual/en/function.file-get-contents.php
+		$linesOf_Statememt_File = file_get_contents($fpath_Statement_File);
+	
+		/********************
+		 * step : 3
+		 * 	html : parse
+		********************/
+		/********************
+		 * step : 3 : 1
+		 * 	get : html
+		********************/
+		$doc = new DOMDocument();
+	
+		$doc->loadHTML($linesOf_Statememt_File);
+	
+		$TRs = $doc->getElementsByTagName('tr');
+	
+		$cntOf_TRs = 0;
+	
+		foreach ($TRs as $tr) { $cntOf_TRs += 1; }//foreach ($TRs as $tr)
+	
+		debug("\$cntOf_TRs : " . $cntOf_TRs);
+	
+		$maxOf_ForEach__TRs = $cntOf_TRs;
+		// 		$maxOf_ForEach__TRs = 10;
+	
+		/********************
+		 * step : 3 : 2
+		 * 	filter
+		********************/
+		// vars
+		
+		
+		// get : subnode --> "td"
+		for ($i = 0; $i < $cntOf_TRs; $i++) {
+	
+			// stopper
+			if ($i > $maxOf_ForEach__TRs) break;
+	
+			// get tag : TR
+			//ref https://stackoverflow.com/questions/3627489/php-parse-html-code
+			$tr = $TRs->item($i);
+	
+			//test
+			$tr_Child_Nodes = $tr->childNodes;
+	
+			$TDs = $tr->getElementsByTagName('td');
+	
+			// "Ticket" ?
+			$strOf_Key_Word	= "Ticket";
+			
+			$is_Ticket	= ($tr_Child_Nodes->item(0)->nodeValue	= $strOf_Key_Word);
+// 			$is_Nove_Value_Numeric = is_numeric($tr_Child_Nodes->item(0)->nodeValue);
+			
+			// judge
+			if ($is_Ticket == true) {
+			
+				debug("node ==> '$strOf_Key_Word'");
+				
+				break;
+				
+			}//if ($is_Ticket == true)
+	
+		}//for ($i = 0; $i < $cntOf_TRs; $i++)
+
+		//debug:20201101_160840
+		debug("\$tr_Child_Nodes->item(0)->nodeValue ==> ");
+		debug($tr_Child_Nodes->item(0)->nodeValue);
+		
+		debug("\$tr_Child_Nodes->item(1)->nodeValue ==> ");
+		debug($tr_Child_Nodes->item(1)->nodeValue);
+		
+		debug("\$tr_Child_Nodes->item(2)->nodeValue ==> ");
+		debug($tr_Child_Nodes->item(2)->nodeValue);
+		
+		debug("\$tr_Child_Nodes->item(3)->nodeValue ==> ");
+		debug($tr_Child_Nodes->item(3)->nodeValue);
+		
+		
+// 		/********************
+// 		 * step : 3 : 3
+// 		 * 		build
+// 		 ********************/
+// 		$TDs = $tr->getElementsByTagName('td');
+	
+// 		$lenOf_TDs = $TDs->length;
+
+// 		$lo_TD_Vals = array();
+	
+// 		/********************
+// 		 * step : 4 : 2
+// 		 * 		get : node value
+// 		 ********************/
+// 		foreach ($TDs as $td) {
+	
+// 			array_push($lo_TD_Vals, $td->nodeValue);
+				
+// 		}//foreach ($TDs as $td)
+		
+	
+// 		/********************
+// 		 * return
+// 			********************/
+// 		$valOf_Return = $lo_Tikets__In_Report_File;
+// 		// 		$valOf_Return = [$lo_TRs_Of_Orders];
+	
+// 		/********************
+// 		 * return : 2
+// 		 * 	return
+// 			********************/
+// 		return $valOf_Return;
+	
+	
+	}//get_ListOf_Orders_From_Statement__ListOf_Tokens
+	
+	/********************
 	 * get_ListOf_Orders_From_Statement__ListOf_Tokens
 	 *
 	 * at : 2020/05/06 13:12:44
