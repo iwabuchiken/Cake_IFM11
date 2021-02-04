@@ -417,7 +417,25 @@ class FxUtilitiesController extends AppController {
 		
 		
 	}//util_3__Gen_Trading_Result_List__Gen_Stats()
-	
+
+	/********************
+	* public function util_3__Gen_Trading_Result_List() {
+	*
+	* <steps>
+		* step : 0
+		* step : 0.1
+			* 	params
+		* step : 1
+		* 	from tickets data ==> list of tickets
+ 		 * step : 2
+		 * 	from report file ==> list of tickets
+		 * step : 2 : 2
+		 * 	from report file ==> account id
+		 * step : 3
+		 * 		build : combined list
+
+	* aaa
+	********************/
 	public function util_3__Gen_Trading_Result_List() {
 		//_20200506_111925:caller
 		//_20200506_111928:head
@@ -566,7 +584,7 @@ class FxUtilitiesController extends AppController {
 		
 // 		//debug:20200902_133455
 // 		return ;
-		
+bbb		
 		/********************
 		 * step : 3
 		 * 		build : combined list
