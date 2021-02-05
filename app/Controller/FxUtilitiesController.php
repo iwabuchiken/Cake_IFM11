@@ -458,7 +458,13 @@ class FxUtilitiesController extends AppController {
 		
 		// statement file : dpath
 		@$query_Param_Dpath_File_Statement = $this->request->query[CONS::$param_Dpath_File_Statement];
-		
+
+		/********************
+		 * step : 0.2
+		 * 	vars
+		 ********************/
+		$numOf_Prev_Bars	= 20;	// used in building the line of column names
+				
 		/********************
 		* step : 1
 		* 	from tickets data ==> list of tickets
@@ -584,7 +590,7 @@ class FxUtilitiesController extends AppController {
 		
 // 		//debug:20200902_133455
 // 		return ;
-bbb		
+// bbb		
 		/********************
 		 * step : 3
 		 * 		build : combined list
@@ -843,8 +849,86 @@ bbb
 		 * step : 4 : 3.1 : 3
 		 * 	column names
 		 ********************/
+		//fix:20210205_130835
 		//code:20200829_114700
-		$string_tmp = "s.n.\tticket-num\tcurr.datetime\tClose.-12\tClose.-11\tClose.-10\tClose.-9\tClose.-8\tClose.-7\tClose.-6\tClose.-5\tClose.-4\tClose.-3\tClose.-2\tClose.-1\tu/d.-12\tu/d.-11\tu/d.-10\tu/d.-9\tu/d.-8\tu/d.-7\tu/d.-6\tu/d.-5\tu/d.-4\tu/d.-3\tu/d.-2\tu/d.-1\twidth.-12\twidth.-11\twidth.-10\twidth.-9\twidth.-8\twidth.-7\twidth.-6\twidth.-5\twidth.-4\twidth.-3\twidth.-2\twidth.-1\tw-level.-12\tw-level.-11\tw-level.-10\tw-level.-9\tw-level.-8\tw-level.-7\tw-level.-6\tw-level.-5\tw-level.-4\tw-level.-3\tw-level.-2\tw-level.-1\tMFI.-12\tMFI.-11\tMFI.-10\tMFI.-9\tMFI.-8\tMFI.-7\tMFI.-6\tMFI.-5\tMFI.-4\tMFI.-3\tMFI.-2\tMFI.-1\tRSI.-12\tRSI.-11\tRSI.-10\tRSI.-9\tRSI.-8\tRSI.-7\tRSI.-6\tRSI.-5\tRSI.-4\tRSI.-3\tRSI.-2\tRSI.-1\tForce.-12\tForce.-11\tForce.-10\tForce.-9\tForce.-8\tForce.-7\tForce.-6\tForce.-5\tForce.-4\tForce.-3\tForce.-2\tForce.-1\tBB-loc.-12\tBB-loc.-11\tBB-loc.-10\tBB-loc.-9\tBB-loc.-8\tBB-loc.-7\tBB-loc.-6\tBB-loc.-5\tBB-loc.-4\tBB-loc.-3\tBB-loc.-2\tBB-loc.-1\tticket\topen-time\ttype\tsize\titem\tprice\tSL\tTP\tclose-time\tprice\tprofit";
+// 		$numOf_Prev_Bars	= 20;
+		
+		$string_tmp = "s.n.\tticket-num\tcurr.datetime";
+		
+		$string_tmp .= "\t";
+		
+		// "Close.-XX"
+		for ($i = 0; $i < $numOf_Prev_Bars; $i++) {
+		
+			$string_tmp .= "Close.-" . ($numOf_Prev_Bars  - $i);
+			$string_tmp .= "\t";
+			
+		}//for ($i = 0; $i < $numOf_Prev_Bars; $i++)
+		
+		// "d.-XX"
+		for ($i = 0; $i < $numOf_Prev_Bars; $i++) {
+		
+			$string_tmp .= "d.-" . ($numOf_Prev_Bars  - $i);
+			$string_tmp .= "\t";
+			
+		}//for ($i = 0; $i < $numOf_Prev_Bars; $i++)
+		
+		// "width.-XX"
+		for ($i = 0; $i < $numOf_Prev_Bars; $i++) {
+		
+			$string_tmp .= "width.-" . ($numOf_Prev_Bars  - $i);
+			$string_tmp .= "\t";
+			
+		}//for ($i = 0; $i < $numOf_Prev_Bars; $i++)
+		
+		// "tw-level.-XX"
+		for ($i = 0; $i < $numOf_Prev_Bars; $i++) {
+		
+			$string_tmp .= "w-level.-" . ($numOf_Prev_Bars  - $i);
+			$string_tmp .= "\t";
+			
+		}//for ($i = 0; $i < $numOf_Prev_Bars; $i++)
+			
+		// "MFI.-XX"
+		for ($i = 0; $i < $numOf_Prev_Bars; $i++) {
+		
+			$string_tmp .= "MFI.-" . ($numOf_Prev_Bars  - $i);
+			$string_tmp .= "\t";
+			
+		}//for ($i = 0; $i < $numOf_Prev_Bars; $i++)
+			
+		// "RSI.-XX"
+		for ($i = 0; $i < $numOf_Prev_Bars; $i++) {
+		
+			$string_tmp .= "RSI.-" . ($numOf_Prev_Bars  - $i);
+			$string_tmp .= "\t";
+			
+		}//for ($i = 0; $i < $numOf_Prev_Bars; $i++)
+			
+		// "Force.-XX"
+		for ($i = 0; $i < $numOf_Prev_Bars; $i++) {
+		
+			$string_tmp .= "Force.-" . ($numOf_Prev_Bars  - $i);
+			$string_tmp .= "\t";
+			
+		}//for ($i = 0; $i < $numOf_Prev_Bars; $i++)
+		
+		//test:20210205_131404
+			
+		// "BB-loc.-XX"
+		for ($i = 0; $i < $numOf_Prev_Bars; $i++) {
+		
+			$string_tmp .= "BB-loc.-" . ($numOf_Prev_Bars  - $i);
+			$string_tmp .= "\t";
+			
+		}//for ($i = 0; $i < $numOf_Prev_Bars; $i++)
+
+		// the rest
+		$string_tmp .= "ticket\topen-time\ttype\tsize\titem\tprice\tSL\tTP\tclose-time\tprice\tprofit";
+		
+		//test:20210205_131639
+		
+// 		$string_tmp = "s.n.\tticket-num\tcurr.datetime\tClose.-12\tClose.-11\tClose.-10\tClose.-9\tClose.-8\tClose.-7\tClose.-6\tClose.-5\tClose.-4\tClose.-3\tClose.-2\tClose.-1\tu/d.-12\tu/d.-11\tu/d.-10\tu/d.-9\tu/d.-8\tu/d.-7\tu/d.-6\tu/d.-5\tu/d.-4\tu/d.-3\tu/d.-2\tu/d.-1\twidth.-12\twidth.-11\twidth.-10\twidth.-9\twidth.-8\twidth.-7\twidth.-6\twidth.-5\twidth.-4\twidth.-3\twidth.-2\twidth.-1\tw-level.-12\tw-level.-11\tw-level.-10\tw-level.-9\tw-level.-8\tw-level.-7\tw-level.-6\tw-level.-5\tw-level.-4\tw-level.-3\tw-level.-2\tw-level.-1\tMFI.-12\tMFI.-11\tMFI.-10\tMFI.-9\tMFI.-8\tMFI.-7\tMFI.-6\tMFI.-5\tMFI.-4\tMFI.-3\tMFI.-2\tMFI.-1\tRSI.-12\tRSI.-11\tRSI.-10\tRSI.-9\tRSI.-8\tRSI.-7\tRSI.-6\tRSI.-5\tRSI.-4\tRSI.-3\tRSI.-2\tRSI.-1\tForce.-12\tForce.-11\tForce.-10\tForce.-9\tForce.-8\tForce.-7\tForce.-6\tForce.-5\tForce.-4\tForce.-3\tForce.-2\tForce.-1\tBB-loc.-12\tBB-loc.-11\tBB-loc.-10\tBB-loc.-9\tBB-loc.-8\tBB-loc.-7\tBB-loc.-6\tBB-loc.-5\tBB-loc.-4\tBB-loc.-3\tBB-loc.-2\tBB-loc.-1\tticket\topen-time\ttype\tsize\titem\tprice\tSL\tTP\tclose-time\tprice\tprofit";
 
 		fwrite($fout_File_Combined_Data, $string_tmp);
 		fwrite($fout_File_Combined_Data, "\n");
