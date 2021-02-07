@@ -35,6 +35,15 @@ class FxUtilitiesController extends AppController {
 		 * 		aryOf_CntOf_Order_Minus_BBLoc
 		 * 		aryOf_CntOf_Order_Plus_BBLoc
 	 * 
+	 * <steps>
+		 * step : 3a : 0
+		 * 		prep : vars
+		 * step : 3a : 1
+		 * 		total
+		 * step : 3a : 2
+		 * 		order : minus
+	 
+	 aaa
 	 ********************/
 	//_20200412_133400:next
 	//_20200329_132038:tmp
@@ -42,6 +51,7 @@ class FxUtilitiesController extends AppController {
 	public function util_3__Gen_Trading_Result_List__Gen_Stats
 	(
 			$lo_Line_Combined
+			, $idxOf_Profit = 172
 			
 			) {
 //caller:20200924_115443
@@ -52,11 +62,21 @@ class FxUtilitiesController extends AppController {
 		 * 		prep : vars
 		 ********************/
 		$aryOf_Stats_Data = array();
+
+		// count of minues, plus
+		$cntOf_Order_Minus = 0;
+		$cntOf_Order_Plus = 0;
+		
+		// sum of minues, plus
+		//next:20210207_174556
+		$sumOf_Order_Minus	= 0.0;
+		$sumOf_Order_Plus	= 0.0;
 		
 		/********************
 		 * step : 3a : 1
 		 * 		total
 		 ********************/
+
 		$numOf_Entries_Total = count($lo_Line_Combined);
 		
 		debug("\$numOf_Entries_Total ==> " . $numOf_Entries_Total);
@@ -68,12 +88,14 @@ class FxUtilitiesController extends AppController {
 		 * step : 3a : 2
 		 * 		order : minus
 		 ********************/
-		$cntOf_Order_Minus = 0;
-		$cntOf_Order_Plus = 0;
+// 		bbb
+// 		$cntOf_Order_Minus = 0;
+// 		$cntOf_Order_Plus = 0;
 		
 		foreach ($lo_Line_Combined as $line) {
 		
-			$profit = $line[108];
+			$profit = $line[$idxOf_Profit];
+// 			$profit = $line[108];
 			
 			// judge
 			if ($profit < 0) {
@@ -431,10 +453,17 @@ class FxUtilitiesController extends AppController {
 		 * 	from report file ==> list of tickets
 		 * step : 2 : 2
 		 * 	from report file ==> account id
+
 		 * step : 3
 		 * 		build : combined list
+		 * step : 3 : 0
+		 * 		for-loop : Ticket data file
 
-	* aaa
+		 * step : 3a
+		 * 		gen stats data
+
+aaa
+
 	********************/
 	public function util_3__Gen_Trading_Result_List() {
 		//_20200506_111925:caller
@@ -590,7 +619,7 @@ class FxUtilitiesController extends AppController {
 		
 // 		//debug:20200902_133455
 // 		return ;
-// bbb		
+
 		/********************
 		 * step : 3
 		 * 		build : combined list
@@ -689,6 +718,7 @@ class FxUtilitiesController extends AppController {
 		debug("\$lo_Line_Combined[0] =>");
 		debug($lo_Line_Combined[0]);
 		
+// 		bbb
 		/********************
 		 * step : 3a
 		 * 		gen stats data
@@ -702,6 +732,7 @@ class FxUtilitiesController extends AppController {
 	// 		* 		total
 	// 		* 		cntOf_Order_Plus
 	// 		* 		cntOf_Order_Minus
+		//marker:20210207_173232
 		//caller:20200924_115443
 		$valOf_Ret_Rcvd = $this->util_3__Gen_Trading_Result_List__Gen_Stats($lo_Line_Combined);
 		
@@ -1101,6 +1132,7 @@ class FxUtilitiesController extends AppController {
 
 		
 	}//util_3__Gen_Trading_Result_List
+
 	
 	public function util_3__Gen_Trading_Result_List__V2() {
 		//caller:20201030_134507
