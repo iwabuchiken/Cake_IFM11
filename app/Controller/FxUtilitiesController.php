@@ -42,7 +42,20 @@ class FxUtilitiesController extends AppController {
 		 * 		total
 		 * step : 3a : 2
 		 * 		order : minus
-	 
+
+		 * step : 3a : 3
+		 * 		BB.loc ==> count
+		 * step : 3a : 3.1
+		 * 		minus order : BB.loc ==> 1~6
+		 * step : 3a : 3.1 : 0
+		 * 		prep : vars
+		 * step : 3a : 3.1 : 0.1
+		 * 		$aryOf_CntOf_Order_Minus_BBLoc
+		 * step : 3a : 3.1 : 0.2
+		 * 		$sumOf_Orders_Minus, Plus
+		 * step : 3a : 3.1 : ??
+		 * 		for-loop
+
 	 aaa
 	 ********************/
 	//_20200412_133400:next
@@ -189,6 +202,7 @@ class FxUtilitiesController extends AppController {
 			 * step : 3a : 3.1 : 2
 			 * 		set : conditions
 			 ********************/
+			//next:20210228_163911
 			$cond_1_1		= ($line[97] == 1);		// BB.loc-1
 			$cond_1_2		= ($line[97] == 2);		// BB.loc-1
 			$cond_1_3		= ($line[97] == 3);		// BB.loc-1
