@@ -1,0 +1,29 @@
+2021年2月28日9:45:41
+	git
+		commit
+			"(Cake_IFM11)(fix : recover entries.ods file content) prep before f
+ix ops"
+	
+		checkout
+			g co a865dbf58a1e8dccfc3fd2258aa054d71b46c80c
+	open : ods file
+		open
+		validate : original texts?
+		#save new ==> desktop
+		#close
+	
+	git
+		checkout : master
+			g co master
+			#validate : "gitk" window
+	
+	ods file
+		open
+		
+		<FOUND>
+		"GPS" column ==> not deleted in the prev session; C - * --> selected all area
+		
+::]9:51:00
+
+
+
