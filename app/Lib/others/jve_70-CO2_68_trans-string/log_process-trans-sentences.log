@@ -140,3 +140,1284 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_122339_699438.txt
 [process-trans-sentences.php : 330] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_122339_699438.txt'
  
+===============================  
+starting... : build_Trans_String (20210511_135035_958969)
+
+[process-trans-sentences.php : 208] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 327] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135036_021368.txt
+[process-trans-sentences.php : 343] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135036_021368.txt'
+ 
+===============================  
+starting... : build_Trans_String (20210511_135109_939651)
+
+[process-trans-sentences.php : 208] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 327] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135109_939651.txt
+[process-trans-sentences.php : 343] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135109_939651.txt'
+ 
+===============================  
+starting... : build_Trans_String (20210511_135251_783643)
+
+[process-trans-sentences.php : 208] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 327] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135251_783643.txt
+[process-trans-sentences.php : 343] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135251_783643.txt'
+ 
+===============================  
+starting... : build_Trans_String (20210511_135538_889362)
+
+[process-trans-sentences.php : 117] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences.php : 130] $linesOf_File =>
+
+Array
+(
+    [0] => образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород,
+
+    [1] => образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО
+
+    [2] => Raum-Zeit-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device
+
+)
+[process-trans-sentences.php : 161] $stringOf_Joined_Lines =>
+
+образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород, образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО Raum-Zeit-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device[process-trans-sentences.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => синтез-газ,
+    [3] => синтез-газ
+    [4] => содержащий[comprising
+    [5] => оксиды
+    [6] => углерода
+    [7] => и
+    [8] => водород,
+    [9] => образуется[형성하고
+    [10] => отходящий[폐기물
+    [11] => синтез-газ,
+    [12] => содержащий[comprising
+    [13] => оксиды
+    [14] => углерода
+    [15] => и
+    [16] => водород,
+    [17] => abc
+    [18] => def
+    [19] => ghi
+    [20] => jk'l
+    [21] => ааа
+    [22] => аадаа
+    [23] => вод
+    [24] => водо
+    [25] => рр
+    [26] => окс
+    [27] => ПАВапв
+    [28] => ДЛО
+    [29] => Raum-Zeit-Ausbeute
+    [30] => Messgrößen[measured-quantities
+    [31] => verwendet[used
+    [32] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [33] => zuvor[previously
+    [34] => Dosiereinrichtung[dosing-device
+)
+[process-trans-sentences.php : 208] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 240] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 240] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 224] match => синтез-газ,
+[process-trans-sentences.php : 224] match => синтез-газ
+[process-trans-sentences.php : 240] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 224] match => оксиды
+[process-trans-sentences.php : 224] match => углерода
+[process-trans-sentences.php : 224] match => и
+[process-trans-sentences.php : 224] match => водород,
+[process-trans-sentences.php : 240] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 240] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 224] match => синтез-газ,
+[process-trans-sentences.php : 240] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 224] match => оксиды
+[process-trans-sentences.php : 224] match => углерода
+[process-trans-sentences.php : 224] match => и
+[process-trans-sentences.php : 224] match => водород,
+[process-trans-sentences.php : 224] match => abc
+[process-trans-sentences.php : 224] match => def
+[process-trans-sentences.php : 224] match => ghi
+[process-trans-sentences.php : 224] match => jk'l
+[process-trans-sentences.php : 224] match => ааа
+[process-trans-sentences.php : 224] match => аадаа
+[process-trans-sentences.php : 224] match => вод
+[process-trans-sentences.php : 224] match => водо
+[process-trans-sentences.php : 224] match => рр
+[process-trans-sentences.php : 224] match => окс
+[process-trans-sentences.php : 224] match => ПАВапв
+[process-trans-sentences.php : 224] match => ДЛО
+[process-trans-sentences.php : 224] match => Raum-Zeit-Ausbeute
+[process-trans-sentences.php : 240] NOT match => ($result = 0)Messgrößen[measured-quantities
+[process-trans-sentences.php : 240] NOT match => ($result = 0)verwendet[used
+[process-trans-sentences.php : 240] NOT match => ($result = 0)Eingangsstoffmengenströme[input-mole-amount-flow
+[process-trans-sentences.php : 240] NOT match => ($result = 0)zuvor[previously
+[process-trans-sentences.php : 240] NOT match => ($result = 0)Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 265] $aryOf_Tokens__Filtered_In =>
+Array
+(
+    [0] => синтез-газ,
+    [1] => синтез-газ
+    [2] => оксиды
+    [3] => углерода
+    [4] => и
+    [5] => водород,
+    [6] => синтез-газ,
+    [7] => оксиды
+    [8] => углерода
+    [9] => и
+    [10] => водород,
+    [11] => abc
+    [12] => def
+    [13] => ghi
+    [14] => jk'l
+    [15] => ааа
+    [16] => аадаа
+    [17] => вод
+    [18] => водо
+    [19] => рр
+    [20] => окс
+    [21] => ПАВапв
+    [22] => ДЛО
+    [23] => Raum-Zeit-Ausbeute
+)
+
+[process-trans-sentences.php : 273] $aryOf_Tokens__Filtered_Out =>
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => содержащий[comprising
+    [3] => образуется[형성하고
+    [4] => отходящий[폐기물
+    [5] => содержащий[comprising
+    [6] => Messgrößen[measured-quantities
+    [7] => verwendet[used
+    [8] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [9] => zuvor[previously
+    [10] => Dosiereinrichtung[dosing-device
+)
+
+[process-trans-sentences.php : 293] $stringOf_Trans_Strings =>
+образуется[형성하고,отходящий[폐기물,содержащий[comprising,образуется[형성하고,отходящий[폐기물,содержащий[comprising,Messgrößen[measured-quantities,verwendet[used,Eingangsstoffmengenströme[input-mole-amount-flow,zuvor[previously,Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 327] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135538_904962.txt
+[process-trans-sentences.php : 343] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135538_904962.txt'
+ 
+===============================  
+starting... : build_Trans_String (20210511_135731_397960)
+
+[process-trans-sentences.php : 117] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences.php : 130] $linesOf_File =>
+
+Array
+(
+    [0] => образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород,
+
+    [1] => образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО
+
+    [2] => Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device
+
+)
+[process-trans-sentences.php : 161] $stringOf_Joined_Lines =>
+
+образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород, образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device[process-trans-sentences.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => синтез-газ,
+    [3] => синтез-газ
+    [4] => содержащий[comprising
+    [5] => оксиды
+    [6] => углерода
+    [7] => и
+    [8] => водород,
+    [9] => образуется[형성하고
+    [10] => отходящий[폐기물
+    [11] => синтез-газ,
+    [12] => содержащий[comprising
+    [13] => оксиды
+    [14] => углерода
+    [15] => и
+    [16] => водород,
+    [17] => abc
+    [18] => def
+    [19] => ghi
+    [20] => jk'l
+    [21] => ааа
+    [22] => аадаа
+    [23] => вод
+    [24] => водо
+    [25] => рр
+    [26] => окс
+    [27] => ПАВапв
+    [28] => ДЛО
+    [29] => Raum-Zeit-Ausbeute
+    [30] => Raum-Zeitö-Ausbeute
+    [31] => Messgrößen[measured-quantities
+    [32] => verwendet[used
+    [33] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [34] => zuvor[previously
+    [35] => Dosiereinrichtung[dosing-device
+)
+[process-trans-sentences.php : 208] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 240] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 240] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 224] match => синтез-газ,
+[process-trans-sentences.php : 224] match => синтез-газ
+[process-trans-sentences.php : 240] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 224] match => оксиды
+[process-trans-sentences.php : 224] match => углерода
+[process-trans-sentences.php : 224] match => и
+[process-trans-sentences.php : 224] match => водород,
+[process-trans-sentences.php : 240] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 240] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 224] match => синтез-газ,
+[process-trans-sentences.php : 240] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 224] match => оксиды
+[process-trans-sentences.php : 224] match => углерода
+[process-trans-sentences.php : 224] match => и
+[process-trans-sentences.php : 224] match => водород,
+[process-trans-sentences.php : 224] match => abc
+[process-trans-sentences.php : 224] match => def
+[process-trans-sentences.php : 224] match => ghi
+[process-trans-sentences.php : 224] match => jk'l
+[process-trans-sentences.php : 224] match => ааа
+[process-trans-sentences.php : 224] match => аадаа
+[process-trans-sentences.php : 224] match => вод
+[process-trans-sentences.php : 224] match => водо
+[process-trans-sentences.php : 224] match => рр
+[process-trans-sentences.php : 224] match => окс
+[process-trans-sentences.php : 224] match => ПАВапв
+[process-trans-sentences.php : 224] match => ДЛО
+[process-trans-sentences.php : 224] match => Raum-Zeit-Ausbeute
+[process-trans-sentences.php : 240] NOT match => ($result = 0)Raum-Zeitö-Ausbeute
+[process-trans-sentences.php : 240] NOT match => ($result = 0)Messgrößen[measured-quantities
+[process-trans-sentences.php : 240] NOT match => ($result = 0)verwendet[used
+[process-trans-sentences.php : 240] NOT match => ($result = 0)Eingangsstoffmengenströme[input-mole-amount-flow
+[process-trans-sentences.php : 240] NOT match => ($result = 0)zuvor[previously
+[process-trans-sentences.php : 240] NOT match => ($result = 0)Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 265] $aryOf_Tokens__Filtered_In =>
+Array
+(
+    [0] => синтез-газ,
+    [1] => синтез-газ
+    [2] => оксиды
+    [3] => углерода
+    [4] => и
+    [5] => водород,
+    [6] => синтез-газ,
+    [7] => оксиды
+    [8] => углерода
+    [9] => и
+    [10] => водород,
+    [11] => abc
+    [12] => def
+    [13] => ghi
+    [14] => jk'l
+    [15] => ааа
+    [16] => аадаа
+    [17] => вод
+    [18] => водо
+    [19] => рр
+    [20] => окс
+    [21] => ПАВапв
+    [22] => ДЛО
+    [23] => Raum-Zeit-Ausbeute
+)
+
+[process-trans-sentences.php : 273] $aryOf_Tokens__Filtered_Out =>
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => содержащий[comprising
+    [3] => образуется[형성하고
+    [4] => отходящий[폐기물
+    [5] => содержащий[comprising
+    [6] => Raum-Zeitö-Ausbeute
+    [7] => Messgrößen[measured-quantities
+    [8] => verwendet[used
+    [9] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [10] => zuvor[previously
+    [11] => Dosiereinrichtung[dosing-device
+)
+
+[process-trans-sentences.php : 293] $stringOf_Trans_Strings =>
+образуется[형성하고,отходящий[폐기물,содержащий[comprising,образуется[형성하고,отходящий[폐기물,содержащий[comprising,Raum-Zeitö-Ausbeute,Messgrößen[measured-quantities,verwendet[used,Eingangsstoffmengenströme[input-mole-amount-flow,zuvor[previously,Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 327] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_135731_413561.txt
+ 
+===============================  
+starting... : build_Trans_String (20210511_140132_549809)
+
+[process-trans-sentences.php : 117] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences.php : 130] $linesOf_File =>
+
+Array
+(
+    [0] => образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород,
+
+    [1] => образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО
+
+    [2] => Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device
+
+)
+[process-trans-sentences.php : 161] $stringOf_Joined_Lines =>
+
+образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород, образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device[process-trans-sentences.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => синтез-газ,
+    [3] => синтез-газ
+    [4] => содержащий[comprising
+    [5] => оксиды
+    [6] => углерода
+    [7] => и
+    [8] => водород,
+    [9] => образуется[형성하고
+    [10] => отходящий[폐기물
+    [11] => синтез-газ,
+    [12] => содержащий[comprising
+    [13] => оксиды
+    [14] => углерода
+    [15] => и
+    [16] => водород,
+    [17] => abc
+    [18] => def
+    [19] => ghi
+    [20] => jk'l
+    [21] => ааа
+    [22] => аадаа
+    [23] => вод
+    [24] => водо
+    [25] => рр
+    [26] => окс
+    [27] => ПАВапв
+    [28] => ДЛО
+    [29] => Raum-Zeit-Ausbeute
+    [30] => Raum-Zeitö-Ausbeute
+    [31] => Messgrößen[measured-quantities
+    [32] => verwendet[used
+    [33] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [34] => zuvor[previously
+    [35] => Dosiereinrichtung[dosing-device
+)
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 225] match => синтез-газ
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 225] match => abc
+[process-trans-sentences.php : 225] match => def
+[process-trans-sentences.php : 225] match => ghi
+[process-trans-sentences.php : 225] match => jk'l
+[process-trans-sentences.php : 225] match => ааа
+[process-trans-sentences.php : 225] match => аадаа
+[process-trans-sentences.php : 225] match => вод
+[process-trans-sentences.php : 225] match => водо
+[process-trans-sentences.php : 225] match => рр
+[process-trans-sentences.php : 225] match => окс
+[process-trans-sentences.php : 225] match => ПАВапв
+[process-trans-sentences.php : 225] match => ДЛО
+[process-trans-sentences.php : 225] match => Raum-Zeit-Ausbeute
+[process-trans-sentences.php : 225] match => Raum-Zeitö-Ausbeute
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Messgrößen[measured-quantities
+[process-trans-sentences.php : 241] NOT match => ($result = 0)verwendet[used
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Eingangsstoffmengenströme[input-mole-amount-flow
+[process-trans-sentences.php : 241] NOT match => ($result = 0)zuvor[previously
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 266] $aryOf_Tokens__Filtered_In =>
+Array
+(
+    [0] => синтез-газ,
+    [1] => синтез-газ
+    [2] => оксиды
+    [3] => углерода
+    [4] => и
+    [5] => водород,
+    [6] => синтез-газ,
+    [7] => оксиды
+    [8] => углерода
+    [9] => и
+    [10] => водород,
+    [11] => abc
+    [12] => def
+    [13] => ghi
+    [14] => jk'l
+    [15] => ааа
+    [16] => аадаа
+    [17] => вод
+    [18] => водо
+    [19] => рр
+    [20] => окс
+    [21] => ПАВапв
+    [22] => ДЛО
+    [23] => Raum-Zeit-Ausbeute
+    [24] => Raum-Zeitö-Ausbeute
+)
+
+[process-trans-sentences.php : 274] $aryOf_Tokens__Filtered_Out =>
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => содержащий[comprising
+    [3] => образуется[형성하고
+    [4] => отходящий[폐기물
+    [5] => содержащий[comprising
+    [6] => Messgrößen[measured-quantities
+    [7] => verwendet[used
+    [8] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [9] => zuvor[previously
+    [10] => Dosiereinrichtung[dosing-device
+)
+
+[process-trans-sentences.php : 294] $stringOf_Trans_Strings =>
+образуется[형성하고,отходящий[폐기물,содержащий[comprising,образуется[형성하고,отходящий[폐기물,содержащий[comprising,Messgrößen[measured-quantities,verwendet[used,Eingangsstoffmengenströme[input-mole-amount-flow,zuvor[previously,Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_140132_565409.txt
+ 
+===============================  
+starting... : build_Trans_String (20210511_140552_290290)
+
+[process-trans-sentences.php : 117] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences.php : 130] $linesOf_File =>
+
+Array
+(
+    [0] => образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород,
+
+    [1] => образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО
+
+    [2] => Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device
+
+    [3] => canción[song gustó
+
+)
+[process-trans-sentences.php : 161] $stringOf_Joined_Lines =>
+
+образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород, образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device canción[song gustó[process-trans-sentences.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => синтез-газ,
+    [3] => синтез-газ
+    [4] => содержащий[comprising
+    [5] => оксиды
+    [6] => углерода
+    [7] => и
+    [8] => водород,
+    [9] => образуется[형성하고
+    [10] => отходящий[폐기물
+    [11] => синтез-газ,
+    [12] => содержащий[comprising
+    [13] => оксиды
+    [14] => углерода
+    [15] => и
+    [16] => водород,
+    [17] => abc
+    [18] => def
+    [19] => ghi
+    [20] => jk'l
+    [21] => ааа
+    [22] => аадаа
+    [23] => вод
+    [24] => водо
+    [25] => рр
+    [26] => окс
+    [27] => ПАВапв
+    [28] => ДЛО
+    [29] => Raum-Zeit-Ausbeute
+    [30] => Raum-Zeitö-Ausbeute
+    [31] => Messgrößen[measured-quantities
+    [32] => verwendet[used
+    [33] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [34] => zuvor[previously
+    [35] => Dosiereinrichtung[dosing-device
+    [36] => canción[song
+    [37] => gustó
+)
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 225] match => синтез-газ
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 225] match => abc
+[process-trans-sentences.php : 225] match => def
+[process-trans-sentences.php : 225] match => ghi
+[process-trans-sentences.php : 225] match => jk'l
+[process-trans-sentences.php : 225] match => ааа
+[process-trans-sentences.php : 225] match => аадаа
+[process-trans-sentences.php : 225] match => вод
+[process-trans-sentences.php : 225] match => водо
+[process-trans-sentences.php : 225] match => рр
+[process-trans-sentences.php : 225] match => окс
+[process-trans-sentences.php : 225] match => ПАВапв
+[process-trans-sentences.php : 225] match => ДЛО
+[process-trans-sentences.php : 225] match => Raum-Zeit-Ausbeute
+[process-trans-sentences.php : 225] match => Raum-Zeitö-Ausbeute
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Messgrößen[measured-quantities
+[process-trans-sentences.php : 241] NOT match => ($result = 0)verwendet[used
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Eingangsstoffmengenströme[input-mole-amount-flow
+[process-trans-sentences.php : 241] NOT match => ($result = 0)zuvor[previously
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 241] NOT match => ($result = 0)canción[song
+[process-trans-sentences.php : 225] match => gustó
+[process-trans-sentences.php : 266] $aryOf_Tokens__Filtered_In =>
+Array
+(
+    [0] => синтез-газ,
+    [1] => синтез-газ
+    [2] => оксиды
+    [3] => углерода
+    [4] => и
+    [5] => водород,
+    [6] => синтез-газ,
+    [7] => оксиды
+    [8] => углерода
+    [9] => и
+    [10] => водород,
+    [11] => abc
+    [12] => def
+    [13] => ghi
+    [14] => jk'l
+    [15] => ааа
+    [16] => аадаа
+    [17] => вод
+    [18] => водо
+    [19] => рр
+    [20] => окс
+    [21] => ПАВапв
+    [22] => ДЛО
+    [23] => Raum-Zeit-Ausbeute
+    [24] => Raum-Zeitö-Ausbeute
+    [25] => gustó
+)
+
+[process-trans-sentences.php : 274] $aryOf_Tokens__Filtered_Out =>
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => содержащий[comprising
+    [3] => образуется[형성하고
+    [4] => отходящий[폐기물
+    [5] => содержащий[comprising
+    [6] => Messgrößen[measured-quantities
+    [7] => verwendet[used
+    [8] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [9] => zuvor[previously
+    [10] => Dosiereinrichtung[dosing-device
+    [11] => canción[song
+)
+
+[process-trans-sentences.php : 294] $stringOf_Trans_Strings =>
+образуется[형성하고,отходящий[폐기물,содержащий[comprising,образуется[형성하고,отходящий[폐기물,содержащий[comprising,Messgrößen[measured-quantities,verwendet[used,Eingangsstoffmengenströme[input-mole-amount-flow,zuvor[previously,Dosiereinrichtung[dosing-device,canción[song
+[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_140552_305890.txt
+ 
+===============================  
+starting... : build_Trans_String (20210511_140822_577629)
+
+[process-trans-sentences.php : 117] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences.php : 130] $linesOf_File =>
+
+Array
+(
+    [0] => образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород,
+
+    [1] => образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО
+
+    [2] => Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device
+
+    [3] => canción[song gustó español pequeña ciudad
+
+)
+[process-trans-sentences.php : 161] $stringOf_Joined_Lines =>
+
+образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород, образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device canción[song gustó español pequeña ciudad[process-trans-sentences.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => синтез-газ,
+    [3] => синтез-газ
+    [4] => содержащий[comprising
+    [5] => оксиды
+    [6] => углерода
+    [7] => и
+    [8] => водород,
+    [9] => образуется[형성하고
+    [10] => отходящий[폐기물
+    [11] => синтез-газ,
+    [12] => содержащий[comprising
+    [13] => оксиды
+    [14] => углерода
+    [15] => и
+    [16] => водород,
+    [17] => abc
+    [18] => def
+    [19] => ghi
+    [20] => jk'l
+    [21] => ааа
+    [22] => аадаа
+    [23] => вод
+    [24] => водо
+    [25] => рр
+    [26] => окс
+    [27] => ПАВапв
+    [28] => ДЛО
+    [29] => Raum-Zeit-Ausbeute
+    [30] => Raum-Zeitö-Ausbeute
+    [31] => Messgrößen[measured-quantities
+    [32] => verwendet[used
+    [33] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [34] => zuvor[previously
+    [35] => Dosiereinrichtung[dosing-device
+    [36] => canción[song
+    [37] => gustó
+    [38] => español
+    [39] => pequeña
+    [40] => ciudad
+)
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 225] match => синтез-газ
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 225] match => abc
+[process-trans-sentences.php : 225] match => def
+[process-trans-sentences.php : 225] match => ghi
+[process-trans-sentences.php : 225] match => jk'l
+[process-trans-sentences.php : 225] match => ааа
+[process-trans-sentences.php : 225] match => аадаа
+[process-trans-sentences.php : 225] match => вод
+[process-trans-sentences.php : 225] match => водо
+[process-trans-sentences.php : 225] match => рр
+[process-trans-sentences.php : 225] match => окс
+[process-trans-sentences.php : 225] match => ПАВапв
+[process-trans-sentences.php : 225] match => ДЛО
+[process-trans-sentences.php : 225] match => Raum-Zeit-Ausbeute
+[process-trans-sentences.php : 225] match => Raum-Zeitö-Ausbeute
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Messgrößen[measured-quantities
+[process-trans-sentences.php : 241] NOT match => ($result = 0)verwendet[used
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Eingangsstoffmengenströme[input-mole-amount-flow
+[process-trans-sentences.php : 241] NOT match => ($result = 0)zuvor[previously
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 241] NOT match => ($result = 0)canción[song
+[process-trans-sentences.php : 225] match => gustó
+[process-trans-sentences.php : 225] match => español
+[process-trans-sentences.php : 225] match => pequeña
+[process-trans-sentences.php : 225] match => ciudad
+[process-trans-sentences.php : 266] $aryOf_Tokens__Filtered_In =>
+Array
+(
+    [0] => синтез-газ,
+    [1] => синтез-газ
+    [2] => оксиды
+    [3] => углерода
+    [4] => и
+    [5] => водород,
+    [6] => синтез-газ,
+    [7] => оксиды
+    [8] => углерода
+    [9] => и
+    [10] => водород,
+    [11] => abc
+    [12] => def
+    [13] => ghi
+    [14] => jk'l
+    [15] => ааа
+    [16] => аадаа
+    [17] => вод
+    [18] => водо
+    [19] => рр
+    [20] => окс
+    [21] => ПАВапв
+    [22] => ДЛО
+    [23] => Raum-Zeit-Ausbeute
+    [24] => Raum-Zeitö-Ausbeute
+    [25] => gustó
+    [26] => español
+    [27] => pequeña
+    [28] => ciudad
+)
+
+[process-trans-sentences.php : 274] $aryOf_Tokens__Filtered_Out =>
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => содержащий[comprising
+    [3] => образуется[형성하고
+    [4] => отходящий[폐기물
+    [5] => содержащий[comprising
+    [6] => Messgrößen[measured-quantities
+    [7] => verwendet[used
+    [8] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [9] => zuvor[previously
+    [10] => Dosiereinrichtung[dosing-device
+    [11] => canción[song
+)
+
+[process-trans-sentences.php : 294] $stringOf_Trans_Strings =>
+образуется[형성하고,отходящий[폐기물,содержащий[comprising,образуется[형성하고,отходящий[폐기물,содержащий[comprising,Messgrößen[measured-quantities,verwendet[used,Eingangsstoffmengenströme[input-mole-amount-flow,zuvor[previously,Dosiereinrichtung[dosing-device,canción[song
+[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_140822_593229.txt
+ 
+===============================  
+starting... : build_Trans_String (20210511_140907_822312)
+
+[process-trans-sentences.php : 117] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences.php : 130] $linesOf_File =>
+
+Array
+(
+    [0] => образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород,
+
+    [1] => образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО
+
+    [2] => Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device
+
+    [3] => canción[song gustó español pequeña[little ciudad
+
+)
+[process-trans-sentences.php : 161] $stringOf_Joined_Lines =>
+
+образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород, образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device canción[song gustó español pequeña[little ciudad[process-trans-sentences.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => синтез-газ,
+    [3] => синтез-газ
+    [4] => содержащий[comprising
+    [5] => оксиды
+    [6] => углерода
+    [7] => и
+    [8] => водород,
+    [9] => образуется[형성하고
+    [10] => отходящий[폐기물
+    [11] => синтез-газ,
+    [12] => содержащий[comprising
+    [13] => оксиды
+    [14] => углерода
+    [15] => и
+    [16] => водород,
+    [17] => abc
+    [18] => def
+    [19] => ghi
+    [20] => jk'l
+    [21] => ааа
+    [22] => аадаа
+    [23] => вод
+    [24] => водо
+    [25] => рр
+    [26] => окс
+    [27] => ПАВапв
+    [28] => ДЛО
+    [29] => Raum-Zeit-Ausbeute
+    [30] => Raum-Zeitö-Ausbeute
+    [31] => Messgrößen[measured-quantities
+    [32] => verwendet[used
+    [33] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [34] => zuvor[previously
+    [35] => Dosiereinrichtung[dosing-device
+    [36] => canción[song
+    [37] => gustó
+    [38] => español
+    [39] => pequeña[little
+    [40] => ciudad
+)
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 225] match => синтез-газ
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 225] match => abc
+[process-trans-sentences.php : 225] match => def
+[process-trans-sentences.php : 225] match => ghi
+[process-trans-sentences.php : 225] match => jk'l
+[process-trans-sentences.php : 225] match => ааа
+[process-trans-sentences.php : 225] match => аадаа
+[process-trans-sentences.php : 225] match => вод
+[process-trans-sentences.php : 225] match => водо
+[process-trans-sentences.php : 225] match => рр
+[process-trans-sentences.php : 225] match => окс
+[process-trans-sentences.php : 225] match => ПАВапв
+[process-trans-sentences.php : 225] match => ДЛО
+[process-trans-sentences.php : 225] match => Raum-Zeit-Ausbeute
+[process-trans-sentences.php : 225] match => Raum-Zeitö-Ausbeute
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Messgrößen[measured-quantities
+[process-trans-sentences.php : 241] NOT match => ($result = 0)verwendet[used
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Eingangsstoffmengenströme[input-mole-amount-flow
+[process-trans-sentences.php : 241] NOT match => ($result = 0)zuvor[previously
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 241] NOT match => ($result = 0)canción[song
+[process-trans-sentences.php : 225] match => gustó
+[process-trans-sentences.php : 225] match => español
+[process-trans-sentences.php : 241] NOT match => ($result = 0)pequeña[little
+[process-trans-sentences.php : 225] match => ciudad
+[process-trans-sentences.php : 266] $aryOf_Tokens__Filtered_In =>
+Array
+(
+    [0] => синтез-газ,
+    [1] => синтез-газ
+    [2] => оксиды
+    [3] => углерода
+    [4] => и
+    [5] => водород,
+    [6] => синтез-газ,
+    [7] => оксиды
+    [8] => углерода
+    [9] => и
+    [10] => водород,
+    [11] => abc
+    [12] => def
+    [13] => ghi
+    [14] => jk'l
+    [15] => ааа
+    [16] => аадаа
+    [17] => вод
+    [18] => водо
+    [19] => рр
+    [20] => окс
+    [21] => ПАВапв
+    [22] => ДЛО
+    [23] => Raum-Zeit-Ausbeute
+    [24] => Raum-Zeitö-Ausbeute
+    [25] => gustó
+    [26] => español
+    [27] => ciudad
+)
+
+[process-trans-sentences.php : 274] $aryOf_Tokens__Filtered_Out =>
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => содержащий[comprising
+    [3] => образуется[형성하고
+    [4] => отходящий[폐기물
+    [5] => содержащий[comprising
+    [6] => Messgrößen[measured-quantities
+    [7] => verwendet[used
+    [8] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [9] => zuvor[previously
+    [10] => Dosiereinrichtung[dosing-device
+    [11] => canción[song
+    [12] => pequeña[little
+)
+
+[process-trans-sentences.php : 294] $stringOf_Trans_Strings =>
+образуется[형성하고,отходящий[폐기물,содержащий[comprising,образуется[형성하고,отходящий[폐기물,содержащий[comprising,Messgrößen[measured-quantities,verwendet[used,Eingangsstoffmengenströme[input-mole-amount-flow,zuvor[previously,Dosiereinrichtung[dosing-device,canción[song,pequeña[little
+[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_140907_853512.txt
+ 
+===============================  
+starting... : build_Trans_String (20210511_141545_051623)
+
+[process-trans-sentences.php : 117] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences.php : 130] $linesOf_File =>
+
+Array
+(
+    [0] => образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород,
+
+    [1] => образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО
+
+    [2] => Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device
+
+    [3] => canción[song gustó español pequeña[little ciudad
+
+)
+[process-trans-sentences.php : 161] $stringOf_Joined_Lines =>
+
+образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород, образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device canción[song gustó español pequeña[little ciudad[process-trans-sentences.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => синтез-газ,
+    [3] => синтез-газ
+    [4] => содержащий[comprising
+    [5] => оксиды
+    [6] => углерода
+    [7] => и
+    [8] => водород,
+    [9] => образуется[형성하고
+    [10] => отходящий[폐기물
+    [11] => синтез-газ,
+    [12] => содержащий[comprising
+    [13] => оксиды
+    [14] => углерода
+    [15] => и
+    [16] => водород,
+    [17] => abc
+    [18] => def
+    [19] => ghi
+    [20] => jk'l
+    [21] => ааа
+    [22] => аадаа
+    [23] => вод
+    [24] => водо
+    [25] => рр
+    [26] => окс
+    [27] => ПАВапв
+    [28] => ДЛО
+    [29] => Raum-Zeit-Ausbeute
+    [30] => Raum-Zeitö-Ausbeute
+    [31] => Messgrößen[measured-quantities
+    [32] => verwendet[used
+    [33] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [34] => zuvor[previously
+    [35] => Dosiereinrichtung[dosing-device
+    [36] => canción[song
+    [37] => gustó
+    [38] => español
+    [39] => pequeña[little
+    [40] => ciudad
+)
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 225] match => синтез-газ
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 225] match => abc
+[process-trans-sentences.php : 225] match => def
+[process-trans-sentences.php : 225] match => ghi
+[process-trans-sentences.php : 225] match => jk'l
+[process-trans-sentences.php : 225] match => ааа
+[process-trans-sentences.php : 225] match => аадаа
+[process-trans-sentences.php : 225] match => вод
+[process-trans-sentences.php : 225] match => водо
+[process-trans-sentences.php : 225] match => рр
+[process-trans-sentences.php : 225] match => окс
+[process-trans-sentences.php : 225] match => ПАВапв
+[process-trans-sentences.php : 225] match => ДЛО
+[process-trans-sentences.php : 225] match => Raum-Zeit-Ausbeute
+[process-trans-sentences.php : 225] match => Raum-Zeitö-Ausbeute
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Messgrößen[measured-quantities
+[process-trans-sentences.php : 241] NOT match => ($result = 0)verwendet[used
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Eingangsstoffmengenströme[input-mole-amount-flow
+[process-trans-sentences.php : 241] NOT match => ($result = 0)zuvor[previously
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 241] NOT match => ($result = 0)canción[song
+[process-trans-sentences.php : 225] match => gustó
+[process-trans-sentences.php : 225] match => español
+[process-trans-sentences.php : 241] NOT match => ($result = 0)pequeña[little
+[process-trans-sentences.php : 225] match => ciudad
+[process-trans-sentences.php : 266] $aryOf_Tokens__Filtered_In =>
+Array
+(
+    [0] => синтез-газ,
+    [1] => синтез-газ
+    [2] => оксиды
+    [3] => углерода
+    [4] => и
+    [5] => водород,
+    [6] => синтез-газ,
+    [7] => оксиды
+    [8] => углерода
+    [9] => и
+    [10] => водород,
+    [11] => abc
+    [12] => def
+    [13] => ghi
+    [14] => jk'l
+    [15] => ааа
+    [16] => аадаа
+    [17] => вод
+    [18] => водо
+    [19] => рр
+    [20] => окс
+    [21] => ПАВапв
+    [22] => ДЛО
+    [23] => Raum-Zeit-Ausbeute
+    [24] => Raum-Zeitö-Ausbeute
+    [25] => gustó
+    [26] => español
+    [27] => ciudad
+)
+
+[process-trans-sentences.php : 274] $aryOf_Tokens__Filtered_Out =>
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => содержащий[comprising
+    [3] => образуется[형성하고
+    [4] => отходящий[폐기물
+    [5] => содержащий[comprising
+    [6] => Messgrößen[measured-quantities
+    [7] => verwendet[used
+    [8] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [9] => zuvor[previously
+    [10] => Dosiereinrichtung[dosing-device
+    [11] => canción[song
+    [12] => pequeña[little
+)
+
+[process-trans-sentences.php : 294] $stringOf_Trans_Strings =>
+образуется[형성하고,отходящий[폐기물,содержащий[comprising,образуется[형성하고,отходящий[폐기물,содержащий[comprising,Messgrößen[measured-quantities,verwendet[used,Eingangsstoffmengenströme[input-mole-amount-flow,zuvor[previously,Dosiereinrichtung[dosing-device,canción[song,pequeña[little
+[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_141545_067224.txt
+ 
+===============================  
+starting... : build_Trans_String (20210511_141616_094686)
+
+[process-trans-sentences.php : 117] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences.php : 130] $linesOf_File =>
+
+Array
+(
+    [0] => образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород,
+
+    [1] => образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО
+
+    [2] => Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device
+
+    [3] => canción[song gustó español pequeña[little ciudad
+
+)
+[process-trans-sentences.php : 161] $stringOf_Joined_Lines =>
+
+образуется[형성하고 отходящий[폐기물 синтез-газ, синтез-газ содержащий[comprising оксиды углерода и водород, образуется[형성하고 отходящий[폐기물 синтез-газ, содержащий[comprising оксиды углерода и водород, abc def ghi jk'l ааа аадаа вод водо рр окс ПАВапв ДЛО Raum-Zeit-Ausbeute Raum-Zeitö-Ausbeute Messgrößen[measured-quantities verwendet[used Eingangsstoffmengenströme[input-mole-amount-flow zuvor[previously Dosiereinrichtung[dosing-device canción[song gustó español pequeña[little ciudad[process-trans-sentences.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => синтез-газ,
+    [3] => синтез-газ
+    [4] => содержащий[comprising
+    [5] => оксиды
+    [6] => углерода
+    [7] => и
+    [8] => водород,
+    [9] => образуется[형성하고
+    [10] => отходящий[폐기물
+    [11] => синтез-газ,
+    [12] => содержащий[comprising
+    [13] => оксиды
+    [14] => углерода
+    [15] => и
+    [16] => водород,
+    [17] => abc
+    [18] => def
+    [19] => ghi
+    [20] => jk'l
+    [21] => ааа
+    [22] => аадаа
+    [23] => вод
+    [24] => водо
+    [25] => рр
+    [26] => окс
+    [27] => ПАВапв
+    [28] => ДЛО
+    [29] => Raum-Zeit-Ausbeute
+    [30] => Raum-Zeitö-Ausbeute
+    [31] => Messgrößen[measured-quantities
+    [32] => verwendet[used
+    [33] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [34] => zuvor[previously
+    [35] => Dosiereinrichtung[dosing-device
+    [36] => canción[song
+    [37] => gustó
+    [38] => español
+    [39] => pequeña[little
+    [40] => ciudad
+)
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 225] match => синтез-газ
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)образуется[형성하고
+[process-trans-sentences.php : 241] NOT match => ($result = 0)отходящий[폐기물
+[process-trans-sentences.php : 225] match => синтез-газ,
+[process-trans-sentences.php : 241] NOT match => ($result = 0)содержащий[comprising
+[process-trans-sentences.php : 225] match => оксиды
+[process-trans-sentences.php : 225] match => углерода
+[process-trans-sentences.php : 225] match => и
+[process-trans-sentences.php : 225] match => водород,
+[process-trans-sentences.php : 225] match => abc
+[process-trans-sentences.php : 225] match => def
+[process-trans-sentences.php : 225] match => ghi
+[process-trans-sentences.php : 225] match => jk'l
+[process-trans-sentences.php : 225] match => ааа
+[process-trans-sentences.php : 225] match => аадаа
+[process-trans-sentences.php : 225] match => вод
+[process-trans-sentences.php : 225] match => водо
+[process-trans-sentences.php : 225] match => рр
+[process-trans-sentences.php : 225] match => окс
+[process-trans-sentences.php : 225] match => ПАВапв
+[process-trans-sentences.php : 225] match => ДЛО
+[process-trans-sentences.php : 225] match => Raum-Zeit-Ausbeute
+[process-trans-sentences.php : 225] match => Raum-Zeitö-Ausbeute
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Messgrößen[measured-quantities
+[process-trans-sentences.php : 241] NOT match => ($result = 0)verwendet[used
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Eingangsstoffmengenströme[input-mole-amount-flow
+[process-trans-sentences.php : 241] NOT match => ($result = 0)zuvor[previously
+[process-trans-sentences.php : 241] NOT match => ($result = 0)Dosiereinrichtung[dosing-device
+[process-trans-sentences.php : 241] NOT match => ($result = 0)canción[song
+[process-trans-sentences.php : 225] match => gustó
+[process-trans-sentences.php : 225] match => español
+[process-trans-sentences.php : 241] NOT match => ($result = 0)pequeña[little
+[process-trans-sentences.php : 225] match => ciudad
+[process-trans-sentences.php : 266] $aryOf_Tokens__Filtered_In =>
+Array
+(
+    [0] => синтез-газ,
+    [1] => синтез-газ
+    [2] => оксиды
+    [3] => углерода
+    [4] => и
+    [5] => водород,
+    [6] => синтез-газ,
+    [7] => оксиды
+    [8] => углерода
+    [9] => и
+    [10] => водород,
+    [11] => abc
+    [12] => def
+    [13] => ghi
+    [14] => jk'l
+    [15] => ааа
+    [16] => аадаа
+    [17] => вод
+    [18] => водо
+    [19] => рр
+    [20] => окс
+    [21] => ПАВапв
+    [22] => ДЛО
+    [23] => Raum-Zeit-Ausbeute
+    [24] => Raum-Zeitö-Ausbeute
+    [25] => gustó
+    [26] => español
+    [27] => ciudad
+)
+
+[process-trans-sentences.php : 274] $aryOf_Tokens__Filtered_Out =>
+Array
+(
+    [0] => образуется[형성하고
+    [1] => отходящий[폐기물
+    [2] => содержащий[comprising
+    [3] => образуется[형성하고
+    [4] => отходящий[폐기물
+    [5] => содержащий[comprising
+    [6] => Messgrößen[measured-quantities
+    [7] => verwendet[used
+    [8] => Eingangsstoffmengenströme[input-mole-amount-flow
+    [9] => zuvor[previously
+    [10] => Dosiereinrichtung[dosing-device
+    [11] => canción[song
+    [12] => pequeña[little
+)
+
+[process-trans-sentences.php : 294] $stringOf_Trans_Strings =>
+образуется[형성하고,отходящий[폐기물,содержащий[comprising,образуется[형성하고,отходящий[폐기물,содержащий[comprising,Messgrößen[measured-quantities,verwendet[used,Eingangsstoffmengenströme[input-mole-amount-flow,zuvor[previously,Dosiereinrichtung[dosing-device,canción[song,pequeña[little
+[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_141616_110285.txt
+ 
+===============================  
+starting... : build_Trans_String (20210511_141935_788657)
+
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_141935_788657.txt
+[process-trans-sentences.php : 344] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_141935_788657.txt'
+ 
+===============================  
+starting... : build_Trans_String (20210511_141947_552479)
+
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_141947_552479.txt
+[process-trans-sentences.php : 344] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_141947_552479.txt'
+ 
+===============================  
+starting... : build_Trans_String (20210511_142018_852737)
+
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_142018_852737.txt
+[process-trans-sentences.php : 344] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_142018_852737.txt'
+ 
+===============================  
+starting... : build_Trans_String (20210511_142032_957562)
+
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_142032_957562.txt
+[process-trans-sentences.php : 344] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_142032_957562.txt'
+===============================  
+starting... : build_Trans_String (20210511_144830_804972)
+
+[process-trans-sentences.php : 209] filtering.. : pattern = '/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i'[process-trans-sentences.php : 328] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_144830_804972.txt
+[process-trans-sentences.php : 344] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210511_144830_804972.txt'
+ 

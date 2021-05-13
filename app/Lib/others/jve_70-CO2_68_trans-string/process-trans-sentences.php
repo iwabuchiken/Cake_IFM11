@@ -187,7 +187,8 @@ php process-trans-sentences.php
 		
 		# vars
 		#ref https://stackoverflow.com/questions/1571187/regexp-with-russian-lang
-		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i";	#=> pattern-id:20210511_115513
+		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i";	#=> pattern-id:20210511_140010
+// 		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i";	#=> pattern-id:20210511_115513
 // 		$pattern	= "/^[йцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i";	#=> pattern-id:20210511_115005
 // 		$pattern	= "/^[йцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/";	#=> pattern-id:20210511_114824
 // 		$pattern	= "/^[йцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,]*$/";	#=> pattern-id:20210511_114713
@@ -259,22 +260,22 @@ php process-trans-sentences.php
 		#n:20210511_122722
 		
 		
-		// 		// report
-		// 		printf("[%s : %d] \$aryOf_Tokens__Filtered_In =>",
+// 				// report
+// 				printf("[%s : %d] \$aryOf_Tokens__Filtered_In =>",
 			
-		// 				basename(__FILE__), __LINE__);
-		// 		print ("\n");
+// 						basename(__FILE__), __LINE__);
+// 				print ("\n");
 		
-		// 		print_r($aryOf_Tokens__Filtered_In);
-		// 		print ("\n");
+// 				print_r($aryOf_Tokens__Filtered_In);
+// 				print ("\n");
 		
-		// 		printf("[%s : %d] \$aryOf_Tokens__Filtered_Out =>",
+// 				printf("[%s : %d] \$aryOf_Tokens__Filtered_Out =>",
 			
-		// 				basename(__FILE__), __LINE__);
-		// 		print ("\n");
+// 						basename(__FILE__), __LINE__);
+// 				print ("\n");
 		
-		// 		print_r($aryOf_Tokens__Filtered_Out);
-		// 		print ("\n");
+// 				print_r($aryOf_Tokens__Filtered_Out);
+// 				print ("\n");
 		
 		
 		/********************
