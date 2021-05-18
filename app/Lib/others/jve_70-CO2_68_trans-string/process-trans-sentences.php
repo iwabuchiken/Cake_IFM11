@@ -338,7 +338,8 @@ php process-trans-sentences.php
 		 * step : 7
 		 * 	file : open
 		 ********************/
-		$commnad_line = "C:\\WORKS_2\\Programs\\sakura\\sakura.exe $fpath_Trans_Out";
+		$commnad_line = "start $fpath_Trans_Out";
+// 		$commnad_line = "C:\\WORKS_2\\Programs\\sakura\\sakura.exe $fpath_Trans_Out";
 		
 		//debug
 		printf("[%s : %d] opening file... '$fpath_Trans_Out'",

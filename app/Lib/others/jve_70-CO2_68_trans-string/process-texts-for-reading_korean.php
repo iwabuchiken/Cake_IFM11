@@ -136,7 +136,7 @@ php process-texts-for-reading_korean.php
 // 		$charsOf_Replacement	= "\.\r\n\r\n";
 // 		$charsOf_Replacement	= '\.\r\n\r\n';
 		
-		$aryOf_Matched_Lines__Paragraph_End_Return	= array();
+		$aryOf_1_Matched_Lines__Paragraph_End_Return	= array();
 		
 		#debug
 		printf("[%s : %d]\npattern --> $pattern"
@@ -168,7 +168,7 @@ php process-texts-for-reading_korean.php
 				# replace
 				$line_Replaced	= preg_replace($pattern, $charsOf_Replacement, $line);
 				
-				array_push($aryOf_Matched_Lines__Paragraph_End_Return, $line_Replaced);
+				array_push($aryOf_1_Matched_Lines__Paragraph_End_Return, $line_Replaced);
 			
 			} else {
 			
@@ -182,18 +182,18 @@ php process-texts-for-reading_korean.php
 // 				print("\n");
 
 				# add line --> to a new array
-				array_push($aryOf_Matched_Lines__Paragraph_End_Return, $line);
+				array_push($aryOf_1_Matched_Lines__Paragraph_End_Return, $line);
 				
 			}//if ($result == 1)
 			
 		}//foreach ($linesOf_File as $line)
 		
 		#debug
-		printf("[%s : %d]\n\$aryOf_Matched_Lines__Paragraph_End_Return ==>"
+		printf("[%s : %d]\n\$aryOf_1_Matched_Lines__Paragraph_End_Return ==>"
 		, basename(__FILE__), __LINE__
 		);
 
-		print_r($aryOf_Matched_Lines__Paragraph_End_Return);
+		print_r($aryOf_1_Matched_Lines__Paragraph_End_Return);
 
 		print("\n");
 
@@ -206,7 +206,7 @@ php process-texts-for-reading_korean.php
 		$charsOf_Replacement	= "$1 ";
 		// 		$charsOf_Replacement	= '\.\r\n\r\n';
 		
-		$aryOf_Matched_Lines__Nonsentence_End_Return	= array();
+		$aryOf_2_Matched_Lines__Nonsentence_End_Return	= array();
 		
 		#debug
 		printf("[%s : %d]\npattern --> $pattern"
@@ -215,7 +215,7 @@ php process-texts-for-reading_korean.php
 		
 		print("\n");
 		
-		foreach ($aryOf_Matched_Lines__Paragraph_End_Return as $line) {
+		foreach ($aryOf_1_Matched_Lines__Paragraph_End_Return as $line) {
 				
 			$result = preg_match($pattern, $line, $matches);
 				
@@ -234,7 +234,7 @@ php process-texts-for-reading_korean.php
 				# replace
 				$line_Replaced	= preg_replace($pattern, $charsOf_Replacement, $line);
 		
-				array_push($aryOf_Matched_Lines__Nonsentence_End_Return, $line_Replaced);
+				array_push($aryOf_2_Matched_Lines__Nonsentence_End_Return, $line_Replaced);
 					
 			} else {
 					
@@ -248,18 +248,18 @@ php process-texts-for-reading_korean.php
 				// 				print("\n");
 		
 				# add line --> to a new array
-				array_push($aryOf_Matched_Lines__Nonsentence_End_Return, $line);
+				array_push($aryOf_2_Matched_Lines__Nonsentence_End_Return, $line);
 		
 			}//if ($result == 1)
 				
 		}//foreach ($linesOf_File as $line)
 		
 		#debug
-		printf("[%s : %d]\n\$aryOf_Matched_Lines__Nonsentence_End_Return ==>"
+		printf("[%s : %d]\n\$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>"
 				, basename(__FILE__), __LINE__
 		);
 		
-		print_r($aryOf_Matched_Lines__Nonsentence_End_Return);
+		print_r($aryOf_2_Matched_Lines__Nonsentence_End_Return);
 		
 		print("\n");
 
@@ -268,7 +268,69 @@ php process-texts-for-reading_korean.php
 		 * 	regex : sentence-end period --> add : double return
 		 ********************/
 		#code:20210517_151904
+		#([^0-9]\.) 	$1\r\n\r\n
+		$pattern = '/([^0-9]\.) /';
 		
+		$charsOf_Replacement	= "$1\r\r";
+// 		$charsOf_Replacement	= "$1\r\r\r";
+		// 		$charsOf_Replacement	= '\.\r\n\r\n';
+		
+		$aryOf_3_Matched_Lines__Sentence_End_Period	= array();
+		
+		#debug
+		printf("[%s : %d]\npattern --> $pattern"
+		, basename(__FILE__), __LINE__
+		);
+		
+		print("\n");
+		
+		foreach ($aryOf_2_Matched_Lines__Nonsentence_End_Return as $line) {
+		
+			$result = preg_match($pattern, $line, $matches);
+		
+			//judge
+			if ($result == 1) {
+					
+				#debug
+				printf("[%s : %d]\nmatch : line --> '$line'"
+				, basename(__FILE__), __LINE__
+				);
+		
+				print_r($matches);
+				print("\n");
+		
+				#code:20210517_145120
+				# replace
+				$line_Replaced	= preg_replace($pattern, $charsOf_Replacement, $line);
+		
+				array_push($aryOf_3_Matched_Lines__Sentence_End_Period, $line_Replaced);
+					
+			} else {
+					
+				// 				#debug
+				// 				printf("[%s : %d]\nNOT match : line --> '$line'"
+				// 				, basename(__FILE__), __LINE__
+				// 				);
+		
+				// 				print_r($matches);
+		
+				// 				print("\n");
+		
+				# add line --> to a new array
+				array_push($aryOf_3_Matched_Lines__Sentence_End_Period, $line);
+		
+			}//if ($result == 1)
+		
+		}//foreach ($linesOf_File as $line)
+		
+		#debug
+		printf("[%s : %d]\n\$aryOf_3_Matched_Lines__Sentence_End_Period ==>"
+				, basename(__FILE__), __LINE__
+		);
+		
+		print_r($aryOf_3_Matched_Lines__Sentence_End_Period);
+		
+		print("\n");
 		
 		/********************
 		 * step : 3 : 4
@@ -277,7 +339,8 @@ php process-texts-for-reading_korean.php
 		$stringOf_Replaeced_Lines	= join(
 				
 				""
-				, $aryOf_Matched_Lines__Nonsentence_End_Return
+				, $aryOf_3_Matched_Lines__Sentence_End_Period
+// 				, $aryOf_Matched_Lines__Nonsentence_End_Return
 				
 				);
 		
@@ -320,6 +383,24 @@ php process-texts-for-reading_korean.php
 		
 		# close
 		fclose($f_Out);
+
+		/********************
+		 * step : 5
+		 * 	file --> open
+		 ********************/
+		#code:20210518_123133
+// 		$commnad_line = $fpath_Texts_For_Reading__Processed;	#=> editor process starts in the same process
+		$commnad_line = "start $fpath_Texts_For_Reading__Processed";	#=> editor process starts in a different process
+// 		$commnad_line = "C:\\WORKS_2\\Programs\\sakura\\sakura.exe $fpath_Texts_For_Reading__Processed";	#=> using 'sakura', the command line window halts at the calling step
+		
+		//debug
+		printf("[%s : %d] opening file... '$fpath_Texts_For_Reading__Processed'",
+					
+				basename(__FILE__), __LINE__);
+		
+		print ("\n");
+		
+		exec($commnad_line);
 		
 		#debug
 		printf("[%s : %d] file written ==>"
@@ -339,223 +420,6 @@ php process-texts-for-reading_korean.php
 		
 		return;
 		
-		/********************
-		 * step : 3 : 0.1
-		 * 	lines : trim
-		 ********************/
-		$linesOf_File__Trimmed = array();
-		
-		foreach ($linesOf_File as $line) {
-		
-			#ref https://www.w3schools.com/PHP/func_string_trim.asp
-			$line_Trimmed = trim($line);
-			
-			array_push($linesOf_File__Trimmed, $line_Trimmed);
-			
-		}//foreach ($linesOf_File as $line)
-		
-		/********************
-		 * step : 3 : 1
-		 * 	lines : join
-		 ********************/
-		$stringOf_Joined_Lines	= join(" ", $linesOf_File__Trimmed);
-// 		$stringOf_Joined_Lines	= join(" ", $linesOf_File);
-		
-// 		#debug
-// 		$message	= "\$stringOf_Joined_Lines =>";
-// 		$message	.= "\n";
-// 		$message	.= "\n";
-		
-// 		printf("[%s : %d] %s", basename(__FILE__), __LINE__, $message);
-		
-// 		print_r($stringOf_Joined_Lines);
-
-		/********************
-		 * step : 3 : 2
-		 * 	joined lines : split
-		 ********************/
-		$tokensOf_Split	= explode(" ", $stringOf_Joined_Lines);
-		
-// 		#debug
-// 		$message	= "\$tokensOf_Split =>";
-// 		$message	.= "\n";
-// 		$message	.= "\n";
-		
-// 		printf("[%s : %d] %s", basename(__FILE__), __LINE__, $message);
-		
-// 		print_r($tokensOf_Split);
-		
-		
-		/********************
-		 * step : 4 : 1
-		 * 	tokes : filter : russian chars
-		 ********************/
-		$aryOf_Tokens__Filtered_In	= array();
-		$aryOf_Tokens__Filtered_Out	= array();
-		
-		# vars
-		#ref https://stackoverflow.com/questions/1571187/regexp-with-russian-lang
-		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,'\.\(\)\­]*$/i";	#=> pattern-id:20210516_102849 // "()­" added
-//		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,'\.]*$/i";	#=> pattern-id:20210516_092039 // "." added
-//		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,']*$/i";	#=> pattern-id:20210511_140010
-// 		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i";	#=> pattern-id:20210511_115513
-// 		$pattern	= "/^[йцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/i";	#=> pattern-id:20210511_115005
-// 		$pattern	= "/^[йцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,']*$/";	#=> pattern-id:20210511_114824
-// 		$pattern	= "/^[йцукенгшщзхъфывапролджэячсмитьбю0-9a-zA-Z\s\-,]*$/";	#=> pattern-id:20210511_114713
-// 		$pattern	= "/^[йцукенгшщзхъфывапролджэячсмитьбю0-9\s\-,]*$/";	#=> pattern-id:20210511_114125
-// 		$pattern	= "/^[йцукенгшщзхъфывапролджэячсмитьбю0-9\s\-]*$/";	#=> pattern-id:20210511_113804
-// 		$pattern	= "/^[а-яА-Я\p{Cyrillic}0-9\s\-]*$/";	#=> pattern-id:20210511_113552
-// 		$pattern	= "/^[а-яА-Я\p{Cyrillic}0-9\s\-]*(\r\n|$)/";	#=> pattern-id:20210511_113544
-// 		$pattern	= "/^[\x{0410}-\x{042F}]*(\r\n|$)/u";
-// 		$pattern	= "/^[,'-0-9a-zA-Z\(\),\.\x{0410}-\x{042F}]*(\r\n|$)/u";
-// 		$pattern	= "/^[,'-0-9a-zA-Z\(\),\.а-яА-Яр]*(\r\n|$)/";
-// 		$pattern	= "/^[,'-0-9a-zA-Z\(\),\.а-яА-Я]*(\r\n|$)/";
-// 		$pattern	= "/^[,'-0-9a-zA-Z\(\),\.а-я]*(\r\n|$)/";
-// 		$pattern	= "/^[,'-0-9a-zA-Z\(\),\.а-я]+(\r\n|$)/";
-// 		$pattern	= "/^['-0-9a-zA-Z\(\),\.а-я]+(\r\n|$)/";	#=> pattern-id:20210511_113516
-
-		printf("[%s : %d] filtering.. : pattern = '$pattern'",
-					
-				basename(__FILE__), __LINE__
-		
-		);
-		
-		# filter
-		foreach ($tokensOf_Split as $token) {
-		
-			#ref https://www.php.net/manual/en/function.preg-match.php
-			$result 	= preg_match($pattern, $token, $matches);
-			
-			// judge
-			if ($result == 1) {
-			
-// 				printf("[%s : %d] match => ", 
-							
-// 						basename(__FILE__)
-// 						, __LINE__
-						
-// 						);
-				
-// 				print_r($token);
-				
-// 				print ("\n");
-				
-				# to array
-				array_push($aryOf_Tokens__Filtered_In, $token);
-									
-			} else {
-			
-// 				printf("[%s : %d] NOT match => (\$result = $result)",
-							
-// 						basename(__FILE__)
-// 						, __LINE__
-				
-// 				);
-				
-// 				print_r($token);
-				
-// 				print ("\n");
-				
-				# to array
-				array_push($aryOf_Tokens__Filtered_Out, $token);
-				
-			}//if ($result == 1)
-			
-		}//foreach ($tokensOf_Split as $token)
-		
-		/********************
-		 * step : 4 : 2
-		 * 	tokes : filter : german chars
-		 ********************/
-		
-		
-		
-// 				// report
-// 				printf("[%s : %d] \$aryOf_Tokens__Filtered_In =>",
-			
-// 						basename(__FILE__), __LINE__);
-// 				print ("\n");
-		
-// 				print_r($aryOf_Tokens__Filtered_In);
-// 				print ("\n");
-		
-// 				printf("[%s : %d] \$aryOf_Tokens__Filtered_Out =>",
-			
-// 						basename(__FILE__), __LINE__);
-// 				print ("\n");
-		
-// 				print_r($aryOf_Tokens__Filtered_Out);
-// 				print ("\n");
-		
-		
-		/********************
-		 * step : 4 : 3
-		 * 	tokes : filter : spanish chars
-		 ********************/
-		
-		/********************
-		 * step : 5
-		 * 	build : final string
-		 ********************/
-		$stringOf_Trans_Strings	= join(",", $aryOf_Tokens__Filtered_Out);
-		
-// 		printf("[%s : %d] \$stringOf_Trans_Strings =>",
-					
-// 				basename(__FILE__), __LINE__);
-		
-// 		print ("\n");
-		
-// 		print ($stringOf_Trans_Strings);
-// 		print ("\n");
-		
-		/********************
-		 * step : 6
-		 * 	string : to file
-		 ********************/
-		$tlabel = Utils::get_CurrentTime2(CONS::$timeLabelTypes["serial"]);
-		
-		$fname_Trans_Out	= "trans_$tlabel.txt";
-		
-		$dpath_Trans_Out	= "C:\\WORKS_2\\WS\\WS_Others.JVEMV6\\JVEMV6\\70_co2\\trans";
-		
-		$fpath_Trans_Out	= join(
-				
-				DIRECTORY_SEPARATOR
-				, array($dpath_Trans_Out, $fname_Trans_Out)
-				
-				);
-		
-		$fout	= fopen($fpath_Trans_Out, "w");
-		
-		# write
-		$result	= fwrite($fout, $stringOf_Trans_Strings);
-		
-		# close
-		fclose($fout);
-		
-		printf("[%s : %d] file written =>",
-					
-				basename(__FILE__), __LINE__);
-		
-		print ("\n");
-		
-		print ($fpath_Trans_Out);
-		print ("\n");
-		
-		/********************
-		 * step : 7
-		 * 	file : open
-		 ********************/
-		$commnad_line = "C:\\WORKS_2\\Programs\\sakura\\sakura.exe $fpath_Trans_Out";
-		
-		//debug
-		printf("[%s : %d] opening file... '$fpath_Trans_Out'",
-					
-				basename(__FILE__), __LINE__);
-		
-		print ("\n");
-		
-		exec($commnad_line);
 		
 				
 	}//function build_Texts_For_Reading() {
