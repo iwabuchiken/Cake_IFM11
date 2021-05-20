@@ -352,3 +352,962 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_155309_224399.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_155309_224399.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210519_160106_514210)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 本文概述了近十几年国内外的CCUS技术，尤其是二氧化碳的矿化技术以及利用海水中矿物离子——
+    [1] => 钙镁[gai4mei3
+    [2] => 离子进行c的研究进展。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)本文概述了近十几年国内外的CCUS技术，尤其是二氧化碳的矿化技术以及利用海水中矿物离子——
+[process-trans-sentences_chinese.php : 216] match => 钙镁[gai4mei3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)离子进行c的研究进展。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_160106_514210.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_160106_514210.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210519_161630_316400)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 二氧化碳
+    [1] => 捕捉[bu3zhuo1
+    [2] => 技术
+    [3] => 
+    [4] => 
+    [5] => 目前，发达国家主要以CO2的捕获与地质
+    [6] => 埋存[mai2cun2
+    [7] => 作为CO2减排的手段。
+    [8] => 
+    [9] => 
+    [10] => 
+    [11] => 01生物法吸收CO2
+    [12] => 
+    [13] => 
+    [14] => 工业革命以前，地球大气层中的温室气体含量保持稳定，CO2含量一直处在1.8×10-4～2.89×10-4，此时在生态系统中，植物的光合作用是吸收CO2的主要手段。
+    [15] => 
+    [16] => 该方法具有固有的有效性和可持续性，类似于传统的生物废水处理，因为生物过程仅需要食物源（碳）、环境温度和日光来维持。
+    [17] => 
+    [18] => 
+    [19] => 
+    [20] => 2014年R.Ramaraj等利用天然水
+    [21] => 介质[jie4zhi4:medium
+    [22] => 模拟[mo2ni3
+    [23] => 实验室中的天然水体来用于
+    [24] => 藻类[zao3-
+    [25] => 生长，并展示藻类生物固定CO2的潜力，对解决全球变暖和能源危机问题很有研究价值。
+    [26] => 
+    [27] => F.G.AcienFernandez等和S.Judd等研究了藻类光生物反应器（PBRs）在减少二氧化碳和在废水中去除营养物方面的应用，研究显示即使是最简单的PBR配置（高速藻类池，HRAP）去除CO2的效率也比传统的生物营养素（BNR）植物至少高两个
+    [28] => 数量级[:magnitude，但是PBR技术的经济案例在很大程度上依赖于生成高价值产品所带来的成本效益，而且藻类生物反应器是碳捕获应用领域一个相对较新的研究方向。
+    [29] => 
+    [30] => 
+    [31] => 
+    [32] => 早在2007年，H.T.Hsueh等提出除光合作用的限制外，二氧化碳传质也是微藻生长过程中的关键因素，其尝试了使用高性能
+    [33] => 碱性[jian3-:alkaline
+    [34] => 吸收剂及藻类光合作用再生碱性溶液来增强
+    [35] => 填充塔[tian2chong1ta3
+    [36] => 吸收CO2循环过程中的传质。
+    [37] => 
+    [38] => 出于二氧化碳封存和废水修复的双重目的，W.T.Chang等研究了二氧化碳捕获和光生物反应（含有极大
+    [39] => 螺旋[luo2xuan2
+    [40] => 藻的微藻细胞）结合的可行性。
+    [41] => 
+    [42] => 通过此方法不仅去除了废水中的部分有机污染物（COD，BOD）和养分（NH4+，PO43-），经处理的废水还可以再用作原料废水的
+    [43] => 稀释[xi1shi4
+    [44] => 剂。
+    [45] => 
+    [46] => 该研究还表明，总无机碳（TIC）浓度与吸附液中吸收的CO2量成正比，并且溶液pH可用作光生物反应器和生物质培养阶段的控制参数。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)二氧化碳
+[process-trans-sentences_chinese.php : 216] match => 捕捉[bu3zhuo1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)技术
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)目前，发达国家主要以CO2的捕获与地质
+[process-trans-sentences_chinese.php : 216] match => 埋存[mai2cun2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)作为CO2减排的手段。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)01生物法吸收CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)工业革命以前，地球大气层中的温室气体含量保持稳定，CO2含量一直处在1.8×10-4～2.89×10-4，此时在生态系统中，植物的光合作用是吸收CO2的主要手段。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该方法具有固有的有效性和可持续性，类似于传统的生物废水处理，因为生物过程仅需要食物源（碳）、环境温度和日光来维持。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2014年R.Ramaraj等利用天然水
+[process-trans-sentences_chinese.php : 216] match => 介质[jie4zhi4:medium
+[process-trans-sentences_chinese.php : 216] match => 模拟[mo2ni3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)实验室中的天然水体来用于
+[process-trans-sentences_chinese.php : 216] match => 藻类[zao3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)生长，并展示藻类生物固定CO2的潜力，对解决全球变暖和能源危机问题很有研究价值。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)F.G.AcienFernandez等和S.Judd等研究了藻类光生物反应器（PBRs）在减少二氧化碳和在废水中去除营养物方面的应用，研究显示即使是最简单的PBR配置（高速藻类池，HRAP）去除CO2的效率也比传统的生物营养素（BNR）植物至少高两个
+[process-trans-sentences_chinese.php : 216] match => 数量级[:magnitude，但是PBR技术的经济案例在很大程度上依赖于生成高价值产品所带来的成本效益，而且藻类生物反应器是碳捕获应用领域一个相对较新的研究方向。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)早在2007年，H.T.Hsueh等提出除光合作用的限制外，二氧化碳传质也是微藻生长过程中的关键因素，其尝试了使用高性能
+[process-trans-sentences_chinese.php : 216] match => 碱性[jian3-:alkaline
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吸收剂及藻类光合作用再生碱性溶液来增强
+[process-trans-sentences_chinese.php : 216] match => 填充塔[tian2chong1ta3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吸收CO2循环过程中的传质。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)出于二氧化碳封存和废水修复的双重目的，W.T.Chang等研究了二氧化碳捕获和光生物反应（含有极大
+[process-trans-sentences_chinese.php : 216] match => 螺旋[luo2xuan2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)藻的微藻细胞）结合的可行性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)通过此方法不仅去除了废水中的部分有机污染物（COD，BOD）和养分（NH4+，PO43-），经处理的废水还可以再用作原料废水的
+[process-trans-sentences_chinese.php : 216] match => 稀释[xi1shi4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)剂。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该研究还表明，总无机碳（TIC）浓度与吸附液中吸收的CO2量成正比，并且溶液pH可用作光生物反应器和生物质培养阶段的控制参数。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_161630_325400.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_161630_325400.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210519_161659_982850)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 二氧化碳
+    [1] => 捕捉[bu3zhuo1
+    [2] => 技术
+    [3] => 
+    [4] => 
+    [5] => 目前，发达国家主要以CO2的捕获与地质
+    [6] => 埋存[mai2cun2
+    [7] => 作为CO2减排的手段。
+    [8] => 
+    [9] => 
+    [10] => 
+    [11] => 01生物法吸收CO2
+    [12] => 
+    [13] => 
+    [14] => 工业革命以前，地球大气层中的温室气体含量保持稳定，CO2含量一直处在1.8×10-4～2.89×10-4，此时在生态系统中，植物的光合作用是吸收CO2的主要手段。
+    [15] => 
+    [16] => 该方法具有固有的有效性和可持续性，类似于传统的生物废水处理，因为生物过程仅需要食物源（碳）、环境温度和日光来维持。
+    [17] => 
+    [18] => 
+    [19] => 
+    [20] => 2014年R.Ramaraj等利用天然水
+    [21] => 介质[jie4zhi4:medium
+    [22] => 模拟[mo2ni3
+    [23] => 实验室中的天然水体来用于
+    [24] => 藻类[zao3-
+    [25] => 生长，并展示藻类生物固定CO2的潜力，对解决全球变暖和能源危机问题很有研究价值。
+    [26] => 
+    [27] => F.G.AcienFernandez等和S.Judd等研究了藻类光生物反应器（PBRs）在减少二氧化碳和在废水中去除营养物方面的应用，研究显示即使是最简单的PBR配置（高速藻类池，HRAP）去除CO2的效率也比传统的生物营养素（BNR）植物至少高两个
+    [28] => 数量级[:magnitude
+    [29] => ，但是PBR技术的经济案例在很大程度上依赖于生成高价值产品所带来的成本效益，而且藻类生物反应器是碳捕获应用领域一个相对较新的研究方向。
+    [30] => 
+    [31] => 
+    [32] => 
+    [33] => 早在2007年，H.T.Hsueh等提出除光合作用的限制外，二氧化碳传质也是微藻生长过程中的关键因素，其尝试了使用高性能
+    [34] => 碱性[jian3-:alkaline
+    [35] => 吸收剂及藻类光合作用再生碱性溶液来增强
+    [36] => 填充塔[tian2chong1ta3
+    [37] => 吸收CO2循环过程中的传质。
+    [38] => 
+    [39] => 出于二氧化碳封存和废水修复的双重目的，W.T.Chang等研究了二氧化碳捕获和光生物反应（含有极大
+    [40] => 螺旋[luo2xuan2
+    [41] => 藻的微藻细胞）结合的可行性。
+    [42] => 
+    [43] => 通过此方法不仅去除了废水中的部分有机污染物（COD，BOD）和养分（NH4+，PO43-），经处理的废水还可以再用作原料废水的
+    [44] => 稀释[xi1shi4
+    [45] => 剂。
+    [46] => 
+    [47] => 该研究还表明，总无机碳（TIC）浓度与吸附液中吸收的CO2量成正比，并且溶液pH可用作光生物反应器和生物质培养阶段的控制参数。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)二氧化碳
+[process-trans-sentences_chinese.php : 216] match => 捕捉[bu3zhuo1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)技术
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)目前，发达国家主要以CO2的捕获与地质
+[process-trans-sentences_chinese.php : 216] match => 埋存[mai2cun2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)作为CO2减排的手段。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)01生物法吸收CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)工业革命以前，地球大气层中的温室气体含量保持稳定，CO2含量一直处在1.8×10-4～2.89×10-4，此时在生态系统中，植物的光合作用是吸收CO2的主要手段。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该方法具有固有的有效性和可持续性，类似于传统的生物废水处理，因为生物过程仅需要食物源（碳）、环境温度和日光来维持。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2014年R.Ramaraj等利用天然水
+[process-trans-sentences_chinese.php : 216] match => 介质[jie4zhi4:medium
+[process-trans-sentences_chinese.php : 216] match => 模拟[mo2ni3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)实验室中的天然水体来用于
+[process-trans-sentences_chinese.php : 216] match => 藻类[zao3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)生长，并展示藻类生物固定CO2的潜力，对解决全球变暖和能源危机问题很有研究价值。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)F.G.AcienFernandez等和S.Judd等研究了藻类光生物反应器（PBRs）在减少二氧化碳和在废水中去除营养物方面的应用，研究显示即使是最简单的PBR配置（高速藻类池，HRAP）去除CO2的效率也比传统的生物营养素（BNR）植物至少高两个
+[process-trans-sentences_chinese.php : 216] match => 数量级[:magnitude
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，但是PBR技术的经济案例在很大程度上依赖于生成高价值产品所带来的成本效益，而且藻类生物反应器是碳捕获应用领域一个相对较新的研究方向。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)早在2007年，H.T.Hsueh等提出除光合作用的限制外，二氧化碳传质也是微藻生长过程中的关键因素，其尝试了使用高性能
+[process-trans-sentences_chinese.php : 216] match => 碱性[jian3-:alkaline
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吸收剂及藻类光合作用再生碱性溶液来增强
+[process-trans-sentences_chinese.php : 216] match => 填充塔[tian2chong1ta3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吸收CO2循环过程中的传质。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)出于二氧化碳封存和废水修复的双重目的，W.T.Chang等研究了二氧化碳捕获和光生物反应（含有极大
+[process-trans-sentences_chinese.php : 216] match => 螺旋[luo2xuan2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)藻的微藻细胞）结合的可行性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)通过此方法不仅去除了废水中的部分有机污染物（COD，BOD）和养分（NH4+，PO43-），经处理的废水还可以再用作原料废水的
+[process-trans-sentences_chinese.php : 216] match => 稀释[xi1shi4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)剂。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该研究还表明，总无机碳（TIC）浓度与吸附液中吸收的CO2量成正比，并且溶液pH可用作光生物反应器和生物质培养阶段的控制参数。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_161659_998450.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_161659_998450.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210519_161844_343363)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 二氧化碳
+    [1] => 捕捉[bu3zhuo1
+    [2] => 技术
+    [3] => 
+    [4] => 
+    [5] => 目前，发达国家主要以CO2的捕获与地质
+    [6] => 埋存[mai2cun2
+    [7] => 作为CO2减排的手段。
+    [8] => 
+    [9] => 
+    [10] => 
+    [11] => 01生物法吸收CO2
+    [12] => 
+    [13] => 
+    [14] => 工业革命以前，地球大气层中的温室气体含量保持稳定，CO2含量一直处在1.8×10-4～2.89×10-4，此时在生态系统中，植物的光合作用是吸收CO2的主要手段。
+    [15] => 
+    [16] => 该方法具有固有的有效性和可持续性，类似于传统的生物废水处理，因为生物过程仅需要食物源（碳）、环境温度和日光来维持。
+    [17] => 
+    [18] => 
+    [19] => 
+    [20] => 2014年R.Ramaraj等利用天然水
+    [21] => 介质[jie4zhi4:medium
+    [22] => 模拟[mo2ni3
+    [23] => 实验室中的天然水体来用于
+    [24] => 藻类[zao3-
+    [25] => 生长，并展示藻类生物固定CO2的潜力，对解决全球变暖和能源危机问题很有研究价值。
+    [26] => 
+    [27] => F.G.AcienFernandez等和S.Judd等研究了藻类光生物反应器（PBRs）在减少二氧化碳和在废水中去除营养物方面的应用，研究显示即使是最简单的PBR配置（高速藻类池，HRAP）去除CO2的效率也比传统的生物营养素（BNR）植物至少高两个
+    [28] => 数量级[:magnitude
+    [29] => ，但是PBR技术的经济案例在很大程度上依赖于生成高价值产品所带来的成本效益，而且藻类生物反应器是碳捕获应用领域一个相对较新的研究方向。
+    [30] => 
+    [31] => 
+    [32] => 
+    [33] => 早在2007年，H.T.Hsueh等提出除光合作用的限制外，二氧化碳传质也是微藻生长过程中的关键因素，其尝试了使用高性能
+    [34] => 碱性[jian3-:alkaline
+    [35] => 吸收剂及藻类光合作用再生碱性溶液来增强
+    [36] => 填充塔[tian2chong1ta3
+    [37] => 吸收CO2循环过程中的传质。
+    [38] => 
+    [39] => 出于二氧化碳封存和废水修复的双重目的，W.T.Chang等研究了二氧化碳捕获和光生物反应（含有极大
+    [40] => 螺旋[luo2xuan2
+    [41] => 藻的微藻细胞）结合的可行性。
+    [42] => 
+    [43] => 通过此方法不仅去除了废水中的部分有机污染物（COD，BOD）和养分（NH4+，PO43-），经处理的废水还可以再用作原料废水的
+    [44] => 稀释[xi1shi4
+    [45] => 剂。
+    [46] => 
+    [47] => 该研究还表明，总无机碳（TIC）浓度与吸附液中吸收的CO2量成正比，并且溶液pH可用作光生物反应器和生物质培养阶段的控制参数[-:parameter。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)二氧化碳
+[process-trans-sentences_chinese.php : 216] match => 捕捉[bu3zhuo1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)技术
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)目前，发达国家主要以CO2的捕获与地质
+[process-trans-sentences_chinese.php : 216] match => 埋存[mai2cun2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)作为CO2减排的手段。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)01生物法吸收CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)工业革命以前，地球大气层中的温室气体含量保持稳定，CO2含量一直处在1.8×10-4～2.89×10-4，此时在生态系统中，植物的光合作用是吸收CO2的主要手段。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该方法具有固有的有效性和可持续性，类似于传统的生物废水处理，因为生物过程仅需要食物源（碳）、环境温度和日光来维持。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2014年R.Ramaraj等利用天然水
+[process-trans-sentences_chinese.php : 216] match => 介质[jie4zhi4:medium
+[process-trans-sentences_chinese.php : 216] match => 模拟[mo2ni3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)实验室中的天然水体来用于
+[process-trans-sentences_chinese.php : 216] match => 藻类[zao3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)生长，并展示藻类生物固定CO2的潜力，对解决全球变暖和能源危机问题很有研究价值。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)F.G.AcienFernandez等和S.Judd等研究了藻类光生物反应器（PBRs）在减少二氧化碳和在废水中去除营养物方面的应用，研究显示即使是最简单的PBR配置（高速藻类池，HRAP）去除CO2的效率也比传统的生物营养素（BNR）植物至少高两个
+[process-trans-sentences_chinese.php : 216] match => 数量级[:magnitude
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，但是PBR技术的经济案例在很大程度上依赖于生成高价值产品所带来的成本效益，而且藻类生物反应器是碳捕获应用领域一个相对较新的研究方向。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)早在2007年，H.T.Hsueh等提出除光合作用的限制外，二氧化碳传质也是微藻生长过程中的关键因素，其尝试了使用高性能
+[process-trans-sentences_chinese.php : 216] match => 碱性[jian3-:alkaline
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吸收剂及藻类光合作用再生碱性溶液来增强
+[process-trans-sentences_chinese.php : 216] match => 填充塔[tian2chong1ta3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吸收CO2循环过程中的传质。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)出于二氧化碳封存和废水修复的双重目的，W.T.Chang等研究了二氧化碳捕获和光生物反应（含有极大
+[process-trans-sentences_chinese.php : 216] match => 螺旋[luo2xuan2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)藻的微藻细胞）结合的可行性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)通过此方法不仅去除了废水中的部分有机污染物（COD，BOD）和养分（NH4+，PO43-），经处理的废水还可以再用作原料废水的
+[process-trans-sentences_chinese.php : 216] match => 稀释[xi1shi4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)剂。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 该研究还表明，总无机碳（TIC）浓度与吸附液中吸收的CO2量成正比，并且溶液pH可用作光生物反应器和生物质培养阶段的控制参数[-:parameter。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_161844_358963.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_161844_358963.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210519_162047_758956)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 二氧化碳
+    [1] => 捕捉[bu3zhuo1
+    [2] => 技术
+    [3] => 
+    [4] => 
+    [5] => 目前，发达国家主要以CO2的捕获与地质
+    [6] => 埋存[mai2cun2
+    [7] => 作为CO2减排的手段。
+    [8] => 
+    [9] => 
+    [10] => 
+    [11] => 01生物法吸收CO2
+    [12] => 
+    [13] => 
+    [14] => 工业革命以前，地球大气层中的温室气体含量保持稳定，CO2含量一直处在1.8×10-4～2.89×10-4，此时在生态系统中，植物的光合作用是吸收CO2的主要手段。
+    [15] => 
+    [16] => 该方法具有固有的有效性和可持续性，类似于传统的生物废水处理，因为生物过程仅需要食物源（碳）、环境温度和日光来维持。
+    [17] => 
+    [18] => 
+    [19] => 
+    [20] => 2014年R.Ramaraj等利用天然水
+    [21] => 介质[jie4zhi4:medium
+    [22] => 模拟[mo2ni3
+    [23] => 实验室中的天然水体来用于
+    [24] => 藻类[zao3-
+    [25] => 生长，并展示藻类生物固定CO2的潜力，对解决全球变暖和能源危机问题很有研究价值。
+    [26] => 
+    [27] => F.G.AcienFernandez等和S.Judd等研究了藻类光生物反应器（PBRs）在减少二氧化碳和在废水中去除营养物方面的应用，研究显示即使是最简单的PBR配置（高速藻类池，HRAP）去除CO2的效率也比传统的生物营养素（BNR）植物至少高两个
+    [28] => 数量级[:magnitude
+    [29] => ，但是PBR技术的经济案例在很大程度上依赖于生成高价值产品所带来的成本效益，而且藻类生物反应器是碳捕获应用领域一个相对较新的研究方向。
+    [30] => 
+    [31] => 
+    [32] => 
+    [33] => 早在2007年，H.T.Hsueh等提出除光合作用的限制外，二氧化碳传质也是微藻生长过程中的关键因素，其尝试了使用高性能
+    [34] => 碱性[jian3-:alkaline
+    [35] => 吸收剂及藻类光合作用再生碱性溶液来增强
+    [36] => 填充塔[tian2chong1ta3
+    [37] => 吸收CO2循环过程中的传质。
+    [38] => 
+    [39] => 出于二氧化碳封存和废水修复的双重目的，W.T.Chang等研究了二氧化碳捕获和光生物反应（含有极大
+    [40] => 螺旋[luo2xuan2
+    [41] => 藻的微藻细胞）结合的可行性。
+    [42] => 
+    [43] => 通过此方法不仅去除了废水中的部分有机污染物（COD，BOD）和养分（NH4+，PO43-），经处理的废水还可以再用作原料废水的
+    [44] => 稀释[xi1shi4
+    [45] => 剂。
+    [46] => 
+    [47] => 该研究还表明，总无机碳（TIC）浓度与吸附液中吸收的CO2量成正比，并且溶液pH可用作光生物反应器和生物质培养阶段的控制参数[-:parameter。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)二氧化碳
+[process-trans-sentences_chinese.php : 216] match => 捕捉[bu3zhuo1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)技术
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)目前，发达国家主要以CO2的捕获与地质
+[process-trans-sentences_chinese.php : 216] match => 埋存[mai2cun2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)作为CO2减排的手段。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)01生物法吸收CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)工业革命以前，地球大气层中的温室气体含量保持稳定，CO2含量一直处在1.8×10-4～2.89×10-4，此时在生态系统中，植物的光合作用是吸收CO2的主要手段。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该方法具有固有的有效性和可持续性，类似于传统的生物废水处理，因为生物过程仅需要食物源（碳）、环境温度和日光来维持。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2014年R.Ramaraj等利用天然水
+[process-trans-sentences_chinese.php : 216] match => 介质[jie4zhi4:medium
+[process-trans-sentences_chinese.php : 216] match => 模拟[mo2ni3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)实验室中的天然水体来用于
+[process-trans-sentences_chinese.php : 216] match => 藻类[zao3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)生长，并展示藻类生物固定CO2的潜力，对解决全球变暖和能源危机问题很有研究价值。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)F.G.AcienFernandez等和S.Judd等研究了藻类光生物反应器（PBRs）在减少二氧化碳和在废水中去除营养物方面的应用，研究显示即使是最简单的PBR配置（高速藻类池，HRAP）去除CO2的效率也比传统的生物营养素（BNR）植物至少高两个
+[process-trans-sentences_chinese.php : 216] match => 数量级[:magnitude
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，但是PBR技术的经济案例在很大程度上依赖于生成高价值产品所带来的成本效益，而且藻类生物反应器是碳捕获应用领域一个相对较新的研究方向。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)早在2007年，H.T.Hsueh等提出除光合作用的限制外，二氧化碳传质也是微藻生长过程中的关键因素，其尝试了使用高性能
+[process-trans-sentences_chinese.php : 216] match => 碱性[jian3-:alkaline
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吸收剂及藻类光合作用再生碱性溶液来增强
+[process-trans-sentences_chinese.php : 216] match => 填充塔[tian2chong1ta3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吸收CO2循环过程中的传质。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)出于二氧化碳封存和废水修复的双重目的，W.T.Chang等研究了二氧化碳捕获和光生物反应（含有极大
+[process-trans-sentences_chinese.php : 216] match => 螺旋[luo2xuan2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)藻的微藻细胞）结合的可行性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)通过此方法不仅去除了废水中的部分有机污染物（COD，BOD）和养分（NH4+，PO43-），经处理的废水还可以再用作原料废水的
+[process-trans-sentences_chinese.php : 216] match => 稀释[xi1shi4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)剂。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 该研究还表明，总无机碳（TIC）浓度与吸附液中吸收的CO2量成正比，并且溶液pH可用作光生物反应器和生物质培养阶段的控制参数[-:parameter。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_162047_758956.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_162047_758956.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210519_164311_670315)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 02物理法吸收CO2
+    [1] => 
+    [2] => 
+    [3] => 物理吸收法主要是利用水、甲醇、碳酸丙
+    [4] => 烯酯[xi1zhi3
+    [5] => 等溶液作为吸收剂，根据亨利定律，利用CO2在这些溶液中的溶解度随压力改变来吸收或解吸。
+    [6] => 
+    [7] => 
+    [8] => 
+    [9] => 物理吸收法大多在低温高压下进行，具有吸收气体量大、吸收剂再生不需要加热、不
+    [10] => 腐蚀[fu3shi2
+    [11] => 设备等优点。
+    [12] => 
+    [13] => 主要有
+    [14] => 膜分离[mo2--
+    [15] => 法、
+    [16] => 催化[cui1-:catalytic
+    [17] => 燃烧法、变压吸附法(PSA)。
+    [18] => 
+    [19] => 其中的变压吸附法是一种新型气体吸附分离技术，因操作简单和低成本的特点，是一种有效的方式。
+    [20] => 
+    [21] => 
+    [22] => 
+    [23] => 2004年S.Cavenati等在298、308、323K及0~5MPa下测量
+    [24] => 甲烷[-wan2:methane
+    [25] => 、二氧化碳和
+    [26] => 氮气[dan4-:nitrogen
+    [27] => 在
+    [28] => 沸石[fei4-:zeolite
+    [29] => 13X上的吸附，发现沸石13X具有很高的优先吸附二氧化碳的能力。
+    [30] => 
+    [31] => 
+    [32] => 
+    [33] => 2009年M.Armandi等通过变温FT-IR光谱，考察发现H-ZSM-5沸石[n(Si):n(Al)=11.5:1]在310~365K的温度范围内对CO2表现出良好的吸附效果。
+    [34] => 
+    [35] => 
+    [36] => 
+    [37] => 2012年H.Z.Martunus等提出了原位捕获矿化二氧化碳。
+    [38] => 
+    [39] => 该方法使用耐高温的吸附剂，将捕获的二氧化碳转化为苏打灰，并可以利用压力摆动系统连续运行。
+    [40] => 
+    [41] => 该过程原料仅需要二氧化碳、氯化钠和氨，可以再生和再循环，具有高度可持续性。
+    [42] => 
+    [43] => 
+    [44] => 
+    [45] => 2014年C.O.Arean等通过吸附量热法和变温红外光谱，研究了质子沸石H-MCM-22[n(Si):n(Al)=16:1]中二氧化碳的吸附热力学，其CO2吸附焓的绝对值较小，表示其在PSA循环中再生吸附需要很少的能源成本。
+    [46] => 
+    [47] => 
+    [48] => 
+    [49] => 物理吸附CO2主要采用变压吸附法，并且需要良好的吸附剂，但由于工业烟气成分复杂多变，吸附二氧化碳的同时也会吸附大量其他无用组分，造成能耗高成本高的问题，目前在工业化应用上还有一定的局限性。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)02物理法吸收CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸收法主要是利用水、甲醇、碳酸丙
+[process-trans-sentences_chinese.php : 216] match => 烯酯[xi1zhi3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)等溶液作为吸收剂，根据亨利定律，利用CO2在这些溶液中的溶解度随压力改变来吸收或解吸。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸收法大多在低温高压下进行，具有吸收气体量大、吸收剂再生不需要加热、不
+[process-trans-sentences_chinese.php : 216] match => 腐蚀[fu3shi2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)设备等优点。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)主要有
+[process-trans-sentences_chinese.php : 216] match => 膜分离[mo2--
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)法、
+[process-trans-sentences_chinese.php : 216] match => 催化[cui1-:catalytic
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)燃烧法、变压吸附法(PSA)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)其中的变压吸附法是一种新型气体吸附分离技术，因操作简单和低成本的特点，是一种有效的方式。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2004年S.Cavenati等在298、308、323K及0~5MPa下测量
+[process-trans-sentences_chinese.php : 216] match => 甲烷[-wan2:methane
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、二氧化碳和
+[process-trans-sentences_chinese.php : 216] match => 氮气[dan4-:nitrogen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在
+[process-trans-sentences_chinese.php : 216] match => 沸石[fei4-:zeolite
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)13X上的吸附，发现沸石13X具有很高的优先吸附二氧化碳的能力。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 2009年M.Armandi等通过变温FT-IR光谱，考察发现H-ZSM-5沸石[n(Si):n(Al)=11.5:1]在310~365K的温度范围内对CO2表现出良好的吸附效果。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2012年H.Z.Martunus等提出了原位捕获矿化二氧化碳。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该方法使用耐高温的吸附剂，将捕获的二氧化碳转化为苏打灰，并可以利用压力摆动系统连续运行。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该过程原料仅需要二氧化碳、氯化钠和氨，可以再生和再循环，具有高度可持续性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 2014年C.O.Arean等通过吸附量热法和变温红外光谱，研究了质子沸石H-MCM-22[n(Si):n(Al)=16:1]中二氧化碳的吸附热力学，其CO2吸附焓的绝对值较小，表示其在PSA循环中再生吸附需要很少的能源成本。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸附CO2主要采用变压吸附法，并且需要良好的吸附剂，但由于工业烟气成分复杂多变，吸附二氧化碳的同时也会吸附大量其他无用组分，造成能耗高成本高的问题，目前在工业化应用上还有一定的局限性。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_164311_691317.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_164311_691317.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210519_165834_165293)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 02物理法吸收CO2
+    [1] => 
+    [2] => 
+    [3] => 物理吸收法主要是利用水、甲醇、碳酸丙
+    [4] => 烯酯[xi1zhi3
+    [5] => 等溶液作为吸收剂，根据亨利定律，利用CO2在这些溶液中的溶解度随压力改变来吸收或解吸。
+    [6] => 
+    [7] => 
+    [8] => 
+    [9] => 物理吸收法大多在低温高压下进行，具有吸收气体量大、吸收剂再生不需要加热、不
+    [10] => 腐蚀[fu3shi2
+    [11] => 设备等优点。
+    [12] => 
+    [13] => 主要有
+    [14] => 膜分离[mo2--
+    [15] => 法、
+    [16] => 催化[cui1-:catalytic
+    [17] => 燃烧法、变压吸附法(PSA)。
+    [18] => 
+    [19] => 其中的变压吸附法是一种新型气体吸附分离技术，因操作简单和低成本的特点，是一种有效的方式。
+    [20] => 
+    [21] => 
+    [22] => 
+    [23] => 2004年S.Cavenati等在298、308、323K及0~5MPa下测量
+    [24] => 甲烷[-wan2:methane
+    [25] => 、二氧化碳和
+    [26] => 氮气[dan4-:nitrogen
+    [27] => 在
+    [28] => 沸石[fei4-:zeolite
+    [29] => 13X上的吸附，发现沸石13X具有很高的优先吸附二氧化碳的能力。
+    [30] => 
+    [31] => 
+    [32] => 
+    [33] => 2009年M.Armandi等通过变温FT-IR光谱，考察发现H-ZSM-5沸石[n(Si):n(Al)=11.5:1]在310~365K的温度范围内对CO2表现出良好的吸附效果。
+    [34] => 
+    [35] => 
+    [36] => 
+    [37] => 2012年H.Z.Martunus等提出了
+    [38] => 原位[:in-situ
+    [39] => 捕获矿化二氧化碳。
+    [40] => 
+    [41] => 该方法使用耐高温的吸附剂，将捕获的二氧化碳转化为
+    [42] => 苏打灰[--hui1:soda-ash
+    [43] => ，并可以利用压力
+    [44] => 摆动[-:oscillate
+    [45] => 系统连续
+    [46] => 运行[run
+    [47] => 。
+    [48] => 
+    [49] => 该过程原料仅需要二氧化碳、
+    [50] => 氯化钠[lv4hua4na4:sodium-chloride
+    [51] => 和
+    [52] => 氨[an1:ammonia
+    [53] => ，可以再生和再循环，具有高度可持续性。
+    [54] => 
+    [55] => 
+    [56] => 
+    [57] => 2014年C.O.Arean等通过吸附量热法和变温红外光谱，研究了质子沸石H-MCM-22[n(Si):n(Al)=16:1]中二氧化碳的吸附热力学，其CO2
+    [58] => 吸附[xi1fu4:adsorption
+    [59] => 焓[han2:enthalpy
+    [60] => 的绝对值较小，表示其在PSA循环中再生吸附需要很少的能源成本。
+    [61] => 
+    [62] => 
+    [63] => 
+    [64] => 物理吸附CO2主要采用变压吸附法，并且需要良好的吸附剂，但由于工业
+    [65] => 烟气[yan1-:smoke
+    [66] => 成分复杂多变，吸附二氧化碳的同时也会吸附大量其他无用组分，造成
+    [67] => 能耗[-hao4:energy-consumption
+    [68] => 高成本高的问题，目前在工业化应用上还有一定的局限性。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)02物理法吸收CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸收法主要是利用水、甲醇、碳酸丙
+[process-trans-sentences_chinese.php : 216] match => 烯酯[xi1zhi3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)等溶液作为吸收剂，根据亨利定律，利用CO2在这些溶液中的溶解度随压力改变来吸收或解吸。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸收法大多在低温高压下进行，具有吸收气体量大、吸收剂再生不需要加热、不
+[process-trans-sentences_chinese.php : 216] match => 腐蚀[fu3shi2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)设备等优点。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)主要有
+[process-trans-sentences_chinese.php : 216] match => 膜分离[mo2--
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)法、
+[process-trans-sentences_chinese.php : 216] match => 催化[cui1-:catalytic
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)燃烧法、变压吸附法(PSA)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)其中的变压吸附法是一种新型气体吸附分离技术，因操作简单和低成本的特点，是一种有效的方式。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2004年S.Cavenati等在298、308、323K及0~5MPa下测量
+[process-trans-sentences_chinese.php : 216] match => 甲烷[-wan2:methane
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、二氧化碳和
+[process-trans-sentences_chinese.php : 216] match => 氮气[dan4-:nitrogen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在
+[process-trans-sentences_chinese.php : 216] match => 沸石[fei4-:zeolite
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)13X上的吸附，发现沸石13X具有很高的优先吸附二氧化碳的能力。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 2009年M.Armandi等通过变温FT-IR光谱，考察发现H-ZSM-5沸石[n(Si):n(Al)=11.5:1]在310~365K的温度范围内对CO2表现出良好的吸附效果。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2012年H.Z.Martunus等提出了
+[process-trans-sentences_chinese.php : 216] match => 原位[:in-situ
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)捕获矿化二氧化碳。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该方法使用耐高温的吸附剂，将捕获的二氧化碳转化为
+[process-trans-sentences_chinese.php : 216] match => 苏打灰[--hui1:soda-ash
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，并可以利用压力
+[process-trans-sentences_chinese.php : 216] match => 摆动[-:oscillate
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)系统连续
+[process-trans-sentences_chinese.php : 216] match => 运行[run
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该过程原料仅需要二氧化碳、
+[process-trans-sentences_chinese.php : 216] match => 氯化钠[lv4hua4na4:sodium-chloride
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和
+[process-trans-sentences_chinese.php : 216] match => 氨[an1:ammonia
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，可以再生和再循环，具有高度可持续性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 2014年C.O.Arean等通过吸附量热法和变温红外光谱，研究了质子沸石H-MCM-22[n(Si):n(Al)=16:1]中二氧化碳的吸附热力学，其CO2
+[process-trans-sentences_chinese.php : 216] match => 吸附[xi1fu4:adsorption
+[process-trans-sentences_chinese.php : 216] match => 焓[han2:enthalpy
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的绝对值较小，表示其在PSA循环中再生吸附需要很少的能源成本。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸附CO2主要采用变压吸附法，并且需要良好的吸附剂，但由于工业
+[process-trans-sentences_chinese.php : 216] match => 烟气[yan1-:smoke
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)成分复杂多变，吸附二氧化碳的同时也会吸附大量其他无用组分，造成
+[process-trans-sentences_chinese.php : 216] match => 能耗[-hao4:energy-consumption
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)高成本高的问题，目前在工业化应用上还有一定的局限性。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_165834_194295.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_165834_194295.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210519_170153_858413)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 02物理法吸收CO2
+    [1] => 
+    [2] => 
+    [3] => 物理吸收法主要是利用水、甲醇、碳酸丙
+    [4] => 烯酯[xi1zhi3
+    [5] => 等溶液作为吸收剂，根据亨利定律，利用CO2在这些溶液中的溶解度随压力改变来吸收或解吸。
+    [6] => 
+    [7] => 
+    [8] => 
+    [9] => 物理吸收法大多在低温高压下进行，具有吸收气体量大、吸收剂再生不需要加热、不
+    [10] => 腐蚀[fu3shi2
+    [11] => 设备等优点。
+    [12] => 
+    [13] => 主要有
+    [14] => 膜分离[mo2--
+    [15] => 法、
+    [16] => 催化[cui1-:catalytic
+    [17] => 燃烧法、变压吸附法(PSA)。
+    [18] => 
+    [19] => 其中的变压吸附法是一种新型气体吸附分离技术，因操作简单和低成本的特点，是一种有效的方式。
+    [20] => 
+    [21] => 
+    [22] => 
+    [23] => 2004年S.Cavenati等在298、308、323K及0~5MPa下测量
+    [24] => 甲烷[-wan2:methane
+    [25] => 、二氧化碳和
+    [26] => 氮气[dan4-:nitrogen
+    [27] => 在
+    [28] => 沸石[fei4-:zeolite
+    [29] => 13X上的吸附，发现沸石13X具有很高的优先吸附二氧化碳的能力。
+    [30] => 
+    [31] => 
+    [32] => 
+    [33] => 2009年M.Armandi等通过变温FT-IR光谱，考察发现H-ZSM-5沸石[n(Si):n(Al)=11.5:1]在310~365K的温度范围内对CO2表现出良好的吸附效果。
+    [34] => 
+    [35] => 
+    [36] => 
+    [37] => 2012年H.Z.Martunus等提出了
+    [38] => 原位[:in-situ
+    [39] => 捕获矿化二氧化碳。
+    [40] => 
+    [41] => 该方法使用耐高温的吸附剂，将捕获的二氧化碳转化为
+    [42] => 苏打灰[--hui1:soda-ash
+    [43] => ，并可以利用压力
+    [44] => 摆动[-:oscillate
+    [45] => 系统连续
+    [46] => 运行[run
+    [47] => 。
+    [48] => 
+    [49] => 该过程原料仅需要二氧化碳、
+    [50] => 氯化钠[lv4hua4na4:sodium-chloride
+    [51] => 和
+    [52] => 氨[an1:ammonia
+    [53] => ，可以再生和再循环，具有高度可持续性。
+    [54] => 
+    [55] => 
+    [56] => 
+    [57] => 2014年C.O.Arean等通过吸附量热法和变温红外光谱，研究了质子沸石H-MCM-22[n(Si):n(Al)=16:1]中二氧化碳的吸附热力学，其CO2
+    [58] => 吸附[xi1fu4:adsorption
+    [59] => 焓[han2:enthalpy
+    [60] => 的绝对值较小，表示其在PSA循环中再生吸附需要很少的能源成本。
+    [61] => 
+    [62] => 
+    [63] => 
+    [64] => 物理吸附CO2主要采用变压吸附法，并且需要良好的吸附剂，但由于工业
+    [65] => 烟气[yan1-:smoke
+    [66] => 成分复杂多变，吸附二氧化碳的同时也会吸附大量其他无用组分，造成
+    [67] => 能耗[-hao4:energy-consumption
+    [68] => 高成本高的问题，目前在工业化应用上还有一定的局限性。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)02物理法吸收CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸收法主要是利用水、甲醇、碳酸丙
+[process-trans-sentences_chinese.php : 216] match => 烯酯[xi1zhi3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)等溶液作为吸收剂，根据亨利定律，利用CO2在这些溶液中的溶解度随压力改变来吸收或解吸。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸收法大多在低温高压下进行，具有吸收气体量大、吸收剂再生不需要加热、不
+[process-trans-sentences_chinese.php : 216] match => 腐蚀[fu3shi2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)设备等优点。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)主要有
+[process-trans-sentences_chinese.php : 216] match => 膜分离[mo2--
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)法、
+[process-trans-sentences_chinese.php : 216] match => 催化[cui1-:catalytic
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)燃烧法、变压吸附法(PSA)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)其中的变压吸附法是一种新型气体吸附分离技术，因操作简单和低成本的特点，是一种有效的方式。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2004年S.Cavenati等在298、308、323K及0~5MPa下测量
+[process-trans-sentences_chinese.php : 216] match => 甲烷[-wan2:methane
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、二氧化碳和
+[process-trans-sentences_chinese.php : 216] match => 氮气[dan4-:nitrogen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在
+[process-trans-sentences_chinese.php : 216] match => 沸石[fei4-:zeolite
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)13X上的吸附，发现沸石13X具有很高的优先吸附二氧化碳的能力。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 2009年M.Armandi等通过变温FT-IR光谱，考察发现H-ZSM-5沸石[n(Si):n(Al)=11.5:1]在310~365K的温度范围内对CO2表现出良好的吸附效果。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2012年H.Z.Martunus等提出了
+[process-trans-sentences_chinese.php : 216] match => 原位[:in-situ
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)捕获矿化二氧化碳。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该方法使用耐高温的吸附剂，将捕获的二氧化碳转化为
+[process-trans-sentences_chinese.php : 216] match => 苏打灰[--hui1:soda-ash
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，并可以利用压力
+[process-trans-sentences_chinese.php : 216] match => 摆动[-:oscillate
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)系统连续
+[process-trans-sentences_chinese.php : 216] match => 运行[run
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该过程原料仅需要二氧化碳、
+[process-trans-sentences_chinese.php : 216] match => 氯化钠[lv4hua4na4:sodium-chloride
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和
+[process-trans-sentences_chinese.php : 216] match => 氨[an1:ammonia
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，可以再生和再循环，具有高度可持续性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 2014年C.O.Arean等通过吸附量热法和变温红外光谱，研究了质子沸石H-MCM-22[n(Si):n(Al)=16:1]中二氧化碳的吸附热力学，其CO2
+[process-trans-sentences_chinese.php : 216] match => 吸附[xi1fu4:adsorption
+[process-trans-sentences_chinese.php : 216] match => 焓[han2:enthalpy
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的绝对值较小，表示其在PSA循环中再生吸附需要很少的能源成本。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物理吸附CO2主要采用变压吸附法，并且需要良好的吸附剂，但由于工业
+[process-trans-sentences_chinese.php : 216] match => 烟气[yan1-:smoke
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)成分复杂多变，吸附二氧化碳的同时也会吸附大量其他无用组分，造成
+[process-trans-sentences_chinese.php : 216] match => 能耗[-hao4:energy-consumption
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)高成本高的问题，目前在工业化应用上还有一定的局限性。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_170153_879415.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_170153_879415.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210519_175746_858768)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 典型吸收法
+    [1] => 
+    [2] => 
+    [3] => 典型的化学溶剂吸收法有:氨吸收法、热
+    [4] => 钾[jia3:kaliun
+    [5] => 碱法及有机
+    [6] => 胺[an4:amine
+    [7] => 法等。
+    [8] => 
+    [9] => 
+    [10] => 
+    [11] => 众多学者将氨吸收法、热钾碱法和有机胺法这3种方法进行了综合比较，包括吸收速率、气液平衡等，发现有机胺法效果最佳。
+    [12] => 
+    [13] => 有机胺法出现于20世纪30年代，经过几十年的发展，技术路线和工艺条件
+    [14] => 愈[yu4
+    [15] => 加成熟。
+    [16] => 
+    [17] => 有机醇胺类化合物的分子结构中，包含一个氨基用于促进吸收CO2，至少包含1个羟基可起到降低饱和蒸汽压、促进水溶性作用。
+    [18] => 
+    [19] => 由于有机胺法对CO2选择性好、分离效率高、经济性好，因此可以用于处理低浓度、CO2大规模分离的情况。
+    [20] => 
+    [21] => 
+    [22] => 近些年相关学者对使用胺溶液作CO2吸收剂开展了大量研究。
+    [23] => 
+    [24] => S.Park等提出了一种结合CCS和CO2固定过程的新方法。
+    [25] => 
+    [26] => 在含Ca2+的CO2饱和溶液中加入3种胺溶液(质量分数为10%或30%)：
+    [27] => 伯胺[bo2an4
+    [28] => (MEA)、
+    [29] => 仲胺[zhong4-
+    [30] => (DEA)和
+    [31] => 叔胺[shu1-
+    [32] => (MDEA)。
+    [33] => 
+    [34] => 结果显示，超过84％（质量分数）的CO2转化为碳酸盐
+    [35] => 沉淀[chen2dian4
+    [36] => 物。
+    [37] => 
+    [38] => 相比之下，MDEA的摩尔产率高于其他胺（MEA和DEA），该过程比在工业和自然界中应用其他CO2固定过程更快，效果更好。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)典型吸收法
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)典型的化学溶剂吸收法有:氨吸收法、热
+[process-trans-sentences_chinese.php : 216] match => 钾[jia3:kaliun
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)碱法及有机
+[process-trans-sentences_chinese.php : 216] match => 胺[an4:amine
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)法等。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)众多学者将氨吸收法、热钾碱法和有机胺法这3种方法进行了综合比较，包括吸收速率、气液平衡等，发现有机胺法效果最佳。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)有机胺法出现于20世纪30年代，经过几十年的发展，技术路线和工艺条件
+[process-trans-sentences_chinese.php : 216] match => 愈[yu4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)加成熟。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)有机醇胺类化合物的分子结构中，包含一个氨基用于促进吸收CO2，至少包含1个羟基可起到降低饱和蒸汽压、促进水溶性作用。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)由于有机胺法对CO2选择性好、分离效率高、经济性好，因此可以用于处理低浓度、CO2大规模分离的情况。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)近些年相关学者对使用胺溶液作CO2吸收剂开展了大量研究。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)S.Park等提出了一种结合CCS和CO2固定过程的新方法。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在含Ca2+的CO2饱和溶液中加入3种胺溶液(质量分数为10%或30%)：
+[process-trans-sentences_chinese.php : 216] match => 伯胺[bo2an4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(MEA)、
+[process-trans-sentences_chinese.php : 216] match => 仲胺[zhong4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(DEA)和
+[process-trans-sentences_chinese.php : 216] match => 叔胺[shu1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(MDEA)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)结果显示，超过84％（质量分数）的CO2转化为碳酸盐
+[process-trans-sentences_chinese.php : 216] match => 沉淀[chen2dian4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)相比之下，MDEA的摩尔产率高于其他胺（MEA和DEA），该过程比在工业和自然界中应用其他CO2固定过程更快，效果更好。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_175746_874368.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_175746_874368.txt'
+  
