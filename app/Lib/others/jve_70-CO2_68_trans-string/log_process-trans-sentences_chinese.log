@@ -1311,3 +1311,352 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_175746_874368.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210519_175746_874368.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210520_121227_570780)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => D.Kang等利用氧化
+    [1] => 钙[gai4:calcium
+    [2] => 水溶液与质量分数为5％和30％的
+    [3] => 链烷[lian4wan2
+    [4] => 醇胺吸收剂发生沉淀反应进行碳固定。通过将吸收的CO2转化为固体PCC（沉淀碳酸钙），可以减少溶液再生能量，其占CCS工艺中总能量消耗的50%~80％。除了传统的用钙和
+    [5] => 镁[mei3:magnesium
+    [6] => 离子作金属离子源外，S.Park等还研究了碳酸
+    [7] => 钡[bei4:barium
+    [8] => 的溶液作为金属离子源，与含水CO2反应，并迅速形成沉淀，证明钡离子与钙和镁离子具有类似的CO2固定潜力。D.Kang等利用工业废水作来源，使用预处理后的盐水溶液来供应钙离子，在常温常压下进行形成碳酸钙盐的沉淀实验，并提出如果在该CCU工艺中加入纯化步骤，则可以除去沉淀物中的残留污染物，获得纯净的碳酸钙盐，这将带来巨大的经济效益。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)D.Kang等利用氧化
+[process-trans-sentences_chinese.php : 216] match => 钙[gai4:calcium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)水溶液与质量分数为5％和30％的
+[process-trans-sentences_chinese.php : 216] match => 链烷[lian4wan2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)醇胺吸收剂发生沉淀反应进行碳固定。通过将吸收的CO2转化为固体PCC（沉淀碳酸钙），可以减少溶液再生能量，其占CCS工艺中总能量消耗的50%~80％。除了传统的用钙和
+[process-trans-sentences_chinese.php : 216] match => 镁[mei3:magnesium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)离子作金属离子源外，S.Park等还研究了碳酸
+[process-trans-sentences_chinese.php : 216] match => 钡[bei4:barium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的溶液作为金属离子源，与含水CO2反应，并迅速形成沉淀，证明钡离子与钙和镁离子具有类似的CO2固定潜力。D.Kang等利用工业废水作来源，使用预处理后的盐水溶液来供应钙离子，在常温常压下进行形成碳酸钙盐的沉淀实验，并提出如果在该CCU工艺中加入纯化步骤，则可以除去沉淀物中的残留污染物，获得纯净的碳酸钙盐，这将带来巨大的经济效益。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_121227_695787.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_121227_695787.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210520_121443_628562)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 新型吸收法
+    [1] => 
+    [2] => 通过含水胺类吸收CO2是应用最广泛的技术之一，然而，该技术已显示出严重的缺点，例如吸收到气流中的水需要额外的干燥步骤并导致严重的腐蚀。挥发性胺的损失增加了操作成本，用于释放CO2加热时水的蒸发需要更高的能耗。用于CO2分离的胺也会分解，不仅浪费而且能引起环境问题。因此，非常需要一种新的溶剂，既可以促进从气体混合物中分离CO2又不会损失溶剂。在这方面，离子液体（ILs）作为替代品显示出巨大的潜力。
+    [3] => 
+    [4] => 离子液体是一种新型的完全由阳离子和阴离子组成的绿色介质，其独特的性质，如可调极性、非挥发性、高稳定性等，引起了人们的广泛关注。
+    [5] => 
+    [6] => 为了提高离子液体的吸收能力，Y.Huang等在分子识别的基础上，提出了预组织和互补性概念的新策略，前者决定识别过程的键合能力，后者决定识别过程的选择性。首次设计了基于酰亚胺的离子液体捕获低浓度CO2的方法，通过在含有10％（体积分数）CO2的N2中，使用具有预组织阴离子的离子液体，首次实现了高达22％(质量分数)（1.65mol/mol）的CO2吸收容量，并表明了良好的可逆性（16个循环）。
+    [7] => 
+    [8] => Y.J.Xu等成功地实现了由质子离子液体（PIL）催化的CO2化学吸收，发现带有[Pyr]-的PILs表现出更强的碱度和更大的自由空间，提高了CO2捕获能力，证明了CO2的吸收行为在其活化和转化中起着重要作用。
+    [9] => 
+    [10] => 目前在工业应用的众多脱碳方法中，使用
+    [11] => MDEA为主体的混合胺溶液吸收CO2法仍然具有一定优越性。在今后的研究中，研发吸收能力大、吸收速率快、腐蚀性低、再生能耗低的吸收体系是完善
+    [12] => CO2的吸收工艺的主要目标。在CCS中，理想的吸收剂应该同时具有较大的吸收能力及较低的再生能量，其中生物酶CA，离子液体与
+    [13] => MDEA
+    [14] => 混合胺溶液等新型吸收体系的研发或将成为今后的发展方向。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)新型吸收法
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)通过含水胺类吸收CO2是应用最广泛的技术之一，然而，该技术已显示出严重的缺点，例如吸收到气流中的水需要额外的干燥步骤并导致严重的腐蚀。挥发性胺的损失增加了操作成本，用于释放CO2加热时水的蒸发需要更高的能耗。用于CO2分离的胺也会分解，不仅浪费而且能引起环境问题。因此，非常需要一种新的溶剂，既可以促进从气体混合物中分离CO2又不会损失溶剂。在这方面，离子液体（ILs）作为替代品显示出巨大的潜力。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)离子液体是一种新型的完全由阳离子和阴离子组成的绿色介质，其独特的性质，如可调极性、非挥发性、高稳定性等，引起了人们的广泛关注。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)为了提高离子液体的吸收能力，Y.Huang等在分子识别的基础上，提出了预组织和互补性概念的新策略，前者决定识别过程的键合能力，后者决定识别过程的选择性。首次设计了基于酰亚胺的离子液体捕获低浓度CO2的方法，通过在含有10％（体积分数）CO2的N2中，使用具有预组织阴离子的离子液体，首次实现了高达22％(质量分数)（1.65mol/mol）的CO2吸收容量，并表明了良好的可逆性（16个循环）。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => Y.J.Xu等成功地实现了由质子离子液体（PIL）催化的CO2化学吸收，发现带有[Pyr]-的PILs表现出更强的碱度和更大的自由空间，提高了CO2捕获能力，证明了CO2的吸收行为在其活化和转化中起着重要作用。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)目前在工业应用的众多脱碳方法中，使用
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)MDEA为主体的混合胺溶液吸收CO2法仍然具有一定优越性。在今后的研究中，研发吸收能力大、吸收速率快、腐蚀性低、再生能耗低的吸收体系是完善
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2的吸收工艺的主要目标。在CCS中，理想的吸收剂应该同时具有较大的吸收能力及较低的再生能量，其中生物酶CA，离子液体与
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)MDEA
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)混合胺溶液等新型吸收体系的研发或将成为今后的发展方向。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_121443_640563.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_121443_640563.txt'
+ 
+===============================  
+starting... : build_Trans_String__Chinese (20210520_124127_564512)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 新型吸收法
+    [1] => 
+    [2] => 
+    [3] => 通过含水胺类吸收CO2是应用最广泛的技术之一，然而，该技术已显示出严重的缺点，例如吸收到气流中的水需要额外的干燥步骤并导致严重的
+    [4] => 腐蚀[fu3shi2
+    [5] => 。
+    [6] => 
+    [7] => 挥发性胺的损失增加了操作成本，用于释放CO2加热时水的蒸发需要更高的能耗。
+    [8] => 
+    [9] => 用于CO2分离的胺也会分解，不仅浪费而且能引起环境问题。
+    [10] => 
+    [11] => 因此，非常需要一种新的溶剂，既可以促进从气体混合物中分离CO2又不会损失溶剂。
+    [12] => 
+    [13] => 在这方面，离子液体（ILs）作为替代品显示出巨大的潜力。
+    [14] => 
+    [15] => 
+    [16] => 
+    [17] => 离子液体是一种新型的完全由阳离子和阴离子组成的绿色
+    [18] => 介质[-:medium
+    [19] => ，其独特的性质，如可调极性、非挥发性、高稳定性等，引起了人们的广泛关注。
+    [20] => 
+    [21] => 
+    [22] => 
+    [23] => 为了提高离子液体的吸收能力，Y.Huang等在分子识别的基础上，提出了预组织和互补性概念的新策略，前者决定识别过程的
+    [24] => 键合[-:bonding
+    [25] => 能力，后者决定识别过程的选择性。
+    [26] => 
+    [27] => 首次设计了基于
+    [28] => 酰亚胺[xian1ya4an4:imide
+    [29] => 的离子液体捕获低浓度CO2的方法，通过在含有10％（体积分数）CO2的N2中，使用具有预组织阴离子的离子液体，首次实现了高达22％(质量分数)（1.65mol/mol）的CO2吸收容量，并表明了良好的可逆性（16个循环）。
+    [30] => 
+    [31] => 
+    [32] => 
+    [33] => Y.J.Xu等成功地实现了由质子离子液体（PIL）催化的CO2化学吸收，发现带有[Pyr]-的PILs表现出更强的碱度和更大的自由空间，提高了CO2捕获能力，证明了CO2的吸收行为在其活化和转化中起着重要作用。
+    [34] => 
+    [35] => 
+    [36] => 
+    [37] => 目前在工业应用的众多脱碳方法中，使用MDEA为主体的混合胺溶液吸收CO2法仍然具有一定优越性。
+    [38] => 
+    [39] => 在今后的研究中，研发吸收能力大、吸收速率快、腐蚀性低、再生能耗低的吸收体系是完善CO2的吸收工艺的主要目标。
+    [40] => 
+    [41] => 在CCS中，理想的吸收剂应该同时具有较大的吸收能力及较低的再生能量，其中生物酶CA，离子液体与MDEA混合胺溶液等新型吸收体系的研发或将成为今后的发展方向。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)新型吸收法
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)通过含水胺类吸收CO2是应用最广泛的技术之一，然而，该技术已显示出严重的缺点，例如吸收到气流中的水需要额外的干燥步骤并导致严重的
+[process-trans-sentences_chinese.php : 216] match => 腐蚀[fu3shi2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)挥发性胺的损失增加了操作成本，用于释放CO2加热时水的蒸发需要更高的能耗。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)用于CO2分离的胺也会分解，不仅浪费而且能引起环境问题。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)因此，非常需要一种新的溶剂，既可以促进从气体混合物中分离CO2又不会损失溶剂。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在这方面，离子液体（ILs）作为替代品显示出巨大的潜力。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)离子液体是一种新型的完全由阳离子和阴离子组成的绿色
+[process-trans-sentences_chinese.php : 216] match => 介质[-:medium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，其独特的性质，如可调极性、非挥发性、高稳定性等，引起了人们的广泛关注。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)为了提高离子液体的吸收能力，Y.Huang等在分子识别的基础上，提出了预组织和互补性概念的新策略，前者决定识别过程的
+[process-trans-sentences_chinese.php : 216] match => 键合[-:bonding
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)能力，后者决定识别过程的选择性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)首次设计了基于
+[process-trans-sentences_chinese.php : 216] match => 酰亚胺[xian1ya4an4:imide
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的离子液体捕获低浓度CO2的方法，通过在含有10％（体积分数）CO2的N2中，使用具有预组织阴离子的离子液体，首次实现了高达22％(质量分数)（1.65mol/mol）的CO2吸收容量，并表明了良好的可逆性（16个循环）。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => Y.J.Xu等成功地实现了由质子离子液体（PIL）催化的CO2化学吸收，发现带有[Pyr]-的PILs表现出更强的碱度和更大的自由空间，提高了CO2捕获能力，证明了CO2的吸收行为在其活化和转化中起着重要作用。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)目前在工业应用的众多脱碳方法中，使用MDEA为主体的混合胺溶液吸收CO2法仍然具有一定优越性。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在今后的研究中，研发吸收能力大、吸收速率快、腐蚀性低、再生能耗低的吸收体系是完善CO2的吸收工艺的主要目标。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在CCS中，理想的吸收剂应该同时具有较大的吸收能力及较低的再生能量，其中生物酶CA，离子液体与MDEA混合胺溶液等新型吸收体系的研发或将成为今后的发展方向。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_124127_572511.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_124127_572511.txt'
+ 
+===============================  
+starting... : build_Trans_String__Chinese (20210520_125424_319755)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 二氧化碳封存与利用技术
+    [1] => 
+    [2] => 
+    [3] => 大规模储存与固定仍然是CO2减排的主要途径，主要包括地质储存、海洋储存及矿物碳酸化固定。
+    [4] => 
+    [5] => 然而传统的地质储存有
+    [6] => 泄露[xie4lou4
+    [7] => 的风险，甚至会破坏
+    [8] => 贮藏[zhu4cang2:storage
+    [9] => 带的矿物质，改变地层结构；海洋储存运输成本
+    [10] => 高昂[-ang2
+    [11] => 以及会对海洋生态系统带来影响，这使得研究者们的目光转向矿石碳化。
+    [12] => 
+    [13] => 01二氧化碳矿石碳化
+    [14] => 
+    [15] => 
+    [16] => 矿石碳化是利用存在于天然
+    [17] => 硅酸盐[gui1--
+    [18] => 矿石（如
+    [19] => 橄榄石[gan3lan3-
+    [20] => ）中的碱性氧化物，如
+    [21] => 菱镁矿[ling2mei3kuang4:magnesite(MgCO3)
+    [22] => 和方解石(CaCO3)，将CO2转化成稳定的无机碳酸盐，主要是
+    [23] => 模仿[mo2fang3
+    [24] => 自然界中钙/镁硅酸盐矿物的风化过程，以此实现CO2的矿石碳化。
+    [25] => 
+    [26] => 
+    [27] => 
+    [28] => 在自然界中矿物碳酸化所使用的矿物储量丰富，如
+    [29] => 蛇纹石[she2wen2-
+    [30] => [Mg3Si2O5(OH)4]、滑石[Mg3Si4O10(OH)2]或橄榄石(Mg2SiO4)等，可供二氧化碳的长期捕获，但其高耗能使之无法获得可接受的成本效益。
+    [31] => 
+    [32] => 而且气固之间的碳酸化反应需要在高温高压等
+    [33] => 苛刻[ke1ke4
+    [34] => 条件下进行，存在成本高、耗能高、无法回收具有高附加值的产品等缺点。
+    [35] => 
+    [36] => 例如，
+    [37] => 粉碎[fen3sui4
+    [38] => 硅酸盐岩石，将其溶解在HCl中，以碱为催化剂与CO2反应，每捕获1kg的CO2会消耗23MJ的能量，同时产生1.3kg的CO2。
+    [39] => 
+    [40] => 因此，现有技术存在CO2矿化反应速率低、反应条件苛刻、产物附加值低等问题，导致CO2矿化技术难以工业化实施。
+    [41] => 
+    [42] => 为了避免矿化的巨大影响，中国工程院谢和平院士和外国学者近几年提出CO2矿化利用，其认为真正解决CO2末端减排的固碳技术应该开展CO2捕获和利用，特别是利用富含
+    [43] => 镁[-:magnesium
+    [44] => 、
+    [45] => 钙[gai4:calcium
+    [46] => 、
+    [47] => 钾[jia3:kalium
+    [48] => 、硫等人类所需资源的天然矿物或工业废料与CO2反应，将CO2封存为碳酸钙或碳酸镁等固体碳酸盐，同时联产高附加值的化工产品，是CO2利用的新途径。
+    [49] => 
+    [50] => 02海水碳固定和利用技术
+    [51] => 
+    [52] => 
+    [53] => 虽然固体矿物已有多种选择，但仍有必要利用可能出现的新机会，以促进CCU技术发展。
+    [54] => 
+    [55] => 与固体材料相比，富含Mg2+/Ca2+的水溶液可以节约Mg2+和Ca2+浸出过程的操作成本。
+    [56] => 
+    [57] => 因此通过富含Mg2+/Ca2+的水溶液进行矿化可能成为解决二氧化碳问题的另一种有前途的方法。
+    [58] => 
+    [59] => 尤其是海水/浓海水对二氧化碳的利用非常具有吸引力，因为它能够同时解决两个问题，一方面能解决CO2的固定，另一方面还能解决来自海水淡化厂的海水预处理或卤水废弃物问题。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)二氧化碳封存与利用技术
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)大规模储存与固定仍然是CO2减排的主要途径，主要包括地质储存、海洋储存及矿物碳酸化固定。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)然而传统的地质储存有
+[process-trans-sentences_chinese.php : 216] match => 泄露[xie4lou4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的风险，甚至会破坏
+[process-trans-sentences_chinese.php : 216] match => 贮藏[zhu4cang2:storage
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)带的矿物质，改变地层结构；海洋储存运输成本
+[process-trans-sentences_chinese.php : 216] match => 高昂[-ang2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)以及会对海洋生态系统带来影响，这使得研究者们的目光转向矿石碳化。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)01二氧化碳矿石碳化
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)矿石碳化是利用存在于天然
+[process-trans-sentences_chinese.php : 216] match => 硅酸盐[gui1--
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)矿石（如
+[process-trans-sentences_chinese.php : 216] match => 橄榄石[gan3lan3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)）中的碱性氧化物，如
+[process-trans-sentences_chinese.php : 216] match => 菱镁矿[ling2mei3kuang4:magnesite(MgCO3)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和方解石(CaCO3)，将CO2转化成稳定的无机碳酸盐，主要是
+[process-trans-sentences_chinese.php : 216] match => 模仿[mo2fang3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)自然界中钙/镁硅酸盐矿物的风化过程，以此实现CO2的矿石碳化。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在自然界中矿物碳酸化所使用的矿物储量丰富，如
+[process-trans-sentences_chinese.php : 216] match => 蛇纹石[she2wen2-
+[process-trans-sentences_chinese.php : 216] match => [Mg3Si2O5(OH)4]、滑石[Mg3Si4O10(OH)2]或橄榄石(Mg2SiO4)等，可供二氧化碳的长期捕获，但其高耗能使之无法获得可接受的成本效益。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)而且气固之间的碳酸化反应需要在高温高压等
+[process-trans-sentences_chinese.php : 216] match => 苛刻[ke1ke4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)条件下进行，存在成本高、耗能高、无法回收具有高附加值的产品等缺点。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)例如，
+[process-trans-sentences_chinese.php : 216] match => 粉碎[fen3sui4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)硅酸盐岩石，将其溶解在HCl中，以碱为催化剂与CO2反应，每捕获1kg的CO2会消耗23MJ的能量，同时产生1.3kg的CO2。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)因此，现有技术存在CO2矿化反应速率低、反应条件苛刻、产物附加值低等问题，导致CO2矿化技术难以工业化实施。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)为了避免矿化的巨大影响，中国工程院谢和平院士和外国学者近几年提出CO2矿化利用，其认为真正解决CO2末端减排的固碳技术应该开展CO2捕获和利用，特别是利用富含
+[process-trans-sentences_chinese.php : 216] match => 镁[-:magnesium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、
+[process-trans-sentences_chinese.php : 216] match => 钙[gai4:calcium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、
+[process-trans-sentences_chinese.php : 216] match => 钾[jia3:kalium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、硫等人类所需资源的天然矿物或工业废料与CO2反应，将CO2封存为碳酸钙或碳酸镁等固体碳酸盐，同时联产高附加值的化工产品，是CO2利用的新途径。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)02海水碳固定和利用技术
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)虽然固体矿物已有多种选择，但仍有必要利用可能出现的新机会，以促进CCU技术发展。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)与固体材料相比，富含Mg2+/Ca2+的水溶液可以节约Mg2+和Ca2+浸出过程的操作成本。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)因此通过富含Mg2+/Ca2+的水溶液进行矿化可能成为解决二氧化碳问题的另一种有前途的方法。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)尤其是海水/浓海水对二氧化碳的利用非常具有吸引力，因为它能够同时解决两个问题，一方面能解决CO2的固定，另一方面还能解决来自海水淡化厂的海水预处理或卤水废弃物问题。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_125424_335355.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_125424_335355.txt'
+ 
+===============================  
+starting... : build_Trans_String__Chinese (20210520_125926_845963)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 02海水碳固定和利用技术
+    [1] => 
+    [2] => 
+    [3] => 虽然固体矿物已有多种选择，但仍有必要利用可能出现的新机会，以促进CCU技术发展。
+    [4] => 
+    [5] => 与固体材料相比，富含Mg2+/Ca2+的水溶液可以节约Mg2+和Ca2+
+    [6] => 浸出[jin4chu1
+    [7] => 过程的操作成本。
+    [8] => 
+    [9] => 因此通过富含Mg2+/Ca2+的水溶液进行矿化可能成为解决二氧化碳问题的另一种有前途的方法。
+    [10] => 
+    [11] => 尤其是海水/浓海水对二氧化碳的利用非常具有吸引力，因为它能够同时解决两个问题，一方面能解决CO2的固定，另一方面还能解决来自海水淡化厂的海水预处理或
+    [12] => 卤水[lu3-
+    [13] => 
+    [14] => 废弃[fei4qi4
+    [15] => 物问题。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)02海水碳固定和利用技术
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)虽然固体矿物已有多种选择，但仍有必要利用可能出现的新机会，以促进CCU技术发展。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)与固体材料相比，富含Mg2+/Ca2+的水溶液可以节约Mg2+和Ca2+
+[process-trans-sentences_chinese.php : 216] match => 浸出[jin4chu1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)过程的操作成本。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)因此通过富含Mg2+/Ca2+的水溶液进行矿化可能成为解决二氧化碳问题的另一种有前途的方法。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)尤其是海水/浓海水对二氧化碳的利用非常具有吸引力，因为它能够同时解决两个问题，一方面能解决CO2的固定，另一方面还能解决来自海水淡化厂的海水预处理或
+[process-trans-sentences_chinese.php : 216] match => 卤水[lu3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 废弃[fei4qi4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)物问题。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_125926_849963.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210520_125926_849963.txt'
+  

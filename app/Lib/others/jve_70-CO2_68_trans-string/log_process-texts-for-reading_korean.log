@@ -3772,3 +3772,351 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 407] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210519_120318_294054.txt
 [process-texts-for-reading_korean.php : 416] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210520_131051_616942)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => CO2 biofixation by C. fusca LEB 111 in a medium containing industrial wastes such as SO2, NO and ash, can be explained by their morphology. This microalgal species is eucaryotic with their chlorophyll molecules organized into chloroplasts, unlike in prokaryotic microalgae, which contain chlorophyll in the cell membrane and in vesicular structures (chromophores). The level of Chlorella chloroplast membrane organization confers structural protection that may generate higher resistance to highly oxidative molecular species from the wastes present in flue gas (Tastan et al., 2012).
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 259]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => CO2 biofixation by C. fusca LEB 111 in a medium containing industrial wastes such as SO2, NO and ash, can be explained by their morphology. This microalgal species is eucaryotic with their chlorophyll molecules organized into chloroplasts, unlike in prokaryotic microalgae, which contain chlorophyll in the cell membrane and in vesicular structures (chromophores). The level of Chlorella chloroplast membrane organization confers structural protection that may generate higher resistance to highly oxidative molecular species from the wastes present in flue gas (Tastan et al., 2012).
+)
+
+[process-texts-for-reading_korean.php : 282]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 296]
+match : line --> 'CO2 biofixation by C. fusca LEB 111 in a medium containing industrial wastes such as SO2, NO and ash, can be explained by their morphology. This microalgal species is eucaryotic with their chlorophyll molecules organized into chloroplasts, unlike in prokaryotic microalgae, which contain chlorophyll in the cell membrane and in vesicular structures (chromophores). The level of Chlorella chloroplast membrane organization confers structural protection that may generate higher resistance to highly oxidative molecular species from the wastes present in flue gas (Tastan et al., 2012).'Array
+(
+    [0] => C. 
+    [1] => C.
+)
+
+[process-texts-for-reading_korean.php : 328]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => CO2 biofixation by C.fusca LEB 111 in a medium containing industrial wastes such as SO2, NO and ash, can be explained by their morphology.This microalgal species is eucaryotic with their chlorophyll molecules organized into chloroplasts, unlike in prokaryotic microalgae, which contain chlorophyll in the cell membrane and in vesicular structures (chromophores).The level of Chlorella chloroplast membrane organization confers structural protection that may generate higher resistance to highly oxidative molecular species from the wastes present in flue gas (Tastan et al., 2012).
+)
+
+[process-texts-for-reading_korean.php : 349] $stringOf_Replaeced_Lines ==>CO2 biofixation by C.fusca LEB 111 in a medium containing industrial wastes such as SO2, NO and ash, can be explained by their morphology.This microalgal species is eucaryotic with their chlorophyll molecules organized into chloroplasts, unlike in prokaryotic microalgae, which contain chlorophyll in the cell membrane and in vesicular structures (chromophores).The level of Chlorella chloroplast membrane organization confers structural protection that may generate higher resistance to highly oxidative molecular species from the wastes present in flue gas (Tastan et al., 2012).
+[process-texts-for-reading_korean.php : 399] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_131051_616942.txt'
+[process-texts-for-reading_korean.php : 407] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_131051_616942.txt
+[process-texts-for-reading_korean.php : 416] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210520_135146_023751)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 162
+Array
+(
+    [0] => .
+
+)
+
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 162
+Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Radmann et al. (2011) cultivated Chlorella vulgaris with injection of 12% (v v−1) CO2, 60 ppm SO2 and 100 ppm NO in a serial tubular bioreactor at 0.3 vvm, and the CO2 biofixation efficiency obtained was 13.43% (w w−1), which was 4 times lower than that found in this study with C. fusca LEB 111 under similar conditions (experiment 1). Combined with the use of a closed photobioreactor, low-flow injection of the gases used in the present study (0.05 vvm) allows a higher residence time of the gases in liquid medium without a severe environmental loss and, therefore, greater CO2 biofixation efficiency by the microalga.
+    [1] => 
+
+    [2] => Chiu et al. (2011) cultivated Chlorella sp. MTF-25 using 25% CO2, 90 ppm SO2 and 80 ppm NO injected into the cultures at 0.05 vvm and obtained an approximate 60% (w w−1) biofixation efficiency, higher than in the present study. High concentrations of CO2 in the medium can intensify the carboxylase activity of RuBisCO (Ribulose-1,5-bisphosphate carboxylase/oxygenase) and, therefore, increase the photosynthetic efficiency and resultant microalgal CO2 biofixation. The variation of the pH between 8.0 and 10.8 during the experiments favored the activity of RuBisCO, which is responsible for CO2 biofixation in the Calvin cycle and activated under alkaline conditions. This may explain the high rates of C. fusca LEB 111 CO2 biofixation under all conditions analyzed.
+    [3] => 
+
+    [4] => Under unfavorable circumstances, cultures can suffer microalgal cell stress and thus produce more carbohydrate and lipid. Carbohydrate concentrations (Table 3) in the C. fusca LEB 111 biomass ranged from 18.8 ± 1.1 to 20.7 ± 1.1% (w w−1). This macromolecule concentrations in the biomass obtained in the experiments 1, 2, 3 and 5 were statistically equal (p > 0.10) to the control. Therefore, the growth conditions of C. fusca LEB 111 were not stressful to the microalgal cells. These macromolecules present in the C. fusca LEB 111 biomass may have various applications, especially as an alternative renewable raw material for bioethanol production. The advantage of producing this biofuel from microalgal biomass is the absence of lignin in the cells, facilitating the cellulose microalgal enzymatic hydrolysis (Singh and Olsen, 2011).
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 259]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Radmann et al. (2011) cultivated Chlorella vulgaris with injection of 12% (v v−1) CO2, 60 ppm SO2 and 100 ppm NO in a serial tubular bioreactor at 0.3 vvm, and the CO2 biofixation efficiency obtained was 13.43% (w w−1), which was 4 times lower than that found in this study with C. fusca LEB 111 under similar conditions (experiment 1). Combined with the use of a closed photobioreactor, low-flow injection of the gases used in the present study (0.05 vvm) allows a higher residence time of the gases in liquid medium without a severe environmental loss and, therefore, greater CO2 biofixation efficiency by the microalga.
+    [1] => 
+
+    [2] => Chiu et al. (2011) cultivated Chlorella sp. MTF-25 using 25% CO2, 90 ppm SO2 and 80 ppm NO injected into the cultures at 0.05 vvm and obtained an approximate 60% (w w−1) biofixation efficiency, higher than in the present study. High concentrations of CO2 in the medium can intensify the carboxylase activity of RuBisCO (Ribulose-1,5-bisphosphate carboxylase/oxygenase) and, therefore, increase the photosynthetic efficiency and resultant microalgal CO2 biofixation. The variation of the pH between 8.0 and 10.8 during the experiments favored the activity of RuBisCO, which is responsible for CO2 biofixation in the Calvin cycle and activated under alkaline conditions. This may explain the high rates of C. fusca LEB 111 CO2 biofixation under all conditions analyzed.
+    [3] => 
+
+    [4] => Under unfavorable circumstances, cultures can suffer microalgal cell stress and thus produce more carbohydrate and lipid. Carbohydrate concentrations (Table 3) in the C. fusca LEB 111 biomass ranged from 18.8 ± 1.1 to 20.7 ± 1.1% (w w−1). This macromolecule concentrations in the biomass obtained in the experiments 1, 2, 3 and 5 were statistically equal (p > 0.10) to the control. Therefore, the growth conditions of C. fusca LEB 111 were not stressful to the microalgal cells. These macromolecules present in the C. fusca LEB 111 biomass may have various applications, especially as an alternative renewable raw material for bioethanol production. The advantage of producing this biofuel from microalgal biomass is the absence of lignin in the cells, facilitating the cellulose microalgal enzymatic hydrolysis (Singh and Olsen, 2011).
+)
+
+[process-texts-for-reading_korean.php : 282]
+pattern --> /([^0-9]\.) /
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 297
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 297
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 297
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 328]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Radmann et al.(2011) cultivated Chlorella vulgaris with injection of 12% (v v−1) CO2, 60 ppm SO2 and 100 ppm NO in a serial tubular bioreactor at 0.3 vvm, and the CO2 biofixation efficiency obtained was 13.43% (w w−1), which was 4 times lower than that found in this study with C.fusca LEB 111 under similar conditions (experiment 1).Combined with the use of a closed photobioreactor, low-flow injection of the gases used in the present study (0.05 vvm) allows a higher residence time of the gases in liquid medium without a severe environmental loss and, therefore, greater CO2 biofixation efficiency by the microalga.
+    [1] => 
+
+    [2] => Chiu et al.(2011) cultivated Chlorella sp.MTF-25 using 25% CO2, 90 ppm SO2 and 80 ppm NO injected into the cultures at 0.05 vvm and obtained an approximate 60% (w w−1) biofixation efficiency, higher than in the present study.High concentrations of CO2 in the medium can intensify the carboxylase activity of RuBisCO (Ribulose-1,5-bisphosphate carboxylase/oxygenase) and, therefore, increase the photosynthetic efficiency and resultant microalgal CO2 biofixation.The variation of the pH between 8.0 and 10.8 during the experiments favored the activity of RuBisCO, which is responsible for CO2 biofixation in the Calvin cycle and activated under alkaline conditions.This may explain the high rates of C.fusca LEB 111 CO2 biofixation under all conditions analyzed.
+    [3] => 
+
+    [4] => Under unfavorable circumstances, cultures can suffer microalgal cell stress and thus produce more carbohydrate and lipid.Carbohydrate concentrations (Table 3) in the C.fusca LEB 111 biomass ranged from 18.8 ± 1.1 to 20.7 ± 1.1% (w w−1).This macromolecule concentrations in the biomass obtained in the experiments 1, 2, 3 and 5 were statistically equal (p > 0.10) to the control.Therefore, the growth conditions of C.fusca LEB 111 were not stressful to the microalgal cells.These macromolecules present in the C.fusca LEB 111 biomass may have various applications, especially as an alternative renewable raw material for bioethanol production.The advantage of producing this biofuel from microalgal biomass is the absence of lignin in the cells, facilitating the cellulose microalgal enzymatic hydrolysis (Singh and Olsen, 2011).
+)
+
+[process-texts-for-reading_korean.php : 349] $stringOf_Replaeced_Lines ==>Radmann et al.(2011) cultivated Chlorella vulgaris with injection of 12% (v v−1) CO2, 60 ppm SO2 and 100 ppm NO in a serial tubular bioreactor at 0.3 vvm, and the CO2 biofixation efficiency obtained was 13.43% (w w−1), which was 4 times lower than that found in this study with C.fusca LEB 111 under similar conditions (experiment 1).Combined with the use of a closed photobioreactor, low-flow injection of the gases used in the present study (0.05 vvm) allows a higher residence time of the gases in liquid medium without a severe environmental loss and, therefore, greater CO2 biofixation efficiency by the microalga.
+Chiu et al.(2011) cultivated Chlorella sp.MTF-25 using 25% CO2, 90 ppm SO2 and 80 ppm NO injected into the cultures at 0.05 vvm and obtained an approximate 60% (w w−1) biofixation efficiency, higher than in the present study.High concentrations of CO2 in the medium can intensify the carboxylase activity of RuBisCO (Ribulose-1,5-bisphosphate carboxylase/oxygenase) and, therefore, increase the photosynthetic efficiency and resultant microalgal CO2 biofixation.The variation of the pH between 8.0 and 10.8 during the experiments favored the activity of RuBisCO, which is responsible for CO2 biofixation in the Calvin cycle and activated under alkaline conditions.This may explain the high rates of C.fusca LEB 111 CO2 biofixation under all conditions analyzed.
+Under unfavorable circumstances, cultures can suffer microalgal cell stress and thus produce more carbohydrate and lipid.Carbohydrate concentrations (Table 3) in the C.fusca LEB 111 biomass ranged from 18.8 ± 1.1 to 20.7 ± 1.1% (w w−1).This macromolecule concentrations in the biomass obtained in the experiments 1, 2, 3 and 5 were statistically equal (p > 0.10) to the control.Therefore, the growth conditions of C.fusca LEB 111 were not stressful to the microalgal cells.These macromolecules present in the C.fusca LEB 111 biomass may have various applications, especially as an alternative renewable raw material for bioethanol production.The advantage of producing this biofuel from microalgal biomass is the absence of lignin in the cells, facilitating the cellulose microalgal enzymatic hydrolysis (Singh and Olsen, 2011).
+[process-texts-for-reading_korean.php : 399] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_135146_023751.txt'
+[process-texts-for-reading_korean.php : 407] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_135146_023751.txt
+[process-texts-for-reading_korean.php : 416] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210520_135932_172413)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 162
+Array
+(
+    [0] => .
+
+)
+
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 162
+Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Anjos et al. (2013) obtained a lipid concentration of approximately 10% (w w−1) in Chlorella biomass when exposed to 6% CO2. According to the authors, the cultivation conditions did not cause cellular stress in microalga, justifying the relatively low value of this macromolecule in the biomass. The same phenomenon may have occurred in this study, so that the lipid concentration in the experiments with industrial wastes, with the exception of assay 2, were identical (p > 0.10) to the control (approximately 15.1% w w−1) (Table 3).
+    [1] => 
+
+    [2] => Kao et al. (2014) cultivated Chlorella sp. for 7 d with fuel from flue gas, containing approximately 24% CO2, 15–20 ppm SO2 and 25–30 ppm NOx (a mixture of NO and NO2). These authors found 33.8 ± 0.5% lipid in the Chlorella sp. biomass, approximately 2-fold more than the amount obtained in this study. According to Chiu et al. (2008), concentrations above 10% of CO2 in cultures can cause cellular stress and inhibition of microalgal growth. Under these conditions, the microorganisms produce a higher amount of lipid macromolecules. Among the possible applications of the lipid fraction of C. fusca LEB 111 biomass, the production of biodiesel stands out. The advantages of obtaining this biofuel from microalgae are the high productivity, combined with a significant amount of triglyceride accumulation (Scott et al., 2010).
+    [3] => 
+
+    [4] => In cultures using industrial wastes, the highest (p < 0.10) protein concentrations (50.8 ± 0.6%, w w−1; 50.5 ± 1.3%, w w−1 and 52.3 ± 0.6%, w w−1) were obtained in the experiments that had the maximum rates and efficiencies of CO2 biofixation (Assays 1, 2 and 5, respectively). The C. fusca LEB 111 experiments were also terminated in the exponential cell growth phase. The enhancement of cell multiplication during this phase causes increased protein production by the cells, which are synthesized from CO2 biofixation in the Calvin cycle, which explains the results. These macromolecules have multiple functions in cells and are responsible for their growth and maintenance, as well as their regulation of cellular activities, in addition to other purposes (Solomon et al., 1999).
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 259]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Anjos et al. (2013) obtained a lipid concentration of approximately 10% (w w−1) in Chlorella biomass when exposed to 6% CO2. According to the authors, the cultivation conditions did not cause cellular stress in microalga, justifying the relatively low value of this macromolecule in the biomass. The same phenomenon may have occurred in this study, so that the lipid concentration in the experiments with industrial wastes, with the exception of assay 2, were identical (p > 0.10) to the control (approximately 15.1% w w−1) (Table 3).
+    [1] => 
+
+    [2] => Kao et al. (2014) cultivated Chlorella sp. for 7 d with fuel from flue gas, containing approximately 24% CO2, 15–20 ppm SO2 and 25–30 ppm NOx (a mixture of NO and NO2). These authors found 33.8 ± 0.5% lipid in the Chlorella sp. biomass, approximately 2-fold more than the amount obtained in this study. According to Chiu et al. (2008), concentrations above 10% of CO2 in cultures can cause cellular stress and inhibition of microalgal growth. Under these conditions, the microorganisms produce a higher amount of lipid macromolecules. Among the possible applications of the lipid fraction of C. fusca LEB 111 biomass, the production of biodiesel stands out. The advantages of obtaining this biofuel from microalgae are the high productivity, combined with a significant amount of triglyceride accumulation (Scott et al., 2010).
+    [3] => 
+
+    [4] => In cultures using industrial wastes, the highest (p < 0.10) protein concentrations (50.8 ± 0.6%, w w−1; 50.5 ± 1.3%, w w−1 and 52.3 ± 0.6%, w w−1) were obtained in the experiments that had the maximum rates and efficiencies of CO2 biofixation (Assays 1, 2 and 5, respectively). The C. fusca LEB 111 experiments were also terminated in the exponential cell growth phase. The enhancement of cell multiplication during this phase causes increased protein production by the cells, which are synthesized from CO2 biofixation in the Calvin cycle, which explains the results. These macromolecules have multiple functions in cells and are responsible for their growth and maintenance, as well as their regulation of cellular activities, in addition to other purposes (Solomon et al., 1999).
+)
+
+[process-texts-for-reading_korean.php : 282]
+pattern --> /([^0-9]\.) /
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 297
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 297
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 297
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 328]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Anjos et al.(2013) obtained a lipid concentration of approximately 10% (w w−1) in Chlorella biomass when exposed to 6% CO2. According to the authors, the cultivation conditions did not cause cellular stress in microalga, justifying the relatively low value of this macromolecule in the biomass.The same phenomenon may have occurred in this study, so that the lipid concentration in the experiments with industrial wastes, with the exception of assay 2, were identical (p > 0.10) to the control (approximately 15.1% w w−1) (Table 3).
+    [1] => 
+
+    [2] => Kao et al.(2014) cultivated Chlorella sp.for 7 d with fuel from flue gas, containing approximately 24% CO2, 15–20 ppm SO2 and 25–30 ppm NOx (a mixture of NO and NO2).These authors found 33.8 ± 0.5% lipid in the Chlorella sp.biomass, approximately 2-fold more than the amount obtained in this study.According to Chiu et al.(2008), concentrations above 10% of CO2 in cultures can cause cellular stress and inhibition of microalgal growth.Under these conditions, the microorganisms produce a higher amount of lipid macromolecules.Among the possible applications of the lipid fraction of C.fusca LEB 111 biomass, the production of biodiesel stands out.The advantages of obtaining this biofuel from microalgae are the high productivity, combined with a significant amount of triglyceride accumulation (Scott et al., 2010).
+    [3] => 
+
+    [4] => In cultures using industrial wastes, the highest (p < 0.10) protein concentrations (50.8 ± 0.6%, w w−1; 50.5 ± 1.3%, w w−1 and 52.3 ± 0.6%, w w−1) were obtained in the experiments that had the maximum rates and efficiencies of CO2 biofixation (Assays 1, 2 and 5, respectively).The C.fusca LEB 111 experiments were also terminated in the exponential cell growth phase.The enhancement of cell multiplication during this phase causes increased protein production by the cells, which are synthesized from CO2 biofixation in the Calvin cycle, which explains the results.These macromolecules have multiple functions in cells and are responsible for their growth and maintenance, as well as their regulation of cellular activities, in addition to other purposes (Solomon et al., 1999).
+)
+
+[process-texts-for-reading_korean.php : 349] $stringOf_Replaeced_Lines ==>Anjos et al.(2013) obtained a lipid concentration of approximately 10% (w w−1) in Chlorella biomass when exposed to 6% CO2. According to the authors, the cultivation conditions did not cause cellular stress in microalga, justifying the relatively low value of this macromolecule in the biomass.The same phenomenon may have occurred in this study, so that the lipid concentration in the experiments with industrial wastes, with the exception of assay 2, were identical (p > 0.10) to the control (approximately 15.1% w w−1) (Table 3).
+Kao et al.(2014) cultivated Chlorella sp.for 7 d with fuel from flue gas, containing approximately 24% CO2, 15–20 ppm SO2 and 25–30 ppm NOx (a mixture of NO and NO2).These authors found 33.8 ± 0.5% lipid in the Chlorella sp.biomass, approximately 2-fold more than the amount obtained in this study.According to Chiu et al.(2008), concentrations above 10% of CO2 in cultures can cause cellular stress and inhibition of microalgal growth.Under these conditions, the microorganisms produce a higher amount of lipid macromolecules.Among the possible applications of the lipid fraction of C.fusca LEB 111 biomass, the production of biodiesel stands out.The advantages of obtaining this biofuel from microalgae are the high productivity, combined with a significant amount of triglyceride accumulation (Scott et al., 2010).
+In cultures using industrial wastes, the highest (p < 0.10) protein concentrations (50.8 ± 0.6%, w w−1; 50.5 ± 1.3%, w w−1 and 52.3 ± 0.6%, w w−1) were obtained in the experiments that had the maximum rates and efficiencies of CO2 biofixation (Assays 1, 2 and 5, respectively).The C.fusca LEB 111 experiments were also terminated in the exponential cell growth phase.The enhancement of cell multiplication during this phase causes increased protein production by the cells, which are synthesized from CO2 biofixation in the Calvin cycle, which explains the results.These macromolecules have multiple functions in cells and are responsible for their growth and maintenance, as well as their regulation of cellular activities, in addition to other purposes (Solomon et al., 1999).
+[process-texts-for-reading_korean.php : 399] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_135932_172413.txt'
+[process-texts-for-reading_korean.php : 407] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_135932_172413.txt
+[process-texts-for-reading_korean.php : 416] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210520_140430_778492)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Cell protein concentrations tend to rise when the amount of nitrogen in the culture medium is high. However, Table 3 shows that C. fusca LEB 111 showed no increase in the protein quantity when cultivated at the highest NO concentration (assay 4, 47.9 ± 1.2%, w w−1) resulting in lower protein concentration (p > 0.10) than in the control experiment. The proteins present in C. fusca LEB 111 biomass may be used in the pharmaceutical industry for the production of biofilms, emulsifiers, in addition to other applications.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 259]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Cell protein concentrations tend to rise when the amount of nitrogen in the culture medium is high. However, Table 3 shows that C. fusca LEB 111 showed no increase in the protein quantity when cultivated at the highest NO concentration (assay 4, 47.9 ± 1.2%, w w−1) resulting in lower protein concentration (p > 0.10) than in the control experiment. The proteins present in C. fusca LEB 111 biomass may be used in the pharmaceutical industry for the production of biofilms, emulsifiers, in addition to other applications.
+)
+
+[process-texts-for-reading_korean.php : 282]
+pattern --> /([^0-9]\.) /
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 297
+Array
+(
+    [0] => h. 
+    [1] => h.
+)
+
+[process-texts-for-reading_korean.php : 328]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Cell protein concentrations tend to rise when the amount of nitrogen in the culture medium is high.However, Table 3 shows that C.fusca LEB 111 showed no increase in the protein quantity when cultivated at the highest NO concentration (assay 4, 47.9 ± 1.2%, w w−1) resulting in lower protein concentration (p > 0.10) than in the control experiment.The proteins present in C.fusca LEB 111 biomass may be used in the pharmaceutical industry for the production of biofilms, emulsifiers, in addition to other applications.
+)
+
+[process-texts-for-reading_korean.php : 349] $stringOf_Replaeced_Lines ==>Cell protein concentrations tend to rise when the amount of nitrogen in the culture medium is high.However, Table 3 shows that C.fusca LEB 111 showed no increase in the protein quantity when cultivated at the highest NO concentration (assay 4, 47.9 ± 1.2%, w w−1) resulting in lower protein concentration (p > 0.10) than in the control experiment.The proteins present in C.fusca LEB 111 biomass may be used in the pharmaceutical industry for the production of biofilms, emulsifiers, in addition to other applications.
+[process-texts-for-reading_korean.php : 399] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_140430_778492.txt'
+[process-texts-for-reading_korean.php : 407] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_140430_778492.txt
+[process-texts-for-reading_korean.php : 416] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210520_140610_984224)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The use of microalga from a power plant, linked to the intermittent wastes injection in the culture, enabled Chlorella growth under all conditions. The addition of ash (40 ppm), SO2 and NO (until 400 ppm) to cultivations did not markedly affect CO2 biofixation by microalga. The best CO2 biofixation efficiency was obtained with 10% CO2, 200 ppm SO2 and NO and 40 ppm ash (50.0 ± 0.8%), showing a specific growth rate of 0.18 ± 0.01 d−1. The biomass composition presented around 19.7% carbohydrates, 15.5% lipids and 50.2% proteins.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 259]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The use of microalga from a power plant, linked to the intermittent wastes injection in the culture, enabled Chlorella growth under all conditions. The addition of ash (40 ppm), SO2 and NO (until 400 ppm) to cultivations did not markedly affect CO2 biofixation by microalga. The best CO2 biofixation efficiency was obtained with 10% CO2, 200 ppm SO2 and NO and 40 ppm ash (50.0 ± 0.8%), showing a specific growth rate of 0.18 ± 0.01 d−1. The biomass composition presented around 19.7% carbohydrates, 15.5% lipids and 50.2% proteins.
+)
+
+[process-texts-for-reading_korean.php : 282]
+pattern --> /([^0-9]\.) /
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 297
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 328]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The use of microalga from a power plant, linked to the intermittent wastes injection in the culture, enabled Chlorella growth under all conditions.The addition of ash (40 ppm), SO2 and NO (until 400 ppm) to cultivations did not markedly affect CO2 biofixation by microalga.The best CO2 biofixation efficiency was obtained with 10% CO2, 200 ppm SO2 and NO and 40 ppm ash (50.0 ± 0.8%), showing a specific growth rate of 0.18 ± 0.01 d−1. The biomass composition presented around 19.7% carbohydrates, 15.5% lipids and 50.2% proteins.
+)
+
+[process-texts-for-reading_korean.php : 349] $stringOf_Replaeced_Lines ==>The use of microalga from a power plant, linked to the intermittent wastes injection in the culture, enabled Chlorella growth under all conditions.The addition of ash (40 ppm), SO2 and NO (until 400 ppm) to cultivations did not markedly affect CO2 biofixation by microalga.The best CO2 biofixation efficiency was obtained with 10% CO2, 200 ppm SO2 and NO and 40 ppm ash (50.0 ± 0.8%), showing a specific growth rate of 0.18 ± 0.01 d−1. The biomass composition presented around 19.7% carbohydrates, 15.5% lipids and 50.2% proteins.
+[process-texts-for-reading_korean.php : 399] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_140610_984224.txt'
+[process-texts-for-reading_korean.php : 407] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_140610_984224.txt
+[process-texts-for-reading_korean.php : 416] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210520_150320_707034)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => ABSTRACT Removal and long-term storage of the greenhouse gas CO2 from flue gases from fossilfuel-fired  power  plants  and  utilities  may  be  accomplished  by  mineral  carbonation.  Since  vastresources of suitable magnesium-based minerals silicates such as serpentine (Mg3Si2O5(OH)4) appearto  exist  in  Finland,  this  option  could  support  Finland’s  commitments  under  the  1997  KyotoProtocol.  This  paper  assesses  direct,  dry  mineral  carbonation  for  CO2  sequestration.  Finland’smineral  resources  and  their  quality  are  discussed,  and  chemical  kinetics  studies  addressing  theinfluence of gas composition, mineral composition and catalysts are reported. Finally, some practicalimplications of CO2 sequestration by mineral carbonation are addressed.Key  words:  carbon  dioxide,  emission  reduction,  reaction  kinetics,  geochemistry,  ultramafic  rocks,Finland, waste disposal.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 259]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => ABSTRACT Removal and long-term storage of the greenhouse gas CO2 from flue gases from fossilfuel-fired  power  plants  and  utilities  may  be  accomplished  by  mineral  carbonation.  Since  vastresources of suitable magnesium-based minerals silicates such as serpentine (Mg3Si2O5(OH)4) appearto  exist  in  Finland,  this  option  could  support  Finland’s  commitments  under  the  1997  KyotoProtocol.  This  paper  assesses  direct,  dry  mineral  carbonation  for  CO2  sequestration.  Finland’smineral  resources  and  their  quality  are  discussed,  and  chemical  kinetics  studies  addressing  theinfluence of gas composition, mineral composition and catalysts are reported. Finally, some practicalimplications of CO2 sequestration by mineral carbonation are addressed.Key  words:  carbon  dioxide,  emission  reduction,  reaction  kinetics,  geochemistry,  ultramafic  rocks,Finland, waste disposal.
+)
+
+[process-texts-for-reading_korean.php : 282]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 296]
+match : line --> 'ABSTRACT Removal and long-term storage of the greenhouse gas CO2 from flue gases from fossilfuel-fired  power  plants  and  utilities  may  be  accomplished  by  mineral  carbonation.  Since  vastresources of suitable magnesium-based minerals silicates such as serpentine (Mg3Si2O5(OH)4) appearto  exist  in  Finland,  this  option  could  support  Finland’s  commitments  under  the  1997  KyotoProtocol.  This  paper  assesses  direct,  dry  mineral  carbonation  for  CO2  sequestration.  Finland’smineral  resources  and  their  quality  are  discussed,  and  chemical  kinetics  studies  addressing  theinfluence of gas composition, mineral composition and catalysts are reported. Finally, some practicalimplications of CO2 sequestration by mineral carbonation are addressed.Key  words:  carbon  dioxide,  emission  reduction,  reaction  kinetics,  geochemistry,  ultramafic  rocks,Finland, waste disposal.'Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 328]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => ABSTRACT Removal and long-term storage of the greenhouse gas CO2 from flue gases from fossilfuel-fired  power  plants  and  utilities  may  be  accomplished  by  mineral  carbonation. Since  vastresources of suitable magnesium-based minerals silicates such as serpentine (Mg3Si2O5(OH)4) appearto  exist  in  Finland,  this  option  could  support  Finland’s  commitments  under  the  1997  KyotoProtocol. This  paper  assesses  direct,  dry  mineral  carbonation  for  CO2  sequestration. Finland’smineral  resources  and  their  quality  are  discussed,  and  chemical  kinetics  studies  addressing  theinfluence of gas composition, mineral composition and catalysts are reported.Finally, some practicalimplications of CO2 sequestration by mineral carbonation are addressed.Key  words:  carbon  dioxide,  emission  reduction,  reaction  kinetics,  geochemistry,  ultramafic  rocks,Finland, waste disposal.
+)
+
+[process-texts-for-reading_korean.php : 349] $stringOf_Replaeced_Lines ==>ABSTRACT Removal and long-term storage of the greenhouse gas CO2 from flue gases from fossilfuel-fired  power  plants  and  utilities  may  be  accomplished  by  mineral  carbonation. Since  vastresources of suitable magnesium-based minerals silicates such as serpentine (Mg3Si2O5(OH)4) appearto  exist  in  Finland,  this  option  could  support  Finland’s  commitments  under  the  1997  KyotoProtocol. This  paper  assesses  direct,  dry  mineral  carbonation  for  CO2  sequestration. Finland’smineral  resources  and  their  quality  are  discussed,  and  chemical  kinetics  studies  addressing  theinfluence of gas composition, mineral composition and catalysts are reported.Finally, some practicalimplications of CO2 sequestration by mineral carbonation are addressed.Key  words:  carbon  dioxide,  emission  reduction,  reaction  kinetics,  geochemistry,  ultramafic  rocks,Finland, waste disposal.
+[process-texts-for-reading_korean.php : 399] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_150320_707034.txt'
+[process-texts-for-reading_korean.php : 407] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210520_150320_707034.txt
+[process-texts-for-reading_korean.php : 416] returning...
+ 
