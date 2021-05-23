@@ -223,9 +223,18 @@ php process-texts-for-reading_korean.php
 			if ($result == 1) {
 					
 				#debug
-				printf("[%s : %d]\nmatch : line --> '$line'"
+				//printf("[%s : %d]\nmatch : line --> '$line'"
+				//, basename(__FILE__), __LINE__
+				//);
+
+				printf("[%s : %d]\nmatch : line -->"
 				, basename(__FILE__), __LINE__
 				);
+				print($line);
+				print("\n");
+				
+				print("\$matches ==>");
+				print("\n");
 		
 				print_r($matches);
 				print("\n");
@@ -292,10 +301,16 @@ php process-texts-for-reading_korean.php
 			if ($result == 1) {
 					
 				#debug
-				printf("[%s : %d]\nmatch : line --> '$line'"
+				//printf("[%s : %d]\nmatch : line --> '$line'"
+				printf("[%s : %d]\nmatch : line -->"
 				, basename(__FILE__), __LINE__
 				);
-		
+				print($line);
+				print("\n");
+				
+				print("\$matches ==>");
+				print("\n");
+				
 				print_r($matches);
 				print("\n");
 		
