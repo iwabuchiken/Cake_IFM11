@@ -1888,3 +1888,354 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210521_171314_157727.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210521_171314_157727.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210523_153546_758935)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => Im
+    [1] => Grunde
+    [2] => sei
+    [3] => es
+    [4] => ein
+    [5] => natürlicher
+    [6] => Prozess,
+    [7] => den
+    [8] => sie
+    [9] => nachstellen
+    [10] => würden,
+    [11] => sagt
+    [12] => der
+    [13] => Geochemiker
+    [14] => Sigurdur
+    [15] => Reynir
+    [16] => Gislason.
+    [17] => Kohlendioxid
+    [18] => wird
+    [19] => in
+    [20] => Wasser
+    [21] => gelöst
+    [22] => und
+    [23] => verbindet
+    [24] => sich
+    [25] => mit
+    [26] => Calcium,
+    [27] => Magnesium
+    [28] => oder
+    [29] => Eisen
+    [30] => zu
+    [31] => einem
+    [32] => Salz.
+    [33] => 
+    [34] => „Auf
+    [35] => der
+    [36] => Erde
+    [37] => haben
+    [38] => solche
+    [39] => Prozesse
+    [40] => in
+    [41] => geothermalen
+    [42] => Gebieten
+    [43] => wie
+    [44] => beispielsweise
+    [45] => Island
+    [46] => über
+    [47] => mehrere
+    [48] => Millionen
+    [49] => Jahre
+    [50] => stattgefunden.
+    [51] => Wenn
+    [52] => am
+    [53] => Meeresgrund
+    [54] => die
+    [55] => Erde
+    [56] => aufbrach,
+    [57] => reagierte
+    [58] => das
+    [59] => Kohlendioxid
+    [60] => aus
+    [61] => dem
+    [62] => Magma
+    [63] => mit
+    [64] => Basaltgestein
+    [65] => aus
+    [66] => der
+    [67] => Umgebung.
+    [68] => Durch
+    [69] => dieses
+    [70] => Zusammenspiel
+    [71] => von
+    [72] => Gas,
+    [73] => Wasser
+    [74] => und
+    [75] => Gestein
+    [76] => bildeten
+    [77] => sich
+    [78] => feste
+    [79] => Carbonate.“
+    [80] => 
+    [81] => Gislason
+    [82] => ist
+    [83] => leitender
+    [84] => Wissenschaftler
+    [85] => des
+    [86] => Projektes
+    [87] => Carbfix
+    [88] => an
+    [89] => der
+    [90] => Universität
+    [91] => von
+    [92] => Island
+    [93] => in
+    [94] => Reykjavik.
+    [95] => Im
+    [96] => Rahmen
+    [97] => von
+    [98] => Carbfix
+    [99] => will
+    [100] => er
+    [101] => mit
+    [102] => seinem
+    [103] => Forscherteam
+    [104] => eine
+    [105] => sichere
+    [106] => Speichermethode
+    [107] => für
+    [108] => Kohlendioxid
+    [109] => schaffen.
+    [110] => Seit
+    [111] => 2007
+    [112] => experimentieren
+    [113] => sie
+    [114] => in
+    [115] => Labors,
+    [116] => wie
+    [117] => sich
+    [118] => die
+    [119] => Kristallisation
+    [120] => von
+    [121] => CO2
+    [122] => nachbilden
+    [123] => lässt.
+    [124] => Nun
+    [125] => wollen
+    [126] => sie
+    [127] => die
+    [128] => ersten
+    [129] => Langzeitversuche
+    [130] => unter
+    [131] => realen
+    [132] => Bedingungen
+    [133] => starten.
+    [134] => Sechs
+    [135] => bis
+    [136] => zwölf
+    [137] => Monate
+    [138] => lang
+    [139] => pumpen
+    [140] => sie
+    [141] => Kohlensäure
+    [142] => in
+    [143] => das
+    [144] => Basaltgestein
+    [145] => beim
+    [146] => Geothermie-Kraftwerk
+    [147] => Hellisheidi,
+    [148] => östlich
+    [149] => von
+    [150] => Reykjavik.
+    [151] => Es
+    [152] => gehört
+    [153] => zum
+    [154] => isländischen
+    [155] => Energie-Unternehmen
+    [156] => Orkuveita
+    [157] => Reykjavikur,
+    [158] => das
+    [159] => zugleich
+    [160] => den
+    [161] => größten
+    [162] => Teil
+    [163] => der
+    [164] => Fördergelder
+    [165] => für
+    [166] => das
+    [167] => Projekt
+    [168] => liefert.
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Im
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Grunde
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sei
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)es
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)natürlicher
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Prozess,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)den
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)nachstellen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)würden,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sagt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Geochemiker
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Sigurdur
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reynir
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Gislason.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohlendioxid
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wird
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wasser
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gelöst
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)verbindet
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Calcium,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Magnesium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)oder
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Eisen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zu
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)einem
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Salz.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)„Auf
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erde
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)haben
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)solche
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Prozesse
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)geothermalen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Gebieten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)beispielsweise
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Island
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)über
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mehrere
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Millionen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Jahre
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)stattgefunden.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wenn
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)am
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Meeresgrund
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erde
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aufbrach,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)reagierte
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohlendioxid
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aus
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dem
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Magma
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Basaltgestein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aus
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Umgebung.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Durch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dieses
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Zusammenspiel
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Gas,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wasser
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Gestein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bildeten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)feste
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Carbonate.“
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Gislason
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)leitender
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wissenschaftler
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)des
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Projektes
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Carbfix
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)an
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Universität
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Island
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reykjavik.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Im
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Rahmen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Carbfix
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)will
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)er
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)seinem
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Forscherteam
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)eine
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sichere
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Speichermethode
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)für
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohlendioxid
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)schaffen.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Seit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2007
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)experimentieren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Labors,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kristallisation
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)nachbilden
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)lässt.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Nun
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wollen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ersten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Langzeitversuche
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)unter
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)realen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Bedingungen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)starten.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Sechs
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bis
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zwölf
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Monate
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)lang
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pumpen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohlensäure
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Basaltgestein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)beim
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Geothermie-Kraftwerk
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Hellisheidi,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)östlich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reykjavik.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Es
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gehört
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zum
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)isländischen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Energie-Unternehmen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Orkuveita
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reykjavikur,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zugleich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)den
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)größten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Teil
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Fördergelder
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)für
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Projekt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)liefert.
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210523_153546_801938.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210523_153546_801938.txt'
+  
