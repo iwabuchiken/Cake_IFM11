@@ -2239,3 +2239,641 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210523_153546_801938.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210523_153546_801938.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210524_153844_246474)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => Calcit,
+    [1] => oder
+    [2] => Kalkspat,
+    [3] => ist
+    [4] => ein
+    [5] => klares,
+    [6] => meist
+    [7] => farbloses
+    [8] => Mineral,
+    [9] => das
+    [10] => in
+    [11] => der
+    [12] => Natur
+    [13] => sehr
+    [14] => häufig[frequently
+    [15] => vorkommt[occur.]]Bei
+    [16] => dem
+    [17] => Carbfix-
+    [18] => Verfahren[process
+    [19] => füllt
+    [20] => es
+    [21] => nach[gradually~und~nach
+    [22] => die
+    [23] => Poren
+    [24] => des
+    [25] => Basaltgesteins.]]Nach
+    [26] => der
+    [27] => mehrmonatigen
+    [28] => Behandlung
+    [29] => mit
+    [30] => Kohlensäure
+    [31] => wollen
+    [32] => die
+    [33] => Forscher[researcher
+    [34] => einen
+    [35] => Bohrkern[drill-core
+    [36] => aus
+    [37] => dem
+    [38] => Versuchsgebiet[test-area
+    [39] => entnehmen[remove
+    [40] => .]]Der
+    [41] => soll
+    [42] => zeigen,
+    [43] => wie
+    [44] => viel
+    [45] => CO2
+    [46] => sich
+    [47] => auf
+    [48] => diese
+    [49] => Weise[way
+    [50] => tatsächlich[actually
+    [51] => im
+    [52] => Basalt
+    [53] => speichern
+    [54] => lässt.]]Denn[because
+    [55] => die
+    [56] => Aufnahmekapazität[absorption-
+    [57] => ist
+    [58] => durch
+    [59] => die
+    [60] => Menge[volume
+    [61] => der
+    [62] => Poren
+    [63] => im
+    [64] => Gestein
+    [65] => begrenzt[limited
+    [66] => .]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Calcit,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)oder
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kalkspat,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)klares,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)meist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)farbloses
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Mineral,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Natur
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sehr
+[process-trans-sentences_chinese.php : 216] match => häufig[frequently
+[process-trans-sentences_chinese.php : 216] match => vorkommt[occur.]]Bei
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dem
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Carbfix-
+[process-trans-sentences_chinese.php : 216] match => Verfahren[process
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)füllt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)es
+[process-trans-sentences_chinese.php : 216] match => nach[gradually~und~nach
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Poren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)des
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Basaltgesteins.]]Nach
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mehrmonatigen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Behandlung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohlensäure
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wollen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 216] match => Forscher[researcher
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)einen
+[process-trans-sentences_chinese.php : 216] match => Bohrkern[drill-core
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aus
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dem
+[process-trans-sentences_chinese.php : 216] match => Versuchsgebiet[test-area
+[process-trans-sentences_chinese.php : 216] match => entnehmen[remove
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]Der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)soll
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zeigen,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)viel
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)auf
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)diese
+[process-trans-sentences_chinese.php : 216] match => Weise[way
+[process-trans-sentences_chinese.php : 216] match => tatsächlich[actually
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)im
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Basalt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)speichern
+[process-trans-sentences_chinese.php : 216] match => lässt.]]Denn[because
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 216] match => Aufnahmekapazität[absorption-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)durch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 216] match => Menge[volume
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Poren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)im
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Gestein
+[process-trans-sentences_chinese.php : 216] match => begrenzt[limited
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_153844_267476.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_153844_267476.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210524_154517_113308)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => „Die
+    [1] => Verfügbarkeit[availability
+    [2] => der
+    [3] => Poren
+    [4] => ist
+    [5] => ein
+    [6] => limitierender
+    [7] => Faktor
+    [8] => für
+    [9] => das
+    [10] => Verfahren.Man
+    [11] => kann
+    [12] => nicht
+    [13] => endlos
+    [14] => viel
+    [15] => CO2
+    [16] => in
+    [17] => das
+    [18] => Basaltgestein
+    [19] => pumpen.Außerdem
+    [20] => kann
+    [21] => es
+    [22] => passieren[happen
+    [23] => ,
+    [24] => dass
+    [25] => sich
+    [26] => die
+    [27] => Kristalle
+    [28] => schon
+    [29] => bilden,
+    [30] => wenn
+    [31] => noch
+    [32] => gar
+    [33] => nicht
+    [34] => alle
+    [35] => Poren
+    [36] => des
+    [37] => Basaltgesteins
+    [38] => mit
+    [39] => der
+    [40] => Kohlensäure
+    [41] => gefüllt
+    [42] => sind.
+    [43] => ]]Die
+    [44] => verstopften[clogged
+    [45] => Poren
+    [46] => würden
+    [47] => dann
+    [48] => verhindern,
+    [49] => dass
+    [50] => das
+    [51] => Verfahren
+    [52] => richtig
+    [53] => funktioniert.“
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)„Die
+[process-trans-sentences_chinese.php : 216] match => Verfügbarkeit[availability
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Poren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)limitierender
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Faktor
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)für
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Verfahren.Man
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)kann
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)nicht
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)endlos
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)viel
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Basaltgestein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pumpen.Außerdem
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)kann
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)es
+[process-trans-sentences_chinese.php : 216] match => passieren[happen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dass
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kristalle
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)schon
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bilden,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wenn
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)noch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gar
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)nicht
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)alle
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Poren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)des
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Basaltgesteins
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohlensäure
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gefüllt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sind.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]Die
+[process-trans-sentences_chinese.php : 216] match => verstopften[clogged
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Poren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)würden
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dann
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)verhindern,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dass
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Verfahren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)richtig
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)funktioniert.“
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_154517_124309.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_154517_124309.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210524_155205_143018)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => Die
+    [1] => Kohlensäure
+    [2] => würde
+    [3] => über
+    [4] => lange
+    [5] => Sicht[run
+    [6] => außerdem
+    [7] => die
+    [8] => bereits[already
+    [9] => gebildeten
+    [10] => Carbonate
+    [11] => auflösen[dissolve
+    [12] => .]]Um
+    [13] => das
+    [14] => zu
+    [15] => verhindern,
+    [16] => wird
+    [17] => sie
+    [18] => nur
+    [19] => einmal
+    [20] => in
+    [21] => das
+    [22] => Gestein
+    [23] => eingebracht[introduced
+    [24] => .]]Dabei
+    [25] => senkt[drop
+    [26] => sich
+    [27] => der
+    [28] => pH-Wert
+    [29] => des
+    [30] => umgebenden[surrounding
+    [31] => Wassers
+    [32] => kurzzeitig[short-time
+    [33] => .]]Im
+    [34] => Laufe[course
+    [35] => der
+    [36] => folgenden[subsequent
+    [37] => Kristallisation
+    [38] => neutralisiert
+    [39] => er
+    [40] => sich
+    [41] => jedoch
+    [42] => wieder
+    [43] => und
+    [44] => die
+    [45] => Mineralien
+    [46] => werden
+    [47] => stabilisiert.Bis
+    [48] => sich
+    [49] => die
+    [50] => ersten
+    [51] => Kristalle
+    [52] => bilden,
+    [53] => dauert
+    [54] => es
+    [55] => allerdings[however
+    [56] => mehrere
+    [57] => Wochen
+    [58] => und
+    [59] => Monate.]]Wenn
+    [60] => sich
+    [61] => das
+    [62] => Verfahren
+    [63] => in
+    [64] => den
+    [65] => Feldversuchen[field-trial
+    [66] => als
+    [67] => wirkungsvoll[effective
+    [68] => erweist[prive,
+    [69] => könnte
+    [70] => es
+    [71] => später
+    [72] => überall[anywhere~dort
+    [73] => angewendet[used
+    [74] => werden,
+    [75] => wo
+    [76] => genügend[enough
+    [77] => Basaltgestein
+    [78] => vorhanden[available
+    [79] => ist,
+    [80] => sagt
+    [81] => Gislason.
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohlensäure
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)würde
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)über
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)lange
+[process-trans-sentences_chinese.php : 216] match => Sicht[run
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)außerdem
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 216] match => bereits[already
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gebildeten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Carbonate
+[process-trans-sentences_chinese.php : 216] match => auflösen[dissolve
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]Um
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zu
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)verhindern,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wird
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)nur
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)einmal
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Gestein
+[process-trans-sentences_chinese.php : 216] match => eingebracht[introduced
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]Dabei
+[process-trans-sentences_chinese.php : 216] match => senkt[drop
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pH-Wert
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)des
+[process-trans-sentences_chinese.php : 216] match => umgebenden[surrounding
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wassers
+[process-trans-sentences_chinese.php : 216] match => kurzzeitig[short-time
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]Im
+[process-trans-sentences_chinese.php : 216] match => Laufe[course
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 216] match => folgenden[subsequent
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kristallisation
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)neutralisiert
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)er
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)jedoch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wieder
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Mineralien
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)werden
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)stabilisiert.Bis
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ersten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kristalle
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bilden,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dauert
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)es
+[process-trans-sentences_chinese.php : 216] match => allerdings[however
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mehrere
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wochen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Monate.]]Wenn
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Verfahren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)den
+[process-trans-sentences_chinese.php : 216] match => Feldversuchen[field-trial
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)als
+[process-trans-sentences_chinese.php : 216] match => wirkungsvoll[effective
+[process-trans-sentences_chinese.php : 216] match => erweist[prive,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)könnte
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)es
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)später
+[process-trans-sentences_chinese.php : 216] match => überall[anywhere~dort
+[process-trans-sentences_chinese.php : 216] match => angewendet[used
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)werden,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wo
+[process-trans-sentences_chinese.php : 216] match => genügend[enough
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Basaltgestein
+[process-trans-sentences_chinese.php : 216] match => vorhanden[available
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sagt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Gislason.
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_155205_158617.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_155205_158617.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210524_164848_079740)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 开放共享，多方合作]]
+    [1] => 
+    [2] => 
+    [3] => 通过国家之间、企业之间的开放共享、多方合作，不仅有利于
+    [4] => 提炼[-lian4:refine
+    [5] => 总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，]]也有利于国家之间在自然资源、地理位置等方面实现优势互补。]]
+    [6] => 
+    [7] => 目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。]]
+    [8] => 
+    [9] => 
+    [10] => 
+    [11] => 对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），]]也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。]]
+    [12] => 
+    [13] => 
+    [14] => 
+    [15] => 对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；]]一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展PetraNova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。]]
+    [16] => 
+    [17] => 
+    [18] => 
+    [19] => 在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、WabashcarbonSAFE二氧化碳封存
+    [20] => 枢纽[shu1niu3:hub
+    [21] => ]]
+    [22] => 等国内共享封存设施，大多数新增的商业设施均有机会使用。]]
+    [23] => 
+    [24] => 此外，亚洲开发银行KickStarter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)开放共享，多方合作]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)通过国家之间、企业之间的开放共享、多方合作，不仅有利于
+[process-trans-sentences_chinese.php : 216] match => 提炼[-lian4:refine
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，]]也有利于国家之间在自然资源、地理位置等方面实现优势互补。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），]]也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；]]一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展PetraNova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、WabashcarbonSAFE二氧化碳封存
+[process-trans-sentences_chinese.php : 216] match => 枢纽[shu1niu3:hub
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)等国内共享封存设施，大多数新增的商业设施均有机会使用。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)此外，亚洲开发银行KickStarter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_164848_110939.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_164848_110939.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210524_170233_440222)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 多措并举，激励到位
+    [1] => 
+    [2] => 
+    [3] => 在2020年全球新
+    [4] => 筹备[chou2bei4:prepare
+    [5] => 的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form45Q政策，对EOR、地质封存项目提供税收
+    [6] => 抵扣[di3kou4
+    [7] => ，被认为是当前最有激励性的CCUS政策之一。
+    [8] => 
+    [9] => 据了解，美国未来仍将持续出台激励措施，包括延长已有Form45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+    [10] => 
+    [11] => 一是延长Form45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。]]
+    [12] => 
+    [13] => 
+    [14] => 
+    [15] => 二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。]]
+    [16] => 
+    [17] => 
+    [18] => 
+    [19] => 三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（MikeThompson）发起，允许碳捕集项目开发商获得Form45Q政策税收抵免金额的85%，并要求退还任何由此导致的
+    [20] => 多缴[-jiao3:overpay
+    [21] => 税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由
+    [22] => 密歇根[mi4xie1-
+    [23] => 州共和党众议员杰克·伯格曼（JackBergman）发起，允许CCUS项目开发商收到90%的税收
+    [24] => 抵免[di3mian3:credit
+    [25] => 付款[-kuan3:payment
+    [26] => 金额。
+    [27] => 
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)多措并举，激励到位
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在2020年全球新
+[process-trans-sentences_chinese.php : 216] match => 筹备[chou2bei4:prepare
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form45Q政策，对EOR、地质封存项目提供税收
+[process-trans-sentences_chinese.php : 216] match => 抵扣[di3kou4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，被认为是当前最有激励性的CCUS政策之一。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)据了解，美国未来仍将持续出台激励措施，包括延长已有Form45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)一是延长Form45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（MikeThompson）发起，允许碳捕集项目开发商获得Form45Q政策税收抵免金额的85%，并要求退还任何由此导致的
+[process-trans-sentences_chinese.php : 216] match => 多缴[-jiao3:overpay
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由
+[process-trans-sentences_chinese.php : 216] match => 密歇根[mi4xie1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)州共和党众议员杰克·伯格曼（JackBergman）发起，允许CCUS项目开发商收到90%的税收
+[process-trans-sentences_chinese.php : 216] match => 抵免[di3mian3:credit
+[process-trans-sentences_chinese.php : 216] match => 付款[-kuan3:payment
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)金额。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_170233_455822.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_170233_455822.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210524_170820_914206)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 价格保证，
+    [1] => 机制[:mechanism
+    [2] => 灵活[ling2-:flexible
+    [3] => 。
+    [4] => 
+    [5] => 
+    [6] => 
+    [7] => 国外主流的CCUS市场机制主要有三种（见图3）：
+    [8] => 一是价格保证机制。
+    [9] => 
+    [10] => 例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。]]
+    [11] => 
+    [12] => 此外，英国还
+    [13] => 配套[-tao4:matching
+    [14] => 引入了碳交易底价保证机制，为碳交易设定每
+    [15] => 吨[dun1
+    [16] => 15.7
+    [17] => 英镑[-bang4:GBP
+    [18] => 的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。]]
+    [19] => 
+    [20] => 在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来
+    [21] => 弥补[mi2bu3:offset
+    [22] => 差额。
+    [23] => 
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)价格保证，
+[process-trans-sentences_chinese.php : 216] match => 机制[:mechanism
+[process-trans-sentences_chinese.php : 216] match => 灵活[ling2-:flexible
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国外主流的CCUS市场机制主要有三种（见图3）：
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)一是价格保证机制。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)此外，英国还
+[process-trans-sentences_chinese.php : 216] match => 配套[-tao4:matching
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)引入了碳交易底价保证机制，为碳交易设定每
+[process-trans-sentences_chinese.php : 216] match => 吨[dun1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)15.7
+[process-trans-sentences_chinese.php : 216] match => 英镑[-bang4:GBP
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来
+[process-trans-sentences_chinese.php : 216] match => 弥补[mi2bu3:offset
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)差额。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_170820_929806.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_170820_929806.txt'
+  

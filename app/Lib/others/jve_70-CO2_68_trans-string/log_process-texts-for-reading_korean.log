@@ -7174,3 +7174,1063 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210523_154319_698051.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_120057_407125)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 火热报名中7.15-16苏州第二届工业园区环境污染第三方治理专题研讨会//北极星大气网讯:导读：正如我们在《双碳目标下，不可或缺的CCUS为何发展 缓慢[huan3man4:느린 》一文提到的，30·60双碳目标时间紧、任务重，仅靠能源结构调整、电气化等主要脱碳手段显然无法完成任务，CCUS因此变得不可或缺。但与此同时，我国每年CCUS封存量仅为10~100万吨，远低于美国每年的2100万吨；截至2019年底，我国二氧化碳累积封存量200万吨，远低于美国的5800万吨，我国CCUS整体发展缓慢。//分析原因发现，国内CCUS之所以发展缓慢，主要面临四大障碍，包括法律法规不健全、成本居高不下、技术尚未完全成熟、项目风险较大等，实现商业化运营尚需时间。//本文我们将探讨美国、英国、欧盟、日本等发达国家CCUS的四大发展经验，以期为相关主管部门与业内企业提供思考与 借鉴[jie4jian4:reference;참조 。//中国正有序推进CCUS发展，并制定了清晰的CCUS技术路线图//近年来，我国出台了多项措施有序推进CCUS发展，包括：一是制定多项规划，明确CCUS研发战略与发展方向，例如先后发布了CCUS技术路线图、//“十三五”国家科技创新规划、能源技术革命创新行动计划等//支持性政策，为CCUS发展提供指引。//二是加大CCUS技术研发与示范的支持力度，通过国家“973”计划、“863”计划和科技 支撑[zhi1cheng1 计划//进行系统 部署[:deployment;배포，“十三五”期间国家重点研发计划也将CCUS列为重要内容。//三是注重CCUS相关的能力建设和国际交流合作，我国已成立了中国CCUS产业技术创新战略联盟，//加强国内CCUS技术研发与示范平台建设，同时与国际能源署、碳收集领导人论坛等国际组织开展了广泛合作，//与欧盟、美国、澳大利亚等国家和地区围绕CCUS开展了多层次的双边科技合作。//根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，//我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。//近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，//同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。//
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 火热报名中7.15-16苏州第二届工业园区环境污染第三方治理专题研讨会//北极星大气网讯:导读：正如我们在《双碳目标下，不可或缺的CCUS为何发展 缓慢[huan3man4:느린 》一文提到的，30·60双碳目标时间紧、任务重，仅靠能源结构调整、电气化等主要脱碳手段显然无法完成任务，CCUS因此变得不可或缺。但与此同时，我国每年CCUS封存量仅为10~100万吨，远低于美国每年的2100万吨；截至2019年底，我国二氧化碳累积封存量200万吨，远低于美国的5800万吨，我国CCUS整体发展缓慢。//分析原因发现，国内CCUS之所以发展缓慢，主要面临四大障碍，包括法律法规不健全、成本居高不下、技术尚未完全成熟、项目风险较大等，实现商业化运营尚需时间。//本文我们将探讨美国、英国、欧盟、日本等发达国家CCUS的四大发展经验，以期为相关主管部门与业内企业提供思考与 借鉴[jie4jian4:reference;참조 。//中国正有序推进CCUS发展，并制定了清晰的CCUS技术路线图//近年来，我国出台了多项措施有序推进CCUS发展，包括：一是制定多项规划，明确CCUS研发战略与发展方向，例如先后发布了CCUS技术路线图、//“十三五”国家科技创新规划、能源技术革命创新行动计划等//支持性政策，为CCUS发展提供指引。//二是加大CCUS技术研发与示范的支持力度，通过国家“973”计划、“863”计划和科技 支撑[zhi1cheng1 计划//进行系统 部署[:deployment;배포，“十三五”期间国家重点研发计划也将CCUS列为重要内容。//三是注重CCUS相关的能力建设和国际交流合作，我国已成立了中国CCUS产业技术创新战略联盟，//加强国内CCUS技术研发与示范平台建设，同时与国际能源署、碳收集领导人论坛等国际组织开展了广泛合作，//与欧盟、美国、澳大利亚等国家和地区围绕CCUS开展了多层次的双边科技合作。//根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，//我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。//近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，//同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。//
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 火热报名中7.15-16苏州第二届工业园区环境污染第三方治理专题研讨会//北极星大气网讯:导读：正如我们在《双碳目标下，不可或缺的CCUS为何发展 缓慢[huan3man4:느린 》一文提到的，30·60双碳目标时间紧、任务重，仅靠能源结构调整、电气化等主要脱碳手段显然无法完成任务，CCUS因此变得不可或缺。但与此同时，我国每年CCUS封存量仅为10~100万吨，远低于美国每年的2100万吨；截至2019年底，我国二氧化碳累积封存量200万吨，远低于美国的5800万吨，我国CCUS整体发展缓慢。//分析原因发现，国内CCUS之所以发展缓慢，主要面临四大障碍，包括法律法规不健全、成本居高不下、技术尚未完全成熟、项目风险较大等，实现商业化运营尚需时间。//本文我们将探讨美国、英国、欧盟、日本等发达国家CCUS的四大发展经验，以期为相关主管部门与业内企业提供思考与 借鉴[jie4jian4:reference;참조 。//中国正有序推进CCUS发展，并制定了清晰的CCUS技术路线图//近年来，我国出台了多项措施有序推进CCUS发展，包括：一是制定多项规划，明确CCUS研发战略与发展方向，例如先后发布了CCUS技术路线图、//“十三五”国家科技创新规划、能源技术革命创新行动计划等//支持性政策，为CCUS发展提供指引。//二是加大CCUS技术研发与示范的支持力度，通过国家“973”计划、“863”计划和科技 支撑[zhi1cheng1 计划//进行系统 部署[:deployment;배포，“十三五”期间国家重点研发计划也将CCUS列为重要内容。//三是注重CCUS相关的能力建设和国际交流合作，我国已成立了中国CCUS产业技术创新战略联盟，//加强国内CCUS技术研发与示范平台建设，同时与国际能源署、碳收集领导人论坛等国际组织开展了广泛合作，//与欧盟、美国、澳大利亚等国家和地区围绕CCUS开展了多层次的双边科技合作。//根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，//我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。//近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，//同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。//
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>火热报名中7.15-16苏州第二届工业园区环境污染第三方治理专题研讨会//北极星大气网讯:导读：正如我们在《双碳目标下，不可或缺的CCUS为何发展 缓慢[huan3man4:느린 》一文提到的，30·60双碳目标时间紧、任务重，仅靠能源结构调整、电气化等主要脱碳手段显然无法完成任务，CCUS因此变得不可或缺。但与此同时，我国每年CCUS封存量仅为10~100万吨，远低于美国每年的2100万吨；截至2019年底，我国二氧化碳累积封存量200万吨，远低于美国的5800万吨，我国CCUS整体发展缓慢。//分析原因发现，国内CCUS之所以发展缓慢，主要面临四大障碍，包括法律法规不健全、成本居高不下、技术尚未完全成熟、项目风险较大等，实现商业化运营尚需时间。//本文我们将探讨美国、英国、欧盟、日本等发达国家CCUS的四大发展经验，以期为相关主管部门与业内企业提供思考与 借鉴[jie4jian4:reference;참조 。//中国正有序推进CCUS发展，并制定了清晰的CCUS技术路线图//近年来，我国出台了多项措施有序推进CCUS发展，包括：一是制定多项规划，明确CCUS研发战略与发展方向，例如先后发布了CCUS技术路线图、//“十三五”国家科技创新规划、能源技术革命创新行动计划等//支持性政策，为CCUS发展提供指引。//二是加大CCUS技术研发与示范的支持力度，通过国家“973”计划、“863”计划和科技 支撑[zhi1cheng1 计划//进行系统 部署[:deployment;배포，“十三五”期间国家重点研发计划也将CCUS列为重要内容。//三是注重CCUS相关的能力建设和国际交流合作，我国已成立了中国CCUS产业技术创新战略联盟，//加强国内CCUS技术研发与示范平台建设，同时与国际能源署、碳收集领导人论坛等国际组织开展了广泛合作，//与欧盟、美国、澳大利亚等国家和地区围绕CCUS开展了多层次的双边科技合作。//根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，//我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。//近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，//同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。//
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_120057_407125.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_120057_407125.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_120115_077965)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 상기와 같이 광물에 따라 조업 조건 및 전환율이 다르게 나타난다. 전체적으로 1톤의 이산화탄소를 처리하는데 $50~100/t stored의 비용이 소요되는 것으로 나타났다. 여기서 저장비용은 이산화탄소 포집과 수송에 소요되는 비용을 포함하지 않음을의미한다. 각 광물에 따른 전환율, 소요에너지 및 비용은 다음 [표 4-2]와 같다.기계적인 전처리를 통한 광물을 이산화탄소 광물화반응에 이용하여도 반응온도를증가시키는 것과 같이 일정한 에너지를 필요로 한다. 보다 낮은 온도 및 압력하에서광물화 반응을 빠르게 진행시키기 광석로부터 이산화탄소 광물화에 작용하는 금속이온을 추출하여 사용하는 것이다. 일반적으로 전체 반응의 율속단계로 작용하는 유용금속이온의 용출을 빠르게 하기 위하여 적절한 첨가제를 사용한다. 사용되는 첨가제로는 HCl과 같은 강산, NaOH와 같은 강염기 및 acetic acid, oxalic acid,orthophosphoric acid, ammonium bisulfate등과 같은 약산이 주로 사용된다. 이러한 첨가제를 이용할 경우 광물로부터 유용 금속이온의 용출을 빠르게 하여 전체 반응속도를 증진시키는 효과가 있으나 첨가제의 가격 및 첨가제 회수에 필요한 공정이추가적으로 요구되므로 경제적 공정 구현을 위해서는 첨가제 사용과 공정효율간의trade-off를 고려하여야 한다. 또한 용출된 유용금속과 이산화탄소가 반응하여 형성된 탄산광물이 광석표면에 쌓일 경우 광석 내부에 존재하는 유용금속을 용출시키지못하는 문제점이 있다. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 상기와 같이 광물에 따라 조업 조건 및 전환율이 다르게 나타난다. 전체적으로 1톤의 이산화탄소를 처리하는데 $50~100/t stored의 비용이 소요되는 것으로 나타났다. 여기서 저장비용은 이산화탄소 포집과 수송에 소요되는 비용을 포함하지 않음을의미한다. 각 광물에 따른 전환율, 소요에너지 및 비용은 다음 [표 4-2]와 같다.기계적인 전처리를 통한 광물을 이산화탄소 광물화반응에 이용하여도 반응온도를증가시키는 것과 같이 일정한 에너지를 필요로 한다. 보다 낮은 온도 및 압력하에서광물화 반응을 빠르게 진행시키기 광석로부터 이산화탄소 광물화에 작용하는 금속이온을 추출하여 사용하는 것이다. 일반적으로 전체 반응의 율속단계로 작용하는 유용금속이온의 용출을 빠르게 하기 위하여 적절한 첨가제를 사용한다. 사용되는 첨가제로는 HCl과 같은 강산, NaOH와 같은 강염기 및 acetic acid, oxalic acid,orthophosphoric acid, ammonium bisulfate등과 같은 약산이 주로 사용된다. 이러한 첨가제를 이용할 경우 광물로부터 유용 금속이온의 용출을 빠르게 하여 전체 반응속도를 증진시키는 효과가 있으나 첨가제의 가격 및 첨가제 회수에 필요한 공정이추가적으로 요구되므로 경제적 공정 구현을 위해서는 첨가제 사용과 공정효율간의trade-off를 고려하여야 한다. 또한 용출된 유용금속과 이산화탄소가 반응하여 형성된 탄산광물이 광석표면에 쌓일 경우 광석 내부에 존재하는 유용금속을 용출시키지못하는 문제점이 있다. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->상기와 같이 광물에 따라 조업 조건 및 전환율이 다르게 나타난다. 전체적으로 1톤의 이산화탄소를 처리하는데 $50~100/t stored의 비용이 소요되는 것으로 나타났다. 여기서 저장비용은 이산화탄소 포집과 수송에 소요되는 비용을 포함하지 않음을의미한다. 각 광물에 따른 전환율, 소요에너지 및 비용은 다음 [표 4-2]와 같다.기계적인 전처리를 통한 광물을 이산화탄소 광물화반응에 이용하여도 반응온도를증가시키는 것과 같이 일정한 에너지를 필요로 한다. 보다 낮은 온도 및 압력하에서광물화 반응을 빠르게 진행시키기 광석로부터 이산화탄소 광물화에 작용하는 금속이온을 추출하여 사용하는 것이다. 일반적으로 전체 반응의 율속단계로 작용하는 유용금속이온의 용출을 빠르게 하기 위하여 적절한 첨가제를 사용한다. 사용되는 첨가제로는 HCl과 같은 강산, NaOH와 같은 강염기 및 acetic acid, oxalic acid,orthophosphoric acid, ammonium bisulfate등과 같은 약산이 주로 사용된다. 이러한 첨가제를 이용할 경우 광물로부터 유용 금속이온의 용출을 빠르게 하여 전체 반응속도를 증진시키는 효과가 있으나 첨가제의 가격 및 첨가제 회수에 필요한 공정이추가적으로 요구되므로 경제적 공정 구현을 위해서는 첨가제 사용과 공정효율간의trade-off를 고려하여야 한다. 또한 용출된 유용금속과 이산화탄소가 반응하여 형성된 탄산광물이 광석표면에 쌓일 경우 광석 내부에 존재하는 유용금속을 용출시키지못하는 문제점이 있다. 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 상기와 같이 광물에 따라 조업 조건 및 전환율이 다르게 나타난다.전체적으로 1톤의 이산화탄소를 처리하는데 $50~100/t stored의 비용이 소요되는 것으로 나타났다.여기서 저장비용은 이산화탄소 포집과 수송에 소요되는 비용을 포함하지 않음을의미한다.각 광물에 따른 전환율, 소요에너지 및 비용은 다음 [표 4-2]와 같다.기계적인 전처리를 통한 광물을 이산화탄소 광물화반응에 이용하여도 반응온도를증가시키는 것과 같이 일정한 에너지를 필요로 한다.보다 낮은 온도 및 압력하에서광물화 반응을 빠르게 진행시키기 광석로부터 이산화탄소 광물화에 작용하는 금속이온을 추출하여 사용하는 것이다.일반적으로 전체 반응의 율속단계로 작용하는 유용금속이온의 용출을 빠르게 하기 위하여 적절한 첨가제를 사용한다.사용되는 첨가제로는 HCl과 같은 강산, NaOH와 같은 강염기 및 acetic acid, oxalic acid,orthophosphoric acid, ammonium bisulfate등과 같은 약산이 주로 사용된다.이러한 첨가제를 이용할 경우 광물로부터 유용 금속이온의 용출을 빠르게 하여 전체 반응속도를 증진시키는 효과가 있으나 첨가제의 가격 및 첨가제 회수에 필요한 공정이추가적으로 요구되므로 경제적 공정 구현을 위해서는 첨가제 사용과 공정효율간의trade-off를 고려하여야 한다.또한 용출된 유용금속과 이산화탄소가 반응하여 형성된 탄산광물이 광석표면에 쌓일 경우 광석 내부에 존재하는 유용금속을 용출시키지못하는 문제점이 있다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>상기와 같이 광물에 따라 조업 조건 및 전환율이 다르게 나타난다.전체적으로 1톤의 이산화탄소를 처리하는데 $50~100/t stored의 비용이 소요되는 것으로 나타났다.여기서 저장비용은 이산화탄소 포집과 수송에 소요되는 비용을 포함하지 않음을의미한다.각 광물에 따른 전환율, 소요에너지 및 비용은 다음 [표 4-2]와 같다.기계적인 전처리를 통한 광물을 이산화탄소 광물화반응에 이용하여도 반응온도를증가시키는 것과 같이 일정한 에너지를 필요로 한다.보다 낮은 온도 및 압력하에서광물화 반응을 빠르게 진행시키기 광석로부터 이산화탄소 광물화에 작용하는 금속이온을 추출하여 사용하는 것이다.일반적으로 전체 반응의 율속단계로 작용하는 유용금속이온의 용출을 빠르게 하기 위하여 적절한 첨가제를 사용한다.사용되는 첨가제로는 HCl과 같은 강산, NaOH와 같은 강염기 및 acetic acid, oxalic acid,orthophosphoric acid, ammonium bisulfate등과 같은 약산이 주로 사용된다.이러한 첨가제를 이용할 경우 광물로부터 유용 금속이온의 용출을 빠르게 하여 전체 반응속도를 증진시키는 효과가 있으나 첨가제의 가격 및 첨가제 회수에 필요한 공정이추가적으로 요구되므로 경제적 공정 구현을 위해서는 첨가제 사용과 공정효율간의trade-off를 고려하여야 한다.또한 용출된 유용금속과 이산화탄소가 반응하여 형성된 탄산광물이 광석표면에 쌓일 경우 광석 내부에 존재하는 유용금속을 용출시키지못하는 문제점이 있다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_120115_077965.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_120115_077965.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_123204_778157)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 마그네슘 함량이 가장 많은 감람석을 이용하여 이산화탄소 광물화를 진행 시킬 경
+
+    [1] => 우 이론적으로 1톤의 이산화탄소에 1.6톤의 감람석이 필요하다. 즉 반응 후 약 2.6톤
+
+    [2] => 의 고체입자가 생성되며 이에 대한 처리 역시 고려해야할 문제이다. 광물화 반응이
+
+    [3] => 100% 이론적으로 이루어지지 않기 때문에 전환율과 손실량을 고려하면 사용되는 광
+
+    [4] => 물에 따라 다르기는 하지만 일반적으로 1톤의 이산화탄소를 처리하는데 1.6~3.7톤의
+
+    [5] => 광물이 필요한 것으로 나타났다. 또한 광물화에 추가적인 에너지를 사용하는 것은 이
+
+    [6] => 로 인한 이산화탄소 배출을 증가시키게 된다. 감람석을 사용할 경우 이산화탄소 광물
+
+    [7] => 화 공정에 약 1.1GJ/tCO2의 에너지가 소요된다. 동일한 에너지를 만들기 위해 석탄이
+
+    [8] => 사용됬을 경우 0.3톤의 이산화탄소가 생성된다. 즉 광물화를 통하여 1톤의 이산화탄
+
+    [9] => 소를 처리하였다고 하더라도 실제 처리되는 이산화탄소 양은 불가피하게 생성된 0.3
+
+    [10] => 톤의 이산화탄소를 제외한 0.7톤으로 볼 수 있다. 이산화탄소 광물화에 소요되는 비
+
+    [11] => 용은 전술한 것과 같이 약 $50~100/tCO2로 나타나며 이러한 반응을 위해서 생성된
+
+    [12] => 에너지의 약 30~50%를 필요로 한다. 이는 석탄화력발전소 효율을 35%로 가정하면
+
+    [13] => 이산화탄소 광물화 공정을 채택한 경우 효율이 25~18%로 감소하는 것을 의미한다. 여기에 이산화탄소 포집장치를 설치할 경우 10~40%의 에너지손실이 있기 때문에 이
+
+    [14] => 산화탄소 포집 및 광물화 공정을 석탄화력발전소에 적용할 경우 현재와 같이 아무런
+
+    [15] => 이산화탄소 제거 장치가 설치되지 않은 경우 보다 약 60~180%의 에너지를 더 필요
+
+    [16] => 로 하게 된다. 따라서 현재까지는 경제성을 획기적으로 증가시켜햐 하는 공정으로 평
+
+    [17] => 가되고 있다. 그러나 기술개발이 진전되고 광물이 아닌 버려지는 산업폐기물을 이용
+
+    [18] => 하며 광물화 반응과정은 배가스 중의 중금속과 산성가스를 포집할 수 있는 장점과 생
+
+    [19] => 성된 광물을 건자재로 사용할 수 있는 장점등을 고려하면 여전히 매력적인 공정이 될
+
+    [20] => 수 있다. 또한 향후 배출되는 이산화탄소에 대한 탄소세를 고려하면 현재의 비 경제
+
+    [21] => 적인 공정으로의 분류는 재평가되어야 할 것으로 판단된다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->마그네슘 함량이 가장 많은 감람석을 이용하여 이산화탄소 광물화를 진행 시킬 경
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->우 이론적으로 1톤의 이산화탄소에 1.6톤의 감람석이 필요하다. 즉 반응 후 약 2.6톤
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->의 고체입자가 생성되며 이에 대한 처리 역시 고려해야할 문제이다. 광물화 반응이
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->100% 이론적으로 이루어지지 않기 때문에 전환율과 손실량을 고려하면 사용되는 광
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->물에 따라 다르기는 하지만 일반적으로 1톤의 이산화탄소를 처리하는데 1.6~3.7톤의
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->광물이 필요한 것으로 나타났다. 또한 광물화에 추가적인 에너지를 사용하는 것은 이
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->로 인한 이산화탄소 배출을 증가시키게 된다. 감람석을 사용할 경우 이산화탄소 광물
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->화 공정에 약 1.1GJ/tCO2의 에너지가 소요된다. 동일한 에너지를 만들기 위해 석탄이
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->사용됬을 경우 0.3톤의 이산화탄소가 생성된다. 즉 광물화를 통하여 1톤의 이산화탄
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->소를 처리하였다고 하더라도 실제 처리되는 이산화탄소 양은 불가피하게 생성된 0.3
+
+$matches ==>
+Array
+(
+    [0] => 3
+
+    [1] => 3
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->톤의 이산화탄소를 제외한 0.7톤으로 볼 수 있다. 이산화탄소 광물화에 소요되는 비
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->용은 전술한 것과 같이 약 $50~100/tCO2로 나타나며 이러한 반응을 위해서 생성된
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->에너지의 약 30~50%를 필요로 한다. 이는 석탄화력발전소 효율을 35%로 가정하면
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->이산화탄소 광물화 공정을 채택한 경우 효율이 25~18%로 감소하는 것을 의미한다. 여기에 이산화탄소 포집장치를 설치할 경우 10~40%의 에너지손실이 있기 때문에 이
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->산화탄소 포집 및 광물화 공정을 석탄화력발전소에 적용할 경우 현재와 같이 아무런
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->이산화탄소 제거 장치가 설치되지 않은 경우 보다 약 60~180%의 에너지를 더 필요
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->로 하게 된다. 따라서 현재까지는 경제성을 획기적으로 증가시켜햐 하는 공정으로 평
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->가되고 있다. 그러나 기술개발이 진전되고 광물이 아닌 버려지는 산업폐기물을 이용
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->하며 광물화 반응과정은 배가스 중의 중금속과 산성가스를 포집할 수 있는 장점과 생
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->성된 광물을 건자재로 사용할 수 있는 장점등을 고려하면 여전히 매력적인 공정이 될
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->수 있다. 또한 향후 배출되는 이산화탄소에 대한 탄소세를 고려하면 현재의 비 경제
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 마그네슘 함량이 가장 많은 감람석을 이용하여 이산화탄소 광물화를 진행 시킬 경 
+    [1] => 우 이론적으로 1톤의 이산화탄소에 1.6톤의 감람석이 필요하다. 즉 반응 후 약 2.6톤 
+    [2] => 의 고체입자가 생성되며 이에 대한 처리 역시 고려해야할 문제이다. 광물화 반응이 
+    [3] => 100% 이론적으로 이루어지지 않기 때문에 전환율과 손실량을 고려하면 사용되는 광 
+    [4] => 물에 따라 다르기는 하지만 일반적으로 1톤의 이산화탄소를 처리하는데 1.6~3.7톤의 
+    [5] => 광물이 필요한 것으로 나타났다. 또한 광물화에 추가적인 에너지를 사용하는 것은 이 
+    [6] => 로 인한 이산화탄소 배출을 증가시키게 된다. 감람석을 사용할 경우 이산화탄소 광물 
+    [7] => 화 공정에 약 1.1GJ/tCO2의 에너지가 소요된다. 동일한 에너지를 만들기 위해 석탄이 
+    [8] => 사용됬을 경우 0.3톤의 이산화탄소가 생성된다. 즉 광물화를 통하여 1톤의 이산화탄 
+    [9] => 소를 처리하였다고 하더라도 실제 처리되는 이산화탄소 양은 불가피하게 생성된 0.3 
+    [10] => 톤의 이산화탄소를 제외한 0.7톤으로 볼 수 있다. 이산화탄소 광물화에 소요되는 비 
+    [11] => 용은 전술한 것과 같이 약 $50~100/tCO2로 나타나며 이러한 반응을 위해서 생성된 
+    [12] => 에너지의 약 30~50%를 필요로 한다. 이는 석탄화력발전소 효율을 35%로 가정하면 
+    [13] => 이산화탄소 광물화 공정을 채택한 경우 효율이 25~18%로 감소하는 것을 의미한다. 여기에 이산화탄소 포집장치를 설치할 경우 10~40%의 에너지손실이 있기 때문에 이 
+    [14] => 산화탄소 포집 및 광물화 공정을 석탄화력발전소에 적용할 경우 현재와 같이 아무런 
+    [15] => 이산화탄소 제거 장치가 설치되지 않은 경우 보다 약 60~180%의 에너지를 더 필요 
+    [16] => 로 하게 된다. 따라서 현재까지는 경제성을 획기적으로 증가시켜햐 하는 공정으로 평 
+    [17] => 가되고 있다. 그러나 기술개발이 진전되고 광물이 아닌 버려지는 산업폐기물을 이용 
+    [18] => 하며 광물화 반응과정은 배가스 중의 중금속과 산성가스를 포집할 수 있는 장점과 생 
+    [19] => 성된 광물을 건자재로 사용할 수 있는 장점등을 고려하면 여전히 매력적인 공정이 될 
+    [20] => 수 있다. 또한 향후 배출되는 이산화탄소에 대한 탄소세를 고려하면 현재의 비 경제 
+    [21] => 적인 공정으로의 분류는 재평가되어야 할 것으로 판단된다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->우 이론적으로 1톤의 이산화탄소에 1.6톤의 감람석이 필요하다. 즉 반응 후 약 2.6톤 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->의 고체입자가 생성되며 이에 대한 처리 역시 고려해야할 문제이다. 광물화 반응이 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->광물이 필요한 것으로 나타났다. 또한 광물화에 추가적인 에너지를 사용하는 것은 이 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->로 인한 이산화탄소 배출을 증가시키게 된다. 감람석을 사용할 경우 이산화탄소 광물 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->화 공정에 약 1.1GJ/tCO2의 에너지가 소요된다. 동일한 에너지를 만들기 위해 석탄이 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->사용됬을 경우 0.3톤의 이산화탄소가 생성된다. 즉 광물화를 통하여 1톤의 이산화탄 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->톤의 이산화탄소를 제외한 0.7톤으로 볼 수 있다. 이산화탄소 광물화에 소요되는 비 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->에너지의 약 30~50%를 필요로 한다. 이는 석탄화력발전소 효율을 35%로 가정하면 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->이산화탄소 광물화 공정을 채택한 경우 효율이 25~18%로 감소하는 것을 의미한다. 여기에 이산화탄소 포집장치를 설치할 경우 10~40%의 에너지손실이 있기 때문에 이 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->로 하게 된다. 따라서 현재까지는 경제성을 획기적으로 증가시켜햐 하는 공정으로 평 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->가되고 있다. 그러나 기술개발이 진전되고 광물이 아닌 버려지는 산업폐기물을 이용 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->수 있다. 또한 향후 배출되는 이산화탄소에 대한 탄소세를 고려하면 현재의 비 경제 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 마그네슘 함량이 가장 많은 감람석을 이용하여 이산화탄소 광물화를 진행 시킬 경 
+    [1] => 우 이론적으로 1톤의 이산화탄소에 1.6톤의 감람석이 필요하다.즉 반응 후 약 2.6톤 
+    [2] => 의 고체입자가 생성되며 이에 대한 처리 역시 고려해야할 문제이다.광물화 반응이 
+    [3] => 100% 이론적으로 이루어지지 않기 때문에 전환율과 손실량을 고려하면 사용되는 광 
+    [4] => 물에 따라 다르기는 하지만 일반적으로 1톤의 이산화탄소를 처리하는데 1.6~3.7톤의 
+    [5] => 광물이 필요한 것으로 나타났다.또한 광물화에 추가적인 에너지를 사용하는 것은 이 
+    [6] => 로 인한 이산화탄소 배출을 증가시키게 된다.감람석을 사용할 경우 이산화탄소 광물 
+    [7] => 화 공정에 약 1.1GJ/tCO2의 에너지가 소요된다.동일한 에너지를 만들기 위해 석탄이 
+    [8] => 사용됬을 경우 0.3톤의 이산화탄소가 생성된다.즉 광물화를 통하여 1톤의 이산화탄 
+    [9] => 소를 처리하였다고 하더라도 실제 처리되는 이산화탄소 양은 불가피하게 생성된 0.3 
+    [10] => 톤의 이산화탄소를 제외한 0.7톤으로 볼 수 있다.이산화탄소 광물화에 소요되는 비 
+    [11] => 용은 전술한 것과 같이 약 $50~100/tCO2로 나타나며 이러한 반응을 위해서 생성된 
+    [12] => 에너지의 약 30~50%를 필요로 한다.이는 석탄화력발전소 효율을 35%로 가정하면 
+    [13] => 이산화탄소 광물화 공정을 채택한 경우 효율이 25~18%로 감소하는 것을 의미한다.여기에 이산화탄소 포집장치를 설치할 경우 10~40%의 에너지손실이 있기 때문에 이 
+    [14] => 산화탄소 포집 및 광물화 공정을 석탄화력발전소에 적용할 경우 현재와 같이 아무런 
+    [15] => 이산화탄소 제거 장치가 설치되지 않은 경우 보다 약 60~180%의 에너지를 더 필요 
+    [16] => 로 하게 된다.따라서 현재까지는 경제성을 획기적으로 증가시켜햐 하는 공정으로 평 
+    [17] => 가되고 있다.그러나 기술개발이 진전되고 광물이 아닌 버려지는 산업폐기물을 이용 
+    [18] => 하며 광물화 반응과정은 배가스 중의 중금속과 산성가스를 포집할 수 있는 장점과 생 
+    [19] => 성된 광물을 건자재로 사용할 수 있는 장점등을 고려하면 여전히 매력적인 공정이 될 
+    [20] => 수 있다.또한 향후 배출되는 이산화탄소에 대한 탄소세를 고려하면 현재의 비 경제 
+    [21] => 적인 공정으로의 분류는 재평가되어야 할 것으로 판단된다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>마그네슘 함량이 가장 많은 감람석을 이용하여 이산화탄소 광물화를 진행 시킬 경 우 이론적으로 1톤의 이산화탄소에 1.6톤의 감람석이 필요하다.즉 반응 후 약 2.6톤 의 고체입자가 생성되며 이에 대한 처리 역시 고려해야할 문제이다.광물화 반응이 100% 이론적으로 이루어지지 않기 때문에 전환율과 손실량을 고려하면 사용되는 광 물에 따라 다르기는 하지만 일반적으로 1톤의 이산화탄소를 처리하는데 1.6~3.7톤의 광물이 필요한 것으로 나타났다.또한 광물화에 추가적인 에너지를 사용하는 것은 이 로 인한 이산화탄소 배출을 증가시키게 된다.감람석을 사용할 경우 이산화탄소 광물 화 공정에 약 1.1GJ/tCO2의 에너지가 소요된다.동일한 에너지를 만들기 위해 석탄이 사용됬을 경우 0.3톤의 이산화탄소가 생성된다.즉 광물화를 통하여 1톤의 이산화탄 소를 처리하였다고 하더라도 실제 처리되는 이산화탄소 양은 불가피하게 생성된 0.3 톤의 이산화탄소를 제외한 0.7톤으로 볼 수 있다.이산화탄소 광물화에 소요되는 비 용은 전술한 것과 같이 약 $50~100/tCO2로 나타나며 이러한 반응을 위해서 생성된 에너지의 약 30~50%를 필요로 한다.이는 석탄화력발전소 효율을 35%로 가정하면 이산화탄소 광물화 공정을 채택한 경우 효율이 25~18%로 감소하는 것을 의미한다.여기에 이산화탄소 포집장치를 설치할 경우 10~40%의 에너지손실이 있기 때문에 이 산화탄소 포집 및 광물화 공정을 석탄화력발전소에 적용할 경우 현재와 같이 아무런 이산화탄소 제거 장치가 설치되지 않은 경우 보다 약 60~180%의 에너지를 더 필요 로 하게 된다.따라서 현재까지는 경제성을 획기적으로 증가시켜햐 하는 공정으로 평 가되고 있다.그러나 기술개발이 진전되고 광물이 아닌 버려지는 산업폐기물을 이용 하며 광물화 반응과정은 배가스 중의 중금속과 산성가스를 포집할 수 있는 장점과 생 성된 광물을 건자재로 사용할 수 있는 장점등을 고려하면 여전히 매력적인 공정이 될 수 있다.또한 향후 배출되는 이산화탄소에 대한 탄소세를 고려하면 현재의 비 경제 적인 공정으로의 분류는 재평가되어야 할 것으로 판단된다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_123204_778157.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_123204_778157.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_124439_590588)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 4) 혁신 광물화 공정
+
+    [1] =>  현재까지 연구된 이산화탄소 광물화 공정은 많은 운전비용으로 인한 비 경제적인
+
+    [2] => 공정으로 인식되고 있다. 이러한 단점을 극복하기 위한 다양한 혁신 공정들이 제시되고 있으며 현재 이산화탄소 포집과 동시에 광물화를 진행하는 일체형 공정에 대한 연
+
+    [3] => 구가 진행 중이다. 이는 이산화탄소 포집, 광물화 공정의 개별공정 조업에 의해 발생
+
+    [4] => 하는 장치비 및 운전비용을 혁신적으로 낮출 수 있는 기술로 평가되고 있다. 미국
+
+    [5] => Calera사에서는 alkalinity Based on Low Energy (ABLE)라고 명명한 전기화학적
+
+    [6] => 공정을 통해 생성된 Na+
+
+    [7] => , OH- 이온과 waste water 혹은 brine으로부터 얻은 Ca2+
+
+    [8] => , Mg2+와 같은 양이온과 배가스내에 포함된 이산화탄소, 이산화황을 반응시켜 유용한
+
+    [9] => 탄산칼슘이나 탄산마그네슘을 얻는 Mineralization via Aqueous Precipitation
+
+    [10] => (MAPTM)공정을 개발하였다(http://www.calera.com). Calera사는 MAP공정을 이용
+
+    [11] => 하용 1톤의 시멘트를 제조할 경우 약 1.2톤의 이산화탄소 포집 효과가 있다고 발표하
+
+    [12] => 였으며(석탄화력발전소에서 배출되는 이산화탄소 0.5톤을 이용 + 기존 시멘트제조공
+
+    [13] => 정에서 배출되는 이산화탄소 0.7톤 저감) 이는 skyonic사의 Skymine 공정
+
+    [14] => (http://www.skyonic.com/)과 유사한 것으로 분석된다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->4) 혁신 광물화 공정
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> 현재까지 연구된 이산화탄소 광물화 공정은 많은 운전비용으로 인한 비 경제적인
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->공정으로 인식되고 있다. 이러한 단점을 극복하기 위한 다양한 혁신 공정들이 제시되고 있으며 현재 이산화탄소 포집과 동시에 광물화를 진행하는 일체형 공정에 대한 연
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->구가 진행 중이다. 이는 이산화탄소 포집, 광물화 공정의 개별공정 조업에 의해 발생
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->하는 장치비 및 운전비용을 혁신적으로 낮출 수 있는 기술로 평가되고 있다. 미국
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Calera사에서는 alkalinity Based on Low Energy (ABLE)라고 명명한 전기화학적
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->공정을 통해 생성된 Na+
+
+$matches ==>
+Array
+(
+    [0] => +
+
+    [1] => +
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->, OH- 이온과 waste water 혹은 brine으로부터 얻은 Ca2+
+
+$matches ==>
+Array
+(
+    [0] => +
+
+    [1] => +
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->, Mg2+와 같은 양이온과 배가스내에 포함된 이산화탄소, 이산화황을 반응시켜 유용한
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->탄산칼슘이나 탄산마그네슘을 얻는 Mineralization via Aqueous Precipitation
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->(MAPTM)공정을 개발하였다(http://www.calera.com). Calera사는 MAP공정을 이용
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->하용 1톤의 시멘트를 제조할 경우 약 1.2톤의 이산화탄소 포집 효과가 있다고 발표하
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->였으며(석탄화력발전소에서 배출되는 이산화탄소 0.5톤을 이용 + 기존 시멘트제조공
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->정에서 배출되는 이산화탄소 0.7톤 저감) 이는 skyonic사의 Skymine 공정
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 4) 혁신 광물화 공정 
+    [1] =>  현재까지 연구된 이산화탄소 광물화 공정은 많은 운전비용으로 인한 비 경제적인 
+    [2] => 공정으로 인식되고 있다. 이러한 단점을 극복하기 위한 다양한 혁신 공정들이 제시되고 있으며 현재 이산화탄소 포집과 동시에 광물화를 진행하는 일체형 공정에 대한 연 
+    [3] => 구가 진행 중이다. 이는 이산화탄소 포집, 광물화 공정의 개별공정 조업에 의해 발생 
+    [4] => 하는 장치비 및 운전비용을 혁신적으로 낮출 수 있는 기술로 평가되고 있다. 미국 
+    [5] => Calera사에서는 alkalinity Based on Low Energy (ABLE)라고 명명한 전기화학적 
+    [6] => 공정을 통해 생성된 Na+ 
+    [7] => , OH- 이온과 waste water 혹은 brine으로부터 얻은 Ca2+ 
+    [8] => , Mg2+와 같은 양이온과 배가스내에 포함된 이산화탄소, 이산화황을 반응시켜 유용한 
+    [9] => 탄산칼슘이나 탄산마그네슘을 얻는 Mineralization via Aqueous Precipitation 
+    [10] => (MAPTM)공정을 개발하였다(http://www.calera.com). Calera사는 MAP공정을 이용 
+    [11] => 하용 1톤의 시멘트를 제조할 경우 약 1.2톤의 이산화탄소 포집 효과가 있다고 발표하 
+    [12] => 였으며(석탄화력발전소에서 배출되는 이산화탄소 0.5톤을 이용 + 기존 시멘트제조공 
+    [13] => 정에서 배출되는 이산화탄소 0.7톤 저감) 이는 skyonic사의 Skymine 공정 
+    [14] => (http://www.skyonic.com/)과 유사한 것으로 분석된다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->공정으로 인식되고 있다. 이러한 단점을 극복하기 위한 다양한 혁신 공정들이 제시되고 있으며 현재 이산화탄소 포집과 동시에 광물화를 진행하는 일체형 공정에 대한 연 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->구가 진행 중이다. 이는 이산화탄소 포집, 광물화 공정의 개별공정 조업에 의해 발생 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->하는 장치비 및 운전비용을 혁신적으로 낮출 수 있는 기술로 평가되고 있다. 미국 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->(MAPTM)공정을 개발하였다(http://www.calera.com). Calera사는 MAP공정을 이용 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 4) 혁신 광물화 공정 
+    [1] =>  현재까지 연구된 이산화탄소 광물화 공정은 많은 운전비용으로 인한 비 경제적인 
+    [2] => 공정으로 인식되고 있다.이러한 단점을 극복하기 위한 다양한 혁신 공정들이 제시되고 있으며 현재 이산화탄소 포집과 동시에 광물화를 진행하는 일체형 공정에 대한 연 
+    [3] => 구가 진행 중이다.이는 이산화탄소 포집, 광물화 공정의 개별공정 조업에 의해 발생 
+    [4] => 하는 장치비 및 운전비용을 혁신적으로 낮출 수 있는 기술로 평가되고 있다.미국 
+    [5] => Calera사에서는 alkalinity Based on Low Energy (ABLE)라고 명명한 전기화학적 
+    [6] => 공정을 통해 생성된 Na+ 
+    [7] => , OH- 이온과 waste water 혹은 brine으로부터 얻은 Ca2+ 
+    [8] => , Mg2+와 같은 양이온과 배가스내에 포함된 이산화탄소, 이산화황을 반응시켜 유용한 
+    [9] => 탄산칼슘이나 탄산마그네슘을 얻는 Mineralization via Aqueous Precipitation 
+    [10] => (MAPTM)공정을 개발하였다(http://www.calera.com).Calera사는 MAP공정을 이용 
+    [11] => 하용 1톤의 시멘트를 제조할 경우 약 1.2톤의 이산화탄소 포집 효과가 있다고 발표하 
+    [12] => 였으며(석탄화력발전소에서 배출되는 이산화탄소 0.5톤을 이용 + 기존 시멘트제조공 
+    [13] => 정에서 배출되는 이산화탄소 0.7톤 저감) 이는 skyonic사의 Skymine 공정 
+    [14] => (http://www.skyonic.com/)과 유사한 것으로 분석된다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>4) 혁신 광물화 공정  현재까지 연구된 이산화탄소 광물화 공정은 많은 운전비용으로 인한 비 경제적인 공정으로 인식되고 있다.이러한 단점을 극복하기 위한 다양한 혁신 공정들이 제시되고 있으며 현재 이산화탄소 포집과 동시에 광물화를 진행하는 일체형 공정에 대한 연 구가 진행 중이다.이는 이산화탄소 포집, 광물화 공정의 개별공정 조업에 의해 발생 하는 장치비 및 운전비용을 혁신적으로 낮출 수 있는 기술로 평가되고 있다.미국 Calera사에서는 alkalinity Based on Low Energy (ABLE)라고 명명한 전기화학적 공정을 통해 생성된 Na+ , OH- 이온과 waste water 혹은 brine으로부터 얻은 Ca2+ , Mg2+와 같은 양이온과 배가스내에 포함된 이산화탄소, 이산화황을 반응시켜 유용한 탄산칼슘이나 탄산마그네슘을 얻는 Mineralization via Aqueous Precipitation (MAPTM)공정을 개발하였다(http://www.calera.com).Calera사는 MAP공정을 이용 하용 1톤의 시멘트를 제조할 경우 약 1.2톤의 이산화탄소 포집 효과가 있다고 발표하 였으며(석탄화력발전소에서 배출되는 이산화탄소 0.5톤을 이용 + 기존 시멘트제조공 정에서 배출되는 이산화탄소 0.7톤 저감) 이는 skyonic사의 Skymine 공정 (http://www.skyonic.com/)과 유사한 것으로 분석된다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_124439_590588.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_124439_590588.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_125448_171351)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 한국에너지기술연구원에서는 생체내에 존재하는 Carbonic Anhydrase 효소를 이용하여 빠르게 이산화탄소를 포집하며, 적절한 양이온을 도입하여 유용한 탄산칼슘을제조하는 연구에 대하여 수행중이다. 현재까지 연구된 이산화탄소 광물화 공정은 기술적, 경제적으로 많은 난관을 극복하여야하는 연구개발 초기단계에 있다. 여러 문제점이 있으나 포집된 이산화탄소를저장할 수 있는 마땅한 저장소가 없는 우리나라의 현실과 생성된 광물을 제지용 소재, 건자재로의 활용을 통하여 이산화탄소 포집 및 저장에 소요되는 비용을 절감할수 있는 측면에서 향후 지속적인 연구가 이루어져야 할 것으로 판단된다
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 한국에너지기술연구원에서는 생체내에 존재하는 Carbonic Anhydrase 효소를 이용하여 빠르게 이산화탄소를 포집하며, 적절한 양이온을 도입하여 유용한 탄산칼슘을제조하는 연구에 대하여 수행중이다. 현재까지 연구된 이산화탄소 광물화 공정은 기술적, 경제적으로 많은 난관을 극복하여야하는 연구개발 초기단계에 있다. 여러 문제점이 있으나 포집된 이산화탄소를저장할 수 있는 마땅한 저장소가 없는 우리나라의 현실과 생성된 광물을 제지용 소재, 건자재로의 활용을 통하여 이산화탄소 포집 및 저장에 소요되는 비용을 절감할수 있는 측면에서 향후 지속적인 연구가 이루어져야 할 것으로 판단된다
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->한국에너지기술연구원에서는 생체내에 존재하는 Carbonic Anhydrase 효소를 이용하여 빠르게 이산화탄소를 포집하며, 적절한 양이온을 도입하여 유용한 탄산칼슘을제조하는 연구에 대하여 수행중이다. 현재까지 연구된 이산화탄소 광물화 공정은 기술적, 경제적으로 많은 난관을 극복하여야하는 연구개발 초기단계에 있다. 여러 문제점이 있으나 포집된 이산화탄소를저장할 수 있는 마땅한 저장소가 없는 우리나라의 현실과 생성된 광물을 제지용 소재, 건자재로의 활용을 통하여 이산화탄소 포집 및 저장에 소요되는 비용을 절감할수 있는 측면에서 향후 지속적인 연구가 이루어져야 할 것으로 판단된다
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 한국에너지기술연구원에서는 생체내에 존재하는 Carbonic Anhydrase 효소를 이용하여 빠르게 이산화탄소를 포집하며, 적절한 양이온을 도입하여 유용한 탄산칼슘을제조하는 연구에 대하여 수행중이다.현재까지 연구된 이산화탄소 광물화 공정은 기술적, 경제적으로 많은 난관을 극복하여야하는 연구개발 초기단계에 있다.여러 문제점이 있으나 포집된 이산화탄소를저장할 수 있는 마땅한 저장소가 없는 우리나라의 현실과 생성된 광물을 제지용 소재, 건자재로의 활용을 통하여 이산화탄소 포집 및 저장에 소요되는 비용을 절감할수 있는 측면에서 향후 지속적인 연구가 이루어져야 할 것으로 판단된다
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>한국에너지기술연구원에서는 생체내에 존재하는 Carbonic Anhydrase 효소를 이용하여 빠르게 이산화탄소를 포집하며, 적절한 양이온을 도입하여 유용한 탄산칼슘을제조하는 연구에 대하여 수행중이다.현재까지 연구된 이산화탄소 광물화 공정은 기술적, 경제적으로 많은 난관을 극복하여야하는 연구개발 초기단계에 있다.여러 문제점이 있으나 포집된 이산화탄소를저장할 수 있는 마땅한 저장소가 없는 우리나라의 현실과 생성된 광물을 제지용 소재, 건자재로의 활용을 통하여 이산화탄소 포집 및 저장에 소요되는 비용을 절감할수 있는 측면에서 향후 지속적인 연구가 이루어져야 할 것으로 판단된다
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_125448_171351.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_125448_171351.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_142351_149777)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Запасы карбонатов, как считали до недавнего времени ученые, накапливались в недрах Земли на протяжении десятков и сотен тысяч лет, как в результате отложения органических останков и неорганических осадочных пород на дне моря, так и в результате взаимодействия атмосферного СО2 и так называемых "основных" горных пород, базальтов и подобных им минералов, выбрасываемых на поверхность Земли в ходе вулканов.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Запасы карбонатов, как считали до недавнего времени ученые, накапливались в недрах Земли на протяжении десятков и сотен тысяч лет, как в результате отложения органических останков и неорганических осадочных пород на дне моря, так и в результате взаимодействия атмосферного СО2 и так называемых "основных" горных пород, базальтов и подобных им минералов, выбрасываемых на поверхность Земли в ходе вулканов.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Запасы карбонатов, как считали до недавнего времени ученые, накапливались в недрах Земли на протяжении десятков и сотен тысяч лет, как в результате отложения органических останков и неорганических осадочных пород на дне моря, так и в результате взаимодействия атмосферного СО2 и так называемых "основных" горных пород, базальтов и подобных им минералов, выбрасываемых на поверхность Земли в ходе вулканов.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Запасы карбонатов, как считали до недавнего времени ученые, накапливались в недрах Земли на протяжении десятков и сотен тысяч лет, как в результате отложения органических останков и неорганических осадочных пород на дне моря, так и в результате взаимодействия атмосферного СО2 и так называемых "основных" горных пород, базальтов и подобных им минералов, выбрасываемых на поверхность Земли в ходе вулканов.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_142351_149777.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_142351_149777.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_144037_963655)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => По этой причине климатологи никогда не рассматривали базальты и прочие основные породы в качестве возможного резервуара для вывода "излишков" СО2 из атмосферы, наравне с подземными хранилищами и прочими рукотворными "складами" парниковых газов.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => По этой причине климатологи никогда не рассматривали базальты и прочие основные породы в качестве возможного резервуара для вывода "излишков" СО2 из атмосферы, наравне с подземными хранилищами и прочими рукотворными "складами" парниковых газов.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => По этой причине климатологи никогда не рассматривали базальты и прочие основные породы в качестве возможного резервуара для вывода "излишков" СО2 из атмосферы, наравне с подземными хранилищами и прочими рукотворными "складами" парниковых газов.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>По этой причине климатологи никогда не рассматривали базальты и прочие основные породы в качестве возможного резервуара для вывода "излишков" СО2 из атмосферы, наравне с подземными хранилищами и прочими рукотворными "складами" парниковых газов.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_144037_963655.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_144037_963655.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_153211_811718)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Calcit, oder Kalkspat, ist ein klares, meist farbloses Mineral, das in der Natur sehr häufig vorkommt. Bei dem Carbfix-Verfahren füllt es nach und nach die Poren des Basaltgesteins. Nach der mehrmonatigen Behandlung mit Kohlensäure wollen die Forscher einen Bohrkern aus dem Versuchsgebiet entnehmen. Der soll zeigen, wie viel CO2 sich auf diese Weise tatsächlich im Basalt speichern lässt. Denn die Aufnahmekapazität ist durch die Menge der Poren im Gestein begrenzt.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Calcit, oder Kalkspat, ist ein klares, meist farbloses Mineral, das in der Natur sehr häufig vorkommt. Bei dem Carbfix-Verfahren füllt es nach und nach die Poren des Basaltgesteins. Nach der mehrmonatigen Behandlung mit Kohlensäure wollen die Forscher einen Bohrkern aus dem Versuchsgebiet entnehmen. Der soll zeigen, wie viel CO2 sich auf diese Weise tatsächlich im Basalt speichern lässt. Denn die Aufnahmekapazität ist durch die Menge der Poren im Gestein begrenzt.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Calcit, oder Kalkspat, ist ein klares, meist farbloses Mineral, das in der Natur sehr häufig vorkommt. Bei dem Carbfix-Verfahren füllt es nach und nach die Poren des Basaltgesteins. Nach der mehrmonatigen Behandlung mit Kohlensäure wollen die Forscher einen Bohrkern aus dem Versuchsgebiet entnehmen. Der soll zeigen, wie viel CO2 sich auf diese Weise tatsächlich im Basalt speichern lässt. Denn die Aufnahmekapazität ist durch die Menge der Poren im Gestein begrenzt.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Calcit, oder Kalkspat, ist ein klares, meist farbloses Mineral, das in der Natur sehr häufig vorkommt. Bei dem Carbfix-Verfahren füllt es nach und nach die Poren des Basaltgesteins. Nach der mehrmonatigen Behandlung mit Kohlensäure wollen die Forscher einen Bohrkern aus dem Versuchsgebiet entnehmen. Der soll zeigen, wie viel CO2 sich auf diese Weise tatsächlich im Basalt speichern lässt. Denn die Aufnahmekapazität ist durch die Menge der Poren im Gestein begrenzt.
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Calcit, oder Kalkspat, ist ein klares, meist farbloses Mineral, das in der Natur sehr häufig vorkommt.Bei dem Carbfix-Verfahren füllt es nach und nach die Poren des Basaltgesteins.Nach der mehrmonatigen Behandlung mit Kohlensäure wollen die Forscher einen Bohrkern aus dem Versuchsgebiet entnehmen.Der soll zeigen, wie viel CO2 sich auf diese Weise tatsächlich im Basalt speichern lässt.Denn die Aufnahmekapazität ist durch die Menge der Poren im Gestein begrenzt.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Calcit, oder Kalkspat, ist ein klares, meist farbloses Mineral, das in der Natur sehr häufig vorkommt.Bei dem Carbfix-Verfahren füllt es nach und nach die Poren des Basaltgesteins.Nach der mehrmonatigen Behandlung mit Kohlensäure wollen die Forscher einen Bohrkern aus dem Versuchsgebiet entnehmen.Der soll zeigen, wie viel CO2 sich auf diese Weise tatsächlich im Basalt speichern lässt.Denn die Aufnahmekapazität ist durch die Menge der Poren im Gestein begrenzt.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_153211_811718.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_153211_811718.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_154320_189455)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => „Die Verfügbarkeit der Poren ist ein limitierender Faktor für das Verfahren. Man kann nicht endlos viel CO2 in das Basaltgestein pumpen. Außerdem kann es passieren, dass sich die Kristalle schon bilden, wenn noch gar nicht alle Poren des Basaltgesteins mit der Kohlensäure gefüllt sind. Die verstopften Poren würden dann verhindern, dass das Verfahren richtig funktioniert.“
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => „Die Verfügbarkeit der Poren ist ein limitierender Faktor für das Verfahren. Man kann nicht endlos viel CO2 in das Basaltgestein pumpen. Außerdem kann es passieren, dass sich die Kristalle schon bilden, wenn noch gar nicht alle Poren des Basaltgesteins mit der Kohlensäure gefüllt sind. Die verstopften Poren würden dann verhindern, dass das Verfahren richtig funktioniert.“
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->„Die Verfügbarkeit der Poren ist ein limitierender Faktor für das Verfahren. Man kann nicht endlos viel CO2 in das Basaltgestein pumpen. Außerdem kann es passieren, dass sich die Kristalle schon bilden, wenn noch gar nicht alle Poren des Basaltgesteins mit der Kohlensäure gefüllt sind. Die verstopften Poren würden dann verhindern, dass das Verfahren richtig funktioniert.“
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => „Die Verfügbarkeit der Poren ist ein limitierender Faktor für das Verfahren.Man kann nicht endlos viel CO2 in das Basaltgestein pumpen.Außerdem kann es passieren, dass sich die Kristalle schon bilden, wenn noch gar nicht alle Poren des Basaltgesteins mit der Kohlensäure gefüllt sind.Die verstopften Poren würden dann verhindern, dass das Verfahren richtig funktioniert.“
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>„Die Verfügbarkeit der Poren ist ein limitierender Faktor für das Verfahren.Man kann nicht endlos viel CO2 in das Basaltgestein pumpen.Außerdem kann es passieren, dass sich die Kristalle schon bilden, wenn noch gar nicht alle Poren des Basaltgesteins mit der Kohlensäure gefüllt sind.Die verstopften Poren würden dann verhindern, dass das Verfahren richtig funktioniert.“
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_154320_189455.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_154320_189455.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210524_154622_171102)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Die Kohlensäure würde über lange Sicht außerdem die bereits gebildeten Carbonate auflösen. Um das zu verhindern, wird sie nur einmal in das Gestein eingebracht. Dabei senkt sich der pH-Wert des umgebenden Wassers kurzzeitig. Im Laufe der folgenden Kristallisation neutralisiert er sich jedoch wieder und die Mineralien werden stabilisiert. Bis sich die ersten Kristalle bilden, dauert es allerdings mehrere Wochen und Monate. Wenn sich das Verfahren in den Feldversuchen als wirkungsvoll erweist, könnte es später überall dort angewendet werden, wo genügend Basaltgestein vorhanden ist, sagt Gislason.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Die Kohlensäure würde über lange Sicht außerdem die bereits gebildeten Carbonate auflösen. Um das zu verhindern, wird sie nur einmal in das Gestein eingebracht. Dabei senkt sich der pH-Wert des umgebenden Wassers kurzzeitig. Im Laufe der folgenden Kristallisation neutralisiert er sich jedoch wieder und die Mineralien werden stabilisiert. Bis sich die ersten Kristalle bilden, dauert es allerdings mehrere Wochen und Monate. Wenn sich das Verfahren in den Feldversuchen als wirkungsvoll erweist, könnte es später überall dort angewendet werden, wo genügend Basaltgestein vorhanden ist, sagt Gislason.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Die Kohlensäure würde über lange Sicht außerdem die bereits gebildeten Carbonate auflösen. Um das zu verhindern, wird sie nur einmal in das Gestein eingebracht. Dabei senkt sich der pH-Wert des umgebenden Wassers kurzzeitig. Im Laufe der folgenden Kristallisation neutralisiert er sich jedoch wieder und die Mineralien werden stabilisiert. Bis sich die ersten Kristalle bilden, dauert es allerdings mehrere Wochen und Monate. Wenn sich das Verfahren in den Feldversuchen als wirkungsvoll erweist, könnte es später überall dort angewendet werden, wo genügend Basaltgestein vorhanden ist, sagt Gislason.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Die Kohlensäure würde über lange Sicht außerdem die bereits gebildeten Carbonate auflösen. Um das zu verhindern, wird sie nur einmal in das Gestein eingebracht. Dabei senkt sich der pH-Wert des umgebenden Wassers kurzzeitig. Im Laufe der folgenden Kristallisation neutralisiert er sich jedoch wieder und die Mineralien werden stabilisiert. Bis sich die ersten Kristalle bilden, dauert es allerdings mehrere Wochen und Monate. Wenn sich das Verfahren in den Feldversuchen als wirkungsvoll erweist, könnte es später überall dort angewendet werden, wo genügend Basaltgestein vorhanden ist, sagt Gislason.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Die Kohlensäure würde über lange Sicht außerdem die bereits gebildeten Carbonate auflösen.Um das zu verhindern, wird sie nur einmal in das Gestein eingebracht.Dabei senkt sich der pH-Wert des umgebenden Wassers kurzzeitig.Im Laufe der folgenden Kristallisation neutralisiert er sich jedoch wieder und die Mineralien werden stabilisiert.Bis sich die ersten Kristalle bilden, dauert es allerdings mehrere Wochen und Monate.Wenn sich das Verfahren in den Feldversuchen als wirkungsvoll erweist, könnte es später überall dort angewendet werden, wo genügend Basaltgestein vorhanden ist, sagt Gislason.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Die Kohlensäure würde über lange Sicht außerdem die bereits gebildeten Carbonate auflösen.Um das zu verhindern, wird sie nur einmal in das Gestein eingebracht.Dabei senkt sich der pH-Wert des umgebenden Wassers kurzzeitig.Im Laufe der folgenden Kristallisation neutralisiert er sich jedoch wieder und die Mineralien werden stabilisiert.Bis sich die ersten Kristalle bilden, dauert es allerdings mehrere Wochen und Monate.Wenn sich das Verfahren in den Feldversuchen als wirkungsvoll erweist, könnte es später überall dort angewendet werden, wo genügend Basaltgestein vorhanden ist, sagt Gislason.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_154622_171102.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_154622_171102.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 

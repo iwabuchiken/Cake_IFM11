@@ -9171,3 +9171,2166 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210523_165246_817703.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210523_165246_817703.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210524_163748_159277)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+
+    [1] => 国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。
+
+    [2] => 
+
+    [3] => 不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+
+    [1] => 国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。
+
+    [2] => 
+    [3] => 不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+[process-texts-for-reading_chinese.php : 252]
+line : '国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+    [1] => 国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。
+    [2] => 
+    [3] => 不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+[process-texts-for-reading_chinese.php : 346]
+line : '国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+    [1] => 国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。
+    [2] => 
+    [3] => 不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。
+    [1] => 国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。
+    [2] => 
+    [3] => 不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>根据2019年发布的《中国碳捕集利用与封存技术发展路线图》，我国将分五阶段推动CCUS技术发展，包括示范项目、商业应用、新型技术、初步集群、广泛部署等，最终建成多个CCUS产业群。近期目标是，到2025年建成多个基于现有技术的工业示范项目并具备工程化能力，同时实现第一代捕集技术的成本及能耗比目前降低10%以上，突破陆地管道安全运行保障技术等（见图1）。国外经验表明，光有技术不够，推动CCUS快速发展还需四力齐发。不过，我们认为光有技术路线图远远不够，国外经验表明，推动CCUS快速发展同时需要主管部门和业内企业做好技术以外的其他四项工作：
+
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_163748_159277.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_163748_159277.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210524_164124_161181)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 开放共享，多方合作
+
+    [1] => 
+
+    [2] => 通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+
+    [3] => 
+
+    [4] => 对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。
+
+    [5] => 
+
+    [6] => 对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+
+    [7] => 
+
+    [8] => 在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '开放共享，多方合作
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 开放共享，多方合作
+
+    [1] => 
+    [2] => 通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+
+    [3] => 
+    [4] => 对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。
+
+    [5] => 
+    [6] => 对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+
+    [7] => 
+    [8] => 在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '开放共享，多方合作
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 开放共享，多方合作
+
+    [1] => 
+    [2] => 通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+    [3] => 
+    [4] => 对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。
+    [5] => 
+    [6] => 对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+    [7] => 
+    [8] => 在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '开放共享，多方合作
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 开放共享，多方合作
+
+    [1] => 
+    [2] => 通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+    [3] => 
+    [4] => 对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。
+    [5] => 
+    [6] => 对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+    [7] => 
+    [8] => 在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '开放共享，多方合作
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展Petra Nova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => a N
+        )
+
+    [1] => Array
+        (
+            [0] => a
+        )
+
+    [2] => Array
+        (
+            [0] => N
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展PetraNova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、Wabash carbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行Kick Starter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => h c
+            [1] => k S
+        )
+
+    [1] => Array
+        (
+            [0] => h
+            [1] => k
+        )
+
+    [2] => Array
+        (
+            [0] => c
+            [1] => S
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、WabashcarbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行KickStarter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 开放共享，多方合作
+
+    [1] => 
+    [2] => 通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。
+    [3] => 
+    [4] => 对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。
+    [5] => 
+    [6] => 对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展PetraNova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。
+    [7] => 
+    [8] => 在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、WabashcarbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行KickStarter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>开放共享，多方合作
+通过国家之间、企业之间的开放共享、多方合作，不仅有利于提炼总结CCUS技术的先进知识经验，推广CCUS政策、法规和投资方面的最佳实践，也有利于国家之间在自然资源、地理位置等方面实现优势互补。目前的形式主要有政府间合作、商业项目合作、设施技术共享三种。对于政府间合作，可以是国际政府两两合作的关系，如日本MEIT与美国DOE签署了关于碳捕获、利用和封存领域的合作备忘录（MOC），也可采取成立国际组织与研发中心的形式，在CCUS技术的研究开发和开发方面进行合作，目前已成立了超过5个国际组织，如碳封存领导论坛（CSLF），以及3个国际CCS研发测试中心。对于商业项目合作，以日本为例，一方面在国内成立合资公司，2008年由37家日本企业设立的日本CCS合资公司（JCCS），已成功开发了日本国内首个一体化CCS项目；一方面进行国际上的企业合作，日本JXN与美国NRG以合资企业的形式开展PetraNova项目，使用三菱重工提供的KM-CDR工艺和KS-1溶剂技术，可捕获约160万吨CO2/年。在设施、技术共享上也有先行者，如在DOE支持下，美国建立了Kansas和Nebraska的综合储存中心、WabashcarbonSAFE二氧化碳封存枢纽等国内共享封存设施，大多数新增的商业设施均有机会使用。此外，亚洲开发银行KickStarter计划在美国、英国、挪威、荷兰和中国等国家的工业中心建立并共享二氧化碳运输和封存基础设施，供工业枢纽使用。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_164124_161181.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_164124_161181.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210524_164939_270163)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 多措并举，激励到位
+
+    [1] => 
+
+    [2] => 在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+
+    [3] => 一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+
+    [4] => 
+
+    [5] => 二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。
+
+    [6] => 
+
+    [7] => 三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '多措并举，激励到位
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 多措并举，激励到位
+
+    [1] => 
+    [2] => 在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+
+    [3] => 一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+
+    [4] => 
+    [5] => 二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。
+
+    [6] => 
+    [7] => 三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '多措并举，激励到位
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+[process-texts-for-reading_chinese.php : 252]
+line : '一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 多措并举，激励到位
+
+    [1] => 
+    [2] => 在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+    [3] => 一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+    [4] => 
+    [5] => 二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。
+    [6] => 
+    [7] => 三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '多措并举，激励到位
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+[process-texts-for-reading_chinese.php : 346]
+line : '一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 多措并举，激励到位
+
+    [1] => 
+    [2] => 在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+    [3] => 一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+    [4] => 
+    [5] => 二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。
+    [6] => 
+    [7] => 三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '多措并举，激励到位
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form 45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form 45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => m 4
+            [1] => m 4
+        )
+
+    [1] => Array
+        (
+            [0] => m
+            [1] => m
+        )
+
+    [2] => Array
+        (
+            [0] => 4
+            [1] => 4
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+[process-texts-for-reading_chinese.php : 439]
+line : '一是延长Form 45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => m 4
+        )
+
+    [1] => Array
+        (
+            [0] => m
+        )
+
+    [2] => Array
+        (
+            [0] => 4
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+一是延长Form45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（Mike Thompson）发起，允许碳捕集项目开发商获得Form 45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（Jack Bergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => e T
+            [1] => m 4
+            [2] => k B
+        )
+
+    [1] => Array
+        (
+            [0] => e
+            [1] => m
+            [2] => k
+        )
+
+    [2] => Array
+        (
+            [0] => T
+            [1] => 4
+            [2] => B
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（MikeThompson）发起，允许碳捕集项目开发商获得Form45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（JackBergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 多措并举，激励到位
+
+    [1] => 
+    [2] => 在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。
+    [3] => 一是延长Form45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。
+    [4] => 
+    [5] => 二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。
+    [6] => 
+    [7] => 三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（MikeThompson）发起，允许碳捕集项目开发商获得Form45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（JackBergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>多措并举，激励到位
+在2020年全球新筹备的17个商业CCUS设施中，美国占据了12个（如图2），这主要得益于其出台的多项激励措施，其中2008年实施的Form45Q政策，对EOR、地质封存项目提供税收抵扣，被认为是当前最有激励性的CCUS政策之一。据了解，美国未来仍将持续出台激励措施，包括延长已有Form45Q激励政策的有效期、投资并建立试点项目、加大已有政策力度等。一是延长Form45Q政策的有效期，目前该政策适用于2024年1月1日开始建设的项目，但为了达到刺激更多行业和企业进行碳捕集投资，势必需要更多的时间规划、设计、批准和争取资助。二是投资并建立试点项目，例如《天然气领先法案》提出建立天然气发电厂碳捕集试点项目，为天然气发电厂研究并应用商业化的CCUS技术；已获众议院通过的《前进法案》第12章中提出用1.5万亿美元资助能源和基础设施，并建立一个CCUS商业化项目；《前进法案》将为至少三种先进的碳捕集技术和至少一种直接空气捕获技术的商业示范项目开展前端工程设计（FEED）研究提供资金。三是加大已有政策力度等（目前仍处在提议阶段），例如《增长的可再生能源和效率（绿色）法案》由加州民主党保守派议员迈克·汤普森（MikeThompson）发起，允许碳捕集项目开发商获得Form45Q政策税收抵免金额的85%，并要求退还任何由此导致的多缴税款，而不是选择将抵免结转到抵免额超过其纳税义务的年份；《2020年碳氧化物利用和封存法案》与《收回法案》由密歇根州共和党众议员杰克·伯格曼（JackBergman）发起，允许CCUS项目开发商收到90%的税收抵免付款金额。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_164939_270163.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_164939_270163.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210524_170339_266861)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 价格保证，机制灵活。
+
+    [1] => 
+
+    [2] => 国外主流的CCUS市场机制主要有三种（见图3）：
+
+    [3] => 一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '价格保证，机制灵活。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '国外主流的CCUS市场机制主要有三种（见图3）：
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 价格保证，机制灵活。
+
+    [1] => 
+    [2] => 国外主流的CCUS市场机制主要有三种（见图3）：
+
+    [3] => 一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '价格保证，机制灵活。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+价格保证，机制灵活。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '国外主流的CCUS市场机制主要有三种（见图3）：
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 价格保证，机制灵活。
+    [1] => 
+    [2] => 国外主流的CCUS市场机制主要有三种（见图3）：
+
+    [3] => 一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '价格保证，机制灵活。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '国外主流的CCUS市场机制主要有三种（见图3）：
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 价格保证，机制灵活。
+    [1] => 
+    [2] => 国外主流的CCUS市场机制主要有三种（见图3）：
+
+    [3] => 一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '价格保证，机制灵活。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '国外主流的CCUS市场机制主要有三种（见图3）：
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 价格保证，机制灵活。
+    [1] => 
+    [2] => 国外主流的CCUS市场机制主要有三种（见图3）：
+
+    [3] => 一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>价格保证，机制灵活。国外主流的CCUS市场机制主要有三种（见图3）：
+一是价格保证机制。例如英国的CfD规定，当市场价格低于合同价格时，用户向发电商付费，当市场价格高于合同价格时，发电商将差额部分返还给用户，保证CCUS发电站获得稳定收益。此外，英国还配套引入了碳交易底价保证机制，为碳交易设定每吨15.7英镑的底价，高于当时欧洲平均碳价的2倍，到2020年增至30英镑，2030年进一步增至70英镑。在此期间，按照市场规律形成的碳价如果无法达到最低价，政府将通过增加税收来弥补差额。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_170339_266861.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_170339_266861.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210524_170905_036164)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => A。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => A。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => p &
+        )
+
+    [1] => Array
+        (
+            [0] => p
+        )
+
+    [2] => Array
+        (
+            [0] => &
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap& Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap& Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap& Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_170905_036164.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_170905_036164.txt
+ 
