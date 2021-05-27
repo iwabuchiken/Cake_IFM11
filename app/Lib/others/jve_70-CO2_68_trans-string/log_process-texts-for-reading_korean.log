@@ -8234,3 +8234,575 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_154622_171102.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_115324_794488)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The World Health Organization (WHO) is facing a critical funding shortage, which is impeding its urgent operations and putting the UN body in “imminent danger” amid the global COVID-19 pandemic, according to its top emergency expert.
+'Array
+(
+    [0] => .
+
+)
+
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 162
+Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'He renewed the WHO's appeal in February for $1.96 billion for 2021 to fund its global pandemic response.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 2021年5月26日11:50:58
+
+    [1] => The World Health Organization (WHO) is facing a critical funding shortage, which is impeding its urgent operations and putting the UN body in “imminent danger” amid the global COVID-19 pandemic, according to its top emergency expert.
+    [2] => 
+
+    [3] => “The funding shortfall of more than 70% when only received funds are considered has left the organization in real imminent danger of being unable to sustain core functions for urgent priorities,” Mike Ryan, executive director of the health emergencies program at WHO, told the annual assembly of health ministers on Tuesday.
+    [4] => 
+
+    [5] => He renewed the WHO's appeal in February for $1.96 billion for 2021 to fund its global pandemic response.
+    [6] => 
+
+    [7] => “[The] underfunding and earmarking of funds risks paralyzing WHO's ability to provide rapid and flexible support to countries and is already having consequences for current operations,” the expert added.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->2021年5月26日11:50:58
+
+$matches ==>
+Array
+(
+    [0] => 8
+
+    [1] => 8
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 2021年5月26日11:50:58 
+    [1] => The World Health Organization (WHO) is facing a critical funding shortage, which is impeding its urgent operations and putting the UN body in “imminent danger” amid the global COVID-19 pandemic, according to its top emergency expert.
+    [2] => 
+
+    [3] => “The funding shortfall of more than 70% when only received funds are considered has left the organization in real imminent danger of being unable to sustain core functions for urgent priorities,” Mike Ryan, executive director of the health emergencies program at WHO, told the annual assembly of health ministers on Tuesday.
+    [4] => 
+
+    [5] => He renewed the WHO's appeal in February for $1.96 billion for 2021 to fund its global pandemic response.
+    [6] => 
+
+    [7] => “[The] underfunding and earmarking of funds risks paralyzing WHO's ability to provide rapid and flexible support to countries and is already having consequences for current operations,” the expert added.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 2021年5月26日11:50:58 
+    [1] => The World Health Organization (WHO) is facing a critical funding shortage, which is impeding its urgent operations and putting the UN body in “imminent danger” amid the global COVID-19 pandemic, according to its top emergency expert.
+    [2] => 
+
+    [3] => “The funding shortfall of more than 70% when only received funds are considered has left the organization in real imminent danger of being unable to sustain core functions for urgent priorities,” Mike Ryan, executive director of the health emergencies program at WHO, told the annual assembly of health ministers on Tuesday.
+    [4] => 
+
+    [5] => He renewed the WHO's appeal in February for $1.96 billion for 2021 to fund its global pandemic response.
+    [6] => 
+
+    [7] => “[The] underfunding and earmarking of funds risks paralyzing WHO's ability to provide rapid and flexible support to countries and is already having consequences for current operations,” the expert added.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>2021年5月26日11:50:58 The World Health Organization (WHO) is facing a critical funding shortage, which is impeding its urgent operations and putting the UN body in “imminent danger” amid the global COVID-19 pandemic, according to its top emergency expert.
+“The funding shortfall of more than 70% when only received funds are considered has left the organization in real imminent danger of being unable to sustain core functions for urgent priorities,” Mike Ryan, executive director of the health emergencies program at WHO, told the annual assembly of health ministers on Tuesday.
+He renewed the WHO's appeal in February for $1.96 billion for 2021 to fund its global pandemic response.
+“[The] underfunding and earmarking of funds risks paralyzing WHO's ability to provide rapid and flexible support to countries and is already having consequences for current operations,” the expert added.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_115324_794488.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_115324_794488.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_115834_254146)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The WHO had to suspend its crucial aid to about 10,000 healthcare workers across conflict-hit Yemen in November last year because of a “financial gap.”“Due to an unprecedented financial gap, WHO & health partners have been unable to continue their financial support to the health care workforce in Yemen. Up to 10K health workers are affected,” the WHO's Yemen office tweeted at the time.In April 2020, the administration of former US President Donald Trump moved to withhold $400 million in financial aid from the WHO, accusing it of mismanaging the coronavirus pandemic and being too trusting of China.However, the Joe Biden administration has resumed working with the UN organization.The WHO’s funding shortfalls come amid widespread reports that wealthier countries, including the United States, are hoarding millions of doses of COVID-19 vaccines, a practice that international health experts say is undermining the global response to the pandemic.  Amnesty International condemned wealthier countries last month for failing a “rudimentary” test of global unity by stockpiling vaccines.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The WHO had to suspend its crucial aid to about 10,000 healthcare workers across conflict-hit Yemen in November last year because of a “financial gap.”“Due to an unprecedented financial gap, WHO & health partners have been unable to continue their financial support to the health care workforce in Yemen. Up to 10K health workers are affected,” the WHO's Yemen office tweeted at the time.In April 2020, the administration of former US President Donald Trump moved to withhold $400 million in financial aid from the WHO, accusing it of mismanaging the coronavirus pandemic and being too trusting of China.However, the Joe Biden administration has resumed working with the UN organization.The WHO’s funding shortfalls come amid widespread reports that wealthier countries, including the United States, are hoarding millions of doses of COVID-19 vaccines, a practice that international health experts say is undermining the global response to the pandemic.  Amnesty International condemned wealthier countries last month for failing a “rudimentary” test of global unity by stockpiling vaccines.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The WHO had to suspend its crucial aid to about 10,000 healthcare workers across conflict-hit Yemen in November last year because of a “financial gap.”“Due to an unprecedented financial gap, WHO & health partners have been unable to continue their financial support to the health care workforce in Yemen. Up to 10K health workers are affected,” the WHO's Yemen office tweeted at the time.In April 2020, the administration of former US President Donald Trump moved to withhold $400 million in financial aid from the WHO, accusing it of mismanaging the coronavirus pandemic and being too trusting of China.However, the Joe Biden administration has resumed working with the UN organization.The WHO’s funding shortfalls come amid widespread reports that wealthier countries, including the United States, are hoarding millions of doses of COVID-19 vaccines, a practice that international health experts say is undermining the global response to the pandemic.  Amnesty International condemned wealthier countries last month for failing a “rudimentary” test of global unity by stockpiling vaccines.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The WHO had to suspend its crucial aid to about 10,000 healthcare workers across conflict-hit Yemen in November last year because of a “financial gap.”“Due to an unprecedented financial gap, WHO & health partners have been unable to continue their financial support to the health care workforce in Yemen.Up to 10K health workers are affected,” the WHO's Yemen office tweeted at the time.In April 2020, the administration of former US President Donald Trump moved to withhold $400 million in financial aid from the WHO, accusing it of mismanaging the coronavirus pandemic and being too trusting of China.However, the Joe Biden administration has resumed working with the UN organization.The WHO’s funding shortfalls come amid widespread reports that wealthier countries, including the United States, are hoarding millions of doses of COVID-19 vaccines, a practice that international health experts say is undermining the global response to the pandemic. Amnesty International condemned wealthier countries last month for failing a “rudimentary” test of global unity by stockpiling vaccines.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The WHO had to suspend its crucial aid to about 10,000 healthcare workers across conflict-hit Yemen in November last year because of a “financial gap.”“Due to an unprecedented financial gap, WHO & health partners have been unable to continue their financial support to the health care workforce in Yemen.Up to 10K health workers are affected,” the WHO's Yemen office tweeted at the time.In April 2020, the administration of former US President Donald Trump moved to withhold $400 million in financial aid from the WHO, accusing it of mismanaging the coronavirus pandemic and being too trusting of China.However, the Joe Biden administration has resumed working with the UN organization.The WHO’s funding shortfalls come amid widespread reports that wealthier countries, including the United States, are hoarding millions of doses of COVID-19 vaccines, a practice that international health experts say is undermining the global response to the pandemic. Amnesty International condemned wealthier countries last month for failing a “rudimentary” test of global unity by stockpiling vaccines.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_115834_254146.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_115834_254146.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_123646_641278)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 본 발명은 내부에 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 수용되는 반응 챔버; 상기 반응 챔버의 하부와 연통되고, 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 반응 챔버에 공급하는 가스 공급관; 상기 반응 챔버의 측부와 연통되고, 2가 금속 양이온을 포함하는 용액을 반응 챔버에 공급하는 액체 공급관; 상기 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 배출시키는 반응 생성물 배출관을 포함하는 이산화탄소 광물화 장치 및 이를 이용한 이산화탄소 광물화 방법을 제공한다. 본 발명에 따른 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법은 탄산무수화효소 고정화 비드, 2가 금속 양이온을 포함하는 용액 및 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 포함하는 3상 유동층 시스템을 이용하기 때문에 이산화탄소를 중탄산 이온 또는 탄산 이온으로 변환시켜 흡수하는 단계 및 광물화 단계를 동시에 할 수 있고, 이산화탄소의 광물화 반응에 의해 형성된 금속 탄산염 화합물은 탄산무수화효소 고정화 비드를 포함하지 않는 유동층 영역에 존재하기 때문에 반응 생성물을 쉽게 분리할 수 있다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 본 발명은 내부에 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 수용되는 반응 챔버; 상기 반응 챔버의 하부와 연통되고, 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 반응 챔버에 공급하는 가스 공급관; 상기 반응 챔버의 측부와 연통되고, 2가 금속 양이온을 포함하는 용액을 반응 챔버에 공급하는 액체 공급관; 상기 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 배출시키는 반응 생성물 배출관을 포함하는 이산화탄소 광물화 장치 및 이를 이용한 이산화탄소 광물화 방법을 제공한다. 본 발명에 따른 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법은 탄산무수화효소 고정화 비드, 2가 금속 양이온을 포함하는 용액 및 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 포함하는 3상 유동층 시스템을 이용하기 때문에 이산화탄소를 중탄산 이온 또는 탄산 이온으로 변환시켜 흡수하는 단계 및 광물화 단계를 동시에 할 수 있고, 이산화탄소의 광물화 반응에 의해 형성된 금속 탄산염 화합물은 탄산무수화효소 고정화 비드를 포함하지 않는 유동층 영역에 존재하기 때문에 반응 생성물을 쉽게 분리할 수 있다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->본 발명은 내부에 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 수용되는 반응 챔버; 상기 반응 챔버의 하부와 연통되고, 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 반응 챔버에 공급하는 가스 공급관; 상기 반응 챔버의 측부와 연통되고, 2가 금속 양이온을 포함하는 용액을 반응 챔버에 공급하는 액체 공급관; 상기 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 배출시키는 반응 생성물 배출관을 포함하는 이산화탄소 광물화 장치 및 이를 이용한 이산화탄소 광물화 방법을 제공한다. 본 발명에 따른 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법은 탄산무수화효소 고정화 비드, 2가 금속 양이온을 포함하는 용액 및 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 포함하는 3상 유동층 시스템을 이용하기 때문에 이산화탄소를 중탄산 이온 또는 탄산 이온으로 변환시켜 흡수하는 단계 및 광물화 단계를 동시에 할 수 있고, 이산화탄소의 광물화 반응에 의해 형성된 금속 탄산염 화합물은 탄산무수화효소 고정화 비드를 포함하지 않는 유동층 영역에 존재하기 때문에 반응 생성물을 쉽게 분리할 수 있다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 본 발명은 내부에 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 수용되는 반응 챔버; 상기 반응 챔버의 하부와 연통되고, 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 반응 챔버에 공급하는 가스 공급관; 상기 반응 챔버의 측부와 연통되고, 2가 금속 양이온을 포함하는 용액을 반응 챔버에 공급하는 액체 공급관; 상기 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 배출시키는 반응 생성물 배출관을 포함하는 이산화탄소 광물화 장치 및 이를 이용한 이산화탄소 광물화 방법을 제공한다.본 발명에 따른 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법은 탄산무수화효소 고정화 비드, 2가 금속 양이온을 포함하는 용액 및 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 포함하는 3상 유동층 시스템을 이용하기 때문에 이산화탄소를 중탄산 이온 또는 탄산 이온으로 변환시켜 흡수하는 단계 및 광물화 단계를 동시에 할 수 있고, 이산화탄소의 광물화 반응에 의해 형성된 금속 탄산염 화합물은 탄산무수화효소 고정화 비드를 포함하지 않는 유동층 영역에 존재하기 때문에 반응 생성물을 쉽게 분리할 수 있다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>본 발명은 내부에 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 수용되는 반응 챔버; 상기 반응 챔버의 하부와 연통되고, 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 반응 챔버에 공급하는 가스 공급관; 상기 반응 챔버의 측부와 연통되고, 2가 금속 양이온을 포함하는 용액을 반응 챔버에 공급하는 액체 공급관; 상기 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 배출시키는 반응 생성물 배출관을 포함하는 이산화탄소 광물화 장치 및 이를 이용한 이산화탄소 광물화 방법을 제공한다.본 발명에 따른 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법은 탄산무수화효소 고정화 비드, 2가 금속 양이온을 포함하는 용액 및 이산화탄소 가스 또는 이산화탄소 함유 연도 가스를 포함하는 3상 유동층 시스템을 이용하기 때문에 이산화탄소를 중탄산 이온 또는 탄산 이온으로 변환시켜 흡수하는 단계 및 광물화 단계를 동시에 할 수 있고, 이산화탄소의 광물화 반응에 의해 형성된 금속 탄산염 화합물은 탄산무수화효소 고정화 비드를 포함하지 않는 유동층 영역에 존재하기 때문에 반응 생성물을 쉽게 분리할 수 있다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_123646_641278.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_123646_641278.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_124414_101219)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Die α-Carboanhydrasen (Abkürzung α-CA) sind Enzyme, die die Hydratisierung von Kohlenstoffdioxid (CO2) zu Kohlensäure (H2CO3) und umgekehrt katalysieren. Sie kommen in Tieren, Pflanzen, Bakterien und Grünalgen vor. Kohlenstoffdioxid lässt sich im Körper leichter in Form von Hydrogencarbonat transportieren, daher ist eine reversible Umwandlung sinnvoll. Außerdem wird über die Reaktion der pH-Wert des Blutplasmas und der Magensäure geregelt. Bei Tieren sind elf paraloge Isoformen des Enzyms bekannt, sowie vier weitere ohne Enzymaktivität.[1][2]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Die α-Carboanhydrasen (Abkürzung α-CA) sind Enzyme, die die Hydratisierung von Kohlenstoffdioxid (CO2) zu Kohlensäure (H2CO3) und umgekehrt katalysieren. Sie kommen in Tieren, Pflanzen, Bakterien und Grünalgen vor. Kohlenstoffdioxid lässt sich im Körper leichter in Form von Hydrogencarbonat transportieren, daher ist eine reversible Umwandlung sinnvoll. Außerdem wird über die Reaktion der pH-Wert des Blutplasmas und der Magensäure geregelt. Bei Tieren sind elf paraloge Isoformen des Enzyms bekannt, sowie vier weitere ohne Enzymaktivität.[1][2]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Die α-Carboanhydrasen (Abkürzung α-CA) sind Enzyme, die die Hydratisierung von Kohlenstoffdioxid (CO2) zu Kohlensäure (H2CO3) und umgekehrt katalysieren. Sie kommen in Tieren, Pflanzen, Bakterien und Grünalgen vor. Kohlenstoffdioxid lässt sich im Körper leichter in Form von Hydrogencarbonat transportieren, daher ist eine reversible Umwandlung sinnvoll. Außerdem wird über die Reaktion der pH-Wert des Blutplasmas und der Magensäure geregelt. Bei Tieren sind elf paraloge Isoformen des Enzyms bekannt, sowie vier weitere ohne Enzymaktivität.[1][2]
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Die α-Carboanhydrasen (Abkürzung α-CA) sind Enzyme, die die Hydratisierung von Kohlenstoffdioxid (CO2) zu Kohlensäure (H2CO3) und umgekehrt katalysieren.Sie kommen in Tieren, Pflanzen, Bakterien und Grünalgen vor.Kohlenstoffdioxid lässt sich im Körper leichter in Form von Hydrogencarbonat transportieren, daher ist eine reversible Umwandlung sinnvoll.Außerdem wird über die Reaktion der pH-Wert des Blutplasmas und der Magensäure geregelt.Bei Tieren sind elf paraloge Isoformen des Enzyms bekannt, sowie vier weitere ohne Enzymaktivität.[1][2]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Die α-Carboanhydrasen (Abkürzung α-CA) sind Enzyme, die die Hydratisierung von Kohlenstoffdioxid (CO2) zu Kohlensäure (H2CO3) und umgekehrt katalysieren.Sie kommen in Tieren, Pflanzen, Bakterien und Grünalgen vor.Kohlenstoffdioxid lässt sich im Körper leichter in Form von Hydrogencarbonat transportieren, daher ist eine reversible Umwandlung sinnvoll.Außerdem wird über die Reaktion der pH-Wert des Blutplasmas und der Magensäure geregelt.Bei Tieren sind elf paraloge Isoformen des Enzyms bekannt, sowie vier weitere ohne Enzymaktivität.[1][2]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_124414_101219.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_124414_101219.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_135011_367379)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법{Apparatus and method for mineralizing carbon dioxide using 3-phase fluidized bed system}본 발명은 이산화탄소를 탄산칼슘과 같은 금속탄산염 화합물로 광물화하기 위한 장치 및 방법에 관한 것으로서, 더 상세하게는 3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 상기 장치를 이용하여 이산화탄소를 탄산염 화합물로 광물화하는 방법에 관한 것이다.대표적 온실가스인 이산화탄소의 배출량을 감축하기 위하여 에너지 절감, 고효율 발전기술, 신재생 에너지 기술, 인공 조림 또는 생물학적 처리 기술 등 다양한 기술이 개발되고 있다. 그러나 산업 기반을 유지하고 지속적으로 발전시켜야 하는 현실에서 단기간 내에 많은 양의 이산화탄소 배출을 저감할 수 있는 기술은 이산화탄소 포집 및 저장 기술(CCS, Carbon Capture and Storage)이라고 할 수 있다. CCS 기술은 포집 기술과 저장 기술로 구분할 수 있다. 포집 기술은 연소 전 포집 기술, 순산소 연소기술, 연소 후 포집 기술로 이루어진다. 연소 전 포집 기술은 탄소가 포함된 연료를 적절한 반응(개질 반응 및 수성가스 전환반응 등)을 이용하여 이산화탄소와 수소 연료로 변환한 후, 이산화탄소를 포집·제거하여 연소시킴으로써 반응 생성물로 이산화탄소가 원천적으로 발생하지 않도록 하는 기술이다. 순산소 연소기술은 연료의 산화제로 공기를 사용하지 않고 질소가 제거된 산소만을 이용함으로써 절대적인 배기가스의 양이 감소되며 배기가스 조성이 이산화탄소와 물만 존재하므로 이산화탄소의 분리·제거가 용이하다. 연소 후 포집 기술은 연소 후 배기가스에 포함된 이산화탄소를 분리하는 기술로서 기존 발생원에 적용하기에 가장 용이하다는 장점이 있다. 분리방법에 따라 절절한 용매(대표적으로 아민계 흡수제)를 이용하는 방법과 분리막을 이용하는 방법, 그리고 고체입자의 이산화탄소 흡ㆍ탈착을 이용하는 방법이 있다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법{Apparatus and method for mineralizing carbon dioxide using 3-phase fluidized bed system}본 발명은 이산화탄소를 탄산칼슘과 같은 금속탄산염 화합물로 광물화하기 위한 장치 및 방법에 관한 것으로서, 더 상세하게는 3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 상기 장치를 이용하여 이산화탄소를 탄산염 화합물로 광물화하는 방법에 관한 것이다.대표적 온실가스인 이산화탄소의 배출량을 감축하기 위하여 에너지 절감, 고효율 발전기술, 신재생 에너지 기술, 인공 조림 또는 생물학적 처리 기술 등 다양한 기술이 개발되고 있다. 그러나 산업 기반을 유지하고 지속적으로 발전시켜야 하는 현실에서 단기간 내에 많은 양의 이산화탄소 배출을 저감할 수 있는 기술은 이산화탄소 포집 및 저장 기술(CCS, Carbon Capture and Storage)이라고 할 수 있다. CCS 기술은 포집 기술과 저장 기술로 구분할 수 있다. 포집 기술은 연소 전 포집 기술, 순산소 연소기술, 연소 후 포집 기술로 이루어진다. 연소 전 포집 기술은 탄소가 포함된 연료를 적절한 반응(개질 반응 및 수성가스 전환반응 등)을 이용하여 이산화탄소와 수소 연료로 변환한 후, 이산화탄소를 포집·제거하여 연소시킴으로써 반응 생성물로 이산화탄소가 원천적으로 발생하지 않도록 하는 기술이다. 순산소 연소기술은 연료의 산화제로 공기를 사용하지 않고 질소가 제거된 산소만을 이용함으로써 절대적인 배기가스의 양이 감소되며 배기가스 조성이 이산화탄소와 물만 존재하므로 이산화탄소의 분리·제거가 용이하다. 연소 후 포집 기술은 연소 후 배기가스에 포함된 이산화탄소를 분리하는 기술로서 기존 발생원에 적용하기에 가장 용이하다는 장점이 있다. 분리방법에 따라 절절한 용매(대표적으로 아민계 흡수제)를 이용하는 방법과 분리막을 이용하는 방법, 그리고 고체입자의 이산화탄소 흡ㆍ탈착을 이용하는 방법이 있다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법{Apparatus and method for mineralizing carbon dioxide using 3-phase fluidized bed system}본 발명은 이산화탄소를 탄산칼슘과 같은 금속탄산염 화합물로 광물화하기 위한 장치 및 방법에 관한 것으로서, 더 상세하게는 3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 상기 장치를 이용하여 이산화탄소를 탄산염 화합물로 광물화하는 방법에 관한 것이다.대표적 온실가스인 이산화탄소의 배출량을 감축하기 위하여 에너지 절감, 고효율 발전기술, 신재생 에너지 기술, 인공 조림 또는 생물학적 처리 기술 등 다양한 기술이 개발되고 있다. 그러나 산업 기반을 유지하고 지속적으로 발전시켜야 하는 현실에서 단기간 내에 많은 양의 이산화탄소 배출을 저감할 수 있는 기술은 이산화탄소 포집 및 저장 기술(CCS, Carbon Capture and Storage)이라고 할 수 있다. CCS 기술은 포집 기술과 저장 기술로 구분할 수 있다. 포집 기술은 연소 전 포집 기술, 순산소 연소기술, 연소 후 포집 기술로 이루어진다. 연소 전 포집 기술은 탄소가 포함된 연료를 적절한 반응(개질 반응 및 수성가스 전환반응 등)을 이용하여 이산화탄소와 수소 연료로 변환한 후, 이산화탄소를 포집·제거하여 연소시킴으로써 반응 생성물로 이산화탄소가 원천적으로 발생하지 않도록 하는 기술이다. 순산소 연소기술은 연료의 산화제로 공기를 사용하지 않고 질소가 제거된 산소만을 이용함으로써 절대적인 배기가스의 양이 감소되며 배기가스 조성이 이산화탄소와 물만 존재하므로 이산화탄소의 분리·제거가 용이하다. 연소 후 포집 기술은 연소 후 배기가스에 포함된 이산화탄소를 분리하는 기술로서 기존 발생원에 적용하기에 가장 용이하다는 장점이 있다. 분리방법에 따라 절절한 용매(대표적으로 아민계 흡수제)를 이용하는 방법과 분리막을 이용하는 방법, 그리고 고체입자의 이산화탄소 흡ㆍ탈착을 이용하는 방법이 있다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법{Apparatus and method for mineralizing carbon dioxide using 3-phase fluidized bed system}본 발명은 이산화탄소를 탄산칼슘과 같은 금속탄산염 화합물로 광물화하기 위한 장치 및 방법에 관한 것으로서, 더 상세하게는 3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 상기 장치를 이용하여 이산화탄소를 탄산염 화합물로 광물화하는 방법에 관한 것이다.대표적 온실가스인 이산화탄소의 배출량을 감축하기 위하여 에너지 절감, 고효율 발전기술, 신재생 에너지 기술, 인공 조림 또는 생물학적 처리 기술 등 다양한 기술이 개발되고 있다.그러나 산업 기반을 유지하고 지속적으로 발전시켜야 하는 현실에서 단기간 내에 많은 양의 이산화탄소 배출을 저감할 수 있는 기술은 이산화탄소 포집 및 저장 기술(CCS, Carbon Capture and Storage)이라고 할 수 있다.CCS 기술은 포집 기술과 저장 기술로 구분할 수 있다.포집 기술은 연소 전 포집 기술, 순산소 연소기술, 연소 후 포집 기술로 이루어진다.연소 전 포집 기술은 탄소가 포함된 연료를 적절한 반응(개질 반응 및 수성가스 전환반응 등)을 이용하여 이산화탄소와 수소 연료로 변환한 후, 이산화탄소를 포집·제거하여 연소시킴으로써 반응 생성물로 이산화탄소가 원천적으로 발생하지 않도록 하는 기술이다.순산소 연소기술은 연료의 산화제로 공기를 사용하지 않고 질소가 제거된 산소만을 이용함으로써 절대적인 배기가스의 양이 감소되며 배기가스 조성이 이산화탄소와 물만 존재하므로 이산화탄소의 분리·제거가 용이하다.연소 후 포집 기술은 연소 후 배기가스에 포함된 이산화탄소를 분리하는 기술로서 기존 발생원에 적용하기에 가장 용이하다는 장점이 있다.분리방법에 따라 절절한 용매(대표적으로 아민계 흡수제)를 이용하는 방법과 분리막을 이용하는 방법, 그리고 고체입자의 이산화탄소 흡ㆍ탈착을 이용하는 방법이 있다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 이산화탄소 광물화 방법{Apparatus and method for mineralizing carbon dioxide using 3-phase fluidized bed system}본 발명은 이산화탄소를 탄산칼슘과 같은 금속탄산염 화합물로 광물화하기 위한 장치 및 방법에 관한 것으로서, 더 상세하게는 3상 유동층 시스템을 이용하는 이산화탄소 광물화 장치 및 상기 장치를 이용하여 이산화탄소를 탄산염 화합물로 광물화하는 방법에 관한 것이다.대표적 온실가스인 이산화탄소의 배출량을 감축하기 위하여 에너지 절감, 고효율 발전기술, 신재생 에너지 기술, 인공 조림 또는 생물학적 처리 기술 등 다양한 기술이 개발되고 있다.그러나 산업 기반을 유지하고 지속적으로 발전시켜야 하는 현실에서 단기간 내에 많은 양의 이산화탄소 배출을 저감할 수 있는 기술은 이산화탄소 포집 및 저장 기술(CCS, Carbon Capture and Storage)이라고 할 수 있다.CCS 기술은 포집 기술과 저장 기술로 구분할 수 있다.포집 기술은 연소 전 포집 기술, 순산소 연소기술, 연소 후 포집 기술로 이루어진다.연소 전 포집 기술은 탄소가 포함된 연료를 적절한 반응(개질 반응 및 수성가스 전환반응 등)을 이용하여 이산화탄소와 수소 연료로 변환한 후, 이산화탄소를 포집·제거하여 연소시킴으로써 반응 생성물로 이산화탄소가 원천적으로 발생하지 않도록 하는 기술이다.순산소 연소기술은 연료의 산화제로 공기를 사용하지 않고 질소가 제거된 산소만을 이용함으로써 절대적인 배기가스의 양이 감소되며 배기가스 조성이 이산화탄소와 물만 존재하므로 이산화탄소의 분리·제거가 용이하다.연소 후 포집 기술은 연소 후 배기가스에 포함된 이산화탄소를 분리하는 기술로서 기존 발생원에 적용하기에 가장 용이하다는 장점이 있다.분리방법에 따라 절절한 용매(대표적으로 아민계 흡수제)를 이용하는 방법과 분리막을 이용하는 방법, 그리고 고체입자의 이산화탄소 흡ㆍ탈착을 이용하는 방법이 있다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_135011_367379.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_135011_367379.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_140013_151175)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 이와 같은 기술을 이용하여 포집된 이산화탄소는 적절한 방법을 이용하여 저장해야한다. 현재 육상 또는 해저 지중 저장 방법이 주로 검토되고 있다. 이 방법은 이산화탄소를 초임계 상태로 유전, 가스전 또는 염수층 등의 지중 공간에 주입한 후 열적, 수리학적, 역학적, 화학적 거동을 거쳐 격리ㆍ저장하게 된다. 그러나 지중 저장이 가능한 공간의 한계, 초임계 상태의 이산화탄소를 저장하기 때문에 높은 압력으로 인한 누출에 의해 대기 또는 해수로의 재방출 가능성이 있다. 해수 중으로 이산화탄소가 누출될 경우, 해양 산성화에 의해 해양 생태계에 악영향을 미칠 수 있다. 또 다른 다량의 이산화탄소 격리·저장 방법은 해양 저장이다. 해양저장 방법은 1,000m 이상의 깊이에 이산화탄소를 직접 주입하여 해수에 용해시키는 방법, 3,000m 이상의 해저 고립된 공간에 압축장치로 액화시켜 얻어진 고밀도의 액체 이산화탄소를 주입하는 방법이 있다. 그러나 이산화탄소를 직접 해양에 주입·저장할 경우, 해양산성화에 의한 해양생태계 영향 문제와 용해된 이산화탄소가 궁극적으로 대기와 평형을 이룸으로써 대기 중으로 재방출될 가능성이 있기 때문에 영구적인 격리·저장 방법이 아니라는 문제가 제기되고 있으며, 액체 이산화탄소 격리방법은 해양 산성화뿐만 아니라 액화시키기 위한 설비 및 동력, 액체 이산화탄소를 액체 그대로 운송하기 위한 설비 및 동력이 필요하다는 단점이 있다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 이와 같은 기술을 이용하여 포집된 이산화탄소는 적절한 방법을 이용하여 저장해야한다. 현재 육상 또는 해저 지중 저장 방법이 주로 검토되고 있다. 이 방법은 이산화탄소를 초임계 상태로 유전, 가스전 또는 염수층 등의 지중 공간에 주입한 후 열적, 수리학적, 역학적, 화학적 거동을 거쳐 격리ㆍ저장하게 된다. 그러나 지중 저장이 가능한 공간의 한계, 초임계 상태의 이산화탄소를 저장하기 때문에 높은 압력으로 인한 누출에 의해 대기 또는 해수로의 재방출 가능성이 있다. 해수 중으로 이산화탄소가 누출될 경우, 해양 산성화에 의해 해양 생태계에 악영향을 미칠 수 있다. 또 다른 다량의 이산화탄소 격리·저장 방법은 해양 저장이다. 해양저장 방법은 1,000m 이상의 깊이에 이산화탄소를 직접 주입하여 해수에 용해시키는 방법, 3,000m 이상의 해저 고립된 공간에 압축장치로 액화시켜 얻어진 고밀도의 액체 이산화탄소를 주입하는 방법이 있다. 그러나 이산화탄소를 직접 해양에 주입·저장할 경우, 해양산성화에 의한 해양생태계 영향 문제와 용해된 이산화탄소가 궁극적으로 대기와 평형을 이룸으로써 대기 중으로 재방출될 가능성이 있기 때문에 영구적인 격리·저장 방법이 아니라는 문제가 제기되고 있으며, 액체 이산화탄소 격리방법은 해양 산성화뿐만 아니라 액화시키기 위한 설비 및 동력, 액체 이산화탄소를 액체 그대로 운송하기 위한 설비 및 동력이 필요하다는 단점이 있다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->이와 같은 기술을 이용하여 포집된 이산화탄소는 적절한 방법을 이용하여 저장해야한다. 현재 육상 또는 해저 지중 저장 방법이 주로 검토되고 있다. 이 방법은 이산화탄소를 초임계 상태로 유전, 가스전 또는 염수층 등의 지중 공간에 주입한 후 열적, 수리학적, 역학적, 화학적 거동을 거쳐 격리ㆍ저장하게 된다. 그러나 지중 저장이 가능한 공간의 한계, 초임계 상태의 이산화탄소를 저장하기 때문에 높은 압력으로 인한 누출에 의해 대기 또는 해수로의 재방출 가능성이 있다. 해수 중으로 이산화탄소가 누출될 경우, 해양 산성화에 의해 해양 생태계에 악영향을 미칠 수 있다. 또 다른 다량의 이산화탄소 격리·저장 방법은 해양 저장이다. 해양저장 방법은 1,000m 이상의 깊이에 이산화탄소를 직접 주입하여 해수에 용해시키는 방법, 3,000m 이상의 해저 고립된 공간에 압축장치로 액화시켜 얻어진 고밀도의 액체 이산화탄소를 주입하는 방법이 있다. 그러나 이산화탄소를 직접 해양에 주입·저장할 경우, 해양산성화에 의한 해양생태계 영향 문제와 용해된 이산화탄소가 궁극적으로 대기와 평형을 이룸으로써 대기 중으로 재방출될 가능성이 있기 때문에 영구적인 격리·저장 방법이 아니라는 문제가 제기되고 있으며, 액체 이산화탄소 격리방법은 해양 산성화뿐만 아니라 액화시키기 위한 설비 및 동력, 액체 이산화탄소를 액체 그대로 운송하기 위한 설비 및 동력이 필요하다는 단점이 있다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 이와 같은 기술을 이용하여 포집된 이산화탄소는 적절한 방법을 이용하여 저장해야한다.현재 육상 또는 해저 지중 저장 방법이 주로 검토되고 있다.이 방법은 이산화탄소를 초임계 상태로 유전, 가스전 또는 염수층 등의 지중 공간에 주입한 후 열적, 수리학적, 역학적, 화학적 거동을 거쳐 격리ㆍ저장하게 된다.그러나 지중 저장이 가능한 공간의 한계, 초임계 상태의 이산화탄소를 저장하기 때문에 높은 압력으로 인한 누출에 의해 대기 또는 해수로의 재방출 가능성이 있다.해수 중으로 이산화탄소가 누출될 경우, 해양 산성화에 의해 해양 생태계에 악영향을 미칠 수 있다.또 다른 다량의 이산화탄소 격리·저장 방법은 해양 저장이다.해양저장 방법은 1,000m 이상의 깊이에 이산화탄소를 직접 주입하여 해수에 용해시키는 방법, 3,000m 이상의 해저 고립된 공간에 압축장치로 액화시켜 얻어진 고밀도의 액체 이산화탄소를 주입하는 방법이 있다.그러나 이산화탄소를 직접 해양에 주입·저장할 경우, 해양산성화에 의한 해양생태계 영향 문제와 용해된 이산화탄소가 궁극적으로 대기와 평형을 이룸으로써 대기 중으로 재방출될 가능성이 있기 때문에 영구적인 격리·저장 방법이 아니라는 문제가 제기되고 있으며, 액체 이산화탄소 격리방법은 해양 산성화뿐만 아니라 액화시키기 위한 설비 및 동력, 액체 이산화탄소를 액체 그대로 운송하기 위한 설비 및 동력이 필요하다는 단점이 있다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>이와 같은 기술을 이용하여 포집된 이산화탄소는 적절한 방법을 이용하여 저장해야한다.현재 육상 또는 해저 지중 저장 방법이 주로 검토되고 있다.이 방법은 이산화탄소를 초임계 상태로 유전, 가스전 또는 염수층 등의 지중 공간에 주입한 후 열적, 수리학적, 역학적, 화학적 거동을 거쳐 격리ㆍ저장하게 된다.그러나 지중 저장이 가능한 공간의 한계, 초임계 상태의 이산화탄소를 저장하기 때문에 높은 압력으로 인한 누출에 의해 대기 또는 해수로의 재방출 가능성이 있다.해수 중으로 이산화탄소가 누출될 경우, 해양 산성화에 의해 해양 생태계에 악영향을 미칠 수 있다.또 다른 다량의 이산화탄소 격리·저장 방법은 해양 저장이다.해양저장 방법은 1,000m 이상의 깊이에 이산화탄소를 직접 주입하여 해수에 용해시키는 방법, 3,000m 이상의 해저 고립된 공간에 압축장치로 액화시켜 얻어진 고밀도의 액체 이산화탄소를 주입하는 방법이 있다.그러나 이산화탄소를 직접 해양에 주입·저장할 경우, 해양산성화에 의한 해양생태계 영향 문제와 용해된 이산화탄소가 궁극적으로 대기와 평형을 이룸으로써 대기 중으로 재방출될 가능성이 있기 때문에 영구적인 격리·저장 방법이 아니라는 문제가 제기되고 있으며, 액체 이산화탄소 격리방법은 해양 산성화뿐만 아니라 액화시키기 위한 설비 및 동력, 액체 이산화탄소를 액체 그대로 운송하기 위한 설비 및 동력이 필요하다는 단점이 있다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_140013_151175.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_140013_151175.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_141506_034204)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Четыре года назад Маттер и его коллеги бросили вызов этому представлению, запустив проект Carbfix, в рамках которого ученые, с согласия властей Исландии, закачивали углекислый газ вместе с водой в одну из глубинных скважин на территории острова, 90% поверхности которого сложено из базальтовых пород. Вместе с СО2 ученые вводили в недра земли небольшие количества радиоактивного углерода-14 для оценки доли поглощенной углекислоты, а также соединения серы и фтора для поиска путей "миграции" газов.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Четыре года назад Маттер и его коллеги бросили вызов этому представлению, запустив проект Carbfix, в рамках которого ученые, с согласия властей Исландии, закачивали углекислый газ вместе с водой в одну из глубинных скважин на территории острова, 90% поверхности которого сложено из базальтовых пород. Вместе с СО2 ученые вводили в недра земли небольшие количества радиоактивного углерода-14 для оценки доли поглощенной углекислоты, а также соединения серы и фтора для поиска путей "миграции" газов.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Четыре года назад Маттер и его коллеги бросили вызов этому представлению, запустив проект Carbfix, в рамках которого ученые, с согласия властей Исландии, закачивали углекислый газ вместе с водой в одну из глубинных скважин на территории острова, 90% поверхности которого сложено из базальтовых пород. Вместе с СО2 ученые вводили в недра земли небольшие количества радиоактивного углерода-14 для оценки доли поглощенной углекислоты, а также соединения серы и фтора для поиска путей "миграции" газов.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Четыре года назад Маттер и его коллеги бросили вызов этому представлению, запустив проект Carbfix, в рамках которого ученые, с согласия властей Исландии, закачивали углекислый газ вместе с водой в одну из глубинных скважин на территории острова, 90% поверхности которого сложено из базальтовых пород.Вместе с СО2 ученые вводили в недра земли небольшие количества радиоактивного углерода-14 для оценки доли поглощенной углекислоты, а также соединения серы и фтора для поиска путей "миграции" газов.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Четыре года назад Маттер и его коллеги бросили вызов этому представлению, запустив проект Carbfix, в рамках которого ученые, с согласия властей Исландии, закачивали углекислый газ вместе с водой в одну из глубинных скважин на территории острова, 90% поверхности которого сложено из базальтовых пород.Вместе с СО2 ученые вводили в недра земли небольшие количества радиоактивного углерода-14 для оценки доли поглощенной углекислоты, а также соединения серы и фтора для поиска путей "миграции" газов.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_141506_034204.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_141506_034204.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_155155_395263)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => „Es gibt zum Beispiel gewaltige Vorkommen von Basalt im westlichen Indien, aber auch in Sibirien, in Nordwestamerika und Brasilien. Sobald die Landschaft vulkanischen Ursprungs ist, findet sich in der Gegend auch Basaltgestein.“
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => „Es gibt zum Beispiel gewaltige Vorkommen von Basalt im westlichen Indien, aber auch in Sibirien, in Nordwestamerika und Brasilien. Sobald die Landschaft vulkanischen Ursprungs ist, findet sich in der Gegend auch Basaltgestein.“
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->„Es gibt zum Beispiel gewaltige Vorkommen von Basalt im westlichen Indien, aber auch in Sibirien, in Nordwestamerika und Brasilien. Sobald die Landschaft vulkanischen Ursprungs ist, findet sich in der Gegend auch Basaltgestein.“
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => „Es gibt zum Beispiel gewaltige Vorkommen von Basalt im westlichen Indien, aber auch in Sibirien, in Nordwestamerika und Brasilien.Sobald die Landschaft vulkanischen Ursprungs ist, findet sich in der Gegend auch Basaltgestein.“
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>„Es gibt zum Beispiel gewaltige Vorkommen von Basalt im westlichen Indien, aber auch in Sibirien, in Nordwestamerika und Brasilien.Sobald die Landschaft vulkanischen Ursprungs ist, findet sich in der Gegend auch Basaltgestein.“
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_155155_395263.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_155155_395263.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_155555_795964)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Und es gibt noch einen weiteren Teil der Erde, der für die Speichermethode in Frage kommt: Den Meeresboden. Zwei Drittel unseres Planeten sind von den Meeren bedeckt. Und am Boden, unter den Sedimenten, würden gewaltige Vorkommen von Basaltgestein liegen. In denen könnte ebenfalls CO2 gespeichert werden.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Und es gibt noch einen weiteren Teil der Erde, der für die Speichermethode in Frage kommt: Den Meeresboden. Zwei Drittel unseres Planeten sind von den Meeren bedeckt. Und am Boden, unter den Sedimenten, würden gewaltige Vorkommen von Basaltgestein liegen. In denen könnte ebenfalls CO2 gespeichert werden.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Und es gibt noch einen weiteren Teil der Erde, der für die Speichermethode in Frage kommt: Den Meeresboden. Zwei Drittel unseres Planeten sind von den Meeren bedeckt. Und am Boden, unter den Sedimenten, würden gewaltige Vorkommen von Basaltgestein liegen. In denen könnte ebenfalls CO2 gespeichert werden.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Und es gibt noch einen weiteren Teil der Erde, der für die Speichermethode in Frage kommt: Den Meeresboden. Zwei Drittel unseres Planeten sind von den Meeren bedeckt. Und am Boden, unter den Sedimenten, würden gewaltige Vorkommen von Basaltgestein liegen. In denen könnte ebenfalls CO2 gespeichert werden.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Und es gibt noch einen weiteren Teil der Erde, der für die Speichermethode in Frage kommt: Den Meeresboden.Zwei Drittel unseres Planeten sind von den Meeren bedeckt.Und am Boden, unter den Sedimenten, würden gewaltige Vorkommen von Basaltgestein liegen.In denen könnte ebenfalls CO2 gespeichert werden.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Und es gibt noch einen weiteren Teil der Erde, der für die Speichermethode in Frage kommt: Den Meeresboden.Zwei Drittel unseres Planeten sind von den Meeren bedeckt.Und am Boden, unter den Sedimenten, würden gewaltige Vorkommen von Basaltgestein liegen.In denen könnte ebenfalls CO2 gespeichert werden.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_155555_795964.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_155555_795964.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_155916_855004)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => „Wir schauen auch nach vulkanischen Inseln und Gebieten, die fern der Küste liegen. An diesen Stellen sind auch die Sedimente auf dem Meeresboden aus Basaltgestein. Das ist sogar noch poröser als das Basaltgestein selbst, deshalb könnten diese Vorkommen besonders großes Potenzial zur Speicherung bergen.“
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => „Wir schauen auch nach vulkanischen Inseln und Gebieten, die fern der Küste liegen. An diesen Stellen sind auch die Sedimente auf dem Meeresboden aus Basaltgestein. Das ist sogar noch poröser als das Basaltgestein selbst, deshalb könnten diese Vorkommen besonders großes Potenzial zur Speicherung bergen.“
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->„Wir schauen auch nach vulkanischen Inseln und Gebieten, die fern der Küste liegen. An diesen Stellen sind auch die Sedimente auf dem Meeresboden aus Basaltgestein. Das ist sogar noch poröser als das Basaltgestein selbst, deshalb könnten diese Vorkommen besonders großes Potenzial zur Speicherung bergen.“
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => „Wir schauen auch nach vulkanischen Inseln und Gebieten, die fern der Küste liegen.An diesen Stellen sind auch die Sedimente auf dem Meeresboden aus Basaltgestein.Das ist sogar noch poröser als das Basaltgestein selbst, deshalb könnten diese Vorkommen besonders großes Potenzial zur Speicherung bergen.“
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>„Wir schauen auch nach vulkanischen Inseln und Gebieten, die fern der Küste liegen.An diesen Stellen sind auch die Sedimente auf dem Meeresboden aus Basaltgestein.Das ist sogar noch poröser als das Basaltgestein selbst, deshalb könnten diese Vorkommen besonders großes Potenzial zur Speicherung bergen.“
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_155916_855004.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_155916_855004.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_160356_257790)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Könnte man das Basaltgestein der Meere nutzen, würde das noch einen weiteren Vorteil mit sich bringen. Denn das Carbfix-Verfahren benötigt nicht nur viel reaktives Gestein um zu funktionieren, sondern auch sehr viel Wasser. 25 Tonnen braucht es, um eine Tonne Kohlendioxid zu fixieren. Weil Wasser in den Meeren praktisch endlos vorhanden ist, könnte es von dort direkt für die CO2-Lagerung verwendet werden. Doch bis es soweit ist, werden noch viele Jahre vergehen. Zwar beschleunigen die Wissenschaftler mit dem Verfahren einen natürlichen Vorgang – doch der benötigt auch unter künstlichen Bedingungen viel Zeit.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Könnte man das Basaltgestein der Meere nutzen, würde das noch einen weiteren Vorteil mit sich bringen. Denn das Carbfix-Verfahren benötigt nicht nur viel reaktives Gestein um zu funktionieren, sondern auch sehr viel Wasser. 25 Tonnen braucht es, um eine Tonne Kohlendioxid zu fixieren. Weil Wasser in den Meeren praktisch endlos vorhanden ist, könnte es von dort direkt für die CO2-Lagerung verwendet werden. Doch bis es soweit ist, werden noch viele Jahre vergehen. Zwar beschleunigen die Wissenschaftler mit dem Verfahren einen natürlichen Vorgang – doch der benötigt auch unter künstlichen Bedingungen viel Zeit.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Könnte man das Basaltgestein der Meere nutzen, würde das noch einen weiteren Vorteil mit sich bringen. Denn das Carbfix-Verfahren benötigt nicht nur viel reaktives Gestein um zu funktionieren, sondern auch sehr viel Wasser. 25 Tonnen braucht es, um eine Tonne Kohlendioxid zu fixieren. Weil Wasser in den Meeren praktisch endlos vorhanden ist, könnte es von dort direkt für die CO2-Lagerung verwendet werden. Doch bis es soweit ist, werden noch viele Jahre vergehen. Zwar beschleunigen die Wissenschaftler mit dem Verfahren einen natürlichen Vorgang – doch der benötigt auch unter künstlichen Bedingungen viel Zeit.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Könnte man das Basaltgestein der Meere nutzen, würde das noch einen weiteren Vorteil mit sich bringen.Denn das Carbfix-Verfahren benötigt nicht nur viel reaktives Gestein um zu funktionieren, sondern auch sehr viel Wasser.25 Tonnen braucht es, um eine Tonne Kohlendioxid zu fixieren.Weil Wasser in den Meeren praktisch endlos vorhanden ist, könnte es von dort direkt für die CO2-Lagerung verwendet werden.Doch bis es soweit ist, werden noch viele Jahre vergehen.Zwar beschleunigen die Wissenschaftler mit dem Verfahren einen natürlichen Vorgang – doch der benötigt auch unter künstlichen Bedingungen viel Zeit.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Könnte man das Basaltgestein der Meere nutzen, würde das noch einen weiteren Vorteil mit sich bringen.Denn das Carbfix-Verfahren benötigt nicht nur viel reaktives Gestein um zu funktionieren, sondern auch sehr viel Wasser.25 Tonnen braucht es, um eine Tonne Kohlendioxid zu fixieren.Weil Wasser in den Meeren praktisch endlos vorhanden ist, könnte es von dort direkt für die CO2-Lagerung verwendet werden.Doch bis es soweit ist, werden noch viele Jahre vergehen.Zwar beschleunigen die Wissenschaftler mit dem Verfahren einen natürlichen Vorgang – doch der benötigt auch unter künstlichen Bedingungen viel Zeit.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_160356_257790.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_160356_257790.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210526_164129_704315)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Photoautotrophs assimilate oxidized carbon obtained from one of two sources: dissolved or atmospheric. Despite its size, the pool of lithospheric carbonate is not known to be a direct source for autotrophy. Yet, the mechanism that euendolithic cyanobacteria use to excavate solid carbonates suggests that minerals could directly supply CO2 for autotrophy. Here, we use stable isotopes and NanoSIMS to show that the cyanobacterium Mastigocoleus testarum derives most of its carbon from the mineral it excavates, growing preferentially as an endolith when lacking dissolved CO2. Furthermore, natural endolithic communities from intertidal marine carbonate outcrops present carbon isotopic signatures consistent with mineral-sourced autotrophy. These data demonstrate a direct geomicrobial link between mineral carbonate pools and reduced organic carbon, which, given the geographical extent of carbonate outcrops, is likely of global relevance. The ancient fossil record of euendolithic cyanobacteria suggests that biological fixation of solid carbonate could have been relevant since the mid-Proterozoic.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Photoautotrophs assimilate oxidized carbon obtained from one of two sources: dissolved or atmospheric. Despite its size, the pool of lithospheric carbonate is not known to be a direct source for autotrophy. Yet, the mechanism that euendolithic cyanobacteria use to excavate solid carbonates suggests that minerals could directly supply CO2 for autotrophy. Here, we use stable isotopes and NanoSIMS to show that the cyanobacterium Mastigocoleus testarum derives most of its carbon from the mineral it excavates, growing preferentially as an endolith when lacking dissolved CO2. Furthermore, natural endolithic communities from intertidal marine carbonate outcrops present carbon isotopic signatures consistent with mineral-sourced autotrophy. These data demonstrate a direct geomicrobial link between mineral carbonate pools and reduced organic carbon, which, given the geographical extent of carbonate outcrops, is likely of global relevance. The ancient fossil record of euendolithic cyanobacteria suggests that biological fixation of solid carbonate could have been relevant since the mid-Proterozoic.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Photoautotrophs assimilate oxidized carbon obtained from one of two sources: dissolved or atmospheric. Despite its size, the pool of lithospheric carbonate is not known to be a direct source for autotrophy. Yet, the mechanism that euendolithic cyanobacteria use to excavate solid carbonates suggests that minerals could directly supply CO2 for autotrophy. Here, we use stable isotopes and NanoSIMS to show that the cyanobacterium Mastigocoleus testarum derives most of its carbon from the mineral it excavates, growing preferentially as an endolith when lacking dissolved CO2. Furthermore, natural endolithic communities from intertidal marine carbonate outcrops present carbon isotopic signatures consistent with mineral-sourced autotrophy. These data demonstrate a direct geomicrobial link between mineral carbonate pools and reduced organic carbon, which, given the geographical extent of carbonate outcrops, is likely of global relevance. The ancient fossil record of euendolithic cyanobacteria suggests that biological fixation of solid carbonate could have been relevant since the mid-Proterozoic.
+$matches ==>
+Array
+(
+    [0] => c. 
+    [1] => c.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Photoautotrophs assimilate oxidized carbon obtained from one of two sources: dissolved or atmospheric.Despite its size, the pool of lithospheric carbonate is not known to be a direct source for autotrophy.Yet, the mechanism that euendolithic cyanobacteria use to excavate solid carbonates suggests that minerals could directly supply CO2 for autotrophy.Here, we use stable isotopes and NanoSIMS to show that the cyanobacterium Mastigocoleus testarum derives most of its carbon from the mineral it excavates, growing preferentially as an endolith when lacking dissolved CO2. Furthermore, natural endolithic communities from intertidal marine carbonate outcrops present carbon isotopic signatures consistent with mineral-sourced autotrophy.These data demonstrate a direct geomicrobial link between mineral carbonate pools and reduced organic carbon, which, given the geographical extent of carbonate outcrops, is likely of global relevance.The ancient fossil record of euendolithic cyanobacteria suggests that biological fixation of solid carbonate could have been relevant since the mid-Proterozoic.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Photoautotrophs assimilate oxidized carbon obtained from one of two sources: dissolved or atmospheric.Despite its size, the pool of lithospheric carbonate is not known to be a direct source for autotrophy.Yet, the mechanism that euendolithic cyanobacteria use to excavate solid carbonates suggests that minerals could directly supply CO2 for autotrophy.Here, we use stable isotopes and NanoSIMS to show that the cyanobacterium Mastigocoleus testarum derives most of its carbon from the mineral it excavates, growing preferentially as an endolith when lacking dissolved CO2. Furthermore, natural endolithic communities from intertidal marine carbonate outcrops present carbon isotopic signatures consistent with mineral-sourced autotrophy.These data demonstrate a direct geomicrobial link between mineral carbonate pools and reduced organic carbon, which, given the geographical extent of carbonate outcrops, is likely of global relevance.The ancient fossil record of euendolithic cyanobacteria suggests that biological fixation of solid carbonate could have been relevant since the mid-Proterozoic.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_164129_704315.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_164129_704315.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 

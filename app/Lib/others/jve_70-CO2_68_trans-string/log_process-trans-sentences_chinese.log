@@ -2877,3 +2877,76 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_170820_929806.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210524_170820_929806.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210526_145837_867669)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 二是外部动态交易机制。]]例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap&
+    [1] => Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。]]通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他
+    [2] => 减缓[-huan3:slow-down
+    [3] => 气候变化技术中具有竞争力。三是交易量补贴机制。如加拿大阿尔伯塔省碳
+    [4] => 抵消[di3-:offset
+    [5] => 机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1
+    [6] => 兆瓦[zhao4wa3:메가-와트
+    [7] => 时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)二是外部动态交易机制。]]例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap&
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。]]通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他
+[process-trans-sentences_chinese.php : 216] match => 减缓[-huan3:slow-down
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)气候变化技术中具有竞争力。三是交易量补贴机制。如加拿大阿尔伯塔省碳
+[process-trans-sentences_chinese.php : 216] match => 抵消[di3-:offset
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1
+[process-trans-sentences_chinese.php : 216] match => 兆瓦[zhao4wa3:메가-와트
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210526_145837_888669.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210526_145837_888669.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210526_150447_992989)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 拓宽[ta4kuan1:broaden
+    [1] => 渠道[qu4-:channel，资金支持]]目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：一是碳税+
+    [2] => 配套[:Matching
+    [3] => 公共资金。]]如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 216] match => 拓宽[ta4kuan1:broaden
+[process-trans-sentences_chinese.php : 216] match => 渠道[qu4-:channel，资金支持]]目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：一是碳税+
+[process-trans-sentences_chinese.php : 216] match => 配套[:Matching
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)公共资金。]]如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210526_150447_994988.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210526_150447_994988.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210526_151351_349303)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 三是政府募集基金。如“LongshipProgram”由挪威政府牵头，计划募集251亿挪威
+    [1] => 克朗[-lang3
+    [2] => （约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。]]四是投资机构投资。如SustaintechXcelerator加速器计划由
+    [3] => 淡马锡[dan4-xi1
+    [4] => 协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。]]五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。]]六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)三是政府募集基金。如“LongshipProgram”由挪威政府牵头，计划募集251亿挪威
+[process-trans-sentences_chinese.php : 216] match => 克朗[-lang3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。]]四是投资机构投资。如SustaintechXcelerator加速器计划由
+[process-trans-sentences_chinese.php : 216] match => 淡马锡[dan4-xi1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。]]五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。]]六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210526_151351_360302.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210526_151351_360302.txt'
+  

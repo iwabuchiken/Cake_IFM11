@@ -11334,3 +11334,1506 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_170905_036164.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210524_170905_036164.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210526_144401_991818)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+
+    [1] => 
+
+    [2] => 三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+
+    [1] => 
+    [2] => 三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+    [1] => 
+    [2] => 三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => A。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => A。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+    [1] => 
+    [2] => 三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap & Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => p &
+        )
+
+    [1] => Array
+        (
+            [0] => p
+        )
+
+    [2] => Array
+        (
+            [0] => &
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap& Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap& Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。
+    [1] => 
+    [2] => 三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>二是外部动态交易机制。例如，欧盟排放交易计划（EU-ETS）采取总量交易的形式（Cap& Trade），纳入限排名单的企业根据一定标准可免费获得或者通过拍卖有偿获得EUA，而实际排放低于所得配额的企业可以在碳交易市场出售，超过则必须购买EUA。通过引入排放交易系统对温室气体（GHG）排放进行定价，使碳捕集与封存技术在其他减缓气候变化技术中具有竞争力。三是交易量补贴机制。如加拿大阿尔伯塔省碳抵消机制规定，非EOR的CCS项目每减排1吨CO2可额外取得1吨的排放额；英国ROC机制给予不同类型可再生能源发出电力不同的ROC系数，例如光伏发电厂每发电1兆瓦时可获得1.2到1.3份ROC证书，ROC证书可在电力市场交易。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_144401_991818.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_144401_991818.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210526_145927_781070)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 拓宽渠道，资金支持
+
+    [1] => 
+
+    [2] => 目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+
+    [3] => 
+
+    [4] => 一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+
+    [5] => 
+
+    [6] => 二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '拓宽渠道，资金支持
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 拓宽渠道，资金支持
+
+    [1] => 
+    [2] => 目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+
+    [3] => 
+    [4] => 一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+
+    [5] => 
+    [6] => 二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '拓宽渠道，资金支持
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 拓宽渠道，资金支持
+
+    [1] => 
+    [2] => 目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+
+    [3] => 
+    [4] => 一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+    [5] => 
+    [6] => 二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '拓宽渠道，资金支持
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => %。�
+        )
+
+    [1] => Array
+        (
+            [0] => %。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 拓宽渠道，资金支持
+
+    [1] => 
+    [2] => 目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+
+    [3] => 
+    [4] => 一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+    [5] => 
+    [6] => 二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '拓宽渠道，资金支持
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 拓宽渠道，资金支持
+
+    [1] => 
+    [2] => 目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+
+    [3] => 
+    [4] => 一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。
+    [5] => 
+    [6] => 二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>拓宽渠道，资金支持
+目前，我国政府支持资金主要以CCUS技术研究为主，国外政府支持资金则可用于技术研发与投资建设，项目的外部资金占比最高可达50%。总结而言，外部资金来源主要有以下六种：
+一是碳税+配套公共资金。如加拿大阿尔伯塔省使用碳税取得的7.5亿加元与其他公共部门和商业部门提供的11.5亿配套资金投资了一系列CCUS项目和工业能效提升项目。二是政府专项财政资金。如美国能源部（DOE）主管技术研发与投资CCUS项目，2012-2019年DOE关于CCUS项目投资总额达34.47亿美元，其中约有40%资金用于CCUS试点项目的技术研发与投资建设。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_145927_781070.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_145927_781070.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210526_150546_242513)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+
+    [1] => 
+
+    [2] => 四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+
+    [3] => 
+
+    [4] => 五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+
+    [5] => 
+
+    [6] => 六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+
+    [1] => 
+    [2] => 四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+
+    [3] => 
+    [4] => 五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+
+    [5] => 
+    [6] => 六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+    [1] => 
+    [2] => 四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+    [3] => 
+    [4] => 五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+    [5] => 
+    [6] => 六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+    [1] => 
+    [2] => 四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+    [3] => 
+    [4] => 五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+    [5] => 
+    [6] => 六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '三是政府募集基金。如“Longship Program”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => p P
+        )
+
+    [1] => Array
+        (
+            [0] => p
+        )
+
+    [2] => Array
+        (
+            [0] => P
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+三是政府募集基金。如“LongshipProgram”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '四是投资机构投资。如Sustaintech Xcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => h X
+        )
+
+    [1] => Array
+        (
+            [0] => h
+        )
+
+    [2] => Array
+        (
+            [0] => X
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+四是投资机构投资。如SustaintechXcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 三是政府募集基金。如“LongshipProgram”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。
+    [1] => 
+    [2] => 四是投资机构投资。如SustaintechXcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。
+    [3] => 
+    [4] => 五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。
+    [5] => 
+    [6] => 六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>三是政府募集基金。如“LongshipProgram”由挪威政府牵头，计划募集251亿挪威克朗（约183亿元人民币）投资CCS项目，加大挪威整体二氧化碳减排力度，促进CCS相关关键技术发展，同时积极创造新的就业机会。四是投资机构投资。如SustaintechXcelerator加速器计划由淡马锡协同星展银行、谷歌云、新加坡国立大学自然气候方案研究中心、Verra和世界银行推出，提升了投资者和碳信用买方对以自然为本的解决方案的信心。五是大型气候基金。如绿色气候基金和全球环境基金为全球CCUS项目提供申请资助的机会，目前已有项目获得批准。六是政府背书进行银行贷款。如美国能源部（DOE）为包括CCUS在内的先进化石能源项目提供贷款担保，以支持项目获得负担得起的融资。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_150546_242513.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_150546_242513.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210526_151430_895931)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>结语：正如本文所指出的，我国CCUS行业所面临的发展缓慢问题，除了加快技术创新应用以外，还必须在开放理念、激励措施、市场机制、资金支持等全方位发力，营造健康有序的市场环境，CCUS才能逐渐发挥作用，最终助力双碳目标实现。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_151430_895931.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_151430_895931.txt
+ 
