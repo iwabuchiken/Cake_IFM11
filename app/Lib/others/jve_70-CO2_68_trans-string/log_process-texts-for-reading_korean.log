@@ -8806,3 +8806,596 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_164129_704315.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_140743_087635)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => El dióxido de carbono (CO2) es un gas de efecto invernadero (GEI) que se encuentra
+
+    [1] => de forma natural en la atmósfera. Las diversas actividades humanas y nuestro modelo
+
+    [2] => de vida llevan contribuyendo desde hace décadas al desmesurado aumento de la
+
+    [3] => concentración de este gas en la atmósfera
+
+    [4] => y, con ello, al calentamiento global del
+
+    [5] => planeta. Las emisiones de CO2 provienen
+
+    [6] => de diversas fuentes, entre las que se
+
+    [7] => encuentran la combustión de
+
+    [8] => combustibles fósiles producida en medios
+
+    [9] => de transporte, centrales eléctricas,
+
+    [10] => sistemas de calefacción… así como de
+
+    [11] => diversos procesos industriales, además de
+
+    [12] => otros focos de emisión de menor
+
+    [13] => importancia.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->El dióxido de carbono (CO2) es un gas de efecto invernadero (GEI) que se encuentra
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->de forma natural en la atmósfera. Las diversas actividades humanas y nuestro modelo
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->de vida llevan contribuyendo desde hace décadas al desmesurado aumento de la
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->concentración de este gas en la atmósfera
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->y, con ello, al calentamiento global del
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->planeta. Las emisiones de CO2 provienen
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->de diversas fuentes, entre las que se
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->encuentran la combustión de
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->combustibles fósiles producida en medios
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->de transporte, centrales eléctricas,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->sistemas de calefacción… así como de
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->diversos procesos industriales, además de
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->otros focos de emisión de menor
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => El dióxido de carbono (CO2) es un gas de efecto invernadero (GEI) que se encuentra 
+    [1] => de forma natural en la atmósfera. Las diversas actividades humanas y nuestro modelo 
+    [2] => de vida llevan contribuyendo desde hace décadas al desmesurado aumento de la 
+    [3] => concentración de este gas en la atmósfera 
+    [4] => y, con ello, al calentamiento global del 
+    [5] => planeta. Las emisiones de CO2 provienen 
+    [6] => de diversas fuentes, entre las que se 
+    [7] => encuentran la combustión de 
+    [8] => combustibles fósiles producida en medios 
+    [9] => de transporte, centrales eléctricas, 
+    [10] => sistemas de calefacción… así como de 
+    [11] => diversos procesos industriales, además de 
+    [12] => otros focos de emisión de menor 
+    [13] => importancia.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->de forma natural en la atmósfera. Las diversas actividades humanas y nuestro modelo 
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->planeta. Las emisiones de CO2 provienen 
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => El dióxido de carbono (CO2) es un gas de efecto invernadero (GEI) que se encuentra 
+    [1] => de forma natural en la atmósfera.Las diversas actividades humanas y nuestro modelo 
+    [2] => de vida llevan contribuyendo desde hace décadas al desmesurado aumento de la 
+    [3] => concentración de este gas en la atmósfera 
+    [4] => y, con ello, al calentamiento global del 
+    [5] => planeta.Las emisiones de CO2 provienen 
+    [6] => de diversas fuentes, entre las que se 
+    [7] => encuentran la combustión de 
+    [8] => combustibles fósiles producida en medios 
+    [9] => de transporte, centrales eléctricas, 
+    [10] => sistemas de calefacción… así como de 
+    [11] => diversos procesos industriales, además de 
+    [12] => otros focos de emisión de menor 
+    [13] => importancia.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>El dióxido de carbono (CO2) es un gas de efecto invernadero (GEI) que se encuentra de forma natural en la atmósfera.Las diversas actividades humanas y nuestro modelo de vida llevan contribuyendo desde hace décadas al desmesurado aumento de la concentración de este gas en la atmósfera y, con ello, al calentamiento global del planeta.Las emisiones de CO2 provienen de diversas fuentes, entre las que se encuentran la combustión de combustibles fósiles producida en medios de transporte, centrales eléctricas, sistemas de calefacción… así como de diversos procesos industriales, además de otros focos de emisión de menor importancia.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_140743_087635.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_140743_087635.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_141738_989366)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Desde la Conferencia de Toronto de 1988, los estudios y las medidas tanto parareducir las emisiones de CO2 como para reducir su concentración en la atmósfera se hanido multiplicando, tomando especial importancia desde el Protocolo de Kioto en 1997.El Protocolo de Kioto marca objetivos obligatorios relativos a las emisiones de GEIspara las principales economías mundiales que lo firmaron. Estos objetivos individualesvan desde una reducción del 8% hasta un crecimiento máximo del 10% respecto a lasemisiones del año base, fijado en 1990 y, según cita el Protocolo, “con miras a reducir eltotal de sus emisiones de los GEIs a un nivel de un 5,2% menor de las registradas en 1990durante el periodo de compromiso 2008-2012” a nivel mundial. Sin embargo, este límitese redujo a un 1,8% menor de las emisiones registradas en 1990, durante la Cumbre deBonn (2001), ya que de lo contrario se corría el riesgo de que el Protocolo de Kioto nose ratificara.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Desde la Conferencia de Toronto de 1988, los estudios y las medidas tanto parareducir las emisiones de CO2 como para reducir su concentración en la atmósfera se hanido multiplicando, tomando especial importancia desde el Protocolo de Kioto en 1997.El Protocolo de Kioto marca objetivos obligatorios relativos a las emisiones de GEIspara las principales economías mundiales que lo firmaron. Estos objetivos individualesvan desde una reducción del 8% hasta un crecimiento máximo del 10% respecto a lasemisiones del año base, fijado en 1990 y, según cita el Protocolo, “con miras a reducir eltotal de sus emisiones de los GEIs a un nivel de un 5,2% menor de las registradas en 1990durante el periodo de compromiso 2008-2012” a nivel mundial. Sin embargo, este límitese redujo a un 1,8% menor de las emisiones registradas en 1990, durante la Cumbre deBonn (2001), ya que de lo contrario se corría el riesgo de que el Protocolo de Kioto nose ratificara.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Desde la Conferencia de Toronto de 1988, los estudios y las medidas tanto parareducir las emisiones de CO2 como para reducir su concentración en la atmósfera se hanido multiplicando, tomando especial importancia desde el Protocolo de Kioto en 1997.El Protocolo de Kioto marca objetivos obligatorios relativos a las emisiones de GEIspara las principales economías mundiales que lo firmaron. Estos objetivos individualesvan desde una reducción del 8% hasta un crecimiento máximo del 10% respecto a lasemisiones del año base, fijado en 1990 y, según cita el Protocolo, “con miras a reducir eltotal de sus emisiones de los GEIs a un nivel de un 5,2% menor de las registradas en 1990durante el periodo de compromiso 2008-2012” a nivel mundial. Sin embargo, este límitese redujo a un 1,8% menor de las emisiones registradas en 1990, durante la Cumbre deBonn (2001), ya que de lo contrario se corría el riesgo de que el Protocolo de Kioto nose ratificara.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Desde la Conferencia de Toronto de 1988, los estudios y las medidas tanto parareducir las emisiones de CO2 como para reducir su concentración en la atmósfera se hanido multiplicando, tomando especial importancia desde el Protocolo de Kioto en 1997.El Protocolo de Kioto marca objetivos obligatorios relativos a las emisiones de GEIspara las principales economías mundiales que lo firmaron.Estos objetivos individualesvan desde una reducción del 8% hasta un crecimiento máximo del 10% respecto a lasemisiones del año base, fijado en 1990 y, según cita el Protocolo, “con miras a reducir eltotal de sus emisiones de los GEIs a un nivel de un 5,2% menor de las registradas en 1990durante el periodo de compromiso 2008-2012” a nivel mundial.Sin embargo, este límitese redujo a un 1,8% menor de las emisiones registradas en 1990, durante la Cumbre deBonn (2001), ya que de lo contrario se corría el riesgo de que el Protocolo de Kioto nose ratificara.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Desde la Conferencia de Toronto de 1988, los estudios y las medidas tanto parareducir las emisiones de CO2 como para reducir su concentración en la atmósfera se hanido multiplicando, tomando especial importancia desde el Protocolo de Kioto en 1997.El Protocolo de Kioto marca objetivos obligatorios relativos a las emisiones de GEIspara las principales economías mundiales que lo firmaron.Estos objetivos individualesvan desde una reducción del 8% hasta un crecimiento máximo del 10% respecto a lasemisiones del año base, fijado en 1990 y, según cita el Protocolo, “con miras a reducir eltotal de sus emisiones de los GEIs a un nivel de un 5,2% menor de las registradas en 1990durante el periodo de compromiso 2008-2012” a nivel mundial.Sin embargo, este límitese redujo a un 1,8% menor de las emisiones registradas en 1990, durante la Cumbre deBonn (2001), ya que de lo contrario se corría el riesgo de que el Protocolo de Kioto nose ratificara.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_141738_989366.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_141738_989366.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_142714_623886)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo delas emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantessobre las emisiones proyectadas.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo delas emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantessobre las emisiones proyectadas.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo delas emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantessobre las emisiones proyectadas.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo delas emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantessobre las emisiones proyectadas.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_142714_623886.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_142714_623886.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_142738_508049)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'sobre las emisiones proyectadas.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo de
+
+    [1] => las emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantes
+
+    [2] => sobre las emisiones proyectadas.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo de
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->las emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantes
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo de 
+    [1] => las emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantes 
+    [2] => sobre las emisiones proyectadas.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo de 
+    [1] => las emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantes 
+    [2] => sobre las emisiones proyectadas.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>En casi todos los casos, incluso en aquellos que tienen un crecimiento máximo de las emisiones del 10% sobre 1990, estos límites obligan a unas reducciones importantes sobre las emisiones proyectadas.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_142738_508049.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_142738_508049.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_144212_178173)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 반면에 이산화탄소 전환 및 재이용 기술은 이산화탄소를 지중 또는 해양에 폐기하는 것이 아니라, 자원으로 활용하고자 하는 기술이다. 그 중 이산화탄소 광물화 전환기술은 칼슘이나 마그네슘 실리케이트와 같은 미네랄을 이용하여 탄산칼슘이나 탄산마그네슘을 생산함으로써 이산화탄소를 전환시키는 화학반응과 관련된 것이다. 즉, 이산화탄소의 광물화 전환기술은 산업체에서 포집되거나 배출되는 이산화탄소를 산화물 및 수산화물 형태의 알칼리 금속 및 알칼리 토금속 성분을 함유한 천연 광물 또는 산업체에서 배출되는 무기계 순환 자원(제강 슬래그, 플라이 애쉬, 폐콘크리트, 폐시멘트 등)과 반응시켜 탄산칼슘(CaCO3) 및 탄산마그네슘(MgCO3) 등의 탄산염 광물로 만들어 이산화탄소를 안정하게 고정화 또는 저장시키는 기술이다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 반면에 이산화탄소 전환 및 재이용 기술은 이산화탄소를 지중 또는 해양에 폐기하는 것이 아니라, 자원으로 활용하고자 하는 기술이다. 그 중 이산화탄소 광물화 전환기술은 칼슘이나 마그네슘 실리케이트와 같은 미네랄을 이용하여 탄산칼슘이나 탄산마그네슘을 생산함으로써 이산화탄소를 전환시키는 화학반응과 관련된 것이다. 즉, 이산화탄소의 광물화 전환기술은 산업체에서 포집되거나 배출되는 이산화탄소를 산화물 및 수산화물 형태의 알칼리 금속 및 알칼리 토금속 성분을 함유한 천연 광물 또는 산업체에서 배출되는 무기계 순환 자원(제강 슬래그, 플라이 애쉬, 폐콘크리트, 폐시멘트 등)과 반응시켜 탄산칼슘(CaCO3) 및 탄산마그네슘(MgCO3) 등의 탄산염 광물로 만들어 이산화탄소를 안정하게 고정화 또는 저장시키는 기술이다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->반면에 이산화탄소 전환 및 재이용 기술은 이산화탄소를 지중 또는 해양에 폐기하는 것이 아니라, 자원으로 활용하고자 하는 기술이다. 그 중 이산화탄소 광물화 전환기술은 칼슘이나 마그네슘 실리케이트와 같은 미네랄을 이용하여 탄산칼슘이나 탄산마그네슘을 생산함으로써 이산화탄소를 전환시키는 화학반응과 관련된 것이다. 즉, 이산화탄소의 광물화 전환기술은 산업체에서 포집되거나 배출되는 이산화탄소를 산화물 및 수산화물 형태의 알칼리 금속 및 알칼리 토금속 성분을 함유한 천연 광물 또는 산업체에서 배출되는 무기계 순환 자원(제강 슬래그, 플라이 애쉬, 폐콘크리트, 폐시멘트 등)과 반응시켜 탄산칼슘(CaCO3) 및 탄산마그네슘(MgCO3) 등의 탄산염 광물로 만들어 이산화탄소를 안정하게 고정화 또는 저장시키는 기술이다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 반면에 이산화탄소 전환 및 재이용 기술은 이산화탄소를 지중 또는 해양에 폐기하는 것이 아니라, 자원으로 활용하고자 하는 기술이다.그 중 이산화탄소 광물화 전환기술은 칼슘이나 마그네슘 실리케이트와 같은 미네랄을 이용하여 탄산칼슘이나 탄산마그네슘을 생산함으로써 이산화탄소를 전환시키는 화학반응과 관련된 것이다.즉, 이산화탄소의 광물화 전환기술은 산업체에서 포집되거나 배출되는 이산화탄소를 산화물 및 수산화물 형태의 알칼리 금속 및 알칼리 토금속 성분을 함유한 천연 광물 또는 산업체에서 배출되는 무기계 순환 자원(제강 슬래그, 플라이 애쉬, 폐콘크리트, 폐시멘트 등)과 반응시켜 탄산칼슘(CaCO3) 및 탄산마그네슘(MgCO3) 등의 탄산염 광물로 만들어 이산화탄소를 안정하게 고정화 또는 저장시키는 기술이다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>반면에 이산화탄소 전환 및 재이용 기술은 이산화탄소를 지중 또는 해양에 폐기하는 것이 아니라, 자원으로 활용하고자 하는 기술이다.그 중 이산화탄소 광물화 전환기술은 칼슘이나 마그네슘 실리케이트와 같은 미네랄을 이용하여 탄산칼슘이나 탄산마그네슘을 생산함으로써 이산화탄소를 전환시키는 화학반응과 관련된 것이다.즉, 이산화탄소의 광물화 전환기술은 산업체에서 포집되거나 배출되는 이산화탄소를 산화물 및 수산화물 형태의 알칼리 금속 및 알칼리 토금속 성분을 함유한 천연 광물 또는 산업체에서 배출되는 무기계 순환 자원(제강 슬래그, 플라이 애쉬, 폐콘크리트, 폐시멘트 등)과 반응시켜 탄산칼슘(CaCO3) 및 탄산마그네슘(MgCO3) 등의 탄산염 광물로 만들어 이산화탄소를 안정하게 고정화 또는 저장시키는 기술이다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_144212_178173.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_144212_178173.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_151022_911073)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 한편, 이산화탄소의 흡수 및 및 전환을 통한 유용 물질 생산을 목적으로 효소(enzyme)를 활용할 수 있다. 효소는 생체 내에서 화학 반응을 가속화시키는 단백질인 생물학적 촉매(biocatalyst)로서 산업 분야는 물론이고, 최근에는 화장품, 제약, 바이오센서 등 다양한 분야에서 널리 응용되고 있다. 이산화탄소 흡수 및 전환을 위해 이용될 수 있는 효소로는 탄산무수화효소(carbonic anhydrase)가 있다. 탄산무수화효소(carbonic anhydrase)는 내부에 아연을 포함하고 있는 금속 효소(metalloenzyme)로서, 포유 동물의 조직이나 식물, 녹조류 등에 존재한다고 알려져 있으며, 이산화탄소의 수화 반응을 촉매화하는 역할을 한다. 대기 중의 이산화탄소는 다음의 반응식과 같이 물에 용해되어 탄산을 형성하고 최종적으로는 탄산 이온(CO32 -)의 형태로 존재하게 되는데, 여기에 금속 양이온이 존재할 경우 침전을 형성하게 된다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 한편, 이산화탄소의 흡수 및 및 전환을 통한 유용 물질 생산을 목적으로 효소(enzyme)를 활용할 수 있다. 효소는 생체 내에서 화학 반응을 가속화시키는 단백질인 생물학적 촉매(biocatalyst)로서 산업 분야는 물론이고, 최근에는 화장품, 제약, 바이오센서 등 다양한 분야에서 널리 응용되고 있다. 이산화탄소 흡수 및 전환을 위해 이용될 수 있는 효소로는 탄산무수화효소(carbonic anhydrase)가 있다. 탄산무수화효소(carbonic anhydrase)는 내부에 아연을 포함하고 있는 금속 효소(metalloenzyme)로서, 포유 동물의 조직이나 식물, 녹조류 등에 존재한다고 알려져 있으며, 이산화탄소의 수화 반응을 촉매화하는 역할을 한다. 대기 중의 이산화탄소는 다음의 반응식과 같이 물에 용해되어 탄산을 형성하고 최종적으로는 탄산 이온(CO32 -)의 형태로 존재하게 되는데, 여기에 금속 양이온이 존재할 경우 침전을 형성하게 된다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->한편, 이산화탄소의 흡수 및 및 전환을 통한 유용 물질 생산을 목적으로 효소(enzyme)를 활용할 수 있다. 효소는 생체 내에서 화학 반응을 가속화시키는 단백질인 생물학적 촉매(biocatalyst)로서 산업 분야는 물론이고, 최근에는 화장품, 제약, 바이오센서 등 다양한 분야에서 널리 응용되고 있다. 이산화탄소 흡수 및 전환을 위해 이용될 수 있는 효소로는 탄산무수화효소(carbonic anhydrase)가 있다. 탄산무수화효소(carbonic anhydrase)는 내부에 아연을 포함하고 있는 금속 효소(metalloenzyme)로서, 포유 동물의 조직이나 식물, 녹조류 등에 존재한다고 알려져 있으며, 이산화탄소의 수화 반응을 촉매화하는 역할을 한다. 대기 중의 이산화탄소는 다음의 반응식과 같이 물에 용해되어 탄산을 형성하고 최종적으로는 탄산 이온(CO32 -)의 형태로 존재하게 되는데, 여기에 금속 양이온이 존재할 경우 침전을 형성하게 된다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 한편, 이산화탄소의 흡수 및 및 전환을 통한 유용 물질 생산을 목적으로 효소(enzyme)를 활용할 수 있다.효소는 생체 내에서 화학 반응을 가속화시키는 단백질인 생물학적 촉매(biocatalyst)로서 산업 분야는 물론이고, 최근에는 화장품, 제약, 바이오센서 등 다양한 분야에서 널리 응용되고 있다.이산화탄소 흡수 및 전환을 위해 이용될 수 있는 효소로는 탄산무수화효소(carbonic anhydrase)가 있다.탄산무수화효소(carbonic anhydrase)는 내부에 아연을 포함하고 있는 금속 효소(metalloenzyme)로서, 포유 동물의 조직이나 식물, 녹조류 등에 존재한다고 알려져 있으며, 이산화탄소의 수화 반응을 촉매화하는 역할을 한다.대기 중의 이산화탄소는 다음의 반응식과 같이 물에 용해되어 탄산을 형성하고 최종적으로는 탄산 이온(CO32 -)의 형태로 존재하게 되는데, 여기에 금속 양이온이 존재할 경우 침전을 형성하게 된다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>한편, 이산화탄소의 흡수 및 및 전환을 통한 유용 물질 생산을 목적으로 효소(enzyme)를 활용할 수 있다.효소는 생체 내에서 화학 반응을 가속화시키는 단백질인 생물학적 촉매(biocatalyst)로서 산업 분야는 물론이고, 최근에는 화장품, 제약, 바이오센서 등 다양한 분야에서 널리 응용되고 있다.이산화탄소 흡수 및 전환을 위해 이용될 수 있는 효소로는 탄산무수화효소(carbonic anhydrase)가 있다.탄산무수화효소(carbonic anhydrase)는 내부에 아연을 포함하고 있는 금속 효소(metalloenzyme)로서, 포유 동물의 조직이나 식물, 녹조류 등에 존재한다고 알려져 있으며, 이산화탄소의 수화 반응을 촉매화하는 역할을 한다.대기 중의 이산화탄소는 다음의 반응식과 같이 물에 용해되어 탄산을 형성하고 최종적으로는 탄산 이온(CO32 -)의 형태로 존재하게 되는데, 여기에 금속 양이온이 존재할 경우 침전을 형성하게 된다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_151022_911073.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_151022_911073.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_165202_144073)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 여기서 이산화탄소가 수화되는 반응인 단계 2 및 단계 3이 율속 단계(rate-determining step)로 작용하게 되는데 이 반응은 탄산무수화효소의 존재 하에 가속화될 수 있다. 또한, 이렇게 이산화탄소의 포집을 촉매화 한 후 얻어지는 최종 형태인 탄산 이온은 칼슘이온(Ca2 +), 마그네슘 이온(Mg2 +), 망간이온(Mn2 +), 철이온(Fe2 +) 등의 금속 양이온의 존재 하에 탄산칼슘(CaCO3), 탄산마그네슘(MgCO3), 탄산망간(MnCO3), 또는 탄산철(FeCO3) 등 다양한 탄산염으로 전환될 수 있고, 이 화학물질들은 산업적으로 다방면에서 활용할 수 있게 된다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 여기서 이산화탄소가 수화되는 반응인 단계 2 및 단계 3이 율속 단계(rate-determining step)로 작용하게 되는데 이 반응은 탄산무수화효소의 존재 하에 가속화될 수 있다. 또한, 이렇게 이산화탄소의 포집을 촉매화 한 후 얻어지는 최종 형태인 탄산 이온은 칼슘이온(Ca2 +), 마그네슘 이온(Mg2 +), 망간이온(Mn2 +), 철이온(Fe2 +) 등의 금속 양이온의 존재 하에 탄산칼슘(CaCO3), 탄산마그네슘(MgCO3), 탄산망간(MnCO3), 또는 탄산철(FeCO3) 등 다양한 탄산염으로 전환될 수 있고, 이 화학물질들은 산업적으로 다방면에서 활용할 수 있게 된다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->여기서 이산화탄소가 수화되는 반응인 단계 2 및 단계 3이 율속 단계(rate-determining step)로 작용하게 되는데 이 반응은 탄산무수화효소의 존재 하에 가속화될 수 있다. 또한, 이렇게 이산화탄소의 포집을 촉매화 한 후 얻어지는 최종 형태인 탄산 이온은 칼슘이온(Ca2 +), 마그네슘 이온(Mg2 +), 망간이온(Mn2 +), 철이온(Fe2 +) 등의 금속 양이온의 존재 하에 탄산칼슘(CaCO3), 탄산마그네슘(MgCO3), 탄산망간(MnCO3), 또는 탄산철(FeCO3) 등 다양한 탄산염으로 전환될 수 있고, 이 화학물질들은 산업적으로 다방면에서 활용할 수 있게 된다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 여기서 이산화탄소가 수화되는 반응인 단계 2 및 단계 3이 율속 단계(rate-determining step)로 작용하게 되는데 이 반응은 탄산무수화효소의 존재 하에 가속화될 수 있다.또한, 이렇게 이산화탄소의 포집을 촉매화 한 후 얻어지는 최종 형태인 탄산 이온은 칼슘이온(Ca2 +), 마그네슘 이온(Mg2 +), 망간이온(Mn2 +), 철이온(Fe2 +) 등의 금속 양이온의 존재 하에 탄산칼슘(CaCO3), 탄산마그네슘(MgCO3), 탄산망간(MnCO3), 또는 탄산철(FeCO3) 등 다양한 탄산염으로 전환될 수 있고, 이 화학물질들은 산업적으로 다방면에서 활용할 수 있게 된다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>여기서 이산화탄소가 수화되는 반응인 단계 2 및 단계 3이 율속 단계(rate-determining step)로 작용하게 되는데 이 반응은 탄산무수화효소의 존재 하에 가속화될 수 있다.또한, 이렇게 이산화탄소의 포집을 촉매화 한 후 얻어지는 최종 형태인 탄산 이온은 칼슘이온(Ca2 +), 마그네슘 이온(Mg2 +), 망간이온(Mn2 +), 철이온(Fe2 +) 등의 금속 양이온의 존재 하에 탄산칼슘(CaCO3), 탄산마그네슘(MgCO3), 탄산망간(MnCO3), 또는 탄산철(FeCO3) 등 다양한 탄산염으로 전환될 수 있고, 이 화학물질들은 산업적으로 다방면에서 활용할 수 있게 된다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_165202_144073.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_165202_144073.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_165544_015135)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 탄산무수화효소를 이용한 이산화탄소의 광물화 전환기술과 관련하여, 대한민국 등록특허공보 제10-1249734호(선행기술 1)에는 용출액이 포함된 용출반응기 내에 칼슘을 포함하는 탄산화 원료 물질을 장입하여 칼슘 이온을 용출하는 제1 단계와, 상기 칼슘 이온이 용출된 상등액을 여과하여 탄산화 반응기에 유입하는 제2 단계와, 탄산무수화효소가 용해된 탄산무수화효소 수용액에 이산화탄소를 용해시켜 상기 탄산무수화효소 수용액 및 상기 이산화탄소의 혼합액을 형성한 후, 상기 혼합액을 상기 탄산화 반응기 내에 주입하여 탄산화 반응을 촉진시킴으로써 탄산칼슘을 생성하는 제3 단계를 포함하는 광물 탄산화 방법이 개시되어 있다. 그러나, 상기 선행기술 1은 이산화탄소를 탄산 이온으로 전환시키는 반응과 탄산 이온을 탄산염 화합물로 변환시키는 반응이 별도로 이루어지기 때문에 설비가 복잡하고, 아울러 탄산칼슘이 형성된 용액을 여과 및 농축하여 탄산칼슘을 추출하는 경우 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다. 또한, 대한민국 등록특허공보 제10-1424605호(선행기술 2)에는 서열번호 1, 서열번호 3, 또는 서열번호 5의 아미노산 서열로 이루어진 나이세리아 고노로에아에 (Neisseria gonorrhoeae) 유래의 재조합 탄산무수화효소(carbonic anhydrase)를 코딩하는 핵산을 포함하는 벡터로 형질전환되고, 상기 재조합 탄산무수화효소가 세포질(cytoplasm), 세포 간극(periplasmic space) 또는 세포 표면(cell surface)에 발현된 형질전환체의 전세포(whole cell); 및 상기 전세포의 세포 파쇄액, 또는 상기 세포 파쇄액의 전세포 분액, 수용성 분액, 세포질 분액, 세포 간극 분액 또는 세포막 분액으로 이루어진 군에서 선택된 1종 이상을 포함하는 이산화탄소 포집용 조성물을 제조하는 단계와 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계를 포함하는 탄산염 또는 중탄산염을 제조하는 방법이 개시되어 있다. 이때, 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계는 금속 양이온을 먼저 공급한 후 이산화탄소를 순차적으로 공급하거나, 이산화탄소를 먼저 공급한 후 금속 양이온을 순차적으로 공급하거나, 또는 금속 양이온 및 이산화탄소를 동시에 공급하는 것으로 구성될 수 있다. 그러나, 상기 선행기술 2에서도 반응 생성물을 분리하는 단계에서 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 탄산무수화효소를 이용한 이산화탄소의 광물화 전환기술과 관련하여, 대한민국 등록특허공보 제10-1249734호(선행기술 1)에는 용출액이 포함된 용출반응기 내에 칼슘을 포함하는 탄산화 원료 물질을 장입하여 칼슘 이온을 용출하는 제1 단계와, 상기 칼슘 이온이 용출된 상등액을 여과하여 탄산화 반응기에 유입하는 제2 단계와, 탄산무수화효소가 용해된 탄산무수화효소 수용액에 이산화탄소를 용해시켜 상기 탄산무수화효소 수용액 및 상기 이산화탄소의 혼합액을 형성한 후, 상기 혼합액을 상기 탄산화 반응기 내에 주입하여 탄산화 반응을 촉진시킴으로써 탄산칼슘을 생성하는 제3 단계를 포함하는 광물 탄산화 방법이 개시되어 있다. 그러나, 상기 선행기술 1은 이산화탄소를 탄산 이온으로 전환시키는 반응과 탄산 이온을 탄산염 화합물로 변환시키는 반응이 별도로 이루어지기 때문에 설비가 복잡하고, 아울러 탄산칼슘이 형성된 용액을 여과 및 농축하여 탄산칼슘을 추출하는 경우 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다. 또한, 대한민국 등록특허공보 제10-1424605호(선행기술 2)에는 서열번호 1, 서열번호 3, 또는 서열번호 5의 아미노산 서열로 이루어진 나이세리아 고노로에아에 (Neisseria gonorrhoeae) 유래의 재조합 탄산무수화효소(carbonic anhydrase)를 코딩하는 핵산을 포함하는 벡터로 형질전환되고, 상기 재조합 탄산무수화효소가 세포질(cytoplasm), 세포 간극(periplasmic space) 또는 세포 표면(cell surface)에 발현된 형질전환체의 전세포(whole cell); 및 상기 전세포의 세포 파쇄액, 또는 상기 세포 파쇄액의 전세포 분액, 수용성 분액, 세포질 분액, 세포 간극 분액 또는 세포막 분액으로 이루어진 군에서 선택된 1종 이상을 포함하는 이산화탄소 포집용 조성물을 제조하는 단계와 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계를 포함하는 탄산염 또는 중탄산염을 제조하는 방법이 개시되어 있다. 이때, 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계는 금속 양이온을 먼저 공급한 후 이산화탄소를 순차적으로 공급하거나, 이산화탄소를 먼저 공급한 후 금속 양이온을 순차적으로 공급하거나, 또는 금속 양이온 및 이산화탄소를 동시에 공급하는 것으로 구성될 수 있다. 그러나, 상기 선행기술 2에서도 반응 생성물을 분리하는 단계에서 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->탄산무수화효소를 이용한 이산화탄소의 광물화 전환기술과 관련하여, 대한민국 등록특허공보 제10-1249734호(선행기술 1)에는 용출액이 포함된 용출반응기 내에 칼슘을 포함하는 탄산화 원료 물질을 장입하여 칼슘 이온을 용출하는 제1 단계와, 상기 칼슘 이온이 용출된 상등액을 여과하여 탄산화 반응기에 유입하는 제2 단계와, 탄산무수화효소가 용해된 탄산무수화효소 수용액에 이산화탄소를 용해시켜 상기 탄산무수화효소 수용액 및 상기 이산화탄소의 혼합액을 형성한 후, 상기 혼합액을 상기 탄산화 반응기 내에 주입하여 탄산화 반응을 촉진시킴으로써 탄산칼슘을 생성하는 제3 단계를 포함하는 광물 탄산화 방법이 개시되어 있다. 그러나, 상기 선행기술 1은 이산화탄소를 탄산 이온으로 전환시키는 반응과 탄산 이온을 탄산염 화합물로 변환시키는 반응이 별도로 이루어지기 때문에 설비가 복잡하고, 아울러 탄산칼슘이 형성된 용액을 여과 및 농축하여 탄산칼슘을 추출하는 경우 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다. 또한, 대한민국 등록특허공보 제10-1424605호(선행기술 2)에는 서열번호 1, 서열번호 3, 또는 서열번호 5의 아미노산 서열로 이루어진 나이세리아 고노로에아에 (Neisseria gonorrhoeae) 유래의 재조합 탄산무수화효소(carbonic anhydrase)를 코딩하는 핵산을 포함하는 벡터로 형질전환되고, 상기 재조합 탄산무수화효소가 세포질(cytoplasm), 세포 간극(periplasmic space) 또는 세포 표면(cell surface)에 발현된 형질전환체의 전세포(whole cell); 및 상기 전세포의 세포 파쇄액, 또는 상기 세포 파쇄액의 전세포 분액, 수용성 분액, 세포질 분액, 세포 간극 분액 또는 세포막 분액으로 이루어진 군에서 선택된 1종 이상을 포함하는 이산화탄소 포집용 조성물을 제조하는 단계와 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계를 포함하는 탄산염 또는 중탄산염을 제조하는 방법이 개시되어 있다. 이때, 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계는 금속 양이온을 먼저 공급한 후 이산화탄소를 순차적으로 공급하거나, 이산화탄소를 먼저 공급한 후 금속 양이온을 순차적으로 공급하거나, 또는 금속 양이온 및 이산화탄소를 동시에 공급하는 것으로 구성될 수 있다. 그러나, 상기 선행기술 2에서도 반응 생성물을 분리하는 단계에서 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 탄산무수화효소를 이용한 이산화탄소의 광물화 전환기술과 관련하여, 대한민국 등록특허공보 제10-1249734호(선행기술 1)에는 용출액이 포함된 용출반응기 내에 칼슘을 포함하는 탄산화 원료 물질을 장입하여 칼슘 이온을 용출하는 제1 단계와, 상기 칼슘 이온이 용출된 상등액을 여과하여 탄산화 반응기에 유입하는 제2 단계와, 탄산무수화효소가 용해된 탄산무수화효소 수용액에 이산화탄소를 용해시켜 상기 탄산무수화효소 수용액 및 상기 이산화탄소의 혼합액을 형성한 후, 상기 혼합액을 상기 탄산화 반응기 내에 주입하여 탄산화 반응을 촉진시킴으로써 탄산칼슘을 생성하는 제3 단계를 포함하는 광물 탄산화 방법이 개시되어 있다.그러나, 상기 선행기술 1은 이산화탄소를 탄산 이온으로 전환시키는 반응과 탄산 이온을 탄산염 화합물로 변환시키는 반응이 별도로 이루어지기 때문에 설비가 복잡하고, 아울러 탄산칼슘이 형성된 용액을 여과 및 농축하여 탄산칼슘을 추출하는 경우 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다.또한, 대한민국 등록특허공보 제10-1424605호(선행기술 2)에는 서열번호 1, 서열번호 3, 또는 서열번호 5의 아미노산 서열로 이루어진 나이세리아 고노로에아에 (Neisseria gonorrhoeae) 유래의 재조합 탄산무수화효소(carbonic anhydrase)를 코딩하는 핵산을 포함하는 벡터로 형질전환되고, 상기 재조합 탄산무수화효소가 세포질(cytoplasm), 세포 간극(periplasmic space) 또는 세포 표면(cell surface)에 발현된 형질전환체의 전세포(whole cell); 및 상기 전세포의 세포 파쇄액, 또는 상기 세포 파쇄액의 전세포 분액, 수용성 분액, 세포질 분액, 세포 간극 분액 또는 세포막 분액으로 이루어진 군에서 선택된 1종 이상을 포함하는 이산화탄소 포집용 조성물을 제조하는 단계와 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계를 포함하는 탄산염 또는 중탄산염을 제조하는 방법이 개시되어 있다.이때, 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계는 금속 양이온을 먼저 공급한 후 이산화탄소를 순차적으로 공급하거나, 이산화탄소를 먼저 공급한 후 금속 양이온을 순차적으로 공급하거나, 또는 금속 양이온 및 이산화탄소를 동시에 공급하는 것으로 구성될 수 있다.그러나, 상기 선행기술 2에서도 반응 생성물을 분리하는 단계에서 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>탄산무수화효소를 이용한 이산화탄소의 광물화 전환기술과 관련하여, 대한민국 등록특허공보 제10-1249734호(선행기술 1)에는 용출액이 포함된 용출반응기 내에 칼슘을 포함하는 탄산화 원료 물질을 장입하여 칼슘 이온을 용출하는 제1 단계와, 상기 칼슘 이온이 용출된 상등액을 여과하여 탄산화 반응기에 유입하는 제2 단계와, 탄산무수화효소가 용해된 탄산무수화효소 수용액에 이산화탄소를 용해시켜 상기 탄산무수화효소 수용액 및 상기 이산화탄소의 혼합액을 형성한 후, 상기 혼합액을 상기 탄산화 반응기 내에 주입하여 탄산화 반응을 촉진시킴으로써 탄산칼슘을 생성하는 제3 단계를 포함하는 광물 탄산화 방법이 개시되어 있다.그러나, 상기 선행기술 1은 이산화탄소를 탄산 이온으로 전환시키는 반응과 탄산 이온을 탄산염 화합물로 변환시키는 반응이 별도로 이루어지기 때문에 설비가 복잡하고, 아울러 탄산칼슘이 형성된 용액을 여과 및 농축하여 탄산칼슘을 추출하는 경우 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다.또한, 대한민국 등록특허공보 제10-1424605호(선행기술 2)에는 서열번호 1, 서열번호 3, 또는 서열번호 5의 아미노산 서열로 이루어진 나이세리아 고노로에아에 (Neisseria gonorrhoeae) 유래의 재조합 탄산무수화효소(carbonic anhydrase)를 코딩하는 핵산을 포함하는 벡터로 형질전환되고, 상기 재조합 탄산무수화효소가 세포질(cytoplasm), 세포 간극(periplasmic space) 또는 세포 표면(cell surface)에 발현된 형질전환체의 전세포(whole cell); 및 상기 전세포의 세포 파쇄액, 또는 상기 세포 파쇄액의 전세포 분액, 수용성 분액, 세포질 분액, 세포 간극 분액 또는 세포막 분액으로 이루어진 군에서 선택된 1종 이상을 포함하는 이산화탄소 포집용 조성물을 제조하는 단계와 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계를 포함하는 탄산염 또는 중탄산염을 제조하는 방법이 개시되어 있다.이때, 상기 이산화탄소 포집용 조성물에 금속 양이온 및 이산화탄소를 공급하는 단계는 금속 양이온을 먼저 공급한 후 이산화탄소를 순차적으로 공급하거나, 이산화탄소를 먼저 공급한 후 금속 양이온을 순차적으로 공급하거나, 또는 금속 양이온 및 이산화탄소를 동시에 공급하는 것으로 구성될 수 있다.그러나, 상기 선행기술 2에서도 반응 생성물을 분리하는 단계에서 탄산무수화효소를 재활용하는 것이 어려워 경제성이 떨어지는 문제가 있다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_165544_015135.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_165544_015135.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210527_170928_619961)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Сегодня ученые представили первые результаты этого эксперимента – как оказалось, закачка "газировки" в скважину была сверхэффективным способом избавления от СО2 – почти все запасы углекислоты (более 95%) были поглощены породами Исландии и превратились в карбонаты менее чем за два года, а не за тысячи лет.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Сегодня ученые представили первые результаты этого эксперимента – как оказалось, закачка "газировки" в скважину была сверхэффективным способом избавления от СО2 – почти все запасы углекислоты (более 95%) были поглощены породами Исландии и превратились в карбонаты менее чем за два года, а не за тысячи лет.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Сегодня ученые представили первые результаты этого эксперимента – как оказалось, закачка "газировки" в скважину была сверхэффективным способом избавления от СО2 – почти все запасы углекислоты (более 95%) были поглощены породами Исландии и превратились в карбонаты менее чем за два года, а не за тысячи лет.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Сегодня ученые представили первые результаты этого эксперимента – как оказалось, закачка "газировки" в скважину была сверхэффективным способом избавления от СО2 – почти все запасы углекислоты (более 95%) были поглощены породами Исландии и превратились в карбонаты менее чем за два года, а не за тысячи лет.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_170928_619961.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210527_170928_619961.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
