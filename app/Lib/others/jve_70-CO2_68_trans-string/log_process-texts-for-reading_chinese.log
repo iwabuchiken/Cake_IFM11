@@ -12837,3 +12837,1929 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_151430_895931.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210526_151430_895931.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210528_131525_332592)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(Carbon Capture Utilization and Storage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => n C
+            [1] => e U
+            [2] => n a
+            [3] => d S
+        )
+
+    [1] => Array
+        (
+            [0] => n
+            [1] => e
+            [2] => n
+            [3] => d
+        )
+
+    [2] => Array
+        (
+            [0] => C
+            [1] => U
+            [2] => a
+            [3] => S
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(CarbonCaptureUtilizationandStorage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(CarbonCaptureUtilizationandStorage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>北极星大气网讯:摘要：随着全球工业化进程的加快，二氧化碳的大量排放导致气候变暖。如何有效解决碳排放问题已成为全球的研究热点，二氧化碳捕集封存(CarbonCaptureUtilizationandStorage,CCUS)技术的应用可有效改善碳排放问题。目前，全球许多国家和地区已建有不同规模的CCUS项目，对CCUS技术和项目进行了系统总结。分析结果表明，CCUS项目在解决碳排放问题上有着较好的工业前景。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_131525_332592.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_131525_332592.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210528_132115_448831)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 1 引言
+
+    [1] => 
+
+    [2] => 碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+
+    [3] => 
+
+    [4] => 国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '1 引言
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 1 引言
+
+    [1] => 
+    [2] => 碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+
+    [3] => 
+    [4] => 国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '1 引言
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 1 引言
+
+    [1] => 
+    [2] => 碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+    [3] => 
+    [4] => 国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '1 引言
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。I
+            [2] => �。2
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => I
+            [2] => 2
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => %。D
+        )
+
+    [1] => Array
+        (
+            [0] => %。
+        )
+
+    [2] => Array
+        (
+            [0] => D
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 1 引言
+
+    [1] => 
+    [2] => 碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+    [3] => 
+    [4] => 国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '1 引言
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 1 �
+        )
+
+    [1] => Array
+        (
+            [0] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+1引言
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(Intergovernmental Panel on Climate Change，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS (Carbon Capture Utilization and Storage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => l P
+            [1] => l o
+            [2] => n C
+            [3] => e C
+            [4] => S (
+            [5] => n C
+            [6] => e U
+            [7] => n a
+            [8] => d S
+        )
+
+    [1] => Array
+        (
+            [0] => l
+            [1] => l
+            [2] => n
+            [3] => e
+            [4] => S
+            [5] => n
+            [6] => e
+            [7] => n
+            [8] => d
+        )
+
+    [2] => Array
+        (
+            [0] => P
+            [1] => o
+            [2] => C
+            [3] => C
+            [4] => (
+            [5] => C
+            [6] => U
+            [7] => a
+            [8] => S
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 1引言
+
+    [1] => 
+    [2] => 碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+    [3] => 
+    [4] => 国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>1引言
+碳减排不仅关乎国家政策的规划承诺，更与我们赖以生存的地球环境息息相关。早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_132115_448831.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_132115_448831.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210528_132707_366219)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+
+    [1] => 
+
+    [2] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+
+    [1] => 
+    [2] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+    [1] => 
+    [2] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。2
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => 2
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+    [1] => 
+    [2] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。
+    [1] => 
+    [2] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_132707_366219.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_132707_366219.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210528_134001_725728)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_134001_725728.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_134001_725728.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210528_134056_126813)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及炼化厂等都是CO2排放大户。针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_134056_126813.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_134056_126813.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210528_134106_936989)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 2 CCUS技术概述
+
+    [1] => 
+
+    [2] => 2.1 碳捕集技术
+
+    [3] => 
+
+    [4] => CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。
+
+    [5] => 
+
+    [6] => 燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '2 CCUS技术概述
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '2.1 碳捕集技术
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : 'CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 2 CCUS技术概述
+
+    [1] => 
+    [2] => 2.1 碳捕集技术
+
+    [3] => 
+    [4] => CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。
+
+    [5] => 
+    [6] => 燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '2 CCUS技术概述
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '2.1 碳捕集技术
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : 'CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 2 CCUS技术概述
+
+    [1] => 
+    [2] => 2.1 碳捕集技术
+
+    [3] => 
+    [4] => CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。
+    [5] => 
+    [6] => 燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '2 CCUS技术概述
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '2.1 碳捕集技术
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : 'CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 2 CCUS技术概述
+
+    [1] => 
+    [2] => 2.1 碳捕集技术
+
+    [3] => 
+    [4] => CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。
+    [5] => 
+    [6] => 燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '2 CCUS技术概述
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 2 C
+        )
+
+    [1] => Array
+        (
+            [0] => 2
+        )
+
+    [2] => Array
+        (
+            [0] => C
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+2CCUS技术概述
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '2.1 碳捕集技术
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 1 �
+        )
+
+    [1] => Array
+        (
+            [0] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+2.1碳捕集技术
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : 'CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(Integrated Gasification Combined Cycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/t CO2，尚需要更多的项目来进行验证。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => d G
+            [1] => n C
+            [2] => d C
+            [3] => t C
+        )
+
+    [1] => Array
+        (
+            [0] => d
+            [1] => n
+            [2] => d
+            [3] => t
+        )
+
+    [2] => Array
+        (
+            [0] => G
+            [1] => C
+            [2] => C
+            [3] => C
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(IntegratedGasificationCombinedCycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/tCO2，尚需要更多的项目来进行验证。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 2CCUS技术概述
+
+    [1] => 
+    [2] => 2.1碳捕集技术
+
+    [3] => 
+    [4] => CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。
+    [5] => 
+    [6] => 燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(IntegratedGasificationCombinedCycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/tCO2，尚需要更多的项目来进行验证。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>2CCUS技术概述
+2.1碳捕集技术
+CO2捕集的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。燃烧前捕集是相对成本较低、效率较高的一种方法。此方法将化石燃料气化成合成气(主要成分为H2和CO)，然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。但此技术局限于基于煤气化联合发电装置(IntegratedGasificationCombinedCycle,IGCC)，因此以此技术投产的项目较少，燃烧前捕集CO2的成本大约为20美元/tCO2，尚需要更多的项目来进行验证。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_134106_936989.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_134106_936989.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210528_140335_614316)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。
+
+    [1] => 
+
+    [2] => 由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。
+
+    [1] => 
+    [2] => 由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。
+    [1] => 
+    [2] => 由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。
+    [1] => 
+    [2] => 由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98 vol%，提高了CO2捕集率。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 8 v
+        )
+
+    [1] => Array
+        (
+            [0] => 8
+        )
+
+    [2] => Array
+        (
+            [0] => v
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98vol%，提高了CO2捕集率。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/t CO2。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => t C
+        )
+
+    [1] => Array
+        (
+            [0] => t
+        )
+
+    [2] => Array
+        (
+            [0] => C
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/tCO2。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98vol%，提高了CO2捕集率。
+    [1] => 
+    [2] => 由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/tCO2。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些惰性组分。水蒸气冷凝后，通过低温闪蒸提纯CO2，提纯后的CO2浓度可达80%～98vol%，提高了CO2捕集率。由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。常用的方法如化学吸收法、膜分离法、物理吸附法等。化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/tCO2。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_140335_614316.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_140335_614316.txt
+ 

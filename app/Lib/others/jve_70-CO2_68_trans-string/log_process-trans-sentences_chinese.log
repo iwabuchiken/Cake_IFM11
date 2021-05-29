@@ -2950,3 +2950,1270 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210526_151351_360302.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210526_151351_360302.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210528_132259_389821)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 1引言
+    [1] => 
+    [2] => 
+    [3] => 碳减排不仅
+    [4] => 关乎[-hu1:about
+    [5] => 国家政策的规划承诺，更与我们
+    [6] => 赖以[lai4-:rely-on
+    [7] => 生存的地球环境息息相关[:closely-*
+    [8] => 。
+    [9] => 
+    [10] => 早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。
+    [11] => 
+    [12] => IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。
+    [13] => 
+    [14] => 2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+    [15] => 
+    [16] => 
+    [17] => 
+    [18] => 国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。
+    [19] => 
+    [20] => Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)1引言
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)碳减排不仅
+[process-trans-sentences_chinese.php : 216] match => 关乎[-hu1:about
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国家政策的规划承诺，更与我们
+[process-trans-sentences_chinese.php : 216] match => 赖以[lai4-:rely-on
+[process-trans-sentences_chinese.php : 216] match => 生存的地球环境息息相关[:closely-*
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_132259_396821.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_132259_396821.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210528_132314_015014)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 1引言
+    [1] => 
+    [2] => 
+    [3] => 碳减排不仅
+    [4] => 关乎[-hu1:about
+    [5] => 国家政策的规划承诺，更与我们
+    [6] => 赖以[lai4-:rely-on
+    [7] => 生存的地球环境
+    [8] => 息息相关[:closely-*
+    [9] => 。
+    [10] => 
+    [11] => 早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。
+    [12] => 
+    [13] => IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。
+    [14] => 
+    [15] => 2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+    [16] => 
+    [17] => 
+    [18] => 
+    [19] => 国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。
+    [20] => 
+    [21] => Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)1引言
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)碳减排不仅
+[process-trans-sentences_chinese.php : 216] match => 关乎[-hu1:about
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国家政策的规划承诺，更与我们
+[process-trans-sentences_chinese.php : 216] match => 赖以[lai4-:rely-on
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)生存的地球环境
+[process-trans-sentences_chinese.php : 216] match => 息息相关[:closely-*
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Dutcher等通过胺基技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_132314_029016.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_132314_029016.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210528_132631_083350)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 1引言
+    [1] => 
+    [2] => 
+    [3] => 碳减排不仅
+    [4] => 关乎[-hu1:about
+    [5] => 国家政策的规划承诺，更与我们
+    [6] => 赖以[lai4-:rely-on
+    [7] => 生存的地球环境
+    [8] => 息息相关[:closely-*
+    [9] => 。]]
+    [10] => 
+    [11] => 早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。
+    [12] => 
+    [13] => IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，]]
+    [14] => CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。]]
+    [15] => 
+    [16] => 2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。]]
+    [17] => 
+    [18] => 
+    [19] => 
+    [20] => 国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。]]
+    [21] => 
+    [22] => Dutcher等通过
+    [23] => 胺基[an4-:amino
+    [24] => 技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)1引言
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)碳减排不仅
+[process-trans-sentences_chinese.php : 216] match => 关乎[-hu1:about
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国家政策的规划承诺，更与我们
+[process-trans-sentences_chinese.php : 216] match => 赖以[lai4-:rely-on
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)生存的地球环境
+[process-trans-sentences_chinese.php : 216] match => 息息相关[:closely-*
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)早在20世纪70年代，国外就已经开始对碳捕集进行相关研究。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)IPCC(IntergovernmentalPanelonClimateChange，联合国政府间气候变化专门委员会)关于全球变暖1.5℃的特别报告指出，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CCUS(CarbonCaptureUtilizationandStorage，二氧化碳捕集封存)技术可有效改善全球气候的变化，并且明确指出CCUS技术对于实现2050年碳零排放意义重大。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2019年，二十国集团(G20)能源与环境部长级会议首次将CCUS技术纳入议题。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国外科研工作者对碳捕集已经开展大量的研究，Lee等通过固体吸收剂捕获二氧化碳(CO2)，以减少来自不同燃烧过程源的CO2排放，所用的吸附剂通过加热或减压的方式回收利用，作为捕获CO2成熟的技术，分离效率可达到90%。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Dutcher等通过
+[process-trans-sentences_chinese.php : 216] match => 胺基[an4-:amino
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)技术捕集CO2，由于反应的高度可逆性，可有效应用于工程项目。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_132631_089351.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_132631_089351.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210528_133654_622315)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。]]“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。]]《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。]]《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。]]现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及
+    [1] => 炼化[lian4-:refine
+    [2] => 厂等都是CO2排放大户。]]针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)我国对CCUS技术的研究起步较晚，自2006年开始才陆续出台关于CCUS技术的政策。]]“十一五”期间每年平均出台3项政策，“十二五”期间平均每年出台3～4项政策。]]《中国应对气候变化国家方案》《中国应对气候变化科技专项行动》《中国应对气候变化的政策与行动》白皮书等都将CCUS技术作为重点研究的技术之一。]]《“十三五”控制温室气体排放工作方案》提出，到2020年单位国内生产总值CO2排放比2015年下降18%，碳排放总量得到有效控制。2015年，巴黎气候大会上，中国承诺将于2030年左右使CO2排放达到峰值并争取尽早实现，2030年单位国内生产总值CO2排放比2005年下降60%～65%，非化石能源占一次能源消费比重达到20%左右。]]现代工业生产中CO2的排放源很多，如水泥、钢铁、电力、煤化工及
+[process-trans-sentences_chinese.php : 216] match => 炼化[lian4-:refine
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)厂等都是CO2排放大户。]]针对CO2排放问题，各个行业均进行了CO2的捕集、利用和封存方面的研究探索，每个行业又根据自身行业特点，形成了多种CO2捕集、利用和封存的技术方法。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_133654_624315.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_133654_624315.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210528_135732_992706)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 2
+    [1] => CCUS技术概述
+    [2] => 
+    [3] => 
+    [4] => 2.1碳捕集技术]]
+    [5] => 
+    [6] => 
+    [7] => CO2
+    [8] => 捕集[bu3-
+    [9] => 的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。]]
+    [10] => 
+    [11] => 
+    [12] => 
+    [13] => 燃烧前捕集是相对成本较低、效率较高的一种方法。]]
+    [14] => 
+    [15] => 此方法将化石燃料气化成合成气(主要成分为H2和CO)，]]
+    [16] => 然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。]]
+    [17] => 
+    [18] => 但此技术局限于基于煤气化联合发电装置(IntegratedGasificationCombinedCycle,IGCC)，因此以此技术投产的项目较少，]]
+    [19] => 燃烧前捕集CO2的成本大约为20美元/tCO2，尚需要更多的项目来进行验证。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CCUS技术概述
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2.1碳捕集技术]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 216] match => 捕集[bu3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的方法按照对燃料、氧化剂和燃烧产物采用的措施，可以分为燃烧前捕集、纯氧燃烧和燃烧后捕集3种，如图1所示。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)燃烧前捕集是相对成本较低、效率较高的一种方法。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)此方法将化石燃料气化成合成气(主要成分为H2和CO)，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)然后通过变换反应将CO转化为CO2，再通过溶剂吸收等方法将H2和CO2分离开对CO2进行收集。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)但此技术局限于基于煤气化联合发电装置(IntegratedGasificationCombinedCycle,IGCC)，因此以此技术投产的项目较少，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)燃烧前捕集CO2的成本大约为20美元/tCO2，尚需要更多的项目来进行验证。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_135732_997705.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_135732_997705.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210528_140934_485479)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些
+    [1] => 惰性[duo4-:inertia
+    [2] => 组分[component
+    [3] => 。水蒸气
+    [4] => 冷凝[leng3ning2:condensation
+    [5] => 后，通过低温
+    [6] => 闪蒸[shan3zheng1:flashing
+    [7] => 提纯[-chun2:purify
+    [8] => CO2，提纯后的CO2浓度可达80%～98vol%，提高了CO2捕集率。]]由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。]]相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。]]常用的方法如化学吸收法、膜[mo2
+    [9] => 分离法、物理吸附法等。]]化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/tCO2。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)富氧燃烧技术采用纯氧或者富氧将化石燃料进行燃烧，燃烧后的主要产物为CO2、水和一些
+[process-trans-sentences_chinese.php : 216] match => 惰性[duo4-:inertia
+[process-trans-sentences_chinese.php : 216] match => 组分[component
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。水蒸气
+[process-trans-sentences_chinese.php : 216] match => 冷凝[leng3ning2:condensation
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)后，通过低温
+[process-trans-sentences_chinese.php : 216] match => 闪蒸[shan3zheng1:flashing
+[process-trans-sentences_chinese.php : 216] match => 提纯[-chun2:purify
+[process-trans-sentences_chinese.php : 216] match => CO2，提纯后的CO2浓度可达80%～98vol%，提高了CO2捕集率。]]由于燃烧前捕集和富氧燃烧需要合适的材料和操作环境来满足高温要求，因此这两种技术的研究与开发和示范性项目较少。]]相比较而言，燃烧后捕集技术是当前炼厂应用较为广泛且成熟的技术，该技术具有较高的选择性和捕集率。]]常用的方法如化学吸收法、膜[mo2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)分离法、物理吸附法等。]]化学吸附法被认为是当前最有市场前景的吸附方法，在化学吸附中，胺类溶液以其吸收效果好的特点被广泛应用。以当前的技术，燃烧后捕集CO2的成本大约是40美元/tCO2。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_140934_488480.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_140934_488480.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210528_142050_400824)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => CO2-
+    [1] => Abscheidung[caputure
+    [2] => und
+    [3] => -Speicherung
+    [4] => (
+    [5] => Fachbegriffe[technical-terms
+    [6] => :
+    [7] => CO2-Sequestrierung
+    [8] => und
+    [9] => CCS
+    [10] => (englisch
+    [11] => carbon
+    [12] => dioxide
+    [13] => capture
+    [14] => and
+    [15] => storage))
+    [16] => ist
+    [17] => ein
+    [18] => Verfahren
+    [19] => zur
+    [20] => Reduzierung
+    [21] => von
+    [22] => CO2-Emissionen
+    [23] => in
+    [24] => die
+    [25] => Atmosphäre
+    [26] => durch
+    [27] => die
+    [28] => technische]]
+    [29] => Abspaltung[separation
+    [30] => am
+    [31] => Kraftwerk[power-plant
+    [32] => (End
+    [33] => of
+    [34] => pipe)
+    [35] => und
+    [36] => „
+    [37] => dauerhafte[permanent
+    [38] => “
+    [39] => Einlagerung[storage
+    [40] => in
+    [41] => unterirdische[underground
+    [42] => Lagerstätten[storage-facilities
+    [43] => .]]
+    [44] => 
+    [45] => Es
+    [46] => gibt
+    [47] => großtechnische
+    [48] => Vorhaben
+    [49] => dieser
+    [50] => Art,
+    [51] => die
+    [52] => sämtlich
+    [53] => ohne
+    [54] => Ansatz
+    [55] => zum
+    [56] => Nachweis
+    [57] => einer
+    [58] => Wirtschaftlichkeit
+    [59] => verfolgt
+    [60] => werden.
+    [61] => 
+    [62] => 
+    [63] => 
+    [64] => 
+    [65] => CO2
+    [66] => wirkt
+    [67] => in
+    [68] => der
+    [69] => Atmosphäre
+    [70] => als
+    [71] => Treibhausgas
+    [72] => und
+    [73] => ist
+    [74] => die
+    [75] => Hauptursache
+    [76] => der
+    [77] => menschengemachten
+    [78] => globalen
+    [79] => Erwärmung.
+    [80] => 
+    [81] => Das
+    [82] => Anwendungsgebiet
+    [83] => der
+    [84] => CO2-Abscheidung
+    [85] => und
+    [86] => -Speicherung
+    [87] => sollen
+    [88] => große
+    [89] => Punktquellen
+    [90] => von
+    [91] => CO2
+    [92] => werden,
+    [93] => vorrangig
+    [94] => in
+    [95] => Kraftwerken
+    [96] => mit
+    [97] => fossilen
+    [98] => Brennstoffen,
+    [99] => aber
+    [100] => auch
+    [101] => bei
+    [102] => Industrieprozessen
+    [103] => und
+    [104] => im
+    [105] => Bergbau.
+    [106] => 
+    [107] => Die
+    [108] => Verfahrensschritte
+    [109] => sind
+    [110] => die
+    [111] => Abscheidung,
+    [112] => der
+    [113] => Transport
+    [114] => (wenn
+    [115] => erforderlich)
+    [116] => und
+    [117] => die
+    [118] => geologische
+    [119] => Speicherung
+    [120] => des
+    [121] => CO2.
+    [122] => Als
+    [123] => mögliche
+    [124] => CO2-Lagerstätten
+    [125] => gelten
+    [126] => besondere
+    [127] => geologische
+    [128] => Formationen
+    [129] => wie
+    [130] => tiefe
+    [131] => salzwasserführende
+    [132] => Grundwasserleiter
+    [133] => (Aquifere)
+    [134] => oder
+    [135] => ausgeförderte
+    [136] => Erdöl-
+    [137] => und
+    [138] => Erdgaslagerstätten,
+    [139] => eventuell
+    [140] => kommen
+    [141] => ebenfalls
+    [142] => tiefe
+    [143] => Kohleflöze
+    [144] => in
+    [145] => Frage,
+    [146] => bei
+    [147] => denen
+    [148] => aber
+    [149] => der
+    [150] => sichere
+    [151] => Einschluss
+    [152] => fraglich
+    [153] => ist.[1]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-
+[process-trans-sentences_chinese.php : 216] match => Abscheidung[caputure
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)-Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(
+[process-trans-sentences_chinese.php : 216] match => Fachbegriffe[technical-terms
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0):
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Sequestrierung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CCS
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(englisch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)carbon
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dioxide
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)capture
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)and
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)storage))
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Verfahren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zur
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reduzierung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Emissionen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Atmosphäre
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)durch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)technische]]
+[process-trans-sentences_chinese.php : 216] match => Abspaltung[separation
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)am
+[process-trans-sentences_chinese.php : 216] match => Kraftwerk[power-plant
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(End
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)of
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pipe)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)„
+[process-trans-sentences_chinese.php : 216] match => dauerhafte[permanent
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)“
+[process-trans-sentences_chinese.php : 216] match => Einlagerung[storage
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 216] match => unterirdische[underground
+[process-trans-sentences_chinese.php : 216] match => Lagerstätten[storage-facilities
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Es
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gibt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)großtechnische
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Vorhaben
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dieser
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Art,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sämtlich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ohne
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Ansatz
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zum
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Nachweis
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)einer
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wirtschaftlichkeit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)verfolgt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)werden.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wirkt
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Atmosphäre
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)als
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Treibhausgas
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Hauptursache
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)menschengemachten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)globalen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erwärmung.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Das
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Anwendungsgebiet
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Abscheidung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)-Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sollen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)große
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Punktquellen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)werden,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)vorrangig
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kraftwerken
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)fossilen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Brennstoffen,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aber
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)auch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bei
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Industrieprozessen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)im
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Bergbau.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Verfahrensschritte
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sind
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Abscheidung,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Transport
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(wenn
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)erforderlich)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)geologische
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)des
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Als
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mögliche
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Lagerstätten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gelten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)besondere
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)geologische
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Formationen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)tiefe
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)salzwasserführende
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Grundwasserleiter
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(Aquifere)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)oder
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ausgeförderte
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erdöl-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erdgaslagerstätten,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)eventuell
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)kommen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ebenfalls
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)tiefe
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohleflöze
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Frage,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bei
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)denen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aber
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sichere
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Einschluss
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)fraglich
+[process-trans-sentences_chinese.php : 216] match => ist.[1]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_142050_433825.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_142050_433825.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210528_142549_750274)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => CO2-
+    [1] => Abscheidung[caputure
+    [2] => und
+    [3] => -Speicherung
+    [4] => (
+    [5] => Fachbegriffe[technical-terms
+    [6] => :
+    [7] => CO2-Sequestrierung
+    [8] => und
+    [9] => CCS
+    [10] => (englisch
+    [11] => carbon
+    [12] => dioxide
+    [13] => capture
+    [14] => and
+    [15] => storage))
+    [16] => ist
+    [17] => ein
+    [18] => Verfahren
+    [19] => zur
+    [20] => Reduzierung
+    [21] => von
+    [22] => CO2-Emissionen
+    [23] => in
+    [24] => die
+    [25] => Atmosphäre
+    [26] => durch
+    [27] => die
+    [28] => technische]]
+    [29] => Abspaltung[separation
+    [30] => am
+    [31] => Kraftwerk[power-plant
+    [32] => (End
+    [33] => of
+    [34] => pipe)
+    [35] => und
+    [36] => „
+    [37] => dauerhafte[permanent
+    [38] => “
+    [39] => Einlagerung[storage
+    [40] => in
+    [41] => unterirdische[underground
+    [42] => Lagerstätten[storage-facilities
+    [43] => .]]
+    [44] => 
+    [45] => Es
+    [46] => gibt
+    [47] => großtechnische[large-scale
+    [48] => Vorhaben[project
+    [49] => dieser
+    [50] => Art[type
+    [51] => ,
+    [52] => die
+    [53] => sämtlich
+    [54] => ohne
+    [55] => Ansatz[approach
+    [56] => zum
+    [57] => Nachweis[proof
+    [58] => einer
+    [59] => Wirtschaftlichkeit
+    [60] => verfolgt[pursued
+    [61] => werden.
+    [62] => ]]
+    [63] => 
+    [64] => 
+    [65] => 
+    [66] => 
+    [67] => CO2
+    [68] => wirkt[work
+    [69] => in
+    [70] => der
+    [71] => Atmosphäre
+    [72] => als
+    [73] => Treibhausgas
+    [74] => und
+    [75] => ist
+    [76] => die
+    [77] => Hauptursache[main-cause
+    [78] => der
+    [79] => menschengemachten
+    [80] => globalen
+    [81] => Erwärmung.]]
+    [82] => 
+    [83] => Das
+    [84] => Anwendungsgebiet[field-of-use
+    [85] => der
+    [86] => CO2-Abscheidung
+    [87] => und
+    [88] => -Speicherung
+    [89] => sollen
+    [90] => große
+    [91] => Punktquellen[point-source
+    [92] => von
+    [93] => CO2
+    [94] => werden,
+    [95] => vorrangig[priority
+    [96] => in
+    [97] => Kraftwerken
+    [98] => mit
+    [99] => fossilen
+    [100] => Brennstoffen[fuels
+    [101] => ,
+    [102] => aber
+    [103] => auch
+    [104] => bei
+    [105] => Industrieprozessen
+    [106] => und
+    [107] => im
+    [108] => Bergbau[mining
+    [109] => .]]
+    [110] => 
+    [111] => Die
+    [112] => Verfahrensschritte
+    [113] => sind
+    [114] => die
+    [115] => Abscheidung,
+    [116] => der
+    [117] => Transport
+    [118] => (wenn
+    [119] => erforderlich)
+    [120] => und
+    [121] => die
+    [122] => geologische
+    [123] => Speicherung
+    [124] => des
+    [125] => CO2.
+    [126] => Als
+    [127] => mögliche
+    [128] => CO2-Lagerstätten
+    [129] => gelten
+    [130] => besondere
+    [131] => geologische
+    [132] => Formationen
+    [133] => wie
+    [134] => tiefe
+    [135] => salzwasserführende
+    [136] => Grundwasserleiter
+    [137] => (Aquifere)
+    [138] => oder
+    [139] => ausgeförderte
+    [140] => Erdöl-
+    [141] => und
+    [142] => Erdgaslagerstätten,
+    [143] => eventuell
+    [144] => kommen
+    [145] => ebenfalls
+    [146] => tiefe
+    [147] => Kohleflöze
+    [148] => in
+    [149] => Frage,
+    [150] => bei
+    [151] => denen
+    [152] => aber
+    [153] => der
+    [154] => sichere
+    [155] => Einschluss
+    [156] => fraglich
+    [157] => ist.[1]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-
+[process-trans-sentences_chinese.php : 216] match => Abscheidung[caputure
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)-Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(
+[process-trans-sentences_chinese.php : 216] match => Fachbegriffe[technical-terms
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0):
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Sequestrierung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CCS
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(englisch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)carbon
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dioxide
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)capture
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)and
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)storage))
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Verfahren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zur
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reduzierung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Emissionen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Atmosphäre
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)durch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)technische]]
+[process-trans-sentences_chinese.php : 216] match => Abspaltung[separation
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)am
+[process-trans-sentences_chinese.php : 216] match => Kraftwerk[power-plant
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(End
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)of
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pipe)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)„
+[process-trans-sentences_chinese.php : 216] match => dauerhafte[permanent
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)“
+[process-trans-sentences_chinese.php : 216] match => Einlagerung[storage
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 216] match => unterirdische[underground
+[process-trans-sentences_chinese.php : 216] match => Lagerstätten[storage-facilities
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Es
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gibt
+[process-trans-sentences_chinese.php : 216] match => großtechnische[large-scale
+[process-trans-sentences_chinese.php : 216] match => Vorhaben[project
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dieser
+[process-trans-sentences_chinese.php : 216] match => Art[type
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sämtlich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ohne
+[process-trans-sentences_chinese.php : 216] match => Ansatz[approach
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zum
+[process-trans-sentences_chinese.php : 216] match => Nachweis[proof
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)einer
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wirtschaftlichkeit
+[process-trans-sentences_chinese.php : 216] match => verfolgt[pursued
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)werden.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 216] match => wirkt[work
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Atmosphäre
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)als
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Treibhausgas
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 216] match => Hauptursache[main-cause
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)menschengemachten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)globalen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erwärmung.]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Das
+[process-trans-sentences_chinese.php : 216] match => Anwendungsgebiet[field-of-use
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Abscheidung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)-Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sollen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)große
+[process-trans-sentences_chinese.php : 216] match => Punktquellen[point-source
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)werden,
+[process-trans-sentences_chinese.php : 216] match => vorrangig[priority
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kraftwerken
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)fossilen
+[process-trans-sentences_chinese.php : 216] match => Brennstoffen[fuels
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aber
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)auch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bei
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Industrieprozessen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)im
+[process-trans-sentences_chinese.php : 216] match => Bergbau[mining
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Verfahrensschritte
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sind
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Abscheidung,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Transport
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(wenn
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)erforderlich)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)geologische
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)des
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Als
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mögliche
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Lagerstätten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gelten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)besondere
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)geologische
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Formationen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)tiefe
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)salzwasserführende
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Grundwasserleiter
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(Aquifere)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)oder
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ausgeförderte
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erdöl-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erdgaslagerstätten,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)eventuell
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)kommen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ebenfalls
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)tiefe
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kohleflöze
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Frage,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bei
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)denen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aber
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sichere
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Einschluss
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)fraglich
+[process-trans-sentences_chinese.php : 216] match => ist.[1]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_142549_786277.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_142549_786277.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210528_142947_705681)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => CO2-
+    [1] => Abscheidung[caputure
+    [2] => und
+    [3] => -Speicherung
+    [4] => (
+    [5] => Fachbegriffe[technical-terms
+    [6] => :
+    [7] => CO2-Sequestrierung
+    [8] => und
+    [9] => CCS
+    [10] => (englisch
+    [11] => carbon
+    [12] => dioxide
+    [13] => capture
+    [14] => and
+    [15] => storage))
+    [16] => ist
+    [17] => ein
+    [18] => Verfahren
+    [19] => zur
+    [20] => Reduzierung
+    [21] => von
+    [22] => CO2-Emissionen
+    [23] => in
+    [24] => die
+    [25] => Atmosphäre
+    [26] => durch
+    [27] => die
+    [28] => technische]]
+    [29] => Abspaltung[separation
+    [30] => am
+    [31] => Kraftwerk[power-plant
+    [32] => (End
+    [33] => of
+    [34] => pipe)
+    [35] => und
+    [36] => „
+    [37] => dauerhafte[permanent
+    [38] => “
+    [39] => Einlagerung[storage
+    [40] => in
+    [41] => unterirdische[underground
+    [42] => Lagerstätten[storage-facilities
+    [43] => .]]
+    [44] => 
+    [45] => Es
+    [46] => gibt
+    [47] => großtechnische[large-scale
+    [48] => Vorhaben[project
+    [49] => dieser
+    [50] => Art[type
+    [51] => ,
+    [52] => die
+    [53] => sämtlich
+    [54] => ohne
+    [55] => Ansatz[approach
+    [56] => zum
+    [57] => Nachweis[proof
+    [58] => einer
+    [59] => Wirtschaftlichkeit
+    [60] => verfolgt[pursued
+    [61] => werden.
+    [62] => ]]
+    [63] => 
+    [64] => 
+    [65] => 
+    [66] => 
+    [67] => CO2
+    [68] => wirkt[work
+    [69] => in
+    [70] => der
+    [71] => Atmosphäre
+    [72] => als
+    [73] => Treibhausgas
+    [74] => und
+    [75] => ist
+    [76] => die
+    [77] => Hauptursache[main-cause
+    [78] => der
+    [79] => menschengemachten
+    [80] => globalen
+    [81] => Erwärmung.]]
+    [82] => 
+    [83] => Das
+    [84] => Anwendungsgebiet[field-of-use
+    [85] => der
+    [86] => CO2-Abscheidung
+    [87] => und
+    [88] => -Speicherung
+    [89] => sollen
+    [90] => große
+    [91] => Punktquellen[point-source
+    [92] => von
+    [93] => CO2
+    [94] => werden,
+    [95] => vorrangig[priority
+    [96] => in
+    [97] => Kraftwerken
+    [98] => mit
+    [99] => fossilen
+    [100] => Brennstoffen[fuels
+    [101] => ,
+    [102] => aber
+    [103] => auch
+    [104] => bei
+    [105] => Industrieprozessen
+    [106] => und
+    [107] => im
+    [108] => Bergbau[mining
+    [109] => .]]
+    [110] => 
+    [111] => Die
+    [112] => Verfahrensschritte[procedural-steps
+    [113] => sind
+    [114] => die
+    [115] => Abscheidung,
+    [116] => der
+    [117] => Transport
+    [118] => (wenn
+    [119] => erforderlich[required
+    [120] => )
+    [121] => ]]
+    [122] => und
+    [123] => die
+    [124] => geologische
+    [125] => Speicherung
+    [126] => des
+    [127] => CO2.
+    [128] => Als
+    [129] => mögliche
+    [130] => CO2-Lagerstätten
+    [131] => gelten
+    [132] => besondere
+    [133] => geologische
+    [134] => Formationen]]
+    [135] => 
+    [136] => wie
+    [137] => tiefe
+    [138] => salzwasserführende
+    [139] => Grundwasserleiter[aquifer
+    [140] => (Aquifere)
+    [141] => oder
+    [142] => ausgeförderte[promoted
+    [143] => Erdöl-
+    [144] => und
+    [145] => Erdgaslagerstätten[natural-gas-reservoir
+    [146] => ]],
+    [147] => eventuell
+    [148] => kommen
+    [149] => ebenfalls[likewise
+    [150] => tiefe
+    [151] => Kohleflöze[coal-seams
+    [152] => in
+    [153] => Frage,
+    [154] => bei
+    [155] => denen
+    [156] => aber
+    [157] => der
+    [158] => sichere
+    [159] => Einschluss[inclusion
+    [160] => fraglich[questionable
+    [161] => ist.[1]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-
+[process-trans-sentences_chinese.php : 216] match => Abscheidung[caputure
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)-Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(
+[process-trans-sentences_chinese.php : 216] match => Fachbegriffe[technical-terms
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0):
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Sequestrierung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CCS
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(englisch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)carbon
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dioxide
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)capture
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)and
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)storage))
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ein
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Verfahren
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zur
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reduzierung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Emissionen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Atmosphäre
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)durch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)technische]]
+[process-trans-sentences_chinese.php : 216] match => Abspaltung[separation
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)am
+[process-trans-sentences_chinese.php : 216] match => Kraftwerk[power-plant
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(End
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)of
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pipe)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)„
+[process-trans-sentences_chinese.php : 216] match => dauerhafte[permanent
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)“
+[process-trans-sentences_chinese.php : 216] match => Einlagerung[storage
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 216] match => unterirdische[underground
+[process-trans-sentences_chinese.php : 216] match => Lagerstätten[storage-facilities
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Es
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gibt
+[process-trans-sentences_chinese.php : 216] match => großtechnische[large-scale
+[process-trans-sentences_chinese.php : 216] match => Vorhaben[project
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dieser
+[process-trans-sentences_chinese.php : 216] match => Art[type
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sämtlich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ohne
+[process-trans-sentences_chinese.php : 216] match => Ansatz[approach
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)zum
+[process-trans-sentences_chinese.php : 216] match => Nachweis[proof
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)einer
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Wirtschaftlichkeit
+[process-trans-sentences_chinese.php : 216] match => verfolgt[pursued
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)werden.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 216] match => wirkt[work
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Atmosphäre
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)als
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Treibhausgas
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)ist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 216] match => Hauptursache[main-cause
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)menschengemachten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)globalen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erwärmung.]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Das
+[process-trans-sentences_chinese.php : 216] match => Anwendungsgebiet[field-of-use
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Abscheidung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)-Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sollen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)große
+[process-trans-sentences_chinese.php : 216] match => Punktquellen[point-source
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)von
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)werden,
+[process-trans-sentences_chinese.php : 216] match => vorrangig[priority
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kraftwerken
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)fossilen
+[process-trans-sentences_chinese.php : 216] match => Brennstoffen[fuels
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aber
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)auch
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bei
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Industrieprozessen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)im
+[process-trans-sentences_chinese.php : 216] match => Bergbau[mining
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Die
+[process-trans-sentences_chinese.php : 216] match => Verfahrensschritte[procedural-steps
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sind
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Abscheidung,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Transport
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(wenn
+[process-trans-sentences_chinese.php : 216] match => erforderlich[required
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0))
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)die
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)geologische
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Speicherung
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)des
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Als
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)mögliche
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)CO2-Lagerstätten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)gelten
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)besondere
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)geologische
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Formationen]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)wie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)tiefe
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)salzwasserführende
+[process-trans-sentences_chinese.php : 216] match => Grundwasserleiter[aquifer
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(Aquifere)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)oder
+[process-trans-sentences_chinese.php : 216] match => ausgeförderte[promoted
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Erdöl-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)und
+[process-trans-sentences_chinese.php : 216] match => Erdgaslagerstätten[natural-gas-reservoir
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]],
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)eventuell
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)kommen
+[process-trans-sentences_chinese.php : 216] match => ebenfalls[likewise
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)tiefe
+[process-trans-sentences_chinese.php : 216] match => Kohleflöze[coal-seams
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)in
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Frage,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)bei
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)denen
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)aber
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)der
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)sichere
+[process-trans-sentences_chinese.php : 216] match => Einschluss[inclusion
+[process-trans-sentences_chinese.php : 216] match => fraglich[questionable
+[process-trans-sentences_chinese.php : 216] match => ist.[1]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_142947_743683.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_142947_743683.txt'
+  
