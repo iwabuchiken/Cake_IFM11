@@ -14763,3 +14763,3272 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_140335_614316.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210528_140335_614316.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210530_153150_172255)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。C
+            [2] => �。C
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => C
+            [2] => C
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1 碳利用CCUS-EOR (Enhanced oil recovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 1 �
+            [1] => R (
+            [2] => d o
+            [3] => l r
+        )
+
+    [1] => Array
+        (
+            [0] => 1
+            [1] => R
+            [2] => d
+            [3] => l
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => (
+            [2] => o
+            [3] => r
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1碳利用CCUS-EOR(Enhancedoilrecovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1碳利用CCUS-EOR(Enhancedoilrecovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1碳利用CCUS-EOR(Enhancedoilrecovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将枯竭的油田再次采出石油的同时，也将CO2永久地贮存在地下。CO2驱油的主要原理是降低原油粘度、增加原油内能，从而提高原油流动性并增加油层压力。CO2制化肥和食品级CO2商业利用也是目前较成熟的碳利用项目。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_153150_172255.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_153150_172255.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210530_154400_223643)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+
+    [1] => 
+
+    [2] => 国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+
+    [1] => 
+    [2] => 国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+    [1] => 
+    [2] => 国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+    [1] => 
+    [2] => 国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。
+    [1] => 
+    [2] => 国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、海藻培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳纤维和乙酸等。国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或中试阶段。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_154400_223643.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_154400_223643.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210530_154834_981364)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+
+    [1] => 
+
+    [2] => 第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。
+
+    [3] => 
+
+    [4] => 第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : 'CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+
+    [1] => 
+    [2] => 第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。
+
+    [3] => 
+    [4] => 第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : 'CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+
+    [1] => 
+    [2] => 第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。
+    [3] => 
+    [4] => 第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : 'CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+
+    [1] => 
+    [2] => 第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。
+    [3] => 
+    [4] => 第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : 'CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5 km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4 (a)所示。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 5 k
+            [1] => 4 (
+        )
+
+    [1] => Array
+        (
+            [0] => 5
+            [1] => 4
+        )
+
+    [2] => Array
+        (
+            [0] => k
+            [1] => (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4(a)所示。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '第二种是将CO2进行地质封存。在地下0.8～1.0 km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 0 k
+        )
+
+    [1] => Array
+        (
+            [0] => 0
+        )
+
+    [2] => Array
+        (
+            [0] => k
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+第二种是将CO2进行地质封存。在地下0.8～1.0km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+
+    [1] => 
+    [2] => 第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4(a)所示。
+    [3] => 
+    [4] => 第二种是将CO2进行地质封存。在地下0.8～1.0km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>CO2捕集后，可以通过泵送到地下、海底长期储存，或直接通过强化自然生物学作用把CO2储存在植物、土地和地下沉积物中。当前的碳封存技术主要分为以下2种:
+第一种是将CO2高压液化注入海洋底。基于CO2的理化性质，在海平面2.5km以下，CO2主要以液态的形式存在。由于密度大于海水密度，将这一区域作为海洋碳封存的安全区域，如图4(a)所示。第二种是将CO2进行地质封存。在地下0.8～1.0km这一高度区域内，超临界状态的CO2具有流体性质。基于CO2的理化性质改变，可实现地质碳封存，如图4(b)所示。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_154834_981364.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_154834_981364.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210530_155204_184374)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => a。1
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => a。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => 1
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '3.1 国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 1 �
+        )
+
+    [1] => Array
+        (
+            [0] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+3.1国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 3.1国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>3.1国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。1/3国土面积在北极圈内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及阿联酋等国家加速推进CO2捕集项目的工业化。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_155204_184374.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_155204_184374.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210530_155511_094074)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+
+    [1] => 
+
+    [2] => 2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+
+    [3] => 
+
+    [4] => 2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+
+    [5] => 
+
+    [6] => 2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+
+    [1] => 
+    [2] => 2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+
+    [3] => 
+    [4] => 2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+
+    [5] => 
+    [6] => 2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+    [1] => 
+    [2] => 2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+    [3] => 
+    [4] => 2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+    [5] => 
+    [6] => 2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => a。2
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => a。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => 2
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => a。�
+            [1] => t。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => a。
+            [1] => t。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+    [1] => 
+    [2] => 2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+    [3] => 
+    [4] => 2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+    [5] => 
+    [6] => 2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '2000年，美国与加拿大合作，在Weyburn油田注入Great Plain Synfuels Plant和Sask Power电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => t P
+            [1] => n S
+            [2] => s P
+            [3] => k P
+        )
+
+    [1] => Array
+        (
+            [0] => t
+            [1] => n
+            [2] => s
+            [3] => k
+        )
+
+    [2] => Array
+        (
+            [0] => P
+            [1] => S
+            [2] => P
+            [3] => P
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+2000年，美国与加拿大合作，在Weyburn油田注入GreatPlainSynfuelsPlant和SaskPower电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '2014年，加拿大Sask Power公司的Boundary Dam Power项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150 MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => k P
+            [1] => y D
+            [2] => m P
+            [3] => 0 M
+        )
+
+    [1] => Array
+        (
+            [0] => k
+            [1] => y
+            [2] => m
+            [3] => 0
+        )
+
+    [2] => Array
+        (
+            [0] => P
+            [1] => D
+            [2] => P
+            [3] => M
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+2014年，加拿大SaskPower公司的BoundaryDamPower项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 2000年，美国与加拿大合作，在Weyburn油田注入GreatPlainSynfuelsPlant和SaskPower电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。
+    [1] => 
+    [2] => 2014年，加拿大SaskPower公司的BoundaryDamPower项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。
+    [3] => 
+    [4] => 2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。
+    [5] => 
+    [6] => 2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>2000年，美国与加拿大合作，在Weyburn油田注入GreatPlainSynfuelsPlant和SaskPower电厂的CO2，提高濒临枯竭油田采油率的同时，累计封存CO2达2600多万t。2014年，加拿大SaskPower公司的BoundaryDamPower项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。2019年全年，该项目捕集CO2达61.6万t。2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_155511_094074.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_155511_094074.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210530_160011_579910)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>随着工业化进程的加快，国内也开启了CO2捕集项目的研究。相比国外，中国的CCUS项目起步较晚，且尚无百万吨级规模的捕集项目。目前，国内以捕集量为10万t级规模的项目为主。国内CCS/CCUS项目如表2所示。2007年，中国石油吉林油田和中石化华东分公司草舍油田开启了国内CO2捕集项目的新篇章。经过长期实践，中国石油吉林油田于2007年首先实现CCUS-EOR技术的工业化，建立五类CO2驱油与埋存示范区，年埋存CO2能力可达35万t;同年，中石化华东分公司草舍油田建成了CO2年注入量4万t的先导试验项目，后期建成了CO2回收装置，年处理量可达2万t。随后，基于日趋成熟的CO2捕集技术，中石化胜利油田、中国神华、延长石油及中石化中原油田加速推进CO2捕集项目的工业化。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_160011_579910.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210530_160011_579910.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210531_092214_675862)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>中国专家在接受俄罗斯卫星通讯社采访时一致指出，“东北地区实施全面生育政策的试点方案”对于解决其人口减少的问题作用很小，改变其人口迁移态势才是根本解决办法。且各国人口出生率下降是大趋势，应更多地对社会福利和养老制度、劳动力市场、退休年龄等进行系统、合理的规划以缓解老龄化、少子化对社会的冲击。针对中国东北地区人口的持续下降，中国国家卫健委官网此前发布对全国人大代表建议的答复，“东北地区可以立足本地实际进行探索，提出实施全面生育政策的试点方案。”此消息引发热烈讨论。2月20日，中国卫健委再次解释称，关于互联网上“东北地区将试点放开生育限制”“生育政策将全面放开”等推测，不是答复的本意。卫健委表示，东北地区人口长期减少的原因是多方面的，不是简单放开生育政策就能解决的。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_092214_675862.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_092214_675862.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210531_092537_329452)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 东北三省为何会出现人口持续负增长？
+
+    [1] => 
+
+    [2] => 一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+
+    [3] => 
+
+    [4] => 复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。
+
+    [5] => 
+
+    [6] => 他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '东北三省为何会出现人口持续负增长？
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 东北三省为何会出现人口持续负增长？
+
+    [1] => 
+    [2] => 一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+
+    [3] => 
+    [4] => 复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。
+
+    [5] => 
+    [6] => 他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '东北三省为何会出现人口持续负增长？
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 东北三省为何会出现人口持续负增长？
+
+    [1] => 
+    [2] => 一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+    [3] => 
+    [4] => 复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。
+    [5] => 
+    [6] => 他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '东北三省为何会出现人口持续负增长？
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+            [4] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+            [4] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+            [4] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 东北三省为何会出现人口持续负增长？
+
+    [1] => 
+    [2] => 一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+    [3] => 
+    [4] => 复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。
+    [5] => 
+    [6] => 他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '东北三省为何会出现人口持续负增长？
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 东北三省为何会出现人口持续负增长？
+
+    [1] => 
+    [2] => 一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。
+    [3] => 
+    [4] => 复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。
+    [5] => 
+    [6] => 他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>东北三省为何会出现人口持续负增长？
+一个地区人口数量的增减是由出生、死亡决定的自然增长和由迁入、迁出决定的迁移增长（又称社会增长）决定的。如果自然增长和迁移增长都是负的，或者二者有一方面是负增长且大于另一方面的正增长规模，都会导致人口总量减少。复旦大学人口研究所前所长、中国人口学会副会长王桂新教授指出，造成东北地区人口持续减少的直接原因是迁出人口多于迁入人口，造成人口净迁出。他说：“首先，到目前为止，东北地区三省人口的自然增长都是正的，那么其人口减少无疑就是由其迁移增长造成的。事实上，东北地区近年人口都是呈净迁出状态。其次，造成其人口净迁出的主要原因也就是造成东北地区人口持续减少的主要原因。其具体原因有很多，有自然的、经济的、社会的、历史的等等，但关键还在‘人’本身。也就是说，造成东北地区人口持续减少的关键或扭转东北地区人口持续减少态势的关键，都在‘人’本身。”
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_092537_329452.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_092537_329452.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210531_092749_104990)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 为何放开生育很难扭转东北地区人口的持续减少态势？
+
+    [1] => 王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。
+
+    [2] => 
+
+    [3] => 他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+
+    [4] => 此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '为何放开生育很难扭转东北地区人口的持续减少态势？
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 为何放开生育很难扭转东北地区人口的持续减少态势？
+
+    [1] => 王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。
+
+    [2] => 
+    [3] => 他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+
+    [4] => 此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '为何放开生育很难扭转东北地区人口的持续减少态势？
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 为何放开生育很难扭转东北地区人口的持续减少态势？
+
+    [1] => 王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。
+    [2] => 
+    [3] => 他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+
+    [4] => 此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '为何放开生育很难扭转东北地区人口的持续减少态势？
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+            [4] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+            [4] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+            [4] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+
+[process-texts-for-reading_chinese.php : 346]
+line : '此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 为何放开生育很难扭转东北地区人口的持续减少态势？
+
+    [1] => 王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。
+    [2] => 
+    [3] => 他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+
+    [4] => 此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '为何放开生育很难扭转东北地区人口的持续减少态势？
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 为何放开生育很难扭转东北地区人口的持续减少态势？
+
+    [1] => 王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。
+    [2] => 
+    [3] => 他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+
+    [4] => 此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>为何放开生育很难扭转东北地区人口的持续减少态势？
+王桂新教授认为，即使全面放开生育政策，对东北地区人口的持续减少也不会起到多大的作用。他分析指出：“因为中国的社会已经发展到了这样一个阶段，东北地区目前的生育水平，已基本反映了全面放开生育政策的水平。当然，中国人口规模这么大，总会有极个别人想生三孩甚至更多。但可以肯定地说，想生育三孩及以上的人数量很少，相对于育龄人口规模而言几乎可以忽略不计。所以说，要扭转东北地区人口的持续减少态势，关键是改变其人口迁移态势。靠全面放开生育政策增加出生人口作用不大，甚至是基本没有作用。”
+此外，浙江大学社会学系教授、社会调查研究中心副主任刘志军补充指出，现在是人才自由流动的社会，生育能力比较旺盛的年轻人寻求到经济更发达的地区就业，使得东北生育率下降。而且，哪怕在过去人们还抱有“多子多福”的观念时，东北地区超生的家庭本就不多，因此生育率低也与他们传统的生育观念有关。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_092749_104990.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_092749_104990.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210531_093350_002633)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 应对人口减少更合理的解决之道是什么？
+
+    [1] => 刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+
+    [2] => 
+
+    [3] => 他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+
+    [4] => “其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+
+    [5] => 中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '应对人口减少更合理的解决之道是什么？
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '“其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 应对人口减少更合理的解决之道是什么？
+
+    [1] => 刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+
+    [2] => 
+    [3] => 他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+
+    [4] => “其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+
+    [5] => 中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '应对人口减少更合理的解决之道是什么？
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '“其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 应对人口减少更合理的解决之道是什么？
+
+    [1] => 刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+    [2] => 
+    [3] => 他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+
+    [4] => “其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+
+    [5] => 中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '应对人口减少更合理的解决之道是什么？
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+
+[process-texts-for-reading_chinese.php : 346]
+line : '“其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+“其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+
+[process-texts-for-reading_chinese.php : 346]
+line : '中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 应对人口减少更合理的解决之道是什么？
+
+    [1] => 刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+    [2] => 
+    [3] => 他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+
+    [4] => “其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+
+    [5] => 中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '应对人口减少更合理的解决之道是什么？
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '“其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 应对人口减少更合理的解决之道是什么？
+
+    [1] => 刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。
+    [2] => 
+    [3] => 他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+
+    [4] => “其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+
+    [5] => 中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>应对人口减少更合理的解决之道是什么？
+刘志军教授认为，世界上各个国家出生率下降是大势所趋。通过一些措施，鼓励那些有生育潜力的人或者处于摇摆状态的人生育一些孩子，减少在过渡期的社会阵痛和负面效应是可以的。但更重要的是要未雨绸缪，对退休制度、养老制度进行顺应时代需求的设计。他说：“首先，我们要反思我们社会制度设计，包括养老和劳动力退休制度。我们现在是60岁退休，而这些人至少还有10年的劳动能力。其次还要思考养老问题。过去农村都是个人负责养老，而现在的养老制度过多依赖国家，年轻一代赡养老一代，如果人口不均衡增长的话，肯定会导致入不敷出。”
+“其次，制度的设计一定要考虑它的可持性，不要太多受制于人口的结构，包括倡导男女性别平等、女性走向职业市场等等。要逐步回归到‘生育是个人的权利’这种阶段，最重要的是个人要为自己负责。”
+中国卫健委指出，对“恳请国家全面放开东北地区生育政策限制”的观点，需他们做全面深入的研究论证。卫健委将实施积极应对人口老龄化国家战略，做好优化生育政策，增强生育政策包容性，提高优生优育服务水平，发展普惠托育体系，促进人口长期均衡发展等相关工作。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_093350_002633.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_093350_002633.txt
+ 

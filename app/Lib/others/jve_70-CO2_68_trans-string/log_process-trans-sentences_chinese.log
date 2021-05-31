@@ -4217,3 +4217,411 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_142947_743683.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210528_142947_743683.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210530_154324_095477)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1碳利用]]#CCUS-EOR(Enhancedoilrecovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，]]
+    [1] => 如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将
+    [2] => 枯竭[ku1jie2
+    [3] => ]]
+    [4] => 的油田再次采出石油的同时，也将CO2永久地
+    [5] => 贮存[zhu4-
+    [6] => 在地下。CO2驱油的主要原理是降低原油
+    [7] => 粘度[nian2-
+    [8] => 、增加原油内能，从而提高原油流动性并增加油层压力。]]CO2制
+    [9] => 化肥[-fei2
+    [10] => 和食品级CO2商业利用也是目前较成熟的碳利用项目。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)从国内外项目经验看，地下封存、驱油和食品级利用，是当前较主流的方向。图2展示了主要的碳利用和封存技术。2.2.1碳利用]]#CCUS-EOR(Enhancedoilrecovery，强化采油)技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)如图3所示，该技术通过把捕集来的CO2注入到油田中，使即将
+[process-trans-sentences_chinese.php : 216] match => 枯竭[ku1jie2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的油田再次采出石油的同时，也将CO2永久地
+[process-trans-sentences_chinese.php : 216] match => 贮存[zhu4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在地下。CO2驱油的主要原理是降低原油
+[process-trans-sentences_chinese.php : 216] match => 粘度[nian2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、增加原油内能，从而提高原油流动性并增加油层压力。]]CO2制
+[process-trans-sentences_chinese.php : 216] match => 化肥[-fei2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和食品级CO2商业利用也是目前较成熟的碳利用项目。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210530_154324_097476.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210530_154324_097476.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210530_154748_071232)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。]]包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、
+    [1] => 海藻[-zao3
+    [2] => 培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳
+    [3] => 纤维[xian1wei2:fiber
+    [4] => 和乙酸等。]]国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或
+    [5] => 中试[-:pilot-test
+    [6] => 阶段。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国外近年来碳利用有很多新兴的利用方向，如荷兰和日本均有较大规模的将工业产生的CO2送到园林，作为温室气体来强化植物生长的项目。]]包括温室气体利用技术在内，国外处于示范项目阶段碳利用技术有CO2制化肥、油田驱油、食品级应用等;正处于发展阶段的有CO2制聚合物、CO2甲烷化重整、CO2加氢制甲醇、
+[process-trans-sentences_chinese.php : 216] match => 海藻[-zao3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)培育、动力循环等;尚处于理论研究阶段的方向有CO2制碳
+[process-trans-sentences_chinese.php : 216] match => 纤维[xian1wei2:fiber
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和乙酸等。]]国内新兴的碳利用方向主要有CO2加氢制甲醇、CO2加氢制异构烷烃、CO2加氢制芳烃、CO2甲烷化重整等，如山西煤化所、大连化物所、中科院上海研究院、大连理工大学等，对这些技术进行了研究，但大多都处在催化剂研究的理论研究阶段或
+[process-trans-sentences_chinese.php : 216] match => 中试[-:pilot-test
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)阶段。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210530_154748_086832.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210530_154748_086832.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210530_155420_542270)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 3.1国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。]]表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。]]1/3国土面积在
+    [1] => 北极圈[--quan1
+    [2] => 内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。]]进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及
+    [3] => 阿联酋[--qiu2
+    [4] => 等国家加速推进CO2捕集项目的工业化。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)3.1国外CCUS项目进展为应对全球气候变化，国外很早就展开了CO2捕集项目的相关研究。]]表1将国际大型CCS/CCUS项目做了总结。国外最早报道的大型CCUS项目是1972年美国建成的Terrell项目，CO2捕集能力达40万～50万t/a;随后，美国俄克拉荷马州Enid项目于1982年建成，通过化肥厂产生的CO2进行油田驱油，CO2捕集能力达70万t/a。]]1/3国土面积在
+[process-trans-sentences_chinese.php : 216] match => 北极圈[--quan1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)内的挪威，也是最先开展CO2捕集项目研究的国家之一，1996年，挪威Sleipner项目的建成是世界上首个将CO2注入到地下(盐水层)的项目，年封存CO2量近百万吨。]]进入本世纪以来，由于工业化步伐的加快以及全球变暖趋势的加剧，CO2捕集项目受到越来越多国家的重视。美国、加拿大、澳大利亚、日本及
+[process-trans-sentences_chinese.php : 216] match => 阿联酋[--qiu2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)等国家加速推进CO2捕集项目的工业化。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210530_155420_542270.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210530_155420_542270.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210530_155855_856287)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 2000年，美国与加拿大合作，在Weyburn油田注入GreatPlainSynfuelsPlant和SaskPower电厂的CO2，提高
+    [1] => 濒临[bin1lin2
+    [2] => 枯竭[ku1jie2
+    [3] => 油田采油率的同时，累计封存CO2达2600多万t。]]2014年，加拿大SaskPower公司的BoundaryDamPower项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。]]2019年全年，该项目捕集CO2达61.6万t。2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。]]该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。]]目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2000年，美国与加拿大合作，在Weyburn油田注入GreatPlainSynfuelsPlant和SaskPower电厂的CO2，提高
+[process-trans-sentences_chinese.php : 216] match => 濒临[bin1lin2
+[process-trans-sentences_chinese.php : 216] match => 枯竭[ku1jie2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)油田采油率的同时，累计封存CO2达2600多万t。]]2014年，加拿大SaskPower公司的BoundaryDamPower项目成为全球第一个成功应用于发电厂CO2捕集项目。该项目将150MW燃煤发电机产生的CO2捕集后，一部分封存地下，一部分用于美国Weyburn油田驱油，CO2捕集能力达100万t/a。]]2019年全年，该项目捕集CO2达61.6万t。2015年，加拿大Quest项目将合成原油制氢过程中产生的CO2成功注入咸水层封存，每年CO2捕集能力达100万t/a。]]该项目是油砂行业第一个CCS项目，每年减少碳排放可达100万t。截止到2019年，Quest项目已经累计捕集CO2达400万t，以更低的成本提前完成预定目标。]]目前，Quest项目是全球最大捕集CO2并成功注入到地下的项目。2016年，澳大利亚西部的Gorgon项目是全球最大的单体LNG项目Gorgon天然气项目的配套，该项目通过液化技术将CO2从天然气中分离出来，将分离出来的CO2注入到巴罗岛的盐水层中，注入量可达350万t/a。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210530_155855_860287.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210530_155855_860287.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210531_011706_923430)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => Ishmael
+    [1] => Scott
+    [2] => Reed
+    [3] => (ur.22
+    [4] => lutego[February
+    [5] => 1938
+    [6] => w
+    [7] => Chattanoodze,
+    [8] => Tennessee)
+    [9] => –
+    [10] => amerykański
+    [11] => poeta,
+    [12] => eseista,
+    [13] => powieściopisarz.Jeden
+    [14] => z
+    [15] => najbardziej
+    [16] => znanych
+    [17] => pisarzy
+    [18] => afroamerykańskich
+    [19] => swojego
+    [20] => pokolenia,
+    [21] => obok
+    [22] => Amiriego
+    [23] => Baraki
+    [24] => jeden
+    [25] => z
+    [26] => najbardziej
+    [27] => kontrowersyjnych
+    [28] => (i
+    [29] => najbardziej
+    [30] => lewicowych).Przedstawia
+    [31] => w
+    [32] => satyrycznym
+    [33] => świetle
+    [34] => amerykańską
+    [35] => prawicę.Dorastał
+    [36] => w
+    [37] => Buffalo,
+    [38] => w
+    [39] => stanie
+    [40] => Nowy
+    [41] => Jork.Ukończył
+    [42] => prywatny
+    [43] => Uniwersytet
+    [44] => Buffalo.W
+    [45] => 1962
+    [46] => roku
+    [47] => przeniósł
+    [48] => się
+    [49] => do
+    [50] => Nowego
+    [51] => Jorku
+    [52] => i
+    [53] => włączył
+    [54] => do
+    [55] => życia
+    [56] => literackiego
+    [57] => metropolii.Wydawał
+    [58] => undergroundowe
+    [59] => pismo,
+    [60] => należał
+    [61] => do
+    [62] => organizacji
+    [63] => promującej
+    [64] => rozwój
+    [65] => „czarnej
+    [66] => estetyki”.
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Ishmael
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Scott
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reed
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(ur.22
+[process-trans-sentences_chinese.php : 216] match => lutego[February
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)1938
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)w
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Chattanoodze,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Tennessee)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)–
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)amerykański
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)poeta,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)eseista,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)powieściopisarz.Jeden
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)z
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)najbardziej
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)znanych
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pisarzy
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)afroamerykańskich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)swojego
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pokolenia,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)obok
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Amiriego
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Baraki
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)jeden
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)z
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)najbardziej
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)kontrowersyjnych
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(i
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)najbardziej
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)lewicowych).Przedstawia
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)w
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)satyrycznym
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)świetle
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)amerykańską
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)prawicę.Dorastał
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)w
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Buffalo,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)w
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)stanie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Nowy
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Jork.Ukończył
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)prywatny
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Uniwersytet
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Buffalo.W
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)1962
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)roku
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)przeniósł
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)się
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)do
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Nowego
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Jorku
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)i
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)włączył
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)do
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)życia
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)literackiego
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)metropolii.Wydawał
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)undergroundowe
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pismo,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)należał
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)do
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)organizacji
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)promującej
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)rozwój
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)„czarnej
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)estetyki”.
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210531_011707_067440.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210531_011707_067440.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210531_012216_189999)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => Ishmael
+    [1] => Scott
+    [2] => Reed
+    [3] => (ur.22
+    [4] => lutego[February
+    [5] => 1938
+    [6] => w
+    [7] => Chattanoodze,
+    [8] => Tennessee)
+    [9] => –
+    [10] => amerykański
+    [11] => poeta,
+    [12] => eseista,
+    [13] => powieściopisarz[novel-writer
+    [14] => .Jeden
+    [15] => z
+    [16] => najbardziej
+    [17] => znanych
+    [18] => pisarzy
+    [19] => afroamerykańskich
+    [20] => swojego
+    [21] => pokolenia[generations
+    [22] => ,
+    [23] => obok[next-to
+    [24] => Amiriego
+    [25] => Baraki
+    [26] => jeden
+    [27] => z
+    [28] => najbardziej
+    [29] => kontrowersyjnych
+    [30] => (i
+    [31] => najbardziej
+    [32] => lewicowych[left-wing
+    [33] => ).]]Przedstawia[present
+    [34] => w
+    [35] => satyrycznym
+    [36] => świetle[light
+    [37] => amerykańską
+    [38] => prawicę[right-wing
+    [39] => .]]Dorastał[grew-up
+    [40] => w
+    [41] => Buffalo,
+    [42] => w
+    [43] => stanie
+    [44] => Nowy
+    [45] => Jork.Ukończył[completed
+    [46] => prywatny
+    [47] => Uniwersytet
+    [48] => Buffalo.]]W
+    [49] => 1962
+    [50] => roku
+    [51] => przeniósł[move~się
+    [52] => do
+    [53] => Nowego
+    [54] => Jorku
+    [55] => i
+    [56] => włączył[joined
+    [57] => do
+    [58] => życia
+    [59] => literackiego
+    [60] => metropolii.]]Wydawał[released
+    [61] => undergroundowe
+    [62] => pismo[writing
+    [63] => ,
+    [64] => należał[belong
+    [65] => do
+    [66] => organizacji
+    [67] => promującej
+    [68] => rozwój[development
+    [69] => „czarnej
+    [70] => estetyki”.
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Ishmael
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Scott
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Reed
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(ur.22
+[process-trans-sentences_chinese.php : 216] match => lutego[February
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)1938
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)w
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Chattanoodze,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Tennessee)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)–
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)amerykański
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)poeta,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)eseista,
+[process-trans-sentences_chinese.php : 216] match => powieściopisarz[novel-writer
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0).Jeden
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)z
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)najbardziej
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)znanych
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)pisarzy
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)afroamerykańskich
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)swojego
+[process-trans-sentences_chinese.php : 216] match => pokolenia[generations
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),
+[process-trans-sentences_chinese.php : 216] match => obok[next-to
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Amiriego
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Baraki
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)jeden
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)z
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)najbardziej
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)kontrowersyjnych
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(i
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)najbardziej
+[process-trans-sentences_chinese.php : 216] match => lewicowych[left-wing
+[process-trans-sentences_chinese.php : 216] match => ).]]Przedstawia[present
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)w
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)satyrycznym
+[process-trans-sentences_chinese.php : 216] match => świetle[light
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)amerykańską
+[process-trans-sentences_chinese.php : 216] match => prawicę[right-wing
+[process-trans-sentences_chinese.php : 216] match => .]]Dorastał[grew-up
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)w
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Buffalo,
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)w
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)stanie
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Nowy
+[process-trans-sentences_chinese.php : 216] match => Jork.Ukończył[completed
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)prywatny
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Uniwersytet
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Buffalo.]]W
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)1962
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)roku
+[process-trans-sentences_chinese.php : 216] match => przeniósł[move~się
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)do
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Nowego
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Jorku
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)i
+[process-trans-sentences_chinese.php : 216] match => włączył[joined
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)do
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)życia
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)literackiego
+[process-trans-sentences_chinese.php : 216] match => metropolii.]]Wydawał[released
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)undergroundowe
+[process-trans-sentences_chinese.php : 216] match => pismo[writing
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),
+[process-trans-sentences_chinese.php : 216] match => należał[belong
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)do
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)organizacji
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)promującej
+[process-trans-sentences_chinese.php : 216] match => rozwój[development
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)„czarnej
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)estetyki”.
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210531_012216_239001.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210531_012216_239001.txt'
+  
