@@ -19382,3 +19382,3800 @@ IRS charity law states that terrorist activities are considered substantial mean
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_085335_302645.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_132658_090856)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [1] => 
+
+    [2] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [3] => 
+
+    [4] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [5] => 
+
+    [6] => “We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.”
+
+    [7] => 
+
+    [8] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.”
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->“We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [1] => 
+
+    [2] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [3] => 
+
+    [4] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [5] => 
+
+    [6] => “We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.” 
+    [7] => 
+
+    [8] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.”
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->“We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.” 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [1] => 
+
+    [2] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [3] => 
+
+    [4] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [5] => 
+
+    [6] => “We had a knowing in our community that we were able to verify.To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement.“At this time we have more questions than answers.” 
+    [7] => 
+
+    [8] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.”
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+“We had a knowing in our community that we were able to verify.To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement.“At this time we have more questions than answers.” 
+Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.”
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_132658_090856.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_132658_090856.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_132833_258383)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'It also found that more than 4,000 of 15,000 children died while attending these schools.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 
+
+    [1] => News   /   More
+
+    [2] => Remains of 215 Canadian indigenous children found at former residential school
+
+    [3] => Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ]
+
+    [4] => US Rep. Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R. 1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC. (AFP photo)
+
+    [5] => The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail)
+
+    [6] => 
+
+    [7] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [8] => 
+
+    [9] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [10] => 
+
+    [11] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [12] => 
+
+    [13] => “We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.”
+
+    [14] => 
+
+    [15] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.”
+
+    [16] => 
+
+    [17] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.”
+
+    [18] => 
+
+    [19] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [20] => 
+
+    [21] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [22] => 
+
+    [23] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [24] => 
+
+    [25] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [26] => 
+
+    [27] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [28] => 
+
+    [29] => In 2008, the Canadian government formally apologized for the system.     
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->News   /   More
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Remains of 215 Canadian indigenous children found at former residential school
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ]
+
+$matches ==>
+Array
+(
+    [0] => ]
+
+    [1] => ]
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->US Rep. Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R. 1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC. (AFP photo)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 
+
+    [1] => News   /   More 
+    [2] => Remains of 215 Canadian indigenous children found at former residential school 
+    [3] => Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ] 
+    [4] => US Rep. Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R. 1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC. (AFP photo) 
+    [5] => The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail) 
+    [6] => 
+
+    [7] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [8] => 
+
+    [9] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [10] => 
+
+    [11] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [12] => 
+
+    [13] => “We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.” 
+    [14] => 
+
+    [15] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.” 
+    [16] => 
+
+    [17] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+    [18] => 
+
+    [19] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [20] => 
+
+    [21] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [22] => 
+
+    [23] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [24] => 
+
+    [25] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [26] => 
+
+    [27] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [28] => 
+
+    [29] => In 2008, the Canadian government formally apologized for the system.     
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->US Rep. Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R. 1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC. (AFP photo) 
+$matches ==>
+Array
+(
+    [0] => p. 
+    [1] => p.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.” 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In 2008, the Canadian government formally apologized for the system.     
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 
+
+    [1] => News   /   More 
+    [2] => Remains of 215 Canadian indigenous children found at former residential school 
+    [3] => Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ] 
+    [4] => US Rep.Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R.1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC.(AFP photo) 
+    [5] => The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail) 
+    [6] => 
+
+    [7] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [8] => 
+
+    [9] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [10] => 
+
+    [11] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [12] => 
+
+    [13] => “We had a knowing in our community that we were able to verify.To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement.“At this time we have more questions than answers.” 
+    [14] => 
+
+    [15] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.” 
+    [16] => 
+
+    [17] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+    [18] => 
+
+    [19] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [20] => 
+
+    [21] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [22] => 
+
+    [23] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [24] => 
+
+    [25] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [26] => 
+
+    [27] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [28] => 
+
+    [29] => In 2008, the Canadian government formally apologized for the system.    
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>
+News   /   More Remains of 215 Canadian indigenous children found at former residential school Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ] US Rep.Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R.1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC.(AFP photo) The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail) 
+A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+“We had a knowing in our community that we were able to verify.To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement.“At this time we have more questions than answers.” 
+Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.” 
+In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+It also found that more than 4,000 of 15,000 children died while attending these schools.
+In 2008, the Canadian government formally apologized for the system.    
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_132833_258383.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_132833_258383.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_132909_994539)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'It also found that more than 4,000 of 15,000 children died while attending these schools.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 
+
+    [1] => News   /   More
+
+    [2] => Remains of 215 Canadian indigenous children found at former residential school
+
+    [3] => Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ]
+
+    [4] => US Rep. Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R. 1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC. (AFP photo)
+
+    [5] => The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail)
+
+    [6] => 
+
+    [7] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [8] => 
+
+    [9] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [10] => 
+
+    [11] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [12] => 
+
+    [13] => “We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.”
+
+    [14] => 
+
+    [15] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.”
+
+    [16] => 
+
+    [17] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.”
+
+    [18] => 
+
+    [19] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [20] => 
+
+    [21] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [22] => 
+
+    [23] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [24] => 
+
+    [25] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [26] => 
+
+    [27] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [28] => 
+
+    [29] => In 2008, the Canadian government formally apologized for the system.     
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->News   /   More
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Remains of 215 Canadian indigenous children found at former residential school
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ]
+
+$matches ==>
+Array
+(
+    [0] => ]
+
+    [1] => ]
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->US Rep. Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R. 1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC. (AFP photo)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 
+
+    [1] => News   /   More 
+    [2] => Remains of 215 Canadian indigenous children found at former residential school 
+    [3] => Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ] 
+    [4] => US Rep. Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R. 1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC. (AFP photo) 
+    [5] => The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail) 
+    [6] => 
+
+    [7] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [8] => 
+
+    [9] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [10] => 
+
+    [11] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [12] => 
+
+    [13] => “We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.” 
+    [14] => 
+
+    [15] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.” 
+    [16] => 
+
+    [17] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+    [18] => 
+
+    [19] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [20] => 
+
+    [21] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [22] => 
+
+    [23] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [24] => 
+
+    [25] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [26] => 
+
+    [27] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [28] => 
+
+    [29] => In 2008, the Canadian government formally apologized for the system.     
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->US Rep. Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R. 1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC. (AFP photo) 
+$matches ==>
+Array
+(
+    [0] => p. 
+    [1] => p.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“We had a knowing in our community that we were able to verify. To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement. “At this time we have more questions than answers.” 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In 2008, the Canadian government formally apologized for the system.     
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 
+
+    [1] => News   /   More 
+    [2] => Remains of 215 Canadian indigenous children found at former residential school 
+    [3] => Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ] 
+    [4] => US Rep.Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R.1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC.(AFP photo) 
+    [5] => The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail) 
+    [6] => 
+
+    [7] => A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+    [8] => 
+
+    [9] => The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+    [10] => 
+
+    [11] => The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+    [12] => 
+
+    [13] => “We had a knowing in our community that we were able to verify.To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement.“At this time we have more questions than answers.” 
+    [14] => 
+
+    [15] => Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.” 
+    [16] => 
+
+    [17] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+    [18] => 
+
+    [19] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [20] => 
+
+    [21] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [22] => 
+
+    [23] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [24] => 
+
+    [25] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [26] => 
+
+    [27] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [28] => 
+
+    [29] => In 2008, the Canadian government formally apologized for the system.    
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>
+News   /   More Remains of 215 Canadian indigenous children found at former residential school Saturday, 29 May 2021 7:32 AM  [ Last Update: Saturday, 29 May 2021 9:53 AM ] US Rep.Ilhan Omar (D-MN) (L) talks with Speaker of the House Nancy Pelosi (D-CA) during a rally with fellow Democrats before voting on H.R.1, or the People Act, on the East Steps of the US Capitol on March 08, 2019 in Washington, DC.(AFP photo) The former Kamloops Indian Residential School, on Tk’emlups te Secwépemc First Nation, in Kamloops, BC, on May 27, 2021. (Photo by The Globe and Mail) 
+A mass grave containing the remains of 215 indigenous children has been found at the site of a former residential school for indigenous children in Canada, with Prime Minister Justin Trudeau describing the discovery as heartbreaking.
+The grim discovery took place at Kamloops Indian residential school near the town of Kamloops, British Columbia, on Friday.
+The bodies belonged to the students, some as young as three years old, of the indigenous Tk’emlúps te Secwepemc group and the authorities said investigation into the cause and exact timing of their deaths was underway.
+“We had a knowing in our community that we were able to verify.To our knowledge, these missing children are undocumented deaths,” said Rosanne Casimir, chief of the Tk’emlúps te Secwépemc, in a statement.“At this time we have more questions than answers.” 
+Trudeau wrote in a tweet that the news “breaks my heart – it is a painful reminder of that dark and shameful chapter of our country’s history.” 
+In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+It also found that more than 4,000 of 15,000 children died while attending these schools.
+In 2008, the Canadian government formally apologized for the system.    
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_132909_994539.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_132909_994539.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_132950_332935)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'It also found that more than 4,000 of 15,000 children died while attending these schools.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.”
+
+    [1] => 
+
+    [2] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [3] => 
+
+    [4] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [5] => 
+
+    [6] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [7] => 
+
+    [8] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [9] => 
+
+    [10] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [11] => 
+
+    [12] => In 2008, the Canadian government formally apologized for the system.      
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+    [1] => 
+
+    [2] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [3] => 
+
+    [4] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [5] => 
+
+    [6] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [7] => 
+
+    [8] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [9] => 
+
+    [10] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [11] => 
+
+    [12] => In 2008, the Canadian government formally apologized for the system.      
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In 2008, the Canadian government formally apologized for the system.      
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+    [1] => 
+
+    [2] => The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+    [3] => 
+
+    [4] => The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+    [5] => 
+
+    [6] => A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+    [7] => 
+
+    [8] => The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+    [9] => 
+
+    [10] => It also found that more than 4,000 of 15,000 children died while attending these schools.
+    [11] => 
+
+    [12] => In 2008, the Canadian government formally apologized for the system.     
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In a statement, British Columbia Assembly of First Nations Regional Chief Terry Teegee also called finding such gravesites “urgent work” that “refreshes the grief and loss for all First Nations in British Columbia.” 
+The Kamloops Indian residential school was established in 1890 under the leadership of the Roman Catholic church, and closed in 1978.
+The educational facility was part of a cross-Canada network of residential schools created to forcibly assimilate indigenous children by removing them from their homes and communities, and forbidding them from speaking their native languages or performing cultural practices.
+A 2015 investigation into Canada's residential school system concluded that the system, typically run by Christian churches on behalf of Ottawa, constituted “cultural genocide,” with reports documenting physical abuse, rape, malnutrition and other atrocities against the school children.
+The same investigation said that the students were exposed to outbreaks of measles, tuberculosis, influenza and other contagious diseases.
+It also found that more than 4,000 of 15,000 children died while attending these schools.
+In 2008, the Canadian government formally apologized for the system.     
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_132950_332935.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_132950_332935.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_133310_252338)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] =>  Prominent Lebanese musician and composer Samir Sfeir gives an interview to Lebanon’s Arabic-language al-Jadeed television network at Beirut airport, Lebanon, on 27 May, 2021, upon his arrival from Saudi Arabia. (Photo via Twitter)    Saudi Arabian authorities have released a prominent Lebanese singer and composer, who is known for his political opinions in support of Lebanon’s President Michel Aoun, his Free Patriotic Movement as well as Hezbollah resistance movement.Samir Sfeir arrived at Beirut-Rafik Hariri International Airport from Saudi Arabia aboard a Middle East Airlines flight on Thursday afternoon, after a 50-day detention — mostly in solitary confinement — in the ultra-conservative kingdom.Sfeir, who had residency in Saudi Arabia for five years, said he is now banned from returning.“I was bothered by the manner. I wish they just told me to leave and not come back. I would have done it,” he said.His whereabouts remained unclear until April 28, when Lebanon's Ministry of Foreign Affairs and Emigrants tried to ask Saudi authorities about him and the reasons for his detention.Sfeir said he was the victim of an online smear campaign that used his old tweets and TV comments, which he claimed were misrepresented to appear offensive to Saudi Arabia.He said the alleged smear campaign was launched after he posted a picture of himself receiving a vaccine in the kingdom, which sparked outrage among Saudi social media users, who thought he did not deserve and called on authorities to expel him.    “Social media and electronic flies (armies) are ruining things,” the Lebanese composer said. “They asked me many questions… They said, I am not allowed to be offensive to any Arab country.”Sfeir is known for his political statements in the media and on other platforms to criticize opponents of Aoun, and has expressed his unwavering support to Hezbollah as a defender of Lebanon’s unity.Some Lebanese media outlets reported that Sfeir was also questioned about his political tweets criticizing Saudi Arabia and mocking its war against Yemen.The military aggression has left hundreds of thousands of Yemenis dead, and displaced millions more. The Saudi war has destroyed Yemen's infrastructure and spread famine and infectious diseases across the Arab country.Sfeir’s detention raised concerns at home that he was the latest victim of rising tension between Lebanon and Saudi Arabia.Earlier this month, Lebanon’s caretaker Foreign Minister Charbel Wehbe stepped down from office, shortly after he angered the kingdom and its allies in the Persian Gulf region by blaming them for the rise of the Takfiri Daesh group in Syria and Iraq.Wehbe handed in his resignation on May 19 as he met Aoun at the Presidential Palace, Lebanon’s official National News Agency reported at the time.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] =>  Prominent Lebanese musician and composer Samir Sfeir gives an interview to Lebanon’s Arabic-language al-Jadeed television network at Beirut airport, Lebanon, on 27 May, 2021, upon his arrival from Saudi Arabia. (Photo via Twitter)    Saudi Arabian authorities have released a prominent Lebanese singer and composer, who is known for his political opinions in support of Lebanon’s President Michel Aoun, his Free Patriotic Movement as well as Hezbollah resistance movement.Samir Sfeir arrived at Beirut-Rafik Hariri International Airport from Saudi Arabia aboard a Middle East Airlines flight on Thursday afternoon, after a 50-day detention — mostly in solitary confinement — in the ultra-conservative kingdom.Sfeir, who had residency in Saudi Arabia for five years, said he is now banned from returning.“I was bothered by the manner. I wish they just told me to leave and not come back. I would have done it,” he said.His whereabouts remained unclear until April 28, when Lebanon's Ministry of Foreign Affairs and Emigrants tried to ask Saudi authorities about him and the reasons for his detention.Sfeir said he was the victim of an online smear campaign that used his old tweets and TV comments, which he claimed were misrepresented to appear offensive to Saudi Arabia.He said the alleged smear campaign was launched after he posted a picture of himself receiving a vaccine in the kingdom, which sparked outrage among Saudi social media users, who thought he did not deserve and called on authorities to expel him.    “Social media and electronic flies (armies) are ruining things,” the Lebanese composer said. “They asked me many questions… They said, I am not allowed to be offensive to any Arab country.”Sfeir is known for his political statements in the media and on other platforms to criticize opponents of Aoun, and has expressed his unwavering support to Hezbollah as a defender of Lebanon’s unity.Some Lebanese media outlets reported that Sfeir was also questioned about his political tweets criticizing Saudi Arabia and mocking its war against Yemen.The military aggression has left hundreds of thousands of Yemenis dead, and displaced millions more. The Saudi war has destroyed Yemen's infrastructure and spread famine and infectious diseases across the Arab country.Sfeir’s detention raised concerns at home that he was the latest victim of rising tension between Lebanon and Saudi Arabia.Earlier this month, Lebanon’s caretaker Foreign Minister Charbel Wehbe stepped down from office, shortly after he angered the kingdom and its allies in the Persian Gulf region by blaming them for the rise of the Takfiri Daesh group in Syria and Iraq.Wehbe handed in his resignation on May 19 as he met Aoun at the Presidential Palace, Lebanon’s official National News Agency reported at the time.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line --> Prominent Lebanese musician and composer Samir Sfeir gives an interview to Lebanon’s Arabic-language al-Jadeed television network at Beirut airport, Lebanon, on 27 May, 2021, upon his arrival from Saudi Arabia. (Photo via Twitter)    Saudi Arabian authorities have released a prominent Lebanese singer and composer, who is known for his political opinions in support of Lebanon’s President Michel Aoun, his Free Patriotic Movement as well as Hezbollah resistance movement.Samir Sfeir arrived at Beirut-Rafik Hariri International Airport from Saudi Arabia aboard a Middle East Airlines flight on Thursday afternoon, after a 50-day detention — mostly in solitary confinement — in the ultra-conservative kingdom.Sfeir, who had residency in Saudi Arabia for five years, said he is now banned from returning.“I was bothered by the manner. I wish they just told me to leave and not come back. I would have done it,” he said.His whereabouts remained unclear until April 28, when Lebanon's Ministry of Foreign Affairs and Emigrants tried to ask Saudi authorities about him and the reasons for his detention.Sfeir said he was the victim of an online smear campaign that used his old tweets and TV comments, which he claimed were misrepresented to appear offensive to Saudi Arabia.He said the alleged smear campaign was launched after he posted a picture of himself receiving a vaccine in the kingdom, which sparked outrage among Saudi social media users, who thought he did not deserve and called on authorities to expel him.    “Social media and electronic flies (armies) are ruining things,” the Lebanese composer said. “They asked me many questions… They said, I am not allowed to be offensive to any Arab country.”Sfeir is known for his political statements in the media and on other platforms to criticize opponents of Aoun, and has expressed his unwavering support to Hezbollah as a defender of Lebanon’s unity.Some Lebanese media outlets reported that Sfeir was also questioned about his political tweets criticizing Saudi Arabia and mocking its war against Yemen.The military aggression has left hundreds of thousands of Yemenis dead, and displaced millions more. The Saudi war has destroyed Yemen's infrastructure and spread famine and infectious diseases across the Arab country.Sfeir’s detention raised concerns at home that he was the latest victim of rising tension between Lebanon and Saudi Arabia.Earlier this month, Lebanon’s caretaker Foreign Minister Charbel Wehbe stepped down from office, shortly after he angered the kingdom and its allies in the Persian Gulf region by blaming them for the rise of the Takfiri Daesh group in Syria and Iraq.Wehbe handed in his resignation on May 19 as he met Aoun at the Presidential Palace, Lebanon’s official National News Agency reported at the time.
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] =>  Prominent Lebanese musician and composer Samir Sfeir gives an interview to Lebanon’s Arabic-language al-Jadeed television network at Beirut airport, Lebanon, on 27 May, 2021, upon his arrival from Saudi Arabia.(Photo via Twitter)    Saudi Arabian authorities have released a prominent Lebanese singer and composer, who is known for his political opinions in support of Lebanon’s President Michel Aoun, his Free Patriotic Movement as well as Hezbollah resistance movement.Samir Sfeir arrived at Beirut-Rafik Hariri International Airport from Saudi Arabia aboard a Middle East Airlines flight on Thursday afternoon, after a 50-day detention — mostly in solitary confinement — in the ultra-conservative kingdom.Sfeir, who had residency in Saudi Arabia for five years, said he is now banned from returning.“I was bothered by the manner.I wish they just told me to leave and not come back.I would have done it,” he said.His whereabouts remained unclear until April 28, when Lebanon's Ministry of Foreign Affairs and Emigrants tried to ask Saudi authorities about him and the reasons for his detention.Sfeir said he was the victim of an online smear campaign that used his old tweets and TV comments, which he claimed were misrepresented to appear offensive to Saudi Arabia.He said the alleged smear campaign was launched after he posted a picture of himself receiving a vaccine in the kingdom, which sparked outrage among Saudi social media users, who thought he did not deserve and called on authorities to expel him.    “Social media and electronic flies (armies) are ruining things,” the Lebanese composer said.“They asked me many questions… They said, I am not allowed to be offensive to any Arab country.”Sfeir is known for his political statements in the media and on other platforms to criticize opponents of Aoun, and has expressed his unwavering support to Hezbollah as a defender of Lebanon’s unity.Some Lebanese media outlets reported that Sfeir was also questioned about his political tweets criticizing Saudi Arabia and mocking its war against Yemen.The military aggression has left hundreds of thousands of Yemenis dead, and displaced millions more.The Saudi war has destroyed Yemen's infrastructure and spread famine and infectious diseases across the Arab country.Sfeir’s detention raised concerns at home that he was the latest victim of rising tension between Lebanon and Saudi Arabia.Earlier this month, Lebanon’s caretaker Foreign Minister Charbel Wehbe stepped down from office, shortly after he angered the kingdom and its allies in the Persian Gulf region by blaming them for the rise of the Takfiri Daesh group in Syria and Iraq.Wehbe handed in his resignation on May 19 as he met Aoun at the Presidential Palace, Lebanon’s official National News Agency reported at the time.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==> Prominent Lebanese musician and composer Samir Sfeir gives an interview to Lebanon’s Arabic-language al-Jadeed television network at Beirut airport, Lebanon, on 27 May, 2021, upon his arrival from Saudi Arabia.(Photo via Twitter)    Saudi Arabian authorities have released a prominent Lebanese singer and composer, who is known for his political opinions in support of Lebanon’s President Michel Aoun, his Free Patriotic Movement as well as Hezbollah resistance movement.Samir Sfeir arrived at Beirut-Rafik Hariri International Airport from Saudi Arabia aboard a Middle East Airlines flight on Thursday afternoon, after a 50-day detention — mostly in solitary confinement — in the ultra-conservative kingdom.Sfeir, who had residency in Saudi Arabia for five years, said he is now banned from returning.“I was bothered by the manner.I wish they just told me to leave and not come back.I would have done it,” he said.His whereabouts remained unclear until April 28, when Lebanon's Ministry of Foreign Affairs and Emigrants tried to ask Saudi authorities about him and the reasons for his detention.Sfeir said he was the victim of an online smear campaign that used his old tweets and TV comments, which he claimed were misrepresented to appear offensive to Saudi Arabia.He said the alleged smear campaign was launched after he posted a picture of himself receiving a vaccine in the kingdom, which sparked outrage among Saudi social media users, who thought he did not deserve and called on authorities to expel him.    “Social media and electronic flies (armies) are ruining things,” the Lebanese composer said.“They asked me many questions… They said, I am not allowed to be offensive to any Arab country.”Sfeir is known for his political statements in the media and on other platforms to criticize opponents of Aoun, and has expressed his unwavering support to Hezbollah as a defender of Lebanon’s unity.Some Lebanese media outlets reported that Sfeir was also questioned about his political tweets criticizing Saudi Arabia and mocking its war against Yemen.The military aggression has left hundreds of thousands of Yemenis dead, and displaced millions more.The Saudi war has destroyed Yemen's infrastructure and spread famine and infectious diseases across the Arab country.Sfeir’s detention raised concerns at home that he was the latest victim of rising tension between Lebanon and Saudi Arabia.Earlier this month, Lebanon’s caretaker Foreign Minister Charbel Wehbe stepped down from office, shortly after he angered the kingdom and its allies in the Persian Gulf region by blaming them for the rise of the Takfiri Daesh group in Syria and Iraq.Wehbe handed in his resignation on May 19 as he met Aoun at the Presidential Palace, Lebanon’s official National News Agency reported at the time.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_133310_252338.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_133310_252338.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_133710_274873)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Last month, Saudi Arabia announced the suspension of fruit and vegetable imports from Lebanon, claiming shipments were being used for drug smuggling.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Nasser Qandil, editor-in-chief of Lebanon's al-Binaa newspaper, told Press TV at the time that the actual reason behind the prohibition was “political motivation,” saying if Riyadh actually wanted to fight drug trafficking it could easily act through its ambassador in Beirut and contact the relevant Lebanese officials.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Last month, Saudi Arabia announced the suspension of fruit and vegetable imports from Lebanon, claiming shipments were being used for drug smuggling.
+    [1] => 
+
+    [2] => Nasser Qandil, editor-in-chief of Lebanon's al-Binaa newspaper, told Press TV at the time that the actual reason behind the prohibition was “political motivation,” saying if Riyadh actually wanted to fight drug trafficking it could easily act through its ambassador in Beirut and contact the relevant Lebanese officials.
+    [3] => 
+
+    [4] => Saudi authorities, who are seeking new allies in Lebanon, have imposed sanctions on Hezbollah, and brutally cracked down on supporters of the resistance movement in the kingdom.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Last month, Saudi Arabia announced the suspension of fruit and vegetable imports from Lebanon, claiming shipments were being used for drug smuggling.
+    [1] => 
+
+    [2] => Nasser Qandil, editor-in-chief of Lebanon's al-Binaa newspaper, told Press TV at the time that the actual reason behind the prohibition was “political motivation,” saying if Riyadh actually wanted to fight drug trafficking it could easily act through its ambassador in Beirut and contact the relevant Lebanese officials.
+    [3] => 
+
+    [4] => Saudi authorities, who are seeking new allies in Lebanon, have imposed sanctions on Hezbollah, and brutally cracked down on supporters of the resistance movement in the kingdom.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Last month, Saudi Arabia announced the suspension of fruit and vegetable imports from Lebanon, claiming shipments were being used for drug smuggling.
+    [1] => 
+
+    [2] => Nasser Qandil, editor-in-chief of Lebanon's al-Binaa newspaper, told Press TV at the time that the actual reason behind the prohibition was “political motivation,” saying if Riyadh actually wanted to fight drug trafficking it could easily act through its ambassador in Beirut and contact the relevant Lebanese officials.
+    [3] => 
+
+    [4] => Saudi authorities, who are seeking new allies in Lebanon, have imposed sanctions on Hezbollah, and brutally cracked down on supporters of the resistance movement in the kingdom.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Last month, Saudi Arabia announced the suspension of fruit and vegetable imports from Lebanon, claiming shipments were being used for drug smuggling.
+Nasser Qandil, editor-in-chief of Lebanon's al-Binaa newspaper, told Press TV at the time that the actual reason behind the prohibition was “political motivation,” saying if Riyadh actually wanted to fight drug trafficking it could easily act through its ambassador in Beirut and contact the relevant Lebanese officials.
+Saudi authorities, who are seeking new allies in Lebanon, have imposed sanctions on Hezbollah, and brutally cracked down on supporters of the resistance movement in the kingdom.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_133710_274873.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_133710_274873.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_135305_258142)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> ' in a stable solid form. However, mineral carbonation is today still an immature technology.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Despite this potential energy penalty, interest in mineral
+
+    [1] => carbonation stems from two features that make it unique among
+
+    [2] => the different storage approaches, namely the abundance of metal
+
+    [3] => oxide bearing materials, particularly of natural silicates, and the
+
+    [4] => permanence of storage of CO2
+
+    [5] =>  in a stable solid form. However, mineral carbonation is today still an immature technology.
+    [6] => Studies reported in the literature have not yet reached a level
+
+    [7] => where a thorough assessment of the technology, potential, costs
+
+    [8] => and impacts is possible.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Despite this potential energy penalty, interest in mineral
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->carbonation stems from two features that make it unique among
+
+$matches ==>
+Array
+(
+    [0] => g
+
+    [1] => g
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->the different storage approaches, namely the abundance of metal
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->oxide bearing materials, particularly of natural silicates, and the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->permanence of storage of CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Studies reported in the literature have not yet reached a level
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->where a thorough assessment of the technology, potential, costs
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Despite this potential energy penalty, interest in mineral 
+    [1] => carbonation stems from two features that make it unique among 
+    [2] => the different storage approaches, namely the abundance of metal 
+    [3] => oxide bearing materials, particularly of natural silicates, and the 
+    [4] => permanence of storage of CO2 
+    [5] =>  in a stable solid form. However, mineral carbonation is today still an immature technology.
+    [6] => Studies reported in the literature have not yet reached a level 
+    [7] => where a thorough assessment of the technology, potential, costs 
+    [8] => and impacts is possible.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line --> in a stable solid form. However, mineral carbonation is today still an immature technology.
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Despite this potential energy penalty, interest in mineral 
+    [1] => carbonation stems from two features that make it unique among 
+    [2] => the different storage approaches, namely the abundance of metal 
+    [3] => oxide bearing materials, particularly of natural silicates, and the 
+    [4] => permanence of storage of CO2 
+    [5] =>  in a stable solid form.However, mineral carbonation is today still an immature technology.
+    [6] => Studies reported in the literature have not yet reached a level 
+    [7] => where a thorough assessment of the technology, potential, costs 
+    [8] => and impacts is possible.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Despite this potential energy penalty, interest in mineral carbonation stems from two features that make it unique among the different storage approaches, namely the abundance of metal oxide bearing materials, particularly of natural silicates, and the permanence of storage of CO2  in a stable solid form.However, mineral carbonation is today still an immature technology.Studies reported in the literature have not yet reached a level where a thorough assessment of the technology, potential, costs and impacts is possible.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_135305_258142.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_135305_258142.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_135545_745032)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => When CO2 reacts with metal oxides (indicated here as MO,where M is a divalent metal, e.g., calcium, magnesium, or iron)the corresponding carbonate is formed and heat is releasedaccording to the following chemical reaction:The amount of heat depends on the specific metal and on thematerial containing the metal oxide. In general this is a largefraction (up to 46% in the case of calcium oxide) of the heatreleased by the upstream combustion process forming CO2(393.8 kJ mol–1CO2 for combustion of elemental carbon).In the case of a few natural silicates the following exothermicchemical reactions take place (in all cases heat values are givenper unit mol of CO2 and standard conditions 25°C and 0.1 MPa,Robie et al. 1978):Since the reaction releases heat, the formation of carbonatesis thermodynamically favoured at low temperature, whereasat high temperature (above 900°C for calcium carbonate andabove 300°C for magnesium carbonate, at a CO2 partial pressureof one bar) the reverse reaction, that is calcination, is favoured.The representative member of the olivine family considered inthe first reaction above is forsterite, which is iron-free. In naturemost olivines contain some iron that can form iron oxides orsiderite (FeCO3).
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => When CO2 reacts with metal oxides (indicated here as MO,where M is a divalent metal, e.g., calcium, magnesium, or iron)the corresponding carbonate is formed and heat is releasedaccording to the following chemical reaction:The amount of heat depends on the specific metal and on thematerial containing the metal oxide. In general this is a largefraction (up to 46% in the case of calcium oxide) of the heatreleased by the upstream combustion process forming CO2(393.8 kJ mol–1CO2 for combustion of elemental carbon).In the case of a few natural silicates the following exothermicchemical reactions take place (in all cases heat values are givenper unit mol of CO2 and standard conditions 25°C and 0.1 MPa,Robie et al. 1978):Since the reaction releases heat, the formation of carbonatesis thermodynamically favoured at low temperature, whereasat high temperature (above 900°C for calcium carbonate andabove 300°C for magnesium carbonate, at a CO2 partial pressureof one bar) the reverse reaction, that is calcination, is favoured.The representative member of the olivine family considered inthe first reaction above is forsterite, which is iron-free. In naturemost olivines contain some iron that can form iron oxides orsiderite (FeCO3).
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->When CO2 reacts with metal oxides (indicated here as MO,where M is a divalent metal, e.g., calcium, magnesium, or iron)the corresponding carbonate is formed and heat is releasedaccording to the following chemical reaction:The amount of heat depends on the specific metal and on thematerial containing the metal oxide. In general this is a largefraction (up to 46% in the case of calcium oxide) of the heatreleased by the upstream combustion process forming CO2(393.8 kJ mol–1CO2 for combustion of elemental carbon).In the case of a few natural silicates the following exothermicchemical reactions take place (in all cases heat values are givenper unit mol of CO2 and standard conditions 25°C and 0.1 MPa,Robie et al. 1978):Since the reaction releases heat, the formation of carbonatesis thermodynamically favoured at low temperature, whereasat high temperature (above 900°C for calcium carbonate andabove 300°C for magnesium carbonate, at a CO2 partial pressureof one bar) the reverse reaction, that is calcination, is favoured.The representative member of the olivine family considered inthe first reaction above is forsterite, which is iron-free. In naturemost olivines contain some iron that can form iron oxides orsiderite (FeCO3).
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => When CO2 reacts with metal oxides (indicated here as MO,where M is a divalent metal, e.g., calcium, magnesium, or iron)the corresponding carbonate is formed and heat is releasedaccording to the following chemical reaction:The amount of heat depends on the specific metal and on thematerial containing the metal oxide.In general this is a largefraction (up to 46% in the case of calcium oxide) of the heatreleased by the upstream combustion process forming CO2(393.8 kJ mol–1CO2 for combustion of elemental carbon).In the case of a few natural silicates the following exothermicchemical reactions take place (in all cases heat values are givenper unit mol of CO2 and standard conditions 25°C and 0.1 MPa,Robie et al.1978):Since the reaction releases heat, the formation of carbonatesis thermodynamically favoured at low temperature, whereasat high temperature (above 900°C for calcium carbonate andabove 300°C for magnesium carbonate, at a CO2 partial pressureof one bar) the reverse reaction, that is calcination, is favoured.The representative member of the olivine family considered inthe first reaction above is forsterite, which is iron-free.In naturemost olivines contain some iron that can form iron oxides orsiderite (FeCO3).
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>When CO2 reacts with metal oxides (indicated here as MO,where M is a divalent metal, e.g., calcium, magnesium, or iron)the corresponding carbonate is formed and heat is releasedaccording to the following chemical reaction:The amount of heat depends on the specific metal and on thematerial containing the metal oxide.In general this is a largefraction (up to 46% in the case of calcium oxide) of the heatreleased by the upstream combustion process forming CO2(393.8 kJ mol–1CO2 for combustion of elemental carbon).In the case of a few natural silicates the following exothermicchemical reactions take place (in all cases heat values are givenper unit mol of CO2 and standard conditions 25°C and 0.1 MPa,Robie et al.1978):Since the reaction releases heat, the formation of carbonatesis thermodynamically favoured at low temperature, whereasat high temperature (above 900°C for calcium carbonate andabove 300°C for magnesium carbonate, at a CO2 partial pressureof one bar) the reverse reaction, that is calcination, is favoured.The representative member of the olivine family considered inthe first reaction above is forsterite, which is iron-free.In naturemost olivines contain some iron that can form iron oxides orsiderite (FeCO3).
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_135545_745032.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_135545_745032.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_141212_345134)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Even at the low partial pressure of atmospheric CO2
+
+    [1] =>  and
+
+    [2] => at ambient temperature, carbonation of metal oxide bearing
+
+    [3] => minerals occurs spontaneously, though on geological time scales
+
+    [4] => (Robie et al., 1978; Lasaga and Berner, 1998). Limitations arise from the formation of silica or carbonate layers on the
+
+    [5] => mineral surface during carbonation that tend to hinder further
+
+    [6] => reaction and to limit conversion (Butt et al., 1996) and from the
+
+    [7] => rate of CO2
+
+    [8] =>  uptake from the gas phase in the case of aqueous
+
+    [9] => reactions. The challenge for mineral carbonation is to find ways
+
+    [10] => to accelerate carbonation and to exploit the heat of reaction
+
+    [11] => within the environmental constraints, for example with minimal
+
+    [12] => energy and material losses.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Even at the low partial pressure of atmospheric CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> and
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->at ambient temperature, carbonation of metal oxide bearing
+
+$matches ==>
+Array
+(
+    [0] => g
+
+    [1] => g
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->minerals occurs spontaneously, though on geological time scales
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->(Robie et al., 1978; Lasaga and Berner, 1998). Limitations arise from the formation of silica or carbonate layers on the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->mineral surface during carbonation that tend to hinder further
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->reaction and to limit conversion (Butt et al., 1996) and from the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->rate of CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> uptake from the gas phase in the case of aqueous
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->reactions. The challenge for mineral carbonation is to find ways
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->to accelerate carbonation and to exploit the heat of reaction
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->within the environmental constraints, for example with minimal
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Even at the low partial pressure of atmospheric CO2 
+    [1] =>  and 
+    [2] => at ambient temperature, carbonation of metal oxide bearing 
+    [3] => minerals occurs spontaneously, though on geological time scales 
+    [4] => (Robie et al., 1978; Lasaga and Berner, 1998). Limitations arise from the formation of silica or carbonate layers on the 
+    [5] => mineral surface during carbonation that tend to hinder further 
+    [6] => reaction and to limit conversion (Butt et al., 1996) and from the 
+    [7] => rate of CO2 
+    [8] =>  uptake from the gas phase in the case of aqueous 
+    [9] => reactions. The challenge for mineral carbonation is to find ways 
+    [10] => to accelerate carbonation and to exploit the heat of reaction 
+    [11] => within the environmental constraints, for example with minimal 
+    [12] => energy and material losses.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->(Robie et al., 1978; Lasaga and Berner, 1998). Limitations arise from the formation of silica or carbonate layers on the 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->reactions. The challenge for mineral carbonation is to find ways 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Even at the low partial pressure of atmospheric CO2 
+    [1] =>  and 
+    [2] => at ambient temperature, carbonation of metal oxide bearing 
+    [3] => minerals occurs spontaneously, though on geological time scales 
+    [4] => (Robie et al., 1978; Lasaga and Berner, 1998).Limitations arise from the formation of silica or carbonate layers on the 
+    [5] => mineral surface during carbonation that tend to hinder further 
+    [6] => reaction and to limit conversion (Butt et al., 1996) and from the 
+    [7] => rate of CO2 
+    [8] =>  uptake from the gas phase in the case of aqueous 
+    [9] => reactions.The challenge for mineral carbonation is to find ways 
+    [10] => to accelerate carbonation and to exploit the heat of reaction 
+    [11] => within the environmental constraints, for example with minimal 
+    [12] => energy and material losses.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Even at the low partial pressure of atmospheric CO2  and at ambient temperature, carbonation of metal oxide bearing minerals occurs spontaneously, though on geological time scales (Robie et al., 1978; Lasaga and Berner, 1998).Limitations arise from the formation of silica or carbonate layers on the mineral surface during carbonation that tend to hinder further reaction and to limit conversion (Butt et al., 1996) and from the rate of CO2  uptake from the gas phase in the case of aqueous reactions.The challenge for mineral carbonation is to find ways to accelerate carbonation and to exploit the heat of reaction within the environmental constraints, for example with minimal energy and material losses.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_141212_345134.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_141212_345134.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_141451_701366)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'because of their reactivity they are also extremely rare in nature.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'available.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Most processes under consideration for mineral carbonation
+
+    [1] => focus on metal oxide bearing material that contains alkaline-earth
+
+    [2] => metals (such as calcium and magnesium) as opposed to alkali
+
+    [3] => metals (such as sodium and potassium) whose corresponding
+
+    [4] => carbonates are very soluble in water. Oxides and hydroxides of
+
+    [5] => calcium and magnesium would be the ideal source materials, but
+
+    [6] => because of their reactivity they are also extremely rare in nature.
+    [7] => Therefore, suitable metal oxide bearing minerals may be silicate
+
+    [8] => rocks or alkaline industrial residues, the former being abundant
+
+    [9] => but generally difficult to access and the latter scarcer but easily
+
+    [10] => available.
+    [11] => 	 Among silicate rocks, mafic and ultramafic rocks are rocks
+
+    [12] => that contain high amounts of magnesium, calcium and iron and
+
+    [13] => have a low content of sodium and potassium. Some of their main
+
+    [14] => mineral constituents are olivines, serpentine, enstatite (MgSiO3
+
+    [15] => ),
+
+    [16] => talc (Mg3
+
+    [17] => Si4
+
+    [18] => O10(OH)2
+
+    [19] => ) and wollastonite. Although molar
+
+    [20] => abundances of magnesium and calcium silicates in the Earth’s
+
+    [21] => crust are similar, rocks containing magnesium silicate exhibit a
+
+    [22] => higher MgO concentration (up to 50% by weight, corresponding
+
+    [23] => to a theoretical CO2 storage capacity of 0.55 kg CO2
+
+    [24] => /kg rock),
+
+    [25] => than rocks containing calcium silicates, for example basalts, that
+
+    [26] => haveCaO content of about 10% by weight only (with a theoretical
+
+    [27] => CO2 storage capacity of 0.08 kg CO2
+
+    [28] => /kgrock) (Goff and Lackner,
+
+    [29] => 1998). Deposits of wollastonite, the most calcium-rich silicate,
+
+    [30] => are much rarer than those of magnesium-rich silicates.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Most processes under consideration for mineral carbonation
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->focus on metal oxide bearing material that contains alkaline-earth
+
+$matches ==>
+Array
+(
+    [0] => h
+
+    [1] => h
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->metals (such as calcium and magnesium) as opposed to alkali
+
+$matches ==>
+Array
+(
+    [0] => i
+
+    [1] => i
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->metals (such as sodium and potassium) whose corresponding
+
+$matches ==>
+Array
+(
+    [0] => g
+
+    [1] => g
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->carbonates are very soluble in water. Oxides and hydroxides of
+
+$matches ==>
+Array
+(
+    [0] => f
+
+    [1] => f
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->calcium and magnesium would be the ideal source materials, but
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Therefore, suitable metal oxide bearing minerals may be silicate
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->rocks or alkaline industrial residues, the former being abundant
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->but generally difficult to access and the latter scarcer but easily
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->	 Among silicate rocks, mafic and ultramafic rocks are rocks
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->that contain high amounts of magnesium, calcium and iron and
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->have a low content of sodium and potassium. Some of their main
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->mineral constituents are olivines, serpentine, enstatite (MgSiO3
+
+$matches ==>
+Array
+(
+    [0] => 3
+
+    [1] => 3
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->),
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->talc (Mg3
+
+$matches ==>
+Array
+(
+    [0] => 3
+
+    [1] => 3
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Si4
+
+$matches ==>
+Array
+(
+    [0] => 4
+
+    [1] => 4
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->O10(OH)2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->) and wollastonite. Although molar
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->abundances of magnesium and calcium silicates in the Earth’s
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->crust are similar, rocks containing magnesium silicate exhibit a
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->higher MgO concentration (up to 50% by weight, corresponding
+
+$matches ==>
+Array
+(
+    [0] => g
+
+    [1] => g
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->to a theoretical CO2 storage capacity of 0.55 kg CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->/kg rock),
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->than rocks containing calcium silicates, for example basalts, that
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->haveCaO content of about 10% by weight only (with a theoretical
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->CO2 storage capacity of 0.08 kg CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->/kgrock) (Goff and Lackner,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->1998). Deposits of wollastonite, the most calcium-rich silicate,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Most processes under consideration for mineral carbonation 
+    [1] => focus on metal oxide bearing material that contains alkaline-earth 
+    [2] => metals (such as calcium and magnesium) as opposed to alkali 
+    [3] => metals (such as sodium and potassium) whose corresponding 
+    [4] => carbonates are very soluble in water. Oxides and hydroxides of 
+    [5] => calcium and magnesium would be the ideal source materials, but 
+    [6] => because of their reactivity they are also extremely rare in nature.
+    [7] => Therefore, suitable metal oxide bearing minerals may be silicate 
+    [8] => rocks or alkaline industrial residues, the former being abundant 
+    [9] => but generally difficult to access and the latter scarcer but easily 
+    [10] => available.
+    [11] => 	 Among silicate rocks, mafic and ultramafic rocks are rocks 
+    [12] => that contain high amounts of magnesium, calcium and iron and 
+    [13] => have a low content of sodium and potassium. Some of their main 
+    [14] => mineral constituents are olivines, serpentine, enstatite (MgSiO3 
+    [15] => ), 
+    [16] => talc (Mg3 
+    [17] => Si4 
+    [18] => O10(OH)2 
+    [19] => ) and wollastonite. Although molar 
+    [20] => abundances of magnesium and calcium silicates in the Earth’s 
+    [21] => crust are similar, rocks containing magnesium silicate exhibit a 
+    [22] => higher MgO concentration (up to 50% by weight, corresponding 
+    [23] => to a theoretical CO2 storage capacity of 0.55 kg CO2 
+    [24] => /kg rock), 
+    [25] => than rocks containing calcium silicates, for example basalts, that 
+    [26] => haveCaO content of about 10% by weight only (with a theoretical 
+    [27] => CO2 storage capacity of 0.08 kg CO2 
+    [28] => /kgrock) (Goff and Lackner, 
+    [29] => 1998). Deposits of wollastonite, the most calcium-rich silicate, 
+    [30] => are much rarer than those of magnesium-rich silicates.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->carbonates are very soluble in water. Oxides and hydroxides of 
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->have a low content of sodium and potassium. Some of their main 
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->) and wollastonite. Although molar 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->1998). Deposits of wollastonite, the most calcium-rich silicate, 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Most processes under consideration for mineral carbonation 
+    [1] => focus on metal oxide bearing material that contains alkaline-earth 
+    [2] => metals (such as calcium and magnesium) as opposed to alkali 
+    [3] => metals (such as sodium and potassium) whose corresponding 
+    [4] => carbonates are very soluble in water.Oxides and hydroxides of 
+    [5] => calcium and magnesium would be the ideal source materials, but 
+    [6] => because of their reactivity they are also extremely rare in nature.
+    [7] => Therefore, suitable metal oxide bearing minerals may be silicate 
+    [8] => rocks or alkaline industrial residues, the former being abundant 
+    [9] => but generally difficult to access and the latter scarcer but easily 
+    [10] => available.
+    [11] => 	 Among silicate rocks, mafic and ultramafic rocks are rocks 
+    [12] => that contain high amounts of magnesium, calcium and iron and 
+    [13] => have a low content of sodium and potassium.Some of their main 
+    [14] => mineral constituents are olivines, serpentine, enstatite (MgSiO3 
+    [15] => ), 
+    [16] => talc (Mg3 
+    [17] => Si4 
+    [18] => O10(OH)2 
+    [19] => ) and wollastonite.Although molar 
+    [20] => abundances of magnesium and calcium silicates in the Earth’s 
+    [21] => crust are similar, rocks containing magnesium silicate exhibit a 
+    [22] => higher MgO concentration (up to 50% by weight, corresponding 
+    [23] => to a theoretical CO2 storage capacity of 0.55 kg CO2 
+    [24] => /kg rock), 
+    [25] => than rocks containing calcium silicates, for example basalts, that 
+    [26] => haveCaO content of about 10% by weight only (with a theoretical 
+    [27] => CO2 storage capacity of 0.08 kg CO2 
+    [28] => /kgrock) (Goff and Lackner, 
+    [29] => 1998).Deposits of wollastonite, the most calcium-rich silicate, 
+    [30] => are much rarer than those of magnesium-rich silicates.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Most processes under consideration for mineral carbonation focus on metal oxide bearing material that contains alkaline-earth metals (such as calcium and magnesium) as opposed to alkali metals (such as sodium and potassium) whose corresponding carbonates are very soluble in water.Oxides and hydroxides of calcium and magnesium would be the ideal source materials, but because of their reactivity they are also extremely rare in nature.Therefore, suitable metal oxide bearing minerals may be silicate rocks or alkaline industrial residues, the former being abundant but generally difficult to access and the latter scarcer but easily available.	 Among silicate rocks, mafic and ultramafic rocks are rocks that contain high amounts of magnesium, calcium and iron and have a low content of sodium and potassium.Some of their main mineral constituents are olivines, serpentine, enstatite (MgSiO3 ), talc (Mg3 Si4 O10(OH)2 ) and wollastonite.Although molar abundances of magnesium and calcium silicates in the Earth’s crust are similar, rocks containing magnesium silicate exhibit a higher MgO concentration (up to 50% by weight, corresponding to a theoretical CO2 storage capacity of 0.55 kg CO2 /kg rock), than rocks containing calcium silicates, for example basalts, that haveCaO content of about 10% by weight only (with a theoretical CO2 storage capacity of 0.08 kg CO2 /kgrock) (Goff and Lackner, 1998).Deposits of wollastonite, the most calcium-rich silicate, are much rarer than those of magnesium-rich silicates.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_141451_701366.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_141451_701366.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_145154_792443)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '300GtCO2 (Goff and Lackner, 1998; Goff et al., 2000).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'worldwide storage potential in ophiolite belts has been reported.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'yet to be established (Brownlow, 1979; Newall et al., 2000).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Serpentine and olivine are mainly found in ophiolite belts
+
+    [1] => – geological zones where colliding continental plates lead to
+
+    [2] => an uplifting of the earth’s crust (Coleman 1977). For example,
+
+    [3] => considering ultramafic deposits containing serpentine and olivine
+
+    [4] => in the Eastern United States and in Puerto Rico, it was found
+
+    [5] => that they have RCO2 values between 1.97 and 2.51, depending on
+
+    [6] => purity and type (the RCO2 is the ratio of the mass of mineral needed
+
+    [7] => to the mass of CO2 fixed when assuming complete conversion
+
+    [8] => of the mineral upon carbonation, that is the reciprocal of the
+
+    [9] => theoretical CO2 storage capacity introduced above). Peridotites
+
+    [10] => and serpentinites exceed the total Mg requirement to neutralize
+
+    [11] => the CO2 from all worldwide coal resources estimated at 10,000
+
+    [12] => Gt (Lackner et al., 1995). Specific ore deposits identified in
+
+    [13] => two studies in the USA and Puerto Rico add to approximately
+
+    [14] => 300GtCO2 (Goff and Lackner, 1998; Goff et al., 2000).
+    [15] => This should be compared to CO2
+
+    [16] =>  emissions of about
+
+    [17] => 5.5 GtCO2
+
+    [18] =>  in the United States and about
+
+    [19] => 24 GtCO2
+
+    [20] => /yr-1 worldwide. No comprehensive mapping of the
+
+    [21] => worldwide storage potential in ophiolite belts has been reported.
+    [22] => However, their total surface exposure is estimated to be of the order of 1000 km by 100 km (Goff et al., 2000). It is well
+
+    [23] => known however that magnesium silicate reserves are present in
+
+    [24] => all continents, but since they tend to follow present or ancient
+
+    [25] => continental boundaries, they are not present in all countries. The
+
+    [26] => feasibility of their use for ex-situ or in-situ mineral carbonation is
+
+    [27] => yet to be established (Brownlow, 1979; Newall et al., 2000).
+    [28] => 	 On a smaller-scale, industrial wastes and mining tailings
+
+    [29] => provide sources of alkalinity that are readily available and
+
+    [30] => reactive. Even though their total amounts are too small to
+
+    [31] => substantially reduceCO2
+
+    [32] =>  emissions, they could help introduce the
+
+    [33] => technology. Waste streams of calcium silicate materials that have
+
+    [34] => been considered for mineral carbonation include pulverized fuel
+
+    [35] => ash from coal fired power plants (with a calcium oxide content
+
+    [36] => up to 65% by weight), bottom ash (about 20% by weight CaO)
+
+    [37] => and fly ash (about 35% by weight CaO) from municipal solid
+
+    [38] => waste incinerators, de-inking ash from paper recycling (about
+
+    [39] => 35% by weight CaO), stainless steel slag (about 65% by weight
+
+    [40] => CaO and MgO) and waste cement (Johnson, 2000; Fernández
+
+    [41] => Bertos et al., 2004; Iizuka et al., 2004).
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Serpentine and olivine are mainly found in ophiolite belts
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->– geological zones where colliding continental plates lead to
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->an uplifting of the earth’s crust (Coleman 1977). For example,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->considering ultramafic deposits containing serpentine and olivine
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->in the Eastern United States and in Puerto Rico, it was found
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->that they have RCO2 values between 1.97 and 2.51, depending on
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->purity and type (the RCO2 is the ratio of the mass of mineral needed
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->to the mass of CO2 fixed when assuming complete conversion
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->of the mineral upon carbonation, that is the reciprocal of the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->theoretical CO2 storage capacity introduced above). Peridotites
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->and serpentinites exceed the total Mg requirement to neutralize
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->the CO2 from all worldwide coal resources estimated at 10,000
+
+$matches ==>
+Array
+(
+    [0] => 0
+
+    [1] => 0
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Gt (Lackner et al., 1995). Specific ore deposits identified in
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->two studies in the USA and Puerto Rico add to approximately
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->This should be compared to CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> emissions of about
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->5.5 GtCO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> in the United States and about
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->24 GtCO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->/yr-1 worldwide. No comprehensive mapping of the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->However, their total surface exposure is estimated to be of the order of 1000 km by 100 km (Goff et al., 2000). It is well
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->known however that magnesium silicate reserves are present in
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->all continents, but since they tend to follow present or ancient
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->continental boundaries, they are not present in all countries. The
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->feasibility of their use for ex-situ or in-situ mineral carbonation is
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->	 On a smaller-scale, industrial wastes and mining tailings
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->provide sources of alkalinity that are readily available and
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->reactive. Even though their total amounts are too small to
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->substantially reduceCO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> emissions, they could help introduce the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->technology. Waste streams of calcium silicate materials that have
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->been considered for mineral carbonation include pulverized fuel
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->ash from coal fired power plants (with a calcium oxide content
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->up to 65% by weight), bottom ash (about 20% by weight CaO)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->and fly ash (about 35% by weight CaO) from municipal solid
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->waste incinerators, de-inking ash from paper recycling (about
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->35% by weight CaO), stainless steel slag (about 65% by weight
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->CaO and MgO) and waste cement (Johnson, 2000; Fernández
+
+$matches ==>
+Array
+(
+    [0] => z
+
+    [1] => z
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Serpentine and olivine are mainly found in ophiolite belts 
+    [1] => – geological zones where colliding continental plates lead to 
+    [2] => an uplifting of the earth’s crust (Coleman 1977). For example, 
+    [3] => considering ultramafic deposits containing serpentine and olivine 
+    [4] => in the Eastern United States and in Puerto Rico, it was found 
+    [5] => that they have RCO2 values between 1.97 and 2.51, depending on 
+    [6] => purity and type (the RCO2 is the ratio of the mass of mineral needed 
+    [7] => to the mass of CO2 fixed when assuming complete conversion 
+    [8] => of the mineral upon carbonation, that is the reciprocal of the 
+    [9] => theoretical CO2 storage capacity introduced above). Peridotites 
+    [10] => and serpentinites exceed the total Mg requirement to neutralize 
+    [11] => the CO2 from all worldwide coal resources estimated at 10,000 
+    [12] => Gt (Lackner et al., 1995). Specific ore deposits identified in 
+    [13] => two studies in the USA and Puerto Rico add to approximately 
+    [14] => 300GtCO2 (Goff and Lackner, 1998; Goff et al., 2000).
+    [15] => This should be compared to CO2 
+    [16] =>  emissions of about 
+    [17] => 5.5 GtCO2 
+    [18] =>  in the United States and about 
+    [19] => 24 GtCO2 
+    [20] => /yr-1 worldwide. No comprehensive mapping of the 
+    [21] => worldwide storage potential in ophiolite belts has been reported.
+    [22] => However, their total surface exposure is estimated to be of the order of 1000 km by 100 km (Goff et al., 2000). It is well 
+    [23] => known however that magnesium silicate reserves are present in 
+    [24] => all continents, but since they tend to follow present or ancient 
+    [25] => continental boundaries, they are not present in all countries. The 
+    [26] => feasibility of their use for ex-situ or in-situ mineral carbonation is 
+    [27] => yet to be established (Brownlow, 1979; Newall et al., 2000).
+    [28] => 	 On a smaller-scale, industrial wastes and mining tailings 
+    [29] => provide sources of alkalinity that are readily available and 
+    [30] => reactive. Even though their total amounts are too small to 
+    [31] => substantially reduceCO2 
+    [32] =>  emissions, they could help introduce the 
+    [33] => technology. Waste streams of calcium silicate materials that have 
+    [34] => been considered for mineral carbonation include pulverized fuel 
+    [35] => ash from coal fired power plants (with a calcium oxide content 
+    [36] => up to 65% by weight), bottom ash (about 20% by weight CaO) 
+    [37] => and fly ash (about 35% by weight CaO) from municipal solid 
+    [38] => waste incinerators, de-inking ash from paper recycling (about 
+    [39] => 35% by weight CaO), stainless steel slag (about 65% by weight 
+    [40] => CaO and MgO) and waste cement (Johnson, 2000; Fernández 
+    [41] => Bertos et al., 2004; Iizuka et al., 2004).
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->an uplifting of the earth’s crust (Coleman 1977). For example, 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->theoretical CO2 storage capacity introduced above). Peridotites 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Gt (Lackner et al., 1995). Specific ore deposits identified in 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->/yr-1 worldwide. No comprehensive mapping of the 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->However, their total surface exposure is estimated to be of the order of 1000 km by 100 km (Goff et al., 2000). It is well 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->continental boundaries, they are not present in all countries. The 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->reactive. Even though their total amounts are too small to 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->technology. Waste streams of calcium silicate materials that have 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Serpentine and olivine are mainly found in ophiolite belts 
+    [1] => – geological zones where colliding continental plates lead to 
+    [2] => an uplifting of the earth’s crust (Coleman 1977).For example, 
+    [3] => considering ultramafic deposits containing serpentine and olivine 
+    [4] => in the Eastern United States and in Puerto Rico, it was found 
+    [5] => that they have RCO2 values between 1.97 and 2.51, depending on 
+    [6] => purity and type (the RCO2 is the ratio of the mass of mineral needed 
+    [7] => to the mass of CO2 fixed when assuming complete conversion 
+    [8] => of the mineral upon carbonation, that is the reciprocal of the 
+    [9] => theoretical CO2 storage capacity introduced above).Peridotites 
+    [10] => and serpentinites exceed the total Mg requirement to neutralize 
+    [11] => the CO2 from all worldwide coal resources estimated at 10,000 
+    [12] => Gt (Lackner et al., 1995).Specific ore deposits identified in 
+    [13] => two studies in the USA and Puerto Rico add to approximately 
+    [14] => 300GtCO2 (Goff and Lackner, 1998; Goff et al., 2000).
+    [15] => This should be compared to CO2 
+    [16] =>  emissions of about 
+    [17] => 5.5 GtCO2 
+    [18] =>  in the United States and about 
+    [19] => 24 GtCO2 
+    [20] => /yr-1 worldwide.No comprehensive mapping of the 
+    [21] => worldwide storage potential in ophiolite belts has been reported.
+    [22] => However, their total surface exposure is estimated to be of the order of 1000 km by 100 km (Goff et al., 2000).It is well 
+    [23] => known however that magnesium silicate reserves are present in 
+    [24] => all continents, but since they tend to follow present or ancient 
+    [25] => continental boundaries, they are not present in all countries.The 
+    [26] => feasibility of their use for ex-situ or in-situ mineral carbonation is 
+    [27] => yet to be established (Brownlow, 1979; Newall et al., 2000).
+    [28] => 	 On a smaller-scale, industrial wastes and mining tailings 
+    [29] => provide sources of alkalinity that are readily available and 
+    [30] => reactive.Even though their total amounts are too small to 
+    [31] => substantially reduceCO2 
+    [32] =>  emissions, they could help introduce the 
+    [33] => technology.Waste streams of calcium silicate materials that have 
+    [34] => been considered for mineral carbonation include pulverized fuel 
+    [35] => ash from coal fired power plants (with a calcium oxide content 
+    [36] => up to 65% by weight), bottom ash (about 20% by weight CaO) 
+    [37] => and fly ash (about 35% by weight CaO) from municipal solid 
+    [38] => waste incinerators, de-inking ash from paper recycling (about 
+    [39] => 35% by weight CaO), stainless steel slag (about 65% by weight 
+    [40] => CaO and MgO) and waste cement (Johnson, 2000; Fernández 
+    [41] => Bertos et al., 2004; Iizuka et al., 2004).
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Serpentine and olivine are mainly found in ophiolite belts – geological zones where colliding continental plates lead to an uplifting of the earth’s crust (Coleman 1977).For example, considering ultramafic deposits containing serpentine and olivine in the Eastern United States and in Puerto Rico, it was found that they have RCO2 values between 1.97 and 2.51, depending on purity and type (the RCO2 is the ratio of the mass of mineral needed to the mass of CO2 fixed when assuming complete conversion of the mineral upon carbonation, that is the reciprocal of the theoretical CO2 storage capacity introduced above).Peridotites and serpentinites exceed the total Mg requirement to neutralize the CO2 from all worldwide coal resources estimated at 10,000 Gt (Lackner et al., 1995).Specific ore deposits identified in two studies in the USA and Puerto Rico add to approximately 300GtCO2 (Goff and Lackner, 1998; Goff et al., 2000).This should be compared to CO2  emissions of about 5.5 GtCO2  in the United States and about 24 GtCO2 /yr-1 worldwide.No comprehensive mapping of the worldwide storage potential in ophiolite belts has been reported.However, their total surface exposure is estimated to be of the order of 1000 km by 100 km (Goff et al., 2000).It is well known however that magnesium silicate reserves are present in all continents, but since they tend to follow present or ancient continental boundaries, they are not present in all countries.The feasibility of their use for ex-situ or in-situ mineral carbonation is yet to be established (Brownlow, 1979; Newall et al., 2000).	 On a smaller-scale, industrial wastes and mining tailings provide sources of alkalinity that are readily available and reactive.Even though their total amounts are too small to substantially reduceCO2  emissions, they could help introduce the technology.Waste streams of calcium silicate materials that have been considered for mineral carbonation include pulverized fuel ash from coal fired power plants (with a calcium oxide content up to 65% by weight), bottom ash (about 20% by weight CaO) and fly ash (about 35% by weight CaO) from municipal solid waste incinerators, de-inking ash from paper recycling (about 35% by weight CaO), stainless steel slag (about 65% by weight CaO and MgO) and waste cement (Johnson, 2000; Fernández Bertos et al., 2004; Iizuka et al., 2004).
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_145154_792443.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_145154_792443.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_151149_842328)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'to avoid transport of solid materials (see Figure 7.2).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'mineable volume of about 0.3 km3 for a mine with a 30 year life.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 7.2.4	 Processing
+
+    [1] => 7.2.4.1 Mining and mine reclamation
+
+    [2] => Mining serpentine would not differ substantially from
+
+    [3] => conventional mining of other minerals with similar properties,
+
+    [4] => for example copper ores. Serpentine and olivine are both mined
+
+    [5] => already, although rarely on the scale envisioned here (Goff and
+
+    [6] => Lackner, 1998;Goff et al., 2000).Like in othermining operations,
+
+    [7] => disposal of tailings and mine reclamation are important issues to
+
+    [8] => consider. Tailing disposal depends on the material characteristics
+
+    [9] => – particle size and cohesion, moisture content and chemical
+
+    [10] => stability against natural leaching processes – and these depend
+
+    [11] => in turn on the specific process. It is likely that carbonation plants
+
+    [12] => will be located near the metal oxide bearing material, either the
+
+    [13] => factory producing the residues to be treated or the silicate mine,
+
+    [14] => to avoid transport of solid materials (see Figure 7.2).
+    [15] => Economies of scale applying to today’s mining technology
+
+    [16] => suggest a minimum mining operation of 50,000 to 100,000
+
+    [17] => tonnes day–1 (Hartman, 1992), which translates into a minimum
+
+    [18] => mineable volume of about 0.3 km3 for a mine with a 30 year life.
+    [19] => This is a rather small size for ophiolite ore bodies, which are
+
+    [20] => often kilometres wide and hundreds of meters thick (Goff and
+
+    [21] => Lackner, 1998; Goff et al., 2000; Newall et al., 2000). Since coal,
+
+    [22] => in contrast to ophiolite bodies, occurs in thin seams and is buried
+
+    [23] => under substantial overburden, it has been argued that a typical
+
+    [24] => above ground coal mine must move more material (Lackner
+
+    [25] => et al., 1995) and disturb a far larger area (Ziock and Lackner,
+
+    [26] => 2000) for the same amount of carbon atoms treated than the
+
+    [27] => equivalent ophiolite mine, assuming maximum conversion of the
+
+    [28] => mineral to carbonate (one carbon atom yields one CO2
+
+    [29] =>  molecule
+
+    [30] => upon combustion, which has to be fixed in one molecule of
+
+    [31] => carbonate).
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->7.2.4	 Processing
+
+$matches ==>
+Array
+(
+    [0] => g
+
+    [1] => g
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->7.2.4.1 Mining and mine reclamation
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Mining serpentine would not differ substantially from
+
+$matches ==>
+Array
+(
+    [0] => m
+
+    [1] => m
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->conventional mining of other minerals with similar properties,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->for example copper ores. Serpentine and olivine are both mined
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->already, although rarely on the scale envisioned here (Goff and
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Lackner, 1998;Goff et al., 2000).Like in othermining operations,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->disposal of tailings and mine reclamation are important issues to
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->consider. Tailing disposal depends on the material characteristics
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->– particle size and cohesion, moisture content and chemical
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->stability against natural leaching processes – and these depend
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->in turn on the specific process. It is likely that carbonation plants
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->will be located near the metal oxide bearing material, either the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->factory producing the residues to be treated or the silicate mine,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Economies of scale applying to today’s mining technology
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->suggest a minimum mining operation of 50,000 to 100,000
+
+$matches ==>
+Array
+(
+    [0] => 0
+
+    [1] => 0
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->tonnes day–1 (Hartman, 1992), which translates into a minimum
+
+$matches ==>
+Array
+(
+    [0] => m
+
+    [1] => m
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->This is a rather small size for ophiolite ore bodies, which are
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->often kilometres wide and hundreds of meters thick (Goff and
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Lackner, 1998; Goff et al., 2000; Newall et al., 2000). Since coal,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->in contrast to ophiolite bodies, occurs in thin seams and is buried
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->under substantial overburden, it has been argued that a typical
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->above ground coal mine must move more material (Lackner
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->et al., 1995) and disturb a far larger area (Ziock and Lackner,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->2000) for the same amount of carbon atoms treated than the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->equivalent ophiolite mine, assuming maximum conversion of the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->mineral to carbonate (one carbon atom yields one CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> molecule
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->upon combustion, which has to be fixed in one molecule of
+
+$matches ==>
+Array
+(
+    [0] => f
+
+    [1] => f
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 7.2.4	 Processing 
+    [1] => 7.2.4.1 Mining and mine reclamation 
+    [2] => Mining serpentine would not differ substantially from 
+    [3] => conventional mining of other minerals with similar properties, 
+    [4] => for example copper ores. Serpentine and olivine are both mined 
+    [5] => already, although rarely on the scale envisioned here (Goff and 
+    [6] => Lackner, 1998;Goff et al., 2000).Like in othermining operations, 
+    [7] => disposal of tailings and mine reclamation are important issues to 
+    [8] => consider. Tailing disposal depends on the material characteristics 
+    [9] => – particle size and cohesion, moisture content and chemical 
+    [10] => stability against natural leaching processes – and these depend 
+    [11] => in turn on the specific process. It is likely that carbonation plants 
+    [12] => will be located near the metal oxide bearing material, either the 
+    [13] => factory producing the residues to be treated or the silicate mine, 
+    [14] => to avoid transport of solid materials (see Figure 7.2).
+    [15] => Economies of scale applying to today’s mining technology 
+    [16] => suggest a minimum mining operation of 50,000 to 100,000 
+    [17] => tonnes day–1 (Hartman, 1992), which translates into a minimum 
+    [18] => mineable volume of about 0.3 km3 for a mine with a 30 year life.
+    [19] => This is a rather small size for ophiolite ore bodies, which are 
+    [20] => often kilometres wide and hundreds of meters thick (Goff and 
+    [21] => Lackner, 1998; Goff et al., 2000; Newall et al., 2000). Since coal, 
+    [22] => in contrast to ophiolite bodies, occurs in thin seams and is buried 
+    [23] => under substantial overburden, it has been argued that a typical 
+    [24] => above ground coal mine must move more material (Lackner 
+    [25] => et al., 1995) and disturb a far larger area (Ziock and Lackner, 
+    [26] => 2000) for the same amount of carbon atoms treated than the 
+    [27] => equivalent ophiolite mine, assuming maximum conversion of the 
+    [28] => mineral to carbonate (one carbon atom yields one CO2 
+    [29] =>  molecule 
+    [30] => upon combustion, which has to be fixed in one molecule of 
+    [31] => carbonate).
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->for example copper ores. Serpentine and olivine are both mined 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->consider. Tailing disposal depends on the material characteristics 
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->in turn on the specific process. It is likely that carbonation plants 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Lackner, 1998; Goff et al., 2000; Newall et al., 2000). Since coal, 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 7.2.4	 Processing 
+    [1] => 7.2.4.1 Mining and mine reclamation 
+    [2] => Mining serpentine would not differ substantially from 
+    [3] => conventional mining of other minerals with similar properties, 
+    [4] => for example copper ores.Serpentine and olivine are both mined 
+    [5] => already, although rarely on the scale envisioned here (Goff and 
+    [6] => Lackner, 1998;Goff et al., 2000).Like in othermining operations, 
+    [7] => disposal of tailings and mine reclamation are important issues to 
+    [8] => consider.Tailing disposal depends on the material characteristics 
+    [9] => – particle size and cohesion, moisture content and chemical 
+    [10] => stability against natural leaching processes – and these depend 
+    [11] => in turn on the specific process.It is likely that carbonation plants 
+    [12] => will be located near the metal oxide bearing material, either the 
+    [13] => factory producing the residues to be treated or the silicate mine, 
+    [14] => to avoid transport of solid materials (see Figure 7.2).
+    [15] => Economies of scale applying to today’s mining technology 
+    [16] => suggest a minimum mining operation of 50,000 to 100,000 
+    [17] => tonnes day–1 (Hartman, 1992), which translates into a minimum 
+    [18] => mineable volume of about 0.3 km3 for a mine with a 30 year life.
+    [19] => This is a rather small size for ophiolite ore bodies, which are 
+    [20] => often kilometres wide and hundreds of meters thick (Goff and 
+    [21] => Lackner, 1998; Goff et al., 2000; Newall et al., 2000).Since coal, 
+    [22] => in contrast to ophiolite bodies, occurs in thin seams and is buried 
+    [23] => under substantial overburden, it has been argued that a typical 
+    [24] => above ground coal mine must move more material (Lackner 
+    [25] => et al., 1995) and disturb a far larger area (Ziock and Lackner, 
+    [26] => 2000) for the same amount of carbon atoms treated than the 
+    [27] => equivalent ophiolite mine, assuming maximum conversion of the 
+    [28] => mineral to carbonate (one carbon atom yields one CO2 
+    [29] =>  molecule 
+    [30] => upon combustion, which has to be fixed in one molecule of 
+    [31] => carbonate).
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>7.2.4	 Processing 7.2.4.1 Mining and mine reclamation Mining serpentine would not differ substantially from conventional mining of other minerals with similar properties, for example copper ores.Serpentine and olivine are both mined already, although rarely on the scale envisioned here (Goff and Lackner, 1998;Goff et al., 2000).Like in othermining operations, disposal of tailings and mine reclamation are important issues to consider.Tailing disposal depends on the material characteristics – particle size and cohesion, moisture content and chemical stability against natural leaching processes – and these depend in turn on the specific process.It is likely that carbonation plants will be located near the metal oxide bearing material, either the factory producing the residues to be treated or the silicate mine, to avoid transport of solid materials (see Figure 7.2).Economies of scale applying to today’s mining technology suggest a minimum mining operation of 50,000 to 100,000 tonnes day–1 (Hartman, 1992), which translates into a minimum mineable volume of about 0.3 km3 for a mine with a 30 year life.This is a rather small size for ophiolite ore bodies, which are often kilometres wide and hundreds of meters thick (Goff and Lackner, 1998; Goff et al., 2000; Newall et al., 2000).Since coal, in contrast to ophiolite bodies, occurs in thin seams and is buried under substantial overburden, it has been argued that a typical above ground coal mine must move more material (Lackner et al., 1995) and disturb a far larger area (Ziock and Lackner, 2000) for the same amount of carbon atoms treated than the equivalent ophiolite mine, assuming maximum conversion of the mineral to carbonate (one carbon atom yields one CO2  molecule upon combustion, which has to be fixed in one molecule of carbonate).
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_151149_842328.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_151149_842328.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_163400_560637)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Serpentine can take many different forms, from decorative
+
+    [1] => stones to chrysotile asbestos (O’Hanley, 1996). The possibility
+
+    [2] => of encountering asbestos requires adequate precautions. With
+
+    [3] => current best practice it would reportedly not be an obstacle(Newall et al., 2000). Moreover, since the asbestos form of
+
+    [4] => serpentine is the most reactive, reaction products are expected
+
+    [5] => to be asbestos free (O’Connor et al., 2000). Mineral carbonation
+
+    [6] => could therefore remediate large natural asbestos hazards that
+
+    [7] => occur in certain areas, in California for example (Nichols,
+
+    [8] => 2000).
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Serpentine can take many different forms, from decorative
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->stones to chrysotile asbestos (O’Hanley, 1996). The possibility
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->of encountering asbestos requires adequate precautions. With
+
+$matches ==>
+Array
+(
+    [0] => h
+
+    [1] => h
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->current best practice it would reportedly not be an obstacle(Newall et al., 2000). Moreover, since the asbestos form of
+
+$matches ==>
+Array
+(
+    [0] => f
+
+    [1] => f
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->serpentine is the most reactive, reaction products are expected
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->to be asbestos free (O’Connor et al., 2000). Mineral carbonation
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->could therefore remediate large natural asbestos hazards that
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->occur in certain areas, in California for example (Nichols,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Serpentine can take many different forms, from decorative 
+    [1] => stones to chrysotile asbestos (O’Hanley, 1996). The possibility 
+    [2] => of encountering asbestos requires adequate precautions. With 
+    [3] => current best practice it would reportedly not be an obstacle(Newall et al., 2000). Moreover, since the asbestos form of 
+    [4] => serpentine is the most reactive, reaction products are expected 
+    [5] => to be asbestos free (O’Connor et al., 2000). Mineral carbonation 
+    [6] => could therefore remediate large natural asbestos hazards that 
+    [7] => occur in certain areas, in California for example (Nichols, 
+    [8] => 2000).
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->stones to chrysotile asbestos (O’Hanley, 1996). The possibility 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->of encountering asbestos requires adequate precautions. With 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->current best practice it would reportedly not be an obstacle(Newall et al., 2000). Moreover, since the asbestos form of 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->to be asbestos free (O’Connor et al., 2000). Mineral carbonation 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Serpentine can take many different forms, from decorative 
+    [1] => stones to chrysotile asbestos (O’Hanley, 1996).The possibility 
+    [2] => of encountering asbestos requires adequate precautions.With 
+    [3] => current best practice it would reportedly not be an obstacle(Newall et al., 2000).Moreover, since the asbestos form of 
+    [4] => serpentine is the most reactive, reaction products are expected 
+    [5] => to be asbestos free (O’Connor et al., 2000).Mineral carbonation 
+    [6] => could therefore remediate large natural asbestos hazards that 
+    [7] => occur in certain areas, in California for example (Nichols, 
+    [8] => 2000).
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Serpentine can take many different forms, from decorative stones to chrysotile asbestos (O’Hanley, 1996).The possibility of encountering asbestos requires adequate precautions.With current best practice it would reportedly not be an obstacle(Newall et al., 2000).Moreover, since the asbestos form of serpentine is the most reactive, reaction products are expected to be asbestos free (O’Connor et al., 2000).Mineral carbonation could therefore remediate large natural asbestos hazards that occur in certain areas, in California for example (Nichols, 2000).
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_163400_560637.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_163400_560637.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_164937_951569)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Описание патента на изобретение
+
+    [1] => RU2456062C2
+
+    [2] => Область техники, к которой относится изобретение
+
+    [3] => 
+
+    [4] => В настоящем изобретении разработан способ фиксации диоксида углерода с помощью минеральной карбонизации твердым материалом отходов, который включает в себя оксид кальция и кальцийсодержащий смешанный оксид, в частности стальной шлак.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Описание патента на изобретение
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->RU2456062C2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Область техники, к которой относится изобретение
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Описание патента на изобретение 
+    [1] => RU2456062C2 
+    [2] => Область техники, к которой относится изобретение 
+    [3] => 
+
+    [4] => В настоящем изобретении разработан способ фиксации диоксида углерода с помощью минеральной карбонизации твердым материалом отходов, который включает в себя оксид кальция и кальцийсодержащий смешанный оксид, в частности стальной шлак.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Описание патента на изобретение 
+    [1] => RU2456062C2 
+    [2] => Область техники, к которой относится изобретение 
+    [3] => 
+
+    [4] => В настоящем изобретении разработан способ фиксации диоксида углерода с помощью минеральной карбонизации твердым материалом отходов, который включает в себя оксид кальция и кальцийсодержащий смешанный оксид, в частности стальной шлак.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Описание патента на изобретение RU2456062C2 Область техники, к которой относится изобретение 
+В настоящем изобретении разработан способ фиксации диоксида углерода с помощью минеральной карбонизации твердым материалом отходов, который включает в себя оксид кальция и кальцийсодержащий смешанный оксид, в частности стальной шлак.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_164937_951569.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_164937_951569.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210531_231528_260013)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => IRS charity law states that terrorist activities are considered substantial means for disqualifying an organization’s tax-exempt status. This is in accordance with engaging in illegal acts contrary to standard U.S. policy.A litany of private foundations supports the CFI. Most notably, the foundations belonging to the late American billionaires Sheldon Adelson and Irving Moskowitz. The Moskowitz family foundations have contributed more than $8 million to CFI since 2018 and Adelson’s foundation gave $50,000 to CFI in 2018.Jay Marcus of CFl said in a statement to MintPress News that, “The Central Fund of Israel absolutely rejects violence and does not support any organizations that promote violence. Furthermore, if an organization that we once supported ever started promoting violence, CFI would not support them in the future.”Marcus claims that he hasn’t heard of Lehava, adding, “having had rockets indiscriminately showered down on my head, I would certainly disagree with your myth about which ‘groups start violence.’”The Falic family, owners of the major retail chain Duty Free Americas, has supported The Fund for Saving the People of Israel in the past, providing a total of $60,000 to the association from 2007-2017. The money is wired through the Falic’s Israel-based foundation, the Segal Fund. The Falics could not be reached for comment.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => IRS charity law states that terrorist activities are considered substantial means for disqualifying an organization’s tax-exempt status. This is in accordance with engaging in illegal acts contrary to standard U.S. policy.A litany of private foundations supports the CFI. Most notably, the foundations belonging to the late American billionaires Sheldon Adelson and Irving Moskowitz. The Moskowitz family foundations have contributed more than $8 million to CFI since 2018 and Adelson’s foundation gave $50,000 to CFI in 2018.Jay Marcus of CFl said in a statement to MintPress News that, “The Central Fund of Israel absolutely rejects violence and does not support any organizations that promote violence. Furthermore, if an organization that we once supported ever started promoting violence, CFI would not support them in the future.”Marcus claims that he hasn’t heard of Lehava, adding, “having had rockets indiscriminately showered down on my head, I would certainly disagree with your myth about which ‘groups start violence.’”The Falic family, owners of the major retail chain Duty Free Americas, has supported The Fund for Saving the People of Israel in the past, providing a total of $60,000 to the association from 2007-2017. The money is wired through the Falic’s Israel-based foundation, the Segal Fund. The Falics could not be reached for comment.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->IRS charity law states that terrorist activities are considered substantial means for disqualifying an organization’s tax-exempt status. This is in accordance with engaging in illegal acts contrary to standard U.S. policy.A litany of private foundations supports the CFI. Most notably, the foundations belonging to the late American billionaires Sheldon Adelson and Irving Moskowitz. The Moskowitz family foundations have contributed more than $8 million to CFI since 2018 and Adelson’s foundation gave $50,000 to CFI in 2018.Jay Marcus of CFl said in a statement to MintPress News that, “The Central Fund of Israel absolutely rejects violence and does not support any organizations that promote violence. Furthermore, if an organization that we once supported ever started promoting violence, CFI would not support them in the future.”Marcus claims that he hasn’t heard of Lehava, adding, “having had rockets indiscriminately showered down on my head, I would certainly disagree with your myth about which ‘groups start violence.’”The Falic family, owners of the major retail chain Duty Free Americas, has supported The Fund for Saving the People of Israel in the past, providing a total of $60,000 to the association from 2007-2017. The money is wired through the Falic’s Israel-based foundation, the Segal Fund. The Falics could not be reached for comment.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => IRS charity law states that terrorist activities are considered substantial means for disqualifying an organization’s tax-exempt status.This is in accordance with engaging in illegal acts contrary to standard U.S.policy.A litany of private foundations supports the CFI.Most notably, the foundations belonging to the late American billionaires Sheldon Adelson and Irving Moskowitz.The Moskowitz family foundations have contributed more than $8 million to CFI since 2018 and Adelson’s foundation gave $50,000 to CFI in 2018.Jay Marcus of CFl said in a statement to MintPress News that, “The Central Fund of Israel absolutely rejects violence and does not support any organizations that promote violence.Furthermore, if an organization that we once supported ever started promoting violence, CFI would not support them in the future.”Marcus claims that he hasn’t heard of Lehava, adding, “having had rockets indiscriminately showered down on my head, I would certainly disagree with your myth about which ‘groups start violence.’”The Falic family, owners of the major retail chain Duty Free Americas, has supported The Fund for Saving the People of Israel in the past, providing a total of $60,000 to the association from 2007-2017. The money is wired through the Falic’s Israel-based foundation, the Segal Fund.The Falics could not be reached for comment.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>IRS charity law states that terrorist activities are considered substantial means for disqualifying an organization’s tax-exempt status.This is in accordance with engaging in illegal acts contrary to standard U.S.policy.A litany of private foundations supports the CFI.Most notably, the foundations belonging to the late American billionaires Sheldon Adelson and Irving Moskowitz.The Moskowitz family foundations have contributed more than $8 million to CFI since 2018 and Adelson’s foundation gave $50,000 to CFI in 2018.Jay Marcus of CFl said in a statement to MintPress News that, “The Central Fund of Israel absolutely rejects violence and does not support any organizations that promote violence.Furthermore, if an organization that we once supported ever started promoting violence, CFI would not support them in the future.”Marcus claims that he hasn’t heard of Lehava, adding, “having had rockets indiscriminately showered down on my head, I would certainly disagree with your myth about which ‘groups start violence.’”The Falic family, owners of the major retail chain Duty Free Americas, has supported The Fund for Saving the People of Israel in the past, providing a total of $60,000 to the association from 2007-2017. The money is wired through the Falic’s Israel-based foundation, the Segal Fund.The Falics could not be reached for comment.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_231528_260013.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210531_231528_260013.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210601_000334_443352)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Kahanism’s surge in IsraelKahane’s Kach Party was banned from entering Israeli politics in 1988. But thanks to Israeli Prime Minister Benjamin Netanyahu, Kahanists are now infiltrating the halls of the Knesset (Israeli parliament).In the lead-up to Israel’s March election, Netanyahu pushed for a right-wing alliance with Itamar Ben-Gvir, a Kahanist, a defense lawyer for price tag campaigners, and leader of the far-right Otzma Yehudit (Jewish Power) party. Otzma Yehudit partnered with the anti-LGBTQ Noam Party and the National Union-Tkuma faction to form the Religious Zionism bloc in the last election. The coalition allowed the electoral list to secure six seats in the Knesset and for a Kahanist to gain political power. Rabbi Sattath pins the blame squarely on Netanyahu for Jewish supremacists’ rise in government.“Because the prime minister was in such a dire situation and was desperate for every vote, he gave [Otzma Yehudit] the legitimacy,” Rabbi Sattath said. “What we’re seeing here in Israel and around the world is that one of the symptoms of democracies in decline is when the extreme right takes over the center right. The fact that the prime minister and some of the right-wing parties gave the Jewish Power Party legitimacy has then increased their power. And that’s what enabled them to use these methods they’ve used for over a decade on a large scale in the last wave of violence.”
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Kahanism’s surge in IsraelKahane’s Kach Party was banned from entering Israeli politics in 1988. But thanks to Israeli Prime Minister Benjamin Netanyahu, Kahanists are now infiltrating the halls of the Knesset (Israeli parliament).In the lead-up to Israel’s March election, Netanyahu pushed for a right-wing alliance with Itamar Ben-Gvir, a Kahanist, a defense lawyer for price tag campaigners, and leader of the far-right Otzma Yehudit (Jewish Power) party. Otzma Yehudit partnered with the anti-LGBTQ Noam Party and the National Union-Tkuma faction to form the Religious Zionism bloc in the last election. The coalition allowed the electoral list to secure six seats in the Knesset and for a Kahanist to gain political power. Rabbi Sattath pins the blame squarely on Netanyahu for Jewish supremacists’ rise in government.“Because the prime minister was in such a dire situation and was desperate for every vote, he gave [Otzma Yehudit] the legitimacy,” Rabbi Sattath said. “What we’re seeing here in Israel and around the world is that one of the symptoms of democracies in decline is when the extreme right takes over the center right. The fact that the prime minister and some of the right-wing parties gave the Jewish Power Party legitimacy has then increased their power. And that’s what enabled them to use these methods they’ve used for over a decade on a large scale in the last wave of violence.”
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Kahanism’s surge in IsraelKahane’s Kach Party was banned from entering Israeli politics in 1988. But thanks to Israeli Prime Minister Benjamin Netanyahu, Kahanists are now infiltrating the halls of the Knesset (Israeli parliament).In the lead-up to Israel’s March election, Netanyahu pushed for a right-wing alliance with Itamar Ben-Gvir, a Kahanist, a defense lawyer for price tag campaigners, and leader of the far-right Otzma Yehudit (Jewish Power) party. Otzma Yehudit partnered with the anti-LGBTQ Noam Party and the National Union-Tkuma faction to form the Religious Zionism bloc in the last election. The coalition allowed the electoral list to secure six seats in the Knesset and for a Kahanist to gain political power. Rabbi Sattath pins the blame squarely on Netanyahu for Jewish supremacists’ rise in government.“Because the prime minister was in such a dire situation and was desperate for every vote, he gave [Otzma Yehudit] the legitimacy,” Rabbi Sattath said. “What we’re seeing here in Israel and around the world is that one of the symptoms of democracies in decline is when the extreme right takes over the center right. The fact that the prime minister and some of the right-wing parties gave the Jewish Power Party legitimacy has then increased their power. And that’s what enabled them to use these methods they’ve used for over a decade on a large scale in the last wave of violence.”
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Kahanism’s surge in IsraelKahane’s Kach Party was banned from entering Israeli politics in 1988. But thanks to Israeli Prime Minister Benjamin Netanyahu, Kahanists are now infiltrating the halls of the Knesset (Israeli parliament).In the lead-up to Israel’s March election, Netanyahu pushed for a right-wing alliance with Itamar Ben-Gvir, a Kahanist, a defense lawyer for price tag campaigners, and leader of the far-right Otzma Yehudit (Jewish Power) party.Otzma Yehudit partnered with the anti-LGBTQ Noam Party and the National Union-Tkuma faction to form the Religious Zionism bloc in the last election.The coalition allowed the electoral list to secure six seats in the Knesset and for a Kahanist to gain political power.Rabbi Sattath pins the blame squarely on Netanyahu for Jewish supremacists’ rise in government.“Because the prime minister was in such a dire situation and was desperate for every vote, he gave [Otzma Yehudit] the legitimacy,” Rabbi Sattath said.“What we’re seeing here in Israel and around the world is that one of the symptoms of democracies in decline is when the extreme right takes over the center right.The fact that the prime minister and some of the right-wing parties gave the Jewish Power Party legitimacy has then increased their power.And that’s what enabled them to use these methods they’ve used for over a decade on a large scale in the last wave of violence.”
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Kahanism’s surge in IsraelKahane’s Kach Party was banned from entering Israeli politics in 1988. But thanks to Israeli Prime Minister Benjamin Netanyahu, Kahanists are now infiltrating the halls of the Knesset (Israeli parliament).In the lead-up to Israel’s March election, Netanyahu pushed for a right-wing alliance with Itamar Ben-Gvir, a Kahanist, a defense lawyer for price tag campaigners, and leader of the far-right Otzma Yehudit (Jewish Power) party.Otzma Yehudit partnered with the anti-LGBTQ Noam Party and the National Union-Tkuma faction to form the Religious Zionism bloc in the last election.The coalition allowed the electoral list to secure six seats in the Knesset and for a Kahanist to gain political power.Rabbi Sattath pins the blame squarely on Netanyahu for Jewish supremacists’ rise in government.“Because the prime minister was in such a dire situation and was desperate for every vote, he gave [Otzma Yehudit] the legitimacy,” Rabbi Sattath said.“What we’re seeing here in Israel and around the world is that one of the symptoms of democracies in decline is when the extreme right takes over the center right.The fact that the prime minister and some of the right-wing parties gave the Jewish Power Party legitimacy has then increased their power.And that’s what enabled them to use these methods they’ve used for over a decade on a large scale in the last wave of violence.”
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_000334_443352.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_000334_443352.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210601_001113_561613)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Upon reflecting back to Kahane’s short time in the Knesset, Rabbi Sattath said he faced opposition from every politician and was immediately ostracized.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Today, the political climate in Israeli politics is different.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Upon reflecting back to Kahane’s short time in the Knesset, Rabbi Sattath said he faced opposition from every politician and was immediately ostracized.
+    [1] => 
+
+    [2] => “When he got into the Knesset, he got the bare minimum [of votes] to get one seat. But what happened in the eighties was he was boycotted by every other Knesset member. Nobody would sit in the plenum when he was speaking,” Rabbi Sattath said. “Everybody from the left and the right understood that these ideas were dangerous and extreme and had to be restrained.”
+
+    [3] => 
+
+    [4] => Today, the political climate in Israeli politics is different.
+    [5] => 
+
+    [6] => “What we’re seeing now is that the restraint is completely over,” Rabbi Sattath continued. “And we’re hoping that by shedding light on the past weeks’ violence, we can return to the understanding that there needs to be a red line, that these violent militias and racist, Jewish supremacists have to be stopped.”
+
+    [7] => 
+
+    [8] => Feature photo | An Israeli man stands in front of a burning car during mob violence against Israeli Arabs in the city of Lod, May 11, 2021. Heidi Levine | AP
+
+    [9] => 
+
+    [10] => Jessica Buxbaum is a Jerusalem-based journalist for MintPress News covering Palestine, Israel, and Syria. Her work has been featured in Middle East Eye, The New Arab and Gulf News.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->“When he got into the Knesset, he got the bare minimum [of votes] to get one seat. But what happened in the eighties was he was boycotted by every other Knesset member. Nobody would sit in the plenum when he was speaking,” Rabbi Sattath said. “Everybody from the left and the right understood that these ideas were dangerous and extreme and had to be restrained.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“What we’re seeing now is that the restraint is completely over,” Rabbi Sattath continued. “And we’re hoping that by shedding light on the past weeks’ violence, we can return to the understanding that there needs to be a red line, that these violent militias and racist, Jewish supremacists have to be stopped.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Feature photo | An Israeli man stands in front of a burning car during mob violence against Israeli Arabs in the city of Lod, May 11, 2021. Heidi Levine | AP
+
+$matches ==>
+Array
+(
+    [0] => P
+
+    [1] => P
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Upon reflecting back to Kahane’s short time in the Knesset, Rabbi Sattath said he faced opposition from every politician and was immediately ostracized.
+    [1] => 
+
+    [2] => “When he got into the Knesset, he got the bare minimum [of votes] to get one seat. But what happened in the eighties was he was boycotted by every other Knesset member. Nobody would sit in the plenum when he was speaking,” Rabbi Sattath said. “Everybody from the left and the right understood that these ideas were dangerous and extreme and had to be restrained.” 
+    [3] => 
+
+    [4] => Today, the political climate in Israeli politics is different.
+    [5] => 
+
+    [6] => “What we’re seeing now is that the restraint is completely over,” Rabbi Sattath continued. “And we’re hoping that by shedding light on the past weeks’ violence, we can return to the understanding that there needs to be a red line, that these violent militias and racist, Jewish supremacists have to be stopped.” 
+    [7] => 
+
+    [8] => Feature photo | An Israeli man stands in front of a burning car during mob violence against Israeli Arabs in the city of Lod, May 11, 2021. Heidi Levine | AP 
+    [9] => 
+
+    [10] => Jessica Buxbaum is a Jerusalem-based journalist for MintPress News covering Palestine, Israel, and Syria. Her work has been featured in Middle East Eye, The New Arab and Gulf News.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->“When he got into the Knesset, he got the bare minimum [of votes] to get one seat. But what happened in the eighties was he was boycotted by every other Knesset member. Nobody would sit in the plenum when he was speaking,” Rabbi Sattath said. “Everybody from the left and the right understood that these ideas were dangerous and extreme and had to be restrained.” 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“What we’re seeing now is that the restraint is completely over,” Rabbi Sattath continued. “And we’re hoping that by shedding light on the past weeks’ violence, we can return to the understanding that there needs to be a red line, that these violent militias and racist, Jewish supremacists have to be stopped.” 
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Jessica Buxbaum is a Jerusalem-based journalist for MintPress News covering Palestine, Israel, and Syria. Her work has been featured in Middle East Eye, The New Arab and Gulf News.
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Upon reflecting back to Kahane’s short time in the Knesset, Rabbi Sattath said he faced opposition from every politician and was immediately ostracized.
+    [1] => 
+
+    [2] => “When he got into the Knesset, he got the bare minimum [of votes] to get one seat.But what happened in the eighties was he was boycotted by every other Knesset member.Nobody would sit in the plenum when he was speaking,” Rabbi Sattath said.“Everybody from the left and the right understood that these ideas were dangerous and extreme and had to be restrained.” 
+    [3] => 
+
+    [4] => Today, the political climate in Israeli politics is different.
+    [5] => 
+
+    [6] => “What we’re seeing now is that the restraint is completely over,” Rabbi Sattath continued.“And we’re hoping that by shedding light on the past weeks’ violence, we can return to the understanding that there needs to be a red line, that these violent militias and racist, Jewish supremacists have to be stopped.” 
+    [7] => 
+
+    [8] => Feature photo | An Israeli man stands in front of a burning car during mob violence against Israeli Arabs in the city of Lod, May 11, 2021. Heidi Levine | AP 
+    [9] => 
+
+    [10] => Jessica Buxbaum is a Jerusalem-based journalist for MintPress News covering Palestine, Israel, and Syria.Her work has been featured in Middle East Eye, The New Arab and Gulf News.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Upon reflecting back to Kahane’s short time in the Knesset, Rabbi Sattath said he faced opposition from every politician and was immediately ostracized.
+“When he got into the Knesset, he got the bare minimum [of votes] to get one seat.But what happened in the eighties was he was boycotted by every other Knesset member.Nobody would sit in the plenum when he was speaking,” Rabbi Sattath said.“Everybody from the left and the right understood that these ideas were dangerous and extreme and had to be restrained.” 
+Today, the political climate in Israeli politics is different.
+“What we’re seeing now is that the restraint is completely over,” Rabbi Sattath continued.“And we’re hoping that by shedding light on the past weeks’ violence, we can return to the understanding that there needs to be a red line, that these violent militias and racist, Jewish supremacists have to be stopped.” 
+Feature photo | An Israeli man stands in front of a burning car during mob violence against Israeli Arabs in the city of Lod, May 11, 2021. Heidi Levine | AP 
+Jessica Buxbaum is a Jerusalem-based journalist for MintPress News covering Palestine, Israel, and Syria.Her work has been featured in Middle East Eye, The New Arab and Gulf News.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_001113_561613.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_001113_561613.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
