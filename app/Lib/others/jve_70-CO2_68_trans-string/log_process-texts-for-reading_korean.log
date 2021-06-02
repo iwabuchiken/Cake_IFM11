@@ -23179,3 +23179,1144 @@ Jessica Buxbaum is a Jerusalem-based journalist for MintPress News covering Pale
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_001113_561613.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210601_161228_770349)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'volumen producido al año.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'porosidad y ricas en óxido de calcio, lo que los hace más reactivos ante el CO2 que el BA.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Por otra parte, los residuos
+
+    [1] => sólidos urbanos (RSU) incinerados
+
+    [2] => se están considerando como un
+
+    [3] => material económico con potencial
+
+    [4] => para la captura de CO2 debido a su
+
+    [5] => alto contenido en óxido de calcio
+
+    [6] => y sílice, a la adecuada
+
+    [7] => granulometría de los sólidos
+
+    [8] => presentes en ellos y al alto
+
+    [9] => volumen producido al año.
+    [10] => Los RSU generados precisan de vertederos con ocupación de grandes superficies,
+
+    [11] => por lo que, actualmente la incineración de estos residuos ha sido considerada como la
+
+    [12] => mejor alternativa para reducir la superficie requerida de vertedero, con el consecuente
+
+    [13] => inconveniente de las emisiones que este proceso provoca. El proceso de incineración de
+
+    [14] => RSU produce dos corrientes de sólidos: las cenizas del residuo después de la combustión
+
+    [15] => o bottom ash (BA); y los residuos retenidos en los filtro de partículas para el control de
+
+    [16] => la contaminación atmosférica colocados a la salida del incinerador, también llamados
+
+    [17] => residuos APC (air pollution control). Los residuos APC son finas partículas con elevada
+
+    [18] => porosidad y ricas en óxido de calcio, lo que los hace más reactivos ante el CO2 que el BA.
+    [19] => Debido al alto volumen de RSU incinerados al año y su bajo coste, se hace interesante el
+
+    [20] => estudio de técnicas de captura de CO2 emitido por chimenea usando los propios RSU
+
+    [21] => incinerados, con la posible valorización de los productos obtenidos o inertización
+
+    [22] => química de cara al vertido. (Jia Sun et al., 2008).
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Por otra parte, los residuos
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->sólidos urbanos (RSU) incinerados
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->se están considerando como un
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->material económico con potencial
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->para la captura de CO2 debido a su
+
+$matches ==>
+Array
+(
+    [0] => u
+
+    [1] => u
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->alto contenido en óxido de calcio
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->y sílice, a la adecuada
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->granulometría de los sólidos
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->presentes en ellos y al alto
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Los RSU generados precisan de vertederos con ocupación de grandes superficies,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->por lo que, actualmente la incineración de estos residuos ha sido considerada como la
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->mejor alternativa para reducir la superficie requerida de vertedero, con el consecuente
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->inconveniente de las emisiones que este proceso provoca. El proceso de incineración de
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->RSU produce dos corrientes de sólidos: las cenizas del residuo después de la combustión
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->o bottom ash (BA); y los residuos retenidos en los filtro de partículas para el control de
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->la contaminación atmosférica colocados a la salida del incinerador, también llamados
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->residuos APC (air pollution control). Los residuos APC son finas partículas con elevada
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Debido al alto volumen de RSU incinerados al año y su bajo coste, se hace interesante el
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->estudio de técnicas de captura de CO2 emitido por chimenea usando los propios RSU
+
+$matches ==>
+Array
+(
+    [0] => U
+
+    [1] => U
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->incinerados, con la posible valorización de los productos obtenidos o inertización
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Por otra parte, los residuos 
+    [1] => sólidos urbanos (RSU) incinerados 
+    [2] => se están considerando como un 
+    [3] => material económico con potencial 
+    [4] => para la captura de CO2 debido a su 
+    [5] => alto contenido en óxido de calcio 
+    [6] => y sílice, a la adecuada 
+    [7] => granulometría de los sólidos 
+    [8] => presentes en ellos y al alto 
+    [9] => volumen producido al año.
+    [10] => Los RSU generados precisan de vertederos con ocupación de grandes superficies, 
+    [11] => por lo que, actualmente la incineración de estos residuos ha sido considerada como la 
+    [12] => mejor alternativa para reducir la superficie requerida de vertedero, con el consecuente 
+    [13] => inconveniente de las emisiones que este proceso provoca. El proceso de incineración de 
+    [14] => RSU produce dos corrientes de sólidos: las cenizas del residuo después de la combustión 
+    [15] => o bottom ash (BA); y los residuos retenidos en los filtro de partículas para el control de 
+    [16] => la contaminación atmosférica colocados a la salida del incinerador, también llamados 
+    [17] => residuos APC (air pollution control). Los residuos APC son finas partículas con elevada 
+    [18] => porosidad y ricas en óxido de calcio, lo que los hace más reactivos ante el CO2 que el BA.
+    [19] => Debido al alto volumen de RSU incinerados al año y su bajo coste, se hace interesante el 
+    [20] => estudio de técnicas de captura de CO2 emitido por chimenea usando los propios RSU 
+    [21] => incinerados, con la posible valorización de los productos obtenidos o inertización 
+    [22] => química de cara al vertido. (Jia Sun et al., 2008).
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->inconveniente de las emisiones que este proceso provoca. El proceso de incineración de 
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->residuos APC (air pollution control). Los residuos APC son finas partículas con elevada 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->química de cara al vertido. (Jia Sun et al., 2008).
+$matches ==>
+Array
+(
+    [0] => o. 
+    [1] => o.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Por otra parte, los residuos 
+    [1] => sólidos urbanos (RSU) incinerados 
+    [2] => se están considerando como un 
+    [3] => material económico con potencial 
+    [4] => para la captura de CO2 debido a su 
+    [5] => alto contenido en óxido de calcio 
+    [6] => y sílice, a la adecuada 
+    [7] => granulometría de los sólidos 
+    [8] => presentes en ellos y al alto 
+    [9] => volumen producido al año.
+    [10] => Los RSU generados precisan de vertederos con ocupación de grandes superficies, 
+    [11] => por lo que, actualmente la incineración de estos residuos ha sido considerada como la 
+    [12] => mejor alternativa para reducir la superficie requerida de vertedero, con el consecuente 
+    [13] => inconveniente de las emisiones que este proceso provoca.El proceso de incineración de 
+    [14] => RSU produce dos corrientes de sólidos: las cenizas del residuo después de la combustión 
+    [15] => o bottom ash (BA); y los residuos retenidos en los filtro de partículas para el control de 
+    [16] => la contaminación atmosférica colocados a la salida del incinerador, también llamados 
+    [17] => residuos APC (air pollution control).Los residuos APC son finas partículas con elevada 
+    [18] => porosidad y ricas en óxido de calcio, lo que los hace más reactivos ante el CO2 que el BA.
+    [19] => Debido al alto volumen de RSU incinerados al año y su bajo coste, se hace interesante el 
+    [20] => estudio de técnicas de captura de CO2 emitido por chimenea usando los propios RSU 
+    [21] => incinerados, con la posible valorización de los productos obtenidos o inertización 
+    [22] => química de cara al vertido.(Jia Sun et al., 2008).
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Por otra parte, los residuos sólidos urbanos (RSU) incinerados se están considerando como un material económico con potencial para la captura de CO2 debido a su alto contenido en óxido de calcio y sílice, a la adecuada granulometría de los sólidos presentes en ellos y al alto volumen producido al año.Los RSU generados precisan de vertederos con ocupación de grandes superficies, por lo que, actualmente la incineración de estos residuos ha sido considerada como la mejor alternativa para reducir la superficie requerida de vertedero, con el consecuente inconveniente de las emisiones que este proceso provoca.El proceso de incineración de RSU produce dos corrientes de sólidos: las cenizas del residuo después de la combustión o bottom ash (BA); y los residuos retenidos en los filtro de partículas para el control de la contaminación atmosférica colocados a la salida del incinerador, también llamados residuos APC (air pollution control).Los residuos APC son finas partículas con elevada porosidad y ricas en óxido de calcio, lo que los hace más reactivos ante el CO2 que el BA.Debido al alto volumen de RSU incinerados al año y su bajo coste, se hace interesante el estudio de técnicas de captura de CO2 emitido por chimenea usando los propios RSU incinerados, con la posible valorización de los productos obtenidos o inertización química de cara al vertido.(Jia Sun et al., 2008).
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_161228_770349.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_161228_770349.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210601_162523_799679)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Otro tipo de residuos industriales interesantes para el proceso de captura de
+
+    [1] => dióxido de carbono via carbonatación son las cenizas volantes de la combustión del
+
+    [2] => lignito, que son producidas en grandes cantidades (entre 5 y 10 Mt/año, sólo en
+
+    [3] => Alemania) procedentes de las centrales térmicas que queman carbón de baja calidad para la producción de energía. Estas cantidades son pequeñas comparadas con las
+
+    [4] => cantidades disponibles de materiales naturales potencialmente carbonatables, pero las
+
+    [5] => cenizas volantes de lignito tienen la gran ventaja de reaccionar rápidamente con el CO2
+
+    [6] => en condiciones ambiente sin ningún tipo de pretratamiento. Su alta reactividad es
+
+    [7] => debida a su pequeño tamaño de grano, a su elevada superficie específica y a su
+
+    [8] => contenido en hidróxidos de calcio y magnesio, carbonatables en presencia de agua y
+
+    [9] => dióxido de carbono.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Otro tipo de residuos industriales interesantes para el proceso de captura de
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->dióxido de carbono via carbonatación son las cenizas volantes de la combustión del
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->lignito, que son producidas en grandes cantidades (entre 5 y 10 Mt/año, sólo en
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Alemania) procedentes de las centrales térmicas que queman carbón de baja calidad para la producción de energía. Estas cantidades son pequeñas comparadas con las
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->cantidades disponibles de materiales naturales potencialmente carbonatables, pero las
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->cenizas volantes de lignito tienen la gran ventaja de reaccionar rápidamente con el CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->en condiciones ambiente sin ningún tipo de pretratamiento. Su alta reactividad es
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->debida a su pequeño tamaño de grano, a su elevada superficie específica y a su
+
+$matches ==>
+Array
+(
+    [0] => u
+
+    [1] => u
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->contenido en hidróxidos de calcio y magnesio, carbonatables en presencia de agua y
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Otro tipo de residuos industriales interesantes para el proceso de captura de 
+    [1] => dióxido de carbono via carbonatación son las cenizas volantes de la combustión del 
+    [2] => lignito, que son producidas en grandes cantidades (entre 5 y 10 Mt/año, sólo en 
+    [3] => Alemania) procedentes de las centrales térmicas que queman carbón de baja calidad para la producción de energía. Estas cantidades son pequeñas comparadas con las 
+    [4] => cantidades disponibles de materiales naturales potencialmente carbonatables, pero las 
+    [5] => cenizas volantes de lignito tienen la gran ventaja de reaccionar rápidamente con el CO2 
+    [6] => en condiciones ambiente sin ningún tipo de pretratamiento. Su alta reactividad es 
+    [7] => debida a su pequeño tamaño de grano, a su elevada superficie específica y a su 
+    [8] => contenido en hidróxidos de calcio y magnesio, carbonatables en presencia de agua y 
+    [9] => dióxido de carbono.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Alemania) procedentes de las centrales térmicas que queman carbón de baja calidad para la producción de energía. Estas cantidades son pequeñas comparadas con las 
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->en condiciones ambiente sin ningún tipo de pretratamiento. Su alta reactividad es 
+$matches ==>
+Array
+(
+    [0] => o. 
+    [1] => o.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Otro tipo de residuos industriales interesantes para el proceso de captura de 
+    [1] => dióxido de carbono via carbonatación son las cenizas volantes de la combustión del 
+    [2] => lignito, que son producidas en grandes cantidades (entre 5 y 10 Mt/año, sólo en 
+    [3] => Alemania) procedentes de las centrales térmicas que queman carbón de baja calidad para la producción de energía.Estas cantidades son pequeñas comparadas con las 
+    [4] => cantidades disponibles de materiales naturales potencialmente carbonatables, pero las 
+    [5] => cenizas volantes de lignito tienen la gran ventaja de reaccionar rápidamente con el CO2 
+    [6] => en condiciones ambiente sin ningún tipo de pretratamiento.Su alta reactividad es 
+    [7] => debida a su pequeño tamaño de grano, a su elevada superficie específica y a su 
+    [8] => contenido en hidróxidos de calcio y magnesio, carbonatables en presencia de agua y 
+    [9] => dióxido de carbono.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Otro tipo de residuos industriales interesantes para el proceso de captura de dióxido de carbono via carbonatación son las cenizas volantes de la combustión del lignito, que son producidas en grandes cantidades (entre 5 y 10 Mt/año, sólo en Alemania) procedentes de las centrales térmicas que queman carbón de baja calidad para la producción de energía.Estas cantidades son pequeñas comparadas con las cantidades disponibles de materiales naturales potencialmente carbonatables, pero las cenizas volantes de lignito tienen la gran ventaja de reaccionar rápidamente con el CO2 en condiciones ambiente sin ningún tipo de pretratamiento.Su alta reactividad es debida a su pequeño tamaño de grano, a su elevada superficie específica y a su contenido en hidróxidos de calcio y magnesio, carbonatables en presencia de agua y dióxido de carbono.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_162523_799679.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_162523_799679.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210601_163811_818607)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'la construcción industrial. (M. Bauer et al., 2011).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'de calcio. (L. Esquivias Fedriani et al., 2011).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'industriales mencionados.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Las cenizas volantes de lignito serían depositadas inicialmente en vertederos
+
+    [1] => sellados para preservarlas, evitando así su reacción con el CO2 atmosférico o su
+
+    [2] => interacción con el agua de lluvia, antes de ser procesadas para la carbonatación. El
+
+    [3] => proceso de carbonatación no solo tiene el objetivo de capturar CO2, sino que el producto
+
+    [4] => obtenido de la propia carbonatación puede ser empleado como recurso secundario en
+
+    [5] => la construcción industrial. (M. Bauer et al., 2011).
+    [6] => Cabe destacar también otros residuos industriales tales como los residuos
+
+    [7] => generados en la industria del acetileno, compuestos por una suspensión de partículas
+
+    [8] => ricas en Ca(OH)2 (superior al 30% p/p) y los residuos de la industria papelera, que
+
+    [9] => contienen en torno a un 55% de portlandita, la cual contiene más de un 60% de óxido
+
+    [10] => de calcio. (L. Esquivias Fedriani et al., 2011).
+    [11] => La valorización de cada uno de los residuos citados como materiales de construcción
+
+    [12] => cierra el balance económico que hace a esta técnica candidata para el estudio de su
+
+    [13] => aplicación real en la industria y la extensión de su utilización en cada uno de los campos
+
+    [14] => industriales mencionados.
+    [15] => Previamente a los primeros estudios sobre la carbonatación de residuos industriales
+
+    [16] => como alternativa a la captura de CO2 con la consecuente valorización de los propios
+
+    [17] => residuos, la mayoría de los experimentos fueron enfocados hacia materiales
+
+    [18] => compuestos por silicatos de magnesio, con el objetivo de acelerar el proceso natural de
+
+    [19] => carbonatación. Sin embargo, la cantidad de estudios sobre materiales con alto
+
+    [20] => contenido de óxido de calcio se ha multiplicado en el siglo XXI por ser una reacción más
+
+    [21] => favorable termodinámicamente a temperaturas y presiones ambiente, lo cual
+
+    [22] => representa una ventaja crucial en cuanto a los requisitos energéticos del proceso.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Las cenizas volantes de lignito serían depositadas inicialmente en vertederos
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->sellados para preservarlas, evitando así su reacción con el CO2 atmosférico o su
+
+$matches ==>
+Array
+(
+    [0] => u
+
+    [1] => u
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->interacción con el agua de lluvia, antes de ser procesadas para la carbonatación. El
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->proceso de carbonatación no solo tiene el objetivo de capturar CO2, sino que el producto
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->obtenido de la propia carbonatación puede ser empleado como recurso secundario en
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Cabe destacar también otros residuos industriales tales como los residuos
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->generados en la industria del acetileno, compuestos por una suspensión de partículas
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->ricas en Ca(OH)2 (superior al 30% p/p) y los residuos de la industria papelera, que
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->contienen en torno a un 55% de portlandita, la cual contiene más de un 60% de óxido
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->La valorización de cada uno de los residuos citados como materiales de construcción
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->cierra el balance económico que hace a esta técnica candidata para el estudio de su
+
+$matches ==>
+Array
+(
+    [0] => u
+
+    [1] => u
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->aplicación real en la industria y la extensión de su utilización en cada uno de los campos
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Previamente a los primeros estudios sobre la carbonatación de residuos industriales
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->como alternativa a la captura de CO2 con la consecuente valorización de los propios
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->residuos, la mayoría de los experimentos fueron enfocados hacia materiales
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->compuestos por silicatos de magnesio, con el objetivo de acelerar el proceso natural de
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->carbonatación. Sin embargo, la cantidad de estudios sobre materiales con alto
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->contenido de óxido de calcio se ha multiplicado en el siglo XXI por ser una reacción más
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->favorable termodinámicamente a temperaturas y presiones ambiente, lo cual
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Las cenizas volantes de lignito serían depositadas inicialmente en vertederos 
+    [1] => sellados para preservarlas, evitando así su reacción con el CO2 atmosférico o su 
+    [2] => interacción con el agua de lluvia, antes de ser procesadas para la carbonatación. El 
+    [3] => proceso de carbonatación no solo tiene el objetivo de capturar CO2, sino que el producto 
+    [4] => obtenido de la propia carbonatación puede ser empleado como recurso secundario en 
+    [5] => la construcción industrial. (M. Bauer et al., 2011).
+    [6] => Cabe destacar también otros residuos industriales tales como los residuos 
+    [7] => generados en la industria del acetileno, compuestos por una suspensión de partículas 
+    [8] => ricas en Ca(OH)2 (superior al 30% p/p) y los residuos de la industria papelera, que 
+    [9] => contienen en torno a un 55% de portlandita, la cual contiene más de un 60% de óxido 
+    [10] => de calcio. (L. Esquivias Fedriani et al., 2011).
+    [11] => La valorización de cada uno de los residuos citados como materiales de construcción 
+    [12] => cierra el balance económico que hace a esta técnica candidata para el estudio de su 
+    [13] => aplicación real en la industria y la extensión de su utilización en cada uno de los campos 
+    [14] => industriales mencionados.
+    [15] => Previamente a los primeros estudios sobre la carbonatación de residuos industriales 
+    [16] => como alternativa a la captura de CO2 con la consecuente valorización de los propios 
+    [17] => residuos, la mayoría de los experimentos fueron enfocados hacia materiales 
+    [18] => compuestos por silicatos de magnesio, con el objetivo de acelerar el proceso natural de 
+    [19] => carbonatación. Sin embargo, la cantidad de estudios sobre materiales con alto 
+    [20] => contenido de óxido de calcio se ha multiplicado en el siglo XXI por ser una reacción más 
+    [21] => favorable termodinámicamente a temperaturas y presiones ambiente, lo cual 
+    [22] => representa una ventaja crucial en cuanto a los requisitos energéticos del proceso.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->interacción con el agua de lluvia, antes de ser procesadas para la carbonatación. El 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->la construcción industrial. (M. Bauer et al., 2011).
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->de calcio. (L. Esquivias Fedriani et al., 2011).
+$matches ==>
+Array
+(
+    [0] => o. 
+    [1] => o.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->carbonatación. Sin embargo, la cantidad de estudios sobre materiales con alto 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Las cenizas volantes de lignito serían depositadas inicialmente en vertederos 
+    [1] => sellados para preservarlas, evitando así su reacción con el CO2 atmosférico o su 
+    [2] => interacción con el agua de lluvia, antes de ser procesadas para la carbonatación.El 
+    [3] => proceso de carbonatación no solo tiene el objetivo de capturar CO2, sino que el producto 
+    [4] => obtenido de la propia carbonatación puede ser empleado como recurso secundario en 
+    [5] => la construcción industrial.(M.Bauer et al., 2011).
+    [6] => Cabe destacar también otros residuos industriales tales como los residuos 
+    [7] => generados en la industria del acetileno, compuestos por una suspensión de partículas 
+    [8] => ricas en Ca(OH)2 (superior al 30% p/p) y los residuos de la industria papelera, que 
+    [9] => contienen en torno a un 55% de portlandita, la cual contiene más de un 60% de óxido 
+    [10] => de calcio.(L.Esquivias Fedriani et al., 2011).
+    [11] => La valorización de cada uno de los residuos citados como materiales de construcción 
+    [12] => cierra el balance económico que hace a esta técnica candidata para el estudio de su 
+    [13] => aplicación real en la industria y la extensión de su utilización en cada uno de los campos 
+    [14] => industriales mencionados.
+    [15] => Previamente a los primeros estudios sobre la carbonatación de residuos industriales 
+    [16] => como alternativa a la captura de CO2 con la consecuente valorización de los propios 
+    [17] => residuos, la mayoría de los experimentos fueron enfocados hacia materiales 
+    [18] => compuestos por silicatos de magnesio, con el objetivo de acelerar el proceso natural de 
+    [19] => carbonatación.Sin embargo, la cantidad de estudios sobre materiales con alto 
+    [20] => contenido de óxido de calcio se ha multiplicado en el siglo XXI por ser una reacción más 
+    [21] => favorable termodinámicamente a temperaturas y presiones ambiente, lo cual 
+    [22] => representa una ventaja crucial en cuanto a los requisitos energéticos del proceso.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Las cenizas volantes de lignito serían depositadas inicialmente en vertederos sellados para preservarlas, evitando así su reacción con el CO2 atmosférico o su interacción con el agua de lluvia, antes de ser procesadas para la carbonatación.El proceso de carbonatación no solo tiene el objetivo de capturar CO2, sino que el producto obtenido de la propia carbonatación puede ser empleado como recurso secundario en la construcción industrial.(M.Bauer et al., 2011).Cabe destacar también otros residuos industriales tales como los residuos generados en la industria del acetileno, compuestos por una suspensión de partículas ricas en Ca(OH)2 (superior al 30% p/p) y los residuos de la industria papelera, que contienen en torno a un 55% de portlandita, la cual contiene más de un 60% de óxido de calcio.(L.Esquivias Fedriani et al., 2011).La valorización de cada uno de los residuos citados como materiales de construcción cierra el balance económico que hace a esta técnica candidata para el estudio de su aplicación real en la industria y la extensión de su utilización en cada uno de los campos industriales mencionados.Previamente a los primeros estudios sobre la carbonatación de residuos industriales como alternativa a la captura de CO2 con la consecuente valorización de los propios residuos, la mayoría de los experimentos fueron enfocados hacia materiales compuestos por silicatos de magnesio, con el objetivo de acelerar el proceso natural de carbonatación.Sin embargo, la cantidad de estudios sobre materiales con alto contenido de óxido de calcio se ha multiplicado en el siglo XXI por ser una reacción más favorable termodinámicamente a temperaturas y presiones ambiente, lo cual representa una ventaja crucial en cuanto a los requisitos energéticos del proceso.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_163811_818607.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_163811_818607.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210601_164845_662861)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Actualmente, la gran mayoría de los estudios continúan realizándose a escala delaboratorio, por lo que la extrapolación de sus resultados a magnitudes industriales aúnno resulta representativa. Por consiguiente, es imprescindible para el desarrollo de estatecnología pasar a la escala de estudio en planta piloto para obtener información másprecisa sobre la sostenibilidad de su aplicación a los distintos campos de la industria ypara una evaluación de costes más representativa.1.3. Alcance y objetivo del proyectoEl proyecto tendrá como objetivo principal el diseño de una planta piloto destinadaal estudio y a la experimentación sobre el proceso de carbonatación de residuosindustriales, en condiciones de temperatura y presión ambiente, como vía para lacaptura de CO2 procedente de emisiones generadas como consecuencia de la propiaactividad industrial.En esta línea, la planta operará a temperaturas de entre 15 y 30ºC,aproximadamente, y a presión atmosférica, pudiendo procesar caudales muy superioresa los empleados a escala laboratorio, como paso previo a la experimentación en unaplanta de demostración de dimensiones industriales. Además, la planta deberá contarcon un reactor de un volumen tal que permita tiempos de residencia adecuados a lasexigencias industriales.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Actualmente, la gran mayoría de los estudios continúan realizándose a escala delaboratorio, por lo que la extrapolación de sus resultados a magnitudes industriales aúnno resulta representativa. Por consiguiente, es imprescindible para el desarrollo de estatecnología pasar a la escala de estudio en planta piloto para obtener información másprecisa sobre la sostenibilidad de su aplicación a los distintos campos de la industria ypara una evaluación de costes más representativa.1.3. Alcance y objetivo del proyectoEl proyecto tendrá como objetivo principal el diseño de una planta piloto destinadaal estudio y a la experimentación sobre el proceso de carbonatación de residuosindustriales, en condiciones de temperatura y presión ambiente, como vía para lacaptura de CO2 procedente de emisiones generadas como consecuencia de la propiaactividad industrial.En esta línea, la planta operará a temperaturas de entre 15 y 30ºC,aproximadamente, y a presión atmosférica, pudiendo procesar caudales muy superioresa los empleados a escala laboratorio, como paso previo a la experimentación en unaplanta de demostración de dimensiones industriales. Además, la planta deberá contarcon un reactor de un volumen tal que permita tiempos de residencia adecuados a lasexigencias industriales.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Actualmente, la gran mayoría de los estudios continúan realizándose a escala delaboratorio, por lo que la extrapolación de sus resultados a magnitudes industriales aúnno resulta representativa. Por consiguiente, es imprescindible para el desarrollo de estatecnología pasar a la escala de estudio en planta piloto para obtener información másprecisa sobre la sostenibilidad de su aplicación a los distintos campos de la industria ypara una evaluación de costes más representativa.1.3. Alcance y objetivo del proyectoEl proyecto tendrá como objetivo principal el diseño de una planta piloto destinadaal estudio y a la experimentación sobre el proceso de carbonatación de residuosindustriales, en condiciones de temperatura y presión ambiente, como vía para lacaptura de CO2 procedente de emisiones generadas como consecuencia de la propiaactividad industrial.En esta línea, la planta operará a temperaturas de entre 15 y 30ºC,aproximadamente, y a presión atmosférica, pudiendo procesar caudales muy superioresa los empleados a escala laboratorio, como paso previo a la experimentación en unaplanta de demostración de dimensiones industriales. Además, la planta deberá contarcon un reactor de un volumen tal que permita tiempos de residencia adecuados a lasexigencias industriales.
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Actualmente, la gran mayoría de los estudios continúan realizándose a escala delaboratorio, por lo que la extrapolación de sus resultados a magnitudes industriales aúnno resulta representativa.Por consiguiente, es imprescindible para el desarrollo de estatecnología pasar a la escala de estudio en planta piloto para obtener información másprecisa sobre la sostenibilidad de su aplicación a los distintos campos de la industria ypara una evaluación de costes más representativa.1.3. Alcance y objetivo del proyectoEl proyecto tendrá como objetivo principal el diseño de una planta piloto destinadaal estudio y a la experimentación sobre el proceso de carbonatación de residuosindustriales, en condiciones de temperatura y presión ambiente, como vía para lacaptura de CO2 procedente de emisiones generadas como consecuencia de la propiaactividad industrial.En esta línea, la planta operará a temperaturas de entre 15 y 30ºC,aproximadamente, y a presión atmosférica, pudiendo procesar caudales muy superioresa los empleados a escala laboratorio, como paso previo a la experimentación en unaplanta de demostración de dimensiones industriales.Además, la planta deberá contarcon un reactor de un volumen tal que permita tiempos de residencia adecuados a lasexigencias industriales.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Actualmente, la gran mayoría de los estudios continúan realizándose a escala delaboratorio, por lo que la extrapolación de sus resultados a magnitudes industriales aúnno resulta representativa.Por consiguiente, es imprescindible para el desarrollo de estatecnología pasar a la escala de estudio en planta piloto para obtener información másprecisa sobre la sostenibilidad de su aplicación a los distintos campos de la industria ypara una evaluación de costes más representativa.1.3. Alcance y objetivo del proyectoEl proyecto tendrá como objetivo principal el diseño de una planta piloto destinadaal estudio y a la experimentación sobre el proceso de carbonatación de residuosindustriales, en condiciones de temperatura y presión ambiente, como vía para lacaptura de CO2 procedente de emisiones generadas como consecuencia de la propiaactividad industrial.En esta línea, la planta operará a temperaturas de entre 15 y 30ºC,aproximadamente, y a presión atmosférica, pudiendo procesar caudales muy superioresa los empleados a escala laboratorio, como paso previo a la experimentación en unaplanta de demostración de dimensiones industriales.Además, la planta deberá contarcon un reactor de un volumen tal que permita tiempos de residencia adecuados a lasexigencias industriales.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_164845_662861.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_164845_662861.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210601_170239_754568)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '상기 반응 생성물 배출관(40)은 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 반응 챔버 밖으로 배출시키는 역할을 한다. 이때, 반응 생성물 배출관은 2가 금속 양이온을 포함하는 용액, 이산화탄소 및 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 금속 탄산염 화합물과 함께 배출되는 것을 최소화하기 위해 제2 유동층 영역에 해당하는 반응 챔버의 측부에 위치하는 것이 바람직하다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 상기 반응 생성물 배출관(40)은 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 반응 챔버 밖으로 배출시키는 역할을 한다. 이때, 반응 생성물 배출관은 2가 금속 양이온을 포함하는 용액, 이산화탄소 및 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 금속 탄산염 화합물과 함께 배출되는 것을 최소화하기 위해 제2 유동층 영역에 해당하는 반응 챔버의 측부에 위치하는 것이 바람직하다.
+    [1] => 도 2는 수용액의 pH에 따른 이산화탄소의 형태별 함량 변화 및 칼슘 이온과의 반응에 의해 이산화탄소가 광물화될 수 있는 영역을 나타낸 그래프이다. 도 2에서 보이는 바와 같이 수용액 상에서 이산화탄소가 중탄산 이온(HCO3-) 형태로 존재하기 위해서는 pH가 적어도 4 이상이어야 하고, 탄산 이온(CO32 -) 형태로 존재하기 위해서는 pH가 적어도 7 이상이어야 한다. 또한, 이산화탄소가 수용액 상에서 칼슘 이온과 반응하여 결정성 탄산칼슘을 형성하기 위해서는 pH가 적어도 7 이상이야 한다. 따라서, 본 발명에 따른 이산화탄소 광물화 장치를 이용하여 금속 탄산염 화합물을 효과적으로 형성하기 위해서는 이산화탄소의 탄산 이온으로의 전환 및 이의 탄산염화 반응이 일어나는 제1 유동층 영역의 pH가 7 이상이어야 한다. 한편, 상기 제1 유동층 영역에는 이산화탄소의 탄산 이온으로의 전환을 촉진하기 위해 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 존재하는데, 탄산무수화효소(Carbonic anhydrase)의 활성을 적정 수준으로 유지하기 위해서는 제1 유동층 영역의 pH가 일정 수준으로 제한되어야 한다. 탄산무수화효소(Carbonic anhydrase)는 일반적으로 pH가 10을 초과하는 경우 효소 활성을 잃는 것으로 알려져 있는바, 본 발명에서 제1 유동층 영역의 pH는 7~10의 수준으로 유지되는 것이 바람직하고, 7.5~9.5의 수준으로 유지되는 것이 더 바람직하다. 본 발명에 따른 이산화탄소 광물화 장치는 제1 유동층 영역의 pH를 적정 수준으로 유지 또는 조절하기 위해 염기성 수용액 공급관(50, 50')을 더 포함할 수 있다. 예를 들어, 상기 염기성 수용액 공급관(50)이 반응 챔버의 측부와 연통되는 경우 염기성 수용액을 반응 챔버 내부에 공급하여 제1 유동층 영역의 pH가 7~10의 범위가 되도록 직접적으로 조절할 수 있다. 또한, 상기 염기성 수용액 공급관(51')이 액체 공급관의 측부와 연통되는 경우 염기성 수용액을 금속 양이온을 포함하는 용액에 공급하여 반응 챔버 내부로 들어가기 전에 금속 양이온을 포함하는 용액의 pH를 조절할 수 있고, 이를 통해 제1 유동층 영역의 pH가 7~10의 범위가 되도록 간접적으로 조절할 수 있다. 이때, 염기성 수용액 공급관을 통해 공급되는 염기성 수용액의 양은 반응 챔버 내부에 형성된 제1 유동층 영역의 pH를 실시간으로 측정한 값을 통해 산정할 수 있다. 본 발명에서 제1 유동층 영역의 pH를 소정의 범위로 조절하기 위해 사용되는 염기성 수용액의 종류는 크게 제한되지 않으며, 예를 들어 수산화나트륨 수용액, 수산화칼륨 수용액 및 수산화암모늄 수용액에서 선택되는 1종 이상일 수 있고, 수산화나트륨인 것이 바람직하다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 상기 반응 생성물 배출관(40)은 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 반응 챔버 밖으로 배출시키는 역할을 한다. 이때, 반응 생성물 배출관은 2가 금속 양이온을 포함하는 용액, 이산화탄소 및 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 금속 탄산염 화합물과 함께 배출되는 것을 최소화하기 위해 제2 유동층 영역에 해당하는 반응 챔버의 측부에 위치하는 것이 바람직하다.
+    [1] => 도 2는 수용액의 pH에 따른 이산화탄소의 형태별 함량 변화 및 칼슘 이온과의 반응에 의해 이산화탄소가 광물화될 수 있는 영역을 나타낸 그래프이다. 도 2에서 보이는 바와 같이 수용액 상에서 이산화탄소가 중탄산 이온(HCO3-) 형태로 존재하기 위해서는 pH가 적어도 4 이상이어야 하고, 탄산 이온(CO32 -) 형태로 존재하기 위해서는 pH가 적어도 7 이상이어야 한다. 또한, 이산화탄소가 수용액 상에서 칼슘 이온과 반응하여 결정성 탄산칼슘을 형성하기 위해서는 pH가 적어도 7 이상이야 한다. 따라서, 본 발명에 따른 이산화탄소 광물화 장치를 이용하여 금속 탄산염 화합물을 효과적으로 형성하기 위해서는 이산화탄소의 탄산 이온으로의 전환 및 이의 탄산염화 반응이 일어나는 제1 유동층 영역의 pH가 7 이상이어야 한다. 한편, 상기 제1 유동층 영역에는 이산화탄소의 탄산 이온으로의 전환을 촉진하기 위해 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 존재하는데, 탄산무수화효소(Carbonic anhydrase)의 활성을 적정 수준으로 유지하기 위해서는 제1 유동층 영역의 pH가 일정 수준으로 제한되어야 한다. 탄산무수화효소(Carbonic anhydrase)는 일반적으로 pH가 10을 초과하는 경우 효소 활성을 잃는 것으로 알려져 있는바, 본 발명에서 제1 유동층 영역의 pH는 7~10의 수준으로 유지되는 것이 바람직하고, 7.5~9.5의 수준으로 유지되는 것이 더 바람직하다. 본 발명에 따른 이산화탄소 광물화 장치는 제1 유동층 영역의 pH를 적정 수준으로 유지 또는 조절하기 위해 염기성 수용액 공급관(50, 50')을 더 포함할 수 있다. 예를 들어, 상기 염기성 수용액 공급관(50)이 반응 챔버의 측부와 연통되는 경우 염기성 수용액을 반응 챔버 내부에 공급하여 제1 유동층 영역의 pH가 7~10의 범위가 되도록 직접적으로 조절할 수 있다. 또한, 상기 염기성 수용액 공급관(51')이 액체 공급관의 측부와 연통되는 경우 염기성 수용액을 금속 양이온을 포함하는 용액에 공급하여 반응 챔버 내부로 들어가기 전에 금속 양이온을 포함하는 용액의 pH를 조절할 수 있고, 이를 통해 제1 유동층 영역의 pH가 7~10의 범위가 되도록 간접적으로 조절할 수 있다. 이때, 염기성 수용액 공급관을 통해 공급되는 염기성 수용액의 양은 반응 챔버 내부에 형성된 제1 유동층 영역의 pH를 실시간으로 측정한 값을 통해 산정할 수 있다. 본 발명에서 제1 유동층 영역의 pH를 소정의 범위로 조절하기 위해 사용되는 염기성 수용액의 종류는 크게 제한되지 않으며, 예를 들어 수산화나트륨 수용액, 수산화칼륨 수용액 및 수산화암모늄 수용액에서 선택되는 1종 이상일 수 있고, 수산화나트륨인 것이 바람직하다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->상기 반응 생성물 배출관(40)은 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 반응 챔버 밖으로 배출시키는 역할을 한다. 이때, 반응 생성물 배출관은 2가 금속 양이온을 포함하는 용액, 이산화탄소 및 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 금속 탄산염 화합물과 함께 배출되는 것을 최소화하기 위해 제2 유동층 영역에 해당하는 반응 챔버의 측부에 위치하는 것이 바람직하다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->도 2는 수용액의 pH에 따른 이산화탄소의 형태별 함량 변화 및 칼슘 이온과의 반응에 의해 이산화탄소가 광물화될 수 있는 영역을 나타낸 그래프이다. 도 2에서 보이는 바와 같이 수용액 상에서 이산화탄소가 중탄산 이온(HCO3-) 형태로 존재하기 위해서는 pH가 적어도 4 이상이어야 하고, 탄산 이온(CO32 -) 형태로 존재하기 위해서는 pH가 적어도 7 이상이어야 한다. 또한, 이산화탄소가 수용액 상에서 칼슘 이온과 반응하여 결정성 탄산칼슘을 형성하기 위해서는 pH가 적어도 7 이상이야 한다. 따라서, 본 발명에 따른 이산화탄소 광물화 장치를 이용하여 금속 탄산염 화합물을 효과적으로 형성하기 위해서는 이산화탄소의 탄산 이온으로의 전환 및 이의 탄산염화 반응이 일어나는 제1 유동층 영역의 pH가 7 이상이어야 한다. 한편, 상기 제1 유동층 영역에는 이산화탄소의 탄산 이온으로의 전환을 촉진하기 위해 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 존재하는데, 탄산무수화효소(Carbonic anhydrase)의 활성을 적정 수준으로 유지하기 위해서는 제1 유동층 영역의 pH가 일정 수준으로 제한되어야 한다. 탄산무수화효소(Carbonic anhydrase)는 일반적으로 pH가 10을 초과하는 경우 효소 활성을 잃는 것으로 알려져 있는바, 본 발명에서 제1 유동층 영역의 pH는 7~10의 수준으로 유지되는 것이 바람직하고, 7.5~9.5의 수준으로 유지되는 것이 더 바람직하다. 본 발명에 따른 이산화탄소 광물화 장치는 제1 유동층 영역의 pH를 적정 수준으로 유지 또는 조절하기 위해 염기성 수용액 공급관(50, 50')을 더 포함할 수 있다. 예를 들어, 상기 염기성 수용액 공급관(50)이 반응 챔버의 측부와 연통되는 경우 염기성 수용액을 반응 챔버 내부에 공급하여 제1 유동층 영역의 pH가 7~10의 범위가 되도록 직접적으로 조절할 수 있다. 또한, 상기 염기성 수용액 공급관(51')이 액체 공급관의 측부와 연통되는 경우 염기성 수용액을 금속 양이온을 포함하는 용액에 공급하여 반응 챔버 내부로 들어가기 전에 금속 양이온을 포함하는 용액의 pH를 조절할 수 있고, 이를 통해 제1 유동층 영역의 pH가 7~10의 범위가 되도록 간접적으로 조절할 수 있다. 이때, 염기성 수용액 공급관을 통해 공급되는 염기성 수용액의 양은 반응 챔버 내부에 형성된 제1 유동층 영역의 pH를 실시간으로 측정한 값을 통해 산정할 수 있다. 본 발명에서 제1 유동층 영역의 pH를 소정의 범위로 조절하기 위해 사용되는 염기성 수용액의 종류는 크게 제한되지 않으며, 예를 들어 수산화나트륨 수용액, 수산화칼륨 수용액 및 수산화암모늄 수용액에서 선택되는 1종 이상일 수 있고, 수산화나트륨인 것이 바람직하다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 상기 반응 생성물 배출관(40)은 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 반응 챔버 밖으로 배출시키는 역할을 한다.이때, 반응 생성물 배출관은 2가 금속 양이온을 포함하는 용액, 이산화탄소 및 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 금속 탄산염 화합물과 함께 배출되는 것을 최소화하기 위해 제2 유동층 영역에 해당하는 반응 챔버의 측부에 위치하는 것이 바람직하다.
+    [1] => 도 2는 수용액의 pH에 따른 이산화탄소의 형태별 함량 변화 및 칼슘 이온과의 반응에 의해 이산화탄소가 광물화될 수 있는 영역을 나타낸 그래프이다.도 2에서 보이는 바와 같이 수용액 상에서 이산화탄소가 중탄산 이온(HCO3-) 형태로 존재하기 위해서는 pH가 적어도 4 이상이어야 하고, 탄산 이온(CO32 -) 형태로 존재하기 위해서는 pH가 적어도 7 이상이어야 한다.또한, 이산화탄소가 수용액 상에서 칼슘 이온과 반응하여 결정성 탄산칼슘을 형성하기 위해서는 pH가 적어도 7 이상이야 한다.따라서, 본 발명에 따른 이산화탄소 광물화 장치를 이용하여 금속 탄산염 화합물을 효과적으로 형성하기 위해서는 이산화탄소의 탄산 이온으로의 전환 및 이의 탄산염화 반응이 일어나는 제1 유동층 영역의 pH가 7 이상이어야 한다.한편, 상기 제1 유동층 영역에는 이산화탄소의 탄산 이온으로의 전환을 촉진하기 위해 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 존재하는데, 탄산무수화효소(Carbonic anhydrase)의 활성을 적정 수준으로 유지하기 위해서는 제1 유동층 영역의 pH가 일정 수준으로 제한되어야 한다.탄산무수화효소(Carbonic anhydrase)는 일반적으로 pH가 10을 초과하는 경우 효소 활성을 잃는 것으로 알려져 있는바, 본 발명에서 제1 유동층 영역의 pH는 7~10의 수준으로 유지되는 것이 바람직하고, 7.5~9.5의 수준으로 유지되는 것이 더 바람직하다.본 발명에 따른 이산화탄소 광물화 장치는 제1 유동층 영역의 pH를 적정 수준으로 유지 또는 조절하기 위해 염기성 수용액 공급관(50, 50')을 더 포함할 수 있다.예를 들어, 상기 염기성 수용액 공급관(50)이 반응 챔버의 측부와 연통되는 경우 염기성 수용액을 반응 챔버 내부에 공급하여 제1 유동층 영역의 pH가 7~10의 범위가 되도록 직접적으로 조절할 수 있다.또한, 상기 염기성 수용액 공급관(51')이 액체 공급관의 측부와 연통되는 경우 염기성 수용액을 금속 양이온을 포함하는 용액에 공급하여 반응 챔버 내부로 들어가기 전에 금속 양이온을 포함하는 용액의 pH를 조절할 수 있고, 이를 통해 제1 유동층 영역의 pH가 7~10의 범위가 되도록 간접적으로 조절할 수 있다.이때, 염기성 수용액 공급관을 통해 공급되는 염기성 수용액의 양은 반응 챔버 내부에 형성된 제1 유동층 영역의 pH를 실시간으로 측정한 값을 통해 산정할 수 있다.본 발명에서 제1 유동층 영역의 pH를 소정의 범위로 조절하기 위해 사용되는 염기성 수용액의 종류는 크게 제한되지 않으며, 예를 들어 수산화나트륨 수용액, 수산화칼륨 수용액 및 수산화암모늄 수용액에서 선택되는 1종 이상일 수 있고, 수산화나트륨인 것이 바람직하다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>상기 반응 생성물 배출관(40)은 반응 챔버의 측부와 연통되고, 금속 탄산염 화합물과 물을 반응 챔버 밖으로 배출시키는 역할을 한다.이때, 반응 생성물 배출관은 2가 금속 양이온을 포함하는 용액, 이산화탄소 및 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 금속 탄산염 화합물과 함께 배출되는 것을 최소화하기 위해 제2 유동층 영역에 해당하는 반응 챔버의 측부에 위치하는 것이 바람직하다.도 2는 수용액의 pH에 따른 이산화탄소의 형태별 함량 변화 및 칼슘 이온과의 반응에 의해 이산화탄소가 광물화될 수 있는 영역을 나타낸 그래프이다.도 2에서 보이는 바와 같이 수용액 상에서 이산화탄소가 중탄산 이온(HCO3-) 형태로 존재하기 위해서는 pH가 적어도 4 이상이어야 하고, 탄산 이온(CO32 -) 형태로 존재하기 위해서는 pH가 적어도 7 이상이어야 한다.또한, 이산화탄소가 수용액 상에서 칼슘 이온과 반응하여 결정성 탄산칼슘을 형성하기 위해서는 pH가 적어도 7 이상이야 한다.따라서, 본 발명에 따른 이산화탄소 광물화 장치를 이용하여 금속 탄산염 화합물을 효과적으로 형성하기 위해서는 이산화탄소의 탄산 이온으로의 전환 및 이의 탄산염화 반응이 일어나는 제1 유동층 영역의 pH가 7 이상이어야 한다.한편, 상기 제1 유동층 영역에는 이산화탄소의 탄산 이온으로의 전환을 촉진하기 위해 탄산무수화효소(Carbonic anhydrase) 고정화 비드(bead)가 존재하는데, 탄산무수화효소(Carbonic anhydrase)의 활성을 적정 수준으로 유지하기 위해서는 제1 유동층 영역의 pH가 일정 수준으로 제한되어야 한다.탄산무수화효소(Carbonic anhydrase)는 일반적으로 pH가 10을 초과하는 경우 효소 활성을 잃는 것으로 알려져 있는바, 본 발명에서 제1 유동층 영역의 pH는 7~10의 수준으로 유지되는 것이 바람직하고, 7.5~9.5의 수준으로 유지되는 것이 더 바람직하다.본 발명에 따른 이산화탄소 광물화 장치는 제1 유동층 영역의 pH를 적정 수준으로 유지 또는 조절하기 위해 염기성 수용액 공급관(50, 50')을 더 포함할 수 있다.예를 들어, 상기 염기성 수용액 공급관(50)이 반응 챔버의 측부와 연통되는 경우 염기성 수용액을 반응 챔버 내부에 공급하여 제1 유동층 영역의 pH가 7~10의 범위가 되도록 직접적으로 조절할 수 있다.또한, 상기 염기성 수용액 공급관(51')이 액체 공급관의 측부와 연통되는 경우 염기성 수용액을 금속 양이온을 포함하는 용액에 공급하여 반응 챔버 내부로 들어가기 전에 금속 양이온을 포함하는 용액의 pH를 조절할 수 있고, 이를 통해 제1 유동층 영역의 pH가 7~10의 범위가 되도록 간접적으로 조절할 수 있다.이때, 염기성 수용액 공급관을 통해 공급되는 염기성 수용액의 양은 반응 챔버 내부에 형성된 제1 유동층 영역의 pH를 실시간으로 측정한 값을 통해 산정할 수 있다.본 발명에서 제1 유동층 영역의 pH를 소정의 범위로 조절하기 위해 사용되는 염기성 수용액의 종류는 크게 제한되지 않으며, 예를 들어 수산화나트륨 수용액, 수산화칼륨 수용액 및 수산화암모늄 수용액에서 선택되는 1종 이상일 수 있고, 수산화나트륨인 것이 바람직하다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_170239_754568.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_170239_754568.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210601_172022_752840)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '본 발명에 따른 이산화탄소 광물화 장치는 가스 배출관(60)을 더 포함할 수 있다. 상기 가스 배출관은 반응 챔버의 상부와 연통되고, 이산화탄소가 적어도 일부 제거된 연도 가스를 배출시키는 역할을 한다. 본 발명에서 가스 공급관(20)을 통해 순수한 이산화탄소가 반응 챔버 내부로 공급되는 경우 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되기 때문에 가스 배출관이 반드시 필요한 것은 아니다. 한편, 본 발명에서 가스 공급관(20)을 통해 이산화탄소 함유 연도 가스가 반응 챔버 내부로 공급되는 경우 연도 가스에 함유된 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되고, 이산화탄소가 제거된 청정 가스가 가스 배출관을 통해 대기로 방출될 수 있다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '본 발명에 따른 이산화탄소 광물화 장치는 고/액 분리기(70)를 더 포함할 수 있다. 상기 고/액 분리기는 반응 생성물 배출관에 연결되어, 반응 생성물 배출관을 통해 배출된 반응 생성물을 금속 탄산염 화합물을 포함하는 고상과 물을 포함하는 액상으로 분리하는 역할을 한다. 본 발명에서 사용되는 고/액 분리기는 그 종류가 크게 제한되지 않으면, 예를 들어 원심분리기, 프레스 필터 등이 있다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 본 발명에 따른 이산화탄소 광물화 장치는 가스 배출관(60)을 더 포함할 수 있다. 상기 가스 배출관은 반응 챔버의 상부와 연통되고, 이산화탄소가 적어도 일부 제거된 연도 가스를 배출시키는 역할을 한다. 본 발명에서 가스 공급관(20)을 통해 순수한 이산화탄소가 반응 챔버 내부로 공급되는 경우 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되기 때문에 가스 배출관이 반드시 필요한 것은 아니다. 한편, 본 발명에서 가스 공급관(20)을 통해 이산화탄소 함유 연도 가스가 반응 챔버 내부로 공급되는 경우 연도 가스에 함유된 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되고, 이산화탄소가 제거된 청정 가스가 가스 배출관을 통해 대기로 방출될 수 있다.
+    [1] => 본 발명에 따른 이산화탄소 광물화 장치는 고/액 분리기(70)를 더 포함할 수 있다. 상기 고/액 분리기는 반응 생성물 배출관에 연결되어, 반응 생성물 배출관을 통해 배출된 반응 생성물을 금속 탄산염 화합물을 포함하는 고상과 물을 포함하는 액상으로 분리하는 역할을 한다. 본 발명에서 사용되는 고/액 분리기는 그 종류가 크게 제한되지 않으면, 예를 들어 원심분리기, 프레스 필터 등이 있다.
+    [2] => 본 발명에 따른 이산화탄소 광물화 장치는 재순환 라인(80)을 더 포함할 수 있다. 상기 재순환 라인은 고/액 분리기에서 분리된 액상, 특히 물을 반응 챔버에 재순환시키는 역할을 한다. 재순환된 물은 이산화탄소와 반응하여 이산화탄소를 탄산 이온으로 변환시키는데에 사용될 수 있다. 따라서, 본 발명에서 재순환 라인은 제1 유동층 영역에 해당하는 반응 챔버의 측부와 연통되는 것이 바람직하다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 본 발명에 따른 이산화탄소 광물화 장치는 가스 배출관(60)을 더 포함할 수 있다. 상기 가스 배출관은 반응 챔버의 상부와 연통되고, 이산화탄소가 적어도 일부 제거된 연도 가스를 배출시키는 역할을 한다. 본 발명에서 가스 공급관(20)을 통해 순수한 이산화탄소가 반응 챔버 내부로 공급되는 경우 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되기 때문에 가스 배출관이 반드시 필요한 것은 아니다. 한편, 본 발명에서 가스 공급관(20)을 통해 이산화탄소 함유 연도 가스가 반응 챔버 내부로 공급되는 경우 연도 가스에 함유된 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되고, 이산화탄소가 제거된 청정 가스가 가스 배출관을 통해 대기로 방출될 수 있다.
+    [1] => 본 발명에 따른 이산화탄소 광물화 장치는 고/액 분리기(70)를 더 포함할 수 있다. 상기 고/액 분리기는 반응 생성물 배출관에 연결되어, 반응 생성물 배출관을 통해 배출된 반응 생성물을 금속 탄산염 화합물을 포함하는 고상과 물을 포함하는 액상으로 분리하는 역할을 한다. 본 발명에서 사용되는 고/액 분리기는 그 종류가 크게 제한되지 않으면, 예를 들어 원심분리기, 프레스 필터 등이 있다.
+    [2] => 본 발명에 따른 이산화탄소 광물화 장치는 재순환 라인(80)을 더 포함할 수 있다. 상기 재순환 라인은 고/액 분리기에서 분리된 액상, 특히 물을 반응 챔버에 재순환시키는 역할을 한다. 재순환된 물은 이산화탄소와 반응하여 이산화탄소를 탄산 이온으로 변환시키는데에 사용될 수 있다. 따라서, 본 발명에서 재순환 라인은 제1 유동층 영역에 해당하는 반응 챔버의 측부와 연통되는 것이 바람직하다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->본 발명에 따른 이산화탄소 광물화 장치는 가스 배출관(60)을 더 포함할 수 있다. 상기 가스 배출관은 반응 챔버의 상부와 연통되고, 이산화탄소가 적어도 일부 제거된 연도 가스를 배출시키는 역할을 한다. 본 발명에서 가스 공급관(20)을 통해 순수한 이산화탄소가 반응 챔버 내부로 공급되는 경우 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되기 때문에 가스 배출관이 반드시 필요한 것은 아니다. 한편, 본 발명에서 가스 공급관(20)을 통해 이산화탄소 함유 연도 가스가 반응 챔버 내부로 공급되는 경우 연도 가스에 함유된 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되고, 이산화탄소가 제거된 청정 가스가 가스 배출관을 통해 대기로 방출될 수 있다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->본 발명에 따른 이산화탄소 광물화 장치는 고/액 분리기(70)를 더 포함할 수 있다. 상기 고/액 분리기는 반응 생성물 배출관에 연결되어, 반응 생성물 배출관을 통해 배출된 반응 생성물을 금속 탄산염 화합물을 포함하는 고상과 물을 포함하는 액상으로 분리하는 역할을 한다. 본 발명에서 사용되는 고/액 분리기는 그 종류가 크게 제한되지 않으면, 예를 들어 원심분리기, 프레스 필터 등이 있다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->본 발명에 따른 이산화탄소 광물화 장치는 재순환 라인(80)을 더 포함할 수 있다. 상기 재순환 라인은 고/액 분리기에서 분리된 액상, 특히 물을 반응 챔버에 재순환시키는 역할을 한다. 재순환된 물은 이산화탄소와 반응하여 이산화탄소를 탄산 이온으로 변환시키는데에 사용될 수 있다. 따라서, 본 발명에서 재순환 라인은 제1 유동층 영역에 해당하는 반응 챔버의 측부와 연통되는 것이 바람직하다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 본 발명에 따른 이산화탄소 광물화 장치는 가스 배출관(60)을 더 포함할 수 있다.상기 가스 배출관은 반응 챔버의 상부와 연통되고, 이산화탄소가 적어도 일부 제거된 연도 가스를 배출시키는 역할을 한다.본 발명에서 가스 공급관(20)을 통해 순수한 이산화탄소가 반응 챔버 내부로 공급되는 경우 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되기 때문에 가스 배출관이 반드시 필요한 것은 아니다.한편, 본 발명에서 가스 공급관(20)을 통해 이산화탄소 함유 연도 가스가 반응 챔버 내부로 공급되는 경우 연도 가스에 함유된 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되고, 이산화탄소가 제거된 청정 가스가 가스 배출관을 통해 대기로 방출될 수 있다.
+    [1] => 본 발명에 따른 이산화탄소 광물화 장치는 고/액 분리기(70)를 더 포함할 수 있다.상기 고/액 분리기는 반응 생성물 배출관에 연결되어, 반응 생성물 배출관을 통해 배출된 반응 생성물을 금속 탄산염 화합물을 포함하는 고상과 물을 포함하는 액상으로 분리하는 역할을 한다.본 발명에서 사용되는 고/액 분리기는 그 종류가 크게 제한되지 않으면, 예를 들어 원심분리기, 프레스 필터 등이 있다.
+    [2] => 본 발명에 따른 이산화탄소 광물화 장치는 재순환 라인(80)을 더 포함할 수 있다.상기 재순환 라인은 고/액 분리기에서 분리된 액상, 특히 물을 반응 챔버에 재순환시키는 역할을 한다.재순환된 물은 이산화탄소와 반응하여 이산화탄소를 탄산 이온으로 변환시키는데에 사용될 수 있다.따라서, 본 발명에서 재순환 라인은 제1 유동층 영역에 해당하는 반응 챔버의 측부와 연통되는 것이 바람직하다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>본 발명에 따른 이산화탄소 광물화 장치는 가스 배출관(60)을 더 포함할 수 있다.상기 가스 배출관은 반응 챔버의 상부와 연통되고, 이산화탄소가 적어도 일부 제거된 연도 가스를 배출시키는 역할을 한다.본 발명에서 가스 공급관(20)을 통해 순수한 이산화탄소가 반응 챔버 내부로 공급되는 경우 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되기 때문에 가스 배출관이 반드시 필요한 것은 아니다.한편, 본 발명에서 가스 공급관(20)을 통해 이산화탄소 함유 연도 가스가 반응 챔버 내부로 공급되는 경우 연도 가스에 함유된 이산화탄소 대부분은 모두 2가 금속 양이온과 반응하여 금속 탄산염 화합물로 전환되고, 이산화탄소가 제거된 청정 가스가 가스 배출관을 통해 대기로 방출될 수 있다.본 발명에 따른 이산화탄소 광물화 장치는 고/액 분리기(70)를 더 포함할 수 있다.상기 고/액 분리기는 반응 생성물 배출관에 연결되어, 반응 생성물 배출관을 통해 배출된 반응 생성물을 금속 탄산염 화합물을 포함하는 고상과 물을 포함하는 액상으로 분리하는 역할을 한다.본 발명에서 사용되는 고/액 분리기는 그 종류가 크게 제한되지 않으면, 예를 들어 원심분리기, 프레스 필터 등이 있다.본 발명에 따른 이산화탄소 광물화 장치는 재순환 라인(80)을 더 포함할 수 있다.상기 재순환 라인은 고/액 분리기에서 분리된 액상, 특히 물을 반응 챔버에 재순환시키는 역할을 한다.재순환된 물은 이산화탄소와 반응하여 이산화탄소를 탄산 이온으로 변환시키는데에 사용될 수 있다.따라서, 본 발명에서 재순환 라인은 제1 유동층 영역에 해당하는 반응 챔버의 측부와 연통되는 것이 바람직하다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_172022_752840.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_172022_752840.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
