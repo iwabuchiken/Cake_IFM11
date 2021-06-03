@@ -4625,3 +4625,111 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210531_012216_239001.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210531_012216_239001.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210602_161437_502357)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 2010年，中石化胜利油田建成了国内首个燃煤电厂的CCUS示范项目，以燃煤电厂烟气CO2为源头，采用燃烧-捕集技术，将捕集的CO2注入到油田中进行驱油，CO2捕集能力达3万～4万t/a;2011年，神华
+    [1] => 鄂尔多斯[e4-
+    [2] => ]]
+    [3] => 10万t/a的CCS示范项目
+    [4] => 落成[-:completed
+    [5] => ]]
+    [6] => ，采用甲醇吸收法捕集煤气化制氢项目尾气中的CO2，后向
+    [7] => 盐水层
+    [8] => 中注入CO2，]]
+    [9] => 该项目是国内第一个盐水层地质封存实验项目;2012年
+    [10] => ]]，延长石油建成了5万t/a的CO2捕集利用项目，该项目利用煤化工产生的CO2，经过低温甲醇洗技术提纯加压液化后注入油田中，降低了原油
+    [11] => 粘度[nian2-
+    [12] => ]]
+    [13] => ，提高了原油采收率并实现了CO2永久封存;2015年，中石化中原油田炼厂尾气CCUS项目
+    [14] => 建成[-:built
+    [15] => ]]
+    [16] => ，项目将已经接近废弃的油田，通过CO2驱油将油田采出率提高15%，目前已有百万吨CO2注入到了地下。]]除了传统CO2捕集技术，国内还开展了CO2新型再利用技术，应用于食品、精细化工等行业。]]2009年，上海
+    [17] => 石洞口[-dong4-
+    [18] => ]]
+    [19] => 第二电厂碳捕集项目建成，捕集规模为10万t/a，捕集后的CO2主要用于食品行业;2011年，经连云港清洁煤能源动力系统研究，将IGCC产生的CO2捕集后一部分用于
+    [20] => 尿素[niao4-
+    [21] => 和
+    [22] => 纯碱[-jian3:soda-ash
+    [23] => 工业，一部分注入到盐水层进行封存;2012年，天津
+    [24] => 北塘[-tang2
+    [25] => 国电集团CO2捕集示范项目采用燃烧后捕集技术，年捕集量为2万t，捕集后的CO2用于食品行业。]]此外，微藻固碳技术在世界范围内仍处于发展阶段，2010年，新奥集团在内蒙古达拉特旗利用微藻固碳技术，将煤制甲醇/二甲醚装置的尾气吸收后，一部分用作生物
+    [26] => 柴油[chai2-
+    [27] => ，一部分用作生产
+    [28] => 饲料[si4-
+    [29] => ，处理量达2万t/a。]]除已建项目，国内将加速建设CO2捕集项目，如齐鲁石化在建CCUS-EOR项目(2020年)，CO2捕集能力4万t/a。在一些双边协议中，]]
+    [30] => 中美将在中国开展一些大型CCUS项目，如中美气候变化合作延长石油CCUS示范项目等。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)2010年，中石化胜利油田建成了国内首个燃煤电厂的CCUS示范项目，以燃煤电厂烟气CO2为源头，采用燃烧-捕集技术，将捕集的CO2注入到油田中进行驱油，CO2捕集能力达3万～4万t/a;2011年，神华
+[process-trans-sentences_chinese.php : 216] match => 鄂尔多斯[e4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)10万t/a的CCS示范项目
+[process-trans-sentences_chinese.php : 216] match => 落成[-:completed
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，采用甲醇吸收法捕集煤气化制氢项目尾气中的CO2，后向
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)盐水层
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中注入CO2，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该项目是国内第一个盐水层地质封存实验项目;2012年
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]，延长石油建成了5万t/a的CO2捕集利用项目，该项目利用煤化工产生的CO2，经过低温甲醇洗技术提纯加压液化后注入油田中，降低了原油
+[process-trans-sentences_chinese.php : 216] match => 粘度[nian2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，提高了原油采收率并实现了CO2永久封存;2015年，中石化中原油田炼厂尾气CCUS项目
+[process-trans-sentences_chinese.php : 216] match => 建成[-:built
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，项目将已经接近废弃的油田，通过CO2驱油将油田采出率提高15%，目前已有百万吨CO2注入到了地下。]]除了传统CO2捕集技术，国内还开展了CO2新型再利用技术，应用于食品、精细化工等行业。]]2009年，上海
+[process-trans-sentences_chinese.php : 216] match => 石洞口[-dong4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)第二电厂碳捕集项目建成，捕集规模为10万t/a，捕集后的CO2主要用于食品行业;2011年，经连云港清洁煤能源动力系统研究，将IGCC产生的CO2捕集后一部分用于
+[process-trans-sentences_chinese.php : 216] match => 尿素[niao4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和
+[process-trans-sentences_chinese.php : 216] match => 纯碱[-jian3:soda-ash
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)工业，一部分注入到盐水层进行封存;2012年，天津
+[process-trans-sentences_chinese.php : 216] match => 北塘[-tang2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国电集团CO2捕集示范项目采用燃烧后捕集技术，年捕集量为2万t，捕集后的CO2用于食品行业。]]此外，微藻固碳技术在世界范围内仍处于发展阶段，2010年，新奥集团在内蒙古达拉特旗利用微藻固碳技术，将煤制甲醇/二甲醚装置的尾气吸收后，一部分用作生物
+[process-trans-sentences_chinese.php : 216] match => 柴油[chai2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，一部分用作生产
+[process-trans-sentences_chinese.php : 216] match => 饲料[si4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，处理量达2万t/a。]]除已建项目，国内将加速建设CO2捕集项目，如齐鲁石化在建CCUS-EOR项目(2020年)，CO2捕集能力4万t/a。在一些双边协议中，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中美将在中国开展一些大型CCUS项目，如中美气候变化合作延长石油CCUS示范项目等。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210602_161437_520358.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210602_161437_520358.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210602_162103_644181)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 4结论与展望工业是现代社会的基础，也是经济发展的源泉，在带来了经济效益和工作机会的同时，也带来了许多问题。]]工业消耗了全球1/3的能源，却产生了全球1/3的温室气体。在实现近零排放目标和实现全球温控1.5℃路线图的进程中，CCUS技术将起到至关重要的作用。]]IEA预估利用CCUS技术，从2017年到2060年可以减少280亿t的CO2排放。下一代碳捕集技术将会在材料的创新、工艺或设备的改进上取得突破，这些新进展将使得投资运营成本降低的同时提高捕集效率。]]如IonEngineering公司的非水溶液、MTR公司的膜分离体系、三菱重工的KS-21溶剂、Lind-BASF的贫富溶液吸收再生循环技术等，都已经在FEED(FrontandEndEngineeringDesign，前端工程设计)工程设计项目中进行了实践。随着工业的进步，下一代捕集技术将助推CCUS技术的进步和发展。]]未来几十年，对于应对全球气候变暖，碳利用将
+    [1] => 起到[-:play
+    [2] => 重要作用。纵观[zong4-
+    [3] => 国内外成熟的工程项目，地下封存、驱油和食品级利用是当前较主流的方向。其中，驱油技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，有较好的应用前景。而未来，与氢能利用相结合的CCUS项目将会越来越多。]]目前全球98%的氢能来自不可再生化石能源，与CCUS技术相结合的气体
+    [4] => 重整[chong-:reforming
+    [5] => (主要是
+    [6] => 甲烷[-wan:methane
+    [7] => 蒸汽[:steam
+    [8] => 重整
+    [9] => )和煤气化技术相结合可以实现生产低碳氢能的目标。]]欧盟和一些国家已经直接将CCUS作为一个关键技术来实现这一目标，美国、荷兰、日本、澳大利亚、新西兰以及中国也都在氢能政策中提到了CCUS的重要性。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)4结论与展望工业是现代社会的基础，也是经济发展的源泉，在带来了经济效益和工作机会的同时，也带来了许多问题。]]工业消耗了全球1/3的能源，却产生了全球1/3的温室气体。在实现近零排放目标和实现全球温控1.5℃路线图的进程中，CCUS技术将起到至关重要的作用。]]IEA预估利用CCUS技术，从2017年到2060年可以减少280亿t的CO2排放。下一代碳捕集技术将会在材料的创新、工艺或设备的改进上取得突破，这些新进展将使得投资运营成本降低的同时提高捕集效率。]]如IonEngineering公司的非水溶液、MTR公司的膜分离体系、三菱重工的KS-21溶剂、Lind-BASF的贫富溶液吸收再生循环技术等，都已经在FEED(FrontandEndEngineeringDesign，前端工程设计)工程设计项目中进行了实践。随着工业的进步，下一代捕集技术将助推CCUS技术的进步和发展。]]未来几十年，对于应对全球气候变暖，碳利用将
+[process-trans-sentences_chinese.php : 216] match => 起到[-:play
+[process-trans-sentences_chinese.php : 216] match => 重要作用。纵观[zong4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国内外成熟的工程项目，地下封存、驱油和食品级利用是当前较主流的方向。其中，驱油技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，有较好的应用前景。而未来，与氢能利用相结合的CCUS项目将会越来越多。]]目前全球98%的氢能来自不可再生化石能源，与CCUS技术相结合的气体
+[process-trans-sentences_chinese.php : 216] match => 重整[chong-:reforming
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)(主要是
+[process-trans-sentences_chinese.php : 216] match => 甲烷[-wan:methane
+[process-trans-sentences_chinese.php : 216] match => 蒸汽[:steam
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)重整
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0))和煤气化技术相结合可以实现生产低碳氢能的目标。]]欧盟和一些国家已经直接将CCUS作为一个关键技术来实现这一目标，美国、荷兰、日本、澳大利亚、新西兰以及中国也都在氢能政策中提到了CCUS的重要性。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210602_162103_644181.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210602_162103_644181.txt'
+  
