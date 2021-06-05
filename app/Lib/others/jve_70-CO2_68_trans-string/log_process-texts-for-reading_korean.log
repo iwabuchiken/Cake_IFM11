@@ -24320,3 +24320,708 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210601_172022_752840.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210603_133651_946209)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 4结论与展望工业是现代社会的基础，也是经济发展的源泉，在带来了经济效益和工作机会的同时，也带来了许多问题。]]工业消耗了全球1/3的能源，却产生了全球1/3的温室气体。在实现近零排放目标和实现全球温控1.5℃路线图的进程中，CCUS技术将起到至关重要的作用。]]IEA预估利用CCUS技术，从2017年到2060年可以减少280亿t的CO2排放。下一代碳捕集技术将会在材料的创新、工艺或设备的改进上取得突破，这些新进展将使得投资运营成本降低的同时提高捕集效率。]]如IonEngineering公司的非水溶液、MTR公司的膜分离体系、三菱重工的KS-21溶剂、Lind-BASF的贫富溶液吸收再生循环技术等，都已经在FEED(FrontandEndEngineeringDesign，前端工程设计)工程设计项目中进行了实践。随着工业的进步，下一代捕集技术将助推CCUS技术的进步和发展。]]未来几十年，对于应对全球气候变暖，碳利用将 起到[-:play 重要作用。纵观[zong4- 国内外成熟的工程项目，地下封存、驱油和食品级利用是当前较主流的方向。其中，驱油技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，有较好的应用前景。而未来，与氢能利用相结合的CCUS项目将会越来越多。]]目前全球98%的氢能来自不可再生化石能源，与CCUS技术相结合的气体 重整[chong-:reforming (主要是 甲烷[-wan:methane 蒸汽[:steam 重整 )和煤气化技术相结合可以实现生产低碳氢能的目标。]]欧盟和一些国家已经直接将CCUS作为一个关键技术来实现这一目标，美国、荷兰、日本、澳大利亚、新西兰以及中国也都在氢能政策中提到了CCUS的重要性。]]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 4结论与展望工业是现代社会的基础，也是经济发展的源泉，在带来了经济效益和工作机会的同时，也带来了许多问题。]]工业消耗了全球1/3的能源，却产生了全球1/3的温室气体。在实现近零排放目标和实现全球温控1.5℃路线图的进程中，CCUS技术将起到至关重要的作用。]]IEA预估利用CCUS技术，从2017年到2060年可以减少280亿t的CO2排放。下一代碳捕集技术将会在材料的创新、工艺或设备的改进上取得突破，这些新进展将使得投资运营成本降低的同时提高捕集效率。]]如IonEngineering公司的非水溶液、MTR公司的膜分离体系、三菱重工的KS-21溶剂、Lind-BASF的贫富溶液吸收再生循环技术等，都已经在FEED(FrontandEndEngineeringDesign，前端工程设计)工程设计项目中进行了实践。随着工业的进步，下一代捕集技术将助推CCUS技术的进步和发展。]]未来几十年，对于应对全球气候变暖，碳利用将 起到[-:play 重要作用。纵观[zong4- 国内外成熟的工程项目，地下封存、驱油和食品级利用是当前较主流的方向。其中，驱油技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，有较好的应用前景。而未来，与氢能利用相结合的CCUS项目将会越来越多。]]目前全球98%的氢能来自不可再生化石能源，与CCUS技术相结合的气体 重整[chong-:reforming (主要是 甲烷[-wan:methane 蒸汽[:steam 重整 )和煤气化技术相结合可以实现生产低碳氢能的目标。]]欧盟和一些国家已经直接将CCUS作为一个关键技术来实现这一目标，美国、荷兰、日本、澳大利亚、新西兰以及中国也都在氢能政策中提到了CCUS的重要性。]]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 4结论与展望工业是现代社会的基础，也是经济发展的源泉，在带来了经济效益和工作机会的同时，也带来了许多问题。]]工业消耗了全球1/3的能源，却产生了全球1/3的温室气体。在实现近零排放目标和实现全球温控1.5℃路线图的进程中，CCUS技术将起到至关重要的作用。]]IEA预估利用CCUS技术，从2017年到2060年可以减少280亿t的CO2排放。下一代碳捕集技术将会在材料的创新、工艺或设备的改进上取得突破，这些新进展将使得投资运营成本降低的同时提高捕集效率。]]如IonEngineering公司的非水溶液、MTR公司的膜分离体系、三菱重工的KS-21溶剂、Lind-BASF的贫富溶液吸收再生循环技术等，都已经在FEED(FrontandEndEngineeringDesign，前端工程设计)工程设计项目中进行了实践。随着工业的进步，下一代捕集技术将助推CCUS技术的进步和发展。]]未来几十年，对于应对全球气候变暖，碳利用将 起到[-:play 重要作用。纵观[zong4- 国内外成熟的工程项目，地下封存、驱油和食品级利用是当前较主流的方向。其中，驱油技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，有较好的应用前景。而未来，与氢能利用相结合的CCUS项目将会越来越多。]]目前全球98%的氢能来自不可再生化石能源，与CCUS技术相结合的气体 重整[chong-:reforming (主要是 甲烷[-wan:methane 蒸汽[:steam 重整 )和煤气化技术相结合可以实现生产低碳氢能的目标。]]欧盟和一些国家已经直接将CCUS作为一个关键技术来实现这一目标，美国、荷兰、日本、澳大利亚、新西兰以及中国也都在氢能政策中提到了CCUS的重要性。]]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>4结论与展望工业是现代社会的基础，也是经济发展的源泉，在带来了经济效益和工作机会的同时，也带来了许多问题。]]工业消耗了全球1/3的能源，却产生了全球1/3的温室气体。在实现近零排放目标和实现全球温控1.5℃路线图的进程中，CCUS技术将起到至关重要的作用。]]IEA预估利用CCUS技术，从2017年到2060年可以减少280亿t的CO2排放。下一代碳捕集技术将会在材料的创新、工艺或设备的改进上取得突破，这些新进展将使得投资运营成本降低的同时提高捕集效率。]]如IonEngineering公司的非水溶液、MTR公司的膜分离体系、三菱重工的KS-21溶剂、Lind-BASF的贫富溶液吸收再生循环技术等，都已经在FEED(FrontandEndEngineeringDesign，前端工程设计)工程设计项目中进行了实践。随着工业的进步，下一代捕集技术将助推CCUS技术的进步和发展。]]未来几十年，对于应对全球气候变暖，碳利用将 起到[-:play 重要作用。纵观[zong4- 国内外成熟的工程项目，地下封存、驱油和食品级利用是当前较主流的方向。其中，驱油技术可以通过CO2把煤化工或天然气化工产生的碳源和油田联系起来，有较好的收益，有较好的应用前景。而未来，与氢能利用相结合的CCUS项目将会越来越多。]]目前全球98%的氢能来自不可再生化石能源，与CCUS技术相结合的气体 重整[chong-:reforming (主要是 甲烷[-wan:methane 蒸汽[:steam 重整 )和煤气化技术相结合可以实现生产低碳氢能的目标。]]欧盟和一些国家已经直接将CCUS作为一个关键技术来实现这一目标，美国、荷兰、日本、澳大利亚、新西兰以及中国也都在氢能政策中提到了CCUS的重要性。]]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_133651_946209.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_133651_946209.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210603_133713_728266)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline. The methanol can first be obtained from coal or natural gas. In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene. The olefins can be reacted to produce polyolefins, which are used to make many plastic materials. An MTO process flow diagram advertised by Honeywell is shown below.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline. The methanol can first be obtained from coal or natural gas. In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene. The olefins can be reacted to produce polyolefins, which are used to make many plastic materials. An MTO process flow diagram advertised by Honeywell is shown below.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline. The methanol can first be obtained from coal or natural gas. In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene. The olefins can be reacted to produce polyolefins, which are used to make many plastic materials. An MTO process flow diagram advertised by Honeywell is shown below.
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline.The methanol can first be obtained from coal or natural gas.In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene.The olefins can be reacted to produce polyolefins, which are used to make many plastic materials.An MTO process flow diagram advertised by Honeywell is shown below.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline.The methanol can first be obtained from coal or natural gas.In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene.The olefins can be reacted to produce polyolefins, which are used to make many plastic materials.An MTO process flow diagram advertised by Honeywell is shown below.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_133713_728266.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_133713_728266.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210603_155154_605246)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '20/02/2017 08:25:00 Un proyecto de la Universidad Politécnica de Valencia (UPV) ha anunciado que investigará cómo reciclar el dióxido de carbono (CO2) para transformarlo en gasolina, plásticos y otros productos industriales y así reducir la dependencia de los combustibles fósiles.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Científicos del Instituto de Tecnología Química (ITQ) -centro mixto de la Universidad Politécnica de Valencia (UPV) y el Consejo Superior de Investigaciones Científicas (CSIC)- buscan transformar el CO2 “de la manera más eficiente posible” en metanol, según ha apuntado el investigador principal, Manuel Moliner, en un comunicado publicado por Efe verde.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Moliner explica que al transformarlo en este tipo de alcohol, sirve como base para poder obtener hidrocarburos sintéticos y otros productos químicos de alto valor.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Por otro lado, la principal novedad del proyecto es el diseño de materiales que podrían presentar una estabilidad mayor que muchos de los catalizadores industriales actuales. “Un objetivo a largo plazo sería el desarrollo de catalizadores que permitan realizar estos procesos químicos a presión atmosférica“, ha anunciado Moliner.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 20/02/2017 08:25:00 Un proyecto de la Universidad Politécnica de Valencia (UPV) ha anunciado que investigará cómo reciclar el dióxido de carbono (CO2) para transformarlo en gasolina, plásticos y otros productos industriales y así reducir la dependencia de los combustibles fósiles.
+    [1] => 
+
+    [2] => Científicos del Instituto de Tecnología Química (ITQ) -centro mixto de la Universidad Politécnica de Valencia (UPV) y el Consejo Superior de Investigaciones Científicas (CSIC)- buscan transformar el CO2 “de la manera más eficiente posible” en metanol, según ha apuntado el investigador principal, Manuel Moliner, en un comunicado publicado por Efe verde.
+    [3] => 
+
+    [4] => Moliner explica que al transformarlo en este tipo de alcohol, sirve como base para poder obtener hidrocarburos sintéticos y otros productos químicos de alto valor.
+    [5] => 
+
+    [6] => Por otro lado, la principal novedad del proyecto es el diseño de materiales que podrían presentar una estabilidad mayor que muchos de los catalizadores industriales actuales. “Un objetivo a largo plazo sería el desarrollo de catalizadores que permitan realizar estos procesos químicos a presión atmosférica“, ha anunciado Moliner.
+    [7] => 
+
+    [8] => La posibilidad de optimizar las condiciones de reacción requeridas en los procesos químicos involucrados en la transformación del CO2 y la de regenerar más fácilmente los catalizadores diseñados, tendrían un “impacto inmediato” en la industria química.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 20/02/2017 08:25:00 Un proyecto de la Universidad Politécnica de Valencia (UPV) ha anunciado que investigará cómo reciclar el dióxido de carbono (CO2) para transformarlo en gasolina, plásticos y otros productos industriales y así reducir la dependencia de los combustibles fósiles.
+    [1] => 
+
+    [2] => Científicos del Instituto de Tecnología Química (ITQ) -centro mixto de la Universidad Politécnica de Valencia (UPV) y el Consejo Superior de Investigaciones Científicas (CSIC)- buscan transformar el CO2 “de la manera más eficiente posible” en metanol, según ha apuntado el investigador principal, Manuel Moliner, en un comunicado publicado por Efe verde.
+    [3] => 
+
+    [4] => Moliner explica que al transformarlo en este tipo de alcohol, sirve como base para poder obtener hidrocarburos sintéticos y otros productos químicos de alto valor.
+    [5] => 
+
+    [6] => Por otro lado, la principal novedad del proyecto es el diseño de materiales que podrían presentar una estabilidad mayor que muchos de los catalizadores industriales actuales. “Un objetivo a largo plazo sería el desarrollo de catalizadores que permitan realizar estos procesos químicos a presión atmosférica“, ha anunciado Moliner.
+    [7] => 
+
+    [8] => La posibilidad de optimizar las condiciones de reacción requeridas en los procesos químicos involucrados en la transformación del CO2 y la de regenerar más fácilmente los catalizadores diseñados, tendrían un “impacto inmediato” en la industria química.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Por otro lado, la principal novedad del proyecto es el diseño de materiales que podrían presentar una estabilidad mayor que muchos de los catalizadores industriales actuales. “Un objetivo a largo plazo sería el desarrollo de catalizadores que permitan realizar estos procesos químicos a presión atmosférica“, ha anunciado Moliner.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 20/02/2017 08:25:00 Un proyecto de la Universidad Politécnica de Valencia (UPV) ha anunciado que investigará cómo reciclar el dióxido de carbono (CO2) para transformarlo en gasolina, plásticos y otros productos industriales y así reducir la dependencia de los combustibles fósiles.
+    [1] => 
+
+    [2] => Científicos del Instituto de Tecnología Química (ITQ) -centro mixto de la Universidad Politécnica de Valencia (UPV) y el Consejo Superior de Investigaciones Científicas (CSIC)- buscan transformar el CO2 “de la manera más eficiente posible” en metanol, según ha apuntado el investigador principal, Manuel Moliner, en un comunicado publicado por Efe verde.
+    [3] => 
+
+    [4] => Moliner explica que al transformarlo en este tipo de alcohol, sirve como base para poder obtener hidrocarburos sintéticos y otros productos químicos de alto valor.
+    [5] => 
+
+    [6] => Por otro lado, la principal novedad del proyecto es el diseño de materiales que podrían presentar una estabilidad mayor que muchos de los catalizadores industriales actuales.“Un objetivo a largo plazo sería el desarrollo de catalizadores que permitan realizar estos procesos químicos a presión atmosférica“, ha anunciado Moliner.
+    [7] => 
+
+    [8] => La posibilidad de optimizar las condiciones de reacción requeridas en los procesos químicos involucrados en la transformación del CO2 y la de regenerar más fácilmente los catalizadores diseñados, tendrían un “impacto inmediato” en la industria química.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>20/02/2017 08:25:00 Un proyecto de la Universidad Politécnica de Valencia (UPV) ha anunciado que investigará cómo reciclar el dióxido de carbono (CO2) para transformarlo en gasolina, plásticos y otros productos industriales y así reducir la dependencia de los combustibles fósiles.
+Científicos del Instituto de Tecnología Química (ITQ) -centro mixto de la Universidad Politécnica de Valencia (UPV) y el Consejo Superior de Investigaciones Científicas (CSIC)- buscan transformar el CO2 “de la manera más eficiente posible” en metanol, según ha apuntado el investigador principal, Manuel Moliner, en un comunicado publicado por Efe verde.
+Moliner explica que al transformarlo en este tipo de alcohol, sirve como base para poder obtener hidrocarburos sintéticos y otros productos químicos de alto valor.
+Por otro lado, la principal novedad del proyecto es el diseño de materiales que podrían presentar una estabilidad mayor que muchos de los catalizadores industriales actuales.“Un objetivo a largo plazo sería el desarrollo de catalizadores que permitan realizar estos procesos químicos a presión atmosférica“, ha anunciado Moliner.
+La posibilidad de optimizar las condiciones de reacción requeridas en los procesos químicos involucrados en la transformación del CO2 y la de regenerar más fácilmente los catalizadores diseñados, tendrían un “impacto inmediato” en la industria química.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_155154_605246.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_155154_605246.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210603_161029_591445)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline. The methanol can first be obtained from coal or natural gas. In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene. The olefins can be reacted to produce polyolefins, which are used to make many plastic materials. An MTO process flow diagram advertised by Honeywell is shown below.Process flow diagram for an MTO process advertised by Honeywell CorporationCritical to the successful application of the MTO process are acidic zeolite catalysts, which are discussed in detail on the zeolites page. Without these catalysts, the chemical reactions involved in the MTO process would be too slow for the process to be economically feasible.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline. The methanol can first be obtained from coal or natural gas. In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene. The olefins can be reacted to produce polyolefins, which are used to make many plastic materials. An MTO process flow diagram advertised by Honeywell is shown below.Process flow diagram for an MTO process advertised by Honeywell CorporationCritical to the successful application of the MTO process are acidic zeolite catalysts, which are discussed in detail on the zeolites page. Without these catalysts, the chemical reactions involved in the MTO process would be too slow for the process to be economically feasible.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline. The methanol can first be obtained from coal or natural gas. In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene. The olefins can be reacted to produce polyolefins, which are used to make many plastic materials. An MTO process flow diagram advertised by Honeywell is shown below.Process flow diagram for an MTO process advertised by Honeywell CorporationCritical to the successful application of the MTO process are acidic zeolite catalysts, which are discussed in detail on the zeolites page. Without these catalysts, the chemical reactions involved in the MTO process would be too slow for the process to be economically feasible.
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline.The methanol can first be obtained from coal or natural gas.In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene.The olefins can be reacted to produce polyolefins, which are used to make many plastic materials.An MTO process flow diagram advertised by Honeywell is shown below.Process flow diagram for an MTO process advertised by Honeywell CorporationCritical to the successful application of the MTO process are acidic zeolite catalysts, which are discussed in detail on the zeolites page.Without these catalysts, the chemical reactions involved in the MTO process would be too slow for the process to be economically feasible.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The Methanol to Hydrocarbons process was discovered at Mobil Oil in 1977. This process is used to convert methanol to products such as olefins and gasoline.The methanol can first be obtained from coal or natural gas.In the Methanol to Olefins (MTO) process, the methanol is then converted to olefins such as ethylene and propylene.The olefins can be reacted to produce polyolefins, which are used to make many plastic materials.An MTO process flow diagram advertised by Honeywell is shown below.Process flow diagram for an MTO process advertised by Honeywell CorporationCritical to the successful application of the MTO process are acidic zeolite catalysts, which are discussed in detail on the zeolites page.Without these catalysts, the chemical reactions involved in the MTO process would be too slow for the process to be economically feasible.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_161029_591445.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_161029_591445.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210603_162803_873779)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The conversion of methanol to olefins on acidic zeolites takes place through a complex network of chemical reactions. The distribution of products and thus the “selectivity” depends on the temperature, among other factors. Selectivity is a measure of the amount of one product produced relative to others when the possibility to form multiple products exists. Selectivity depends on temperature through the Arrhenius law for the different rate constants.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => II. Overview of MTO Mechanism
+
+    [1] => 
+
+    [2] => The conversion of methanol to olefins on acidic zeolites takes place through a complex network of chemical reactions. The distribution of products and thus the “selectivity” depends on the temperature, among other factors. Selectivity is a measure of the amount of one product produced relative to others when the possibility to form multiple products exists. Selectivity depends on temperature through the Arrhenius law for the different rate constants.
+    [3] => 
+
+    [4] => In general, at lower temperatures methanol reacts to form dimethyl ether (DME). At higher temperatures, the desired products (olefins) are produced and the selectivity for DME decreases. Typical percent yields at steady state for methanol conversion on the zeolite H-SAPO-34 are shown below. “Steady-state” refers to a process in which the properties, such as temperature or concentrations, are not changing with time. The percent conversion of methanol is denoted by Xme and the Y terms represent percent yields. The subscript dme refers to dimethyl ether. The subscripts C2=, C3=, C4= and C4 refer to ethylene, propylene, butylenes, and butane, respectively. Based on the yield curves, the temperature at which the olefin products are first observed is near 523 K for H-SAPO-34.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->II. Overview of MTO Mechanism
+
+$matches ==>
+Array
+(
+    [0] => m
+
+    [1] => m
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => II. Overview of MTO Mechanism 
+    [1] => 
+
+    [2] => The conversion of methanol to olefins on acidic zeolites takes place through a complex network of chemical reactions. The distribution of products and thus the “selectivity” depends on the temperature, among other factors. Selectivity is a measure of the amount of one product produced relative to others when the possibility to form multiple products exists. Selectivity depends on temperature through the Arrhenius law for the different rate constants.
+    [3] => 
+
+    [4] => In general, at lower temperatures methanol reacts to form dimethyl ether (DME). At higher temperatures, the desired products (olefins) are produced and the selectivity for DME decreases. Typical percent yields at steady state for methanol conversion on the zeolite H-SAPO-34 are shown below. “Steady-state” refers to a process in which the properties, such as temperature or concentrations, are not changing with time. The percent conversion of methanol is denoted by Xme and the Y terms represent percent yields. The subscript dme refers to dimethyl ether. The subscripts C2=, C3=, C4= and C4 refer to ethylene, propylene, butylenes, and butane, respectively. Based on the yield curves, the temperature at which the olefin products are first observed is near 523 K for H-SAPO-34.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->II. Overview of MTO Mechanism 
+$matches ==>
+Array
+(
+    [0] => I. 
+    [1] => I.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The conversion of methanol to olefins on acidic zeolites takes place through a complex network of chemical reactions. The distribution of products and thus the “selectivity” depends on the temperature, among other factors. Selectivity is a measure of the amount of one product produced relative to others when the possibility to form multiple products exists. Selectivity depends on temperature through the Arrhenius law for the different rate constants.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In general, at lower temperatures methanol reacts to form dimethyl ether (DME). At higher temperatures, the desired products (olefins) are produced and the selectivity for DME decreases. Typical percent yields at steady state for methanol conversion on the zeolite H-SAPO-34 are shown below. “Steady-state” refers to a process in which the properties, such as temperature or concentrations, are not changing with time. The percent conversion of methanol is denoted by Xme and the Y terms represent percent yields. The subscript dme refers to dimethyl ether. The subscripts C2=, C3=, C4= and C4 refer to ethylene, propylene, butylenes, and butane, respectively. Based on the yield curves, the temperature at which the olefin products are first observed is near 523 K for H-SAPO-34.
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => II.Overview of MTO Mechanism 
+    [1] => 
+
+    [2] => The conversion of methanol to olefins on acidic zeolites takes place through a complex network of chemical reactions.The distribution of products and thus the “selectivity” depends on the temperature, among other factors.Selectivity is a measure of the amount of one product produced relative to others when the possibility to form multiple products exists.Selectivity depends on temperature through the Arrhenius law for the different rate constants.
+    [3] => 
+
+    [4] => In general, at lower temperatures methanol reacts to form dimethyl ether (DME).At higher temperatures, the desired products (olefins) are produced and the selectivity for DME decreases.Typical percent yields at steady state for methanol conversion on the zeolite H-SAPO-34 are shown below.“Steady-state” refers to a process in which the properties, such as temperature or concentrations, are not changing with time.The percent conversion of methanol is denoted by Xme and the Y terms represent percent yields.The subscript dme refers to dimethyl ether.The subscripts C2=, C3=, C4= and C4 refer to ethylene, propylene, butylenes, and butane, respectively.Based on the yield curves, the temperature at which the olefin products are first observed is near 523 K for H-SAPO-34.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>II.Overview of MTO Mechanism 
+The conversion of methanol to olefins on acidic zeolites takes place through a complex network of chemical reactions.The distribution of products and thus the “selectivity” depends on the temperature, among other factors.Selectivity is a measure of the amount of one product produced relative to others when the possibility to form multiple products exists.Selectivity depends on temperature through the Arrhenius law for the different rate constants.
+In general, at lower temperatures methanol reacts to form dimethyl ether (DME).At higher temperatures, the desired products (olefins) are produced and the selectivity for DME decreases.Typical percent yields at steady state for methanol conversion on the zeolite H-SAPO-34 are shown below.“Steady-state” refers to a process in which the properties, such as temperature or concentrations, are not changing with time.The percent conversion of methanol is denoted by Xme and the Y terms represent percent yields.The subscript dme refers to dimethyl ether.The subscripts C2=, C3=, C4= and C4 refer to ethylene, propylene, butylenes, and butane, respectively.Based on the yield curves, the temperature at which the olefin products are first observed is near 523 K for H-SAPO-34.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_162803_873779.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_162803_873779.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210603_164145_206453)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The main focus of Wang et al. is to review investigations of the intermediate species involved in the MTO process. Some of the olefins, methanol, and DME react further to yield heavier species. These species, termed the “hydrocarbon pool,” are occluded in the pores and catalyze the formation of olefins from methanol. The composition and catalytic role of the hydrocarbon pool are discussed in detail here.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In the formation of DME, the role of surface methoxy groups has been debated. Surface methoxy groups may be formed from the reaction of methanol with a zeolite acid site. The possible role of these species in DME formation and the formation of initial hydrocarbons are also investigated (see surface methoxy).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Dahl and Kolboe. J. Catalysis. 1994, 149, 458.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Wang et. al. Catalysis Today. 2006, 113, 102.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Percent conversion and yield at steady-state for methanol conversion on H-SAPO-34
+
+    [1] => 
+
+    [2] => Intermediate Species
+
+    [3] => 
+
+    [4] => The main focus of Wang et al. is to review investigations of the intermediate species involved in the MTO process. Some of the olefins, methanol, and DME react further to yield heavier species. These species, termed the “hydrocarbon pool,” are occluded in the pores and catalyze the formation of olefins from methanol. The composition and catalytic role of the hydrocarbon pool are discussed in detail here.
+    [5] => 
+
+    [6] => In the formation of DME, the role of surface methoxy groups has been debated. Surface methoxy groups may be formed from the reaction of methanol with a zeolite acid site. The possible role of these species in DME formation and the formation of initial hydrocarbons are also investigated (see surface methoxy).
+    [7] => 
+
+    [8] => Dahl and Kolboe. J. Catalysis. 1994, 149, 458.
+    [9] => Wang et. al. Catalysis Today. 2006, 113, 102.
+    [10] => 
+
+    [11] =>  
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Percent conversion and yield at steady-state for methanol conversion on H-SAPO-34
+
+$matches ==>
+Array
+(
+    [0] => 4
+
+    [1] => 4
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Intermediate Species
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Percent conversion and yield at steady-state for methanol conversion on H-SAPO-34 
+    [1] => 
+
+    [2] => Intermediate Species 
+    [3] => 
+
+    [4] => The main focus of Wang et al. is to review investigations of the intermediate species involved in the MTO process. Some of the olefins, methanol, and DME react further to yield heavier species. These species, termed the “hydrocarbon pool,” are occluded in the pores and catalyze the formation of olefins from methanol. The composition and catalytic role of the hydrocarbon pool are discussed in detail here.
+    [5] => 
+
+    [6] => In the formation of DME, the role of surface methoxy groups has been debated. Surface methoxy groups may be formed from the reaction of methanol with a zeolite acid site. The possible role of these species in DME formation and the formation of initial hydrocarbons are also investigated (see surface methoxy).
+    [7] => 
+
+    [8] => Dahl and Kolboe. J. Catalysis. 1994, 149, 458.
+    [9] => Wang et. al. Catalysis Today. 2006, 113, 102.
+    [10] => 
+
+    [11] =>  
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The main focus of Wang et al. is to review investigations of the intermediate species involved in the MTO process. Some of the olefins, methanol, and DME react further to yield heavier species. These species, termed the “hydrocarbon pool,” are occluded in the pores and catalyze the formation of olefins from methanol. The composition and catalytic role of the hydrocarbon pool are discussed in detail here.
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In the formation of DME, the role of surface methoxy groups has been debated. Surface methoxy groups may be formed from the reaction of methanol with a zeolite acid site. The possible role of these species in DME formation and the formation of initial hydrocarbons are also investigated (see surface methoxy).
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Dahl and Kolboe. J. Catalysis. 1994, 149, 458.
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Wang et. al. Catalysis Today. 2006, 113, 102.
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Percent conversion and yield at steady-state for methanol conversion on H-SAPO-34 
+    [1] => 
+
+    [2] => Intermediate Species 
+    [3] => 
+
+    [4] => The main focus of Wang et al.is to review investigations of the intermediate species involved in the MTO process.Some of the olefins, methanol, and DME react further to yield heavier species.These species, termed the “hydrocarbon pool,” are occluded in the pores and catalyze the formation of olefins from methanol.The composition and catalytic role of the hydrocarbon pool are discussed in detail here.
+    [5] => 
+
+    [6] => In the formation of DME, the role of surface methoxy groups has been debated.Surface methoxy groups may be formed from the reaction of methanol with a zeolite acid site.The possible role of these species in DME formation and the formation of initial hydrocarbons are also investigated (see surface methoxy).
+    [7] => 
+
+    [8] => Dahl and Kolboe.J.Catalysis.1994, 149, 458.
+    [9] => Wang et.al.Catalysis Today.2006, 113, 102.
+    [10] => 
+
+    [11] =>  
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Percent conversion and yield at steady-state for methanol conversion on H-SAPO-34 
+Intermediate Species 
+The main focus of Wang et al.is to review investigations of the intermediate species involved in the MTO process.Some of the olefins, methanol, and DME react further to yield heavier species.These species, termed the “hydrocarbon pool,” are occluded in the pores and catalyze the formation of olefins from methanol.The composition and catalytic role of the hydrocarbon pool are discussed in detail here.
+In the formation of DME, the role of surface methoxy groups has been debated.Surface methoxy groups may be formed from the reaction of methanol with a zeolite acid site.The possible role of these species in DME formation and the formation of initial hydrocarbons are also investigated (see surface methoxy).
+Dahl and Kolboe.J.Catalysis.1994, 149, 458.Wang et.al.Catalysis Today.2006, 113, 102.
+ 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_164145_206453.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_164145_206453.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210603_165458_871100)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Researchers have developed catalysts that can convert carbon dioxide—the main cause of global warming—into plastics, fabrics, resins, and other products.The electrocatalysts are the first materials, aside from enzymes, that can turn carbon dioxide and water into carbon building blocks containing one, two, three, or four carbon atoms with more than 99 percent efficiency.Two of the products—methylglyoxal (C3) and 2,3-furandiol (C4)—can be used as precursors for plastics, adhesives, and pharmaceuticals. Toxic formaldehyde could be replaced by methylglyoxal, which is safer.The discovery, based on the chemistry of artificial photosynthesis, is detailed in the journal Energy & Environmental Science."Our breakthrough could lead to the conversion of carbon dioxide into valuable products and raw materials in the chemical and pharmaceutical industries," says senior author Charles Dismukes, a professor in the chemistry and chemical biology department and the biochemistry and microbiology department at Rutgers University–New Brunswick.He is also a principal investigator at Rutgers' Waksman Institute of Microbiology.Previously, scientists showed that carbon dioxide can be electrochemically converted into methanol, ethanol, methane, and ethylene with relatively high yields.But such production is inefficient and too costly to be commercially feasible, according to lead author Karin Calvinho, a chemistry doctoral student.Using five catalysts made of nickel and phosphorus, which are cheap and abundant, however, researchers can electrochemically convert carbon dioxide and water into a wide array of carbon-based products, she says.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Researchers have developed catalysts that can convert carbon dioxide—the main cause of global warming—into plastics, fabrics, resins, and other products.The electrocatalysts are the first materials, aside from enzymes, that can turn carbon dioxide and water into carbon building blocks containing one, two, three, or four carbon atoms with more than 99 percent efficiency.Two of the products—methylglyoxal (C3) and 2,3-furandiol (C4)—can be used as precursors for plastics, adhesives, and pharmaceuticals. Toxic formaldehyde could be replaced by methylglyoxal, which is safer.The discovery, based on the chemistry of artificial photosynthesis, is detailed in the journal Energy & Environmental Science."Our breakthrough could lead to the conversion of carbon dioxide into valuable products and raw materials in the chemical and pharmaceutical industries," says senior author Charles Dismukes, a professor in the chemistry and chemical biology department and the biochemistry and microbiology department at Rutgers University–New Brunswick.He is also a principal investigator at Rutgers' Waksman Institute of Microbiology.Previously, scientists showed that carbon dioxide can be electrochemically converted into methanol, ethanol, methane, and ethylene with relatively high yields.But such production is inefficient and too costly to be commercially feasible, according to lead author Karin Calvinho, a chemistry doctoral student.Using five catalysts made of nickel and phosphorus, which are cheap and abundant, however, researchers can electrochemically convert carbon dioxide and water into a wide array of carbon-based products, she says.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Researchers have developed catalysts that can convert carbon dioxide—the main cause of global warming—into plastics, fabrics, resins, and other products.The electrocatalysts are the first materials, aside from enzymes, that can turn carbon dioxide and water into carbon building blocks containing one, two, three, or four carbon atoms with more than 99 percent efficiency.Two of the products—methylglyoxal (C3) and 2,3-furandiol (C4)—can be used as precursors for plastics, adhesives, and pharmaceuticals. Toxic formaldehyde could be replaced by methylglyoxal, which is safer.The discovery, based on the chemistry of artificial photosynthesis, is detailed in the journal Energy & Environmental Science."Our breakthrough could lead to the conversion of carbon dioxide into valuable products and raw materials in the chemical and pharmaceutical industries," says senior author Charles Dismukes, a professor in the chemistry and chemical biology department and the biochemistry and microbiology department at Rutgers University–New Brunswick.He is also a principal investigator at Rutgers' Waksman Institute of Microbiology.Previously, scientists showed that carbon dioxide can be electrochemically converted into methanol, ethanol, methane, and ethylene with relatively high yields.But such production is inefficient and too costly to be commercially feasible, according to lead author Karin Calvinho, a chemistry doctoral student.Using five catalysts made of nickel and phosphorus, which are cheap and abundant, however, researchers can electrochemically convert carbon dioxide and water into a wide array of carbon-based products, she says.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Researchers have developed catalysts that can convert carbon dioxide—the main cause of global warming—into plastics, fabrics, resins, and other products.The electrocatalysts are the first materials, aside from enzymes, that can turn carbon dioxide and water into carbon building blocks containing one, two, three, or four carbon atoms with more than 99 percent efficiency.Two of the products—methylglyoxal (C3) and 2,3-furandiol (C4)—can be used as precursors for plastics, adhesives, and pharmaceuticals.Toxic formaldehyde could be replaced by methylglyoxal, which is safer.The discovery, based on the chemistry of artificial photosynthesis, is detailed in the journal Energy & Environmental Science."Our breakthrough could lead to the conversion of carbon dioxide into valuable products and raw materials in the chemical and pharmaceutical industries," says senior author Charles Dismukes, a professor in the chemistry and chemical biology department and the biochemistry and microbiology department at Rutgers University–New Brunswick.He is also a principal investigator at Rutgers' Waksman Institute of Microbiology.Previously, scientists showed that carbon dioxide can be electrochemically converted into methanol, ethanol, methane, and ethylene with relatively high yields.But such production is inefficient and too costly to be commercially feasible, according to lead author Karin Calvinho, a chemistry doctoral student.Using five catalysts made of nickel and phosphorus, which are cheap and abundant, however, researchers can electrochemically convert carbon dioxide and water into a wide array of carbon-based products, she says.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Researchers have developed catalysts that can convert carbon dioxide—the main cause of global warming—into plastics, fabrics, resins, and other products.The electrocatalysts are the first materials, aside from enzymes, that can turn carbon dioxide and water into carbon building blocks containing one, two, three, or four carbon atoms with more than 99 percent efficiency.Two of the products—methylglyoxal (C3) and 2,3-furandiol (C4)—can be used as precursors for plastics, adhesives, and pharmaceuticals.Toxic formaldehyde could be replaced by methylglyoxal, which is safer.The discovery, based on the chemistry of artificial photosynthesis, is detailed in the journal Energy & Environmental Science."Our breakthrough could lead to the conversion of carbon dioxide into valuable products and raw materials in the chemical and pharmaceutical industries," says senior author Charles Dismukes, a professor in the chemistry and chemical biology department and the biochemistry and microbiology department at Rutgers University–New Brunswick.He is also a principal investigator at Rutgers' Waksman Institute of Microbiology.Previously, scientists showed that carbon dioxide can be electrochemically converted into methanol, ethanol, methane, and ethylene with relatively high yields.But such production is inefficient and too costly to be commercially feasible, according to lead author Karin Calvinho, a chemistry doctoral student.Using five catalysts made of nickel and phosphorus, which are cheap and abundant, however, researchers can electrochemically convert carbon dioxide and water into a wide array of carbon-based products, she says.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_165458_871100.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_165458_871100.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210603_165943_575826)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The choice of catalyst and other conditions determine how many carbon atoms can be stitched together to make molecules or even generate longer polymers. In general, the longer the carbon chain, the more valuable the product.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The next step is to learn more about the underlying chemical reaction, so it can be used to produce other valuable products such as diols, which are widely used in the polymer industry, or hydrocarbons that can be used as renewable fuels. The researchers are designing, building, and testing electrolyzers for commercial use.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Based on their work, the researchers have earned patents for the electrocatalysts and formed RenewCO₂, a start-up company.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The research has been published in the journal Energy & Environmental Science.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The choice of catalyst and other conditions determine how many carbon atoms can be stitched together to make molecules or even generate longer polymers. In general, the longer the carbon chain, the more valuable the product.
+    [1] => 
+
+    [2] => The next step is to learn more about the underlying chemical reaction, so it can be used to produce other valuable products such as diols, which are widely used in the polymer industry, or hydrocarbons that can be used as renewable fuels. The researchers are designing, building, and testing electrolyzers for commercial use.
+    [3] => 
+
+    [4] => Based on their work, the researchers have earned patents for the electrocatalysts and formed RenewCO₂, a start-up company.
+    [5] => 
+
+    [6] => The research has been published in the journal Energy & Environmental Science.
+    [7] => 
+
+    [8] => Source: Rutgers University
+
+    [9] => 
+
+    [10] => This article was first published on Futurity and is republished here under a CC BY 4.0 license. Read the original article.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Source: Rutgers University
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The choice of catalyst and other conditions determine how many carbon atoms can be stitched together to make molecules or even generate longer polymers. In general, the longer the carbon chain, the more valuable the product.
+    [1] => 
+
+    [2] => The next step is to learn more about the underlying chemical reaction, so it can be used to produce other valuable products such as diols, which are widely used in the polymer industry, or hydrocarbons that can be used as renewable fuels. The researchers are designing, building, and testing electrolyzers for commercial use.
+    [3] => 
+
+    [4] => Based on their work, the researchers have earned patents for the electrocatalysts and formed RenewCO₂, a start-up company.
+    [5] => 
+
+    [6] => The research has been published in the journal Energy & Environmental Science.
+    [7] => 
+
+    [8] => Source: Rutgers University 
+    [9] => 
+
+    [10] => This article was first published on Futurity and is republished here under a CC BY 4.0 license. Read the original article.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The choice of catalyst and other conditions determine how many carbon atoms can be stitched together to make molecules or even generate longer polymers. In general, the longer the carbon chain, the more valuable the product.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The next step is to learn more about the underlying chemical reaction, so it can be used to produce other valuable products such as diols, which are widely used in the polymer industry, or hydrocarbons that can be used as renewable fuels. The researchers are designing, building, and testing electrolyzers for commercial use.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->This article was first published on Futurity and is republished here under a CC BY 4.0 license. Read the original article.
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The choice of catalyst and other conditions determine how many carbon atoms can be stitched together to make molecules or even generate longer polymers.In general, the longer the carbon chain, the more valuable the product.
+    [1] => 
+
+    [2] => The next step is to learn more about the underlying chemical reaction, so it can be used to produce other valuable products such as diols, which are widely used in the polymer industry, or hydrocarbons that can be used as renewable fuels.The researchers are designing, building, and testing electrolyzers for commercial use.
+    [3] => 
+
+    [4] => Based on their work, the researchers have earned patents for the electrocatalysts and formed RenewCO₂, a start-up company.
+    [5] => 
+
+    [6] => The research has been published in the journal Energy & Environmental Science.
+    [7] => 
+
+    [8] => Source: Rutgers University 
+    [9] => 
+
+    [10] => This article was first published on Futurity and is republished here under a CC BY 4.0 license.Read the original article.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The choice of catalyst and other conditions determine how many carbon atoms can be stitched together to make molecules or even generate longer polymers.In general, the longer the carbon chain, the more valuable the product.
+The next step is to learn more about the underlying chemical reaction, so it can be used to produce other valuable products such as diols, which are widely used in the polymer industry, or hydrocarbons that can be used as renewable fuels.The researchers are designing, building, and testing electrolyzers for commercial use.
+Based on their work, the researchers have earned patents for the electrocatalysts and formed RenewCO₂, a start-up company.
+The research has been published in the journal Energy & Environmental Science.
+Source: Rutgers University 
+This article was first published on Futurity and is republished here under a CC BY 4.0 license.Read the original article.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_165943_575826.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_165943_575826.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
