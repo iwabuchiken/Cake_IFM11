@@ -25025,3 +25025,1826 @@ This article was first published on Futurity and is republished here under a CC 
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210603_165943_575826.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_102015_687210)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '양자중력(QG)은 중력을 양자역학적으로 묘사하려고 하는 이론물리학 분야이며, 양자 효과가 무시될 수 없는[1] 플랑크 길이의 공간이나 블랙홀과 같은 중력이 매우 큰 천체에 적용된다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '양자역학의 원리와 일반적인 상대성이론을 조화시키기 위해 양자중력이론이 필요하지만, 존재할 것이라고 예측되는 중력 보손을 통해 양자장이론의 일반적인 방법을 중력에 적용할 때 어려움이 발생한다.[4] 문제는 이런 방식으로 얻는 이론은 재규격화가 불가능하다는 것인데, 질량과 같은 관측 가능한 물체의 특성에 대해 무한한 값을 예측하기 때문에 질량과 같은 물질의 특성에 대해 의미있는 값을 도출해 낼 수 없다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 양자중력(QG)은 중력을 양자역학적으로 묘사하려고 하는 이론물리학 분야이며, 양자 효과가 무시될 수 없는[1] 플랑크 길이의 공간이나 블랙홀과 같은 중력이 매우 큰 천체에 적용된다.
+    [1] => 
+
+    [2] => 중력에 대한 현재의 이해는 고전물리학의 틀 안에서 공식화된 아인슈타인 의 일반 상대성이론에 근거하고 있지만 중력을 제외한 나머지 3개의 힘, 강력, 약력, 전자기력은 양자역학과 양자장이론을 통하여 기술되고 있다. 중력만이 양자역학적으로 설명하지 못하고 있는 것이다.[2][3]:11–12
+
+    [3] => 
+
+    [4] => 양자역학의 원리와 일반적인 상대성이론을 조화시키기 위해 양자중력이론이 필요하지만, 존재할 것이라고 예측되는 중력 보손을 통해 양자장이론의 일반적인 방법을 중력에 적용할 때 어려움이 발생한다.[4] 문제는 이런 방식으로 얻는 이론은 재규격화가 불가능하다는 것인데, 질량과 같은 관측 가능한 물체의 특성에 대해 무한한 값을 예측하기 때문에 질량과 같은 물질의 특성에 대해 의미있는 값을 도출해 낼 수 없다.
+    [5] => 
+
+    [6] => 그렇기에, 이론가들은 양자중력문제에 있어 더욱 급진적인 접근법을 채택하였으며, 여기에는 잘 알려진 초끈이론과 루프양자중력[5]이 있다. 초끈이론과 같은 일부 양자중력이론은 중력을 강력, 약력, 전자기력과 함께 하나의 힘으로 합치려고 하지만, 루프양자중력과 같은 나머지 이론은 4개의 힘을 하나로 합치려 하지 않으며, 대신에 중력장을 다른 힘들과 분리된 상태로 양자화하려는 노력을 하고 있다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->중력에 대한 현재의 이해는 고전물리학의 틀 안에서 공식화된 아인슈타인 의 일반 상대성이론에 근거하고 있지만 중력을 제외한 나머지 3개의 힘, 강력, 약력, 전자기력은 양자역학과 양자장이론을 통하여 기술되고 있다. 중력만이 양자역학적으로 설명하지 못하고 있는 것이다.[2][3]:11–12
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 양자중력(QG)은 중력을 양자역학적으로 묘사하려고 하는 이론물리학 분야이며, 양자 효과가 무시될 수 없는[1] 플랑크 길이의 공간이나 블랙홀과 같은 중력이 매우 큰 천체에 적용된다.
+    [1] => 
+
+    [2] => 중력에 대한 현재의 이해는 고전물리학의 틀 안에서 공식화된 아인슈타인 의 일반 상대성이론에 근거하고 있지만 중력을 제외한 나머지 3개의 힘, 강력, 약력, 전자기력은 양자역학과 양자장이론을 통하여 기술되고 있다. 중력만이 양자역학적으로 설명하지 못하고 있는 것이다.[2][3]:11–12 
+    [3] => 
+
+    [4] => 양자역학의 원리와 일반적인 상대성이론을 조화시키기 위해 양자중력이론이 필요하지만, 존재할 것이라고 예측되는 중력 보손을 통해 양자장이론의 일반적인 방법을 중력에 적용할 때 어려움이 발생한다.[4] 문제는 이런 방식으로 얻는 이론은 재규격화가 불가능하다는 것인데, 질량과 같은 관측 가능한 물체의 특성에 대해 무한한 값을 예측하기 때문에 질량과 같은 물질의 특성에 대해 의미있는 값을 도출해 낼 수 없다.
+    [5] => 
+
+    [6] => 그렇기에, 이론가들은 양자중력문제에 있어 더욱 급진적인 접근법을 채택하였으며, 여기에는 잘 알려진 초끈이론과 루프양자중력[5]이 있다. 초끈이론과 같은 일부 양자중력이론은 중력을 강력, 약력, 전자기력과 함께 하나의 힘으로 합치려고 하지만, 루프양자중력과 같은 나머지 이론은 4개의 힘을 하나로 합치려 하지 않으며, 대신에 중력장을 다른 힘들과 분리된 상태로 양자화하려는 노력을 하고 있다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->중력에 대한 현재의 이해는 고전물리학의 틀 안에서 공식화된 아인슈타인 의 일반 상대성이론에 근거하고 있지만 중력을 제외한 나머지 3개의 힘, 강력, 약력, 전자기력은 양자역학과 양자장이론을 통하여 기술되고 있다. 중력만이 양자역학적으로 설명하지 못하고 있는 것이다.[2][3]:11–12 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->그렇기에, 이론가들은 양자중력문제에 있어 더욱 급진적인 접근법을 채택하였으며, 여기에는 잘 알려진 초끈이론과 루프양자중력[5]이 있다. 초끈이론과 같은 일부 양자중력이론은 중력을 강력, 약력, 전자기력과 함께 하나의 힘으로 합치려고 하지만, 루프양자중력과 같은 나머지 이론은 4개의 힘을 하나로 합치려 하지 않으며, 대신에 중력장을 다른 힘들과 분리된 상태로 양자화하려는 노력을 하고 있다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 양자중력(QG)은 중력을 양자역학적으로 묘사하려고 하는 이론물리학 분야이며, 양자 효과가 무시될 수 없는[1] 플랑크 길이의 공간이나 블랙홀과 같은 중력이 매우 큰 천체에 적용된다.
+    [1] => 
+
+    [2] => 중력에 대한 현재의 이해는 고전물리학의 틀 안에서 공식화된 아인슈타인 의 일반 상대성이론에 근거하고 있지만 중력을 제외한 나머지 3개의 힘, 강력, 약력, 전자기력은 양자역학과 양자장이론을 통하여 기술되고 있다.중력만이 양자역학적으로 설명하지 못하고 있는 것이다.[2][3]:11–12 
+    [3] => 
+
+    [4] => 양자역학의 원리와 일반적인 상대성이론을 조화시키기 위해 양자중력이론이 필요하지만, 존재할 것이라고 예측되는 중력 보손을 통해 양자장이론의 일반적인 방법을 중력에 적용할 때 어려움이 발생한다.[4] 문제는 이런 방식으로 얻는 이론은 재규격화가 불가능하다는 것인데, 질량과 같은 관측 가능한 물체의 특성에 대해 무한한 값을 예측하기 때문에 질량과 같은 물질의 특성에 대해 의미있는 값을 도출해 낼 수 없다.
+    [5] => 
+
+    [6] => 그렇기에, 이론가들은 양자중력문제에 있어 더욱 급진적인 접근법을 채택하였으며, 여기에는 잘 알려진 초끈이론과 루프양자중력[5]이 있다.초끈이론과 같은 일부 양자중력이론은 중력을 강력, 약력, 전자기력과 함께 하나의 힘으로 합치려고 하지만, 루프양자중력과 같은 나머지 이론은 4개의 힘을 하나로 합치려 하지 않으며, 대신에 중력장을 다른 힘들과 분리된 상태로 양자화하려는 노력을 하고 있다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>양자중력(QG)은 중력을 양자역학적으로 묘사하려고 하는 이론물리학 분야이며, 양자 효과가 무시될 수 없는[1] 플랑크 길이의 공간이나 블랙홀과 같은 중력이 매우 큰 천체에 적용된다.
+중력에 대한 현재의 이해는 고전물리학의 틀 안에서 공식화된 아인슈타인 의 일반 상대성이론에 근거하고 있지만 중력을 제외한 나머지 3개의 힘, 강력, 약력, 전자기력은 양자역학과 양자장이론을 통하여 기술되고 있다.중력만이 양자역학적으로 설명하지 못하고 있는 것이다.[2][3]:11–12 
+양자역학의 원리와 일반적인 상대성이론을 조화시키기 위해 양자중력이론이 필요하지만, 존재할 것이라고 예측되는 중력 보손을 통해 양자장이론의 일반적인 방법을 중력에 적용할 때 어려움이 발생한다.[4] 문제는 이런 방식으로 얻는 이론은 재규격화가 불가능하다는 것인데, 질량과 같은 관측 가능한 물체의 특성에 대해 무한한 값을 예측하기 때문에 질량과 같은 물질의 특성에 대해 의미있는 값을 도출해 낼 수 없다.
+그렇기에, 이론가들은 양자중력문제에 있어 더욱 급진적인 접근법을 채택하였으며, 여기에는 잘 알려진 초끈이론과 루프양자중력[5]이 있다.초끈이론과 같은 일부 양자중력이론은 중력을 강력, 약력, 전자기력과 함께 하나의 힘으로 합치려고 하지만, 루프양자중력과 같은 나머지 이론은 4개의 힘을 하나로 합치려 하지 않으며, 대신에 중력장을 다른 힘들과 분리된 상태로 양자화하려는 노력을 하고 있다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_102015_687210.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_102015_687210.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_115708_828821)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '엄밀히 말하자면, 양자중력의 목표는 중력장을 양자역학적으로 기술하는 것이며, 4개의 기본 힘을 하나의 수학적인 체계로 합치는 것을 목표로 하는 모든 것의 이론과 혼동해서는 안된다. 양자장이론과 대통일이론이 합쳐진 것을 우리는 모든 것의 이론(Theory of Everything, TOE)이라고 부른다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 엄밀히 말하자면, 양자중력의 목표는 중력장을 양자역학적으로 기술하는 것이며, 4개의 기본 힘을 하나의 수학적인 체계로 합치는 것을 목표로 하는 모든 것의 이론과 혼동해서는 안된다. 양자장이론과 대통일이론이 합쳐진 것을 우리는 모든 것의 이론(Theory of Everything, TOE)이라고 부른다.
+    [1] => 
+
+    [2] => 양자중력이론을 공식화하는데에 있어 어려운 점들 중 하나는 양자중력 효과가 오직 10−35 m 정도의 플랑크 길이에서만 나타난다는 것이다. 이 플랑크 길이는 현재 고에너지 입자가속기를 통해 접근할 수 있는 범위보다 훨씬 작고, 에너지에 있어서는 훨씬 크다. 따라서 물리학자들은 제시된 여러 이론들을 비교하고 검증할 수 있는 실험적인 데이터가 부족하며, 따라서 사고 실험을 통한 접근만이 이러한 이론들을 시험할 수 있는 방법으로 제시되고 있다.[6][7][8]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 엄밀히 말하자면, 양자중력의 목표는 중력장을 양자역학적으로 기술하는 것이며, 4개의 기본 힘을 하나의 수학적인 체계로 합치는 것을 목표로 하는 모든 것의 이론과 혼동해서는 안된다. 양자장이론과 대통일이론이 합쳐진 것을 우리는 모든 것의 이론(Theory of Everything, TOE)이라고 부른다.
+    [1] => 
+
+    [2] => 양자중력이론을 공식화하는데에 있어 어려운 점들 중 하나는 양자중력 효과가 오직 10−35 m 정도의 플랑크 길이에서만 나타난다는 것이다. 이 플랑크 길이는 현재 고에너지 입자가속기를 통해 접근할 수 있는 범위보다 훨씬 작고, 에너지에 있어서는 훨씬 크다. 따라서 물리학자들은 제시된 여러 이론들을 비교하고 검증할 수 있는 실험적인 데이터가 부족하며, 따라서 사고 실험을 통한 접근만이 이러한 이론들을 시험할 수 있는 방법으로 제시되고 있다.[6][7][8]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->엄밀히 말하자면, 양자중력의 목표는 중력장을 양자역학적으로 기술하는 것이며, 4개의 기본 힘을 하나의 수학적인 체계로 합치는 것을 목표로 하는 모든 것의 이론과 혼동해서는 안된다. 양자장이론과 대통일이론이 합쳐진 것을 우리는 모든 것의 이론(Theory of Everything, TOE)이라고 부른다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->양자중력이론을 공식화하는데에 있어 어려운 점들 중 하나는 양자중력 효과가 오직 10−35 m 정도의 플랑크 길이에서만 나타난다는 것이다. 이 플랑크 길이는 현재 고에너지 입자가속기를 통해 접근할 수 있는 범위보다 훨씬 작고, 에너지에 있어서는 훨씬 크다. 따라서 물리학자들은 제시된 여러 이론들을 비교하고 검증할 수 있는 실험적인 데이터가 부족하며, 따라서 사고 실험을 통한 접근만이 이러한 이론들을 시험할 수 있는 방법으로 제시되고 있다.[6][7][8]
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 엄밀히 말하자면, 양자중력의 목표는 중력장을 양자역학적으로 기술하는 것이며, 4개의 기본 힘을 하나의 수학적인 체계로 합치는 것을 목표로 하는 모든 것의 이론과 혼동해서는 안된다.양자장이론과 대통일이론이 합쳐진 것을 우리는 모든 것의 이론(Theory of Everything, TOE)이라고 부른다.
+    [1] => 
+
+    [2] => 양자중력이론을 공식화하는데에 있어 어려운 점들 중 하나는 양자중력 효과가 오직 10−35 m 정도의 플랑크 길이에서만 나타난다는 것이다.이 플랑크 길이는 현재 고에너지 입자가속기를 통해 접근할 수 있는 범위보다 훨씬 작고, 에너지에 있어서는 훨씬 크다.따라서 물리학자들은 제시된 여러 이론들을 비교하고 검증할 수 있는 실험적인 데이터가 부족하며, 따라서 사고 실험을 통한 접근만이 이러한 이론들을 시험할 수 있는 방법으로 제시되고 있다.[6][7][8]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>엄밀히 말하자면, 양자중력의 목표는 중력장을 양자역학적으로 기술하는 것이며, 4개의 기본 힘을 하나의 수학적인 체계로 합치는 것을 목표로 하는 모든 것의 이론과 혼동해서는 안된다.양자장이론과 대통일이론이 합쳐진 것을 우리는 모든 것의 이론(Theory of Everything, TOE)이라고 부른다.
+양자중력이론을 공식화하는데에 있어 어려운 점들 중 하나는 양자중력 효과가 오직 10−35 m 정도의 플랑크 길이에서만 나타난다는 것이다.이 플랑크 길이는 현재 고에너지 입자가속기를 통해 접근할 수 있는 범위보다 훨씬 작고, 에너지에 있어서는 훨씬 크다.따라서 물리학자들은 제시된 여러 이론들을 비교하고 검증할 수 있는 실험적인 데이터가 부족하며, 따라서 사고 실험을 통한 접근만이 이러한 이론들을 시험할 수 있는 방법으로 제시되고 있다.[6][7][8]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_115708_828821.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_115708_828821.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_160658_276802)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'consequences to the global climate system.
+'Array
+(
+    [0] => .
+
+)
+
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 162
+Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Greenhouse Gas Emission Stabilization Strategy
+
+    [1] => The transportation sector is the second largest source of human induced CO2 emissions in the U.S.,
+
+    [2] => which is due to the burning of petroleum derived fossil fuels amounting to approximately 1,800
+
+    [3] => teragrams CO2 Eq. [A10]. While human induced CO2 emissions (approx. 26.4 Gt) are not a significant
+
+    [4] => amount of CO2 in relation to the natural carbon cycle of Earth (approx. 440 Gt), the fact that these
+
+    [5] => emissions have no new carbon sink causes the build-up of GHG emissions in the atmosphere [A11]. In
+
+    [6] => result, slightly more CO2 is being built up in the atmosphere each year which potentially has detrimental
+
+    [7] => consequences to the global climate system.
+    [8] => EIA conclusions estimate that carbon needs to be taxed at about $80/ton CO2 to have a realistic
+
+    [9] => chance at achieving 50% reductions in emissions by 2050. Since current market forces for CO2
+
+    [10] => sequestration are technically and economically unfeasible, another CO2 stabilization strategy may be
+
+    [11] => necessary. It is important to appreciate that the sequestration of CO2 from coal power plants is not the
+
+    [12] => only possible route toward the required CO2 reductions goals, as eliminating the carbon contributions
+
+    [13] => from the petroleum sector would achieve even a greater reduction in CO2 emissions, being over 60%.
+    [14] => The potentially viable method of CO2 electrolysis to hydrocarbons could utilize waste CO2 from coal
+
+    [15] => power plants to produce liquid transport fuels to off-set petroleum consumption, thus mitigating CO2
+
+    [16] => emissions from the transportation sector. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Greenhouse Gas Emission Stabilization Strategy
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The transportation sector is the second largest source of human induced CO2 emissions in the U.S.,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->which is due to the burning of petroleum derived fossil fuels amounting to approximately 1,800
+
+$matches ==>
+Array
+(
+    [0] => 0
+
+    [1] => 0
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->teragrams CO2 Eq. [A10]. While human induced CO2 emissions (approx. 26.4 Gt) are not a significant
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->amount of CO2 in relation to the natural carbon cycle of Earth (approx. 440 Gt), the fact that these
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->emissions have no new carbon sink causes the build-up of GHG emissions in the atmosphere [A11]. In
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->result, slightly more CO2 is being built up in the atmosphere each year which potentially has detrimental
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->EIA conclusions estimate that carbon needs to be taxed at about $80/ton CO2 to have a realistic
+
+$matches ==>
+Array
+(
+    [0] => c
+
+    [1] => c
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->chance at achieving 50% reductions in emissions by 2050. Since current market forces for CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->sequestration are technically and economically unfeasible, another CO2 stabilization strategy may be
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->necessary. It is important to appreciate that the sequestration of CO2 from coal power plants is not the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->only possible route toward the required CO2 reductions goals, as eliminating the carbon contributions
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The potentially viable method of CO2 electrolysis to hydrocarbons could utilize waste CO2 from coal
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->power plants to produce liquid transport fuels to off-set petroleum consumption, thus mitigating CO2
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Greenhouse Gas Emission Stabilization Strategy 
+    [1] => The transportation sector is the second largest source of human induced CO2 emissions in the U.S., 
+    [2] => which is due to the burning of petroleum derived fossil fuels amounting to approximately 1,800 
+    [3] => teragrams CO2 Eq. [A10]. While human induced CO2 emissions (approx. 26.4 Gt) are not a significant 
+    [4] => amount of CO2 in relation to the natural carbon cycle of Earth (approx. 440 Gt), the fact that these 
+    [5] => emissions have no new carbon sink causes the build-up of GHG emissions in the atmosphere [A11]. In 
+    [6] => result, slightly more CO2 is being built up in the atmosphere each year which potentially has detrimental 
+    [7] => consequences to the global climate system.
+    [8] => EIA conclusions estimate that carbon needs to be taxed at about $80/ton CO2 to have a realistic 
+    [9] => chance at achieving 50% reductions in emissions by 2050. Since current market forces for CO2 
+    [10] => sequestration are technically and economically unfeasible, another CO2 stabilization strategy may be 
+    [11] => necessary. It is important to appreciate that the sequestration of CO2 from coal power plants is not the 
+    [12] => only possible route toward the required CO2 reductions goals, as eliminating the carbon contributions 
+    [13] => from the petroleum sector would achieve even a greater reduction in CO2 emissions, being over 60%.
+    [14] => The potentially viable method of CO2 electrolysis to hydrocarbons could utilize waste CO2 from coal 
+    [15] => power plants to produce liquid transport fuels to off-set petroleum consumption, thus mitigating CO2 
+    [16] => emissions from the transportation sector. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->teragrams CO2 Eq. [A10]. While human induced CO2 emissions (approx. 26.4 Gt) are not a significant 
+$matches ==>
+Array
+(
+    [0] => q. 
+    [1] => q.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->amount of CO2 in relation to the natural carbon cycle of Earth (approx. 440 Gt), the fact that these 
+$matches ==>
+Array
+(
+    [0] => x. 
+    [1] => x.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->emissions have no new carbon sink causes the build-up of GHG emissions in the atmosphere [A11]. In 
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->necessary. It is important to appreciate that the sequestration of CO2 from coal power plants is not the 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->emissions from the transportation sector. 
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Greenhouse Gas Emission Stabilization Strategy 
+    [1] => The transportation sector is the second largest source of human induced CO2 emissions in the U.S., 
+    [2] => which is due to the burning of petroleum derived fossil fuels amounting to approximately 1,800 
+    [3] => teragrams CO2 Eq.[A10].While human induced CO2 emissions (approx.26.4 Gt) are not a significant 
+    [4] => amount of CO2 in relation to the natural carbon cycle of Earth (approx.440 Gt), the fact that these 
+    [5] => emissions have no new carbon sink causes the build-up of GHG emissions in the atmosphere [A11].In 
+    [6] => result, slightly more CO2 is being built up in the atmosphere each year which potentially has detrimental 
+    [7] => consequences to the global climate system.
+    [8] => EIA conclusions estimate that carbon needs to be taxed at about $80/ton CO2 to have a realistic 
+    [9] => chance at achieving 50% reductions in emissions by 2050. Since current market forces for CO2 
+    [10] => sequestration are technically and economically unfeasible, another CO2 stabilization strategy may be 
+    [11] => necessary.It is important to appreciate that the sequestration of CO2 from coal power plants is not the 
+    [12] => only possible route toward the required CO2 reductions goals, as eliminating the carbon contributions 
+    [13] => from the petroleum sector would achieve even a greater reduction in CO2 emissions, being over 60%.
+    [14] => The potentially viable method of CO2 electrolysis to hydrocarbons could utilize waste CO2 from coal 
+    [15] => power plants to produce liquid transport fuels to off-set petroleum consumption, thus mitigating CO2 
+    [16] => emissions from the transportation sector.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Greenhouse Gas Emission Stabilization Strategy The transportation sector is the second largest source of human induced CO2 emissions in the U.S., which is due to the burning of petroleum derived fossil fuels amounting to approximately 1,800 teragrams CO2 Eq.[A10].While human induced CO2 emissions (approx.26.4 Gt) are not a significant amount of CO2 in relation to the natural carbon cycle of Earth (approx.440 Gt), the fact that these emissions have no new carbon sink causes the build-up of GHG emissions in the atmosphere [A11].In result, slightly more CO2 is being built up in the atmosphere each year which potentially has detrimental consequences to the global climate system.EIA conclusions estimate that carbon needs to be taxed at about $80/ton CO2 to have a realistic chance at achieving 50% reductions in emissions by 2050. Since current market forces for CO2 sequestration are technically and economically unfeasible, another CO2 stabilization strategy may be necessary.It is important to appreciate that the sequestration of CO2 from coal power plants is not the only possible route toward the required CO2 reductions goals, as eliminating the carbon contributions from the petroleum sector would achieve even a greater reduction in CO2 emissions, being over 60%.The potentially viable method of CO2 electrolysis to hydrocarbons could utilize waste CO2 from coal power plants to produce liquid transport fuels to off-set petroleum consumption, thus mitigating CO2 emissions from the transportation sector.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_160658_276802.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_160658_276802.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_161541_164086)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The process proposed here produces hydrocarbons or syn-gas through the electrochemicalreduction of CO2. The cell consists of two sections, the anode and the cathode. Water is fed into theanode, where it is split into O2 gas and hydrogen ions. The balanced anodic reaction isThe ions are transported by solution through the membrane and into the cathode. These ions thenreact with the CO2 gas which is fed into the cathode, generally producing water and some form ofreduced carbon product. A variety of products can be produced, though few experiments haveproduced notable amounts of species longer than one or two carbons in length. The most commonreduction products have been carbon monoxide, methane, ethylene, methanol, and formic acid.Hydrogen can also be produced, though it is not desired in this situation as will be explained below. Thetypical cathodic reactions are listed here.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The process proposed here produces hydrocarbons or syn-gas through the electrochemicalreduction of CO2. The cell consists of two sections, the anode and the cathode. Water is fed into theanode, where it is split into O2 gas and hydrogen ions. The balanced anodic reaction isThe ions are transported by solution through the membrane and into the cathode. These ions thenreact with the CO2 gas which is fed into the cathode, generally producing water and some form ofreduced carbon product. A variety of products can be produced, though few experiments haveproduced notable amounts of species longer than one or two carbons in length. The most commonreduction products have been carbon monoxide, methane, ethylene, methanol, and formic acid.Hydrogen can also be produced, though it is not desired in this situation as will be explained below. Thetypical cathodic reactions are listed here.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The process proposed here produces hydrocarbons or syn-gas through the electrochemicalreduction of CO2. The cell consists of two sections, the anode and the cathode. Water is fed into theanode, where it is split into O2 gas and hydrogen ions. The balanced anodic reaction isThe ions are transported by solution through the membrane and into the cathode. These ions thenreact with the CO2 gas which is fed into the cathode, generally producing water and some form ofreduced carbon product. A variety of products can be produced, though few experiments haveproduced notable amounts of species longer than one or two carbons in length. The most commonreduction products have been carbon monoxide, methane, ethylene, methanol, and formic acid.Hydrogen can also be produced, though it is not desired in this situation as will be explained below. Thetypical cathodic reactions are listed here.
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The process proposed here produces hydrocarbons or syn-gas through the electrochemicalreduction of CO2. The cell consists of two sections, the anode and the cathode.Water is fed into theanode, where it is split into O2 gas and hydrogen ions.The balanced anodic reaction isThe ions are transported by solution through the membrane and into the cathode.These ions thenreact with the CO2 gas which is fed into the cathode, generally producing water and some form ofreduced carbon product.A variety of products can be produced, though few experiments haveproduced notable amounts of species longer than one or two carbons in length.The most commonreduction products have been carbon monoxide, methane, ethylene, methanol, and formic acid.Hydrogen can also be produced, though it is not desired in this situation as will be explained below.Thetypical cathodic reactions are listed here.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The process proposed here produces hydrocarbons or syn-gas through the electrochemicalreduction of CO2. The cell consists of two sections, the anode and the cathode.Water is fed into theanode, where it is split into O2 gas and hydrogen ions.The balanced anodic reaction isThe ions are transported by solution through the membrane and into the cathode.These ions thenreact with the CO2 gas which is fed into the cathode, generally producing water and some form ofreduced carbon product.A variety of products can be produced, though few experiments haveproduced notable amounts of species longer than one or two carbons in length.The most commonreduction products have been carbon monoxide, methane, ethylene, methanol, and formic acid.Hydrogen can also be produced, though it is not desired in this situation as will be explained below.Thetypical cathodic reactions are listed here.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_161541_164086.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_161541_164086.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_162128_391263)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Current StatusThe current stage of the technology is still very experimental. The majority of tests have beenperformed on a laboratory scale with a purpose of either kinetic analysis or proof-of-concept to examineproduct distribution for different material and condition combinations [A1, A2, A3]. An advantage ofelectrochemical CO2 reduction is that unlike many other hydrocarbon processes it can easily beperformed at ambient conditions. However, being at the experimental level there is still considerablework to be done to bring the process up to a commercial level. Typical current densities have been onthe order of milliamps per square centimeter (mA/cm2) of electrode and catalyst surface, whereasindustrial water electrolyzers operate at up to 2 A/cm2[A12]. This current state can be improved as ithas been for water electrolysis by improved cell design and electrode configuration. However, this stillhas yet to be demonstrated in literature. For this analysis it has been assumed that the reduction cellcan operate at the same level as typical water electrolyzers.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Current StatusThe current stage of the technology is still very experimental. The majority of tests have beenperformed on a laboratory scale with a purpose of either kinetic analysis or proof-of-concept to examineproduct distribution for different material and condition combinations [A1, A2, A3]. An advantage ofelectrochemical CO2 reduction is that unlike many other hydrocarbon processes it can easily beperformed at ambient conditions. However, being at the experimental level there is still considerablework to be done to bring the process up to a commercial level. Typical current densities have been onthe order of milliamps per square centimeter (mA/cm2) of electrode and catalyst surface, whereasindustrial water electrolyzers operate at up to 2 A/cm2[A12]. This current state can be improved as ithas been for water electrolysis by improved cell design and electrode configuration. However, this stillhas yet to be demonstrated in literature. For this analysis it has been assumed that the reduction cellcan operate at the same level as typical water electrolyzers.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Current StatusThe current stage of the technology is still very experimental. The majority of tests have beenperformed on a laboratory scale with a purpose of either kinetic analysis or proof-of-concept to examineproduct distribution for different material and condition combinations [A1, A2, A3]. An advantage ofelectrochemical CO2 reduction is that unlike many other hydrocarbon processes it can easily beperformed at ambient conditions. However, being at the experimental level there is still considerablework to be done to bring the process up to a commercial level. Typical current densities have been onthe order of milliamps per square centimeter (mA/cm2) of electrode and catalyst surface, whereasindustrial water electrolyzers operate at up to 2 A/cm2[A12]. This current state can be improved as ithas been for water electrolysis by improved cell design and electrode configuration. However, this stillhas yet to be demonstrated in literature. For this analysis it has been assumed that the reduction cellcan operate at the same level as typical water electrolyzers.
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Current StatusThe current stage of the technology is still very experimental.The majority of tests have beenperformed on a laboratory scale with a purpose of either kinetic analysis or proof-of-concept to examineproduct distribution for different material and condition combinations [A1, A2, A3].An advantage ofelectrochemical CO2 reduction is that unlike many other hydrocarbon processes it can easily beperformed at ambient conditions.However, being at the experimental level there is still considerablework to be done to bring the process up to a commercial level.Typical current densities have been onthe order of milliamps per square centimeter (mA/cm2) of electrode and catalyst surface, whereasindustrial water electrolyzers operate at up to 2 A/cm2[A12].This current state can be improved as ithas been for water electrolysis by improved cell design and electrode configuration.However, this stillhas yet to be demonstrated in literature.For this analysis it has been assumed that the reduction cellcan operate at the same level as typical water electrolyzers.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Current StatusThe current stage of the technology is still very experimental.The majority of tests have beenperformed on a laboratory scale with a purpose of either kinetic analysis or proof-of-concept to examineproduct distribution for different material and condition combinations [A1, A2, A3].An advantage ofelectrochemical CO2 reduction is that unlike many other hydrocarbon processes it can easily beperformed at ambient conditions.However, being at the experimental level there is still considerablework to be done to bring the process up to a commercial level.Typical current densities have been onthe order of milliamps per square centimeter (mA/cm2) of electrode and catalyst surface, whereasindustrial water electrolyzers operate at up to 2 A/cm2[A12].This current state can be improved as ithas been for water electrolysis by improved cell design and electrode configuration.However, this stillhas yet to be demonstrated in literature.For this analysis it has been assumed that the reduction cellcan operate at the same level as typical water electrolyzers.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_162128_391263.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_162128_391263.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_164039_643403)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The physical makeup of the electrochemical would be very similar to existing alkaline and proton
+
+    [1] => exchange membrane (PEM) water electrolysis cells used for the production of hydrogen gas. Alkaline
+
+    [2] => electrolysis uses a basic electrolyte solution in both the anode and cathode. Oxygen gas is produced at
+
+    [3] => the anode, and hydroxide ions pass through the membrane into the cathode, where the ions combine to
+
+    [4] => form hydrogen gas and water. The membrane is usually a porous inert material that allows the passage
+
+    [5] => of electrolyte, but not the gaseous products. In a PEM electrolyzer the membrane is a proton conductor,
+
+    [6] => where hydrogen ions are formed in the anode and combine to form hydrogen gas at the cathode. In this
+
+    [7] => case the electrolyte is generally pure water. Membranes that conduct negatively charged ions also exist,
+
+    [8] => though there are very few commercial products with performance on par with existing PEM technology.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The physical makeup of the electrochemical would be very similar to existing alkaline and proton
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->exchange membrane (PEM) water electrolysis cells used for the production of hydrogen gas. Alkaline
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->electrolysis uses a basic electrolyte solution in both the anode and cathode. Oxygen gas is produced at
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->the anode, and hydroxide ions pass through the membrane into the cathode, where the ions combine to
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->form hydrogen gas and water. The membrane is usually a porous inert material that allows the passage
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->of electrolyte, but not the gaseous products. In a PEM electrolyzer the membrane is a proton conductor,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->where hydrogen ions are formed in the anode and combine to form hydrogen gas at the cathode. In this
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->case the electrolyte is generally pure water. Membranes that conduct negatively charged ions also exist,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The physical makeup of the electrochemical would be very similar to existing alkaline and proton 
+    [1] => exchange membrane (PEM) water electrolysis cells used for the production of hydrogen gas. Alkaline 
+    [2] => electrolysis uses a basic electrolyte solution in both the anode and cathode. Oxygen gas is produced at 
+    [3] => the anode, and hydroxide ions pass through the membrane into the cathode, where the ions combine to 
+    [4] => form hydrogen gas and water. The membrane is usually a porous inert material that allows the passage 
+    [5] => of electrolyte, but not the gaseous products. In a PEM electrolyzer the membrane is a proton conductor, 
+    [6] => where hydrogen ions are formed in the anode and combine to form hydrogen gas at the cathode. In this 
+    [7] => case the electrolyte is generally pure water. Membranes that conduct negatively charged ions also exist, 
+    [8] => though there are very few commercial products with performance on par with existing PEM technology.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->exchange membrane (PEM) water electrolysis cells used for the production of hydrogen gas. Alkaline 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->electrolysis uses a basic electrolyte solution in both the anode and cathode. Oxygen gas is produced at 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->form hydrogen gas and water. The membrane is usually a porous inert material that allows the passage 
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->of electrolyte, but not the gaseous products. In a PEM electrolyzer the membrane is a proton conductor, 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->where hydrogen ions are formed in the anode and combine to form hydrogen gas at the cathode. In this 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->case the electrolyte is generally pure water. Membranes that conduct negatively charged ions also exist, 
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The physical makeup of the electrochemical would be very similar to existing alkaline and proton 
+    [1] => exchange membrane (PEM) water electrolysis cells used for the production of hydrogen gas.Alkaline 
+    [2] => electrolysis uses a basic electrolyte solution in both the anode and cathode.Oxygen gas is produced at 
+    [3] => the anode, and hydroxide ions pass through the membrane into the cathode, where the ions combine to 
+    [4] => form hydrogen gas and water.The membrane is usually a porous inert material that allows the passage 
+    [5] => of electrolyte, but not the gaseous products.In a PEM electrolyzer the membrane is a proton conductor, 
+    [6] => where hydrogen ions are formed in the anode and combine to form hydrogen gas at the cathode.In this 
+    [7] => case the electrolyte is generally pure water.Membranes that conduct negatively charged ions also exist, 
+    [8] => though there are very few commercial products with performance on par with existing PEM technology.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The physical makeup of the electrochemical would be very similar to existing alkaline and proton exchange membrane (PEM) water electrolysis cells used for the production of hydrogen gas.Alkaline electrolysis uses a basic electrolyte solution in both the anode and cathode.Oxygen gas is produced at the anode, and hydroxide ions pass through the membrane into the cathode, where the ions combine to form hydrogen gas and water.The membrane is usually a porous inert material that allows the passage of electrolyte, but not the gaseous products.In a PEM electrolyzer the membrane is a proton conductor, where hydrogen ions are formed in the anode and combine to form hydrogen gas at the cathode.In this case the electrolyte is generally pure water.Membranes that conduct negatively charged ions also exist, though there are very few commercial products with performance on par with existing PEM technology.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_164039_643403.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_164039_643403.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_164900_810642)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The anode electrolyte and electrode would mimic those already in use for water electrolysis. For the
+
+    [1] => cathode the electrode and electrolyte compositions vary depending on the desired products. We have
+
+    [2] => chosen to focus on production of methanol, methane, and syngas as our primary fuels. These can readily
+
+    [3] => be utilized in the existing fuel infrastructure, assuming the syn-gas has been processed into a fuel such
+
+    [4] => as diesel. The operating conditions have been chosen based on some of the most promising results that
+
+    [5] => were found out the literature investigated and can be seen in the table below. It should be noted that
+
+    [6] => the total efficiencies tend to fall less than 100%. This generally occurred for two reasons. The first was
+
+    [7] => due to resistive losses in the cell, where the electricity was dissipated as heat. The second reason was
+
+    [8] => that many experiments only analyzed select products, meaning that certain products were left
+
+    [9] => unaccounted. Methane production was based off results from Kanaco et al., where copper was used for
+
+    [10] => the cathode electrode catalyst and LiI in methanol for the electrolyte [A13]. Syn-gas production was
+
+    [11] => modeled based on Yamamoto et al. using a carbon fiber/Ni gas diffusion electrode (GDE), where no liquid electrolyte was present in the cathode [A14]. Two different results were modeled for methanol
+
+    [12] => production, both using an aqueous KHCO3 electrolyte solution. Bandi et al. [A15] obtained results at a
+
+    [13] => larger current density using Ru/Ti oxides for the catalyst, while Kobayashi et al. [A16] obtained a much
+
+    [14] => higher efficiency using a Cu/Zn/Al alloy, though at considerably lower current densities. The majority of
+
+    [15] => these catalyst materials would be cheaper than the noble metals, such as Pt, found in PEM electrolyzers,
+
+    [16] => and would be about as expensive as the more common metals, such as Ni, used in alkaline electrolysis.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The anode electrolyte and electrode would mimic those already in use for water electrolysis. For the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->cathode the electrode and electrolyte compositions vary depending on the desired products. We have
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->chosen to focus on production of methanol, methane, and syngas as our primary fuels. These can readily
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->be utilized in the existing fuel infrastructure, assuming the syn-gas has been processed into a fuel such
+
+$matches ==>
+Array
+(
+    [0] => h
+
+    [1] => h
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->as diesel. The operating conditions have been chosen based on some of the most promising results that
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->were found out the literature investigated and can be seen in the table below. It should be noted that
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->the total efficiencies tend to fall less than 100%. This generally occurred for two reasons. The first was
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->due to resistive losses in the cell, where the electricity was dissipated as heat. The second reason was
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->that many experiments only analyzed select products, meaning that certain products were left
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->unaccounted. Methane production was based off results from Kanaco et al., where copper was used for
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->the cathode electrode catalyst and LiI in methanol for the electrolyte [A13]. Syn-gas production was
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->modeled based on Yamamoto et al. using a carbon fiber/Ni gas diffusion electrode (GDE), where no liquid electrolyte was present in the cathode [A14]. Two different results were modeled for methanol
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->production, both using an aqueous KHCO3 electrolyte solution. Bandi et al. [A15] obtained results at a
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->larger current density using Ru/Ti oxides for the catalyst, while Kobayashi et al. [A16] obtained a much
+
+$matches ==>
+Array
+(
+    [0] => h
+
+    [1] => h
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->higher efficiency using a Cu/Zn/Al alloy, though at considerably lower current densities. The majority of
+
+$matches ==>
+Array
+(
+    [0] => f
+
+    [1] => f
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->these catalyst materials would be cheaper than the noble metals, such as Pt, found in PEM electrolyzers,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The anode electrolyte and electrode would mimic those already in use for water electrolysis. For the 
+    [1] => cathode the electrode and electrolyte compositions vary depending on the desired products. We have 
+    [2] => chosen to focus on production of methanol, methane, and syngas as our primary fuels. These can readily 
+    [3] => be utilized in the existing fuel infrastructure, assuming the syn-gas has been processed into a fuel such 
+    [4] => as diesel. The operating conditions have been chosen based on some of the most promising results that 
+    [5] => were found out the literature investigated and can be seen in the table below. It should be noted that 
+    [6] => the total efficiencies tend to fall less than 100%. This generally occurred for two reasons. The first was 
+    [7] => due to resistive losses in the cell, where the electricity was dissipated as heat. The second reason was 
+    [8] => that many experiments only analyzed select products, meaning that certain products were left 
+    [9] => unaccounted. Methane production was based off results from Kanaco et al., where copper was used for 
+    [10] => the cathode electrode catalyst and LiI in methanol for the electrolyte [A13]. Syn-gas production was 
+    [11] => modeled based on Yamamoto et al. using a carbon fiber/Ni gas diffusion electrode (GDE), where no liquid electrolyte was present in the cathode [A14]. Two different results were modeled for methanol 
+    [12] => production, both using an aqueous KHCO3 electrolyte solution. Bandi et al. [A15] obtained results at a 
+    [13] => larger current density using Ru/Ti oxides for the catalyst, while Kobayashi et al. [A16] obtained a much 
+    [14] => higher efficiency using a Cu/Zn/Al alloy, though at considerably lower current densities. The majority of 
+    [15] => these catalyst materials would be cheaper than the noble metals, such as Pt, found in PEM electrolyzers, 
+    [16] => and would be about as expensive as the more common metals, such as Ni, used in alkaline electrolysis.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The anode electrolyte and electrode would mimic those already in use for water electrolysis. For the 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->cathode the electrode and electrolyte compositions vary depending on the desired products. We have 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->chosen to focus on production of methanol, methane, and syngas as our primary fuels. These can readily 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->as diesel. The operating conditions have been chosen based on some of the most promising results that 
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->were found out the literature investigated and can be seen in the table below. It should be noted that 
+$matches ==>
+Array
+(
+    [0] => w. 
+    [1] => w.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->the total efficiencies tend to fall less than 100%. This generally occurred for two reasons. The first was 
+$matches ==>
+Array
+(
+    [0] => %. 
+    [1] => %.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->due to resistive losses in the cell, where the electricity was dissipated as heat. The second reason was 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->unaccounted. Methane production was based off results from Kanaco et al., where copper was used for 
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->the cathode electrode catalyst and LiI in methanol for the electrolyte [A13]. Syn-gas production was 
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->modeled based on Yamamoto et al. using a carbon fiber/Ni gas diffusion electrode (GDE), where no liquid electrolyte was present in the cathode [A14]. Two different results were modeled for methanol 
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->production, both using an aqueous KHCO3 electrolyte solution. Bandi et al. [A15] obtained results at a 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->larger current density using Ru/Ti oxides for the catalyst, while Kobayashi et al. [A16] obtained a much 
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->higher efficiency using a Cu/Zn/Al alloy, though at considerably lower current densities. The majority of 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The anode electrolyte and electrode would mimic those already in use for water electrolysis.For the 
+    [1] => cathode the electrode and electrolyte compositions vary depending on the desired products.We have 
+    [2] => chosen to focus on production of methanol, methane, and syngas as our primary fuels.These can readily 
+    [3] => be utilized in the existing fuel infrastructure, assuming the syn-gas has been processed into a fuel such 
+    [4] => as diesel.The operating conditions have been chosen based on some of the most promising results that 
+    [5] => were found out the literature investigated and can be seen in the table below.It should be noted that 
+    [6] => the total efficiencies tend to fall less than 100%.This generally occurred for two reasons.The first was 
+    [7] => due to resistive losses in the cell, where the electricity was dissipated as heat.The second reason was 
+    [8] => that many experiments only analyzed select products, meaning that certain products were left 
+    [9] => unaccounted.Methane production was based off results from Kanaco et al., where copper was used for 
+    [10] => the cathode electrode catalyst and LiI in methanol for the electrolyte [A13].Syn-gas production was 
+    [11] => modeled based on Yamamoto et al.using a carbon fiber/Ni gas diffusion electrode (GDE), where no liquid electrolyte was present in the cathode [A14].Two different results were modeled for methanol 
+    [12] => production, both using an aqueous KHCO3 electrolyte solution.Bandi et al.[A15] obtained results at a 
+    [13] => larger current density using Ru/Ti oxides for the catalyst, while Kobayashi et al.[A16] obtained a much 
+    [14] => higher efficiency using a Cu/Zn/Al alloy, though at considerably lower current densities.The majority of 
+    [15] => these catalyst materials would be cheaper than the noble metals, such as Pt, found in PEM electrolyzers, 
+    [16] => and would be about as expensive as the more common metals, such as Ni, used in alkaline electrolysis.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The anode electrolyte and electrode would mimic those already in use for water electrolysis.For the cathode the electrode and electrolyte compositions vary depending on the desired products.We have chosen to focus on production of methanol, methane, and syngas as our primary fuels.These can readily be utilized in the existing fuel infrastructure, assuming the syn-gas has been processed into a fuel such as diesel.The operating conditions have been chosen based on some of the most promising results that were found out the literature investigated and can be seen in the table below.It should be noted that the total efficiencies tend to fall less than 100%.This generally occurred for two reasons.The first was due to resistive losses in the cell, where the electricity was dissipated as heat.The second reason was that many experiments only analyzed select products, meaning that certain products were left unaccounted.Methane production was based off results from Kanaco et al., where copper was used for the cathode electrode catalyst and LiI in methanol for the electrolyte [A13].Syn-gas production was modeled based on Yamamoto et al.using a carbon fiber/Ni gas diffusion electrode (GDE), where no liquid electrolyte was present in the cathode [A14].Two different results were modeled for methanol production, both using an aqueous KHCO3 electrolyte solution.Bandi et al.[A15] obtained results at a larger current density using Ru/Ti oxides for the catalyst, while Kobayashi et al.[A16] obtained a much higher efficiency using a Cu/Zn/Al alloy, though at considerably lower current densities.The majority of these catalyst materials would be cheaper than the noble metals, such as Pt, found in PEM electrolyzers, and would be about as expensive as the more common metals, such as Ni, used in alkaline electrolysis.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_164900_810642.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_164900_810642.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_170242_747020)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'are designed to minimize the spacing between the electrodes and membrane as much as possible.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'consumption of the cell.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => It is important to note the cell potentials listed in the table above. They range between 1.85 V to
+
+    [1] => 4.95 V, compared to the 1.6 V to 2.2 V often used in water electrolysis [A12]. The potential is higher for
+
+    [2] => three typical reasons. First, all of the processes listed above still require the electrolysis of water to
+
+    [3] => occur in parallel to CO2 reduction. Second, additional power must then be consumed to drive the
+
+    [4] => resulting reduction. Finally, the cells used were generally of an inefficient design. Efficient industrial cells
+
+    [5] => are designed to minimize the spacing between the electrodes and membrane as much as possible.
+    [6] => Increased spacing results in more current having to pass through the solution, which has a higher
+
+    [7] => resistance that the electrical circuit. This results in the need to apply a much larger potential, which in
+
+    [8] => turn increases the energy required. Since hydrogen can be produced more efficiently in a standard
+
+    [9] => water electrolysis cell it is viewed as an undesired byproduct here, as it increases the power
+
+    [10] => consumption of the cell.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->It is important to note the cell potentials listed in the table above. They range between 1.85 V to
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->4.95 V, compared to the 1.6 V to 2.2 V often used in water electrolysis [A12]. The potential is higher for
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->three typical reasons. First, all of the processes listed above still require the electrolysis of water to
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->occur in parallel to CO2 reduction. Second, additional power must then be consumed to drive the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->resulting reduction. Finally, the cells used were generally of an inefficient design. Efficient industrial cells
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Increased spacing results in more current having to pass through the solution, which has a higher
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->resistance that the electrical circuit. This results in the need to apply a much larger potential, which in
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->turn increases the energy required. Since hydrogen can be produced more efficiently in a standard
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->water electrolysis cell it is viewed as an undesired byproduct here, as it increases the power
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => It is important to note the cell potentials listed in the table above. They range between 1.85 V to 
+    [1] => 4.95 V, compared to the 1.6 V to 2.2 V often used in water electrolysis [A12]. The potential is higher for 
+    [2] => three typical reasons. First, all of the processes listed above still require the electrolysis of water to 
+    [3] => occur in parallel to CO2 reduction. Second, additional power must then be consumed to drive the 
+    [4] => resulting reduction. Finally, the cells used were generally of an inefficient design. Efficient industrial cells 
+    [5] => are designed to minimize the spacing between the electrodes and membrane as much as possible.
+    [6] => Increased spacing results in more current having to pass through the solution, which has a higher 
+    [7] => resistance that the electrical circuit. This results in the need to apply a much larger potential, which in 
+    [8] => turn increases the energy required. Since hydrogen can be produced more efficiently in a standard 
+    [9] => water electrolysis cell it is viewed as an undesired byproduct here, as it increases the power 
+    [10] => consumption of the cell.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->It is important to note the cell potentials listed in the table above. They range between 1.85 V to 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->4.95 V, compared to the 1.6 V to 2.2 V often used in water electrolysis [A12]. The potential is higher for 
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->three typical reasons. First, all of the processes listed above still require the electrolysis of water to 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->occur in parallel to CO2 reduction. Second, additional power must then be consumed to drive the 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->resulting reduction. Finally, the cells used were generally of an inefficient design. Efficient industrial cells 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->resistance that the electrical circuit. This results in the need to apply a much larger potential, which in 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->turn increases the energy required. Since hydrogen can be produced more efficiently in a standard 
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => It is important to note the cell potentials listed in the table above.They range between 1.85 V to 
+    [1] => 4.95 V, compared to the 1.6 V to 2.2 V often used in water electrolysis [A12].The potential is higher for 
+    [2] => three typical reasons.First, all of the processes listed above still require the electrolysis of water to 
+    [3] => occur in parallel to CO2 reduction.Second, additional power must then be consumed to drive the 
+    [4] => resulting reduction.Finally, the cells used were generally of an inefficient design.Efficient industrial cells 
+    [5] => are designed to minimize the spacing between the electrodes and membrane as much as possible.
+    [6] => Increased spacing results in more current having to pass through the solution, which has a higher 
+    [7] => resistance that the electrical circuit.This results in the need to apply a much larger potential, which in 
+    [8] => turn increases the energy required.Since hydrogen can be produced more efficiently in a standard 
+    [9] => water electrolysis cell it is viewed as an undesired byproduct here, as it increases the power 
+    [10] => consumption of the cell.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>It is important to note the cell potentials listed in the table above.They range between 1.85 V to 4.95 V, compared to the 1.6 V to 2.2 V often used in water electrolysis [A12].The potential is higher for three typical reasons.First, all of the processes listed above still require the electrolysis of water to occur in parallel to CO2 reduction.Second, additional power must then be consumed to drive the resulting reduction.Finally, the cells used were generally of an inefficient design.Efficient industrial cells are designed to minimize the spacing between the electrodes and membrane as much as possible.Increased spacing results in more current having to pass through the solution, which has a higher resistance that the electrical circuit.This results in the need to apply a much larger potential, which in turn increases the energy required.Since hydrogen can be produced more efficiently in a standard water electrolysis cell it is viewed as an undesired byproduct here, as it increases the power consumption of the cell.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_170242_747020.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_170242_747020.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210605_170646_491489)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'the cell. Presence of SOx would be more detrimental to operation, as it is a well-known catalyst poison.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => A basic schematic of the likely system is shown in the figure below. The feed streams would consist
+
+    [1] => of CO2, water, and electricity. For this analysis the CO2 would likely be captured at a coal fired power
+
+    [2] => plant operating under sequestration and purchased as feed. While this could provide a cheap source of
+
+    [3] => reactant, the stream would probably contain trace amounts of NOx and SOx. The NOx could lead to acidic
+
+    [4] => conditions in the cell, changing the reaction conditions and possibly increasing the material corrosion of
+
+    [5] => the cell. Presence of SOx would be more detrimental to operation, as it is a well-known catalyst poison.
+    [6] => For these reasons the CO2 feed would likely have to be filtered and the contaminants removed. This
+
+    [7] => would further increase the capital and energy costs of the system, though it is not included in this
+
+    [8] => analysis. The water feed could be standard industrial water. This would need to be filtered, but since it is
+
+    [9] => standard procedure for electrolysis cells it should not increase the system costs. Since most of the
+
+    [10] => systems require an aqueous electrolyte a management system would need to be in place to control the
+
+    [11] => pH and conductivity of the solution. This provides an issue, as this is common in alkaline electrolysis but
+
+    [12] => not in PEM electrolysis. For a PEM cell the advantage is that the more expensive membrane material usually reduces the need for an electrolyte solution, removing the need for the additional processing
+
+    [13] => equipment found in alkaline cells. Since our cell would likely require both this would further increase the
+
+    [14] => capital and operating costs of the system.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->A basic schematic of the likely system is shown in the figure below. The feed streams would consist
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->of CO2, water, and electricity. For this analysis the CO2 would likely be captured at a coal fired power
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->plant operating under sequestration and purchased as feed. While this could provide a cheap source of
+
+$matches ==>
+Array
+(
+    [0] => f
+
+    [1] => f
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->reactant, the stream would probably contain trace amounts of NOx and SOx. The NOx could lead to acidic
+
+$matches ==>
+Array
+(
+    [0] => c
+
+    [1] => c
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->conditions in the cell, changing the reaction conditions and possibly increasing the material corrosion of
+
+$matches ==>
+Array
+(
+    [0] => f
+
+    [1] => f
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->For these reasons the CO2 feed would likely have to be filtered and the contaminants removed. This
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->would further increase the capital and energy costs of the system, though it is not included in this
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->analysis. The water feed could be standard industrial water. This would need to be filtered, but since it is
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->standard procedure for electrolysis cells it should not increase the system costs. Since most of the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->systems require an aqueous electrolyte a management system would need to be in place to control the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->pH and conductivity of the solution. This provides an issue, as this is common in alkaline electrolysis but
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->not in PEM electrolysis. For a PEM cell the advantage is that the more expensive membrane material usually reduces the need for an electrolyte solution, removing the need for the additional processing
+
+$matches ==>
+Array
+(
+    [0] => g
+
+    [1] => g
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->equipment found in alkaline cells. Since our cell would likely require both this would further increase the
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => A basic schematic of the likely system is shown in the figure below. The feed streams would consist 
+    [1] => of CO2, water, and electricity. For this analysis the CO2 would likely be captured at a coal fired power 
+    [2] => plant operating under sequestration and purchased as feed. While this could provide a cheap source of 
+    [3] => reactant, the stream would probably contain trace amounts of NOx and SOx. The NOx could lead to acidic 
+    [4] => conditions in the cell, changing the reaction conditions and possibly increasing the material corrosion of 
+    [5] => the cell. Presence of SOx would be more detrimental to operation, as it is a well-known catalyst poison.
+    [6] => For these reasons the CO2 feed would likely have to be filtered and the contaminants removed. This 
+    [7] => would further increase the capital and energy costs of the system, though it is not included in this 
+    [8] => analysis. The water feed could be standard industrial water. This would need to be filtered, but since it is 
+    [9] => standard procedure for electrolysis cells it should not increase the system costs. Since most of the 
+    [10] => systems require an aqueous electrolyte a management system would need to be in place to control the 
+    [11] => pH and conductivity of the solution. This provides an issue, as this is common in alkaline electrolysis but 
+    [12] => not in PEM electrolysis. For a PEM cell the advantage is that the more expensive membrane material usually reduces the need for an electrolyte solution, removing the need for the additional processing 
+    [13] => equipment found in alkaline cells. Since our cell would likely require both this would further increase the 
+    [14] => capital and operating costs of the system.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->A basic schematic of the likely system is shown in the figure below. The feed streams would consist 
+$matches ==>
+Array
+(
+    [0] => w. 
+    [1] => w.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->of CO2, water, and electricity. For this analysis the CO2 would likely be captured at a coal fired power 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->plant operating under sequestration and purchased as feed. While this could provide a cheap source of 
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->reactant, the stream would probably contain trace amounts of NOx and SOx. The NOx could lead to acidic 
+$matches ==>
+Array
+(
+    [0] => x. 
+    [1] => x.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->the cell. Presence of SOx would be more detrimental to operation, as it is a well-known catalyst poison.
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->For these reasons the CO2 feed would likely have to be filtered and the contaminants removed. This 
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->analysis. The water feed could be standard industrial water. This would need to be filtered, but since it is 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->standard procedure for electrolysis cells it should not increase the system costs. Since most of the 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->pH and conductivity of the solution. This provides an issue, as this is common in alkaline electrolysis but 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->not in PEM electrolysis. For a PEM cell the advantage is that the more expensive membrane material usually reduces the need for an electrolyte solution, removing the need for the additional processing 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->equipment found in alkaline cells. Since our cell would likely require both this would further increase the 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => A basic schematic of the likely system is shown in the figure below.The feed streams would consist 
+    [1] => of CO2, water, and electricity.For this analysis the CO2 would likely be captured at a coal fired power 
+    [2] => plant operating under sequestration and purchased as feed.While this could provide a cheap source of 
+    [3] => reactant, the stream would probably contain trace amounts of NOx and SOx.The NOx could lead to acidic 
+    [4] => conditions in the cell, changing the reaction conditions and possibly increasing the material corrosion of 
+    [5] => the cell.Presence of SOx would be more detrimental to operation, as it is a well-known catalyst poison.
+    [6] => For these reasons the CO2 feed would likely have to be filtered and the contaminants removed.This 
+    [7] => would further increase the capital and energy costs of the system, though it is not included in this 
+    [8] => analysis.The water feed could be standard industrial water.This would need to be filtered, but since it is 
+    [9] => standard procedure for electrolysis cells it should not increase the system costs.Since most of the 
+    [10] => systems require an aqueous electrolyte a management system would need to be in place to control the 
+    [11] => pH and conductivity of the solution.This provides an issue, as this is common in alkaline electrolysis but 
+    [12] => not in PEM electrolysis.For a PEM cell the advantage is that the more expensive membrane material usually reduces the need for an electrolyte solution, removing the need for the additional processing 
+    [13] => equipment found in alkaline cells.Since our cell would likely require both this would further increase the 
+    [14] => capital and operating costs of the system.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>A basic schematic of the likely system is shown in the figure below.The feed streams would consist of CO2, water, and electricity.For this analysis the CO2 would likely be captured at a coal fired power plant operating under sequestration and purchased as feed.While this could provide a cheap source of reactant, the stream would probably contain trace amounts of NOx and SOx.The NOx could lead to acidic conditions in the cell, changing the reaction conditions and possibly increasing the material corrosion of the cell.Presence of SOx would be more detrimental to operation, as it is a well-known catalyst poison.For these reasons the CO2 feed would likely have to be filtered and the contaminants removed.This would further increase the capital and energy costs of the system, though it is not included in this analysis.The water feed could be standard industrial water.This would need to be filtered, but since it is standard procedure for electrolysis cells it should not increase the system costs.Since most of the systems require an aqueous electrolyte a management system would need to be in place to control the pH and conductivity of the solution.This provides an issue, as this is common in alkaline electrolysis but not in PEM electrolysis.For a PEM cell the advantage is that the more expensive membrane material usually reduces the need for an electrolyte solution, removing the need for the additional processing equipment found in alkaline cells.Since our cell would likely require both this would further increase the capital and operating costs of the system.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_170646_491489.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210605_170646_491489.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210606_083233_466243)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 道路では一年を通じて、水道、下水道、電気、ガス、舗装など、様々な工事が行われていますが、川口市水道局で行う水道本管布設工事について、工事着手から完成までの標準的な流れを紹介いたします。「これは何の工事？」と思われたら、下のような工事件名板をご覧ください。工事件名板には、工事名、工事期間、工事時間、発注者、受注業者などの情報が掲示されています。※水道管布設工事の場合、●上水道本管の布設替工事●耐震管布設替工事などの用語で掲示しております。布設”とは管を敷いて設置すること。“布設替”とは管を入れ替えることです。水道本管布設工事は以下の流れで行うのが標準的です。１．試掘工しくつこう（道路の下に埋まっているライフラインなどの調査）２．仮設管かせつかん布設工ふせつこう（水道本管が工事中使えなくなるため、一時的に代わりの管を布設する。）３．本管ほんかん布設ふせつ（布設ふせつ替がえ）工こう（水道のメイン管の布設）４．洗管せんかん通水つうすい作業さぎょう（新たに布設した水道管の中に水を引き込み、洗浄後水を通す作業）５．給きゅう水管すいかん布設工ふせつこう（水道水をみなさんの家庭に送るための管の布設）６．道路どうろ構造物こうぞうぶつ復旧工ふっきゅうこう（道路上にある様々な構造物を復元する）７．舗装ほそう復旧工ふっきゅうこう（舗装をきれいにやり直す）８．区画くかく線工せんこう（道路上に線や記号などを表示する
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 道路では一年を通じて、水道、下水道、電気、ガス、舗装など、様々な工事が行われていますが、川口市水道局で行う水道本管布設工事について、工事着手から完成までの標準的な流れを紹介いたします。「これは何の工事？」と思われたら、下のような工事件名板をご覧ください。工事件名板には、工事名、工事期間、工事時間、発注者、受注業者などの情報が掲示されています。※水道管布設工事の場合、●上水道本管の布設替工事●耐震管布設替工事などの用語で掲示しております。布設”とは管を敷いて設置すること。“布設替”とは管を入れ替えることです。水道本管布設工事は以下の流れで行うのが標準的です。１．試掘工しくつこう（道路の下に埋まっているライフラインなどの調査）２．仮設管かせつかん布設工ふせつこう（水道本管が工事中使えなくなるため、一時的に代わりの管を布設する。）３．本管ほんかん布設ふせつ（布設ふせつ替がえ）工こう（水道のメイン管の布設）４．洗管せんかん通水つうすい作業さぎょう（新たに布設した水道管の中に水を引き込み、洗浄後水を通す作業）５．給きゅう水管すいかん布設工ふせつこう（水道水をみなさんの家庭に送るための管の布設）６．道路どうろ構造物こうぞうぶつ復旧工ふっきゅうこう（道路上にある様々な構造物を復元する）７．舗装ほそう復旧工ふっきゅうこう（舗装をきれいにやり直す）８．区画くかく線工せんこう（道路上に線や記号などを表示する
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 道路では一年を通じて、水道、下水道、電気、ガス、舗装など、様々な工事が行われていますが、川口市水道局で行う水道本管布設工事について、工事着手から完成までの標準的な流れを紹介いたします。「これは何の工事？」と思われたら、下のような工事件名板をご覧ください。工事件名板には、工事名、工事期間、工事時間、発注者、受注業者などの情報が掲示されています。※水道管布設工事の場合、●上水道本管の布設替工事●耐震管布設替工事などの用語で掲示しております。布設”とは管を敷いて設置すること。“布設替”とは管を入れ替えることです。水道本管布設工事は以下の流れで行うのが標準的です。１．試掘工しくつこう（道路の下に埋まっているライフラインなどの調査）２．仮設管かせつかん布設工ふせつこう（水道本管が工事中使えなくなるため、一時的に代わりの管を布設する。）３．本管ほんかん布設ふせつ（布設ふせつ替がえ）工こう（水道のメイン管の布設）４．洗管せんかん通水つうすい作業さぎょう（新たに布設した水道管の中に水を引き込み、洗浄後水を通す作業）５．給きゅう水管すいかん布設工ふせつこう（水道水をみなさんの家庭に送るための管の布設）６．道路どうろ構造物こうぞうぶつ復旧工ふっきゅうこう（道路上にある様々な構造物を復元する）７．舗装ほそう復旧工ふっきゅうこう（舗装をきれいにやり直す）８．区画くかく線工せんこう（道路上に線や記号などを表示する
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>道路では一年を通じて、水道、下水道、電気、ガス、舗装など、様々な工事が行われていますが、川口市水道局で行う水道本管布設工事について、工事着手から完成までの標準的な流れを紹介いたします。「これは何の工事？」と思われたら、下のような工事件名板をご覧ください。工事件名板には、工事名、工事期間、工事時間、発注者、受注業者などの情報が掲示されています。※水道管布設工事の場合、●上水道本管の布設替工事●耐震管布設替工事などの用語で掲示しております。布設”とは管を敷いて設置すること。“布設替”とは管を入れ替えることです。水道本管布設工事は以下の流れで行うのが標準的です。１．試掘工しくつこう（道路の下に埋まっているライフラインなどの調査）２．仮設管かせつかん布設工ふせつこう（水道本管が工事中使えなくなるため、一時的に代わりの管を布設する。）３．本管ほんかん布設ふせつ（布設ふせつ替がえ）工こう（水道のメイン管の布設）４．洗管せんかん通水つうすい作業さぎょう（新たに布設した水道管の中に水を引き込み、洗浄後水を通す作業）５．給きゅう水管すいかん布設工ふせつこう（水道水をみなさんの家庭に送るための管の布設）６．道路どうろ構造物こうぞうぶつ復旧工ふっきゅうこう（道路上にある様々な構造物を復元する）７．舗装ほそう復旧工ふっきゅうこう（舗装をきれいにやり直す）８．区画くかく線工せんこう（道路上に線や記号などを表示する
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210606_083233_466243.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210606_083233_466243.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210606_084943_745842)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => ガス管を確認しました。１． 試掘工 道路の中には水道管だけではなく、下水道、電気、ガス、電話など色々な管路が埋設されています。 調査した図面どおりに埋設されているかを実際に調べるために行う作業が試掘工です。 試掘工は、工事区間内を点々と掘ります。多いときには２０～３０箇所、標準でも１０箇所程度は掘ります。 掘る深さによりますが1日あたり3箇所程度、おおよそ7日間程度を要します。 図面だけではわからない状況が、試掘工で色々とわかってきます。 試掘の結果を基に、設計どおりに工事ができるかを関係者で再度検討します。 方針が決まったところで、工事着工です。． 仮設管布設工 本管を布設する工事のはじまりです。でも、その前に・・・。 水道管を布設するにあたり、断水をすると利用者の皆さんにご迷惑をおかけします。そこで、断水を最小限にとどめる、「仮設管」という仮の管を布設し、この管から一時的に皆さんの家庭に水を供給します。
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => ガス管を確認しました。１． 試掘工 道路の中には水道管だけではなく、下水道、電気、ガス、電話など色々な管路が埋設されています。 調査した図面どおりに埋設されているかを実際に調べるために行う作業が試掘工です。 試掘工は、工事区間内を点々と掘ります。多いときには２０～３０箇所、標準でも１０箇所程度は掘ります。 掘る深さによりますが1日あたり3箇所程度、おおよそ7日間程度を要します。 図面だけではわからない状況が、試掘工で色々とわかってきます。 試掘の結果を基に、設計どおりに工事ができるかを関係者で再度検討します。 方針が決まったところで、工事着工です。． 仮設管布設工 本管を布設する工事のはじまりです。でも、その前に・・・。 水道管を布設するにあたり、断水をすると利用者の皆さんにご迷惑をおかけします。そこで、断水を最小限にとどめる、「仮設管」という仮の管を布設し、この管から一時的に皆さんの家庭に水を供給します。
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => ガス管を確認しました。１． 試掘工 道路の中には水道管だけではなく、下水道、電気、ガス、電話など色々な管路が埋設されています。 調査した図面どおりに埋設されているかを実際に調べるために行う作業が試掘工です。 試掘工は、工事区間内を点々と掘ります。多いときには２０～３０箇所、標準でも１０箇所程度は掘ります。 掘る深さによりますが1日あたり3箇所程度、おおよそ7日間程度を要します。 図面だけではわからない状況が、試掘工で色々とわかってきます。 試掘の結果を基に、設計どおりに工事ができるかを関係者で再度検討します。 方針が決まったところで、工事着工です。． 仮設管布設工 本管を布設する工事のはじまりです。でも、その前に・・・。 水道管を布設するにあたり、断水をすると利用者の皆さんにご迷惑をおかけします。そこで、断水を最小限にとどめる、「仮設管」という仮の管を布設し、この管から一時的に皆さんの家庭に水を供給します。
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>ガス管を確認しました。１． 試掘工 道路の中には水道管だけではなく、下水道、電気、ガス、電話など色々な管路が埋設されています。 調査した図面どおりに埋設されているかを実際に調べるために行う作業が試掘工です。 試掘工は、工事区間内を点々と掘ります。多いときには２０～３０箇所、標準でも１０箇所程度は掘ります。 掘る深さによりますが1日あたり3箇所程度、おおよそ7日間程度を要します。 図面だけではわからない状況が、試掘工で色々とわかってきます。 試掘の結果を基に、設計どおりに工事ができるかを関係者で再度検討します。 方針が決まったところで、工事着工です。． 仮設管布設工 本管を布設する工事のはじまりです。でも、その前に・・・。 水道管を布設するにあたり、断水をすると利用者の皆さんにご迷惑をおかけします。そこで、断水を最小限にとどめる、「仮設管」という仮の管を布設し、この管から一時的に皆さんの家庭に水を供給します。
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210606_084943_745842.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210606_084943_745842.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
