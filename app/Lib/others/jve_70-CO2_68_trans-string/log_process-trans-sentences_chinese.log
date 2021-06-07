@@ -4733,3 +4733,231 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210602_162103_644181.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210602_162103_644181.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210607_085745_311126)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。]]研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。]]当前主流尝试理论有：
+    [1] => 超弦[-xian2
+    [2] => 理论、循环量子引力理论。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。]]研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。]]当前主流尝试理论有：
+[process-trans-sentences_chinese.php : 216] match => 超弦[-xian2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)理论、循环量子引力理论。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_085745_312128.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_085745_312128.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210607_091518_438632)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。]]该理论透过质量对于时空
+    [1] => 曲率[qu1-
+    [2] => 的影响（爱因斯坦方程）而对水星近日点
+    [3] => 岁差偏移[sui4cha1pian1-
+    [4] => 
+    [5] => 、引力场下光线红移、光线
+    [6] => 弯折[wan1zhe2
+    [7] => 等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。]]因此，广义相对论描述经典引力的正确性很少有人怀疑。]]另一方面，量子力学从
+    [8] => 狄拉克[di2la1-
+    [9] => 建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。]]其中包括了量子电动力学与量子色动力学]]
+    [10] => ，成功地解释了四大基本力中的三者－
+    [11] => 电磁力[-ci2-
+    [12] => ]]、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。]]除了未能达成对于引力量子（引力子）的描述之外，]]
+    [13] => 两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的
+    [14] => 平坦[-tan3
+    [15] => 时空下基本力的粒子场上。]]如果要透过这种相同模式来对引力场进行量子化，]]
+    [16] => 则主要问题是在广义相对论的弯曲时空架构，]]
+    [17] => 无法一如以往[:as-usual
+    [18] => 透过重整化的数学
+    [19] => 技巧[-qiao3
+    [20] => 来达成量子化描述，]]
+    [21] => 亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，]]
+    [22] => 没办法用数学技巧得到有意义的有限值；]]
+    [23] => 相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。]]至于实验方面，很遗憾，量子引力所探讨的能量与
+    [24] => 尺度[chi3-:scale
+    [25] => 乃是[nai3-:but
+    [26] => 目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，]]
+    [27] => 但仍属少数特例。]]因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。]]推导量子引力理论的一般方法是
+    [28] => 假设[jia3-
+    [29] => 这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地
+    [30] => 合并
+    [31] => 它们成为一个更加普适的理论。]]这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。]]这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如
+    [32] => 黑洞[-dong4
+    [33] => 的行为，以及宇宙的起源。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。]]该理论透过质量对于时空
+[process-trans-sentences_chinese.php : 216] match => 曲率[qu1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的影响（爱因斯坦方程）而对水星近日点
+[process-trans-sentences_chinese.php : 216] match => 岁差偏移[sui4cha1pian1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、引力场下光线红移、光线
+[process-trans-sentences_chinese.php : 216] match => 弯折[wan1zhe2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。]]因此，广义相对论描述经典引力的正确性很少有人怀疑。]]另一方面，量子力学从
+[process-trans-sentences_chinese.php : 216] match => 狄拉克[di2la1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。]]其中包括了量子电动力学与量子色动力学]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，成功地解释了四大基本力中的三者－
+[process-trans-sentences_chinese.php : 216] match => 电磁力[-ci2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。]]除了未能达成对于引力量子（引力子）的描述之外，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的
+[process-trans-sentences_chinese.php : 216] match => 平坦[-tan3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)时空下基本力的粒子场上。]]如果要透过这种相同模式来对引力场进行量子化，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)则主要问题是在广义相对论的弯曲时空架构，]]
+[process-trans-sentences_chinese.php : 216] match => 无法一如以往[:as-usual
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)透过重整化的数学
+[process-trans-sentences_chinese.php : 216] match => 技巧[-qiao3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)来达成量子化描述，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)没办法用数学技巧得到有意义的有限值；]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。]]至于实验方面，很遗憾，量子引力所探讨的能量与
+[process-trans-sentences_chinese.php : 216] match => 尺度[chi3-:scale
+[process-trans-sentences_chinese.php : 216] match => 乃是[nai3-:but
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)但仍属少数特例。]]因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。]]推导量子引力理论的一般方法是
+[process-trans-sentences_chinese.php : 216] match => 假设[jia3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)合并
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)它们成为一个更加普适的理论。]]这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。]]这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如
+[process-trans-sentences_chinese.php : 216] match => 黑洞[-dong4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的行为，以及宇宙的起源。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_091518_454232.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_091518_454232.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210607_092624_718355)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。]]第一种是广义相对论所采的几何
+    [1] => 诠释[quan2-
+    [2] => 并非究竟，而只是一个未知的背景相依理论的
+    [3] => 近似[-shi4
+    [4] => 表现。]]举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。]]另外相抗衡的观点是背景独立是基础性质，]]
+    [5] => 而量子力学需要被一般化，改写成一个没有预设特定时间的理论。]]这样的几何观点在米斯纳（CharlesW.Misner）、约翰·
+    [6] => 惠勒[hui4lei1
+    [7] => 与基普·索恩三人合写的经典著作《引力论》中详述过。]]理论物理
+    [8] => 巨擘[-bai1
+    [9] => 对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的
+    [10] => 僵局[jiang1-:deadlock
+    [11] => 使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。]]这两种论点分别发展出
+    [12] => 弦论[xian2-
+    [13] => 与循环量子引力理论。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。]]第一种是广义相对论所采的几何
+[process-trans-sentences_chinese.php : 216] match => 诠释[quan2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)并非究竟，而只是一个未知的背景相依理论的
+[process-trans-sentences_chinese.php : 216] match => 近似[-shi4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)表现。]]举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。]]另外相抗衡的观点是背景独立是基础性质，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)而量子力学需要被一般化，改写成一个没有预设特定时间的理论。]]这样的几何观点在米斯纳（CharlesW.Misner）、约翰·
+[process-trans-sentences_chinese.php : 216] match => 惠勒[hui4lei1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)与基普·索恩三人合写的经典著作《引力论》中详述过。]]理论物理
+[process-trans-sentences_chinese.php : 216] match => 巨擘[-bai1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的
+[process-trans-sentences_chinese.php : 216] match => 僵局[jiang1-:deadlock
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。]]这两种论点分别发展出
+[process-trans-sentences_chinese.php : 216] match => 弦论[xian2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)与循环量子引力理论。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_092624_718355.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_092624_718355.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210607_093039_179646)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 理论物理上最深奥的问题之一是调和广义相对论以及量子力学。]]广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。]]广义相对论教导我们没有固定的时空背景，而在牛顿力学与
+    [1] => 狭义[xia2-
+    [2] => 相对论则有；时空几何是动态的。]]虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，
+    [3] => 即使[:even-if
+    [4] => 仅就经典层级而言。]]就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)理论物理上最深奥的问题之一是调和广义相对论以及量子力学。]]广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。]]广义相对论教导我们没有固定的时空背景，而在牛顿力学与
+[process-trans-sentences_chinese.php : 216] match => 狭义[xia2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)相对论则有；时空几何是动态的。]]虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，
+[process-trans-sentences_chinese.php : 216] match => 即使[:even-if
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)仅就经典层级而言。]]就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_093039_181646.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_093039_181646.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210607_102439_380749)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。]]在量子力学中，时间是开始就给定而且非动态的，
+    [1] => 恰如[qia4-
+    [2] => 牛顿的经典力学一般。在相对论性量子场论中，
+    [3] => 一如在[:as-in
+    [4] => 经典场论中，闵可夫斯基[min-
+    [5] => 时空是理论的固定背景。]]弦论从扩充量子场论出发，]]
+    [6] => 其中点粒子代之以弦样物体，在固定时空背景中做
+    [7] => 传递[-di4:transmit
+    [8] => 。]]虽然弦论的起源是在
+    [9] => 夸克[kua1-
+    [10] => 侷束[ju2shu4
+    [11] => （quarkconfinement）研究方面而不是在量子引力方面，很快就发现弦的
+    [12] => 频谱[pin2pu4:spectrum
+    [13] => 包括了引力子，而且弦的几种特定振动模式的“
+    [14] => 凝聚[ning2ju4:cohesion
+    [15] => ”等价于对原始背景的修改。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。]]在量子力学中，时间是开始就给定而且非动态的，
+[process-trans-sentences_chinese.php : 216] match => 恰如[qia4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)牛顿的经典力学一般。在相对论性量子场论中，
+[process-trans-sentences_chinese.php : 216] match => 一如在[:as-in
+[process-trans-sentences_chinese.php : 216] match => 经典场论中，闵可夫斯基[min-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)时空是理论的固定背景。]]弦论从扩充量子场论出发，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)其中点粒子代之以弦样物体，在固定时空背景中做
+[process-trans-sentences_chinese.php : 216] match => 传递[-di4:transmit
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。]]虽然弦论的起源是在
+[process-trans-sentences_chinese.php : 216] match => 夸克[kua1-
+[process-trans-sentences_chinese.php : 216] match => 侷束[ju2shu4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)（quarkconfinement）研究方面而不是在量子引力方面，很快就发现弦的
+[process-trans-sentences_chinese.php : 216] match => 频谱[pin2pu4:spectrum
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)包括了引力子，而且弦的几种特定振动模式的“
+[process-trans-sentences_chinese.php : 216] match => 凝聚[ning2ju4:cohesion
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)”等价于对原始背景的修改。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_102439_396349.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_102439_396349.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210607_103255_001540)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 处在弯曲（非闵可夫斯基式）背景下的量子场论，]]
+    [1] => 虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，]]
+    [2] => 完善的量子引力理论就更不用提了。]]特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。]]此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。]]后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)处在弯曲（非闵可夫斯基式）背景下的量子场论，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)完善的量子引力理论就更不用提了。]]特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。]]此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。]]后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_103255_001540.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_103255_001540.txt'
+  

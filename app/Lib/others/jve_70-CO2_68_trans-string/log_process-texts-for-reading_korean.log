@@ -27756,3 +27756,835 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210606_213326_810772.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_120836_017118)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Quantum gravity (QG) is a field of theoretical physics that seeks to describe gravity according to the principles of quantum mechanics, and where quantum effects cannot be ignored,[1] such as in the vicinity of black holes or similar compact astrophysical objects where the effects of gravity are strong, such as neutron stars.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Quantum gravity (QG) is a field of theoretical physics that seeks to describe gravity according to the principles of quantum mechanics, and where quantum effects cannot be ignored,[1] such as in the vicinity of black holes or similar compact astrophysical objects where the effects of gravity are strong, such as neutron stars.
+    [1] => 
+
+    [2] => Three of the four fundamental forces of physics are described within the framework of quantum mechanics and quantum field theory. The current understanding of the fourth force, gravity, is based on Albert Einstein's general theory of relativity, which is formulated within the entirely different framework of classical physics. However, that description is incomplete: describing the gravitational field of a black hole in the general theory of relativity, physical quantities such as the spacetime curvature diverge at the center of the black hole.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Quantum gravity (QG) is a field of theoretical physics that seeks to describe gravity according to the principles of quantum mechanics, and where quantum effects cannot be ignored,[1] such as in the vicinity of black holes or similar compact astrophysical objects where the effects of gravity are strong, such as neutron stars.
+    [1] => 
+
+    [2] => Three of the four fundamental forces of physics are described within the framework of quantum mechanics and quantum field theory. The current understanding of the fourth force, gravity, is based on Albert Einstein's general theory of relativity, which is formulated within the entirely different framework of classical physics. However, that description is incomplete: describing the gravitational field of a black hole in the general theory of relativity, physical quantities such as the spacetime curvature diverge at the center of the black hole.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Three of the four fundamental forces of physics are described within the framework of quantum mechanics and quantum field theory. The current understanding of the fourth force, gravity, is based on Albert Einstein's general theory of relativity, which is formulated within the entirely different framework of classical physics. However, that description is incomplete: describing the gravitational field of a black hole in the general theory of relativity, physical quantities such as the spacetime curvature diverge at the center of the black hole.
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Quantum gravity (QG) is a field of theoretical physics that seeks to describe gravity according to the principles of quantum mechanics, and where quantum effects cannot be ignored,[1] such as in the vicinity of black holes or similar compact astrophysical objects where the effects of gravity are strong, such as neutron stars.
+    [1] => 
+
+    [2] => Three of the four fundamental forces of physics are described within the framework of quantum mechanics and quantum field theory.The current understanding of the fourth force, gravity, is based on Albert Einstein's general theory of relativity, which is formulated within the entirely different framework of classical physics.However, that description is incomplete: describing the gravitational field of a black hole in the general theory of relativity, physical quantities such as the spacetime curvature diverge at the center of the black hole.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Quantum gravity (QG) is a field of theoretical physics that seeks to describe gravity according to the principles of quantum mechanics, and where quantum effects cannot be ignored,[1] such as in the vicinity of black holes or similar compact astrophysical objects where the effects of gravity are strong, such as neutron stars.
+Three of the four fundamental forces of physics are described within the framework of quantum mechanics and quantum field theory.The current understanding of the fourth force, gravity, is based on Albert Einstein's general theory of relativity, which is formulated within the entirely different framework of classical physics.However, that description is incomplete: describing the gravitational field of a black hole in the general theory of relativity, physical quantities such as the spacetime curvature diverge at the center of the black hole.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_120836_017118.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_120836_017118.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_121726_360866)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => This signals the breakdown of the general theory of relativity and the need for a theory that goes beyond general relativity into the quantum. At distances very close to the center of the black hole (closer than the Planck length), quantum fluctuations of spacetime are expected to play an important role.[2] To describe these quantum effects a theory of quantum gravity is needed. Such a theory should allow the description to be extended closer to the center and might even allow an understanding of physics at the center of a black hole. On more formal grounds, one can argue that a classical system cannot consistently be coupled to a quantum one.[3][4]:11–12
+
+    [1] => 
+
+    [2] => The field of quantum gravity is actively developing, and theorists are exploring a variety of approaches to the problem of quantum gravity, the most popular being M-theory and loop quantum gravity.[5] All of these approaches aim to describe the quantum behavior of the gravitational field. This does not necessarily include unifying all fundamental interactions into a single mathematical framework. However, many approaches to quantum gravity, such as string theory, try to develop a framework that describes all fundamental forces. Such theories are often referred to as a theory of everything. Others, such as loop quantum gravity, make no such attempt; instead, they make an effort to quantize the gravitational field while it is kept separate from the other forces. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->This signals the breakdown of the general theory of relativity and the need for a theory that goes beyond general relativity into the quantum. At distances very close to the center of the black hole (closer than the Planck length), quantum fluctuations of spacetime are expected to play an important role.[2] To describe these quantum effects a theory of quantum gravity is needed. Such a theory should allow the description to be extended closer to the center and might even allow an understanding of physics at the center of a black hole. On more formal grounds, one can argue that a classical system cannot consistently be coupled to a quantum one.[3][4]:11–12
+
+$matches ==>
+Array
+(
+    [0] => 2
+
+    [1] => 2
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => This signals the breakdown of the general theory of relativity and the need for a theory that goes beyond general relativity into the quantum. At distances very close to the center of the black hole (closer than the Planck length), quantum fluctuations of spacetime are expected to play an important role.[2] To describe these quantum effects a theory of quantum gravity is needed. Such a theory should allow the description to be extended closer to the center and might even allow an understanding of physics at the center of a black hole. On more formal grounds, one can argue that a classical system cannot consistently be coupled to a quantum one.[3][4]:11–12 
+    [1] => 
+
+    [2] => The field of quantum gravity is actively developing, and theorists are exploring a variety of approaches to the problem of quantum gravity, the most popular being M-theory and loop quantum gravity.[5] All of these approaches aim to describe the quantum behavior of the gravitational field. This does not necessarily include unifying all fundamental interactions into a single mathematical framework. However, many approaches to quantum gravity, such as string theory, try to develop a framework that describes all fundamental forces. Such theories are often referred to as a theory of everything. Others, such as loop quantum gravity, make no such attempt; instead, they make an effort to quantize the gravitational field while it is kept separate from the other forces. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->This signals the breakdown of the general theory of relativity and the need for a theory that goes beyond general relativity into the quantum. At distances very close to the center of the black hole (closer than the Planck length), quantum fluctuations of spacetime are expected to play an important role.[2] To describe these quantum effects a theory of quantum gravity is needed. Such a theory should allow the description to be extended closer to the center and might even allow an understanding of physics at the center of a black hole. On more formal grounds, one can argue that a classical system cannot consistently be coupled to a quantum one.[3][4]:11–12 
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The field of quantum gravity is actively developing, and theorists are exploring a variety of approaches to the problem of quantum gravity, the most popular being M-theory and loop quantum gravity.[5] All of these approaches aim to describe the quantum behavior of the gravitational field. This does not necessarily include unifying all fundamental interactions into a single mathematical framework. However, many approaches to quantum gravity, such as string theory, try to develop a framework that describes all fundamental forces. Such theories are often referred to as a theory of everything. Others, such as loop quantum gravity, make no such attempt; instead, they make an effort to quantize the gravitational field while it is kept separate from the other forces. 
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => This signals the breakdown of the general theory of relativity and the need for a theory that goes beyond general relativity into the quantum.At distances very close to the center of the black hole (closer than the Planck length), quantum fluctuations of spacetime are expected to play an important role.[2] To describe these quantum effects a theory of quantum gravity is needed.Such a theory should allow the description to be extended closer to the center and might even allow an understanding of physics at the center of a black hole.On more formal grounds, one can argue that a classical system cannot consistently be coupled to a quantum one.[3][4]:11–12 
+    [1] => 
+
+    [2] => The field of quantum gravity is actively developing, and theorists are exploring a variety of approaches to the problem of quantum gravity, the most popular being M-theory and loop quantum gravity.[5] All of these approaches aim to describe the quantum behavior of the gravitational field.This does not necessarily include unifying all fundamental interactions into a single mathematical framework.However, many approaches to quantum gravity, such as string theory, try to develop a framework that describes all fundamental forces.Such theories are often referred to as a theory of everything.Others, such as loop quantum gravity, make no such attempt; instead, they make an effort to quantize the gravitational field while it is kept separate from the other forces.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>This signals the breakdown of the general theory of relativity and the need for a theory that goes beyond general relativity into the quantum.At distances very close to the center of the black hole (closer than the Planck length), quantum fluctuations of spacetime are expected to play an important role.[2] To describe these quantum effects a theory of quantum gravity is needed.Such a theory should allow the description to be extended closer to the center and might even allow an understanding of physics at the center of a black hole.On more formal grounds, one can argue that a classical system cannot consistently be coupled to a quantum one.[3][4]:11–12 
+The field of quantum gravity is actively developing, and theorists are exploring a variety of approaches to the problem of quantum gravity, the most popular being M-theory and loop quantum gravity.[5] All of these approaches aim to describe the quantum behavior of the gravitational field.This does not necessarily include unifying all fundamental interactions into a single mathematical framework.However, many approaches to quantum gravity, such as string theory, try to develop a framework that describes all fundamental forces.Such theories are often referred to as a theory of everything.Others, such as loop quantum gravity, make no such attempt; instead, they make an effort to quantize the gravitational field while it is kept separate from the other forces.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_121726_360866.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_121726_360866.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_122030_587793)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => One of the difficulties of formulating a quantum gravity theory is that quantum gravitational effects only appear at length scales near the Planck scale, around 10−35 meters, a scale far smaller, and hence only accessible with far higher energies, than those currently available in high energy particle accelerators. Therefore, physicists lack experimental data which could distinguish between the competing theories which have been proposed[n.b. 1][n.b. 2] and thus thought experiment approaches are suggested as a testing tool for these theories.[6][7][8]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => One of the difficulties of formulating a quantum gravity theory is that quantum gravitational effects only appear at length scales near the Planck scale, around 10−35 meters, a scale far smaller, and hence only accessible with far higher energies, than those currently available in high energy particle accelerators. Therefore, physicists lack experimental data which could distinguish between the competing theories which have been proposed[n.b. 1][n.b. 2] and thus thought experiment approaches are suggested as a testing tool for these theories.[6][7][8]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->One of the difficulties of formulating a quantum gravity theory is that quantum gravitational effects only appear at length scales near the Planck scale, around 10−35 meters, a scale far smaller, and hence only accessible with far higher energies, than those currently available in high energy particle accelerators. Therefore, physicists lack experimental data which could distinguish between the competing theories which have been proposed[n.b. 1][n.b. 2] and thus thought experiment approaches are suggested as a testing tool for these theories.[6][7][8]
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => One of the difficulties of formulating a quantum gravity theory is that quantum gravitational effects only appear at length scales near the Planck scale, around 10−35 meters, a scale far smaller, and hence only accessible with far higher energies, than those currently available in high energy particle accelerators.Therefore, physicists lack experimental data which could distinguish between the competing theories which have been proposed[n.b.1][n.b.2] and thus thought experiment approaches are suggested as a testing tool for these theories.[6][7][8]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>One of the difficulties of formulating a quantum gravity theory is that quantum gravitational effects only appear at length scales near the Planck scale, around 10−35 meters, a scale far smaller, and hence only accessible with far higher energies, than those currently available in high energy particle accelerators.Therefore, physicists lack experimental data which could distinguish between the competing theories which have been proposed[n.b.1][n.b.2] and thus thought experiment approaches are suggested as a testing tool for these theories.[6][7][8]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_122030_587793.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_122030_587793.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_122153_714342)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Much of the difficulty in meshing these theories at all energy scales comes from the different assumptions that these theories make on how the universe works. General relativity models gravity as curvature of spacetime: in the slogan of John Archibald Wheeler, "Spacetime tells matter how to move; matter tells spacetime how to curve."[9] On the other hand, quantum field theory is typically formulated in the flat spacetime used in special relativity. No theory has yet proven successful in describing the general situation where the dynamics of matter, modeled with quantum mechanics, affect the curvature of spacetime. If one attempts to treat gravity as simply another quantum field, the resulting theory is not renormalizable.[10] Even in the simpler case where the curvature of spacetime is fixed a priori, developing quantum field theory becomes more mathematically challenging, and many ideas physicists use in quantum field theory on flat spacetime are no longer applicable.[11]
+
+    [1] => 
+
+    [2] => It is widely hoped that a theory of quantum gravity would allow us to understand problems of very high energy and very small dimensions of space, such as the behavior of black holes, and the origin of the universe.[1] 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Much of the difficulty in meshing these theories at all energy scales comes from the different assumptions that these theories make on how the universe works. General relativity models gravity as curvature of spacetime: in the slogan of John Archibald Wheeler, "Spacetime tells matter how to move; matter tells spacetime how to curve."[9] On the other hand, quantum field theory is typically formulated in the flat spacetime used in special relativity. No theory has yet proven successful in describing the general situation where the dynamics of matter, modeled with quantum mechanics, affect the curvature of spacetime. If one attempts to treat gravity as simply another quantum field, the resulting theory is not renormalizable.[10] Even in the simpler case where the curvature of spacetime is fixed a priori, developing quantum field theory becomes more mathematically challenging, and many ideas physicists use in quantum field theory on flat spacetime are no longer applicable.[11]
+
+$matches ==>
+Array
+(
+    [0] => ]
+
+    [1] => ]
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Much of the difficulty in meshing these theories at all energy scales comes from the different assumptions that these theories make on how the universe works. General relativity models gravity as curvature of spacetime: in the slogan of John Archibald Wheeler, "Spacetime tells matter how to move; matter tells spacetime how to curve."[9] On the other hand, quantum field theory is typically formulated in the flat spacetime used in special relativity. No theory has yet proven successful in describing the general situation where the dynamics of matter, modeled with quantum mechanics, affect the curvature of spacetime. If one attempts to treat gravity as simply another quantum field, the resulting theory is not renormalizable.[10] Even in the simpler case where the curvature of spacetime is fixed a priori, developing quantum field theory becomes more mathematically challenging, and many ideas physicists use in quantum field theory on flat spacetime are no longer applicable.[11] 
+    [1] => 
+
+    [2] => It is widely hoped that a theory of quantum gravity would allow us to understand problems of very high energy and very small dimensions of space, such as the behavior of black holes, and the origin of the universe.[1] 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Much of the difficulty in meshing these theories at all energy scales comes from the different assumptions that these theories make on how the universe works. General relativity models gravity as curvature of spacetime: in the slogan of John Archibald Wheeler, "Spacetime tells matter how to move; matter tells spacetime how to curve."[9] On the other hand, quantum field theory is typically formulated in the flat spacetime used in special relativity. No theory has yet proven successful in describing the general situation where the dynamics of matter, modeled with quantum mechanics, affect the curvature of spacetime. If one attempts to treat gravity as simply another quantum field, the resulting theory is not renormalizable.[10] Even in the simpler case where the curvature of spacetime is fixed a priori, developing quantum field theory becomes more mathematically challenging, and many ideas physicists use in quantum field theory on flat spacetime are no longer applicable.[11] 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Much of the difficulty in meshing these theories at all energy scales comes from the different assumptions that these theories make on how the universe works.General relativity models gravity as curvature of spacetime: in the slogan of John Archibald Wheeler, "Spacetime tells matter how to move; matter tells spacetime how to curve."[9] On the other hand, quantum field theory is typically formulated in the flat spacetime used in special relativity.No theory has yet proven successful in describing the general situation where the dynamics of matter, modeled with quantum mechanics, affect the curvature of spacetime.If one attempts to treat gravity as simply another quantum field, the resulting theory is not renormalizable.[10] Even in the simpler case where the curvature of spacetime is fixed a priori, developing quantum field theory becomes more mathematically challenging, and many ideas physicists use in quantum field theory on flat spacetime are no longer applicable.[11] 
+    [1] => 
+
+    [2] => It is widely hoped that a theory of quantum gravity would allow us to understand problems of very high energy and very small dimensions of space, such as the behavior of black holes, and the origin of the universe.[1] 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Much of the difficulty in meshing these theories at all energy scales comes from the different assumptions that these theories make on how the universe works.General relativity models gravity as curvature of spacetime: in the slogan of John Archibald Wheeler, "Spacetime tells matter how to move; matter tells spacetime how to curve."[9] On the other hand, quantum field theory is typically formulated in the flat spacetime used in special relativity.No theory has yet proven successful in describing the general situation where the dynamics of matter, modeled with quantum mechanics, affect the curvature of spacetime.If one attempts to treat gravity as simply another quantum field, the resulting theory is not renormalizable.[10] Even in the simpler case where the curvature of spacetime is fixed a priori, developing quantum field theory becomes more mathematically challenging, and many ideas physicists use in quantum field theory on flat spacetime are no longer applicable.[11] 
+It is widely hoped that a theory of quantum gravity would allow us to understand problems of very high energy and very small dimensions of space, such as the behavior of black holes, and the origin of the universe.[1] 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_122153_714342.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_122153_714342.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_123244_590568)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Renormalization is a collection of techniques in quantum field theory, the statistical mechanics of fields, and the theory of self-similar geometric structures, that are used to treat infinities arising in calculated quantities by altering values of these quantities to compensate for effects of their self-interactions. But even if no infinities arose in loop diagrams in quantum field theory, it could be shown that it would be necessary to renormalize the mass and fields appearing in the original Lagrangian.[1]
+
+    [1] => 
+
+    [2] => For example, an electron theory may begin by postulating an electron with an initial mass and charge. In quantum field theory a cloud of virtual particles, such as photons, positrons, and others surrounds and interacts with the initial electron. Accounting for the interactions of the surrounding particles (e.g. collisions at different energies) shows that the electron-system behaves as if it had a different mass and charge than initially postulated. Renormalization, in this example, mathematically replaces the initially postulated mass and charge of an electron with the experimentally observed mass and charge. Mathematics and experiments prove that positrons and more massive particles like protons, exhibit precisely the same observed charge as the electron - even in the presence of much stronger interactions and more intense clouds of virtual particles. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Renormalization is a collection of techniques in quantum field theory, the statistical mechanics of fields, and the theory of self-similar geometric structures, that are used to treat infinities arising in calculated quantities by altering values of these quantities to compensate for effects of their self-interactions. But even if no infinities arose in loop diagrams in quantum field theory, it could be shown that it would be necessary to renormalize the mass and fields appearing in the original Lagrangian.[1]
+
+$matches ==>
+Array
+(
+    [0] => ]
+
+    [1] => ]
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Renormalization is a collection of techniques in quantum field theory, the statistical mechanics of fields, and the theory of self-similar geometric structures, that are used to treat infinities arising in calculated quantities by altering values of these quantities to compensate for effects of their self-interactions. But even if no infinities arose in loop diagrams in quantum field theory, it could be shown that it would be necessary to renormalize the mass and fields appearing in the original Lagrangian.[1] 
+    [1] => 
+
+    [2] => For example, an electron theory may begin by postulating an electron with an initial mass and charge. In quantum field theory a cloud of virtual particles, such as photons, positrons, and others surrounds and interacts with the initial electron. Accounting for the interactions of the surrounding particles (e.g. collisions at different energies) shows that the electron-system behaves as if it had a different mass and charge than initially postulated. Renormalization, in this example, mathematically replaces the initially postulated mass and charge of an electron with the experimentally observed mass and charge. Mathematics and experiments prove that positrons and more massive particles like protons, exhibit precisely the same observed charge as the electron - even in the presence of much stronger interactions and more intense clouds of virtual particles. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Renormalization is a collection of techniques in quantum field theory, the statistical mechanics of fields, and the theory of self-similar geometric structures, that are used to treat infinities arising in calculated quantities by altering values of these quantities to compensate for effects of their self-interactions. But even if no infinities arose in loop diagrams in quantum field theory, it could be shown that it would be necessary to renormalize the mass and fields appearing in the original Lagrangian.[1] 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->For example, an electron theory may begin by postulating an electron with an initial mass and charge. In quantum field theory a cloud of virtual particles, such as photons, positrons, and others surrounds and interacts with the initial electron. Accounting for the interactions of the surrounding particles (e.g. collisions at different energies) shows that the electron-system behaves as if it had a different mass and charge than initially postulated. Renormalization, in this example, mathematically replaces the initially postulated mass and charge of an electron with the experimentally observed mass and charge. Mathematics and experiments prove that positrons and more massive particles like protons, exhibit precisely the same observed charge as the electron - even in the presence of much stronger interactions and more intense clouds of virtual particles. 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Renormalization is a collection of techniques in quantum field theory, the statistical mechanics of fields, and the theory of self-similar geometric structures, that are used to treat infinities arising in calculated quantities by altering values of these quantities to compensate for effects of their self-interactions.But even if no infinities arose in loop diagrams in quantum field theory, it could be shown that it would be necessary to renormalize the mass and fields appearing in the original Lagrangian.[1] 
+    [1] => 
+
+    [2] => For example, an electron theory may begin by postulating an electron with an initial mass and charge.In quantum field theory a cloud of virtual particles, such as photons, positrons, and others surrounds and interacts with the initial electron.Accounting for the interactions of the surrounding particles (e.g.collisions at different energies) shows that the electron-system behaves as if it had a different mass and charge than initially postulated.Renormalization, in this example, mathematically replaces the initially postulated mass and charge of an electron with the experimentally observed mass and charge.Mathematics and experiments prove that positrons and more massive particles like protons, exhibit precisely the same observed charge as the electron - even in the presence of much stronger interactions and more intense clouds of virtual particles.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Renormalization is a collection of techniques in quantum field theory, the statistical mechanics of fields, and the theory of self-similar geometric structures, that are used to treat infinities arising in calculated quantities by altering values of these quantities to compensate for effects of their self-interactions.But even if no infinities arose in loop diagrams in quantum field theory, it could be shown that it would be necessary to renormalize the mass and fields appearing in the original Lagrangian.[1] 
+For example, an electron theory may begin by postulating an electron with an initial mass and charge.In quantum field theory a cloud of virtual particles, such as photons, positrons, and others surrounds and interacts with the initial electron.Accounting for the interactions of the surrounding particles (e.g.collisions at different energies) shows that the electron-system behaves as if it had a different mass and charge than initially postulated.Renormalization, in this example, mathematically replaces the initially postulated mass and charge of an electron with the experimentally observed mass and charge.Mathematics and experiments prove that positrons and more massive particles like protons, exhibit precisely the same observed charge as the electron - even in the presence of much stronger interactions and more intense clouds of virtual particles.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_123244_590568.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_123244_590568.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_125510_423731)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Renormalization specifies relationships between parameters in the theory when parameters describing large distance scales differ from parameters describing small distance scales. Physically, the pileup of contributions from an infinity of scales involved in a problem may then result in further infinities. When describing space-time as a continuum, certain statistical and quantum mechanical constructions are not well-defined. To define them, or make them unambiguous, a continuum limit must carefully remove "construction scaffolding" of lattices at various scales. Renormalization procedures are based on the requirement that certain physical quantities (such as the mass and charge of an electron) equal observed (experimental) values. That is, the experimental value of the physical quantity yields practical applications, but due to their empirical nature the observed measurement represents areas of quantum field theory that require deeper derivation from theoretical bases. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Renormalization specifies relationships between parameters in the theory when parameters describing large distance scales differ from parameters describing small distance scales. Physically, the pileup of contributions from an infinity of scales involved in a problem may then result in further infinities. When describing space-time as a continuum, certain statistical and quantum mechanical constructions are not well-defined. To define them, or make them unambiguous, a continuum limit must carefully remove "construction scaffolding" of lattices at various scales. Renormalization procedures are based on the requirement that certain physical quantities (such as the mass and charge of an electron) equal observed (experimental) values. That is, the experimental value of the physical quantity yields practical applications, but due to their empirical nature the observed measurement represents areas of quantum field theory that require deeper derivation from theoretical bases. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Renormalization specifies relationships between parameters in the theory when parameters describing large distance scales differ from parameters describing small distance scales. Physically, the pileup of contributions from an infinity of scales involved in a problem may then result in further infinities. When describing space-time as a continuum, certain statistical and quantum mechanical constructions are not well-defined. To define them, or make them unambiguous, a continuum limit must carefully remove "construction scaffolding" of lattices at various scales. Renormalization procedures are based on the requirement that certain physical quantities (such as the mass and charge of an electron) equal observed (experimental) values. That is, the experimental value of the physical quantity yields practical applications, but due to their empirical nature the observed measurement represents areas of quantum field theory that require deeper derivation from theoretical bases. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Renormalization specifies relationships between parameters in the theory when parameters describing large distance scales differ from parameters describing small distance scales.Physically, the pileup of contributions from an infinity of scales involved in a problem may then result in further infinities.When describing space-time as a continuum, certain statistical and quantum mechanical constructions are not well-defined.To define them, or make them unambiguous, a continuum limit must carefully remove "construction scaffolding" of lattices at various scales.Renormalization procedures are based on the requirement that certain physical quantities (such as the mass and charge of an electron) equal observed (experimental) values.That is, the experimental value of the physical quantity yields practical applications, but due to their empirical nature the observed measurement represents areas of quantum field theory that require deeper derivation from theoretical bases.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Renormalization specifies relationships between parameters in the theory when parameters describing large distance scales differ from parameters describing small distance scales.Physically, the pileup of contributions from an infinity of scales involved in a problem may then result in further infinities.When describing space-time as a continuum, certain statistical and quantum mechanical constructions are not well-defined.To define them, or make them unambiguous, a continuum limit must carefully remove "construction scaffolding" of lattices at various scales.Renormalization procedures are based on the requirement that certain physical quantities (such as the mass and charge of an electron) equal observed (experimental) values.That is, the experimental value of the physical quantity yields practical applications, but due to their empirical nature the observed measurement represents areas of quantum field theory that require deeper derivation from theoretical bases.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_125510_423731.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_125510_423731.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_130425_809111)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Renormalization was first developed in quantum electrodynamics (QED) to make sense of infinite integrals in perturbation theory. Initially viewed as a suspect provisional procedure even by some of its originators, renormalization eventually was embraced as an important and self-consistent actual mechanism of scale physics in several fields of physics and mathematics. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Renormalization was first developed in quantum electrodynamics (QED) to make sense of infinite integrals in perturbation theory. Initially viewed as a suspect provisional procedure even by some of its originators, renormalization eventually was embraced as an important and self-consistent actual mechanism of scale physics in several fields of physics and mathematics. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Renormalization was first developed in quantum electrodynamics (QED) to make sense of infinite integrals in perturbation theory. Initially viewed as a suspect provisional procedure even by some of its originators, renormalization eventually was embraced as an important and self-consistent actual mechanism of scale physics in several fields of physics and mathematics. 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Renormalization was first developed in quantum electrodynamics (QED) to make sense of infinite integrals in perturbation theory.Initially viewed as a suspect provisional procedure even by some of its originators, renormalization eventually was embraced as an important and self-consistent actual mechanism of scale physics in several fields of physics and mathematics.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Renormalization was first developed in quantum electrodynamics (QED) to make sense of infinite integrals in perturbation theory.Initially viewed as a suspect provisional procedure even by some of its originators, renormalization eventually was embraced as an important and self-consistent actual mechanism of scale physics in several fields of physics and mathematics.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_130425_809111.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_130425_809111.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_130835_004244)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Today, the point of view has shifted: on the basis of the breakthrough renormalization group insights of Nikolay Bogolyubov and Kenneth Wilson, the focus is on variation of physical quantities across contiguous scales, while distant scales are related to each other through "effective" descriptions. All scales are linked in a broadly systematic way, and the actual physics pertinent to each is extracted with the suitable specific computational techniques appropriate for each. Wilson clarified which variables of a system are crucial and which are redundant. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Today, the point of view has shifted: on the basis of the breakthrough renormalization group insights of Nikolay Bogolyubov and Kenneth Wilson, the focus is on variation of physical quantities across contiguous scales, while distant scales are related to each other through "effective" descriptions. All scales are linked in a broadly systematic way, and the actual physics pertinent to each is extracted with the suitable specific computational techniques appropriate for each. Wilson clarified which variables of a system are crucial and which are redundant. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Today, the point of view has shifted: on the basis of the breakthrough renormalization group insights of Nikolay Bogolyubov and Kenneth Wilson, the focus is on variation of physical quantities across contiguous scales, while distant scales are related to each other through "effective" descriptions. All scales are linked in a broadly systematic way, and the actual physics pertinent to each is extracted with the suitable specific computational techniques appropriate for each. Wilson clarified which variables of a system are crucial and which are redundant. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Today, the point of view has shifted: on the basis of the breakthrough renormalization group insights of Nikolay Bogolyubov and Kenneth Wilson, the focus is on variation of physical quantities across contiguous scales, while distant scales are related to each other through "effective" descriptions.All scales are linked in a broadly systematic way, and the actual physics pertinent to each is extracted with the suitable specific computational techniques appropriate for each.Wilson clarified which variables of a system are crucial and which are redundant.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Today, the point of view has shifted: on the basis of the breakthrough renormalization group insights of Nikolay Bogolyubov and Kenneth Wilson, the focus is on variation of physical quantities across contiguous scales, while distant scales are related to each other through "effective" descriptions.All scales are linked in a broadly systematic way, and the actual physics pertinent to each is extracted with the suitable specific computational techniques appropriate for each.Wilson clarified which variables of a system are crucial and which are redundant.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_130835_004244.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_130835_004244.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_134138_778914)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Renormalization is distinct from regularization, another technique to control infinities by assuming the existence of new unknown physics at new scales. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Renormalization is distinct from regularization, another technique to control infinities by assuming the existence of new unknown physics at new scales. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Renormalization is distinct from regularization, another technique to control infinities by assuming the existence of new unknown physics at new scales. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Renormalization is distinct from regularization, another technique to control infinities by assuming the existence of new unknown physics at new scales.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Renormalization is distinct from regularization, another technique to control infinities by assuming the existence of new unknown physics at new scales.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_134138_778914.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_134138_778914.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_155025_582678)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Graviton
+
+    [1] => Main article: Graviton
+
+    [2] => The observation that all fundamental forces except gravity have one or more known messenger particles leads researchers to believe that at least one must exist for gravity. This hypothetical particle is known as the graviton. These particles act as a force particle similar to the photon of the electromagnetic interaction. Under mild assumptions, the structure of general relativity requires them to follow the quantum mechanical description of interacting theoretical spin-2 massless particles.[12][13][14][15][16] Many of the accepted notions of a unified theory of physics since the 1970s assume, and to some degree depend upon, the existence of the graviton. The Weinberg–Witten theorem places some constraints on theories in which the graviton is a composite particle.[17][18] While gravitons are an important theoretical step in a quantum mechanical description of gravity, they are generally believed to be undetectable because they interact too weakly.[19]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Graviton
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Main article: Graviton
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Graviton 
+    [1] => Main article: Graviton 
+    [2] => The observation that all fundamental forces except gravity have one or more known messenger particles leads researchers to believe that at least one must exist for gravity. This hypothetical particle is known as the graviton. These particles act as a force particle similar to the photon of the electromagnetic interaction. Under mild assumptions, the structure of general relativity requires them to follow the quantum mechanical description of interacting theoretical spin-2 massless particles.[12][13][14][15][16] Many of the accepted notions of a unified theory of physics since the 1970s assume, and to some degree depend upon, the existence of the graviton. The Weinberg–Witten theorem places some constraints on theories in which the graviton is a composite particle.[17][18] While gravitons are an important theoretical step in a quantum mechanical description of gravity, they are generally believed to be undetectable because they interact too weakly.[19]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The observation that all fundamental forces except gravity have one or more known messenger particles leads researchers to believe that at least one must exist for gravity. This hypothetical particle is known as the graviton. These particles act as a force particle similar to the photon of the electromagnetic interaction. Under mild assumptions, the structure of general relativity requires them to follow the quantum mechanical description of interacting theoretical spin-2 massless particles.[12][13][14][15][16] Many of the accepted notions of a unified theory of physics since the 1970s assume, and to some degree depend upon, the existence of the graviton. The Weinberg–Witten theorem places some constraints on theories in which the graviton is a composite particle.[17][18] While gravitons are an important theoretical step in a quantum mechanical description of gravity, they are generally believed to be undetectable because they interact too weakly.[19]
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Graviton 
+    [1] => Main article: Graviton 
+    [2] => The observation that all fundamental forces except gravity have one or more known messenger particles leads researchers to believe that at least one must exist for gravity.This hypothetical particle is known as the graviton.These particles act as a force particle similar to the photon of the electromagnetic interaction.Under mild assumptions, the structure of general relativity requires them to follow the quantum mechanical description of interacting theoretical spin-2 massless particles.[12][13][14][15][16] Many of the accepted notions of a unified theory of physics since the 1970s assume, and to some degree depend upon, the existence of the graviton.The Weinberg–Witten theorem places some constraints on theories in which the graviton is a composite particle.[17][18] While gravitons are an important theoretical step in a quantum mechanical description of gravity, they are generally believed to be undetectable because they interact too weakly.[19]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Graviton Main article: Graviton The observation that all fundamental forces except gravity have one or more known messenger particles leads researchers to believe that at least one must exist for gravity.This hypothetical particle is known as the graviton.These particles act as a force particle similar to the photon of the electromagnetic interaction.Under mild assumptions, the structure of general relativity requires them to follow the quantum mechanical description of interacting theoretical spin-2 massless particles.[12][13][14][15][16] Many of the accepted notions of a unified theory of physics since the 1970s assume, and to some degree depend upon, the existence of the graviton.The Weinberg–Witten theorem places some constraints on theories in which the graviton is a composite particle.[17][18] While gravitons are an important theoretical step in a quantum mechanical description of gravity, they are generally believed to be undetectable because they interact too weakly.[19]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_155025_582678.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_155025_582678.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_155720_770807)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'General relativity, like electromagnetism, is a classical field theory. One might expect that, as with electromagnetism, the gravitational force should also have a corresponding quantum field theory.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'However, gravity is perturbatively nonrenormalizable.[4]:xxxvi–xxxviii;211–212[20] For a quantum field theory to be well defined according to this understanding of the subject, it must be asymptotically free or asymptotically safe. The theory must be characterized by a choice of finitely many parameters, which could, in principle, be set by experiment. For example, in quantum electrodynamics these parameters are the charge and mass of the electron, as measured at a particular energy scale.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => General relativity, like electromagnetism, is a classical field theory. One might expect that, as with electromagnetism, the gravitational force should also have a corresponding quantum field theory.
+    [1] => 
+
+    [2] => However, gravity is perturbatively nonrenormalizable.[4]:xxxvi–xxxviii;211–212[20] For a quantum field theory to be well defined according to this understanding of the subject, it must be asymptotically free or asymptotically safe. The theory must be characterized by a choice of finitely many parameters, which could, in principle, be set by experiment. For example, in quantum electrodynamics these parameters are the charge and mass of the electron, as measured at a particular energy scale.
+    [3] => 
+
+    [4] => On the other hand, in quantizing gravity there are, in perturbation theory, infinitely many independent parameters (counterterm coefficients) needed to define the theory. For a given choice of those parameters, one could make sense of the theory, but since it is impossible to conduct infinite experiments to fix the values of every parameter, it has been argued that one does not, in perturbation theory, have a meaningful physical theory. At low energies, the logic of the renormalization group tells us that, despite the unknown choices of these infinitely many parameters, quantum gravity will reduce to the usual Einstein theory of general relativity. On the other hand, if we could probe very high energies where quantum effects take over, then every one of the infinitely many unknown parameters would begin to matter, and we could make no predictions at all.[21]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => General relativity, like electromagnetism, is a classical field theory. One might expect that, as with electromagnetism, the gravitational force should also have a corresponding quantum field theory.
+    [1] => 
+
+    [2] => However, gravity is perturbatively nonrenormalizable.[4]:xxxvi–xxxviii;211–212[20] For a quantum field theory to be well defined according to this understanding of the subject, it must be asymptotically free or asymptotically safe. The theory must be characterized by a choice of finitely many parameters, which could, in principle, be set by experiment. For example, in quantum electrodynamics these parameters are the charge and mass of the electron, as measured at a particular energy scale.
+    [3] => 
+
+    [4] => On the other hand, in quantizing gravity there are, in perturbation theory, infinitely many independent parameters (counterterm coefficients) needed to define the theory. For a given choice of those parameters, one could make sense of the theory, but since it is impossible to conduct infinite experiments to fix the values of every parameter, it has been argued that one does not, in perturbation theory, have a meaningful physical theory. At low energies, the logic of the renormalization group tells us that, despite the unknown choices of these infinitely many parameters, quantum gravity will reduce to the usual Einstein theory of general relativity. On the other hand, if we could probe very high energies where quantum effects take over, then every one of the infinitely many unknown parameters would begin to matter, and we could make no predictions at all.[21]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->General relativity, like electromagnetism, is a classical field theory. One might expect that, as with electromagnetism, the gravitational force should also have a corresponding quantum field theory.
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->However, gravity is perturbatively nonrenormalizable.[4]:xxxvi–xxxviii;211–212[20] For a quantum field theory to be well defined according to this understanding of the subject, it must be asymptotically free or asymptotically safe. The theory must be characterized by a choice of finitely many parameters, which could, in principle, be set by experiment. For example, in quantum electrodynamics these parameters are the charge and mass of the electron, as measured at a particular energy scale.
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->On the other hand, in quantizing gravity there are, in perturbation theory, infinitely many independent parameters (counterterm coefficients) needed to define the theory. For a given choice of those parameters, one could make sense of the theory, but since it is impossible to conduct infinite experiments to fix the values of every parameter, it has been argued that one does not, in perturbation theory, have a meaningful physical theory. At low energies, the logic of the renormalization group tells us that, despite the unknown choices of these infinitely many parameters, quantum gravity will reduce to the usual Einstein theory of general relativity. On the other hand, if we could probe very high energies where quantum effects take over, then every one of the infinitely many unknown parameters would begin to matter, and we could make no predictions at all.[21]
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => General relativity, like electromagnetism, is a classical field theory.One might expect that, as with electromagnetism, the gravitational force should also have a corresponding quantum field theory.
+    [1] => 
+
+    [2] => However, gravity is perturbatively nonrenormalizable.[4]:xxxvi–xxxviii;211–212[20] For a quantum field theory to be well defined according to this understanding of the subject, it must be asymptotically free or asymptotically safe.The theory must be characterized by a choice of finitely many parameters, which could, in principle, be set by experiment.For example, in quantum electrodynamics these parameters are the charge and mass of the electron, as measured at a particular energy scale.
+    [3] => 
+
+    [4] => On the other hand, in quantizing gravity there are, in perturbation theory, infinitely many independent parameters (counterterm coefficients) needed to define the theory.For a given choice of those parameters, one could make sense of the theory, but since it is impossible to conduct infinite experiments to fix the values of every parameter, it has been argued that one does not, in perturbation theory, have a meaningful physical theory.At low energies, the logic of the renormalization group tells us that, despite the unknown choices of these infinitely many parameters, quantum gravity will reduce to the usual Einstein theory of general relativity.On the other hand, if we could probe very high energies where quantum effects take over, then every one of the infinitely many unknown parameters would begin to matter, and we could make no predictions at all.[21]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>General relativity, like electromagnetism, is a classical field theory.One might expect that, as with electromagnetism, the gravitational force should also have a corresponding quantum field theory.
+However, gravity is perturbatively nonrenormalizable.[4]:xxxvi–xxxviii;211–212[20] For a quantum field theory to be well defined according to this understanding of the subject, it must be asymptotically free or asymptotically safe.The theory must be characterized by a choice of finitely many parameters, which could, in principle, be set by experiment.For example, in quantum electrodynamics these parameters are the charge and mass of the electron, as measured at a particular energy scale.
+On the other hand, in quantizing gravity there are, in perturbation theory, infinitely many independent parameters (counterterm coefficients) needed to define the theory.For a given choice of those parameters, one could make sense of the theory, but since it is impossible to conduct infinite experiments to fix the values of every parameter, it has been argued that one does not, in perturbation theory, have a meaningful physical theory.At low energies, the logic of the renormalization group tells us that, despite the unknown choices of these infinitely many parameters, quantum gravity will reduce to the usual Einstein theory of general relativity.On the other hand, if we could probe very high energies where quantum effects take over, then every one of the infinitely many unknown parameters would begin to matter, and we could make no predictions at all.[21]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_155720_770807.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_155720_770807.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_164443_254498)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => It is conceivable that, in the correct theory of quantum gravity, the infinitely many unknown parameters will reduce to a finite number that can then be measured. One possibility is that normal perturbation theory is not a reliable guide to the renormalizability of the theory, and that there really is a UV fixed point for gravity. Since this is a question of non-perturbative quantum field theory, finding a reliable answer is difficult, pursued in the asymptotic safety program. Another possibility is that there are new, undiscovered symmetry principles that constrain the parameters and reduce them to a finite set. This is the route taken by string theory, where all of the excitations of the string essentially manifest themselves as new symmetries.[22][better source needed]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => It is conceivable that, in the correct theory of quantum gravity, the infinitely many unknown parameters will reduce to a finite number that can then be measured. One possibility is that normal perturbation theory is not a reliable guide to the renormalizability of the theory, and that there really is a UV fixed point for gravity. Since this is a question of non-perturbative quantum field theory, finding a reliable answer is difficult, pursued in the asymptotic safety program. Another possibility is that there are new, undiscovered symmetry principles that constrain the parameters and reduce them to a finite set. This is the route taken by string theory, where all of the excitations of the string essentially manifest themselves as new symmetries.[22][better source needed]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->It is conceivable that, in the correct theory of quantum gravity, the infinitely many unknown parameters will reduce to a finite number that can then be measured. One possibility is that normal perturbation theory is not a reliable guide to the renormalizability of the theory, and that there really is a UV fixed point for gravity. Since this is a question of non-perturbative quantum field theory, finding a reliable answer is difficult, pursued in the asymptotic safety program. Another possibility is that there are new, undiscovered symmetry principles that constrain the parameters and reduce them to a finite set. This is the route taken by string theory, where all of the excitations of the string essentially manifest themselves as new symmetries.[22][better source needed]
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => It is conceivable that, in the correct theory of quantum gravity, the infinitely many unknown parameters will reduce to a finite number that can then be measured.One possibility is that normal perturbation theory is not a reliable guide to the renormalizability of the theory, and that there really is a UV fixed point for gravity.Since this is a question of non-perturbative quantum field theory, finding a reliable answer is difficult, pursued in the asymptotic safety program.Another possibility is that there are new, undiscovered symmetry principles that constrain the parameters and reduce them to a finite set.This is the route taken by string theory, where all of the excitations of the string essentially manifest themselves as new symmetries.[22][better source needed]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>It is conceivable that, in the correct theory of quantum gravity, the infinitely many unknown parameters will reduce to a finite number that can then be measured.One possibility is that normal perturbation theory is not a reliable guide to the renormalizability of the theory, and that there really is a UV fixed point for gravity.Since this is a question of non-perturbative quantum field theory, finding a reliable answer is difficult, pursued in the asymptotic safety program.Another possibility is that there are new, undiscovered symmetry principles that constrain the parameters and reduce them to a finite set.This is the route taken by string theory, where all of the excitations of the string essentially manifest themselves as new symmetries.[22][better source needed]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_164443_254498.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_164443_254498.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_165515_286151)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In an effective field theory,not all but the first few of the infinite set of parameters in a nonrenormalizable theory are suppressed by huge energy scales and hence can be neglected when computing low-energy effects. Thus, at least in the low-energy regime, the model is a predictive quantum field theory.[23] Furthermore, many theorists argue that the Standard Model should be regarded as an effective field theory itself, with "nonrenormalizable" interactions suppressed by large energy scales and whose effects have consequently not been observed experimentally.[24]
+
+    [1] => 
+
+    [2] => By treating general relativity as an effective field theory, one can actually make legitimate predictions for quantum gravity, at least for low-energy phenomena. An example is the well-known calculation of the tiny first-order quantum-mechanical correction to the classical Newtonian gravitational potential between two masses.[23] 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->In an effective field theory,not all but the first few of the infinite set of parameters in a nonrenormalizable theory are suppressed by huge energy scales and hence can be neglected when computing low-energy effects. Thus, at least in the low-energy regime, the model is a predictive quantum field theory.[23] Furthermore, many theorists argue that the Standard Model should be regarded as an effective field theory itself, with "nonrenormalizable" interactions suppressed by large energy scales and whose effects have consequently not been observed experimentally.[24]
+
+$matches ==>
+Array
+(
+    [0] => ]
+
+    [1] => ]
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In an effective field theory,not all but the first few of the infinite set of parameters in a nonrenormalizable theory are suppressed by huge energy scales and hence can be neglected when computing low-energy effects. Thus, at least in the low-energy regime, the model is a predictive quantum field theory.[23] Furthermore, many theorists argue that the Standard Model should be regarded as an effective field theory itself, with "nonrenormalizable" interactions suppressed by large energy scales and whose effects have consequently not been observed experimentally.[24] 
+    [1] => 
+
+    [2] => By treating general relativity as an effective field theory, one can actually make legitimate predictions for quantum gravity, at least for low-energy phenomena. An example is the well-known calculation of the tiny first-order quantum-mechanical correction to the classical Newtonian gravitational potential between two masses.[23] 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In an effective field theory,not all but the first few of the infinite set of parameters in a nonrenormalizable theory are suppressed by huge energy scales and hence can be neglected when computing low-energy effects. Thus, at least in the low-energy regime, the model is a predictive quantum field theory.[23] Furthermore, many theorists argue that the Standard Model should be regarded as an effective field theory itself, with "nonrenormalizable" interactions suppressed by large energy scales and whose effects have consequently not been observed experimentally.[24] 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->By treating general relativity as an effective field theory, one can actually make legitimate predictions for quantum gravity, at least for low-energy phenomena. An example is the well-known calculation of the tiny first-order quantum-mechanical correction to the classical Newtonian gravitational potential between two masses.[23] 
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In an effective field theory,not all but the first few of the infinite set of parameters in a nonrenormalizable theory are suppressed by huge energy scales and hence can be neglected when computing low-energy effects.Thus, at least in the low-energy regime, the model is a predictive quantum field theory.[23] Furthermore, many theorists argue that the Standard Model should be regarded as an effective field theory itself, with "nonrenormalizable" interactions suppressed by large energy scales and whose effects have consequently not been observed experimentally.[24] 
+    [1] => 
+
+    [2] => By treating general relativity as an effective field theory, one can actually make legitimate predictions for quantum gravity, at least for low-energy phenomena.An example is the well-known calculation of the tiny first-order quantum-mechanical correction to the classical Newtonian gravitational potential between two masses.[23] 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In an effective field theory,not all but the first few of the infinite set of parameters in a nonrenormalizable theory are suppressed by huge energy scales and hence can be neglected when computing low-energy effects.Thus, at least in the low-energy regime, the model is a predictive quantum field theory.[23] Furthermore, many theorists argue that the Standard Model should be regarded as an effective field theory itself, with "nonrenormalizable" interactions suppressed by large energy scales and whose effects have consequently not been observed experimentally.[24] 
+By treating general relativity as an effective field theory, one can actually make legitimate predictions for quantum gravity, at least for low-energy phenomena.An example is the well-known calculation of the tiny first-order quantum-mechanical correction to the classical Newtonian gravitational potential between two masses.[23] 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_165515_286151.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_165515_286151.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210607_170402_523449)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A fundamental lesson of general relativity is that there is no fixed spacetime background, as found in Newtonian mechanics and special relativity; the spacetime geometry is dynamic. While simple to grasp in principle, this is a complex idea to understand about general relativity, and its consequences are profound and not fully explored, even at the classical level. To a certain extent, general relativity can be seen to be a relational theory,[25] in which the only physically relevant information is the relationship between different events in space-time.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => A fundamental lesson of general relativity is that there is no fixed spacetime background, as found in Newtonian mechanics and special relativity; the spacetime geometry is dynamic. While simple to grasp in principle, this is a complex idea to understand about general relativity, and its consequences are profound and not fully explored, even at the classical level. To a certain extent, general relativity can be seen to be a relational theory,[25] in which the only physically relevant information is the relationship between different events in space-time.
+    [1] => 
+
+    [2] => On the other hand, quantum mechanics has depended since its inception on a fixed background (non-dynamic) structure. In the case of quantum mechanics, it is time that is given and not dynamic, just as in Newtonian classical mechanics. In relativistic quantum field theory, just as in classical field theory, Minkowski spacetime is the fixed background of the theory. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => A fundamental lesson of general relativity is that there is no fixed spacetime background, as found in Newtonian mechanics and special relativity; the spacetime geometry is dynamic. While simple to grasp in principle, this is a complex idea to understand about general relativity, and its consequences are profound and not fully explored, even at the classical level. To a certain extent, general relativity can be seen to be a relational theory,[25] in which the only physically relevant information is the relationship between different events in space-time.
+    [1] => 
+
+    [2] => On the other hand, quantum mechanics has depended since its inception on a fixed background (non-dynamic) structure. In the case of quantum mechanics, it is time that is given and not dynamic, just as in Newtonian classical mechanics. In relativistic quantum field theory, just as in classical field theory, Minkowski spacetime is the fixed background of the theory. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->A fundamental lesson of general relativity is that there is no fixed spacetime background, as found in Newtonian mechanics and special relativity; the spacetime geometry is dynamic. While simple to grasp in principle, this is a complex idea to understand about general relativity, and its consequences are profound and not fully explored, even at the classical level. To a certain extent, general relativity can be seen to be a relational theory,[25] in which the only physically relevant information is the relationship between different events in space-time.
+$matches ==>
+Array
+(
+    [0] => c. 
+    [1] => c.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->On the other hand, quantum mechanics has depended since its inception on a fixed background (non-dynamic) structure. In the case of quantum mechanics, it is time that is given and not dynamic, just as in Newtonian classical mechanics. In relativistic quantum field theory, just as in classical field theory, Minkowski spacetime is the fixed background of the theory. 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => A fundamental lesson of general relativity is that there is no fixed spacetime background, as found in Newtonian mechanics and special relativity; the spacetime geometry is dynamic.While simple to grasp in principle, this is a complex idea to understand about general relativity, and its consequences are profound and not fully explored, even at the classical level.To a certain extent, general relativity can be seen to be a relational theory,[25] in which the only physically relevant information is the relationship between different events in space-time.
+    [1] => 
+
+    [2] => On the other hand, quantum mechanics has depended since its inception on a fixed background (non-dynamic) structure.In the case of quantum mechanics, it is time that is given and not dynamic, just as in Newtonian classical mechanics.In relativistic quantum field theory, just as in classical field theory, Minkowski spacetime is the fixed background of the theory.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>A fundamental lesson of general relativity is that there is no fixed spacetime background, as found in Newtonian mechanics and special relativity; the spacetime geometry is dynamic.While simple to grasp in principle, this is a complex idea to understand about general relativity, and its consequences are profound and not fully explored, even at the classical level.To a certain extent, general relativity can be seen to be a relational theory,[25] in which the only physically relevant information is the relationship between different events in space-time.
+On the other hand, quantum mechanics has depended since its inception on a fixed background (non-dynamic) structure.In the case of quantum mechanics, it is time that is given and not dynamic, just as in Newtonian classical mechanics.In relativistic quantum field theory, just as in classical field theory, Minkowski spacetime is the fixed background of the theory.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_170402_523449.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_170402_523449.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 

@@ -20702,3 +20702,2825 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210606_101422_660279.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210606_101422_660279.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_085432_507622)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_085432_507622.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_085432_507622.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_085449_756557)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>量子引力，是对引力场进行量子化描述的理论，属于万有理论之一。研究方向主要尝试结合广义相对论与量子力学，是当前物理学尚未解决的问题。当前主流尝试理论有：超弦理论、循环量子引力理论。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_085449_756557.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_085449_756557.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_085904_843509)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+
+    [1] => 
+
+    [2] => 另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+
+    [3] => 
+
+    [4] => 除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+
+    [5] => 
+
+    [6] => 至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+
+    [7] => 
+
+    [8] => 推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+
+    [9] => 
+
+    [10] => 这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+
+    [1] => 
+    [2] => 另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+
+    [3] => 
+    [4] => 除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+
+    [5] => 
+    [6] => 至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+
+    [7] => 
+    [8] => 推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+
+    [9] => 
+    [10] => 这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+    [1] => 
+    [2] => 另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+    [3] => 
+    [4] => 除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+    [5] => 
+    [6] => 至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+    [7] => 
+    [8] => 推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+    [9] => 
+    [10] => 这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+    [1] => 
+    [2] => 另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+    [3] => 
+    [4] => 除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+    [5] => 
+    [6] => 至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+    [7] => 
+    [8] => 推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+    [9] => 
+    [10] => 这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。
+    [1] => 
+    [2] => 另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。
+    [3] => 
+    [4] => 除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。
+    [5] => 
+    [6] => 至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。
+    [7] => 
+    [8] => 推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。
+    [9] => 
+    [10] => 这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>经典描述下的引力，是由爱因斯坦于1916年建立的广义相对论成功描述的。该理论透过质量对于时空曲率的影响（爱因斯坦方程）而对水星近日点岁差偏移、引力场下光线红移、光线弯折等三种问题提出了完满的解释，并且至今为止在天文学的观测上，实验数据与广义相对论预测值的相符程度远高于其他竞争理论。因此，广义相对论描述经典引力的正确性很少有人怀疑。另一方面，量子力学从狄拉克建立了相对论性量子力学的狄拉克方程开始，扩充成量子场论的各种形式。其中包括了量子电动力学与量子色动力学，成功地解释了四大基本力中的三者－电磁力、原子核的强力与弱力的量子行为，仅剩下引力的量子性尚未能用量子力学来描述。除了未能达成对于引力量子（引力子）的描述之外，两个成功的理论在根本架构上也有冲突之处：量子场论是建构在广义相对论的平坦时空下基本力的粒子场上。如果要透过这种相同模式来对引力场进行量子化，则主要问题是在广义相对论的弯曲时空架构，无法一如以往透过重整化的数学技巧来达成量子化描述，亦即引力子会互相吸引，而当把所有反应加总常会得到许许多多的无限大值，没办法用数学技巧得到有意义的有限值；相对地，例如量子电动力学中对于光子的描述，虽然仍会出现一些无限大值，但为数较少可以透过重整化方法可以将之消除，而得到实验上可量到的、具有意义的有限值。至于实验方面，很遗憾，量子引力所探讨的能量与尺度乃是目前实验室条件下无法观测得到的，有些学者提出一些观点可能可以透过天文学上的观测来检验，但仍属少数特例。因此希望从实验观测得到一些关于量子引力理论发展上的提示，现阶段仍属不可行。推导量子引力理论的一般方法是假设这个理论是简单优雅的，然后回头看看现前的理论，找寻对称性及提示以想办法优雅地合并它们成为一个更加普适的理论。这方法的一项问题是没人可以肯定量子引力是否会是一个简单优雅的理论。这个理论的意义在于了解一些涉及庞大质量或能量以及很小尺度的空间的问题，例如黑洞的行为，以及宇宙的起源。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_085904_843509.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_085904_843509.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_091645_557163)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。
+
+    [1] => 
+
+    [2] => 第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+
+    [3] => 
+
+    [4] => 另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+
+    [5] => 
+
+    [6] => 理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+
+    [7] => 
+
+    [8] => 这两种论点分别发展出弦论与循环量子引力理论。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '这两种论点分别发展出弦论与循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。
+
+    [1] => 
+    [2] => 第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+
+    [3] => 
+    [4] => 另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+
+    [5] => 
+    [6] => 理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+
+    [7] => 
+    [8] => 这两种论点分别发展出弦论与循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '这两种论点分别发展出弦论与循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。
+    [1] => 
+    [2] => 第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+    [3] => 
+    [4] => 另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+    [5] => 
+    [6] => 理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+    [7] => 
+    [8] => 这两种论点分别发展出弦论与循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '这两种论点分别发展出弦论与循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。
+    [1] => 
+    [2] => 第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+    [3] => 
+    [4] => 另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+    [5] => 
+    [6] => 理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+    [7] => 
+    [8] => 这两种论点分别发展出弦论与循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（Charles W. Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => s W
+            [1] => . M
+        )
+
+    [1] => Array
+        (
+            [0] => s
+            [1] => .
+        )
+
+    [2] => Array
+        (
+            [0] => W
+            [1] => M
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（CharlesW.Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '这两种论点分别发展出弦论与循环量子引力理论。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。
+    [1] => 
+    [2] => 第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。
+    [3] => 
+    [4] => 另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（CharlesW.Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。
+    [5] => 
+    [6] => 理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。
+    [7] => 
+    [8] => 这两种论点分别发展出弦论与循环量子引力理论。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>历史上，对于量子理论与要求背景独立的广义相对论两者明显的矛盾曾出现过两种反应。第一种是广义相对论所采的几何诠释并非究竟，而只是一个未知的背景相依理论的近似表现。举例来说，这在史蒂文·温伯格的经典教科书《引力与宇宙学》里面被明白表示过。另外相抗衡的观点是背景独立是基础性质，而量子力学需要被一般化，改写成一个没有预设特定时间的理论。这样的几何观点在米斯纳（CharlesW.Misner）、约翰·惠勒与基普·索恩三人合写的经典著作《引力论》中详述过。理论物理巨擘对于引力意义采相反看法的两本书，很有趣地几乎同时发表于1970年代早期。出现了这样的僵局使得理查·费曼在1960年代早期给太太的一封信中，绝望地写道：“提醒我不要再参加任何一个引力会议。”理查·费曼对于使量子引力曾做过重要的尝试。这两种论点分别发展出弦论与循环量子引力理论。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_091645_557163.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_091645_557163.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_092739_040446)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+
+    [1] => 
+
+    [2] => 广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+
+    [1] => 
+    [2] => 广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+    [1] => 
+    [2] => 广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+    [1] => 
+    [2] => 广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。
+    [1] => 
+    [2] => 广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>理论物理上最深奥的问题之一是调和广义相对论以及量子力学。广义相对论描述引力并且适用在大尺度结构（恒星、行星、银河），而量子力学描述其他三种作用在微观尺度的基本力。广义相对论教导我们没有固定的时空背景，而在牛顿力学与狭义相对论则有；时空几何是动态的。虽然在原则上容易掌握，这却是广义相对论中最难了解的概念，而且它所带来的结果是相当深远的，也没完全地探索完，即使仅就经典层级而言。就某种程度而言，广义相对论可以视作是一种关系理论，在这样的理论中，物理上唯一要紧的讯息是时空中不同事件彼此间的关系。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_092739_040446.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_092739_040446.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_093107_353782)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quark confinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => k c
+        )
+
+    [1] => Array
+        (
+            [0] => k
+        )
+
+    [2] => Array
+        (
+            [0] => c
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quarkconfinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quarkconfinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>另一方面，由于量子力学最开始是从固定背景(非动态的)结构开始研究的，它依赖于固定的时空背景。在量子力学中，时间是开始就给定而且非动态的，恰如牛顿的经典力学一般。在相对论性量子场论中，一如在经典场论中，闵可夫斯基时空是理论的固定背景。弦论从扩充量子场论出发，其中点粒子代之以弦样物体，在固定时空背景中做传递。虽然弦论的起源是在夸克侷束（quarkconfinement）研究方面而不是在量子引力方面，很快就发现弦的频谱包括了引力子，而且弦的几种特定振动模式的“凝聚”等价于对原始背景的修改。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_093107_353782.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_093107_353782.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_102515_276599)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => )。�
+            [2] => )。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => )。
+            [2] => )。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>处在弯曲（非闵可夫斯基式）背景下的量子场论，虽然并非引力的量子理论，亦显示了量子场论中的一些假设无法被延伸到弯曲时空中，完善的量子引力理论就更不用提了。特别地说，真空—当它存在时—被指出和观察者所经过的时空路径有相依性(见盎鲁效应)。此外，场概念看起来比粒子概念还要来得基本(粒子概念被认为是描述局域相互作用的方便法)。后者观点是有争议性的，和史蒂文·温伯格的著作《量子场论》在闵可夫斯基空间中所发展出的量子场论相矛盾。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_102515_276599.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_102515_276599.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_103306_163961)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+
+    [1] => 
+
+    [2] => 此外尚有三处量子力学与广义相对论的拉锯战。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '此外尚有三处量子力学与广义相对论的拉锯战。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+
+    [1] => 
+    [2] => 此外尚有三处量子力学与广义相对论的拉锯战。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '此外尚有三处量子力学与广义相对论的拉锯战。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+    [1] => 
+    [2] => 此外尚有三处量子力学与广义相对论的拉锯战。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '此外尚有三处量子力学与广义相对论的拉锯战。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+    [1] => 
+    [2] => 此外尚有三处量子力学与广义相对论的拉锯战。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '此外尚有三处量子力学与广义相对论的拉锯战。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。
+    [1] => 
+    [2] => 此外尚有三处量子力学与广义相对论的拉锯战。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>循环量子引力是建构背景独立量子理论的努力成果。拓扑量子场论提供了背景独立量子场论的一例，但其没有局域的自由度而仅有有限个全域自由度。如此要描述3+1维的引力则显得不足；按照广义相对论，即使在真空，引力也有局域自由度。然而在2+1维，引力就可以是拓扑场论，而其也被成功地透过多种方法进行量子化，包括自旋网络的方法。此外尚有三处量子力学与广义相对论的拉锯战。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_103306_163961.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_103306_163961.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210607_103712_596573)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。
+
+    [1] => 其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。
+
+    [2] => 最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。
+
+    [1] => 其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。
+
+    [2] => 最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。
+[process-texts-for-reading_chinese.php : 252]
+line : '其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。
+[process-texts-for-reading_chinese.php : 252]
+line : '最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。
+    [1] => 其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。
+    [2] => 最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。
+    [1] => 其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。
+    [2] => 最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。
+    [1] => 其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。
+    [2] => 最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>首先，广义相对论预言了自己在奇点会失效，而量子力学在奇点附近则会和广义相对论格格不入。其次，在量子力学的海森堡不确定原理下，粒子的位置与速度无法同时确知，尚不清楚如何决定一个粒子的引力场。最后一处的拉锯战并非逻辑上的矛盾，它涉及了“量子力学造成贝尔不等式的违反”（暗示超光速影响）与“相对论中光速作为速度上限”这两者间的困境。前两点的解决之道可能出自对于广义相对论有更好的了解[1]。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_103712_596573.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_103712_596573.txt
+ 
