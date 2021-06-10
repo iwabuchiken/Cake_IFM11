@@ -28588,3 +28588,1161 @@ On the other hand, quantum mechanics has depended since its inception on a fixed
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_170402_523449.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_095400_566792)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way. Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background. In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way. Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background. In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way. Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background. In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence. 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way.Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background.In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way.Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background.In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_095400_566792.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_095400_566792.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_100050_286134)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way. Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background. In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way. Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background. In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way. Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background. In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence. 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way.Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background.In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>String theory can be seen as a generalization of quantum field theory where instead of point particles, string-like objects propagate in a fixed spacetime background, although the interactions among closed strings give rise to space-time in a dynamical way.Although string theory had its origins in the study of quark confinement and not of quantum gravity, it was soon discovered that the string spectrum contains the graviton, and that "condensation" of certain vibration modes of strings is equivalent to a modification of the original background.In this sense, string perturbation theory exhibits exactly the features one would expect of a perturbation theory that may exhibit a strong dependence on asymptotics (as seen, for example, in the AdS/CFT correspondence) which is a weak form of background dependence.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_100050_286134.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_100050_286134.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_100113_891989)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+    [1] => 
+
+    [2] => Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally. This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity. In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+    [1] => 
+
+    [2] => Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally. This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity. In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally. This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity. In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+    [1] => 
+
+    [2] => Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally.This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity.In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally.This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity.In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_100113_891989.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_100113_891989.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_100420_834922)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+    [1] => 
+
+    [2] => Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally. This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity. In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+    [1] => 
+
+    [2] => Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally. This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity. In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally. This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity. In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+    [1] => 
+
+    [2] => Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally.This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity.In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Loop quantum gravity is the fruit of an effort to formulate a background-independent quantum theory.
+Topological quantum field theory provided an example of background-independent quantum theory, but with no local degrees of freedom, and only finitely many degrees of freedom globally.This is inadequate to describe gravity in 3+1 dimensions, which has local degrees of freedom according to general relativity.In 2+1 dimensions, however, gravity is a topological field theory, and it has been successfully quantized in several different ways, including spin networks.[citation needed] 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_100420_834922.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_100420_834922.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_100442_741167)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Quantum field theory on curved (non-Minkowskian) backgrounds, while not a full quantum theory of gravity, has shown many promising early results. In an analogous way to the development of quantum electrodynamics in the early part of the 20th century (when physicists considered quantum mechanics in classical electromagnetic fields), the consideration of quantum field theory on a curved background has led to predictions such as black hole radiation.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Quantum field theory on curved (non-Minkowskian) backgrounds, while not a full quantum theory of gravity, has shown many promising early results. In an analogous way to the development of quantum electrodynamics in the early part of the 20th century (when physicists considered quantum mechanics in classical electromagnetic fields), the consideration of quantum field theory on a curved background has led to predictions such as black hole radiation.
+    [1] => 
+
+    [2] => Phenomena such as the Unruh effect, in which particles exist in certain accelerating frames but not in stationary ones, do not pose any difficulty when considered on a curved background (the Unruh effect occurs even in flat Minkowskian backgrounds). The vacuum state is the state with the least energy (and may or may not contain particles). See Quantum field theory in curved spacetime for a more complete discussion. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Quantum field theory on curved (non-Minkowskian) backgrounds, while not a full quantum theory of gravity, has shown many promising early results. In an analogous way to the development of quantum electrodynamics in the early part of the 20th century (when physicists considered quantum mechanics in classical electromagnetic fields), the consideration of quantum field theory on a curved background has led to predictions such as black hole radiation.
+    [1] => 
+
+    [2] => Phenomena such as the Unruh effect, in which particles exist in certain accelerating frames but not in stationary ones, do not pose any difficulty when considered on a curved background (the Unruh effect occurs even in flat Minkowskian backgrounds). The vacuum state is the state with the least energy (and may or may not contain particles). See Quantum field theory in curved spacetime for a more complete discussion. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Quantum field theory on curved (non-Minkowskian) backgrounds, while not a full quantum theory of gravity, has shown many promising early results. In an analogous way to the development of quantum electrodynamics in the early part of the 20th century (when physicists considered quantum mechanics in classical electromagnetic fields), the consideration of quantum field theory on a curved background has led to predictions such as black hole radiation.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Phenomena such as the Unruh effect, in which particles exist in certain accelerating frames but not in stationary ones, do not pose any difficulty when considered on a curved background (the Unruh effect occurs even in flat Minkowskian backgrounds). The vacuum state is the state with the least energy (and may or may not contain particles). See Quantum field theory in curved spacetime for a more complete discussion. 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Quantum field theory on curved (non-Minkowskian) backgrounds, while not a full quantum theory of gravity, has shown many promising early results.In an analogous way to the development of quantum electrodynamics in the early part of the 20th century (when physicists considered quantum mechanics in classical electromagnetic fields), the consideration of quantum field theory on a curved background has led to predictions such as black hole radiation.
+    [1] => 
+
+    [2] => Phenomena such as the Unruh effect, in which particles exist in certain accelerating frames but not in stationary ones, do not pose any difficulty when considered on a curved background (the Unruh effect occurs even in flat Minkowskian backgrounds).The vacuum state is the state with the least energy (and may or may not contain particles).See Quantum field theory in curved spacetime for a more complete discussion.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Quantum field theory on curved (non-Minkowskian) backgrounds, while not a full quantum theory of gravity, has shown many promising early results.In an analogous way to the development of quantum electrodynamics in the early part of the 20th century (when physicists considered quantum mechanics in classical electromagnetic fields), the consideration of quantum field theory on a curved background has led to predictions such as black hole radiation.
+Phenomena such as the Unruh effect, in which particles exist in certain accelerating frames but not in stationary ones, do not pose any difficulty when considered on a curved background (the Unruh effect occurs even in flat Minkowskian backgrounds).The vacuum state is the state with the least energy (and may or may not contain particles).See Quantum field theory in curved spacetime for a more complete discussion.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_100442_741167.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_100442_741167.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_102204_850531)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => A conceptual difficulty in combining quantum mechanics with general relativity arises from the contrasting role of time within these two frameworks. In quantum theories time acts as an independent background through which states evolve, with the Hamiltonian operator acting as the generator of infinitesimal translations of quantum states through time.[26] In contrast, general relativity treats time as a dynamical variable which relates directly with matter and moreover requires the Hamiltonian constraint to vanish.[27] Because this variability of time has been observed macroscopically, it removes any possibility of employing a fixed notion of time, similar to the conception of time in quantum theory, at the macroscopic level. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => A conceptual difficulty in combining quantum mechanics with general relativity arises from the contrasting role of time within these two frameworks. In quantum theories time acts as an independent background through which states evolve, with the Hamiltonian operator acting as the generator of infinitesimal translations of quantum states through time.[26] In contrast, general relativity treats time as a dynamical variable which relates directly with matter and moreover requires the Hamiltonian constraint to vanish.[27] Because this variability of time has been observed macroscopically, it removes any possibility of employing a fixed notion of time, similar to the conception of time in quantum theory, at the macroscopic level. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->A conceptual difficulty in combining quantum mechanics with general relativity arises from the contrasting role of time within these two frameworks. In quantum theories time acts as an independent background through which states evolve, with the Hamiltonian operator acting as the generator of infinitesimal translations of quantum states through time.[26] In contrast, general relativity treats time as a dynamical variable which relates directly with matter and moreover requires the Hamiltonian constraint to vanish.[27] Because this variability of time has been observed macroscopically, it removes any possibility of employing a fixed notion of time, similar to the conception of time in quantum theory, at the macroscopic level. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => A conceptual difficulty in combining quantum mechanics with general relativity arises from the contrasting role of time within these two frameworks.In quantum theories time acts as an independent background through which states evolve, with the Hamiltonian operator acting as the generator of infinitesimal translations of quantum states through time.[26] In contrast, general relativity treats time as a dynamical variable which relates directly with matter and moreover requires the Hamiltonian constraint to vanish.[27] Because this variability of time has been observed macroscopically, it removes any possibility of employing a fixed notion of time, similar to the conception of time in quantum theory, at the macroscopic level.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>A conceptual difficulty in combining quantum mechanics with general relativity arises from the contrasting role of time within these two frameworks.In quantum theories time acts as an independent background through which states evolve, with the Hamiltonian operator acting as the generator of infinitesimal translations of quantum states through time.[26] In contrast, general relativity treats time as a dynamical variable which relates directly with matter and moreover requires the Hamiltonian constraint to vanish.[27] Because this variability of time has been observed macroscopically, it removes any possibility of employing a fixed notion of time, similar to the conception of time in quantum theory, at the macroscopic level.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_102204_850531.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_102204_850531.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_110607_305612)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => There are a number of proposed quantum gravity theories.[28] Currently, there is still no complete and consistent quantum theory of gravity, and the candidate models still need to overcome major formal and conceptual problems. They also face the common problem that, as yet, there is no way to put quantum gravity predictions to experimental tests, although there is hope for this to change as future data from cosmological observations and particle physics experiments becomes available.[29][30]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => There are a number of proposed quantum gravity theories.[28] Currently, there is still no complete and consistent quantum theory of gravity, and the candidate models still need to overcome major formal and conceptual problems. They also face the common problem that, as yet, there is no way to put quantum gravity predictions to experimental tests, although there is hope for this to change as future data from cosmological observations and particle physics experiments becomes available.[29][30]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->There are a number of proposed quantum gravity theories.[28] Currently, there is still no complete and consistent quantum theory of gravity, and the candidate models still need to overcome major formal and conceptual problems. They also face the common problem that, as yet, there is no way to put quantum gravity predictions to experimental tests, although there is hope for this to change as future data from cosmological observations and particle physics experiments becomes available.[29][30]
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => There are a number of proposed quantum gravity theories.[28] Currently, there is still no complete and consistent quantum theory of gravity, and the candidate models still need to overcome major formal and conceptual problems.They also face the common problem that, as yet, there is no way to put quantum gravity predictions to experimental tests, although there is hope for this to change as future data from cosmological observations and particle physics experiments becomes available.[29][30]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>There are a number of proposed quantum gravity theories.[28] Currently, there is still no complete and consistent quantum theory of gravity, and the candidate models still need to overcome major formal and conceptual problems.They also face the common problem that, as yet, there is no way to put quantum gravity predictions to experimental tests, although there is hope for this to change as future data from cosmological observations and particle physics experiments becomes available.[29][30]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_110607_305612.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_110607_305612.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_111659_450634)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The central idea of string theory is to replace the classical concept of a point particle in quantum field theory, with a quantum theory of one-dimensional extended objects: string theory.[31]. At the energies reached in current experiments, these strings are indistinguishable from point-like particles, but, crucially, different modes of oscillation of one and the same type of fundamental string appear as particles with different (electric and other) charges. In this way, string theory promises to be a unified description of all particles and interactions.[32]. The theory is successful in that one mode will always correspond to a graviton, the messenger particle of gravity; however, the price of this success are unusual features such as six extra dimensions of space in addition to the usual three for space and one for time.[33].
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The central idea of string theory is to replace the classical concept of a point particle in quantum field theory, with a quantum theory of one-dimensional extended objects: string theory.[31]. At the energies reached in current experiments, these strings are indistinguishable from point-like particles, but, crucially, different modes of oscillation of one and the same type of fundamental string appear as particles with different (electric and other) charges. In this way, string theory promises to be a unified description of all particles and interactions.[32]. The theory is successful in that one mode will always correspond to a graviton, the messenger particle of gravity; however, the price of this success are unusual features such as six extra dimensions of space in addition to the usual three for space and one for time.[33].
+    [1] => 
+
+    [2] => In what is called the second superstring revolution, it was conjectured that both string theory and a unification of general relativity and supersymmetry known as supergravity[34]. form part of a hypothesized eleven-dimensional model known as M-theory, which would constitute a uniquely defined and consistent theory of quantum gravity.[35].[36]. As presently understood, however, string theory admits a very large number (10500 by some estimates) of consistent vacua, comprising the so-called "string landscape". Sorting through this large family of solutions remains a major challenge. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The central idea of string theory is to replace the classical concept of a point particle in quantum field theory, with a quantum theory of one-dimensional extended objects: string theory.[31]. At the energies reached in current experiments, these strings are indistinguishable from point-like particles, but, crucially, different modes of oscillation of one and the same type of fundamental string appear as particles with different (electric and other) charges. In this way, string theory promises to be a unified description of all particles and interactions.[32]. The theory is successful in that one mode will always correspond to a graviton, the messenger particle of gravity; however, the price of this success are unusual features such as six extra dimensions of space in addition to the usual three for space and one for time.[33].
+    [1] => 
+
+    [2] => In what is called the second superstring revolution, it was conjectured that both string theory and a unification of general relativity and supersymmetry known as supergravity[34]. form part of a hypothesized eleven-dimensional model known as M-theory, which would constitute a uniquely defined and consistent theory of quantum gravity.[35].[36]. As presently understood, however, string theory admits a very large number (10500 by some estimates) of consistent vacua, comprising the so-called "string landscape". Sorting through this large family of solutions remains a major challenge. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The central idea of string theory is to replace the classical concept of a point particle in quantum field theory, with a quantum theory of one-dimensional extended objects: string theory.[31]. At the energies reached in current experiments, these strings are indistinguishable from point-like particles, but, crucially, different modes of oscillation of one and the same type of fundamental string appear as particles with different (electric and other) charges. In this way, string theory promises to be a unified description of all particles and interactions.[32]. The theory is successful in that one mode will always correspond to a graviton, the messenger particle of gravity; however, the price of this success are unusual features such as six extra dimensions of space in addition to the usual three for space and one for time.[33].
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In what is called the second superstring revolution, it was conjectured that both string theory and a unification of general relativity and supersymmetry known as supergravity[34]. form part of a hypothesized eleven-dimensional model known as M-theory, which would constitute a uniquely defined and consistent theory of quantum gravity.[35].[36]. As presently understood, however, string theory admits a very large number (10500 by some estimates) of consistent vacua, comprising the so-called "string landscape". Sorting through this large family of solutions remains a major challenge. 
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The central idea of string theory is to replace the classical concept of a point particle in quantum field theory, with a quantum theory of one-dimensional extended objects: string theory.[31].At the energies reached in current experiments, these strings are indistinguishable from point-like particles, but, crucially, different modes of oscillation of one and the same type of fundamental string appear as particles with different (electric and other) charges.In this way, string theory promises to be a unified description of all particles and interactions.[32].The theory is successful in that one mode will always correspond to a graviton, the messenger particle of gravity; however, the price of this success are unusual features such as six extra dimensions of space in addition to the usual three for space and one for time.[33].
+    [1] => 
+
+    [2] => In what is called the second superstring revolution, it was conjectured that both string theory and a unification of general relativity and supersymmetry known as supergravity[34].form part of a hypothesized eleven-dimensional model known as M-theory, which would constitute a uniquely defined and consistent theory of quantum gravity.[35].[36].As presently understood, however, string theory admits a very large number (10500 by some estimates) of consistent vacua, comprising the so-called "string landscape".Sorting through this large family of solutions remains a major challenge.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The central idea of string theory is to replace the classical concept of a point particle in quantum field theory, with a quantum theory of one-dimensional extended objects: string theory.[31].At the energies reached in current experiments, these strings are indistinguishable from point-like particles, but, crucially, different modes of oscillation of one and the same type of fundamental string appear as particles with different (electric and other) charges.In this way, string theory promises to be a unified description of all particles and interactions.[32].The theory is successful in that one mode will always correspond to a graviton, the messenger particle of gravity; however, the price of this success are unusual features such as six extra dimensions of space in addition to the usual three for space and one for time.[33].
+In what is called the second superstring revolution, it was conjectured that both string theory and a unification of general relativity and supersymmetry known as supergravity[34].form part of a hypothesized eleven-dimensional model known as M-theory, which would constitute a uniquely defined and consistent theory of quantum gravity.[35].[36].As presently understood, however, string theory admits a very large number (10500 by some estimates) of consistent vacua, comprising the so-called "string landscape".Sorting through this large family of solutions remains a major challenge.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_111659_450634.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_111659_450634.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_143549_591125)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Loop quantum gravity seriously considers general relativity's insight that spacetime is a dynamical field and is therefore a quantum object. Its second idea is that the quantum discreteness that determines the particle-like behavior of other field theories (for instance, the photons of the electromagnetic field) also affects the structure of space.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The main result of loop quantum gravity is the derivation of a granular structure of space at the Planck length. This is derived from following considerations: In the case of electromagnetism, the quantum operator representing the energy of each frequency of the field has a discrete spectrum. Thus the energy of each frequency is quantized, and the quanta are the photons. In the case of gravity, the operators representing the area and the volume of each surface or space region likewise have discrete spectrum. Thus area and volume of any portion of space are also quantized, where the quanta are elementary quanta of space. It follows, then, that spacetime has an elementary quantum granular structure at the Planck scale, which cuts off the ultraviolet infinities of quantum field theory.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Loop quantum gravity seriously considers general relativity's insight that spacetime is a dynamical field and is therefore a quantum object. Its second idea is that the quantum discreteness that determines the particle-like behavior of other field theories (for instance, the photons of the electromagnetic field) also affects the structure of space.
+    [1] => 
+
+    [2] => The main result of loop quantum gravity is the derivation of a granular structure of space at the Planck length. This is derived from following considerations: In the case of electromagnetism, the quantum operator representing the energy of each frequency of the field has a discrete spectrum. Thus the energy of each frequency is quantized, and the quanta are the photons. In the case of gravity, the operators representing the area and the volume of each surface or space region likewise have discrete spectrum. Thus area and volume of any portion of space are also quantized, where the quanta are elementary quanta of space. It follows, then, that spacetime has an elementary quantum granular structure at the Planck scale, which cuts off the ultraviolet infinities of quantum field theory.
+    [3] => 
+
+    [4] => The quantum state of spacetime is described in the theory by means of a mathematical structure called spin networks. Spin networks were initially introduced by Roger Penrose in abstract form, and later shown by Carlo Rovelli and Lee Smolin to derive naturally from a non-perturbative quantization of general relativity. Spin networks do not represent quantum states of a field in spacetime: they represent directly quantum states of spacetime. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Loop quantum gravity seriously considers general relativity's insight that spacetime is a dynamical field and is therefore a quantum object. Its second idea is that the quantum discreteness that determines the particle-like behavior of other field theories (for instance, the photons of the electromagnetic field) also affects the structure of space.
+    [1] => 
+
+    [2] => The main result of loop quantum gravity is the derivation of a granular structure of space at the Planck length. This is derived from following considerations: In the case of electromagnetism, the quantum operator representing the energy of each frequency of the field has a discrete spectrum. Thus the energy of each frequency is quantized, and the quanta are the photons. In the case of gravity, the operators representing the area and the volume of each surface or space region likewise have discrete spectrum. Thus area and volume of any portion of space are also quantized, where the quanta are elementary quanta of space. It follows, then, that spacetime has an elementary quantum granular structure at the Planck scale, which cuts off the ultraviolet infinities of quantum field theory.
+    [3] => 
+
+    [4] => The quantum state of spacetime is described in the theory by means of a mathematical structure called spin networks. Spin networks were initially introduced by Roger Penrose in abstract form, and later shown by Carlo Rovelli and Lee Smolin to derive naturally from a non-perturbative quantization of general relativity. Spin networks do not represent quantum states of a field in spacetime: they represent directly quantum states of spacetime. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Loop quantum gravity seriously considers general relativity's insight that spacetime is a dynamical field and is therefore a quantum object. Its second idea is that the quantum discreteness that determines the particle-like behavior of other field theories (for instance, the photons of the electromagnetic field) also affects the structure of space.
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The main result of loop quantum gravity is the derivation of a granular structure of space at the Planck length. This is derived from following considerations: In the case of electromagnetism, the quantum operator representing the energy of each frequency of the field has a discrete spectrum. Thus the energy of each frequency is quantized, and the quanta are the photons. In the case of gravity, the operators representing the area and the volume of each surface or space region likewise have discrete spectrum. Thus area and volume of any portion of space are also quantized, where the quanta are elementary quanta of space. It follows, then, that spacetime has an elementary quantum granular structure at the Planck scale, which cuts off the ultraviolet infinities of quantum field theory.
+$matches ==>
+Array
+(
+    [0] => h. 
+    [1] => h.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The quantum state of spacetime is described in the theory by means of a mathematical structure called spin networks. Spin networks were initially introduced by Roger Penrose in abstract form, and later shown by Carlo Rovelli and Lee Smolin to derive naturally from a non-perturbative quantization of general relativity. Spin networks do not represent quantum states of a field in spacetime: they represent directly quantum states of spacetime. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Loop quantum gravity seriously considers general relativity's insight that spacetime is a dynamical field and is therefore a quantum object.Its second idea is that the quantum discreteness that determines the particle-like behavior of other field theories (for instance, the photons of the electromagnetic field) also affects the structure of space.
+    [1] => 
+
+    [2] => The main result of loop quantum gravity is the derivation of a granular structure of space at the Planck length.This is derived from following considerations: In the case of electromagnetism, the quantum operator representing the energy of each frequency of the field has a discrete spectrum.Thus the energy of each frequency is quantized, and the quanta are the photons.In the case of gravity, the operators representing the area and the volume of each surface or space region likewise have discrete spectrum.Thus area and volume of any portion of space are also quantized, where the quanta are elementary quanta of space.It follows, then, that spacetime has an elementary quantum granular structure at the Planck scale, which cuts off the ultraviolet infinities of quantum field theory.
+    [3] => 
+
+    [4] => The quantum state of spacetime is described in the theory by means of a mathematical structure called spin networks.Spin networks were initially introduced by Roger Penrose in abstract form, and later shown by Carlo Rovelli and Lee Smolin to derive naturally from a non-perturbative quantization of general relativity.Spin networks do not represent quantum states of a field in spacetime: they represent directly quantum states of spacetime.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Loop quantum gravity seriously considers general relativity's insight that spacetime is a dynamical field and is therefore a quantum object.Its second idea is that the quantum discreteness that determines the particle-like behavior of other field theories (for instance, the photons of the electromagnetic field) also affects the structure of space.
+The main result of loop quantum gravity is the derivation of a granular structure of space at the Planck length.This is derived from following considerations: In the case of electromagnetism, the quantum operator representing the energy of each frequency of the field has a discrete spectrum.Thus the energy of each frequency is quantized, and the quanta are the photons.In the case of gravity, the operators representing the area and the volume of each surface or space region likewise have discrete spectrum.Thus area and volume of any portion of space are also quantized, where the quanta are elementary quanta of space.It follows, then, that spacetime has an elementary quantum granular structure at the Planck scale, which cuts off the ultraviolet infinities of quantum field theory.
+The quantum state of spacetime is described in the theory by means of a mathematical structure called spin networks.Spin networks were initially introduced by Roger Penrose in abstract form, and later shown by Carlo Rovelli and Lee Smolin to derive naturally from a non-perturbative quantization of general relativity.Spin networks do not represent quantum states of a field in spacetime: they represent directly quantum states of spacetime.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_143549_591125.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_143549_591125.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_144107_388689)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The theory is based on the reformulation of general relativity known as Ashtekar variables, which represent geometric gravity using mathematical analogues of electric and magnetic fields.[37].[38]. In the quantum theory, space is represented by a network structure called a spin network, evolving over time in discrete steps.[39].[40].[41].[42].
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The theory is based on the reformulation of general relativity known as Ashtekar variables, which represent geometric gravity using mathematical analogues of electric and magnetic fields.[37].[38]. In the quantum theory, space is represented by a network structure called a spin network, evolving over time in discrete steps.[39].[40].[41].[42].
+    [1] => 
+
+    [2] => The dynamics of the theory is today constructed in several versions. One version starts with the canonical quantization of general relativity. The analogue of the Schrödinger equation is a Wheeler–DeWitt equation, which can be defined within the theory.[43]. In the covariant, or spinfoam formulation of the theory, the quantum dynamics is obtained via a sum over discrete versions of spacetime, called spinfoams. These represent histories of spin networks. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The theory is based on the reformulation of general relativity known as Ashtekar variables, which represent geometric gravity using mathematical analogues of electric and magnetic fields.[37].[38]. In the quantum theory, space is represented by a network structure called a spin network, evolving over time in discrete steps.[39].[40].[41].[42].
+    [1] => 
+
+    [2] => The dynamics of the theory is today constructed in several versions. One version starts with the canonical quantization of general relativity. The analogue of the Schrödinger equation is a Wheeler–DeWitt equation, which can be defined within the theory.[43]. In the covariant, or spinfoam formulation of the theory, the quantum dynamics is obtained via a sum over discrete versions of spacetime, called spinfoams. These represent histories of spin networks. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The theory is based on the reformulation of general relativity known as Ashtekar variables, which represent geometric gravity using mathematical analogues of electric and magnetic fields.[37].[38]. In the quantum theory, space is represented by a network structure called a spin network, evolving over time in discrete steps.[39].[40].[41].[42].
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The dynamics of the theory is today constructed in several versions. One version starts with the canonical quantization of general relativity. The analogue of the Schrödinger equation is a Wheeler–DeWitt equation, which can be defined within the theory.[43]. In the covariant, or spinfoam formulation of the theory, the quantum dynamics is obtained via a sum over discrete versions of spacetime, called spinfoams. These represent histories of spin networks. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The theory is based on the reformulation of general relativity known as Ashtekar variables, which represent geometric gravity using mathematical analogues of electric and magnetic fields.[37].[38].In the quantum theory, space is represented by a network structure called a spin network, evolving over time in discrete steps.[39].[40].[41].[42].
+    [1] => 
+
+    [2] => The dynamics of the theory is today constructed in several versions.One version starts with the canonical quantization of general relativity.The analogue of the Schrödinger equation is a Wheeler–DeWitt equation, which can be defined within the theory.[43].In the covariant, or spinfoam formulation of the theory, the quantum dynamics is obtained via a sum over discrete versions of spacetime, called spinfoams.These represent histories of spin networks.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The theory is based on the reformulation of general relativity known as Ashtekar variables, which represent geometric gravity using mathematical analogues of electric and magnetic fields.[37].[38].In the quantum theory, space is represented by a network structure called a spin network, evolving over time in discrete steps.[39].[40].[41].[42].
+The dynamics of the theory is today constructed in several versions.One version starts with the canonical quantization of general relativity.The analogue of the Schrödinger equation is a Wheeler–DeWitt equation, which can be defined within the theory.[43].In the covariant, or spinfoam formulation of the theory, the quantum dynamics is obtained via a sum over discrete versions of spacetime, called spinfoams.These represent histories of spin networks.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_144107_388689.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_144107_388689.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_145505_184928)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => There are a number of other approaches to quantum gravity. The theories differ depending on which features of general relativity and quantum theory are accepted unchanged, and which features are modified.[44][45]. Examples include: 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => There are a number of other approaches to quantum gravity. The theories differ depending on which features of general relativity and quantum theory are accepted unchanged, and which features are modified.[44][45]. Examples include: 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->There are a number of other approaches to quantum gravity. The theories differ depending on which features of general relativity and quantum theory are accepted unchanged, and which features are modified.[44][45]. Examples include: 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => There are a number of other approaches to quantum gravity.The theories differ depending on which features of general relativity and quantum theory are accepted unchanged, and which features are modified.[44][45].Examples include: 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>There are a number of other approaches to quantum gravity.The theories differ depending on which features of general relativity and quantum theory are accepted unchanged, and which features are modified.[44][45].Examples include: 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_145505_184928.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_145505_184928.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_145612_379852)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'As was emphasized above, quantum gravitational effects are extremely weak and therefore difficult to test. For this reason, the possibility of experimentally testing quantum gravity had not received much attention prior to the late 1990s. However, in the past decade, physicists have realized that evidence for quantum gravitational effects can guide the development of the theory. Since theoretical development has been slow, the field of phenomenological quantum gravity, which studies the possibility of experimental tests, has obtained increased attention.[51].
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The most widely pursued possibilities for quantum gravity phenomenology include violations of Lorentz invariance, imprints of quantum gravitational effects in the cosmic microwave background (in particular its polarization), and decoherence induced by fluctuations[52].[53].[54]. in the space-time foam.[55].
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'ESA's INTEGRAL satellite measured polarization of photons of different wavelengths and was able to place a limit in the granularity of space [56]. that is less than 10⁻⁴⁸m or 13 orders of magnitude below the Planck scale .
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => As was emphasized above, quantum gravitational effects are extremely weak and therefore difficult to test. For this reason, the possibility of experimentally testing quantum gravity had not received much attention prior to the late 1990s. However, in the past decade, physicists have realized that evidence for quantum gravitational effects can guide the development of the theory. Since theoretical development has been slow, the field of phenomenological quantum gravity, which studies the possibility of experimental tests, has obtained increased attention.[51].
+    [1] => 
+
+    [2] => The most widely pursued possibilities for quantum gravity phenomenology include violations of Lorentz invariance, imprints of quantum gravitational effects in the cosmic microwave background (in particular its polarization), and decoherence induced by fluctuations[52].[53].[54]. in the space-time foam.[55].
+    [3] => 
+
+    [4] => ESA's INTEGRAL satellite measured polarization of photons of different wavelengths and was able to place a limit in the granularity of space [56]. that is less than 10⁻⁴⁸m or 13 orders of magnitude below the Planck scale .
+    [5] => 
+
+    [6] => The BICEP2 experiment detected what was initially thought to be primordial B-mode polarization caused by gravitational waves in the early universe. Had the signal in fact been primordial in origin, it could have been an indication of quantum gravitational effects, but it soon transpired that the polarization was due to interstellar dust interference.[57]. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => As was emphasized above, quantum gravitational effects are extremely weak and therefore difficult to test. For this reason, the possibility of experimentally testing quantum gravity had not received much attention prior to the late 1990s. However, in the past decade, physicists have realized that evidence for quantum gravitational effects can guide the development of the theory. Since theoretical development has been slow, the field of phenomenological quantum gravity, which studies the possibility of experimental tests, has obtained increased attention.[51].
+    [1] => 
+
+    [2] => The most widely pursued possibilities for quantum gravity phenomenology include violations of Lorentz invariance, imprints of quantum gravitational effects in the cosmic microwave background (in particular its polarization), and decoherence induced by fluctuations[52].[53].[54]. in the space-time foam.[55].
+    [3] => 
+
+    [4] => ESA's INTEGRAL satellite measured polarization of photons of different wavelengths and was able to place a limit in the granularity of space [56]. that is less than 10⁻⁴⁸m or 13 orders of magnitude below the Planck scale .
+    [5] => 
+
+    [6] => The BICEP2 experiment detected what was initially thought to be primordial B-mode polarization caused by gravitational waves in the early universe. Had the signal in fact been primordial in origin, it could have been an indication of quantum gravitational effects, but it soon transpired that the polarization was due to interstellar dust interference.[57]. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->As was emphasized above, quantum gravitational effects are extremely weak and therefore difficult to test. For this reason, the possibility of experimentally testing quantum gravity had not received much attention prior to the late 1990s. However, in the past decade, physicists have realized that evidence for quantum gravitational effects can guide the development of the theory. Since theoretical development has been slow, the field of phenomenological quantum gravity, which studies the possibility of experimental tests, has obtained increased attention.[51].
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The most widely pursued possibilities for quantum gravity phenomenology include violations of Lorentz invariance, imprints of quantum gravitational effects in the cosmic microwave background (in particular its polarization), and decoherence induced by fluctuations[52].[53].[54]. in the space-time foam.[55].
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->ESA's INTEGRAL satellite measured polarization of photons of different wavelengths and was able to place a limit in the granularity of space [56]. that is less than 10⁻⁴⁸m or 13 orders of magnitude below the Planck scale .
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The BICEP2 experiment detected what was initially thought to be primordial B-mode polarization caused by gravitational waves in the early universe. Had the signal in fact been primordial in origin, it could have been an indication of quantum gravitational effects, but it soon transpired that the polarization was due to interstellar dust interference.[57]. 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => As was emphasized above, quantum gravitational effects are extremely weak and therefore difficult to test.For this reason, the possibility of experimentally testing quantum gravity had not received much attention prior to the late 1990s.However, in the past decade, physicists have realized that evidence for quantum gravitational effects can guide the development of the theory.Since theoretical development has been slow, the field of phenomenological quantum gravity, which studies the possibility of experimental tests, has obtained increased attention.[51].
+    [1] => 
+
+    [2] => The most widely pursued possibilities for quantum gravity phenomenology include violations of Lorentz invariance, imprints of quantum gravitational effects in the cosmic microwave background (in particular its polarization), and decoherence induced by fluctuations[52].[53].[54].in the space-time foam.[55].
+    [3] => 
+
+    [4] => ESA's INTEGRAL satellite measured polarization of photons of different wavelengths and was able to place a limit in the granularity of space [56].that is less than 10⁻⁴⁸m or 13 orders of magnitude below the Planck scale .
+    [5] => 
+
+    [6] => The BICEP2 experiment detected what was initially thought to be primordial B-mode polarization caused by gravitational waves in the early universe.Had the signal in fact been primordial in origin, it could have been an indication of quantum gravitational effects, but it soon transpired that the polarization was due to interstellar dust interference.[57].
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>As was emphasized above, quantum gravitational effects are extremely weak and therefore difficult to test.For this reason, the possibility of experimentally testing quantum gravity had not received much attention prior to the late 1990s.However, in the past decade, physicists have realized that evidence for quantum gravitational effects can guide the development of the theory.Since theoretical development has been slow, the field of phenomenological quantum gravity, which studies the possibility of experimental tests, has obtained increased attention.[51].
+The most widely pursued possibilities for quantum gravity phenomenology include violations of Lorentz invariance, imprints of quantum gravitational effects in the cosmic microwave background (in particular its polarization), and decoherence induced by fluctuations[52].[53].[54].in the space-time foam.[55].
+ESA's INTEGRAL satellite measured polarization of photons of different wavelengths and was able to place a limit in the granularity of space [56].that is less than 10⁻⁴⁸m or 13 orders of magnitude below the Planck scale .
+The BICEP2 experiment detected what was initially thought to be primordial B-mode polarization caused by gravitational waves in the early universe.Had the signal in fact been primordial in origin, it could have been an indication of quantum gravitational effects, but it soon transpired that the polarization was due to interstellar dust interference.[57].
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_145612_379852.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_145612_379852.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_150800_160742)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => As explained above, quantum gravitational effects are extremely weak and therefore difficult to test. For this reason, thought experiments are becoming an important theoretical tool. An important aspect of quantum gravity relates to the question of the coupling of spin and spacetime. While spin and spacetime are expected to be coupled,[58]. the precise nature of this coupling is currently unknown. In particular and most importantly, it is not known how quantum spin sources gravity and what is the correct characterization of the spacetime of a single spin-half particle. To analyze this question, thought experiments in the context of quantum information, have been suggested.[8]. This work shows that, in order to avoid violation of relativistic causality, the measurable spacetime around a spin-half particle's (rest frame) must be spherically symmetric - i.e., either spacetime is spherically symmetric, or somehow measurements of the spacetime (e.g., time-dilation measurements) should create some sort of back action that affects and changes the quantum spin. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => As explained above, quantum gravitational effects are extremely weak and therefore difficult to test. For this reason, thought experiments are becoming an important theoretical tool. An important aspect of quantum gravity relates to the question of the coupling of spin and spacetime. While spin and spacetime are expected to be coupled,[58]. the precise nature of this coupling is currently unknown. In particular and most importantly, it is not known how quantum spin sources gravity and what is the correct characterization of the spacetime of a single spin-half particle. To analyze this question, thought experiments in the context of quantum information, have been suggested.[8]. This work shows that, in order to avoid violation of relativistic causality, the measurable spacetime around a spin-half particle's (rest frame) must be spherically symmetric - i.e., either spacetime is spherically symmetric, or somehow measurements of the spacetime (e.g., time-dilation measurements) should create some sort of back action that affects and changes the quantum spin. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->As explained above, quantum gravitational effects are extremely weak and therefore difficult to test. For this reason, thought experiments are becoming an important theoretical tool. An important aspect of quantum gravity relates to the question of the coupling of spin and spacetime. While spin and spacetime are expected to be coupled,[58]. the precise nature of this coupling is currently unknown. In particular and most importantly, it is not known how quantum spin sources gravity and what is the correct characterization of the spacetime of a single spin-half particle. To analyze this question, thought experiments in the context of quantum information, have been suggested.[8]. This work shows that, in order to avoid violation of relativistic causality, the measurable spacetime around a spin-half particle's (rest frame) must be spherically symmetric - i.e., either spacetime is spherically symmetric, or somehow measurements of the spacetime (e.g., time-dilation measurements) should create some sort of back action that affects and changes the quantum spin. 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => As explained above, quantum gravitational effects are extremely weak and therefore difficult to test.For this reason, thought experiments are becoming an important theoretical tool.An important aspect of quantum gravity relates to the question of the coupling of spin and spacetime.While spin and spacetime are expected to be coupled,[58].the precise nature of this coupling is currently unknown.In particular and most importantly, it is not known how quantum spin sources gravity and what is the correct characterization of the spacetime of a single spin-half particle.To analyze this question, thought experiments in the context of quantum information, have been suggested.[8].This work shows that, in order to avoid violation of relativistic causality, the measurable spacetime around a spin-half particle's (rest frame) must be spherically symmetric - i.e., either spacetime is spherically symmetric, or somehow measurements of the spacetime (e.g., time-dilation measurements) should create some sort of back action that affects and changes the quantum spin.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>As explained above, quantum gravitational effects are extremely weak and therefore difficult to test.For this reason, thought experiments are becoming an important theoretical tool.An important aspect of quantum gravity relates to the question of the coupling of spin and spacetime.While spin and spacetime are expected to be coupled,[58].the precise nature of this coupling is currently unknown.In particular and most importantly, it is not known how quantum spin sources gravity and what is the correct characterization of the spacetime of a single spin-half particle.To analyze this question, thought experiments in the context of quantum information, have been suggested.[8].This work shows that, in order to avoid violation of relativistic causality, the measurable spacetime around a spin-half particle's (rest frame) must be spherically symmetric - i.e., either spacetime is spherically symmetric, or somehow measurements of the spacetime (e.g., time-dilation measurements) should create some sort of back action that affects and changes the quantum spin.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_150800_160742.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_150800_160742.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_163451_783354)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Loop quantum gravity (LQG)[1].[2].[3].[4].[5]. is a theory of quantum gravity, which aims to merge quantum mechanics and general relativity, incorporating matter of the Standard Model into the framework established for the pure quantum gravity case. As a candidate for quantum gravity, LQG competes with string theory.[6].
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Loop quantum gravity (LQG)[1].[2].[3].[4].[5]. is a theory of quantum gravity, which aims to merge quantum mechanics and general relativity, incorporating matter of the Standard Model into the framework established for the pure quantum gravity case. As a candidate for quantum gravity, LQG competes with string theory.[6].
+    [1] => 
+
+    [2] => Loop quantum gravity is an attempt to develop a quantum theory of gravity based directly on Einstein's geometric formulation rather than the treatment of gravity as a force. To do this, in LQG theory space and time are quantized analogously to the way quantities like energy and momentum are quantized in quantum mechanics. The theory gives a physical picture of spacetime where space and time are granular and discrete directly because of quantization just like photons in the quantum theory of electromagnetism and the discrete energy levels of atoms. An implication of a quantized space is that a minimum distance exists. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Loop quantum gravity (LQG)[1].[2].[3].[4].[5]. is a theory of quantum gravity, which aims to merge quantum mechanics and general relativity, incorporating matter of the Standard Model into the framework established for the pure quantum gravity case. As a candidate for quantum gravity, LQG competes with string theory.[6].
+    [1] => 
+
+    [2] => Loop quantum gravity is an attempt to develop a quantum theory of gravity based directly on Einstein's geometric formulation rather than the treatment of gravity as a force. To do this, in LQG theory space and time are quantized analogously to the way quantities like energy and momentum are quantized in quantum mechanics. The theory gives a physical picture of spacetime where space and time are granular and discrete directly because of quantization just like photons in the quantum theory of electromagnetism and the discrete energy levels of atoms. An implication of a quantized space is that a minimum distance exists. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Loop quantum gravity (LQG)[1].[2].[3].[4].[5]. is a theory of quantum gravity, which aims to merge quantum mechanics and general relativity, incorporating matter of the Standard Model into the framework established for the pure quantum gravity case. As a candidate for quantum gravity, LQG competes with string theory.[6].
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Loop quantum gravity is an attempt to develop a quantum theory of gravity based directly on Einstein's geometric formulation rather than the treatment of gravity as a force. To do this, in LQG theory space and time are quantized analogously to the way quantities like energy and momentum are quantized in quantum mechanics. The theory gives a physical picture of spacetime where space and time are granular and discrete directly because of quantization just like photons in the quantum theory of electromagnetism and the discrete energy levels of atoms. An implication of a quantized space is that a minimum distance exists. 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Loop quantum gravity (LQG)[1].[2].[3].[4].[5].is a theory of quantum gravity, which aims to merge quantum mechanics and general relativity, incorporating matter of the Standard Model into the framework established for the pure quantum gravity case.As a candidate for quantum gravity, LQG competes with string theory.[6].
+    [1] => 
+
+    [2] => Loop quantum gravity is an attempt to develop a quantum theory of gravity based directly on Einstein's geometric formulation rather than the treatment of gravity as a force.To do this, in LQG theory space and time are quantized analogously to the way quantities like energy and momentum are quantized in quantum mechanics.The theory gives a physical picture of spacetime where space and time are granular and discrete directly because of quantization just like photons in the quantum theory of electromagnetism and the discrete energy levels of atoms.An implication of a quantized space is that a minimum distance exists.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Loop quantum gravity (LQG)[1].[2].[3].[4].[5].is a theory of quantum gravity, which aims to merge quantum mechanics and general relativity, incorporating matter of the Standard Model into the framework established for the pure quantum gravity case.As a candidate for quantum gravity, LQG competes with string theory.[6].
+Loop quantum gravity is an attempt to develop a quantum theory of gravity based directly on Einstein's geometric formulation rather than the treatment of gravity as a force.To do this, in LQG theory space and time are quantized analogously to the way quantities like energy and momentum are quantized in quantum mechanics.The theory gives a physical picture of spacetime where space and time are granular and discrete directly because of quantization just like photons in the quantum theory of electromagnetism and the discrete energy levels of atoms.An implication of a quantized space is that a minimum distance exists.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_163451_783354.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_163451_783354.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_165205_413758)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'LQG postulates that the structure of space is composed of finite loops woven into an extremely fine fabric or network. These networks of loops are called spin networks. The evolution of a spin network, or spin foam, has a scale on the order of a Planck length, approximately 10−35 metres, and smaller scales are meaningless. Consequently, not just matter, but space itself, prefers an atomic structure.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => LQG postulates that the structure of space is composed of finite loops woven into an extremely fine fabric or network. These networks of loops are called spin networks. The evolution of a spin network, or spin foam, has a scale on the order of a Planck length, approximately 10−35 metres, and smaller scales are meaningless. Consequently, not just matter, but space itself, prefers an atomic structure.
+    [1] => 
+
+    [2] => The areas of research, which involves about 30 research groups worldwide,[7]. share the basic physical assumptions and the mathematical description of quantum space. Research has evolved in two directions: the more traditional canonical loop quantum gravity, and the newer covariant loop quantum gravity, called spin foam theory. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => LQG postulates that the structure of space is composed of finite loops woven into an extremely fine fabric or network. These networks of loops are called spin networks. The evolution of a spin network, or spin foam, has a scale on the order of a Planck length, approximately 10−35 metres, and smaller scales are meaningless. Consequently, not just matter, but space itself, prefers an atomic structure.
+    [1] => 
+
+    [2] => The areas of research, which involves about 30 research groups worldwide,[7]. share the basic physical assumptions and the mathematical description of quantum space. Research has evolved in two directions: the more traditional canonical loop quantum gravity, and the newer covariant loop quantum gravity, called spin foam theory. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->LQG postulates that the structure of space is composed of finite loops woven into an extremely fine fabric or network. These networks of loops are called spin networks. The evolution of a spin network, or spin foam, has a scale on the order of a Planck length, approximately 10−35 metres, and smaller scales are meaningless. Consequently, not just matter, but space itself, prefers an atomic structure.
+$matches ==>
+Array
+(
+    [0] => k. 
+    [1] => k.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The areas of research, which involves about 30 research groups worldwide,[7]. share the basic physical assumptions and the mathematical description of quantum space. Research has evolved in two directions: the more traditional canonical loop quantum gravity, and the newer covariant loop quantum gravity, called spin foam theory. 
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => LQG postulates that the structure of space is composed of finite loops woven into an extremely fine fabric or network.These networks of loops are called spin networks.The evolution of a spin network, or spin foam, has a scale on the order of a Planck length, approximately 10−35 metres, and smaller scales are meaningless.Consequently, not just matter, but space itself, prefers an atomic structure.
+    [1] => 
+
+    [2] => The areas of research, which involves about 30 research groups worldwide,[7].share the basic physical assumptions and the mathematical description of quantum space.Research has evolved in two directions: the more traditional canonical loop quantum gravity, and the newer covariant loop quantum gravity, called spin foam theory.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>LQG postulates that the structure of space is composed of finite loops woven into an extremely fine fabric or network.These networks of loops are called spin networks.The evolution of a spin network, or spin foam, has a scale on the order of a Planck length, approximately 10−35 metres, and smaller scales are meaningless.Consequently, not just matter, but space itself, prefers an atomic structure.
+The areas of research, which involves about 30 research groups worldwide,[7].share the basic physical assumptions and the mathematical description of quantum space.Research has evolved in two directions: the more traditional canonical loop quantum gravity, and the newer covariant loop quantum gravity, called spin foam theory.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_165205_413758.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_165205_413758.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_165823_302707)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The most well-developed theory that has been advanced as a direct result of loop quantum gravity is called loop quantum cosmology (LQC). LQC advances the study of the early universe, incorporating the concept of the Big Bang into the broader theory of the Big Bounce, which envisions the Big Bang as the beginning of a period of expansion that follows a period of contraction, which one could talk of as the Big Crunch.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The most well-developed theory that has been advanced as a direct result of loop quantum gravity is called loop quantum cosmology (LQC). LQC advances the study of the early universe, incorporating the concept of the Big Bang into the broader theory of the Big Bounce, which envisions the Big Bang as the beginning of a period of expansion that follows a period of contraction, which one could talk of as the Big Crunch.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The most well-developed theory that has been advanced as a direct result of loop quantum gravity is called loop quantum cosmology (LQC). LQC advances the study of the early universe, incorporating the concept of the Big Bang into the broader theory of the Big Bounce, which envisions the Big Bang as the beginning of a period of expansion that follows a period of contraction, which one could talk of as the Big Crunch.
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The most well-developed theory that has been advanced as a direct result of loop quantum gravity is called loop quantum cosmology (LQC).LQC advances the study of the early universe, incorporating the concept of the Big Bang into the broader theory of the Big Bounce, which envisions the Big Bang as the beginning of a period of expansion that follows a period of contraction, which one could talk of as the Big Crunch.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The most well-developed theory that has been advanced as a direct result of loop quantum gravity is called loop quantum cosmology (LQC).LQC advances the study of the early universe, incorporating the concept of the Big Bang into the broader theory of the Big Bounce, which envisions the Big Bang as the beginning of a period of expansion that follows a period of contraction, which one could talk of as the Big Crunch.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_165823_302707.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_165823_302707.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_170032_673732)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In 1986, Abhay Ashtekar reformulated Einstein's general relativity in a language closer to that of the rest of fundamental physics.[citation needed] Shortly after, Ted Jacobson and Lee Smolin realized that the formal equation of quantum gravity, called the Wheeler–DeWitt equation, admitted solutions labelled by loops when rewritten in the new Ashtekar variables. Carlo Rovelli and Smolin defined a nonperturbative and background-independent quantum theory of gravity in terms of these loop solutions. Jorge Pullin and Jerzy Lewandowski understood that the intersections of the loops are essential for the consistency of the theory, and the theory should be formulated in terms of intersecting loops, or graphs.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In 1986, Abhay Ashtekar reformulated Einstein's general relativity in a language closer to that of the rest of fundamental physics.[citation needed] Shortly after, Ted Jacobson and Lee Smolin realized that the formal equation of quantum gravity, called the Wheeler–DeWitt equation, admitted solutions labelled by loops when rewritten in the new Ashtekar variables. Carlo Rovelli and Smolin defined a nonperturbative and background-independent quantum theory of gravity in terms of these loop solutions. Jorge Pullin and Jerzy Lewandowski understood that the intersections of the loops are essential for the consistency of the theory, and the theory should be formulated in terms of intersecting loops, or graphs.
+    [1] => 
+
+    [2] => In 1994, Rovelli and Smolin showed that the quantum operators of the theory associated to area and volume have a discrete spectrum. That is, geometry is quantized. This result defines an explicit basis of states of quantum geometry, which turned out to be labelled by Roger Penrose's spin networks, which are graphs labelled by spins. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In 1986, Abhay Ashtekar reformulated Einstein's general relativity in a language closer to that of the rest of fundamental physics.[citation needed] Shortly after, Ted Jacobson and Lee Smolin realized that the formal equation of quantum gravity, called the Wheeler–DeWitt equation, admitted solutions labelled by loops when rewritten in the new Ashtekar variables. Carlo Rovelli and Smolin defined a nonperturbative and background-independent quantum theory of gravity in terms of these loop solutions. Jorge Pullin and Jerzy Lewandowski understood that the intersections of the loops are essential for the consistency of the theory, and the theory should be formulated in terms of intersecting loops, or graphs.
+    [1] => 
+
+    [2] => In 1994, Rovelli and Smolin showed that the quantum operators of the theory associated to area and volume have a discrete spectrum. That is, geometry is quantized. This result defines an explicit basis of states of quantum geometry, which turned out to be labelled by Roger Penrose's spin networks, which are graphs labelled by spins. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In 1986, Abhay Ashtekar reformulated Einstein's general relativity in a language closer to that of the rest of fundamental physics.[citation needed] Shortly after, Ted Jacobson and Lee Smolin realized that the formal equation of quantum gravity, called the Wheeler–DeWitt equation, admitted solutions labelled by loops when rewritten in the new Ashtekar variables. Carlo Rovelli and Smolin defined a nonperturbative and background-independent quantum theory of gravity in terms of these loop solutions. Jorge Pullin and Jerzy Lewandowski understood that the intersections of the loops are essential for the consistency of the theory, and the theory should be formulated in terms of intersecting loops, or graphs.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In 1994, Rovelli and Smolin showed that the quantum operators of the theory associated to area and volume have a discrete spectrum. That is, geometry is quantized. This result defines an explicit basis of states of quantum geometry, which turned out to be labelled by Roger Penrose's spin networks, which are graphs labelled by spins. 
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In 1986, Abhay Ashtekar reformulated Einstein's general relativity in a language closer to that of the rest of fundamental physics.[citation needed] Shortly after, Ted Jacobson and Lee Smolin realized that the formal equation of quantum gravity, called the Wheeler–DeWitt equation, admitted solutions labelled by loops when rewritten in the new Ashtekar variables.Carlo Rovelli and Smolin defined a nonperturbative and background-independent quantum theory of gravity in terms of these loop solutions.Jorge Pullin and Jerzy Lewandowski understood that the intersections of the loops are essential for the consistency of the theory, and the theory should be formulated in terms of intersecting loops, or graphs.
+    [1] => 
+
+    [2] => In 1994, Rovelli and Smolin showed that the quantum operators of the theory associated to area and volume have a discrete spectrum.That is, geometry is quantized.This result defines an explicit basis of states of quantum geometry, which turned out to be labelled by Roger Penrose's spin networks, which are graphs labelled by spins.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In 1986, Abhay Ashtekar reformulated Einstein's general relativity in a language closer to that of the rest of fundamental physics.[citation needed] Shortly after, Ted Jacobson and Lee Smolin realized that the formal equation of quantum gravity, called the Wheeler–DeWitt equation, admitted solutions labelled by loops when rewritten in the new Ashtekar variables.Carlo Rovelli and Smolin defined a nonperturbative and background-independent quantum theory of gravity in terms of these loop solutions.Jorge Pullin and Jerzy Lewandowski understood that the intersections of the loops are essential for the consistency of the theory, and the theory should be formulated in terms of intersecting loops, or graphs.
+In 1994, Rovelli and Smolin showed that the quantum operators of the theory associated to area and volume have a discrete spectrum.That is, geometry is quantized.This result defines an explicit basis of states of quantum geometry, which turned out to be labelled by Roger Penrose's spin networks, which are graphs labelled by spins.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_170032_673732.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_170032_673732.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_170524_011243)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The canonical version of the dynamics was established by Thomas Thiemann, who defined an anomaly-free Hamiltonian operator and showed the existence of a mathematically consistent background-independent theory. The covariant, or "spin foam", version of the dynamics was developed jointly over several decades by research groups in France, Canada, UK, Poland, and Germany. It was completed in 2008, leading to the definition of a family of transition amplitudes, which in the classical limit can be shown to be related to a family of truncations of general relativity.[8]. The finiteness of these amplitudes was proven in 2011.[9].[10]. It requires the existence of a positive cosmological constant, which is consistent with observed acceleration in the expansion of the Universe. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The canonical version of the dynamics was established by Thomas Thiemann, who defined an anomaly-free Hamiltonian operator and showed the existence of a mathematically consistent background-independent theory. The covariant, or "spin foam", version of the dynamics was developed jointly over several decades by research groups in France, Canada, UK, Poland, and Germany. It was completed in 2008, leading to the definition of a family of transition amplitudes, which in the classical limit can be shown to be related to a family of truncations of general relativity.[8]. The finiteness of these amplitudes was proven in 2011.[9].[10]. It requires the existence of a positive cosmological constant, which is consistent with observed acceleration in the expansion of the Universe. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The canonical version of the dynamics was established by Thomas Thiemann, who defined an anomaly-free Hamiltonian operator and showed the existence of a mathematically consistent background-independent theory. The covariant, or "spin foam", version of the dynamics was developed jointly over several decades by research groups in France, Canada, UK, Poland, and Germany. It was completed in 2008, leading to the definition of a family of transition amplitudes, which in the classical limit can be shown to be related to a family of truncations of general relativity.[8]. The finiteness of these amplitudes was proven in 2011.[9].[10]. It requires the existence of a positive cosmological constant, which is consistent with observed acceleration in the expansion of the Universe. 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The canonical version of the dynamics was established by Thomas Thiemann, who defined an anomaly-free Hamiltonian operator and showed the existence of a mathematically consistent background-independent theory.The covariant, or "spin foam", version of the dynamics was developed jointly over several decades by research groups in France, Canada, UK, Poland, and Germany.It was completed in 2008, leading to the definition of a family of transition amplitudes, which in the classical limit can be shown to be related to a family of truncations of general relativity.[8].The finiteness of these amplitudes was proven in 2011.[9].[10].It requires the existence of a positive cosmological constant, which is consistent with observed acceleration in the expansion of the Universe.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The canonical version of the dynamics was established by Thomas Thiemann, who defined an anomaly-free Hamiltonian operator and showed the existence of a mathematically consistent background-independent theory.The covariant, or "spin foam", version of the dynamics was developed jointly over several decades by research groups in France, Canada, UK, Poland, and Germany.It was completed in 2008, leading to the definition of a family of transition amplitudes, which in the classical limit can be shown to be related to a family of truncations of general relativity.[8].The finiteness of these amplitudes was proven in 2011.[9].[10].It requires the existence of a positive cosmological constant, which is consistent with observed acceleration in the expansion of the Universe.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_170524_011243.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_170524_011243.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210608_171148_914714)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In theoretical physics, general covariance is the invariance of the form of physical laws under arbitrary differentiable coordinate transformations. The essential idea is that coordinates are only artifices used in describing nature, and hence should play no role in the formulation of fundamental physical laws. A more significant requirement is the principle of general relativity that states that the laws of physics take the same form in all reference systems. This is a generalization of the principle of special relativity which states that the laws of physics take the same form in all inertial frames.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In theoretical physics, general covariance is the invariance of the form of physical laws under arbitrary differentiable coordinate transformations. The essential idea is that coordinates are only artifices used in describing nature, and hence should play no role in the formulation of fundamental physical laws. A more significant requirement is the principle of general relativity that states that the laws of physics take the same form in all reference systems. This is a generalization of the principle of special relativity which states that the laws of physics take the same form in all inertial frames.
+    [1] => 
+
+    [2] => In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds. It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth. These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In theoretical physics, general covariance is the invariance of the form of physical laws under arbitrary differentiable coordinate transformations. The essential idea is that coordinates are only artifices used in describing nature, and hence should play no role in the formulation of fundamental physical laws. A more significant requirement is the principle of general relativity that states that the laws of physics take the same form in all reference systems. This is a generalization of the principle of special relativity which states that the laws of physics take the same form in all inertial frames.
+    [1] => 
+
+    [2] => In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds. It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth. These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In theoretical physics, general covariance is the invariance of the form of physical laws under arbitrary differentiable coordinate transformations. The essential idea is that coordinates are only artifices used in describing nature, and hence should play no role in the formulation of fundamental physical laws. A more significant requirement is the principle of general relativity that states that the laws of physics take the same form in all reference systems. This is a generalization of the principle of special relativity which states that the laws of physics take the same form in all inertial frames.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds. It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth. These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In theoretical physics, general covariance is the invariance of the form of physical laws under arbitrary differentiable coordinate transformations.The essential idea is that coordinates are only artifices used in describing nature, and hence should play no role in the formulation of fundamental physical laws.A more significant requirement is the principle of general relativity that states that the laws of physics take the same form in all reference systems.This is a generalization of the principle of special relativity which states that the laws of physics take the same form in all inertial frames.
+    [1] => 
+
+    [2] => In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds.It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth.These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In theoretical physics, general covariance is the invariance of the form of physical laws under arbitrary differentiable coordinate transformations.The essential idea is that coordinates are only artifices used in describing nature, and hence should play no role in the formulation of fundamental physical laws.A more significant requirement is the principle of general relativity that states that the laws of physics take the same form in all reference systems.This is a generalization of the principle of special relativity which states that the laws of physics take the same form in all inertial frames.
+In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds.It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth.These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_171148_914714.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_171148_914714.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
