@@ -29746,3 +29746,1181 @@ In mathematics, a diffeomorphism is an isomorphism in the category of smooth man
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210608_171148_914714.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_132019_223582)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds. It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth. These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds. It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth. These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds. It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth. These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds.It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth.These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In mathematics, a diffeomorphism is an isomorphism in the category of smooth manifolds.It is an invertible function that maps one differentiable manifold to another, such that both the function and its inverse are smooth.These are the defining symmetry transformations of General Relativity since the theory is formulated only in terms of a differentiable manifold.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_132019_223582.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_132019_223582.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_132530_034152)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In general relativity, general covariance is intimately related to "diffeomorphism invariance". This symmetry is one of the defining features of the theory. However, it is a common misunderstanding that "diffeomorphism invariance" refers to the invariance of the physical predictions of a theory under arbitrary coordinate transformations; this is untrue and in fact every physical theory is invariant under coordinate transformations this way. Diffeomorphisms, as mathematicians define them, correspond to something much more radical; intuitively a way they can be envisaged is as simultaneously dragging all the physical fields (including the gravitational field) over the bare differentiable manifold while staying in the same coordinate system. Diffeomorphisms are the true symmetry transformations of general relativity, and come about from the assertion that the formulation of the theory is based on a bare differentiable manifold, but not on any prior geometry — the theory is background-independent (this is a profound shift, as all physical theories before general relativity had as part of their formulation a prior geometry). What is preserved under such transformations are the coincidences between the values the gravitational field takes at such and such a "place" and the values the matter fields take there. From these relationships one can form a notion of matter being located with respect to the gravitational field, or vice versa. This is what Einstein discovered: that physical entities are located with respect to one another only and not with respect to the spacetime manifold. As Carlo Rovelli puts it: "No more fields on spacetime: just fields on fields".[11]. This is the true meaning of the saying "The stage disappears and becomes one of the actors"; space-time as a "container" over which physics takes place has no objective physical meaning and instead the gravitational interaction is represented as just one of the fields forming the world. This is known as the relationalist interpretation of space-time. The realization by Einstein that general relativity should be interpreted this way is the origin of his remark "Beyond my wildest expectations". 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In general relativity, general covariance is intimately related to "diffeomorphism invariance". This symmetry is one of the defining features of the theory. However, it is a common misunderstanding that "diffeomorphism invariance" refers to the invariance of the physical predictions of a theory under arbitrary coordinate transformations; this is untrue and in fact every physical theory is invariant under coordinate transformations this way. Diffeomorphisms, as mathematicians define them, correspond to something much more radical; intuitively a way they can be envisaged is as simultaneously dragging all the physical fields (including the gravitational field) over the bare differentiable manifold while staying in the same coordinate system. Diffeomorphisms are the true symmetry transformations of general relativity, and come about from the assertion that the formulation of the theory is based on a bare differentiable manifold, but not on any prior geometry — the theory is background-independent (this is a profound shift, as all physical theories before general relativity had as part of their formulation a prior geometry). What is preserved under such transformations are the coincidences between the values the gravitational field takes at such and such a "place" and the values the matter fields take there. From these relationships one can form a notion of matter being located with respect to the gravitational field, or vice versa. This is what Einstein discovered: that physical entities are located with respect to one another only and not with respect to the spacetime manifold. As Carlo Rovelli puts it: "No more fields on spacetime: just fields on fields".[11]. This is the true meaning of the saying "The stage disappears and becomes one of the actors"; space-time as a "container" over which physics takes place has no objective physical meaning and instead the gravitational interaction is represented as just one of the fields forming the world. This is known as the relationalist interpretation of space-time. The realization by Einstein that general relativity should be interpreted this way is the origin of his remark "Beyond my wildest expectations". 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In general relativity, general covariance is intimately related to "diffeomorphism invariance". This symmetry is one of the defining features of the theory. However, it is a common misunderstanding that "diffeomorphism invariance" refers to the invariance of the physical predictions of a theory under arbitrary coordinate transformations; this is untrue and in fact every physical theory is invariant under coordinate transformations this way. Diffeomorphisms, as mathematicians define them, correspond to something much more radical; intuitively a way they can be envisaged is as simultaneously dragging all the physical fields (including the gravitational field) over the bare differentiable manifold while staying in the same coordinate system. Diffeomorphisms are the true symmetry transformations of general relativity, and come about from the assertion that the formulation of the theory is based on a bare differentiable manifold, but not on any prior geometry — the theory is background-independent (this is a profound shift, as all physical theories before general relativity had as part of their formulation a prior geometry). What is preserved under such transformations are the coincidences between the values the gravitational field takes at such and such a "place" and the values the matter fields take there. From these relationships one can form a notion of matter being located with respect to the gravitational field, or vice versa. This is what Einstein discovered: that physical entities are located with respect to one another only and not with respect to the spacetime manifold. As Carlo Rovelli puts it: "No more fields on spacetime: just fields on fields".[11]. This is the true meaning of the saying "The stage disappears and becomes one of the actors"; space-time as a "container" over which physics takes place has no objective physical meaning and instead the gravitational interaction is represented as just one of the fields forming the world. This is known as the relationalist interpretation of space-time. The realization by Einstein that general relativity should be interpreted this way is the origin of his remark "Beyond my wildest expectations". 
+$matches ==>
+Array
+(
+    [0] => ". 
+    [1] => ".
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In general relativity, general covariance is intimately related to "diffeomorphism invariance".This symmetry is one of the defining features of the theory.However, it is a common misunderstanding that "diffeomorphism invariance" refers to the invariance of the physical predictions of a theory under arbitrary coordinate transformations; this is untrue and in fact every physical theory is invariant under coordinate transformations this way.Diffeomorphisms, as mathematicians define them, correspond to something much more radical; intuitively a way they can be envisaged is as simultaneously dragging all the physical fields (including the gravitational field) over the bare differentiable manifold while staying in the same coordinate system.Diffeomorphisms are the true symmetry transformations of general relativity, and come about from the assertion that the formulation of the theory is based on a bare differentiable manifold, but not on any prior geometry — the theory is background-independent (this is a profound shift, as all physical theories before general relativity had as part of their formulation a prior geometry).What is preserved under such transformations are the coincidences between the values the gravitational field takes at such and such a "place" and the values the matter fields take there.From these relationships one can form a notion of matter being located with respect to the gravitational field, or vice versa.This is what Einstein discovered: that physical entities are located with respect to one another only and not with respect to the spacetime manifold.As Carlo Rovelli puts it: "No more fields on spacetime: just fields on fields".[11].This is the true meaning of the saying "The stage disappears and becomes one of the actors"; space-time as a "container" over which physics takes place has no objective physical meaning and instead the gravitational interaction is represented as just one of the fields forming the world.This is known as the relationalist interpretation of space-time.The realization by Einstein that general relativity should be interpreted this way is the origin of his remark "Beyond my wildest expectations".
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In general relativity, general covariance is intimately related to "diffeomorphism invariance".This symmetry is one of the defining features of the theory.However, it is a common misunderstanding that "diffeomorphism invariance" refers to the invariance of the physical predictions of a theory under arbitrary coordinate transformations; this is untrue and in fact every physical theory is invariant under coordinate transformations this way.Diffeomorphisms, as mathematicians define them, correspond to something much more radical; intuitively a way they can be envisaged is as simultaneously dragging all the physical fields (including the gravitational field) over the bare differentiable manifold while staying in the same coordinate system.Diffeomorphisms are the true symmetry transformations of general relativity, and come about from the assertion that the formulation of the theory is based on a bare differentiable manifold, but not on any prior geometry — the theory is background-independent (this is a profound shift, as all physical theories before general relativity had as part of their formulation a prior geometry).What is preserved under such transformations are the coincidences between the values the gravitational field takes at such and such a "place" and the values the matter fields take there.From these relationships one can form a notion of matter being located with respect to the gravitational field, or vice versa.This is what Einstein discovered: that physical entities are located with respect to one another only and not with respect to the spacetime manifold.As Carlo Rovelli puts it: "No more fields on spacetime: just fields on fields".[11].This is the true meaning of the saying "The stage disappears and becomes one of the actors"; space-time as a "container" over which physics takes place has no objective physical meaning and instead the gravitational interaction is represented as just one of the fields forming the world.This is known as the relationalist interpretation of space-time.The realization by Einstein that general relativity should be interpreted this way is the origin of his remark "Beyond my wildest expectations".
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_132530_034152.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_132530_034152.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_133342_930541)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In LQG this aspect of general relativity is taken seriously and this symmetry is preserved by requiring that the physical states remain invariant under the generators of diffeomorphisms. The interpretation of this condition is well understood for purely spatial diffeomorphisms. However, the understanding of diffeomorphisms involving time (the Hamiltonian constraint) is more subtle because it is related to dynamics and the so-called "problem of time" in general relativity.[12]. A generally accepted calculational framework to account for this constraint has yet to be found.[13].[14]. A plausible candidate for the quantum Hamiltonian constraint is the operator introduced by Thiemann.[15].
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In LQG this aspect of general relativity is taken seriously and this symmetry is preserved by requiring that the physical states remain invariant under the generators of diffeomorphisms. The interpretation of this condition is well understood for purely spatial diffeomorphisms. However, the understanding of diffeomorphisms involving time (the Hamiltonian constraint) is more subtle because it is related to dynamics and the so-called "problem of time" in general relativity.[12]. A generally accepted calculational framework to account for this constraint has yet to be found.[13].[14]. A plausible candidate for the quantum Hamiltonian constraint is the operator introduced by Thiemann.[15].
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In LQG this aspect of general relativity is taken seriously and this symmetry is preserved by requiring that the physical states remain invariant under the generators of diffeomorphisms. The interpretation of this condition is well understood for purely spatial diffeomorphisms. However, the understanding of diffeomorphisms involving time (the Hamiltonian constraint) is more subtle because it is related to dynamics and the so-called "problem of time" in general relativity.[12]. A generally accepted calculational framework to account for this constraint has yet to be found.[13].[14]. A plausible candidate for the quantum Hamiltonian constraint is the operator introduced by Thiemann.[15].
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In LQG this aspect of general relativity is taken seriously and this symmetry is preserved by requiring that the physical states remain invariant under the generators of diffeomorphisms.The interpretation of this condition is well understood for purely spatial diffeomorphisms.However, the understanding of diffeomorphisms involving time (the Hamiltonian constraint) is more subtle because it is related to dynamics and the so-called "problem of time" in general relativity.[12].A generally accepted calculational framework to account for this constraint has yet to be found.[13].[14].A plausible candidate for the quantum Hamiltonian constraint is the operator introduced by Thiemann.[15].
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In LQG this aspect of general relativity is taken seriously and this symmetry is preserved by requiring that the physical states remain invariant under the generators of diffeomorphisms.The interpretation of this condition is well understood for purely spatial diffeomorphisms.However, the understanding of diffeomorphisms involving time (the Hamiltonian constraint) is more subtle because it is related to dynamics and the so-called "problem of time" in general relativity.[12].A generally accepted calculational framework to account for this constraint has yet to be found.[13].[14].A plausible candidate for the quantum Hamiltonian constraint is the operator introduced by Thiemann.[15].
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_133342_930541.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_133342_930541.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_134134_081873)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => LQG is formally background independent. The equations of LQG are not embedded in, or dependent on, space and time (except for its invariant topology). Instead, they are expected to give rise to space and time at distances which are 10 times the Planck length. The issue of background independence in LQG still has some unresolved subtleties. For example, some derivations require a fixed choice of the topology, while any consistent quantum theory of gravity should include topology change as a dynamical process. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => LQG is formally background independent. The equations of LQG are not embedded in, or dependent on, space and time (except for its invariant topology). Instead, they are expected to give rise to space and time at distances which are 10 times the Planck length. The issue of background independence in LQG still has some unresolved subtleties. For example, some derivations require a fixed choice of the topology, while any consistent quantum theory of gravity should include topology change as a dynamical process. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->LQG is formally background independent. The equations of LQG are not embedded in, or dependent on, space and time (except for its invariant topology). Instead, they are expected to give rise to space and time at distances which are 10 times the Planck length. The issue of background independence in LQG still has some unresolved subtleties. For example, some derivations require a fixed choice of the topology, while any consistent quantum theory of gravity should include topology change as a dynamical process. 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => LQG is formally background independent.The equations of LQG are not embedded in, or dependent on, space and time (except for its invariant topology).Instead, they are expected to give rise to space and time at distances which are 10 times the Planck length.The issue of background independence in LQG still has some unresolved subtleties.For example, some derivations require a fixed choice of the topology, while any consistent quantum theory of gravity should include topology change as a dynamical process.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>LQG is formally background independent.The equations of LQG are not embedded in, or dependent on, space and time (except for its invariant topology).Instead, they are expected to give rise to space and time at distances which are 10 times the Planck length.The issue of background independence in LQG still has some unresolved subtleties.For example, some derivations require a fixed choice of the topology, while any consistent quantum theory of gravity should include topology change as a dynamical process.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_134134_081873.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_134134_081873.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_134355_262948)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The constraints of classical canonical general relativity
+
+    [1] => Main article: Lie derivative
+
+    [2] => 
+
+    [3] => General relativity is an example of a constrained system. In the Hamiltonian formulation of ordinary classical mechanics the Poisson bracket is an important concept. A "canonical coordinate system" consists of canonical position and momentum variables that satisfy canonical Poisson-bracket relations,
+
+    [4] => 
+
+    [5] =>     { q i , p j } = δ i j {\displaystyle \{q_{i},p_{j}\}=\delta _{ij}} \{q_{i},p_{j}\}=\delta _{ij}
+
+    [6] => 
+
+    [7] => where the Poisson bracket is given by
+
+    [8] => 
+
+    [9] =>     { f , g } = ∑ i = 1 N ( ∂ f ∂ q i ∂ g ∂ p i − ∂ f ∂ p i ∂ g ∂ q i ) . {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).}
+
+    [10] => 
+
+    [11] => for arbitrary phase space functions f ( q i , p j ) {\displaystyle f(q_{i},p_{j})} {\displaystyle f(q_{i},p_{j})} and g ( q i , p j ) {\displaystyle g(q_{i},p_{j})} {\displaystyle g(q_{i},p_{j})}. With the use of Poisson brackets, the Hamilton's equations can be rewritten as,
+
+    [12] => 
+
+    [13] =>     q ˙ i = { q i , H } , {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},} {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},}
+
+    [14] => 
+
+    [15] =>     p ˙ i = { p i , H } . {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.}
+
+    [16] => 
+
+    [17] => These equations describe a "flow" or orbit in phase space generated by the Hamiltonian H {\displaystyle H} H. Given any phase space function F ( q , p ) {\displaystyle F(q,p)} {\displaystyle F(q,p)}, yields
+
+    [18] => 
+
+    [19] =>     d d t F ( q i , p i ) = { F , H } . {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.}
+
+    [20] => 
+
+    [21] => In a similar way 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The constraints of classical canonical general relativity
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Main article: Lie derivative
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->General relativity is an example of a constrained system. In the Hamiltonian formulation of ordinary classical mechanics the Poisson bracket is an important concept. A "canonical coordinate system" consists of canonical position and momentum variables that satisfy canonical Poisson-bracket relations,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    { q i , p j } = δ i j {\displaystyle \{q_{i},p_{j}\}=\delta _{ij}} \{q_{i},p_{j}\}=\delta _{ij}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->where the Poisson bracket is given by
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    { f , g } = ∑ i = 1 N ( ∂ f ∂ q i ∂ g ∂ p i − ∂ f ∂ p i ∂ g ∂ q i ) . {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->for arbitrary phase space functions f ( q i , p j ) {\displaystyle f(q_{i},p_{j})} {\displaystyle f(q_{i},p_{j})} and g ( q i , p j ) {\displaystyle g(q_{i},p_{j})} {\displaystyle g(q_{i},p_{j})}. With the use of Poisson brackets, the Hamilton's equations can be rewritten as,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    q ˙ i = { q i , H } , {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},} {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    p ˙ i = { p i , H } . {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->These equations describe a "flow" or orbit in phase space generated by the Hamiltonian H {\displaystyle H} H. Given any phase space function F ( q , p ) {\displaystyle F(q,p)} {\displaystyle F(q,p)}, yields
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    d d t F ( q i , p i ) = { F , H } . {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The constraints of classical canonical general relativity 
+    [1] => Main article: Lie derivative 
+    [2] => 
+
+    [3] => General relativity is an example of a constrained system. In the Hamiltonian formulation of ordinary classical mechanics the Poisson bracket is an important concept. A "canonical coordinate system" consists of canonical position and momentum variables that satisfy canonical Poisson-bracket relations, 
+    [4] => 
+
+    [5] =>     { q i , p j } = δ i j {\displaystyle \{q_{i},p_{j}\}=\delta _{ij}} \{q_{i},p_{j}\}=\delta _{ij} 
+    [6] => 
+
+    [7] => where the Poisson bracket is given by 
+    [8] => 
+
+    [9] =>     { f , g } = ∑ i = 1 N ( ∂ f ∂ q i ∂ g ∂ p i − ∂ f ∂ p i ∂ g ∂ q i ) . {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} 
+    [10] => 
+
+    [11] => for arbitrary phase space functions f ( q i , p j ) {\displaystyle f(q_{i},p_{j})} {\displaystyle f(q_{i},p_{j})} and g ( q i , p j ) {\displaystyle g(q_{i},p_{j})} {\displaystyle g(q_{i},p_{j})}. With the use of Poisson brackets, the Hamilton's equations can be rewritten as, 
+    [12] => 
+
+    [13] =>     q ˙ i = { q i , H } , {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},} {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},} 
+    [14] => 
+
+    [15] =>     p ˙ i = { p i , H } . {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} 
+    [16] => 
+
+    [17] => These equations describe a "flow" or orbit in phase space generated by the Hamiltonian H {\displaystyle H} H. Given any phase space function F ( q , p ) {\displaystyle F(q,p)} {\displaystyle F(q,p)}, yields 
+    [18] => 
+
+    [19] =>     d d t F ( q i , p i ) = { F , H } . {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} 
+    [20] => 
+
+    [21] => In a similar way 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->General relativity is an example of a constrained system. In the Hamiltonian formulation of ordinary classical mechanics the Poisson bracket is an important concept. A "canonical coordinate system" consists of canonical position and momentum variables that satisfy canonical Poisson-bracket relations, 
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    { f , g } = ∑ i = 1 N ( ∂ f ∂ q i ∂ g ∂ p i − ∂ f ∂ p i ∂ g ∂ q i ) . {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} 
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->for arbitrary phase space functions f ( q i , p j ) {\displaystyle f(q_{i},p_{j})} {\displaystyle f(q_{i},p_{j})} and g ( q i , p j ) {\displaystyle g(q_{i},p_{j})} {\displaystyle g(q_{i},p_{j})}. With the use of Poisson brackets, the Hamilton's equations can be rewritten as, 
+$matches ==>
+Array
+(
+    [0] => }. 
+    [1] => }.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    p ˙ i = { p i , H } . {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} 
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->These equations describe a "flow" or orbit in phase space generated by the Hamiltonian H {\displaystyle H} H. Given any phase space function F ( q , p ) {\displaystyle F(q,p)} {\displaystyle F(q,p)}, yields 
+$matches ==>
+Array
+(
+    [0] => H. 
+    [1] => H.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    d d t F ( q i , p i ) = { F , H } . {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} 
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The constraints of classical canonical general relativity 
+    [1] => Main article: Lie derivative 
+    [2] => 
+
+    [3] => General relativity is an example of a constrained system.In the Hamiltonian formulation of ordinary classical mechanics the Poisson bracket is an important concept.A "canonical coordinate system" consists of canonical position and momentum variables that satisfy canonical Poisson-bracket relations, 
+    [4] => 
+
+    [5] =>     { q i , p j } = δ i j {\displaystyle \{q_{i},p_{j}\}=\delta _{ij}} \{q_{i},p_{j}\}=\delta _{ij} 
+    [6] => 
+
+    [7] => where the Poisson bracket is given by 
+    [8] => 
+
+    [9] =>     { f , g } = ∑ i = 1 N ( ∂ f ∂ q i ∂ g ∂ p i − ∂ f ∂ p i ∂ g ∂ q i ) .{\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} 
+    [10] => 
+
+    [11] => for arbitrary phase space functions f ( q i , p j ) {\displaystyle f(q_{i},p_{j})} {\displaystyle f(q_{i},p_{j})} and g ( q i , p j ) {\displaystyle g(q_{i},p_{j})} {\displaystyle g(q_{i},p_{j})}.With the use of Poisson brackets, the Hamilton's equations can be rewritten as, 
+    [12] => 
+
+    [13] =>     q ˙ i = { q i , H } , {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},} {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},} 
+    [14] => 
+
+    [15] =>     p ˙ i = { p i , H } .{\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} 
+    [16] => 
+
+    [17] => These equations describe a "flow" or orbit in phase space generated by the Hamiltonian H {\displaystyle H} H.Given any phase space function F ( q , p ) {\displaystyle F(q,p)} {\displaystyle F(q,p)}, yields 
+    [18] => 
+
+    [19] =>     d d t F ( q i , p i ) = { F , H } .{\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} 
+    [20] => 
+
+    [21] => In a similar way 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The constraints of classical canonical general relativity Main article: Lie derivative 
+General relativity is an example of a constrained system.In the Hamiltonian formulation of ordinary classical mechanics the Poisson bracket is an important concept.A "canonical coordinate system" consists of canonical position and momentum variables that satisfy canonical Poisson-bracket relations, 
+    { q i , p j } = δ i j {\displaystyle \{q_{i},p_{j}\}=\delta _{ij}} \{q_{i},p_{j}\}=\delta _{ij} 
+where the Poisson bracket is given by 
+    { f , g } = ∑ i = 1 N ( ∂ f ∂ q i ∂ g ∂ p i − ∂ f ∂ p i ∂ g ∂ q i ) .{\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} {\displaystyle \{f,g\}=\sum _{i=1}^{N}\left({\frac {\partial f}{\partial q_{i}}}{\frac {\partial g}{\partial p_{i}}}-{\frac {\partial f}{\partial p_{i}}}{\frac {\partial g}{\partial q_{i}}}\right).} 
+for arbitrary phase space functions f ( q i , p j ) {\displaystyle f(q_{i},p_{j})} {\displaystyle f(q_{i},p_{j})} and g ( q i , p j ) {\displaystyle g(q_{i},p_{j})} {\displaystyle g(q_{i},p_{j})}.With the use of Poisson brackets, the Hamilton's equations can be rewritten as, 
+    q ˙ i = { q i , H } , {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},} {\displaystyle {\dot {q}}_{i}=\{q_{i},H\},} 
+    p ˙ i = { p i , H } .{\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} {\displaystyle {\dot {p}}_{i}=\{p_{i},H\}.} 
+These equations describe a "flow" or orbit in phase space generated by the Hamiltonian H {\displaystyle H} H.Given any phase space function F ( q , p ) {\displaystyle F(q,p)} {\displaystyle F(q,p)}, yields 
+    d d t F ( q i , p i ) = { F , H } .{\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} {\displaystyle {\frac {\mathrm {d} }{\mathrm {d} t}}F(q_{i},p_{i})=\{F,H\}.} 
+In a similar way 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_134355_262948.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_134355_262948.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_134847_930689)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a central role in Hamilton's equations of motion, which govern the time evolution of a Hamiltonian dynamical system. The Poisson bracket also distinguishes a certain class of coordinate transformations, called canonical transformations, which map canonical coordinate systems into canonical coordinate systems. A "canonical coordinate system" consists of canonical position and momentum variables (below symbolized by q i {\displaystyle q_{i}} q_{i} and p i {\displaystyle p_{i}} p_{i}, respectively) that satisfy canonical Poisson bracket relations. The set of possible canonical transformations is always very rich. For instance, it is often possible to choose the Hamiltonian itself H = H ( q , p ; t ) {\displaystyle H=H(q,p;t)} {\displaystyle H=H(q,p;t)} as one of the new canonical momentum coordinates. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a central role in Hamilton's equations of motion, which govern the time evolution of a Hamiltonian dynamical system. The Poisson bracket also distinguishes a certain class of coordinate transformations, called canonical transformations, which map canonical coordinate systems into canonical coordinate systems. A "canonical coordinate system" consists of canonical position and momentum variables (below symbolized by q i {\displaystyle q_{i}} q_{i} and p i {\displaystyle p_{i}} p_{i}, respectively) that satisfy canonical Poisson bracket relations. The set of possible canonical transformations is always very rich. For instance, it is often possible to choose the Hamiltonian itself H = H ( q , p ; t ) {\displaystyle H=H(q,p;t)} {\displaystyle H=H(q,p;t)} as one of the new canonical momentum coordinates. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a central role in Hamilton's equations of motion, which govern the time evolution of a Hamiltonian dynamical system. The Poisson bracket also distinguishes a certain class of coordinate transformations, called canonical transformations, which map canonical coordinate systems into canonical coordinate systems. A "canonical coordinate system" consists of canonical position and momentum variables (below symbolized by q i {\displaystyle q_{i}} q_{i} and p i {\displaystyle p_{i}} p_{i}, respectively) that satisfy canonical Poisson bracket relations. The set of possible canonical transformations is always very rich. For instance, it is often possible to choose the Hamiltonian itself H = H ( q , p ; t ) {\displaystyle H=H(q,p;t)} {\displaystyle H=H(q,p;t)} as one of the new canonical momentum coordinates. 
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a central role in Hamilton's equations of motion, which govern the time evolution of a Hamiltonian dynamical system.The Poisson bracket also distinguishes a certain class of coordinate transformations, called canonical transformations, which map canonical coordinate systems into canonical coordinate systems.A "canonical coordinate system" consists of canonical position and momentum variables (below symbolized by q i {\displaystyle q_{i}} q_{i} and p i {\displaystyle p_{i}} p_{i}, respectively) that satisfy canonical Poisson bracket relations.The set of possible canonical transformations is always very rich.For instance, it is often possible to choose the Hamiltonian itself H = H ( q , p ; t ) {\displaystyle H=H(q,p;t)} {\displaystyle H=H(q,p;t)} as one of the new canonical momentum coordinates.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In mathematics and classical mechanics, the Poisson bracket is an important binary operation in Hamiltonian mechanics, playing a central role in Hamilton's equations of motion, which govern the time evolution of a Hamiltonian dynamical system.The Poisson bracket also distinguishes a certain class of coordinate transformations, called canonical transformations, which map canonical coordinate systems into canonical coordinate systems.A "canonical coordinate system" consists of canonical position and momentum variables (below symbolized by q i {\displaystyle q_{i}} q_{i} and p i {\displaystyle p_{i}} p_{i}, respectively) that satisfy canonical Poisson bracket relations.The set of possible canonical transformations is always very rich.For instance, it is often possible to choose the Hamiltonian itself H = H ( q , p ; t ) {\displaystyle H=H(q,p;t)} {\displaystyle H=H(q,p;t)} as one of the new canonical momentum coordinates.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_134847_930689.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_134847_930689.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_140004_394174)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In a similar way the Poisson bracket between a constraint and the phase space variables generates a flow along an orbit in (the unconstrained) phase space generated by the constraint. There are three types of constraints in Ashtekar's reformulation of classical general relativity: 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In a similar way the Poisson bracket between a constraint and the phase space variables generates a flow along an orbit in (the unconstrained) phase space generated by the constraint. There are three types of constraints in Ashtekar's reformulation of classical general relativity: 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In a similar way the Poisson bracket between a constraint and the phase space variables generates a flow along an orbit in (the unconstrained) phase space generated by the constraint. There are three types of constraints in Ashtekar's reformulation of classical general relativity: 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In a similar way the Poisson bracket between a constraint and the phase space variables generates a flow along an orbit in (the unconstrained) phase space generated by the constraint.There are three types of constraints in Ashtekar's reformulation of classical general relativity: 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In a similar way the Poisson bracket between a constraint and the phase space variables generates a flow along an orbit in (the unconstrained) phase space generated by the constraint.There are three types of constraints in Ashtekar's reformulation of classical general relativity: 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_140004_394174.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_140004_394174.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_170308_106404)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'which must vanish for any such function. These smeared constraints defined with respect to a suitable space of smearing functions give an equivalent description to the original constraints.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => There are three types of constraints in Ashtekar's reformulation of classical general relativity:
+
+    [1] => SU(2) Gauss gauge constraints
+
+    [2] => 
+
+    [3] => The Gauss constraints
+
+    [4] => 
+
+    [5] =>     G j ( x ) = 0. {\displaystyle G_{j}(x)=0.} {\displaystyle G_{j}(x)=0.}
+
+    [6] => 
+
+    [7] => This represents an infinite number of constraints one for each value of x {\displaystyle x} x. These come about from re-expressing General relativity as an S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills type gauge theory (Yang–Mills is a generalization of Maxwell's theory where the gauge field transforms as a vector under Gauss transformations, that is, the Gauge field is of the form A a i ( x ) {\displaystyle A_{a}^{i}(x)} A_{a}^{i}(x) where i {\displaystyle i} i is an internal index. See Ashtekar variables). These infinite number of Gauss gauge constraints can be "smeared" by test fields with internal indices, λ j ( x ) {\displaystyle \lambda ^{j}(x)} {\displaystyle \lambda ^{j}(x)},
+
+    [8] => 
+
+    [9] =>     G ( λ ) = ∫ G j ( x ) λ j ( x ) d 3 x . {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.}
+
+    [10] => 
+
+    [11] => which must vanish for any such function. These smeared constraints defined with respect to a suitable space of smearing functions give an equivalent description to the original constraints.
+    [12] => 
+
+    [13] => Ashtekar's formulation may be thought of as ordinary S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills theory together with the following special constraints, resulting from diffeomorphism invariance, and a Hamiltonian that vanishes. The dynamics of such a theory are thus very different from that of ordinary Yang–Mills theory. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->There are three types of constraints in Ashtekar's reformulation of classical general relativity:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->SU(2) Gauss gauge constraints
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The Gauss constraints
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    G j ( x ) = 0. {\displaystyle G_{j}(x)=0.} {\displaystyle G_{j}(x)=0.}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->This represents an infinite number of constraints one for each value of x {\displaystyle x} x. These come about from re-expressing General relativity as an S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills type gauge theory (Yang–Mills is a generalization of Maxwell's theory where the gauge field transforms as a vector under Gauss transformations, that is, the Gauge field is of the form A a i ( x ) {\displaystyle A_{a}^{i}(x)} A_{a}^{i}(x) where i {\displaystyle i} i is an internal index. See Ashtekar variables). These infinite number of Gauss gauge constraints can be "smeared" by test fields with internal indices, λ j ( x ) {\displaystyle \lambda ^{j}(x)} {\displaystyle \lambda ^{j}(x)},
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    G ( λ ) = ∫ G j ( x ) λ j ( x ) d 3 x . {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => There are three types of constraints in Ashtekar's reformulation of classical general relativity: 
+    [1] => SU(2) Gauss gauge constraints 
+    [2] => 
+
+    [3] => The Gauss constraints 
+    [4] => 
+
+    [5] =>     G j ( x ) = 0. {\displaystyle G_{j}(x)=0.} {\displaystyle G_{j}(x)=0.} 
+    [6] => 
+
+    [7] => This represents an infinite number of constraints one for each value of x {\displaystyle x} x. These come about from re-expressing General relativity as an S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills type gauge theory (Yang–Mills is a generalization of Maxwell's theory where the gauge field transforms as a vector under Gauss transformations, that is, the Gauge field is of the form A a i ( x ) {\displaystyle A_{a}^{i}(x)} A_{a}^{i}(x) where i {\displaystyle i} i is an internal index. See Ashtekar variables). These infinite number of Gauss gauge constraints can be "smeared" by test fields with internal indices, λ j ( x ) {\displaystyle \lambda ^{j}(x)} {\displaystyle \lambda ^{j}(x)}, 
+    [8] => 
+
+    [9] =>     G ( λ ) = ∫ G j ( x ) λ j ( x ) d 3 x . {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} 
+    [10] => 
+
+    [11] => which must vanish for any such function. These smeared constraints defined with respect to a suitable space of smearing functions give an equivalent description to the original constraints.
+    [12] => 
+
+    [13] => Ashtekar's formulation may be thought of as ordinary S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills theory together with the following special constraints, resulting from diffeomorphism invariance, and a Hamiltonian that vanishes. The dynamics of such a theory are thus very different from that of ordinary Yang–Mills theory. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->This represents an infinite number of constraints one for each value of x {\displaystyle x} x. These come about from re-expressing General relativity as an S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills type gauge theory (Yang–Mills is a generalization of Maxwell's theory where the gauge field transforms as a vector under Gauss transformations, that is, the Gauge field is of the form A a i ( x ) {\displaystyle A_{a}^{i}(x)} A_{a}^{i}(x) where i {\displaystyle i} i is an internal index. See Ashtekar variables). These infinite number of Gauss gauge constraints can be "smeared" by test fields with internal indices, λ j ( x ) {\displaystyle \lambda ^{j}(x)} {\displaystyle \lambda ^{j}(x)}, 
+$matches ==>
+Array
+(
+    [0] => x. 
+    [1] => x.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    G ( λ ) = ∫ G j ( x ) λ j ( x ) d 3 x . {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} 
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->which must vanish for any such function. These smeared constraints defined with respect to a suitable space of smearing functions give an equivalent description to the original constraints.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Ashtekar's formulation may be thought of as ordinary S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills theory together with the following special constraints, resulting from diffeomorphism invariance, and a Hamiltonian that vanishes. The dynamics of such a theory are thus very different from that of ordinary Yang–Mills theory. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => There are three types of constraints in Ashtekar's reformulation of classical general relativity: 
+    [1] => SU(2) Gauss gauge constraints 
+    [2] => 
+
+    [3] => The Gauss constraints 
+    [4] => 
+
+    [5] =>     G j ( x ) = 0. {\displaystyle G_{j}(x)=0.} {\displaystyle G_{j}(x)=0.} 
+    [6] => 
+
+    [7] => This represents an infinite number of constraints one for each value of x {\displaystyle x} x.These come about from re-expressing General relativity as an S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills type gauge theory (Yang–Mills is a generalization of Maxwell's theory where the gauge field transforms as a vector under Gauss transformations, that is, the Gauge field is of the form A a i ( x ) {\displaystyle A_{a}^{i}(x)} A_{a}^{i}(x) where i {\displaystyle i} i is an internal index.See Ashtekar variables).These infinite number of Gauss gauge constraints can be "smeared" by test fields with internal indices, λ j ( x ) {\displaystyle \lambda ^{j}(x)} {\displaystyle \lambda ^{j}(x)}, 
+    [8] => 
+
+    [9] =>     G ( λ ) = ∫ G j ( x ) λ j ( x ) d 3 x .{\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} 
+    [10] => 
+
+    [11] => which must vanish for any such function.These smeared constraints defined with respect to a suitable space of smearing functions give an equivalent description to the original constraints.
+    [12] => 
+
+    [13] => Ashtekar's formulation may be thought of as ordinary S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills theory together with the following special constraints, resulting from diffeomorphism invariance, and a Hamiltonian that vanishes.The dynamics of such a theory are thus very different from that of ordinary Yang–Mills theory.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>There are three types of constraints in Ashtekar's reformulation of classical general relativity: SU(2) Gauss gauge constraints 
+The Gauss constraints 
+    G j ( x ) = 0. {\displaystyle G_{j}(x)=0.} {\displaystyle G_{j}(x)=0.} 
+This represents an infinite number of constraints one for each value of x {\displaystyle x} x.These come about from re-expressing General relativity as an S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills type gauge theory (Yang–Mills is a generalization of Maxwell's theory where the gauge field transforms as a vector under Gauss transformations, that is, the Gauge field is of the form A a i ( x ) {\displaystyle A_{a}^{i}(x)} A_{a}^{i}(x) where i {\displaystyle i} i is an internal index.See Ashtekar variables).These infinite number of Gauss gauge constraints can be "smeared" by test fields with internal indices, λ j ( x ) {\displaystyle \lambda ^{j}(x)} {\displaystyle \lambda ^{j}(x)}, 
+    G ( λ ) = ∫ G j ( x ) λ j ( x ) d 3 x .{\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} {\displaystyle G(\lambda )=\int G_{j}(x)\lambda ^{j}(x)\,\operatorname {d} ^{3}\!x.} 
+which must vanish for any such function.These smeared constraints defined with respect to a suitable space of smearing functions give an equivalent description to the original constraints.
+Ashtekar's formulation may be thought of as ordinary S U ( 2 ) {\displaystyle \mathrm {SU} (2)} \mathrm {SU} (2) Yang–Mills theory together with the following special constraints, resulting from diffeomorphism invariance, and a Hamiltonian that vanishes.The dynamics of such a theory are thus very different from that of ordinary Yang–Mills theory.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_170308_106404.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_170308_106404.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_171358_459858)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The spatial diffeomorphism constraints
+
+    [1] => 
+
+    [2] =>     C a ( x ) = 0 {\displaystyle C_{a}(x)=0} {\displaystyle C_{a}(x)=0}
+
+    [3] => 
+
+    [4] => can be smeared by the so-called shift functions N → ( x ) {\displaystyle {\vec {N}}(x)} {\vec {N}}(x) to give an equivalent set of smeared spatial diffeomorphism constraints,
+
+    [5] => 
+
+    [6] =>     C ( N → ) = ∫ C a ( x ) N a ( x ) d 3 x . {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.}
+
+    [7] => 
+
+    [8] => These generate spatial diffeomorphisms along orbits defined by the shift function N a ( x ) {\displaystyle N^{a}(x)} {\displaystyle N^{a}(x)}. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The spatial diffeomorphism constraints
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    C a ( x ) = 0 {\displaystyle C_{a}(x)=0} {\displaystyle C_{a}(x)=0}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->can be smeared by the so-called shift functions N → ( x ) {\displaystyle {\vec {N}}(x)} {\vec {N}}(x) to give an equivalent set of smeared spatial diffeomorphism constraints,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    C ( N → ) = ∫ C a ( x ) N a ( x ) d 3 x . {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The spatial diffeomorphism constraints 
+    [1] => 
+
+    [2] =>     C a ( x ) = 0 {\displaystyle C_{a}(x)=0} {\displaystyle C_{a}(x)=0} 
+    [3] => 
+
+    [4] => can be smeared by the so-called shift functions N → ( x ) {\displaystyle {\vec {N}}(x)} {\vec {N}}(x) to give an equivalent set of smeared spatial diffeomorphism constraints, 
+    [5] => 
+
+    [6] =>     C ( N → ) = ∫ C a ( x ) N a ( x ) d 3 x . {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} 
+    [7] => 
+
+    [8] => These generate spatial diffeomorphisms along orbits defined by the shift function N a ( x ) {\displaystyle N^{a}(x)} {\displaystyle N^{a}(x)}. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->    C ( N → ) = ∫ C a ( x ) N a ( x ) d 3 x . {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} 
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->These generate spatial diffeomorphisms along orbits defined by the shift function N a ( x ) {\displaystyle N^{a}(x)} {\displaystyle N^{a}(x)}. 
+$matches ==>
+Array
+(
+    [0] => }. 
+    [1] => }.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The spatial diffeomorphism constraints 
+    [1] => 
+
+    [2] =>     C a ( x ) = 0 {\displaystyle C_{a}(x)=0} {\displaystyle C_{a}(x)=0} 
+    [3] => 
+
+    [4] => can be smeared by the so-called shift functions N → ( x ) {\displaystyle {\vec {N}}(x)} {\vec {N}}(x) to give an equivalent set of smeared spatial diffeomorphism constraints, 
+    [5] => 
+
+    [6] =>     C ( N → ) = ∫ C a ( x ) N a ( x ) d 3 x .{\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} 
+    [7] => 
+
+    [8] => These generate spatial diffeomorphisms along orbits defined by the shift function N a ( x ) {\displaystyle N^{a}(x)} {\displaystyle N^{a}(x)}.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The spatial diffeomorphism constraints 
+    C a ( x ) = 0 {\displaystyle C_{a}(x)=0} {\displaystyle C_{a}(x)=0} 
+can be smeared by the so-called shift functions N → ( x ) {\displaystyle {\vec {N}}(x)} {\vec {N}}(x) to give an equivalent set of smeared spatial diffeomorphism constraints, 
+    C ( N → ) = ∫ C a ( x ) N a ( x ) d 3 x .{\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} {\displaystyle C({\vec {N}})=\int C_{a}(x)\,N^{a}(x)\,\mathrm {d} ^{3}x.} 
+These generate spatial diffeomorphisms along orbits defined by the shift function N a ( x ) {\displaystyle N^{a}(x)} {\displaystyle N^{a}(x)}.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_171358_459858.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_171358_459858.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210610_172031_192960)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'These generate time diffeomorphisms along orbits defined by the lapse function N ( x ) {\displaystyle N(x)} N(x).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In Ashtekar formulation the gauge field A a i ( x ) {\displaystyle A_{a}^{i}(x)} {\displaystyle A_{a}^{i}(x)} is the configuration variable (the configuration variable being analogous to q {\displaystyle q} q in ordinary mechanics) and its conjugate momentum is the (densitized) triad (electrical field) E ~ i a ( x ) {\displaystyle {\tilde {E}}_{i}^{a}(x)} {\displaystyle {\tilde {E}}_{i}^{a}(x)}. The constraints are certain functions of these phase space variables.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The Hamiltonian
+
+    [1] => 
+
+    [2] =>     H ( x ) = 0 {\displaystyle H(x)=0} H(x)=0
+
+    [3] => 
+
+    [4] => can be smeared by the so-called lapse functions N ( x ) {\displaystyle N(x)} N(x) to give an equivalent set of smeared Hamiltonian constraints,
+
+    [5] => 
+
+    [6] =>     H ( N ) = ∫ H ( x ) N ( x ) d 3 x . {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.}
+
+    [7] => 
+
+    [8] => These generate time diffeomorphisms along orbits defined by the lapse function N ( x ) {\displaystyle N(x)} N(x).
+    [9] => 
+
+    [10] => In Ashtekar formulation the gauge field A a i ( x ) {\displaystyle A_{a}^{i}(x)} {\displaystyle A_{a}^{i}(x)} is the configuration variable (the configuration variable being analogous to q {\displaystyle q} q in ordinary mechanics) and its conjugate momentum is the (densitized) triad (electrical field) E ~ i a ( x ) {\displaystyle {\tilde {E}}_{i}^{a}(x)} {\displaystyle {\tilde {E}}_{i}^{a}(x)}. The constraints are certain functions of these phase space variables.
+    [11] => 
+
+    [12] => An important aspect of the action of the constraints on arbitrary phase space functions is the Lie derivative, L V {\displaystyle {\mathcal {L}}_{V}} {\mathcal {L}}_{V}, which is basically a derivative operation that infinitesimally "shifts" functions along some orbit with tangent vector V {\displaystyle V} V. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The Hamiltonian
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    H ( x ) = 0 {\displaystyle H(x)=0} H(x)=0
+
+$matches ==>
+Array
+(
+    [0] => 0
+
+    [1] => 0
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->can be smeared by the so-called lapse functions N ( x ) {\displaystyle N(x)} N(x) to give an equivalent set of smeared Hamiltonian constraints,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    H ( N ) = ∫ H ( x ) N ( x ) d 3 x . {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The Hamiltonian 
+    [1] => 
+
+    [2] =>     H ( x ) = 0 {\displaystyle H(x)=0} H(x)=0 
+    [3] => 
+
+    [4] => can be smeared by the so-called lapse functions N ( x ) {\displaystyle N(x)} N(x) to give an equivalent set of smeared Hamiltonian constraints, 
+    [5] => 
+
+    [6] =>     H ( N ) = ∫ H ( x ) N ( x ) d 3 x . {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} 
+    [7] => 
+
+    [8] => These generate time diffeomorphisms along orbits defined by the lapse function N ( x ) {\displaystyle N(x)} N(x).
+    [9] => 
+
+    [10] => In Ashtekar formulation the gauge field A a i ( x ) {\displaystyle A_{a}^{i}(x)} {\displaystyle A_{a}^{i}(x)} is the configuration variable (the configuration variable being analogous to q {\displaystyle q} q in ordinary mechanics) and its conjugate momentum is the (densitized) triad (electrical field) E ~ i a ( x ) {\displaystyle {\tilde {E}}_{i}^{a}(x)} {\displaystyle {\tilde {E}}_{i}^{a}(x)}. The constraints are certain functions of these phase space variables.
+    [11] => 
+
+    [12] => An important aspect of the action of the constraints on arbitrary phase space functions is the Lie derivative, L V {\displaystyle {\mathcal {L}}_{V}} {\mathcal {L}}_{V}, which is basically a derivative operation that infinitesimally "shifts" functions along some orbit with tangent vector V {\displaystyle V} V. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->    H ( N ) = ∫ H ( x ) N ( x ) d 3 x . {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} 
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In Ashtekar formulation the gauge field A a i ( x ) {\displaystyle A_{a}^{i}(x)} {\displaystyle A_{a}^{i}(x)} is the configuration variable (the configuration variable being analogous to q {\displaystyle q} q in ordinary mechanics) and its conjugate momentum is the (densitized) triad (electrical field) E ~ i a ( x ) {\displaystyle {\tilde {E}}_{i}^{a}(x)} {\displaystyle {\tilde {E}}_{i}^{a}(x)}. The constraints are certain functions of these phase space variables.
+$matches ==>
+Array
+(
+    [0] => }. 
+    [1] => }.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->An important aspect of the action of the constraints on arbitrary phase space functions is the Lie derivative, L V {\displaystyle {\mathcal {L}}_{V}} {\mathcal {L}}_{V}, which is basically a derivative operation that infinitesimally "shifts" functions along some orbit with tangent vector V {\displaystyle V} V. 
+$matches ==>
+Array
+(
+    [0] => V. 
+    [1] => V.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The Hamiltonian 
+    [1] => 
+
+    [2] =>     H ( x ) = 0 {\displaystyle H(x)=0} H(x)=0 
+    [3] => 
+
+    [4] => can be smeared by the so-called lapse functions N ( x ) {\displaystyle N(x)} N(x) to give an equivalent set of smeared Hamiltonian constraints, 
+    [5] => 
+
+    [6] =>     H ( N ) = ∫ H ( x ) N ( x ) d 3 x .{\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} 
+    [7] => 
+
+    [8] => These generate time diffeomorphisms along orbits defined by the lapse function N ( x ) {\displaystyle N(x)} N(x).
+    [9] => 
+
+    [10] => In Ashtekar formulation the gauge field A a i ( x ) {\displaystyle A_{a}^{i}(x)} {\displaystyle A_{a}^{i}(x)} is the configuration variable (the configuration variable being analogous to q {\displaystyle q} q in ordinary mechanics) and its conjugate momentum is the (densitized) triad (electrical field) E ~ i a ( x ) {\displaystyle {\tilde {E}}_{i}^{a}(x)} {\displaystyle {\tilde {E}}_{i}^{a}(x)}.The constraints are certain functions of these phase space variables.
+    [11] => 
+
+    [12] => An important aspect of the action of the constraints on arbitrary phase space functions is the Lie derivative, L V {\displaystyle {\mathcal {L}}_{V}} {\mathcal {L}}_{V}, which is basically a derivative operation that infinitesimally "shifts" functions along some orbit with tangent vector V {\displaystyle V} V.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The Hamiltonian 
+    H ( x ) = 0 {\displaystyle H(x)=0} H(x)=0 
+can be smeared by the so-called lapse functions N ( x ) {\displaystyle N(x)} N(x) to give an equivalent set of smeared Hamiltonian constraints, 
+    H ( N ) = ∫ H ( x ) N ( x ) d 3 x .{\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} {\displaystyle H(N)=\int H(x)N(x)\,\mathrm {d} ^{3}x.} 
+These generate time diffeomorphisms along orbits defined by the lapse function N ( x ) {\displaystyle N(x)} N(x).
+In Ashtekar formulation the gauge field A a i ( x ) {\displaystyle A_{a}^{i}(x)} {\displaystyle A_{a}^{i}(x)} is the configuration variable (the configuration variable being analogous to q {\displaystyle q} q in ordinary mechanics) and its conjugate momentum is the (densitized) triad (electrical field) E ~ i a ( x ) {\displaystyle {\tilde {E}}_{i}^{a}(x)} {\displaystyle {\tilde {E}}_{i}^{a}(x)}.The constraints are certain functions of these phase space variables.
+An important aspect of the action of the constraints on arbitrary phase space functions is the Lie derivative, L V {\displaystyle {\mathcal {L}}_{V}} {\mathcal {L}}_{V}, which is basically a derivative operation that infinitesimally "shifts" functions along some orbit with tangent vector V {\displaystyle V} V.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_172031_192960.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210610_172031_192960.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210611_111627_753487)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In quantum mechanics, the Hamiltonian of a system is an operator corresponding to the total energy of that system, including both kinetic energy and potential energy. Its spectrum, the system's energy spectrum or its set of energy eigenvalues, is the set of possible outcomes obtainable from a measurement of the system's total energy. Due to its close relation to the energy spectrum and time-evolution of a system, it is of fundamental importance in most formulations of quantum theory.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In quantum mechanics, the Hamiltonian of a system is an operator corresponding to the total energy of that system, including both kinetic energy and potential energy. Its spectrum, the system's energy spectrum or its set of energy eigenvalues, is the set of possible outcomes obtainable from a measurement of the system's total energy. Due to its close relation to the energy spectrum and time-evolution of a system, it is of fundamental importance in most formulations of quantum theory.
+    [1] => 
+
+    [2] => The Hamiltonian is named after William Rowan Hamilton, who developed a revolutionary reformulation of Newtonian mechanics, known as Hamiltonian mechanics, which was historically important to the development of quantum physics. Similar to vector notation, it is typically denoted by H ^ {\displaystyle {\hat {H}}} {\hat {H}}, where the hat indicates that it is an operator. It can also be written as H {\displaystyle H} H or H ˇ {\displaystyle {\check {H}}} {\check {H}}. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In quantum mechanics, the Hamiltonian of a system is an operator corresponding to the total energy of that system, including both kinetic energy and potential energy. Its spectrum, the system's energy spectrum or its set of energy eigenvalues, is the set of possible outcomes obtainable from a measurement of the system's total energy. Due to its close relation to the energy spectrum and time-evolution of a system, it is of fundamental importance in most formulations of quantum theory.
+    [1] => 
+
+    [2] => The Hamiltonian is named after William Rowan Hamilton, who developed a revolutionary reformulation of Newtonian mechanics, known as Hamiltonian mechanics, which was historically important to the development of quantum physics. Similar to vector notation, it is typically denoted by H ^ {\displaystyle {\hat {H}}} {\hat {H}}, where the hat indicates that it is an operator. It can also be written as H {\displaystyle H} H or H ˇ {\displaystyle {\check {H}}} {\check {H}}. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In quantum mechanics, the Hamiltonian of a system is an operator corresponding to the total energy of that system, including both kinetic energy and potential energy. Its spectrum, the system's energy spectrum or its set of energy eigenvalues, is the set of possible outcomes obtainable from a measurement of the system's total energy. Due to its close relation to the energy spectrum and time-evolution of a system, it is of fundamental importance in most formulations of quantum theory.
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The Hamiltonian is named after William Rowan Hamilton, who developed a revolutionary reformulation of Newtonian mechanics, known as Hamiltonian mechanics, which was historically important to the development of quantum physics. Similar to vector notation, it is typically denoted by H ^ {\displaystyle {\hat {H}}} {\hat {H}}, where the hat indicates that it is an operator. It can also be written as H {\displaystyle H} H or H ˇ {\displaystyle {\check {H}}} {\check {H}}. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In quantum mechanics, the Hamiltonian of a system is an operator corresponding to the total energy of that system, including both kinetic energy and potential energy.Its spectrum, the system's energy spectrum or its set of energy eigenvalues, is the set of possible outcomes obtainable from a measurement of the system's total energy.Due to its close relation to the energy spectrum and time-evolution of a system, it is of fundamental importance in most formulations of quantum theory.
+    [1] => 
+
+    [2] => The Hamiltonian is named after William Rowan Hamilton, who developed a revolutionary reformulation of Newtonian mechanics, known as Hamiltonian mechanics, which was historically important to the development of quantum physics.Similar to vector notation, it is typically denoted by H ^ {\displaystyle {\hat {H}}} {\hat {H}}, where the hat indicates that it is an operator.It can also be written as H {\displaystyle H} H or H ˇ {\displaystyle {\check {H}}} {\check {H}}.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In quantum mechanics, the Hamiltonian of a system is an operator corresponding to the total energy of that system, including both kinetic energy and potential energy.Its spectrum, the system's energy spectrum or its set of energy eigenvalues, is the set of possible outcomes obtainable from a measurement of the system's total energy.Due to its close relation to the energy spectrum and time-evolution of a system, it is of fundamental importance in most formulations of quantum theory.
+The Hamiltonian is named after William Rowan Hamilton, who developed a revolutionary reformulation of Newtonian mechanics, known as Hamiltonian mechanics, which was historically important to the development of quantum physics.Similar to vector notation, it is typically denoted by H ^ {\displaystyle {\hat {H}}} {\hat {H}}, where the hat indicates that it is an operator.It can also be written as H {\displaystyle H} H or H ˇ {\displaystyle {\check {H}}} {\check {H}}.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_111627_753487.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_111627_753487.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
