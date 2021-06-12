@@ -30924,3 +30924,826 @@ The Hamiltonian is named after William Rowan Hamilton, who developed a revolutio
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_111627_753487.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210611_123105_844069)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The Hamiltonian of a system is the sum of the kinetic energies of all the particles, plus the potential energy of the particles associated with the system. The Hamiltonian takes different forms and can be simplified in some cases by taking into account the concrete characteristics of the system under analysis, such as single or several particles in the system, interaction between particles, kind of potential energy, time varying potential or time independent one. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The Hamiltonian of a system is the sum of the kinetic energies of all the particles, plus the potential energy of the particles associated with the system. The Hamiltonian takes different forms and can be simplified in some cases by taking into account the concrete characteristics of the system under analysis, such as single or several particles in the system, interaction between particles, kind of potential energy, time varying potential or time independent one. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The Hamiltonian of a system is the sum of the kinetic energies of all the particles, plus the potential energy of the particles associated with the system. The Hamiltonian takes different forms and can be simplified in some cases by taking into account the concrete characteristics of the system under analysis, such as single or several particles in the system, interaction between particles, kind of potential energy, time varying potential or time independent one. 
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The Hamiltonian of a system is the sum of the kinetic energies of all the particles, plus the potential energy of the particles associated with the system.The Hamiltonian takes different forms and can be simplified in some cases by taking into account the concrete characteristics of the system under analysis, such as single or several particles in the system, interaction between particles, kind of potential energy, time varying potential or time independent one.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The Hamiltonian of a system is the sum of the kinetic energies of all the particles, plus the potential energy of the particles associated with the system.The Hamiltonian takes different forms and can be simplified in some cases by taking into account the concrete characteristics of the system under analysis, such as single or several particles in the system, interaction between particles, kind of potential energy, time varying potential or time independent one.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_123105_844069.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_123105_844069.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210611_123536_875262)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => One particle
+
+    [1] => 
+
+    [2] => By analogy with classical mechanics, the Hamiltonian is commonly expressed as the sum of operators corresponding to the kinetic and potential energies of a system in the form
+
+    [3] => 
+
+    [4] =>     H ^ = T ^ + V ^ , {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},} {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},}
+
+    [5] => 
+
+    [6] => where
+
+    [7] => 
+
+    [8] =>     V ^ = V = V ( r , t ) , {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),} {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),}
+
+    [9] => 
+
+    [10] => is the potential energy operator and
+
+    [11] => 
+
+    [12] =>     T ^ = p ^ ⋅ p ^ 2 m = p ^ 2 2 m = − ℏ 2 2 m ∇ 2 , {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},} {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},}
+
+    [13] => 
+
+    [14] => is the kinetic energy operator in which m {\displaystyle m} m is the mass of the particle, the dot denotes the dot product of vectors, and
+
+    [15] => 
+
+    [16] =>     p ^ = − i ℏ ∇ , {\displaystyle {\hat {p}}=-i\hbar \nabla ,} {\displaystyle {\hat {p}}=-i\hbar \nabla ,}
+
+    [17] => 
+
+    [18] => is the momentum operator where a ∇ {\displaystyle \nabla } \nabla is the del operator. The dot product of ∇ {\displaystyle \nabla } \nabla with itself is the Laplacian ∇ 2 {\displaystyle \nabla ^{2}} \nabla ^{2}. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->One particle
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->By analogy with classical mechanics, the Hamiltonian is commonly expressed as the sum of operators corresponding to the kinetic and potential energies of a system in the form
+
+$matches ==>
+Array
+(
+    [0] => m
+
+    [1] => m
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    H ^ = T ^ + V ^ , {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},} {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->where
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    V ^ = V = V ( r , t ) , {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),} {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->is the potential energy operator and
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    T ^ = p ^ ⋅ p ^ 2 m = p ^ 2 2 m = − ℏ 2 2 m ∇ 2 , {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},} {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->is the kinetic energy operator in which m {\displaystyle m} m is the mass of the particle, the dot denotes the dot product of vectors, and
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    p ^ = − i ℏ ∇ , {\displaystyle {\hat {p}}=-i\hbar \nabla ,} {\displaystyle {\hat {p}}=-i\hbar \nabla ,}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => One particle 
+    [1] => 
+
+    [2] => By analogy with classical mechanics, the Hamiltonian is commonly expressed as the sum of operators corresponding to the kinetic and potential energies of a system in the form 
+    [3] => 
+
+    [4] =>     H ^ = T ^ + V ^ , {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},} {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},} 
+    [5] => 
+
+    [6] => where 
+    [7] => 
+
+    [8] =>     V ^ = V = V ( r , t ) , {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),} {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),} 
+    [9] => 
+
+    [10] => is the potential energy operator and 
+    [11] => 
+
+    [12] =>     T ^ = p ^ ⋅ p ^ 2 m = p ^ 2 2 m = − ℏ 2 2 m ∇ 2 , {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},} {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},} 
+    [13] => 
+
+    [14] => is the kinetic energy operator in which m {\displaystyle m} m is the mass of the particle, the dot denotes the dot product of vectors, and 
+    [15] => 
+
+    [16] =>     p ^ = − i ℏ ∇ , {\displaystyle {\hat {p}}=-i\hbar \nabla ,} {\displaystyle {\hat {p}}=-i\hbar \nabla ,} 
+    [17] => 
+
+    [18] => is the momentum operator where a ∇ {\displaystyle \nabla } \nabla is the del operator. The dot product of ∇ {\displaystyle \nabla } \nabla with itself is the Laplacian ∇ 2 {\displaystyle \nabla ^{2}} \nabla ^{2}. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->is the momentum operator where a ∇ {\displaystyle \nabla } \nabla is the del operator. The dot product of ∇ {\displaystyle \nabla } \nabla with itself is the Laplacian ∇ 2 {\displaystyle \nabla ^{2}} \nabla ^{2}. 
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => One particle 
+    [1] => 
+
+    [2] => By analogy with classical mechanics, the Hamiltonian is commonly expressed as the sum of operators corresponding to the kinetic and potential energies of a system in the form 
+    [3] => 
+
+    [4] =>     H ^ = T ^ + V ^ , {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},} {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},} 
+    [5] => 
+
+    [6] => where 
+    [7] => 
+
+    [8] =>     V ^ = V = V ( r , t ) , {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),} {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),} 
+    [9] => 
+
+    [10] => is the potential energy operator and 
+    [11] => 
+
+    [12] =>     T ^ = p ^ ⋅ p ^ 2 m = p ^ 2 2 m = − ℏ 2 2 m ∇ 2 , {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},} {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},} 
+    [13] => 
+
+    [14] => is the kinetic energy operator in which m {\displaystyle m} m is the mass of the particle, the dot denotes the dot product of vectors, and 
+    [15] => 
+
+    [16] =>     p ^ = − i ℏ ∇ , {\displaystyle {\hat {p}}=-i\hbar \nabla ,} {\displaystyle {\hat {p}}=-i\hbar \nabla ,} 
+    [17] => 
+
+    [18] => is the momentum operator where a ∇ {\displaystyle \nabla } \nabla is the del operator.The dot product of ∇ {\displaystyle \nabla } \nabla with itself is the Laplacian ∇ 2 {\displaystyle \nabla ^{2}} \nabla ^{2}.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>One particle 
+By analogy with classical mechanics, the Hamiltonian is commonly expressed as the sum of operators corresponding to the kinetic and potential energies of a system in the form 
+    H ^ = T ^ + V ^ , {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},} {\displaystyle {\hat {H}}={\hat {T}}+{\hat {V}},} 
+where 
+    V ^ = V = V ( r , t ) , {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),} {\displaystyle {\hat {V}}=V=V(\mathbf {r} ,t),} 
+is the potential energy operator and 
+    T ^ = p ^ ⋅ p ^ 2 m = p ^ 2 2 m = − ℏ 2 2 m ∇ 2 , {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},} {\displaystyle {\hat {T}}={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}={\frac {{\hat {p}}^{2}}{2m}}=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2},} 
+is the kinetic energy operator in which m {\displaystyle m} m is the mass of the particle, the dot denotes the dot product of vectors, and 
+    p ^ = − i ℏ ∇ , {\displaystyle {\hat {p}}=-i\hbar \nabla ,} {\displaystyle {\hat {p}}=-i\hbar \nabla ,} 
+is the momentum operator where a ∇ {\displaystyle \nabla } \nabla is the del operator.The dot product of ∇ {\displaystyle \nabla } \nabla with itself is the Laplacian ∇ 2 {\displaystyle \nabla ^{2}} \nabla ^{2}.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_123536_875262.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_123536_875262.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210611_125223_885127)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'which allows one to apply the Hamiltonian to systems described by a wave function Ψ ( r , t ) {\displaystyle \Psi (\mathbf {r} ,t)} {\displaystyle \Psi (\mathbf {r} ,t)}. This is the approach commonly taken in introductory treatments of quantum mechanics, using the formalism of Schrödinger's wave mechanics.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In three dimensions using Cartesian coordinates the Laplace operator is
+
+    [1] => 
+
+    [2] =>     ∇ 2 = ∂ 2 ∂ x 2 + ∂ 2 ∂ y 2 + ∂ 2 ∂ z 2 {\displaystyle \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}}} \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}}
+
+    [3] => 
+
+    [4] => Although this is not the technical definition of the Hamiltonian in classical mechanics, it is the form it most commonly takes. Combining these yields the familiar form used in the Schrödinger equation:
+
+    [5] => 
+
+    [6] =>     H ^ = T ^ + V ^ = p ^ ⋅ p ^ 2 m + V ( r , t ) = − ℏ 2 2 m ∇ 2 + V ( r , t ) {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}}
+
+    [7] => 
+
+    [8] => which allows one to apply the Hamiltonian to systems described by a wave function Ψ ( r , t ) {\displaystyle \Psi (\mathbf {r} ,t)} {\displaystyle \Psi (\mathbf {r} ,t)}. This is the approach commonly taken in introductory treatments of quantum mechanics, using the formalism of Schrödinger's wave mechanics.
+    [9] => 
+
+    [10] => One can also make substitutions to certain variables to fit specific cases, such as some involving electromagnetic fields. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->In three dimensions using Cartesian coordinates the Laplace operator is
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    ∇ 2 = ∂ 2 ∂ x 2 + ∂ 2 ∂ y 2 + ∂ 2 ∂ z 2 {\displaystyle \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}}} \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Although this is not the technical definition of the Hamiltonian in classical mechanics, it is the form it most commonly takes. Combining these yields the familiar form used in the Schrödinger equation:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    H ^ = T ^ + V ^ = p ^ ⋅ p ^ 2 m + V ( r , t ) = − ℏ 2 2 m ∇ 2 + V ( r , t ) {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In three dimensions using Cartesian coordinates the Laplace operator is 
+    [1] => 
+
+    [2] =>     ∇ 2 = ∂ 2 ∂ x 2 + ∂ 2 ∂ y 2 + ∂ 2 ∂ z 2 {\displaystyle \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}}} \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}} 
+    [3] => 
+
+    [4] => Although this is not the technical definition of the Hamiltonian in classical mechanics, it is the form it most commonly takes. Combining these yields the familiar form used in the Schrödinger equation: 
+    [5] => 
+
+    [6] =>     H ^ = T ^ + V ^ = p ^ ⋅ p ^ 2 m + V ( r , t ) = − ℏ 2 2 m ∇ 2 + V ( r , t ) {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}} 
+    [7] => 
+
+    [8] => which allows one to apply the Hamiltonian to systems described by a wave function Ψ ( r , t ) {\displaystyle \Psi (\mathbf {r} ,t)} {\displaystyle \Psi (\mathbf {r} ,t)}. This is the approach commonly taken in introductory treatments of quantum mechanics, using the formalism of Schrödinger's wave mechanics.
+    [9] => 
+
+    [10] => One can also make substitutions to certain variables to fit specific cases, such as some involving electromagnetic fields. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Although this is not the technical definition of the Hamiltonian in classical mechanics, it is the form it most commonly takes. Combining these yields the familiar form used in the Schrödinger equation: 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->which allows one to apply the Hamiltonian to systems described by a wave function Ψ ( r , t ) {\displaystyle \Psi (\mathbf {r} ,t)} {\displaystyle \Psi (\mathbf {r} ,t)}. This is the approach commonly taken in introductory treatments of quantum mechanics, using the formalism of Schrödinger's wave mechanics.
+$matches ==>
+Array
+(
+    [0] => }. 
+    [1] => }.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->One can also make substitutions to certain variables to fit specific cases, such as some involving electromagnetic fields. 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In three dimensions using Cartesian coordinates the Laplace operator is 
+    [1] => 
+
+    [2] =>     ∇ 2 = ∂ 2 ∂ x 2 + ∂ 2 ∂ y 2 + ∂ 2 ∂ z 2 {\displaystyle \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}}} \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}} 
+    [3] => 
+
+    [4] => Although this is not the technical definition of the Hamiltonian in classical mechanics, it is the form it most commonly takes.Combining these yields the familiar form used in the Schrödinger equation: 
+    [5] => 
+
+    [6] =>     H ^ = T ^ + V ^ = p ^ ⋅ p ^ 2 m + V ( r , t ) = − ℏ 2 2 m ∇ 2 + V ( r , t ) {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}} 
+    [7] => 
+
+    [8] => which allows one to apply the Hamiltonian to systems described by a wave function Ψ ( r , t ) {\displaystyle \Psi (\mathbf {r} ,t)} {\displaystyle \Psi (\mathbf {r} ,t)}.This is the approach commonly taken in introductory treatments of quantum mechanics, using the formalism of Schrödinger's wave mechanics.
+    [9] => 
+
+    [10] => One can also make substitutions to certain variables to fit specific cases, such as some involving electromagnetic fields.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In three dimensions using Cartesian coordinates the Laplace operator is 
+    ∇ 2 = ∂ 2 ∂ x 2 + ∂ 2 ∂ y 2 + ∂ 2 ∂ z 2 {\displaystyle \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}}} \nabla ^{2}={\frac {\partial ^{2}}{{\partial x}^{2}}}+{\frac {\partial ^{2}}{{\partial y}^{2}}}+{\frac {\partial ^{2}}{{\partial z}^{2}}} 
+Although this is not the technical definition of the Hamiltonian in classical mechanics, it is the form it most commonly takes.Combining these yields the familiar form used in the Schrödinger equation: 
+    H ^ = T ^ + V ^ = p ^ ⋅ p ^ 2 m + V ( r , t ) = − ℏ 2 2 m ∇ 2 + V ( r , t ) {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&={\hat {T}}+{\hat {V}}\\[6pt]&={\frac {\mathbf {\hat {p}} \cdot \mathbf {\hat {p}} }{2m}}+V(\mathbf {r} ,t)\\[6pt]&=-{\frac {\hbar ^{2}}{2m}}\nabla ^{2}+V(\mathbf {r} ,t)\end{aligned}}} 
+which allows one to apply the Hamiltonian to systems described by a wave function Ψ ( r , t ) {\displaystyle \Psi (\mathbf {r} ,t)} {\displaystyle \Psi (\mathbf {r} ,t)}.This is the approach commonly taken in introductory treatments of quantum mechanics, using the formalism of Schrödinger's wave mechanics.
+One can also make substitutions to certain variables to fit specific cases, such as some involving electromagnetic fields.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_125223_885127.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_125223_885127.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210611_125633_626163)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => he formalism can be extended to N {\displaystyle N} N particles:
+
+    [1] => 
+
+    [2] =>     H ^ = ∑ n = 1 N T ^ n + V ^ {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}} {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}}
+
+    [3] => 
+
+    [4] => where
+
+    [5] => 
+
+    [6] =>     V ^ = V ( r 1 , r 2 , … , r N , t ) , {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),} {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),}
+
+    [7] => 
+
+    [8] => is the potential energy function, now a function of the spatial configuration of the system and time (a particular set of spatial positions at some instant of time defines a configuration) and;
+
+    [9] => 
+
+    [10] =>     T ^ n = p n ⋅ p n 2 m n , {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},} {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},}
+
+    [11] => 
+
+    [12] => is the kinetic energy operator of particle n {\displaystyle n} n, and ∇ n {\displaystyle \nabla _{n}} {\displaystyle \nabla _{n}} is the gradient for particle n {\displaystyle n} n, ∇ n 2 {\displaystyle \nabla _{n}^{2}} {\displaystyle \nabla _{n}^{2}} is the Laplacian for particle using the coordinates:
+
+    [13] => 
+
+    [14] =>     ∇ n 2 = ∂ 2 ∂ x n 2 + ∂ 2 ∂ y n 2 + ∂ 2 ∂ z n 2 , {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},} {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},}
+
+    [15] => 
+
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->he formalism can be extended to N {\displaystyle N} N particles:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    H ^ = ∑ n = 1 N T ^ n + V ^ {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}} {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->where
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    V ^ = V ( r 1 , r 2 , … , r N , t ) , {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),} {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->is the potential energy function, now a function of the spatial configuration of the system and time (a particular set of spatial positions at some instant of time defines a configuration) and;
+
+$matches ==>
+Array
+(
+    [0] => ;
+
+    [1] => ;
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    T ^ n = p n ⋅ p n 2 m n , {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},} {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->is the kinetic energy operator of particle n {\displaystyle n} n, and ∇ n {\displaystyle \nabla _{n}} {\displaystyle \nabla _{n}} is the gradient for particle n {\displaystyle n} n, ∇ n 2 {\displaystyle \nabla _{n}^{2}} {\displaystyle \nabla _{n}^{2}} is the Laplacian for particle using the coordinates:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    ∇ n 2 = ∂ 2 ∂ x n 2 + ∂ 2 ∂ y n 2 + ∂ 2 ∂ z n 2 , {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},} {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => he formalism can be extended to N {\displaystyle N} N particles: 
+    [1] => 
+
+    [2] =>     H ^ = ∑ n = 1 N T ^ n + V ^ {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}} {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}} 
+    [3] => 
+
+    [4] => where 
+    [5] => 
+
+    [6] =>     V ^ = V ( r 1 , r 2 , … , r N , t ) , {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),} {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),} 
+    [7] => 
+
+    [8] => is the potential energy function, now a function of the spatial configuration of the system and time (a particular set of spatial positions at some instant of time defines a configuration) and; 
+    [9] => 
+
+    [10] =>     T ^ n = p n ⋅ p n 2 m n , {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},} {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},} 
+    [11] => 
+
+    [12] => is the kinetic energy operator of particle n {\displaystyle n} n, and ∇ n {\displaystyle \nabla _{n}} {\displaystyle \nabla _{n}} is the gradient for particle n {\displaystyle n} n, ∇ n 2 {\displaystyle \nabla _{n}^{2}} {\displaystyle \nabla _{n}^{2}} is the Laplacian for particle using the coordinates: 
+    [13] => 
+
+    [14] =>     ∇ n 2 = ∂ 2 ∂ x n 2 + ∂ 2 ∂ y n 2 + ∂ 2 ∂ z n 2 , {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},} {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},} 
+    [15] => 
+
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => he formalism can be extended to N {\displaystyle N} N particles: 
+    [1] => 
+
+    [2] =>     H ^ = ∑ n = 1 N T ^ n + V ^ {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}} {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}} 
+    [3] => 
+
+    [4] => where 
+    [5] => 
+
+    [6] =>     V ^ = V ( r 1 , r 2 , … , r N , t ) , {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),} {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),} 
+    [7] => 
+
+    [8] => is the potential energy function, now a function of the spatial configuration of the system and time (a particular set of spatial positions at some instant of time defines a configuration) and; 
+    [9] => 
+
+    [10] =>     T ^ n = p n ⋅ p n 2 m n , {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},} {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},} 
+    [11] => 
+
+    [12] => is the kinetic energy operator of particle n {\displaystyle n} n, and ∇ n {\displaystyle \nabla _{n}} {\displaystyle \nabla _{n}} is the gradient for particle n {\displaystyle n} n, ∇ n 2 {\displaystyle \nabla _{n}^{2}} {\displaystyle \nabla _{n}^{2}} is the Laplacian for particle using the coordinates: 
+    [13] => 
+
+    [14] =>     ∇ n 2 = ∂ 2 ∂ x n 2 + ∂ 2 ∂ y n 2 + ∂ 2 ∂ z n 2 , {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},} {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},} 
+    [15] => 
+
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>he formalism can be extended to N {\displaystyle N} N particles: 
+    H ^ = ∑ n = 1 N T ^ n + V ^ {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}} {\displaystyle {\hat {H}}=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}} 
+where 
+    V ^ = V ( r 1 , r 2 , … , r N , t ) , {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),} {\displaystyle {\hat {V}}=V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t),} 
+is the potential energy function, now a function of the spatial configuration of the system and time (a particular set of spatial positions at some instant of time defines a configuration) and; 
+    T ^ n = p n ⋅ p n 2 m n , {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},} {\displaystyle {\hat {T}}_{n}={\frac {\mathbf {p} _{n}\cdot \mathbf {p} _{n}}{2m_{n}}},} 
+is the kinetic energy operator of particle n {\displaystyle n} n, and ∇ n {\displaystyle \nabla _{n}} {\displaystyle \nabla _{n}} is the gradient for particle n {\displaystyle n} n, ∇ n 2 {\displaystyle \nabla _{n}^{2}} {\displaystyle \nabla _{n}^{2}} is the Laplacian for particle using the coordinates: 
+    ∇ n 2 = ∂ 2 ∂ x n 2 + ∂ 2 ∂ y n 2 + ∂ 2 ∂ z n 2 , {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},} {\displaystyle \nabla _{n}^{2}={\frac {\partial ^{2}}{\partial x_{n}^{2}}}+{\frac {\partial ^{2}}{\partial y_{n}^{2}}}+{\frac {\partial ^{2}}{\partial z_{n}^{2}}},} 
+
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_125633_626163.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_125633_626163.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210611_130628_431915)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Combining these yields the Schrödinger Hamiltonian for the N {\displaystyle N} N-particle case:
+
+    [1] => 
+
+    [2] =>     H ^ = ∑ n = 1 N T ^ n + V ^ = ∑ n = 1 N p ^ n ⋅ p ^ n 2 m n + V ( r 1 , r 2 , … , r N , t ) = − ℏ 2 2 ∑ n = 1 N 1 m n ∇ n 2 + V ( r 1 , r 2 , … , r N , t ) {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}}
+
+    [3] => 
+
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Combining these yields the Schrödinger Hamiltonian for the N {\displaystyle N} N-particle case:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    H ^ = ∑ n = 1 N T ^ n + V ^ = ∑ n = 1 N p ^ n ⋅ p ^ n 2 m n + V ( r 1 , r 2 , … , r N , t ) = − ℏ 2 2 ∑ n = 1 N 1 m n ∇ n 2 + V ( r 1 , r 2 , … , r N , t ) {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Combining these yields the Schrödinger Hamiltonian for the N {\displaystyle N} N-particle case: 
+    [1] => 
+
+    [2] =>     H ^ = ∑ n = 1 N T ^ n + V ^ = ∑ n = 1 N p ^ n ⋅ p ^ n 2 m n + V ( r 1 , r 2 , … , r N , t ) = − ℏ 2 2 ∑ n = 1 N 1 m n ∇ n 2 + V ( r 1 , r 2 , … , r N , t ) {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}} 
+    [3] => 
+
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Combining these yields the Schrödinger Hamiltonian for the N {\displaystyle N} N-particle case: 
+    [1] => 
+
+    [2] =>     H ^ = ∑ n = 1 N T ^ n + V ^ = ∑ n = 1 N p ^ n ⋅ p ^ n 2 m n + V ( r 1 , r 2 , … , r N , t ) = − ℏ 2 2 ∑ n = 1 N 1 m n ∇ n 2 + V ( r 1 , r 2 , … , r N , t ) {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}} 
+    [3] => 
+
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Combining these yields the Schrödinger Hamiltonian for the N {\displaystyle N} N-particle case: 
+    H ^ = ∑ n = 1 N T ^ n + V ^ = ∑ n = 1 N p ^ n ⋅ p ^ n 2 m n + V ( r 1 , r 2 , … , r N , t ) = − ℏ 2 2 ∑ n = 1 N 1 m n ∇ n 2 + V ( r 1 , r 2 , … , r N , t ) {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}} {\displaystyle {\begin{aligned}{\hat {H}}&=\sum _{n=1}^{N}{\hat {T}}_{n}+{\hat {V}}\\[6pt]&=\sum _{n=1}^{N}{\frac {\mathbf {\hat {p}} _{n}\cdot \mathbf {\hat {p}} _{n}}{2m_{n}}}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\\[6pt]&=-{\frac {\hbar ^{2}}{2}}\sum _{n=1}^{N}{\frac {1}{m_{n}}}\nabla _{n}^{2}+V(\mathbf {r} _{1},\mathbf {r} _{2},\ldots ,\mathbf {r} _{N},t)\end{aligned}}} 
+
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_130628_431915.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_130628_431915.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210611_130939_877449)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => However, complications can arise in the many-body problem. Since the potential energy depends on the spatial arrangement of the particles, the kinetic energy will also depend on the spatial configuration to conserve energy. The motion due to any one particle will vary due to the motion of all the other particles in the system. For this reason cross terms for kinetic energy may appear in the Hamiltonian; a mix of the gradients for two particles:
+
+    [1] => 
+
+    [2] =>     − ℏ 2 2 M ∇ i ⋅ ∇ j {\displaystyle -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j}} -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j}
+
+    [3] => 
+
+    [4] => where M {\displaystyle M} M denotes the mass of the collection of particles resulting in this extra kinetic energy. Terms of this form are known as mass polarization terms, and appear in the Hamiltonian of many electron atoms (see below). 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->However, complications can arise in the many-body problem. Since the potential energy depends on the spatial arrangement of the particles, the kinetic energy will also depend on the spatial configuration to conserve energy. The motion due to any one particle will vary due to the motion of all the other particles in the system. For this reason cross terms for kinetic energy may appear in the Hamiltonian; a mix of the gradients for two particles:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    − ℏ 2 2 M ∇ i ⋅ ∇ j {\displaystyle -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j}} -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => However, complications can arise in the many-body problem. Since the potential energy depends on the spatial arrangement of the particles, the kinetic energy will also depend on the spatial configuration to conserve energy. The motion due to any one particle will vary due to the motion of all the other particles in the system. For this reason cross terms for kinetic energy may appear in the Hamiltonian; a mix of the gradients for two particles: 
+    [1] => 
+
+    [2] =>     − ℏ 2 2 M ∇ i ⋅ ∇ j {\displaystyle -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j}} -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j} 
+    [3] => 
+
+    [4] => where M {\displaystyle M} M denotes the mass of the collection of particles resulting in this extra kinetic energy. Terms of this form are known as mass polarization terms, and appear in the Hamiltonian of many electron atoms (see below). 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->However, complications can arise in the many-body problem. Since the potential energy depends on the spatial arrangement of the particles, the kinetic energy will also depend on the spatial configuration to conserve energy. The motion due to any one particle will vary due to the motion of all the other particles in the system. For this reason cross terms for kinetic energy may appear in the Hamiltonian; a mix of the gradients for two particles: 
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->where M {\displaystyle M} M denotes the mass of the collection of particles resulting in this extra kinetic energy. Terms of this form are known as mass polarization terms, and appear in the Hamiltonian of many electron atoms (see below). 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => However, complications can arise in the many-body problem.Since the potential energy depends on the spatial arrangement of the particles, the kinetic energy will also depend on the spatial configuration to conserve energy.The motion due to any one particle will vary due to the motion of all the other particles in the system.For this reason cross terms for kinetic energy may appear in the Hamiltonian; a mix of the gradients for two particles: 
+    [1] => 
+
+    [2] =>     − ℏ 2 2 M ∇ i ⋅ ∇ j {\displaystyle -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j}} -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j} 
+    [3] => 
+
+    [4] => where M {\displaystyle M} M denotes the mass of the collection of particles resulting in this extra kinetic energy.Terms of this form are known as mass polarization terms, and appear in the Hamiltonian of many electron atoms (see below).
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>However, complications can arise in the many-body problem.Since the potential energy depends on the spatial arrangement of the particles, the kinetic energy will also depend on the spatial configuration to conserve energy.The motion due to any one particle will vary due to the motion of all the other particles in the system.For this reason cross terms for kinetic energy may appear in the Hamiltonian; a mix of the gradients for two particles: 
+    − ℏ 2 2 M ∇ i ⋅ ∇ j {\displaystyle -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j}} -{\frac {\hbar ^{2}}{2M}}\nabla _{i}\cdot \nabla _{j} 
+where M {\displaystyle M} M denotes the mass of the collection of particles resulting in this extra kinetic energy.Terms of this form are known as mass polarization terms, and appear in the Hamiltonian of many electron atoms (see below).
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_130939_877449.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_130939_877449.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
