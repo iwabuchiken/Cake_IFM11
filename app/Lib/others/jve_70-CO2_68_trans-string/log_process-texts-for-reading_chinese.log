@@ -23524,3 +23524,1213 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_103712_596573.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210607_103712_596573.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210612_114110_585638)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 冷泉帝の即位
+
+    [1] => 
+
+    [2] => 967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+
+    [3] => 
+
+    [4] => 冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '冷泉帝の即位
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 '
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 冷泉帝の即位
+
+    [1] => 
+    [2] => 967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+
+    [3] => 
+    [4] => 冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '冷泉帝の即位
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 '
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 冷泉帝の即位
+
+    [1] => 
+    [2] => 967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+    [3] => 
+    [4] => 冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '冷泉帝の即位
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 '
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+            [4] => �。�
+            [5] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+            [4] => �。
+            [5] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+            [4] => �
+            [5] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 冷泉帝の即位
+
+    [1] => 
+    [2] => 967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+    [3] => 
+    [4] => 冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '冷泉帝の即位
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 '
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 冷泉帝の即位
+
+    [1] => 
+    [2] => 967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。
+    [3] => 
+    [4] => 冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>冷泉帝の即位
+967年（康保4年）5月25日、村上天皇が崩御し、東宮（皇太子）・憲平親王（冷泉天皇）が即位する。関白太政大臣に藤原実頼、左大臣に源高明、右大臣には藤原師尹が就任した。冷泉天皇にはまだ皇子がなく、また病弱でもあったため早急に東宮を定めることになった。候補は村上天皇と皇后安子の間の皇子で、冷泉天皇の同母弟にあたる為平親王と守平親王だった。年長の為平親王が東宮となることが当然の成り行きとして期待されていたが、実際に東宮になったのは守平親王だった。その背景には左大臣源高明の権力伸張を恐れた藤原氏があった。高明は為平親王の妃の父なので、もし為平親王が東宮となり将来皇位に即くことになれば源高明は外戚となるのである。高明といえば、かつては村上天皇の信任篤く、また皇后安子の妹を妻として右大臣藤原師輔を岳父にもつ姻戚関係もあったが、この時点では両人とも既に亡く、高明は宮中で孤立しつつあった。 
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_114110_585638.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_114110_585638.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210612_114544_461714)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 謀反の密告
+
+    [1] => 
+
+    [2] => 969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+
+    [3] => 源高明の左遷
+
+    [4] => 
+
+    [5] => 事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+
+    [6] => 
+
+    [7] => 密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+
+    [8] => 
+
+    [9] => また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '謀反の密告
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '源高明の左遷
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : 'また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 '
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 謀反の密告
+
+    [1] => 
+    [2] => 969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+
+    [3] => 源高明の左遷
+
+    [4] => 
+    [5] => 事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+
+    [6] => 
+    [7] => 密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+
+    [8] => 
+    [9] => また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '謀反の密告
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+[process-texts-for-reading_chinese.php : 252]
+line : '源高明の左遷
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : 'また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 '
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 謀反の密告
+
+    [1] => 
+    [2] => 969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+    [3] => 源高明の左遷
+
+    [4] => 
+    [5] => 事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+    [6] => 
+    [7] => 密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+    [8] => 
+    [9] => また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '謀反の密告
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+[process-texts-for-reading_chinese.php : 346]
+line : '源高明の左遷
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : 'また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 '
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 謀反の密告
+
+    [1] => 
+    [2] => 969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+    [3] => 源高明の左遷
+
+    [4] => 
+    [5] => 事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+    [6] => 
+    [7] => 密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+    [8] => 
+    [9] => また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '謀反の密告
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '源高明の左遷
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : 'また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 '
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 謀反の密告
+
+    [1] => 
+    [2] => 969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。
+    [3] => 源高明の左遷
+
+    [4] => 
+    [5] => 事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。
+    [6] => 
+    [7] => 密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。
+    [8] => 
+    [9] => また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>謀反の密告
+969年（安和2年）3月25日、左馬助源満仲と前武蔵介藤原善時が中務少輔橘繁延と左兵衛大尉源連の謀反を密告した。密告の内容がどのようなもので、源高明がどう関わっていたのかは不明である。後代に成立した『源平盛衰記』には、高明が為平親王を東国に迎えて乱を起こし、帝に即けようとしていたと記されているが、史料としての価値は認められていない。右大臣師尹以下の公卿は直ちに参内して諸門を閉じて会議に入り、密告文を関白実頼に送るとともに、検非違使に命じて橘繁延と僧・蓮茂を捕らえて訊問させた。さらに検非違使源満季（満仲の弟）が前相模介藤原千晴（藤原秀郷の子）とその子久頼を一味として捕らえて禁獄した。源高明の左遷
+事件はこれに留まらず、左大臣源高明が謀反に加担していたと結論され、大宰員外権帥に左遷することが決定した。高明は長男・忠賢とともに出家して京に留まれるよう願うが許されず、26日、邸を検非違使に包囲されて捕らえられ、九州へ流された。密告の功績により、源満仲と藤原善時はそれぞれ位を進められた。また左大臣には師尹が替わり、右大臣には大納言藤原在衡が昇任した。一方、橘繁延は土佐国、蓮茂は佐渡国、藤原千晴は隠岐国にそれぞれ流され、さらに源連と平貞節の追討が諸国へ命じられた。また、京で源満仲と武士の勢力を競っていた藤原千晴もこの事件で流罪となり、結果として藤原秀郷の系統は中央政治から姿を消した。 
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_114544_461714.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_114544_461714.txt
+ 

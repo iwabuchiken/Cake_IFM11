@@ -31747,3 +31747,242 @@ where M {\displaystyle M} M denotes the mass of the collection of particles resu
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210611_130939_877449.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210612_170328_824207)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The constraints define a constraint surface in the original phase space. The gauge motions of the constraints apply to all phase space but have the feature that they leave the constraint surface where it is, and thus the orbit of a point in the hypersurface under gauge transformations will be an orbit entirely within it. Dirac observables are defined as phase space functions, O {\displaystyle O} O, that Poisson commute with all the constraints when the constraint equations are imposed,
+
+    [1] => 
+
+    [2] =>     { G j , O } G j = C a = H = 0 = { C a , O } G j = C a = H = 0 = { H , O } G j = C a = H = 0 = 0 , {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,} {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,}
+
+    [3] => 
+
+    [4] => that is, they are quantities defined on the constraint surface that are invariant under the gauge transformations of the theory. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The constraints define a constraint surface in the original phase space. The gauge motions of the constraints apply to all phase space but have the feature that they leave the constraint surface where it is, and thus the orbit of a point in the hypersurface under gauge transformations will be an orbit entirely within it. Dirac observables are defined as phase space functions, O {\displaystyle O} O, that Poisson commute with all the constraints when the constraint equations are imposed,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    { G j , O } G j = C a = H = 0 = { C a , O } G j = C a = H = 0 = { H , O } G j = C a = H = 0 = 0 , {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,} {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The constraints define a constraint surface in the original phase space. The gauge motions of the constraints apply to all phase space but have the feature that they leave the constraint surface where it is, and thus the orbit of a point in the hypersurface under gauge transformations will be an orbit entirely within it. Dirac observables are defined as phase space functions, O {\displaystyle O} O, that Poisson commute with all the constraints when the constraint equations are imposed, 
+    [1] => 
+
+    [2] =>     { G j , O } G j = C a = H = 0 = { C a , O } G j = C a = H = 0 = { H , O } G j = C a = H = 0 = 0 , {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,} {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,} 
+    [3] => 
+
+    [4] => that is, they are quantities defined on the constraint surface that are invariant under the gauge transformations of the theory. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The constraints define a constraint surface in the original phase space. The gauge motions of the constraints apply to all phase space but have the feature that they leave the constraint surface where it is, and thus the orbit of a point in the hypersurface under gauge transformations will be an orbit entirely within it. Dirac observables are defined as phase space functions, O {\displaystyle O} O, that Poisson commute with all the constraints when the constraint equations are imposed, 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->that is, they are quantities defined on the constraint surface that are invariant under the gauge transformations of the theory. 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The constraints define a constraint surface in the original phase space.The gauge motions of the constraints apply to all phase space but have the feature that they leave the constraint surface where it is, and thus the orbit of a point in the hypersurface under gauge transformations will be an orbit entirely within it.Dirac observables are defined as phase space functions, O {\displaystyle O} O, that Poisson commute with all the constraints when the constraint equations are imposed, 
+    [1] => 
+
+    [2] =>     { G j , O } G j = C a = H = 0 = { C a , O } G j = C a = H = 0 = { H , O } G j = C a = H = 0 = 0 , {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,} {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,} 
+    [3] => 
+
+    [4] => that is, they are quantities defined on the constraint surface that are invariant under the gauge transformations of the theory.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The constraints define a constraint surface in the original phase space.The gauge motions of the constraints apply to all phase space but have the feature that they leave the constraint surface where it is, and thus the orbit of a point in the hypersurface under gauge transformations will be an orbit entirely within it.Dirac observables are defined as phase space functions, O {\displaystyle O} O, that Poisson commute with all the constraints when the constraint equations are imposed, 
+    { G j , O } G j = C a = H = 0 = { C a , O } G j = C a = H = 0 = { H , O } G j = C a = H = 0 = 0 , {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,} {\displaystyle \{G_{j},O\}_{G_{j}=C_{a}=H=0}=\{C_{a},O\}_{G_{j}=C_{a}=H=0}=\{H,O\}_{G_{j}=C_{a}=H=0}=0,} 
+that is, they are quantities defined on the constraint surface that are invariant under the gauge transformations of the theory.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_170328_824207.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_170328_824207.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210612_170544_359244)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In dynamical system theory, a phase space is a space in which all possible states of a system are represented, with each possible state corresponding to one unique point in the phase space. For mechanical systems, the phase space usually consists of all possible values of position and momentum variables. The concept of phase space was developed in the late 19th century by Ludwig Boltzmann, Henri Poincaré, and Josiah Willard Gibbs.[1]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In dynamical system theory, a phase space is a space in which all possible states of a system are represented, with each possible state corresponding to one unique point in the phase space. For mechanical systems, the phase space usually consists of all possible values of position and momentum variables. The concept of phase space was developed in the late 19th century by Ludwig Boltzmann, Henri Poincaré, and Josiah Willard Gibbs.[1]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In dynamical system theory, a phase space is a space in which all possible states of a system are represented, with each possible state corresponding to one unique point in the phase space. For mechanical systems, the phase space usually consists of all possible values of position and momentum variables. The concept of phase space was developed in the late 19th century by Ludwig Boltzmann, Henri Poincaré, and Josiah Willard Gibbs.[1]
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In dynamical system theory, a phase space is a space in which all possible states of a system are represented, with each possible state corresponding to one unique point in the phase space.For mechanical systems, the phase space usually consists of all possible values of position and momentum variables.The concept of phase space was developed in the late 19th century by Ludwig Boltzmann, Henri Poincaré, and Josiah Willard Gibbs.[1]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In dynamical system theory, a phase space is a space in which all possible states of a system are represented, with each possible state corresponding to one unique point in the phase space.For mechanical systems, the phase space usually consists of all possible values of position and momentum variables.The concept of phase space was developed in the late 19th century by Ludwig Boltzmann, Henri Poincaré, and Josiah Willard Gibbs.[1]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_170544_359244.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_170544_359244.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210612_171821_910876)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In physics, a gauge theory is a type of field theory in which the Lagrangian does not change (is invariant) under local transformations from certain Lie groups.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In physics, a gauge theory is a type of field theory in which the Lagrangian does not change (is invariant) under local transformations from certain Lie groups.
+    [1] => 
+
+    [2] => The term gauge refers to any specific mathematical formalism to regulate redundant degrees of freedom in the Lagrangian. The transformations between possible gauges, called gauge transformations, form a Lie group—referred to as the symmetry group or the gauge group of the theory. Associated with any Lie group is the Lie algebra of group generators. For each group generator there necessarily arises a corresponding field (usually a vector field) called the gauge field. Gauge fields are included in the Lagrangian to ensure its invariance under the local group transformations (called gauge invariance). When such a theory is quantized, the quanta of the gauge fields are called gauge bosons. If the symmetry group is non-commutative, then the gauge theory is referred to as non-abelian gauge theory, the usual example being the Yang–Mills theory. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In physics, a gauge theory is a type of field theory in which the Lagrangian does not change (is invariant) under local transformations from certain Lie groups.
+    [1] => 
+
+    [2] => The term gauge refers to any specific mathematical formalism to regulate redundant degrees of freedom in the Lagrangian. The transformations between possible gauges, called gauge transformations, form a Lie group—referred to as the symmetry group or the gauge group of the theory. Associated with any Lie group is the Lie algebra of group generators. For each group generator there necessarily arises a corresponding field (usually a vector field) called the gauge field. Gauge fields are included in the Lagrangian to ensure its invariance under the local group transformations (called gauge invariance). When such a theory is quantized, the quanta of the gauge fields are called gauge bosons. If the symmetry group is non-commutative, then the gauge theory is referred to as non-abelian gauge theory, the usual example being the Yang–Mills theory. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The term gauge refers to any specific mathematical formalism to regulate redundant degrees of freedom in the Lagrangian. The transformations between possible gauges, called gauge transformations, form a Lie group—referred to as the symmetry group or the gauge group of the theory. Associated with any Lie group is the Lie algebra of group generators. For each group generator there necessarily arises a corresponding field (usually a vector field) called the gauge field. Gauge fields are included in the Lagrangian to ensure its invariance under the local group transformations (called gauge invariance). When such a theory is quantized, the quanta of the gauge fields are called gauge bosons. If the symmetry group is non-commutative, then the gauge theory is referred to as non-abelian gauge theory, the usual example being the Yang–Mills theory. 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In physics, a gauge theory is a type of field theory in which the Lagrangian does not change (is invariant) under local transformations from certain Lie groups.
+    [1] => 
+
+    [2] => The term gauge refers to any specific mathematical formalism to regulate redundant degrees of freedom in the Lagrangian.The transformations between possible gauges, called gauge transformations, form a Lie group—referred to as the symmetry group or the gauge group of the theory.Associated with any Lie group is the Lie algebra of group generators.For each group generator there necessarily arises a corresponding field (usually a vector field) called the gauge field.Gauge fields are included in the Lagrangian to ensure its invariance under the local group transformations (called gauge invariance).When such a theory is quantized, the quanta of the gauge fields are called gauge bosons.If the symmetry group is non-commutative, then the gauge theory is referred to as non-abelian gauge theory, the usual example being the Yang–Mills theory.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In physics, a gauge theory is a type of field theory in which the Lagrangian does not change (is invariant) under local transformations from certain Lie groups.
+The term gauge refers to any specific mathematical formalism to regulate redundant degrees of freedom in the Lagrangian.The transformations between possible gauges, called gauge transformations, form a Lie group—referred to as the symmetry group or the gauge group of the theory.Associated with any Lie group is the Lie algebra of group generators.For each group generator there necessarily arises a corresponding field (usually a vector field) called the gauge field.Gauge fields are included in the Lagrangian to ensure its invariance under the local group transformations (called gauge invariance).When such a theory is quantized, the quanta of the gauge fields are called gauge bosons.If the symmetry group is non-commutative, then the gauge theory is referred to as non-abelian gauge theory, the usual example being the Yang–Mills theory.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_171821_910876.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_171821_910876.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210612_172733_534182)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Then, solving only the constraint G j = 0 {\displaystyle G_{j}=0} G_{j}=0 and determining the Dirac observables with respect to it leads us back to the Arnowitt–Deser–Misner (ADM) phase space with constraints H , C a {\displaystyle H,C_{a}} H,C_{a}. The dynamics of general relativity is generated by the constraints, it can be shown that six Einstein equations describing time evolution (really a gauge transformation) can be obtained by calculating the Poisson brackets of the three-metric and its conjugate momentum with a linear combination of the spatial diffeomorphism and Hamiltonian constraint. The vanishing of the constraints, giving the physical phase space, are the four other Einstein equations.[16]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Then, solving only the constraint G j = 0 {\displaystyle G_{j}=0} G_{j}=0 and determining the Dirac observables with respect to it leads us back to the Arnowitt–Deser–Misner (ADM) phase space with constraints H , C a {\displaystyle H,C_{a}} H,C_{a}. The dynamics of general relativity is generated by the constraints, it can be shown that six Einstein equations describing time evolution (really a gauge transformation) can be obtained by calculating the Poisson brackets of the three-metric and its conjugate momentum with a linear combination of the spatial diffeomorphism and Hamiltonian constraint. The vanishing of the constraints, giving the physical phase space, are the four other Einstein equations.[16]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Then, solving only the constraint G j = 0 {\displaystyle G_{j}=0} G_{j}=0 and determining the Dirac observables with respect to it leads us back to the Arnowitt–Deser–Misner (ADM) phase space with constraints H , C a {\displaystyle H,C_{a}} H,C_{a}. The dynamics of general relativity is generated by the constraints, it can be shown that six Einstein equations describing time evolution (really a gauge transformation) can be obtained by calculating the Poisson brackets of the three-metric and its conjugate momentum with a linear combination of the spatial diffeomorphism and Hamiltonian constraint. The vanishing of the constraints, giving the physical phase space, are the four other Einstein equations.[16]
+$matches ==>
+Array
+(
+    [0] => }. 
+    [1] => }.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Then, solving only the constraint G j = 0 {\displaystyle G_{j}=0} G_{j}=0 and determining the Dirac observables with respect to it leads us back to the Arnowitt–Deser–Misner (ADM) phase space with constraints H , C a {\displaystyle H,C_{a}} H,C_{a}.The dynamics of general relativity is generated by the constraints, it can be shown that six Einstein equations describing time evolution (really a gauge transformation) can be obtained by calculating the Poisson brackets of the three-metric and its conjugate momentum with a linear combination of the spatial diffeomorphism and Hamiltonian constraint.The vanishing of the constraints, giving the physical phase space, are the four other Einstein equations.[16]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Then, solving only the constraint G j = 0 {\displaystyle G_{j}=0} G_{j}=0 and determining the Dirac observables with respect to it leads us back to the Arnowitt–Deser–Misner (ADM) phase space with constraints H , C a {\displaystyle H,C_{a}} H,C_{a}.The dynamics of general relativity is generated by the constraints, it can be shown that six Einstein equations describing time evolution (really a gauge transformation) can be obtained by calculating the Poisson brackets of the three-metric and its conjugate momentum with a linear combination of the spatial diffeomorphism and Hamiltonian constraint.The vanishing of the constraints, giving the physical phase space, are the four other Einstein equations.[16]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_172733_534182.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_172733_534182.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
