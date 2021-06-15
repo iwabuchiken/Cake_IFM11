@@ -31986,3 +31986,387 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210612_172733_534182.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210613_142900_344367)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Pre-history and Ashtekar new variables
+
+    [1] => Main articles: Frame fields in general relativity, Ashtekar variables, and Self-dual Palatini action
+
+    [2] => 
+
+    [3] => Many of the technical problems in canonical quantum gravity revolve around the constraints. Canonical general relativity was originally formulated in terms of metric variables, but there seemed to be insurmountable mathematical difficulties in promoting the constraints to quantum operators because of their highly non-linear dependence on the canonical variables. The equations were much simplified with the introduction of Ashtekar's new variables. Ashtekar variables describe canonical general relativity in terms of a new pair of canonical variables closer to those of gauge theories. The first step consists of using densitized triads E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} (a triad E i a {\displaystyle E_{i}^{a}} E_{i}^{a} is simply three orthogonal vector fields labeled by i = 1 , 2 , 3 {\displaystyle i=1,2,3} i=1,2,3 and the densitized triad is defined by E ~ i a = det ( q ) E i a {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}} {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}}) to encode information about the spatial metric,
+
+    [4] => 
+
+    [5] =>     det ( q ) q a b = E ~ i a E ~ j b δ i j . {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.}
+
+    [6] => 
+
+    [7] => (where δ i j {\displaystyle \delta ^{ij}} \delta ^{ij} is the flat space metric, and the above equation expresses that q a b {\displaystyle q^{ab}} q^{ab}, when written in terms of the basis E i a {\displaystyle E_{i}^{a}} E_{i}^{a}, is locally flat). (Formulating general relativity with triads instead of metrics was not new.) The densitized triads are not unique, and in fact one can perform a local in space rotation with respect to the internal indices i {\displaystyle i} i. The canonically conjugate variable is related to the extrinsic curvature by K a i = K a b E ~ a i / det ( q ) {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}} {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}}. But problems similar to using the metric formulation arise when one tries to quantize the theory. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Pre-history and Ashtekar new variables
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Main articles: Frame fields in general relativity, Ashtekar variables, and Self-dual Palatini action
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Many of the technical problems in canonical quantum gravity revolve around the constraints. Canonical general relativity was originally formulated in terms of metric variables, but there seemed to be insurmountable mathematical difficulties in promoting the constraints to quantum operators because of their highly non-linear dependence on the canonical variables. The equations were much simplified with the introduction of Ashtekar's new variables. Ashtekar variables describe canonical general relativity in terms of a new pair of canonical variables closer to those of gauge theories. The first step consists of using densitized triads E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} (a triad E i a {\displaystyle E_{i}^{a}} E_{i}^{a} is simply three orthogonal vector fields labeled by i = 1 , 2 , 3 {\displaystyle i=1,2,3} i=1,2,3 and the densitized triad is defined by E ~ i a = det ( q ) E i a {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}} {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}}) to encode information about the spatial metric,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    det ( q ) q a b = E ~ i a E ~ j b δ i j . {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Pre-history and Ashtekar new variables 
+    [1] => Main articles: Frame fields in general relativity, Ashtekar variables, and Self-dual Palatini action 
+    [2] => 
+
+    [3] => Many of the technical problems in canonical quantum gravity revolve around the constraints. Canonical general relativity was originally formulated in terms of metric variables, but there seemed to be insurmountable mathematical difficulties in promoting the constraints to quantum operators because of their highly non-linear dependence on the canonical variables. The equations were much simplified with the introduction of Ashtekar's new variables. Ashtekar variables describe canonical general relativity in terms of a new pair of canonical variables closer to those of gauge theories. The first step consists of using densitized triads E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} (a triad E i a {\displaystyle E_{i}^{a}} E_{i}^{a} is simply three orthogonal vector fields labeled by i = 1 , 2 , 3 {\displaystyle i=1,2,3} i=1,2,3 and the densitized triad is defined by E ~ i a = det ( q ) E i a {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}} {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}}) to encode information about the spatial metric, 
+    [4] => 
+
+    [5] =>     det ( q ) q a b = E ~ i a E ~ j b δ i j . {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} 
+    [6] => 
+
+    [7] => (where δ i j {\displaystyle \delta ^{ij}} \delta ^{ij} is the flat space metric, and the above equation expresses that q a b {\displaystyle q^{ab}} q^{ab}, when written in terms of the basis E i a {\displaystyle E_{i}^{a}} E_{i}^{a}, is locally flat). (Formulating general relativity with triads instead of metrics was not new.) The densitized triads are not unique, and in fact one can perform a local in space rotation with respect to the internal indices i {\displaystyle i} i. The canonically conjugate variable is related to the extrinsic curvature by K a i = K a b E ~ a i / det ( q ) {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}} {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}}. But problems similar to using the metric formulation arise when one tries to quantize the theory. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Many of the technical problems in canonical quantum gravity revolve around the constraints. Canonical general relativity was originally formulated in terms of metric variables, but there seemed to be insurmountable mathematical difficulties in promoting the constraints to quantum operators because of their highly non-linear dependence on the canonical variables. The equations were much simplified with the introduction of Ashtekar's new variables. Ashtekar variables describe canonical general relativity in terms of a new pair of canonical variables closer to those of gauge theories. The first step consists of using densitized triads E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} (a triad E i a {\displaystyle E_{i}^{a}} E_{i}^{a} is simply three orthogonal vector fields labeled by i = 1 , 2 , 3 {\displaystyle i=1,2,3} i=1,2,3 and the densitized triad is defined by E ~ i a = det ( q ) E i a {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}} {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}}) to encode information about the spatial metric, 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    det ( q ) q a b = E ~ i a E ~ j b δ i j . {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} 
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->(where δ i j {\displaystyle \delta ^{ij}} \delta ^{ij} is the flat space metric, and the above equation expresses that q a b {\displaystyle q^{ab}} q^{ab}, when written in terms of the basis E i a {\displaystyle E_{i}^{a}} E_{i}^{a}, is locally flat). (Formulating general relativity with triads instead of metrics was not new.) The densitized triads are not unique, and in fact one can perform a local in space rotation with respect to the internal indices i {\displaystyle i} i. The canonically conjugate variable is related to the extrinsic curvature by K a i = K a b E ~ a i / det ( q ) {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}} {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}}. But problems similar to using the metric formulation arise when one tries to quantize the theory. 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Pre-history and Ashtekar new variables 
+    [1] => Main articles: Frame fields in general relativity, Ashtekar variables, and Self-dual Palatini action 
+    [2] => 
+
+    [3] => Many of the technical problems in canonical quantum gravity revolve around the constraints.Canonical general relativity was originally formulated in terms of metric variables, but there seemed to be insurmountable mathematical difficulties in promoting the constraints to quantum operators because of their highly non-linear dependence on the canonical variables.The equations were much simplified with the introduction of Ashtekar's new variables.Ashtekar variables describe canonical general relativity in terms of a new pair of canonical variables closer to those of gauge theories.The first step consists of using densitized triads E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} (a triad E i a {\displaystyle E_{i}^{a}} E_{i}^{a} is simply three orthogonal vector fields labeled by i = 1 , 2 , 3 {\displaystyle i=1,2,3} i=1,2,3 and the densitized triad is defined by E ~ i a = det ( q ) E i a {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}} {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}}) to encode information about the spatial metric, 
+    [4] => 
+
+    [5] =>     det ( q ) q a b = E ~ i a E ~ j b δ i j .{\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} 
+    [6] => 
+
+    [7] => (where δ i j {\displaystyle \delta ^{ij}} \delta ^{ij} is the flat space metric, and the above equation expresses that q a b {\displaystyle q^{ab}} q^{ab}, when written in terms of the basis E i a {\displaystyle E_{i}^{a}} E_{i}^{a}, is locally flat).(Formulating general relativity with triads instead of metrics was not new.) The densitized triads are not unique, and in fact one can perform a local in space rotation with respect to the internal indices i {\displaystyle i} i.The canonically conjugate variable is related to the extrinsic curvature by K a i = K a b E ~ a i / det ( q ) {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}} {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}}.But problems similar to using the metric formulation arise when one tries to quantize the theory.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Pre-history and Ashtekar new variables Main articles: Frame fields in general relativity, Ashtekar variables, and Self-dual Palatini action 
+Many of the technical problems in canonical quantum gravity revolve around the constraints.Canonical general relativity was originally formulated in terms of metric variables, but there seemed to be insurmountable mathematical difficulties in promoting the constraints to quantum operators because of their highly non-linear dependence on the canonical variables.The equations were much simplified with the introduction of Ashtekar's new variables.Ashtekar variables describe canonical general relativity in terms of a new pair of canonical variables closer to those of gauge theories.The first step consists of using densitized triads E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} (a triad E i a {\displaystyle E_{i}^{a}} E_{i}^{a} is simply three orthogonal vector fields labeled by i = 1 , 2 , 3 {\displaystyle i=1,2,3} i=1,2,3 and the densitized triad is defined by E ~ i a = det ( q ) E i a {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}} {\textstyle {\tilde {E}}_{i}^{a}={\sqrt {\det(q)}}E_{i}^{a}}) to encode information about the spatial metric, 
+    det ( q ) q a b = E ~ i a E ~ j b δ i j .{\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} {\displaystyle \det(q)q^{ab}={\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}\delta ^{ij}.} 
+(where δ i j {\displaystyle \delta ^{ij}} \delta ^{ij} is the flat space metric, and the above equation expresses that q a b {\displaystyle q^{ab}} q^{ab}, when written in terms of the basis E i a {\displaystyle E_{i}^{a}} E_{i}^{a}, is locally flat).(Formulating general relativity with triads instead of metrics was not new.) The densitized triads are not unique, and in fact one can perform a local in space rotation with respect to the internal indices i {\displaystyle i} i.The canonically conjugate variable is related to the extrinsic curvature by K a i = K a b E ~ a i / det ( q ) {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}} {\textstyle K_{a}^{i}=K_{ab}{\tilde {E}}^{ai}/{\sqrt {\det(q)}}}.But problems similar to using the metric formulation arise when one tries to quantize the theory.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210613_142900_344367.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210613_142900_344367.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210613_145055_900662)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'that behaves as a complex SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) connection where Γ a i {\displaystyle \Gamma _{a}^{i}} \Gamma _{a}^{i} is related to the so-called spin connection via Γ a i = Γ a j k ϵ j k i {\displaystyle \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}} \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}. Here A a i {\displaystyle A_{a}^{i}} A_{a}^{i} is called the chiral spin connection. It defines a covariant derivative D a {\displaystyle {\mathcal {D}}_{a}} {\mathcal {D}}_{a}. It turns out that E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} is the conjugate momentum of A a i {\displaystyle A_{a}^{i}} A_{a}^{i}, and together these form Ashtekar's new variables.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Ashtekar's new insight was to introduce a new configuration variable,
+
+    [1] => 
+
+    [2] => A a i = Γ a i − i K a i {\displaystyle A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i}} A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i}
+
+    [3] => 
+
+    [4] => that behaves as a complex SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) connection where Γ a i {\displaystyle \Gamma _{a}^{i}} \Gamma _{a}^{i} is related to the so-called spin connection via Γ a i = Γ a j k ϵ j k i {\displaystyle \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}} \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}. Here A a i {\displaystyle A_{a}^{i}} A_{a}^{i} is called the chiral spin connection. It defines a covariant derivative D a {\displaystyle {\mathcal {D}}_{a}} {\mathcal {D}}_{a}. It turns out that E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} is the conjugate momentum of A a i {\displaystyle A_{a}^{i}} A_{a}^{i}, and together these form Ashtekar's new variables.
+    [5] => 
+
+    [6] => The expressions for the constraints in Ashtekar variables; the Gauss's law, the spatial diffeomorphism constraint and the (densitized) Hamiltonian constraint then read:
+
+    [7] => 
+
+    [8] =>     G i = D a E ~ i a = 0 {\displaystyle G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0} G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0
+
+    [9] => 
+
+    [10] =>     C a = E ~ i b F a b i − A a i ( D b E ~ i b ) = V a − A a i G i = 0 , {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,} {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,}
+
+    [11] => 
+
+    [12] =>     H ~ = ϵ i j k E ~ i a E ~ j b F a b k = 0 {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0} {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0}
+
+    [13] => 
+
+    [14] => respectively, where F a b i {\displaystyle F_{ab}^{i}} F_{ab}^{i} is the field strength tensor of the connection A a i {\displaystyle A_{a}^{i}} A_{a}^{i} and where V a {\displaystyle V_{a}} V_{a} is referred to as the vector constraint. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Ashtekar's new insight was to introduce a new configuration variable,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->A a i = Γ a i − i K a i {\displaystyle A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i}} A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The expressions for the constraints in Ashtekar variables; the Gauss's law, the spatial diffeomorphism constraint and the (densitized) Hamiltonian constraint then read:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    G i = D a E ~ i a = 0 {\displaystyle G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0} G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0
+
+$matches ==>
+Array
+(
+    [0] => 0
+
+    [1] => 0
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    C a = E ~ i b F a b i − A a i ( D b E ~ i b ) = V a − A a i G i = 0 , {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,} {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    H ~ = ϵ i j k E ~ i a E ~ j b F a b k = 0 {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0} {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0}
+
+$matches ==>
+Array
+(
+    [0] => }
+
+    [1] => }
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Ashtekar's new insight was to introduce a new configuration variable, 
+    [1] => 
+
+    [2] => A a i = Γ a i − i K a i {\displaystyle A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i}} A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i} 
+    [3] => 
+
+    [4] => that behaves as a complex SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) connection where Γ a i {\displaystyle \Gamma _{a}^{i}} \Gamma _{a}^{i} is related to the so-called spin connection via Γ a i = Γ a j k ϵ j k i {\displaystyle \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}} \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}. Here A a i {\displaystyle A_{a}^{i}} A_{a}^{i} is called the chiral spin connection. It defines a covariant derivative D a {\displaystyle {\mathcal {D}}_{a}} {\mathcal {D}}_{a}. It turns out that E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} is the conjugate momentum of A a i {\displaystyle A_{a}^{i}} A_{a}^{i}, and together these form Ashtekar's new variables.
+    [5] => 
+
+    [6] => The expressions for the constraints in Ashtekar variables; the Gauss's law, the spatial diffeomorphism constraint and the (densitized) Hamiltonian constraint then read: 
+    [7] => 
+
+    [8] =>     G i = D a E ~ i a = 0 {\displaystyle G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0} G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0 
+    [9] => 
+
+    [10] =>     C a = E ~ i b F a b i − A a i ( D b E ~ i b ) = V a − A a i G i = 0 , {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,} {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,} 
+    [11] => 
+
+    [12] =>     H ~ = ϵ i j k E ~ i a E ~ j b F a b k = 0 {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0} {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0} 
+    [13] => 
+
+    [14] => respectively, where F a b i {\displaystyle F_{ab}^{i}} F_{ab}^{i} is the field strength tensor of the connection A a i {\displaystyle A_{a}^{i}} A_{a}^{i} and where V a {\displaystyle V_{a}} V_{a} is referred to as the vector constraint. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->that behaves as a complex SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) connection where Γ a i {\displaystyle \Gamma _{a}^{i}} \Gamma _{a}^{i} is related to the so-called spin connection via Γ a i = Γ a j k ϵ j k i {\displaystyle \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}} \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}. Here A a i {\displaystyle A_{a}^{i}} A_{a}^{i} is called the chiral spin connection. It defines a covariant derivative D a {\displaystyle {\mathcal {D}}_{a}} {\mathcal {D}}_{a}. It turns out that E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} is the conjugate momentum of A a i {\displaystyle A_{a}^{i}} A_{a}^{i}, and together these form Ashtekar's new variables.
+$matches ==>
+Array
+(
+    [0] => }. 
+    [1] => }.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->respectively, where F a b i {\displaystyle F_{ab}^{i}} F_{ab}^{i} is the field strength tensor of the connection A a i {\displaystyle A_{a}^{i}} A_{a}^{i} and where V a {\displaystyle V_{a}} V_{a} is referred to as the vector constraint. 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Ashtekar's new insight was to introduce a new configuration variable, 
+    [1] => 
+
+    [2] => A a i = Γ a i − i K a i {\displaystyle A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i}} A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i} 
+    [3] => 
+
+    [4] => that behaves as a complex SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) connection where Γ a i {\displaystyle \Gamma _{a}^{i}} \Gamma _{a}^{i} is related to the so-called spin connection via Γ a i = Γ a j k ϵ j k i {\displaystyle \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}} \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}.Here A a i {\displaystyle A_{a}^{i}} A_{a}^{i} is called the chiral spin connection.It defines a covariant derivative D a {\displaystyle {\mathcal {D}}_{a}} {\mathcal {D}}_{a}.It turns out that E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} is the conjugate momentum of A a i {\displaystyle A_{a}^{i}} A_{a}^{i}, and together these form Ashtekar's new variables.
+    [5] => 
+
+    [6] => The expressions for the constraints in Ashtekar variables; the Gauss's law, the spatial diffeomorphism constraint and the (densitized) Hamiltonian constraint then read: 
+    [7] => 
+
+    [8] =>     G i = D a E ~ i a = 0 {\displaystyle G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0} G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0 
+    [9] => 
+
+    [10] =>     C a = E ~ i b F a b i − A a i ( D b E ~ i b ) = V a − A a i G i = 0 , {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,} {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,} 
+    [11] => 
+
+    [12] =>     H ~ = ϵ i j k E ~ i a E ~ j b F a b k = 0 {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0} {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0} 
+    [13] => 
+
+    [14] => respectively, where F a b i {\displaystyle F_{ab}^{i}} F_{ab}^{i} is the field strength tensor of the connection A a i {\displaystyle A_{a}^{i}} A_{a}^{i} and where V a {\displaystyle V_{a}} V_{a} is referred to as the vector constraint.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Ashtekar's new insight was to introduce a new configuration variable, 
+A a i = Γ a i − i K a i {\displaystyle A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i}} A_{a}^{i}=\Gamma _{a}^{i}-iK_{a}^{i} 
+that behaves as a complex SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) connection where Γ a i {\displaystyle \Gamma _{a}^{i}} \Gamma _{a}^{i} is related to the so-called spin connection via Γ a i = Γ a j k ϵ j k i {\displaystyle \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}} \Gamma _{a}^{i}=\Gamma _{ajk}\epsilon ^{jki}.Here A a i {\displaystyle A_{a}^{i}} A_{a}^{i} is called the chiral spin connection.It defines a covariant derivative D a {\displaystyle {\mathcal {D}}_{a}} {\mathcal {D}}_{a}.It turns out that E ~ i a {\displaystyle {\tilde {E}}_{i}^{a}} {\tilde {E}}_{i}^{a} is the conjugate momentum of A a i {\displaystyle A_{a}^{i}} A_{a}^{i}, and together these form Ashtekar's new variables.
+The expressions for the constraints in Ashtekar variables; the Gauss's law, the spatial diffeomorphism constraint and the (densitized) Hamiltonian constraint then read: 
+    G i = D a E ~ i a = 0 {\displaystyle G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0} G^{i}={\mathcal {D}}_{a}{\tilde {E}}_{i}^{a}=0 
+    C a = E ~ i b F a b i − A a i ( D b E ~ i b ) = V a − A a i G i = 0 , {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,} {\displaystyle C_{a}={\tilde {E}}_{i}^{b}F_{ab}^{i}-A_{a}^{i}({\mathcal {D}}_{b}{\tilde {E}}_{i}^{b})=V_{a}-A_{a}^{i}G^{i}=0,} 
+    H ~ = ϵ i j k E ~ i a E ~ j b F a b k = 0 {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0} {\displaystyle {\tilde {H}}=\epsilon _{ijk}{\tilde {E}}_{i}^{a}{\tilde {E}}_{j}^{b}F_{ab}^{k}=0} 
+respectively, where F a b i {\displaystyle F_{ab}^{i}} F_{ab}^{i} is the field strength tensor of the connection A a i {\displaystyle A_{a}^{i}} A_{a}^{i} and where V a {\displaystyle V_{a}} V_{a} is referred to as the vector constraint.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210613_145055_900662.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210613_145055_900662.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210613_151430_767715)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The above-mentioned local in space rotational invariance is the original of the SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) gauge invariance here expressed by the Gauss law. Note that these constraints are polynomial in the fundamental variables, unlike as with the constraints in the metric formulation. This dramatic simplification seemed to open up the way to quantizing the constraints. (See the article Self-dual Palatini action for a derivation of Ashtekar's formalism). 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The above-mentioned local in space rotational invariance is the original of the SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) gauge invariance here expressed by the Gauss law. Note that these constraints are polynomial in the fundamental variables, unlike as with the constraints in the metric formulation. This dramatic simplification seemed to open up the way to quantizing the constraints. (See the article Self-dual Palatini action for a derivation of Ashtekar's formalism). 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The above-mentioned local in space rotational invariance is the original of the SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) gauge invariance here expressed by the Gauss law. Note that these constraints are polynomial in the fundamental variables, unlike as with the constraints in the metric formulation. This dramatic simplification seemed to open up the way to quantizing the constraints. (See the article Self-dual Palatini action for a derivation of Ashtekar's formalism). 
+$matches ==>
+Array
+(
+    [0] => w. 
+    [1] => w.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The above-mentioned local in space rotational invariance is the original of the SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) gauge invariance here expressed by the Gauss law.Note that these constraints are polynomial in the fundamental variables, unlike as with the constraints in the metric formulation.This dramatic simplification seemed to open up the way to quantizing the constraints.(See the article Self-dual Palatini action for a derivation of Ashtekar's formalism).
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The above-mentioned local in space rotational invariance is the original of the SU ⁡ ( 2 ) {\displaystyle \operatorname {SU} (2)} \operatorname {SU} (2) gauge invariance here expressed by the Gauss law.Note that these constraints are polynomial in the fundamental variables, unlike as with the constraints in the metric formulation.This dramatic simplification seemed to open up the way to quantizing the constraints.(See the article Self-dual Palatini action for a derivation of Ashtekar's formalism).
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210613_151430_767715.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210613_151430_767715.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
