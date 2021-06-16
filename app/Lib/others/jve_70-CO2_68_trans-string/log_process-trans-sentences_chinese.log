@@ -4961,3 +4961,54 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_103255_001540.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210607_103255_001540.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210615_165204_231307)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 印度的
+    [1] => 窣堵坡[su1du3po2
+    [2] => 原是]]
+    [3] => 埋葬
+    [4] => 佛祖
+    [5] => 释迦牟尼shi4jia1mou2ni2
+    [6] => 火化后留下的舍利的一种佛教建筑，]]
+    [7] => 窣堵坡
+    [8] => 就是
+    [9] => 坟冢[fen2zhong3
+    [10] => 的意思。]]
+    [11] => 开始为纪念佛祖释迦牟尼，在佛出生、
+    [12] => 涅槃[nie4pan2
+    [13] => 的地方都要建塔，随着佛教在各地的发展，在佛教盛行的地方也建起很多塔，争相供奉佛舍利。]]
+    [14] => 后来塔也成为高僧
+    [15] => 圆寂[yuan2ji4
+    [16] => 后
+    [17] => 埋藏[mai2cang2
+    [18] => 舍利的建筑。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)印度的
+[process-trans-sentences_chinese.php : 216] match => 窣堵坡[su1du3po2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)原是]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)埋葬
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)佛祖
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)释迦牟尼shi4jia1mou2ni2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)火化后留下的舍利的一种佛教建筑，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)窣堵坡
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)就是
+[process-trans-sentences_chinese.php : 216] match => 坟冢[fen2zhong3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的意思。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)开始为纪念佛祖释迦牟尼，在佛出生、
+[process-trans-sentences_chinese.php : 216] match => 涅槃[nie4pan2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的地方都要建塔，随着佛教在各地的发展，在佛教盛行的地方也建起很多塔，争相供奉佛舍利。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)后来塔也成为高僧
+[process-trans-sentences_chinese.php : 216] match => 圆寂[yuan2ji4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)后
+[process-trans-sentences_chinese.php : 216] match => 埋藏[mai2cang2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)舍利的建筑。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210615_165204_262507.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210615_165204_262507.txt'
+  
