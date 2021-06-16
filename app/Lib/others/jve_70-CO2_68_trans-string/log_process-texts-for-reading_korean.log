@@ -32810,3 +32810,402 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_091616_949162.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210616_123808_015665)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The Maduro government has sentenced iron ore worker Rodney Álvarez to 15 years in prison, further demonstrating its profoundly anti-worker and reactionary character. As is known, Álvarez has been in prison for 10 years for a crime that he did not commit and has served as a perverse cover-up for the real culprit named Hector Maicán, a SPUV union leader.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The Maduro government has sentenced iron ore worker Rodney Álvarez to 15 years in prison, further demonstrating its profoundly anti-worker and reactionary character. As is known, Álvarez has been in prison for 10 years for a crime that he did not commit and has served as a perverse cover-up for the real culprit named Hector Maicán, a SPUV union leader.
+    [1] => 
+
+    [2] => During all this time that Rodney Álvarez has been imprisoned, prosecutors were never able to demonstrate his connection with the murder of co-worker Renny Rojas in 2011, but sectors of the union and state bureaucracy designed this judicial assembly to free Maicán from blame, being protected in addition by former governor of the state Bolívar Francisco Rangel Gómez.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The Maduro government has sentenced iron ore worker Rodney Álvarez to 15 years in prison, further demonstrating its profoundly anti-worker and reactionary character. As is known, Álvarez has been in prison for 10 years for a crime that he did not commit and has served as a perverse cover-up for the real culprit named Hector Maicán, a SPUV union leader.
+    [1] => 
+
+    [2] => During all this time that Rodney Álvarez has been imprisoned, prosecutors were never able to demonstrate his connection with the murder of co-worker Renny Rojas in 2011, but sectors of the union and state bureaucracy designed this judicial assembly to free Maicán from blame, being protected in addition by former governor of the state Bolívar Francisco Rangel Gómez.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The Maduro government has sentenced iron ore worker Rodney Álvarez to 15 years in prison, further demonstrating its profoundly anti-worker and reactionary character. As is known, Álvarez has been in prison for 10 years for a crime that he did not commit and has served as a perverse cover-up for the real culprit named Hector Maicán, a SPUV union leader.
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The Maduro government has sentenced iron ore worker Rodney Álvarez to 15 years in prison, further demonstrating its profoundly anti-worker and reactionary character.As is known, Álvarez has been in prison for 10 years for a crime that he did not commit and has served as a perverse cover-up for the real culprit named Hector Maicán, a SPUV union leader.
+    [1] => 
+
+    [2] => During all this time that Rodney Álvarez has been imprisoned, prosecutors were never able to demonstrate his connection with the murder of co-worker Renny Rojas in 2011, but sectors of the union and state bureaucracy designed this judicial assembly to free Maicán from blame, being protected in addition by former governor of the state Bolívar Francisco Rangel Gómez.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The Maduro government has sentenced iron ore worker Rodney Álvarez to 15 years in prison, further demonstrating its profoundly anti-worker and reactionary character.As is known, Álvarez has been in prison for 10 years for a crime that he did not commit and has served as a perverse cover-up for the real culprit named Hector Maicán, a SPUV union leader.
+During all this time that Rodney Álvarez has been imprisoned, prosecutors were never able to demonstrate his connection with the murder of co-worker Renny Rojas in 2011, but sectors of the union and state bureaucracy designed this judicial assembly to free Maicán from blame, being protected in addition by former governor of the state Bolívar Francisco Rangel Gómez.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_123808_015665.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_123808_015665.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210616_123949_334458)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Rodney Álvarez had had countless hearings suspended and has suffered the restart of trials over and over again due to the lack of evidence to demonstrate his guilt. The handling of his case demonstrates the entirely repressive aspect of the very Venezuelan judicial system, which serves the corrupt clans and gangsters nested in the upper echelons of the State and government.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Rodney Álvarez had had countless hearings suspended and has suffered the restart of trials over and over again due to the lack of evidence to demonstrate his guilt. The handling of his case demonstrates the entirely repressive aspect of the very Venezuelan judicial system, which serves the corrupt clans and gangsters nested in the upper echelons of the State and government.
+    [1] => 
+
+    [2] => The viciousness against Álvarez has also had the complicity of the directors of the Socialist Bolivarian Workers Central (CSBT), as evidenced at an event with the ILO, where the unionist Carlos López assured that Rodney Álvarez was guilty, announcing what was to come.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Rodney Álvarez had had countless hearings suspended and has suffered the restart of trials over and over again due to the lack of evidence to demonstrate his guilt. The handling of his case demonstrates the entirely repressive aspect of the very Venezuelan judicial system, which serves the corrupt clans and gangsters nested in the upper echelons of the State and government.
+    [1] => 
+
+    [2] => The viciousness against Álvarez has also had the complicity of the directors of the Socialist Bolivarian Workers Central (CSBT), as evidenced at an event with the ILO, where the unionist Carlos López assured that Rodney Álvarez was guilty, announcing what was to come.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Rodney Álvarez had had countless hearings suspended and has suffered the restart of trials over and over again due to the lack of evidence to demonstrate his guilt. The handling of his case demonstrates the entirely repressive aspect of the very Venezuelan judicial system, which serves the corrupt clans and gangsters nested in the upper echelons of the State and government.
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Rodney Álvarez had had countless hearings suspended and has suffered the restart of trials over and over again due to the lack of evidence to demonstrate his guilt.The handling of his case demonstrates the entirely repressive aspect of the very Venezuelan judicial system, which serves the corrupt clans and gangsters nested in the upper echelons of the State and government.
+    [1] => 
+
+    [2] => The viciousness against Álvarez has also had the complicity of the directors of the Socialist Bolivarian Workers Central (CSBT), as evidenced at an event with the ILO, where the unionist Carlos López assured that Rodney Álvarez was guilty, announcing what was to come.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Rodney Álvarez had had countless hearings suspended and has suffered the restart of trials over and over again due to the lack of evidence to demonstrate his guilt.The handling of his case demonstrates the entirely repressive aspect of the very Venezuelan judicial system, which serves the corrupt clans and gangsters nested in the upper echelons of the State and government.
+The viciousness against Álvarez has also had the complicity of the directors of the Socialist Bolivarian Workers Central (CSBT), as evidenced at an event with the ILO, where the unionist Carlos López assured that Rodney Álvarez was guilty, announcing what was to come.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_123949_334458.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_123949_334458.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210616_124106_480870)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'It is no coincidence that the sentence against a worker who has not bowed to the enormous blackmail of judges and prosecutors who have blatantly told him that if he accepts his responsibility it would automatically mean some benefit for him. The sentence comes just at the moment when the government and its business partners advance in their economic projects, underpinned by the Anti-Blockade Law and the Law of Special Economic Zones, which are raised on the basis of the total destruction of fundamental working class rights of the.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The repression and criminalization of protest has been one of the main aspects that Maduro and his government show as a guarantee to national and foreign capitalist investors who see Venezuelan labor as very attractive because of how cheap and favorable for their profits it is, as right-wing entrepreneur and politician Javier Bertucci recently said.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The imprisonment of workers and labor leaders like Eudis Girot, Bartolo Guerra, Luis Cárdenas, among many others, and now this 15-year sentence against Rodney, clearly portray the harshest face of Maduro’s economic policy, as it is evident that, for the impoverished sectors of society, it has prison and repression to offer, while for the rich and their different political expressions it has dialogue, understanding and business deals.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => It is no coincidence that the sentence against a worker who has not bowed to the enormous blackmail of judges and prosecutors who have blatantly told him that if he accepts his responsibility it would automatically mean some benefit for him. The sentence comes just at the moment when the government and its business partners advance in their economic projects, underpinned by the Anti-Blockade Law and the Law of Special Economic Zones, which are raised on the basis of the total destruction of fundamental working class rights of the.
+    [1] => 
+
+    [2] => The repression and criminalization of protest has been one of the main aspects that Maduro and his government show as a guarantee to national and foreign capitalist investors who see Venezuelan labor as very attractive because of how cheap and favorable for their profits it is, as right-wing entrepreneur and politician Javier Bertucci recently said.
+    [3] => 
+
+    [4] => The imprisonment of workers and labor leaders like Eudis Girot, Bartolo Guerra, Luis Cárdenas, among many others, and now this 15-year sentence against Rodney, clearly portray the harshest face of Maduro’s economic policy, as it is evident that, for the impoverished sectors of society, it has prison and repression to offer, while for the rich and their different political expressions it has dialogue, understanding and business deals.
+    [5] => 
+
+    [6] => Even so, from our organization we consider that we must demand the freedom of Rodney Álvarez and of all those workers who are imprisoned for fighting now more than ever and we call for the broadest unity of all labor sectors in the country around this very important axis of struggle, with political and class independence. Resuming with more strength the construction of a national campaign in order to achieve the full freedom of all our comrades.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => It is no coincidence that the sentence against a worker who has not bowed to the enormous blackmail of judges and prosecutors who have blatantly told him that if he accepts his responsibility it would automatically mean some benefit for him. The sentence comes just at the moment when the government and its business partners advance in their economic projects, underpinned by the Anti-Blockade Law and the Law of Special Economic Zones, which are raised on the basis of the total destruction of fundamental working class rights of the.
+    [1] => 
+
+    [2] => The repression and criminalization of protest has been one of the main aspects that Maduro and his government show as a guarantee to national and foreign capitalist investors who see Venezuelan labor as very attractive because of how cheap and favorable for their profits it is, as right-wing entrepreneur and politician Javier Bertucci recently said.
+    [3] => 
+
+    [4] => The imprisonment of workers and labor leaders like Eudis Girot, Bartolo Guerra, Luis Cárdenas, among many others, and now this 15-year sentence against Rodney, clearly portray the harshest face of Maduro’s economic policy, as it is evident that, for the impoverished sectors of society, it has prison and repression to offer, while for the rich and their different political expressions it has dialogue, understanding and business deals.
+    [5] => 
+
+    [6] => Even so, from our organization we consider that we must demand the freedom of Rodney Álvarez and of all those workers who are imprisoned for fighting now more than ever and we call for the broadest unity of all labor sectors in the country around this very important axis of struggle, with political and class independence. Resuming with more strength the construction of a national campaign in order to achieve the full freedom of all our comrades.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->It is no coincidence that the sentence against a worker who has not bowed to the enormous blackmail of judges and prosecutors who have blatantly told him that if he accepts his responsibility it would automatically mean some benefit for him. The sentence comes just at the moment when the government and its business partners advance in their economic projects, underpinned by the Anti-Blockade Law and the Law of Special Economic Zones, which are raised on the basis of the total destruction of fundamental working class rights of the.
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Even so, from our organization we consider that we must demand the freedom of Rodney Álvarez and of all those workers who are imprisoned for fighting now more than ever and we call for the broadest unity of all labor sectors in the country around this very important axis of struggle, with political and class independence. Resuming with more strength the construction of a national campaign in order to achieve the full freedom of all our comrades.
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => It is no coincidence that the sentence against a worker who has not bowed to the enormous blackmail of judges and prosecutors who have blatantly told him that if he accepts his responsibility it would automatically mean some benefit for him.The sentence comes just at the moment when the government and its business partners advance in their economic projects, underpinned by the Anti-Blockade Law and the Law of Special Economic Zones, which are raised on the basis of the total destruction of fundamental working class rights of the.
+    [1] => 
+
+    [2] => The repression and criminalization of protest has been one of the main aspects that Maduro and his government show as a guarantee to national and foreign capitalist investors who see Venezuelan labor as very attractive because of how cheap and favorable for their profits it is, as right-wing entrepreneur and politician Javier Bertucci recently said.
+    [3] => 
+
+    [4] => The imprisonment of workers and labor leaders like Eudis Girot, Bartolo Guerra, Luis Cárdenas, among many others, and now this 15-year sentence against Rodney, clearly portray the harshest face of Maduro’s economic policy, as it is evident that, for the impoverished sectors of society, it has prison and repression to offer, while for the rich and their different political expressions it has dialogue, understanding and business deals.
+    [5] => 
+
+    [6] => Even so, from our organization we consider that we must demand the freedom of Rodney Álvarez and of all those workers who are imprisoned for fighting now more than ever and we call for the broadest unity of all labor sectors in the country around this very important axis of struggle, with political and class independence.Resuming with more strength the construction of a national campaign in order to achieve the full freedom of all our comrades.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>It is no coincidence that the sentence against a worker who has not bowed to the enormous blackmail of judges and prosecutors who have blatantly told him that if he accepts his responsibility it would automatically mean some benefit for him.The sentence comes just at the moment when the government and its business partners advance in their economic projects, underpinned by the Anti-Blockade Law and the Law of Special Economic Zones, which are raised on the basis of the total destruction of fundamental working class rights of the.
+The repression and criminalization of protest has been one of the main aspects that Maduro and his government show as a guarantee to national and foreign capitalist investors who see Venezuelan labor as very attractive because of how cheap and favorable for their profits it is, as right-wing entrepreneur and politician Javier Bertucci recently said.
+The imprisonment of workers and labor leaders like Eudis Girot, Bartolo Guerra, Luis Cárdenas, among many others, and now this 15-year sentence against Rodney, clearly portray the harshest face of Maduro’s economic policy, as it is evident that, for the impoverished sectors of society, it has prison and repression to offer, while for the rich and their different political expressions it has dialogue, understanding and business deals.
+Even so, from our organization we consider that we must demand the freedom of Rodney Álvarez and of all those workers who are imprisoned for fighting now more than ever and we call for the broadest unity of all labor sectors in the country around this very important axis of struggle, with political and class independence.Resuming with more strength the construction of a national campaign in order to achieve the full freedom of all our comrades.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_124106_480870.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_124106_480870.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210616_130351_134156)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Hegel powiedział: „Wszystkie historyczne fakty i postacie powtarzają się dwukrotnie”. Marks uzupełnił: „Za pierwszym razem jako tragedia, za drugim jako farsa”. Uczestniczymy w farsie i, co najgorsze, dobrze się w niej czujemy. Zdaje się, że farsa to permanentny stan polskiej państwowości.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Rząd się rozjedzie, a naród jak zwykle „z ręką w nocniku”
+
+    [1] => 
+
+    [2] => Hegel powiedział: „Wszystkie historyczne fakty i postacie powtarzają się dwukrotnie”. Marks uzupełnił: „Za pierwszym razem jako tragedia, za drugim jako farsa”. Uczestniczymy w farsie i, co najgorsze, dobrze się w niej czujemy. Zdaje się, że farsa to permanentny stan polskiej państwowości.
+    [3] => 
+
+    [4] => Dla większości Polaków niekompetencja to stan społecznie akceptowalny. Z pobłażaniem, a czasami z podziwem, przyglądamy się różnej maści oszołomom, których sami wynosimy na piedestał. Zgodnie z zasadą K.I. Gałczyńskiego:
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Rząd się rozjedzie, a naród jak zwykle „z ręką w nocniku”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Rząd się rozjedzie, a naród jak zwykle „z ręką w nocniku” 
+    [1] => 
+
+    [2] => Hegel powiedział: „Wszystkie historyczne fakty i postacie powtarzają się dwukrotnie”. Marks uzupełnił: „Za pierwszym razem jako tragedia, za drugim jako farsa”. Uczestniczymy w farsie i, co najgorsze, dobrze się w niej czujemy. Zdaje się, że farsa to permanentny stan polskiej państwowości.
+    [3] => 
+
+    [4] => Dla większości Polaków niekompetencja to stan społecznie akceptowalny. Z pobłażaniem, a czasami z podziwem, przyglądamy się różnej maści oszołomom, których sami wynosimy na piedestał. Zgodnie z zasadą K.I. Gałczyńskiego:
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Hegel powiedział: „Wszystkie historyczne fakty i postacie powtarzają się dwukrotnie”. Marks uzupełnił: „Za pierwszym razem jako tragedia, za drugim jako farsa”. Uczestniczymy w farsie i, co najgorsze, dobrze się w niej czujemy. Zdaje się, że farsa to permanentny stan polskiej państwowości.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Dla większości Polaków niekompetencja to stan społecznie akceptowalny. Z pobłażaniem, a czasami z podziwem, przyglądamy się różnej maści oszołomom, których sami wynosimy na piedestał. Zgodnie z zasadą K.I. Gałczyńskiego:
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Rząd się rozjedzie, a naród jak zwykle „z ręką w nocniku” 
+    [1] => 
+
+    [2] => Hegel powiedział: „Wszystkie historyczne fakty i postacie powtarzają się dwukrotnie”.Marks uzupełnił: „Za pierwszym razem jako tragedia, za drugim jako farsa”.Uczestniczymy w farsie i, co najgorsze, dobrze się w niej czujemy.Zdaje się, że farsa to permanentny stan polskiej państwowości.
+    [3] => 
+
+    [4] => Dla większości Polaków niekompetencja to stan społecznie akceptowalny.Z pobłażaniem, a czasami z podziwem, przyglądamy się różnej maści oszołomom, których sami wynosimy na piedestał.Zgodnie z zasadą K.I.Gałczyńskiego:
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Rząd się rozjedzie, a naród jak zwykle „z ręką w nocniku” 
+Hegel powiedział: „Wszystkie historyczne fakty i postacie powtarzają się dwukrotnie”.Marks uzupełnił: „Za pierwszym razem jako tragedia, za drugim jako farsa”.Uczestniczymy w farsie i, co najgorsze, dobrze się w niej czujemy.Zdaje się, że farsa to permanentny stan polskiej państwowości.
+Dla większości Polaków niekompetencja to stan społecznie akceptowalny.Z pobłażaniem, a czasami z podziwem, przyglądamy się różnej maści oszołomom, których sami wynosimy na piedestał.Zgodnie z zasadą K.I.Gałczyńskiego:
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_130351_134156.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_130351_134156.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210616_212704_039906)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '«Американская военная помощь будет по полной обойме разворовываться на пути к своему адресату. Кстати, американцы вполне отдают себе в этом отчёт, но контролировать этот процесс из-за его безудержности и оголтелости они не в состоянии. Поэтому делим заявления министра обороны на два, а то и на три. Слова Тарана об «укреплении границ» напоминают о старой истории с проектом Арсения Яценюка «Стена», или «Европейский вал».
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] =>  Деньги впустую
+
+    [1] =>  
+
+    [2] => «Американская военная помощь будет по полной обойме разворовываться на пути к своему адресату. Кстати, американцы вполне отдают себе в этом отчёт, но контролировать этот процесс из-за его безудержности и оголтелости они не в состоянии. Поэтому делим заявления министра обороны на два, а то и на три. Слова Тарана об «укреплении границ» напоминают о старой истории с проектом Арсения Яценюка «Стена», или «Европейский вал».
+    [3] => 14 июня, 2021 19:11 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line --> Деньги впустую
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] =>  Деньги впустую 
+    [1] =>   
+    [2] => «Американская военная помощь будет по полной обойме разворовываться на пути к своему адресату. Кстати, американцы вполне отдают себе в этом отчёт, но контролировать этот процесс из-за его безудержности и оголтелости они не в состоянии. Поэтому делим заявления министра обороны на два, а то и на три. Слова Тарана об «укреплении границ» напоминают о старой истории с проектом Арсения Яценюка «Стена», или «Европейский вал».
+    [3] => 14 июня, 2021 19:11 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->«Американская военная помощь будет по полной обойме разворовываться на пути к своему адресату. Кстати, американцы вполне отдают себе в этом отчёт, но контролировать этот процесс из-за его безудержности и оголтелости они не в состоянии. Поэтому делим заявления министра обороны на два, а то и на три. Слова Тарана об «укреплении границ» напоминают о старой истории с проектом Арсения Яценюка «Стена», или «Европейский вал».
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] =>  Деньги впустую 
+    [1] =>   
+    [2] => «Американская военная помощь будет по полной обойме разворовываться на пути к своему адресату.Кстати, американцы вполне отдают себе в этом отчёт, но контролировать этот процесс из-за его безудержности и оголтелости они не в состоянии.Поэтому делим заявления министра обороны на два, а то и на три.Слова Тарана об «укреплении границ» напоминают о старой истории с проектом Арсения Яценюка «Стена», или «Европейский вал».
+    [3] => 14 июня, 2021 19:11 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==> Деньги впустую   «Американская военная помощь будет по полной обойме разворовываться на пути к своему адресату.Кстати, американцы вполне отдают себе в этом отчёт, но контролировать этот процесс из-за его безудержности и оголтелости они не в состоянии.Поэтому делим заявления министра обороны на два, а то и на три.Слова Тарана об «укреплении границ» напоминают о старой истории с проектом Арсения Яценюка «Стена», или «Европейский вал».14 июня, 2021 19:11 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_212704_039906.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210616_212704_039906.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
