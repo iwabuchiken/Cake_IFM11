@@ -33549,3 +33549,901 @@ Z kłamstwa uczyniono narzędzie do zawłaszczenia urzędu prezydenta.Korzysta
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210617_140650_581207.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210618_111903_660516)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '	많은분들이 보셨으면 해서 결시친에 올려봅니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '모바일이라 맞춤법 띄어쓰기 양해 부탁드립니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '긴 글이 될 것 같아 또 죄송합니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '미리 말씀드려요.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '인터넷 뉴스 기사에 댓글들을 보게 되었습니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '저는 국내 1위 택배사 기사의 아내입니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 	많은분들이 보셨으면 해서 결시친에 올려봅니다.
+    [1] => 모바일이라 맞춤법 띄어쓰기 양해 부탁드립니다.
+    [2] => 긴 글이 될 것 같아 또 죄송합니다.
+    [3] => 제 글이 모든 택배사에 해당하는것은 아닐 수 있다는 점
+
+    [4] => 미리 말씀드려요.
+    [5] => 오늘 추석기간 택배 노조 파업이 시끌시끌한 뉴스였고
+
+    [6] => 인터넷 뉴스 기사에 댓글들을 보게 되었습니다.
+    [7] => 저는 국내 1위 택배사 기사의 아내입니다.
+    [8] => 많은 오해가 있는것 같아 글을 쓰게 되었습니다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->제 글이 모든 택배사에 해당하는것은 아닐 수 있다는 점
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->오늘 추석기간 택배 노조 파업이 시끌시끌한 뉴스였고
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 	많은분들이 보셨으면 해서 결시친에 올려봅니다.
+    [1] => 모바일이라 맞춤법 띄어쓰기 양해 부탁드립니다.
+    [2] => 긴 글이 될 것 같아 또 죄송합니다.
+    [3] => 제 글이 모든 택배사에 해당하는것은 아닐 수 있다는 점 
+    [4] => 미리 말씀드려요.
+    [5] => 오늘 추석기간 택배 노조 파업이 시끌시끌한 뉴스였고 
+    [6] => 인터넷 뉴스 기사에 댓글들을 보게 되었습니다.
+    [7] => 저는 국내 1위 택배사 기사의 아내입니다.
+    [8] => 많은 오해가 있는것 같아 글을 쓰게 되었습니다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 	많은분들이 보셨으면 해서 결시친에 올려봅니다.
+    [1] => 모바일이라 맞춤법 띄어쓰기 양해 부탁드립니다.
+    [2] => 긴 글이 될 것 같아 또 죄송합니다.
+    [3] => 제 글이 모든 택배사에 해당하는것은 아닐 수 있다는 점 
+    [4] => 미리 말씀드려요.
+    [5] => 오늘 추석기간 택배 노조 파업이 시끌시끌한 뉴스였고 
+    [6] => 인터넷 뉴스 기사에 댓글들을 보게 되었습니다.
+    [7] => 저는 국내 1위 택배사 기사의 아내입니다.
+    [8] => 많은 오해가 있는것 같아 글을 쓰게 되었습니다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>	많은분들이 보셨으면 해서 결시친에 올려봅니다.모바일이라 맞춤법 띄어쓰기 양해 부탁드립니다.긴 글이 될 것 같아 또 죄송합니다.제 글이 모든 택배사에 해당하는것은 아닐 수 있다는 점 미리 말씀드려요.오늘 추석기간 택배 노조 파업이 시끌시끌한 뉴스였고 인터넷 뉴스 기사에 댓글들을 보게 되었습니다.저는 국내 1위 택배사 기사의 아내입니다.많은 오해가 있는것 같아 글을 쓰게 되었습니다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_111903_660516.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_111903_660516.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210618_112323_298568)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '1.택배기사는 돈을 많이 벌며 징징거린다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '네 .택배기사가 일반 회사원보다 돈을 많이 버는 편입니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '하지만 어느 업종이 그렇듯 편차가 있습니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '지역에 따라서도 그럴것이고 구역에 따라도 그렇습니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '에 따라서도 크게 수입이 나뉩니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '택배사에서 배분해주는 것이 아닙니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '결과적으로 신입 250~경력자 800까지 수입은 천차만별 입니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 1.택배기사는 돈을 많이 벌며 징징거린다.
+    [1] => 
+
+    [2] => 네 .택배기사가 일반 회사원보다 돈을 많이 버는 편입니다.
+    [3] => 하지만 어느 업종이 그렇듯 편차가 있습니다.
+    [4] => 지역에 따라서도 그럴것이고 구역에 따라도 그렇습니다.
+    [5] => 집하 (택배기사와 계약된 온라인 쇼핑몰이나 개인이
+
+    [6] => 계약을 하여 일정 수량 이상을 지속적으로 보내는 것)
+
+    [7] => 에 따라서도 크게 수입이 나뉩니다.
+    [8] => 집하의 경우 택배기사가 개인적으로 영업해 따오는 것이고
+
+    [9] => 택배사에서 배분해주는 것이 아닙니다.
+    [10] => 결과적으로 신입 250~경력자 800까지 수입은 천차만별 입니다.
+    [11] => 하지만 여기서 상하차 알바비 15~20만원이 각출되고
+
+    [12] => 택배차 할부금을 내야하는 분들은 40만원,
+
+    [13] => 유류비 30만원, 종합소득세는 연말에 내는것이니 제외하고도
+
+    [14] => 부가세 10퍼센트, 유실or사고 처리된 물품 보상비,
+
+    [15] => 매직.송장.장갑.테이프등 소모품비가 매달 지출 됩니다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->집하 (택배기사와 계약된 온라인 쇼핑몰이나 개인이
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->계약을 하여 일정 수량 이상을 지속적으로 보내는 것)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->집하의 경우 택배기사가 개인적으로 영업해 따오는 것이고
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->하지만 여기서 상하차 알바비 15~20만원이 각출되고
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->택배차 할부금을 내야하는 분들은 40만원,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->유류비 30만원, 종합소득세는 연말에 내는것이니 제외하고도
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->부가세 10퍼센트, 유실or사고 처리된 물품 보상비,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 1.택배기사는 돈을 많이 벌며 징징거린다.
+    [1] => 
+
+    [2] => 네 .택배기사가 일반 회사원보다 돈을 많이 버는 편입니다.
+    [3] => 하지만 어느 업종이 그렇듯 편차가 있습니다.
+    [4] => 지역에 따라서도 그럴것이고 구역에 따라도 그렇습니다.
+    [5] => 집하 (택배기사와 계약된 온라인 쇼핑몰이나 개인이 
+    [6] => 계약을 하여 일정 수량 이상을 지속적으로 보내는 것) 
+    [7] => 에 따라서도 크게 수입이 나뉩니다.
+    [8] => 집하의 경우 택배기사가 개인적으로 영업해 따오는 것이고 
+    [9] => 택배사에서 배분해주는 것이 아닙니다.
+    [10] => 결과적으로 신입 250~경력자 800까지 수입은 천차만별 입니다.
+    [11] => 하지만 여기서 상하차 알바비 15~20만원이 각출되고 
+    [12] => 택배차 할부금을 내야하는 분들은 40만원, 
+    [13] => 유류비 30만원, 종합소득세는 연말에 내는것이니 제외하고도 
+    [14] => 부가세 10퍼센트, 유실or사고 처리된 물품 보상비, 
+    [15] => 매직.송장.장갑.테이프등 소모품비가 매달 지출 됩니다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 1.택배기사는 돈을 많이 벌며 징징거린다.
+    [1] => 
+
+    [2] => 네 .택배기사가 일반 회사원보다 돈을 많이 버는 편입니다.
+    [3] => 하지만 어느 업종이 그렇듯 편차가 있습니다.
+    [4] => 지역에 따라서도 그럴것이고 구역에 따라도 그렇습니다.
+    [5] => 집하 (택배기사와 계약된 온라인 쇼핑몰이나 개인이 
+    [6] => 계약을 하여 일정 수량 이상을 지속적으로 보내는 것) 
+    [7] => 에 따라서도 크게 수입이 나뉩니다.
+    [8] => 집하의 경우 택배기사가 개인적으로 영업해 따오는 것이고 
+    [9] => 택배사에서 배분해주는 것이 아닙니다.
+    [10] => 결과적으로 신입 250~경력자 800까지 수입은 천차만별 입니다.
+    [11] => 하지만 여기서 상하차 알바비 15~20만원이 각출되고 
+    [12] => 택배차 할부금을 내야하는 분들은 40만원, 
+    [13] => 유류비 30만원, 종합소득세는 연말에 내는것이니 제외하고도 
+    [14] => 부가세 10퍼센트, 유실or사고 처리된 물품 보상비, 
+    [15] => 매직.송장.장갑.테이프등 소모품비가 매달 지출 됩니다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>1.택배기사는 돈을 많이 벌며 징징거린다.
+네 .택배기사가 일반 회사원보다 돈을 많이 버는 편입니다.하지만 어느 업종이 그렇듯 편차가 있습니다.지역에 따라서도 그럴것이고 구역에 따라도 그렇습니다.집하 (택배기사와 계약된 온라인 쇼핑몰이나 개인이 계약을 하여 일정 수량 이상을 지속적으로 보내는 것) 에 따라서도 크게 수입이 나뉩니다.집하의 경우 택배기사가 개인적으로 영업해 따오는 것이고 택배사에서 배분해주는 것이 아닙니다.결과적으로 신입 250~경력자 800까지 수입은 천차만별 입니다.하지만 여기서 상하차 알바비 15~20만원이 각출되고 택배차 할부금을 내야하는 분들은 40만원, 유류비 30만원, 종합소득세는 연말에 내는것이니 제외하고도 부가세 10퍼센트, 유실or사고 처리된 물품 보상비, 매직.송장.장갑.테이프등 소모품비가 매달 지출 됩니다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_112323_298568.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_112323_298568.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210618_113153_312401)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '2.택배기사는 건당 2500원의 배송비를 받는다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '받고 집하의 경우 100원에서 200원 정도의 집하비를 받습니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '나머지는 사측의 수입입니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '쌓습니다. 보통 수백개의 물건입니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '몇백개의 물건을 다 꺼낼 순 없습니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '포함된것은 아닙니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '지정된 배송지에 배달하는 것이 원칙입니다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '퀵서비스를 이용하셔야죠.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 2.택배기사는 건당 2500원의 배송비를 받는다.
+    [1] => 
+
+    [2] => 그렇지 않습니다. 기사는 건당 600원에서 800원의 배송비를
+
+    [3] => 받고 집하의 경우 100원에서 200원 정도의 집하비를 받습니다.
+    [4] => 나머지는 사측의 수입입니다.
+    [5] => 
+
+    [6] =>  3.왜 우리집부터 배달을 못해주냐
+
+    [7] => 
+
+    [8] => 택배기사는 물류센터에서 배달나갈 순서대로 차에 물건을
+
+    [9] => 쌓습니다. 보통 수백개의 물건입니다.
+    [10] => a.b.c.d 구역 순으로 물건을 쌓았는데 c구역 수령인이
+
+    [11] => 물건을 빨리 가져다 달라고 한다해서 순서대로 쌓인
+
+    [12] => 몇백개의 물건을 다 꺼낼 순 없습니다.
+    [13] => 그리고 개인비서도 아닌데 내가 다른곳에 있으니 지금
+
+    [14] => 그리로 가져다 달라시는 분들 택배기사는 구역이 정해져
+
+    [15] => 있어 가지도 못할 뿐더러 배달비 600원에 심부름값이
+
+    [16] => 포함된것은 아닙니다.
+    [17] => 지정된 배송지에 배달하는 것이 원칙입니다.
+    [18] => 그렇게 급하시면 집에 계시거나 맡길곳을 알려주시거나
+
+    [19] => 퀵서비스를 이용하셔야죠.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->그렇지 않습니다. 기사는 건당 600원에서 800원의 배송비를
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> 3.왜 우리집부터 배달을 못해주냐
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->택배기사는 물류센터에서 배달나갈 순서대로 차에 물건을
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->a.b.c.d 구역 순으로 물건을 쌓았는데 c구역 수령인이
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->물건을 빨리 가져다 달라고 한다해서 순서대로 쌓인
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->그리고 개인비서도 아닌데 내가 다른곳에 있으니 지금
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->그리로 가져다 달라시는 분들 택배기사는 구역이 정해져
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->있어 가지도 못할 뿐더러 배달비 600원에 심부름값이
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->그렇게 급하시면 집에 계시거나 맡길곳을 알려주시거나
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 2.택배기사는 건당 2500원의 배송비를 받는다.
+    [1] => 
+
+    [2] => 그렇지 않습니다. 기사는 건당 600원에서 800원의 배송비를 
+    [3] => 받고 집하의 경우 100원에서 200원 정도의 집하비를 받습니다.
+    [4] => 나머지는 사측의 수입입니다.
+    [5] => 
+
+    [6] =>  3.왜 우리집부터 배달을 못해주냐 
+    [7] => 
+
+    [8] => 택배기사는 물류센터에서 배달나갈 순서대로 차에 물건을 
+    [9] => 쌓습니다. 보통 수백개의 물건입니다.
+    [10] => a.b.c.d 구역 순으로 물건을 쌓았는데 c구역 수령인이 
+    [11] => 물건을 빨리 가져다 달라고 한다해서 순서대로 쌓인 
+    [12] => 몇백개의 물건을 다 꺼낼 순 없습니다.
+    [13] => 그리고 개인비서도 아닌데 내가 다른곳에 있으니 지금 
+    [14] => 그리로 가져다 달라시는 분들 택배기사는 구역이 정해져 
+    [15] => 있어 가지도 못할 뿐더러 배달비 600원에 심부름값이 
+    [16] => 포함된것은 아닙니다.
+    [17] => 지정된 배송지에 배달하는 것이 원칙입니다.
+    [18] => 그렇게 급하시면 집에 계시거나 맡길곳을 알려주시거나 
+    [19] => 퀵서비스를 이용하셔야죠.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->그렇지 않습니다. 기사는 건당 600원에서 800원의 배송비를 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->쌓습니다. 보통 수백개의 물건입니다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 2.택배기사는 건당 2500원의 배송비를 받는다.
+    [1] => 
+
+    [2] => 그렇지 않습니다.기사는 건당 600원에서 800원의 배송비를 
+    [3] => 받고 집하의 경우 100원에서 200원 정도의 집하비를 받습니다.
+    [4] => 나머지는 사측의 수입입니다.
+    [5] => 
+
+    [6] =>  3.왜 우리집부터 배달을 못해주냐 
+    [7] => 
+
+    [8] => 택배기사는 물류센터에서 배달나갈 순서대로 차에 물건을 
+    [9] => 쌓습니다.보통 수백개의 물건입니다.
+    [10] => a.b.c.d 구역 순으로 물건을 쌓았는데 c구역 수령인이 
+    [11] => 물건을 빨리 가져다 달라고 한다해서 순서대로 쌓인 
+    [12] => 몇백개의 물건을 다 꺼낼 순 없습니다.
+    [13] => 그리고 개인비서도 아닌데 내가 다른곳에 있으니 지금 
+    [14] => 그리로 가져다 달라시는 분들 택배기사는 구역이 정해져 
+    [15] => 있어 가지도 못할 뿐더러 배달비 600원에 심부름값이 
+    [16] => 포함된것은 아닙니다.
+    [17] => 지정된 배송지에 배달하는 것이 원칙입니다.
+    [18] => 그렇게 급하시면 집에 계시거나 맡길곳을 알려주시거나 
+    [19] => 퀵서비스를 이용하셔야죠.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>2.택배기사는 건당 2500원의 배송비를 받는다.
+그렇지 않습니다.기사는 건당 600원에서 800원의 배송비를 받고 집하의 경우 100원에서 200원 정도의 집하비를 받습니다.나머지는 사측의 수입입니다.
+ 3.왜 우리집부터 배달을 못해주냐 
+택배기사는 물류센터에서 배달나갈 순서대로 차에 물건을 쌓습니다.보통 수백개의 물건입니다.a.b.c.d 구역 순으로 물건을 쌓았는데 c구역 수령인이 물건을 빨리 가져다 달라고 한다해서 순서대로 쌓인 몇백개의 물건을 다 꺼낼 순 없습니다.그리고 개인비서도 아닌데 내가 다른곳에 있으니 지금 그리로 가져다 달라시는 분들 택배기사는 구역이 정해져 있어 가지도 못할 뿐더러 배달비 600원에 심부름값이 포함된것은 아닙니다.지정된 배송지에 배달하는 것이 원칙입니다.그렇게 급하시면 집에 계시거나 맡길곳을 알려주시거나 퀵서비스를 이용하셔야죠.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_113153_312401.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_113153_312401.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210618_161409_884835)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 만보산 사건(萬寶山事件)은 1931년 7월 2일에 중국 만주 지린성 장춘시 관성구 싼싱바오(三姓堡)에 있는 만보산 지역에서 일본의 술책으로 한국인과 중국인 농민 사이에 수로(水路) 문제로 일어난 충돌 및 유혈사태로 만주사변을 촉발했다. 만보산 사건은 일본의 술책도 있지만 임오군란 때 청나라의 경제적 침략자로서 동원된 한족 화교들에 대한 반감에 의한 조선인들의 민중 항의이기도 하였다. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 만보산 사건(萬寶山事件)은 1931년 7월 2일에 중국 만주 지린성 장춘시 관성구 싼싱바오(三姓堡)에 있는 만보산 지역에서 일본의 술책으로 한국인과 중국인 농민 사이에 수로(水路) 문제로 일어난 충돌 및 유혈사태로 만주사변을 촉발했다. 만보산 사건은 일본의 술책도 있지만 임오군란 때 청나라의 경제적 침략자로서 동원된 한족 화교들에 대한 반감에 의한 조선인들의 민중 항의이기도 하였다. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->만보산 사건(萬寶山事件)은 1931년 7월 2일에 중국 만주 지린성 장춘시 관성구 싼싱바오(三姓堡)에 있는 만보산 지역에서 일본의 술책으로 한국인과 중국인 농민 사이에 수로(水路) 문제로 일어난 충돌 및 유혈사태로 만주사변을 촉발했다. 만보산 사건은 일본의 술책도 있지만 임오군란 때 청나라의 경제적 침략자로서 동원된 한족 화교들에 대한 반감에 의한 조선인들의 민중 항의이기도 하였다. 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 만보산 사건(萬寶山事件)은 1931년 7월 2일에 중국 만주 지린성 장춘시 관성구 싼싱바오(三姓堡)에 있는 만보산 지역에서 일본의 술책으로 한국인과 중국인 농민 사이에 수로(水路) 문제로 일어난 충돌 및 유혈사태로 만주사변을 촉발했다.만보산 사건은 일본의 술책도 있지만 임오군란 때 청나라의 경제적 침략자로서 동원된 한족 화교들에 대한 반감에 의한 조선인들의 민중 항의이기도 하였다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>만보산 사건(萬寶山事件)은 1931년 7월 2일에 중국 만주 지린성 장춘시 관성구 싼싱바오(三姓堡)에 있는 만보산 지역에서 일본의 술책으로 한국인과 중국인 농민 사이에 수로(水路) 문제로 일어난 충돌 및 유혈사태로 만주사변을 촉발했다.만보산 사건은 일본의 술책도 있지만 임오군란 때 청나라의 경제적 침략자로서 동원된 한족 화교들에 대한 반감에 의한 조선인들의 민중 항의이기도 하였다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_161409_884835.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_161409_884835.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210618_162031_878905)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 임오군란(壬午軍亂)은 1882년 훈련도감에서 해고된 구식 군인들의 13개월 동안 체불된 임금을 정부가 불량쌀으로써 지급하여 일어난 난이다.[1]. 10년 전 실각했던 흥선대원군과 위정척사파들이 정권 재창출을 위해 중전과 외척 민씨 제거 및 비리 척결, 그리고 일본과 서양 세력에 대한 배척 운동으로 확대시켰고, 전임 선혜청 당상 김보현, 당시 선혜청 당상 겸 병조판서 민겸호, 선혜청 창고지기인 민겸호 수하의 착복 비리와 부정 축재 사실까지 드러나며 관련자들이 살해됐다. 성공하는 듯했던 난은, 중전 민씨를 놓친 데다가 조선 조정의 요청으로 청나라군이 개입하며 진압됐다. 흥선대원군은 톈진으로 끌려가고 척화파들은 제거됐으며, 청나라와 결탁한 중전 민씨가 충주에서 환궁하면서 민씨 외척들이 조정을 완전 장악했다. 김옥균 등 급진개화파들도 조정의 중책을 맡게 됐으며, 난의 진압을 축하하기 위해 과거 시험이 열리며 이완용, 서재필 등이 출사하는 계기가 됐다. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 임오군란(壬午軍亂)은 1882년 훈련도감에서 해고된 구식 군인들의 13개월 동안 체불된 임금을 정부가 불량쌀으로써 지급하여 일어난 난이다.[1]. 10년 전 실각했던 흥선대원군과 위정척사파들이 정권 재창출을 위해 중전과 외척 민씨 제거 및 비리 척결, 그리고 일본과 서양 세력에 대한 배척 운동으로 확대시켰고, 전임 선혜청 당상 김보현, 당시 선혜청 당상 겸 병조판서 민겸호, 선혜청 창고지기인 민겸호 수하의 착복 비리와 부정 축재 사실까지 드러나며 관련자들이 살해됐다. 성공하는 듯했던 난은, 중전 민씨를 놓친 데다가 조선 조정의 요청으로 청나라군이 개입하며 진압됐다. 흥선대원군은 톈진으로 끌려가고 척화파들은 제거됐으며, 청나라와 결탁한 중전 민씨가 충주에서 환궁하면서 민씨 외척들이 조정을 완전 장악했다. 김옥균 등 급진개화파들도 조정의 중책을 맡게 됐으며, 난의 진압을 축하하기 위해 과거 시험이 열리며 이완용, 서재필 등이 출사하는 계기가 됐다. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->임오군란(壬午軍亂)은 1882년 훈련도감에서 해고된 구식 군인들의 13개월 동안 체불된 임금을 정부가 불량쌀으로써 지급하여 일어난 난이다.[1]. 10년 전 실각했던 흥선대원군과 위정척사파들이 정권 재창출을 위해 중전과 외척 민씨 제거 및 비리 척결, 그리고 일본과 서양 세력에 대한 배척 운동으로 확대시켰고, 전임 선혜청 당상 김보현, 당시 선혜청 당상 겸 병조판서 민겸호, 선혜청 창고지기인 민겸호 수하의 착복 비리와 부정 축재 사실까지 드러나며 관련자들이 살해됐다. 성공하는 듯했던 난은, 중전 민씨를 놓친 데다가 조선 조정의 요청으로 청나라군이 개입하며 진압됐다. 흥선대원군은 톈진으로 끌려가고 척화파들은 제거됐으며, 청나라와 결탁한 중전 민씨가 충주에서 환궁하면서 민씨 외척들이 조정을 완전 장악했다. 김옥균 등 급진개화파들도 조정의 중책을 맡게 됐으며, 난의 진압을 축하하기 위해 과거 시험이 열리며 이완용, 서재필 등이 출사하는 계기가 됐다. 
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 임오군란(壬午軍亂)은 1882년 훈련도감에서 해고된 구식 군인들의 13개월 동안 체불된 임금을 정부가 불량쌀으로써 지급하여 일어난 난이다.[1].10년 전 실각했던 흥선대원군과 위정척사파들이 정권 재창출을 위해 중전과 외척 민씨 제거 및 비리 척결, 그리고 일본과 서양 세력에 대한 배척 운동으로 확대시켰고, 전임 선혜청 당상 김보현, 당시 선혜청 당상 겸 병조판서 민겸호, 선혜청 창고지기인 민겸호 수하의 착복 비리와 부정 축재 사실까지 드러나며 관련자들이 살해됐다.성공하는 듯했던 난은, 중전 민씨를 놓친 데다가 조선 조정의 요청으로 청나라군이 개입하며 진압됐다.흥선대원군은 톈진으로 끌려가고 척화파들은 제거됐으며, 청나라와 결탁한 중전 민씨가 충주에서 환궁하면서 민씨 외척들이 조정을 완전 장악했다.김옥균 등 급진개화파들도 조정의 중책을 맡게 됐으며, 난의 진압을 축하하기 위해 과거 시험이 열리며 이완용, 서재필 등이 출사하는 계기가 됐다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>임오군란(壬午軍亂)은 1882년 훈련도감에서 해고된 구식 군인들의 13개월 동안 체불된 임금을 정부가 불량쌀으로써 지급하여 일어난 난이다.[1].10년 전 실각했던 흥선대원군과 위정척사파들이 정권 재창출을 위해 중전과 외척 민씨 제거 및 비리 척결, 그리고 일본과 서양 세력에 대한 배척 운동으로 확대시켰고, 전임 선혜청 당상 김보현, 당시 선혜청 당상 겸 병조판서 민겸호, 선혜청 창고지기인 민겸호 수하의 착복 비리와 부정 축재 사실까지 드러나며 관련자들이 살해됐다.성공하는 듯했던 난은, 중전 민씨를 놓친 데다가 조선 조정의 요청으로 청나라군이 개입하며 진압됐다.흥선대원군은 톈진으로 끌려가고 척화파들은 제거됐으며, 청나라와 결탁한 중전 민씨가 충주에서 환궁하면서 민씨 외척들이 조정을 완전 장악했다.김옥균 등 급진개화파들도 조정의 중책을 맡게 됐으며, 난의 진압을 축하하기 위해 과거 시험이 열리며 이완용, 서재필 등이 출사하는 계기가 됐다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_162031_878905.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_162031_878905.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210618_162419_765101)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '일본은 중국 동북지방에 이주한 한국인들을 구실로 중국 대륙 침략의 발판을 만들었다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 일본은 중국 동북지방에 이주한 한국인들을 구실로 중국 대륙 침략의 발판을 만들었다.
+    [1] => 
+
+    [2] => 일본은 중국인 하오융더(郝永德)를 매수하고 자금을 투자하여 만주 창춘시에 장농도전공사(長農稻田公司)를 설립하고 그를 지배인으로 앉혔다. 1931년 4월 16일 하오융더는 만보산 지방에 있는 소한림(蕭翰林) 등 11인의 소유 토지 가운데 미개간지 약 200ha를 해당 지주와 10년 기한으로 조차계약하였다(단, 이 계약에는 현 정부의 승인이 없으면 무효라는 규정이 있었다.). 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 일본은 중국 동북지방에 이주한 한국인들을 구실로 중국 대륙 침략의 발판을 만들었다.
+    [1] => 
+
+    [2] => 일본은 중국인 하오융더(郝永德)를 매수하고 자금을 투자하여 만주 창춘시에 장농도전공사(長農稻田公司)를 설립하고 그를 지배인으로 앉혔다. 1931년 4월 16일 하오융더는 만보산 지방에 있는 소한림(蕭翰林) 등 11인의 소유 토지 가운데 미개간지 약 200ha를 해당 지주와 10년 기한으로 조차계약하였다(단, 이 계약에는 현 정부의 승인이 없으면 무효라는 규정이 있었다.). 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->일본은 중국인 하오융더(郝永德)를 매수하고 자금을 투자하여 만주 창춘시에 장농도전공사(長農稻田公司)를 설립하고 그를 지배인으로 앉혔다. 1931년 4월 16일 하오융더는 만보산 지방에 있는 소한림(蕭翰林) 등 11인의 소유 토지 가운데 미개간지 약 200ha를 해당 지주와 10년 기한으로 조차계약하였다(단, 이 계약에는 현 정부의 승인이 없으면 무효라는 규정이 있었다.). 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 일본은 중국 동북지방에 이주한 한국인들을 구실로 중국 대륙 침략의 발판을 만들었다.
+    [1] => 
+
+    [2] => 일본은 중국인 하오융더(郝永德)를 매수하고 자금을 투자하여 만주 창춘시에 장농도전공사(長農稻田公司)를 설립하고 그를 지배인으로 앉혔다.1931년 4월 16일 하오융더는 만보산 지방에 있는 소한림(蕭翰林) 등 11인의 소유 토지 가운데 미개간지 약 200ha를 해당 지주와 10년 기한으로 조차계약하였다(단, 이 계약에는 현 정부의 승인이 없으면 무효라는 규정이 있었다.).
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>일본은 중국 동북지방에 이주한 한국인들을 구실로 중국 대륙 침략의 발판을 만들었다.
+일본은 중국인 하오융더(郝永德)를 매수하고 자금을 투자하여 만주 창춘시에 장농도전공사(長農稻田公司)를 설립하고 그를 지배인으로 앉혔다.1931년 4월 16일 하오융더는 만보산 지방에 있는 소한림(蕭翰林) 등 11인의 소유 토지 가운데 미개간지 약 200ha를 해당 지주와 10년 기한으로 조차계약하였다(단, 이 계약에는 현 정부의 승인이 없으면 무효라는 규정이 있었다.).
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_162419_765101.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_162419_765101.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210618_162742_094058)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '그런데 4월 중에 하오융더는 현(縣)정부의 정식 승인을 얻지 않고, 이 토지를 한국인 농민 이승훈(李昇薰) 등 8인에게 10년간 조차계약을 체결하였고, 이승훈은 이 계약을 근거로 조선인 농민 180여 명을 이 지방에 이주시켜 개척에 착수했다. 개척 작업에서 가장 먼저 시작한 것이 이퉁 강에 통한 관개수로공사[1]였다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 그런데 4월 중에 하오융더는 현(縣)정부의 정식 승인을 얻지 않고, 이 토지를 한국인 농민 이승훈(李昇薰) 등 8인에게 10년간 조차계약을 체결하였고, 이승훈은 이 계약을 근거로 조선인 농민 180여 명을 이 지방에 이주시켜 개척에 착수했다. 개척 작업에서 가장 먼저 시작한 것이 이퉁 강에 통한 관개수로공사[1]였다.
+    [1] => 
+
+    [2] => 문제는 이 수로 개척과 제방 축조가 타인의 토지인 부근 농지에 미치는 피해가 많아졌다는 점이다. 이 때문에 토착 중국 농민들이 반대 운동을 일으키고 현(縣) 당국에 탄원·진정하여 공사 진행을 강제로 중지시켰다. 계약서 상에 분명히 현정부의 승인이 없으면 일본의 대리인인 하오융더와 중국인 지주 간 계약이 무효가 되고, 한인 농민들의 개척작업 또한 근거가 사라지는 것이다. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 그런데 4월 중에 하오융더는 현(縣)정부의 정식 승인을 얻지 않고, 이 토지를 한국인 농민 이승훈(李昇薰) 등 8인에게 10년간 조차계약을 체결하였고, 이승훈은 이 계약을 근거로 조선인 농민 180여 명을 이 지방에 이주시켜 개척에 착수했다. 개척 작업에서 가장 먼저 시작한 것이 이퉁 강에 통한 관개수로공사[1]였다.
+    [1] => 
+
+    [2] => 문제는 이 수로 개척과 제방 축조가 타인의 토지인 부근 농지에 미치는 피해가 많아졌다는 점이다. 이 때문에 토착 중국 농민들이 반대 운동을 일으키고 현(縣) 당국에 탄원·진정하여 공사 진행을 강제로 중지시켰다. 계약서 상에 분명히 현정부의 승인이 없으면 일본의 대리인인 하오융더와 중국인 지주 간 계약이 무효가 되고, 한인 농민들의 개척작업 또한 근거가 사라지는 것이다. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->그런데 4월 중에 하오융더는 현(縣)정부의 정식 승인을 얻지 않고, 이 토지를 한국인 농민 이승훈(李昇薰) 등 8인에게 10년간 조차계약을 체결하였고, 이승훈은 이 계약을 근거로 조선인 농민 180여 명을 이 지방에 이주시켜 개척에 착수했다. 개척 작업에서 가장 먼저 시작한 것이 이퉁 강에 통한 관개수로공사[1]였다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->문제는 이 수로 개척과 제방 축조가 타인의 토지인 부근 농지에 미치는 피해가 많아졌다는 점이다. 이 때문에 토착 중국 농민들이 반대 운동을 일으키고 현(縣) 당국에 탄원·진정하여 공사 진행을 강제로 중지시켰다. 계약서 상에 분명히 현정부의 승인이 없으면 일본의 대리인인 하오융더와 중국인 지주 간 계약이 무효가 되고, 한인 농민들의 개척작업 또한 근거가 사라지는 것이다. 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 그런데 4월 중에 하오융더는 현(縣)정부의 정식 승인을 얻지 않고, 이 토지를 한국인 농민 이승훈(李昇薰) 등 8인에게 10년간 조차계약을 체결하였고, 이승훈은 이 계약을 근거로 조선인 농민 180여 명을 이 지방에 이주시켜 개척에 착수했다.개척 작업에서 가장 먼저 시작한 것이 이퉁 강에 통한 관개수로공사[1]였다.
+    [1] => 
+
+    [2] => 문제는 이 수로 개척과 제방 축조가 타인의 토지인 부근 농지에 미치는 피해가 많아졌다는 점이다.이 때문에 토착 중국 농민들이 반대 운동을 일으키고 현(縣) 당국에 탄원·진정하여 공사 진행을 강제로 중지시켰다.계약서 상에 분명히 현정부의 승인이 없으면 일본의 대리인인 하오융더와 중국인 지주 간 계약이 무효가 되고, 한인 농민들의 개척작업 또한 근거가 사라지는 것이다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>그런데 4월 중에 하오융더는 현(縣)정부의 정식 승인을 얻지 않고, 이 토지를 한국인 농민 이승훈(李昇薰) 등 8인에게 10년간 조차계약을 체결하였고, 이승훈은 이 계약을 근거로 조선인 농민 180여 명을 이 지방에 이주시켜 개척에 착수했다.개척 작업에서 가장 먼저 시작한 것이 이퉁 강에 통한 관개수로공사[1]였다.
+문제는 이 수로 개척과 제방 축조가 타인의 토지인 부근 농지에 미치는 피해가 많아졌다는 점이다.이 때문에 토착 중국 농민들이 반대 운동을 일으키고 현(縣) 당국에 탄원·진정하여 공사 진행을 강제로 중지시켰다.계약서 상에 분명히 현정부의 승인이 없으면 일본의 대리인인 하오융더와 중국인 지주 간 계약이 무효가 되고, 한인 농민들의 개척작업 또한 근거가 사라지는 것이다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_162742_094058.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_162742_094058.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210618_163356_264512)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 그러나 일본 영사관 소속 경관 6명이 이 공사를 강행하고, 일본 경찰 60명이 중국 농민의 반대를 무력으로 억압하여 이 수로공사는 1931년 6월 말에 준공되었다. 상황이 이에 이르자 중국 농민 약 400여 명이 7월 1일에 봉기하여 이 관개수로 약 2리를 매몰하는 사건이 벌어졌다. 이로써 현장에 있던 조선족 농민, 일본 영사관 경찰과 중국인 지주, 한국인 주민 사이에 일대 충돌이 일어났다. 7월 2일 장춘의 일본 영사관은 무장경찰관 15명을 파견하였고, 중국 측도 300명의 경찰관을 파견하였다. 다시 일본 경찰은 무장경찰관을 증파하였고, 이들의 경계 아래 개간공사를 진행시켜 7월 6일 공사를 완성하였다. 일본 경찰은 중국인 농민에게 무차별 발포하였으나, 약간의 부상자가 있었을 뿐, 인명피해는 없었다. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 그러나 일본 영사관 소속 경관 6명이 이 공사를 강행하고, 일본 경찰 60명이 중국 농민의 반대를 무력으로 억압하여 이 수로공사는 1931년 6월 말에 준공되었다. 상황이 이에 이르자 중국 농민 약 400여 명이 7월 1일에 봉기하여 이 관개수로 약 2리를 매몰하는 사건이 벌어졌다. 이로써 현장에 있던 조선족 농민, 일본 영사관 경찰과 중국인 지주, 한국인 주민 사이에 일대 충돌이 일어났다. 7월 2일 장춘의 일본 영사관은 무장경찰관 15명을 파견하였고, 중국 측도 300명의 경찰관을 파견하였다. 다시 일본 경찰은 무장경찰관을 증파하였고, 이들의 경계 아래 개간공사를 진행시켜 7월 6일 공사를 완성하였다. 일본 경찰은 중국인 농민에게 무차별 발포하였으나, 약간의 부상자가 있었을 뿐, 인명피해는 없었다. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->그러나 일본 영사관 소속 경관 6명이 이 공사를 강행하고, 일본 경찰 60명이 중국 농민의 반대를 무력으로 억압하여 이 수로공사는 1931년 6월 말에 준공되었다. 상황이 이에 이르자 중국 농민 약 400여 명이 7월 1일에 봉기하여 이 관개수로 약 2리를 매몰하는 사건이 벌어졌다. 이로써 현장에 있던 조선족 농민, 일본 영사관 경찰과 중국인 지주, 한국인 주민 사이에 일대 충돌이 일어났다. 7월 2일 장춘의 일본 영사관은 무장경찰관 15명을 파견하였고, 중국 측도 300명의 경찰관을 파견하였다. 다시 일본 경찰은 무장경찰관을 증파하였고, 이들의 경계 아래 개간공사를 진행시켜 7월 6일 공사를 완성하였다. 일본 경찰은 중국인 농민에게 무차별 발포하였으나, 약간의 부상자가 있었을 뿐, 인명피해는 없었다. 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 그러나 일본 영사관 소속 경관 6명이 이 공사를 강행하고, 일본 경찰 60명이 중국 농민의 반대를 무력으로 억압하여 이 수로공사는 1931년 6월 말에 준공되었다.상황이 이에 이르자 중국 농민 약 400여 명이 7월 1일에 봉기하여 이 관개수로 약 2리를 매몰하는 사건이 벌어졌다.이로써 현장에 있던 조선족 농민, 일본 영사관 경찰과 중국인 지주, 한국인 주민 사이에 일대 충돌이 일어났다.7월 2일 장춘의 일본 영사관은 무장경찰관 15명을 파견하였고, 중국 측도 300명의 경찰관을 파견하였다.다시 일본 경찰은 무장경찰관을 증파하였고, 이들의 경계 아래 개간공사를 진행시켜 7월 6일 공사를 완성하였다.일본 경찰은 중국인 농민에게 무차별 발포하였으나, 약간의 부상자가 있었을 뿐, 인명피해는 없었다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>그러나 일본 영사관 소속 경관 6명이 이 공사를 강행하고, 일본 경찰 60명이 중국 농민의 반대를 무력으로 억압하여 이 수로공사는 1931년 6월 말에 준공되었다.상황이 이에 이르자 중국 농민 약 400여 명이 7월 1일에 봉기하여 이 관개수로 약 2리를 매몰하는 사건이 벌어졌다.이로써 현장에 있던 조선족 농민, 일본 영사관 경찰과 중국인 지주, 한국인 주민 사이에 일대 충돌이 일어났다.7월 2일 장춘의 일본 영사관은 무장경찰관 15명을 파견하였고, 중국 측도 300명의 경찰관을 파견하였다.다시 일본 경찰은 무장경찰관을 증파하였고, 이들의 경계 아래 개간공사를 진행시켜 7월 6일 공사를 완성하였다.일본 경찰은 중국인 농민에게 무차별 발포하였으나, 약간의 부상자가 있었을 뿐, 인명피해는 없었다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_163356_264512.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210618_163356_264512.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
