@@ -187,7 +187,9 @@ php process-trans-sentences.php
 		
 		# vars
 		#ref https://stackoverflow.com/questions/1571187/regexp-with-russian-lang
-		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüößąęłńóśż0-9a-zA-Z\s\-,':\.\(\)\­\]\"\/„%]*$/i";	#=> pattern-id:20210616_130139 // polish chars, ":" added
+		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüößąęłńóśż\u0600-\u06ff\u0750-\u077f\ufb50-\ufbc1\ufbd3-\ufd3f\ufd50-\ufd8f\ufd92-\ufdc7\ufe70-\ufefc\uFDF0-\uFDFD0-9a-zA-Z\s\-,':\.\(\)\­\]\"\/„%]*$/i";	#=> pattern-id:20210617_154457 // arabic chars ==> added //ref https://gist.github.com/Humoud/f40f58cd85c5935a444c //=> not working
+//		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüößąęłńóśż\u0621-\u064A0-9a-zA-Z\s\-,':\.\(\)\­\]\"\/„%]*$/i";	#=> pattern-id:20210617_153936 // arabic chars ==> added //ref https://stackoverflow.com/questions/29729391/regular-expression-arabic-characters-and-numbers-only //=> not working
+//		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüößąęłńóśż0-9a-zA-Z\s\-,':\.\(\)\­\]\"\/„%]*$/i";	#=> pattern-id:20210616_130139 // polish chars, ":" added
 //		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,'\.\(\)\­\]\"\/„%]*$/i";	#=> pattern-id:20210523_153919 // "/„" added
 //		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,'\.\(\)\­\]\"]*$/i";	#=> pattern-id:20210516_102849 // "()­" added
 //		$pattern	= "/^[ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбюäüöß0-9a-zA-Z\s\-,'\.]*$/i";	#=> pattern-id:20210516_092039 // "." added
