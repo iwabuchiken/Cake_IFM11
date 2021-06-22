@@ -5012,3 +5012,93 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210615_165204_262507.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210615_165204_262507.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210621_153300_079107)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 他的义，这是一个关键之关键。弄懂[nong4
+    [1] => 这一点，即是明白了我们信仰的中心。
+    [2] => ]]从字面上理解，他的义，即神的公义，
+    [3] => 圣洁[-jie2:Holy
+    [4] => ，满足他
+    [5] => 公义[:Righteousness
+    [6] => 的事。
+    [7] => ]]我们往往将此理解为
+    [8] => 做讨[:discuss
+    [9] => 神喜悦的事。
+    [10] => ]]不错，从字面上看是这样的。]]
+    [11] => 
+    [12] => 但是，还有没有别的意义呢？]]我们有个办法，就是找和它相对立的词。]]
+    [13] => 神的义，它的对立面是什么呢？有人说那是人的恶，我们的罪。我们联系上下文，在马太福音第五章和第六章里都讲到了律法，讲到法利赛人。]]所以，这里神的义，它的对立面并不是人的罪，而是“人的义”。
+    [14] => 什么是人的义？]]以自己为义。认为靠着自己的行为就可以做到满足神公义的要求。法利赛人正是这样行的。但主耶稣在五章里讲律法的
+    [15] => 精髓[-sui3
+    [16] => ，让人知道，律法不仅指向人的行为，更指向人的心思意念。在这个条件下，有没有人能满足神的公义标准？没有义人，一个也没有。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 216] match => 他的义，这是一个关键之关键。弄懂[nong4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)这一点，即是明白了我们信仰的中心。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]从字面上理解，他的义，即神的公义，
+[process-trans-sentences_chinese.php : 216] match => 圣洁[-jie2:Holy
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，满足他
+[process-trans-sentences_chinese.php : 216] match => 公义[:Righteousness
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的事。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]我们往往将此理解为
+[process-trans-sentences_chinese.php : 216] match => 做讨[:discuss
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)神喜悦的事。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]不错，从字面上看是这样的。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)但是，还有没有别的意义呢？]]我们有个办法，就是找和它相对立的词。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)神的义，它的对立面是什么呢？有人说那是人的恶，我们的罪。我们联系上下文，在马太福音第五章和第六章里都讲到了律法，讲到法利赛人。]]所以，这里神的义，它的对立面并不是人的罪，而是“人的义”。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)什么是人的义？]]以自己为义。认为靠着自己的行为就可以做到满足神公义的要求。法利赛人正是这样行的。但主耶稣在五章里讲律法的
+[process-trans-sentences_chinese.php : 216] match => 精髓[-sui3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，让人知道，律法不仅指向人的行为，更指向人的心思意念。在这个条件下，有没有人能满足神的公义标准？没有义人，一个也没有。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210621_153300_085107.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210621_153300_085107.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210621_153449_871510)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 那么，看来人是没得救了。]]人无论做什么，也无法满足神的公义，剩下只有死路一条，因为罪的工价就是死。]]
+    [1] => 但神是公义的，在我们不能自救的时候，有一个人，是道成肉身，
+    [2] => 奉差遣[feng4chai1qian3
+    [3] => 来到世界，为了满足神的公义，也为了满足神的
+    [4] => 慈爱[ci2-
+    [5] => 。
+    [6] => ]]对了，是我们的主耶稣基督。他在十字架上
+    [7] => 流血舍命[-xue4she3-
+    [8] => ，成就了
+    [9] => 救赎[jiu4shu2
+    [10] => 的大工。
+    [11] => ]]当他在十字架上喊出“成了”的那一刻，救恩已经完成。神的义已经满足。]]耶稣基督自己成为我们的义。因为他代我们死了，他成为我们的
+    [12] => 替罪羔羊[--gao1-
+    [13] => 。
+    [14] => 现在我们思想一个问题：既然他已经成就，我们所做的一切，对他的救恩会有影响吗？我们做对了，能否加添他的恩典？我们有了过犯，能否减少他的恩典？当然不能。救恩既已成就，我们就无所加添，无所减少。因为基督一次献上完美的赎罪祭和挽回祭，就成就了。他的复活，他的升天，并且他坐在父的右边，这都说明他的救赎大工已经完成，并且蒙父神悦纳。所以，今天我们做什么事，与救恩是没有关系的。我们要做的只是信，相信基督成就的救恩，相信他为我们而死，又从死里复活。因着信，我们就与基督建立起关系，他成为我们的救赎主。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)那么，看来人是没得救了。]]人无论做什么，也无法满足神的公义，剩下只有死路一条，因为罪的工价就是死。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)但神是公义的，在我们不能自救的时候，有一个人，是道成肉身，
+[process-trans-sentences_chinese.php : 216] match => 奉差遣[feng4chai1qian3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)来到世界，为了满足神的公义，也为了满足神的
+[process-trans-sentences_chinese.php : 216] match => 慈爱[ci2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]对了，是我们的主耶稣基督。他在十字架上
+[process-trans-sentences_chinese.php : 216] match => 流血舍命[-xue4she3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，成就了
+[process-trans-sentences_chinese.php : 216] match => 救赎[jiu4shu2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的大工。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]当他在十字架上喊出“成了”的那一刻，救恩已经完成。神的义已经满足。]]耶稣基督自己成为我们的义。因为他代我们死了，他成为我们的
+[process-trans-sentences_chinese.php : 216] match => 替罪羔羊[--gao1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)现在我们思想一个问题：既然他已经成就，我们所做的一切，对他的救恩会有影响吗？我们做对了，能否加添他的恩典？我们有了过犯，能否减少他的恩典？当然不能。救恩既已成就，我们就无所加添，无所减少。因为基督一次献上完美的赎罪祭和挽回祭，就成就了。他的复活，他的升天，并且他坐在父的右边，这都说明他的救赎大工已经完成，并且蒙父神悦纳。所以，今天我们做什么事，与救恩是没有关系的。我们要做的只是信，相信基督成就的救恩，相信他为我们而死，又从死里复活。因着信，我们就与基督建立起关系，他成为我们的救赎主。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210621_153449_888111.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210621_153449_888111.txt'
+  
