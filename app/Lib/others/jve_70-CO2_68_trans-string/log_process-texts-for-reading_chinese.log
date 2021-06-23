@@ -28058,3 +28058,5783 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210621_152737_701247.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210621_152737_701247.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210622_125815_157372)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+
+    [1] => 
+
+    [2] => 当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+
+    [3] => 
+
+    [4] =>   
+
+    [5] => 
+
+    [6] => 所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+
+    [7] => 
+
+    [8] =>   
+
+    [9] => 
+
+    [10] => 好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+
+    [11] => 
+
+    [12] => 他的国：他的主权；他的义：他的救恩。 
+
+    [13] => 
+
+    [14] => “你们要先求他的国和他的义”，你有什么结论？ 
+
+    [15] => 
+
+    [16] => 他的国和他的义之间，是什么关系？ 
+
+    [17] => 
+
+    [18] => 当然，是并列关系。而且这二者是合二为一，不可或缺的。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '他的国：他的主权；他的义：他的救恩。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '“你们要先求他的国和他的义”，你有什么结论？ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '他的国和他的义之间，是什么关系？ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '当然，是并列关系。而且这二者是合二为一，不可或缺的。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+
+    [1] => 
+    [2] => 当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+
+    [3] => 
+    [4] =>   
+
+    [5] => 
+    [6] => 所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+
+    [7] => 
+    [8] =>   
+
+    [9] => 
+    [10] => 好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+
+    [11] => 
+    [12] => 他的国：他的主权；他的义：他的救恩。 
+
+    [13] => 
+    [14] => “你们要先求他的国和他的义”，你有什么结论？ 
+
+    [15] => 
+    [16] => 他的国和他的义之间，是什么关系？ 
+
+    [17] => 
+    [18] => 当然，是并列关系。而且这二者是合二为一，不可或缺的。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '他的国：他的主权；他的义：他的救恩。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '“你们要先求他的国和他的义”，你有什么结论？ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '他的国和他的义之间，是什么关系？ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '当然，是并列关系。而且这二者是合二为一，不可或缺的。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+
+    [1] => 
+    [2] => 当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+
+    [3] => 
+    [4] =>   
+
+    [5] => 
+    [6] => 所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+
+    [7] => 
+    [8] =>   
+
+    [9] => 
+    [10] => 好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+
+    [11] => 
+    [12] => 他的国：他的主权；他的义：他的救恩。 
+
+    [13] => 
+    [14] => “你们要先求他的国和他的义”，你有什么结论？ 
+
+    [15] => 
+    [16] => 他的国和他的义之间，是什么关系？ 
+
+    [17] => 
+    [18] => 当然，是并列关系。而且这二者是合二为一，不可或缺的。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '他的国：他的主权；他的义：他的救恩。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+他的国：他的主权；他的义：他的救恩。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '“你们要先求他的国和他的义”，你有什么结论？ 
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '他的国和他的义之间，是什么关系？ 
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '当然，是并列关系。而且这二者是合二为一，不可或缺的。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+当然，是并列关系。而且这二者是合二为一，不可或缺的。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+
+    [1] => 
+    [2] => 当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+
+    [3] => 
+    [4] =>   
+
+    [5] => 
+    [6] => 所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+
+    [7] => 
+    [8] =>   
+
+    [9] => 
+    [10] => 好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+
+    [11] => 
+    [12] => 他的国：他的主权；他的义：他的救恩。 
+
+    [13] => 
+    [14] => “你们要先求他的国和他的义”，你有什么结论？ 
+
+    [15] => 
+    [16] => 他的国和他的义之间，是什么关系？ 
+
+    [17] => 
+    [18] => 当然，是并列关系。而且这二者是合二为一，不可或缺的。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '好，我们再回来看前面这个连接词，和。和表示并列的关系。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+好，我们再回来看前面这个连接词，和。和表示并列的关系。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '他的国：他的主权；他的义：他的救恩。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+他的国：他的主权；他的义：他的救恩。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '“你们要先求他的国和他的义”，你有什么结论？ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+“你们要先求他的国和他的义”，你有什么结论？
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '他的国和他的义之间，是什么关系？ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+他的国和他的义之间，是什么关系？
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '当然，是并列关系。而且这二者是合二为一，不可或缺的。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。
+
+    [1] => 
+    [2] => 当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。
+
+    [3] => 
+    [4] =>  
+
+    [5] => 
+    [6] => 所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。
+
+    [7] => 
+    [8] =>  
+
+    [9] => 
+    [10] => 好，我们再回来看前面这个连接词，和。和表示并列的关系。
+
+    [11] => 
+    [12] => 他的国：他的主权；他的义：他的救恩。
+
+    [13] => 
+    [14] => “你们要先求他的国和他的义”，你有什么结论？
+
+    [15] => 
+    [16] => 他的国和他的义之间，是什么关系？
+
+    [17] => 
+    [18] => 当然，是并列关系。而且这二者是合二为一，不可或缺的。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。这关系就是我们因信接受基督做我们的救主。除此以外，没有任何办法能够跟天父建立起关系来。
+当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。
+ 
+所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。
+ 
+好，我们再回来看前面这个连接词，和。和表示并列的关系。
+他的国：他的主权；他的义：他的救恩。
+“你们要先求他的国和他的义”，你有什么结论？
+他的国和他的义之间，是什么关系？
+当然，是并列关系。而且这二者是合二为一，不可或缺的。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_125815_157372.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_125815_157372.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210622_130113_222557)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 这是什么意思呢？ 
+
+    [1] => 
+
+    [2] => 这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+
+    [3] => 
+
+    [4] => 亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+
+    [5] => 
+
+    [6] => 因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+
+    [7] => 
+
+    [8] => 你明白了吗？ 
+
+    [9] => 
+
+    [10] => （这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+
+    [11] => 
+
+    [12] =>   
+
+    [13] => 
+
+    [14] => 我们来看下半句，“这些东西都要加给你们了。” 
+
+    [15] => 
+
+    [16] => 这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+
+    [17] => 
+
+    [18] => 加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+
+    [19] => 
+
+    [20] => 就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '这是什么意思呢？ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '你明白了吗？ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '我们来看下半句，“这些东西都要加给你们了。” 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 '
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 这是什么意思呢？ 
+
+    [1] => 
+    [2] => 这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+
+    [3] => 
+    [4] => 亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+
+    [5] => 
+    [6] => 因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+
+    [7] => 
+    [8] => 你明白了吗？ 
+
+    [9] => 
+    [10] => （这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+
+    [11] => 
+    [12] =>   
+
+    [13] => 
+    [14] => 我们来看下半句，“这些东西都要加给你们了。” 
+
+    [15] => 
+    [16] => 这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+
+    [17] => 
+    [18] => 加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+
+    [19] => 
+    [20] => 就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '这是什么意思呢？ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '你明白了吗？ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '我们来看下半句，“这些东西都要加给你们了。” 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 '
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 这是什么意思呢？ 
+
+    [1] => 
+    [2] => 这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+
+    [3] => 
+    [4] => 亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+
+    [5] => 
+    [6] => 因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+
+    [7] => 
+    [8] => 你明白了吗？ 
+
+    [9] => 
+    [10] => （这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+
+    [11] => 
+    [12] =>   
+
+    [13] => 
+    [14] => 我们来看下半句，“这些东西都要加给你们了。” 
+
+    [15] => 
+    [16] => 这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+
+    [17] => 
+    [18] => 加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+
+    [19] => 
+    [20] => 就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '这是什么意思呢？ 
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '你明白了吗？ 
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '我们来看下半句，“这些东西都要加给你们了。” 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+我们来看下半句，“这些东西都要加给你们了。” 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 '
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 这是什么意思呢？ 
+
+    [1] => 
+    [2] => 这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+
+    [3] => 
+    [4] => 亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+
+    [5] => 
+    [6] => 因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+
+    [7] => 
+    [8] => 你明白了吗？ 
+
+    [9] => 
+    [10] => （这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+
+    [11] => 
+    [12] =>   
+
+    [13] => 
+    [14] => 我们来看下半句，“这些东西都要加给你们了。” 
+
+    [15] => 
+    [16] => 这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+
+    [17] => 
+    [18] => 加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+
+    [19] => 
+    [20] => 就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '这是什么意思呢？ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+这是什么意思呢？
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '你明白了吗？ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+你明白了吗？
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。） 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。）
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '我们来看下半句，“这些东西都要加给你们了。” 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+我们来看下半句，“这些东西都要加给你们了。”
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '加，除了有白白赐予的意思，还有丰富、充足、大量的意思。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+加，除了有白白赐予的意思，还有丰富、充足、大量的意思。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 '
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 这是什么意思呢？
+
+    [1] => 
+    [2] => 这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。
+
+    [3] => 
+    [4] => 亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。
+
+    [5] => 
+    [6] => 因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！
+
+    [7] => 
+    [8] => 你明白了吗？
+
+    [9] => 
+    [10] => （这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。）
+
+    [11] => 
+    [12] =>  
+
+    [13] => 
+    [14] => 我们来看下半句，“这些东西都要加给你们了。”
+
+    [15] => 
+    [16] => 这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。
+
+    [17] => 
+    [18] => 加，除了有白白赐予的意思，还有丰富、充足、大量的意思。
+
+    [19] => 
+    [20] => 就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>这是什么意思呢？
+这即是说，你们要求他的救恩和他的主权临到。主权和救恩是不可分割的。
+亲爱的弟兄姊妹，这使我恍然大悟，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受捆绑的原因。
+因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。恩典不是不给我们，而是我们自己拒绝进入到恩典里去！
+你明白了吗？
+（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。）
+ 
+我们来看下半句，“这些东西都要加给你们了。”
+这些东西，就是前面所指的日常需要的一切。包括我们物质和精神的一切需要，天父都知道。
+加，除了有白白赐予的意思，还有丰富、充足、大量的意思。
+就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。对了，你说“先求他的国和他的义”。 
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_130113_222557.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_130113_222557.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210622_130714_640130)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+
+    [1] => 
+
+    [2] =>   
+
+    [3] => 
+
+    [4] => 你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？ 
+
+    [5] => 
+
+    [6] =>   
+
+    [7] => 
+
+    [8] => 但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+
+    [9] => 
+
+    [10] =>   
+
+    [11] => 
+
+    [12] => 哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！” 
+
+    [13] => 
+
+    [14] =>   
+
+    [15] => 
+
+    [16] => 你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” 
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！” 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” '
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+
+    [1] => 
+    [2] =>   
+
+    [3] => 
+    [4] => 你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？ 
+
+    [5] => 
+    [6] =>   
+
+    [7] => 
+    [8] => 但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+
+    [9] => 
+    [10] =>   
+
+    [11] => 
+    [12] => 哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！” 
+
+    [13] => 
+    [14] =>   
+
+    [15] => 
+    [16] => 你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” 
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！” 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” '
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+
+    [1] => 
+    [2] =>   
+
+    [3] => 
+    [4] => 你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？ 
+
+    [5] => 
+    [6] =>   
+
+    [7] => 
+    [8] => 但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+
+    [9] => 
+    [10] =>   
+
+    [11] => 
+    [12] => 哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！” 
+
+    [13] => 
+    [14] =>   
+
+    [15] => 
+    [16] => 你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” 
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？ 
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！” 
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” '
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” 
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+
+    [1] => 
+    [2] =>   
+
+    [3] => 
+    [4] => 你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？ 
+
+    [5] => 
+    [6] =>   
+
+    [7] => 
+    [8] => 但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+
+    [9] => 
+    [10] =>   
+
+    [11] => 
+    [12] => 哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！” 
+
+    [13] => 
+    [14] =>   
+
+    [15] => 
+    [16] => 你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” 
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！” 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！”
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” '
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！
+
+    [1] => 
+    [2] =>  
+
+    [3] => 
+    [4] => 你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？
+
+    [5] => 
+    [6] =>  
+
+    [7] => 
+    [8] => 但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。
+
+    [9] => 
+    [10] =>  
+
+    [11] => 
+    [12] => 哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！”
+
+    [13] => 
+    [14] =>  
+
+    [15] => 
+    [16] => 你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” 
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要不住地仰望他，把自己完全交在他手里，这就行了！
+ 
+你想想，假如你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？岂不保守你？你还有什么可担忧的？
+ 
+但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。
+ 
+哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！”
+ 
+你一边拒绝基督的统治，一边又知道他的救恩是好东西，你忙碌，你寻求，你祷告，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？” 
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_130714_640130.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_130714_640130.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210622_131355_932081)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+
+    [1] => 
+
+    [2] =>   
+
+    [3] => 
+
+    [4] => 我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+
+    [5] => 
+
+    [6] => 我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+
+    [7] => 
+
+    [8] =>   
+
+    [9] => 
+
+    [10] => 因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+
+    [11] => 
+
+    [12] =>   
+
+    [13] => 
+
+    [14] => 如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+
+    [1] => 
+    [2] =>   
+
+    [3] => 
+    [4] => 我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+
+    [5] => 
+    [6] => 我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+
+    [7] => 
+    [8] =>   
+
+    [9] => 
+    [10] => 因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+
+    [11] => 
+    [12] =>   
+
+    [13] => 
+    [14] => 如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+
+    [1] => 
+    [2] =>   
+
+    [3] => 
+    [4] => 我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+
+    [5] => 
+    [6] => 我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+
+    [7] => 
+    [8] =>   
+
+    [9] => 
+    [10] => 因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+
+    [11] => 
+    [12] =>   
+
+    [13] => 
+    [14] => 如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+
+    [1] => 
+    [2] =>   
+
+    [3] => 
+    [4] => 我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+
+    [5] => 
+    [6] => 我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+
+    [7] => 
+    [8] =>   
+
+    [9] => 
+    [10] => 因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+
+    [11] => 
+    [12] =>   
+
+    [13] => 
+    [14] => 如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '因此，得自由的办法，不是靠你的争战，而是因着你的降服。 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => 
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+因此，得自由的办法，不是靠你的争战，而是因着你的降服。
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '  
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>   
+        )
+
+    [1] => Array
+        (
+            [0] =>  
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+ 
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？ 
+'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � 
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？
+
+    [1] => 
+    [2] =>  
+
+    [3] => 
+    [4] => 我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。
+
+    [5] => 
+    [6] => 我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。
+
+    [7] => 
+    [8] =>  
+
+    [9] => 
+    [10] => 因此，得自由的办法，不是靠你的争战，而是因着你的降服。
+
+    [11] => 
+    [12] =>  
+
+    [13] => 
+    [14] => 如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？
+
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？
+ 
+我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。
+我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。
+ 
+因此，得自由的办法，不是靠你的争战，而是因着你的降服。
+ 
+如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？
+
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_131355_932081.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_131355_932081.txt
+ 

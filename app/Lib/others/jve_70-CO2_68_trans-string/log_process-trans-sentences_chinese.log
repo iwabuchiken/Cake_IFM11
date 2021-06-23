@@ -5102,3 +5102,219 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210621_153449_888111.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210621_153449_888111.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210622_125735_561108)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 耶稣基督自己成为我们的义。因为他代我们死了，他成为我们的
+    [1] => 替罪羔羊[--gao1-
+    [2] => 。]]
+    [3] => 现在我们思想一个问题：既然他已经成就，我们所做的一切，对他的救恩会有影响吗？我们做对了，能否加添他的恩典？我们有了过犯，能否减少他的恩典？]]当然不能。救恩既已成就，我们就无所加添，无所减少。]]因为基督一次献上完美的
+    [4] => 赎罪祭[shu2zui4ji4
+    [5] => 和
+    [6] => 挽回祭[wan3-ji4
+    [7] => ，就成就了。他的复活，他的升天，并且他坐在父的右边，这都说明他的救赎大工已经完成，并且
+    [8] => 蒙父[meng2-
+    [9] => 神
+    [10] => 悦纳[yue4-
+    [11] => 。
+    [12] => ]]所以，今天我们做什么事，与救恩是没有关系的。
+    [13] => ]]我们要做的只是信，相信基督成就的救恩，相信他为我们而死，又从死里复活。]]因着信，我们就与基督建立起关系，他成为我们的救赎主。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)耶稣基督自己成为我们的义。因为他代我们死了，他成为我们的
+[process-trans-sentences_chinese.php : 216] match => 替罪羔羊[--gao1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)现在我们思想一个问题：既然他已经成就，我们所做的一切，对他的救恩会有影响吗？我们做对了，能否加添他的恩典？我们有了过犯，能否减少他的恩典？]]当然不能。救恩既已成就，我们就无所加添，无所减少。]]因为基督一次献上完美的
+[process-trans-sentences_chinese.php : 216] match => 赎罪祭[shu2zui4ji4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和
+[process-trans-sentences_chinese.php : 216] match => 挽回祭[wan3-ji4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，就成就了。他的复活，他的升天，并且他坐在父的右边，这都说明他的救赎大工已经完成，并且
+[process-trans-sentences_chinese.php : 216] match => 蒙父[meng2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)神
+[process-trans-sentences_chinese.php : 216] match => 悦纳[yue4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]所以，今天我们做什么事，与救恩是没有关系的。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]我们要做的只是信，相信基督成就的救恩，相信他为我们而死，又从死里复活。]]因着信，我们就与基督建立起关系，他成为我们的救赎主。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_125735_579108.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_125735_579108.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210622_130049_971226)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。]]这关系就是我们因信接受基督做我们的救主。]]除此以外，没有任何办法能够跟天父建立起关系来。]]当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。]]
+    [1] => 所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。
+    [2] => 好，我们再回来看前面这个连接词，和。和表示并列的关系。]]他的国：他的主权；他的义：他的救恩。“你们要先求他的国和他的义”，你有什么结论？他的国和他的义之间，是什么关系？]]当然，是并列关系。]]而且这二者是合二为一，不可或缺的。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)天父看我们，不是看我们做了什么事，而是看我们跟他之间的关系。]]这关系就是我们因信接受基督做我们的救主。]]除此以外，没有任何办法能够跟天父建立起关系来。]]当然，前提是我们知道自己是有罪的，我们承认自己是个罪人。否则，我们不会觉得需要救恩。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)所以，这里说的“神的义”，就是耶稣基督并他钉十字架，就是他的救恩。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)好，我们再回来看前面这个连接词，和。和表示并列的关系。]]他的国：他的主权；他的义：他的救恩。“你们要先求他的国和他的义”，你有什么结论？他的国和他的义之间，是什么关系？]]当然，是并列关系。]]而且这二者是合二为一，不可或缺的。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_130049_972228.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_130049_972228.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210622_130637_944129)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 这是什么意思呢？这即是说，你们要求他的救恩和他的主权临到。]]主权和救恩是不可分割的。亲爱的弟兄
+    [1] => 姊妹[zi3mei4
+    [2] => ，这使我
+    [3] => 恍然大悟[huang3--wu4
+    [4] => ，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受
+    [5] => 捆绑[kun3bang3
+    [6] => 的原因。]]因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。]]恩典不是不给我们，而是我们自己拒绝进入到恩典里去！你明白了吗？]]（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。]]）
+    [7] => 我们来看下半句，“这些东西都要加给你们了。”这些东西，就是前面所指的日常需要的一切。]]包括我们物质和精神的一切需要，天父都知道。加，除了有白白
+    [8] => 赐予[ci4yu3
+    [9] => 的意思，还有丰富、充足、大量的意思。]]就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。]]对了，你说“先求他的国和他的义”。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)这是什么意思呢？这即是说，你们要求他的救恩和他的主权临到。]]主权和救恩是不可分割的。亲爱的弟兄
+[process-trans-sentences_chinese.php : 216] match => 姊妹[zi3mei4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，这使我
+[process-trans-sentences_chinese.php : 216] match => 恍然大悟[huang3--wu4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，为什么有许多基督徒，虽然身在救恩里，却丝毫喜乐不起来，反而觉得多受
+[process-trans-sentences_chinese.php : 216] match => 捆绑[kun3bang3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的原因。]]因为神的救恩和主权是不可分的，我们要接受救恩，也必须同时接受他的掌管。如果我们拒绝让主来掌管我们，我们等于在拒绝他的恩典。]]恩典不是不给我们，而是我们自己拒绝进入到恩典里去！你明白了吗？]]（这个道理并不新鲜。我以前多次在不同的灵修书籍看到，听道时听过，但从来没有像现在这样鲜明地呈现在我眼前。]]）
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)我们来看下半句，“这些东西都要加给你们了。”这些东西，就是前面所指的日常需要的一切。]]包括我们物质和精神的一切需要，天父都知道。加，除了有白白
+[process-trans-sentences_chinese.php : 216] match => 赐予[ci4yu3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的意思，还有丰富、充足、大量的意思。]]就是说，我们一切的需要，天父都要白白地、丰丰富富、充充足足、超过我们所想所求地赐给我们。但有个前提。]]对了，你说“先求他的国和他的义”。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_130637_949131.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_130637_949131.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210622_131301_205951)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要
+    [1] => 不住地[:unrestrained
+    [2] => 仰望[yang3-
+    [3] => 他，把自己完全交在他手里，这就行了！]]
+    [4] => 你想想，
+    [5] => 假如[jia3-
+    [6] => 你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？]]
+    [7] => 岂不保守你？你还有什么可担忧的？]]
+    [8] => 但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。]]
+    [9] => 哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！”]]
+    [10] => 你一边拒绝基督的统治，一边又知道他的救恩是好东西，你
+    [11] => 忙碌[mang2lu4
+    [12] => ，你寻求，你
+    [13] => 祷告[dao3-
+    [14] => ，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。]]结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？”
+    [15] => ]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)我过去的理解，是先做合神心意的事，但今天我再看这段经文，原来不是要我去做什么。而是说，我要先求主的救恩和他的主权临到我，用什么办法呢？用信靠之法。我不用做什么，我只要
+[process-trans-sentences_chinese.php : 216] match => 不住地[:unrestrained
+[process-trans-sentences_chinese.php : 216] match => 仰望[yang3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)他，把自己完全交在他手里，这就行了！]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)你想想，
+[process-trans-sentences_chinese.php : 216] match => 假如[jia3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)你先求神的救恩和主权临到你，你就成为神家里的人，是神自己的儿女，他岂不看顾你？]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)岂不保守你？你还有什么可担忧的？]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)但我们今天看到最普遍的一个问题，是许多人以为，救恩和主权是可以分开的。他们说：我需要救恩，是的，因为我是个罪人。但是，我可不要你来管我。你让我自己来。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)哦，我亲爱的肢体，你可知道，你拒绝基督的主权，就是在拒绝他的救恩？你好像半个身子探进门内，你的脚却不肯走进去！“人若不重生，不能进神的国！”]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)你一边拒绝基督的统治，一边又知道他的救恩是好东西，你
+[process-trans-sentences_chinese.php : 216] match => 忙碌[mang2lu4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，你寻求，你
+[process-trans-sentences_chinese.php : 216] match => 祷告[dao3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，你读经，你灵修，你事奉，你奉献，你参加聚会……唯独一件事你不肯做，就是交出你的主权。]]结果你发现，“我真是苦啊，谁能救我脱离这取死的肉体呢？”
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_131301_211952.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_131301_211952.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210622_131744_931180)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？
+    [1] => 
+    [2] => 
+    [3] => 
+    [4] => 我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。
+    [5] => 
+    [6] => 我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。
+    [7] => 
+    [8] => 
+    [9] => 
+    [10] => 因此，得自由的办法，不是靠你的争战，而是因着你的降服。
+    [11] => 
+    [12] => 
+    [13] => 
+    [14] => 如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你拦阻我。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)因此，得自由的办法，不是靠你的争战，而是因着你的降服。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人羞辱，被人鞭打，死在十字架上，担当你的罪，就是容易的吗？
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_131744_935180.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_131744_935180.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210622_131759_336004)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。]]”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？]]
+    [1] => 我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你
+    [2] => 拦阻[lan2zu3
+    [3] => 我。]]我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。]]
+    [4] => 因此，得自由的办法，不是靠你的争战，而是因着你的降服。]]
+    [5] => 如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。]]耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人
+    [6] => 羞辱[xiu1ru4
+    [7] => ，被人
+    [8] => 鞭打[bian1-
+    [9] => ]]
+    [10] => ，死在十字架上，担当你的罪，就是容易的吗？]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)保罗说，“感谢神，靠着我们的主耶稣基督就能脱离了。]]”你看到了吗？是主。也许你平时祷告也说，主啊，主啊。但在你心中，到底谁是主？你的宝座之上，谁为王？谁做主？]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)我们祷告说：主啊，我要做这个，我要做那个，求你帮我。或者，看我做错，请你
+[process-trans-sentences_chinese.php : 216] match => 拦阻[lan2zu3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)我。]]我们以为那已经很不错了，这是“凡事寻求神的旨意”。非也！那是你定了主意，叫神帮你看门望风！谁是你的主？你自己。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)因此，得自由的办法，不是靠你的争战，而是因着你的降服。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)如果你还觉得有困难，请思想你自己是怎样一个人，你本来的结局是什么。]]耶稣基督为你做了什么？你若觉得为主放弃自己的想法是困难的，那主为你放弃他属天的尊贵，放弃他自己的生命，被人
+[process-trans-sentences_chinese.php : 216] match => 羞辱[xiu1ru4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，被人
+[process-trans-sentences_chinese.php : 216] match => 鞭打[bian1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，死在十字架上，担当你的罪，就是容易的吗？]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_131759_352005.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_131759_352005.txt'
+  
