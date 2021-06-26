@@ -36250,3 +36250,392 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_134444_320512.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210625_094713_831254)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '"The United Nations kills Yemeni children" is the title of this symposium held by the Ansarullah Political Bureau and the anti-aggression parties bloc. The aim is to discuss the UN role in providing the political cover-up for all the illegal actions of Saudi Arabia, including the Saudi crimes committed against Yemeni children.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Participants said the UN realizes the Saudi crimes committed against Yemeni children. They added the name of the kingdom to the blacklist of groups blamed for violating children’s rights. Riyadh, however, used its funding for the UN to remove its name from the list.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Besides the brutal war, Saudi Arabia has maintained an all-out blockade on Yemen since the beginning of 2015.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The Saudi blockade deprived millions of Yemenis of their basic needs and pushed the war-torn country to the brink of famine.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => "The United Nations kills Yemeni children" is the title of this symposium held by the Ansarullah Political Bureau and the anti-aggression parties bloc. The aim is to discuss the UN role in providing the political cover-up for all the illegal actions of Saudi Arabia, including the Saudi crimes committed against Yemeni children.
+    [1] => 
+
+    [2] => Participants said the UN realizes the Saudi crimes committed against Yemeni children. They added the name of the kingdom to the blacklist of groups blamed for violating children’s rights. Riyadh, however, used its funding for the UN to remove its name from the list.
+    [3] => 
+
+    [4] => Besides the brutal war, Saudi Arabia has maintained an all-out blockade on Yemen since the beginning of 2015.
+    [5] => 
+
+    [6] => The Saudi blockade deprived millions of Yemenis of their basic needs and pushed the war-torn country to the brink of famine.
+    [7] => 
+
+    [8] => People here blame the United Nations for remaining silent toward the ongoing Saudi crimes against Yemenis, including the continued illegal detention of Yemeni oil ships which is a clear violation of the rights of the entire people of the war-ravaged nation.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => "The United Nations kills Yemeni children" is the title of this symposium held by the Ansarullah Political Bureau and the anti-aggression parties bloc. The aim is to discuss the UN role in providing the political cover-up for all the illegal actions of Saudi Arabia, including the Saudi crimes committed against Yemeni children.
+    [1] => 
+
+    [2] => Participants said the UN realizes the Saudi crimes committed against Yemeni children. They added the name of the kingdom to the blacklist of groups blamed for violating children’s rights. Riyadh, however, used its funding for the UN to remove its name from the list.
+    [3] => 
+
+    [4] => Besides the brutal war, Saudi Arabia has maintained an all-out blockade on Yemen since the beginning of 2015.
+    [5] => 
+
+    [6] => The Saudi blockade deprived millions of Yemenis of their basic needs and pushed the war-torn country to the brink of famine.
+    [7] => 
+
+    [8] => People here blame the United Nations for remaining silent toward the ongoing Saudi crimes against Yemenis, including the continued illegal detention of Yemeni oil ships which is a clear violation of the rights of the entire people of the war-ravaged nation.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->"The United Nations kills Yemeni children" is the title of this symposium held by the Ansarullah Political Bureau and the anti-aggression parties bloc. The aim is to discuss the UN role in providing the political cover-up for all the illegal actions of Saudi Arabia, including the Saudi crimes committed against Yemeni children.
+$matches ==>
+Array
+(
+    [0] => c. 
+    [1] => c.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Participants said the UN realizes the Saudi crimes committed against Yemeni children. They added the name of the kingdom to the blacklist of groups blamed for violating children’s rights. Riyadh, however, used its funding for the UN to remove its name from the list.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => "The United Nations kills Yemeni children" is the title of this symposium held by the Ansarullah Political Bureau and the anti-aggression parties bloc.The aim is to discuss the UN role in providing the political cover-up for all the illegal actions of Saudi Arabia, including the Saudi crimes committed against Yemeni children.
+    [1] => 
+
+    [2] => Participants said the UN realizes the Saudi crimes committed against Yemeni children.They added the name of the kingdom to the blacklist of groups blamed for violating children’s rights.Riyadh, however, used its funding for the UN to remove its name from the list.
+    [3] => 
+
+    [4] => Besides the brutal war, Saudi Arabia has maintained an all-out blockade on Yemen since the beginning of 2015.
+    [5] => 
+
+    [6] => The Saudi blockade deprived millions of Yemenis of their basic needs and pushed the war-torn country to the brink of famine.
+    [7] => 
+
+    [8] => People here blame the United Nations for remaining silent toward the ongoing Saudi crimes against Yemenis, including the continued illegal detention of Yemeni oil ships which is a clear violation of the rights of the entire people of the war-ravaged nation.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>"The United Nations kills Yemeni children" is the title of this symposium held by the Ansarullah Political Bureau and the anti-aggression parties bloc.The aim is to discuss the UN role in providing the political cover-up for all the illegal actions of Saudi Arabia, including the Saudi crimes committed against Yemeni children.
+Participants said the UN realizes the Saudi crimes committed against Yemeni children.They added the name of the kingdom to the blacklist of groups blamed for violating children’s rights.Riyadh, however, used its funding for the UN to remove its name from the list.
+Besides the brutal war, Saudi Arabia has maintained an all-out blockade on Yemen since the beginning of 2015.
+The Saudi blockade deprived millions of Yemenis of their basic needs and pushed the war-torn country to the brink of famine.
+People here blame the United Nations for remaining silent toward the ongoing Saudi crimes against Yemenis, including the continued illegal detention of Yemeni oil ships which is a clear violation of the rights of the entire people of the war-ravaged nation.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_094713_831254.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_094713_831254.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210625_095220_608787)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The blockade of Yemen refers to a sea, land and air blockade on Yemen which started with the positioning of Saudi Arabian warships in Yemeni waters in 2015 with the Saudi Arabian-led intervention in Yemen. The United States fired at Houthi rebels in the region in October 2016.[1]. In November 2017, after a Houthi missile heading towards King Khalid International Airport was intercepted,[2]. the Saudi-led military coalition stated it would close all sea land and air ports to Yemen,[3]. but shortly began reopening them after criticism from the United Nations and over 20 aid groups.[4]. The blockade of Yemen has resulted in widespread starvation, to the extent that the United Nations has raised concerns about the possibility of it becoming the deadliest famine in decades.[5][6]. The World Health Organization announced that the number of suspected persons with cholera in Yemen reached approximately 500,000 people.[7][8]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The blockade of Yemen refers to a sea, land and air blockade on Yemen which started with the positioning of Saudi Arabian warships in Yemeni waters in 2015 with the Saudi Arabian-led intervention in Yemen. The United States fired at Houthi rebels in the region in October 2016.[1]. In November 2017, after a Houthi missile heading towards King Khalid International Airport was intercepted,[2]. the Saudi-led military coalition stated it would close all sea land and air ports to Yemen,[3]. but shortly began reopening them after criticism from the United Nations and over 20 aid groups.[4]. The blockade of Yemen has resulted in widespread starvation, to the extent that the United Nations has raised concerns about the possibility of it becoming the deadliest famine in decades.[5][6]. The World Health Organization announced that the number of suspected persons with cholera in Yemen reached approximately 500,000 people.[7][8]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The blockade of Yemen refers to a sea, land and air blockade on Yemen which started with the positioning of Saudi Arabian warships in Yemeni waters in 2015 with the Saudi Arabian-led intervention in Yemen. The United States fired at Houthi rebels in the region in October 2016.[1]. In November 2017, after a Houthi missile heading towards King Khalid International Airport was intercepted,[2]. the Saudi-led military coalition stated it would close all sea land and air ports to Yemen,[3]. but shortly began reopening them after criticism from the United Nations and over 20 aid groups.[4]. The blockade of Yemen has resulted in widespread starvation, to the extent that the United Nations has raised concerns about the possibility of it becoming the deadliest famine in decades.[5][6]. The World Health Organization announced that the number of suspected persons with cholera in Yemen reached approximately 500,000 people.[7][8]
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The blockade of Yemen refers to a sea, land and air blockade on Yemen which started with the positioning of Saudi Arabian warships in Yemeni waters in 2015 with the Saudi Arabian-led intervention in Yemen.The United States fired at Houthi rebels in the region in October 2016.[1].In November 2017, after a Houthi missile heading towards King Khalid International Airport was intercepted,[2].the Saudi-led military coalition stated it would close all sea land and air ports to Yemen,[3].but shortly began reopening them after criticism from the United Nations and over 20 aid groups.[4].The blockade of Yemen has resulted in widespread starvation, to the extent that the United Nations has raised concerns about the possibility of it becoming the deadliest famine in decades.[5][6].The World Health Organization announced that the number of suspected persons with cholera in Yemen reached approximately 500,000 people.[7][8]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The blockade of Yemen refers to a sea, land and air blockade on Yemen which started with the positioning of Saudi Arabian warships in Yemeni waters in 2015 with the Saudi Arabian-led intervention in Yemen.The United States fired at Houthi rebels in the region in October 2016.[1].In November 2017, after a Houthi missile heading towards King Khalid International Airport was intercepted,[2].the Saudi-led military coalition stated it would close all sea land and air ports to Yemen,[3].but shortly began reopening them after criticism from the United Nations and over 20 aid groups.[4].The blockade of Yemen has resulted in widespread starvation, to the extent that the United Nations has raised concerns about the possibility of it becoming the deadliest famine in decades.[5][6].The World Health Organization announced that the number of suspected persons with cholera in Yemen reached approximately 500,000 people.[7][8]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_095220_608787.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_095220_608787.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210625_095435_579631)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => According to the international law of naval blockade the naval measures conducted by the coalition led by Saudi Arabia do not amount to a naval blockade in the legal sense.[44]. It is said that neither the international law of contraband nor the United Nations Security Council Resolution 2216 of 14 April 2015 cover the extensive enforcement measures.[45]. Due to the devastating famine in Yemen and supply shortage of essential goods, which are caused by the enforcement measures, the naval operations off the coast of Yemen are criticized as a violation of international humanitarian law.[46]
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => According to the international law of naval blockade the naval measures conducted by the coalition led by Saudi Arabia do not amount to a naval blockade in the legal sense.[44]. It is said that neither the international law of contraband nor the United Nations Security Council Resolution 2216 of 14 April 2015 cover the extensive enforcement measures.[45]. Due to the devastating famine in Yemen and supply shortage of essential goods, which are caused by the enforcement measures, the naval operations off the coast of Yemen are criticized as a violation of international humanitarian law.[46]
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->According to the international law of naval blockade the naval measures conducted by the coalition led by Saudi Arabia do not amount to a naval blockade in the legal sense.[44]. It is said that neither the international law of contraband nor the United Nations Security Council Resolution 2216 of 14 April 2015 cover the extensive enforcement measures.[45]. Due to the devastating famine in Yemen and supply shortage of essential goods, which are caused by the enforcement measures, the naval operations off the coast of Yemen are criticized as a violation of international humanitarian law.[46]
+$matches ==>
+Array
+(
+    [0] => ]. 
+    [1] => ].
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => According to the international law of naval blockade the naval measures conducted by the coalition led by Saudi Arabia do not amount to a naval blockade in the legal sense.[44].It is said that neither the international law of contraband nor the United Nations Security Council Resolution 2216 of 14 April 2015 cover the extensive enforcement measures.[45].Due to the devastating famine in Yemen and supply shortage of essential goods, which are caused by the enforcement measures, the naval operations off the coast of Yemen are criticized as a violation of international humanitarian law.[46]
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>According to the international law of naval blockade the naval measures conducted by the coalition led by Saudi Arabia do not amount to a naval blockade in the legal sense.[44].It is said that neither the international law of contraband nor the United Nations Security Council Resolution 2216 of 14 April 2015 cover the extensive enforcement measures.[45].Due to the devastating famine in Yemen and supply shortage of essential goods, which are caused by the enforcement measures, the naval operations off the coast of Yemen are criticized as a violation of international humanitarian law.[46]
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_095435_579631.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_095435_579631.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210625_095758_116388)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In the first comment I concluded that it appears difficult to claim that a blockade can be imposed legally in a non-international armed conflict (NIAC). However, I assume that a blockade in a NIAC can be lawful. Against this background, this comment assesses whether the coalition nevertheless obeyed the law of naval blockade and standards of international humanitarian law (IHL).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => In the first comment I concluded that it appears difficult to claim that a blockade can be imposed legally in a non-international armed conflict (NIAC). However, I assume that a blockade in a NIAC can be lawful. Against this background, this comment assesses whether the coalition nevertheless obeyed the law of naval blockade and standards of international humanitarian law (IHL).
+    [1] => 
+
+    [2] => The law of naval blockades derives from the 1856 Paris Declaration, the 1909 London Declaration and the 1994 San Remo Manual on International Law Applicable to Armed Conflicts at Sea (SRM), whereby the SRM reflects customary international law. In my view, this legal regime sets limits to blockading States to protect civil population and international shipping and it is basically applicable to international armed conflicts only. However, given the fact that States irrespective of the lawfulness conduct blockades in a NIAC, application of this protective regime, let it be by analogy, is without alternative – a reasoning well known regarding the binding effects of IHL towards an aggressor.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => In the first comment I concluded that it appears difficult to claim that a blockade can be imposed legally in a non-international armed conflict (NIAC). However, I assume that a blockade in a NIAC can be lawful. Against this background, this comment assesses whether the coalition nevertheless obeyed the law of naval blockade and standards of international humanitarian law (IHL).
+    [1] => 
+
+    [2] => The law of naval blockades derives from the 1856 Paris Declaration, the 1909 London Declaration and the 1994 San Remo Manual on International Law Applicable to Armed Conflicts at Sea (SRM), whereby the SRM reflects customary international law. In my view, this legal regime sets limits to blockading States to protect civil population and international shipping and it is basically applicable to international armed conflicts only. However, given the fact that States irrespective of the lawfulness conduct blockades in a NIAC, application of this protective regime, let it be by analogy, is without alternative – a reasoning well known regarding the binding effects of IHL towards an aggressor.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In the first comment I concluded that it appears difficult to claim that a blockade can be imposed legally in a non-international armed conflict (NIAC). However, I assume that a blockade in a NIAC can be lawful. Against this background, this comment assesses whether the coalition nevertheless obeyed the law of naval blockade and standards of international humanitarian law (IHL).
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The law of naval blockades derives from the 1856 Paris Declaration, the 1909 London Declaration and the 1994 San Remo Manual on International Law Applicable to Armed Conflicts at Sea (SRM), whereby the SRM reflects customary international law. In my view, this legal regime sets limits to blockading States to protect civil population and international shipping and it is basically applicable to international armed conflicts only. However, given the fact that States irrespective of the lawfulness conduct blockades in a NIAC, application of this protective regime, let it be by analogy, is without alternative – a reasoning well known regarding the binding effects of IHL towards an aggressor.
+$matches ==>
+Array
+(
+    [0] => w. 
+    [1] => w.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => In the first comment I concluded that it appears difficult to claim that a blockade can be imposed legally in a non-international armed conflict (NIAC).However, I assume that a blockade in a NIAC can be lawful.Against this background, this comment assesses whether the coalition nevertheless obeyed the law of naval blockade and standards of international humanitarian law (IHL).
+    [1] => 
+
+    [2] => The law of naval blockades derives from the 1856 Paris Declaration, the 1909 London Declaration and the 1994 San Remo Manual on International Law Applicable to Armed Conflicts at Sea (SRM), whereby the SRM reflects customary international law.In my view, this legal regime sets limits to blockading States to protect civil population and international shipping and it is basically applicable to international armed conflicts only.However, given the fact that States irrespective of the lawfulness conduct blockades in a NIAC, application of this protective regime, let it be by analogy, is without alternative – a reasoning well known regarding the binding effects of IHL towards an aggressor.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>In the first comment I concluded that it appears difficult to claim that a blockade can be imposed legally in a non-international armed conflict (NIAC).However, I assume that a blockade in a NIAC can be lawful.Against this background, this comment assesses whether the coalition nevertheless obeyed the law of naval blockade and standards of international humanitarian law (IHL).
+The law of naval blockades derives from the 1856 Paris Declaration, the 1909 London Declaration and the 1994 San Remo Manual on International Law Applicable to Armed Conflicts at Sea (SRM), whereby the SRM reflects customary international law.In my view, this legal regime sets limits to blockading States to protect civil population and international shipping and it is basically applicable to international armed conflicts only.However, given the fact that States irrespective of the lawfulness conduct blockades in a NIAC, application of this protective regime, let it be by analogy, is without alternative – a reasoning well known regarding the binding effects of IHL towards an aggressor.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_095758_116388.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_095758_116388.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210625_100032_385061)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The announcement must literally be brought to the knowledge of States; it does not suffice to simply provide information to be called up. If the announcement does not entail details about commencement or the blockaded area, it is invalid under Article 10 London Declaration. As a consequence, ensuing enforcement measures would violate international law.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The law of naval blockade consists of four major rules. First, under Article 94 SRM the blockading State shall officially
+
+    [1] => 
+
+    [2] => ‚specify the commencement, duration, location, and extent of the blockade and the period within which vessels of neutral States may leave the blockaded coastline.‚
+
+    [3] => 
+
+    [4] => The announcement must literally be brought to the knowledge of States; it does not suffice to simply provide information to be called up. If the announcement does not entail details about commencement or the blockaded area, it is invalid under Article 10 London Declaration. As a consequence, ensuing enforcement measures would violate international law.
+    [5] => 
+
+    [6] => If it were the case that the coalition only issued press releases, as the one in which Major General Al-Asiri has been cited, and the press releases did not entail the required information, it will be a reason to render the announcement legally invalid.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The law of naval blockade consists of four major rules. First, under Article 94 SRM the blockading State shall officially
+
+$matches ==>
+Array
+(
+    [0] => y
+
+    [1] => y
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->‚specify the commencement, duration, location, and extent of the blockade and the period within which vessels of neutral States may leave the blockaded coastline.‚
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The law of naval blockade consists of four major rules. First, under Article 94 SRM the blockading State shall officially 
+    [1] => 
+
+    [2] => ‚specify the commencement, duration, location, and extent of the blockade and the period within which vessels of neutral States may leave the blockaded coastline.‚ 
+    [3] => 
+
+    [4] => The announcement must literally be brought to the knowledge of States; it does not suffice to simply provide information to be called up. If the announcement does not entail details about commencement or the blockaded area, it is invalid under Article 10 London Declaration. As a consequence, ensuing enforcement measures would violate international law.
+    [5] => 
+
+    [6] => If it were the case that the coalition only issued press releases, as the one in which Major General Al-Asiri has been cited, and the press releases did not entail the required information, it will be a reason to render the announcement legally invalid.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The law of naval blockade consists of four major rules. First, under Article 94 SRM the blockading State shall officially 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The announcement must literally be brought to the knowledge of States; it does not suffice to simply provide information to be called up. If the announcement does not entail details about commencement or the blockaded area, it is invalid under Article 10 London Declaration. As a consequence, ensuing enforcement measures would violate international law.
+$matches ==>
+Array
+(
+    [0] => p. 
+    [1] => p.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The law of naval blockade consists of four major rules.First, under Article 94 SRM the blockading State shall officially 
+    [1] => 
+
+    [2] => ‚specify the commencement, duration, location, and extent of the blockade and the period within which vessels of neutral States may leave the blockaded coastline.‚ 
+    [3] => 
+
+    [4] => The announcement must literally be brought to the knowledge of States; it does not suffice to simply provide information to be called up.If the announcement does not entail details about commencement or the blockaded area, it is invalid under Article 10 London Declaration.As a consequence, ensuing enforcement measures would violate international law.
+    [5] => 
+
+    [6] => If it were the case that the coalition only issued press releases, as the one in which Major General Al-Asiri has been cited, and the press releases did not entail the required information, it will be a reason to render the announcement legally invalid.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The law of naval blockade consists of four major rules.First, under Article 94 SRM the blockading State shall officially 
+‚specify the commencement, duration, location, and extent of the blockade and the period within which vessels of neutral States may leave the blockaded coastline.‚ 
+The announcement must literally be brought to the knowledge of States; it does not suffice to simply provide information to be called up.If the announcement does not entail details about commencement or the blockaded area, it is invalid under Article 10 London Declaration.As a consequence, ensuing enforcement measures would violate international law.
+If it were the case that the coalition only issued press releases, as the one in which Major General Al-Asiri has been cited, and the press releases did not entail the required information, it will be a reason to render the announcement legally invalid.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_100032_385061.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_100032_385061.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
