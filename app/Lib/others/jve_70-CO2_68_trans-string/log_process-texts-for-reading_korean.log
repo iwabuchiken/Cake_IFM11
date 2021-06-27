@@ -36639,3 +36639,171 @@ If it were the case that the coalition only issued press releases, as the one in
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210625_100032_385061.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_103050_120686)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 카타리파(라틴어: Cathari, 프랑스어: Catharisme, 오크어: Catarisme) 또는 알비파(영어: Albigensians), 순수파(라틴어: boni homines)는 12세기에서 13세기까지 프랑스 남부의 알비와 툴루즈를 중심으로 생겨난 기독교 교파이다. 이들의 교리는 이원론과 영지주의를 바탕으로 한 것이었다. 11세기에 주로 랑그도크지역에 전파되었으며 12세기에서 13세기까지 교세를 확장하였다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 카타리파(라틴어: Cathari, 프랑스어: Catharisme, 오크어: Catarisme) 또는 알비파(영어: Albigensians), 순수파(라틴어: boni homines)는 12세기에서 13세기까지 프랑스 남부의 알비와 툴루즈를 중심으로 생겨난 기독교 교파이다. 이들의 교리는 이원론과 영지주의를 바탕으로 한 것이었다. 11세기에 주로 랑그도크지역에 전파되었으며 12세기에서 13세기까지 교세를 확장하였다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->카타리파(라틴어: Cathari, 프랑스어: Catharisme, 오크어: Catarisme) 또는 알비파(영어: Albigensians), 순수파(라틴어: boni homines)는 12세기에서 13세기까지 프랑스 남부의 알비와 툴루즈를 중심으로 생겨난 기독교 교파이다. 이들의 교리는 이원론과 영지주의를 바탕으로 한 것이었다. 11세기에 주로 랑그도크지역에 전파되었으며 12세기에서 13세기까지 교세를 확장하였다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 카타리파(라틴어: Cathari, 프랑스어: Catharisme, 오크어: Catarisme) 또는 알비파(영어: Albigensians), 순수파(라틴어: boni homines)는 12세기에서 13세기까지 프랑스 남부의 알비와 툴루즈를 중심으로 생겨난 기독교 교파이다.이들의 교리는 이원론과 영지주의를 바탕으로 한 것이었다.11세기에 주로 랑그도크지역에 전파되었으며 12세기에서 13세기까지 교세를 확장하였다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>카타리파(라틴어: Cathari, 프랑스어: Catharisme, 오크어: Catarisme) 또는 알비파(영어: Albigensians), 순수파(라틴어: boni homines)는 12세기에서 13세기까지 프랑스 남부의 알비와 툴루즈를 중심으로 생겨난 기독교 교파이다.이들의 교리는 이원론과 영지주의를 바탕으로 한 것이었다.11세기에 주로 랑그도크지역에 전파되었으며 12세기에서 13세기까지 교세를 확장하였다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_103050_120686.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_103050_120686.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_103317_959896)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 카타리파의 교리는 아르메니아의 바오로파와 보고밀파의 영향을 받았다. 궁극적으로는 이 두 교파의 합병으로 카타리파가 만들어진 것이다. 또한 이들은 마니교에서도 영향을 받았다. 중세의 다른 많은 교파와 마찬가지로 카타리파 역시 내부에 다양한 사상적 편향이 존재했다. 영지주의에 경도된 분파나 이원론에 경도된 분파와 같이 카타리파 내부에서도 각자의 주장하는 바는 조금씩 달랐다. 일부는 로마 가톨릭교회의 교리를 수용하기도 하였다. 그들의 독특한 교리인 이원론은 사랑과 권세가 결코 양립할 수 없다는 믿음에서 나온 것이었다. 이러한 이원론에 입각하여 카타리파는 총체적으로 존재하는 하느님이 아닌 동등한 지위를 가진 둘로 된 하느님을 믿었다. 그들은 렉스 문디(라틴어: Rex Mundi→세상의 왕)이라 불리는 악마가 물질적 세계를 만들었으며 그가 육체를 전유하고 혼돈과 권세를 지닌다고 믿었다. 이에 반해 순수한 영혼이며 오점이 없는 사랑과 평화, 질서의 하느님이 그들을 구원하리라 믿었으며 그를 숭배하였다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 카타리파의 교리는 아르메니아의 바오로파와 보고밀파의 영향을 받았다. 궁극적으로는 이 두 교파의 합병으로 카타리파가 만들어진 것이다. 또한 이들은 마니교에서도 영향을 받았다. 중세의 다른 많은 교파와 마찬가지로 카타리파 역시 내부에 다양한 사상적 편향이 존재했다. 영지주의에 경도된 분파나 이원론에 경도된 분파와 같이 카타리파 내부에서도 각자의 주장하는 바는 조금씩 달랐다. 일부는 로마 가톨릭교회의 교리를 수용하기도 하였다. 그들의 독특한 교리인 이원론은 사랑과 권세가 결코 양립할 수 없다는 믿음에서 나온 것이었다. 이러한 이원론에 입각하여 카타리파는 총체적으로 존재하는 하느님이 아닌 동등한 지위를 가진 둘로 된 하느님을 믿었다. 그들은 렉스 문디(라틴어: Rex Mundi→세상의 왕)이라 불리는 악마가 물질적 세계를 만들었으며 그가 육체를 전유하고 혼돈과 권세를 지닌다고 믿었다. 이에 반해 순수한 영혼이며 오점이 없는 사랑과 평화, 질서의 하느님이 그들을 구원하리라 믿었으며 그를 숭배하였다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->카타리파의 교리는 아르메니아의 바오로파와 보고밀파의 영향을 받았다. 궁극적으로는 이 두 교파의 합병으로 카타리파가 만들어진 것이다. 또한 이들은 마니교에서도 영향을 받았다. 중세의 다른 많은 교파와 마찬가지로 카타리파 역시 내부에 다양한 사상적 편향이 존재했다. 영지주의에 경도된 분파나 이원론에 경도된 분파와 같이 카타리파 내부에서도 각자의 주장하는 바는 조금씩 달랐다. 일부는 로마 가톨릭교회의 교리를 수용하기도 하였다. 그들의 독특한 교리인 이원론은 사랑과 권세가 결코 양립할 수 없다는 믿음에서 나온 것이었다. 이러한 이원론에 입각하여 카타리파는 총체적으로 존재하는 하느님이 아닌 동등한 지위를 가진 둘로 된 하느님을 믿었다. 그들은 렉스 문디(라틴어: Rex Mundi→세상의 왕)이라 불리는 악마가 물질적 세계를 만들었으며 그가 육체를 전유하고 혼돈과 권세를 지닌다고 믿었다. 이에 반해 순수한 영혼이며 오점이 없는 사랑과 평화, 질서의 하느님이 그들을 구원하리라 믿었으며 그를 숭배하였다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 카타리파의 교리는 아르메니아의 바오로파와 보고밀파의 영향을 받았다.궁극적으로는 이 두 교파의 합병으로 카타리파가 만들어진 것이다.또한 이들은 마니교에서도 영향을 받았다.중세의 다른 많은 교파와 마찬가지로 카타리파 역시 내부에 다양한 사상적 편향이 존재했다.영지주의에 경도된 분파나 이원론에 경도된 분파와 같이 카타리파 내부에서도 각자의 주장하는 바는 조금씩 달랐다.일부는 로마 가톨릭교회의 교리를 수용하기도 하였다.그들의 독특한 교리인 이원론은 사랑과 권세가 결코 양립할 수 없다는 믿음에서 나온 것이었다.이러한 이원론에 입각하여 카타리파는 총체적으로 존재하는 하느님이 아닌 동등한 지위를 가진 둘로 된 하느님을 믿었다.그들은 렉스 문디(라틴어: Rex Mundi→세상의 왕)이라 불리는 악마가 물질적 세계를 만들었으며 그가 육체를 전유하고 혼돈과 권세를 지닌다고 믿었다.이에 반해 순수한 영혼이며 오점이 없는 사랑과 평화, 질서의 하느님이 그들을 구원하리라 믿었으며 그를 숭배하였다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>카타리파의 교리는 아르메니아의 바오로파와 보고밀파의 영향을 받았다.궁극적으로는 이 두 교파의 합병으로 카타리파가 만들어진 것이다.또한 이들은 마니교에서도 영향을 받았다.중세의 다른 많은 교파와 마찬가지로 카타리파 역시 내부에 다양한 사상적 편향이 존재했다.영지주의에 경도된 분파나 이원론에 경도된 분파와 같이 카타리파 내부에서도 각자의 주장하는 바는 조금씩 달랐다.일부는 로마 가톨릭교회의 교리를 수용하기도 하였다.그들의 독특한 교리인 이원론은 사랑과 권세가 결코 양립할 수 없다는 믿음에서 나온 것이었다.이러한 이원론에 입각하여 카타리파는 총체적으로 존재하는 하느님이 아닌 동등한 지위를 가진 둘로 된 하느님을 믿었다.그들은 렉스 문디(라틴어: Rex Mundi→세상의 왕)이라 불리는 악마가 물질적 세계를 만들었으며 그가 육체를 전유하고 혼돈과 권세를 지닌다고 믿었다.이에 반해 순수한 영혼이며 오점이 없는 사랑과 평화, 질서의 하느님이 그들을 구원하리라 믿었으며 그를 숭배하였다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_103317_959896.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_103317_959896.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_104116_306569)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 카타리파의 일부 분파에 따르면 지구에서 인간의 삶의 목적은 물질적인 것과의 연결을 끊고 권력을 포기하여 사랑의 법칙에 합치하는 것이라 주장하였다. 또다른 분파는 인간의 목적은 물질적인 것을 반환하고 이를 영적인 것으로 변화시키는 것이었다. 로마 가톨릭교회에서는 카타리파의 교의가 하느님의 전지전능함과 선함을 부정하는 것이자 육체를 갖춘 하느님의 아들인 예수의 완전성을 부정하는 것, 물질로 된 세계를 창조한 것은 본질적으로 악한 권세에 의한 것이라고 주장하는 것으로 판단하였다. 12세기 교황청은 알비파를 이단으로 파문했고, 1209년 알비파 탄압을 위해 알비 십자군을 일으켰다. 결국 카타리파는 로마 가톨릭교회의 탄압으로 1350년에 사라졌다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 카타리파의 일부 분파에 따르면 지구에서 인간의 삶의 목적은 물질적인 것과의 연결을 끊고 권력을 포기하여 사랑의 법칙에 합치하는 것이라 주장하였다. 또다른 분파는 인간의 목적은 물질적인 것을 반환하고 이를 영적인 것으로 변화시키는 것이었다. 로마 가톨릭교회에서는 카타리파의 교의가 하느님의 전지전능함과 선함을 부정하는 것이자 육체를 갖춘 하느님의 아들인 예수의 완전성을 부정하는 것, 물질로 된 세계를 창조한 것은 본질적으로 악한 권세에 의한 것이라고 주장하는 것으로 판단하였다. 12세기 교황청은 알비파를 이단으로 파문했고, 1209년 알비파 탄압을 위해 알비 십자군을 일으켰다. 결국 카타리파는 로마 가톨릭교회의 탄압으로 1350년에 사라졌다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->카타리파의 일부 분파에 따르면 지구에서 인간의 삶의 목적은 물질적인 것과의 연결을 끊고 권력을 포기하여 사랑의 법칙에 합치하는 것이라 주장하였다. 또다른 분파는 인간의 목적은 물질적인 것을 반환하고 이를 영적인 것으로 변화시키는 것이었다. 로마 가톨릭교회에서는 카타리파의 교의가 하느님의 전지전능함과 선함을 부정하는 것이자 육체를 갖춘 하느님의 아들인 예수의 완전성을 부정하는 것, 물질로 된 세계를 창조한 것은 본질적으로 악한 권세에 의한 것이라고 주장하는 것으로 판단하였다. 12세기 교황청은 알비파를 이단으로 파문했고, 1209년 알비파 탄압을 위해 알비 십자군을 일으켰다. 결국 카타리파는 로마 가톨릭교회의 탄압으로 1350년에 사라졌다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 카타리파의 일부 분파에 따르면 지구에서 인간의 삶의 목적은 물질적인 것과의 연결을 끊고 권력을 포기하여 사랑의 법칙에 합치하는 것이라 주장하였다.또다른 분파는 인간의 목적은 물질적인 것을 반환하고 이를 영적인 것으로 변화시키는 것이었다.로마 가톨릭교회에서는 카타리파의 교의가 하느님의 전지전능함과 선함을 부정하는 것이자 육체를 갖춘 하느님의 아들인 예수의 완전성을 부정하는 것, 물질로 된 세계를 창조한 것은 본질적으로 악한 권세에 의한 것이라고 주장하는 것으로 판단하였다.12세기 교황청은 알비파를 이단으로 파문했고, 1209년 알비파 탄압을 위해 알비 십자군을 일으켰다.결국 카타리파는 로마 가톨릭교회의 탄압으로 1350년에 사라졌다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>카타리파의 일부 분파에 따르면 지구에서 인간의 삶의 목적은 물질적인 것과의 연결을 끊고 권력을 포기하여 사랑의 법칙에 합치하는 것이라 주장하였다.또다른 분파는 인간의 목적은 물질적인 것을 반환하고 이를 영적인 것으로 변화시키는 것이었다.로마 가톨릭교회에서는 카타리파의 교의가 하느님의 전지전능함과 선함을 부정하는 것이자 육체를 갖춘 하느님의 아들인 예수의 완전성을 부정하는 것, 물질로 된 세계를 창조한 것은 본질적으로 악한 권세에 의한 것이라고 주장하는 것으로 판단하였다.12세기 교황청은 알비파를 이단으로 파문했고, 1209년 알비파 탄압을 위해 알비 십자군을 일으켰다.결국 카타리파는 로마 가톨릭교회의 탄압으로 1350년에 사라졌다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_104116_306569.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_104116_306569.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_105133_933641)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Katarzy (katarowie) (od gr. καθαροί katharoi – „czyści”), inaczej Albigensi – przedstawiciele dualistycznego ruchu religijnego działającego w XI–XIII wieku w południowej Francji i północnych Włoszech, skierowanego przeciw ustrojowi feudalnemu i hierarchii kościelnej, głoszącego i praktykującego zasadę dobrowolnego ubóstwa, nieuznający składania przysiąg, służby w wojsku, oddawania czci krzyżowi i idei czyśćca. Zwalczani przez papiestwo (m.in. przez krucjaty, inkwizycję)[1], które doprowadziło do ich zniszczenia[2][3]. Uznawani przez Kościół katolicki za heretyków.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Katarzy (katarowie) (od gr. καθαροί katharoi – „czyści”), inaczej Albigensi – przedstawiciele dualistycznego ruchu religijnego działającego w XI–XIII wieku w południowej Francji i północnych Włoszech, skierowanego przeciw ustrojowi feudalnemu i hierarchii kościelnej, głoszącego i praktykującego zasadę dobrowolnego ubóstwa, nieuznający składania przysiąg, służby w wojsku, oddawania czci krzyżowi i idei czyśćca. Zwalczani przez papiestwo (m.in. przez krucjaty, inkwizycję)[1], które doprowadziło do ich zniszczenia[2][3]. Uznawani przez Kościół katolicki za heretyków.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Katarzy (katarowie) (od gr. καθαροί katharoi – „czyści”), inaczej Albigensi – przedstawiciele dualistycznego ruchu religijnego działającego w XI–XIII wieku w południowej Francji i północnych Włoszech, skierowanego przeciw ustrojowi feudalnemu i hierarchii kościelnej, głoszącego i praktykującego zasadę dobrowolnego ubóstwa, nieuznający składania przysiąg, służby w wojsku, oddawania czci krzyżowi i idei czyśćca. Zwalczani przez papiestwo (m.in. przez krucjaty, inkwizycję)[1], które doprowadziło do ich zniszczenia[2][3]. Uznawani przez Kościół katolicki za heretyków.
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Katarzy (katarowie) (od gr.καθαροί katharoi – „czyści”), inaczej Albigensi – przedstawiciele dualistycznego ruchu religijnego działającego w XI–XIII wieku w południowej Francji i północnych Włoszech, skierowanego przeciw ustrojowi feudalnemu i hierarchii kościelnej, głoszącego i praktykującego zasadę dobrowolnego ubóstwa, nieuznający składania przysiąg, służby w wojsku, oddawania czci krzyżowi i idei czyśćca.Zwalczani przez papiestwo (m.in.przez krucjaty, inkwizycję)[1], które doprowadziło do ich zniszczenia[2][3].Uznawani przez Kościół katolicki za heretyków.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Katarzy (katarowie) (od gr.καθαροί katharoi – „czyści”), inaczej Albigensi – przedstawiciele dualistycznego ruchu religijnego działającego w XI–XIII wieku w południowej Francji i północnych Włoszech, skierowanego przeciw ustrojowi feudalnemu i hierarchii kościelnej, głoszącego i praktykującego zasadę dobrowolnego ubóstwa, nieuznający składania przysiąg, służby w wojsku, oddawania czci krzyżowi i idei czyśćca.Zwalczani przez papiestwo (m.in.przez krucjaty, inkwizycję)[1], które doprowadziło do ich zniszczenia[2][3].Uznawani przez Kościół katolicki za heretyków.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_105133_933641.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_105133_933641.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
