@@ -36807,3 +36807,1780 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_105133_933641.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_211624_751961)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A safety group from the US Centers for Disease Control and Prevention (CDC) recently said that there’s a “likely association" between myocarditis, a rare inflammatory condition of the heart, for young adults and adolescents after receiving their second dose of either the Pfizer or Moderna Covid-19 vaccines. The fact that the media is largely brushing this aside and countries aren’t pulling them pending a safety review, like they did with the Johnson & Johnson or AstraZeneca vaccines, shows an innate bias towards for-profit medicine.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] =>  Pfizer’s and Moderna’s offerings seem to be getting a much easier ride in the press than other Covid-19 vaccines available. Could this possibly be because they’re the only for-profit jabs on the market?
+
+    [1] => 
+
+    [2] => A safety group from the US Centers for Disease Control and Prevention (CDC) recently said that there’s a “likely association" between myocarditis, a rare inflammatory condition of the heart, for young adults and adolescents after receiving their second dose of either the Pfizer or Moderna Covid-19 vaccines. The fact that the media is largely brushing this aside and countries aren’t pulling them pending a safety review, like they did with the Johnson & Johnson or AstraZeneca vaccines, shows an innate bias towards for-profit medicine.
+    [3] => 
+
+    [4] => There have been instances like this before with the mRNA vaccines. Whereas blood clotting concerns have been the impetus for some countries to pull the Johnson & Johnson or AstraZeneca vaccines until a safety review could be undertaken, a study by Oxford University published on April 15 suggests that these complications actually have a higher incidence with the Pfizer and Moderna vaccines.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line --> Pfizer’s and Moderna’s offerings seem to be getting a much easier ride in the press than other Covid-19 vaccines available. Could this possibly be because they’re the only for-profit jabs on the market?
+
+$matches ==>
+Array
+(
+    [0] => ?
+
+    [1] => ?
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] =>  Pfizer’s and Moderna’s offerings seem to be getting a much easier ride in the press than other Covid-19 vaccines available. Could this possibly be because they’re the only for-profit jabs on the market? 
+    [1] => 
+
+    [2] => A safety group from the US Centers for Disease Control and Prevention (CDC) recently said that there’s a “likely association" between myocarditis, a rare inflammatory condition of the heart, for young adults and adolescents after receiving their second dose of either the Pfizer or Moderna Covid-19 vaccines. The fact that the media is largely brushing this aside and countries aren’t pulling them pending a safety review, like they did with the Johnson & Johnson or AstraZeneca vaccines, shows an innate bias towards for-profit medicine.
+    [3] => 
+
+    [4] => There have been instances like this before with the mRNA vaccines. Whereas blood clotting concerns have been the impetus for some countries to pull the Johnson & Johnson or AstraZeneca vaccines until a safety review could be undertaken, a study by Oxford University published on April 15 suggests that these complications actually have a higher incidence with the Pfizer and Moderna vaccines.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line --> Pfizer’s and Moderna’s offerings seem to be getting a much easier ride in the press than other Covid-19 vaccines available. Could this possibly be because they’re the only for-profit jabs on the market? 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->A safety group from the US Centers for Disease Control and Prevention (CDC) recently said that there’s a “likely association" between myocarditis, a rare inflammatory condition of the heart, for young adults and adolescents after receiving their second dose of either the Pfizer or Moderna Covid-19 vaccines. The fact that the media is largely brushing this aside and countries aren’t pulling them pending a safety review, like they did with the Johnson & Johnson or AstraZeneca vaccines, shows an innate bias towards for-profit medicine.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->There have been instances like this before with the mRNA vaccines. Whereas blood clotting concerns have been the impetus for some countries to pull the Johnson & Johnson or AstraZeneca vaccines until a safety review could be undertaken, a study by Oxford University published on April 15 suggests that these complications actually have a higher incidence with the Pfizer and Moderna vaccines.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] =>  Pfizer’s and Moderna’s offerings seem to be getting a much easier ride in the press than other Covid-19 vaccines available.Could this possibly be because they’re the only for-profit jabs on the market? 
+    [1] => 
+
+    [2] => A safety group from the US Centers for Disease Control and Prevention (CDC) recently said that there’s a “likely association" between myocarditis, a rare inflammatory condition of the heart, for young adults and adolescents after receiving their second dose of either the Pfizer or Moderna Covid-19 vaccines.The fact that the media is largely brushing this aside and countries aren’t pulling them pending a safety review, like they did with the Johnson & Johnson or AstraZeneca vaccines, shows an innate bias towards for-profit medicine.
+    [3] => 
+
+    [4] => There have been instances like this before with the mRNA vaccines.Whereas blood clotting concerns have been the impetus for some countries to pull the Johnson & Johnson or AstraZeneca vaccines until a safety review could be undertaken, a study by Oxford University published on April 15 suggests that these complications actually have a higher incidence with the Pfizer and Moderna vaccines.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==> Pfizer’s and Moderna’s offerings seem to be getting a much easier ride in the press than other Covid-19 vaccines available.Could this possibly be because they’re the only for-profit jabs on the market? 
+A safety group from the US Centers for Disease Control and Prevention (CDC) recently said that there’s a “likely association" between myocarditis, a rare inflammatory condition of the heart, for young adults and adolescents after receiving their second dose of either the Pfizer or Moderna Covid-19 vaccines.The fact that the media is largely brushing this aside and countries aren’t pulling them pending a safety review, like they did with the Johnson & Johnson or AstraZeneca vaccines, shows an innate bias towards for-profit medicine.
+There have been instances like this before with the mRNA vaccines.Whereas blood clotting concerns have been the impetus for some countries to pull the Johnson & Johnson or AstraZeneca vaccines until a safety review could be undertaken, a study by Oxford University published on April 15 suggests that these complications actually have a higher incidence with the Pfizer and Moderna vaccines.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_211624_751961.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_211624_751961.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_211949_757285)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'First, the Moderna and Pfizer vaccines are the only two for-profit vaccines on the market. The already-massive drug company Pfizer raked in $900 million in the first quarter of this year. Big Pharma is a massive lobby in Washington and is also a huge patron of the news media, so it’s no wonder everyone’s hushing up about any potential dangers from these vaccines.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => According to the study, the risk of portal vein thrombosis (a blood clot in the liver) appears to be 30 times higher with the mRNA vaccines made by Moderna and Pfizer than with AstraZeneca’s. As well, the risk of cerebral vein thrombosis (a blood clot in the brain) appears to be quite similar with both AstraZeneca (five in a million) and those mRNA vaccines (four in a million).  
+
+    [1] => 
+
+    [2] => This was pretty much ignored in the media and there’s been no public outrage about this. It begs the question in both of these cases, why? There could be many reasons but I think two reasons immediately come to mind that are obviously interlinked. 
+
+    [3] => 
+
+    [4] => First, the Moderna and Pfizer vaccines are the only two for-profit vaccines on the market. The already-massive drug company Pfizer raked in $900 million in the first quarter of this year. Big Pharma is a massive lobby in Washington and is also a huge patron of the news media, so it’s no wonder everyone’s hushing up about any potential dangers from these vaccines.
+    [5] => 
+
+    [6] => There’s simply too much at stake for the US and its ultra-wealthy ruling class to make a fuss about these particular vaccines even though they did the same thing with other vaccines that are being sold not-for-profit. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->According to the study, the risk of portal vein thrombosis (a blood clot in the liver) appears to be 30 times higher with the mRNA vaccines made by Moderna and Pfizer than with AstraZeneca’s. As well, the risk of cerebral vein thrombosis (a blood clot in the brain) appears to be quite similar with both AstraZeneca (five in a million) and those mRNA vaccines (four in a million).  
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->This was pretty much ignored in the media and there’s been no public outrage about this. It begs the question in both of these cases, why? There could be many reasons but I think two reasons immediately come to mind that are obviously interlinked. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => According to the study, the risk of portal vein thrombosis (a blood clot in the liver) appears to be 30 times higher with the mRNA vaccines made by Moderna and Pfizer than with AstraZeneca’s. As well, the risk of cerebral vein thrombosis (a blood clot in the brain) appears to be quite similar with both AstraZeneca (five in a million) and those mRNA vaccines (four in a million).   
+    [1] => 
+
+    [2] => This was pretty much ignored in the media and there’s been no public outrage about this. It begs the question in both of these cases, why? There could be many reasons but I think two reasons immediately come to mind that are obviously interlinked.  
+    [3] => 
+
+    [4] => First, the Moderna and Pfizer vaccines are the only two for-profit vaccines on the market. The already-massive drug company Pfizer raked in $900 million in the first quarter of this year. Big Pharma is a massive lobby in Washington and is also a huge patron of the news media, so it’s no wonder everyone’s hushing up about any potential dangers from these vaccines.
+    [5] => 
+
+    [6] => There’s simply too much at stake for the US and its ultra-wealthy ruling class to make a fuss about these particular vaccines even though they did the same thing with other vaccines that are being sold not-for-profit. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->According to the study, the risk of portal vein thrombosis (a blood clot in the liver) appears to be 30 times higher with the mRNA vaccines made by Moderna and Pfizer than with AstraZeneca’s. As well, the risk of cerebral vein thrombosis (a blood clot in the brain) appears to be quite similar with both AstraZeneca (five in a million) and those mRNA vaccines (four in a million).   
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->This was pretty much ignored in the media and there’s been no public outrage about this. It begs the question in both of these cases, why? There could be many reasons but I think two reasons immediately come to mind that are obviously interlinked.  
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->First, the Moderna and Pfizer vaccines are the only two for-profit vaccines on the market. The already-massive drug company Pfizer raked in $900 million in the first quarter of this year. Big Pharma is a massive lobby in Washington and is also a huge patron of the news media, so it’s no wonder everyone’s hushing up about any potential dangers from these vaccines.
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->There’s simply too much at stake for the US and its ultra-wealthy ruling class to make a fuss about these particular vaccines even though they did the same thing with other vaccines that are being sold not-for-profit. 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => According to the study, the risk of portal vein thrombosis (a blood clot in the liver) appears to be 30 times higher with the mRNA vaccines made by Moderna and Pfizer than with AstraZeneca’s.As well, the risk of cerebral vein thrombosis (a blood clot in the brain) appears to be quite similar with both AstraZeneca (five in a million) and those mRNA vaccines (four in a million).  
+    [1] => 
+
+    [2] => This was pretty much ignored in the media and there’s been no public outrage about this.It begs the question in both of these cases, why? There could be many reasons but I think two reasons immediately come to mind that are obviously interlinked. 
+    [3] => 
+
+    [4] => First, the Moderna and Pfizer vaccines are the only two for-profit vaccines on the market.The already-massive drug company Pfizer raked in $900 million in the first quarter of this year.Big Pharma is a massive lobby in Washington and is also a huge patron of the news media, so it’s no wonder everyone’s hushing up about any potential dangers from these vaccines.
+    [5] => 
+
+    [6] => There’s simply too much at stake for the US and its ultra-wealthy ruling class to make a fuss about these particular vaccines even though they did the same thing with other vaccines that are being sold not-for-profit.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>According to the study, the risk of portal vein thrombosis (a blood clot in the liver) appears to be 30 times higher with the mRNA vaccines made by Moderna and Pfizer than with AstraZeneca’s.As well, the risk of cerebral vein thrombosis (a blood clot in the brain) appears to be quite similar with both AstraZeneca (five in a million) and those mRNA vaccines (four in a million).  
+This was pretty much ignored in the media and there’s been no public outrage about this.It begs the question in both of these cases, why? There could be many reasons but I think two reasons immediately come to mind that are obviously interlinked. 
+First, the Moderna and Pfizer vaccines are the only two for-profit vaccines on the market.The already-massive drug company Pfizer raked in $900 million in the first quarter of this year.Big Pharma is a massive lobby in Washington and is also a huge patron of the news media, so it’s no wonder everyone’s hushing up about any potential dangers from these vaccines.
+There’s simply too much at stake for the US and its ultra-wealthy ruling class to make a fuss about these particular vaccines even though they did the same thing with other vaccines that are being sold not-for-profit.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_211949_757285.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_211949_757285.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_212250_058137)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Second, these vaccines, Pfizer in particular, are the cornerstone of the US-led global vaccination effort that has now pledged 1 billion doses to poor countries. If it were the case that these vaccines were pulled, countries might lose faith in them, pull them and then the US would lose some of the soft power it’s looking for through these donations. The US wants to use these vaccines to expand its global influence and prove that “democracy” (neoliberal capitalism) is the best socioeconomic system to spur innovation and provide basic necessities for people, which is clearly doomed to fail since the severity of the Covid-19 pandemic was driven by this system in the first place.Put simply, the US wants to pull a “come-from-behind” victory on the pandemic and prove that its brand of for-profit medicine can address a global health emergency even though putting profits ahead of people is exactly why millions of people, including over 600,000 Americans, died from Covid-19. At the same time, Moderna and Pfizer are more than happy to lap up profits paid for mainly by Johnny Taxpayer. To be perfectly clear, I am not advocating against taking mRNA vaccines. These vaccines are shown to be highly effective against transmission, hospitalization and death, so of course you should take them. Any potential risks are far outweighed by potential complications from actually catching Covid-19, especially as more virulent variants, like the Delta or Gamma variants, become predominant in many parts of the world.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Second, these vaccines, Pfizer in particular, are the cornerstone of the US-led global vaccination effort that has now pledged 1 billion doses to poor countries. If it were the case that these vaccines were pulled, countries might lose faith in them, pull them and then the US would lose some of the soft power it’s looking for through these donations. The US wants to use these vaccines to expand its global influence and prove that “democracy” (neoliberal capitalism) is the best socioeconomic system to spur innovation and provide basic necessities for people, which is clearly doomed to fail since the severity of the Covid-19 pandemic was driven by this system in the first place.Put simply, the US wants to pull a “come-from-behind” victory on the pandemic and prove that its brand of for-profit medicine can address a global health emergency even though putting profits ahead of people is exactly why millions of people, including over 600,000 Americans, died from Covid-19. At the same time, Moderna and Pfizer are more than happy to lap up profits paid for mainly by Johnny Taxpayer. To be perfectly clear, I am not advocating against taking mRNA vaccines. These vaccines are shown to be highly effective against transmission, hospitalization and death, so of course you should take them. Any potential risks are far outweighed by potential complications from actually catching Covid-19, especially as more virulent variants, like the Delta or Gamma variants, become predominant in many parts of the world.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Second, these vaccines, Pfizer in particular, are the cornerstone of the US-led global vaccination effort that has now pledged 1 billion doses to poor countries. If it were the case that these vaccines were pulled, countries might lose faith in them, pull them and then the US would lose some of the soft power it’s looking for through these donations. The US wants to use these vaccines to expand its global influence and prove that “democracy” (neoliberal capitalism) is the best socioeconomic system to spur innovation and provide basic necessities for people, which is clearly doomed to fail since the severity of the Covid-19 pandemic was driven by this system in the first place.Put simply, the US wants to pull a “come-from-behind” victory on the pandemic and prove that its brand of for-profit medicine can address a global health emergency even though putting profits ahead of people is exactly why millions of people, including over 600,000 Americans, died from Covid-19. At the same time, Moderna and Pfizer are more than happy to lap up profits paid for mainly by Johnny Taxpayer. To be perfectly clear, I am not advocating against taking mRNA vaccines. These vaccines are shown to be highly effective against transmission, hospitalization and death, so of course you should take them. Any potential risks are far outweighed by potential complications from actually catching Covid-19, especially as more virulent variants, like the Delta or Gamma variants, become predominant in many parts of the world.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Second, these vaccines, Pfizer in particular, are the cornerstone of the US-led global vaccination effort that has now pledged 1 billion doses to poor countries.If it were the case that these vaccines were pulled, countries might lose faith in them, pull them and then the US would lose some of the soft power it’s looking for through these donations.The US wants to use these vaccines to expand its global influence and prove that “democracy” (neoliberal capitalism) is the best socioeconomic system to spur innovation and provide basic necessities for people, which is clearly doomed to fail since the severity of the Covid-19 pandemic was driven by this system in the first place.Put simply, the US wants to pull a “come-from-behind” victory on the pandemic and prove that its brand of for-profit medicine can address a global health emergency even though putting profits ahead of people is exactly why millions of people, including over 600,000 Americans, died from Covid-19. At the same time, Moderna and Pfizer are more than happy to lap up profits paid for mainly by Johnny Taxpayer.To be perfectly clear, I am not advocating against taking mRNA vaccines.These vaccines are shown to be highly effective against transmission, hospitalization and death, so of course you should take them.Any potential risks are far outweighed by potential complications from actually catching Covid-19, especially as more virulent variants, like the Delta or Gamma variants, become predominant in many parts of the world.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Second, these vaccines, Pfizer in particular, are the cornerstone of the US-led global vaccination effort that has now pledged 1 billion doses to poor countries.If it were the case that these vaccines were pulled, countries might lose faith in them, pull them and then the US would lose some of the soft power it’s looking for through these donations.The US wants to use these vaccines to expand its global influence and prove that “democracy” (neoliberal capitalism) is the best socioeconomic system to spur innovation and provide basic necessities for people, which is clearly doomed to fail since the severity of the Covid-19 pandemic was driven by this system in the first place.Put simply, the US wants to pull a “come-from-behind” victory on the pandemic and prove that its brand of for-profit medicine can address a global health emergency even though putting profits ahead of people is exactly why millions of people, including over 600,000 Americans, died from Covid-19. At the same time, Moderna and Pfizer are more than happy to lap up profits paid for mainly by Johnny Taxpayer.To be perfectly clear, I am not advocating against taking mRNA vaccines.These vaccines are shown to be highly effective against transmission, hospitalization and death, so of course you should take them.Any potential risks are far outweighed by potential complications from actually catching Covid-19, especially as more virulent variants, like the Delta or Gamma variants, become predominant in many parts of the world.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_212250_058137.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_212250_058137.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_212532_306014)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => This is no doubt a solid reason why public health experts are not in an uproar about potential dangers from the mRNA vaccines, since they’re the most widely available in the United States and many other countries. This is especially true if you live in a country like the US, where now virtually every Covid-19 death is preventable with vaccination. With governments unlikely to reinstate social distancing measures when variant-driven cases swing up, getting inoculated is crucial to protecting your health. However, what I’m trying to say here is that when these arguments are only used to defend for-profit companies’ products, and thus help them profit even more, it reeks of corruption. This corruption becomes even more obvious when media outlets glorify Big Pharma, only to rediscover their critical faculties when they write about vaccines developed in countries like China, Russia, Iran or Cuba, as well as not-for-profit Western-developed vaccines like AstraZeneca or Johnson & Johnson. The fact is that the best vaccine is the one you have access to, therefore no vaccine should be getting biased coverage or attention from media outlets or government officials. Like this story? Share it with a friend!
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => This is no doubt a solid reason why public health experts are not in an uproar about potential dangers from the mRNA vaccines, since they’re the most widely available in the United States and many other countries. This is especially true if you live in a country like the US, where now virtually every Covid-19 death is preventable with vaccination. With governments unlikely to reinstate social distancing measures when variant-driven cases swing up, getting inoculated is crucial to protecting your health. However, what I’m trying to say here is that when these arguments are only used to defend for-profit companies’ products, and thus help them profit even more, it reeks of corruption. This corruption becomes even more obvious when media outlets glorify Big Pharma, only to rediscover their critical faculties when they write about vaccines developed in countries like China, Russia, Iran or Cuba, as well as not-for-profit Western-developed vaccines like AstraZeneca or Johnson & Johnson. The fact is that the best vaccine is the one you have access to, therefore no vaccine should be getting biased coverage or attention from media outlets or government officials. Like this story? Share it with a friend!
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->This is no doubt a solid reason why public health experts are not in an uproar about potential dangers from the mRNA vaccines, since they’re the most widely available in the United States and many other countries. This is especially true if you live in a country like the US, where now virtually every Covid-19 death is preventable with vaccination. With governments unlikely to reinstate social distancing measures when variant-driven cases swing up, getting inoculated is crucial to protecting your health. However, what I’m trying to say here is that when these arguments are only used to defend for-profit companies’ products, and thus help them profit even more, it reeks of corruption. This corruption becomes even more obvious when media outlets glorify Big Pharma, only to rediscover their critical faculties when they write about vaccines developed in countries like China, Russia, Iran or Cuba, as well as not-for-profit Western-developed vaccines like AstraZeneca or Johnson & Johnson. The fact is that the best vaccine is the one you have access to, therefore no vaccine should be getting biased coverage or attention from media outlets or government officials. Like this story? Share it with a friend!
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => This is no doubt a solid reason why public health experts are not in an uproar about potential dangers from the mRNA vaccines, since they’re the most widely available in the United States and many other countries.This is especially true if you live in a country like the US, where now virtually every Covid-19 death is preventable with vaccination.With governments unlikely to reinstate social distancing measures when variant-driven cases swing up, getting inoculated is crucial to protecting your health.However, what I’m trying to say here is that when these arguments are only used to defend for-profit companies’ products, and thus help them profit even more, it reeks of corruption.This corruption becomes even more obvious when media outlets glorify Big Pharma, only to rediscover their critical faculties when they write about vaccines developed in countries like China, Russia, Iran or Cuba, as well as not-for-profit Western-developed vaccines like AstraZeneca or Johnson & Johnson.The fact is that the best vaccine is the one you have access to, therefore no vaccine should be getting biased coverage or attention from media outlets or government officials.Like this story? Share it with a friend!
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>This is no doubt a solid reason why public health experts are not in an uproar about potential dangers from the mRNA vaccines, since they’re the most widely available in the United States and many other countries.This is especially true if you live in a country like the US, where now virtually every Covid-19 death is preventable with vaccination.With governments unlikely to reinstate social distancing measures when variant-driven cases swing up, getting inoculated is crucial to protecting your health.However, what I’m trying to say here is that when these arguments are only used to defend for-profit companies’ products, and thus help them profit even more, it reeks of corruption.This corruption becomes even more obvious when media outlets glorify Big Pharma, only to rediscover their critical faculties when they write about vaccines developed in countries like China, Russia, Iran or Cuba, as well as not-for-profit Western-developed vaccines like AstraZeneca or Johnson & Johnson.The fact is that the best vaccine is the one you have access to, therefore no vaccine should be getting biased coverage or attention from media outlets or government officials.Like this story? Share it with a friend!
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_212532_306014.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_212532_306014.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_231048_362741)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A recent PBS documentary by Henry Louis Gates about the Black church is a reminder of the vital role the institution has played in the survival and continuing struggles of an oppressed community. While Black Christians have played a vital role in the development of the Black Radical Tradition, the documentary also highlights the sudden, diminished leadership role the Black church played in movements after Dr. Martin Luther King’s assassination. In recent years, there have been repeated comments about the low-profile participation of the Black church in the Black Lives Matter movement.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => “Yeshua (Jesus) instructed his followers to arm themselves for self-defense and to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance.”
+
+    [1] => 
+
+    [2] => “Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself.”
+
+    [3] => 
+
+    [4] => A recent PBS documentary by Henry Louis Gates about the Black church is a reminder of the vital role the institution has played in the survival and continuing struggles of an oppressed community. While Black Christians have played a vital role in the development of the Black Radical Tradition, the documentary also highlights the sudden, diminished leadership role the Black church played in movements after Dr. Martin Luther King’s assassination. In recent years, there have been repeated comments about the low-profile participation of the Black church in the Black Lives Matter movement.
+    [5] => 
+
+    [6] => Notwithstanding recent history, it will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution. That’s because Christianity has been radical from the start. Yeshua (“Jesus”) himself emerged from a poverty ravaged community of brown-skinned folks who daily endured surveillance, extortion, harassment, and violent attacks by white Roman soldier-cops deployed to First Century Palestine. We know from Luke 22:36 that, in response, Yeshua instructed his followers to arm themselves for self-defense. This group also engaged in an extended campaign to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance. The first Christians also had their share of political prisoners. In many ways they were strikingly similar to the radical organization started in Oakland, California in 1966 by a small band of brothers in berets and black leather.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->“Yeshua (Jesus) instructed his followers to arm themselves for self-defense and to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => “Yeshua (Jesus) instructed his followers to arm themselves for self-defense and to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance.” 
+    [1] => 
+
+    [2] => “Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself.” 
+    [3] => 
+
+    [4] => A recent PBS documentary by Henry Louis Gates about the Black church is a reminder of the vital role the institution has played in the survival and continuing struggles of an oppressed community. While Black Christians have played a vital role in the development of the Black Radical Tradition, the documentary also highlights the sudden, diminished leadership role the Black church played in movements after Dr. Martin Luther King’s assassination. In recent years, there have been repeated comments about the low-profile participation of the Black church in the Black Lives Matter movement.
+    [5] => 
+
+    [6] => Notwithstanding recent history, it will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution. That’s because Christianity has been radical from the start. Yeshua (“Jesus”) himself emerged from a poverty ravaged community of brown-skinned folks who daily endured surveillance, extortion, harassment, and violent attacks by white Roman soldier-cops deployed to First Century Palestine. We know from Luke 22:36 that, in response, Yeshua instructed his followers to arm themselves for self-defense. This group also engaged in an extended campaign to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance. The first Christians also had their share of political prisoners. In many ways they were strikingly similar to the radical organization started in Oakland, California in 1966 by a small band of brothers in berets and black leather.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->A recent PBS documentary by Henry Louis Gates about the Black church is a reminder of the vital role the institution has played in the survival and continuing struggles of an oppressed community. While Black Christians have played a vital role in the development of the Black Radical Tradition, the documentary also highlights the sudden, diminished leadership role the Black church played in movements after Dr. Martin Luther King’s assassination. In recent years, there have been repeated comments about the low-profile participation of the Black church in the Black Lives Matter movement.
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Notwithstanding recent history, it will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution. That’s because Christianity has been radical from the start. Yeshua (“Jesus”) himself emerged from a poverty ravaged community of brown-skinned folks who daily endured surveillance, extortion, harassment, and violent attacks by white Roman soldier-cops deployed to First Century Palestine. We know from Luke 22:36 that, in response, Yeshua instructed his followers to arm themselves for self-defense. This group also engaged in an extended campaign to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance. The first Christians also had their share of political prisoners. In many ways they were strikingly similar to the radical organization started in Oakland, California in 1966 by a small band of brothers in berets and black leather.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => “Yeshua (Jesus) instructed his followers to arm themselves for self-defense and to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance.” 
+    [1] => 
+
+    [2] => “Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself.” 
+    [3] => 
+
+    [4] => A recent PBS documentary by Henry Louis Gates about the Black church is a reminder of the vital role the institution has played in the survival and continuing struggles of an oppressed community.While Black Christians have played a vital role in the development of the Black Radical Tradition, the documentary also highlights the sudden, diminished leadership role the Black church played in movements after Dr.Martin Luther King’s assassination.In recent years, there have been repeated comments about the low-profile participation of the Black church in the Black Lives Matter movement.
+    [5] => 
+
+    [6] => Notwithstanding recent history, it will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution.That’s because Christianity has been radical from the start.Yeshua (“Jesus”) himself emerged from a poverty ravaged community of brown-skinned folks who daily endured surveillance, extortion, harassment, and violent attacks by white Roman soldier-cops deployed to First Century Palestine.We know from Luke 22:36 that, in response, Yeshua instructed his followers to arm themselves for self-defense.This group also engaged in an extended campaign to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance.The first Christians also had their share of political prisoners.In many ways they were strikingly similar to the radical organization started in Oakland, California in 1966 by a small band of brothers in berets and black leather.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>“Yeshua (Jesus) instructed his followers to arm themselves for self-defense and to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance.” 
+“Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself.” 
+A recent PBS documentary by Henry Louis Gates about the Black church is a reminder of the vital role the institution has played in the survival and continuing struggles of an oppressed community.While Black Christians have played a vital role in the development of the Black Radical Tradition, the documentary also highlights the sudden, diminished leadership role the Black church played in movements after Dr.Martin Luther King’s assassination.In recent years, there have been repeated comments about the low-profile participation of the Black church in the Black Lives Matter movement.
+Notwithstanding recent history, it will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution.That’s because Christianity has been radical from the start.Yeshua (“Jesus”) himself emerged from a poverty ravaged community of brown-skinned folks who daily endured surveillance, extortion, harassment, and violent attacks by white Roman soldier-cops deployed to First Century Palestine.We know from Luke 22:36 that, in response, Yeshua instructed his followers to arm themselves for self-defense.This group also engaged in an extended campaign to address the community’s survival needs by providing health care, free meals, therapeutic counseling, and of course spiritual guidance.The first Christians also had their share of political prisoners.In many ways they were strikingly similar to the radical organization started in Oakland, California in 1966 by a small band of brothers in berets and black leather.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_231048_362741.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_231048_362741.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_231644_689364)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => “It will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution.”
+
+    [1] => 
+
+    [2] => Yeshua was betrayed by an informant, and when he was pegged as a revolutionary by Roman imperialists, he was accused of sedition, railroaded through a kangaroo court, and subjected to the death penalty. The Book of Acts tells us that after Yeshua left the Earthly realm, his followers grew in number, established multi-ethnic solidarity with other oppressed communities, and consolidated them into a small nation governed by socialist principles and socialist practice. 
+
+    [3] => 
+
+    [4] => Yeshua’s disciples were not the last community of color to embrace revolution. Black Christians have a long history of radicalism, and that should come as no surprise even though slave masters made their best efforts to use the Bible to justify white supremacy and slavery. Kenyan scholar John Mbiti explains why enslaved Africans with a grounding in traditional African religions would certainly have rejected the lies about Christian doctrine taught by slave masters. He said:
+
+    [5] => 
+
+    [6] => “Because traditional [African] religions permeate all the departments of life, there is no formal distinction between the sacred and the secular, between the religious and non-religious, between the spiritual and material areas of life. Wherever the African is, there is his religion: he carries it to the fields, where he is sowing seeds or harvesting a new crop…”
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->“It will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Yeshua was betrayed by an informant, and when he was pegged as a revolutionary by Roman imperialists, he was accused of sedition, railroaded through a kangaroo court, and subjected to the death penalty. The Book of Acts tells us that after Yeshua left the Earthly realm, his followers grew in number, established multi-ethnic solidarity with other oppressed communities, and consolidated them into a small nation governed by socialist principles and socialist practice. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Yeshua’s disciples were not the last community of color to embrace revolution. Black Christians have a long history of radicalism, and that should come as no surprise even though slave masters made their best efforts to use the Bible to justify white supremacy and slavery. Kenyan scholar John Mbiti explains why enslaved Africans with a grounding in traditional African religions would certainly have rejected the lies about Christian doctrine taught by slave masters. He said:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => “It will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution.” 
+    [1] => 
+
+    [2] => Yeshua was betrayed by an informant, and when he was pegged as a revolutionary by Roman imperialists, he was accused of sedition, railroaded through a kangaroo court, and subjected to the death penalty. The Book of Acts tells us that after Yeshua left the Earthly realm, his followers grew in number, established multi-ethnic solidarity with other oppressed communities, and consolidated them into a small nation governed by socialist principles and socialist practice.  
+    [3] => 
+
+    [4] => Yeshua’s disciples were not the last community of color to embrace revolution. Black Christians have a long history of radicalism, and that should come as no surprise even though slave masters made their best efforts to use the Bible to justify white supremacy and slavery. Kenyan scholar John Mbiti explains why enslaved Africans with a grounding in traditional African religions would certainly have rejected the lies about Christian doctrine taught by slave masters. He said: 
+    [5] => 
+
+    [6] => “Because traditional [African] religions permeate all the departments of life, there is no formal distinction between the sacred and the secular, between the religious and non-religious, between the spiritual and material areas of life. Wherever the African is, there is his religion: he carries it to the fields, where he is sowing seeds or harvesting a new crop…”
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Yeshua was betrayed by an informant, and when he was pegged as a revolutionary by Roman imperialists, he was accused of sedition, railroaded through a kangaroo court, and subjected to the death penalty. The Book of Acts tells us that after Yeshua left the Earthly realm, his followers grew in number, established multi-ethnic solidarity with other oppressed communities, and consolidated them into a small nation governed by socialist principles and socialist practice.  
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Yeshua’s disciples were not the last community of color to embrace revolution. Black Christians have a long history of radicalism, and that should come as no surprise even though slave masters made their best efforts to use the Bible to justify white supremacy and slavery. Kenyan scholar John Mbiti explains why enslaved Africans with a grounding in traditional African religions would certainly have rejected the lies about Christian doctrine taught by slave masters. He said: 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“Because traditional [African] religions permeate all the departments of life, there is no formal distinction between the sacred and the secular, between the religious and non-religious, between the spiritual and material areas of life. Wherever the African is, there is his religion: he carries it to the fields, where he is sowing seeds or harvesting a new crop…”
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => “It will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution.” 
+    [1] => 
+
+    [2] => Yeshua was betrayed by an informant, and when he was pegged as a revolutionary by Roman imperialists, he was accused of sedition, railroaded through a kangaroo court, and subjected to the death penalty.The Book of Acts tells us that after Yeshua left the Earthly realm, his followers grew in number, established multi-ethnic solidarity with other oppressed communities, and consolidated them into a small nation governed by socialist principles and socialist practice. 
+    [3] => 
+
+    [4] => Yeshua’s disciples were not the last community of color to embrace revolution.Black Christians have a long history of radicalism, and that should come as no surprise even though slave masters made their best efforts to use the Bible to justify white supremacy and slavery.Kenyan scholar John Mbiti explains why enslaved Africans with a grounding in traditional African religions would certainly have rejected the lies about Christian doctrine taught by slave masters.He said: 
+    [5] => 
+
+    [6] => “Because traditional [African] religions permeate all the departments of life, there is no formal distinction between the sacred and the secular, between the religious and non-religious, between the spiritual and material areas of life.Wherever the African is, there is his religion: he carries it to the fields, where he is sowing seeds or harvesting a new crop…”
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>“It will be an error to write off the potential of the Black Church to again find its way to the cutting edge of the revolution.” 
+Yeshua was betrayed by an informant, and when he was pegged as a revolutionary by Roman imperialists, he was accused of sedition, railroaded through a kangaroo court, and subjected to the death penalty.The Book of Acts tells us that after Yeshua left the Earthly realm, his followers grew in number, established multi-ethnic solidarity with other oppressed communities, and consolidated them into a small nation governed by socialist principles and socialist practice. 
+Yeshua’s disciples were not the last community of color to embrace revolution.Black Christians have a long history of radicalism, and that should come as no surprise even though slave masters made their best efforts to use the Bible to justify white supremacy and slavery.Kenyan scholar John Mbiti explains why enslaved Africans with a grounding in traditional African religions would certainly have rejected the lies about Christian doctrine taught by slave masters.He said: 
+“Because traditional [African] religions permeate all the departments of life, there is no formal distinction between the sacred and the secular, between the religious and non-religious, between the spiritual and material areas of life.Wherever the African is, there is his religion: he carries it to the fields, where he is sowing seeds or harvesting a new crop…”
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_231644_689364.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_231644_689364.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_231851_640392)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Mbiti goes on to say:
+
+    [1] => 
+
+    [2] => “It is not enough to embrace a faith which is confined to a church building or mosque, which is locked up six days and opened only once or twice a week. Unless Christianity and Islam fully occupy the whole person as much as, if not more than, traditional [African] religions do, most [African] converts to these faiths will continue to revert to their old beliefs and practices for perhaps six days a week, and certainly in times of emergency and crisis.”
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Mbiti goes on to say:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Mbiti goes on to say: 
+    [1] => 
+
+    [2] => “It is not enough to embrace a faith which is confined to a church building or mosque, which is locked up six days and opened only once or twice a week. Unless Christianity and Islam fully occupy the whole person as much as, if not more than, traditional [African] religions do, most [African] converts to these faiths will continue to revert to their old beliefs and practices for perhaps six days a week, and certainly in times of emergency and crisis.”
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->“It is not enough to embrace a faith which is confined to a church building or mosque, which is locked up six days and opened only once or twice a week. Unless Christianity and Islam fully occupy the whole person as much as, if not more than, traditional [African] religions do, most [African] converts to these faiths will continue to revert to their old beliefs and practices for perhaps six days a week, and certainly in times of emergency and crisis.”
+$matches ==>
+Array
+(
+    [0] => k. 
+    [1] => k.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Mbiti goes on to say: 
+    [1] => 
+
+    [2] => “It is not enough to embrace a faith which is confined to a church building or mosque, which is locked up six days and opened only once or twice a week.Unless Christianity and Islam fully occupy the whole person as much as, if not more than, traditional [African] religions do, most [African] converts to these faiths will continue to revert to their old beliefs and practices for perhaps six days a week, and certainly in times of emergency and crisis.”
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Mbiti goes on to say: 
+“It is not enough to embrace a faith which is confined to a church building or mosque, which is locked up six days and opened only once or twice a week.Unless Christianity and Islam fully occupy the whole person as much as, if not more than, traditional [African] religions do, most [African] converts to these faiths will continue to revert to their old beliefs and practices for perhaps six days a week, and certainly in times of emergency and crisis.”
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_231851_640392.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_231851_640392.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_231943_698887)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Thus, the influence of an African religious orientation naturally led enslaved Africans to embrace Christianity as a weapon for liberation rather than believe claims that the faith justifies slavery. After all, Mbiti points out that “…even if [in traditional African religions] God is thought to be the ultimate upholder of the moral order, people do not consider Him to be immediately involved in the keeping of it.” Consequently, enslaved Africans believed they had to take matters into their own hands if they wanted to be free. Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers. Vesey even organized his insurrection within the institutional framework of the African Methodist Episcopal Church.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Black Christians have a long history of radicalism.”
+
+    [1] => 
+
+    [2] => Thus, the influence of an African religious orientation naturally led enslaved Africans to embrace Christianity as a weapon for liberation rather than believe claims that the faith justifies slavery. After all, Mbiti points out that “…even if [in traditional African religions] God is thought to be the ultimate upholder of the moral order, people do not consider Him to be immediately involved in the keeping of it.” Consequently, enslaved Africans believed they had to take matters into their own hands if they wanted to be free. Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers. Vesey even organized his insurrection within the institutional framework of the African Methodist Episcopal Church.
+    [3] => 
+
+    [4] => Historian Sterling Stuckey described Vesey as “a sophisticated idealogue.”  Stuckey wrote: “Vesey promoted the use of radical Christianity and encouraged, through one of his lieutenants, its melding with African religious practices. ‘Beyond a general antiwhite attitude,’ [scholar Robert] Starobin writes, ‘Vesey combined the Old Testament’s harsh morality and the story of the Israelites with African religious customs.’ Indeed, Vesey used Christian radicalism to reinforce and rationalize his call to arms…”
+
+    [5] => 
+
+    [6] => Turner and Vesey believed their white oppressors were as morally bankrupt and as irredeemable as the residents of Sodom and Gomorrah. They likewise believed these enslavers deserved to suffer the same fate as their Old Testament counterparts. Like Turner and Vesey, Dr. Martin Luther King, Jr., was also a radical Christian, but his method presumed the white community retained a conscience that could be pricked and prodded into righteousness through his movement’s non-violent witnessing.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Black Christians have a long history of radicalism.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Historian Sterling Stuckey described Vesey as “a sophisticated idealogue.”  Stuckey wrote: “Vesey promoted the use of radical Christianity and encouraged, through one of his lieutenants, its melding with African religious practices. ‘Beyond a general antiwhite attitude,’ [scholar Robert] Starobin writes, ‘Vesey combined the Old Testament’s harsh morality and the story of the Israelites with African religious customs.’ Indeed, Vesey used Christian radicalism to reinforce and rationalize his call to arms…”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Black Christians have a long history of radicalism.” 
+    [1] => 
+
+    [2] => Thus, the influence of an African religious orientation naturally led enslaved Africans to embrace Christianity as a weapon for liberation rather than believe claims that the faith justifies slavery. After all, Mbiti points out that “…even if [in traditional African religions] God is thought to be the ultimate upholder of the moral order, people do not consider Him to be immediately involved in the keeping of it.” Consequently, enslaved Africans believed they had to take matters into their own hands if they wanted to be free. Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers. Vesey even organized his insurrection within the institutional framework of the African Methodist Episcopal Church.
+    [3] => 
+
+    [4] => Historian Sterling Stuckey described Vesey as “a sophisticated idealogue.”  Stuckey wrote: “Vesey promoted the use of radical Christianity and encouraged, through one of his lieutenants, its melding with African religious practices. ‘Beyond a general antiwhite attitude,’ [scholar Robert] Starobin writes, ‘Vesey combined the Old Testament’s harsh morality and the story of the Israelites with African religious customs.’ Indeed, Vesey used Christian radicalism to reinforce and rationalize his call to arms…” 
+    [5] => 
+
+    [6] => Turner and Vesey believed their white oppressors were as morally bankrupt and as irredeemable as the residents of Sodom and Gomorrah. They likewise believed these enslavers deserved to suffer the same fate as their Old Testament counterparts. Like Turner and Vesey, Dr. Martin Luther King, Jr., was also a radical Christian, but his method presumed the white community retained a conscience that could be pricked and prodded into righteousness through his movement’s non-violent witnessing.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Thus, the influence of an African religious orientation naturally led enslaved Africans to embrace Christianity as a weapon for liberation rather than believe claims that the faith justifies slavery. After all, Mbiti points out that “…even if [in traditional African religions] God is thought to be the ultimate upholder of the moral order, people do not consider Him to be immediately involved in the keeping of it.” Consequently, enslaved Africans believed they had to take matters into their own hands if they wanted to be free. Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers. Vesey even organized his insurrection within the institutional framework of the African Methodist Episcopal Church.
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Historian Sterling Stuckey described Vesey as “a sophisticated idealogue.”  Stuckey wrote: “Vesey promoted the use of radical Christianity and encouraged, through one of his lieutenants, its melding with African religious practices. ‘Beyond a general antiwhite attitude,’ [scholar Robert] Starobin writes, ‘Vesey combined the Old Testament’s harsh morality and the story of the Israelites with African religious customs.’ Indeed, Vesey used Christian radicalism to reinforce and rationalize his call to arms…” 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Turner and Vesey believed their white oppressors were as morally bankrupt and as irredeemable as the residents of Sodom and Gomorrah. They likewise believed these enslavers deserved to suffer the same fate as their Old Testament counterparts. Like Turner and Vesey, Dr. Martin Luther King, Jr., was also a radical Christian, but his method presumed the white community retained a conscience that could be pricked and prodded into righteousness through his movement’s non-violent witnessing.
+$matches ==>
+Array
+(
+    [0] => h. 
+    [1] => h.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Black Christians have a long history of radicalism.” 
+    [1] => 
+
+    [2] => Thus, the influence of an African religious orientation naturally led enslaved Africans to embrace Christianity as a weapon for liberation rather than believe claims that the faith justifies slavery.After all, Mbiti points out that “…even if [in traditional African religions] God is thought to be the ultimate upholder of the moral order, people do not consider Him to be immediately involved in the keeping of it.” Consequently, enslaved Africans believed they had to take matters into their own hands if they wanted to be free.Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers.Vesey even organized his insurrection within the institutional framework of the African Methodist Episcopal Church.
+    [3] => 
+
+    [4] => Historian Sterling Stuckey described Vesey as “a sophisticated idealogue.”  Stuckey wrote: “Vesey promoted the use of radical Christianity and encouraged, through one of his lieutenants, its melding with African religious practices.‘Beyond a general antiwhite attitude,’ [scholar Robert] Starobin writes, ‘Vesey combined the Old Testament’s harsh morality and the story of the Israelites with African religious customs.’ Indeed, Vesey used Christian radicalism to reinforce and rationalize his call to arms…” 
+    [5] => 
+
+    [6] => Turner and Vesey believed their white oppressors were as morally bankrupt and as irredeemable as the residents of Sodom and Gomorrah.They likewise believed these enslavers deserved to suffer the same fate as their Old Testament counterparts.Like Turner and Vesey, Dr.Martin Luther King, Jr., was also a radical Christian, but his method presumed the white community retained a conscience that could be pricked and prodded into righteousness through his movement’s non-violent witnessing.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Black Christians have a long history of radicalism.” 
+Thus, the influence of an African religious orientation naturally led enslaved Africans to embrace Christianity as a weapon for liberation rather than believe claims that the faith justifies slavery.After all, Mbiti points out that “…even if [in traditional African religions] God is thought to be the ultimate upholder of the moral order, people do not consider Him to be immediately involved in the keeping of it.” Consequently, enslaved Africans believed they had to take matters into their own hands if they wanted to be free.Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers.Vesey even organized his insurrection within the institutional framework of the African Methodist Episcopal Church.
+Historian Sterling Stuckey described Vesey as “a sophisticated idealogue.”  Stuckey wrote: “Vesey promoted the use of radical Christianity and encouraged, through one of his lieutenants, its melding with African religious practices.‘Beyond a general antiwhite attitude,’ [scholar Robert] Starobin writes, ‘Vesey combined the Old Testament’s harsh morality and the story of the Israelites with African religious customs.’ Indeed, Vesey used Christian radicalism to reinforce and rationalize his call to arms…” 
+Turner and Vesey believed their white oppressors were as morally bankrupt and as irredeemable as the residents of Sodom and Gomorrah.They likewise believed these enslavers deserved to suffer the same fate as their Old Testament counterparts.Like Turner and Vesey, Dr.Martin Luther King, Jr., was also a radical Christian, but his method presumed the white community retained a conscience that could be pricked and prodded into righteousness through his movement’s non-violent witnessing.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_231943_698887.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_231943_698887.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_232347_108198)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers.”
+
+    [1] => 
+
+    [2] => Because Yeshua was inclined on some occasions toward militant action and on other occasions toward non-violent resistance, we are left to speculate about whether he was in the camp of Turner and Vesey or in that of Dr. King. Perhaps he approved of both, depending upon the circumstances. Regardless of tactics, he clearly favored radical change. Theologian Obery Hendricks explains:
+
+    [3] => 
+
+    [4] => “Yes, Jesus of Nazareth was a political revolutionary. Now, to say that he was ‘political’ doesn’t mean that he sought to start yet another protest party in Galilee. Nor does it mean that he was ‘involved in politics’ in the sense that we know it today, with its bargaining and compromises and power plays and partisanship. And it certainly doesn’t mean that he wanted to wage war or overthrow the Roman Empire by force. To say that Jesus was a political revolutionary is to say that the message he proclaimed not only called for change in individual hearts but also demanded sweeping and comprehensive change in the political, social, and economic structures in his setting in life: colonized Israel. It means that if Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power, or if they did, would have had to conduct themselves very, very differently. It means that an important goal of his ministry was to radically change the distribution of authority and power, goods and resources, so all people – particularly the little people, or ‘the least of these,’ as Jesus called them – might have lives free of political repression, enforced hunger and poverty, and undue insecurity.”
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Because Yeshua was inclined on some occasions toward militant action and on other occasions toward non-violent resistance, we are left to speculate about whether he was in the camp of Turner and Vesey or in that of Dr. King. Perhaps he approved of both, depending upon the circumstances. Regardless of tactics, he clearly favored radical change. Theologian Obery Hendricks explains:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers.” 
+    [1] => 
+
+    [2] => Because Yeshua was inclined on some occasions toward militant action and on other occasions toward non-violent resistance, we are left to speculate about whether he was in the camp of Turner and Vesey or in that of Dr. King. Perhaps he approved of both, depending upon the circumstances. Regardless of tactics, he clearly favored radical change. Theologian Obery Hendricks explains: 
+    [3] => 
+
+    [4] => “Yes, Jesus of Nazareth was a political revolutionary. Now, to say that he was ‘political’ doesn’t mean that he sought to start yet another protest party in Galilee. Nor does it mean that he was ‘involved in politics’ in the sense that we know it today, with its bargaining and compromises and power plays and partisanship. And it certainly doesn’t mean that he wanted to wage war or overthrow the Roman Empire by force. To say that Jesus was a political revolutionary is to say that the message he proclaimed not only called for change in individual hearts but also demanded sweeping and comprehensive change in the political, social, and economic structures in his setting in life: colonized Israel. It means that if Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power, or if they did, would have had to conduct themselves very, very differently. It means that an important goal of his ministry was to radically change the distribution of authority and power, goods and resources, so all people – particularly the little people, or ‘the least of these,’ as Jesus called them – might have lives free of political repression, enforced hunger and poverty, and undue insecurity.”
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Because Yeshua was inclined on some occasions toward militant action and on other occasions toward non-violent resistance, we are left to speculate about whether he was in the camp of Turner and Vesey or in that of Dr. King. Perhaps he approved of both, depending upon the circumstances. Regardless of tactics, he clearly favored radical change. Theologian Obery Hendricks explains: 
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“Yes, Jesus of Nazareth was a political revolutionary. Now, to say that he was ‘political’ doesn’t mean that he sought to start yet another protest party in Galilee. Nor does it mean that he was ‘involved in politics’ in the sense that we know it today, with its bargaining and compromises and power plays and partisanship. And it certainly doesn’t mean that he wanted to wage war or overthrow the Roman Empire by force. To say that Jesus was a political revolutionary is to say that the message he proclaimed not only called for change in individual hearts but also demanded sweeping and comprehensive change in the political, social, and economic structures in his setting in life: colonized Israel. It means that if Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power, or if they did, would have had to conduct themselves very, very differently. It means that an important goal of his ministry was to radically change the distribution of authority and power, goods and resources, so all people – particularly the little people, or ‘the least of these,’ as Jesus called them – might have lives free of political repression, enforced hunger and poverty, and undue insecurity.”
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers.” 
+    [1] => 
+
+    [2] => Because Yeshua was inclined on some occasions toward militant action and on other occasions toward non-violent resistance, we are left to speculate about whether he was in the camp of Turner and Vesey or in that of Dr.King.Perhaps he approved of both, depending upon the circumstances.Regardless of tactics, he clearly favored radical change.Theologian Obery Hendricks explains: 
+    [3] => 
+
+    [4] => “Yes, Jesus of Nazareth was a political revolutionary.Now, to say that he was ‘political’ doesn’t mean that he sought to start yet another protest party in Galilee.Nor does it mean that he was ‘involved in politics’ in the sense that we know it today, with its bargaining and compromises and power plays and partisanship.And it certainly doesn’t mean that he wanted to wage war or overthrow the Roman Empire by force.To say that Jesus was a political revolutionary is to say that the message he proclaimed not only called for change in individual hearts but also demanded sweeping and comprehensive change in the political, social, and economic structures in his setting in life: colonized Israel.It means that if Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power, or if they did, would have had to conduct themselves very, very differently.It means that an important goal of his ministry was to radically change the distribution of authority and power, goods and resources, so all people – particularly the little people, or ‘the least of these,’ as Jesus called them – might have lives free of political repression, enforced hunger and poverty, and undue insecurity.”
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Both Nat Turner and Denmark Vesey found in their Christian faith the inspiration to rise against their enslavers.” 
+Because Yeshua was inclined on some occasions toward militant action and on other occasions toward non-violent resistance, we are left to speculate about whether he was in the camp of Turner and Vesey or in that of Dr.King.Perhaps he approved of both, depending upon the circumstances.Regardless of tactics, he clearly favored radical change.Theologian Obery Hendricks explains: 
+“Yes, Jesus of Nazareth was a political revolutionary.Now, to say that he was ‘political’ doesn’t mean that he sought to start yet another protest party in Galilee.Nor does it mean that he was ‘involved in politics’ in the sense that we know it today, with its bargaining and compromises and power plays and partisanship.And it certainly doesn’t mean that he wanted to wage war or overthrow the Roman Empire by force.To say that Jesus was a political revolutionary is to say that the message he proclaimed not only called for change in individual hearts but also demanded sweeping and comprehensive change in the political, social, and economic structures in his setting in life: colonized Israel.It means that if Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power, or if they did, would have had to conduct themselves very, very differently.It means that an important goal of his ministry was to radically change the distribution of authority and power, goods and resources, so all people – particularly the little people, or ‘the least of these,’ as Jesus called them – might have lives free of political repression, enforced hunger and poverty, and undue insecurity.”
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_232347_108198.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_232347_108198.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_232604_159041)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => If Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power.”
+
+    [1] => 
+
+    [2] => Although the Black church has faded from its position of primary movement leader, if Hendricks’ perspective ever resonates with those who have not been bedazzled and bamboozled by charismatic religious charlatans, Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself. Why not?  Those who subscribe to liberation theology have played critical roles in Latin American revolutions, and the same can happen in the U.S. Zela Diaz De Porras, a judge during the early years of Nicaragua’s Sandinista revolution explained:
+
+    [3] => 
+
+    [4] => “Faith is the motivation. Politics is the vehicle that carries the motivation. That is to say, if I need to go to Managua, I use a car to carry me. The car can break down or run out of gasoline. There is no comparison…Really, there is no confusion of one thing with the other. Faith is transcendental, and the revolution is like the historical praxis for a transcendental motivation.” 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->If Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Although the Black church has faded from its position of primary movement leader, if Hendricks’ perspective ever resonates with those who have not been bedazzled and bamboozled by charismatic religious charlatans, Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself. Why not?  Those who subscribe to liberation theology have played critical roles in Latin American revolutions, and the same can happen in the U.S. Zela Diaz De Porras, a judge during the early years of Nicaragua’s Sandinista revolution explained:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => If Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power.” 
+    [1] => 
+
+    [2] => Although the Black church has faded from its position of primary movement leader, if Hendricks’ perspective ever resonates with those who have not been bedazzled and bamboozled by charismatic religious charlatans, Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself. Why not?  Those who subscribe to liberation theology have played critical roles in Latin American revolutions, and the same can happen in the U.S. Zela Diaz De Porras, a judge during the early years of Nicaragua’s Sandinista revolution explained: 
+    [3] => 
+
+    [4] => “Faith is the motivation. Politics is the vehicle that carries the motivation. That is to say, if I need to go to Managua, I use a car to carry me. The car can break down or run out of gasoline. There is no comparison…Really, there is no confusion of one thing with the other. Faith is transcendental, and the revolution is like the historical praxis for a transcendental motivation.” 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Although the Black church has faded from its position of primary movement leader, if Hendricks’ perspective ever resonates with those who have not been bedazzled and bamboozled by charismatic religious charlatans, Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself. Why not?  Those who subscribe to liberation theology have played critical roles in Latin American revolutions, and the same can happen in the U.S. Zela Diaz De Porras, a judge during the early years of Nicaragua’s Sandinista revolution explained: 
+$matches ==>
+Array
+(
+    [0] => f. 
+    [1] => f.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“Faith is the motivation. Politics is the vehicle that carries the motivation. That is to say, if I need to go to Managua, I use a car to carry me. The car can break down or run out of gasoline. There is no comparison…Really, there is no confusion of one thing with the other. Faith is transcendental, and the revolution is like the historical praxis for a transcendental motivation.” 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => If Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power.” 
+    [1] => 
+
+    [2] => Although the Black church has faded from its position of primary movement leader, if Hendricks’ perspective ever resonates with those who have not been bedazzled and bamboozled by charismatic religious charlatans, Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself.Why not?  Those who subscribe to liberation theology have played critical roles in Latin American revolutions, and the same can happen in the U.S.Zela Diaz De Porras, a judge during the early years of Nicaragua’s Sandinista revolution explained: 
+    [3] => 
+
+    [4] => “Faith is the motivation.Politics is the vehicle that carries the motivation.That is to say, if I need to go to Managua, I use a car to carry me.The car can break down or run out of gasoline.There is no comparison…Really, there is no confusion of one thing with the other.Faith is transcendental, and the revolution is like the historical praxis for a transcendental motivation.” 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>If Jesus had had his way, the Roman Empire and the ruling elites among his own people either would no longer have held their positions of power.” 
+Although the Black church has faded from its position of primary movement leader, if Hendricks’ perspective ever resonates with those who have not been bedazzled and bamboozled by charismatic religious charlatans, Black Christians have the ever-present potential to reclaim a pivotal position within movements that challenge police terrorism, mass incarceration, poverty, militarism, and perhaps even the capitalist system itself.Why not?  Those who subscribe to liberation theology have played critical roles in Latin American revolutions, and the same can happen in the U.S.Zela Diaz De Porras, a judge during the early years of Nicaragua’s Sandinista revolution explained: 
+“Faith is the motivation.Politics is the vehicle that carries the motivation.That is to say, if I need to go to Managua, I use a car to carry me.The car can break down or run out of gasoline.There is no comparison…Really, there is no confusion of one thing with the other.Faith is transcendental, and the revolution is like the historical praxis for a transcendental motivation.” 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_232604_159041.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_232604_159041.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210627_232800_550857)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Christian doctrine can always guide the faithful toward a redemptive and fulfilling relationship with God. But that relationship can be substantially enhanced if Black Christians not only take an honest look at how Yeshua and his disciples conducted themselves, but also emulate the first Christians’ active, engaged resistance to oppression. There will be only benefits for movements for justice if the Black church finds its way back to the frontlines of struggle. 
+
+    [1] => 
+
+    [2] => Mark P. Fancher is an attorney and longtime writer for Black Agenda Report. He can be contacted at mfancher[at]comcast.net.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Christian doctrine can always guide the faithful toward a redemptive and fulfilling relationship with God. But that relationship can be substantially enhanced if Black Christians not only take an honest look at how Yeshua and his disciples conducted themselves, but also emulate the first Christians’ active, engaged resistance to oppression. There will be only benefits for movements for justice if the Black church finds its way back to the frontlines of struggle. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Christian doctrine can always guide the faithful toward a redemptive and fulfilling relationship with God. But that relationship can be substantially enhanced if Black Christians not only take an honest look at how Yeshua and his disciples conducted themselves, but also emulate the first Christians’ active, engaged resistance to oppression. There will be only benefits for movements for justice if the Black church finds its way back to the frontlines of struggle.  
+    [1] => 
+
+    [2] => Mark P. Fancher is an attorney and longtime writer for Black Agenda Report. He can be contacted at mfancher[at]comcast.net.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Christian doctrine can always guide the faithful toward a redemptive and fulfilling relationship with God. But that relationship can be substantially enhanced if Black Christians not only take an honest look at how Yeshua and his disciples conducted themselves, but also emulate the first Christians’ active, engaged resistance to oppression. There will be only benefits for movements for justice if the Black church finds its way back to the frontlines of struggle.  
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Mark P. Fancher is an attorney and longtime writer for Black Agenda Report. He can be contacted at mfancher[at]comcast.net.
+$matches ==>
+Array
+(
+    [0] => P. 
+    [1] => P.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Christian doctrine can always guide the faithful toward a redemptive and fulfilling relationship with God.But that relationship can be substantially enhanced if Black Christians not only take an honest look at how Yeshua and his disciples conducted themselves, but also emulate the first Christians’ active, engaged resistance to oppression.There will be only benefits for movements for justice if the Black church finds its way back to the frontlines of struggle. 
+    [1] => 
+
+    [2] => Mark P.Fancher is an attorney and longtime writer for Black Agenda Report.He can be contacted at mfancher[at]comcast.net.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Christian doctrine can always guide the faithful toward a redemptive and fulfilling relationship with God.But that relationship can be substantially enhanced if Black Christians not only take an honest look at how Yeshua and his disciples conducted themselves, but also emulate the first Christians’ active, engaged resistance to oppression.There will be only benefits for movements for justice if the Black church finds its way back to the frontlines of struggle. 
+Mark P.Fancher is an attorney and longtime writer for Black Agenda Report.He can be contacted at mfancher[at]comcast.net.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_232800_550857.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210627_232800_550857.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_002231_251436)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The arduous task of defining Soleimani’s character, mission, and strategies has taken up the interest of his foes and supporters alike. Americans call him “an agent of chaos,” or a man of the “shadows.”. However, it was inevitable that they’d appreciate him as a “unique” figure, one who has no counterpart abroad in terms of his experience, capability, and absolute trust in his leader. As Michael Knights from The Washington Institute denotes, they don’t “have anyone like him in the U.S.”.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The arduous task of defining Soleimani’s character, mission, and strategies has taken up the interest of his foes and supporters alike. Americans call him “an agent of chaos,” or a man of the “shadows.”. However, it was inevitable that they’d appreciate him as a “unique” figure, one who has no counterpart abroad in terms of his experience, capability, and absolute trust in his leader. As Michael Knights from The Washington Institute denotes, they don’t “have anyone like him in the U.S.”.
+    [1] => 
+
+    [2] => 
+
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The arduous task of defining Soleimani’s character, mission, and strategies has taken up the interest of his foes and supporters alike. Americans call him “an agent of chaos,” or a man of the “shadows.”. However, it was inevitable that they’d appreciate him as a “unique” figure, one who has no counterpart abroad in terms of his experience, capability, and absolute trust in his leader. As Michael Knights from The Washington Institute denotes, they don’t “have anyone like him in the U.S.”.
+    [1] => 
+
+    [2] => 
+
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The arduous task of defining Soleimani’s character, mission, and strategies has taken up the interest of his foes and supporters alike. Americans call him “an agent of chaos,” or a man of the “shadows.”. However, it was inevitable that they’d appreciate him as a “unique” figure, one who has no counterpart abroad in terms of his experience, capability, and absolute trust in his leader. As Michael Knights from The Washington Institute denotes, they don’t “have anyone like him in the U.S.”.
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The arduous task of defining Soleimani’s character, mission, and strategies has taken up the interest of his foes and supporters alike.Americans call him “an agent of chaos,” or a man of the “shadows.”.However, it was inevitable that they’d appreciate him as a “unique” figure, one who has no counterpart abroad in terms of his experience, capability, and absolute trust in his leader.As Michael Knights from The Washington Institute denotes, they don’t “have anyone like him in the U.S.”.
+    [1] => 
+
+    [2] => 
+
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The arduous task of defining Soleimani’s character, mission, and strategies has taken up the interest of his foes and supporters alike.Americans call him “an agent of chaos,” or a man of the “shadows.”.However, it was inevitable that they’d appreciate him as a “unique” figure, one who has no counterpart abroad in terms of his experience, capability, and absolute trust in his leader.As Michael Knights from The Washington Institute denotes, they don’t “have anyone like him in the U.S.”.
+
+
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_002231_251436.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_002231_251436.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_002402_501209)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Simultaneously, his vast stretch of influence and “unparalleled” military and intelligence power in the region was not an easy pill to swallow by those in the same anti-American camp. The Russians’ concern regarding the consequences of U.S. actions which “aggravate the situation in the region” or his “killing” to be “completely devoid of any legal basis” were instances of a maximum negative reaction by an ally who still refuses to call Iran a strategic partner, despite their rewarding collaboration.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Simultaneously, his vast stretch of influence and “unparalleled” military and intelligence power in the region was not an easy pill to swallow by those in the same anti-American camp. The Russians’ concern regarding the consequences of U.S. actions which “aggravate the situation in the region” or his “killing” to be “completely devoid of any legal basis” were instances of a maximum negative reaction by an ally who still refuses to call Iran a strategic partner, despite their rewarding collaboration.
+    [1] => 
+
+    [2] => The exceptional position of General Soleimani for Iranians, though, resides in a distinct realm of thought, contesting the normal military essentials or power constructs. This implies a “strong objectivity” that is taken here from the unheard voice of women whose husbands were serving in the Quds Force or were “martyred” as volunteers in the transnational battles of Syria and Iraq.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Simultaneously, his vast stretch of influence and “unparalleled” military and intelligence power in the region was not an easy pill to swallow by those in the same anti-American camp. The Russians’ concern regarding the consequences of U.S. actions which “aggravate the situation in the region” or his “killing” to be “completely devoid of any legal basis” were instances of a maximum negative reaction by an ally who still refuses to call Iran a strategic partner, despite their rewarding collaboration.
+    [1] => 
+
+    [2] => The exceptional position of General Soleimani for Iranians, though, resides in a distinct realm of thought, contesting the normal military essentials or power constructs. This implies a “strong objectivity” that is taken here from the unheard voice of women whose husbands were serving in the Quds Force or were “martyred” as volunteers in the transnational battles of Syria and Iraq.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Simultaneously, his vast stretch of influence and “unparalleled” military and intelligence power in the region was not an easy pill to swallow by those in the same anti-American camp. The Russians’ concern regarding the consequences of U.S. actions which “aggravate the situation in the region” or his “killing” to be “completely devoid of any legal basis” were instances of a maximum negative reaction by an ally who still refuses to call Iran a strategic partner, despite their rewarding collaboration.
+$matches ==>
+Array
+(
+    [0] => p. 
+    [1] => p.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The exceptional position of General Soleimani for Iranians, though, resides in a distinct realm of thought, contesting the normal military essentials or power constructs. This implies a “strong objectivity” that is taken here from the unheard voice of women whose husbands were serving in the Quds Force or were “martyred” as volunteers in the transnational battles of Syria and Iraq.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Simultaneously, his vast stretch of influence and “unparalleled” military and intelligence power in the region was not an easy pill to swallow by those in the same anti-American camp.The Russians’ concern regarding the consequences of U.S.actions which “aggravate the situation in the region” or his “killing” to be “completely devoid of any legal basis” were instances of a maximum negative reaction by an ally who still refuses to call Iran a strategic partner, despite their rewarding collaboration.
+    [1] => 
+
+    [2] => The exceptional position of General Soleimani for Iranians, though, resides in a distinct realm of thought, contesting the normal military essentials or power constructs.This implies a “strong objectivity” that is taken here from the unheard voice of women whose husbands were serving in the Quds Force or were “martyred” as volunteers in the transnational battles of Syria and Iraq.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Simultaneously, his vast stretch of influence and “unparalleled” military and intelligence power in the region was not an easy pill to swallow by those in the same anti-American camp.The Russians’ concern regarding the consequences of U.S.actions which “aggravate the situation in the region” or his “killing” to be “completely devoid of any legal basis” were instances of a maximum negative reaction by an ally who still refuses to call Iran a strategic partner, despite their rewarding collaboration.
+The exceptional position of General Soleimani for Iranians, though, resides in a distinct realm of thought, contesting the normal military essentials or power constructs.This implies a “strong objectivity” that is taken here from the unheard voice of women whose husbands were serving in the Quds Force or were “martyred” as volunteers in the transnational battles of Syria and Iraq.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_002402_501209.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_002402_501209.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_002809_510055)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The wives of Múdafeīn Haram, known colloquially as the Holy Shrine Defenders, a term recently coined to recognize the resistance fronts fighting in Syria and Iraq, identify Qasem Soleimani as the “definite dividing line between vice and virtue,” says Zahra, whose husband was serving with the Quds Force and was martyred in Syria in 2014.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The “dividing line between vice and virtue”
+
+    [1] => 
+
+    [2] => The wives of Múdafeīn Haram, known colloquially as the Holy Shrine Defenders, a term recently coined to recognize the resistance fronts fighting in Syria and Iraq, identify Qasem Soleimani as the “definite dividing line between vice and virtue,” says Zahra, whose husband was serving with the Quds Force and was martyred in Syria in 2014.
+    [3] => 
+
+    [4] => “General Soleimani was a real strategist. Nevertheless, what makes us honored to serve him was not his indisputable military capability alone.”. Having lost her spouse in 2015 in Iraq, Mina puts it thusly: “I sincerely aspire to sacrifice myself and my children, like their father, on Soleimani’s path of defending human dignity. He could not tolerate American-backed terrorists butchering innocent women and children in deadly conditions, forcing indignity upon them.”.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The “dividing line between vice and virtue”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The “dividing line between vice and virtue” 
+    [1] => 
+
+    [2] => The wives of Múdafeīn Haram, known colloquially as the Holy Shrine Defenders, a term recently coined to recognize the resistance fronts fighting in Syria and Iraq, identify Qasem Soleimani as the “definite dividing line between vice and virtue,” says Zahra, whose husband was serving with the Quds Force and was martyred in Syria in 2014.
+    [3] => 
+
+    [4] => “General Soleimani was a real strategist. Nevertheless, what makes us honored to serve him was not his indisputable military capability alone.”. Having lost her spouse in 2015 in Iraq, Mina puts it thusly: “I sincerely aspire to sacrifice myself and my children, like their father, on Soleimani’s path of defending human dignity. He could not tolerate American-backed terrorists butchering innocent women and children in deadly conditions, forcing indignity upon them.”.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->“General Soleimani was a real strategist. Nevertheless, what makes us honored to serve him was not his indisputable military capability alone.”. Having lost her spouse in 2015 in Iraq, Mina puts it thusly: “I sincerely aspire to sacrifice myself and my children, like their father, on Soleimani’s path of defending human dignity. He could not tolerate American-backed terrorists butchering innocent women and children in deadly conditions, forcing indignity upon them.”.
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The “dividing line between vice and virtue” 
+    [1] => 
+
+    [2] => The wives of Múdafeīn Haram, known colloquially as the Holy Shrine Defenders, a term recently coined to recognize the resistance fronts fighting in Syria and Iraq, identify Qasem Soleimani as the “definite dividing line between vice and virtue,” says Zahra, whose husband was serving with the Quds Force and was martyred in Syria in 2014.
+    [3] => 
+
+    [4] => “General Soleimani was a real strategist.Nevertheless, what makes us honored to serve him was not his indisputable military capability alone.”.Having lost her spouse in 2015 in Iraq, Mina puts it thusly: “I sincerely aspire to sacrifice myself and my children, like their father, on Soleimani’s path of defending human dignity.He could not tolerate American-backed terrorists butchering innocent women and children in deadly conditions, forcing indignity upon them.”.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The “dividing line between vice and virtue” 
+The wives of Múdafeīn Haram, known colloquially as the Holy Shrine Defenders, a term recently coined to recognize the resistance fronts fighting in Syria and Iraq, identify Qasem Soleimani as the “definite dividing line between vice and virtue,” says Zahra, whose husband was serving with the Quds Force and was martyred in Syria in 2014.
+“General Soleimani was a real strategist.Nevertheless, what makes us honored to serve him was not his indisputable military capability alone.”.Having lost her spouse in 2015 in Iraq, Mina puts it thusly: “I sincerely aspire to sacrifice myself and my children, like their father, on Soleimani’s path of defending human dignity.He could not tolerate American-backed terrorists butchering innocent women and children in deadly conditions, forcing indignity upon them.”.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_002809_510055.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_002809_510055.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_003019_587686)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'They’re recalling of the sweet memories of their relationships encouraged me to ask them about the legitimacy and necessity of their husbands to leave for combat on the frontlines of distant battlefields. One widower named Maryam swiftly replied that her husband was a volunteer when he fought in Syria, driven by his personal vision, and frequently confirming that by not deterring the terrorists abroad, it wouldn’t be long before Iran would have to fight them within its own borders. She argued that her husband, who lost his life in Syria as an experienced veteran and expert of geopolitics just one day before his birthday, was “determined to sacrifice for the elimination of ISIS, which was created by Americans, according to their own confessions, and backed by Israel in order to globalize Islamophobia, intimidation, and terror.”.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => They’re recalling of the sweet memories of their relationships encouraged me to ask them about the legitimacy and necessity of their husbands to leave for combat on the frontlines of distant battlefields. One widower named Maryam swiftly replied that her husband was a volunteer when he fought in Syria, driven by his personal vision, and frequently confirming that by not deterring the terrorists abroad, it wouldn’t be long before Iran would have to fight them within its own borders. She argued that her husband, who lost his life in Syria as an experienced veteran and expert of geopolitics just one day before his birthday, was “determined to sacrifice for the elimination of ISIS, which was created by Americans, according to their own confessions, and backed by Israel in order to globalize Islamophobia, intimidation, and terror.”.
+    [1] => 
+
+    [2] => “A big shock,” “an overwhelming sense of being crushed,” “startled, my back broken”: these are some of the interviewees’ remarks on getting the news of Soleimani’s assassination. Soon, though, they changed their tone, restoring their strength and confidence, referring to the “severe revenge” that Ayatollah Khamenei promised, which “awaits the criminals who have stained their hands with [General Soleimani’s] and the other martyrs’ blood.”.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => They’re recalling of the sweet memories of their relationships encouraged me to ask them about the legitimacy and necessity of their husbands to leave for combat on the frontlines of distant battlefields. One widower named Maryam swiftly replied that her husband was a volunteer when he fought in Syria, driven by his personal vision, and frequently confirming that by not deterring the terrorists abroad, it wouldn’t be long before Iran would have to fight them within its own borders. She argued that her husband, who lost his life in Syria as an experienced veteran and expert of geopolitics just one day before his birthday, was “determined to sacrifice for the elimination of ISIS, which was created by Americans, according to their own confessions, and backed by Israel in order to globalize Islamophobia, intimidation, and terror.”.
+    [1] => 
+
+    [2] => “A big shock,” “an overwhelming sense of being crushed,” “startled, my back broken”: these are some of the interviewees’ remarks on getting the news of Soleimani’s assassination. Soon, though, they changed their tone, restoring their strength and confidence, referring to the “severe revenge” that Ayatollah Khamenei promised, which “awaits the criminals who have stained their hands with [General Soleimani’s] and the other martyrs’ blood.”.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->They’re recalling of the sweet memories of their relationships encouraged me to ask them about the legitimacy and necessity of their husbands to leave for combat on the frontlines of distant battlefields. One widower named Maryam swiftly replied that her husband was a volunteer when he fought in Syria, driven by his personal vision, and frequently confirming that by not deterring the terrorists abroad, it wouldn’t be long before Iran would have to fight them within its own borders. She argued that her husband, who lost his life in Syria as an experienced veteran and expert of geopolitics just one day before his birthday, was “determined to sacrifice for the elimination of ISIS, which was created by Americans, according to their own confessions, and backed by Israel in order to globalize Islamophobia, intimidation, and terror.”.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“A big shock,” “an overwhelming sense of being crushed,” “startled, my back broken”: these are some of the interviewees’ remarks on getting the news of Soleimani’s assassination. Soon, though, they changed their tone, restoring their strength and confidence, referring to the “severe revenge” that Ayatollah Khamenei promised, which “awaits the criminals who have stained their hands with [General Soleimani’s] and the other martyrs’ blood.”.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => They’re recalling of the sweet memories of their relationships encouraged me to ask them about the legitimacy and necessity of their husbands to leave for combat on the frontlines of distant battlefields.One widower named Maryam swiftly replied that her husband was a volunteer when he fought in Syria, driven by his personal vision, and frequently confirming that by not deterring the terrorists abroad, it wouldn’t be long before Iran would have to fight them within its own borders.She argued that her husband, who lost his life in Syria as an experienced veteran and expert of geopolitics just one day before his birthday, was “determined to sacrifice for the elimination of ISIS, which was created by Americans, according to their own confessions, and backed by Israel in order to globalize Islamophobia, intimidation, and terror.”.
+    [1] => 
+
+    [2] => “A big shock,” “an overwhelming sense of being crushed,” “startled, my back broken”: these are some of the interviewees’ remarks on getting the news of Soleimani’s assassination.Soon, though, they changed their tone, restoring their strength and confidence, referring to the “severe revenge” that Ayatollah Khamenei promised, which “awaits the criminals who have stained their hands with [General Soleimani’s] and the other martyrs’ blood.”.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>They’re recalling of the sweet memories of their relationships encouraged me to ask them about the legitimacy and necessity of their husbands to leave for combat on the frontlines of distant battlefields.One widower named Maryam swiftly replied that her husband was a volunteer when he fought in Syria, driven by his personal vision, and frequently confirming that by not deterring the terrorists abroad, it wouldn’t be long before Iran would have to fight them within its own borders.She argued that her husband, who lost his life in Syria as an experienced veteran and expert of geopolitics just one day before his birthday, was “determined to sacrifice for the elimination of ISIS, which was created by Americans, according to their own confessions, and backed by Israel in order to globalize Islamophobia, intimidation, and terror.”.
+“A big shock,” “an overwhelming sense of being crushed,” “startled, my back broken”: these are some of the interviewees’ remarks on getting the news of Soleimani’s assassination.Soon, though, they changed their tone, restoring their strength and confidence, referring to the “severe revenge” that Ayatollah Khamenei promised, which “awaits the criminals who have stained their hands with [General Soleimani’s] and the other martyrs’ blood.”.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_003019_587686.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_003019_587686.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_003559_648282)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => A legacy set in stone
+
+    [1] => 
+
+    [2] => The legacy of Soleimani within Iran is set in stone, and the Quds Force has prevailed in the region with an array of allies and volunteers from Lebanon, Afghanistan, Pakistan, Iraq, and Syria. However, as Zahra suggests, Trump’s rash policies order and the Americans’ reckless act of war and terror will not remain unanswered. She recalls the American press assessing Soleimani’s assassination to be similar to a Class A crime, such as the killing of the U.S. Chairman of the Joint Chiefs of Staff, or the Director of the CIA. In her eyes, though, “even its assumption is rejected since for all people of rationality and freedom (or Ahrar, meaning those free from the constraints of wealth and power), be they Muslim or non-Muslim, ‘Qasem Soleimani’s shoe is worth more than Trump’s head,” she said, quoting the Secretary-General of Hezbollah.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->A legacy set in stone
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => A legacy set in stone 
+    [1] => 
+
+    [2] => The legacy of Soleimani within Iran is set in stone, and the Quds Force has prevailed in the region with an array of allies and volunteers from Lebanon, Afghanistan, Pakistan, Iraq, and Syria. However, as Zahra suggests, Trump’s rash policies order and the Americans’ reckless act of war and terror will not remain unanswered. She recalls the American press assessing Soleimani’s assassination to be similar to a Class A crime, such as the killing of the U.S. Chairman of the Joint Chiefs of Staff, or the Director of the CIA. In her eyes, though, “even its assumption is rejected since for all people of rationality and freedom (or Ahrar, meaning those free from the constraints of wealth and power), be they Muslim or non-Muslim, ‘Qasem Soleimani’s shoe is worth more than Trump’s head,” she said, quoting the Secretary-General of Hezbollah.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The legacy of Soleimani within Iran is set in stone, and the Quds Force has prevailed in the region with an array of allies and volunteers from Lebanon, Afghanistan, Pakistan, Iraq, and Syria. However, as Zahra suggests, Trump’s rash policies order and the Americans’ reckless act of war and terror will not remain unanswered. She recalls the American press assessing Soleimani’s assassination to be similar to a Class A crime, such as the killing of the U.S. Chairman of the Joint Chiefs of Staff, or the Director of the CIA. In her eyes, though, “even its assumption is rejected since for all people of rationality and freedom (or Ahrar, meaning those free from the constraints of wealth and power), be they Muslim or non-Muslim, ‘Qasem Soleimani’s shoe is worth more than Trump’s head,” she said, quoting the Secretary-General of Hezbollah.
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => A legacy set in stone 
+    [1] => 
+
+    [2] => The legacy of Soleimani within Iran is set in stone, and the Quds Force has prevailed in the region with an array of allies and volunteers from Lebanon, Afghanistan, Pakistan, Iraq, and Syria.However, as Zahra suggests, Trump’s rash policies order and the Americans’ reckless act of war and terror will not remain unanswered.She recalls the American press assessing Soleimani’s assassination to be similar to a Class A crime, such as the killing of the U.S.Chairman of the Joint Chiefs of Staff, or the Director of the CIA.In her eyes, though, “even its assumption is rejected since for all people of rationality and freedom (or Ahrar, meaning those free from the constraints of wealth and power), be they Muslim or non-Muslim, ‘Qasem Soleimani’s shoe is worth more than Trump’s head,” she said, quoting the Secretary-General of Hezbollah.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>A legacy set in stone 
+The legacy of Soleimani within Iran is set in stone, and the Quds Force has prevailed in the region with an array of allies and volunteers from Lebanon, Afghanistan, Pakistan, Iraq, and Syria.However, as Zahra suggests, Trump’s rash policies order and the Americans’ reckless act of war and terror will not remain unanswered.She recalls the American press assessing Soleimani’s assassination to be similar to a Class A crime, such as the killing of the U.S.Chairman of the Joint Chiefs of Staff, or the Director of the CIA.In her eyes, though, “even its assumption is rejected since for all people of rationality and freedom (or Ahrar, meaning those free from the constraints of wealth and power), be they Muslim or non-Muslim, ‘Qasem Soleimani’s shoe is worth more than Trump’s head,” she said, quoting the Secretary-General of Hezbollah.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_003559_648282.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_003559_648282.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_003758_149291)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '“A new consciousness,” “a new discourse” has been created among our youth, Maryam To concluded, a suggestion which received the consensus of her other colleagues, “that no American soldier or facility in the region would be left safe and secure.”. To “end U.S. presence in the region,” as Ayatollah Khamenei said, has become the subject of our children’s theses at universities, the subject of their art, and the objective of their activism. “This is not the end. This is the beginning” the interviewees stress.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => “A new consciousness,” “a new discourse” has been created among our youth, Maryam To concluded, a suggestion which received the consensus of her other colleagues, “that no American soldier or facility in the region would be left safe and secure.”. To “end U.S. presence in the region,” as Ayatollah Khamenei said, has become the subject of our children’s theses at universities, the subject of their art, and the objective of their activism. “This is not the end. This is the beginning” the interviewees stress.
+    [1] => 
+
+    [2] => Feature photo | A person hold a photo of slain Iranian Revolutionary Guard Gen. Qassem Soleimani during a ceremony marking the anniversary of his assassination in the southern suburb of Beirut, Lebanon, Feb. 16, 2020. Hassan Ammar | AP
+
+    [3] => 
+
+    [4] => Zohreh Kharazmi is an assistant professor in the American Studies Department at the University of Tehran.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Feature photo | A person hold a photo of slain Iranian Revolutionary Guard Gen. Qassem Soleimani during a ceremony marking the anniversary of his assassination in the southern suburb of Beirut, Lebanon, Feb. 16, 2020. Hassan Ammar | AP
+
+$matches ==>
+Array
+(
+    [0] => P
+
+    [1] => P
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => “A new consciousness,” “a new discourse” has been created among our youth, Maryam To concluded, a suggestion which received the consensus of her other colleagues, “that no American soldier or facility in the region would be left safe and secure.”. To “end U.S. presence in the region,” as Ayatollah Khamenei said, has become the subject of our children’s theses at universities, the subject of their art, and the objective of their activism. “This is not the end. This is the beginning” the interviewees stress.
+    [1] => 
+
+    [2] => Feature photo | A person hold a photo of slain Iranian Revolutionary Guard Gen. Qassem Soleimani during a ceremony marking the anniversary of his assassination in the southern suburb of Beirut, Lebanon, Feb. 16, 2020. Hassan Ammar | AP 
+    [3] => 
+
+    [4] => Zohreh Kharazmi is an assistant professor in the American Studies Department at the University of Tehran.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->“A new consciousness,” “a new discourse” has been created among our youth, Maryam To concluded, a suggestion which received the consensus of her other colleagues, “that no American soldier or facility in the region would be left safe and secure.”. To “end U.S. presence in the region,” as Ayatollah Khamenei said, has become the subject of our children’s theses at universities, the subject of their art, and the objective of their activism. “This is not the end. This is the beginning” the interviewees stress.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Feature photo | A person hold a photo of slain Iranian Revolutionary Guard Gen. Qassem Soleimani during a ceremony marking the anniversary of his assassination in the southern suburb of Beirut, Lebanon, Feb. 16, 2020. Hassan Ammar | AP 
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => “A new consciousness,” “a new discourse” has been created among our youth, Maryam To concluded, a suggestion which received the consensus of her other colleagues, “that no American soldier or facility in the region would be left safe and secure.”.To “end U.S.presence in the region,” as Ayatollah Khamenei said, has become the subject of our children’s theses at universities, the subject of their art, and the objective of their activism.“This is not the end.This is the beginning” the interviewees stress.
+    [1] => 
+
+    [2] => Feature photo | A person hold a photo of slain Iranian Revolutionary Guard Gen.Qassem Soleimani during a ceremony marking the anniversary of his assassination in the southern suburb of Beirut, Lebanon, Feb.16, 2020. Hassan Ammar | AP 
+    [3] => 
+
+    [4] => Zohreh Kharazmi is an assistant professor in the American Studies Department at the University of Tehran.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>“A new consciousness,” “a new discourse” has been created among our youth, Maryam To concluded, a suggestion which received the consensus of her other colleagues, “that no American soldier or facility in the region would be left safe and secure.”.To “end U.S.presence in the region,” as Ayatollah Khamenei said, has become the subject of our children’s theses at universities, the subject of their art, and the objective of their activism.“This is not the end.This is the beginning” the interviewees stress.
+Feature photo | A person hold a photo of slain Iranian Revolutionary Guard Gen.Qassem Soleimani during a ceremony marking the anniversary of his assassination in the southern suburb of Beirut, Lebanon, Feb.16, 2020. Hassan Ammar | AP 
+Zohreh Kharazmi is an assistant professor in the American Studies Department at the University of Tehran.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_003758_149291.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_003758_149291.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_004426_478569)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '(서울=연합뉴스) 황광모 기자 = 7일 서울 서대문구 서비스연맹에서 열린 '배송갈등' 택배노조, 총파업 찬반투표 결과발표 기자회견에서 전국택배노동조합 참석자들이 손 피켓을 들고 있다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 
+
+    [1] => 조합원 약 2천명 참가…신선식품 위주로 배송 거부
+
+    [2] => "저상차량 노동자, 고통 호소…택배사·관련 부처 나서야"
+
+    [3] => 
+
+    [4] => 총파업 찬반투표 결과발표 기자회견 하는 택배노조
+
+    [5] => 
+
+    [6] => (서울=연합뉴스) 황광모 기자 = 7일 서울 서대문구 서비스연맹에서 열린 '배송갈등' 택배노조, 총파업 찬반투표 결과발표 기자회견에서 전국택배노동조합 참석자들이 손 피켓을 들고 있다.
+    [7] => 택배노조는 "조합원 총파업 찬반투표 결과 77.0%로 가결됐다"면서 파업 돌입 시기는 위원장에게 위임하며 부분 파업으로 진행한다고 밝혔다. 2021.5.7 hkmpooh@yna.co.kr
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->조합원 약 2천명 참가…신선식품 위주로 배송 거부
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->"저상차량 노동자, 고통 호소…택배사·관련 부처 나서야"
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->총파업 찬반투표 결과발표 기자회견 하는 택배노조
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 
+
+    [1] => 조합원 약 2천명 참가…신선식품 위주로 배송 거부 
+    [2] => "저상차량 노동자, 고통 호소…택배사·관련 부처 나서야" 
+    [3] => 
+
+    [4] => 총파업 찬반투표 결과발표 기자회견 하는 택배노조 
+    [5] => 
+
+    [6] => (서울=연합뉴스) 황광모 기자 = 7일 서울 서대문구 서비스연맹에서 열린 '배송갈등' 택배노조, 총파업 찬반투표 결과발표 기자회견에서 전국택배노동조합 참석자들이 손 피켓을 들고 있다.
+    [7] => 택배노조는 "조합원 총파업 찬반투표 결과 77.0%로 가결됐다"면서 파업 돌입 시기는 위원장에게 위임하며 부분 파업으로 진행한다고 밝혔다. 2021.5.7 hkmpooh@yna.co.kr
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->택배노조는 "조합원 총파업 찬반투표 결과 77.0%로 가결됐다"면서 파업 돌입 시기는 위원장에게 위임하며 부분 파업으로 진행한다고 밝혔다. 2021.5.7 hkmpooh@yna.co.kr
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 
+
+    [1] => 조합원 약 2천명 참가…신선식품 위주로 배송 거부 
+    [2] => "저상차량 노동자, 고통 호소…택배사·관련 부처 나서야" 
+    [3] => 
+
+    [4] => 총파업 찬반투표 결과발표 기자회견 하는 택배노조 
+    [5] => 
+
+    [6] => (서울=연합뉴스) 황광모 기자 = 7일 서울 서대문구 서비스연맹에서 열린 '배송갈등' 택배노조, 총파업 찬반투표 결과발표 기자회견에서 전국택배노동조합 참석자들이 손 피켓을 들고 있다.
+    [7] => 택배노조는 "조합원 총파업 찬반투표 결과 77.0%로 가결됐다"면서 파업 돌입 시기는 위원장에게 위임하며 부분 파업으로 진행한다고 밝혔다.2021.5.7 hkmpooh@yna.co.kr
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>
+조합원 약 2천명 참가…신선식품 위주로 배송 거부 "저상차량 노동자, 고통 호소…택배사·관련 부처 나서야" 
+총파업 찬반투표 결과발표 기자회견 하는 택배노조 
+(서울=연합뉴스) 황광모 기자 = 7일 서울 서대문구 서비스연맹에서 열린 '배송갈등' 택배노조, 총파업 찬반투표 결과발표 기자회견에서 전국택배노동조합 참석자들이 손 피켓을 들고 있다.택배노조는 "조합원 총파업 찬반투표 결과 77.0%로 가결됐다"면서 파업 돌입 시기는 위원장에게 위임하며 부분 파업으로 진행한다고 밝혔다.2021.5.7 hkmpooh@yna.co.kr
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_004426_478569.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_004426_478569.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_004759_243140)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '서울=연합뉴스) 김치연 송은경 홍유담 기자 = 전국택배노동조합(택배노조)은 7일 기자회견을 열어 총파업 조합원 찬반투표가 가결됐으며 신선식품 위주로 배송을 거부하는 부분파업을 벌인다고 밝혔다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '돌입 시기는 위원장이 판단해 결정하기로 했다. 이번 파업 계획은 지난달 서울 강동구 아파트에서 택배차량의 지상 진입을 금지하면서 빚어진 갈등의 결과다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 서울=연합뉴스) 김치연 송은경 홍유담 기자 = 전국택배노동조합(택배노조)은 7일 기자회견을 열어 총파업 조합원 찬반투표가 가결됐으며 신선식품 위주로 배송을 거부하는 부분파업을 벌인다고 밝혔다.
+    [1] => 
+
+    [2] => 돌입 시기는 위원장이 판단해 결정하기로 했다. 이번 파업 계획은 지난달 서울 강동구 아파트에서 택배차량의 지상 진입을 금지하면서 빚어진 갈등의 결과다.
+    [3] => 
+
+    [4] => 노조가 전날 조합원을 대상으로 실시한 쟁의행위 찬반투표 결과 재적 인원 5천835명에서 5천298명이 투표에 참여했고, 이 가운데 4천78명이 총파업에 찬성해 77.0%로 가결됐다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 서울=연합뉴스) 김치연 송은경 홍유담 기자 = 전국택배노동조합(택배노조)은 7일 기자회견을 열어 총파업 조합원 찬반투표가 가결됐으며 신선식품 위주로 배송을 거부하는 부분파업을 벌인다고 밝혔다.
+    [1] => 
+
+    [2] => 돌입 시기는 위원장이 판단해 결정하기로 했다. 이번 파업 계획은 지난달 서울 강동구 아파트에서 택배차량의 지상 진입을 금지하면서 빚어진 갈등의 결과다.
+    [3] => 
+
+    [4] => 노조가 전날 조합원을 대상으로 실시한 쟁의행위 찬반투표 결과 재적 인원 5천835명에서 5천298명이 투표에 참여했고, 이 가운데 4천78명이 총파업에 찬성해 77.0%로 가결됐다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->돌입 시기는 위원장이 판단해 결정하기로 했다. 이번 파업 계획은 지난달 서울 강동구 아파트에서 택배차량의 지상 진입을 금지하면서 빚어진 갈등의 결과다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 서울=연합뉴스) 김치연 송은경 홍유담 기자 = 전국택배노동조합(택배노조)은 7일 기자회견을 열어 총파업 조합원 찬반투표가 가결됐으며 신선식품 위주로 배송을 거부하는 부분파업을 벌인다고 밝혔다.
+    [1] => 
+
+    [2] => 돌입 시기는 위원장이 판단해 결정하기로 했다.이번 파업 계획은 지난달 서울 강동구 아파트에서 택배차량의 지상 진입을 금지하면서 빚어진 갈등의 결과다.
+    [3] => 
+
+    [4] => 노조가 전날 조합원을 대상으로 실시한 쟁의행위 찬반투표 결과 재적 인원 5천835명에서 5천298명이 투표에 참여했고, 이 가운데 4천78명이 총파업에 찬성해 77.0%로 가결됐다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>서울=연합뉴스) 김치연 송은경 홍유담 기자 = 전국택배노동조합(택배노조)은 7일 기자회견을 열어 총파업 조합원 찬반투표가 가결됐으며 신선식품 위주로 배송을 거부하는 부분파업을 벌인다고 밝혔다.
+돌입 시기는 위원장이 판단해 결정하기로 했다.이번 파업 계획은 지난달 서울 강동구 아파트에서 택배차량의 지상 진입을 금지하면서 빚어진 갈등의 결과다.
+노조가 전날 조합원을 대상으로 실시한 쟁의행위 찬반투표 결과 재적 인원 5천835명에서 5천298명이 투표에 참여했고, 이 가운데 4천78명이 총파업에 찬성해 77.0%로 가결됐다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_004759_243140.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_004759_243140.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_005119_683491)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '노조는 "총파업 투쟁에 돌입할 수 있는 모든 절차는 마무리됐다"면서도 파업 돌입 시기는 예정됐던 이달 11일이 아닌 위원장에게 위임하고, 총파업이 아닌 부분파업으로 진행하기로 했다고 밝혔다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 노조는 "총파업 투쟁에 돌입할 수 있는 모든 절차는 마무리됐다"면서도 파업 돌입 시기는 예정됐던 이달 11일이 아닌 위원장에게 위임하고, 총파업이 아닌 부분파업으로 진행하기로 했다고 밝혔다.
+    [1] => 
+
+    [2] => 노조는 위원장에게 파업 시기를 위임한 배경에 대해 "정부나 정치권 등에서 택배사들에 대책 마련을 촉구하고 있다는 점을 감안했다"며 "국민 불편을 최소화하기 위해 불가피하게 파업을 결행해야 하는 상황을 판단해 위원장이 시기를 정할 것"이라고 했다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 노조는 "총파업 투쟁에 돌입할 수 있는 모든 절차는 마무리됐다"면서도 파업 돌입 시기는 예정됐던 이달 11일이 아닌 위원장에게 위임하고, 총파업이 아닌 부분파업으로 진행하기로 했다고 밝혔다.
+    [1] => 
+
+    [2] => 노조는 위원장에게 파업 시기를 위임한 배경에 대해 "정부나 정치권 등에서 택배사들에 대책 마련을 촉구하고 있다는 점을 감안했다"며 "국민 불편을 최소화하기 위해 불가피하게 파업을 결행해야 하는 상황을 판단해 위원장이 시기를 정할 것"이라고 했다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 노조는 "총파업 투쟁에 돌입할 수 있는 모든 절차는 마무리됐다"면서도 파업 돌입 시기는 예정됐던 이달 11일이 아닌 위원장에게 위임하고, 총파업이 아닌 부분파업으로 진행하기로 했다고 밝혔다.
+    [1] => 
+
+    [2] => 노조는 위원장에게 파업 시기를 위임한 배경에 대해 "정부나 정치권 등에서 택배사들에 대책 마련을 촉구하고 있다는 점을 감안했다"며 "국민 불편을 최소화하기 위해 불가피하게 파업을 결행해야 하는 상황을 판단해 위원장이 시기를 정할 것"이라고 했다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>노조는 "총파업 투쟁에 돌입할 수 있는 모든 절차는 마무리됐다"면서도 파업 돌입 시기는 예정됐던 이달 11일이 아닌 위원장에게 위임하고, 총파업이 아닌 부분파업으로 진행하기로 했다고 밝혔다.
+노조는 위원장에게 파업 시기를 위임한 배경에 대해 "정부나 정치권 등에서 택배사들에 대책 마련을 촉구하고 있다는 점을 감안했다"며 "국민 불편을 최소화하기 위해 불가피하게 파업을 결행해야 하는 상황을 판단해 위원장이 시기를 정할 것"이라고 했다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_005119_683491.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_005119_683491.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_005401_467973)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+
+Warning: printf(): Too few arguments in C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-texts-for-reading_korean.php on line 162
+Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '노조는 이미 단체협약을 체결해 쟁의권이 없는 우체국 조합원들과 노동위원회 조정 절차가 완료되지 않은 파업권 미확보 조합원들을 파업에서 제외하기로 했다. 이에 따라 파업 참가 인원은 전체 조합원 6천400여명 중 약 2천명이 될 것으로 전망된다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] =>  파업의 수위와 파업 참가인원도 최소화한다. 노조는 "전체 택배물동량의 10% 남짓한 신선식품 위주로 배송을 거부할 예정"이라며 "국민 불편은 최소화하면서 배송책임을 지는 택배사들에 압박을 주는 파업전술"이라고 했다.
+    [1] => 
+
+    [2] => 노조는 이미 단체협약을 체결해 쟁의권이 없는 우체국 조합원들과 노동위원회 조정 절차가 완료되지 않은 파업권 미확보 조합원들을 파업에서 제외하기로 했다. 이에 따라 파업 참가 인원은 전체 조합원 6천400여명 중 약 2천명이 될 것으로 전망된다.
+    [3] => 
+
+    [4] => 파업에 동참하지 않는 조합원들은 택배 표준약관에 명시된 규격을 위반한 크기의 택배나 여러 택배를 하나로 묶은 합포장 택배 등의 배송을 거부하기로 했다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] =>  파업의 수위와 파업 참가인원도 최소화한다. 노조는 "전체 택배물동량의 10% 남짓한 신선식품 위주로 배송을 거부할 예정"이라며 "국민 불편은 최소화하면서 배송책임을 지는 택배사들에 압박을 주는 파업전술"이라고 했다.
+    [1] => 
+
+    [2] => 노조는 이미 단체협약을 체결해 쟁의권이 없는 우체국 조합원들과 노동위원회 조정 절차가 완료되지 않은 파업권 미확보 조합원들을 파업에서 제외하기로 했다. 이에 따라 파업 참가 인원은 전체 조합원 6천400여명 중 약 2천명이 될 것으로 전망된다.
+    [3] => 
+
+    [4] => 파업에 동참하지 않는 조합원들은 택배 표준약관에 명시된 규격을 위반한 크기의 택배나 여러 택배를 하나로 묶은 합포장 택배 등의 배송을 거부하기로 했다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line --> 파업의 수위와 파업 참가인원도 최소화한다. 노조는 "전체 택배물동량의 10% 남짓한 신선식품 위주로 배송을 거부할 예정"이라며 "국민 불편은 최소화하면서 배송책임을 지는 택배사들에 압박을 주는 파업전술"이라고 했다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->노조는 이미 단체협약을 체결해 쟁의권이 없는 우체국 조합원들과 노동위원회 조정 절차가 완료되지 않은 파업권 미확보 조합원들을 파업에서 제외하기로 했다. 이에 따라 파업 참가 인원은 전체 조합원 6천400여명 중 약 2천명이 될 것으로 전망된다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] =>  파업의 수위와 파업 참가인원도 최소화한다.노조는 "전체 택배물동량의 10% 남짓한 신선식품 위주로 배송을 거부할 예정"이라며 "국민 불편은 최소화하면서 배송책임을 지는 택배사들에 압박을 주는 파업전술"이라고 했다.
+    [1] => 
+
+    [2] => 노조는 이미 단체협약을 체결해 쟁의권이 없는 우체국 조합원들과 노동위원회 조정 절차가 완료되지 않은 파업권 미확보 조합원들을 파업에서 제외하기로 했다.이에 따라 파업 참가 인원은 전체 조합원 6천400여명 중 약 2천명이 될 것으로 전망된다.
+    [3] => 
+
+    [4] => 파업에 동참하지 않는 조합원들은 택배 표준약관에 명시된 규격을 위반한 크기의 택배나 여러 택배를 하나로 묶은 합포장 택배 등의 배송을 거부하기로 했다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==> 파업의 수위와 파업 참가인원도 최소화한다.노조는 "전체 택배물동량의 10% 남짓한 신선식품 위주로 배송을 거부할 예정"이라며 "국민 불편은 최소화하면서 배송책임을 지는 택배사들에 압박을 주는 파업전술"이라고 했다.
+노조는 이미 단체협약을 체결해 쟁의권이 없는 우체국 조합원들과 노동위원회 조정 절차가 완료되지 않은 파업권 미확보 조합원들을 파업에서 제외하기로 했다.이에 따라 파업 참가 인원은 전체 조합원 6천400여명 중 약 2천명이 될 것으로 전망된다.
+파업에 동참하지 않는 조합원들은 택배 표준약관에 명시된 규격을 위반한 크기의 택배나 여러 택배를 하나로 묶은 합포장 택배 등의 배송을 거부하기로 했다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_005401_467973.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_005401_467973.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
