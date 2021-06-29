@@ -38584,3 +38584,446 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_005401_467973.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_125044_427265)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Syria has been gripped by foreign-backed militancy since March 2011. Damascus says the Western governments and their regional allies are aiding the Takfiri terrorist groups that are wreaking havoc in the Arab country.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Meanwhile, the US and its allies refuse to recognize the legitimacy of the Syrian government and have placed a crippling blockade on it. Also, they denounced last months presidential elections in advance as neither free nor fair. Thats while President Bashar Assad was re-elected in a landslide.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Syria has been gripped by foreign-backed militancy since March 2011. Damascus says the Western governments and their regional allies are aiding the Takfiri terrorist groups that are wreaking havoc in the Arab country.
+    [1] => 
+
+    [2] => Meanwhile, the US and its allies refuse to recognize the legitimacy of the Syrian government and have placed a crippling blockade on it. Also, they denounced last months presidential elections in advance as neither free nor fair. Thats while President Bashar Assad was re-elected in a landslide.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Syria has been gripped by foreign-backed militancy since March 2011. Damascus says the Western governments and their regional allies are aiding the Takfiri terrorist groups that are wreaking havoc in the Arab country.
+    [1] => 
+
+    [2] => Meanwhile, the US and its allies refuse to recognize the legitimacy of the Syrian government and have placed a crippling blockade on it. Also, they denounced last months presidential elections in advance as neither free nor fair. Thats while President Bashar Assad was re-elected in a landslide.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Meanwhile, the US and its allies refuse to recognize the legitimacy of the Syrian government and have placed a crippling blockade on it. Also, they denounced last months presidential elections in advance as neither free nor fair. Thats while President Bashar Assad was re-elected in a landslide.
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Syria has been gripped by foreign-backed militancy since March 2011. Damascus says the Western governments and their regional allies are aiding the Takfiri terrorist groups that are wreaking havoc in the Arab country.
+    [1] => 
+
+    [2] => Meanwhile, the US and its allies refuse to recognize the legitimacy of the Syrian government and have placed a crippling blockade on it.Also, they denounced last months presidential elections in advance as neither free nor fair.Thats while President Bashar Assad was re-elected in a landslide.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Syria has been gripped by foreign-backed militancy since March 2011. Damascus says the Western governments and their regional allies are aiding the Takfiri terrorist groups that are wreaking havoc in the Arab country.
+Meanwhile, the US and its allies refuse to recognize the legitimacy of the Syrian government and have placed a crippling blockade on it.Also, they denounced last months presidential elections in advance as neither free nor fair.Thats while President Bashar Assad was re-elected in a landslide.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_125044_427265.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_125044_427265.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_125404_410366)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The International Association of Muslim University Professors (IAOMUP) has released Bint al-Huda Collection: All Novels and Short Stories.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The book is the most complete collection of literary works of Martyr Aminah Haider Al-Sadr in English.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The collection is a compilation of 4 novels and 24 short stories written by the famous Muslim author popularly known as Bint al-Huda.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Bint al-Huda played a significant role in creating Islamic awareness among the Muslim women of Iraq from the late 1950s to 1980.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'She was the sister of the great Islamic scholar, philosopher and Islamic economic specialist of Iraq, Ayatullah Syed Mohammad Baqir al-Sadr.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In 1980, the ayatollah and his sister were arrested and after three days of inhumane torture, they were murdered in cold blood by the tyrannical Iraqi regime of Saddam Hussein.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Bint al-Huda's body was secretly buried and the whereabouts of her grave remain unknown to this day. However, her memory will live on in the hearts of lovers of humanity and justice.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The publishers hope that the release of the book will lead to a long-lasting memory of her dedication to Islamic culture and serve as a reliable source to those who would love to read Islamic novels and stories.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 
+
+    [1] => 
+
+    [2] => The International Association of Muslim University Professors (IAOMUP) has released Bint al-Huda Collection: All Novels and Short Stories.
+    [3] => 
+
+    [4] => The book is the most complete collection of literary works of Martyr Aminah Haider Al-Sadr in English.
+    [5] => 
+
+    [6] => The collection is a compilation of 4 novels and 24 short stories written by the famous Muslim author popularly known as Bint al-Huda.
+    [7] => 
+
+    [8] => Bint al-Huda played a significant role in creating Islamic awareness among the Muslim women of Iraq from the late 1950s to 1980.
+    [9] => 
+
+    [10] => She was the sister of the great Islamic scholar, philosopher and Islamic economic specialist of Iraq, Ayatullah Syed Mohammad Baqir al-Sadr.
+    [11] => 
+
+    [12] => In 1980, the ayatollah and his sister were arrested and after three days of inhumane torture, they were murdered in cold blood by the tyrannical Iraqi regime of Saddam Hussein.
+    [13] => 
+
+    [14] => Bint al-Huda's body was secretly buried and the whereabouts of her grave remain unknown to this day. However, her memory will live on in the hearts of lovers of humanity and justice.
+    [15] => 
+
+    [16] => The publishers hope that the release of the book will lead to a long-lasting memory of her dedication to Islamic culture and serve as a reliable source to those who would love to read Islamic novels and stories.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 
+
+    [1] => 
+
+    [2] => The International Association of Muslim University Professors (IAOMUP) has released Bint al-Huda Collection: All Novels and Short Stories.
+    [3] => 
+
+    [4] => The book is the most complete collection of literary works of Martyr Aminah Haider Al-Sadr in English.
+    [5] => 
+
+    [6] => The collection is a compilation of 4 novels and 24 short stories written by the famous Muslim author popularly known as Bint al-Huda.
+    [7] => 
+
+    [8] => Bint al-Huda played a significant role in creating Islamic awareness among the Muslim women of Iraq from the late 1950s to 1980.
+    [9] => 
+
+    [10] => She was the sister of the great Islamic scholar, philosopher and Islamic economic specialist of Iraq, Ayatullah Syed Mohammad Baqir al-Sadr.
+    [11] => 
+
+    [12] => In 1980, the ayatollah and his sister were arrested and after three days of inhumane torture, they were murdered in cold blood by the tyrannical Iraqi regime of Saddam Hussein.
+    [13] => 
+
+    [14] => Bint al-Huda's body was secretly buried and the whereabouts of her grave remain unknown to this day. However, her memory will live on in the hearts of lovers of humanity and justice.
+    [15] => 
+
+    [16] => The publishers hope that the release of the book will lead to a long-lasting memory of her dedication to Islamic culture and serve as a reliable source to those who would love to read Islamic novels and stories.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Bint al-Huda's body was secretly buried and the whereabouts of her grave remain unknown to this day. However, her memory will live on in the hearts of lovers of humanity and justice.
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 
+
+    [1] => 
+
+    [2] => The International Association of Muslim University Professors (IAOMUP) has released Bint al-Huda Collection: All Novels and Short Stories.
+    [3] => 
+
+    [4] => The book is the most complete collection of literary works of Martyr Aminah Haider Al-Sadr in English.
+    [5] => 
+
+    [6] => The collection is a compilation of 4 novels and 24 short stories written by the famous Muslim author popularly known as Bint al-Huda.
+    [7] => 
+
+    [8] => Bint al-Huda played a significant role in creating Islamic awareness among the Muslim women of Iraq from the late 1950s to 1980.
+    [9] => 
+
+    [10] => She was the sister of the great Islamic scholar, philosopher and Islamic economic specialist of Iraq, Ayatullah Syed Mohammad Baqir al-Sadr.
+    [11] => 
+
+    [12] => In 1980, the ayatollah and his sister were arrested and after three days of inhumane torture, they were murdered in cold blood by the tyrannical Iraqi regime of Saddam Hussein.
+    [13] => 
+
+    [14] => Bint al-Huda's body was secretly buried and the whereabouts of her grave remain unknown to this day.However, her memory will live on in the hearts of lovers of humanity and justice.
+    [15] => 
+
+    [16] => The publishers hope that the release of the book will lead to a long-lasting memory of her dedication to Islamic culture and serve as a reliable source to those who would love to read Islamic novels and stories.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>
+
+The International Association of Muslim University Professors (IAOMUP) has released Bint al-Huda Collection: All Novels and Short Stories.
+The book is the most complete collection of literary works of Martyr Aminah Haider Al-Sadr in English.
+The collection is a compilation of 4 novels and 24 short stories written by the famous Muslim author popularly known as Bint al-Huda.
+Bint al-Huda played a significant role in creating Islamic awareness among the Muslim women of Iraq from the late 1950s to 1980.
+She was the sister of the great Islamic scholar, philosopher and Islamic economic specialist of Iraq, Ayatullah Syed Mohammad Baqir al-Sadr.
+In 1980, the ayatollah and his sister were arrested and after three days of inhumane torture, they were murdered in cold blood by the tyrannical Iraqi regime of Saddam Hussein.
+Bint al-Huda's body was secretly buried and the whereabouts of her grave remain unknown to this day.However, her memory will live on in the hearts of lovers of humanity and justice.
+The publishers hope that the release of the book will lead to a long-lasting memory of her dedication to Islamic culture and serve as a reliable source to those who would love to read Islamic novels and stories.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_125404_410366.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_125404_410366.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_204718_838953)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Asesinan a excombatiente en el Cauca, Colombia
+
+    [1] => El Instituto de Estudios para el Desarrollo y la Paz (Indepaz) denunció el asesinato de una excombatiente en el departamento colombiano del Cauca. De acuerdo con Indepaz, la víctima respondía al nombre de Norelia Trompeta Hachacue y se encontraba en el proceso de reincorporación en el Cauca en el marco del Acuerdo de Paz firmado entre el Estado colombiano y las FARC-EP. Indepaz asevera que en apenas seis meses del presente año se han asesinado a 28 excombatientes acogidos al proceso de paz y desde el 2016 hasta la fecha, han sido ultimados 277 excombatientes. (Telesur)
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Asesinan a excombatiente en el Cauca, Colombia
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Asesinan a excombatiente en el Cauca, Colombia 
+    [1] => El Instituto de Estudios para el Desarrollo y la Paz (Indepaz) denunció el asesinato de una excombatiente en el departamento colombiano del Cauca. De acuerdo con Indepaz, la víctima respondía al nombre de Norelia Trompeta Hachacue y se encontraba en el proceso de reincorporación en el Cauca en el marco del Acuerdo de Paz firmado entre el Estado colombiano y las FARC-EP. Indepaz asevera que en apenas seis meses del presente año se han asesinado a 28 excombatientes acogidos al proceso de paz y desde el 2016 hasta la fecha, han sido ultimados 277 excombatientes. (Telesur)
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->El Instituto de Estudios para el Desarrollo y la Paz (Indepaz) denunció el asesinato de una excombatiente en el departamento colombiano del Cauca. De acuerdo con Indepaz, la víctima respondía al nombre de Norelia Trompeta Hachacue y se encontraba en el proceso de reincorporación en el Cauca en el marco del Acuerdo de Paz firmado entre el Estado colombiano y las FARC-EP. Indepaz asevera que en apenas seis meses del presente año se han asesinado a 28 excombatientes acogidos al proceso de paz y desde el 2016 hasta la fecha, han sido ultimados 277 excombatientes. (Telesur)
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Asesinan a excombatiente en el Cauca, Colombia 
+    [1] => El Instituto de Estudios para el Desarrollo y la Paz (Indepaz) denunció el asesinato de una excombatiente en el departamento colombiano del Cauca.De acuerdo con Indepaz, la víctima respondía al nombre de Norelia Trompeta Hachacue y se encontraba en el proceso de reincorporación en el Cauca en el marco del Acuerdo de Paz firmado entre el Estado colombiano y las FARC-EP.Indepaz asevera que en apenas seis meses del presente año se han asesinado a 28 excombatientes acogidos al proceso de paz y desde el 2016 hasta la fecha, han sido ultimados 277 excombatientes.(Telesur)
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Asesinan a excombatiente en el Cauca, Colombia El Instituto de Estudios para el Desarrollo y la Paz (Indepaz) denunció el asesinato de una excombatiente en el departamento colombiano del Cauca.De acuerdo con Indepaz, la víctima respondía al nombre de Norelia Trompeta Hachacue y se encontraba en el proceso de reincorporación en el Cauca en el marco del Acuerdo de Paz firmado entre el Estado colombiano y las FARC-EP.Indepaz asevera que en apenas seis meses del presente año se han asesinado a 28 excombatientes acogidos al proceso de paz y desde el 2016 hasta la fecha, han sido ultimados 277 excombatientes.(Telesur)
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_204718_838953.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_204718_838953.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_205245_564872)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Más de 500 migrantes han sido devueltos a Cuba este año (+Video)
+
+    [1] => 
+
+    [2] => La voluntad del Estado y Gobierno cubano es de prevenir la migración irregular, impedir las salidas ilegales que ponen en riesgo las vidas humanas y luchar contra actos de violencia y delitos asociados a la trata de personas y el tráfico de migrantes
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Más de 500 migrantes han sido devueltos a Cuba este año (+Video)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Más de 500 migrantes han sido devueltos a Cuba este año (+Video) 
+    [1] => 
+
+    [2] => La voluntad del Estado y Gobierno cubano es de prevenir la migración irregular, impedir las salidas ilegales que ponen en riesgo las vidas humanas y luchar contra actos de violencia y delitos asociados a la trata de personas y el tráfico de migrantes
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Más de 500 migrantes han sido devueltos a Cuba este año (+Video) 
+    [1] => 
+
+    [2] => La voluntad del Estado y Gobierno cubano es de prevenir la migración irregular, impedir las salidas ilegales que ponen en riesgo las vidas humanas y luchar contra actos de violencia y delitos asociados a la trata de personas y el tráfico de migrantes
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Más de 500 migrantes han sido devueltos a Cuba este año (+Video) 
+La voluntad del Estado y Gobierno cubano es de prevenir la migración irregular, impedir las salidas ilegales que ponen en riesgo las vidas humanas y luchar contra actos de violencia y delitos asociados a la trata de personas y el tráfico de migrantes
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_205245_564872.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_205245_564872.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210628_205436_230070)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Dengue hemorrágico: terrorismo bacteriológico de EE. UU. contra Cuba (+Fotos)
+
+    [1] => 
+
+    [2] => Desde el pasado viernes, está libre, en Miami, el terrorista de la CIA Eduardo Arocena, quien confesó su responsabilidad en la introducción del dengue hemorrágico en Cuba. Más de cien niños cubanos murieron a causa de ese terrible suceso
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Dengue hemorrágico: terrorismo bacteriológico de EE. UU. contra Cuba (+Fotos)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Dengue hemorrágico: terrorismo bacteriológico de EE. UU. contra Cuba (+Fotos) 
+    [1] => 
+
+    [2] => Desde el pasado viernes, está libre, en Miami, el terrorista de la CIA Eduardo Arocena, quien confesó su responsabilidad en la introducción del dengue hemorrágico en Cuba. Más de cien niños cubanos murieron a causa de ese terrible suceso
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Dengue hemorrágico: terrorismo bacteriológico de EE. UU. contra Cuba (+Fotos) 
+$matches ==>
+Array
+(
+    [0] => E. 
+    [1] => E.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Desde el pasado viernes, está libre, en Miami, el terrorista de la CIA Eduardo Arocena, quien confesó su responsabilidad en la introducción del dengue hemorrágico en Cuba. Más de cien niños cubanos murieron a causa de ese terrible suceso
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Dengue hemorrágico: terrorismo bacteriológico de EE.UU.contra Cuba (+Fotos) 
+    [1] => 
+
+    [2] => Desde el pasado viernes, está libre, en Miami, el terrorista de la CIA Eduardo Arocena, quien confesó su responsabilidad en la introducción del dengue hemorrágico en Cuba.Más de cien niños cubanos murieron a causa de ese terrible suceso
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Dengue hemorrágico: terrorismo bacteriológico de EE.UU.contra Cuba (+Fotos) 
+Desde el pasado viernes, está libre, en Miami, el terrorista de la CIA Eduardo Arocena, quien confesó su responsabilidad en la introducción del dengue hemorrágico en Cuba.Más de cien niños cubanos murieron a causa de ese terrible suceso
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_205436_230070.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210628_205436_230070.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
