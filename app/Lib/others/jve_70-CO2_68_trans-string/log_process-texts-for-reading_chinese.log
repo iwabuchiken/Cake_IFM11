@@ -33838,3 +33838,1737 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_131355_932081.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210622_131355_932081.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210630_083308_697405)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。
+
+    [1] => 
+
+    [2] => 中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+
+    [3] => 
+
+    [4] => 大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。
+
+    [5] => 
+
+    [6] => 4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。
+
+    [1] => 
+    [2] => 中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+
+    [3] => 
+    [4] => 大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。
+
+    [5] => 
+    [6] => 4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。
+    [1] => 
+    [2] => 中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+    [3] => 
+    [4] => 大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。
+    [5] => 
+    [6] => 4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。
+    [1] => 
+    [2] => 中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+    [3] => 
+    [4] => 大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。
+    [5] => 
+    [6] => 4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。
+    [1] => 
+    [2] => 中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。
+    [3] => 
+    [4] => 大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。
+    [5] => 
+    [6] => 4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，中国发展模式的最大特点就是擅长“调结构”。我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中偏执的意识形态偏见。观察者网整理节目内容，以飨读者。】
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210630_083308_697405.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210630_083308_697405.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210630_084100_138736)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+
+    [1] => 
+
+    [2] => 最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+
+    [3] => 
+
+    [4] => 现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+
+    [1] => 
+    [2] => 最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+
+    [3] => 
+    [4] => 现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+
+    [1] => 
+    [2] => 最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+    [3] => 
+    [4] => 现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+
+    [1] => 
+    [2] => 最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+    [3] => 
+    [4] => 现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+
+    [1] => 
+    [2] => 最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。
+    [3] => 
+    [4] => 现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；坦率地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分恼火，于是就使用他们惯用的造谣诬蔑手段。最近他们说中国数据造假，其实背后反映的就是今天西方的窘境，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？
+最离谱的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。我总是说，现在看西方媒体对中国的许多报道，最好当笑话来看，随时可以编出很多笑话集，大家不要太在意，让他们继续留在黑暗中犯傻吧，最后后悔的一定是西方自己，而不是中国。现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，还是比较客观的。在社交媒体上，质疑西方主流媒体妖魔化中国的声音也非常多。我就看到一个网民的调侃，说如果中国的数据是假的，那麻烦了，中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此松懈的措施，只能完蛋了；反过来也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多模仿中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210630_084100_138736.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210630_084100_138736.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210630_085501_244726)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+
+    [1] => 
+
+    [2] => 这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+
+    [3] => 
+
+    [4] => 现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+
+    [1] => 
+    [2] => 这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+
+    [3] => 
+    [4] => 现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+    [1] => 
+    [2] => 这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+    [3] => 
+    [4] => 现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+    [1] => 
+    [2] => 这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+    [3] => 
+    [4] => 现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。
+    [1] => 
+    [2] => 这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。
+    [3] => 
+    [4] => 现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能不亚于前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。这场没有硝烟的“世界大战”几乎可以把“百年未有之大变局”所涉及的各种问题都浓缩在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。现在我们先谈前两个问题，是我个人的思考，一家之言，算是抛砖引玉，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210630_085501_244726.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210630_085501_244726.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210630_090515_297959)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+
+    [1] => 我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+
+    [2] => 
+
+    [3] => 我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+
+    [1] => 我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+
+    [2] => 
+    [3] => 我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+[process-texts-for-reading_chinese.php : 252]
+line : '我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+    [1] => 我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+    [2] => 
+    [3] => 我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+[process-texts-for-reading_chinese.php : 346]
+line : '我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+    [1] => 我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+    [2] => 
+    [3] => 我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。
+    [1] => 我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。
+    [2] => 
+    [3] => 我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>和历史上类似的挑战相比，今天的这些挑战显得更为严峻。因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是叠合在一起的，互相渗透，所以情况更为复杂。当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。中国应对这些挑战理念和举措，将深刻地影响世界格局未来的演变，有可能推动人类命运共同体的共识走向成熟。我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题着墨最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德陷阱吗？》。我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是笃信西方政治文化中非此即彼、零和游戏的国家，用这种情况拿来比喻中国这样一个相信合作共赢、不相信零和游戏的国家，没有说服力。但他还是坚持，认为多数美国人现在还难以接受我的这种解释。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210630_090515_297959.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210630_090515_297959.txt
+ 

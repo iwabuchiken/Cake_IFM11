@@ -5318,3 +5318,304 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_131759_352005.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210622_131759_352005.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210630_083654_771779)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，]]
+    [1] => 中国发展模式的最大特点就是
+    [2] => 擅长[shan4-
+    [3] => “调结构”。]]我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。]]大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。]]4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中
+    [4] => 偏执[pian1zhi2
+    [5] => 的意识形态偏见。观察者网整理节目内容，以
+    [6] => 飨[xiang3
+    [7] => 读者。】
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)【当下世界正处在变局中，而正在世界多地爆发蔓延的新冠疫情，无疑会让整个世界格局发生更加深刻而又复杂的变化。中美之间的矛盾是结构性的，是难以调和的。其实，这没有什么了不起，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中国发展模式的最大特点就是
+[process-trans-sentences_chinese.php : 216] match => 擅长[shan4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)“调结构”。]]我们要做的是进一步全面增强综合实力，让美国清晰地知道任何时候都不允许损害中国的核心利益。]]大家经常问，中国是不是要取代美国，什么时候可以取代美国，现在时机是不是已经成熟了，其实这样的问题本身就很西方逻辑。]]4月13日，在东方卫视《这就是中国》第53期节目中，复旦大学中国研究院的院长张维为教授和复旦大学中国研究院数字“一带一路”中心的副主任李波教授，共同探讨西方防疫中
+[process-trans-sentences_chinese.php : 216] match => 偏执[pian1zhi2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的意识形态偏见。观察者网整理节目内容，以
+[process-trans-sentences_chinese.php : 216] match => 飨[xiang3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)读者。】
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_083654_849778.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_083654_849778.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210630_085406_008378)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；
+    [1] => 坦率[tand3shuai4
+    [2] => 地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。]]为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分
+    [3] => 恼火[:annoy
+    [4] => ，]]
+    [5] => 于是就使用他们惯用的
+    [6] => 造谣[-yao2:spread-rumors
+    [7] => 诬蔑[wu2mie4:slander
+    [8] => 手段。]]最近他们说中国数据
+    [9] => 造假[-jia3:fake
+    [10] => ]]
+    [11] => ，其实背后
+    [12] => 反映[-ying4:reflect
+    [13] => ]]
+    [14] => 的就是今天西方的
+    [15] => 窘境[jiong3-:dilemma
+    [16] => ]]
+    [17] => ，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？]]最
+    [18] => 离谱[-pu3:outrageous
+    [19] => ]]
+    [20] => 的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。]]我
+    [21] => 总是说[:always-say
+    [22] => ]]
+    [23] => ，现在看西方媒体对中国的许多报道，最好当笑话来看，]]
+    [24] => 随时可以
+    [25] => 编出[bian1-
+    [26] => 很多笑话集，]]
+    [27] => 大家不要太
+    [28] => 在意[:care
+    [29] => ]]
+    [30] => ，让他们继续留在黑暗中
+    [31] => 犯傻[fan4sha3:commit-stupid
+    [32] => 吧，]]
+    [33] => 最后
+    [34] => 后悔[-hui3
+    [35] => 的一定是西方自己，而不是中国。]]现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，
+    [36] => 还是[:still
+    [37] => 比较客观的。在社交媒体上，质疑西方主流媒体
+    [38] => 妖魔[yao1mo2
+    [39] => ]]
+    [40] => 化中国的声音也非常多。]]我就看到一个网民的
+    [41] => 调侃[tiao2kan3:ridicule
+    [42] => ，]]
+    [43] => 说如果中国的数据是假的，那
+    [44] => 麻烦[:trouble
+    [45] => 了，]]
+    [46] => 中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此
+    [47] => 松懈[-xie4
+    [48] => ]]
+    [49] => 的措施，只能
+    [50] => 完蛋[-dan4:finish
+    [51] => 了
+    [52] => ]]；
+    [53] => 反过来[in-turn
+    [54] => 也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多
+    [55] => 模仿[mo2fang3
+    [56] => ]]
+    [57] => 中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)新冠疫情在欧美大爆发，民众对政府应对不力，感到强烈不满；
+[process-trans-sentences_chinese.php : 216] match => 坦率[tand3shuai4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)地说，其中一个原因就是中国抗疫模式比较成功，创造了一种模式，一种巨大的存在感。]]为什么中国可以做到，西方国家做不到呢？这让西方反华势力十分
+[process-trans-sentences_chinese.php : 216] match => 恼火[:annoy
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)于是就使用他们惯用的
+[process-trans-sentences_chinese.php : 216] match => 造谣[-yao2:spread-rumors
+[process-trans-sentences_chinese.php : 216] match => 诬蔑[wu2mie4:slander
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)手段。]]最近他们说中国数据
+[process-trans-sentences_chinese.php : 216] match => 造假[-jia3:fake
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，其实背后
+[process-trans-sentences_chinese.php : 216] match => 反映[-ying4:reflect
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的就是今天西方的
+[process-trans-sentences_chinese.php : 216] match => 窘境[jiong3-:dilemma
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，我们这么优越的民主制度，我们这么发达的国家都控制不了疫情，你们“专制”国家、落后国家，怎么可能控制住呢？]]最
+[process-trans-sentences_chinese.php : 216] match => 离谱[-pu3:outrageous
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的是，据报道，有英国官员说，中国疫情的真实数据应该是中国通报的40倍。]]我
+[process-trans-sentences_chinese.php : 216] match => 总是说[:always-say
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，现在看西方媒体对中国的许多报道，最好当笑话来看，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)随时可以
+[process-trans-sentences_chinese.php : 216] match => 编出[bian1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)很多笑话集，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)大家不要太
+[process-trans-sentences_chinese.php : 216] match => 在意[:care
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，让他们继续留在黑暗中
+[process-trans-sentences_chinese.php : 216] match => 犯傻[fan4sha3:commit-stupid
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吧，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)最后
+[process-trans-sentences_chinese.php : 216] match => 后悔[-hui3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的一定是西方自己，而不是中国。]]现在是网络世界，专业信息的渠道沟通非常畅通，西方专业人士总体上对这次中国抗疫的评价，
+[process-trans-sentences_chinese.php : 216] match => 还是[:still
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)比较客观的。在社交媒体上，质疑西方主流媒体
+[process-trans-sentences_chinese.php : 216] match => 妖魔[yao1mo2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)化中国的声音也非常多。]]我就看到一个网民的
+[process-trans-sentences_chinese.php : 216] match => 调侃[tiao2kan3:ridicule
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)说如果中国的数据是假的，那
+[process-trans-sentences_chinese.php : 216] match => 麻烦[:trouble
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)了，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中国采取这么严格的防控措施，数据还是假的，那西方国家采取如此
+[process-trans-sentences_chinese.php : 216] match => 松懈[-xie4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的措施，只能
+[process-trans-sentences_chinese.php : 216] match => 完蛋[-dan4:finish
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)了
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]；
+[process-trans-sentences_chinese.php : 216] match => 反过来[in-turn
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)也一样，如果中国数据都是真的，那也麻烦了，因为西方现在采取这么多
+[process-trans-sentences_chinese.php : 216] match => 模仿[mo2fang3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中国的做法、措施，但落实的过程、程度远不如中国严格，那西方国家什么时候才能达到疫情拐点？
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_085406_039578.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_085406_039578.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210630_090304_561399)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。]]与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能
+    [1] => 不亚于[-ya3-:no-less-than
+    [2] => ]]
+    [3] => 前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。]]我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。]]这场没有
+    [4] => 硝烟[xiao1yan1
+    [5] => 的“世界大战”几乎可以把“百年未有之大变局”所
+    [6] => 涉及[:involve
+    [7] => ]]
+    [8] => 的各种问题都
+    [9] => 浓缩[nong2suo1
+    [10] => 在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。]]第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。]]现在我们先谈前两个问题，是我个人的思考，一家之言，算是[:regarded-as
+    [11] => 抛砖引玉[pao1zhuan1--:throw-brick-pull-beads;intriguing
+    [12] => ]]
+    [13] => ，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。]]与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能
+[process-trans-sentences_chinese.php : 216] match => 不亚于[-ya3-:no-less-than
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。]]我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。]]这场没有
+[process-trans-sentences_chinese.php : 216] match => 硝烟[xiao1yan1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的“世界大战”几乎可以把“百年未有之大变局”所
+[process-trans-sentences_chinese.php : 216] match => 涉及[:involve
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的各种问题都
+[process-trans-sentences_chinese.php : 216] match => 浓缩[nong2suo1
+[process-trans-sentences_chinese.php : 216] match => 在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。]]第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。]]现在我们先谈前两个问题，是我个人的思考，一家之言，算是[:regarded-as
+[process-trans-sentences_chinese.php : 216] match => 抛砖引玉[pao1zhuan1--:throw-brick-pull-beads;intriguing
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_090304_561399.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_090304_561399.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210630_090318_656625)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。]]与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能
+    [1] => 不亚于[-ya3-:no-less-than
+    [2] => ]]
+    [3] => 前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。]]我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。]]这场没有
+    [4] => 硝烟[xiao1yan1
+    [5] => 的“世界大战”几乎可以把“百年未有之大变局”所
+    [6] => 涉及[:involve
+    [7] => ]]
+    [8] => 的各种问题都
+    [9] => 浓缩[nong2suo1
+    [10] => 在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。]]第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。]]现在我们先谈前两个问题，是我个人的思考，一家之言，算是[:regarded-as
+    [11] => 抛砖引玉[pao1zhuan1--:throw-brick-pull-beads;intriguing
+    [12] => ]]
+    [13] => ，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)所以这次新冠疫情的爆发，很像一场世界大战，敌人不是某一个国家，而是病毒。]]与前两次世界大战相比，这次大战发展的速度很快，或者说更快，影响的国家和人口更多、更广，它已经在世界200多个国家和地区爆发，造成的经济损失可能
+[process-trans-sentences_chinese.php : 216] match => 不亚于[-ya3-:no-less-than
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)前两次世界大战，造成的生命损失现在还难以准确地判断，因为疫情在中国以外的地区开始多点爆发。]]我们希望通过国际抗疫阻击战，能够把人类的生命财产损失降到最低的程度，虽然这很不容易。]]这场没有
+[process-trans-sentences_chinese.php : 216] match => 硝烟[xiao1yan1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的“世界大战”几乎可以把“百年未有之大变局”所
+[process-trans-sentences_chinese.php : 216] match => 涉及[:involve
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的各种问题都
+[process-trans-sentences_chinese.php : 216] match => 浓缩[nong2suo1
+[process-trans-sentences_chinese.php : 216] match => 在一起。我想在这里用两期节目和大家探讨其中的四个问题，或者叫“四重挑战”。]]第一是新兴大国与守成大国地位变化带来的挑战，第二是新工业革命带来的挑战，第三是文明冲突带来的挑战，第四是制度竞争带来的挑战。]]现在我们先谈前两个问题，是我个人的思考，一家之言，算是[:regarded-as
+[process-trans-sentences_chinese.php : 216] match => 抛砖引玉[pao1zhuan1--:throw-brick-pull-beads;intriguing
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，希望有更多的人一起来思考这些关系到中国与世界未来的大问题。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_090318_656625.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_090318_656625.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210630_091303_223712)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 和历史上类似的挑战相比，今天的这些挑战
+    [1] => 显得[:appear
+    [2] => 更为严峻。]]因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是
+    [3] => 叠合[die2-:overlap
+    [4] => 在一起的，互相
+    [5] => 渗透[shen4tou4
+    [6] => ，所以情况更为复杂。]]当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。]]中国应对这些挑战理念和举措，将深刻地影响
+    [7] => 世界
+    [8] => 格局[:pattern
+    [9] => ]]
+    [10] => 未来的演变，有可能推动人类命运共同体的共识走向成熟。]]我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题
+    [11] => 着墨[zhuo2mo4
+    [12] => ]]
+    [13] => 最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，]]
+    [14] => 当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。]]他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。]]他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德
+    [15] => 陷阱[xian4jing3
+    [16] => 吗？》。]]我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是
+    [17] => 笃信[du3-
+    [18] => 西方政治文化中非此即彼、零和游戏的国家，]]
+    [19] => 用这种情况拿来
+    [20] => 比喻[-yu4
+    [21] => 中国这样一个相信合作
+    [22] => 共赢[-ying2
+    [23] => 、不相信零和游戏的国家，没有说服力。]]但他还是坚持，认为多数美国人现在还难以接受我的这种解释。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和历史上类似的挑战相比，今天的这些挑战
+[process-trans-sentences_chinese.php : 216] match => 显得[:appear
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)更为严峻。]]因为历史上这四种挑战中的任何一种，单独就可能引发战争，或者引发过战争，但今天这四重挑战是
+[process-trans-sentences_chinese.php : 216] match => 叠合[die2-:overlap
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在一起的，互相
+[process-trans-sentences_chinese.php : 216] match => 渗透[shen4tou4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，所以情况更为复杂。]]当然，今天的世界与过去的世界有一个最大的不同，那就是中国作为一个文明型国家和社会主义国家的全面崛起，这改变了世界上很多东西。]]中国应对这些挑战理念和举措，将深刻地影响
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)世界
+[process-trans-sentences_chinese.php : 216] match => 格局[:pattern
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)未来的演变，有可能推动人类命运共同体的共识走向成熟。]]我们首先来看看“新兴大国与守成大国地位变化”带来的挑战。大家知道，对这个话题
+[process-trans-sentences_chinese.php : 216] match => 着墨[zhuo2mo4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)最多的是美国哈佛大学教授格雷厄姆·艾利森，他借用古希腊历史学家修昔底德对伯罗奔尼撒战争的研究，提出过一个结论，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)当年雅典城邦崛起，引起了斯巴达城邦的恐惧，结果是战争。]]他通过16个案例论证，守成大国和新兴大国之间存有结构性矛盾，其中12次导致了战争。]]他本人反复强调，这样论述的目的是为了提醒中美双方努力避免军事冲突，但他说出版社采用标题党的方法起了书名，叫《注定一战：中美能避免修昔底德
+[process-trans-sentences_chinese.php : 216] match => 陷阱[xian4jing3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)吗？》。]]我曾与他当面交流过，我说，你这16个案例所涉及的国家几乎都是
+[process-trans-sentences_chinese.php : 216] match => 笃信[du3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)西方政治文化中非此即彼、零和游戏的国家，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)用这种情况拿来
+[process-trans-sentences_chinese.php : 216] match => 比喻[-yu4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中国这样一个相信合作
+[process-trans-sentences_chinese.php : 216] match => 共赢[-ying2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、不相信零和游戏的国家，没有说服力。]]但他还是坚持，认为多数美国人现在还难以接受我的这种解释。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_091303_239312.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_091303_239312.txt'
+  
