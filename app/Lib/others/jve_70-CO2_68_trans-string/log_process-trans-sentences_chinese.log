@@ -5619,3 +5619,175 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_091303_239312.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210630_091303_239312.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210704_134147_500011)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 和鬼门相对的西南（坤）的方角称作里鬼门（うらきもん），和鬼门同样，被人们所忌避。
+    [1] => 
+    [2] => 在阴阳道中，四隅的方位、方角分别称作：东北（艮）的“鬼门”、东南（巽）的“风门、地门”、西南的里鬼门（人门、病门）、西北的（天门）。在日本，自古以来就将东北（艮）视为鬼出入的方位，和阴阳道结合后，发展成日本特有的家相，成为特别的忌避。[1]
+    [3] => 
+    [4] => 在武家的世界，大多数的城的鬼门方位配置厕所。安土城、福知山城、冈山城、姫路城等皆在里鬼门配置厕所。[2]
+    [5] => 
+    [6] => 十二支的鬼门（丑寅）的相反方位是未申，所以，在鬼门的位置以猿回避鬼门，京都御所的东北角有木雕的猿镇座，围墙也内凹，称作“猿辻”。
+    [7] => 
+    [8] => 此外，在台湾，鬼门是“连结此世和彼世”之门，农历七月（鬼月）会“开鬼门”[3]。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和鬼门相对的西南（坤）的方角称作里鬼门（うらきもん），和鬼门同样，被人们所忌避。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 在阴阳道中，四隅的方位、方角分别称作：东北（艮）的“鬼门”、东南（巽）的“风门、地门”、西南的里鬼门（人门、病门）、西北的（天门）。在日本，自古以来就将东北（艮）视为鬼出入的方位，和阴阳道结合后，发展成日本特有的家相，成为特别的忌避。[1]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 在武家的世界，大多数的城的鬼门方位配置厕所。安土城、福知山城、冈山城、姫路城等皆在里鬼门配置厕所。[2]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)十二支的鬼门（丑寅）的相反方位是未申，所以，在鬼门的位置以猿回避鬼门，京都御所的东北角有木雕的猿镇座，围墙也内凹，称作“猿辻”。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 此外，在台湾，鬼门是“连结此世和彼世”之门，农历七月（鬼月）会“开鬼门”[3]。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134147_526012.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134147_526012.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210704_134159_241316)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 和鬼门相对的西南（
+    [1] => 坤[kun1
+    [2] => ）的方角称作里鬼门（うらきもん），和鬼门同样，被人们所
+    [3] => 忌避[ji4bi4
+    [4] => 。]]在阴阳道中，四隅[-yu2
+    [5] => ]]
+    [6] => 的方位、方角分别称作：东北（
+    [7] => 艮[gen3
+    [8] => ]]
+    [9] => ）的“鬼门”、东南（
+    [10] => 巽[xun4
+    [11] => ]]
+    [12] => ）的“风门、地门”、西南的里鬼门（人门、病门）、西北的（天门）。]]在日本，自古以来就将东北（艮）视为鬼出入的方位，和阴阳道结合后，发展成日本特有的
+    [13] => 家相[-xiang1
+    [14] => ]]
+    [15] => ，成为特别的忌避。[1]在武家的世界，大多数的城的鬼门方位配置厕所。安土城、福知山城、冈山城、
+    [16] => 姫[ji1
+    [17] => 路城等皆在里鬼门配置厕所。]][2]十二支的鬼门（丑寅）的相反方位是未申，所以，在鬼门的位置以猿回避鬼门，京都御所的东北角有木雕的猿镇座，围墙也内凹，称作“猿辻”。此外，在台湾，鬼门是“连结此世和彼世”之门，农历七月（鬼月）会“开鬼门”[3]。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和鬼门相对的西南（
+[process-trans-sentences_chinese.php : 216] match => 坤[kun1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)）的方角称作里鬼门（うらきもん），和鬼门同样，被人们所
+[process-trans-sentences_chinese.php : 216] match => 忌避[ji4bi4
+[process-trans-sentences_chinese.php : 216] match => 。]]在阴阳道中，四隅[-yu2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的方位、方角分别称作：东北（
+[process-trans-sentences_chinese.php : 216] match => 艮[gen3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)）的“鬼门”、东南（
+[process-trans-sentences_chinese.php : 216] match => 巽[xun4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)）的“风门、地门”、西南的里鬼门（人门、病门）、西北的（天门）。]]在日本，自古以来就将东北（艮）视为鬼出入的方位，和阴阳道结合后，发展成日本特有的
+[process-trans-sentences_chinese.php : 216] match => 家相[-xiang1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 216] match => ，成为特别的忌避。[1]在武家的世界，大多数的城的鬼门方位配置厕所。安土城、福知山城、冈山城、
+[process-trans-sentences_chinese.php : 216] match => 姫[ji1
+[process-trans-sentences_chinese.php : 216] match => 路城等皆在里鬼门配置厕所。]][2]十二支的鬼门（丑寅）的相反方位是未申，所以，在鬼门的位置以猿回避鬼门，京都御所的东北角有木雕的猿镇座，围墙也内凹，称作“猿辻”。此外，在台湾，鬼门是“连结此世和彼世”之门，农历七月（鬼月）会“开鬼门”[3]。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134159_537715.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134159_537715.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210704_134512_309199)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 和鬼门相对的西南（
+    [1] => 坤[kun1
+    [2] => ）的方角称作里鬼门（うらきもん），和鬼门同样，被人们所
+    [3] => 忌避[ji4bi4
+    [4] => 。]]在阴阳道中，四隅[-yu2
+    [5] => ]]
+    [6] => 的方位、方角分别称作：东北（
+    [7] => 艮[gen3
+    [8] => ]]
+    [9] => ）的“鬼门”、东南（
+    [10] => 巽[xun4
+    [11] => ]]
+    [12] => ）的“风门、地门”、西南的里鬼门（人门、病门）、西北的（天门）。]]在日本，自古以来就将东北（艮）视为鬼出入的方位，和阴阳道结合后，发展成日本特有的
+    [13] => 家相[-xiang1
+    [14] => ]]
+    [15] => ，成为特别的忌避。[1]在武家的世界，大多数的城的鬼门方位配置厕所。安土城、福知山城、冈山城、
+    [16] => 姫[ji1
+    [17] => 路城等皆在里鬼门配置厕所。]][2]十二支的鬼门（丑寅）的相反方位是未申，所以，在鬼门的位置以猿回避鬼门，京都御所的东北角有木雕的猿镇座，围墙也内凹，称作“猿辻”。此外，在台湾，鬼门是“连结此世和彼世”之门，农历七月（鬼月）会“开鬼门”[3]。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和鬼门相对的西南（
+[process-trans-sentences_chinese.php : 216] match => 坤[kun1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)）的方角称作里鬼门（うらきもん），和鬼门同样，被人们所
+[process-trans-sentences_chinese.php : 216] match => 忌避[ji4bi4
+[process-trans-sentences_chinese.php : 216] match => 。]]在阴阳道中，四隅[-yu2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的方位、方角分别称作：东北（
+[process-trans-sentences_chinese.php : 216] match => 艮[gen3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)）的“鬼门”、东南（
+[process-trans-sentences_chinese.php : 216] match => 巽[xun4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)）的“风门、地门”、西南的里鬼门（人门、病门）、西北的（天门）。]]在日本，自古以来就将东北（艮）视为鬼出入的方位，和阴阳道结合后，发展成日本特有的
+[process-trans-sentences_chinese.php : 216] match => 家相[-xiang1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 216] match => ，成为特别的忌避。[1]在武家的世界，大多数的城的鬼门方位配置厕所。安土城、福知山城、冈山城、
+[process-trans-sentences_chinese.php : 216] match => 姫[ji1
+[process-trans-sentences_chinese.php : 216] match => 路城等皆在里鬼门配置厕所。]][2]十二支的鬼门（丑寅）的相反方位是未申，所以，在鬼门的位置以猿回避鬼门，京都御所的东北角有木雕的猿镇座，围墙也内凹，称作“猿辻”。此外，在台湾，鬼门是“连结此世和彼世”之门，农历七月（鬼月）会“开鬼门”[3]。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134512_315198.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134512_315198.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210704_134529_906543)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 十二支的鬼门（
+    [1] => 丑寅[chou3yin2
+    [2] => ]]
+    [3] => ）的相反方位是未申，所以，在鬼门的位置以
+    [4] => 猿[yuan
+    [5] => 回避鬼门，京都御所的东北角有
+    [6] => 木雕[-diao1
+    [7] => 的
+    [8] => 猿镇座，围墙[-qiang2
+    [9] => ]]
+    [10] => 也
+    [11] => 内凹[-ao1
+    [12] => ，称作“
+    [13] => 猿辻[yuan2shi2
+    [14] => ”。此外，在台湾，鬼门是“连结此世和彼世”之门，农历七月（鬼月）会“开鬼门”[3]。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)十二支的鬼门（
+[process-trans-sentences_chinese.php : 216] match => 丑寅[chou3yin2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)）的相反方位是未申，所以，在鬼门的位置以
+[process-trans-sentences_chinese.php : 216] match => 猿[yuan
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)回避鬼门，京都御所的东北角有
+[process-trans-sentences_chinese.php : 216] match => 木雕[-diao1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的
+[process-trans-sentences_chinese.php : 216] match => 猿镇座，围墙[-qiang2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)也
+[process-trans-sentences_chinese.php : 216] match => 内凹[-ao1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，称作“
+[process-trans-sentences_chinese.php : 216] match => 猿辻[yuan2shi2
+[process-trans-sentences_chinese.php : 216] match => ”。此外，在台湾，鬼门是“连结此世和彼世”之门，农历七月（鬼月）会“开鬼门”[3]。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134529_922142.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134529_922142.txt'
+  
