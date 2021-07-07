@@ -41502,3 +41502,218 @@ Change directory into one of the sample program directories, then use Python to 
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210706_171056_015088.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210707_114258_212172)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => If the test programs don’t run, then usually, you need to update your video drivers. If you want to know exactly why a program didn’t run, you may need to run it using the command prompt - this will enable you to see the error messages.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => If the test programs don’t run, then usually, you need to update your video drivers. If you want to know exactly why a program didn’t run, you may need to run it using the command prompt - this will enable you to see the error messages.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->If the test programs don’t run, then usually, you need to update your video drivers. If you want to know exactly why a program didn’t run, you may need to run it using the command prompt - this will enable you to see the error messages.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => If the test programs don’t run, then usually, you need to update your video drivers.If you want to know exactly why a program didn’t run, you may need to run it using the command prompt - this will enable you to see the error messages.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>If the test programs don’t run, then usually, you need to update your video drivers.If you want to know exactly why a program didn’t run, you may need to run it using the command prompt - this will enable you to see the error messages.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210707_114258_212172.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210707_114258_212172.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210707_165703_232743)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => You can run your script by using your computer’s ‘Command Prompt’. You can access this by clicking ‘Start > All Programs > Accessories > Command Prompt’, or by going to ‘Start > Run’ and typing ‘cmd’. When it opens, it should look something like this:
+
+    [1] => 
+
+    [2] => At the moment it’s pointing to its default directory, which in my case is ‘Documents and Settings’ (it doesn’t matter if yours is different). We need to change the directory to the one where we saved our script. To do this, we use the cd command. This stands for ‘change directory’. Type the following text behind the > symbol:
+
+    [3] => 
+
+    [4] => Instead of version 1.10.9-x64, you should type the version number of Panda3D that you have downloaded and installed. Please note that this folder name is case-sensitive and must match exactly (other than the version number, of course). Then, press the ‘Enter’ key on your keyboard. You should now have the following on the Command Prompt:
+
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->You can run your script by using your computer’s ‘Command Prompt’. You can access this by clicking ‘Start > All Programs > Accessories > Command Prompt’, or by going to ‘Start > Run’ and typing ‘cmd’. When it opens, it should look something like this:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->At the moment it’s pointing to its default directory, which in my case is ‘Documents and Settings’ (it doesn’t matter if yours is different). We need to change the directory to the one where we saved our script. To do this, we use the cd command. This stands for ‘change directory’. Type the following text behind the > symbol:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Instead of version 1.10.9-x64, you should type the version number of Panda3D that you have downloaded and installed. Please note that this folder name is case-sensitive and must match exactly (other than the version number, of course). Then, press the ‘Enter’ key on your keyboard. You should now have the following on the Command Prompt:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => You can run your script by using your computer’s ‘Command Prompt’. You can access this by clicking ‘Start > All Programs > Accessories > Command Prompt’, or by going to ‘Start > Run’ and typing ‘cmd’. When it opens, it should look something like this: 
+    [1] => 
+
+    [2] => At the moment it’s pointing to its default directory, which in my case is ‘Documents and Settings’ (it doesn’t matter if yours is different). We need to change the directory to the one where we saved our script. To do this, we use the cd command. This stands for ‘change directory’. Type the following text behind the > symbol: 
+    [3] => 
+
+    [4] => Instead of version 1.10.9-x64, you should type the version number of Panda3D that you have downloaded and installed. Please note that this folder name is case-sensitive and must match exactly (other than the version number, of course). Then, press the ‘Enter’ key on your keyboard. You should now have the following on the Command Prompt: 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->You can run your script by using your computer’s ‘Command Prompt’. You can access this by clicking ‘Start > All Programs > Accessories > Command Prompt’, or by going to ‘Start > Run’ and typing ‘cmd’. When it opens, it should look something like this: 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->At the moment it’s pointing to its default directory, which in my case is ‘Documents and Settings’ (it doesn’t matter if yours is different). We need to change the directory to the one where we saved our script. To do this, we use the cd command. This stands for ‘change directory’. Type the following text behind the > symbol: 
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Instead of version 1.10.9-x64, you should type the version number of Panda3D that you have downloaded and installed. Please note that this folder name is case-sensitive and must match exactly (other than the version number, of course). Then, press the ‘Enter’ key on your keyboard. You should now have the following on the Command Prompt: 
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => You can run your script by using your computer’s ‘Command Prompt’.You can access this by clicking ‘Start > All Programs > Accessories > Command Prompt’, or by going to ‘Start > Run’ and typing ‘cmd’.When it opens, it should look something like this: 
+    [1] => 
+
+    [2] => At the moment it’s pointing to its default directory, which in my case is ‘Documents and Settings’ (it doesn’t matter if yours is different).We need to change the directory to the one where we saved our script.To do this, we use the cd command.This stands for ‘change directory’.Type the following text behind the > symbol: 
+    [3] => 
+
+    [4] => Instead of version 1.10.9-x64, you should type the version number of Panda3D that you have downloaded and installed.Please note that this folder name is case-sensitive and must match exactly (other than the version number, of course).Then, press the ‘Enter’ key on your keyboard.You should now have the following on the Command Prompt: 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>You can run your script by using your computer’s ‘Command Prompt’.You can access this by clicking ‘Start > All Programs > Accessories > Command Prompt’, or by going to ‘Start > Run’ and typing ‘cmd’.When it opens, it should look something like this: 
+At the moment it’s pointing to its default directory, which in my case is ‘Documents and Settings’ (it doesn’t matter if yours is different).We need to change the directory to the one where we saved our script.To do this, we use the cd command.This stands for ‘change directory’.Type the following text behind the > symbol: 
+Instead of version 1.10.9-x64, you should type the version number of Panda3D that you have downloaded and installed.Please note that this folder name is case-sensitive and must match exactly (other than the version number, of course).Then, press the ‘Enter’ key on your keyboard.You should now have the following on the Command Prompt: 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210707_165703_232743.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210707_165703_232743.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210707_172205_284254)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'This tutorial is called “A Panda Hello World”. It is a typical example of a simple Panda3D program. Walking through this tutorial will enable you to obtain some limited familiarity with the Panda3D API without having to learn the entire thing. The program that we are going to create will load up a small scene containing some grass and a panda. The panda will be animated to walk back and forth over the grass.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => This tutorial is called “A Panda Hello World”. It is a typical example of a simple Panda3D program. Walking through this tutorial will enable you to obtain some limited familiarity with the Panda3D API without having to learn the entire thing. The program that we are going to create will load up a small scene containing some grass and a panda. The panda will be animated to walk back and forth over the grass.
+    [1] => 
+
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => This tutorial is called “A Panda Hello World”. It is a typical example of a simple Panda3D program. Walking through this tutorial will enable you to obtain some limited familiarity with the Panda3D API without having to learn the entire thing. The program that we are going to create will load up a small scene containing some grass and a panda. The panda will be animated to walk back and forth over the grass.
+    [1] => 
+
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->This tutorial is called “A Panda Hello World”. It is a typical example of a simple Panda3D program. Walking through this tutorial will enable you to obtain some limited familiarity with the Panda3D API without having to learn the entire thing. The program that we are going to create will load up a small scene containing some grass and a panda. The panda will be animated to walk back and forth over the grass.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => This tutorial is called “A Panda Hello World”.It is a typical example of a simple Panda3D program.Walking through this tutorial will enable you to obtain some limited familiarity with the Panda3D API without having to learn the entire thing.The program that we are going to create will load up a small scene containing some grass and a panda.The panda will be animated to walk back and forth over the grass.
+    [1] => 
+
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>This tutorial is called “A Panda Hello World”.It is a typical example of a simple Panda3D program.Walking through this tutorial will enable you to obtain some limited familiarity with the Panda3D API without having to learn the entire thing.The program that we are going to create will load up a small scene containing some grass and a panda.The panda will be animated to walk back and forth over the grass.
+
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210707_172205_284254.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210707_172205_284254.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
