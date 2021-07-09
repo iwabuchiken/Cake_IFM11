@@ -41717,3 +41717,246 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210707_172205_284254.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210708_160404_816473)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Panda3D contains a data structure called the Scene Graph. The Scene Graph is a tree containing all objects that need to be rendered. At the root of the tree is an object named render. Nothing is rendered until it is first inserted into the Scene Graph.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'To install the grassy scenery model into the Scene Graph, we use the method reparentTo(). This sets the parent of the model, thereby giving it a place in the Scene Graph. Doing so makes the model visible in the scene.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Finally, we adjust the position and scale of the model. In this particular case, the environment model is a little too large and somewhat offset for our purposes. The setScale() and setPos() procedures rescale and center the model.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Panda3D contains a data structure called the Scene Graph. The Scene Graph is a tree containing all objects that need to be rendered. At the root of the tree is an object named render. Nothing is rendered until it is first inserted into the Scene Graph.
+    [1] => 
+
+    [2] => To install the grassy scenery model into the Scene Graph, we use the method reparentTo(). This sets the parent of the model, thereby giving it a place in the Scene Graph. Doing so makes the model visible in the scene.
+    [3] => 
+
+    [4] => Finally, we adjust the position and scale of the model. In this particular case, the environment model is a little too large and somewhat offset for our purposes. The setScale() and setPos() procedures rescale and center the model.
+    [5] => 
+
+    [6] => Panda3D uses the “geographical” coordinate system where position (-8, 42, 0) means map coordinates (8, 42) and height 0. If you are used to OpenGL/Direct3D coordinates, then hold up your right hand in the classical position with thumb as X, fingers as Y, and palm as Z facing toward you; then tilt backward until your hand is level with the fingers pointing away and palm facing up. Moving “forward” in Panda3D is a positive change in Y coordinate.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Panda3D contains a data structure called the Scene Graph. The Scene Graph is a tree containing all objects that need to be rendered. At the root of the tree is an object named render. Nothing is rendered until it is first inserted into the Scene Graph.
+    [1] => 
+
+    [2] => To install the grassy scenery model into the Scene Graph, we use the method reparentTo(). This sets the parent of the model, thereby giving it a place in the Scene Graph. Doing so makes the model visible in the scene.
+    [3] => 
+
+    [4] => Finally, we adjust the position and scale of the model. In this particular case, the environment model is a little too large and somewhat offset for our purposes. The setScale() and setPos() procedures rescale and center the model.
+    [5] => 
+
+    [6] => Panda3D uses the “geographical” coordinate system where position (-8, 42, 0) means map coordinates (8, 42) and height 0. If you are used to OpenGL/Direct3D coordinates, then hold up your right hand in the classical position with thumb as X, fingers as Y, and palm as Z facing toward you; then tilt backward until your hand is level with the fingers pointing away and palm facing up. Moving “forward” in Panda3D is a positive change in Y coordinate.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Panda3D contains a data structure called the Scene Graph. The Scene Graph is a tree containing all objects that need to be rendered. At the root of the tree is an object named render. Nothing is rendered until it is first inserted into the Scene Graph.
+$matches ==>
+Array
+(
+    [0] => h. 
+    [1] => h.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->To install the grassy scenery model into the Scene Graph, we use the method reparentTo(). This sets the parent of the model, thereby giving it a place in the Scene Graph. Doing so makes the model visible in the scene.
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Finally, we adjust the position and scale of the model. In this particular case, the environment model is a little too large and somewhat offset for our purposes. The setScale() and setPos() procedures rescale and center the model.
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Panda3D uses the “geographical” coordinate system where position (-8, 42, 0) means map coordinates (8, 42) and height 0. If you are used to OpenGL/Direct3D coordinates, then hold up your right hand in the classical position with thumb as X, fingers as Y, and palm as Z facing toward you; then tilt backward until your hand is level with the fingers pointing away and palm facing up. Moving “forward” in Panda3D is a positive change in Y coordinate.
+$matches ==>
+Array
+(
+    [0] => p. 
+    [1] => p.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Panda3D contains a data structure called the Scene Graph.The Scene Graph is a tree containing all objects that need to be rendered.At the root of the tree is an object named render.Nothing is rendered until it is first inserted into the Scene Graph.
+    [1] => 
+
+    [2] => To install the grassy scenery model into the Scene Graph, we use the method reparentTo().This sets the parent of the model, thereby giving it a place in the Scene Graph.Doing so makes the model visible in the scene.
+    [3] => 
+
+    [4] => Finally, we adjust the position and scale of the model.In this particular case, the environment model is a little too large and somewhat offset for our purposes.The setScale() and setPos() procedures rescale and center the model.
+    [5] => 
+
+    [6] => Panda3D uses the “geographical” coordinate system where position (-8, 42, 0) means map coordinates (8, 42) and height 0. If you are used to OpenGL/Direct3D coordinates, then hold up your right hand in the classical position with thumb as X, fingers as Y, and palm as Z facing toward you; then tilt backward until your hand is level with the fingers pointing away and palm facing up.Moving “forward” in Panda3D is a positive change in Y coordinate.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Panda3D contains a data structure called the Scene Graph.The Scene Graph is a tree containing all objects that need to be rendered.At the root of the tree is an object named render.Nothing is rendered until it is first inserted into the Scene Graph.
+To install the grassy scenery model into the Scene Graph, we use the method reparentTo().This sets the parent of the model, thereby giving it a place in the Scene Graph.Doing so makes the model visible in the scene.
+Finally, we adjust the position and scale of the model.In this particular case, the environment model is a little too large and somewhat offset for our purposes.The setScale() and setPos() procedures rescale and center the model.
+Panda3D uses the “geographical” coordinate system where position (-8, 42, 0) means map coordinates (8, 42) and height 0. If you are used to OpenGL/Direct3D coordinates, then hold up your right hand in the classical position with thumb as X, fingers as Y, and palm as Z facing toward you; then tilt backward until your hand is level with the fingers pointing away and palm facing up.Moving “forward” in Panda3D is a positive change in Y coordinate.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210708_160404_816473.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210708_160404_816473.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210708_211936_234092)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Milagro Amalia Ángela Sala (San Salvador de Jujuy, 20 de febrero de 1964) es una dirigente política, social e indígena argentina, líder de la Organización Barrial Túpac Amaru, una organización especialmente conocida por su labor de construcción de miles de viviendas en la provincia de Jujuy, e integrante de la Central de los Trabajadores Argentinos (CTA).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Se desempeñó como diputada provincial en la Legislatura por el Frente Unidos y Organizados de Jujuy entre diciembre de 2013 y noviembre de 2015, cuando renunció por haber sido elegida para ocupar una banca del Parlasur por el Frente para la Victoria.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Milagro Amalia Ángela Sala (San Salvador de Jujuy, 20 de febrero de 1964) es una dirigente política, social e indígena argentina, líder de la Organización Barrial Túpac Amaru, una organización especialmente conocida por su labor de construcción de miles de viviendas en la provincia de Jujuy, e integrante de la Central de los Trabajadores Argentinos (CTA).
+    [1] => 
+
+    [2] => Se desempeñó como diputada provincial en la Legislatura por el Frente Unidos y Organizados de Jujuy entre diciembre de 2013 y noviembre de 2015, cuando renunció por haber sido elegida para ocupar una banca del Parlasur por el Frente para la Victoria.
+    [3] => 
+
+    [4] => En enero de 2016 fue arrestada debido a un acampe que realizaron diferentes cooperativas en reclamo contra el gobernador Gerardo Morales.4​ Esta detención ha sido considerada como de carácter político por diversas organizaciones nacionales e internacionales de derechos humanos5​ así como por la Procuraduría de Violencia Institucional. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Milagro Amalia Ángela Sala (San Salvador de Jujuy, 20 de febrero de 1964) es una dirigente política, social e indígena argentina, líder de la Organización Barrial Túpac Amaru, una organización especialmente conocida por su labor de construcción de miles de viviendas en la provincia de Jujuy, e integrante de la Central de los Trabajadores Argentinos (CTA).
+    [1] => 
+
+    [2] => Se desempeñó como diputada provincial en la Legislatura por el Frente Unidos y Organizados de Jujuy entre diciembre de 2013 y noviembre de 2015, cuando renunció por haber sido elegida para ocupar una banca del Parlasur por el Frente para la Victoria.
+    [3] => 
+
+    [4] => En enero de 2016 fue arrestada debido a un acampe que realizaron diferentes cooperativas en reclamo contra el gobernador Gerardo Morales.4​ Esta detención ha sido considerada como de carácter político por diversas organizaciones nacionales e internacionales de derechos humanos5​ así como por la Procuraduría de Violencia Institucional. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->En enero de 2016 fue arrestada debido a un acampe que realizaron diferentes cooperativas en reclamo contra el gobernador Gerardo Morales.4​ Esta detención ha sido considerada como de carácter político por diversas organizaciones nacionales e internacionales de derechos humanos5​ así como por la Procuraduría de Violencia Institucional. 
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Milagro Amalia Ángela Sala (San Salvador de Jujuy, 20 de febrero de 1964) es una dirigente política, social e indígena argentina, líder de la Organización Barrial Túpac Amaru, una organización especialmente conocida por su labor de construcción de miles de viviendas en la provincia de Jujuy, e integrante de la Central de los Trabajadores Argentinos (CTA).
+    [1] => 
+
+    [2] => Se desempeñó como diputada provincial en la Legislatura por el Frente Unidos y Organizados de Jujuy entre diciembre de 2013 y noviembre de 2015, cuando renunció por haber sido elegida para ocupar una banca del Parlasur por el Frente para la Victoria.
+    [3] => 
+
+    [4] => En enero de 2016 fue arrestada debido a un acampe que realizaron diferentes cooperativas en reclamo contra el gobernador Gerardo Morales.4​ Esta detención ha sido considerada como de carácter político por diversas organizaciones nacionales e internacionales de derechos humanos5​ así como por la Procuraduría de Violencia Institucional.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Milagro Amalia Ángela Sala (San Salvador de Jujuy, 20 de febrero de 1964) es una dirigente política, social e indígena argentina, líder de la Organización Barrial Túpac Amaru, una organización especialmente conocida por su labor de construcción de miles de viviendas en la provincia de Jujuy, e integrante de la Central de los Trabajadores Argentinos (CTA).
+Se desempeñó como diputada provincial en la Legislatura por el Frente Unidos y Organizados de Jujuy entre diciembre de 2013 y noviembre de 2015, cuando renunció por haber sido elegida para ocupar una banca del Parlasur por el Frente para la Victoria.
+En enero de 2016 fue arrestada debido a un acampe que realizaron diferentes cooperativas en reclamo contra el gobernador Gerardo Morales.4​ Esta detención ha sido considerada como de carácter político por diversas organizaciones nacionales e internacionales de derechos humanos5​ así como por la Procuraduría de Violencia Institucional.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210708_211936_234092.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210708_211936_234092.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210708_212506_043267)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Milagro Sala nació en San Salvador de Jujuy en 1964 y fue abandonada en una caja de cartón frente a un hospital. Fue adoptada por una familia de clase media que la crio en el barrio Bajo Azopardo. Según una nota periodística, su madre adoptiva era peronista, y recordaba como un hecho importante haberle escrito una carta a Eva Perón (primera dama de la Nación) y en consecuencia haber recibido desde la Fundación Eva Perón una máquina de coser para trabajar.16​ Hasta su adolescencia, Sala vivió en una familia de clase media en la que fue tratada como una hermana más, y heredó el carácter duro de su madre.17​ 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Milagro Sala nació en San Salvador de Jujuy en 1964 y fue abandonada en una caja de cartón frente a un hospital. Fue adoptada por una familia de clase media que la crio en el barrio Bajo Azopardo. Según una nota periodística, su madre adoptiva era peronista, y recordaba como un hecho importante haberle escrito una carta a Eva Perón (primera dama de la Nación) y en consecuencia haber recibido desde la Fundación Eva Perón una máquina de coser para trabajar.16​ Hasta su adolescencia, Sala vivió en una familia de clase media en la que fue tratada como una hermana más, y heredó el carácter duro de su madre.17​ 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Milagro Sala nació en San Salvador de Jujuy en 1964 y fue abandonada en una caja de cartón frente a un hospital. Fue adoptada por una familia de clase media que la crio en el barrio Bajo Azopardo. Según una nota periodística, su madre adoptiva era peronista, y recordaba como un hecho importante haberle escrito una carta a Eva Perón (primera dama de la Nación) y en consecuencia haber recibido desde la Fundación Eva Perón una máquina de coser para trabajar.16​ Hasta su adolescencia, Sala vivió en una familia de clase media en la que fue tratada como una hermana más, y heredó el carácter duro de su madre.17​ 
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Milagro Sala nació en San Salvador de Jujuy en 1964 y fue abandonada en una caja de cartón frente a un hospital.Fue adoptada por una familia de clase media que la crio en el barrio Bajo Azopardo.Según una nota periodística, su madre adoptiva era peronista, y recordaba como un hecho importante haberle escrito una carta a Eva Perón (primera dama de la Nación) y en consecuencia haber recibido desde la Fundación Eva Perón una máquina de coser para trabajar.16​ Hasta su adolescencia, Sala vivió en una familia de clase media en la que fue tratada como una hermana más, y heredó el carácter duro de su madre.17​ 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Milagro Sala nació en San Salvador de Jujuy en 1964 y fue abandonada en una caja de cartón frente a un hospital.Fue adoptada por una familia de clase media que la crio en el barrio Bajo Azopardo.Según una nota periodística, su madre adoptiva era peronista, y recordaba como un hecho importante haberle escrito una carta a Eva Perón (primera dama de la Nación) y en consecuencia haber recibido desde la Fundación Eva Perón una máquina de coser para trabajar.16​ Hasta su adolescencia, Sala vivió en una familia de clase media en la que fue tratada como una hermana más, y heredó el carácter duro de su madre.17​ 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210708_212506_043267.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210708_212506_043267.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
