@@ -41960,3 +41960,171 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210708_212506_043267.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210711_152213_656940)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Introduction. Mesh generation and mesh adaptation are essential processes for numericalmethods like finite element and finite volume simulations. The quality of themesh will tremendously affect the accuracy and efficiency of the methods.Research shows that the actual meaning of the mesh quality depends on thereal problem (isotropic or anisotropic features) and the objectives (minimizingthe interpolation error or improving the conditioning number).The use of a metric tensor field for mesh quality and mesh size specificationis now a widely used tool for mesh generation and mesh adaptation. We adoptthe concept of anM-uniform mesh[3], which considers any adaptive meshas a uniform one in some metric depending on the quantity of interest. Inother words, anM-uniformmesh is an ideal mesh for a given metric whichmay be a combination of several criteria, like element quality, element size,and element orientation, etc. With this concept, the meshing problem can beformalized as:How to generate theM-uniformmesh for a given metric.It is avery challenging problem in theory.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Introduction. Mesh generation and mesh adaptation are essential processes for numericalmethods like finite element and finite volume simulations. The quality of themesh will tremendously affect the accuracy and efficiency of the methods.Research shows that the actual meaning of the mesh quality depends on thereal problem (isotropic or anisotropic features) and the objectives (minimizingthe interpolation error or improving the conditioning number).The use of a metric tensor field for mesh quality and mesh size specificationis now a widely used tool for mesh generation and mesh adaptation. We adoptthe concept of anM-uniform mesh[3], which considers any adaptive meshas a uniform one in some metric depending on the quantity of interest. Inother words, anM-uniformmesh is an ideal mesh for a given metric whichmay be a combination of several criteria, like element quality, element size,and element orientation, etc. With this concept, the meshing problem can beformalized as:How to generate theM-uniformmesh for a given metric.It is avery challenging problem in theory.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Introduction. Mesh generation and mesh adaptation are essential processes for numericalmethods like finite element and finite volume simulations. The quality of themesh will tremendously affect the accuracy and efficiency of the methods.Research shows that the actual meaning of the mesh quality depends on thereal problem (isotropic or anisotropic features) and the objectives (minimizingthe interpolation error or improving the conditioning number).The use of a metric tensor field for mesh quality and mesh size specificationis now a widely used tool for mesh generation and mesh adaptation. We adoptthe concept of anM-uniform mesh[3], which considers any adaptive meshas a uniform one in some metric depending on the quantity of interest. Inother words, anM-uniformmesh is an ideal mesh for a given metric whichmay be a combination of several criteria, like element quality, element size,and element orientation, etc. With this concept, the meshing problem can beformalized as:How to generate theM-uniformmesh for a given metric.It is avery challenging problem in theory.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Introduction.Mesh generation and mesh adaptation are essential processes for numericalmethods like finite element and finite volume simulations.The quality of themesh will tremendously affect the accuracy and efficiency of the methods.Research shows that the actual meaning of the mesh quality depends on thereal problem (isotropic or anisotropic features) and the objectives (minimizingthe interpolation error or improving the conditioning number).The use of a metric tensor field for mesh quality and mesh size specificationis now a widely used tool for mesh generation and mesh adaptation.We adoptthe concept of anM-uniform mesh[3], which considers any adaptive meshas a uniform one in some metric depending on the quantity of interest.Inother words, anM-uniformmesh is an ideal mesh for a given metric whichmay be a combination of several criteria, like element quality, element size,and element orientation, etc.With this concept, the meshing problem can beformalized as:How to generate theM-uniformmesh for a given metric.It is avery challenging problem in theory.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Introduction.Mesh generation and mesh adaptation are essential processes for numericalmethods like finite element and finite volume simulations.The quality of themesh will tremendously affect the accuracy and efficiency of the methods.Research shows that the actual meaning of the mesh quality depends on thereal problem (isotropic or anisotropic features) and the objectives (minimizingthe interpolation error or improving the conditioning number).The use of a metric tensor field for mesh quality and mesh size specificationis now a widely used tool for mesh generation and mesh adaptation.We adoptthe concept of anM-uniform mesh[3], which considers any adaptive meshas a uniform one in some metric depending on the quantity of interest.Inother words, anM-uniformmesh is an ideal mesh for a given metric whichmay be a combination of several criteria, like element quality, element size,and element orientation, etc.With this concept, the meshing problem can beformalized as:How to generate theM-uniformmesh for a given metric.It is avery challenging problem in theory.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210711_152213_656940.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210711_152213_656940.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210711_152721_490978)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Tetrahedral mesh generation has been studied extensively for decades. There are established methods for mesh generation and mesh adaptation, see,e.g., [2]. Robust software implementations exist and some of them are freelyavailable. Most of the codes provide the option to take a user-defined meshsizing function or a metric tensor field as input and generate an adaptedtetrahedral meshes with respect to it. A practical question naturally arises:How close are meshes computed by some common mesh generators to beingM-uniform?So far, only few works addressed this question in theory [5,6]. Numerical experiments suggest that, at least in two dimensions, meshes thatare close to beM-uniform can be generated in practice [3, 5, 6
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Tetrahedral mesh generation has been studied extensively for decades. There are established methods for mesh generation and mesh adaptation, see,e.g., [2]. Robust software implementations exist and some of them are freelyavailable. Most of the codes provide the option to take a user-defined meshsizing function or a metric tensor field as input and generate an adaptedtetrahedral meshes with respect to it. A practical question naturally arises:How close are meshes computed by some common mesh generators to beingM-uniform?So far, only few works addressed this question in theory [5,6]. Numerical experiments suggest that, at least in two dimensions, meshes thatare close to beM-uniform can be generated in practice [3, 5, 6
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Tetrahedral mesh generation has been studied extensively for decades. There are established methods for mesh generation and mesh adaptation, see,e.g., [2]. Robust software implementations exist and some of them are freelyavailable. Most of the codes provide the option to take a user-defined meshsizing function or a metric tensor field as input and generate an adaptedtetrahedral meshes with respect to it. A practical question naturally arises:How close are meshes computed by some common mesh generators to beingM-uniform?So far, only few works addressed this question in theory [5,6]. Numerical experiments suggest that, at least in two dimensions, meshes thatare close to beM-uniform can be generated in practice [3, 5, 6
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Tetrahedral mesh generation has been studied extensively for decades.There are established methods for mesh generation and mesh adaptation, see,e.g., [2].Robust software implementations exist and some of them are freelyavailable.Most of the codes provide the option to take a user-defined meshsizing function or a metric tensor field as input and generate an adaptedtetrahedral meshes with respect to it.A practical question naturally arises:How close are meshes computed by some common mesh generators to beingM-uniform?So far, only few works addressed this question in theory [5,6].Numerical experiments suggest that, at least in two dimensions, meshes thatare close to beM-uniform can be generated in practice [3, 5, 6
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Tetrahedral mesh generation has been studied extensively for decades.There are established methods for mesh generation and mesh adaptation, see,e.g., [2].Robust software implementations exist and some of them are freelyavailable.Most of the codes provide the option to take a user-defined meshsizing function or a metric tensor field as input and generate an adaptedtetrahedral meshes with respect to it.A practical question naturally arises:How close are meshes computed by some common mesh generators to beingM-uniform?So far, only few works addressed this question in theory [5,6].Numerical experiments suggest that, at least in two dimensions, meshes thatare close to beM-uniform can be generated in practice [3, 5, 6
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210711_152721_490978.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210711_152721_490978.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210711_152938_708817)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The purpose of this research note is to present a practical study of theabove question in three dimensions. We compare meshes generated with twofreely available programs,Mmg3d[1] andTetGen[7], by using isotropic mesh sizing functions. This study provides a fair justification of the state-of-the-artmetric-based methods for adaptive mesh generation.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The purpose of this research note is to present a practical study of theabove question in three dimensions. We compare meshes generated with twofreely available programs,Mmg3d[1] andTetGen[7], by using isotropic mesh sizing functions. This study provides a fair justification of the state-of-the-artmetric-based methods for adaptive mesh generation.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The purpose of this research note is to present a practical study of theabove question in three dimensions. We compare meshes generated with twofreely available programs,Mmg3d[1] andTetGen[7], by using isotropic mesh sizing functions. This study provides a fair justification of the state-of-the-artmetric-based methods for adaptive mesh generation.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The purpose of this research note is to present a practical study of theabove question in three dimensions.We compare meshes generated with twofreely available programs,Mmg3d[1] andTetGen[7], by using isotropic mesh sizing functions.This study provides a fair justification of the state-of-the-artmetric-based methods for adaptive mesh generation.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The purpose of this research note is to present a practical study of theabove question in three dimensions.We compare meshes generated with twofreely available programs,Mmg3d[1] andTetGen[7], by using isotropic mesh sizing functions.This study provides a fair justification of the state-of-the-artmetric-based methods for adaptive mesh generation.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210711_152938_708817.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210711_152938_708817.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210713_083212_565341)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 수학에서, 무한곱(無限-, 영어: infinite product)은 무한 수열의 모든 항의 곱이다. 이는 앞의 몇 항의 유한곱에 대한 극한으로 정의되며, 이 극한값이 0이 아닐 경우에만 무한곱이 수렴하는 것으로 정의한다. 무한곱이 수렴하려면 그 수열 항의 극한이 1이어야 하므로, 편의상 수열의 모든 항이 양의 실수라고 가정하여도 무방하다.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 수학에서, 무한곱(無限-, 영어: infinite product)은 무한 수열의 모든 항의 곱이다. 이는 앞의 몇 항의 유한곱에 대한 극한으로 정의되며, 이 극한값이 0이 아닐 경우에만 무한곱이 수렴하는 것으로 정의한다. 무한곱이 수렴하려면 그 수열 항의 극한이 1이어야 하므로, 편의상 수열의 모든 항이 양의 실수라고 가정하여도 무방하다.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->수학에서, 무한곱(無限-, 영어: infinite product)은 무한 수열의 모든 항의 곱이다. 이는 앞의 몇 항의 유한곱에 대한 극한으로 정의되며, 이 극한값이 0이 아닐 경우에만 무한곱이 수렴하는 것으로 정의한다. 무한곱이 수렴하려면 그 수열 항의 극한이 1이어야 하므로, 편의상 수열의 모든 항이 양의 실수라고 가정하여도 무방하다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 수학에서, 무한곱(無限-, 영어: infinite product)은 무한 수열의 모든 항의 곱이다.이는 앞의 몇 항의 유한곱에 대한 극한으로 정의되며, 이 극한값이 0이 아닐 경우에만 무한곱이 수렴하는 것으로 정의한다.무한곱이 수렴하려면 그 수열 항의 극한이 1이어야 하므로, 편의상 수열의 모든 항이 양의 실수라고 가정하여도 무방하다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>수학에서, 무한곱(無限-, 영어: infinite product)은 무한 수열의 모든 항의 곱이다.이는 앞의 몇 항의 유한곱에 대한 극한으로 정의되며, 이 극한값이 0이 아닐 경우에만 무한곱이 수렴하는 것으로 정의한다.무한곱이 수렴하려면 그 수열 항의 극한이 1이어야 하므로, 편의상 수열의 모든 항이 양의 실수라고 가정하여도 무방하다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210713_083212_565341.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210713_083212_565341.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
