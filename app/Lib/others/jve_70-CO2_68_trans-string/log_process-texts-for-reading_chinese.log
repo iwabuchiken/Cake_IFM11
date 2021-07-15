@@ -36405,3 +36405,3260 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210704_135522_481183.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210704_135522_481183.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210715_231417_833983)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+
+    [1] => 
+
+    [2] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+
+    [3] => 
+
+    [4] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+
+    [5] => 
+
+    [6] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” 
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” '
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+
+    [1] => 
+    [2] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+
+    [3] => 
+    [4] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+
+    [5] => 
+    [6] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” 
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” '
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+
+    [1] => 
+    [2] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+
+    [3] => 
+    [4] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+    [5] => 
+    [6] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” 
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” '
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” 
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+
+    [1] => 
+    [2] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+
+    [3] => 
+    [4] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+    [5] => 
+    [6] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” 
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” '
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+
+    [1] => 
+    [2] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+
+    [3] => 
+    [4] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+    [5] => 
+    [6] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” 
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” 
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210715_231417_833983.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210715_231417_833983.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210715_233517_549973)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+
+    [1] => 
+
+    [2] => 我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+
+    [3] => 
+
+    [4] => ”
+
+    [5] => 
+
+    [6] => 
+
+    [7] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+
+    [8] => 
+
+    [9] => 因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+
+    [10] => 
+
+    [11] => ”
+
+    [12] => 
+
+    [13] => 
+
+    [14] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+
+    [15] => 
+
+    [16] => 
+
+    [17] => 
+
+    [18] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。
+
+    [19] => 
+
+    [20] => 已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+
+    [21] => 
+
+    [22] => ” 
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '”
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '”
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '” '
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+
+    [1] => 
+    [2] => 我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+
+    [3] => 
+    [4] => ”
+
+    [5] => 
+    [6] => 
+    [7] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+
+    [8] => 
+    [9] => 因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+
+    [10] => 
+    [11] => ”
+
+    [12] => 
+    [13] => 
+    [14] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+
+    [15] => 
+    [16] => 
+    [17] => 
+    [18] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。
+
+    [19] => 
+    [20] => 已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+
+    [21] => 
+    [22] => ” 
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '”
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '”
+'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '” '
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+    [1] => 
+    [2] => 我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+    [3] => 
+    [4] => ”
+
+    [5] => 
+    [6] => 
+    [7] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+    [8] => 
+    [9] => 因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+    [10] => 
+    [11] => ”
+
+    [12] => 
+    [13] => 
+    [14] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+    [15] => 
+    [16] => 
+    [17] => 
+    [18] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。
+    [19] => 
+    [20] => 已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+    [21] => 
+    [22] => ” 
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '”
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '”
+'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '” '
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+    [1] => 
+    [2] => 我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+    [3] => 
+    [4] => ”
+
+    [5] => 
+    [6] => 
+    [7] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+    [8] => 
+    [9] => 因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+    [10] => 
+    [11] => ”
+
+    [12] => 
+    [13] => 
+    [14] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+    [15] => 
+    [16] => 
+    [17] => 
+    [18] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。
+    [19] => 
+    [20] => 已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+    [21] => 
+    [22] => ” 
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '”
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '因此，我 恳请[ken3qing3 ]] 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+            [1] => 3 ]
+            [2] => ] �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+            [1] => 3
+            [2] => ]
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => ]
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+因此，我恳请[ken3qing3]]日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '”
+'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '此前，巴赫在接受日媒采访时也称，“日本国民没必要 恐慌[-huang1 。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+            [1] => 1 �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+            [1] => 1
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌[-huang1。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '” '
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+    [1] => 
+    [2] => 我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+    [3] => 
+    [4] => ”
+
+    [5] => 
+    [6] => 
+    [7] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+    [8] => 
+    [9] => 因此，我恳请[ken3qing3]]日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+    [10] => 
+    [11] => ”
+
+    [12] => 
+    [13] => 
+    [14] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+    [15] => 
+    [16] => 
+    [17] => 
+    [18] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌[-huang1。
+    [19] => 
+    [20] => 已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+    [21] => 
+    [22] => ” 
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。”
+他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。因此，我恳请[ken3qing3]]日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。”
+巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。此前，巴赫在接受日媒采访时也称，“日本国民没必要恐慌[-huang1。已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。” 
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210715_233517_549973.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210715_233517_549973.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210715_235336_790548)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+
+    [1] => 
+
+    [2] => 据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+
+    [3] => 
+
+    [4] => 报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+
+    [5] => 
+
+    [6] => 日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。
+
+    [7] => 
+
+    [8] => 据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+
+    [9] => 
+
+    [10] => 对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+
+    [1] => 
+    [2] => 据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+
+    [3] => 
+    [4] => 报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+
+    [5] => 
+    [6] => 日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。
+
+    [7] => 
+    [8] => 据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+
+    [9] => 
+    [10] => 对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+    [1] => 
+    [2] => 据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+    [3] => 
+    [4] => 报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+    [5] => 
+    [6] => 日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。
+    [7] => 
+    [8] => 据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+    [9] => 
+    [10] => 对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。B
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => B
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+    [1] => 
+    [2] => 据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+    [3] => 
+    [4] => 报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+    [5] => 
+    [6] => 日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。
+    [7] => 
+    [8] => 据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+    [9] => 
+    [10] => 对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '环球网报道 记者 徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+            [1] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+环球网报道记者徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 环球网报道记者徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。
+    [1] => 
+    [2] => 据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。
+    [3] => 
+    [4] => 报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。
+    [5] => 
+    [6] => 日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。
+    [7] => 
+    [8] => 据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。
+    [9] => 
+    [10] => 对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>环球网报道记者徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被曝出有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队舰艇曾于数天前与“伊丽莎白女王”号航母实施了联合训练。据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最尖端航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。报道称，英国国防大臣华莱士称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴口罩等，航母打击群今后将继续航行。日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人汪文斌曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210715_235336_790548.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210715_235336_790548.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20210716_082142_174066)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+            [4] => �。�
+            [5] => �。�
+            [6] => �。�
+            [7] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+            [4] => �。
+            [5] => �。
+            [6] => �。
+            [7] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+            [4] => �
+            [5] => �
+            [6] => �
+            [7] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '【环球网报道 记者 崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+            [1] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+【环球网报道记者崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 【环球网报道记者崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>【环球网报道记者崔天也】日本时事通讯社最新消息，在日本福冈市用刀捅死中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。报道称，嫌疑人名叫吕思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210716_082142_174066.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210716_082142_174066.txt
+ 

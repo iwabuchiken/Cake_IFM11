@@ -5791,3 +5791,162 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134529_922142.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210704_134529_922142.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210715_231627_994611)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+    [1] => 
+    [2] => 我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+    [3] => 
+    [4] => ”
+    [5] => 
+    [6] => 
+    [7] => 他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+    [8] => 
+    [9] => 因此，我
+    [10] => 恳请[ken3qing3
+    [11] => ]]
+    [12] => 日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+    [13] => 
+    [14] => ”
+    [15] => 
+    [16] => 
+    [17] => 巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+    [18] => 
+    [19] => 
+    [20] => 
+    [21] => 此前，巴赫在接受日媒采访时也称，“日本国民没必要
+    [22] => 恐慌[-huang1
+    [23] => 。
+    [24] => 
+    [25] => 已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+    [26] => 
+    [27] => ”
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)同日，巴赫会见日本首相菅义伟后表示：“我们正在作出一切努力。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)我们向日本民众承诺，将以最佳方式对抗这种病毒，不会给日本人民带来任何风险。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)”
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)他说：“奥运村85%的住户，以及几乎100%来到东京的国际奥委会成员和工作人员都已接种疫苗。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)因此，我
+[process-trans-sentences_chinese.php : 216] match => 恳请[ken3qing3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)日本民众热烈欢迎来自世界各地的运动员，他们和日本人民一样，克服了如此多的挑战。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)”
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)巴赫在发言中也感谢日本在疫情暴发期间举办奥运，称东京2020奥运是“历史性的”。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)此前，巴赫在接受日媒采访时也称，“日本国民没必要
+[process-trans-sentences_chinese.php : 216] match => 恐慌[-huang1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)已采取奥运相关人员与日本人明确隔离的措施，希望对奥运会的安全性给予全面信赖。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)”
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210715_231628_025810.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210715_231628_025810.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210715_235924_313354)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 环球网报道记者徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被
+    [1] => 曝出[pu4-
+    [2] => ]]
+    [3] => 有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队
+    [4] => 舰艇[jian4ting3
+    [5] => ]]
+    [6] => 曾于数天前与“
+    [7] => 伊丽莎白[yi1li4sha1-
+    [8] => ]]
+    [9] => 女王”号航母实施了联合训练。据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最
+    [10] => 尖端[jian1-
+    [11] => ]]
+    [12] => 航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。报道称，英国国防大臣
+    [13] => 华莱士[-lai2-
+    [14] => ]]
+    [15] => 称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴
+    [16] => 口罩[-zhao4
+    [17] => ]]
+    [18] => 等，航母打击群今后将继续航行。日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。]]据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。]]对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人
+    [19] => 汪文斌[wang1-bin1
+    [20] => ]]
+    [21] => 曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)环球网报道记者徐璐明】正在执行首次全球部署任务的英国“伊丽莎白女王”号航母7月14日被
+[process-trans-sentences_chinese.php : 216] match => 曝出[pu4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)有约100名舰员感染新冠肺炎，日本媒体对英国航母出现疫情表达了关注。日本防卫相透露，日本自卫队
+[process-trans-sentences_chinese.php : 216] match => 舰艇[jian4ting3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)曾于数天前与“
+[process-trans-sentences_chinese.php : 216] match => 伊丽莎白[yi1li4sha1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)女王”号航母实施了联合训练。据日本共同社7月14日报道，多家英国媒体当天报道称，正在向太平洋地区远航的英国皇家海军最
+[process-trans-sentences_chinese.php : 216] match => 尖端[jian1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)航母“伊丽莎白女王”号等组成的航母打击群出现多人感染新冠病毒。BBC广播公司称感染病例约达100人。报道称，英国国防大臣
+[process-trans-sentences_chinese.php : 216] match => 华莱士[-lai2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)称舰员等均已接种新冠疫苗，强调感染得到控制。英国海军表示已采取对策包括船员之间保持安全距离及戴
+[process-trans-sentences_chinese.php : 216] match => 口罩[-zhao4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)等，航母打击群今后将继续航行。日本防卫相岸信夫13日宣布，日本海上自卫队护卫舰等曾于11日、12日在非洲东部海域与“伊丽莎白女王”号实施了联合训练。]]据悉，英国皇家海军“伊丽莎白女王”号航母于5月22日出海，开始为期7个月的全球航行。按照英国防部制订的计划，这次部署行动将穿越地中海、印度洋、前往太平洋，总航程4.8万公里。部署中的重点任务有多项，其中之一就是进入南海海域，执行所谓“航行自由”行动。]]对于英国宣布将派出以最先进航母为主的航母打击群前往印太地区的消息，中国外交部发言人
+[process-trans-sentences_chinese.php : 216] match => 汪文斌[wang1-bin1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)曾回应称，中方希望域外国家尊重地区国家维护和平稳定、促进发展合作的意愿，不要采取使局势复杂化的举动。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210715_235924_328953.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210715_235924_328953.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210716_082759_862637)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 【环球网报道记者崔天也】日本时事通讯社最新消息，在日本福冈市用刀
+    [1] => 捅死[tong3-
+    [2] => ]]
+    [3] => 中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。]]报道称，嫌疑人名叫
+    [4] => 吕[lv3
+    [5] => ]]
+    [6] => 思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。]]嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。]]目前，警方已确认在逃嫌疑人为吕姓中国籍男性。]]日媒称，与死者同居的一名中国女性曾被嫌疑人“
+    [7] => 逼迫[bi1po4
+    [8] => ]]
+    [9] => 交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)【环球网报道记者崔天也】日本时事通讯社最新消息，在日本福冈市用刀
+[process-trans-sentences_chinese.php : 216] match => 捅死[tong3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中国留学生王某的嫌疑人，8月29日下午被警方逮捕了。]]报道称，嫌疑人名叫
+[process-trans-sentences_chinese.php : 216] match => 吕[lv3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)思，是一名中国人，今年27岁。福冈县警搜查1课表示，嫌疑人吕思于8月28日下午13时10分左右，闯入了同区的王某家中，并涉嫌用刀捅王某的胸部致其死亡。]]嫌疑人虽然在此后带着作案刀具逃走，但于29日下午被警方在福冈市中央区逮捕。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。]]目前，警方已确认在逃嫌疑人为吕姓中国籍男性。]]日媒称，与死者同居的一名中国女性曾被嫌疑人“
+[process-trans-sentences_chinese.php : 216] match => 逼迫[bi1po4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)交往”，故警方怀疑此案与男女关系有关。此前报道：28日下午，日本福冈市一中国留学生被发现在公寓中遇害，嫌疑人在行凶后逃走。据日媒报道，死者为23岁王姓中国籍男性，被发现时已身中数刀，送医后不治身亡。目前，警方已确认在逃嫌疑人为吕姓中国籍男性。日媒称，与死者同居的一名中国女性曾被嫌疑人“逼迫交往”，故警方怀疑此案与男女关系有关。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210716_082759_862637.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210716_082759_862637.txt'
+  
