@@ -47340,3 +47340,865 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_002541_823668.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210717_104954_470840)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'This is a list of individuals who are currently incarcerated in the United States, are targets because of their actions threatening U.S. imperial power, and who were imprisoned for their political activity. AfGJ considers them both political prisoners and “Prisoners of Empire.” We define Political Prisoners as people who are jailed based on charges related to resistance to oppression and repression. Whether the circumstances of the alleged crimes are true or false, we strenuously reject the individualized and out-of-context treatment of these cases as simply “common crimes.” Rather, they are, each and every one, related to some ongoing struggle against repression and Empire. Our listing of these prisoners does not constitute endorsement of the tactics or goals of every individual. In many cases those arrested have been clearly set up, falsely accused, railroaded, and/or denied adequate defense and basic human rights. In every instance, the cases are  political in nature, and require a political solution. We also recognize that people have a right to resist oppression, and the failure to do so is itself a crime against the people.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => ***Updated on November 12, 2020***
+
+    [1] => 
+
+    [2] => Read Racism, Liberation, and US Political Prisoners, an analysis of political imprisonment in the United States
+
+    [3] => 
+
+    [4] => This is a list of individuals who are currently incarcerated in the United States, are targets because of their actions threatening U.S. imperial power, and who were imprisoned for their political activity. AfGJ considers them both political prisoners and “Prisoners of Empire.” We define Political Prisoners as people who are jailed based on charges related to resistance to oppression and repression. Whether the circumstances of the alleged crimes are true or false, we strenuously reject the individualized and out-of-context treatment of these cases as simply “common crimes.” Rather, they are, each and every one, related to some ongoing struggle against repression and Empire. Our listing of these prisoners does not constitute endorsement of the tactics or goals of every individual. In many cases those arrested have been clearly set up, falsely accused, railroaded, and/or denied adequate defense and basic human rights. In every instance, the cases are  political in nature, and require a political solution. We also recognize that people have a right to resist oppression, and the failure to do so is itself a crime against the people.
+    [5] => 
+
+    [6] => Please see the notes at the bottom of the page regarding Guantanamo Bay, immigrant detention, and mass incarceration. We want to acknowledge Stan Smith and the Chicago Committee to Free the Five (773-376-7521, uscubachi@yahoo.com) for initiating this project and compiling the original list in 2013. 
+
+    [7] => 
+
+    [8] => We need your help. This list is an ongoing draft. If you see any mistakes, persons who should be listed who are not included, have updates on the status of political prisoners or have any other questions or comments, please send them to James@AFGJ.org .
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->***Updated on November 12, 2020***
+
+$matches ==>
+Array
+(
+    [0] => *
+
+    [1] => *
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Read Racism, Liberation, and US Political Prisoners, an analysis of political imprisonment in the United States
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Please see the notes at the bottom of the page regarding Guantanamo Bay, immigrant detention, and mass incarceration. We want to acknowledge Stan Smith and the Chicago Committee to Free the Five (773-376-7521, uscubachi@yahoo.com) for initiating this project and compiling the original list in 2013. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => ***Updated on November 12, 2020*** 
+    [1] => 
+
+    [2] => Read Racism, Liberation, and US Political Prisoners, an analysis of political imprisonment in the United States 
+    [3] => 
+
+    [4] => This is a list of individuals who are currently incarcerated in the United States, are targets because of their actions threatening U.S. imperial power, and who were imprisoned for their political activity. AfGJ considers them both political prisoners and “Prisoners of Empire.” We define Political Prisoners as people who are jailed based on charges related to resistance to oppression and repression. Whether the circumstances of the alleged crimes are true or false, we strenuously reject the individualized and out-of-context treatment of these cases as simply “common crimes.” Rather, they are, each and every one, related to some ongoing struggle against repression and Empire. Our listing of these prisoners does not constitute endorsement of the tactics or goals of every individual. In many cases those arrested have been clearly set up, falsely accused, railroaded, and/or denied adequate defense and basic human rights. In every instance, the cases are  political in nature, and require a political solution. We also recognize that people have a right to resist oppression, and the failure to do so is itself a crime against the people.
+    [5] => 
+
+    [6] => Please see the notes at the bottom of the page regarding Guantanamo Bay, immigrant detention, and mass incarceration. We want to acknowledge Stan Smith and the Chicago Committee to Free the Five (773-376-7521, uscubachi@yahoo.com) for initiating this project and compiling the original list in 2013.  
+    [7] => 
+
+    [8] => We need your help. This list is an ongoing draft. If you see any mistakes, persons who should be listed who are not included, have updates on the status of political prisoners or have any other questions or comments, please send them to James@AFGJ.org .
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->This is a list of individuals who are currently incarcerated in the United States, are targets because of their actions threatening U.S. imperial power, and who were imprisoned for their political activity. AfGJ considers them both political prisoners and “Prisoners of Empire.” We define Political Prisoners as people who are jailed based on charges related to resistance to oppression and repression. Whether the circumstances of the alleged crimes are true or false, we strenuously reject the individualized and out-of-context treatment of these cases as simply “common crimes.” Rather, they are, each and every one, related to some ongoing struggle against repression and Empire. Our listing of these prisoners does not constitute endorsement of the tactics or goals of every individual. In many cases those arrested have been clearly set up, falsely accused, railroaded, and/or denied adequate defense and basic human rights. In every instance, the cases are  political in nature, and require a political solution. We also recognize that people have a right to resist oppression, and the failure to do so is itself a crime against the people.
+$matches ==>
+Array
+(
+    [0] => S. 
+    [1] => S.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Please see the notes at the bottom of the page regarding Guantanamo Bay, immigrant detention, and mass incarceration. We want to acknowledge Stan Smith and the Chicago Committee to Free the Five (773-376-7521, uscubachi@yahoo.com) for initiating this project and compiling the original list in 2013.  
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->We need your help. This list is an ongoing draft. If you see any mistakes, persons who should be listed who are not included, have updates on the status of political prisoners or have any other questions or comments, please send them to James@AFGJ.org .
+$matches ==>
+Array
+(
+    [0] => p. 
+    [1] => p.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => ***Updated on November 12, 2020*** 
+    [1] => 
+
+    [2] => Read Racism, Liberation, and US Political Prisoners, an analysis of political imprisonment in the United States 
+    [3] => 
+
+    [4] => This is a list of individuals who are currently incarcerated in the United States, are targets because of their actions threatening U.S.imperial power, and who were imprisoned for their political activity.AfGJ considers them both political prisoners and “Prisoners of Empire.” We define Political Prisoners as people who are jailed based on charges related to resistance to oppression and repression.Whether the circumstances of the alleged crimes are true or false, we strenuously reject the individualized and out-of-context treatment of these cases as simply “common crimes.” Rather, they are, each and every one, related to some ongoing struggle against repression and Empire.Our listing of these prisoners does not constitute endorsement of the tactics or goals of every individual.In many cases those arrested have been clearly set up, falsely accused, railroaded, and/or denied adequate defense and basic human rights.In every instance, the cases are  political in nature, and require a political solution.We also recognize that people have a right to resist oppression, and the failure to do so is itself a crime against the people.
+    [5] => 
+
+    [6] => Please see the notes at the bottom of the page regarding Guantanamo Bay, immigrant detention, and mass incarceration.We want to acknowledge Stan Smith and the Chicago Committee to Free the Five (773-376-7521, uscubachi@yahoo.com) for initiating this project and compiling the original list in 2013.  
+    [7] => 
+
+    [8] => We need your help.This list is an ongoing draft.If you see any mistakes, persons who should be listed who are not included, have updates on the status of political prisoners or have any other questions or comments, please send them to James@AFGJ.org .
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>***Updated on November 12, 2020*** 
+Read Racism, Liberation, and US Political Prisoners, an analysis of political imprisonment in the United States 
+This is a list of individuals who are currently incarcerated in the United States, are targets because of their actions threatening U.S.imperial power, and who were imprisoned for their political activity.AfGJ considers them both political prisoners and “Prisoners of Empire.” We define Political Prisoners as people who are jailed based on charges related to resistance to oppression and repression.Whether the circumstances of the alleged crimes are true or false, we strenuously reject the individualized and out-of-context treatment of these cases as simply “common crimes.” Rather, they are, each and every one, related to some ongoing struggle against repression and Empire.Our listing of these prisoners does not constitute endorsement of the tactics or goals of every individual.In many cases those arrested have been clearly set up, falsely accused, railroaded, and/or denied adequate defense and basic human rights.In every instance, the cases are  political in nature, and require a political solution.We also recognize that people have a right to resist oppression, and the failure to do so is itself a crime against the people.
+Please see the notes at the bottom of the page regarding Guantanamo Bay, immigrant detention, and mass incarceration.We want to acknowledge Stan Smith and the Chicago Committee to Free the Five (773-376-7521, uscubachi@yahoo.com) for initiating this project and compiling the original list in 2013.  
+We need your help.This list is an ongoing draft.If you see any mistakes, persons who should be listed who are not included, have updates on the status of political prisoners or have any other questions or comments, please send them to James@AFGJ.org .
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_104954_470840.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_104954_470840.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210717_105420_297305)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Leonard Peltier, a  leader and activist in the American Indian Movement, has been in prison for 43 years as of 2020. Peltier participated in the AIM encampments on the Pine Ridge Reservation. In 1975 an FBI operation led to a confrontation in which two FBI agents died. In a COINTELPRO style operation, he was sentenced to life for murdering two FBI agents. Evidence exonerating Peltier was withheld by the FBI. In his appeal, the government admitted it had no evidence to show he killed the two FBI agents.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Mumia Abu Jamal was arrested in 1981. In COINTELPRO style, he was arrested and sentenced to death in an unfair trial for the murder of a Philadelphia policeman. Mumia was an organizer and campaigner against police abuses in the African-American community, and was the President of the Association of Black Journalists. During his imprisonment he has published several books and other commentaries, notably Live from Death Row. See documentaries “Mumia Abu Jamal: A Case For Reasonable Doubt?” and “Mumia: Long Distance Revolutionary” or visit the Free Mumia or Millions for Mumia websites.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Leonard Peltier, a  leader and activist in the American Indian Movement, has been in prison for 43 years as of 2020. Peltier participated in the AIM encampments on the Pine Ridge Reservation. In 1975 an FBI operation led to a confrontation in which two FBI agents died. In a COINTELPRO style operation, he was sentenced to life for murdering two FBI agents. Evidence exonerating Peltier was withheld by the FBI. In his appeal, the government admitted it had no evidence to show he killed the two FBI agents.
+    [1] => 
+
+    [2] => Mumia Abu Jamal was arrested in 1981. In COINTELPRO style, he was arrested and sentenced to death in an unfair trial for the murder of a Philadelphia policeman. Mumia was an organizer and campaigner against police abuses in the African-American community, and was the President of the Association of Black Journalists. During his imprisonment he has published several books and other commentaries, notably Live from Death Row. See documentaries “Mumia Abu Jamal: A Case For Reasonable Doubt?” and “Mumia: Long Distance Revolutionary” or visit the Free Mumia or Millions for Mumia websites.
+    [3] => 
+
+    [4] => Simón Trinidad, aka Ricardo Palmera, is a long-time leader of mass movements for social change, and was a top negotiator for the Revolutionary Armed Forces of Colombia-People’s Army (FARC-EP). He was arrested in 2004 in Ecuador in the process of negotiating with the UN for the release of FARC prisoners. He was then extradited to the U.S. on charges of narco-trafficking and kidnapping and subjected to four separate trials due to the difficulty the prosecution had in securing a conviction. A Colombian government spokesperson told the Alliance for Global Justice in April 2015 that the repatriation of Trinidad to Colombia is key to the success of the peace talks between FARC-EP and the Colombian Government. So far, the U.S. government has refused. 
+
+    [5] => 
+
+    [6] => Ivan Vargas is a citizen of Colombia and was a member of FARC. He was captured by Colombian forces and then extradited to the United States in violation of Colombia’s self-determination. He is incarcerated  here on bogus drug trafficking charges. His repatriation to Colombia is important to create the conditions for stable peace between FARC and the Colombian government.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Simón Trinidad, aka Ricardo Palmera, is a long-time leader of mass movements for social change, and was a top negotiator for the Revolutionary Armed Forces of Colombia-People’s Army (FARC-EP). He was arrested in 2004 in Ecuador in the process of negotiating with the UN for the release of FARC prisoners. He was then extradited to the U.S. on charges of narco-trafficking and kidnapping and subjected to four separate trials due to the difficulty the prosecution had in securing a conviction. A Colombian government spokesperson told the Alliance for Global Justice in April 2015 that the repatriation of Trinidad to Colombia is key to the success of the peace talks between FARC-EP and the Colombian Government. So far, the U.S. government has refused. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Leonard Peltier, a  leader and activist in the American Indian Movement, has been in prison for 43 years as of 2020. Peltier participated in the AIM encampments on the Pine Ridge Reservation. In 1975 an FBI operation led to a confrontation in which two FBI agents died. In a COINTELPRO style operation, he was sentenced to life for murdering two FBI agents. Evidence exonerating Peltier was withheld by the FBI. In his appeal, the government admitted it had no evidence to show he killed the two FBI agents.
+    [1] => 
+
+    [2] => Mumia Abu Jamal was arrested in 1981. In COINTELPRO style, he was arrested and sentenced to death in an unfair trial for the murder of a Philadelphia policeman. Mumia was an organizer and campaigner against police abuses in the African-American community, and was the President of the Association of Black Journalists. During his imprisonment he has published several books and other commentaries, notably Live from Death Row. See documentaries “Mumia Abu Jamal: A Case For Reasonable Doubt?” and “Mumia: Long Distance Revolutionary” or visit the Free Mumia or Millions for Mumia websites.
+    [3] => 
+
+    [4] => Simón Trinidad, aka Ricardo Palmera, is a long-time leader of mass movements for social change, and was a top negotiator for the Revolutionary Armed Forces of Colombia-People’s Army (FARC-EP). He was arrested in 2004 in Ecuador in the process of negotiating with the UN for the release of FARC prisoners. He was then extradited to the U.S. on charges of narco-trafficking and kidnapping and subjected to four separate trials due to the difficulty the prosecution had in securing a conviction. A Colombian government spokesperson told the Alliance for Global Justice in April 2015 that the repatriation of Trinidad to Colombia is key to the success of the peace talks between FARC-EP and the Colombian Government. So far, the U.S. government has refused.  
+    [5] => 
+
+    [6] => Ivan Vargas is a citizen of Colombia and was a member of FARC. He was captured by Colombian forces and then extradited to the United States in violation of Colombia’s self-determination. He is incarcerated  here on bogus drug trafficking charges. His repatriation to Colombia is important to create the conditions for stable peace between FARC and the Colombian government.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Leonard Peltier, a  leader and activist in the American Indian Movement, has been in prison for 43 years as of 2020. Peltier participated in the AIM encampments on the Pine Ridge Reservation. In 1975 an FBI operation led to a confrontation in which two FBI agents died. In a COINTELPRO style operation, he was sentenced to life for murdering two FBI agents. Evidence exonerating Peltier was withheld by the FBI. In his appeal, the government admitted it had no evidence to show he killed the two FBI agents.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Mumia Abu Jamal was arrested in 1981. In COINTELPRO style, he was arrested and sentenced to death in an unfair trial for the murder of a Philadelphia policeman. Mumia was an organizer and campaigner against police abuses in the African-American community, and was the President of the Association of Black Journalists. During his imprisonment he has published several books and other commentaries, notably Live from Death Row. See documentaries “Mumia Abu Jamal: A Case For Reasonable Doubt?” and “Mumia: Long Distance Revolutionary” or visit the Free Mumia or Millions for Mumia websites.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Simón Trinidad, aka Ricardo Palmera, is a long-time leader of mass movements for social change, and was a top negotiator for the Revolutionary Armed Forces of Colombia-People’s Army (FARC-EP). He was arrested in 2004 in Ecuador in the process of negotiating with the UN for the release of FARC prisoners. He was then extradited to the U.S. on charges of narco-trafficking and kidnapping and subjected to four separate trials due to the difficulty the prosecution had in securing a conviction. A Colombian government spokesperson told the Alliance for Global Justice in April 2015 that the repatriation of Trinidad to Colombia is key to the success of the peace talks between FARC-EP and the Colombian Government. So far, the U.S. government has refused.  
+$matches ==>
+Array
+(
+    [0] => ). 
+    [1] => ).
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Ivan Vargas is a citizen of Colombia and was a member of FARC. He was captured by Colombian forces and then extradited to the United States in violation of Colombia’s self-determination. He is incarcerated  here on bogus drug trafficking charges. His repatriation to Colombia is important to create the conditions for stable peace between FARC and the Colombian government.
+$matches ==>
+Array
+(
+    [0] => C. 
+    [1] => C.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Leonard Peltier, a  leader and activist in the American Indian Movement, has been in prison for 43 years as of 2020. Peltier participated in the AIM encampments on the Pine Ridge Reservation.In 1975 an FBI operation led to a confrontation in which two FBI agents died.In a COINTELPRO style operation, he was sentenced to life for murdering two FBI agents.Evidence exonerating Peltier was withheld by the FBI.In his appeal, the government admitted it had no evidence to show he killed the two FBI agents.
+    [1] => 
+
+    [2] => Mumia Abu Jamal was arrested in 1981. In COINTELPRO style, he was arrested and sentenced to death in an unfair trial for the murder of a Philadelphia policeman.Mumia was an organizer and campaigner against police abuses in the African-American community, and was the President of the Association of Black Journalists.During his imprisonment he has published several books and other commentaries, notably Live from Death Row.See documentaries “Mumia Abu Jamal: A Case For Reasonable Doubt?” and “Mumia: Long Distance Revolutionary” or visit the Free Mumia or Millions for Mumia websites.
+    [3] => 
+
+    [4] => Simón Trinidad, aka Ricardo Palmera, is a long-time leader of mass movements for social change, and was a top negotiator for the Revolutionary Armed Forces of Colombia-People’s Army (FARC-EP).He was arrested in 2004 in Ecuador in the process of negotiating with the UN for the release of FARC prisoners.He was then extradited to the U.S.on charges of narco-trafficking and kidnapping and subjected to four separate trials due to the difficulty the prosecution had in securing a conviction.A Colombian government spokesperson told the Alliance for Global Justice in April 2015 that the repatriation of Trinidad to Colombia is key to the success of the peace talks between FARC-EP and the Colombian Government.So far, the U.S.government has refused. 
+    [5] => 
+
+    [6] => Ivan Vargas is a citizen of Colombia and was a member of FARC.He was captured by Colombian forces and then extradited to the United States in violation of Colombia’s self-determination.He is incarcerated  here on bogus drug trafficking charges.His repatriation to Colombia is important to create the conditions for stable peace between FARC and the Colombian government.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Leonard Peltier, a  leader and activist in the American Indian Movement, has been in prison for 43 years as of 2020. Peltier participated in the AIM encampments on the Pine Ridge Reservation.In 1975 an FBI operation led to a confrontation in which two FBI agents died.In a COINTELPRO style operation, he was sentenced to life for murdering two FBI agents.Evidence exonerating Peltier was withheld by the FBI.In his appeal, the government admitted it had no evidence to show he killed the two FBI agents.
+Mumia Abu Jamal was arrested in 1981. In COINTELPRO style, he was arrested and sentenced to death in an unfair trial for the murder of a Philadelphia policeman.Mumia was an organizer and campaigner against police abuses in the African-American community, and was the President of the Association of Black Journalists.During his imprisonment he has published several books and other commentaries, notably Live from Death Row.See documentaries “Mumia Abu Jamal: A Case For Reasonable Doubt?” and “Mumia: Long Distance Revolutionary” or visit the Free Mumia or Millions for Mumia websites.
+Simón Trinidad, aka Ricardo Palmera, is a long-time leader of mass movements for social change, and was a top negotiator for the Revolutionary Armed Forces of Colombia-People’s Army (FARC-EP).He was arrested in 2004 in Ecuador in the process of negotiating with the UN for the release of FARC prisoners.He was then extradited to the U.S.on charges of narco-trafficking and kidnapping and subjected to four separate trials due to the difficulty the prosecution had in securing a conviction.A Colombian government spokesperson told the Alliance for Global Justice in April 2015 that the repatriation of Trinidad to Colombia is key to the success of the peace talks between FARC-EP and the Colombian Government.So far, the U.S.government has refused. 
+Ivan Vargas is a citizen of Colombia and was a member of FARC.He was captured by Colombian forces and then extradited to the United States in violation of Colombia’s self-determination.He is incarcerated  here on bogus drug trafficking charges.His repatriation to Colombia is important to create the conditions for stable peace between FARC and the Colombian government.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_105420_297305.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_105420_297305.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210717_110035_807342)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo. Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar. Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos. Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo. Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar. Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo. Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar. Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos. Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo. Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar. Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo. Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar. Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos. Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo. Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar. Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos. 
+$matches ==>
+Array
+(
+    [0] => o. 
+    [1] => o.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo.Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar.Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos.Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo.Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar.Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo.Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar.Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos.Juvenal Ovidio Ricardo Palmera Pineda (Valledupar, 30 de julio de 1950) alias 'Simón Trinidad', es un economista y guerrillero colombiano de las Fuerzas Armadas Revolucionarias de Colombia -Ejército del Pueblo.Ingresó a este grupo subversivo en 1987 y tomó el alias de Simón Trinidad en honor al libertador Simón Bolívar.Fue capturado en Ecuador en 2004 y extraditado a los Estados Unidos, donde recibió una condena de 60 años de prisión por su participación en el secuestro de tres estadounidenses, mientras que las acusaciones por narcotráfico en su contra no han prosperado.1​ Cumple su condena en la prisión de máxima seguridad de ADX Florence en Florence, Colorado, Estados Unidos.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_110035_807342.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_110035_807342.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210717_110939_542089)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '    Russell Maroon Shoats.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '    Jalil Muntaqim.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '    Jamil Abdullah Al-Amin, formerly H. Rap Brown.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '    Sundiata Acoli was with Assata Shakur (who escaped and found political asylum in Cuba).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '    Veronza Bowers, imprisoned for 40 years, was convicted of murder on the word of two government informers. There were no eye-witnesses and no evidence independent of these informants. At trial, two relatives of the informants gave testimony insisting that they were lying was ignored.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '    Ed Poindexter was a target of COINTELPRO, serving life sentences on charges of killing an Omaha policeman. He was convicted on the testimony of a teenage boy who was beaten by the police and threatened with the electric chair if he did not blame the crime on Poindexter and on Mondo we Langa (who died in prison). Amnesty International defends them as prisoners of conscience.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '    Kamau Sadiki.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '    Kojo Bomani Sababu (Grailing Brown) was active with the Black Liberation Army, and is a New Afrikan Prisoner of War. Sababu attempted to free Puerto Rican political prisoner Oscar Lopez Rivera while they were both incarcerated in Kansas, and was convicted of conspiracy.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners were victims of the COINTELPRO operations in the 1960s-70s when the FBI sought to destroy the Black liberation movement. Those currently incarcerated include, but are not limited to:
+
+    [1] => 
+
+    [2] =>     Russell Maroon Shoats.
+    [3] =>     Jalil Muntaqim.
+    [4] =>     Mutulu Shakur 
+
+    [5] =>     Jamil Abdullah Al-Amin, formerly H. Rap Brown.
+    [6] =>     Sundiata Acoli was with Assata Shakur (who escaped and found political asylum in Cuba).
+    [7] =>     Veronza Bowers, imprisoned for 40 years, was convicted of murder on the word of two government informers. There were no eye-witnesses and no evidence independent of these informants. At trial, two relatives of the informants gave testimony insisting that they were lying was ignored.
+    [8] =>     Ed Poindexter was a target of COINTELPRO, serving life sentences on charges of killing an Omaha policeman. He was convicted on the testimony of a teenage boy who was beaten by the police and threatened with the electric chair if he did not blame the crime on Poindexter and on Mondo we Langa (who died in prison). Amnesty International defends them as prisoners of conscience.
+    [9] =>     Romaine “Chip” Fitzgerald, the longest held Black Panther Party prisoner,
+
+    [10] =>     Kamau Sadiki.
+    [11] =>     Kojo Bomani Sababu (Grailing Brown) was active with the Black Liberation Army, and is a New Afrikan Prisoner of War. Sababu attempted to free Puerto Rican political prisoner Oscar Lopez Rivera while they were both incarcerated in Kansas, and was convicted of conspiracy.
+    [12] =>     Ruchell “Cinque” Magee was already imprisoned when he appeared in a courtroom in 1970 to testify in a trial related to the Soledad Prison Revolt. There, he was spontaneously recruited into the Marin County Courthouse Rebellion, a bid to expose the racist court system and negotiate the liberation of the Soledad Brothers by taking hostages. 
+
+    [13] => 
+
+    [14] => To learn more about Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners, see the documentary films The FBI’s War on Black America: COINTELPRO, Cointelpro 101, or visit the Prison Activist Resource Center and the Jericho Movement.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners were victims of the COINTELPRO operations in the 1960s-70s when the FBI sought to destroy the Black liberation movement. Those currently incarcerated include, but are not limited to:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    Mutulu Shakur 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    Romaine “Chip” Fitzgerald, the longest held Black Panther Party prisoner,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->    Ruchell “Cinque” Magee was already imprisoned when he appeared in a courtroom in 1970 to testify in a trial related to the Soledad Prison Revolt. There, he was spontaneously recruited into the Marin County Courthouse Rebellion, a bid to expose the racist court system and negotiate the liberation of the Soledad Brothers by taking hostages. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners were victims of the COINTELPRO operations in the 1960s-70s when the FBI sought to destroy the Black liberation movement. Those currently incarcerated include, but are not limited to: 
+    [1] => 
+
+    [2] =>     Russell Maroon Shoats.
+    [3] =>     Jalil Muntaqim.
+    [4] =>     Mutulu Shakur  
+    [5] =>     Jamil Abdullah Al-Amin, formerly H. Rap Brown.
+    [6] =>     Sundiata Acoli was with Assata Shakur (who escaped and found political asylum in Cuba).
+    [7] =>     Veronza Bowers, imprisoned for 40 years, was convicted of murder on the word of two government informers. There were no eye-witnesses and no evidence independent of these informants. At trial, two relatives of the informants gave testimony insisting that they were lying was ignored.
+    [8] =>     Ed Poindexter was a target of COINTELPRO, serving life sentences on charges of killing an Omaha policeman. He was convicted on the testimony of a teenage boy who was beaten by the police and threatened with the electric chair if he did not blame the crime on Poindexter and on Mondo we Langa (who died in prison). Amnesty International defends them as prisoners of conscience.
+    [9] =>     Romaine “Chip” Fitzgerald, the longest held Black Panther Party prisoner, 
+    [10] =>     Kamau Sadiki.
+    [11] =>     Kojo Bomani Sababu (Grailing Brown) was active with the Black Liberation Army, and is a New Afrikan Prisoner of War. Sababu attempted to free Puerto Rican political prisoner Oscar Lopez Rivera while they were both incarcerated in Kansas, and was convicted of conspiracy.
+    [12] =>     Ruchell “Cinque” Magee was already imprisoned when he appeared in a courtroom in 1970 to testify in a trial related to the Soledad Prison Revolt. There, he was spontaneously recruited into the Marin County Courthouse Rebellion, a bid to expose the racist court system and negotiate the liberation of the Soledad Brothers by taking hostages.  
+    [13] => 
+
+    [14] => To learn more about Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners, see the documentary films The FBI’s War on Black America: COINTELPRO, Cointelpro 101, or visit the Prison Activist Resource Center and the Jericho Movement.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners were victims of the COINTELPRO operations in the 1960s-70s when the FBI sought to destroy the Black liberation movement. Those currently incarcerated include, but are not limited to: 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    Jamil Abdullah Al-Amin, formerly H. Rap Brown.
+$matches ==>
+Array
+(
+    [0] => H. 
+    [1] => H.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    Veronza Bowers, imprisoned for 40 years, was convicted of murder on the word of two government informers. There were no eye-witnesses and no evidence independent of these informants. At trial, two relatives of the informants gave testimony insisting that they were lying was ignored.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    Ed Poindexter was a target of COINTELPRO, serving life sentences on charges of killing an Omaha policeman. He was convicted on the testimony of a teenage boy who was beaten by the police and threatened with the electric chair if he did not blame the crime on Poindexter and on Mondo we Langa (who died in prison). Amnesty International defends them as prisoners of conscience.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    Kojo Bomani Sababu (Grailing Brown) was active with the Black Liberation Army, and is a New Afrikan Prisoner of War. Sababu attempted to free Puerto Rican political prisoner Oscar Lopez Rivera while they were both incarcerated in Kansas, and was convicted of conspiracy.
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->    Ruchell “Cinque” Magee was already imprisoned when he appeared in a courtroom in 1970 to testify in a trial related to the Soledad Prison Revolt. There, he was spontaneously recruited into the Marin County Courthouse Rebellion, a bid to expose the racist court system and negotiate the liberation of the Soledad Brothers by taking hostages.  
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners were victims of the COINTELPRO operations in the 1960s-70s when the FBI sought to destroy the Black liberation movement.Those currently incarcerated include, but are not limited to: 
+    [1] => 
+
+    [2] =>     Russell Maroon Shoats.
+    [3] =>     Jalil Muntaqim.
+    [4] =>     Mutulu Shakur  
+    [5] =>     Jamil Abdullah Al-Amin, formerly H.Rap Brown.
+    [6] =>     Sundiata Acoli was with Assata Shakur (who escaped and found political asylum in Cuba).
+    [7] =>     Veronza Bowers, imprisoned for 40 years, was convicted of murder on the word of two government informers.There were no eye-witnesses and no evidence independent of these informants.At trial, two relatives of the informants gave testimony insisting that they were lying was ignored.
+    [8] =>     Ed Poindexter was a target of COINTELPRO, serving life sentences on charges of killing an Omaha policeman.He was convicted on the testimony of a teenage boy who was beaten by the police and threatened with the electric chair if he did not blame the crime on Poindexter and on Mondo we Langa (who died in prison).Amnesty International defends them as prisoners of conscience.
+    [9] =>     Romaine “Chip” Fitzgerald, the longest held Black Panther Party prisoner, 
+    [10] =>     Kamau Sadiki.
+    [11] =>     Kojo Bomani Sababu (Grailing Brown) was active with the Black Liberation Army, and is a New Afrikan Prisoner of War.Sababu attempted to free Puerto Rican political prisoner Oscar Lopez Rivera while they were both incarcerated in Kansas, and was convicted of conspiracy.
+    [12] =>     Ruchell “Cinque” Magee was already imprisoned when he appeared in a courtroom in 1970 to testify in a trial related to the Soledad Prison Revolt.There, he was spontaneously recruited into the Marin County Courthouse Rebellion, a bid to expose the racist court system and negotiate the liberation of the Soledad Brothers by taking hostages. 
+    [13] => 
+
+    [14] => To learn more about Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners, see the documentary films The FBI’s War on Black America: COINTELPRO, Cointelpro 101, or visit the Prison Activist Resource Center and the Jericho Movement.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners were victims of the COINTELPRO operations in the 1960s-70s when the FBI sought to destroy the Black liberation movement.Those currently incarcerated include, but are not limited to: 
+    Russell Maroon Shoats.    Jalil Muntaqim.    Mutulu Shakur      Jamil Abdullah Al-Amin, formerly H.Rap Brown.    Sundiata Acoli was with Assata Shakur (who escaped and found political asylum in Cuba).    Veronza Bowers, imprisoned for 40 years, was convicted of murder on the word of two government informers.There were no eye-witnesses and no evidence independent of these informants.At trial, two relatives of the informants gave testimony insisting that they were lying was ignored.    Ed Poindexter was a target of COINTELPRO, serving life sentences on charges of killing an Omaha policeman.He was convicted on the testimony of a teenage boy who was beaten by the police and threatened with the electric chair if he did not blame the crime on Poindexter and on Mondo we Langa (who died in prison).Amnesty International defends them as prisoners of conscience.    Romaine “Chip” Fitzgerald, the longest held Black Panther Party prisoner,     Kamau Sadiki.    Kojo Bomani Sababu (Grailing Brown) was active with the Black Liberation Army, and is a New Afrikan Prisoner of War.Sababu attempted to free Puerto Rican political prisoner Oscar Lopez Rivera while they were both incarcerated in Kansas, and was convicted of conspiracy.    Ruchell “Cinque” Magee was already imprisoned when he appeared in a courtroom in 1970 to testify in a trial related to the Soledad Prison Revolt.There, he was spontaneously recruited into the Marin County Courthouse Rebellion, a bid to expose the racist court system and negotiate the liberation of the Soledad Brothers by taking hostages. 
+To learn more about Black Panther Party (BPP), New Afrikan, and Black Liberation Army political prisoners, see the documentary films The FBI’s War on Black America: COINTELPRO, Cointelpro 101, or visit the Prison Activist Resource Center and the Jericho Movement.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_110939_542089.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210717_110939_542089.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210718_003536_541011)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '최종건 1차관은 17일 아이보시 고이치(相星孝一) 주한 일본대사를 서울 도렴동 외교부 청사로 초치했다. 외교부는 보도자료를 통해 “우리 정상의 한·일 관계 발전을 위한 노력을 크게 폄훼하는 비외교적이고 무례한 발언을 한 데 대해 엄중히 항의했다”며 “일본 정부가 재발을 방지하기 위한 차원에서 가시적이고 응당한 조치를 신속히 취해줄 것을 요구했다”고 밝혔다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 최종건 외교부 1차관은 17일 오전 아이보시 고이치 주한일본대사를 초치해 소마 히로히사 총괄공사의 부적절한 발언에 대해 엄중히 항의했다. [외교부 제공]
+
+    [1] => 소마 히로히사(相馬弘尙) 주한 일본대사관 총괄공사가 한·일 관계를 둘러싼 한국 측 대응에 대해 “자위행위를 하고 있다”고 발언한 후폭풍이 거세다.  
+
+    [2] =>  
+
+    [3] => 최종건 1차관은 17일 아이보시 고이치(相星孝一) 주한 일본대사를 서울 도렴동 외교부 청사로 초치했다. 외교부는 보도자료를 통해 “우리 정상의 한·일 관계 발전을 위한 노력을 크게 폄훼하는 비외교적이고 무례한 발언을 한 데 대해 엄중히 항의했다”며 “일본 정부가 재발을 방지하기 위한 차원에서 가시적이고 응당한 조치를 신속히 취해줄 것을 요구했다”고 밝혔다.
+    [4] =>  
+
+    [5] => 아이보시 대사는 최 차관에게 소마 공사의 부적절한 발언에 유감을 표명하고, 한국 정부의 요구를 본국에 보고하겠다고 답했다. 외교부가 요구한 ‘가시적이고 응당한 조치’가 구체적으로 어떤 후속 조치를 의미하는지는 명확치 않다. 다만 일각에선 가시적 조치를 요구한 것 자체가 소마 공사의 본국 송환을 요구한 메시지라는 분석도 나온다.  
+
+    [6] => 
+
+    [7] => [출처: 중앙일보] 日대사관 ‘文외교 자위행위’ 망언 파문…정부, 日대사 초치
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->최종건 외교부 1차관은 17일 오전 아이보시 고이치 주한일본대사를 초치해 소마 히로히사 총괄공사의 부적절한 발언에 대해 엄중히 항의했다. [외교부 제공]
+
+$matches ==>
+Array
+(
+    [0] => ]
+
+    [1] => ]
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->소마 히로히사(相馬弘尙) 주한 일본대사관 총괄공사가 한·일 관계를 둘러싼 한국 측 대응에 대해 “자위행위를 하고 있다”고 발언한 후폭풍이 거세다.  
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->아이보시 대사는 최 차관에게 소마 공사의 부적절한 발언에 유감을 표명하고, 한국 정부의 요구를 본국에 보고하겠다고 답했다. 외교부가 요구한 ‘가시적이고 응당한 조치’가 구체적으로 어떤 후속 조치를 의미하는지는 명확치 않다. 다만 일각에선 가시적 조치를 요구한 것 자체가 소마 공사의 본국 송환을 요구한 메시지라는 분석도 나온다.  
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 최종건 외교부 1차관은 17일 오전 아이보시 고이치 주한일본대사를 초치해 소마 히로히사 총괄공사의 부적절한 발언에 대해 엄중히 항의했다. [외교부 제공] 
+    [1] => 소마 히로히사(相馬弘尙) 주한 일본대사관 총괄공사가 한·일 관계를 둘러싼 한국 측 대응에 대해 “자위행위를 하고 있다”고 발언한 후폭풍이 거세다.   
+    [2] =>   
+    [3] => 최종건 1차관은 17일 아이보시 고이치(相星孝一) 주한 일본대사를 서울 도렴동 외교부 청사로 초치했다. 외교부는 보도자료를 통해 “우리 정상의 한·일 관계 발전을 위한 노력을 크게 폄훼하는 비외교적이고 무례한 발언을 한 데 대해 엄중히 항의했다”며 “일본 정부가 재발을 방지하기 위한 차원에서 가시적이고 응당한 조치를 신속히 취해줄 것을 요구했다”고 밝혔다.
+    [4] =>   
+    [5] => 아이보시 대사는 최 차관에게 소마 공사의 부적절한 발언에 유감을 표명하고, 한국 정부의 요구를 본국에 보고하겠다고 답했다. 외교부가 요구한 ‘가시적이고 응당한 조치’가 구체적으로 어떤 후속 조치를 의미하는지는 명확치 않다. 다만 일각에선 가시적 조치를 요구한 것 자체가 소마 공사의 본국 송환을 요구한 메시지라는 분석도 나온다.   
+    [6] => 
+
+    [7] => [출처: 중앙일보] 日대사관 ‘文외교 자위행위’ 망언 파문…정부, 日대사 초치
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->최종건 외교부 1차관은 17일 오전 아이보시 고이치 주한일본대사를 초치해 소마 히로히사 총괄공사의 부적절한 발언에 대해 엄중히 항의했다. [외교부 제공] 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->소마 히로히사(相馬弘尙) 주한 일본대사관 총괄공사가 한·일 관계를 둘러싼 한국 측 대응에 대해 “자위행위를 하고 있다”고 발언한 후폭풍이 거세다.   
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->최종건 1차관은 17일 아이보시 고이치(相星孝一) 주한 일본대사를 서울 도렴동 외교부 청사로 초치했다. 외교부는 보도자료를 통해 “우리 정상의 한·일 관계 발전을 위한 노력을 크게 폄훼하는 비외교적이고 무례한 발언을 한 데 대해 엄중히 항의했다”며 “일본 정부가 재발을 방지하기 위한 차원에서 가시적이고 응당한 조치를 신속히 취해줄 것을 요구했다”고 밝혔다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->아이보시 대사는 최 차관에게 소마 공사의 부적절한 발언에 유감을 표명하고, 한국 정부의 요구를 본국에 보고하겠다고 답했다. 외교부가 요구한 ‘가시적이고 응당한 조치’가 구체적으로 어떤 후속 조치를 의미하는지는 명확치 않다. 다만 일각에선 가시적 조치를 요구한 것 자체가 소마 공사의 본국 송환을 요구한 메시지라는 분석도 나온다.   
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 최종건 외교부 1차관은 17일 오전 아이보시 고이치 주한일본대사를 초치해 소마 히로히사 총괄공사의 부적절한 발언에 대해 엄중히 항의했다.[외교부 제공] 
+    [1] => 소마 히로히사(相馬弘尙) 주한 일본대사관 총괄공사가 한·일 관계를 둘러싼 한국 측 대응에 대해 “자위행위를 하고 있다”고 발언한 후폭풍이 거세다.  
+    [2] =>   
+    [3] => 최종건 1차관은 17일 아이보시 고이치(相星孝一) 주한 일본대사를 서울 도렴동 외교부 청사로 초치했다.외교부는 보도자료를 통해 “우리 정상의 한·일 관계 발전을 위한 노력을 크게 폄훼하는 비외교적이고 무례한 발언을 한 데 대해 엄중히 항의했다”며 “일본 정부가 재발을 방지하기 위한 차원에서 가시적이고 응당한 조치를 신속히 취해줄 것을 요구했다”고 밝혔다.
+    [4] =>   
+    [5] => 아이보시 대사는 최 차관에게 소마 공사의 부적절한 발언에 유감을 표명하고, 한국 정부의 요구를 본국에 보고하겠다고 답했다.외교부가 요구한 ‘가시적이고 응당한 조치’가 구체적으로 어떤 후속 조치를 의미하는지는 명확치 않다.다만 일각에선 가시적 조치를 요구한 것 자체가 소마 공사의 본국 송환을 요구한 메시지라는 분석도 나온다.  
+    [6] => 
+
+    [7] => [출처: 중앙일보] 日대사관 ‘文외교 자위행위’ 망언 파문…정부, 日대사 초치
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>최종건 외교부 1차관은 17일 오전 아이보시 고이치 주한일본대사를 초치해 소마 히로히사 총괄공사의 부적절한 발언에 대해 엄중히 항의했다.[외교부 제공] 소마 히로히사(相馬弘尙) 주한 일본대사관 총괄공사가 한·일 관계를 둘러싼 한국 측 대응에 대해 “자위행위를 하고 있다”고 발언한 후폭풍이 거세다.    최종건 1차관은 17일 아이보시 고이치(相星孝一) 주한 일본대사를 서울 도렴동 외교부 청사로 초치했다.외교부는 보도자료를 통해 “우리 정상의 한·일 관계 발전을 위한 노력을 크게 폄훼하는 비외교적이고 무례한 발언을 한 데 대해 엄중히 항의했다”며 “일본 정부가 재발을 방지하기 위한 차원에서 가시적이고 응당한 조치를 신속히 취해줄 것을 요구했다”고 밝혔다.  아이보시 대사는 최 차관에게 소마 공사의 부적절한 발언에 유감을 표명하고, 한국 정부의 요구를 본국에 보고하겠다고 답했다.외교부가 요구한 ‘가시적이고 응당한 조치’가 구체적으로 어떤 후속 조치를 의미하는지는 명확치 않다.다만 일각에선 가시적 조치를 요구한 것 자체가 소마 공사의 본국 송환을 요구한 메시지라는 분석도 나온다.  
+[출처: 중앙일보] 日대사관 ‘文외교 자위행위’ 망언 파문…정부, 日대사 초치
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210718_003536_541011.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210718_003536_541011.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210718_004111_729196)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '논란이 커지자 아이보시 고이치(相星孝一) 주한 일본대사는 이날 입장자료를 통해 “이번 발언은 간담 중 발언이라 하더라도 외교관으로서 지극히 부적절하며 매우 유감이다. 보고를 받고 엄중히 주의를 주었다”고 밝혔다. 다만 아이보시 대사는 “확인한 바에 따르면 대화 중에 보도와 같은 표현을 사용한 것은 사실이지만, 이것은 결코 문재인 대통령님에 대한 발언이 아니었으며, 그 자리에서 부적절한 발언이었다고 하고 철회했다”고 해명했다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 앞서 JTBC는 주한 일본대사관 고위 관계자가 점심 식사 자리에서 문 대통령의 외교 행보 등을 평가하다 성적인 표현을 사용했다고 지난 16일 보도했다. 해당 관계자는 소마 히로히사(相馬弘尙) 총괄공사로 최근의 한·일 관계 및 한국의 대응을 평가하는 과정에서 ‘자위행위’라는 표현을 사용했다.  
+
+    [1] =>  
+
+    [2] => 논란이 커지자 아이보시 고이치(相星孝一) 주한 일본대사는 이날 입장자료를 통해 “이번 발언은 간담 중 발언이라 하더라도 외교관으로서 지극히 부적절하며 매우 유감이다. 보고를 받고 엄중히 주의를 주었다”고 밝혔다. 다만 아이보시 대사는 “확인한 바에 따르면 대화 중에 보도와 같은 표현을 사용한 것은 사실이지만, 이것은 결코 문재인 대통령님에 대한 발언이 아니었으며, 그 자리에서 부적절한 발언이었다고 하고 철회했다”고 해명했다.
+    [3] =>  
+
+    [4] => 가뜩이나 한·일 관계가 악화일로를 걷는 와중에 이같은 논란이 불거지며 오는 23일 도쿄올림픽 개막식을 계기로 한 문재인 대통령의 일본 방문 논의에도 영향을 미칠 것으로 예상된다. 앞서 한·일 양국은 문 대통령의 방일 및 한·일 정상회담을 둘러싼 기싸움을 벌이며 갈등이 깊어진 상태다. 청와대는 아직 문 대통령의 방일 여부에 대한 공식 발표를 하지 않았다.  
+
+    [5] => 
+
+    [6] => [출처: 중앙일보] 日대사관 ‘文외교 자위행위’ 망언 파문…정부, 日대사 초치
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->앞서 JTBC는 주한 일본대사관 고위 관계자가 점심 식사 자리에서 문 대통령의 외교 행보 등을 평가하다 성적인 표현을 사용했다고 지난 16일 보도했다. 해당 관계자는 소마 히로히사(相馬弘尙) 총괄공사로 최근의 한·일 관계 및 한국의 대응을 평가하는 과정에서 ‘자위행위’라는 표현을 사용했다.  
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->가뜩이나 한·일 관계가 악화일로를 걷는 와중에 이같은 논란이 불거지며 오는 23일 도쿄올림픽 개막식을 계기로 한 문재인 대통령의 일본 방문 논의에도 영향을 미칠 것으로 예상된다. 앞서 한·일 양국은 문 대통령의 방일 및 한·일 정상회담을 둘러싼 기싸움을 벌이며 갈등이 깊어진 상태다. 청와대는 아직 문 대통령의 방일 여부에 대한 공식 발표를 하지 않았다.  
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 앞서 JTBC는 주한 일본대사관 고위 관계자가 점심 식사 자리에서 문 대통령의 외교 행보 등을 평가하다 성적인 표현을 사용했다고 지난 16일 보도했다. 해당 관계자는 소마 히로히사(相馬弘尙) 총괄공사로 최근의 한·일 관계 및 한국의 대응을 평가하는 과정에서 ‘자위행위’라는 표현을 사용했다.   
+    [1] =>   
+    [2] => 논란이 커지자 아이보시 고이치(相星孝一) 주한 일본대사는 이날 입장자료를 통해 “이번 발언은 간담 중 발언이라 하더라도 외교관으로서 지극히 부적절하며 매우 유감이다. 보고를 받고 엄중히 주의를 주었다”고 밝혔다. 다만 아이보시 대사는 “확인한 바에 따르면 대화 중에 보도와 같은 표현을 사용한 것은 사실이지만, 이것은 결코 문재인 대통령님에 대한 발언이 아니었으며, 그 자리에서 부적절한 발언이었다고 하고 철회했다”고 해명했다.
+    [3] =>   
+    [4] => 가뜩이나 한·일 관계가 악화일로를 걷는 와중에 이같은 논란이 불거지며 오는 23일 도쿄올림픽 개막식을 계기로 한 문재인 대통령의 일본 방문 논의에도 영향을 미칠 것으로 예상된다. 앞서 한·일 양국은 문 대통령의 방일 및 한·일 정상회담을 둘러싼 기싸움을 벌이며 갈등이 깊어진 상태다. 청와대는 아직 문 대통령의 방일 여부에 대한 공식 발표를 하지 않았다.   
+    [5] => 
+
+    [6] => [출처: 중앙일보] 日대사관 ‘文외교 자위행위’ 망언 파문…정부, 日대사 초치
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->앞서 JTBC는 주한 일본대사관 고위 관계자가 점심 식사 자리에서 문 대통령의 외교 행보 등을 평가하다 성적인 표현을 사용했다고 지난 16일 보도했다. 해당 관계자는 소마 히로히사(相馬弘尙) 총괄공사로 최근의 한·일 관계 및 한국의 대응을 평가하는 과정에서 ‘자위행위’라는 표현을 사용했다.   
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->논란이 커지자 아이보시 고이치(相星孝一) 주한 일본대사는 이날 입장자료를 통해 “이번 발언은 간담 중 발언이라 하더라도 외교관으로서 지극히 부적절하며 매우 유감이다. 보고를 받고 엄중히 주의를 주었다”고 밝혔다. 다만 아이보시 대사는 “확인한 바에 따르면 대화 중에 보도와 같은 표현을 사용한 것은 사실이지만, 이것은 결코 문재인 대통령님에 대한 발언이 아니었으며, 그 자리에서 부적절한 발언이었다고 하고 철회했다”고 해명했다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->가뜩이나 한·일 관계가 악화일로를 걷는 와중에 이같은 논란이 불거지며 오는 23일 도쿄올림픽 개막식을 계기로 한 문재인 대통령의 일본 방문 논의에도 영향을 미칠 것으로 예상된다. 앞서 한·일 양국은 문 대통령의 방일 및 한·일 정상회담을 둘러싼 기싸움을 벌이며 갈등이 깊어진 상태다. 청와대는 아직 문 대통령의 방일 여부에 대한 공식 발표를 하지 않았다.   
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 앞서 JTBC는 주한 일본대사관 고위 관계자가 점심 식사 자리에서 문 대통령의 외교 행보 등을 평가하다 성적인 표현을 사용했다고 지난 16일 보도했다.해당 관계자는 소마 히로히사(相馬弘尙) 총괄공사로 최근의 한·일 관계 및 한국의 대응을 평가하는 과정에서 ‘자위행위’라는 표현을 사용했다.  
+    [1] =>   
+    [2] => 논란이 커지자 아이보시 고이치(相星孝一) 주한 일본대사는 이날 입장자료를 통해 “이번 발언은 간담 중 발언이라 하더라도 외교관으로서 지극히 부적절하며 매우 유감이다.보고를 받고 엄중히 주의를 주었다”고 밝혔다.다만 아이보시 대사는 “확인한 바에 따르면 대화 중에 보도와 같은 표현을 사용한 것은 사실이지만, 이것은 결코 문재인 대통령님에 대한 발언이 아니었으며, 그 자리에서 부적절한 발언이었다고 하고 철회했다”고 해명했다.
+    [3] =>   
+    [4] => 가뜩이나 한·일 관계가 악화일로를 걷는 와중에 이같은 논란이 불거지며 오는 23일 도쿄올림픽 개막식을 계기로 한 문재인 대통령의 일본 방문 논의에도 영향을 미칠 것으로 예상된다.앞서 한·일 양국은 문 대통령의 방일 및 한·일 정상회담을 둘러싼 기싸움을 벌이며 갈등이 깊어진 상태다.청와대는 아직 문 대통령의 방일 여부에 대한 공식 발표를 하지 않았다.  
+    [5] => 
+
+    [6] => [출처: 중앙일보] 日대사관 ‘文외교 자위행위’ 망언 파문…정부, 日대사 초치
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>앞서 JTBC는 주한 일본대사관 고위 관계자가 점심 식사 자리에서 문 대통령의 외교 행보 등을 평가하다 성적인 표현을 사용했다고 지난 16일 보도했다.해당 관계자는 소마 히로히사(相馬弘尙) 총괄공사로 최근의 한·일 관계 및 한국의 대응을 평가하는 과정에서 ‘자위행위’라는 표현을 사용했다.    논란이 커지자 아이보시 고이치(相星孝一) 주한 일본대사는 이날 입장자료를 통해 “이번 발언은 간담 중 발언이라 하더라도 외교관으로서 지극히 부적절하며 매우 유감이다.보고를 받고 엄중히 주의를 주었다”고 밝혔다.다만 아이보시 대사는 “확인한 바에 따르면 대화 중에 보도와 같은 표현을 사용한 것은 사실이지만, 이것은 결코 문재인 대통령님에 대한 발언이 아니었으며, 그 자리에서 부적절한 발언이었다고 하고 철회했다”고 해명했다.  가뜩이나 한·일 관계가 악화일로를 걷는 와중에 이같은 논란이 불거지며 오는 23일 도쿄올림픽 개막식을 계기로 한 문재인 대통령의 일본 방문 논의에도 영향을 미칠 것으로 예상된다.앞서 한·일 양국은 문 대통령의 방일 및 한·일 정상회담을 둘러싼 기싸움을 벌이며 갈등이 깊어진 상태다.청와대는 아직 문 대통령의 방일 여부에 대한 공식 발표를 하지 않았다.  
+[출처: 중앙일보] 日대사관 ‘文외교 자위행위’ 망언 파문…정부, 日대사 초치
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210718_004111_729196.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210718_004111_729196.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
