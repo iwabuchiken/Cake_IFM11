@@ -48235,3 +48235,63 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210723_160347_668092.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210727_214317_855977)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Rezolucja Rady Bezpieczeństwa ONZ nr 1701 została uchwalona 11 sierpnia 2006 i była nadana w celu zakończenia II wojny libańskiej.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Rezolucja Rady Bezpieczeństwa ONZ nr 1701 została uchwalona 11 sierpnia 2006 i była nadana w celu zakończenia II wojny libańskiej.
+    [1] => 
+
+    [2] => Rezolucja została jednomyślnie zatwierdzona przez RB ONZ 11 sierpnia 2006. 12 sierpnia lider Hezbollahu wezwał bojówki do respektowania zawieszenia broni. Powiedział też, że jeśli izraelska ofensywa ustanie, to ugrupowanie zaprzestanie ataków rakietowych nękających północne terytoria Izraela. 13 sierpnia izraelski rząd stosunkiem głosów 24-0 przy jednym wstrzymującym się zaaprobował rezolucję. Zawieszenie broni zaczęło obowiązywać od godz. 8:00 14 sierpnia 2006. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Rezolucja Rady Bezpieczeństwa ONZ nr 1701 została uchwalona 11 sierpnia 2006 i była nadana w celu zakończenia II wojny libańskiej.
+    [1] => 
+
+    [2] => Rezolucja została jednomyślnie zatwierdzona przez RB ONZ 11 sierpnia 2006. 12 sierpnia lider Hezbollahu wezwał bojówki do respektowania zawieszenia broni. Powiedział też, że jeśli izraelska ofensywa ustanie, to ugrupowanie zaprzestanie ataków rakietowych nękających północne terytoria Izraela. 13 sierpnia izraelski rząd stosunkiem głosów 24-0 przy jednym wstrzymującym się zaaprobował rezolucję. Zawieszenie broni zaczęło obowiązywać od godz. 8:00 14 sierpnia 2006. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Rezolucja została jednomyślnie zatwierdzona przez RB ONZ 11 sierpnia 2006. 12 sierpnia lider Hezbollahu wezwał bojówki do respektowania zawieszenia broni. Powiedział też, że jeśli izraelska ofensywa ustanie, to ugrupowanie zaprzestanie ataków rakietowych nękających północne terytoria Izraela. 13 sierpnia izraelski rząd stosunkiem głosów 24-0 przy jednym wstrzymującym się zaaprobował rezolucję. Zawieszenie broni zaczęło obowiązywać od godz. 8:00 14 sierpnia 2006. 
+$matches ==>
+Array
+(
+    [0] => i. 
+    [1] => i.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Rezolucja Rady Bezpieczeństwa ONZ nr 1701 została uchwalona 11 sierpnia 2006 i była nadana w celu zakończenia II wojny libańskiej.
+    [1] => 
+
+    [2] => Rezolucja została jednomyślnie zatwierdzona przez RB ONZ 11 sierpnia 2006. 12 sierpnia lider Hezbollahu wezwał bojówki do respektowania zawieszenia broni.Powiedział też, że jeśli izraelska ofensywa ustanie, to ugrupowanie zaprzestanie ataków rakietowych nękających północne terytoria Izraela.13 sierpnia izraelski rząd stosunkiem głosów 24-0 przy jednym wstrzymującym się zaaprobował rezolucję.Zawieszenie broni zaczęło obowiązywać od godz.8:00 14 sierpnia 2006. 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Rezolucja Rady Bezpieczeństwa ONZ nr 1701 została uchwalona 11 sierpnia 2006 i była nadana w celu zakończenia II wojny libańskiej.
+Rezolucja została jednomyślnie zatwierdzona przez RB ONZ 11 sierpnia 2006. 12 sierpnia lider Hezbollahu wezwał bojówki do respektowania zawieszenia broni.Powiedział też, że jeśli izraelska ofensywa ustanie, to ugrupowanie zaprzestanie ataków rakietowych nękających północne terytoria Izraela.13 sierpnia izraelski rząd stosunkiem głosów 24-0 przy jednym wstrzymującym się zaaprobował rezolucję.Zawieszenie broni zaczęło obowiązywać od godz.8:00 14 sierpnia 2006. 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210727_214317_855977.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210727_214317_855977.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
