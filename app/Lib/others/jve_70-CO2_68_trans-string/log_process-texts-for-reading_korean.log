@@ -48295,3 +48295,141 @@ Rezolucja została jednomyślnie zatwierdzona przez RB ONZ 11 sierpnia 2006. 12 
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210727_214317_855977.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210728_213839_855556)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Discurso pronunciado por Miguel Mario Díaz-Canel Bermúdez, Primer Secretario del Comité Central del Partido Comunista de Cuba y Presidente de la República, en el acto de reafirmación revolucionaria, en la explanada de La Piragua, La Habana, el 17 de julio de 2021, «Año 63 de la Revolución».(Versiones Taquigráficas - Presidencia de la República) Querido General de Ejército Raúl Castro Ruz, líder de la Revolución Cubana;Pueblo de Cuba, cubanas y cubanos;Compatriotas:¡Viva Cuba Libre! (Exclamaciones de: «¡Viva!»).Libre de injerencias extranjeras y libre del odio que han azuzado quienes llevan 60 años apretando el cuello de la nación para hacerla estallar y ahora quieren presentarse como nuestros salvadores.Cesen la mentira, la infamia y el odio. Cuba es profundamente alérgica al odio.  ¡Y jamás será tierra de odio!
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Discurso pronunciado por Miguel Mario Díaz-Canel Bermúdez, Primer Secretario del Comité Central del Partido Comunista de Cuba y Presidente de la República, en el acto de reafirmación revolucionaria, en la explanada de La Piragua, La Habana, el 17 de julio de 2021, «Año 63 de la Revolución».(Versiones Taquigráficas - Presidencia de la República) Querido General de Ejército Raúl Castro Ruz, líder de la Revolución Cubana;Pueblo de Cuba, cubanas y cubanos;Compatriotas:¡Viva Cuba Libre! (Exclamaciones de: «¡Viva!»).Libre de injerencias extranjeras y libre del odio que han azuzado quienes llevan 60 años apretando el cuello de la nación para hacerla estallar y ahora quieren presentarse como nuestros salvadores.Cesen la mentira, la infamia y el odio. Cuba es profundamente alérgica al odio.  ¡Y jamás será tierra de odio!
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Discurso pronunciado por Miguel Mario Díaz-Canel Bermúdez, Primer Secretario del Comité Central del Partido Comunista de Cuba y Presidente de la República, en el acto de reafirmación revolucionaria, en la explanada de La Piragua, La Habana, el 17 de julio de 2021, «Año 63 de la Revolución».(Versiones Taquigráficas - Presidencia de la República) Querido General de Ejército Raúl Castro Ruz, líder de la Revolución Cubana;Pueblo de Cuba, cubanas y cubanos;Compatriotas:¡Viva Cuba Libre! (Exclamaciones de: «¡Viva!»).Libre de injerencias extranjeras y libre del odio que han azuzado quienes llevan 60 años apretando el cuello de la nación para hacerla estallar y ahora quieren presentarse como nuestros salvadores.Cesen la mentira, la infamia y el odio. Cuba es profundamente alérgica al odio.  ¡Y jamás será tierra de odio!
+$matches ==>
+Array
+(
+    [0] => o. 
+    [1] => o.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Discurso pronunciado por Miguel Mario Díaz-Canel Bermúdez, Primer Secretario del Comité Central del Partido Comunista de Cuba y Presidente de la República, en el acto de reafirmación revolucionaria, en la explanada de La Piragua, La Habana, el 17 de julio de 2021, «Año 63 de la Revolución».(Versiones Taquigráficas - Presidencia de la República) Querido General de Ejército Raúl Castro Ruz, líder de la Revolución Cubana;Pueblo de Cuba, cubanas y cubanos;Compatriotas:¡Viva Cuba Libre! (Exclamaciones de: «¡Viva!»).Libre de injerencias extranjeras y libre del odio que han azuzado quienes llevan 60 años apretando el cuello de la nación para hacerla estallar y ahora quieren presentarse como nuestros salvadores.Cesen la mentira, la infamia y el odio.Cuba es profundamente alérgica al odio. ¡Y jamás será tierra de odio!
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Discurso pronunciado por Miguel Mario Díaz-Canel Bermúdez, Primer Secretario del Comité Central del Partido Comunista de Cuba y Presidente de la República, en el acto de reafirmación revolucionaria, en la explanada de La Piragua, La Habana, el 17 de julio de 2021, «Año 63 de la Revolución».(Versiones Taquigráficas - Presidencia de la República) Querido General de Ejército Raúl Castro Ruz, líder de la Revolución Cubana;Pueblo de Cuba, cubanas y cubanos;Compatriotas:¡Viva Cuba Libre! (Exclamaciones de: «¡Viva!»).Libre de injerencias extranjeras y libre del odio que han azuzado quienes llevan 60 años apretando el cuello de la nación para hacerla estallar y ahora quieren presentarse como nuestros salvadores.Cesen la mentira, la infamia y el odio.Cuba es profundamente alérgica al odio. ¡Y jamás será tierra de odio!
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210728_213839_855556.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210728_213839_855556.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210728_214550_945564)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'No se construye nada bueno desde el odio. El odio nos roba tiempo para amar y hasta el amor mismo si lo dejamos entrar como reacción frente al odio que nos adversa.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Lo hemos experimentado en estos días de odio desbordado en las redes sociales, redes no tan «sociales», que han sido la compañía permanente de padres e hijos en estos largos meses de pandemia, al punto de que muchos pasan más tiempo conectados a la red que conectados a la familia; esa familia, que, con unidad, puede ser invulnerable ante todo lo que la amenaza.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Una madre me contaba ayer que su hija adolescente preguntó, con lágrimas en los ojos, si eso era Cuba, al ver las imágenes de los actos de violencia que algunos de sus amigos compartieron en Facebook.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => No se construye nada bueno desde el odio. El odio nos roba tiempo para amar y hasta el amor mismo si lo dejamos entrar como reacción frente al odio que nos adversa.
+    [1] => 
+
+    [2] => Lo hemos experimentado en estos días de odio desbordado en las redes sociales, redes no tan «sociales», que han sido la compañía permanente de padres e hijos en estos largos meses de pandemia, al punto de que muchos pasan más tiempo conectados a la red que conectados a la familia; esa familia, que, con unidad, puede ser invulnerable ante todo lo que la amenaza.
+    [3] => 
+
+    [4] => Una madre me contaba ayer que su hija adolescente preguntó, con lágrimas en los ojos, si eso era Cuba, al ver las imágenes de los actos de violencia que algunos de sus amigos compartieron en Facebook.
+    [5] => 
+
+    [6] => Los dueños de esas redes, los dictadores de sus algoritmos, como bien denuncia un documental reciente, han abierto al odio, sin el más mínimo control ético, las compuertas de sus poderosas plataformas.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => No se construye nada bueno desde el odio. El odio nos roba tiempo para amar y hasta el amor mismo si lo dejamos entrar como reacción frente al odio que nos adversa.
+    [1] => 
+
+    [2] => Lo hemos experimentado en estos días de odio desbordado en las redes sociales, redes no tan «sociales», que han sido la compañía permanente de padres e hijos en estos largos meses de pandemia, al punto de que muchos pasan más tiempo conectados a la red que conectados a la familia; esa familia, que, con unidad, puede ser invulnerable ante todo lo que la amenaza.
+    [3] => 
+
+    [4] => Una madre me contaba ayer que su hija adolescente preguntó, con lágrimas en los ojos, si eso era Cuba, al ver las imágenes de los actos de violencia que algunos de sus amigos compartieron en Facebook.
+    [5] => 
+
+    [6] => Los dueños de esas redes, los dictadores de sus algoritmos, como bien denuncia un documental reciente, han abierto al odio, sin el más mínimo control ético, las compuertas de sus poderosas plataformas.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->No se construye nada bueno desde el odio. El odio nos roba tiempo para amar y hasta el amor mismo si lo dejamos entrar como reacción frente al odio que nos adversa.
+$matches ==>
+Array
+(
+    [0] => o. 
+    [1] => o.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => No se construye nada bueno desde el odio.El odio nos roba tiempo para amar y hasta el amor mismo si lo dejamos entrar como reacción frente al odio que nos adversa.
+    [1] => 
+
+    [2] => Lo hemos experimentado en estos días de odio desbordado en las redes sociales, redes no tan «sociales», que han sido la compañía permanente de padres e hijos en estos largos meses de pandemia, al punto de que muchos pasan más tiempo conectados a la red que conectados a la familia; esa familia, que, con unidad, puede ser invulnerable ante todo lo que la amenaza.
+    [3] => 
+
+    [4] => Una madre me contaba ayer que su hija adolescente preguntó, con lágrimas en los ojos, si eso era Cuba, al ver las imágenes de los actos de violencia que algunos de sus amigos compartieron en Facebook.
+    [5] => 
+
+    [6] => Los dueños de esas redes, los dictadores de sus algoritmos, como bien denuncia un documental reciente, han abierto al odio, sin el más mínimo control ético, las compuertas de sus poderosas plataformas.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>No se construye nada bueno desde el odio.El odio nos roba tiempo para amar y hasta el amor mismo si lo dejamos entrar como reacción frente al odio que nos adversa.
+Lo hemos experimentado en estos días de odio desbordado en las redes sociales, redes no tan «sociales», que han sido la compañía permanente de padres e hijos en estos largos meses de pandemia, al punto de que muchos pasan más tiempo conectados a la red que conectados a la familia; esa familia, que, con unidad, puede ser invulnerable ante todo lo que la amenaza.
+Una madre me contaba ayer que su hija adolescente preguntó, con lágrimas en los ojos, si eso era Cuba, al ver las imágenes de los actos de violencia que algunos de sus amigos compartieron en Facebook.
+Los dueños de esas redes, los dictadores de sus algoritmos, como bien denuncia un documental reciente, han abierto al odio, sin el más mínimo control ético, las compuertas de sus poderosas plataformas.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210728_214550_945564.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210728_214550_945564.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
