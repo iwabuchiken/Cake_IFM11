@@ -48433,3 +48433,162 @@ Los dueños de esas redes, los dictadores de sus algoritmos, como bien denuncia 
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210728_214550_945564.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210729_124748_859713)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Ibrahim Yaqoub Zakzaky (ur. 5 maja 1953 w Zarii) – nigeryjski duchowny szyicki, konwertyta z sunnizmu.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Ibrahim Yaqoub Zakzaky (ur. 5 maja 1953 w Zarii) – nigeryjski duchowny szyicki, konwertyta z sunnizmu.
+    [1] => 
+
+    [2] => Zafascynowany osobą ajatollaha Chomejniego i rewolucją w Iranie[1][2], odwiedził ten kraj kilkakrotnie. W Nigerii rozpoczął akcję intensywnej prozelityzacji, doprowadzając do nawrócenia milionów sunnitów na islam szyicki[3]. Od początku jego działalności, szyici byli prześladowani przez sunnitów, zarówno związanych z terrorystyczną organizacją Boko Haram, jak również przez armię i urzędników państwowych[4]. Pod rządami kolejnych dyktatur wojskowych w latach 80. i 90. XX wieku, spędził dziewięć lat w różnych więzieniach na terenie kraju[5]. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Ibrahim Yaqoub Zakzaky (ur. 5 maja 1953 w Zarii) – nigeryjski duchowny szyicki, konwertyta z sunnizmu.
+    [1] => 
+
+    [2] => Zafascynowany osobą ajatollaha Chomejniego i rewolucją w Iranie[1][2], odwiedził ten kraj kilkakrotnie. W Nigerii rozpoczął akcję intensywnej prozelityzacji, doprowadzając do nawrócenia milionów sunnitów na islam szyicki[3]. Od początku jego działalności, szyici byli prześladowani przez sunnitów, zarówno związanych z terrorystyczną organizacją Boko Haram, jak również przez armię i urzędników państwowych[4]. Pod rządami kolejnych dyktatur wojskowych w latach 80. i 90. XX wieku, spędził dziewięć lat w różnych więzieniach na terenie kraju[5]. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Ibrahim Yaqoub Zakzaky (ur. 5 maja 1953 w Zarii) – nigeryjski duchowny szyicki, konwertyta z sunnizmu.
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Zafascynowany osobą ajatollaha Chomejniego i rewolucją w Iranie[1][2], odwiedził ten kraj kilkakrotnie. W Nigerii rozpoczął akcję intensywnej prozelityzacji, doprowadzając do nawrócenia milionów sunnitów na islam szyicki[3]. Od początku jego działalności, szyici byli prześladowani przez sunnitów, zarówno związanych z terrorystyczną organizacją Boko Haram, jak również przez armię i urzędników państwowych[4]. Pod rządami kolejnych dyktatur wojskowych w latach 80. i 90. XX wieku, spędził dziewięć lat w różnych więzieniach na terenie kraju[5]. 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Ibrahim Yaqoub Zakzaky (ur.5 maja 1953 w Zarii) – nigeryjski duchowny szyicki, konwertyta z sunnizmu.
+    [1] => 
+
+    [2] => Zafascynowany osobą ajatollaha Chomejniego i rewolucją w Iranie[1][2], odwiedził ten kraj kilkakrotnie.W Nigerii rozpoczął akcję intensywnej prozelityzacji, doprowadzając do nawrócenia milionów sunnitów na islam szyicki[3].Od początku jego działalności, szyici byli prześladowani przez sunnitów, zarówno związanych z terrorystyczną organizacją Boko Haram, jak również przez armię i urzędników państwowych[4].Pod rządami kolejnych dyktatur wojskowych w latach 80. i 90. XX wieku, spędził dziewięć lat w różnych więzieniach na terenie kraju[5].
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Ibrahim Yaqoub Zakzaky (ur.5 maja 1953 w Zarii) – nigeryjski duchowny szyicki, konwertyta z sunnizmu.
+Zafascynowany osobą ajatollaha Chomejniego i rewolucją w Iranie[1][2], odwiedził ten kraj kilkakrotnie.W Nigerii rozpoczął akcję intensywnej prozelityzacji, doprowadzając do nawrócenia milionów sunnitów na islam szyicki[3].Od początku jego działalności, szyici byli prześladowani przez sunnitów, zarówno związanych z terrorystyczną organizacją Boko Haram, jak również przez armię i urzędników państwowych[4].Pod rządami kolejnych dyktatur wojskowych w latach 80. i 90. XX wieku, spędził dziewięć lat w różnych więzieniach na terenie kraju[5].
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210729_124748_859713.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210729_124748_859713.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210729_130541_749922)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Jest po ślubie, z dziewięciorga dzieci, sześciu synów zostało zabitych w atakach nigeryjskich sił zbrojnych.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Życie prywatne
+
+    [1] => 
+
+    [2] => Jest po ślubie, z dziewięciorga dzieci, sześciu synów zostało zabitych w atakach nigeryjskich sił zbrojnych.
+    [3] => Prześladowania
+
+    [4] => 25 lipca 2014, po pro-palestyńskiej manifestacji potępiającej niedawny konflikt izraelsko-palestyński, nigeryjskie siły zbrojne otworzyły ogień do szyitów zabijając trzydziestu pięciu z nich, wliczając trzech synów Zakzakiego. Od 12 do 14 grudnia 2015, rządowe siły zbrojne przypuściły szturm na największy szyicki kompleks religijny dokonując masakry kilkuset szyitów, wliczając kolejnych trzech synów Zakzakiego. On sam został ranny, a następnie aresztowany i wywieziony do stolicy kraju, Abudży[6][7]. 2 grudnia 2016, Sąd Najwyższy nakazał jego zwolnienie z aresztu służb specjalnych, jednocześnie przyznając mu 50 milionów naira w ramach zadośćuczynienia za wyrządzone krzywdy[8]. Pomimo wyroku sądowego, Zakzaky nadal przebywa w areszcie. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Życie prywatne
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Prześladowania
+
+$matches ==>
+Array
+(
+    [0] => a
+
+    [1] => a
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Życie prywatne 
+    [1] => 
+
+    [2] => Jest po ślubie, z dziewięciorga dzieci, sześciu synów zostało zabitych w atakach nigeryjskich sił zbrojnych.
+    [3] => Prześladowania 
+    [4] => 25 lipca 2014, po pro-palestyńskiej manifestacji potępiającej niedawny konflikt izraelsko-palestyński, nigeryjskie siły zbrojne otworzyły ogień do szyitów zabijając trzydziestu pięciu z nich, wliczając trzech synów Zakzakiego. Od 12 do 14 grudnia 2015, rządowe siły zbrojne przypuściły szturm na największy szyicki kompleks religijny dokonując masakry kilkuset szyitów, wliczając kolejnych trzech synów Zakzakiego. On sam został ranny, a następnie aresztowany i wywieziony do stolicy kraju, Abudży[6][7]. 2 grudnia 2016, Sąd Najwyższy nakazał jego zwolnienie z aresztu służb specjalnych, jednocześnie przyznając mu 50 milionów naira w ramach zadośćuczynienia za wyrządzone krzywdy[8]. Pomimo wyroku sądowego, Zakzaky nadal przebywa w areszcie. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->25 lipca 2014, po pro-palestyńskiej manifestacji potępiającej niedawny konflikt izraelsko-palestyński, nigeryjskie siły zbrojne otworzyły ogień do szyitów zabijając trzydziestu pięciu z nich, wliczając trzech synów Zakzakiego. Od 12 do 14 grudnia 2015, rządowe siły zbrojne przypuściły szturm na największy szyicki kompleks religijny dokonując masakry kilkuset szyitów, wliczając kolejnych trzech synów Zakzakiego. On sam został ranny, a następnie aresztowany i wywieziony do stolicy kraju, Abudży[6][7]. 2 grudnia 2016, Sąd Najwyższy nakazał jego zwolnienie z aresztu służb specjalnych, jednocześnie przyznając mu 50 milionów naira w ramach zadośćuczynienia za wyrządzone krzywdy[8]. Pomimo wyroku sądowego, Zakzaky nadal przebywa w areszcie. 
+$matches ==>
+Array
+(
+    [0] => o. 
+    [1] => o.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Życie prywatne 
+    [1] => 
+
+    [2] => Jest po ślubie, z dziewięciorga dzieci, sześciu synów zostało zabitych w atakach nigeryjskich sił zbrojnych.
+    [3] => Prześladowania 
+    [4] => 25 lipca 2014, po pro-palestyńskiej manifestacji potępiającej niedawny konflikt izraelsko-palestyński, nigeryjskie siły zbrojne otworzyły ogień do szyitów zabijając trzydziestu pięciu z nich, wliczając trzech synów Zakzakiego.Od 12 do 14 grudnia 2015, rządowe siły zbrojne przypuściły szturm na największy szyicki kompleks religijny dokonując masakry kilkuset szyitów, wliczając kolejnych trzech synów Zakzakiego.On sam został ranny, a następnie aresztowany i wywieziony do stolicy kraju, Abudży[6][7].2 grudnia 2016, Sąd Najwyższy nakazał jego zwolnienie z aresztu służb specjalnych, jednocześnie przyznając mu 50 milionów naira w ramach zadośćuczynienia za wyrządzone krzywdy[8].Pomimo wyroku sądowego, Zakzaky nadal przebywa w areszcie.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Życie prywatne 
+Jest po ślubie, z dziewięciorga dzieci, sześciu synów zostało zabitych w atakach nigeryjskich sił zbrojnych.Prześladowania 25 lipca 2014, po pro-palestyńskiej manifestacji potępiającej niedawny konflikt izraelsko-palestyński, nigeryjskie siły zbrojne otworzyły ogień do szyitów zabijając trzydziestu pięciu z nich, wliczając trzech synów Zakzakiego.Od 12 do 14 grudnia 2015, rządowe siły zbrojne przypuściły szturm na największy szyicki kompleks religijny dokonując masakry kilkuset szyitów, wliczając kolejnych trzech synów Zakzakiego.On sam został ranny, a następnie aresztowany i wywieziony do stolicy kraju, Abudży[6][7].2 grudnia 2016, Sąd Najwyższy nakazał jego zwolnienie z aresztu służb specjalnych, jednocześnie przyznając mu 50 milionów naira w ramach zadośćuczynienia za wyrządzone krzywdy[8].Pomimo wyroku sądowego, Zakzaky nadal przebywa w areszcie.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210729_130541_749922.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210729_130541_749922.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 

@@ -6260,3 +6260,38 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210716_112437_777575.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210716_112437_777575.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210729_143738_545897)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 克劳斯·埃米尔·尤利乌斯·富克斯（德语：KlausEmilJuliusFuchs，1911年12月29日－1988年1月28日），德国理论物理学家、著名核武器间谍，直接或间接地参与了美、苏、英三国的核武器研发计划。生平出生于德意志帝国,
+    [1] => 吕塞尔斯海姆[lv3sai4er3si1-mu3
+    [2] => ,，父亲曾为,
+    [3] => 莱比锡[lai2bi3xi1
+    [4] => ,大学神学教授，也是首批加入德国社民党的路德宗牧师之一。]]1930年，进入莱比锡大学。1933年为逃避纳粹迫害避居英国并在布里斯托大学获得物理学博士学位（师从内维尔·莫特），在爱丁堡大学获得科学博士学位（担任马克斯·玻恩的助手）。]]1941年受鲁道夫·佩尔斯邀请加入英国原子弹研发计划合金管工程并成为其最信任的助手，同时开始向苏联提供情报。]]1943年，他与佩尔斯同赴美国哥伦比亚大学，开始参与,
+    [5] => 曼哈顿[man4ha1dun4
+    [6] => ,计划。]]次年8月，他前往新墨西哥州的,洛斯阿拉莫斯[mo4,国家实验室参与原子弹研发，在犹太裔德国物理学家汉斯·贝特手下工作并负责以内爆方式引爆,
+    [7] => 钚[bu4:plutonium
+    [8] => ,芯原子弹（即后来投在广岛的,
+    [9] => 胖子[pang4-
+    [10] => ,）的多项重要机密计算，也曾参与氢弹的早期理论发展。]]二战结束后，他留在洛斯阿拉莫斯国家实验室参与十字路口行动核武试验的准备工作。]]1946年8月，返回英国担任英国核能研究机构理论物理部主任参与英国原子弹研发项目。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)克劳斯·埃米尔·尤利乌斯·富克斯（德语：KlausEmilJuliusFuchs，1911年12月29日－1988年1月28日），德国理论物理学家、著名核武器间谍，直接或间接地参与了美、苏、英三国的核武器研发计划。生平出生于德意志帝国,
+[process-trans-sentences_chinese.php : 216] match => 吕塞尔斯海姆[lv3sai4er3si1-mu3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),，父亲曾为,
+[process-trans-sentences_chinese.php : 216] match => 莱比锡[lai2bi3xi1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),大学神学教授，也是首批加入德国社民党的路德宗牧师之一。]]1930年，进入莱比锡大学。1933年为逃避纳粹迫害避居英国并在布里斯托大学获得物理学博士学位（师从内维尔·莫特），在爱丁堡大学获得科学博士学位（担任马克斯·玻恩的助手）。]]1941年受鲁道夫·佩尔斯邀请加入英国原子弹研发计划合金管工程并成为其最信任的助手，同时开始向苏联提供情报。]]1943年，他与佩尔斯同赴美国哥伦比亚大学，开始参与,
+[process-trans-sentences_chinese.php : 216] match => 曼哈顿[man4ha1dun4
+[process-trans-sentences_chinese.php : 216] match => ,计划。]]次年8月，他前往新墨西哥州的,洛斯阿拉莫斯[mo4,国家实验室参与原子弹研发，在犹太裔德国物理学家汉斯·贝特手下工作并负责以内爆方式引爆,
+[process-trans-sentences_chinese.php : 216] match => 钚[bu4:plutonium
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),芯原子弹（即后来投在广岛的,
+[process-trans-sentences_chinese.php : 216] match => 胖子[pang4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0),）的多项重要机密计算，也曾参与氢弹的早期理论发展。]]二战结束后，他留在洛斯阿拉莫斯国家实验室参与十字路口行动核武试验的准备工作。]]1946年8月，返回英国担任英国核能研究机构理论物理部主任参与英国原子弹研发项目。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210729_143739_105930.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210729_143739_105930.txt'
+  
