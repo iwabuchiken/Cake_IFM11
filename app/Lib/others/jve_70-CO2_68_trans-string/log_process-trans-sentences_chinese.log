@@ -6295,3 +6295,79 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210729_143739_105930.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210729_143739_105930.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210730_142838_629951)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 福岛产蜂蜜放射性铯超标　韩国忧日本食品安全。日本福岛县浪江町生产的蜂蜜日前被检出放射性铯含量超标。《韩国时报》28日刊文对日本福岛产食品安全表示担忧，并对日本抱怨韩国奥运选手不吃东京奥运会提供的餐食表达不满。日本食品放射性物质含量标准为不超过每千克100贝克勒尔。日本官方研究机构检测结果显示，福岛县浪江町泽上管理耕作组合养蜂部产蜂蜜放射性铯含量达到每千克130至160贝克勒尔。日本《每日新闻》报道，这批蜂蜜6月19日上市，截至7月21日，在车站售出73盒，以礼品盒方式售出1336份套装。生产方说，售前自主检查期间没有发现问题，将回收这批蜂蜜。《韩国时报》28日报道福岛产蜂蜜放射性铯含量超标事，对福岛及周边地区食品安全问题表达担忧。报道说，浪江町距离发生核事故的福岛第一核电站只有12.7公里，放射性铯据信由西北风带去。除浪江町生产的上述蜂蜜产品，今年2月22日在福岛县近海捕捞的一种鱼被检测出体内放射性物质超标，为时隔约两年再次发现福岛近海捕捞的鱼体内放射性物质超标。《韩国时报》报道，日本政府多次就福岛食品安全作出保证，甚至在奥运村向奥运选手供应福岛产食材，但仍有一些参赛代表团决定向参赛选手供应自己产食材。大韩体育会在东京奥运村附近租下一间酒店，派出21名营养师和厨师另起炉灶，从7月20日起为韩国奥运选手供应以本国食材烹调的餐食。美国奥委会在美国奥运代表团东京练习场所附近开设食堂，从美国运来大约33吨食材。不过，美国奥委会没有明确提及这种做法缘于对日方食品安全的担忧。共同社报道，美方此举旨在提供选手们“喜欢的料理”。韩方上述做法招致部分日本媒体和议员批评，日本奥运大臣丸川珠代7月20日说，福岛食品安全，韩国不必自带食材来参赛。对此，《韩国时报》批评日方搞区别对待，只对韩国指手画脚。（刘秀玲）（新华社专特稿）
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)福岛产蜂蜜放射性铯超标　韩国忧日本食品安全。日本福岛县浪江町生产的蜂蜜日前被检出放射性铯含量超标。《韩国时报》28日刊文对日本福岛产食品安全表示担忧，并对日本抱怨韩国奥运选手不吃东京奥运会提供的餐食表达不满。日本食品放射性物质含量标准为不超过每千克100贝克勒尔。日本官方研究机构检测结果显示，福岛县浪江町泽上管理耕作组合养蜂部产蜂蜜放射性铯含量达到每千克130至160贝克勒尔。日本《每日新闻》报道，这批蜂蜜6月19日上市，截至7月21日，在车站售出73盒，以礼品盒方式售出1336份套装。生产方说，售前自主检查期间没有发现问题，将回收这批蜂蜜。《韩国时报》28日报道福岛产蜂蜜放射性铯含量超标事，对福岛及周边地区食品安全问题表达担忧。报道说，浪江町距离发生核事故的福岛第一核电站只有12.7公里，放射性铯据信由西北风带去。除浪江町生产的上述蜂蜜产品，今年2月22日在福岛县近海捕捞的一种鱼被检测出体内放射性物质超标，为时隔约两年再次发现福岛近海捕捞的鱼体内放射性物质超标。《韩国时报》报道，日本政府多次就福岛食品安全作出保证，甚至在奥运村向奥运选手供应福岛产食材，但仍有一些参赛代表团决定向参赛选手供应自己产食材。大韩体育会在东京奥运村附近租下一间酒店，派出21名营养师和厨师另起炉灶，从7月20日起为韩国奥运选手供应以本国食材烹调的餐食。美国奥委会在美国奥运代表团东京练习场所附近开设食堂，从美国运来大约33吨食材。不过，美国奥委会没有明确提及这种做法缘于对日方食品安全的担忧。共同社报道，美方此举旨在提供选手们“喜欢的料理”。韩方上述做法招致部分日本媒体和议员批评，日本奥运大臣丸川珠代7月20日说，福岛食品安全，韩国不必自带食材来参赛。对此，《韩国时报》批评日方搞区别对待，只对韩国指手画脚。（刘秀玲）（新华社专特稿）
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210730_142838_731957.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210730_142838_731957.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210730_142852_952199)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 福岛产蜂蜜放射性
+    [1] => 铯[se4
+    [2] => 超标　韩国忧日本食品安全。]]日本福岛县
+    [3] => 浪江町[--ting1
+    [4] => ]]
+    [5] => 生产的
+    [6] => 蜂蜜[feng1mi4
+    [7] => 日前被检出放射性铯含量超标。]]《韩国时报》28日刊文对日本福岛产食品安全表示担忧，并对日本
+    [8] => 抱怨[bao4yuan4
+    [9] => 韩国奥运选手不吃东京奥运会提供的餐食表达不满。]]日本食品放射性物质含量标准为不超过每千克100贝克勒尔。日本官方研究机构检测结果显示，福岛县浪江町泽上管理
+    [10] => 耕作[geng1-
+    [11] => ]]
+    [12] => 组合养蜂部产蜂蜜放射性铯含量达到每千克130至160贝克勒尔。]]日本《每日新闻》报道，这批蜂蜜6月19日上市，截至7月21日，在车站售出73盒，以礼品盒方式售出1336份套装。]]生产方说，售前自主检查期间没有发现问题，将回收这批蜂蜜。《韩国时报》28日报道福岛产蜂蜜放射性铯含量超标事，对福岛及周边地区食品安全问题表达担忧。报道说，浪江町距离发生核事故的福岛第一核电站只有12.7公里，放射性铯据信由西北风带去。除浪江町生产的上述蜂蜜产品，今年2月22日在福岛县近海
+    [13] => 捕捞[bu3lao1
+    [14] => ]]
+    [15] => 的一种鱼被检测出体内放射性物质超标，为时隔约两年再次发现福岛近海捕捞的鱼体内放射性物质超标。]]《韩国时报》报道，日本政府多次就福岛食品安全作出保证，甚至在奥运村向奥运选手供应福岛产食材，但仍有一些参赛代表团决定向参赛选手供应自己产食材。大韩体育会在东京奥运村附近租下一间酒店，派出21名营养师和厨师另起
+    [16] => 炉灶[lu2zao4
+    [17] => ，]]
+    [18] => 从7月20日起为韩国奥运选手供应以本国食材
+    [19] => 烹调[peng1tiao2
+    [20] => ]]
+    [21] => 的餐食。美国奥委会在美国奥运代表团东京练习场所附近开设食堂，从美国运来大约33吨食材。不过，美国奥委会没有明确提及这种做法缘于对日方食品安全的担忧。]]共同社报道，美方此举旨在提供选手们“喜欢的料理”。韩方上述做法招致部分日本媒体和议员批评，日本奥运大臣丸川珠代7月20日说，福岛食品安全，韩国不必自带食材来参赛。对此，《韩国时报》批评日方
+    [22] => 搞
+    [23] => 区别对待，只对韩国指手画脚。（刘秀玲）（新华社专特稿）
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)福岛产蜂蜜放射性
+[process-trans-sentences_chinese.php : 216] match => 铯[se4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)超标　韩国忧日本食品安全。]]日本福岛县
+[process-trans-sentences_chinese.php : 216] match => 浪江町[--ting1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)生产的
+[process-trans-sentences_chinese.php : 216] match => 蜂蜜[feng1mi4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)日前被检出放射性铯含量超标。]]《韩国时报》28日刊文对日本福岛产食品安全表示担忧，并对日本
+[process-trans-sentences_chinese.php : 216] match => 抱怨[bao4yuan4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)韩国奥运选手不吃东京奥运会提供的餐食表达不满。]]日本食品放射性物质含量标准为不超过每千克100贝克勒尔。日本官方研究机构检测结果显示，福岛县浪江町泽上管理
+[process-trans-sentences_chinese.php : 216] match => 耕作[geng1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)组合养蜂部产蜂蜜放射性铯含量达到每千克130至160贝克勒尔。]]日本《每日新闻》报道，这批蜂蜜6月19日上市，截至7月21日，在车站售出73盒，以礼品盒方式售出1336份套装。]]生产方说，售前自主检查期间没有发现问题，将回收这批蜂蜜。《韩国时报》28日报道福岛产蜂蜜放射性铯含量超标事，对福岛及周边地区食品安全问题表达担忧。报道说，浪江町距离发生核事故的福岛第一核电站只有12.7公里，放射性铯据信由西北风带去。除浪江町生产的上述蜂蜜产品，今年2月22日在福岛县近海
+[process-trans-sentences_chinese.php : 216] match => 捕捞[bu3lao1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的一种鱼被检测出体内放射性物质超标，为时隔约两年再次发现福岛近海捕捞的鱼体内放射性物质超标。]]《韩国时报》报道，日本政府多次就福岛食品安全作出保证，甚至在奥运村向奥运选手供应福岛产食材，但仍有一些参赛代表团决定向参赛选手供应自己产食材。大韩体育会在东京奥运村附近租下一间酒店，派出21名营养师和厨师另起
+[process-trans-sentences_chinese.php : 216] match => 炉灶[lu2zao4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)从7月20日起为韩国奥运选手供应以本国食材
+[process-trans-sentences_chinese.php : 216] match => 烹调[peng1tiao2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的餐食。美国奥委会在美国奥运代表团东京练习场所附近开设食堂，从美国运来大约33吨食材。不过，美国奥委会没有明确提及这种做法缘于对日方食品安全的担忧。]]共同社报道，美方此举旨在提供选手们“喜欢的料理”。韩方上述做法招致部分日本媒体和议员批评，日本奥运大臣丸川珠代7月20日说，福岛食品安全，韩国不必自带食材来参赛。对此，《韩国时报》批评日方
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)搞
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)区别对待，只对韩国指手画脚。（刘秀玲）（新华社专特稿）
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210730_142853_040205.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210730_142853_040205.txt'
+  
