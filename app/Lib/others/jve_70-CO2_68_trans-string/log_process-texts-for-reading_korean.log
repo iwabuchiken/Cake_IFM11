@@ -48871,3 +48871,1384 @@ After the defeat and massacre in Shanghai and Guangzhou, the CCP was decimated.
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210801_010916_908720.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210802_133041_015153)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Rachid Ghanuchi (árabe: اشد الغنوشي), también escrito Rashid Ghannouchi o Rached Ghannouchi, (Hamma, sur de Túnez, 1941) es un político, escritor y pensador tunecino. Es miembro fundador del partido islamista Ennahda, partido que preside desde 1991. De 1984 a 1987 presidió el Movimiento de Tendencia Islámica. Desde el 13 de noviembre de 2019 es el Presidente de la Asamblea de Representantes del Pueblo después de que su formación ganara las elecciones legislativas del 6 de octubre de 2019.1​ 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Rachid Ghanuchi (árabe: اشد الغنوشي), también escrito Rashid Ghannouchi o Rached Ghannouchi, (Hamma, sur de Túnez, 1941) es un político, escritor y pensador tunecino. Es miembro fundador del partido islamista Ennahda, partido que preside desde 1991. De 1984 a 1987 presidió el Movimiento de Tendencia Islámica. Desde el 13 de noviembre de 2019 es el Presidente de la Asamblea de Representantes del Pueblo después de que su formación ganara las elecciones legislativas del 6 de octubre de 2019.1​ 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Rachid Ghanuchi (árabe: اشد الغنوشي), también escrito Rashid Ghannouchi o Rached Ghannouchi, (Hamma, sur de Túnez, 1941) es un político, escritor y pensador tunecino. Es miembro fundador del partido islamista Ennahda, partido que preside desde 1991. De 1984 a 1987 presidió el Movimiento de Tendencia Islámica. Desde el 13 de noviembre de 2019 es el Presidente de la Asamblea de Representantes del Pueblo después de que su formación ganara las elecciones legislativas del 6 de octubre de 2019.1​ 
+$matches ==>
+Array
+(
+    [0] => o. 
+    [1] => o.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Rachid Ghanuchi (árabe: اشد الغنوشي), también escrito Rashid Ghannouchi o Rached Ghannouchi, (Hamma, sur de Túnez, 1941) es un político, escritor y pensador tunecino.Es miembro fundador del partido islamista Ennahda, partido que preside desde 1991. De 1984 a 1987 presidió el Movimiento de Tendencia Islámica.Desde el 13 de noviembre de 2019 es el Presidente de la Asamblea de Representantes del Pueblo después de que su formación ganara las elecciones legislativas del 6 de octubre de 2019.1​ 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Rachid Ghanuchi (árabe: اشد الغنوشي), también escrito Rashid Ghannouchi o Rached Ghannouchi, (Hamma, sur de Túnez, 1941) es un político, escritor y pensador tunecino.Es miembro fundador del partido islamista Ennahda, partido que preside desde 1991. De 1984 a 1987 presidió el Movimiento de Tendencia Islámica.Desde el 13 de noviembre de 2019 es el Presidente de la Asamblea de Representantes del Pueblo después de que su formación ganara las elecciones legislativas del 6 de octubre de 2019.1​ 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_133041_015153.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_133041_015153.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210802_163853_418761)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'French bullying of Africa has been driven entirely by self-interest and greed.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'France has thrown its military weight around in Africa for years, but recently, in the wake of troop casualties, and with the prospect of more soldier deaths, French imperialist punks have signaled their plan to withdraw more than 2,000 troops from the continent.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'U.S. involvement may have been good for France, but ultimately it proved costly for the U.S. In 2017, four U.S. soldiers were killed in Niger, and the public reaction was so strong that the U.S. was forced to substantially reduce its troop presence in Africa. Nevertheless, then as in preceding years, the imperialist imperative demanded alternative approaches to the domination of Africa. In the case of Niger, the U.S. intensified and expanded its use of armed drones.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => French bullying of Africa has been driven entirely by self-interest and greed.
+    [1] => 
+
+    [2] => “The longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities.”
+
+    [3] => 
+
+    [4] => France has thrown its military weight around in Africa for years, but recently, in the wake of troop casualties, and with the prospect of more soldier deaths, French imperialist punks have signaled their plan to withdraw more than 2,000 troops from the continent.
+    [5] => 
+
+    [6] => France began “Operation Barkhane” in 2013, supposedly to rid the Sahel region of al-Qaeda cells and sympathizers. However, resistance to the military campaign has left about 55 French soldiers dead. French President Emmanuel Macron said: “Many of our soldiers have fallen, I have a thought for their families. We owe them consistency, clarity.”
+
+    [7] => 
+
+    [8] => When it comes to Africa, France has always been both consistent and clear about its plan to dominate and exploit. Also, while other western powers, including the U.S. have participated in neo-colonial projects, French efforts have included an extra dose of nasty. For example, as colonialism breathed its last gasps in 1958, France arrogantly strong-armed most of its African colonies into relationships designed to perpetuate the colonial model in a different form. When, by referendum, Guinea alone stood tall and strong for true independence and rejected the French proposal, France threw a tantrum. Author Elizabeth Schmidt wrote:
+
+    [9] => 
+
+    [10] => “France retaliated with a vengeance. Even before the vote, France began its withdrawal, sabotaging archives, infrastructure and the economy. After the referendum, France attempted to isolate Guinea diplomatically, economically and militarily.”
+
+    [11] => 
+
+    [12] => “French efforts have included an extra dose of nasty.”
+
+    [13] => 
+
+    [14] => The bullying of Africa has been driven entirely by self-interest and greed. In more recent years, and as just one example, the French military presence in Niger has been for the purpose of protecting French uranium mines, notwithstanding claims the mission’s focus is anti-terrorism. 
+
+    [15] => 
+
+    [16] => For its own exploitative purposes, in 2014 the U.S. chose to become militarily involved in Mali and other countries in the region. In response, a French Special Forces officer said: “The Americans want to get involved in Africa. That’s good for us. We know that with the Americans it will be more efficient. We use American logistics – that’s what we are missing. On the other hand, we provide the local knowledge.”
+
+    [17] => 
+
+    [18] => U.S. involvement may have been good for France, but ultimately it proved costly for the U.S. In 2017, four U.S. soldiers were killed in Niger, and the public reaction was so strong that the U.S. was forced to substantially reduce its troop presence in Africa. Nevertheless, then as in preceding years, the imperialist imperative demanded alternative approaches to the domination of Africa. In the case of Niger, the U.S. intensified and expanded its use of armed drones.
+    [19] => 
+
+    [20] => Notwithstanding the devastation generally caused by French and U.S. military operations in Africa, a crime that left Africa reeling, and from which it has not yet recovered, was the depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011. U.S. Africa Command (AFRICOM) and France armed anti-Black and other reactionary forces in Libya which carried out a protracted process of genocide and mass destruction that culminated in a mob’s use of a bayonet to murder Gadhafi by rectal disembowelment. Unlike many imperialist operations of this kind where we are left to connect the dots, we have damning evidence of the motive.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->“The longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->France began “Operation Barkhane” in 2013, supposedly to rid the Sahel region of al-Qaeda cells and sympathizers. However, resistance to the military campaign has left about 55 French soldiers dead. French President Emmanuel Macron said: “Many of our soldiers have fallen, I have a thought for their families. We owe them consistency, clarity.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->When it comes to Africa, France has always been both consistent and clear about its plan to dominate and exploit. Also, while other western powers, including the U.S. have participated in neo-colonial projects, French efforts have included an extra dose of nasty. For example, as colonialism breathed its last gasps in 1958, France arrogantly strong-armed most of its African colonies into relationships designed to perpetuate the colonial model in a different form. When, by referendum, Guinea alone stood tall and strong for true independence and rejected the French proposal, France threw a tantrum. Author Elizabeth Schmidt wrote:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“France retaliated with a vengeance. Even before the vote, France began its withdrawal, sabotaging archives, infrastructure and the economy. After the referendum, France attempted to isolate Guinea diplomatically, economically and militarily.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“French efforts have included an extra dose of nasty.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The bullying of Africa has been driven entirely by self-interest and greed. In more recent years, and as just one example, the French military presence in Niger has been for the purpose of protecting French uranium mines, notwithstanding claims the mission’s focus is anti-terrorism. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->For its own exploitative purposes, in 2014 the U.S. chose to become militarily involved in Mali and other countries in the region. In response, a French Special Forces officer said: “The Americans want to get involved in Africa. That’s good for us. We know that with the Americans it will be more efficient. We use American logistics – that’s what we are missing. On the other hand, we provide the local knowledge.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => French bullying of Africa has been driven entirely by self-interest and greed.
+    [1] => 
+
+    [2] => “The longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities.” 
+    [3] => 
+
+    [4] => France has thrown its military weight around in Africa for years, but recently, in the wake of troop casualties, and with the prospect of more soldier deaths, French imperialist punks have signaled their plan to withdraw more than 2,000 troops from the continent.
+    [5] => 
+
+    [6] => France began “Operation Barkhane” in 2013, supposedly to rid the Sahel region of al-Qaeda cells and sympathizers. However, resistance to the military campaign has left about 55 French soldiers dead. French President Emmanuel Macron said: “Many of our soldiers have fallen, I have a thought for their families. We owe them consistency, clarity.” 
+    [7] => 
+
+    [8] => When it comes to Africa, France has always been both consistent and clear about its plan to dominate and exploit. Also, while other western powers, including the U.S. have participated in neo-colonial projects, French efforts have included an extra dose of nasty. For example, as colonialism breathed its last gasps in 1958, France arrogantly strong-armed most of its African colonies into relationships designed to perpetuate the colonial model in a different form. When, by referendum, Guinea alone stood tall and strong for true independence and rejected the French proposal, France threw a tantrum. Author Elizabeth Schmidt wrote: 
+    [9] => 
+
+    [10] => “France retaliated with a vengeance. Even before the vote, France began its withdrawal, sabotaging archives, infrastructure and the economy. After the referendum, France attempted to isolate Guinea diplomatically, economically and militarily.” 
+    [11] => 
+
+    [12] => “French efforts have included an extra dose of nasty.” 
+    [13] => 
+
+    [14] => The bullying of Africa has been driven entirely by self-interest and greed. In more recent years, and as just one example, the French military presence in Niger has been for the purpose of protecting French uranium mines, notwithstanding claims the mission’s focus is anti-terrorism.  
+    [15] => 
+
+    [16] => For its own exploitative purposes, in 2014 the U.S. chose to become militarily involved in Mali and other countries in the region. In response, a French Special Forces officer said: “The Americans want to get involved in Africa. That’s good for us. We know that with the Americans it will be more efficient. We use American logistics – that’s what we are missing. On the other hand, we provide the local knowledge.” 
+    [17] => 
+
+    [18] => U.S. involvement may have been good for France, but ultimately it proved costly for the U.S. In 2017, four U.S. soldiers were killed in Niger, and the public reaction was so strong that the U.S. was forced to substantially reduce its troop presence in Africa. Nevertheless, then as in preceding years, the imperialist imperative demanded alternative approaches to the domination of Africa. In the case of Niger, the U.S. intensified and expanded its use of armed drones.
+    [19] => 
+
+    [20] => Notwithstanding the devastation generally caused by French and U.S. military operations in Africa, a crime that left Africa reeling, and from which it has not yet recovered, was the depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011. U.S. Africa Command (AFRICOM) and France armed anti-Black and other reactionary forces in Libya which carried out a protracted process of genocide and mass destruction that culminated in a mob’s use of a bayonet to murder Gadhafi by rectal disembowelment. Unlike many imperialist operations of this kind where we are left to connect the dots, we have damning evidence of the motive.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->France began “Operation Barkhane” in 2013, supposedly to rid the Sahel region of al-Qaeda cells and sympathizers. However, resistance to the military campaign has left about 55 French soldiers dead. French President Emmanuel Macron said: “Many of our soldiers have fallen, I have a thought for their families. We owe them consistency, clarity.” 
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->When it comes to Africa, France has always been both consistent and clear about its plan to dominate and exploit. Also, while other western powers, including the U.S. have participated in neo-colonial projects, French efforts have included an extra dose of nasty. For example, as colonialism breathed its last gasps in 1958, France arrogantly strong-armed most of its African colonies into relationships designed to perpetuate the colonial model in a different form. When, by referendum, Guinea alone stood tall and strong for true independence and rejected the French proposal, France threw a tantrum. Author Elizabeth Schmidt wrote: 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“France retaliated with a vengeance. Even before the vote, France began its withdrawal, sabotaging archives, infrastructure and the economy. After the referendum, France attempted to isolate Guinea diplomatically, economically and militarily.” 
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The bullying of Africa has been driven entirely by self-interest and greed. In more recent years, and as just one example, the French military presence in Niger has been for the purpose of protecting French uranium mines, notwithstanding claims the mission’s focus is anti-terrorism.  
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->For its own exploitative purposes, in 2014 the U.S. chose to become militarily involved in Mali and other countries in the region. In response, a French Special Forces officer said: “The Americans want to get involved in Africa. That’s good for us. We know that with the Americans it will be more efficient. We use American logistics – that’s what we are missing. On the other hand, we provide the local knowledge.” 
+$matches ==>
+Array
+(
+    [0] => S. 
+    [1] => S.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->U.S. involvement may have been good for France, but ultimately it proved costly for the U.S. In 2017, four U.S. soldiers were killed in Niger, and the public reaction was so strong that the U.S. was forced to substantially reduce its troop presence in Africa. Nevertheless, then as in preceding years, the imperialist imperative demanded alternative approaches to the domination of Africa. In the case of Niger, the U.S. intensified and expanded its use of armed drones.
+$matches ==>
+Array
+(
+    [0] => S. 
+    [1] => S.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Notwithstanding the devastation generally caused by French and U.S. military operations in Africa, a crime that left Africa reeling, and from which it has not yet recovered, was the depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011. U.S. Africa Command (AFRICOM) and France armed anti-Black and other reactionary forces in Libya which carried out a protracted process of genocide and mass destruction that culminated in a mob’s use of a bayonet to murder Gadhafi by rectal disembowelment. Unlike many imperialist operations of this kind where we are left to connect the dots, we have damning evidence of the motive.
+$matches ==>
+Array
+(
+    [0] => S. 
+    [1] => S.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => French bullying of Africa has been driven entirely by self-interest and greed.
+    [1] => 
+
+    [2] => “The longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities.” 
+    [3] => 
+
+    [4] => France has thrown its military weight around in Africa for years, but recently, in the wake of troop casualties, and with the prospect of more soldier deaths, French imperialist punks have signaled their plan to withdraw more than 2,000 troops from the continent.
+    [5] => 
+
+    [6] => France began “Operation Barkhane” in 2013, supposedly to rid the Sahel region of al-Qaeda cells and sympathizers.However, resistance to the military campaign has left about 55 French soldiers dead.French President Emmanuel Macron said: “Many of our soldiers have fallen, I have a thought for their families.We owe them consistency, clarity.” 
+    [7] => 
+
+    [8] => When it comes to Africa, France has always been both consistent and clear about its plan to dominate and exploit.Also, while other western powers, including the U.S.have participated in neo-colonial projects, French efforts have included an extra dose of nasty.For example, as colonialism breathed its last gasps in 1958, France arrogantly strong-armed most of its African colonies into relationships designed to perpetuate the colonial model in a different form.When, by referendum, Guinea alone stood tall and strong for true independence and rejected the French proposal, France threw a tantrum.Author Elizabeth Schmidt wrote: 
+    [9] => 
+
+    [10] => “France retaliated with a vengeance.Even before the vote, France began its withdrawal, sabotaging archives, infrastructure and the economy.After the referendum, France attempted to isolate Guinea diplomatically, economically and militarily.” 
+    [11] => 
+
+    [12] => “French efforts have included an extra dose of nasty.” 
+    [13] => 
+
+    [14] => The bullying of Africa has been driven entirely by self-interest and greed.In more recent years, and as just one example, the French military presence in Niger has been for the purpose of protecting French uranium mines, notwithstanding claims the mission’s focus is anti-terrorism. 
+    [15] => 
+
+    [16] => For its own exploitative purposes, in 2014 the U.S.chose to become militarily involved in Mali and other countries in the region.In response, a French Special Forces officer said: “The Americans want to get involved in Africa.That’s good for us.We know that with the Americans it will be more efficient.We use American logistics – that’s what we are missing.On the other hand, we provide the local knowledge.” 
+    [17] => 
+
+    [18] => U.S.involvement may have been good for France, but ultimately it proved costly for the U.S.In 2017, four U.S.soldiers were killed in Niger, and the public reaction was so strong that the U.S.was forced to substantially reduce its troop presence in Africa.Nevertheless, then as in preceding years, the imperialist imperative demanded alternative approaches to the domination of Africa.In the case of Niger, the U.S.intensified and expanded its use of armed drones.
+    [19] => 
+
+    [20] => Notwithstanding the devastation generally caused by French and U.S.military operations in Africa, a crime that left Africa reeling, and from which it has not yet recovered, was the depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011. U.S.Africa Command (AFRICOM) and France armed anti-Black and other reactionary forces in Libya which carried out a protracted process of genocide and mass destruction that culminated in a mob’s use of a bayonet to murder Gadhafi by rectal disembowelment.Unlike many imperialist operations of this kind where we are left to connect the dots, we have damning evidence of the motive.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>French bullying of Africa has been driven entirely by self-interest and greed.
+“The longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities.” 
+France has thrown its military weight around in Africa for years, but recently, in the wake of troop casualties, and with the prospect of more soldier deaths, French imperialist punks have signaled their plan to withdraw more than 2,000 troops from the continent.
+France began “Operation Barkhane” in 2013, supposedly to rid the Sahel region of al-Qaeda cells and sympathizers.However, resistance to the military campaign has left about 55 French soldiers dead.French President Emmanuel Macron said: “Many of our soldiers have fallen, I have a thought for their families.We owe them consistency, clarity.” 
+When it comes to Africa, France has always been both consistent and clear about its plan to dominate and exploit.Also, while other western powers, including the U.S.have participated in neo-colonial projects, French efforts have included an extra dose of nasty.For example, as colonialism breathed its last gasps in 1958, France arrogantly strong-armed most of its African colonies into relationships designed to perpetuate the colonial model in a different form.When, by referendum, Guinea alone stood tall and strong for true independence and rejected the French proposal, France threw a tantrum.Author Elizabeth Schmidt wrote: 
+“France retaliated with a vengeance.Even before the vote, France began its withdrawal, sabotaging archives, infrastructure and the economy.After the referendum, France attempted to isolate Guinea diplomatically, economically and militarily.” 
+“French efforts have included an extra dose of nasty.” 
+The bullying of Africa has been driven entirely by self-interest and greed.In more recent years, and as just one example, the French military presence in Niger has been for the purpose of protecting French uranium mines, notwithstanding claims the mission’s focus is anti-terrorism. 
+For its own exploitative purposes, in 2014 the U.S.chose to become militarily involved in Mali and other countries in the region.In response, a French Special Forces officer said: “The Americans want to get involved in Africa.That’s good for us.We know that with the Americans it will be more efficient.We use American logistics – that’s what we are missing.On the other hand, we provide the local knowledge.” 
+U.S.involvement may have been good for France, but ultimately it proved costly for the U.S.In 2017, four U.S.soldiers were killed in Niger, and the public reaction was so strong that the U.S.was forced to substantially reduce its troop presence in Africa.Nevertheless, then as in preceding years, the imperialist imperative demanded alternative approaches to the domination of Africa.In the case of Niger, the U.S.intensified and expanded its use of armed drones.
+Notwithstanding the devastation generally caused by French and U.S.military operations in Africa, a crime that left Africa reeling, and from which it has not yet recovered, was the depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011. U.S.Africa Command (AFRICOM) and France armed anti-Black and other reactionary forces in Libya which carried out a protracted process of genocide and mass destruction that culminated in a mob’s use of a bayonet to murder Gadhafi by rectal disembowelment.Unlike many imperialist operations of this kind where we are left to connect the dots, we have damning evidence of the motive.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_163853_418761.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_163853_418761.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210802_165417_594289)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In more recent years, French military efforts in the Sahel region have failed to defeat the forces they have been fighting, and this along with French opposition to decisions by African governments in the region to talk with these groups have played a role in the decision to cut and run. French troops have had a substantial presence in Chad, Mali, Niger, Mauritania and Burkina Faso for years. Yet, these military operations have succeeded only in increasing the number of violent attacks.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'When African governments decided to negotiate truces and begin a dialogue with those forces, President Macron declared France would cease collaboration with countries that “decide to negotiate with groups that…shoot at our children.” However, studies show that in regions where truces are in effect, there have been dramatic decreases in the number of deaths. In one region civilian deaths decreased from 65 in the first quarter of 2020 to 26 in the first quarter of 2021. In the Sahel they dropped from 487 to 191, and in still another region they dropped from 66 to zero.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011 is a crime that left Africa reeling.”
+
+    [1] => 
+
+    [2] => An April 2, 2011 State Department memo frankly and bluntly states. “[Libya’s 143 tons of gold] was accumulated prior to the current rebellion and was intended to be used to establish a pan-African currency based on the Libyan golden Dinar. This plan was designed to provide the Francophone African Countries with an alternative to the French franc…” 
+
+    [3] => 
+
+    [4] => The memo goes on to explain: “French intelligence officers discovered this plan [for a pan-African currency] shortly after the current rebellion began, and this was one of the factors that influenced President Nicolas Sarkozy’s decision to commit France to the attack on Libya.” 
+
+    [5] => 
+
+    [6] => The explanation doesn’t stop there: “According to these individuals Sarkozy’s plans are driven by the following issues: a) A desire to gain a greater share of Libya oil production; b) Increase French influence in North Africa, c) Improve his internal political situation in France, d) Provide the French military with an opportunity to reassert its position in the world, e) Address the concern of his advisors over [Gadhafi’s] long term plans to supplant France as the dominant power in Francophone Africa.”
+
+    [7] => 
+
+    [8] => In more recent years, French military efforts in the Sahel region have failed to defeat the forces they have been fighting, and this along with French opposition to decisions by African governments in the region to talk with these groups have played a role in the decision to cut and run. French troops have had a substantial presence in Chad, Mali, Niger, Mauritania and Burkina Faso for years. Yet, these military operations have succeeded only in increasing the number of violent attacks.
+    [9] => 
+
+    [10] => “French military efforts in the Sahel region have failed to defeat the forces they have been fighting.”
+
+    [11] => 
+
+    [12] => When African governments decided to negotiate truces and begin a dialogue with those forces, President Macron declared France would cease collaboration with countries that “decide to negotiate with groups that…shoot at our children.” However, studies show that in regions where truces are in effect, there have been dramatic decreases in the number of deaths. In one region civilian deaths decreased from 65 in the first quarter of 2020 to 26 in the first quarter of 2021. In the Sahel they dropped from 487 to 191, and in still another region they dropped from 66 to zero.
+    [13] => 
+
+    [14] => These results demonstrate yet again that the longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities. When neo-colonial African governments fail to meet the most basic needs of their people, the way is clear for so-called terrorists to win the support of the people both by presenting themselves as opponents of neglectful or oppressive governments, and by also helping the people survive. When imperialist military forces engage in combat and cause civilian deaths, the support for the so-called terrorists grows. So-called terrorist organizations are not what Africa needs for its revolution, but for some desperate, oppressed people attempting to resist neo-colonialism and imperialism, such groups may appear to be the only game in town. 
+
+    [15] => 
+
+    [16] => While France may be scaling down its military operations, it is not removing all its troops, and the country’s interest in Africa has not evaporated. Macron has explained his plan to encourage greater military engagement by its toady, the United States of America and other imperialist and neo-colonial forces. In true cowardly style, France hopes to hide within an imperialist coalition to do its dirty work in Africa. Consequently, Africa is still faced with the challenge of overcoming foreign military intervention.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011 is a crime that left Africa reeling.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->An April 2, 2011 State Department memo frankly and bluntly states. “[Libya’s 143 tons of gold] was accumulated prior to the current rebellion and was intended to be used to establish a pan-African currency based on the Libyan golden Dinar. This plan was designed to provide the Francophone African Countries with an alternative to the French franc…” 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The memo goes on to explain: “French intelligence officers discovered this plan [for a pan-African currency] shortly after the current rebellion began, and this was one of the factors that influenced President Nicolas Sarkozy’s decision to commit France to the attack on Libya.” 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The explanation doesn’t stop there: “According to these individuals Sarkozy’s plans are driven by the following issues: a) A desire to gain a greater share of Libya oil production; b) Increase French influence in North Africa, c) Improve his internal political situation in France, d) Provide the French military with an opportunity to reassert its position in the world, e) Address the concern of his advisors over [Gadhafi’s] long term plans to supplant France as the dominant power in Francophone Africa.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“French military efforts in the Sahel region have failed to defeat the forces they have been fighting.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->These results demonstrate yet again that the longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities. When neo-colonial African governments fail to meet the most basic needs of their people, the way is clear for so-called terrorists to win the support of the people both by presenting themselves as opponents of neglectful or oppressive governments, and by also helping the people survive. When imperialist military forces engage in combat and cause civilian deaths, the support for the so-called terrorists grows. So-called terrorist organizations are not what Africa needs for its revolution, but for some desperate, oppressed people attempting to resist neo-colonialism and imperialism, such groups may appear to be the only game in town. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011 is a crime that left Africa reeling.” 
+    [1] => 
+
+    [2] => An April 2, 2011 State Department memo frankly and bluntly states. “[Libya’s 143 tons of gold] was accumulated prior to the current rebellion and was intended to be used to establish a pan-African currency based on the Libyan golden Dinar. This plan was designed to provide the Francophone African Countries with an alternative to the French franc…”  
+    [3] => 
+
+    [4] => The memo goes on to explain: “French intelligence officers discovered this plan [for a pan-African currency] shortly after the current rebellion began, and this was one of the factors that influenced President Nicolas Sarkozy’s decision to commit France to the attack on Libya.”  
+    [5] => 
+
+    [6] => The explanation doesn’t stop there: “According to these individuals Sarkozy’s plans are driven by the following issues: a) A desire to gain a greater share of Libya oil production; b) Increase French influence in North Africa, c) Improve his internal political situation in France, d) Provide the French military with an opportunity to reassert its position in the world, e) Address the concern of his advisors over [Gadhafi’s] long term plans to supplant France as the dominant power in Francophone Africa.” 
+    [7] => 
+
+    [8] => In more recent years, French military efforts in the Sahel region have failed to defeat the forces they have been fighting, and this along with French opposition to decisions by African governments in the region to talk with these groups have played a role in the decision to cut and run. French troops have had a substantial presence in Chad, Mali, Niger, Mauritania and Burkina Faso for years. Yet, these military operations have succeeded only in increasing the number of violent attacks.
+    [9] => 
+
+    [10] => “French military efforts in the Sahel region have failed to defeat the forces they have been fighting.” 
+    [11] => 
+
+    [12] => When African governments decided to negotiate truces and begin a dialogue with those forces, President Macron declared France would cease collaboration with countries that “decide to negotiate with groups that…shoot at our children.” However, studies show that in regions where truces are in effect, there have been dramatic decreases in the number of deaths. In one region civilian deaths decreased from 65 in the first quarter of 2020 to 26 in the first quarter of 2021. In the Sahel they dropped from 487 to 191, and in still another region they dropped from 66 to zero.
+    [13] => 
+
+    [14] => These results demonstrate yet again that the longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities. When neo-colonial African governments fail to meet the most basic needs of their people, the way is clear for so-called terrorists to win the support of the people both by presenting themselves as opponents of neglectful or oppressive governments, and by also helping the people survive. When imperialist military forces engage in combat and cause civilian deaths, the support for the so-called terrorists grows. So-called terrorist organizations are not what Africa needs for its revolution, but for some desperate, oppressed people attempting to resist neo-colonialism and imperialism, such groups may appear to be the only game in town.  
+    [15] => 
+
+    [16] => While France may be scaling down its military operations, it is not removing all its troops, and the country’s interest in Africa has not evaporated. Macron has explained his plan to encourage greater military engagement by its toady, the United States of America and other imperialist and neo-colonial forces. In true cowardly style, France hopes to hide within an imperialist coalition to do its dirty work in Africa. Consequently, Africa is still faced with the challenge of overcoming foreign military intervention.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->An April 2, 2011 State Department memo frankly and bluntly states. “[Libya’s 143 tons of gold] was accumulated prior to the current rebellion and was intended to be used to establish a pan-African currency based on the Libyan golden Dinar. This plan was designed to provide the Francophone African Countries with an alternative to the French franc…”  
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In more recent years, French military efforts in the Sahel region have failed to defeat the forces they have been fighting, and this along with French opposition to decisions by African governments in the region to talk with these groups have played a role in the decision to cut and run. French troops have had a substantial presence in Chad, Mali, Niger, Mauritania and Burkina Faso for years. Yet, these military operations have succeeded only in increasing the number of violent attacks.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->When African governments decided to negotiate truces and begin a dialogue with those forces, President Macron declared France would cease collaboration with countries that “decide to negotiate with groups that…shoot at our children.” However, studies show that in regions where truces are in effect, there have been dramatic decreases in the number of deaths. In one region civilian deaths decreased from 65 in the first quarter of 2020 to 26 in the first quarter of 2021. In the Sahel they dropped from 487 to 191, and in still another region they dropped from 66 to zero.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->These results demonstrate yet again that the longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities. When neo-colonial African governments fail to meet the most basic needs of their people, the way is clear for so-called terrorists to win the support of the people both by presenting themselves as opponents of neglectful or oppressive governments, and by also helping the people survive. When imperialist military forces engage in combat and cause civilian deaths, the support for the so-called terrorists grows. So-called terrorist organizations are not what Africa needs for its revolution, but for some desperate, oppressed people attempting to resist neo-colonialism and imperialism, such groups may appear to be the only game in town.  
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->While France may be scaling down its military operations, it is not removing all its troops, and the country’s interest in Africa has not evaporated. Macron has explained his plan to encourage greater military engagement by its toady, the United States of America and other imperialist and neo-colonial forces. In true cowardly style, France hopes to hide within an imperialist coalition to do its dirty work in Africa. Consequently, Africa is still faced with the challenge of overcoming foreign military intervention.
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011 is a crime that left Africa reeling.” 
+    [1] => 
+
+    [2] => An April 2, 2011 State Department memo frankly and bluntly states.“[Libya’s 143 tons of gold] was accumulated prior to the current rebellion and was intended to be used to establish a pan-African currency based on the Libyan golden Dinar.This plan was designed to provide the Francophone African Countries with an alternative to the French franc…”  
+    [3] => 
+
+    [4] => The memo goes on to explain: “French intelligence officers discovered this plan [for a pan-African currency] shortly after the current rebellion began, and this was one of the factors that influenced President Nicolas Sarkozy’s decision to commit France to the attack on Libya.”  
+    [5] => 
+
+    [6] => The explanation doesn’t stop there: “According to these individuals Sarkozy’s plans are driven by the following issues: a) A desire to gain a greater share of Libya oil production; b) Increase French influence in North Africa, c) Improve his internal political situation in France, d) Provide the French military with an opportunity to reassert its position in the world, e) Address the concern of his advisors over [Gadhafi’s] long term plans to supplant France as the dominant power in Francophone Africa.” 
+    [7] => 
+
+    [8] => In more recent years, French military efforts in the Sahel region have failed to defeat the forces they have been fighting, and this along with French opposition to decisions by African governments in the region to talk with these groups have played a role in the decision to cut and run.French troops have had a substantial presence in Chad, Mali, Niger, Mauritania and Burkina Faso for years.Yet, these military operations have succeeded only in increasing the number of violent attacks.
+    [9] => 
+
+    [10] => “French military efforts in the Sahel region have failed to defeat the forces they have been fighting.” 
+    [11] => 
+
+    [12] => When African governments decided to negotiate truces and begin a dialogue with those forces, President Macron declared France would cease collaboration with countries that “decide to negotiate with groups that…shoot at our children.” However, studies show that in regions where truces are in effect, there have been dramatic decreases in the number of deaths.In one region civilian deaths decreased from 65 in the first quarter of 2020 to 26 in the first quarter of 2021. In the Sahel they dropped from 487 to 191, and in still another region they dropped from 66 to zero.
+    [13] => 
+
+    [14] => These results demonstrate yet again that the longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities.When neo-colonial African governments fail to meet the most basic needs of their people, the way is clear for so-called terrorists to win the support of the people both by presenting themselves as opponents of neglectful or oppressive governments, and by also helping the people survive.When imperialist military forces engage in combat and cause civilian deaths, the support for the so-called terrorists grows.So-called terrorist organizations are not what Africa needs for its revolution, but for some desperate, oppressed people attempting to resist neo-colonialism and imperialism, such groups may appear to be the only game in town. 
+    [15] => 
+
+    [16] => While France may be scaling down its military operations, it is not removing all its troops, and the country’s interest in Africa has not evaporated.Macron has explained his plan to encourage greater military engagement by its toady, the United States of America and other imperialist and neo-colonial forces.In true cowardly style, France hopes to hide within an imperialist coalition to do its dirty work in Africa.Consequently, Africa is still faced with the challenge of overcoming foreign military intervention.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The depraved, barbaric assassination of Moammar Gadhafi and the destruction of Libya in 2011 is a crime that left Africa reeling.” 
+An April 2, 2011 State Department memo frankly and bluntly states.“[Libya’s 143 tons of gold] was accumulated prior to the current rebellion and was intended to be used to establish a pan-African currency based on the Libyan golden Dinar.This plan was designed to provide the Francophone African Countries with an alternative to the French franc…”  
+The memo goes on to explain: “French intelligence officers discovered this plan [for a pan-African currency] shortly after the current rebellion began, and this was one of the factors that influenced President Nicolas Sarkozy’s decision to commit France to the attack on Libya.”  
+The explanation doesn’t stop there: “According to these individuals Sarkozy’s plans are driven by the following issues: a) A desire to gain a greater share of Libya oil production; b) Increase French influence in North Africa, c) Improve his internal political situation in France, d) Provide the French military with an opportunity to reassert its position in the world, e) Address the concern of his advisors over [Gadhafi’s] long term plans to supplant France as the dominant power in Francophone Africa.” 
+In more recent years, French military efforts in the Sahel region have failed to defeat the forces they have been fighting, and this along with French opposition to decisions by African governments in the region to talk with these groups have played a role in the decision to cut and run.French troops have had a substantial presence in Chad, Mali, Niger, Mauritania and Burkina Faso for years.Yet, these military operations have succeeded only in increasing the number of violent attacks.
+“French military efforts in the Sahel region have failed to defeat the forces they have been fighting.” 
+When African governments decided to negotiate truces and begin a dialogue with those forces, President Macron declared France would cease collaboration with countries that “decide to negotiate with groups that…shoot at our children.” However, studies show that in regions where truces are in effect, there have been dramatic decreases in the number of deaths.In one region civilian deaths decreased from 65 in the first quarter of 2020 to 26 in the first quarter of 2021. In the Sahel they dropped from 487 to 191, and in still another region they dropped from 66 to zero.
+These results demonstrate yet again that the longstanding imperialists’ efforts to shoot and bomb their way into domination of devastated regions is a manifestation of clueless arrogance and a failure to consider Africa’s realities.When neo-colonial African governments fail to meet the most basic needs of their people, the way is clear for so-called terrorists to win the support of the people both by presenting themselves as opponents of neglectful or oppressive governments, and by also helping the people survive.When imperialist military forces engage in combat and cause civilian deaths, the support for the so-called terrorists grows.So-called terrorist organizations are not what Africa needs for its revolution, but for some desperate, oppressed people attempting to resist neo-colonialism and imperialism, such groups may appear to be the only game in town. 
+While France may be scaling down its military operations, it is not removing all its troops, and the country’s interest in Africa has not evaporated.Macron has explained his plan to encourage greater military engagement by its toady, the United States of America and other imperialist and neo-colonial forces.In true cowardly style, France hopes to hide within an imperialist coalition to do its dirty work in Africa.Consequently, Africa is still faced with the challenge of overcoming foreign military intervention.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_165417_594289.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_165417_594289.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210802_170107_069052)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'There may nevertheless be reasons to be encouraged by these developments. Notwithstanding the fact that imperialist governments are chronically stuck on stupid when it comes to using armed force to impose their will in underdeveloped regions, there is ever-diminishing patience and tolerance for such activities among the broad masses of people in France, the U.S. and other western countries when the cost of these operations is the deaths of soldiers. The U.S. government felt pressure from its own citizens when four soldiers were killed in Niger in 2017. France is now feeling heat because of deaths of its soldiers.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The public pressure triggered by military casualties may not signal significant growth of revolutionary consciousness, but it does have a limiting effect that is useful to those resisting the militarization of Africa. It even presents for Africans born and living in imperialist countries the best opportunities to fight for Africa by taking advantage of direct access to those who can, through force of mass movement end the militarization of the continent. Africa’s potential for using its resources to save not only itself, but its diaspora can’t be realized until the imperialist combat-booted foot on the continent’s neck is removed.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => France is not removing all its troops, and the country’s interest in Africa has not evaporated.”
+
+    [1] => 
+
+    [2] => There may nevertheless be reasons to be encouraged by these developments. Notwithstanding the fact that imperialist governments are chronically stuck on stupid when it comes to using armed force to impose their will in underdeveloped regions, there is ever-diminishing patience and tolerance for such activities among the broad masses of people in France, the U.S. and other western countries when the cost of these operations is the deaths of soldiers. The U.S. government felt pressure from its own citizens when four soldiers were killed in Niger in 2017. France is now feeling heat because of deaths of its soldiers.
+    [3] => 
+
+    [4] => The public pressure triggered by military casualties may not signal significant growth of revolutionary consciousness, but it does have a limiting effect that is useful to those resisting the militarization of Africa. It even presents for Africans born and living in imperialist countries the best opportunities to fight for Africa by taking advantage of direct access to those who can, through force of mass movement end the militarization of the continent. Africa’s potential for using its resources to save not only itself, but its diaspora can’t be realized until the imperialist combat-booted foot on the continent’s neck is removed.
+    [5] => 
+
+    [6] => Mark P. Fancher is an attorney and writer. He is a member of the Black Alliance for Peace Africa Team and the All-African People’s Revolutionary Party. The views expressed are his own and do not necessarily reflect the views of organizations with which he is affiliated. He can be contacted at mfancher[at]comcast.net.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->France is not removing all its troops, and the country’s interest in Africa has not evaporated.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => France is not removing all its troops, and the country’s interest in Africa has not evaporated.” 
+    [1] => 
+
+    [2] => There may nevertheless be reasons to be encouraged by these developments. Notwithstanding the fact that imperialist governments are chronically stuck on stupid when it comes to using armed force to impose their will in underdeveloped regions, there is ever-diminishing patience and tolerance for such activities among the broad masses of people in France, the U.S. and other western countries when the cost of these operations is the deaths of soldiers. The U.S. government felt pressure from its own citizens when four soldiers were killed in Niger in 2017. France is now feeling heat because of deaths of its soldiers.
+    [3] => 
+
+    [4] => The public pressure triggered by military casualties may not signal significant growth of revolutionary consciousness, but it does have a limiting effect that is useful to those resisting the militarization of Africa. It even presents for Africans born and living in imperialist countries the best opportunities to fight for Africa by taking advantage of direct access to those who can, through force of mass movement end the militarization of the continent. Africa’s potential for using its resources to save not only itself, but its diaspora can’t be realized until the imperialist combat-booted foot on the continent’s neck is removed.
+    [5] => 
+
+    [6] => Mark P. Fancher is an attorney and writer. He is a member of the Black Alliance for Peace Africa Team and the All-African People’s Revolutionary Party. The views expressed are his own and do not necessarily reflect the views of organizations with which he is affiliated. He can be contacted at mfancher[at]comcast.net.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->There may nevertheless be reasons to be encouraged by these developments. Notwithstanding the fact that imperialist governments are chronically stuck on stupid when it comes to using armed force to impose their will in underdeveloped regions, there is ever-diminishing patience and tolerance for such activities among the broad masses of people in France, the U.S. and other western countries when the cost of these operations is the deaths of soldiers. The U.S. government felt pressure from its own citizens when four soldiers were killed in Niger in 2017. France is now feeling heat because of deaths of its soldiers.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The public pressure triggered by military casualties may not signal significant growth of revolutionary consciousness, but it does have a limiting effect that is useful to those resisting the militarization of Africa. It even presents for Africans born and living in imperialist countries the best opportunities to fight for Africa by taking advantage of direct access to those who can, through force of mass movement end the militarization of the continent. Africa’s potential for using its resources to save not only itself, but its diaspora can’t be realized until the imperialist combat-booted foot on the continent’s neck is removed.
+$matches ==>
+Array
+(
+    [0] => a. 
+    [1] => a.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Mark P. Fancher is an attorney and writer. He is a member of the Black Alliance for Peace Africa Team and the All-African People’s Revolutionary Party. The views expressed are his own and do not necessarily reflect the views of organizations with which he is affiliated. He can be contacted at mfancher[at]comcast.net.
+$matches ==>
+Array
+(
+    [0] => P. 
+    [1] => P.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => France is not removing all its troops, and the country’s interest in Africa has not evaporated.” 
+    [1] => 
+
+    [2] => There may nevertheless be reasons to be encouraged by these developments.Notwithstanding the fact that imperialist governments are chronically stuck on stupid when it comes to using armed force to impose their will in underdeveloped regions, there is ever-diminishing patience and tolerance for such activities among the broad masses of people in France, the U.S.and other western countries when the cost of these operations is the deaths of soldiers.The U.S.government felt pressure from its own citizens when four soldiers were killed in Niger in 2017. France is now feeling heat because of deaths of its soldiers.
+    [3] => 
+
+    [4] => The public pressure triggered by military casualties may not signal significant growth of revolutionary consciousness, but it does have a limiting effect that is useful to those resisting the militarization of Africa.It even presents for Africans born and living in imperialist countries the best opportunities to fight for Africa by taking advantage of direct access to those who can, through force of mass movement end the militarization of the continent.Africa’s potential for using its resources to save not only itself, but its diaspora can’t be realized until the imperialist combat-booted foot on the continent’s neck is removed.
+    [5] => 
+
+    [6] => Mark P.Fancher is an attorney and writer.He is a member of the Black Alliance for Peace Africa Team and the All-African People’s Revolutionary Party.The views expressed are his own and do not necessarily reflect the views of organizations with which he is affiliated.He can be contacted at mfancher[at]comcast.net.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>France is not removing all its troops, and the country’s interest in Africa has not evaporated.” 
+There may nevertheless be reasons to be encouraged by these developments.Notwithstanding the fact that imperialist governments are chronically stuck on stupid when it comes to using armed force to impose their will in underdeveloped regions, there is ever-diminishing patience and tolerance for such activities among the broad masses of people in France, the U.S.and other western countries when the cost of these operations is the deaths of soldiers.The U.S.government felt pressure from its own citizens when four soldiers were killed in Niger in 2017. France is now feeling heat because of deaths of its soldiers.
+The public pressure triggered by military casualties may not signal significant growth of revolutionary consciousness, but it does have a limiting effect that is useful to those resisting the militarization of Africa.It even presents for Africans born and living in imperialist countries the best opportunities to fight for Africa by taking advantage of direct access to those who can, through force of mass movement end the militarization of the continent.Africa’s potential for using its resources to save not only itself, but its diaspora can’t be realized until the imperialist combat-booted foot on the continent’s neck is removed.
+Mark P.Fancher is an attorney and writer.He is a member of the Black Alliance for Peace Africa Team and the All-African People’s Revolutionary Party.The views expressed are his own and do not necessarily reflect the views of organizations with which he is affiliated.He can be contacted at mfancher[at]comcast.net.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_170107_069052.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_170107_069052.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210802_171207_724761)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Three natons share the same water, but not the same foreign connections, which makes for a dangerous mix.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '“Russia is rumored to be helping Ethiopia guard the dam.”.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> ' At the time, the Ethiopian Foreign Ministry issued a statement saying, "The incitement of war between Ethiopia and Egypt from a sitting US president neither reflects the longstanding partnership and strategic alliance between Ethiopia and the United States nor is acceptable in international law governing interstate relations.".
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> ' Russia is rumored to be helping Ethiopia guard the dam, and on July 7, 2021, Russia and Ethiopia inked a new military cooperation agreement . On March 28, 2021, China and Ethiopia signed “an agreement to protect investment projects .”. China has significant investments  in all three nations involved in this particular dispute over Nile waters.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> ' Last week, the UN Security Council met to consider a draft resolution  put forth by Egypt and Sudan that would call on Ethiopia to halt the second seasonal filling of the dam.  Everyone who spoke during the meeting called for a return to African Union negotiations despite a 10-year impasse, but the Western ambassadors were more sympathetic to Egypt and Sudan, the Russian ambassador was more sympathetic to Ethiopia, and the Chinese ambassador appeared to be attempting to remain neutral.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Three natons share the same water, but not the same foreign connections, which makes for a dangerous mix.
+    [1] => 
+
+    [2] => “Russia is rumored to be helping Ethiopia guard the dam.”.
+    [3] => 
+
+    [4] => The Grand Ethiopian Renaissance Dam (GERD) is the largest hydroelectric power project in Africa, and the seventh largest in the world. Despite internal conflict in its Tigray state, external threat, and long-running international disputes about sharing Nile waters, the dam is expected to begin producing power later this year. It promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse. 
+
+    [5] => 
+
+    [6] =>  However, the dam is under heavy military guard due to a 10-year dispute with Sudan and Egypt over rights to the Blue Nile River, which flows downstream from Ethiopia's Lake Tana to Sudan, Egypt and the Mediterranean. Seventy-five percent of the Nile that flows into Egypt comes from the Blue Nile, and only 25% from the White Nile, which flows from headwaters in the African Great Lakes Region of East and Central Africa. 
+
+    [7] => 
+
+    [8] =>  The US and the EU have most often taken Egypt’s side against Ethiopia in disputes over the GERD, and in one of President Trump's last reckless moments in office, he said that Egypt wouldn’t be able to live with the dam, so they’ll blow it up , but it’s hard to imagine that Egypt would attempt such an attack without a green light from the US. 
+
+    [9] => 
+
+    [10] =>  At the time, the Ethiopian Foreign Ministry issued a statement saying, "The incitement of war between Ethiopia and Egypt from a sitting US president neither reflects the longstanding partnership and strategic alliance between Ethiopia and the United States nor is acceptable in international law governing interstate relations.".
+    [11] => 
+
+    [12] => “The dam promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse. 
+
+    [13] => 
+
+    [14] => Russia and China have most often sided with Ethiopia about the GERD, and China is heavily invested in its electricity delivery infrastructure. The $4.6 billion dam itself has been financed by taxes and bonds issued to Ethiopians and the Ethiopian diaspora. 
+
+    [15] => 
+
+    [16] =>  Russia is rumored to be helping Ethiopia guard the dam, and on July 7, 2021, Russia and Ethiopia inked a new military cooperation agreement . On March 28, 2021, China and Ethiopia signed “an agreement to protect investment projects .”. China has significant investments  in all three nations involved in this particular dispute over Nile waters.
+    [17] => 
+
+    [18] =>  Russia and France have been claiming a share of the Egyptian weapons market previously held by the US since 2015,  a development that National Defense News recently identified as a national security issue . 
+
+    [19] => 
+
+    [20] =>  Last week, the UN Security Council met to consider a draft resolution  put forth by Egypt and Sudan that would call on Ethiopia to halt the second seasonal filling of the dam.  Everyone who spoke during the meeting called for a return to African Union negotiations despite a 10-year impasse, but the Western ambassadors were more sympathetic to Egypt and Sudan, the Russian ambassador was more sympathetic to Ethiopia, and the Chinese ambassador appeared to be attempting to remain neutral.
+    [21] => 
+
+    [22] =>  Egypt and Sudan both emphasized the importance of the issue to them by sending their foreign ministers to speak instead of leaving that to their ambassadors, while Ethiopia sent their Minister of Water and Irrigation. Here are a few of their remarks:
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->The Grand Ethiopian Renaissance Dam (GERD) is the largest hydroelectric power project in Africa, and the seventh largest in the world. Despite internal conflict in its Tigray state, external threat, and long-running international disputes about sharing Nile waters, the dam is expected to begin producing power later this year. It promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> However, the dam is under heavy military guard due to a 10-year dispute with Sudan and Egypt over rights to the Blue Nile River, which flows downstream from Ethiopia's Lake Tana to Sudan, Egypt and the Mediterranean. Seventy-five percent of the Nile that flows into Egypt comes from the Blue Nile, and only 25% from the White Nile, which flows from headwaters in the African Great Lakes Region of East and Central Africa. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> The US and the EU have most often taken Egypt’s side against Ethiopia in disputes over the GERD, and in one of President Trump's last reckless moments in office, he said that Egypt wouldn’t be able to live with the dam, so they’ll blow it up , but it’s hard to imagine that Egypt would attempt such an attack without a green light from the US. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“The dam promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Russia and China have most often sided with Ethiopia about the GERD, and China is heavily invested in its electricity delivery infrastructure. The $4.6 billion dam itself has been financed by taxes and bonds issued to Ethiopians and the Ethiopian diaspora. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> Russia and France have been claiming a share of the Egyptian weapons market previously held by the US since 2015,  a development that National Defense News recently identified as a national security issue . 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Three natons share the same water, but not the same foreign connections, which makes for a dangerous mix.
+    [1] => 
+
+    [2] => “Russia is rumored to be helping Ethiopia guard the dam.”.
+    [3] => 
+
+    [4] => The Grand Ethiopian Renaissance Dam (GERD) is the largest hydroelectric power project in Africa, and the seventh largest in the world. Despite internal conflict in its Tigray state, external threat, and long-running international disputes about sharing Nile waters, the dam is expected to begin producing power later this year. It promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse.  
+    [5] => 
+
+    [6] =>  However, the dam is under heavy military guard due to a 10-year dispute with Sudan and Egypt over rights to the Blue Nile River, which flows downstream from Ethiopia's Lake Tana to Sudan, Egypt and the Mediterranean. Seventy-five percent of the Nile that flows into Egypt comes from the Blue Nile, and only 25% from the White Nile, which flows from headwaters in the African Great Lakes Region of East and Central Africa.  
+    [7] => 
+
+    [8] =>  The US and the EU have most often taken Egypt’s side against Ethiopia in disputes over the GERD, and in one of President Trump's last reckless moments in office, he said that Egypt wouldn’t be able to live with the dam, so they’ll blow it up , but it’s hard to imagine that Egypt would attempt such an attack without a green light from the US.  
+    [9] => 
+
+    [10] =>  At the time, the Ethiopian Foreign Ministry issued a statement saying, "The incitement of war between Ethiopia and Egypt from a sitting US president neither reflects the longstanding partnership and strategic alliance between Ethiopia and the United States nor is acceptable in international law governing interstate relations.".
+    [11] => 
+
+    [12] => “The dam promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse.  
+    [13] => 
+
+    [14] => Russia and China have most often sided with Ethiopia about the GERD, and China is heavily invested in its electricity delivery infrastructure. The $4.6 billion dam itself has been financed by taxes and bonds issued to Ethiopians and the Ethiopian diaspora.  
+    [15] => 
+
+    [16] =>  Russia is rumored to be helping Ethiopia guard the dam, and on July 7, 2021, Russia and Ethiopia inked a new military cooperation agreement . On March 28, 2021, China and Ethiopia signed “an agreement to protect investment projects .”. China has significant investments  in all three nations involved in this particular dispute over Nile waters.
+    [17] => 
+
+    [18] =>  Russia and France have been claiming a share of the Egyptian weapons market previously held by the US since 2015,  a development that National Defense News recently identified as a national security issue .  
+    [19] => 
+
+    [20] =>  Last week, the UN Security Council met to consider a draft resolution  put forth by Egypt and Sudan that would call on Ethiopia to halt the second seasonal filling of the dam.  Everyone who spoke during the meeting called for a return to African Union negotiations despite a 10-year impasse, but the Western ambassadors were more sympathetic to Egypt and Sudan, the Russian ambassador was more sympathetic to Ethiopia, and the Chinese ambassador appeared to be attempting to remain neutral.
+    [21] => 
+
+    [22] =>  Egypt and Sudan both emphasized the importance of the issue to them by sending their foreign ministers to speak instead of leaving that to their ambassadors, while Ethiopia sent their Minister of Water and Irrigation. Here are a few of their remarks:
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->The Grand Ethiopian Renaissance Dam (GERD) is the largest hydroelectric power project in Africa, and the seventh largest in the world. Despite internal conflict in its Tigray state, external threat, and long-running international disputes about sharing Nile waters, the dam is expected to begin producing power later this year. It promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse.  
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line --> However, the dam is under heavy military guard due to a 10-year dispute with Sudan and Egypt over rights to the Blue Nile River, which flows downstream from Ethiopia's Lake Tana to Sudan, Egypt and the Mediterranean. Seventy-five percent of the Nile that flows into Egypt comes from the Blue Nile, and only 25% from the White Nile, which flows from headwaters in the African Great Lakes Region of East and Central Africa.  
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line --> The US and the EU have most often taken Egypt’s side against Ethiopia in disputes over the GERD, and in one of President Trump's last reckless moments in office, he said that Egypt wouldn’t be able to live with the dam, so they’ll blow it up , but it’s hard to imagine that Egypt would attempt such an attack without a green light from the US.  
+$matches ==>
+Array
+(
+    [0] => S. 
+    [1] => S.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->“The dam promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse.  
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Russia and China have most often sided with Ethiopia about the GERD, and China is heavily invested in its electricity delivery infrastructure. The $4.6 billion dam itself has been financed by taxes and bonds issued to Ethiopians and the Ethiopian diaspora.  
+$matches ==>
+Array
+(
+    [0] => e. 
+    [1] => e.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line --> Russia is rumored to be helping Ethiopia guard the dam, and on July 7, 2021, Russia and Ethiopia inked a new military cooperation agreement . On March 28, 2021, China and Ethiopia signed “an agreement to protect investment projects .”. China has significant investments  in all three nations involved in this particular dispute over Nile waters.
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line --> Russia and France have been claiming a share of the Egyptian weapons market previously held by the US since 2015,  a development that National Defense News recently identified as a national security issue .  
+$matches ==>
+Array
+(
+    [0] =>  . 
+    [1] =>  .
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line --> Last week, the UN Security Council met to consider a draft resolution  put forth by Egypt and Sudan that would call on Ethiopia to halt the second seasonal filling of the dam.  Everyone who spoke during the meeting called for a return to African Union negotiations despite a 10-year impasse, but the Western ambassadors were more sympathetic to Egypt and Sudan, the Russian ambassador was more sympathetic to Ethiopia, and the Chinese ambassador appeared to be attempting to remain neutral.
+$matches ==>
+Array
+(
+    [0] => m. 
+    [1] => m.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line --> Egypt and Sudan both emphasized the importance of the issue to them by sending their foreign ministers to speak instead of leaving that to their ambassadors, while Ethiopia sent their Minister of Water and Irrigation. Here are a few of their remarks:
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Three natons share the same water, but not the same foreign connections, which makes for a dangerous mix.
+    [1] => 
+
+    [2] => “Russia is rumored to be helping Ethiopia guard the dam.”.
+    [3] => 
+
+    [4] => The Grand Ethiopian Renaissance Dam (GERD) is the largest hydroelectric power project in Africa, and the seventh largest in the world.Despite internal conflict in its Tigray state, external threat, and long-running international disputes about sharing Nile waters, the dam is expected to begin producing power later this year.It promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse. 
+    [5] => 
+
+    [6] =>  However, the dam is under heavy military guard due to a 10-year dispute with Sudan and Egypt over rights to the Blue Nile River, which flows downstream from Ethiopia's Lake Tana to Sudan, Egypt and the Mediterranean.Seventy-five percent of the Nile that flows into Egypt comes from the Blue Nile, and only 25% from the White Nile, which flows from headwaters in the African Great Lakes Region of East and Central Africa. 
+    [7] => 
+
+    [8] =>  The US and the EU have most often taken Egypt’s side against Ethiopia in disputes over the GERD, and in one of President Trump's last reckless moments in office, he said that Egypt wouldn’t be able to live with the dam, so they’ll blow it up , but it’s hard to imagine that Egypt would attempt such an attack without a green light from the US. 
+    [9] => 
+
+    [10] =>  At the time, the Ethiopian Foreign Ministry issued a statement saying, "The incitement of war between Ethiopia and Egypt from a sitting US president neither reflects the longstanding partnership and strategic alliance between Ethiopia and the United States nor is acceptable in international law governing interstate relations.".
+    [11] => 
+
+    [12] => “The dam promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse. 
+    [13] => 
+
+    [14] => Russia and China have most often sided with Ethiopia about the GERD, and China is heavily invested in its electricity delivery infrastructure.The $4.6 billion dam itself has been financed by taxes and bonds issued to Ethiopians and the Ethiopian diaspora. 
+    [15] => 
+
+    [16] =>  Russia is rumored to be helping Ethiopia guard the dam, and on July 7, 2021, Russia and Ethiopia inked a new military cooperation agreement .On March 28, 2021, China and Ethiopia signed “an agreement to protect investment projects .”.China has significant investments  in all three nations involved in this particular dispute over Nile waters.
+    [17] => 
+
+    [18] =>  Russia and France have been claiming a share of the Egyptian weapons market previously held by the US since 2015,  a development that National Defense News recently identified as a national security issue . 
+    [19] => 
+
+    [20] =>  Last week, the UN Security Council met to consider a draft resolution  put forth by Egypt and Sudan that would call on Ethiopia to halt the second seasonal filling of the dam. Everyone who spoke during the meeting called for a return to African Union negotiations despite a 10-year impasse, but the Western ambassadors were more sympathetic to Egypt and Sudan, the Russian ambassador was more sympathetic to Ethiopia, and the Chinese ambassador appeared to be attempting to remain neutral.
+    [21] => 
+
+    [22] =>  Egypt and Sudan both emphasized the importance of the issue to them by sending their foreign ministers to speak instead of leaving that to their ambassadors, while Ethiopia sent their Minister of Water and Irrigation.Here are a few of their remarks:
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Three natons share the same water, but not the same foreign connections, which makes for a dangerous mix.
+“Russia is rumored to be helping Ethiopia guard the dam.”.
+The Grand Ethiopian Renaissance Dam (GERD) is the largest hydroelectric power project in Africa, and the seventh largest in the world.Despite internal conflict in its Tigray state, external threat, and long-running international disputes about sharing Nile waters, the dam is expected to begin producing power later this year.It promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse. 
+ However, the dam is under heavy military guard due to a 10-year dispute with Sudan and Egypt over rights to the Blue Nile River, which flows downstream from Ethiopia's Lake Tana to Sudan, Egypt and the Mediterranean.Seventy-five percent of the Nile that flows into Egypt comes from the Blue Nile, and only 25% from the White Nile, which flows from headwaters in the African Great Lakes Region of East and Central Africa. 
+ The US and the EU have most often taken Egypt’s side against Ethiopia in disputes over the GERD, and in one of President Trump's last reckless moments in office, he said that Egypt wouldn’t be able to live with the dam, so they’ll blow it up , but it’s hard to imagine that Egypt would attempt such an attack without a green light from the US. 
+ At the time, the Ethiopian Foreign Ministry issued a statement saying, "The incitement of war between Ethiopia and Egypt from a sitting US president neither reflects the longstanding partnership and strategic alliance between Ethiopia and the United States nor is acceptable in international law governing interstate relations.".
+“The dam promises to lift Ethiopia's subsistence farming majority from poverty, generate electricity for sale to neighboring nations, and make Ethiopia a regional powerhouse. 
+Russia and China have most often sided with Ethiopia about the GERD, and China is heavily invested in its electricity delivery infrastructure.The $4.6 billion dam itself has been financed by taxes and bonds issued to Ethiopians and the Ethiopian diaspora. 
+ Russia is rumored to be helping Ethiopia guard the dam, and on July 7, 2021, Russia and Ethiopia inked a new military cooperation agreement .On March 28, 2021, China and Ethiopia signed “an agreement to protect investment projects .”.China has significant investments  in all three nations involved in this particular dispute over Nile waters.
+ Russia and France have been claiming a share of the Egyptian weapons market previously held by the US since 2015,  a development that National Defense News recently identified as a national security issue . 
+ Last week, the UN Security Council met to consider a draft resolution  put forth by Egypt and Sudan that would call on Ethiopia to halt the second seasonal filling of the dam. Everyone who spoke during the meeting called for a return to African Union negotiations despite a 10-year impasse, but the Western ambassadors were more sympathetic to Egypt and Sudan, the Russian ambassador was more sympathetic to Ethiopia, and the Chinese ambassador appeared to be attempting to remain neutral.
+ Egypt and Sudan both emphasized the importance of the issue to them by sending their foreign ministers to speak instead of leaving that to their ambassadors, while Ethiopia sent their Minister of Water and Irrigation.Here are a few of their remarks:
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_171207_724761.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_171207_724761.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210802_171958_898893)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Unfortunately, however, Ethiopia remains steadfast in its rejection of any form of agreement that provides any meaningful measure of protection to the interests of downstream states. For us, the harm that the GERD might inflict will affect every aspect of the lives of the Egyptian people like a malignant plague. In the absence of an agreement that regulates its filling and operation, the GERD can cause cumulative water shortages in Egypt amounting to 120 billion cubic meters.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Egyptian Foreign Minister Sameh Hassan Shoukry: All that Egypt has called for and sought is a binding agreement that includes an insurance policy against the harmful impacts of the GERD on Egypt's water security, by designing a mechanism through which our three countries could cooperate to collectively bear the burden of addressing future periods of droughts. 
+
+    [1] => 
+
+    [2] => Unfortunately, however, Ethiopia remains steadfast in its rejection of any form of agreement that provides any meaningful measure of protection to the interests of downstream states. For us, the harm that the GERD might inflict will affect every aspect of the lives of the Egyptian people like a malignant plague. In the absence of an agreement that regulates its filling and operation, the GERD can cause cumulative water shortages in Egypt amounting to 120 billion cubic meters.
+    [3] => 
+
+    [4] =>  It will diminish access to clean drinking water. It could deprive millions of farmers of the water they used to irrigate their fields. It will rob countless families of their income and livelihood. It will destroy 1000s of acres of arable land. It will increase desertification and degrade the riparian ecosystem, and it will increase vulnerability to the effects of climate change. This is a situation that Egypt cannot and will not tolerate. 
+
+    [5] => 
+
+    [6] => Sudanese Foreign Minister Mariam Al-Sadiq Al-Mahdi: We dearly hope that the Council will assume its responsibilities in maintaining regional peace and security in a preventative way by strengthening stepping up negotiations under the auspices of the African Union. I should like to say, unequivocally, that this issue is a just cause. You are called, ladies and gentlemen, to promote a process which continues to meet obstacles, and you can help this process easily, freely, by freeing the courageous people of Sudan from their current suffering by ensuring that the filling and functioning of the Renaissance Dam happens pursuant to a legally binding agreement. However, silence from the Council would send out the wrong message and would signify a tacit approval of the fact that this unilateral filling was acceptable. 
+
+    [7] => 
+
+    [8] => Ethiopian Minister of Water, Irrigation, and Energy Dr. Sileshi Bekele: Mr. President, colonialism and colonial treaties thwarted Africa's ability to utilize its natural resources for the benefit of its people. The Nile Basin countries have recognized this problem and worked towards addressing it. In 1999, we established the Nile Basin Initiative, and in 2010, we adopted the Cooperative Framework Agreement, or CFA, on the Nile after 13 years of negotiations. The insatiable demands of Egypt and most recently Sudan are not mostly about the issue of the GERD but about the future development projects in Ethiopia and the other riparian countries. Without an effective CFA and regional mechanism, similar application will inevitably come to this Council. Today it is Ethiopia’s dam; tomorrow it will be any one of the Nile Basin countries. 
+
+    [9] => 
+
+    [10] => The Nile belongs to all the people of the Basin countries, all the half a billion of us in the 11 riparian countries, and the water is enough for all of us. In this regard, we urge our Egyptian and Sudanese brothers and sisters to understand that a resolution to the Nile issue will not come from the Security Council. It can only come from good-faith negotiations, with due care for the well-being and development of each other. As Ethiopia looks forward to continuing the AU-led, trilateral negotiations on the GERD, we have the solution at hand, and we can herald the good news to the world led by concluding a mutually acceptable outcome. 
+
+    [11] => 
+
+    [12] => Finally, Mr. President, allow me to respectfully request the Council to return this matter to the ability and the legitimate leadership of the African Union and encourage Egypt and Sudan to seriously and faithfully negotiate towards a negotiated settlement on the first filling, and on all operations of the GERD. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Egyptian Foreign Minister Sameh Hassan Shoukry: All that Egypt has called for and sought is a binding agreement that includes an insurance policy against the harmful impacts of the GERD on Egypt's water security, by designing a mechanism through which our three countries could cooperate to collectively bear the burden of addressing future periods of droughts. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> It will diminish access to clean drinking water. It could deprive millions of farmers of the water they used to irrigate their fields. It will rob countless families of their income and livelihood. It will destroy 1000s of acres of arable land. It will increase desertification and degrade the riparian ecosystem, and it will increase vulnerability to the effects of climate change. This is a situation that Egypt cannot and will not tolerate. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Sudanese Foreign Minister Mariam Al-Sadiq Al-Mahdi: We dearly hope that the Council will assume its responsibilities in maintaining regional peace and security in a preventative way by strengthening stepping up negotiations under the auspices of the African Union. I should like to say, unequivocally, that this issue is a just cause. You are called, ladies and gentlemen, to promote a process which continues to meet obstacles, and you can help this process easily, freely, by freeing the courageous people of Sudan from their current suffering by ensuring that the filling and functioning of the Renaissance Dam happens pursuant to a legally binding agreement. However, silence from the Council would send out the wrong message and would signify a tacit approval of the fact that this unilateral filling was acceptable. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Ethiopian Minister of Water, Irrigation, and Energy Dr. Sileshi Bekele: Mr. President, colonialism and colonial treaties thwarted Africa's ability to utilize its natural resources for the benefit of its people. The Nile Basin countries have recognized this problem and worked towards addressing it. In 1999, we established the Nile Basin Initiative, and in 2010, we adopted the Cooperative Framework Agreement, or CFA, on the Nile after 13 years of negotiations. The insatiable demands of Egypt and most recently Sudan are not mostly about the issue of the GERD but about the future development projects in Ethiopia and the other riparian countries. Without an effective CFA and regional mechanism, similar application will inevitably come to this Council. Today it is Ethiopia’s dam; tomorrow it will be any one of the Nile Basin countries. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->The Nile belongs to all the people of the Basin countries, all the half a billion of us in the 11 riparian countries, and the water is enough for all of us. In this regard, we urge our Egyptian and Sudanese brothers and sisters to understand that a resolution to the Nile issue will not come from the Security Council. It can only come from good-faith negotiations, with due care for the well-being and development of each other. As Ethiopia looks forward to continuing the AU-led, trilateral negotiations on the GERD, we have the solution at hand, and we can herald the good news to the world led by concluding a mutually acceptable outcome. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Egyptian Foreign Minister Sameh Hassan Shoukry: All that Egypt has called for and sought is a binding agreement that includes an insurance policy against the harmful impacts of the GERD on Egypt's water security, by designing a mechanism through which our three countries could cooperate to collectively bear the burden of addressing future periods of droughts.  
+    [1] => 
+
+    [2] => Unfortunately, however, Ethiopia remains steadfast in its rejection of any form of agreement that provides any meaningful measure of protection to the interests of downstream states. For us, the harm that the GERD might inflict will affect every aspect of the lives of the Egyptian people like a malignant plague. In the absence of an agreement that regulates its filling and operation, the GERD can cause cumulative water shortages in Egypt amounting to 120 billion cubic meters.
+    [3] => 
+
+    [4] =>  It will diminish access to clean drinking water. It could deprive millions of farmers of the water they used to irrigate their fields. It will rob countless families of their income and livelihood. It will destroy 1000s of acres of arable land. It will increase desertification and degrade the riparian ecosystem, and it will increase vulnerability to the effects of climate change. This is a situation that Egypt cannot and will not tolerate.  
+    [5] => 
+
+    [6] => Sudanese Foreign Minister Mariam Al-Sadiq Al-Mahdi: We dearly hope that the Council will assume its responsibilities in maintaining regional peace and security in a preventative way by strengthening stepping up negotiations under the auspices of the African Union. I should like to say, unequivocally, that this issue is a just cause. You are called, ladies and gentlemen, to promote a process which continues to meet obstacles, and you can help this process easily, freely, by freeing the courageous people of Sudan from their current suffering by ensuring that the filling and functioning of the Renaissance Dam happens pursuant to a legally binding agreement. However, silence from the Council would send out the wrong message and would signify a tacit approval of the fact that this unilateral filling was acceptable.  
+    [7] => 
+
+    [8] => Ethiopian Minister of Water, Irrigation, and Energy Dr. Sileshi Bekele: Mr. President, colonialism and colonial treaties thwarted Africa's ability to utilize its natural resources for the benefit of its people. The Nile Basin countries have recognized this problem and worked towards addressing it. In 1999, we established the Nile Basin Initiative, and in 2010, we adopted the Cooperative Framework Agreement, or CFA, on the Nile after 13 years of negotiations. The insatiable demands of Egypt and most recently Sudan are not mostly about the issue of the GERD but about the future development projects in Ethiopia and the other riparian countries. Without an effective CFA and regional mechanism, similar application will inevitably come to this Council. Today it is Ethiopia’s dam; tomorrow it will be any one of the Nile Basin countries.  
+    [9] => 
+
+    [10] => The Nile belongs to all the people of the Basin countries, all the half a billion of us in the 11 riparian countries, and the water is enough for all of us. In this regard, we urge our Egyptian and Sudanese brothers and sisters to understand that a resolution to the Nile issue will not come from the Security Council. It can only come from good-faith negotiations, with due care for the well-being and development of each other. As Ethiopia looks forward to continuing the AU-led, trilateral negotiations on the GERD, we have the solution at hand, and we can herald the good news to the world led by concluding a mutually acceptable outcome.  
+    [11] => 
+
+    [12] => Finally, Mr. President, allow me to respectfully request the Council to return this matter to the ability and the legitimate leadership of the African Union and encourage Egypt and Sudan to seriously and faithfully negotiate towards a negotiated settlement on the first filling, and on all operations of the GERD. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Egyptian Foreign Minister Sameh Hassan Shoukry: All that Egypt has called for and sought is a binding agreement that includes an insurance policy against the harmful impacts of the GERD on Egypt's water security, by designing a mechanism through which our three countries could cooperate to collectively bear the burden of addressing future periods of droughts.  
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Unfortunately, however, Ethiopia remains steadfast in its rejection of any form of agreement that provides any meaningful measure of protection to the interests of downstream states. For us, the harm that the GERD might inflict will affect every aspect of the lives of the Egyptian people like a malignant plague. In the absence of an agreement that regulates its filling and operation, the GERD can cause cumulative water shortages in Egypt amounting to 120 billion cubic meters.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line --> It will diminish access to clean drinking water. It could deprive millions of farmers of the water they used to irrigate their fields. It will rob countless families of their income and livelihood. It will destroy 1000s of acres of arable land. It will increase desertification and degrade the riparian ecosystem, and it will increase vulnerability to the effects of climate change. This is a situation that Egypt cannot and will not tolerate.  
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Sudanese Foreign Minister Mariam Al-Sadiq Al-Mahdi: We dearly hope that the Council will assume its responsibilities in maintaining regional peace and security in a preventative way by strengthening stepping up negotiations under the auspices of the African Union. I should like to say, unequivocally, that this issue is a just cause. You are called, ladies and gentlemen, to promote a process which continues to meet obstacles, and you can help this process easily, freely, by freeing the courageous people of Sudan from their current suffering by ensuring that the filling and functioning of the Renaissance Dam happens pursuant to a legally binding agreement. However, silence from the Council would send out the wrong message and would signify a tacit approval of the fact that this unilateral filling was acceptable.  
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Ethiopian Minister of Water, Irrigation, and Energy Dr. Sileshi Bekele: Mr. President, colonialism and colonial treaties thwarted Africa's ability to utilize its natural resources for the benefit of its people. The Nile Basin countries have recognized this problem and worked towards addressing it. In 1999, we established the Nile Basin Initiative, and in 2010, we adopted the Cooperative Framework Agreement, or CFA, on the Nile after 13 years of negotiations. The insatiable demands of Egypt and most recently Sudan are not mostly about the issue of the GERD but about the future development projects in Ethiopia and the other riparian countries. Without an effective CFA and regional mechanism, similar application will inevitably come to this Council. Today it is Ethiopia’s dam; tomorrow it will be any one of the Nile Basin countries.  
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The Nile belongs to all the people of the Basin countries, all the half a billion of us in the 11 riparian countries, and the water is enough for all of us. In this regard, we urge our Egyptian and Sudanese brothers and sisters to understand that a resolution to the Nile issue will not come from the Security Council. It can only come from good-faith negotiations, with due care for the well-being and development of each other. As Ethiopia looks forward to continuing the AU-led, trilateral negotiations on the GERD, we have the solution at hand, and we can herald the good news to the world led by concluding a mutually acceptable outcome.  
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Finally, Mr. President, allow me to respectfully request the Council to return this matter to the ability and the legitimate leadership of the African Union and encourage Egypt and Sudan to seriously and faithfully negotiate towards a negotiated settlement on the first filling, and on all operations of the GERD. 
+$matches ==>
+Array
+(
+    [0] => r. 
+    [1] => r.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Egyptian Foreign Minister Sameh Hassan Shoukry: All that Egypt has called for and sought is a binding agreement that includes an insurance policy against the harmful impacts of the GERD on Egypt's water security, by designing a mechanism through which our three countries could cooperate to collectively bear the burden of addressing future periods of droughts. 
+    [1] => 
+
+    [2] => Unfortunately, however, Ethiopia remains steadfast in its rejection of any form of agreement that provides any meaningful measure of protection to the interests of downstream states.For us, the harm that the GERD might inflict will affect every aspect of the lives of the Egyptian people like a malignant plague.In the absence of an agreement that regulates its filling and operation, the GERD can cause cumulative water shortages in Egypt amounting to 120 billion cubic meters.
+    [3] => 
+
+    [4] =>  It will diminish access to clean drinking water.It could deprive millions of farmers of the water they used to irrigate their fields.It will rob countless families of their income and livelihood.It will destroy 1000s of acres of arable land.It will increase desertification and degrade the riparian ecosystem, and it will increase vulnerability to the effects of climate change.This is a situation that Egypt cannot and will not tolerate. 
+    [5] => 
+
+    [6] => Sudanese Foreign Minister Mariam Al-Sadiq Al-Mahdi: We dearly hope that the Council will assume its responsibilities in maintaining regional peace and security in a preventative way by strengthening stepping up negotiations under the auspices of the African Union.I should like to say, unequivocally, that this issue is a just cause.You are called, ladies and gentlemen, to promote a process which continues to meet obstacles, and you can help this process easily, freely, by freeing the courageous people of Sudan from their current suffering by ensuring that the filling and functioning of the Renaissance Dam happens pursuant to a legally binding agreement.However, silence from the Council would send out the wrong message and would signify a tacit approval of the fact that this unilateral filling was acceptable. 
+    [7] => 
+
+    [8] => Ethiopian Minister of Water, Irrigation, and Energy Dr.Sileshi Bekele: Mr.President, colonialism and colonial treaties thwarted Africa's ability to utilize its natural resources for the benefit of its people.The Nile Basin countries have recognized this problem and worked towards addressing it.In 1999, we established the Nile Basin Initiative, and in 2010, we adopted the Cooperative Framework Agreement, or CFA, on the Nile after 13 years of negotiations.The insatiable demands of Egypt and most recently Sudan are not mostly about the issue of the GERD but about the future development projects in Ethiopia and the other riparian countries.Without an effective CFA and regional mechanism, similar application will inevitably come to this Council.Today it is Ethiopia’s dam; tomorrow it will be any one of the Nile Basin countries. 
+    [9] => 
+
+    [10] => The Nile belongs to all the people of the Basin countries, all the half a billion of us in the 11 riparian countries, and the water is enough for all of us.In this regard, we urge our Egyptian and Sudanese brothers and sisters to understand that a resolution to the Nile issue will not come from the Security Council.It can only come from good-faith negotiations, with due care for the well-being and development of each other.As Ethiopia looks forward to continuing the AU-led, trilateral negotiations on the GERD, we have the solution at hand, and we can herald the good news to the world led by concluding a mutually acceptable outcome. 
+    [11] => 
+
+    [12] => Finally, Mr.President, allow me to respectfully request the Council to return this matter to the ability and the legitimate leadership of the African Union and encourage Egypt and Sudan to seriously and faithfully negotiate towards a negotiated settlement on the first filling, and on all operations of the GERD.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Egyptian Foreign Minister Sameh Hassan Shoukry: All that Egypt has called for and sought is a binding agreement that includes an insurance policy against the harmful impacts of the GERD on Egypt's water security, by designing a mechanism through which our three countries could cooperate to collectively bear the burden of addressing future periods of droughts. 
+Unfortunately, however, Ethiopia remains steadfast in its rejection of any form of agreement that provides any meaningful measure of protection to the interests of downstream states.For us, the harm that the GERD might inflict will affect every aspect of the lives of the Egyptian people like a malignant plague.In the absence of an agreement that regulates its filling and operation, the GERD can cause cumulative water shortages in Egypt amounting to 120 billion cubic meters.
+ It will diminish access to clean drinking water.It could deprive millions of farmers of the water they used to irrigate their fields.It will rob countless families of their income and livelihood.It will destroy 1000s of acres of arable land.It will increase desertification and degrade the riparian ecosystem, and it will increase vulnerability to the effects of climate change.This is a situation that Egypt cannot and will not tolerate. 
+Sudanese Foreign Minister Mariam Al-Sadiq Al-Mahdi: We dearly hope that the Council will assume its responsibilities in maintaining regional peace and security in a preventative way by strengthening stepping up negotiations under the auspices of the African Union.I should like to say, unequivocally, that this issue is a just cause.You are called, ladies and gentlemen, to promote a process which continues to meet obstacles, and you can help this process easily, freely, by freeing the courageous people of Sudan from their current suffering by ensuring that the filling and functioning of the Renaissance Dam happens pursuant to a legally binding agreement.However, silence from the Council would send out the wrong message and would signify a tacit approval of the fact that this unilateral filling was acceptable. 
+Ethiopian Minister of Water, Irrigation, and Energy Dr.Sileshi Bekele: Mr.President, colonialism and colonial treaties thwarted Africa's ability to utilize its natural resources for the benefit of its people.The Nile Basin countries have recognized this problem and worked towards addressing it.In 1999, we established the Nile Basin Initiative, and in 2010, we adopted the Cooperative Framework Agreement, or CFA, on the Nile after 13 years of negotiations.The insatiable demands of Egypt and most recently Sudan are not mostly about the issue of the GERD but about the future development projects in Ethiopia and the other riparian countries.Without an effective CFA and regional mechanism, similar application will inevitably come to this Council.Today it is Ethiopia’s dam; tomorrow it will be any one of the Nile Basin countries. 
+The Nile belongs to all the people of the Basin countries, all the half a billion of us in the 11 riparian countries, and the water is enough for all of us.In this regard, we urge our Egyptian and Sudanese brothers and sisters to understand that a resolution to the Nile issue will not come from the Security Council.It can only come from good-faith negotiations, with due care for the well-being and development of each other.As Ethiopia looks forward to continuing the AU-led, trilateral negotiations on the GERD, we have the solution at hand, and we can herald the good news to the world led by concluding a mutually acceptable outcome. 
+Finally, Mr.President, allow me to respectfully request the Council to return this matter to the ability and the legitimate leadership of the African Union and encourage Egypt and Sudan to seriously and faithfully negotiate towards a negotiated settlement on the first filling, and on all operations of the GERD.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_171958_898893.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_171958_898893.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210802_172411_019514)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Die Nile Basin Initiative (engl. für Nilbeckeninitiative, kurz NBI) wurde 1999 zur regionalen Zusammenarbeit der Länder im Einzugsgebiet des Nils ins Leben gerufen. Ziel ist die gemeinschaftliche langfristige Entwicklung und das Management der Wasserressourcen des Flusses. Durch eine verstärkte Zusammenarbeit soll ein fühlbarer Vorteil für alle innerhalb des Einzugsbereichs erreicht und eine Basis für gegenseitiges Vertrauen geschaffen werden.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Die Nile Basin Initiative (engl. für Nilbeckeninitiative, kurz NBI) wurde 1999 zur regionalen Zusammenarbeit der Länder im Einzugsgebiet des Nils ins Leben gerufen. Ziel ist die gemeinschaftliche langfristige Entwicklung und das Management der Wasserressourcen des Flusses. Durch eine verstärkte Zusammenarbeit soll ein fühlbarer Vorteil für alle innerhalb des Einzugsbereichs erreicht und eine Basis für gegenseitiges Vertrauen geschaffen werden.
+    [1] => 
+
+    [2] => Die NBI gliedert sich in einen Ministerrat (Nile-COM) als höchstes Gremium der NBI, welches durch den Technischen Beirat (Nile-TAC) unterstützt wird. Der Beirat setzt sich aus je zwei Offiziellen der Mitgliedsländer zusammen. Zudem existiert ein Sekretariat (Nile-SEC), welches in Entebbe, Uganda, ansässig ist. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Die Nile Basin Initiative (engl. für Nilbeckeninitiative, kurz NBI) wurde 1999 zur regionalen Zusammenarbeit der Länder im Einzugsgebiet des Nils ins Leben gerufen. Ziel ist die gemeinschaftliche langfristige Entwicklung und das Management der Wasserressourcen des Flusses. Durch eine verstärkte Zusammenarbeit soll ein fühlbarer Vorteil für alle innerhalb des Einzugsbereichs erreicht und eine Basis für gegenseitiges Vertrauen geschaffen werden.
+    [1] => 
+
+    [2] => Die NBI gliedert sich in einen Ministerrat (Nile-COM) als höchstes Gremium der NBI, welches durch den Technischen Beirat (Nile-TAC) unterstützt wird. Der Beirat setzt sich aus je zwei Offiziellen der Mitgliedsländer zusammen. Zudem existiert ein Sekretariat (Nile-SEC), welches in Entebbe, Uganda, ansässig ist. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Die Nile Basin Initiative (engl. für Nilbeckeninitiative, kurz NBI) wurde 1999 zur regionalen Zusammenarbeit der Länder im Einzugsgebiet des Nils ins Leben gerufen. Ziel ist die gemeinschaftliche langfristige Entwicklung und das Management der Wasserressourcen des Flusses. Durch eine verstärkte Zusammenarbeit soll ein fühlbarer Vorteil für alle innerhalb des Einzugsbereichs erreicht und eine Basis für gegenseitiges Vertrauen geschaffen werden.
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Die NBI gliedert sich in einen Ministerrat (Nile-COM) als höchstes Gremium der NBI, welches durch den Technischen Beirat (Nile-TAC) unterstützt wird. Der Beirat setzt sich aus je zwei Offiziellen der Mitgliedsländer zusammen. Zudem existiert ein Sekretariat (Nile-SEC), welches in Entebbe, Uganda, ansässig ist. 
+$matches ==>
+Array
+(
+    [0] => d. 
+    [1] => d.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Die Nile Basin Initiative (engl.für Nilbeckeninitiative, kurz NBI) wurde 1999 zur regionalen Zusammenarbeit der Länder im Einzugsgebiet des Nils ins Leben gerufen.Ziel ist die gemeinschaftliche langfristige Entwicklung und das Management der Wasserressourcen des Flusses.Durch eine verstärkte Zusammenarbeit soll ein fühlbarer Vorteil für alle innerhalb des Einzugsbereichs erreicht und eine Basis für gegenseitiges Vertrauen geschaffen werden.
+    [1] => 
+
+    [2] => Die NBI gliedert sich in einen Ministerrat (Nile-COM) als höchstes Gremium der NBI, welches durch den Technischen Beirat (Nile-TAC) unterstützt wird.Der Beirat setzt sich aus je zwei Offiziellen der Mitgliedsländer zusammen.Zudem existiert ein Sekretariat (Nile-SEC), welches in Entebbe, Uganda, ansässig ist.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Die Nile Basin Initiative (engl.für Nilbeckeninitiative, kurz NBI) wurde 1999 zur regionalen Zusammenarbeit der Länder im Einzugsgebiet des Nils ins Leben gerufen.Ziel ist die gemeinschaftliche langfristige Entwicklung und das Management der Wasserressourcen des Flusses.Durch eine verstärkte Zusammenarbeit soll ein fühlbarer Vorteil für alle innerhalb des Einzugsbereichs erreicht und eine Basis für gegenseitiges Vertrauen geschaffen werden.
+Die NBI gliedert sich in einen Ministerrat (Nile-COM) als höchstes Gremium der NBI, welches durch den Technischen Beirat (Nile-TAC) unterstützt wird.Der Beirat setzt sich aus je zwei Offiziellen der Mitgliedsländer zusammen.Zudem existiert ein Sekretariat (Nile-SEC), welches in Entebbe, Uganda, ansässig ist.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_172411_019514.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_172411_019514.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210802_231014_642597)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.지난 28일 열린 도쿄올림픽 체조 남자 개인종합 경기에서 일본의 하시모토 다이키 선수가 중국의 샤오뤄텅 선수를 누르고 금메달을 따자 중국 네티즌들이 일본의 편파 판정 의혹을 제기하며 논란이 일었다. 사진 SNS 캡처[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.도쿄올림픽에서 중국 선수를 누르고 금메달을 딴 일본 선수를 겨냥한 SNS 상의 비방이 이어지자 당국이 판정이 공정했다는 성명을 냈다. 31일 요미우리신문의 보도에 의하면 체조 남자 개인 종합에 출전한 일본 하시모토 다이키가 중국 샤오뤄텅을 누르고 금메달을 딴 것이 중국 네티즌의 반발을 샀다. 지난 28일 열린 결승에서 하시모토는 0.4점 차이로 샤오뤄텅을 앞섰는데 하시모토가 도마에서 착지 동작을 할 때 발이 매트 밖으로 나갔는데 고득점 한 것에 대한 불만이 중국판 트위터 웨이보에 이어졌다. 도쿄신문은 “훔친 메달이 밤에 너를 죽인다”는 메시지 등 번역기를 이용해 쓴 것으로 추정되는 일본어 글도 SNS에 올라왔다고 전했다. 하시모토에 대한 비난이 이어지자 샤오뤄텅은 29일 웨이보에 하시모토와 함께 손에 메달을 들고 있는 사진과 함께 “선수 본인에 대한 과도한 공격을 멈추라”고 자제를 당부하는 글을 올렸다. 국제체조연맹(FIG)은 해당 경기에 대한 상세 감점 항목을 공개하고서 "채점 규칙에 비춰보면 올바르다는 평가가 가능하다", "심사는 공정하고 정확했다"는 성명을 발표했다.[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.지난 28일 열린 도쿄올림픽 체조 남자 개인종합 경기에서 일본의 하시모토 다이키 선수가 중국의 샤오뤄텅 선수를 누르고 금메달을 따자 중국 네티즌들이 일본의 편파 판정 의혹을 제기하며 논란이 일었다. 사진 SNS 캡처[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.도쿄올림픽에서 중국 선수를 누르고 금메달을 딴 일본 선수를 겨냥한 SNS 상의 비방이 이어지자 당국이 판정이 공정했다는 성명을 냈다. 31일 요미우리신문의 보도에 의하면 체조 남자 개인 종합에 출전한 일본 하시모토 다이키가 중국 샤오뤄텅을 누르고 금메달을 딴 것이 중국 네티즌의 반발을 샀다. 지난 28일 열린 결승에서 하시모토는 0.4점 차이로 샤오뤄텅을 앞섰는데 하시모토가 도마에서 착지 동작을 할 때 발이 매트 밖으로 나갔는데 고득점 한 것에 대한 불만이 중국판 트위터 웨이보에 이어졌다. 도쿄신문은 “훔친 메달이 밤에 너를 죽인다”는 메시지 등 번역기를 이용해 쓴 것으로 추정되는 일본어 글도 SNS에 올라왔다고 전했다. 하시모토에 대한 비난이 이어지자 샤오뤄텅은 29일 웨이보에 하시모토와 함께 손에 메달을 들고 있는 사진과 함께 “선수 본인에 대한 과도한 공격을 멈추라”고 자제를 당부하는 글을 올렸다. 국제체조연맹(FIG)은 해당 경기에 대한 상세 감점 항목을 공개하고서 "채점 규칙에 비춰보면 올바르다는 평가가 가능하다", "심사는 공정하고 정확했다"는 성명을 발표했다.[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->“훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.지난 28일 열린 도쿄올림픽 체조 남자 개인종합 경기에서 일본의 하시모토 다이키 선수가 중국의 샤오뤄텅 선수를 누르고 금메달을 따자 중국 네티즌들이 일본의 편파 판정 의혹을 제기하며 논란이 일었다. 사진 SNS 캡처[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.도쿄올림픽에서 중국 선수를 누르고 금메달을 딴 일본 선수를 겨냥한 SNS 상의 비방이 이어지자 당국이 판정이 공정했다는 성명을 냈다. 31일 요미우리신문의 보도에 의하면 체조 남자 개인 종합에 출전한 일본 하시모토 다이키가 중국 샤오뤄텅을 누르고 금메달을 딴 것이 중국 네티즌의 반발을 샀다. 지난 28일 열린 결승에서 하시모토는 0.4점 차이로 샤오뤄텅을 앞섰는데 하시모토가 도마에서 착지 동작을 할 때 발이 매트 밖으로 나갔는데 고득점 한 것에 대한 불만이 중국판 트위터 웨이보에 이어졌다. 도쿄신문은 “훔친 메달이 밤에 너를 죽인다”는 메시지 등 번역기를 이용해 쓴 것으로 추정되는 일본어 글도 SNS에 올라왔다고 전했다. 하시모토에 대한 비난이 이어지자 샤오뤄텅은 29일 웨이보에 하시모토와 함께 손에 메달을 들고 있는 사진과 함께 “선수 본인에 대한 과도한 공격을 멈추라”고 자제를 당부하는 글을 올렸다. 국제체조연맹(FIG)은 해당 경기에 대한 상세 감점 항목을 공개하고서 "채점 규칙에 비춰보면 올바르다는 평가가 가능하다", "심사는 공정하고 정확했다"는 성명을 발표했다.[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.지난 28일 열린 도쿄올림픽 체조 남자 개인종합 경기에서 일본의 하시모토 다이키 선수가 중국의 샤오뤄텅 선수를 누르고 금메달을 따자 중국 네티즌들이 일본의 편파 판정 의혹을 제기하며 논란이 일었다.사진 SNS 캡처[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.도쿄올림픽에서 중국 선수를 누르고 금메달을 딴 일본 선수를 겨냥한 SNS 상의 비방이 이어지자 당국이 판정이 공정했다는 성명을 냈다. 31일 요미우리신문의 보도에 의하면 체조 남자 개인 종합에 출전한 일본 하시모토 다이키가 중국 샤오뤄텅을 누르고 금메달을 딴 것이 중국 네티즌의 반발을 샀다. 지난 28일 열린 결승에서 하시모토는 0.4점 차이로 샤오뤄텅을 앞섰는데 하시모토가 도마에서 착지 동작을 할 때 발이 매트 밖으로 나갔는데 고득점 한 것에 대한 불만이 중국판 트위터 웨이보에 이어졌다. 도쿄신문은 “훔친 메달이 밤에 너를 죽인다”는 메시지 등 번역기를 이용해 쓴 것으로 추정되는 일본어 글도 SNS에 올라왔다고 전했다. 하시모토에 대한 비난이 이어지자 샤오뤄텅은 29일 웨이보에 하시모토와 함께 손에 메달을 들고 있는 사진과 함께 “선수 본인에 대한 과도한 공격을 멈추라”고 자제를 당부하는 글을 올렸다. 국제체조연맹(FIG)은 해당 경기에 대한 상세 감점 항목을 공개하고서 "채점 규칙에 비춰보면 올바르다는 평가가 가능하다", "심사는 공정하고 정확했다"는 성명을 발표했다.[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>“훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.지난 28일 열린 도쿄올림픽 체조 남자 개인종합 경기에서 일본의 하시모토 다이키 선수가 중국의 샤오뤄텅 선수를 누르고 금메달을 따자 중국 네티즌들이 일본의 편파 판정 의혹을 제기하며 논란이 일었다.사진 SNS 캡처[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.도쿄올림픽에서 중국 선수를 누르고 금메달을 딴 일본 선수를 겨냥한 SNS 상의 비방이 이어지자 당국이 판정이 공정했다는 성명을 냈다. 31일 요미우리신문의 보도에 의하면 체조 남자 개인 종합에 출전한 일본 하시모토 다이키가 중국 샤오뤄텅을 누르고 금메달을 딴 것이 중국 네티즌의 반발을 샀다. 지난 28일 열린 결승에서 하시모토는 0.4점 차이로 샤오뤄텅을 앞섰는데 하시모토가 도마에서 착지 동작을 할 때 발이 매트 밖으로 나갔는데 고득점 한 것에 대한 불만이 중국판 트위터 웨이보에 이어졌다. 도쿄신문은 “훔친 메달이 밤에 너를 죽인다”는 메시지 등 번역기를 이용해 쓴 것으로 추정되는 일본어 글도 SNS에 올라왔다고 전했다. 하시모토에 대한 비난이 이어지자 샤오뤄텅은 29일 웨이보에 하시모토와 함께 손에 메달을 들고 있는 사진과 함께 “선수 본인에 대한 과도한 공격을 멈추라”고 자제를 당부하는 글을 올렸다. 국제체조연맹(FIG)은 해당 경기에 대한 상세 감점 항목을 공개하고서 "채점 규칙에 비춰보면 올바르다는 평가가 가능하다", "심사는 공정하고 정확했다"는 성명을 발표했다.[출처: 중앙일보] “훔친 메달이 밤에 널 죽인다” 日선수 金따자 中네티즌 저주.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_231014_642597.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210802_231014_642597.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
