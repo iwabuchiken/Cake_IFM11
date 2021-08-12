@@ -50373,3 +50373,103 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210803_175505_693651.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210810_210917_654331)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Gobiernos, organizaciones solidarias y personalidades continúan mostrando su apoyo a Cuba en medio del recrudecimiento del bloqueo económico, comercial y financiero impuesto por Estados Unidos a la isla, y de un repunte de contagios por la pandemia de la COVID-19.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> ' Un mural de solidaridad con Cuba muestra a los habitantes de la provincia argentina de Córdoba la lucha que enfrenta el pueblo de nuestra nación contra el criminal bloqueo del Gobierno de los Estados Unidos. Foto: Desconocido .
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => ¿Por qué el mundo se solidariza con Cuba?
+
+    [1] => 
+
+    [2] => Gobiernos, organizaciones solidarias y personalidades continúan mostrando su apoyo a Cuba en medio del recrudecimiento del bloqueo económico, comercial y financiero impuesto por Estados Unidos a la isla, y de un repunte de contagios por la pandemia de la COVID-19.
+    [3] => 
+
+    [4] => 
+
+    [5] =>  Un mural de solidaridad con Cuba muestra a los habitantes de la provincia argentina de Córdoba la lucha que enfrenta el pueblo de nuestra nación contra el criminal bloqueo del Gobierno de los Estados Unidos. Foto: Desconocido .
+    [6] =>  
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->¿Por qué el mundo se solidariza con Cuba?
+
+$matches ==>
+Array
+(
+    [0] => ?
+
+    [1] => ?
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => ¿Por qué el mundo se solidariza con Cuba? 
+    [1] => 
+
+    [2] => Gobiernos, organizaciones solidarias y personalidades continúan mostrando su apoyo a Cuba en medio del recrudecimiento del bloqueo económico, comercial y financiero impuesto por Estados Unidos a la isla, y de un repunte de contagios por la pandemia de la COVID-19.
+    [3] => 
+
+    [4] => 
+
+    [5] =>  Un mural de solidaridad con Cuba muestra a los habitantes de la provincia argentina de Córdoba la lucha que enfrenta el pueblo de nuestra nación contra el criminal bloqueo del Gobierno de los Estados Unidos. Foto: Desconocido .
+    [6] =>  
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line --> Un mural de solidaridad con Cuba muestra a los habitantes de la provincia argentina de Córdoba la lucha que enfrenta el pueblo de nuestra nación contra el criminal bloqueo del Gobierno de los Estados Unidos. Foto: Desconocido .
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => ¿Por qué el mundo se solidariza con Cuba? 
+    [1] => 
+
+    [2] => Gobiernos, organizaciones solidarias y personalidades continúan mostrando su apoyo a Cuba en medio del recrudecimiento del bloqueo económico, comercial y financiero impuesto por Estados Unidos a la isla, y de un repunte de contagios por la pandemia de la COVID-19.
+    [3] => 
+
+    [4] => 
+
+    [5] =>  Un mural de solidaridad con Cuba muestra a los habitantes de la provincia argentina de Córdoba la lucha que enfrenta el pueblo de nuestra nación contra el criminal bloqueo del Gobierno de los Estados Unidos.Foto: Desconocido .
+    [6] =>  
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>¿Por qué el mundo se solidariza con Cuba? 
+Gobiernos, organizaciones solidarias y personalidades continúan mostrando su apoyo a Cuba en medio del recrudecimiento del bloqueo económico, comercial y financiero impuesto por Estados Unidos a la isla, y de un repunte de contagios por la pandemia de la COVID-19.
+
+ Un mural de solidaridad con Cuba muestra a los habitantes de la provincia argentina de Córdoba la lucha que enfrenta el pueblo de nuestra nación contra el criminal bloqueo del Gobierno de los Estados Unidos.Foto: Desconocido . 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210810_210917_654331.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210810_210917_654331.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
