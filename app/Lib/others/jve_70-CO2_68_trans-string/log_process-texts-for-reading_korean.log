@@ -50473,3 +50473,447 @@ Gobiernos, organizaciones solidarias y personalidades continúan mostrando su ap
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210810_210917_654331.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210812_132919_358967)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'A new study is raising concerns about effectiveness of mRNA vaccines like Pfizer, which has been effective against the fast spreading Delta variant of Covid-19 only 42 percent in US.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The data was from the month of July, when Delta was the dominant variant of the coronavirus, according to the study, which was yet to be certified by peer review.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '“This is the kind of surprising finding that needs confirmation before we should accept its validity," said Cornell virologist John Moore, as cited by Axios.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Scientists monitored Pfizer and Moderna vaccines in the Mayo Clinic Health System over time from January to July, concluding that Moderna  was 86 percent effective against infection and Pfizer 76 percent during the period.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Moderna also led Pfizer in preventing hospitalizations at 92 percent compared to Pfizer’s 85 percent.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The effectiveness of both the vaccines against infection dropped significantly in the month of July, with Moderna also falling to 76 percent, according to the study.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The rapid spread of the Delta variant has pushed cases and hospitalizations in the United States to a six-month high.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Over 36 million Americans have so far been infected with Covid-19 with over 618 thousand deaths reported since the pandemic began.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => A new study is raising concerns about effectiveness of mRNA vaccines like Pfizer, which has been effective against the fast spreading Delta variant of Covid-19 only 42 percent in US.
+    [1] => 
+
+    [2] => The data was from the month of July, when Delta was the dominant variant of the coronavirus, according to the study, which was yet to be certified by peer review.
+    [3] => 
+
+    [4] => “This is the kind of surprising finding that needs confirmation before we should accept its validity," said Cornell virologist John Moore, as cited by Axios.
+    [5] => 
+
+    [6] => Scientists monitored Pfizer and Moderna vaccines in the Mayo Clinic Health System over time from January to July, concluding that Moderna  was 86 percent effective against infection and Pfizer 76 percent during the period.
+    [7] => 
+
+    [8] => Moderna also led Pfizer in preventing hospitalizations at 92 percent compared to Pfizer’s 85 percent.
+    [9] => 
+
+    [10] => 
+
+    [11] => The effectiveness of both the vaccines against infection dropped significantly in the month of July, with Moderna also falling to 76 percent, according to the study.
+    [12] => 
+
+    [13] => “Based on the data that we have so far, it is a combination of both factors," said Venky Soundararajan, a lead author of the study. “The Moderna vaccine is likely — very likely — more effective than the Pfizer vaccine in areas where Delta is the dominant strain, and the Pfizer vaccine appears to have a lower durability of effectiveness.”
+
+    [14] => 
+
+    [15] => The rapid spread of the Delta variant has pushed cases and hospitalizations in the United States to a six-month high.
+    [16] => 
+
+    [17] => Pfizer said in a statement that it expects to “be able to develop and produce a tailor-made vaccine against that variant in approximately 100 days after a decision to do so, subject to regulatory approval."
+
+    [18] => 
+
+    [19] => Over 36 million Americans have so far been infected with Covid-19 with over 618 thousand deaths reported since the pandemic began.
+    [20] => 
+
+    [21] => Press TV’s website can also be accessed at the following alternate addresses:
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->“Based on the data that we have so far, it is a combination of both factors," said Venky Soundararajan, a lead author of the study. “The Moderna vaccine is likely — very likely — more effective than the Pfizer vaccine in areas where Delta is the dominant strain, and the Pfizer vaccine appears to have a lower durability of effectiveness.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Pfizer said in a statement that it expects to “be able to develop and produce a tailor-made vaccine against that variant in approximately 100 days after a decision to do so, subject to regulatory approval."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => A new study is raising concerns about effectiveness of mRNA vaccines like Pfizer, which has been effective against the fast spreading Delta variant of Covid-19 only 42 percent in US.
+    [1] => 
+
+    [2] => The data was from the month of July, when Delta was the dominant variant of the coronavirus, according to the study, which was yet to be certified by peer review.
+    [3] => 
+
+    [4] => “This is the kind of surprising finding that needs confirmation before we should accept its validity," said Cornell virologist John Moore, as cited by Axios.
+    [5] => 
+
+    [6] => Scientists monitored Pfizer and Moderna vaccines in the Mayo Clinic Health System over time from January to July, concluding that Moderna  was 86 percent effective against infection and Pfizer 76 percent during the period.
+    [7] => 
+
+    [8] => Moderna also led Pfizer in preventing hospitalizations at 92 percent compared to Pfizer’s 85 percent.
+    [9] => 
+
+    [10] => 
+
+    [11] => The effectiveness of both the vaccines against infection dropped significantly in the month of July, with Moderna also falling to 76 percent, according to the study.
+    [12] => 
+
+    [13] => “Based on the data that we have so far, it is a combination of both factors," said Venky Soundararajan, a lead author of the study. “The Moderna vaccine is likely — very likely — more effective than the Pfizer vaccine in areas where Delta is the dominant strain, and the Pfizer vaccine appears to have a lower durability of effectiveness.” 
+    [14] => 
+
+    [15] => The rapid spread of the Delta variant has pushed cases and hospitalizations in the United States to a six-month high.
+    [16] => 
+
+    [17] => Pfizer said in a statement that it expects to “be able to develop and produce a tailor-made vaccine against that variant in approximately 100 days after a decision to do so, subject to regulatory approval." 
+    [18] => 
+
+    [19] => Over 36 million Americans have so far been infected with Covid-19 with over 618 thousand deaths reported since the pandemic began.
+    [20] => 
+
+    [21] => Press TV’s website can also be accessed at the following alternate addresses:
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->“Based on the data that we have so far, it is a combination of both factors," said Venky Soundararajan, a lead author of the study. “The Moderna vaccine is likely — very likely — more effective than the Pfizer vaccine in areas where Delta is the dominant strain, and the Pfizer vaccine appears to have a lower durability of effectiveness.” 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => A new study is raising concerns about effectiveness of mRNA vaccines like Pfizer, which has been effective against the fast spreading Delta variant of Covid-19 only 42 percent in US.
+    [1] => 
+
+    [2] => The data was from the month of July, when Delta was the dominant variant of the coronavirus, according to the study, which was yet to be certified by peer review.
+    [3] => 
+
+    [4] => “This is the kind of surprising finding that needs confirmation before we should accept its validity," said Cornell virologist John Moore, as cited by Axios.
+    [5] => 
+
+    [6] => Scientists monitored Pfizer and Moderna vaccines in the Mayo Clinic Health System over time from January to July, concluding that Moderna  was 86 percent effective against infection and Pfizer 76 percent during the period.
+    [7] => 
+
+    [8] => Moderna also led Pfizer in preventing hospitalizations at 92 percent compared to Pfizer’s 85 percent.
+    [9] => 
+
+    [10] => 
+
+    [11] => The effectiveness of both the vaccines against infection dropped significantly in the month of July, with Moderna also falling to 76 percent, according to the study.
+    [12] => 
+
+    [13] => “Based on the data that we have so far, it is a combination of both factors," said Venky Soundararajan, a lead author of the study.“The Moderna vaccine is likely — very likely — more effective than the Pfizer vaccine in areas where Delta is the dominant strain, and the Pfizer vaccine appears to have a lower durability of effectiveness.” 
+    [14] => 
+
+    [15] => The rapid spread of the Delta variant has pushed cases and hospitalizations in the United States to a six-month high.
+    [16] => 
+
+    [17] => Pfizer said in a statement that it expects to “be able to develop and produce a tailor-made vaccine against that variant in approximately 100 days after a decision to do so, subject to regulatory approval." 
+    [18] => 
+
+    [19] => Over 36 million Americans have so far been infected with Covid-19 with over 618 thousand deaths reported since the pandemic began.
+    [20] => 
+
+    [21] => Press TV’s website can also be accessed at the following alternate addresses:
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>A new study is raising concerns about effectiveness of mRNA vaccines like Pfizer, which has been effective against the fast spreading Delta variant of Covid-19 only 42 percent in US.
+The data was from the month of July, when Delta was the dominant variant of the coronavirus, according to the study, which was yet to be certified by peer review.
+“This is the kind of surprising finding that needs confirmation before we should accept its validity," said Cornell virologist John Moore, as cited by Axios.
+Scientists monitored Pfizer and Moderna vaccines in the Mayo Clinic Health System over time from January to July, concluding that Moderna  was 86 percent effective against infection and Pfizer 76 percent during the period.
+Moderna also led Pfizer in preventing hospitalizations at 92 percent compared to Pfizer’s 85 percent.
+
+The effectiveness of both the vaccines against infection dropped significantly in the month of July, with Moderna also falling to 76 percent, according to the study.
+“Based on the data that we have so far, it is a combination of both factors," said Venky Soundararajan, a lead author of the study.“The Moderna vaccine is likely — very likely — more effective than the Pfizer vaccine in areas where Delta is the dominant strain, and the Pfizer vaccine appears to have a lower durability of effectiveness.” 
+The rapid spread of the Delta variant has pushed cases and hospitalizations in the United States to a six-month high.
+Pfizer said in a statement that it expects to “be able to develop and produce a tailor-made vaccine against that variant in approximately 100 days after a decision to do so, subject to regulatory approval." 
+Over 36 million Americans have so far been infected with Covid-19 with over 618 thousand deaths reported since the pandemic began.
+Press TV’s website can also be accessed at the following alternate addresses:
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210812_132919_358967.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210812_132919_358967.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210812_133838_912993)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Israeli authorities have ordered Palestinian landowners to evacuate their land in the town of Tuqu’ in Bethlehem, the occupied West Bank.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Mayor of Tuqu’, Tayseer Abu-Mefreh, told WAFA news agency that Mohammad Sawarka and Khalil al-Sha’er were notified by the Israeli authorities on Wednesday that they must “evacuate” their land in Tuqu’, east of Bethlehem City, and remove all the cattle corrals there within 14 days.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Israeli forces also seized agricultural equipment.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'According to the mayor, Palestinian livestock keepers in Tuqu’ have been targeted by the Israeli authorities that aim to expel them from their land to pave the way for the expansion of settlements.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'More than 600,000 Israelis live in over 230 settlements built since the 1967 Israeli occupation of the West Bank and East al-Quds.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The Israeli regime’s plans to force a number of Palestinian families out of their homes at the Sheikh Jarrah neighborhood of East al-Quds and Israeli violent raids on worshipers at al-Aqsa Mosque prompted Palestinian retaliation that was followed by a brutal Israeli bombing campaign against the besieged Gaza Strip on May 10. About 260 Palestinians were killed in the 11-day Israeli offensive.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Also on Wednesday, Israeli forces demolished Palestinian-owned structures to the east of Yatta City, south of the occupied West Bank city of al-Khalil (Hebron).
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'According to WAFA, Israeli bulldozers destroyed a rainwater harvesting well in the area of Khallet al-Dabe', east of Yatta, under the pretext that it is built in the area C, which accounts for more than 60 percent of the occupied West Bank, and forms a significant part of a future Palestine state under the so-called two-state solution.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Israeli forces also demolished an agricultural facility in the area of al-Fakhit as well as three residential structures.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Israeli authorities have ordered Palestinian landowners to evacuate their land in the town of Tuqu’ in Bethlehem, the occupied West Bank.
+    [1] => 
+
+    [2] => Mayor of Tuqu’, Tayseer Abu-Mefreh, told WAFA news agency that Mohammad Sawarka and Khalil al-Sha’er were notified by the Israeli authorities on Wednesday that they must “evacuate” their land in Tuqu’, east of Bethlehem City, and remove all the cattle corrals there within 14 days.
+    [3] => 
+
+    [4] => Israeli forces also seized agricultural equipment.
+    [5] => 
+
+    [6] => According to the mayor, Palestinian livestock keepers in Tuqu’ have been targeted by the Israeli authorities that aim to expel them from their land to pave the way for the expansion of settlements.
+    [7] => 
+
+    [8] => More than 600,000 Israelis live in over 230 settlements built since the 1967 Israeli occupation of the West Bank and East al-Quds.
+    [9] => 
+
+    [10] => The Israeli regime’s plans to force a number of Palestinian families out of their homes at the Sheikh Jarrah neighborhood of East al-Quds and Israeli violent raids on worshipers at al-Aqsa Mosque prompted Palestinian retaliation that was followed by a brutal Israeli bombing campaign against the besieged Gaza Strip on May 10. About 260 Palestinians were killed in the 11-day Israeli offensive.
+    [11] => 
+
+    [12] => Also on Wednesday, Israeli forces demolished Palestinian-owned structures to the east of Yatta City, south of the occupied West Bank city of al-Khalil (Hebron).
+    [13] => 
+
+    [14] => According to WAFA, Israeli bulldozers destroyed a rainwater harvesting well in the area of Khallet al-Dabe', east of Yatta, under the pretext that it is built in the area C, which accounts for more than 60 percent of the occupied West Bank, and forms a significant part of a future Palestine state under the so-called two-state solution.
+    [15] => 
+
+    [16] => Israeli forces also demolished an agricultural facility in the area of al-Fakhit as well as three residential structures.
+    [17] => 
+
+    [18] => Press TV’s website can also be accessed at the following alternate addresses:
+
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Press TV’s website can also be accessed at the following alternate addresses:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Israeli authorities have ordered Palestinian landowners to evacuate their land in the town of Tuqu’ in Bethlehem, the occupied West Bank.
+    [1] => 
+
+    [2] => Mayor of Tuqu’, Tayseer Abu-Mefreh, told WAFA news agency that Mohammad Sawarka and Khalil al-Sha’er were notified by the Israeli authorities on Wednesday that they must “evacuate” their land in Tuqu’, east of Bethlehem City, and remove all the cattle corrals there within 14 days.
+    [3] => 
+
+    [4] => Israeli forces also seized agricultural equipment.
+    [5] => 
+
+    [6] => According to the mayor, Palestinian livestock keepers in Tuqu’ have been targeted by the Israeli authorities that aim to expel them from their land to pave the way for the expansion of settlements.
+    [7] => 
+
+    [8] => More than 600,000 Israelis live in over 230 settlements built since the 1967 Israeli occupation of the West Bank and East al-Quds.
+    [9] => 
+
+    [10] => The Israeli regime’s plans to force a number of Palestinian families out of their homes at the Sheikh Jarrah neighborhood of East al-Quds and Israeli violent raids on worshipers at al-Aqsa Mosque prompted Palestinian retaliation that was followed by a brutal Israeli bombing campaign against the besieged Gaza Strip on May 10. About 260 Palestinians were killed in the 11-day Israeli offensive.
+    [11] => 
+
+    [12] => Also on Wednesday, Israeli forces demolished Palestinian-owned structures to the east of Yatta City, south of the occupied West Bank city of al-Khalil (Hebron).
+    [13] => 
+
+    [14] => According to WAFA, Israeli bulldozers destroyed a rainwater harvesting well in the area of Khallet al-Dabe', east of Yatta, under the pretext that it is built in the area C, which accounts for more than 60 percent of the occupied West Bank, and forms a significant part of a future Palestine state under the so-called two-state solution.
+    [15] => 
+
+    [16] => Israeli forces also demolished an agricultural facility in the area of al-Fakhit as well as three residential structures.
+    [17] => 
+
+    [18] => Press TV’s website can also be accessed at the following alternate addresses: 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Israeli authorities have ordered Palestinian landowners to evacuate their land in the town of Tuqu’ in Bethlehem, the occupied West Bank.
+    [1] => 
+
+    [2] => Mayor of Tuqu’, Tayseer Abu-Mefreh, told WAFA news agency that Mohammad Sawarka and Khalil al-Sha’er were notified by the Israeli authorities on Wednesday that they must “evacuate” their land in Tuqu’, east of Bethlehem City, and remove all the cattle corrals there within 14 days.
+    [3] => 
+
+    [4] => Israeli forces also seized agricultural equipment.
+    [5] => 
+
+    [6] => According to the mayor, Palestinian livestock keepers in Tuqu’ have been targeted by the Israeli authorities that aim to expel them from their land to pave the way for the expansion of settlements.
+    [7] => 
+
+    [8] => More than 600,000 Israelis live in over 230 settlements built since the 1967 Israeli occupation of the West Bank and East al-Quds.
+    [9] => 
+
+    [10] => The Israeli regime’s plans to force a number of Palestinian families out of their homes at the Sheikh Jarrah neighborhood of East al-Quds and Israeli violent raids on worshipers at al-Aqsa Mosque prompted Palestinian retaliation that was followed by a brutal Israeli bombing campaign against the besieged Gaza Strip on May 10. About 260 Palestinians were killed in the 11-day Israeli offensive.
+    [11] => 
+
+    [12] => Also on Wednesday, Israeli forces demolished Palestinian-owned structures to the east of Yatta City, south of the occupied West Bank city of al-Khalil (Hebron).
+    [13] => 
+
+    [14] => According to WAFA, Israeli bulldozers destroyed a rainwater harvesting well in the area of Khallet al-Dabe', east of Yatta, under the pretext that it is built in the area C, which accounts for more than 60 percent of the occupied West Bank, and forms a significant part of a future Palestine state under the so-called two-state solution.
+    [15] => 
+
+    [16] => Israeli forces also demolished an agricultural facility in the area of al-Fakhit as well as three residential structures.
+    [17] => 
+
+    [18] => Press TV’s website can also be accessed at the following alternate addresses: 
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Israeli authorities have ordered Palestinian landowners to evacuate their land in the town of Tuqu’ in Bethlehem, the occupied West Bank.
+Mayor of Tuqu’, Tayseer Abu-Mefreh, told WAFA news agency that Mohammad Sawarka and Khalil al-Sha’er were notified by the Israeli authorities on Wednesday that they must “evacuate” their land in Tuqu’, east of Bethlehem City, and remove all the cattle corrals there within 14 days.
+Israeli forces also seized agricultural equipment.
+According to the mayor, Palestinian livestock keepers in Tuqu’ have been targeted by the Israeli authorities that aim to expel them from their land to pave the way for the expansion of settlements.
+More than 600,000 Israelis live in over 230 settlements built since the 1967 Israeli occupation of the West Bank and East al-Quds.
+The Israeli regime’s plans to force a number of Palestinian families out of their homes at the Sheikh Jarrah neighborhood of East al-Quds and Israeli violent raids on worshipers at al-Aqsa Mosque prompted Palestinian retaliation that was followed by a brutal Israeli bombing campaign against the besieged Gaza Strip on May 10. About 260 Palestinians were killed in the 11-day Israeli offensive.
+Also on Wednesday, Israeli forces demolished Palestinian-owned structures to the east of Yatta City, south of the occupied West Bank city of al-Khalil (Hebron).
+According to WAFA, Israeli bulldozers destroyed a rainwater harvesting well in the area of Khallet al-Dabe', east of Yatta, under the pretext that it is built in the area C, which accounts for more than 60 percent of the occupied West Bank, and forms a significant part of a future Palestine state under the so-called two-state solution.
+Israeli forces also demolished an agricultural facility in the area of al-Fakhit as well as three residential structures.
+Press TV’s website can also be accessed at the following alternate addresses: 
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210812_133838_912993.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210812_133838_912993.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
