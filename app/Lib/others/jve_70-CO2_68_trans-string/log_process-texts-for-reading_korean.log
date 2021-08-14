@@ -50917,3 +50917,432 @@ Press TV’s website can also be accessed at the following alternate addresses:
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210812_133838_912993.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210813_124621_465307)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The decision by Russian Embassy in Iran, led by Ambassador Levan Dzhagaryan, to tweet a re-staging of one of the most iconic images of WWII – the picture of Stalin, Churchill, and Roosevelt at the Tehran Conference in 1943 – in conjunction with the newly-installed head of Britain’s diplomatic mission in Iran, Simon Shercliff, has been met with justifiable anger.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'In having his picture taken on the same chairs in front of the same venue, alongside his UK counterpart, then tweeting it out, the Russian Iran Ambassador is guilty of shockingly poor judgement. At best the picture, the message it conveys, is highly insensitive, and at worst deeply insulting at a time when the Iranian people are suffering under the weight of unprecedented sanctions, including those imposed by the UK.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The official history of WWII frames the Tehran Conference between November 28 and December 1, 1943, as a historic meeting between the leaders of the so-called Grand Alliance – US President Franklin Delano Roosevelt, British Prime Minister Winston Churchill, and Soviet Premier Joseph Stalin – with the objective of coordinating their military strategy against Germany and Japan at a critical point in the war, and also to discuss various matters with the post war era in mind.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'What the official history of this event conspicuously abstracts is the fact that Tehran, as it is now, was then the capital of a sovereign nation, which at the time was under occupation by British and Soviet military forces.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Iran had declared its neutrality at the start of the war, but this neutrality was ignored and an Anglo-Soviet invasion of the country was mounted in August 1941; this in service to their respective strategic objectives vis-à-vis the war with Germany.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'At the time, Iran was ruled by Reza Shah. He was forced under pressure from the British and Soviets to abdicate, after which his replacement, his son Muhammad Reza Pahlavi, signed a Tripartite Treaty of Alliance with Britain and the Soviet Union in 1942. It was an alliance in name only, designed to legitimise the country’s occupation.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The point is that the world back then was run on the basis of great-power chauvinism and that WWII, just like its WWI, was in the last analysis a war for empire and colonial possessions, with Iran one of many countries drawn into the war against its will, and occupied in violation of its sovereignty.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => The decision by Russian Embassy in Iran, led by Ambassador Levan Dzhagaryan, to tweet a re-staging of one of the most iconic images of WWII – the picture of Stalin, Churchill, and Roosevelt at the Tehran Conference in 1943 – in conjunction with the newly-installed head of Britain’s diplomatic mission in Iran, Simon Shercliff, has been met with justifiable anger.
+    [1] => 
+
+    [2] => In having his picture taken on the same chairs in front of the same venue, alongside his UK counterpart, then tweeting it out, the Russian Iran Ambassador is guilty of shockingly poor judgement. At best the picture, the message it conveys, is highly insensitive, and at worst deeply insulting at a time when the Iranian people are suffering under the weight of unprecedented sanctions, including those imposed by the UK.
+    [3] => 
+
+    [4] => The official history of WWII frames the Tehran Conference between November 28 and December 1, 1943, as a historic meeting between the leaders of the so-called Grand Alliance – US President Franklin Delano Roosevelt, British Prime Minister Winston Churchill, and Soviet Premier Joseph Stalin – with the objective of coordinating their military strategy against Germany and Japan at a critical point in the war, and also to discuss various matters with the post war era in mind.
+    [5] => 
+
+    [6] => What the official history of this event conspicuously abstracts is the fact that Tehran, as it is now, was then the capital of a sovereign nation, which at the time was under occupation by British and Soviet military forces.
+    [7] => 
+
+    [8] => Iran had declared its neutrality at the start of the war, but this neutrality was ignored and an Anglo-Soviet invasion of the country was mounted in August 1941; this in service to their respective strategic objectives vis-à-vis the war with Germany.
+    [9] => 
+
+    [10] => At the time, Iran was ruled by Reza Shah. He was forced under pressure from the British and Soviets to abdicate, after which his replacement, his son Muhammad Reza Pahlavi, signed a Tripartite Treaty of Alliance with Britain and the Soviet Union in 1942. It was an alliance in name only, designed to legitimise the country’s occupation.
+    [11] => 
+
+    [12] => The point is that the world back then was run on the basis of great-power chauvinism and that WWII, just like its WWI, was in the last analysis a war for empire and colonial possessions, with Iran one of many countries drawn into the war against its will, and occupied in violation of its sovereignty.
+    [13] => 
+
+    [14] => The Iran of today is unrecognisable compared to the Iran of yesterday. It has, since 1979, placed an unshakeable premium on its independence and sovereignty, refusing to bow to those who yearn for the days when the country was but a doormat in the eyes of imperialist countries led by the likes of Churchill, Roosevelt and Stalin. Its stance when it comes to the ongoing negotiations taking place in Vienna over the JCPOA, and its resistance to US hegemony and Israeli expansionism in the region overall, leaves no doubt of it.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => The decision by Russian Embassy in Iran, led by Ambassador Levan Dzhagaryan, to tweet a re-staging of one of the most iconic images of WWII – the picture of Stalin, Churchill, and Roosevelt at the Tehran Conference in 1943 – in conjunction with the newly-installed head of Britain’s diplomatic mission in Iran, Simon Shercliff, has been met with justifiable anger.
+    [1] => 
+
+    [2] => In having his picture taken on the same chairs in front of the same venue, alongside his UK counterpart, then tweeting it out, the Russian Iran Ambassador is guilty of shockingly poor judgement. At best the picture, the message it conveys, is highly insensitive, and at worst deeply insulting at a time when the Iranian people are suffering under the weight of unprecedented sanctions, including those imposed by the UK.
+    [3] => 
+
+    [4] => The official history of WWII frames the Tehran Conference between November 28 and December 1, 1943, as a historic meeting between the leaders of the so-called Grand Alliance – US President Franklin Delano Roosevelt, British Prime Minister Winston Churchill, and Soviet Premier Joseph Stalin – with the objective of coordinating their military strategy against Germany and Japan at a critical point in the war, and also to discuss various matters with the post war era in mind.
+    [5] => 
+
+    [6] => What the official history of this event conspicuously abstracts is the fact that Tehran, as it is now, was then the capital of a sovereign nation, which at the time was under occupation by British and Soviet military forces.
+    [7] => 
+
+    [8] => Iran had declared its neutrality at the start of the war, but this neutrality was ignored and an Anglo-Soviet invasion of the country was mounted in August 1941; this in service to their respective strategic objectives vis-à-vis the war with Germany.
+    [9] => 
+
+    [10] => At the time, Iran was ruled by Reza Shah. He was forced under pressure from the British and Soviets to abdicate, after which his replacement, his son Muhammad Reza Pahlavi, signed a Tripartite Treaty of Alliance with Britain and the Soviet Union in 1942. It was an alliance in name only, designed to legitimise the country’s occupation.
+    [11] => 
+
+    [12] => The point is that the world back then was run on the basis of great-power chauvinism and that WWII, just like its WWI, was in the last analysis a war for empire and colonial possessions, with Iran one of many countries drawn into the war against its will, and occupied in violation of its sovereignty.
+    [13] => 
+
+    [14] => The Iran of today is unrecognisable compared to the Iran of yesterday. It has, since 1979, placed an unshakeable premium on its independence and sovereignty, refusing to bow to those who yearn for the days when the country was but a doormat in the eyes of imperialist countries led by the likes of Churchill, Roosevelt and Stalin. Its stance when it comes to the ongoing negotiations taking place in Vienna over the JCPOA, and its resistance to US hegemony and Israeli expansionism in the region overall, leaves no doubt of it.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->In having his picture taken on the same chairs in front of the same venue, alongside his UK counterpart, then tweeting it out, the Russian Iran Ambassador is guilty of shockingly poor judgement. At best the picture, the message it conveys, is highly insensitive, and at worst deeply insulting at a time when the Iranian people are suffering under the weight of unprecedented sanctions, including those imposed by the UK.
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->At the time, Iran was ruled by Reza Shah. He was forced under pressure from the British and Soviets to abdicate, after which his replacement, his son Muhammad Reza Pahlavi, signed a Tripartite Treaty of Alliance with Britain and the Soviet Union in 1942. It was an alliance in name only, designed to legitimise the country’s occupation.
+$matches ==>
+Array
+(
+    [0] => h. 
+    [1] => h.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->The Iran of today is unrecognisable compared to the Iran of yesterday. It has, since 1979, placed an unshakeable premium on its independence and sovereignty, refusing to bow to those who yearn for the days when the country was but a doormat in the eyes of imperialist countries led by the likes of Churchill, Roosevelt and Stalin. Its stance when it comes to the ongoing negotiations taking place in Vienna over the JCPOA, and its resistance to US hegemony and Israeli expansionism in the region overall, leaves no doubt of it.
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => The decision by Russian Embassy in Iran, led by Ambassador Levan Dzhagaryan, to tweet a re-staging of one of the most iconic images of WWII – the picture of Stalin, Churchill, and Roosevelt at the Tehran Conference in 1943 – in conjunction with the newly-installed head of Britain’s diplomatic mission in Iran, Simon Shercliff, has been met with justifiable anger.
+    [1] => 
+
+    [2] => In having his picture taken on the same chairs in front of the same venue, alongside his UK counterpart, then tweeting it out, the Russian Iran Ambassador is guilty of shockingly poor judgement.At best the picture, the message it conveys, is highly insensitive, and at worst deeply insulting at a time when the Iranian people are suffering under the weight of unprecedented sanctions, including those imposed by the UK.
+    [3] => 
+
+    [4] => The official history of WWII frames the Tehran Conference between November 28 and December 1, 1943, as a historic meeting between the leaders of the so-called Grand Alliance – US President Franklin Delano Roosevelt, British Prime Minister Winston Churchill, and Soviet Premier Joseph Stalin – with the objective of coordinating their military strategy against Germany and Japan at a critical point in the war, and also to discuss various matters with the post war era in mind.
+    [5] => 
+
+    [6] => What the official history of this event conspicuously abstracts is the fact that Tehran, as it is now, was then the capital of a sovereign nation, which at the time was under occupation by British and Soviet military forces.
+    [7] => 
+
+    [8] => Iran had declared its neutrality at the start of the war, but this neutrality was ignored and an Anglo-Soviet invasion of the country was mounted in August 1941; this in service to their respective strategic objectives vis-à-vis the war with Germany.
+    [9] => 
+
+    [10] => At the time, Iran was ruled by Reza Shah.He was forced under pressure from the British and Soviets to abdicate, after which his replacement, his son Muhammad Reza Pahlavi, signed a Tripartite Treaty of Alliance with Britain and the Soviet Union in 1942. It was an alliance in name only, designed to legitimise the country’s occupation.
+    [11] => 
+
+    [12] => The point is that the world back then was run on the basis of great-power chauvinism and that WWII, just like its WWI, was in the last analysis a war for empire and colonial possessions, with Iran one of many countries drawn into the war against its will, and occupied in violation of its sovereignty.
+    [13] => 
+
+    [14] => The Iran of today is unrecognisable compared to the Iran of yesterday.It has, since 1979, placed an unshakeable premium on its independence and sovereignty, refusing to bow to those who yearn for the days when the country was but a doormat in the eyes of imperialist countries led by the likes of Churchill, Roosevelt and Stalin.Its stance when it comes to the ongoing negotiations taking place in Vienna over the JCPOA, and its resistance to US hegemony and Israeli expansionism in the region overall, leaves no doubt of it.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>The decision by Russian Embassy in Iran, led by Ambassador Levan Dzhagaryan, to tweet a re-staging of one of the most iconic images of WWII – the picture of Stalin, Churchill, and Roosevelt at the Tehran Conference in 1943 – in conjunction with the newly-installed head of Britain’s diplomatic mission in Iran, Simon Shercliff, has been met with justifiable anger.
+In having his picture taken on the same chairs in front of the same venue, alongside his UK counterpart, then tweeting it out, the Russian Iran Ambassador is guilty of shockingly poor judgement.At best the picture, the message it conveys, is highly insensitive, and at worst deeply insulting at a time when the Iranian people are suffering under the weight of unprecedented sanctions, including those imposed by the UK.
+The official history of WWII frames the Tehran Conference between November 28 and December 1, 1943, as a historic meeting between the leaders of the so-called Grand Alliance – US President Franklin Delano Roosevelt, British Prime Minister Winston Churchill, and Soviet Premier Joseph Stalin – with the objective of coordinating their military strategy against Germany and Japan at a critical point in the war, and also to discuss various matters with the post war era in mind.
+What the official history of this event conspicuously abstracts is the fact that Tehran, as it is now, was then the capital of a sovereign nation, which at the time was under occupation by British and Soviet military forces.
+Iran had declared its neutrality at the start of the war, but this neutrality was ignored and an Anglo-Soviet invasion of the country was mounted in August 1941; this in service to their respective strategic objectives vis-à-vis the war with Germany.
+At the time, Iran was ruled by Reza Shah.He was forced under pressure from the British and Soviets to abdicate, after which his replacement, his son Muhammad Reza Pahlavi, signed a Tripartite Treaty of Alliance with Britain and the Soviet Union in 1942. It was an alliance in name only, designed to legitimise the country’s occupation.
+The point is that the world back then was run on the basis of great-power chauvinism and that WWII, just like its WWI, was in the last analysis a war for empire and colonial possessions, with Iran one of many countries drawn into the war against its will, and occupied in violation of its sovereignty.
+The Iran of today is unrecognisable compared to the Iran of yesterday.It has, since 1979, placed an unshakeable premium on its independence and sovereignty, refusing to bow to those who yearn for the days when the country was but a doormat in the eyes of imperialist countries led by the likes of Churchill, Roosevelt and Stalin.Its stance when it comes to the ongoing negotiations taking place in Vienna over the JCPOA, and its resistance to US hegemony and Israeli expansionism in the region overall, leaves no doubt of it.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210813_124621_465307.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210813_124621_465307.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210813_125114_278728)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'This is why it defies belief that a Russian ambassador would allow himself to be pictured with a British official like two colonial masters lording it over a subject people, particularly just after a new administration has taken office in Tehran.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Russia and Iran have enjoyed favourable, if not close, relations in recent years. Syria is, of course, where both countries have worked in tandem to defend the Assad government and neutralise the terrorist threat that has existed there for the past decade. There is, however, understandable distrust in Tehran when it comes to Moscow’s actions in trying to be a friend to everyone, including Iran’s enemies, in the region or with a regional agenda, up to and including the US. This distrust conforms to the dictum that he who tries to befriend everyone is a friend to no one.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Rather than issue such a convoluted response, perhaps it might have been simpler, and certainly better, to issue an apology and take the offending tweet down.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'You just know that this incident and the ensuing fallout will be music to the ears of London. The UK political establishment has gone out of its way to downplay the role of the Soviet Union in crushing Nazi Germany in WWII, while enhancing its own role in that cause. The idea that a British official would agree to such a picture without an ulterior motive is simply not credible. Indeed, it’s more than likely that the re-staging of this image was done at the suggestion of Mr. Shercliff in the first place.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Ambassador Dzhagaryan and Ambassador Shercliff, kindly take note.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'John Wight is an author and political commentator based in Scotland.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => This is why it defies belief that a Russian ambassador would allow himself to be pictured with a British official like two colonial masters lording it over a subject people, particularly just after a new administration has taken office in Tehran.
+    [1] => 
+
+    [2] => Russia and Iran have enjoyed favourable, if not close, relations in recent years. Syria is, of course, where both countries have worked in tandem to defend the Assad government and neutralise the terrorist threat that has existed there for the past decade. There is, however, understandable distrust in Tehran when it comes to Moscow’s actions in trying to be a friend to everyone, including Iran’s enemies, in the region or with a regional agenda, up to and including the US. This distrust conforms to the dictum that he who tries to befriend everyone is a friend to no one.
+    [3] => 
+
+    [4] => In response to the furore whipped up by the photo-op in Tehran with the Russian ambassador and the chief of Britain’s diplomatic station in the country, the Russian Embassy in Iran issued the following statement via Twitter: “Taking into account the ambiguous reaction to our photo, we would like to note that it does not have any anti-Iranian context. We were not going to offend the feelings of the friendly Iranian people. The only meaning that this photo has to pay tribute to the joint efforts of the allied states against Nazism during the Second World War. Iran is our friend and neighbor, and we will continue to strengthen relations based on mutual respect.”
+
+    [5] => 
+
+    [6] => Rather than issue such a convoluted response, perhaps it might have been simpler, and certainly better, to issue an apology and take the offending tweet down.
+    [7] => 
+
+    [8] => You just know that this incident and the ensuing fallout will be music to the ears of London. The UK political establishment has gone out of its way to downplay the role of the Soviet Union in crushing Nazi Germany in WWII, while enhancing its own role in that cause. The idea that a British official would agree to such a picture without an ulterior motive is simply not credible. Indeed, it’s more than likely that the re-staging of this image was done at the suggestion of Mr. Shercliff in the first place.
+    [9] => 
+
+    [10] => In response to the offending image and tweet, Iran’s Foreign Minister, Javad Zarif, tweeted thus: “I saw an extremely inappropriate picture today. Need I remind all that Aug. 2021 is neither Aug. 1941 nor Dec. 1943. The Iranian people have shown – including during the JCPOA talks – that their destiny can NEVER be subject to decisions in foreign embassies or by foreign powers.”
+
+    [11] => 
+
+    [12] => Ambassador Dzhagaryan and Ambassador Shercliff, kindly take note.
+    [13] => 
+
+    [14] =>  
+
+    [15] => 
+
+    [16] => John Wight is an author and political commentator based in Scotland.
+    [17] => 
+
+    [18] => (The views expressed in this article do not necessarily reflect those of Press TV.)
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->In response to the furore whipped up by the photo-op in Tehran with the Russian ambassador and the chief of Britain’s diplomatic station in the country, the Russian Embassy in Iran issued the following statement via Twitter: “Taking into account the ambiguous reaction to our photo, we would like to note that it does not have any anti-Iranian context. We were not going to offend the feelings of the friendly Iranian people. The only meaning that this photo has to pay tribute to the joint efforts of the allied states against Nazism during the Second World War. Iran is our friend and neighbor, and we will continue to strengthen relations based on mutual respect.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->In response to the offending image and tweet, Iran’s Foreign Minister, Javad Zarif, tweeted thus: “I saw an extremely inappropriate picture today. Need I remind all that Aug. 2021 is neither Aug. 1941 nor Dec. 1943. The Iranian people have shown – including during the JCPOA talks – that their destiny can NEVER be subject to decisions in foreign embassies or by foreign powers.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line --> 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => This is why it defies belief that a Russian ambassador would allow himself to be pictured with a British official like two colonial masters lording it over a subject people, particularly just after a new administration has taken office in Tehran.
+    [1] => 
+
+    [2] => Russia and Iran have enjoyed favourable, if not close, relations in recent years. Syria is, of course, where both countries have worked in tandem to defend the Assad government and neutralise the terrorist threat that has existed there for the past decade. There is, however, understandable distrust in Tehran when it comes to Moscow’s actions in trying to be a friend to everyone, including Iran’s enemies, in the region or with a regional agenda, up to and including the US. This distrust conforms to the dictum that he who tries to befriend everyone is a friend to no one.
+    [3] => 
+
+    [4] => In response to the furore whipped up by the photo-op in Tehran with the Russian ambassador and the chief of Britain’s diplomatic station in the country, the Russian Embassy in Iran issued the following statement via Twitter: “Taking into account the ambiguous reaction to our photo, we would like to note that it does not have any anti-Iranian context. We were not going to offend the feelings of the friendly Iranian people. The only meaning that this photo has to pay tribute to the joint efforts of the allied states against Nazism during the Second World War. Iran is our friend and neighbor, and we will continue to strengthen relations based on mutual respect.” 
+    [5] => 
+
+    [6] => Rather than issue such a convoluted response, perhaps it might have been simpler, and certainly better, to issue an apology and take the offending tweet down.
+    [7] => 
+
+    [8] => You just know that this incident and the ensuing fallout will be music to the ears of London. The UK political establishment has gone out of its way to downplay the role of the Soviet Union in crushing Nazi Germany in WWII, while enhancing its own role in that cause. The idea that a British official would agree to such a picture without an ulterior motive is simply not credible. Indeed, it’s more than likely that the re-staging of this image was done at the suggestion of Mr. Shercliff in the first place.
+    [9] => 
+
+    [10] => In response to the offending image and tweet, Iran’s Foreign Minister, Javad Zarif, tweeted thus: “I saw an extremely inappropriate picture today. Need I remind all that Aug. 2021 is neither Aug. 1941 nor Dec. 1943. The Iranian people have shown – including during the JCPOA talks – that their destiny can NEVER be subject to decisions in foreign embassies or by foreign powers.” 
+    [11] => 
+
+    [12] => Ambassador Dzhagaryan and Ambassador Shercliff, kindly take note.
+    [13] => 
+
+    [14] =>   
+    [15] => 
+
+    [16] => John Wight is an author and political commentator based in Scotland.
+    [17] => 
+
+    [18] => (The views expressed in this article do not necessarily reflect those of Press TV.)
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Russia and Iran have enjoyed favourable, if not close, relations in recent years. Syria is, of course, where both countries have worked in tandem to defend the Assad government and neutralise the terrorist threat that has existed there for the past decade. There is, however, understandable distrust in Tehran when it comes to Moscow’s actions in trying to be a friend to everyone, including Iran’s enemies, in the region or with a regional agenda, up to and including the US. This distrust conforms to the dictum that he who tries to befriend everyone is a friend to no one.
+$matches ==>
+Array
+(
+    [0] => s. 
+    [1] => s.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In response to the furore whipped up by the photo-op in Tehran with the Russian ambassador and the chief of Britain’s diplomatic station in the country, the Russian Embassy in Iran issued the following statement via Twitter: “Taking into account the ambiguous reaction to our photo, we would like to note that it does not have any anti-Iranian context. We were not going to offend the feelings of the friendly Iranian people. The only meaning that this photo has to pay tribute to the joint efforts of the allied states against Nazism during the Second World War. Iran is our friend and neighbor, and we will continue to strengthen relations based on mutual respect.” 
+$matches ==>
+Array
+(
+    [0] => t. 
+    [1] => t.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->You just know that this incident and the ensuing fallout will be music to the ears of London. The UK political establishment has gone out of its way to downplay the role of the Soviet Union in crushing Nazi Germany in WWII, while enhancing its own role in that cause. The idea that a British official would agree to such a picture without an ulterior motive is simply not credible. Indeed, it’s more than likely that the re-staging of this image was done at the suggestion of Mr. Shercliff in the first place.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->In response to the offending image and tweet, Iran’s Foreign Minister, Javad Zarif, tweeted thus: “I saw an extremely inappropriate picture today. Need I remind all that Aug. 2021 is neither Aug. 1941 nor Dec. 1943. The Iranian people have shown – including during the JCPOA talks – that their destiny can NEVER be subject to decisions in foreign embassies or by foreign powers.” 
+$matches ==>
+Array
+(
+    [0] => y. 
+    [1] => y.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => This is why it defies belief that a Russian ambassador would allow himself to be pictured with a British official like two colonial masters lording it over a subject people, particularly just after a new administration has taken office in Tehran.
+    [1] => 
+
+    [2] => Russia and Iran have enjoyed favourable, if not close, relations in recent years.Syria is, of course, where both countries have worked in tandem to defend the Assad government and neutralise the terrorist threat that has existed there for the past decade.There is, however, understandable distrust in Tehran when it comes to Moscow’s actions in trying to be a friend to everyone, including Iran’s enemies, in the region or with a regional agenda, up to and including the US.This distrust conforms to the dictum that he who tries to befriend everyone is a friend to no one.
+    [3] => 
+
+    [4] => In response to the furore whipped up by the photo-op in Tehran with the Russian ambassador and the chief of Britain’s diplomatic station in the country, the Russian Embassy in Iran issued the following statement via Twitter: “Taking into account the ambiguous reaction to our photo, we would like to note that it does not have any anti-Iranian context.We were not going to offend the feelings of the friendly Iranian people.The only meaning that this photo has to pay tribute to the joint efforts of the allied states against Nazism during the Second World War.Iran is our friend and neighbor, and we will continue to strengthen relations based on mutual respect.” 
+    [5] => 
+
+    [6] => Rather than issue such a convoluted response, perhaps it might have been simpler, and certainly better, to issue an apology and take the offending tweet down.
+    [7] => 
+
+    [8] => You just know that this incident and the ensuing fallout will be music to the ears of London.The UK political establishment has gone out of its way to downplay the role of the Soviet Union in crushing Nazi Germany in WWII, while enhancing its own role in that cause.The idea that a British official would agree to such a picture without an ulterior motive is simply not credible.Indeed, it’s more than likely that the re-staging of this image was done at the suggestion of Mr.Shercliff in the first place.
+    [9] => 
+
+    [10] => In response to the offending image and tweet, Iran’s Foreign Minister, Javad Zarif, tweeted thus: “I saw an extremely inappropriate picture today.Need I remind all that Aug.2021 is neither Aug.1941 nor Dec.1943. The Iranian people have shown – including during the JCPOA talks – that their destiny can NEVER be subject to decisions in foreign embassies or by foreign powers.” 
+    [11] => 
+
+    [12] => Ambassador Dzhagaryan and Ambassador Shercliff, kindly take note.
+    [13] => 
+
+    [14] =>   
+    [15] => 
+
+    [16] => John Wight is an author and political commentator based in Scotland.
+    [17] => 
+
+    [18] => (The views expressed in this article do not necessarily reflect those of Press TV.)
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>This is why it defies belief that a Russian ambassador would allow himself to be pictured with a British official like two colonial masters lording it over a subject people, particularly just after a new administration has taken office in Tehran.
+Russia and Iran have enjoyed favourable, if not close, relations in recent years.Syria is, of course, where both countries have worked in tandem to defend the Assad government and neutralise the terrorist threat that has existed there for the past decade.There is, however, understandable distrust in Tehran when it comes to Moscow’s actions in trying to be a friend to everyone, including Iran’s enemies, in the region or with a regional agenda, up to and including the US.This distrust conforms to the dictum that he who tries to befriend everyone is a friend to no one.
+In response to the furore whipped up by the photo-op in Tehran with the Russian ambassador and the chief of Britain’s diplomatic station in the country, the Russian Embassy in Iran issued the following statement via Twitter: “Taking into account the ambiguous reaction to our photo, we would like to note that it does not have any anti-Iranian context.We were not going to offend the feelings of the friendly Iranian people.The only meaning that this photo has to pay tribute to the joint efforts of the allied states against Nazism during the Second World War.Iran is our friend and neighbor, and we will continue to strengthen relations based on mutual respect.” 
+Rather than issue such a convoluted response, perhaps it might have been simpler, and certainly better, to issue an apology and take the offending tweet down.
+You just know that this incident and the ensuing fallout will be music to the ears of London.The UK political establishment has gone out of its way to downplay the role of the Soviet Union in crushing Nazi Germany in WWII, while enhancing its own role in that cause.The idea that a British official would agree to such a picture without an ulterior motive is simply not credible.Indeed, it’s more than likely that the re-staging of this image was done at the suggestion of Mr.Shercliff in the first place.
+In response to the offending image and tweet, Iran’s Foreign Minister, Javad Zarif, tweeted thus: “I saw an extremely inappropriate picture today.Need I remind all that Aug.2021 is neither Aug.1941 nor Dec.1943. The Iranian people have shown – including during the JCPOA talks – that their destiny can NEVER be subject to decisions in foreign embassies or by foreign powers.” 
+Ambassador Dzhagaryan and Ambassador Shercliff, kindly take note.
+  
+John Wight is an author and political commentator based in Scotland.
+(The views expressed in this article do not necessarily reflect those of Press TV.)
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210813_125114_278728.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210813_125114_278728.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
