@@ -51346,3 +51346,296 @@ John Wight is an author and political commentator based in Scotland.
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210813_125114_278728.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210814_120154_984689)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Chinese health officials said Friday they were bringing the country's worst COVID outbreak in months under control after new infections hit a seven-month high earlier this week.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Multiple cluster outbreaks of the highly contagious Delta variant have spread to 48 cities in 18 provinces nationwide, infecting more than 1,282 people, officials said.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'However there had been no new infections in many hotspots in recent days owing to stringent virus control measures, they added.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '"Of these 48 cities, 36 have not reported any new infections in the past five consecutive days," Chinese Center for Disease Control and Prevention official He Qinghua told reporters.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'State media has described the current outbreak -- which has sparked local lockdowns, mass testing and travel restrictions -- as the most severe since the virus first emerged in the central city of Wuhan.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'More than half of China's population, 777 million people, have been fully inoculated so far, with over 1.83 billion doses administered nationwide, a National Health Commission spokesman announced Friday.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'China has also strengthened anti-virus controls for international flights and cargo shipments in response to the latest outbreak.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'According to the results of genetic sequencing, the sources of infection are all from overseas," said He.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'One terminal of Ningbo-Zhoushan port, the world's third-biggest by cargo volume, suspended operations Wednesday after a worker tested positive.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'The latest outbreak emerged in mid-July in the eastern city of Nanjing, after nine airport cleaners tested positive for the virus.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Dozens of local officials have since been punished for mishandling the outbreak, as Beijing scrambled to contain the spread of domestic transmissions.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'China reported 99 new cases Friday, 47 of which were local transmissions -- down from a seven-month high of 108 local infections announced Tuesday.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Chinese health officials said Friday they were bringing the country's worst COVID outbreak in months under control after new infections hit a seven-month high earlier this week.
+    [1] => 
+
+    [2] => Multiple cluster outbreaks of the highly contagious Delta variant have spread to 48 cities in 18 provinces nationwide, infecting more than 1,282 people, officials said.
+    [3] => 
+
+    [4] => However there had been no new infections in many hotspots in recent days owing to stringent virus control measures, they added.
+    [5] => 
+
+    [6] => "Of these 48 cities, 36 have not reported any new infections in the past five consecutive days," Chinese Center for Disease Control and Prevention official He Qinghua told reporters.
+    [7] => 
+
+    [8] => "In these circumstances, the risk of a nationwide outbreak is generally controllable and there is relatively little risk of a large-scale outbreak occurring on the national scale."
+
+    [9] => 
+
+    [10] => State media has described the current outbreak -- which has sparked local lockdowns, mass testing and travel restrictions -- as the most severe since the virus first emerged in the central city of Wuhan.
+    [11] => 
+
+    [12] => More than half of China's population, 777 million people, have been fully inoculated so far, with over 1.83 billion doses administered nationwide, a National Health Commission spokesman announced Friday.
+    [13] => 
+
+    [14] => China has also strengthened anti-virus controls for international flights and cargo shipments in response to the latest outbreak.
+    [15] => 
+
+    [16] => According to the results of genetic sequencing, the sources of infection are all from overseas," said He.
+    [17] => 
+
+    [18] => One terminal of Ningbo-Zhoushan port, the world's third-biggest by cargo volume, suspended operations Wednesday after a worker tested positive.
+    [19] => 
+
+    [20] => The latest outbreak emerged in mid-July in the eastern city of Nanjing, after nine airport cleaners tested positive for the virus.
+    [21] => 
+
+    [22] => Dozens of local officials have since been punished for mishandling the outbreak, as Beijing scrambled to contain the spread of domestic transmissions.
+    [23] => 
+
+    [24] => China reported 99 new cases Friday, 47 of which were local transmissions -- down from a seven-month high of 108 local infections announced Tuesday.
+    [25] => 
+
+    [26] => (Source: AFP)
+
+    [27] => 
+
+    [28] => Press TV’s website can also be accessed at the following alternate addresses:
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->"In these circumstances, the risk of a nationwide outbreak is generally controllable and there is relatively little risk of a large-scale outbreak occurring on the national scale."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->(Source: AFP)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Chinese health officials said Friday they were bringing the country's worst COVID outbreak in months under control after new infections hit a seven-month high earlier this week.
+    [1] => 
+
+    [2] => Multiple cluster outbreaks of the highly contagious Delta variant have spread to 48 cities in 18 provinces nationwide, infecting more than 1,282 people, officials said.
+    [3] => 
+
+    [4] => However there had been no new infections in many hotspots in recent days owing to stringent virus control measures, they added.
+    [5] => 
+
+    [6] => "Of these 48 cities, 36 have not reported any new infections in the past five consecutive days," Chinese Center for Disease Control and Prevention official He Qinghua told reporters.
+    [7] => 
+
+    [8] => "In these circumstances, the risk of a nationwide outbreak is generally controllable and there is relatively little risk of a large-scale outbreak occurring on the national scale." 
+    [9] => 
+
+    [10] => State media has described the current outbreak -- which has sparked local lockdowns, mass testing and travel restrictions -- as the most severe since the virus first emerged in the central city of Wuhan.
+    [11] => 
+
+    [12] => More than half of China's population, 777 million people, have been fully inoculated so far, with over 1.83 billion doses administered nationwide, a National Health Commission spokesman announced Friday.
+    [13] => 
+
+    [14] => China has also strengthened anti-virus controls for international flights and cargo shipments in response to the latest outbreak.
+    [15] => 
+
+    [16] => According to the results of genetic sequencing, the sources of infection are all from overseas," said He.
+    [17] => 
+
+    [18] => One terminal of Ningbo-Zhoushan port, the world's third-biggest by cargo volume, suspended operations Wednesday after a worker tested positive.
+    [19] => 
+
+    [20] => The latest outbreak emerged in mid-July in the eastern city of Nanjing, after nine airport cleaners tested positive for the virus.
+    [21] => 
+
+    [22] => Dozens of local officials have since been punished for mishandling the outbreak, as Beijing scrambled to contain the spread of domestic transmissions.
+    [23] => 
+
+    [24] => China reported 99 new cases Friday, 47 of which were local transmissions -- down from a seven-month high of 108 local infections announced Tuesday.
+    [25] => 
+
+    [26] => (Source: AFP) 
+    [27] => 
+
+    [28] => Press TV’s website can also be accessed at the following alternate addresses:
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Chinese health officials said Friday they were bringing the country's worst COVID outbreak in months under control after new infections hit a seven-month high earlier this week.
+    [1] => 
+
+    [2] => Multiple cluster outbreaks of the highly contagious Delta variant have spread to 48 cities in 18 provinces nationwide, infecting more than 1,282 people, officials said.
+    [3] => 
+
+    [4] => However there had been no new infections in many hotspots in recent days owing to stringent virus control measures, they added.
+    [5] => 
+
+    [6] => "Of these 48 cities, 36 have not reported any new infections in the past five consecutive days," Chinese Center for Disease Control and Prevention official He Qinghua told reporters.
+    [7] => 
+
+    [8] => "In these circumstances, the risk of a nationwide outbreak is generally controllable and there is relatively little risk of a large-scale outbreak occurring on the national scale." 
+    [9] => 
+
+    [10] => State media has described the current outbreak -- which has sparked local lockdowns, mass testing and travel restrictions -- as the most severe since the virus first emerged in the central city of Wuhan.
+    [11] => 
+
+    [12] => More than half of China's population, 777 million people, have been fully inoculated so far, with over 1.83 billion doses administered nationwide, a National Health Commission spokesman announced Friday.
+    [13] => 
+
+    [14] => China has also strengthened anti-virus controls for international flights and cargo shipments in response to the latest outbreak.
+    [15] => 
+
+    [16] => According to the results of genetic sequencing, the sources of infection are all from overseas," said He.
+    [17] => 
+
+    [18] => One terminal of Ningbo-Zhoushan port, the world's third-biggest by cargo volume, suspended operations Wednesday after a worker tested positive.
+    [19] => 
+
+    [20] => The latest outbreak emerged in mid-July in the eastern city of Nanjing, after nine airport cleaners tested positive for the virus.
+    [21] => 
+
+    [22] => Dozens of local officials have since been punished for mishandling the outbreak, as Beijing scrambled to contain the spread of domestic transmissions.
+    [23] => 
+
+    [24] => China reported 99 new cases Friday, 47 of which were local transmissions -- down from a seven-month high of 108 local infections announced Tuesday.
+    [25] => 
+
+    [26] => (Source: AFP) 
+    [27] => 
+
+    [28] => Press TV’s website can also be accessed at the following alternate addresses:
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Chinese health officials said Friday they were bringing the country's worst COVID outbreak in months under control after new infections hit a seven-month high earlier this week.
+Multiple cluster outbreaks of the highly contagious Delta variant have spread to 48 cities in 18 provinces nationwide, infecting more than 1,282 people, officials said.
+However there had been no new infections in many hotspots in recent days owing to stringent virus control measures, they added.
+"Of these 48 cities, 36 have not reported any new infections in the past five consecutive days," Chinese Center for Disease Control and Prevention official He Qinghua told reporters.
+"In these circumstances, the risk of a nationwide outbreak is generally controllable and there is relatively little risk of a large-scale outbreak occurring on the national scale." 
+State media has described the current outbreak -- which has sparked local lockdowns, mass testing and travel restrictions -- as the most severe since the virus first emerged in the central city of Wuhan.
+More than half of China's population, 777 million people, have been fully inoculated so far, with over 1.83 billion doses administered nationwide, a National Health Commission spokesman announced Friday.
+China has also strengthened anti-virus controls for international flights and cargo shipments in response to the latest outbreak.
+According to the results of genetic sequencing, the sources of infection are all from overseas," said He.
+One terminal of Ningbo-Zhoushan port, the world's third-biggest by cargo volume, suspended operations Wednesday after a worker tested positive.
+The latest outbreak emerged in mid-July in the eastern city of Nanjing, after nine airport cleaners tested positive for the virus.
+Dozens of local officials have since been punished for mishandling the outbreak, as Beijing scrambled to contain the spread of domestic transmissions.
+China reported 99 new cases Friday, 47 of which were local transmissions -- down from a seven-month high of 108 local infections announced Tuesday.
+(Source: AFP) 
+Press TV’s website can also be accessed at the following alternate addresses:
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210814_120154_984689.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210814_120154_984689.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
