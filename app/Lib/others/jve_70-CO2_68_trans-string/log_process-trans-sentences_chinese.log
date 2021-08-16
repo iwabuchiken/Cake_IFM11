@@ -6371,3 +6371,38 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210730_142853_040205.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210730_142853_040205.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210815_214917_847443)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 埼玉和千叶创下次高，以首都圈为首各地疫情
+    [1] => 蔓延[man4yan2
+    [2] => 
+    [3] => 势头[:momentum
+    [4] => 不减。]]当天总计5人死亡，包括神奈川2人等。东京都知事小池百合子1日鉴于新冠疫情急剧恶化，呼吁称“德尔塔毒株是非常强大的敌人，现在是
+    [5] => 暑假[shu3jia4
+    [6] => ]]
+    [7] => 但希望大家在家里度过，并与家人一道采取防疫措施”。她在视察都政府运营的大规模疫苗接种中心后接受媒体采访这样表示。小池把此次疫情急剧蔓延与之前的几波疫情相比较，说明称“年轻人群的感染占压倒性多数，40多岁和50多岁人群重症增多”。她表示将与中央政府和市区町村合作，加快对40多岁和50多岁人群的疫苗接种。日本全国知事会1日也
+    [8] => 汇总[hui4-:summary
+    [9] => ]]
+    [10] => 对中央政府的紧急建议，向国民发出了要求避免外出旅行及返乡的讯息，拟写进应探讨严格限制外出的封城措施。东京都和冲绳县延长了宣言期间，北海道等5个道府县被适用防止蔓延等重点措施。紧急建议指出，各地新增病例数创最高纪录、可见重症患者增多及病床使用率上升，认为应发出强烈讯息敦促国民改变行为并加强对年轻人群的工作。有意见提出“希望认真探讨完善法律，包括封城那样的限制移动措施”。重点措施对象包括北海道(札幌市)、石川县(金泽市)、京都府(京都市)、兵库县(神户市等15个市町)、福冈县(福冈市等22个市町村)。要求餐饮店停止提供酒类并缩短营业时间至晚8点关门等。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)埼玉和千叶创下次高，以首都圈为首各地疫情
+[process-trans-sentences_chinese.php : 216] match => 蔓延[man4yan2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 216] match => 势头[:momentum
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)不减。]]当天总计5人死亡，包括神奈川2人等。东京都知事小池百合子1日鉴于新冠疫情急剧恶化，呼吁称“德尔塔毒株是非常强大的敌人，现在是
+[process-trans-sentences_chinese.php : 216] match => 暑假[shu3jia4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)但希望大家在家里度过，并与家人一道采取防疫措施”。她在视察都政府运营的大规模疫苗接种中心后接受媒体采访这样表示。小池把此次疫情急剧蔓延与之前的几波疫情相比较，说明称“年轻人群的感染占压倒性多数，40多岁和50多岁人群重症增多”。她表示将与中央政府和市区町村合作，加快对40多岁和50多岁人群的疫苗接种。日本全国知事会1日也
+[process-trans-sentences_chinese.php : 216] match => 汇总[hui4-:summary
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)对中央政府的紧急建议，向国民发出了要求避免外出旅行及返乡的讯息，拟写进应探讨严格限制外出的封城措施。东京都和冲绳县延长了宣言期间，北海道等5个道府县被适用防止蔓延等重点措施。紧急建议指出，各地新增病例数创最高纪录、可见重症患者增多及病床使用率上升，认为应发出强烈讯息敦促国民改变行为并加强对年轻人群的工作。有意见提出“希望认真探讨完善法律，包括封城那样的限制移动措施”。重点措施对象包括北海道(札幌市)、石川县(金泽市)、京都府(京都市)、兵库县(神户市等15个市町)、福冈县(福冈市等22个市町村)。要求餐饮店停止提供酒类并缩短营业时间至晚8点关门等。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210815_214917_863043.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210815_214917_863043.txt'
+  
