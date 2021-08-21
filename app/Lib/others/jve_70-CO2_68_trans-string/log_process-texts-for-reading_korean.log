@@ -53431,3 +53431,258 @@ $aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210816_215542_409009.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210820_162348_186538)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> '에리트레아(티그리냐어: ኤርትራ 에르트라, 아랍어: إريتريا 이리트리야[*], 영어: Eritrea)는 아람권에 있는 공화국으로 에리트레아국(티그리냐어: ሃግሬ ኤርትራ 하게레 에르트라, 아랍어: دولة إرتريا 다울라트 이리트리야[*], 영어: State of Eritrea)이다. 동쪽으로 홍해, 서쪽으로 수단, 남쪽으로 에티오피아, 남동쪽으로는 지부티와 국경을 접한다. 1998년부터 2년 동안 에티오피아와 국경을 둘러싼 전쟁을 벌인 끝에 유엔의 중재로 에티오피아와의 국경 지대에 25km 너비의 임시안전지역을 설치했다. '에리트레아'는 라틴어로 홍해를 뜻하는 'Mare Erythraeum'에서 유래했다. 행정구역은 6개의 주로 되어 있다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> '모세의 기적인 홍해의 기적도 이 에리트레아 옆에서 일어난 일이다.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => 에리트레아(티그리냐어: ኤርትራ 에르트라, 아랍어: إريتريا 이리트리야[*], 영어: Eritrea)는 아람권에 있는 공화국으로 에리트레아국(티그리냐어: ሃግሬ ኤርትራ 하게레 에르트라, 아랍어: دولة إرتريا 다울라트 이리트리야[*], 영어: State of Eritrea)이다. 동쪽으로 홍해, 서쪽으로 수단, 남쪽으로 에티오피아, 남동쪽으로는 지부티와 국경을 접한다. 1998년부터 2년 동안 에티오피아와 국경을 둘러싼 전쟁을 벌인 끝에 유엔의 중재로 에티오피아와의 국경 지대에 25km 너비의 임시안전지역을 설치했다. '에리트레아'는 라틴어로 홍해를 뜻하는 'Mare Erythraeum'에서 유래했다. 행정구역은 6개의 주로 되어 있다.
+    [1] => 
+
+    [2] => 모세의 기적인 홍해의 기적도 이 에리트레아 옆에서 일어난 일이다.
+    [3] => 
+
+    [4] => 대부분 에리트리아 인들은 친절하고 불의를 미워한다. 나라도 깨끗하게 잘 관리되어 있고 건전한 나라라
+
+    [5] => 
+
+    [6] => 무뢰배나 또 술 담배 마약을 범죄로 본다. 
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->대부분 에리트리아 인들은 친절하고 불의를 미워한다. 나라도 깨끗하게 잘 관리되어 있고 건전한 나라라
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => 에리트레아(티그리냐어: ኤርትራ 에르트라, 아랍어: إريتريا 이리트리야[*], 영어: Eritrea)는 아람권에 있는 공화국으로 에리트레아국(티그리냐어: ሃግሬ ኤርትራ 하게레 에르트라, 아랍어: دولة إرتريا 다울라트 이리트리야[*], 영어: State of Eritrea)이다. 동쪽으로 홍해, 서쪽으로 수단, 남쪽으로 에티오피아, 남동쪽으로는 지부티와 국경을 접한다. 1998년부터 2년 동안 에티오피아와 국경을 둘러싼 전쟁을 벌인 끝에 유엔의 중재로 에티오피아와의 국경 지대에 25km 너비의 임시안전지역을 설치했다. '에리트레아'는 라틴어로 홍해를 뜻하는 'Mare Erythraeum'에서 유래했다. 행정구역은 6개의 주로 되어 있다.
+    [1] => 
+
+    [2] => 모세의 기적인 홍해의 기적도 이 에리트레아 옆에서 일어난 일이다.
+    [3] => 
+
+    [4] => 대부분 에리트리아 인들은 친절하고 불의를 미워한다. 나라도 깨끗하게 잘 관리되어 있고 건전한 나라라 
+    [5] => 
+
+    [6] => 무뢰배나 또 술 담배 마약을 범죄로 본다. 
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->에리트레아(티그리냐어: ኤርትራ 에르트라, 아랍어: إريتريا 이리트리야[*], 영어: Eritrea)는 아람권에 있는 공화국으로 에리트레아국(티그리냐어: ሃግሬ ኤርትራ 하게레 에르트라, 아랍어: دولة إرتريا 다울라트 이리트리야[*], 영어: State of Eritrea)이다. 동쪽으로 홍해, 서쪽으로 수단, 남쪽으로 에티오피아, 남동쪽으로는 지부티와 국경을 접한다. 1998년부터 2년 동안 에티오피아와 국경을 둘러싼 전쟁을 벌인 끝에 유엔의 중재로 에티오피아와의 국경 지대에 25km 너비의 임시안전지역을 설치했다. '에리트레아'는 라틴어로 홍해를 뜻하는 'Mare Erythraeum'에서 유래했다. 행정구역은 6개의 주로 되어 있다.
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->대부분 에리트리아 인들은 친절하고 불의를 미워한다. 나라도 깨끗하게 잘 관리되어 있고 건전한 나라라 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->무뢰배나 또 술 담배 마약을 범죄로 본다. 
+$matches ==>
+Array
+(
+    [0] => �. 
+    [1] => �.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => 에리트레아(티그리냐어: ኤርትራ 에르트라, 아랍어: إريتريا 이리트리야[*], 영어: Eritrea)는 아람권에 있는 공화국으로 에리트레아국(티그리냐어: ሃግሬ ኤርትራ 하게레 에르트라, 아랍어: دولة إرتريا 다울라트 이리트리야[*], 영어: State of Eritrea)이다.동쪽으로 홍해, 서쪽으로 수단, 남쪽으로 에티오피아, 남동쪽으로는 지부티와 국경을 접한다.1998년부터 2년 동안 에티오피아와 국경을 둘러싼 전쟁을 벌인 끝에 유엔의 중재로 에티오피아와의 국경 지대에 25km 너비의 임시안전지역을 설치했다.'에리트레아'는 라틴어로 홍해를 뜻하는 'Mare Erythraeum'에서 유래했다.행정구역은 6개의 주로 되어 있다.
+    [1] => 
+
+    [2] => 모세의 기적인 홍해의 기적도 이 에리트레아 옆에서 일어난 일이다.
+    [3] => 
+
+    [4] => 대부분 에리트리아 인들은 친절하고 불의를 미워한다.나라도 깨끗하게 잘 관리되어 있고 건전한 나라라 
+    [5] => 
+
+    [6] => 무뢰배나 또 술 담배 마약을 범죄로 본다.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>에리트레아(티그리냐어: ኤርትራ 에르트라, 아랍어: إريتريا 이리트리야[*], 영어: Eritrea)는 아람권에 있는 공화국으로 에리트레아국(티그리냐어: ሃግሬ ኤርትራ 하게레 에르트라, 아랍어: دولة إرتريا 다울라트 이리트리야[*], 영어: State of Eritrea)이다.동쪽으로 홍해, 서쪽으로 수단, 남쪽으로 에티오피아, 남동쪽으로는 지부티와 국경을 접한다.1998년부터 2년 동안 에티오피아와 국경을 둘러싼 전쟁을 벌인 끝에 유엔의 중재로 에티오피아와의 국경 지대에 25km 너비의 임시안전지역을 설치했다.'에리트레아'는 라틴어로 홍해를 뜻하는 'Mare Erythraeum'에서 유래했다.행정구역은 6개의 주로 되어 있다.
+모세의 기적인 홍해의 기적도 이 에리트레아 옆에서 일어난 일이다.
+대부분 에리트리아 인들은 친절하고 불의를 미워한다.나라도 깨끗하게 잘 관리되어 있고 건전한 나라라 
+무뢰배나 또 술 담배 마약을 범죄로 본다.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210820_162348_186538.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210820_162348_186538.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210821_093343_558747)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Abahlali baseMjondolo (AbM) es un movimiento de masas popular, no profesional y democrático de los habitantes de asentamientos informales en Sudáfrica que surgió para reivindicar el derecho a una vivienda digna.1​ .
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Comenzó con un bloqueo de carreteras organizado en los asentamientos informales Kennedy Road de la ciudad de Durban, a principios de 2005, y ahora opera en la provincia de KwaZulu-Natal. Las palabras Abahlali baseMjondolo es la forma de nombrar en idioma zulú a las personas que viven en asentamientos informales y chabolas.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 161]
+match : line --> 'Abahlali baseMjondolo (AbM) se niega a participar en política de partidos o en cualquier estilo de profesionalización de organizaciones no gubernamentales o individualización de la lucha y en su lugar trata de construir el poder democrático del pueblo donde las personas viven y trabajan. Se ha puesto a la dignidad de los pobres en el centro de su política.2.
+'Array
+(
+    [0] => .
+
+)
+
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => Abahlali baseMjondolo (AbM) es un movimiento de masas popular, no profesional y democrático de los habitantes de asentamientos informales en Sudáfrica que surgió para reivindicar el derecho a una vivienda digna.1​ .
+    [1] => 
+
+    [2] => Comenzó con un bloqueo de carreteras organizado en los asentamientos informales Kennedy Road de la ciudad de Durban, a principios de 2005, y ahora opera en la provincia de KwaZulu-Natal. Las palabras Abahlali baseMjondolo es la forma de nombrar en idioma zulú a las personas que viven en asentamientos informales y chabolas.
+    [3] => 
+
+    [4] => Abahlali baseMjondolo (AbM) se niega a participar en política de partidos o en cualquier estilo de profesionalización de organizaciones no gubernamentales o individualización de la lucha y en su lugar trata de construir el poder democrático del pueblo donde las personas viven y trabajan. Se ha puesto a la dignidad de los pobres en el centro de su política.2.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => Abahlali baseMjondolo (AbM) es un movimiento de masas popular, no profesional y democrático de los habitantes de asentamientos informales en Sudáfrica que surgió para reivindicar el derecho a una vivienda digna.1​ .
+    [1] => 
+
+    [2] => Comenzó con un bloqueo de carreteras organizado en los asentamientos informales Kennedy Road de la ciudad de Durban, a principios de 2005, y ahora opera en la provincia de KwaZulu-Natal. Las palabras Abahlali baseMjondolo es la forma de nombrar en idioma zulú a las personas que viven en asentamientos informales y chabolas.
+    [3] => 
+
+    [4] => Abahlali baseMjondolo (AbM) se niega a participar en política de partidos o en cualquier estilo de profesionalización de organizaciones no gubernamentales o individualización de la lucha y en su lugar trata de construir el poder democrático del pueblo donde las personas viven y trabajan. Se ha puesto a la dignidad de los pobres en el centro de su política.2.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->Comenzó con un bloqueo de carreteras organizado en los asentamientos informales Kennedy Road de la ciudad de Durban, a principios de 2005, y ahora opera en la provincia de KwaZulu-Natal. Las palabras Abahlali baseMjondolo es la forma de nombrar en idioma zulú a las personas que viven en asentamientos informales y chabolas.
+$matches ==>
+Array
+(
+    [0] => l. 
+    [1] => l.
+)
+
+[process-texts-for-reading_korean.php : 306]
+match : line -->Abahlali baseMjondolo (AbM) se niega a participar en política de partidos o en cualquier estilo de profesionalización de organizaciones no gubernamentales o individualización de la lucha y en su lugar trata de construir el poder democrático del pueblo donde las personas viven y trabajan. Se ha puesto a la dignidad de los pobres en el centro de su política.2.
+$matches ==>
+Array
+(
+    [0] => n. 
+    [1] => n.
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => Abahlali baseMjondolo (AbM) es un movimiento de masas popular, no profesional y democrático de los habitantes de asentamientos informales en Sudáfrica que surgió para reivindicar el derecho a una vivienda digna.1​ .
+    [1] => 
+
+    [2] => Comenzó con un bloqueo de carreteras organizado en los asentamientos informales Kennedy Road de la ciudad de Durban, a principios de 2005, y ahora opera en la provincia de KwaZulu-Natal.Las palabras Abahlali baseMjondolo es la forma de nombrar en idioma zulú a las personas que viven en asentamientos informales y chabolas.
+    [3] => 
+
+    [4] => Abahlali baseMjondolo (AbM) se niega a participar en política de partidos o en cualquier estilo de profesionalización de organizaciones no gubernamentales o individualización de la lucha y en su lugar trata de construir el poder democrático del pueblo donde las personas viven y trabajan.Se ha puesto a la dignidad de los pobres en el centro de su política.2.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>Abahlali baseMjondolo (AbM) es un movimiento de masas popular, no profesional y democrático de los habitantes de asentamientos informales en Sudáfrica que surgió para reivindicar el derecho a una vivienda digna.1​ .
+Comenzó con un bloqueo de carreteras organizado en los asentamientos informales Kennedy Road de la ciudad de Durban, a principios de 2005, y ahora opera en la provincia de KwaZulu-Natal.Las palabras Abahlali baseMjondolo es la forma de nombrar en idioma zulú a las personas que viven en asentamientos informales y chabolas.
+Abahlali baseMjondolo (AbM) se niega a participar en política de partidos o en cualquier estilo de profesionalización de organizaciones no gubernamentales o individualización de la lucha y en su lugar trata de construir el poder democrático del pueblo donde las personas viven y trabajan.Se ha puesto a la dignidad de los pobres en el centro de su política.2.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210821_093343_558747.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210821_093343_558747.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20210821_094542_665878)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 193]
+$aryOf_1_Matched_Lines__Paragraph_End_Return ==>Array
+(
+    [0] => En 2001, el Municipio Metropolitano de eThekwini, que gobierna la ciudad de Durban y los lugares circundantes, incluido Pinetown, se embarcó en un "programa de supresión de asentamientos informales". Esto significó la demolición constante de los asentamientos de viviendas precarias y la negativa a proporcionar servicios básicos (por ejemplo, electricidad y saneamiento ambiental) a los asentamientos existentes con el argumento de que todos los asentamientos informales, ahora eran temporales. Después de estas demoliciones, algunos habitantes de los asentamientos simplemente quedaron sin hogar y otros fueron sometidos a desalojos forzosos ilegales y luego se trasladaron a la periferia rural de la ciudad.4​5.
+)
+
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 268]
+$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>Array
+(
+    [0] => En 2001, el Municipio Metropolitano de eThekwini, que gobierna la ciudad de Durban y los lugares circundantes, incluido Pinetown, se embarcó en un "programa de supresión de asentamientos informales". Esto significó la demolición constante de los asentamientos de viviendas precarias y la negativa a proporcionar servicios básicos (por ejemplo, electricidad y saneamiento ambiental) a los asentamientos existentes con el argumento de que todos los asentamientos informales, ahora eran temporales. Después de estas demoliciones, algunos habitantes de los asentamientos simplemente quedaron sin hogar y otros fueron sometidos a desalojos forzosos ilegales y luego se trasladaron a la periferia rural de la ciudad.4​5.
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 306]
+match : line -->En 2001, el Municipio Metropolitano de eThekwini, que gobierna la ciudad de Durban y los lugares circundantes, incluido Pinetown, se embarcó en un "programa de supresión de asentamientos informales". Esto significó la demolición constante de los asentamientos de viviendas precarias y la negativa a proporcionar servicios básicos (por ejemplo, electricidad y saneamiento ambiental) a los asentamientos existentes con el argumento de que todos los asentamientos informales, ahora eran temporales. Después de estas demoliciones, algunos habitantes de los asentamientos simplemente quedaron sin hogar y otros fueron sometidos a desalojos forzosos ilegales y luego se trasladaron a la periferia rural de la ciudad.4​5.
+$matches ==>
+Array
+(
+    [0] => ". 
+    [1] => ".
+)
+
+[process-texts-for-reading_korean.php : 343]
+$aryOf_3_Matched_Lines__Sentence_End_Period ==>Array
+(
+    [0] => En 2001, el Municipio Metropolitano de eThekwini, que gobierna la ciudad de Durban y los lugares circundantes, incluido Pinetown, se embarcó en un "programa de supresión de asentamientos informales".Esto significó la demolición constante de los asentamientos de viviendas precarias y la negativa a proporcionar servicios básicos (por ejemplo, electricidad y saneamiento ambiental) a los asentamientos existentes con el argumento de que todos los asentamientos informales, ahora eran temporales.Después de estas demoliciones, algunos habitantes de los asentamientos simplemente quedaron sin hogar y otros fueron sometidos a desalojos forzosos ilegales y luego se trasladaron a la periferia rural de la ciudad.4​5.
+)
+
+[process-texts-for-reading_korean.php : 364] $stringOf_Replaeced_Lines ==>En 2001, el Municipio Metropolitano de eThekwini, que gobierna la ciudad de Durban y los lugares circundantes, incluido Pinetown, se embarcó en un "programa de supresión de asentamientos informales".Esto significó la demolición constante de los asentamientos de viviendas precarias y la negativa a proporcionar servicios básicos (por ejemplo, electricidad y saneamiento ambiental) a los asentamientos existentes con el argumento de que todos los asentamientos informales, ahora eran temporales.Después de estas demoliciones, algunos habitantes de los asentamientos simplemente quedaron sin hogar y otros fueron sometidos a desalojos forzosos ilegales y luego se trasladaron a la periferia rural de la ciudad.4​5.
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210821_094542_665878.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20210821_094542_665878.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
