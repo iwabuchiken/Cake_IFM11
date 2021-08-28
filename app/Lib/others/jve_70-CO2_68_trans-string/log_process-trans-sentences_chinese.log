@@ -6406,3 +6406,85 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210815_214917_863043.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210815_214917_863043.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210828_214901_367283)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 中新网8月24日电
+    [1] => 据日本共同社报道，新冠疫情持续蔓延的东京时隔近57年将再次举办残障人士体育盛事，继奥运会之后，残奥会24日晚间将在国立竞技场空场举行开幕式。为防止感染，25日开始的比赛原则上也是空场。
+    [2] => 
+    [3] => 据报道，东京1964年曾举办第二届残奥会，此次为第十六届，同一城市举行两届夏季残奥会尚属首次。
+    [4] => 
+    [5] => 共同社指出，在对残障人士的歧视和偏见较现在更甚的时代，1964年残奥会给日本播下了残疾人体育的种子，本届残奥会能否再次成为改变日本社会的契机将经受考验。
+    [6] => 
+    [7] => 有着赛场的东京、千叶、埼玉、静冈这1都3县处于紧急事态宣言期间。虽然将实施向儿童及学生提供观赛机会的“学校联合观赛项目”，但学校方面和家长对此褒贬不一。
+    [8] => 
+    [9] => 与奥运会一样，为防止感染，采用隔绝运动员、相关人士与外部接触的“气泡方式”，但存在因护理等无法避免接触以及有基础疾病的运动员，令人担忧的要素不少。
+    [10] => 
+    [11] => 国际残奥委会(IPC)主席帕森斯23日与东京都知事小池百合子会面，表示“承诺毫不松懈地实施(防疫)举措”。
+    [12] => 
+    [13] => IPC在23日宣布，161个国家和地区以及难民代表团共约4500名运动员将参赛，为史上最多。包括新项目羽毛球和跆拳道在内，共举行22个大项539个小项的比赛，日本代表团将有史上最多的254人参加所有项目的角逐。
+    [14] => 举报我也说两句
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中新网8月24日电
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)据日本共同社报道，新冠疫情持续蔓延的东京时隔近57年将再次举办残障人士体育盛事，继奥运会之后，残奥会24日晚间将在国立竞技场空场举行开幕式。为防止感染，25日开始的比赛原则上也是空场。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)据报道，东京1964年曾举办第二届残奥会，此次为第十六届，同一城市举行两届夏季残奥会尚属首次。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)共同社指出，在对残障人士的歧视和偏见较现在更甚的时代，1964年残奥会给日本播下了残疾人体育的种子，本届残奥会能否再次成为改变日本社会的契机将经受考验。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)有着赛场的东京、千叶、埼玉、静冈这1都3县处于紧急事态宣言期间。虽然将实施向儿童及学生提供观赛机会的“学校联合观赛项目”，但学校方面和家长对此褒贬不一。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)与奥运会一样，为防止感染，采用隔绝运动员、相关人士与外部接触的“气泡方式”，但存在因护理等无法避免接触以及有基础疾病的运动员，令人担忧的要素不少。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)国际残奥委会(IPC)主席帕森斯23日与东京都知事小池百合子会面，表示“承诺毫不松懈地实施(防疫)举措”。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)IPC在23日宣布，161个国家和地区以及难民代表团共约4500名运动员将参赛，为史上最多。包括新项目羽毛球和跆拳道在内，共举行22个大项539个小项的比赛，日本代表团将有史上最多的254人参加所有项目的角逐。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)举报我也说两句
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210828_214901_367283.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210828_214901_367283.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20210828_214920_029330)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 中新网8月24日电据日本共同社报道，新冠疫情持续蔓延的东京时隔近57年将再次举办
+    [1] => 残障[can2zhang4
+    [2] => 人士体育
+    [3] => 盛事[:event
+    [4] => ，继奥运会之后，残奥会24日晚间将在国立竞技场空场举行开幕式。为防止感染，25日开始的比赛原则上也是空场。据报道，东京1964年曾举办第二届残奥会，此次为第十六届，同一城市举行两届夏季残奥会尚属首次。]]共同社指出，在对残障人士的歧视和偏见较现在
+    [5] => 更甚[geng4shen2:even-more
+    [6] => 的时代，1964年残奥会给日本播下了残疾人体育的种子，本届残奥会能否再次成为改变日本社会的
+    [7] => 契机[qi4-
+    [8] => 将经受考验。]]有着赛场的东京、千叶、埼玉、静冈这1都3县处于紧急事态宣言期间。虽然将实施向儿童及学生提供观赛机会的“学校联合观赛项目”，但学校方面和家长对此
+    [9] => 褒贬[bao1bian3
+    [10] => 不一。]]与奥运会一样，为防止感染，采用隔绝运动员、相关人士与外部接触的“
+    [11] => 气泡[-pao4
+    [12] => 方式”，但存在因护理等无法避免接触以及有基础疾病的运动员，令人担忧的要素不少。国际残奥委会(IPC)主席帕森斯23日与东京都知事小池百合子会面，表示“承诺毫不松懈地实施(防疫)举措”。IPC在23日宣布，161个国家和地区以及难民代表团共约4500名运动员将参赛，为史上最多。包括新项目羽毛球和跆拳道在内，共举行22个大项539个小项的比赛，日本代表团将有史上最多的254人参加所有项目的角逐。举报我也说两句
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)中新网8月24日电据日本共同社报道，新冠疫情持续蔓延的东京时隔近57年将再次举办
+[process-trans-sentences_chinese.php : 216] match => 残障[can2zhang4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)人士体育
+[process-trans-sentences_chinese.php : 216] match => 盛事[:event
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，继奥运会之后，残奥会24日晚间将在国立竞技场空场举行开幕式。为防止感染，25日开始的比赛原则上也是空场。据报道，东京1964年曾举办第二届残奥会，此次为第十六届，同一城市举行两届夏季残奥会尚属首次。]]共同社指出，在对残障人士的歧视和偏见较现在
+[process-trans-sentences_chinese.php : 216] match => 更甚[geng4shen2:even-more
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的时代，1964年残奥会给日本播下了残疾人体育的种子，本届残奥会能否再次成为改变日本社会的
+[process-trans-sentences_chinese.php : 216] match => 契机[qi4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)将经受考验。]]有着赛场的东京、千叶、埼玉、静冈这1都3县处于紧急事态宣言期间。虽然将实施向儿童及学生提供观赛机会的“学校联合观赛项目”，但学校方面和家长对此
+[process-trans-sentences_chinese.php : 216] match => 褒贬[bao1bian3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)不一。]]与奥运会一样，为防止感染，采用隔绝运动员、相关人士与外部接触的“
+[process-trans-sentences_chinese.php : 216] match => 气泡[-pao4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)方式”，但存在因护理等无法避免接触以及有基础疾病的运动员，令人担忧的要素不少。国际残奥委会(IPC)主席帕森斯23日与东京都知事小池百合子会面，表示“承诺毫不松懈地实施(防疫)举措”。IPC在23日宣布，161个国家和地区以及难民代表团共约4500名运动员将参赛，为史上最多。包括新项目羽毛球和跆拳道在内，共举行22个大项539个小项的比赛，日本代表团将有史上最多的254人参加所有项目的角逐。举报我也说两句
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210828_214920_067331.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210828_214920_067331.txt'
+  
