@@ -4371,7 +4371,8 @@ class ImagesController extends AppController {
 		
 		$lenOf_List_Files = count($list_Files);
 		
-		debug("files => ".$lenOf_List_Files);
+		//debug("files => ".$lenOf_List_Files);
+		debug("files => ".$lenOf_List_Files . " (at : " . $dpath_ImageFiles . ")");	//=> 2021年9月7日8:25:17
 // 		debug("files => ".count($list_Files));
 
 		debug($list_Files[0]);
