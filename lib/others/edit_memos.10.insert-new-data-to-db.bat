@@ -28,7 +28,7 @@ rem : page : http://localhost:8001/ip/basics/
 start launcher.exe %url_IP_Basics%
 
 rem : remote
-start launcher.exe http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2
+start launcher.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2?sort=file_name&direction=desc"
 
 	goto end
 
