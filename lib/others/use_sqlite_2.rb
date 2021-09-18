@@ -95,7 +95,18 @@ def update_records__multiple
   #
   ################################
   #ref http://qiita.com/shizuma/items/7719172eb5e8c29a7d6e#csvread
+  #rev:20210918_123717
   csv_data = CSV.read($FNAME_ENTRIES, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
+  
+#  #d:20210918_123517
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] (debug) $FNAME_ENTRIES ==> #{$FNAME_ENTRIES}"
+#  
+#  #d:20210918_124205
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] (debug) csv_data.length ==> #{csv_data.length}"
+#  
+#  #d:20210918_124238
+#  puts "[#{File.basename(__FILE__)}:#{__LINE__}] (debug) csv_data[0] ==> #{csv_data[0]}"
+  
 #  csv_data = CSV.read($FNAME_ENTRIES, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
 #  csv_data = CSV.read($FNAME_MULTIPLE, headers: true, encoding: 'utf-8', col_sep: "\t")  #=> w.
   
