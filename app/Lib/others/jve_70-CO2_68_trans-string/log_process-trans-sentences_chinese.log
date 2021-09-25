@@ -6488,3 +6488,136 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210828_214920_067331.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210828_214920_067331.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20210924_215930_623389)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 美国黑人男子坐在
+    [1] => 马桶[-tong3
+    [2] => 上举手投降时，被警察
+    [3] => 开枪[-qiang1
+    [4] => 打死。]]
+    [5] => 
+    [6] => 据英国《独立报》13日报道，美国南加州警方周四公布了一段随身
+    [7] => 摄像[she4-
+    [8] => ]]
+    [9] => 头拍摄的视频，视频显示一名警察向一名坐在马桶上、手无
+    [10] => 寸铁[cun4-
+    [11] => 的黑人男子开枪。
+    [12] => 
+    [13] => 
+    [14] => 加州方塔纳市警方称，接到入室
+    [15] => 盗窃[dao4qie4
+    [16] => ]]
+    [17] => 的报警电话派出警力，发现一名身穿
+    [18] => 连帽衫[-mao4shan1
+    [19] => ]]
+    [20] => 的男子从后门跑了出去，后来确认他是28岁的大卫瑞恩·基纳得（Daverion
+    [21] => dountre
+    [22] => Kinard）。警察继续追捕，最终，名叫约翰·图伊塔瓦克（Johnn
+    [23] => Tuitavake）的警官
+    [24] => ]]
+    [25] => 在附近一个移动式厕所中发现了基纳德，警官把厕所门
+    [26] => 扯开[che3-
+    [27] => ]]
+    [28] => ，并大叫道:“
+    [29] => 嘿[hei1
+    [30] => ]]
+    [31] => !”几秒钟后，在没有给出任何警告的情况下，他向这名手无寸铁的黑人男子开枪。这名男子中枪后死亡。]]
+    [32] => 
+    [33] => 方塔纳警察局长比利·格林（Billy
+    [34] => Green）表示，该警察看到基纳德“开始
+    [35] => 挥动[hui1-
+    [36] => ]]
+    [37] => 右手，露出一个金属物体”，所以就开枪了，]]
+    [38] => 该“金属物体”后来证明是一个打火机。监控录像显示，当警察发现基纳德时，他似乎举手表示投降。
+    [39] => 
+    [40] => 
+    [41] => 本月早些时候，该市与这名男子的家人达成了100万美元的和解协议，而基纳德一家要求枪击现场的录像保密，尽管加州法律要求公开这些视频。
+    [42] => 
+    [43] => 基纳德一家在声明中写道:“我们意识到公众和媒体对获取和观看这段视频的兴趣，但为了保护大卫瑞恩的尊严，我们希望这段视频保密。”]]
+    [44] => 
+    [45] => 他们补充道:“虽然再多的钱也无法弥补失去一位家族成员的痛苦，但我们和方塔纳市政府已经就此事达成了解决方案。”]]
+    [46] => 
+    [47] => 涉事的警官图伊塔瓦克仍在执勤，圣贝纳迪诺县地方检察官办公室正在调查这一事件，以确定可能的指控，而方塔纳警方则在继续进行内部审查。
+    [48] => ]]
+    [49] => 
+    [50] => 
+    [51] => 尽管“黑人的命也是命”运动一度
+    [52] => 席卷[xi2juan3
+    [53] => 全美，但警察继续以很高的比例杀死黑人。根据美国“警察暴力地图”项目（Mapping
+    [54] => Police
+    [55] => Violence）的一项分析，2021年，美国警察已经杀死了635人，其中不成比例的是黑人。
+    [56] => 
+    [57] => 一项独立调查发现，自明尼阿波利斯警察杀害乔治·弗洛伊德以来，美国警察对待有色人种族群的方式几乎没有变化.
+    [58] => 
+    [59] => 
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)美国黑人男子坐在
+[process-trans-sentences_chinese.php : 216] match => 马桶[-tong3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)上举手投降时，被警察
+[process-trans-sentences_chinese.php : 216] match => 开枪[-qiang1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)打死。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)据英国《独立报》13日报道，美国南加州警方周四公布了一段随身
+[process-trans-sentences_chinese.php : 216] match => 摄像[she4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)头拍摄的视频，视频显示一名警察向一名坐在马桶上、手无
+[process-trans-sentences_chinese.php : 216] match => 寸铁[cun4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的黑人男子开枪。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)加州方塔纳市警方称，接到入室
+[process-trans-sentences_chinese.php : 216] match => 盗窃[dao4qie4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的报警电话派出警力，发现一名身穿
+[process-trans-sentences_chinese.php : 216] match => 连帽衫[-mao4shan1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的男子从后门跑了出去，后来确认他是28岁的大卫瑞恩·基纳得（Daverion
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)dountre
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Kinard）。警察继续追捕，最终，名叫约翰·图伊塔瓦克（Johnn
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Tuitavake）的警官
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)在附近一个移动式厕所中发现了基纳德，警官把厕所门
+[process-trans-sentences_chinese.php : 216] match => 扯开[che3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，并大叫道:“
+[process-trans-sentences_chinese.php : 216] match => 嘿[hei1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)!”几秒钟后，在没有给出任何警告的情况下，他向这名手无寸铁的黑人男子开枪。这名男子中枪后死亡。]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)方塔纳警察局长比利·格林（Billy
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Green）表示，该警察看到基纳德“开始
+[process-trans-sentences_chinese.php : 216] match => 挥动[hui1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)右手，露出一个金属物体”，所以就开枪了，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)该“金属物体”后来证明是一个打火机。监控录像显示，当警察发现基纳德时，他似乎举手表示投降。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)本月早些时候，该市与这名男子的家人达成了100万美元的和解协议，而基纳德一家要求枪击现场的录像保密，尽管加州法律要求公开这些视频。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)基纳德一家在声明中写道:“我们意识到公众和媒体对获取和观看这段视频的兴趣，但为了保护大卫瑞恩的尊严，我们希望这段视频保密。”]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)他们补充道:“虽然再多的钱也无法弥补失去一位家族成员的痛苦，但我们和方塔纳市政府已经就此事达成了解决方案。”]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)涉事的警官图伊塔瓦克仍在执勤，圣贝纳迪诺县地方检察官办公室正在调查这一事件，以确定可能的指控，而方塔纳警方则在继续进行内部审查。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)尽管“黑人的命也是命”运动一度
+[process-trans-sentences_chinese.php : 216] match => 席卷[xi2juan3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)全美，但警察继续以很高的比例杀死黑人。根据美国“警察暴力地图”项目（Mapping
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Police
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)Violence）的一项分析，2021年，美国警察已经杀死了635人，其中不成比例的是黑人。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)一项独立调查发现，自明尼阿波利斯警察杀害乔治·弗洛伊德以来，美国警察对待有色人种族群的方式几乎没有变化.
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210924_215930_773390.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210924_215930_773390.txt'
+  
