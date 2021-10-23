@@ -157,13 +157,13 @@ php process-texts-for-reading_korean.php
 			if ($result == 1) {
 			
 				#debug
-				printf("[%s : %d]\nmatch : line --> '$line'"
-						, basename(__FILE__), __LINE__
-				);
-				
-				print_r($matches);
-				print("\n");
-				
+#				printf("[%s : %d]\nmatch : line --> '$line'"
+#						, basename(__FILE__), __LINE__
+#				);
+#				
+#				print_r($matches);
+#				print("\n");
+# comment out : 2021年10月21日13:25:32				
 				#code:20210517_145120
 				# replace
 				$line_Replaced	= preg_replace($pattern, $charsOf_Replacement, $line);
@@ -189,14 +189,14 @@ php process-texts-for-reading_korean.php
 		}//foreach ($linesOf_File as $line)
 		
 		#debug
-		printf("[%s : %d]\n\$aryOf_1_Matched_Lines__Paragraph_End_Return ==>"
-		, basename(__FILE__), __LINE__
-		);
+#		printf("[%s : %d]\n\$aryOf_1_Matched_Lines__Paragraph_End_Return ==>"
+#		, basename(__FILE__), __LINE__
+#		);
 
-		print_r($aryOf_1_Matched_Lines__Paragraph_End_Return);
-
-		print("\n");
-
+#		print_r($aryOf_1_Matched_Lines__Paragraph_End_Return);
+#
+#		print("\n");
+# comment out : 2021年10月21日13:24:57
 		/********************
 		 * step : 3 : 2
 		 * 	regex : non-sentence-end return --> remove
@@ -264,14 +264,14 @@ php process-texts-for-reading_korean.php
 		}//foreach ($linesOf_File as $line)
 		
 		#debug
-		printf("[%s : %d]\n\$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>"
-				, basename(__FILE__), __LINE__
-		);
-		
-		print_r($aryOf_2_Matched_Lines__Nonsentence_End_Return);
-		
-		print("\n");
-
+#		printf("[%s : %d]\n\$aryOf_2_Matched_Lines__Nonsentence_End_Return ==>"
+#				, basename(__FILE__), __LINE__
+#		);
+#		
+#		print_r($aryOf_2_Matched_Lines__Nonsentence_End_Return);
+#		
+#		print("\n");
+# commet out : 2021年10月21日13:24:18
 		/********************
 		 * step : 3 : 3
 		 * 	regex : sentence-end period --> add : double return
@@ -301,19 +301,19 @@ php process-texts-for-reading_korean.php
 			if ($result == 1) {
 					
 				#debug
-				//printf("[%s : %d]\nmatch : line --> '$line'"
-				printf("[%s : %d]\nmatch : line -->"
-				, basename(__FILE__), __LINE__
-				);
-				print($line);
-				print("\n");
+#				//printf("[%s : %d]\nmatch : line --> '$line'"
+#				printf("[%s : %d]\nmatch : line -->"
+#				, basename(__FILE__), __LINE__
+#				);
+#				print($line);
+#				print("\n");
 				
-				print("\$matches ==>");
-				print("\n");
+#				print("\$matches ==>");
+#				print("\n");
 				
-				print_r($matches);
-				print("\n");
-		
+#				print_r($matches);
+#				print("\n");
+# comment out : 2021年10月21日13:28:18
 				#code:20210517_145120
 				# replace
 				$line_Replaced	= preg_replace($pattern, $charsOf_Replacement, $line);
@@ -339,13 +339,13 @@ php process-texts-for-reading_korean.php
 		}//foreach ($linesOf_File as $line)
 		
 		#debug
-		printf("[%s : %d]\n\$aryOf_3_Matched_Lines__Sentence_End_Period ==>"
-				, basename(__FILE__), __LINE__
-		);
+		#printf("[%s : %d]\n\$aryOf_3_Matched_Lines__Sentence_End_Period ==>"
+		#		, basename(__FILE__), __LINE__
+		#);
+		### comment out : 2021年10月21日13:21:26
+		#print_r($aryOf_3_Matched_Lines__Sentence_End_Period);
 		
-		print_r($aryOf_3_Matched_Lines__Sentence_End_Period);
-		
-		print("\n");
+		#print("\n");
 		
 		/********************
 		 * step : 3 : 4
@@ -360,12 +360,12 @@ php process-texts-for-reading_korean.php
 				);
 		
 		#debug
-		printf("[%s : %d] \$stringOf_Replaeced_Lines ==>"
-				, basename(__FILE__), __LINE__
-		);
-		
-		print($stringOf_Replaeced_Lines);
-		print("\n");
+#		printf("[%s : %d] \$stringOf_Replaeced_Lines ==>"
+#				, basename(__FILE__), __LINE__
+#		);
+#		
+#		print($stringOf_Replaeced_Lines);
+#		print("\n");
 
 		/********************
 		 * step : 4
