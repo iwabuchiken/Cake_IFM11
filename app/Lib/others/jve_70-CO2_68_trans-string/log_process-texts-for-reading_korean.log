@@ -475,3 +475,155 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211021_133356_094861.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211026_105858_319113)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->오늘 점심은 소보루빵과 도시락
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->학교 측은 식사 후 교실에서 흰 우유(200㎖)도 배식했고, 빵 등의 수량은 전체 인원보다 여유가 있게 준비했다고 설명했다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->'급식 중단' 오늘 점심은 빵
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->(창원=연합뉴스) 김동민 기자 = 전국학교비정규직노동조합이 하루 파업에 들어가 유치원∼고등학교 급식이 중단된 20일 경남 창원시 의창구 한 초등학교에서 학생이 점심으로 빵을 먹고 있다. 2021.10.20 image@yna.co.kr
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211026_105858_319113.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211026_105858_319113.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211026_124519_918942)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->Iran has on numerous occasions called on the UN not to use unofficial and unsubstantiated sources to compile its human rights reports, urging the world body to refrain from resorting to selective approaches that would undermine its credibility. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211026_124519_918942.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211026_124519_918942.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211026_125018_762597)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->    “The report is one of the four yearly reports -- all similar in content, theme and tone -- originating from a mentality that is far from good faith — compiled inevitably to satisfy the mandate devised by a few Western States to pressurize and demonize Iran.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->Bachelet claimed that the report “found a disturbing human rights landscape for Iranian women and men of every religious faith, ethnic origin, social class and other status.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->All world countries should consider the principles of universality, objectivity and non-selectivity regarding human rights issues and eliminate double standards and politicization, he said. “We also call upon all who truly care for human rights to recognize the imperative of rule of law and the centrality of judicial systems in preserving the rule of law and protecting human rights."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->He also said the participation of the Iranian people in the June 18 elections to choose a new president and representatives to the City and Village Councils “showcased their determination to exercise their constitutional rights and secure the country’s democratic processes.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“Despite all the misgivings, Iran, as always, didn’t hesitate to try in all good faith to correct a host of disinformation, false claims and unsubstantiated allegations mentioned in the report. We wished that Iran’s responsible and professional approach would have been reciprocated by the report compilers who, instead, opted to ignore the overwhelming majority of our 60-page comment and clarification.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211026_125018_762597.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211026_125018_762597.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
