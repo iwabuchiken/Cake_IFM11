@@ -837,3 +837,207 @@ C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210628_141501_713607.
 [process-trans-sentences_arabic.php : 302] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210628_141501_713607.txt'
  
 ===============================  
+===============================  
+starting... : build_Trans_String (20211101_215231_114939)
+
+[process-trans-sentences_arabic.php : 89] $fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat[process-trans-sentences_arabic.php : 103] $linesOf_File =>
+
+Array
+(
+    [0] => Sin caretas… y con aderezo neocolonial
+
+    [1] => 
+
+    [2] => Se irrespeta el Gobierno de Estados Unidos, que dice ser demócrata, cuando tres senadores del propio partido del presidente Joe Biden montaron una conferencia virtual con un interlocutor carente de méritos y autoridad, como el venezolano Juan Guaidó.
+
+    [3] => 
+
+    [4] => 
+
+    [5] => 
+
+    [6] => Autor: Elson Concepción Pérez | internet@granma.cu
+
+    [7] => 
+
+    [8] => 31 de octubre de 2021 22:10:25
+
+    [9] => 
+
+    [10] => Se irrespeta el Gobierno de Estados Unidos, que dice ser demócrata, cuando tres senadores del propio partido del presidente Joe Biden montaron una conferencia virtual con un interlocutor carente de méritos y autoridad, como el venezolano Juan Guaidó, donde además de impartirle orientaciones sobre el proceso de paz y las próximas elecciones, pusieron el aderezo neocolonial de injurias contra el Gobierno y el presidente democráticamente electo, Nicolás Maduro Moros. ¿Se creen de verdad con derecho a tales acciones?
+
+)
+[process-trans-sentences_arabic.php : 127] $linesOf_File__Trimmed =>
+
+Array
+(
+    [0] => Sin caretas… y con aderezo neocolonial
+    [1] => 
+    [2] => Se irrespeta el Gobierno de Estados Unidos, que dice ser demócrata, cuando tres senadores del propio partido del presidente Joe Biden montaron una conferencia virtual con un interlocutor carente de méritos y autoridad, como el venezolano Juan Guaidó.
+    [3] => 
+    [4] => 
+    [5] => 
+    [6] => Autor: Elson Concepción Pérez | internet@granma.cu
+    [7] => 
+    [8] => 31 de octubre de 2021 22:10:25
+    [9] => 
+    [10] => Se irrespeta el Gobierno de Estados Unidos, que dice ser demócrata, cuando tres senadores del propio partido del presidente Joe Biden montaron una conferencia virtual con un interlocutor carente de méritos y autoridad, como el venezolano Juan Guaidó, donde además de impartirle orientaciones sobre el proceso de paz y las próximas elecciones, pusieron el aderezo neocolonial de injurias contra el Gobierno y el presidente democráticamente electo, Nicolás Maduro Moros. ¿Se creen de verdad con derecho a tales acciones?
+)
+[process-trans-sentences_arabic.php : 143] $stringOf_Joined_Lines =>
+
+Sin caretas… y con aderezo neocolonial  Se irrespeta el Gobierno de Estados Unidos, que dice ser demócrata, cuando tres senadores del propio partido del presidente Joe Biden montaron una conferencia virtual con un interlocutor carente de méritos y autoridad, como el venezolano Juan Guaidó.    Autor: Elson Concepción Pérez | internet@granma.cu  31 de octubre de 2021 22:10:25  Se irrespeta el Gobierno de Estados Unidos, que dice ser demócrata, cuando tres senadores del propio partido del presidente Joe Biden montaron una conferencia virtual con un interlocutor carente de méritos y autoridad, como el venezolano Juan Guaidó, donde además de impartirle orientaciones sobre el proceso de paz y las próximas elecciones, pusieron el aderezo neocolonial de injurias contra el Gobierno y el presidente democráticamente electo, Nicolás Maduro Moros. ¿Se creen de verdad con derecho a tales acciones?[process-trans-sentences_arabic.php : 158] $tokensOf_Split =>
+
+Array
+(
+    [0] => Sin
+    [1] => caretas…
+    [2] => y
+    [3] => con
+    [4] => aderezo
+    [5] => neocolonial
+    [6] => 
+    [7] => Se
+    [8] => irrespeta
+    [9] => el
+    [10] => Gobierno
+    [11] => de
+    [12] => Estados
+    [13] => Unidos,
+    [14] => que
+    [15] => dice
+    [16] => ser
+    [17] => demócrata,
+    [18] => cuando
+    [19] => tres
+    [20] => senadores
+    [21] => del
+    [22] => propio
+    [23] => partido
+    [24] => del
+    [25] => presidente
+    [26] => Joe
+    [27] => Biden
+    [28] => montaron
+    [29] => una
+    [30] => conferencia
+    [31] => virtual
+    [32] => con
+    [33] => un
+    [34] => interlocutor
+    [35] => carente
+    [36] => de
+    [37] => méritos
+    [38] => y
+    [39] => autoridad,
+    [40] => como
+    [41] => el
+    [42] => venezolano
+    [43] => Juan
+    [44] => Guaidó.
+    [45] => 
+    [46] => 
+    [47] => 
+    [48] => Autor:
+    [49] => Elson
+    [50] => Concepción
+    [51] => Pérez
+    [52] => |
+    [53] => internet@granma.cu
+    [54] => 
+    [55] => 31
+    [56] => de
+    [57] => octubre
+    [58] => de
+    [59] => 2021
+    [60] => 22:10:25
+    [61] => 
+    [62] => Se
+    [63] => irrespeta
+    [64] => el
+    [65] => Gobierno
+    [66] => de
+    [67] => Estados
+    [68] => Unidos,
+    [69] => que
+    [70] => dice
+    [71] => ser
+    [72] => demócrata,
+    [73] => cuando
+    [74] => tres
+    [75] => senadores
+    [76] => del
+    [77] => propio
+    [78] => partido
+    [79] => del
+    [80] => presidente
+    [81] => Joe
+    [82] => Biden
+    [83] => montaron
+    [84] => una
+    [85] => conferencia
+    [86] => virtual
+    [87] => con
+    [88] => un
+    [89] => interlocutor
+    [90] => carente
+    [91] => de
+    [92] => méritos
+    [93] => y
+    [94] => autoridad,
+    [95] => como
+    [96] => el
+    [97] => venezolano
+    [98] => Juan
+    [99] => Guaidó,
+    [100] => donde
+    [101] => además
+    [102] => de
+    [103] => impartirle
+    [104] => orientaciones
+    [105] => sobre
+    [106] => el
+    [107] => proceso
+    [108] => de
+    [109] => paz
+    [110] => y
+    [111] => las
+    [112] => próximas
+    [113] => elecciones,
+    [114] => pusieron
+    [115] => el
+    [116] => aderezo
+    [117] => neocolonial
+    [118] => de
+    [119] => injurias
+    [120] => contra
+    [121] => el
+    [122] => Gobierno
+    [123] => y
+    [124] => el
+    [125] => presidente
+    [126] => democráticamente
+    [127] => electo,
+    [128] => Nicolás
+    [129] => Maduro
+    [130] => Moros.
+    [131] => ¿Se
+    [132] => creen
+    [133] => de
+    [134] => verdad
+    [135] => con
+    [136] => derecho
+    [137] => a
+    [138] => tales
+    [139] => acciones?
+)
+[process-trans-sentences_arabic.php : 184] filtering.. : pattern = '/^.+\[.+/i'[process-trans-sentences_arabic.php : 237] $aryOf_Tokens__Filtered_In =>
+
+Array
+(
+)
+[process-trans-sentences_arabic.php : 251] $stringOf_Trans_Strings =>
+
+[process-trans-sentences_arabic.php : 285] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211101_215231_158942.txt
+[process-trans-sentences_arabic.php : 302] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211101_215231_158942.txt'
+ 
