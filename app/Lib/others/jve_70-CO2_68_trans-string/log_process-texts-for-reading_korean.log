@@ -1631,3 +1631,72 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211108_213409_332842.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211109_215322_574224)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->여성 노동자들이 또 다시 삭발하는 상황 만든 교육감들에 분노...12월에 2차 총파업 나설 것
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->노동조합 활동을 하며 여섯 번째 삭발에 나섰다는 박미향 학비노조 위원장은 “한 간부는 내일 모레면 딸의 결혼식인데도 삭발에 나설 수 밖에 없었다”며 “이런 상황을 만든 전국 17개 시도교육청 교육감들과 노동자를 무시하는 교육관료들을 강력 규탄한다”고 일갈했다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->또한 “51년 전 산화하신 전태일 열사가 외친 인간답게 살고 싶다는 요구처럼 비록 우리는 비정규직노동자이지만 이 불평등한 세상을 반드시 우리의 투쟁으로 바꿔내겠다고 결의하겠다”며 “학교비정규직이 앞장서 2차 총파업 투쟁으로 집단교섭에서 승리하고 비정규직 없는 세상을 만들자”고 호소했다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->연대발언에 나선 강규혁 서비스연맹 위원장은 “교육부 장관과 정규직 전환 논의를 시작한지 2년인데 지지부진하기만 하다. 학비노조 11년의 역사에서 8번이나 집단 삭발을 해야하는게 지금 처한 우리의 현실”이라며 “차이는 인정할 수 있어도 차별은 인정할 수 없다. 학교에 비정규직없는 세상을 만들기 위해, 소중한 내 아이들에게 비정규직 없는 세상을 물려주기 위해 삭발하는 노동자들과 함께 투쟁하겠다”고 결심을 밝혔다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->학교는 차별의 종합백화점, 아이들을 위해서라도 차별 끝장내자
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211109_215322_574224.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211109_215322_574224.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
