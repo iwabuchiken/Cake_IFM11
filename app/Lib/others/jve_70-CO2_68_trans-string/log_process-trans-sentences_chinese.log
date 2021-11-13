@@ -6621,3 +6621,81 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210924_215930_773390.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20210924_215930_773390.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20211111_123842_094590)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 朝中社：故意
+    [1] => 招惹[zhao1re3
+    [2] => ]]别人，鼓吹“安保不保”，决不会让日本有好果子吃。【环球网报道】朝中社10日刊发评论文章，题为《朝中社评论：鼓吹“安保不安”的真实用心不容
+    [3] => 掩盖[yan3gai4
+    [4] => 》。]]文章称，日本一而再，再而三的导弹机动部署训练的目的是别有用心的，完全出于向国民更加鼓吹“安保不安和危机”意识，]]为军事大国化提供名分，加快实现海外扩张野心。]]文章还称，无论日本如何
+    [5] => 鼓噪[gu3zao4“周边威胁”，掩盖不了为海外扩张野心和重新侵略野心
+    [6] => 冲昏[chong1hun1
+    [7] => 头脑的战争国家、侵略国家的本色。]]故意招惹别人，鼓吹“安保不安”的做法，决不会让日本（有）好果子吃。朝中社全文如下：]]日本继续
+    [8] => 乞灵[qi3ling2
+    [9] => 于加剧军事紧张局势。]]近日，日本航空“自卫队”在神奈川县横须贺市进行了号称改进反导能力的陆基
+    [10] => 宙斯盾[zhou4si1dun4
+    [11] => ]]
+    [12] => 反导导弹“爱国者”机动部署训练。这次，日本又公开扬言“训练目的在于消除国民对安保保障的不安”。日本以消除来自谁的“威胁”的不安为借口，每年在列岛各地频繁开展导弹机动部署训练，甚至在人员来往复杂的东京中心的公园上演鬼把戏。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)朝中社：故意
+[process-trans-sentences_chinese.php : 216] match => 招惹[zhao1re3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]别人，鼓吹“安保不保”，决不会让日本有好果子吃。【环球网报道】朝中社10日刊发评论文章，题为《朝中社评论：鼓吹“安保不安”的真实用心不容
+[process-trans-sentences_chinese.php : 216] match => 掩盖[yan3gai4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)》。]]文章称，日本一而再，再而三的导弹机动部署训练的目的是别有用心的，完全出于向国民更加鼓吹“安保不安和危机”意识，]]为军事大国化提供名分，加快实现海外扩张野心。]]文章还称，无论日本如何
+[process-trans-sentences_chinese.php : 216] match => 鼓噪[gu3zao4“周边威胁”，掩盖不了为海外扩张野心和重新侵略野心
+[process-trans-sentences_chinese.php : 216] match => 冲昏[chong1hun1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)头脑的战争国家、侵略国家的本色。]]故意招惹别人，鼓吹“安保不安”的做法，决不会让日本（有）好果子吃。朝中社全文如下：]]日本继续
+[process-trans-sentences_chinese.php : 216] match => 乞灵[qi3ling2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)于加剧军事紧张局势。]]近日，日本航空“自卫队”在神奈川县横须贺市进行了号称改进反导能力的陆基
+[process-trans-sentences_chinese.php : 216] match => 宙斯盾[zhou4si1dun4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)反导导弹“爱国者”机动部署训练。这次，日本又公开扬言“训练目的在于消除国民对安保保障的不安”。日本以消除来自谁的“威胁”的不安为借口，每年在列岛各地频繁开展导弹机动部署训练，甚至在人员来往复杂的东京中心的公园上演鬼把戏。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211111_123842_114590.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211111_123842_114590.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20211111_124303_978002)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 朝中社：故意
+    [1] => 招惹[zhao1re3
+    [2] => ]]别人，鼓吹“安保不保”，决不会让日本有好果子吃。【环球网报道】朝中社10日刊发评论文章，题为《朝中社评论：鼓吹“安保不安”的真实用心不容
+    [3] => 掩盖[yan3gai4
+    [4] => 》。]]文章称，日本一而再，再而三的导弹机动部署训练的目的是别有用心的，完全出于向国民更加鼓吹“安保不安和危机”意识，]]为军事大国化提供名分，加快实现海外扩张野心。]]文章还称，无论日本如何
+    [5] => 鼓噪[gu3zao4“周边威胁”，掩盖不了为海外扩张野心和重新侵略野心
+    [6] => 冲昏[chong1hun1
+    [7] => 头脑的战争国家、侵略国家的本色。]]故意招惹别人，鼓吹“安保不安”的做法，决不会让日本（有）好果子吃。朝中社全文如下：]]日本继续
+    [8] => 乞灵[qi3ling2
+    [9] => 于加剧军事紧张局势。]]近日，日本航空“自卫队”在神奈川县横须贺市进行了号称改进反导能力的陆基
+    [10] => 宙斯盾[zhou4si1dun4
+    [11] => ]]
+    [12] => 反导导弹“爱国者”机动部署训练。这次，日本又公开扬言“训练目的在于消除国民对安保保障的不安”。日本以消除来自谁的“威胁”的不安为借口，每年在列岛各地频繁开展导弹机动部署训练，甚至在人员来往复杂的东京中心的公园上演鬼把戏。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)朝中社：故意
+[process-trans-sentences_chinese.php : 216] match => 招惹[zhao1re3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]别人，鼓吹“安保不保”，决不会让日本有好果子吃。【环球网报道】朝中社10日刊发评论文章，题为《朝中社评论：鼓吹“安保不安”的真实用心不容
+[process-trans-sentences_chinese.php : 216] match => 掩盖[yan3gai4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)》。]]文章称，日本一而再，再而三的导弹机动部署训练的目的是别有用心的，完全出于向国民更加鼓吹“安保不安和危机”意识，]]为军事大国化提供名分，加快实现海外扩张野心。]]文章还称，无论日本如何
+[process-trans-sentences_chinese.php : 216] match => 鼓噪[gu3zao4“周边威胁”，掩盖不了为海外扩张野心和重新侵略野心
+[process-trans-sentences_chinese.php : 216] match => 冲昏[chong1hun1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)头脑的战争国家、侵略国家的本色。]]故意招惹别人，鼓吹“安保不安”的做法，决不会让日本（有）好果子吃。朝中社全文如下：]]日本继续
+[process-trans-sentences_chinese.php : 216] match => 乞灵[qi3ling2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)于加剧军事紧张局势。]]近日，日本航空“自卫队”在神奈川县横须贺市进行了号称改进反导能力的陆基
+[process-trans-sentences_chinese.php : 216] match => 宙斯盾[zhou4si1dun4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)反导导弹“爱国者”机动部署训练。这次，日本又公开扬言“训练目的在于消除国民对安保保障的不安”。日本以消除来自谁的“威胁”的不安为借口，每年在列岛各地频繁开展导弹机动部署训练，甚至在人员来往复杂的东京中心的公园上演鬼把戏。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211111_124303_988002.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211111_124303_988002.txt'
+  
