@@ -6699,3 +6699,223 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211111_124303_988002.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211111_124303_988002.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20211113_164600_371584)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 谶纬[chen4wei3
+    [1] => ]][注1]是中国古代谶书和纬书的合称。谶（现也称签）是秦汉间
+    [2] => 巫师[wu1shi1
+    [3] => 、方士编造的预示
+    [4] => 吉凶[-xiong1
+    [5] => 的隐语，]]后来民间发展在
+    [6] => 庙宇[miao4yu3:temple
+    [7] => ]]
+    [8] => 或道观裹求神
+    [9] => 问卜[-bu3
+    [10] => ，渐渐地更加简化为求签。]]《说文解字》：谶，验也。有征验之书，
+    [11] => 河雒[-luo4
+    [12] => 所出书曰谶[1]。]]纬是汉代附会儒家经义衍生出来的一类书，]]被汉光武帝刘秀之后的人称为“内学”，而原本的经典反被称为“外学”。谶纬之学就是一种政治预言。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 216] match => 谶纬[chen4wei3
+[process-trans-sentences_chinese.php : 216] match => ]][注1]是中国古代谶书和纬书的合称。谶（现也称签）是秦汉间
+[process-trans-sentences_chinese.php : 216] match => 巫师[wu1shi1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、方士编造的预示
+[process-trans-sentences_chinese.php : 216] match => 吉凶[-xiong1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的隐语，]]后来民间发展在
+[process-trans-sentences_chinese.php : 216] match => 庙宇[miao4yu3:temple
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)或道观裹求神
+[process-trans-sentences_chinese.php : 216] match => 问卜[-bu3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，渐渐地更加简化为求签。]]《说文解字》：谶，验也。有征验之书，
+[process-trans-sentences_chinese.php : 216] match => 河雒[-luo4
+[process-trans-sentences_chinese.php : 216] match => 所出书曰谶[1]。]]纬是汉代附会儒家经义衍生出来的一类书，]]被汉光武帝刘秀之后的人称为“内学”，而原本的经典反被称为“外学”。谶纬之学就是一种政治预言。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211113_164600_381584.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211113_164600_381584.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20211113_164635_744642)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 谶纬[chen4wei3
+    [1] => ]][注1]是中国古代谶书和纬书的合称。谶（现也称签）是秦汉间
+    [2] => 巫师[wu1shi1
+    [3] => 、方士编造的预示
+    [4] => 吉凶[-xiong1
+    [5] => 的隐语，]]后来民间发展在
+    [6] => 庙宇[miao4yu3:temple
+    [7] => ]]
+    [8] => 或道观裹求神
+    [9] => 问卜[-bu3
+    [10] => ，渐渐地更加简化为求签。]]《说文解字》：谶，验也。有征验之书，
+    [11] => 河雒[-luo4
+    [12] => 所出书曰谶[1]。]]纬是汉代附会儒家经义衍生出来的一类书，]]被汉光武帝刘秀之后的人称为“内学”，而原本的经典反被称为“外学”。谶纬之学就是一种政治预言。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 216] match => 谶纬[chen4wei3
+[process-trans-sentences_chinese.php : 216] match => ]][注1]是中国古代谶书和纬书的合称。谶（现也称签）是秦汉间
+[process-trans-sentences_chinese.php : 216] match => 巫师[wu1shi1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、方士编造的预示
+[process-trans-sentences_chinese.php : 216] match => 吉凶[-xiong1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的隐语，]]后来民间发展在
+[process-trans-sentences_chinese.php : 216] match => 庙宇[miao4yu3:temple
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)或道观裹求神
+[process-trans-sentences_chinese.php : 216] match => 问卜[-bu3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，渐渐地更加简化为求签。]]《说文解字》：谶，验也。有征验之书，
+[process-trans-sentences_chinese.php : 216] match => 河雒[-luo4
+[process-trans-sentences_chinese.php : 216] match => 所出书曰谶[1]。]]纬是汉代附会儒家经义衍生出来的一类书，]]被汉光武帝刘秀之后的人称为“内学”，而原本的经典反被称为“外学”。谶纬之学就是一种政治预言。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211113_164635_764642.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211113_164635_764642.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20211113_164658_015737)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 谶纬[chen4wei3
+    [1] => ]][注1]是中国古代谶书和纬书的合称。谶（现也称签）是秦汉间
+    [2] => 巫师[wu1shi1
+    [3] => 、方士编造的预示
+    [4] => 吉凶[-xiong1
+    [5] => 的隐语，]]后来民间发展在
+    [6] => 庙宇[miao4yu3:temple
+    [7] => ]]
+    [8] => 或道观裹求神
+    [9] => 问卜[-bu3
+    [10] => ，渐渐地更加简化为求签。]]《说文解字》：谶，验也。有征验之书，
+    [11] => 河雒[-luo4
+    [12] => 所出书曰谶[1]。]]纬是汉代附会儒家经义衍生出来的一类书，]]被汉光武帝刘秀之后的人称为“内学”，而原本的经典反被称为“外学”。谶纬之学就是一种政治预言。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 216] match => 谶纬[chen4wei3
+[process-trans-sentences_chinese.php : 216] match => ]][注1]是中国古代谶书和纬书的合称。谶（现也称签）是秦汉间
+[process-trans-sentences_chinese.php : 216] match => 巫师[wu1shi1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、方士编造的预示
+[process-trans-sentences_chinese.php : 216] match => 吉凶[-xiong1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的隐语，]]后来民间发展在
+[process-trans-sentences_chinese.php : 216] match => 庙宇[miao4yu3:temple
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)或道观裹求神
+[process-trans-sentences_chinese.php : 216] match => 问卜[-bu3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，渐渐地更加简化为求签。]]《说文解字》：谶，验也。有征验之书，
+[process-trans-sentences_chinese.php : 216] match => 河雒[-luo4
+[process-trans-sentences_chinese.php : 216] match => 所出书曰谶[1]。]]纬是汉代附会儒家经义衍生出来的一类书，]]被汉光武帝刘秀之后的人称为“内学”，而原本的经典反被称为“外学”。谶纬之学就是一种政治预言。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211113_164658_015737.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211113_164658_015737.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20211114_084638_838788)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 茶壶[-hu4
+    [1] => ]]
+    [2] => 是一种供
+    [3] => 泡茶[pao4-
+    [4] => 和
+    [5] => 斟茶[zhen1-
+    [6] => ]]
+    [7] => 用的
+    [8] => 带嘴[dai4zui3
+    [9] => 器皿[qi4min3
+    [10] => ]]，由
+    [11] => 壶盖[hu2gai4
+    [12] => ]]
+    [13] => 、壶身、壶底足等部分所组成。
+    [14] => 茶壶大小的选择可依照饮茶人数
+    [15] => 多寡[-gua3
+    [16] => ]]
+    [17] => 而定，同时也需要视乎所冲泡茶种的特性，潮州的工夫茶所使用的茶壶就是比较
+    [18] => 小巧[-qiao3
+    [19] => ]]
+    [20] => 。茶壶的造型除了一般的
+    [21] => 桔子[ju2-
+    [22] => 型，亦有瓜形、柿形[shi4-
+    [23] => 、菱[ling
+    [24] => 形
+    [25] => 、鼓形、六角形等，
+    [26] => ]]
+    [27] => 壶面的
+    [28] => 装饰[zhuan1shi4
+    [29] => 花纹[-wen2
+    [30] => 亦变化万千。
+    [31] => ]]
+    [32] => 材质方面，有
+    [33] => 瓷[ci2
+    [34] => 质、
+    [35] => 陶[tao2
+    [36] => 质、
+    [37] => 玻璃[bo1li2
+    [38] => 、
+    [39] => 铸铁[zhu4-
+    [40] => 及
+    [41] => 纯银[chun2yin2
+    [42] => 等，陶质又以
+    [43] => 紫砂陶[zi3sha1tao2
+    [44] => 为佳。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 216] match => 茶壶[-hu4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)是一种供
+[process-trans-sentences_chinese.php : 216] match => 泡茶[pao4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)和
+[process-trans-sentences_chinese.php : 216] match => 斟茶[zhen1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)用的
+[process-trans-sentences_chinese.php : 216] match => 带嘴[dai4zui3
+[process-trans-sentences_chinese.php : 216] match => 器皿[qi4min3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]，由
+[process-trans-sentences_chinese.php : 216] match => 壶盖[hu2gai4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、壶身、壶底足等部分所组成。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)茶壶大小的选择可依照饮茶人数
+[process-trans-sentences_chinese.php : 216] match => 多寡[-gua3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)而定，同时也需要视乎所冲泡茶种的特性，潮州的工夫茶所使用的茶壶就是比较
+[process-trans-sentences_chinese.php : 216] match => 小巧[-qiao3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。茶壶的造型除了一般的
+[process-trans-sentences_chinese.php : 216] match => 桔子[ju2-
+[process-trans-sentences_chinese.php : 216] match => 型，亦有瓜形、柿形[shi4-
+[process-trans-sentences_chinese.php : 216] match => 、菱[ling
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)形
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、鼓形、六角形等，
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)壶面的
+[process-trans-sentences_chinese.php : 216] match => 装饰[zhuan1shi4
+[process-trans-sentences_chinese.php : 216] match => 花纹[-wen2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)亦变化万千。
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)材质方面，有
+[process-trans-sentences_chinese.php : 216] match => 瓷[ci2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)质、
+[process-trans-sentences_chinese.php : 216] match => 陶[tao2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)质、
+[process-trans-sentences_chinese.php : 216] match => 玻璃[bo1li2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、
+[process-trans-sentences_chinese.php : 216] match => 铸铁[zhu4-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)及
+[process-trans-sentences_chinese.php : 216] match => 纯银[chun2yin2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)等，陶质又以
+[process-trans-sentences_chinese.php : 216] match => 紫砂陶[zi3sha1tao2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)为佳。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211114_084638_898787.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211114_084638_898787.txt'
+  
