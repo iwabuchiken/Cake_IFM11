@@ -46744,3 +46744,2528 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211113_163959_998960.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211113_163959_998960.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211115_084842_495007)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 习近平首尔大学演讲：国不以利为利 以义为利也。
+
+    [1] => 
+
+    [2] => 来源：新华网。
+
+    [3] => 
+
+    [4] => 2014-07-04 20:47。
+
+    [5] => 
+
+    [6] => 新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+
+    [7] => 
+
+    [8] => 共创中韩合作未来 同襄亚洲振兴繁荣。
+
+    [9] => 
+
+    [10] => ——在韩国国立首尔大学的演讲。
+
+    [11] => 
+
+    [12] => 
+
+    [13] => （2014年7月4日，首尔）。
+
+    [14] => 
+
+    [15] => 中华人民共和国主席 习近平。
+
+    [16] => 
+
+    [17] => 尊敬的吴然天校长，。
+
+    [18] => 
+
+    [19] => 老师们，同学们，。
+
+    [20] => 
+
+    [21] => 女士们，先生们，朋友们：。
+
+    [22] => 
+
+    [23] => 安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+
+    [24] => 
+
+    [25] => 我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+
+    [26] => 
+
+    [27] => 中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '习近平首尔大学演讲：国不以利为利 以义为利也。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '来源：新华网。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '2014-07-04 20:47。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '共创中韩合作未来 同襄亚洲振兴繁荣。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '——在韩国国立首尔大学的演讲。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '（2014年7月4日，首尔）。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '中华人民共和国主席 习近平。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '尊敬的吴然天校长，。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '老师们，同学们，。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '女士们，先生们，朋友们：。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 习近平首尔大学演讲：国不以利为利 以义为利也。
+
+    [1] => 
+    [2] => 来源：新华网。
+
+    [3] => 
+    [4] => 2014-07-04 20:47。
+
+    [5] => 
+    [6] => 新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+
+    [7] => 
+    [8] => 共创中韩合作未来 同襄亚洲振兴繁荣。
+
+    [9] => 
+    [10] => ——在韩国国立首尔大学的演讲。
+
+    [11] => 
+    [12] => 
+    [13] => （2014年7月4日，首尔）。
+
+    [14] => 
+    [15] => 中华人民共和国主席 习近平。
+
+    [16] => 
+    [17] => 尊敬的吴然天校长，。
+
+    [18] => 
+    [19] => 老师们，同学们，。
+
+    [20] => 
+    [21] => 女士们，先生们，朋友们：。
+
+    [22] => 
+    [23] => 安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+
+    [24] => 
+    [25] => 我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+
+    [26] => 
+    [27] => 中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '习近平首尔大学演讲：国不以利为利 以义为利也。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+习近平首尔大学演讲：国不以利为利 以义为利也。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '来源：新华网。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+来源：新华网。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '2014-07-04 20:47。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+2014-07-04 20:47。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '共创中韩合作未来 同襄亚洲振兴繁荣。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+共创中韩合作未来 同襄亚洲振兴繁荣。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '——在韩国国立首尔大学的演讲。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+——在韩国国立首尔大学的演讲。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '（2014年7月4日，首尔）。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+（2014年7月4日，首尔）。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '中华人民共和国主席 习近平。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+中华人民共和国主席 习近平。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '尊敬的吴然天校长，。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+尊敬的吴然天校长，。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '老师们，同学们，。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+老师们，同学们，。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '女士们，先生们，朋友们：。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+女士们，先生们，朋友们：。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 习近平首尔大学演讲：国不以利为利 以义为利也。
+    [1] => 
+    [2] => 来源：新华网。
+    [3] => 
+    [4] => 2014-07-04 20:47。
+    [5] => 
+    [6] => 新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+    [7] => 
+    [8] => 共创中韩合作未来 同襄亚洲振兴繁荣。
+    [9] => 
+    [10] => ——在韩国国立首尔大学的演讲。
+    [11] => 
+    [12] => 
+    [13] => （2014年7月4日，首尔）。
+    [14] => 
+    [15] => 中华人民共和国主席 习近平。
+    [16] => 
+    [17] => 尊敬的吴然天校长，。
+    [18] => 
+    [19] => 老师们，同学们，。
+    [20] => 
+    [21] => 女士们，先生们，朋友们：。
+    [22] => 
+    [23] => 安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+    [24] => 
+    [25] => 我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+    [26] => 
+    [27] => 中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '习近平首尔大学演讲：国不以利为利 以义为利也。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '来源：新华网。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '2014-07-04 20:47。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '共创中韩合作未来 同襄亚洲振兴繁荣。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '——在韩国国立首尔大学的演讲。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '（2014年7月4日，首尔）。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '中华人民共和国主席 习近平。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '尊敬的吴然天校长，。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '老师们，同学们，。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '女士们，先生们，朋友们：。'
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 习近平首尔大学演讲：国不以利为利 以义为利也。
+    [1] => 
+    [2] => 来源：新华网。
+    [3] => 
+    [4] => 2014-07-04 20:47。
+    [5] => 
+    [6] => 新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+    [7] => 
+    [8] => 共创中韩合作未来 同襄亚洲振兴繁荣。
+    [9] => 
+    [10] => ——在韩国国立首尔大学的演讲。
+    [11] => 
+    [12] => 
+    [13] => （2014年7月4日，首尔）。
+    [14] => 
+    [15] => 中华人民共和国主席 习近平。
+    [16] => 
+    [17] => 尊敬的吴然天校长，。
+    [18] => 
+    [19] => 老师们，同学们，。
+    [20] => 
+    [21] => 女士们，先生们，朋友们：。
+    [22] => 
+    [23] => 安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+    [24] => 
+    [25] => 我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+    [26] => 
+    [27] => 中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '习近平首尔大学演讲：国不以利为利 以义为利也。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+习近平首尔大学演讲：国不以利为利以义为利也。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '来源：新华网。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '2014-07-04 20:47。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 4 2
+        )
+
+    [1] => Array
+        (
+            [0] => 4
+        )
+
+    [2] => Array
+        (
+            [0] => 2
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+2014-07-0420:47。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '新华网首尔7月4日电 国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+新华网首尔7月4日电国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '共创中韩合作未来 同襄亚洲振兴繁荣。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+共创中韩合作未来同襄亚洲振兴繁荣。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '——在韩国国立首尔大学的演讲。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '（2014年7月4日，首尔）。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '中华人民共和国主席 习近平。'
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+中华人民共和国主席习近平。
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '尊敬的吴然天校长，。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '老师们，同学们，。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '女士们，先生们，朋友们：。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 习近平首尔大学演讲：国不以利为利以义为利也。
+    [1] => 
+    [2] => 来源：新华网。
+    [3] => 
+    [4] => 2014-07-0420:47。
+    [5] => 
+    [6] => 新华网首尔7月4日电国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。
+    [7] => 
+    [8] => 共创中韩合作未来同襄亚洲振兴繁荣。
+    [9] => 
+    [10] => ——在韩国国立首尔大学的演讲。
+    [11] => 
+    [12] => 
+    [13] => （2014年7月4日，首尔）。
+    [14] => 
+    [15] => 中华人民共和国主席习近平。
+    [16] => 
+    [17] => 尊敬的吴然天校长，。
+    [18] => 
+    [19] => 老师们，同学们，。
+    [20] => 
+    [21] => 女士们，先生们，朋友们：。
+    [22] => 
+    [23] => 安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。
+    [24] => 
+    [25] => 我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。
+    [26] => 
+    [27] => 中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>习近平首尔大学演讲：国不以利为利以义为利也。来源：新华网。2014-07-0420:47。新华网首尔7月4日电国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来同襄亚洲振兴繁荣》的演讲。全文如下：。共创中韩合作未来同襄亚洲振兴繁荣。——在韩国国立首尔大学的演讲。（2014年7月4日，首尔）。中华人民共和国主席习近平。尊敬的吴然天校长，。老师们，同学们，。女士们，先生们，朋友们：。安宁哈西米嘎！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我谨代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以诚挚的问候和良好的祝愿！。我这次来韩国，是应朴槿惠总统的邀请进行国事访问，也是到邻居家串串门，看看朋友。昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。中韩两国毗邻而居。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话俯拾即是。从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子金乔觉；从在唐朝求学为官的“东国儒宗”崔致远，到东渡高丽、开创孔子后裔半岛一脉的孔绍；从在中国各地辗转27年的韩国独立元勋金九先生，到出生于韩国的《中国人民解放军军歌》作曲者郑律成……两国人民友好交往、相扶相济的传统源远流长。韩国古代诗人许筠写下的“肝胆每相照，冰壶映寒月”的诗句，完全可以用来形容中韩两国人民友谊。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211115_084842_495007.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211115_084842_495007.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211115_092649_616183)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => 历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+
+    [1] => 
+
+    [2] => 上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+
+    [3] => 
+
+    [4] => 1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : '历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '
+'
+[process-texts-for-reading_chinese.php : 172]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 155]
+line : '1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。'
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+
+    [1] => 
+    [2] => 上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+
+    [3] => 
+    [4] => 1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : '历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+'
+[process-texts-for-reading_chinese.php : 270]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 284]
+$line_Replaced
+上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+[process-texts-for-reading_chinese.php : 252]
+line : ''
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 252]
+line : '1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。'
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+    [1] => 
+    [2] => 上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+    [3] => 
+    [4] => 1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : '历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。4
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => 4
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+[process-texts-for-reading_chinese.php : 346]
+line : ''
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 346]
+line : '1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。'
+[process-texts-for-reading_chinese.php : 364]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+            [4] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+            [4] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+            [4] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 378]
+$line_Replaced
+1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+    [1] => 
+    [2] => 上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+    [3] => 
+    [4] => 1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : '历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : ''
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 439]
+line : '1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。'
+[process-texts-for-reading_chinese.php : 483]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。
+    [1] => 
+    [2] => 上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。
+    [3] => 
+    [4] => 1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>历史上，每当面对危难时，中韩两国人民都相濡以沫、患难相助。400多年前，朝鲜半岛爆发壬辰倭乱，两国军民同仇敌忾、并肩作战。明朝邓子龙将军和朝鲜王朝李舜臣将军在露梁海战中双双殉职，明军统帅陈璘今天还有后人生活在韩国。上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211115_092649_616183.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211115_092649_616183.txt
+ 

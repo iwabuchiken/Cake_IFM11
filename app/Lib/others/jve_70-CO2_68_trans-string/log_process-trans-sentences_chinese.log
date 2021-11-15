@@ -6919,3 +6919,161 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211114_084638_898787.txt
 [process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211114_084638_898787.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20211115_090946_500394)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 习近平首尔大学演讲：国不以利为利以义为利也。来源：新华网。2014-07-0420:47。新华网首尔7月4日电国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来
+    [1] => 同襄[-xiang1:assist
+    [2] => 亚洲振兴繁荣》的演讲。全文如下：。]]共创中韩合作未来同襄亚洲振兴繁荣。——在韩国国立首尔大学的演讲。（2014年7月4日，首尔）。中华人民共和国主席习近平。尊敬的吴然天校长，。老师们，同学们，。女士们，先生们，朋友们：。
+    [3] => 安宁哈西米嘎[----ga1
+    [4] => ]]
+    [5] => ！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我
+    [6] => 谨[jin3
+    [7] => ]]
+    [8] => 代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以
+    [9] => 诚挚[-zhi4
+    [10] => 的问候和良好的祝愿！。]]我这次来韩国，是应
+    [11] => 朴槿惠[pu3jin3hui4
+    [12] => 总统的邀请进行国事访问，也是到邻居家串
+    [13] => 串门[chuan4-:stop-by
+    [14] => ，看看朋友。]]昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。中韩两国
+    [15] => 毗邻而居[pi2
+    [16] => 。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话
+    [17] => 俯拾即是[fu3:bow-down;shi2--
+    [18] => 。]]从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子
+    [19] => 金乔觉[-qiao2-
+    [20] => ；从在唐朝求学为官的“东国儒宗”
+    [21] => 崔致远[cui1zhi4yuan3
+    [22] => ，到东渡高丽、开创孔子后裔半岛一
+    [23] => 脉[mai4
+    [24] => 的
+    [25] => 孔绍[-shao4
+    [26] => ]]
+    [27] => ；从在中国各地
+    [28] => 辗转[nian3-
+    [29] => 27年的韩国独立
+    [30] => 元勋[-xun1
+    [31] => 金九先生，]]
+    [32] => 到出生于韩国的《中国人民解放军军歌》作曲者
+    [33] => 郑律成[zheng4--
+    [34] => ……两国人民友好交往、相扶相济[-fu2*
+    [35] => 的传统源远流长。]]韩国古代诗人
+    [36] => 许筠[xu3yun2
+    [37] => 写下的“
+    [38] => 肝胆[gan1dan3
+    [39] => 每相照，
+    [40] => 冰壶[bing1hu2
+    [41] => 映[ying4
+    [42] => 寒月”的诗句，完全可以用来形容中韩两国人民友谊。]]
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)习近平首尔大学演讲：国不以利为利以义为利也。来源：新华网。2014-07-0420:47。新华网首尔7月4日电国家主席习近平4日在韩国国立首尔大学发表了题为《共创中韩合作未来
+[process-trans-sentences_chinese.php : 216] match => 同襄[-xiang1:assist
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)亚洲振兴繁荣》的演讲。全文如下：。]]共创中韩合作未来同襄亚洲振兴繁荣。——在韩国国立首尔大学的演讲。（2014年7月4日，首尔）。中华人民共和国主席习近平。尊敬的吴然天校长，。老师们，同学们，。女士们，先生们，朋友们：。
+[process-trans-sentences_chinese.php : 216] match => 安宁哈西米嘎[----ga1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)！大家好！今天，有机会来到韩国最高学府国立首尔大学，同老师们、同学们以及各界朋友见面，感到十分高兴。首先，我
+[process-trans-sentences_chinese.php : 216] match => 谨[jin3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)代表中国政府和中国人民，并以我个人的名义，向在座各位，向全体韩国国民，致以
+[process-trans-sentences_chinese.php : 216] match => 诚挚[-zhi4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的问候和良好的祝愿！。]]我这次来韩国，是应
+[process-trans-sentences_chinese.php : 216] match => 朴槿惠[pu3jin3hui4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)总统的邀请进行国事访问，也是到邻居家串
+[process-trans-sentences_chinese.php : 216] match => 串门[chuan4-:stop-by
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，看看朋友。]]昨天，我同朴槿惠总统举行了会谈，就双边关系及地区和国际形势等共同关心的问题深入交换意见，达成广泛共识。中韩两国
+[process-trans-sentences_chinese.php : 216] match => 毗邻而居[pi2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。百金买屋，千金买邻，好邻居金不换。回顾历史，中韩友好佳话
+[process-trans-sentences_chinese.php : 216] match => 俯拾即是[fu3:bow-down;shi2--
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。]]从东渡求仙来到济州岛的徐福，到金身坐化九华山的新罗王子
+[process-trans-sentences_chinese.php : 216] match => 金乔觉[-qiao2-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)；从在唐朝求学为官的“东国儒宗”
+[process-trans-sentences_chinese.php : 216] match => 崔致远[cui1zhi4yuan3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，到东渡高丽、开创孔子后裔半岛一
+[process-trans-sentences_chinese.php : 216] match => 脉[mai4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的
+[process-trans-sentences_chinese.php : 216] match => 孔绍[-shao4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)；从在中国各地
+[process-trans-sentences_chinese.php : 216] match => 辗转[nian3-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)27年的韩国独立
+[process-trans-sentences_chinese.php : 216] match => 元勋[-xun1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)金九先生，]]
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)到出生于韩国的《中国人民解放军军歌》作曲者
+[process-trans-sentences_chinese.php : 216] match => 郑律成[zheng4--
+[process-trans-sentences_chinese.php : 216] match => ……两国人民友好交往、相扶相济[-fu2*
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)的传统源远流长。]]韩国古代诗人
+[process-trans-sentences_chinese.php : 216] match => 许筠[xu3yun2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)写下的“
+[process-trans-sentences_chinese.php : 216] match => 肝胆[gan1dan3
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)每相照，
+[process-trans-sentences_chinese.php : 216] match => 冰壶[bing1hu2
+[process-trans-sentences_chinese.php : 216] match => 映[ying4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)寒月”的诗句，完全可以用来形容中韩两国人民友谊。]]
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211115_090947_274400.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211115_090947_274400.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20211115_093643_461772)
+
+[process-trans-sentences_chinese.php : 176] $tokensOf_Split =>
+
+Array
+(
+    [0] => 历史上，每当面对危难时，中韩两国人民都
+    [1] => 相濡以沫[-ru2-mo4
+    [2] => 、
+    [3] => 患难相助[huan4nan4*
+    [4] => 。]]400多年前，朝鲜半岛爆发
+    [5] => 壬辰倭乱[ren2chen2wo1-
+    [6] => ，两国军民
+    [7] => 同仇敌忾[-chou2di2;kai4:anger
+    [8] => 、
+    [9] => 并肩[bing4jian1
+    [10] => 作战。]]明朝
+    [11] => 邓子龙[deng4*
+    [12] => 将军和朝鲜王朝
+    [13] => 李舜臣[li3shun4chen2
+    [14] => 将军在
+    [15] => 露梁[lu4liang2
+    [16] => 海战中
+    [17] => 双双
+    [18] => 殉职[xun4zhi2
+    [19] => ，明军
+    [20] => 统帅[-shuai4
+    [21] => 陈璘[chen2lin2
+    [22] => 今天还有后人生活在韩国。]]上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+)
+[process-trans-sentences_chinese.php : 198] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)历史上，每当面对危难时，中韩两国人民都
+[process-trans-sentences_chinese.php : 216] match => 相濡以沫[-ru2-mo4
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、
+[process-trans-sentences_chinese.php : 216] match => 患难相助[huan4nan4*
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)。]]400多年前，朝鲜半岛爆发
+[process-trans-sentences_chinese.php : 216] match => 壬辰倭乱[ren2chen2wo1-
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，两国军民
+[process-trans-sentences_chinese.php : 216] match => 同仇敌忾[-chou2di2;kai4:anger
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)、
+[process-trans-sentences_chinese.php : 216] match => 并肩[bing4jian1
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)作战。]]明朝
+[process-trans-sentences_chinese.php : 216] match => 邓子龙[deng4*
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)将军和朝鲜王朝
+[process-trans-sentences_chinese.php : 216] match => 李舜臣[li3shun4chen2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)将军在
+[process-trans-sentences_chinese.php : 216] match => 露梁[lu4liang2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)海战中
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)双双
+[process-trans-sentences_chinese.php : 216] match => 殉职[xun4zhi2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)，明军
+[process-trans-sentences_chinese.php : 216] match => 统帅[-shuai4
+[process-trans-sentences_chinese.php : 216] match => 陈璘[chen2lin2
+[process-trans-sentences_chinese.php : 232] NOT match => ($result = 0)今天还有后人生活在韩国。]]上个世纪上半叶，日本军国主义对中韩发动野蛮的侵略战争，吞并朝鲜半岛，侵占中国半壁江山，使中韩两国生灵涂炭、山河破碎。在抗日战争如火如荼的岁月中，我们两国人民生死相依、倾力相援。中国境内的“大韩民国临时政府旧址”、上海纪念尹奉吉义士的梅轩、西安光复军驻地旧址等，都见证了那段可歌可泣的难忘历史。1992年中韩建交以来，两国秉天时、得地利、应人和，坚持互尊互信、聚同化异的大原则，把握合作共赢、共创未来的大方向，尊重彼此核心关切，照顾对方舒适度，两国关系实现跨越式发展。现在，中国已经成为韩国最大贸易伙伴、最大出口市场、最大进口来源国、最大海外投资对象国、最大留学生来源国、最大海外旅行目的地国。韩国成为中国最重要的贸易和投资合作伙伴之一。中韩双边贸易额超过了韩美、韩日、韩欧贸易额的总和，每周往返于中韩之间的航班达800多个。去年，中韩人员往来达822万人次，不出两年就有望迎来年度人员往来1000万人次。中韩两国是名副其实的战略合作伙伴，双边关系迈入最好发展时期。
+[process-trans-sentences_chinese.php : 299] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211115_093643_476773.txt
+[process-trans-sentences_chinese.php : 316] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20211115_093643_476773.txt'
+  

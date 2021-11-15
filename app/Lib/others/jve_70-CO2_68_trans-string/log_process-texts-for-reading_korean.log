@@ -1700,3 +1700,50 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211109_215322_574224.txt
 [process-texts-for-reading_korean.php : 431] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211114_212829_296871)
+[process-texts-for-reading_korean.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_korean.php : 143]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 213]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 231]
+match : line -->서울교육청, 교육공무직본부 농성 막으려 경찰 투입···조합원 부상
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->“‘진보교육감’ 조희연, 어떻게 이명박-박근혜 정권 상징인 차벽 세우나”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 231]
+match : line -->서울지부 또한 서울교육청에 천막을 설치를 하려했으나, 서울시청 총무과 공무원들이 이들 조합원을 가로막으며 제지했고, 곧이어 경찰병력이 투입돼 서울지부 조합원을 제압했다. 이 과정에서 한 조합원은 손톱이 들리는 부상을 입었고, 권용희 부지부장은 갈비뼈가 부러져 병원으로 이송됐다. 가져온 천막은 파손됐다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 291]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 414] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211114_212829_296871.txt'
+[process-texts-for-reading_korean.php : 422] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211114_212829_296871.txt
+[process-texts-for-reading_korean.php : 431] returning...
+ 
