@@ -49269,3 +49269,3139 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211115_092649_616183.txt'
 [process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211115_092649_616183.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211130_130200_994750)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) 
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : 'Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) '
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) 
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : 'Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) '
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) 
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : 'Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) '
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) 
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : 'Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) '
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => e c
+            [1] => i s
+            [2] => , p
+            [3] => e e
+            [4] => n l
+            [5] => s h
+            [6] => , l
+            [7] => a p
+            [8] => a e
+            [9] => s s
+            [10] => e p
+            [11] => r u
+            [12] => a c
+            [13] => n n
+            [14] => a p
+            [15] => r i
+            [16] => n d
+            [17] => e l
+            [18] => a r
+            [19] => d q
+            [20] => e c
+            [21] => e a
+            [22] => a f
+            [23] => a y
+            [24] => a u
+            [25] => n d
+            [26] => o h
+            [27] => o (
+            [28] => o o
+            [29] => o q
+            [30] => s s
+            [31] => a e
+            [32] => l n
+            [33] => a b
+            [34] => a o
+            [35] => l p
+            [36] => o d
+            [37] => e n
+            [38] => a d
+            [39] => e S
+        )
+
+    [1] => Array
+        (
+            [0] => e
+            [1] => i
+            [2] => ,
+            [3] => e
+            [4] => n
+            [5] => s
+            [6] => ,
+            [7] => a
+            [8] => a
+            [9] => s
+            [10] => e
+            [11] => r
+            [12] => a
+            [13] => n
+            [14] => a
+            [15] => r
+            [16] => n
+            [17] => e
+            [18] => a
+            [19] => d
+            [20] => e
+            [21] => e
+            [22] => a
+            [23] => a
+            [24] => a
+            [25] => n
+            [26] => o
+            [27] => o
+            [28] => o
+            [29] => o
+            [30] => s
+            [31] => a
+            [32] => l
+            [33] => a
+            [34] => a
+            [35] => l
+            [36] => o
+            [37] => e
+            [38] => a
+            [39] => e
+        )
+
+    [2] => Array
+        (
+            [0] => c
+            [1] => s
+            [2] => p
+            [3] => e
+            [4] => l
+            [5] => h
+            [6] => l
+            [7] => p
+            [8] => e
+            [9] => s
+            [10] => p
+            [11] => u
+            [12] => c
+            [13] => n
+            [14] => p
+            [15] => i
+            [16] => d
+            [17] => l
+            [18] => r
+            [19] => q
+            [20] => c
+            [21] => a
+            [22] => f
+            [23] => y
+            [24] => u
+            [25] => d
+            [26] => h
+            [27] => (
+            [28] => o
+            [29] => q
+            [30] => s
+            [31] => e
+            [32] => n
+            [33] => b
+            [34] => o
+            [35] => p
+            [36] => d
+            [37] => n
+            [38] => d
+            [39] => S
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+Aunquecasisiempre,principalmenteenloshumanos,lapalabraestréssueleposeerunaconnotaciónnegativaporincomprensióndelarealidadqueconducea unafatigay aundesequilibriohomeostático(loopuestoquizásseríaelnirvanabudistao elprincipiodenirvanadeS.Freud) 
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => Aunquecasisiempre,principalmenteenloshumanos,lapalabraestréssueleposeerunaconnotaciónnegativaporincomprensióndelarealidadqueconducea unafatigay aundesequilibriohomeostático(loopuestoquizásseríaelnirvanabudistao elprincipiodenirvanadeS.Freud) 
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>Aunquecasisiempre,principalmenteenloshumanos,lapalabraestréssueleposeerunaconnotaciónnegativaporincomprensióndelarealidadqueconducea unafatigay aundesequilibriohomeostático(loopuestoquizásseríaelnirvanabudistao elprincipiodenirvanadeS.Freud) 
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211130_130200_994750.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211130_130200_994750.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211130_130220_364795)
+[process-texts-for-reading_chinese.php : 99]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70.[CO2].[trans-sentences].dat
+[process-texts-for-reading_chinese.php : 116] $linesOf_File =>
+
+Array
+(
+    [0] => Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) 
+)
+[process-texts-for-reading_chinese.php : 146]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 155]
+line : 'Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) '
+[process-texts-for-reading_chinese.php : 192]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 209]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) 
+)
+
+[process-texts-for-reading_chinese.php : 243]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 252]
+line : 'Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) '
+[process-texts-for-reading_chinese.php : 298]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 314]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) 
+)
+
+[process-texts-for-reading_chinese.php : 336]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 346]
+line : 'Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) '
+[process-texts-for-reading_chinese.php : 392]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 408]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) 
+)
+
+[process-texts-for-reading_chinese.php : 429]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 439]
+line : 'Aunque casi siempre, principalmente en los humanos, la palabra estrés suele poseer una connotación negativa por incomprensión de la realidad que conduce a una fatiga y a un desequilibrio homeostático (lo opuesto quizás sería el nirvana budista o el principio de nirvana de S.Freud) '
+[process-texts-for-reading_chinese.php : 455]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => e c
+            [1] => i s
+            [2] => , p
+            [3] => e e
+            [4] => n l
+            [5] => s h
+            [6] => , l
+            [7] => a p
+            [8] => a e
+            [9] => s s
+            [10] => e p
+            [11] => r u
+            [12] => a c
+            [13] => n n
+            [14] => a p
+            [15] => r i
+            [16] => n d
+            [17] => e l
+            [18] => a r
+            [19] => d q
+            [20] => e c
+            [21] => e a
+            [22] => a f
+            [23] => a y
+            [24] => a u
+            [25] => n d
+            [26] => o h
+            [27] => o (
+            [28] => o o
+            [29] => o q
+            [30] => s s
+            [31] => a e
+            [32] => l n
+            [33] => a b
+            [34] => a o
+            [35] => l p
+            [36] => o d
+            [37] => e n
+            [38] => a d
+            [39] => e S
+        )
+
+    [1] => Array
+        (
+            [0] => e
+            [1] => i
+            [2] => ,
+            [3] => e
+            [4] => n
+            [5] => s
+            [6] => ,
+            [7] => a
+            [8] => a
+            [9] => s
+            [10] => e
+            [11] => r
+            [12] => a
+            [13] => n
+            [14] => a
+            [15] => r
+            [16] => n
+            [17] => e
+            [18] => a
+            [19] => d
+            [20] => e
+            [21] => e
+            [22] => a
+            [23] => a
+            [24] => a
+            [25] => n
+            [26] => o
+            [27] => o
+            [28] => o
+            [29] => o
+            [30] => s
+            [31] => a
+            [32] => l
+            [33] => a
+            [34] => a
+            [35] => l
+            [36] => o
+            [37] => e
+            [38] => a
+            [39] => e
+        )
+
+    [2] => Array
+        (
+            [0] => c
+            [1] => s
+            [2] => p
+            [3] => e
+            [4] => l
+            [5] => h
+            [6] => l
+            [7] => p
+            [8] => e
+            [9] => s
+            [10] => p
+            [11] => u
+            [12] => c
+            [13] => n
+            [14] => p
+            [15] => i
+            [16] => d
+            [17] => l
+            [18] => r
+            [19] => q
+            [20] => c
+            [21] => a
+            [22] => f
+            [23] => y
+            [24] => u
+            [25] => d
+            [26] => h
+            [27] => (
+            [28] => o
+            [29] => q
+            [30] => s
+            [31] => e
+            [32] => n
+            [33] => b
+            [34] => o
+            [35] => p
+            [36] => d
+            [37] => n
+            [38] => d
+            [39] => S
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 469]
+$line_Replaced
+Aunquecasisiempre,principalmenteenloshumanos,lapalabraestréssueleposeerunaconnotaciónnegativaporincomprensióndelarealidadqueconducea unafatigay aundesequilibriohomeostático(loopuestoquizásseríaelnirvanabudistao elprincipiodenirvanadeS.Freud) 
+[process-texts-for-reading_chinese.php : 499]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => Aunquecasisiempre,principalmenteenloshumanos,lapalabraestréssueleposeerunaconnotaciónnegativaporincomprensióndelarealidadqueconducea unafatigay aundesequilibriohomeostático(loopuestoquizásseríaelnirvanabudistao elprincipiodenirvanadeS.Freud) 
+)
+
+[process-texts-for-reading_chinese.php : 595] $stringOf_Replaeced_Lines ==>Aunquecasisiempre,principalmenteenloshumanos,lapalabraestréssueleposeerunaconnotaciónnegativaporincomprensióndelarealidadqueconducea unafatigay aundesequilibriohomeostático(loopuestoquizásseríaelnirvanabudistao elprincipiodenirvanadeS.Freud) 
+[process-texts-for-reading_chinese.php : 645] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211130_130220_364795.txt'
+[process-texts-for-reading_chinese.php : 653] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211130_130220_364795.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211130_130348_231977)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 为何“需要关注”？六看奥密克戎变异毒株。
+
+    [1] => 
+
+    [2] => 
+
+    [3] => 作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+
+    [4] => 
+
+    [5] => 几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。
+
+    [6] => 
+
+    [7] => 德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。
+
+    [8] => 
+
+    [9] => 特点。
+
+    [10] => 
+
+    [11] => 刺突蛋白突变更多。
+
+    [12] => 
+
+    [13] => 当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+
+    [14] => 
+
+    [15] => 世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+
+    [16] => 
+
+    [17] => 危害。
+
+    [18] => 
+
+    [19] => 还需一段时间判断。
+
+    [20] => 
+
+    [21] => 刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。
+
+    [22] => 
+
+    [23] => 世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+
+    [24] => 
+
+    [25] => 同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+
+    [26] => 
+
+    [27] => 症状。
+
+    [28] => 
+
+    [29] => 与其他变异株不同。
+
+    [30] => 
+
+    [31] => 南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+
+    [32] => 
+
+    [33] => 库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+
+    [34] => 
+
+    [35] => “我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '为何“需要关注”？六看奥密克戎变异毒株。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '特点。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '刺突蛋白突变更多。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '危害。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '还需一段时间判断。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '症状。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '与其他变异株不同。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '“我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 为何“需要关注”？六看奥密克戎变异毒株。
+
+    [1] => 
+    [2] => 
+    [3] => 作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+
+    [4] => 
+    [5] => 几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。
+
+    [6] => 
+    [7] => 德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。
+
+    [8] => 
+    [9] => 特点。
+
+    [10] => 
+    [11] => 刺突蛋白突变更多。
+
+    [12] => 
+    [13] => 当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+
+    [14] => 
+    [15] => 世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+
+    [16] => 
+    [17] => 危害。
+
+    [18] => 
+    [19] => 还需一段时间判断。
+
+    [20] => 
+    [21] => 刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。
+
+    [22] => 
+    [23] => 世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+
+    [24] => 
+    [25] => 同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+
+    [26] => 
+    [27] => 症状。
+
+    [28] => 
+    [29] => 与其他变异株不同。
+
+    [30] => 
+    [31] => 南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+
+    [32] => 
+    [33] => 库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+
+    [34] => 
+    [35] => “我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '为何“需要关注”？六看奥密克戎变异毒株。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+为何“需要关注”？六看奥密克戎变异毒株。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '特点。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+特点。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '刺突蛋白突变更多。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+刺突蛋白突变更多。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '危害。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+危害。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '还需一段时间判断。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+还需一段时间判断。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '症状。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+症状。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '与其他变异株不同。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+与其他变异株不同。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '“我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 为何“需要关注”？六看奥密克戎变异毒株。
+    [1] => 
+    [2] => 
+    [3] => 作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+    [4] => 
+    [5] => 几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。
+    [6] => 
+    [7] => 德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。
+    [8] => 
+    [9] => 特点。
+    [10] => 
+    [11] => 刺突蛋白突变更多。
+    [12] => 
+    [13] => 当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+    [14] => 
+    [15] => 世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+    [16] => 
+    [17] => 危害。
+    [18] => 
+    [19] => 还需一段时间判断。
+    [20] => 
+    [21] => 刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。
+    [22] => 
+    [23] => 世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+    [24] => 
+    [25] => 同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+    [26] => 
+    [27] => 症状。
+    [28] => 
+    [29] => 与其他变异株不同。
+    [30] => 
+    [31] => 南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+    [32] => 
+    [33] => 库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+    [34] => 
+    [35] => “我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '为何“需要关注”？六看奥密克戎变异毒株。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '特点。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '刺突蛋白突变更多。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '危害。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '还需一段时间判断。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '症状。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '与其他变异株不同。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '“我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+“我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 为何“需要关注”？六看奥密克戎变异毒株。
+    [1] => 
+    [2] => 
+    [3] => 作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+    [4] => 
+    [5] => 几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。
+    [6] => 
+    [7] => 德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。
+    [8] => 
+    [9] => 特点。
+    [10] => 
+    [11] => 刺突蛋白突变更多。
+    [12] => 
+    [13] => 当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+    [14] => 
+    [15] => 世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+    [16] => 
+    [17] => 危害。
+    [18] => 
+    [19] => 还需一段时间判断。
+    [20] => 
+    [21] => 刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。
+    [22] => 
+    [23] => 世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+    [24] => 
+    [25] => 同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+    [26] => 
+    [27] => 症状。
+    [28] => 
+    [29] => 与其他变异株不同。
+    [30] => 
+    [31] => 南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+    [32] => 
+    [33] => 库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+    [34] => 
+    [35] => “我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '为何“需要关注”？六看奥密克戎变异毒株。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？ 。'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？。
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '特点。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '刺突蛋白突变更多。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '危害。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '还需一段时间判断。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '症状。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '与其他变异株不同。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '“我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。” 。'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+“我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。”。
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 为何“需要关注”？六看奥密克戎变异毒株。
+    [1] => 
+    [2] => 
+    [3] => 作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。
+    [4] => 
+    [5] => 几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？。
+    [6] => 
+    [7] => 德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。
+    [8] => 
+    [9] => 特点。
+    [10] => 
+    [11] => 刺突蛋白突变更多。
+    [12] => 
+    [13] => 当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。
+    [14] => 
+    [15] => 世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。
+    [16] => 
+    [17] => 危害。
+    [18] => 
+    [19] => 还需一段时间判断。
+    [20] => 
+    [21] => 刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。
+    [22] => 
+    [23] => 世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。
+    [24] => 
+    [25] => 同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。
+    [26] => 
+    [27] => 症状。
+    [28] => 
+    [29] => 与其他变异株不同。
+    [30] => 
+    [31] => 南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。
+    [32] => 
+    [33] => 库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。
+    [34] => 
+    [35] => “我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。”。
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>为何“需要关注”？六看奥密克戎变异毒株。作为新冠病毒的最新变异毒株，B.1.1.529变异株11月9日首次在南非确认，24日首次向世界卫生组织报告。世卫组织将其列为“需要关注的变异株”，并用第十五个希腊字母将其命名为Omicron(奥密克戎)。几天来，严防奥密克戎变异毒株的扩散成为全球疫情防控的新目标。关于这一新毒株，目前人们了解哪些信息？。德尔塔毒株与奥密克戎毒株刺突蛋白突变对比图(图片来自罗马儿童医院)。特点。刺突蛋白突变更多。当地时间27日，意大利罗马儿童医院的科研团队发布了全球首张奥密克戎变异株的图片。图片显示，与德尔塔变异株相比，奥密克戎变异株拥有更多的刺突蛋白突变。这些变异多样化，且大部分位于与人体细胞相互作用的区域。世卫组织也表示，奥密克戎变异株拥有大量突变，其中一些突变令人担忧。其被检测出的速度比以往造成感染激增的其他变异毒株都快，表明这一最新变异毒株可能具有生长优势。危害。还需一段时间判断。刺突蛋白突变更多是否表明变异毒株传播力更强？研究人员表示，新冠病毒通过变异进一步适应人体，但并不一定意味着变得更加危险。世卫组织28日指出，目前还不清楚奥密克戎变异株是否将引发更严重的疾病，或者比其他新冠病毒变异株的传染力更强。值得注意的是，世卫组织的声明重申，就初步掌握的事证分析，由这一变异株引发的再感染风险可能更高。同日，中国工程院院士钟南山指出，奥密克戎变异株的危害性还需要一段时间的判断。分子基因检测发现，奥密克戎变异株在受体结合部位有较多变异点，但是它有多大的危害性、传播会有多快、会不会使疾病更加严重、是否需要针对它进行疫苗研发，还要根据情况来判断，现在下结论为时太早。症状。与其他变异株不同。南非医学协会主席库切28日在受访时表示，过去10天，她接触到约30名新冠病毒检测呈阳性的病人，但患者出现了与此前不同的症状。“让他们前来就诊的是一种极度疲劳的症状”，她表示，这对于年轻患者来说是不寻常的。库切表示，大多数患者是40岁以下的男性，只有不到一半接种过疫苗。他们还出现了轻微的肌肉酸痛、喉咙痒和干咳等症状，只有少数人出现发烧。这些轻微症状与其他变异株导致的更严重症状有所不同。“我们并不是在说将来不会出现严重的疾病，”库切说，“(但是)就目前看，甚至是那些我们见到的没有接种疫苗的病人也只有一些轻微症状。”。
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211130_130348_231977.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211130_130348_231977.txt
+ 

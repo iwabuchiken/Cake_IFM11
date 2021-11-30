@@ -85,7 +85,9 @@ php process-texts-for-reading_chinese.php
 		
 		$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs";
 		
-		$fname_Trans_Dat	= "log-session_JVE_70.[CO2].[trans-sentences].dat";
+		//C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+		$fname_Trans_Dat	= "log-session_JVE_70-CO2_trans-sentences.dat";
+		//$fname_Trans_Dat	= "log-session_JVE_70.[CO2].[trans-sentences].dat";
 		
 		$fpath_Trans_Dat	= join(
 				
