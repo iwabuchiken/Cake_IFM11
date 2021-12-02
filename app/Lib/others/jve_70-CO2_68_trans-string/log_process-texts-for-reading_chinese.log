@@ -55417,3 +55417,1457 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211201_103751_466844.txt'
 [process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211201_103751_466844.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211202_103139_220886)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 本报驻日本特派记者  岳林炜
+
+    [1] => 
+
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+
+    [3] => 
+
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+
+    [5] => 
+
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+
+    [7] => 
+
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '本报驻日本特派记者  岳林炜
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 本报驻日本特派记者  岳林炜
+
+    [1] => 
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+
+    [3] => 
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+
+    [5] => 
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+
+    [7] => 
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '本报驻日本特派记者  岳林炜
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 本报驻日本特派记者  岳林炜
+
+    [1] => 
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+    [3] => 
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+    [5] => 
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+    [7] => 
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '本报驻日本特派记者  岳林炜
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => %。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => %。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。1
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => 1
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 本报驻日本特派记者  岳林炜
+
+    [1] => 
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+    [3] => 
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+    [5] => 
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+    [7] => 
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '本报驻日本特派记者  岳林炜
+'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �  
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+本报驻日本特派记者 岳林炜
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 本报驻日本特派记者 岳林炜
+
+    [1] => 
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+    [3] => 
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+    [5] => 
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+    [7] => 
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>本报驻日本特派记者 岳林炜
+据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211202_103139_220886.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211202_103139_220886.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211202_103211_119970)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 本报驻日本特派记者  岳林炜。
+
+    [1] => 
+
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+
+    [3] => 
+
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+
+    [5] => 
+
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+
+    [7] => 
+
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '本报驻日本特派记者  岳林炜。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 本报驻日本特派记者  岳林炜。
+
+    [1] => 
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+
+    [3] => 
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+
+    [5] => 
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+
+    [7] => 
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '本报驻日本特派记者  岳林炜。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+本报驻日本特派记者  岳林炜。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 本报驻日本特派记者  岳林炜。
+    [1] => 
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+    [3] => 
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+    [5] => 
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+    [7] => 
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '本报驻日本特派记者  岳林炜。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => %。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => %。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。1
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => 1
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 本报驻日本特派记者  岳林炜。
+    [1] => 
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+    [3] => 
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+    [5] => 
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+    [7] => 
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '本报驻日本特派记者  岳林炜。'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �  
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+本报驻日本特派记者 岳林炜。
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 本报驻日本特派记者 岳林炜。
+    [1] => 
+    [2] => 据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。
+    [3] => 
+    [4] => 《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。
+    [5] => 
+    [6] => 此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。
+    [7] => 
+    [8] => 日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>本报驻日本特派记者 岳林炜。据日本共同社报道，日本总务省11月30日公布的2020年人口普查终值显示，截至去年10月1日，包括外国人在内的日本总人口为1.26146亿人，较2015年的上次调查减少0.7%。这已是日本人口普查中总人口数量连续两次出现下降，减少人数为94.8646万人。其中，65岁以上人口占总人口的比例增加2.0个百分点至28.6%，刷新迄今最高纪录。《日本经济新闻》11月30日报道称，日本人口普查每5年进行1次。本次人口普查结果显示，成为经济活动主要承担者的劳动年龄人口（15—64岁）减少3％，降至7508.8万人，最近5年减少约226.6万人。14岁以下的儿童人口减少6％，65岁以上人口增加7％，少子老龄化的趋势更趋明显。共同社称，本次人口普查显示的日本老龄化率和少子化率在全球范围内均处最严重的水平。此外，数据还显示，按国籍统计，日本人口减少1.4%，继2010年、2015年调查再次下滑。另一方面，居住在日本的外国人增加43.6%，创历史新高。从国籍来看，越南籍和中国籍的增加尤为明显。日本媒体称，少子老龄化和劳动力人口的减少，已迫使日本不得不降低接纳国外劳动力和人才的门槛。现阶段受疫情影响，日本国内因生活不安定而放弃结婚生子的人屡见不鲜，外国人入境也持续减少。有分析认为，新冠疫情的持续，或将对未来几年日本人口下降趋势产生叠加效应。这也势必对日本中长期社会经济发展产生消极影响。
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211202_103211_119970.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211202_103211_119970.txt
+ 
