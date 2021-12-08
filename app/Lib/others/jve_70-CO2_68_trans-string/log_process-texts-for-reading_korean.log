@@ -3411,3 +3411,180 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211207_214329_527209.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211208_133002_475557)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_133002_475557.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_133002_475557.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211208_133043_066633)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->고진수 관광레저산업노조 세종호텔 지부장은 "관광객에 대한 수요 예측을 제대로 하지 않고, 규제를 풀어서 객실수를 무리하게 확장한 결과, 객실 단가는 떨어지고 고용의 질도 낮아지는 결과를 초래했다. 더욱이 한중·한일 관계의 격변과 메르스·사스 등의 영향으로 안정적인 관광숙박업이 유지되지 못했고, 코로나는 악화에 정점을 찍었다."고 하며 이러한 정책의 실패와 기업들의 영업실패를 노동자에게만 전가하려고 하는 것에 대해 비판했다. 그리고 "교육부에서도 세종대학교 감사결과 수익사업체 자산 처분을 통한 유동자금 확보를 하여 부채비율을 줄이고 수익성 사업에 재투자를 권고했다. 그런데, 세종호텔은 노동자들의 생존권을 박탈하는 정리해고만 하려고 한다."며 규탄했다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->서승환 제주관광서비스노조 칼호텔지부장이 제주칼호텔 매각과 관련한 발언하고 있다. @서비스연맹
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->서승환 제주관광서비스노조 칼호텔지부장이 제주칼호텔 매각과 관련한 발언하고 있다. @서비스연맹
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_133043_066633.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_133043_066633.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211208_134131_892961)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->최대근 관광레저산업노조 위원장(밀레니엄힐튼서울호텔 지부장)이 밀레니엄힐튼서울호텔과 관련된 내용을 발언하고 있다. @서비스연맹
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->최대근 관광레저산업노조 위원장(밀레니엄힐튼서울호텔 지부장)은 "밀레니엄힐튼서울호텔 노동자들은 코로나 시기를 틈탄 수년간 사측의 정리해고 압박, 폐업매각 시도로 임금삭감 등을 감수하며 극도의 고용불안 상태로 하루하루를 버티고 있다"며 현재 일하고 있는 노동자들의 심정을 알렸다. 그리고 "지금의 매각은 노동자의 생존권은 생각하지 않고 이익만 편취하는 부동산 먹튀자본의 문제다. 이들 자본은 철저히 규제 받아야하고 노동자의 고용안정은 철저히 보호받아야한다."고 주장했다. 이를 위해 정부의 개입이 필요하다고 했다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->강은미 정의당 국회의원이 기업과 고용노동부, 문화체육관광부에 당부의 말을 했다. @서비스연맹
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->김주훈 알펜시아노동조합 위원장 이 가자회견문을 낭독하고 있다. @서비스연맹
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->마지막으로 김주훈 알펜시아노조 위원장은 "관광산업 노동자 생존권 보장 및 고용 문제 해결을 촉구한다."는 기자회견을 낭독했다. 이들은 기자회견문을 통해 ▲부당한 정리해고 철회, ▲고용보장없는 일방적 사업장 매각 철회, ▲호텔논동자 생존권 보장, 고용문제 해결, ▲관광산업 고용안전망 시급히 구축을 요구하였다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->기자회견 참가자들이 요구를 담은 피켓을 들고 있다. @서비스연맹
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_134131_892961.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_134131_892961.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211208_214752_584954)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->Ocena wschodniej kampanii Piłsudskiego
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Oceniając działania militarne w lipcu i sierpniu 1920 r. ówczesny premier Ignacy Paderewski, uważał, że niepowodzenia wojskowe w wojnie z bolszewikami poprzedzające bitwę warszawską były skutkiem niewydolności polskiego dowództwa i sztabu oraz gorszego jakościowo polskiego uzbrojenia i wyposażenia od wojsk rosyjskich. Kolejną przyczyną niepowodzeń były, wg niego, polityczne rozgrywki i „żałosna organizacja”. Uważał za błąd, że Naczelnik Państwa jest jednocześnie naczelnym dowódcą, rozdzielenie tych funkcji uważał za sprawę zasadniczą.  
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_214752_584954.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_214752_584954.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
