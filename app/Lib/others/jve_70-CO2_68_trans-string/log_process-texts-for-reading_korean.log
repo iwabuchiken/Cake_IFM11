@@ -3588,3 +3588,97 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211208_214752_584954.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211209_215800_493273)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->멀쩡한 호텔허물고 오피스빌딩 건립? 노동자 생존권 박탈하고 부동산 투기에 몰두하는 이지스자산운용 규탄!
+
+$matches ==>
+Array
+(
+    [0] => !
+
+    [1] => !
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->-밀레니엄힐튼서울호텔노조, 노동자 생존권 안중에 없는 부동산 투기 매입 반대
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->-일터를 지키기 위해 노동자들이 직접 나서서 모든 방법을 동원해서 투쟁할 것
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->-민주노총, 서비스연맹, 진보당 함께 연대
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->밀레니엄힐튼서울호텔노동자들은 호텔의 매각 자체를 반대하고 있지는 않다. 하지만 지금 논의되고 있는 매각은 호텔을 허물고 오피스 빌딩을 건립하는 안인데, 이는 노동자들의 생존권을 박탈하고 부동산 투기형 매각이다. 이런 식의 매각에 어떤 노동자들이 찬성할 수 있겠는가? 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->이에 민주노총 서비스연맹 밀레니엄힐튼서울호텔노동조합(위원장 최대근)은 6월 1일 오전 10시 30분 이지스자산운용 앞에서 규탄 기자회견을 진행했다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211209_215800_493273.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211209_215800_493273.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211209_220516_851973)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211209_220516_851973.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211209_220516_851973.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
