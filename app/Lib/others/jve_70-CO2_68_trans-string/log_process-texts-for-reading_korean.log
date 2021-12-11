@@ -3682,3 +3682,17 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211209_220516_851973.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211211_213555_823666)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211211_213555_823666.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211211_213555_823666.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
