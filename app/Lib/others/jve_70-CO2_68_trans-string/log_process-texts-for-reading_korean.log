@@ -4216,3 +4216,249 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211213_215754_302246.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211214_140658_529081)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->Health workers prepare doses of the Pfizer-BioNTech COVID-19 vaccine at an inoculation centre in Naples, Italy, on January 8, 2021. (Photo by Reuters)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Vials with Pfizer-BioNTech and AstraZeneca COVID-19 vaccine labels are seen in this illustration picture taken March 19, 2021. (Photo by Reuters)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->(Source: Reuters)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_140658_529081.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_140658_529081.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211214_142923_957612)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->This picture taken on December 7, 2021 shows an aerial view of US Bradley Fighting Vehicles (BFV) during a joint military exercise between the so-called Syrian Democratic Forces (SDF) and the US-led coalition purportedly fighting Daesh, in the countryside of Dayr al-Zawr in Syria. (Photo by AFP)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Local sources told SANA that the airdrop was conducted with the help of US-backed Kurdish militants affiliated with the so-called Syrian Democratic Forces (SDF).   
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->    According to the sources, the American troops also “kidnapped a number of residents and took them to an unknown destination.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Angry locals prevent US convoy from entering Syria’s Hasakah village, force it to retreat
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Angry locals prevent US convoy from entering Syria’s Hasakah village, force it to retreat
+
+$matches ==>
+Array
+(
+    [0] => t
+
+    [1] => t
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_142923_957612.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_142923_957612.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211214_212643_779167)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->The UNSC voted on the draft resolution, tabled by temporary members Ireland and Niger, on Monday. The proposal, co-sponsored by over 100 nations, called upon the UN secretary-general to make climate-related risks “a central component” of conflict prevention, while “incorporating information on the security implications of climate change” to make the council “pay due regard to any root causes of conflict or risk multipliers.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->While the draft was supported by the majority of UNSC members, it was vetoed by Russia, with another permanent member, China, abstaining. Among the temporary invitees, India was the only country to vote against the draft. Between them, the three countries are home to close to 40% of the world's population. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Ireland has already voiced its displeasure over the demise of the draft resolution, with the country’s mission at the UN blasting the veto powers of permanent UNSC members as “an outdated tool, for what we think is an outdated perspective.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_212643_779167.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_212643_779167.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211214_213649_201952)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line --> 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->​​“The master’s room was wide open. The master’s room was brilliantly lit, and the master was there, very calm… and our people stopped dead… it was the master… I went in. “It’s you,” he said, very calm. It was I, even I, and I told him so, the good slave, the faithful slave, the slave of slaves, and suddenly his eyes were like two cockroaches, frightened in the rainy season… I struck, and the blood spurted; that is the only baptism that I remember today.” —Aimé Césaire
+
+$matches ==>
+Array
+(
+    [0] => e
+
+    [1] => e
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->The Radicalization of Fanon
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->In 1953, the Martiniquais psychiatrist was assigned  to Algeria, where he treated patients who were severely traumatized by the violence French colonialism had spun into motion. He met Dr. Pierre Chaulet, a French doctor who secretly treated members of the guerrilla resistance, Front de Libération Nationale (FLN), who had survived torture and captivity. “Viscerally close to his patients whom he regarded as primarily victims of the system he was fighting,” Fanon immediately became a cadre of the Algerian Revolution.1
+
+$matches ==>
+Array
+(
+    [0] => 1
+
+    [1] => 1
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->By 1956, Fanon’s consciousness no longer allowed him to oversee operations at Blida Hospital in Algeria. In an influential resignation letter that moved many on the left, he wrote:
+
+$matches ==>
+Array
+(
+    [0] => :
+
+    [1] => :
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_213649_201952.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_213649_201952.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211214_214642_662034)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_214642_662034.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_214642_662034.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
