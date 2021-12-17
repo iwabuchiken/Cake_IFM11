@@ -4462,3 +4462,177 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_214642_662034.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211217_122628_524028)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->Medical workers move a patient between ambulances outside of the Royal London Hospital amid the spread of the COVID-19, London, Britain, January 27, 2021. (Photo by Reuters)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Addressing the House of Commons Transport Committee on Wednesday, UK Health Security Agency Chief Executive Jenny Harries warned that Omicron is â€œprobably the most significant threat weâ€™ve had since the start of the pandemic.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Addressing the Commons Health and Social Care Committee on Thursday, Professor Whitty said â€œthe upswing will be incredibly fast even if people are taking more cautious actions â€“ as they are â€“ that will help slow it down, but it is still going to be very fast.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Considering all the warnings and precautions for the coming days, it is expected to have an increase in the number of hospitalizations. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Speaking to the BBC Radio on Thursday, Katherine Henderson, an emergency consultant in London and President of the Royal College of Emergency Medicine said, â€œThe acute problem is actually to do with staffing. Even if we are not seeing a big rise in hospitalizations yet, we are already seeing the effect on not having the staff to run shifts properly and safely.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211217_122628_524028.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211217_122628_524028.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211217_123750_209491)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->The photo shows Shurouq al-Badan, a 27-year-old Palestinian mother from the West Bank city of Bethlehem. (Via Palestinian media)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Palestinian detainee Anhar al-Deek set to give birth in Israeli jail
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Palestinian detainee Anhar al-Deek set to give birth in Israeli jail
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Hamas renews pledge to work for release of all Palestinians being held in Israeli jails
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Hamas renews pledge to work for release of all Palestinians being held in Israeli jails
+
+$matches ==>
+Array
+(
+    [0] => s
+
+    [1] => s
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Sick Palestinian inmates in Israel jails need urgent treatment, suffer from medical negligence: Prisoners' commission
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Sick Palestinian inmates in Israel jails need urgent treatment, suffer from medical negligence: Prisoners' commission
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211217_123750_209491.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211217_123750_209491.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20211217_215331_718260)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211217_215331_718260.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211217_215331_718260.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
