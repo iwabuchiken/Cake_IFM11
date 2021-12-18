@@ -64087,3 +64087,1608 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_135759_554327.txt'
 [process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211214_135759_554327.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211218_092523_884459)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+
+    [1] => 
+
+    [2] => 
+
+    [3] => 利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+
+    [1] => 
+    [2] => 
+    [3] => 利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+
+    [1] => 
+    [2] => 
+    [3] => 利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+
+    [1] => 
+    [2] => 
+    [3] => 利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '本报合肥12月16日电 （记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。 
+'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+            [1] =>  
+        )
+
+    [1] => Array
+        (
+            [0] => �
+            [1] => 
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => 
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+本报合肥12月16日电（记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 本报合肥12月16日电（记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。
+
+    [1] => 
+    [2] => 
+    [3] => 利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>本报合肥12月16日电（记者徐靖）近日，中国科学技术大学教授曾杰与电子科技大学教授夏川、中国科学院大连化学物理研究所研究员肖建平合作，基于固态电解质开发了一种新型电解反应器。他们利用可持续的清洁电能，配合所研发的铜基单原子催化剂，可以将温室气体二氧化碳高效转化为高价值、高纯度的液体燃料甲酸，无需进一步产物分离。该成果于12月14日在国际顶级学术期刊《自然·纳米技术》杂志上印刷发表。
+利用风力、水力、太阳能等可持续能源的“绿电”，将温室气体二氧化碳电解转化为高价值的化学品，是二氧化碳利用的新兴技术，有望成为减少碳排放的重要手段。然而，如何提高催化剂的选择性、降低产物分离成本，是实现二氧化碳电解产业化亟待解决的技术难题。曾杰教授联合团队研发了一种低成本、高活性的铜基单原子催化剂，实现了二氧化碳到甲酸的单一转化。他们还基于固态电解质开发了一种新型电解装置，配合所研制的催化剂，以二氧化碳和水作为原料，可以直接连续制备得到无需分离的纯甲酸液体燃料。利用这一新技术，研究人员在实验室实现了浓度为0.1摩尔每升的纯甲酸水溶液的公升级制备。
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211218_092523_884459.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211218_092523_884459.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211218_093604_398706)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+            [3] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+            [3] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+            [3] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '央视网消息（记者 弟辰晨 邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+            [1] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+央视网消息（记者弟辰晨邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 央视网消息（记者弟辰晨邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>央视网消息（记者弟辰晨邓雨萌）：1937年12月13日，侵华日军攻占南京。生活在南京的美国牧师约翰·马吉用16mm摄影机记录下当时的南京城影像，留下揭露日军暴行的铁证。“日军占领南京后就立即开始了屠杀，有好多种方式，经常是几个日本兵或30多个士兵一起行动。每个人似乎都有生杀大权，不久就开始了有组织的大规模屠杀……”1946年9月，约翰·马吉在远东国际军事法庭上出庭作证。铭记历史，传递真相！
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211218_093604_398706.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211218_093604_398706.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211218_093924_747663)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。
+
+    [1] => 
+
+    [2] => 新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+
+    [3] => 
+
+    [4] => 2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。
+
+    [5] => 
+
+    [6] => 据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。
+
+    [7] => 
+
+    [8] => 美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。
+
+    [1] => 
+    [2] => 新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+
+    [3] => 
+    [4] => 2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。
+
+    [5] => 
+    [6] => 据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。
+
+    [7] => 
+    [8] => 美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。
+    [1] => 
+    [2] => 新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+    [3] => 
+    [4] => 2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。
+    [5] => 
+    [6] => 据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。
+    [7] => 
+    [8] => 美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。8
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => 8
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。
+    [1] => 
+    [2] => 新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+    [3] => 
+    [4] => 2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。
+    [5] => 
+    [6] => 据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。
+    [7] => 
+    [8] => 美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭 今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年  本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �  
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年 本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。
+    [1] => 
+    [2] => 新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。
+    [3] => 
+    [4] => 2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。
+    [5] => 
+    [6] => 据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。
+    [7] => 
+    [8] => 美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年 本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>外媒：中国举行国家公祭日悼念活动，各界代表向南京大屠杀死难者默哀。新加坡《联合早报》12月13日文章，原题：南京举行大屠杀死难者公祭今年12月13日是中国第八个南京大屠杀死难者国家公祭日，中共中央、国务院13日上午在南京举行死难者国家公祭仪式，出席仪式的中共中央政治局委员、国务院副总理孙春兰表示，今天隆重举行南京大屠杀死难者国家公祭仪式，深切缅怀南京大屠杀死难者，缅怀所有惨遭日本侵略者杀戮的死难同胞，缅怀为中国人民抗日战争胜利献出生命的革命先烈和民族英雄，宣示中国人民以史为鉴、开创未来的庄严立场，表达坚定不移走和平发展道路的崇高愿望。2014年2月，中国十二届全国人大常委会第七次会议通过决定，以立法形式将12月13日设立为南京大屠杀死难者国家公祭日。据统计，南京侵华日军受害者援助协会登记在册的在世幸存者目前仅剩61人。美联社12月13日文章，原题：中国纪念南京大屠杀被害同胞遇难84周年 本周一（13日），中国举行了2021年南京大屠杀死难者国家公祭仪式。84年前，数十万中国平民和被解除武装的中国士兵在南京城内及周边地区惨遭日军屠戮。在《国家公祭献曲》的旋律中，解放军仪仗大队礼兵抬着花圈缓缓走过一座纪念碑，上面刻有中国官方统计的1937年南京大屠杀遇难者数字：30万。解放军官兵、学生和约3000名胸前佩戴白花的各界代表静静肃立，向南京大屠杀死难者默哀一分钟。
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211218_093924_747663.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211218_093924_747663.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20211218_094413_228301)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。
+
+    [1] => 
+
+    [2] => 20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+
+    [3] => 
+
+    [4] => 1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。
+
+    [1] => 
+    [2] => 20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+
+    [3] => 
+    [4] => 1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。
+    [1] => 
+    [2] => 20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+    [3] => 
+    [4] => 1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。
+    [1] => 
+    [2] => 20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+    [3] => 
+    [4] => 1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。
+    [1] => 
+    [2] => 20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。
+    [3] => 
+    [4] => 1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>13日当天，中国国家通讯社新华社的官网呈现出黑白两色以寄托哀思，淘宝、微信等常见的网购平台和社交媒体也以黑色为底色。20世纪上半叶，日本军国主义扩张行动肆虐亚洲。中国经常批评日本没有对在那段时期犯下的残忍暴行表现出充分的悔罪态度。在1937年和二战大部分时间，部署在前线的中国军队在美国支持下与日军作战并做出巨大牺牲。1946年设立的一个国际战后法庭得出结论称，（中国军队与侵华日军）在上海进行惨烈巷战后，当时作为中国首都的南京于1937年12月13日沦陷，随后，日军展开为期一周的丧心病狂的屠杀、强奸、抢劫和纵火等暴行，30万中国民众惨遭杀害。（丁雨晴译）
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211218_094413_228301.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20211218_094413_228301.txt
+ 
