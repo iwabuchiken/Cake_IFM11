@@ -5701,3 +5701,54 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220105_213802_833750.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220106_133758_168414)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->A breakdown of exports figures by IRICA showed that China had remained the largest buyer of pistachio nuts from Iran over the March-December period with nearly $190 million worth of purchases that were almost entirely dedicated to shelled pistachio.  
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220106_133758_168414.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220106_133758_168414.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220106_134114_145515)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->A breakdown of exports figures by IRICA showed that China had remained the largest buyer of pistachio nuts from Iran over the March-December period with nearly $190 million worth of purchases that were almost entirely dedicated to shelled pistachio.  
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220106_134114_145515.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220106_134114_145515.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
