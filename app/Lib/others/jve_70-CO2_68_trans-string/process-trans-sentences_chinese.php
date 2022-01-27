@@ -103,7 +103,9 @@ php process-trans-sentences.php
 		 ********************/
 		$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs";
 		
-		$fname_Trans_Dat	= "log-session_JVE_70.[CO2].[trans-sentences].dat";
+		//$fname_Trans_Dat	= "log-session_JVE_70.[CO2].[trans-sentences].dat";
+		// new : 2022年1月27日13:18:36 ##:20220127_131905
+		$fname_Trans_Dat	= "log-session_JVE_70-CO2_trans-sentences.dat";
 		
 		$fpath_Trans_Dat	= join(
 				
