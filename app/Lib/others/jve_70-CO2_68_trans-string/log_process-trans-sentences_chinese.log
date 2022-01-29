@@ -7388,3 +7388,57 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220127_134402_132374.txt
 [process-trans-sentences_chinese.php : 318] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220127_134402_132374.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20220128_171928_349961)
+
+[process-trans-sentences_chinese.php : 178] $tokensOf_Split =>
+
+Array
+(
+    [0] => 「
+    [1] => 夷狄[yi2di2
+    [2] => 之有君，不如諸夏之亡也。」
+    [3] => 
+    [4] => 季氏旅於泰山。子謂
+    [5] => 冉[ran3
+    [6] => 有曰：「女
+    [7] => 弗[fu2
+    [8] => 能救與？」對曰：「不能。」子曰：「
+    [9] => 嗚[wu1
+    [10] => 呼！曾謂泰山，不如林放乎？」
+)
+[process-trans-sentences_chinese.php : 200] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)「
+[process-trans-sentences_chinese.php : 218] match => 夷狄[yi2di2
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)之有君，不如諸夏之亡也。」
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)季氏旅於泰山。子謂
+[process-trans-sentences_chinese.php : 218] match => 冉[ran3
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)有曰：「女
+[process-trans-sentences_chinese.php : 218] match => 弗[fu2
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)能救與？」對曰：「不能。」子曰：「
+[process-trans-sentences_chinese.php : 218] match => 嗚[wu1
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)呼！曾謂泰山，不如林放乎？」
+[process-trans-sentences_chinese.php : 301] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220128_171928_389961.txt
+[process-trans-sentences_chinese.php : 318] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220128_171928_389961.txt'
+  
+===============================  
+starting... : build_Trans_String__Chinese (20220128_173041_405523)
+
+[process-trans-sentences_chinese.php : 178] $tokensOf_Split =>
+
+Array
+(
+    [0] => 子曰：「君子無所爭，必也射乎！
+    [1] => 揖[yi1
+    [2] => 讓而升，下而飲，其爭也君子。」
+)
+[process-trans-sentences_chinese.php : 200] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)子曰：「君子無所爭，必也射乎！
+[process-trans-sentences_chinese.php : 218] match => 揖[yi1
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)讓而升，下而飲，其爭也君子。」
+[process-trans-sentences_chinese.php : 301] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220128_173041_405523.txt
+[process-trans-sentences_chinese.php : 318] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220128_173041_405523.txt'
+  
