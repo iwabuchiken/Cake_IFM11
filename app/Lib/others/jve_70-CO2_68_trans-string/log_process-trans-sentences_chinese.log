@@ -7442,3 +7442,62 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220128_173041_405523.txt
 [process-trans-sentences_chinese.php : 318] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220128_173041_405523.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20220202_011531_354861)
+
+[process-trans-sentences_chinese.php : 178] $tokensOf_Split =>
+
+Array
+(
+    [0] => 昭穆[zhao1mu4
+    [1] => 制度一种起源于周代的宗法制度，
+    [2] => 祠堂[ci2-
+    [3] => （包括帝王的
+    [4] => 宗庙[zong1miao4
+    [5] => ）、墓地中祖先的排列顺序。就是根据昭穆制度决定的，主要是始祖居中，左昭右穆。此外，昭穆的排列顺序还应用在古代向祖先
+    [6] => 祭祀[ji4si4
+    [7] => 行礼时子孙如何排列。
+    [8] => 
+    [9] => 左昭右穆：
+    [10] => 昭穆制度是指宗庙制度之一，指宗庙、墓地或神主的
+    [11] => 辈次
+    [12] => 排列。庙制规定，天子立七庙，
+    [13] => 诸侯[zhu1hou2
+    [14] => ]]
+    [15] => 立五庙，大夫立三庙，士立一庙，庶人无庙，以此区分
+    [16] => 亲疏贵贱[-shu1-jian4
+    [17] => ]]
+    [18] => 。延伸到民间，祠堂神主牌的
+    [19] => 摆放[bai3-
+    [20] => 次序也就是昭穆制度，以始祖居中，以始祖座向观之，一世、三世、五世位于始祖的左方，称昭；二世、四世、六世位于右方，称穆。简而言之，昭穆就是宗庙、
+    [21] => 坟地[fen2-
+    [22] => 和神主的左右位次，左为昭，右为穆，故亦称左昭右穆制。
+)
+[process-trans-sentences_chinese.php : 200] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 218] match => 昭穆[zhao1mu4
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)制度一种起源于周代的宗法制度，
+[process-trans-sentences_chinese.php : 218] match => 祠堂[ci2-
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)（包括帝王的
+[process-trans-sentences_chinese.php : 218] match => 宗庙[zong1miao4
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)）、墓地中祖先的排列顺序。就是根据昭穆制度决定的，主要是始祖居中，左昭右穆。此外，昭穆的排列顺序还应用在古代向祖先
+[process-trans-sentences_chinese.php : 218] match => 祭祀[ji4si4
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)行礼时子孙如何排列。
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)左昭右穆：
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)昭穆制度是指宗庙制度之一，指宗庙、墓地或神主的
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)辈次
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)排列。庙制规定，天子立七庙，
+[process-trans-sentences_chinese.php : 218] match => 诸侯[zhu1hou2
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)立五庙，大夫立三庙，士立一庙，庶人无庙，以此区分
+[process-trans-sentences_chinese.php : 218] match => 亲疏贵贱[-shu1-jian4
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)]]
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)。延伸到民间，祠堂神主牌的
+[process-trans-sentences_chinese.php : 218] match => 摆放[bai3-
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)次序也就是昭穆制度，以始祖居中，以始祖座向观之，一世、三世、五世位于始祖的左方，称昭；二世、四世、六世位于右方，称穆。简而言之，昭穆就是宗庙、
+[process-trans-sentences_chinese.php : 218] match => 坟地[fen2-
+[process-trans-sentences_chinese.php : 234] NOT match => ($result = 0)和神主的左右位次，左为昭，右为穆，故亦称左昭右穆制。
+[process-trans-sentences_chinese.php : 301] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220202_011531_374862.txt
+[process-trans-sentences_chinese.php : 318] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220202_011531_374862.txt'
+  
