@@ -7914,3 +7914,86 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220211_205006_307662.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220213_212247_097599)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->    It went on to highlight the joint action of Palestinian prisoners from Fatah, Hamas and Islamic Jihad, stressing, â€œWe unequivocally reject repressive measures in Israeli jails, either through protests or resistance. This struggle has just begun and will go on.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->â€œThe prison administration continues to repress the prisoners and take away what they have worked so hard to achieve over the years, which are simple rights,â€ Abu Bakr said, describing the crackdown as â€œcollective punishment.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->The detention takes place on orders from a military commander and on the basis of what the Israeli regime describes as secret evidence. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220213_212247_097599.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220213_212247_097599.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220213_213253_197591)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->    The Hamas spokesman added, "We warn the occupation [regime of Israel] of the consequences of continuing these attacks, which are similar to playing with explosives that will only explode in their own face."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->He called on Palestinian people across the entire occupied territories, especially the holy city of al-Quds, to "mobilize" in support of their fellow countrymen in the face of the "savage occupiers" and "cowardly settlers."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220213_213253_197591.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220213_213253_197591.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
