@@ -7997,3 +7997,67 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220213_213253_197591.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220218_134407_197325)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->The Gaza Strip-based Palestinian resistance movement of Hamas has called on Palestinian people across the entire occupied territories, especially the holy occupied city of al-Quds, to "mobilize" in support of their fellow countrymen in the face of the "savage occupiers" and "cowardly settlers."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->“The Sheikh Jarrah protesters as well as the entire Palestinians’ goal is to destroy the apartheid Israeli regime,” he said, calling backing down in the face of the occupiers a “glaring mistake.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220218_134407_197325.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220218_134407_197325.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220218_221906_400485)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220218_221906_400485.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220218_221906_400485.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220218_222952_326637)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220218_222952_326637.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220218_222952_326637.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
