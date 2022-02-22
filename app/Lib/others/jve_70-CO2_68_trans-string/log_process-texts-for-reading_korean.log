@@ -8210,3 +8210,105 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220220_220259_397456.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220221_215536_833905)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->"50만원 받겠다고 사업자등록하나"…'노점상 지원금' 신청률 1%
+
+$matches ==>
+Array
+(
+    [0] => %
+
+    [1] => %
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->정부가 4차 재난지원금 지급 대상에 노점상을 포함시켰지만 정작 지원금을 신청한 노점상은 전체의 약 1%밖에 되지 않는 것으로 나타났다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->재난지원금을 받으려면 사업자등록을 해야 하지만 무등록사업자가 대부분인 노점상이 지원금을 받겠다며 새삼 등록할 상황이 못 되기 때문이다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->6일 중소벤처기업부에 따르면 4월6일부터 신청받은 노점상 소득안정지원금의 실제 신청자는 600여명 수준인 것으로 나타났다. 이는 전국 노점상 4만7865곳의 약 1.2% 수준이다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->노점상 지원금은 초기 2주까지 38명만 신청할 정도로 저조했는데 석달이 지난 지금도 상황은 크게 달라진 것이 없다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->정부는 노점상에 재난지원금 50만원을 지급하기로 하면서 사업자등록을 마친 곳으로 대상을 한정했는데 노점상은 바로 이 때문에 신청을 꺼리고 있다. 정부로서는 다른 업종과의 형평성을 고려해야 하겠지만 제도권 밖에서 무등록 상태로 영업하는 노점상의 현실과는 동떨어진 셈이다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->전국민주노점상연합 관계자는 "신청 기피는 예견된 일"이라며 "지급 기준이 까다로워 지원금을 받으려는 노점상은 앞으로도 제한될 것"이라고 말했다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->노점상업계에는 사업자등록을 하면서 실명, 전화번호, 금융정보 등을 넘겨야 하는데 이는 추후 벌금·과태료 등의 부과에 이용될 수 있다는 우려가 강하다. 노점상 업계가 애초에 노점상 점용료 징수를 유예·할인하거나 조건 없는 보편 지급을 요구한 배경이다. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220221_215536_833905.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220221_215536_833905.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
