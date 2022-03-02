@@ -1,5 +1,22 @@
-goto opera
+rem : 2022”N3ŒŽ2“ú9:59:45
+goto firefox
+
+rem goto opera
 REM goto chrome
+
+REM ================================
+REM 	open with : firefox
+REM 	2022”N3ŒŽ2“ú10:00:00
+REM ================================
+:firefox
+pushd "C:\Program Files\Mozilla Firefox"
+
+REM 	start launcher.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index"
+start firefox.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2"
+
+start firefox.exe "http://localhost/Eclipse_Luna/Cake_IFM11/images/image_manager"
+
+	goto end
 
 REM ================================
 REM 	open with : opera
