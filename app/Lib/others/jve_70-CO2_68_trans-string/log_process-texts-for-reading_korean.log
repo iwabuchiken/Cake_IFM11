@@ -8384,3 +8384,246 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220306_212508_556278.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220308_143650_868568)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_143650_868568.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_143650_868568.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220308_143839_999026)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->Speaking at his annual news conference on Monday, Wang Yi, China’s Foreign Ministry spokesman, said the issues of Taiwan and Ukraine were “not at all comparable.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_143839_999026.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_143839_999026.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220308_144324_945895)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->A Palestinian protester confronts Israeli soldiers during clashes in the centre of the city of Hebron in the occupied West Bank on March 4, 2022. (Photo by AFP)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->“We see that not just the US government but US companies are falling over themselves to sanction and boycott anything that has an association with the Russian government,” she said. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->“Contrast that with the exact opposite when it comes to sanctioning Israel for its violations of international law to the point where American states are passing laws to punish Americans unless they promise never to boycott Israel."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Blinken, however, censured in the same speech ongoing UNHRC investigations into Israeli atrocities in the occupied territories as “a stain on the council’s credibility,” calling for them to be halted. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->The US is not alone in facing accusations of blatant hypocrisy. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Britain and Canada have also led calls for the International Criminal Court (ICC) to probe "Russian war crimes" in Ukraine. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->“We see that not just the US government but US companies are falling over themselves to sanction and boycott anything that has an association with the Russian government,” she said. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->“Contrast that with the exact opposite when it comes to sanctioning Israel for its violations of international law to the point where American states are passing laws to punish Americans unless they promise never to boycott Israel."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Blinken, however, censured in the same speech ongoing UNHRC investigations into Israeli atrocities in the occupied territories as “a stain on the council’s credibility,” calling for them to be halted. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->The US is not alone in facing accusations of blatant hypocrisy. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Britain and Canada have also led calls for the International Criminal Court (ICC) to probe "Russian war crimes" in Ukraine. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_144324_945895.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_144324_945895.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220308_145241_848910)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->“The perverse actions run counter to the common aspiration of the region for peace, development, cooperation and win-win outcomes,” Wang said. “They are doomed to fail.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->“This would not only push Taiwan into a precarious situation, but will also bring unbearable consequences for the US side,” Wang said, declaring that “Taiwan will eventually return to the embrace of the motherland.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Russia's ongoing military action in Ukraine has drawn many comparisons to China and Taiwan, an assertion Wang called a "double standard."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->In addition, Wang described China's relationship with Russia as “one of the most crucial bilateral relationships in the world."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Russian President Vladimir Putin last month ordered a “special military operation” in Ukraine’s Donbas region to “defend people” subjected to "genocide" there against government forces, stressing that Moscow has “no plans to occupy Ukrainian territory.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_145241_848910.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_145241_848910.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
