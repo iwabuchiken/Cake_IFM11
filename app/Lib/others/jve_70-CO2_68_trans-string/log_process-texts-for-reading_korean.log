@@ -8627,3 +8627,72 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220308_145241_848910.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220311_214522_201073)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->Israeli interior minister Ayelet Shaked took measures to prevent family unification during the several months when the law languished while campaigning for its renewal. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Lawmaker Gaby Lasky of the left-wing Meretz political party called the law â€œa black spot on the book of laws in Israelâ€ and wrote on Twitter that, â€œMeretz as a whole voted against racism.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Ayman Odeh, an Arab lawmaker, retweeted Shaked, calling it a victory for â€œan apartheid regime.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Reut Shaer, a lawyer with the Association for Civil Rights in Israel, said, â€œIt comes off as more xenophobic or racist [than other laws] because itâ€™s not only giving extra rights and privileges to Jewish people but also preventing certain basic rights only from the Arab population.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Israel occupied East al-Quds, the West Bank, and the Gaza Strip during the Six-Day Arab-Israeli War in 1967. It later had to withdraw from Gaza. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220311_214522_201073.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220311_214522_201073.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
