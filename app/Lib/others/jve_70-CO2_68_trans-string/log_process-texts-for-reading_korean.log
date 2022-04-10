@@ -9430,3 +9430,39 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220406_132213_200534.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220409_123921_648468)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->Though we are being told across every media platform to pray and stand for Ukraine, to express our unconditional solidarity to Ukraine, to definitely ignore the political power of the far right wing and literal neo-Nazis in Ukraine, we are not being told this context.  We have been manipulated into believing that the attack on Ukraine began two weeks ago, out of nowhere, and that it was provoked by nothing more than the poor mental health of a broad orientalist stereotype disguised as a man. We believe we are weeping for the people of Ukraine, but really we are engaged in a false fight for their sovereignty alongside the forces who destroyed that sovereignty in the first place. Any attempt to analyze the historical and political context that led to this moment— broken agreements not to expand NATO, the US-led attacks on Ukraine’s self-determination, the US and NATO’s long and uncomfortable history of knowingly colluding with fascists , is met with hostility and accusations of “apologism”. The call from the bourgeois propaganda apparatus is to stand with Ukraine and doing so means accepting that it’s history begins when the New York Times and MSNBC say so. Because the masses of people in the US are largely unconscious, not politically educated, pretty racist, and systematically trained and bribed into aligning with white supremacy and imperialism, this works. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->I want to be clear that this article is not a call to abandon empathy or to push it down when we feel it. As stated in the beginning, empathy is an essential part of who we are collectively as human beings; an evolutionary gift meant to deepen our dependence upon each other and strengthen the social organization we need for survival. What we have to realize however, is that without consciousness and critical thinking skills developed through a process of political education (most effectively within the context of a revolutionary organization) our empathy can and will be manipulated and weaponized by the enemies of humanity to serve their interests. We have to understand that true identification and solidarity with the masses of human beings and other living things on this planet requires an actual understanding of their struggles and conditions with full context. We have to understand that emojis, hashtag campaigns, and slogans that tail the geopolitical interests of genocidal war mongering imperialists are a poor replacement for actual internationalism. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220409_123921_648468.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220409_123921_648468.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
