@@ -85839,3 +85839,4730 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220410_232602_474222.txt'
 [process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220410_232602_474222.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20220411_142647_757359)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => “预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+
+    [1] => 
+
+    [2] => 
+
+    [3] => 资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+
+    [4] => 
+
+    [5] => 
+
+    [6] => 英国：
+
+    [7] => 
+
+    [8] => 每13人中就有1人确诊
+
+    [9] => 
+
+    [10] => 自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。
+
+    [11] => 
+
+    [12] => 英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+
+    [13] => 
+
+    [14] => 美国：
+
+    [15] => 
+
+    [16] => 一场晚宴后，
+
+    [17] => 
+
+    [18] => 新冠病毒“入侵”权力殿堂
+
+    [19] => 
+
+    [20] => 与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+
+    [21] => 
+
+    [22] => 
+
+    [23] => 
+
+    [24] => 资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+
+    [25] => 
+
+    [26] => 路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。
+
+    [27] => 
+
+    [28] => 日韩：
+
+    [29] => 
+
+    [30] => 放宽防疫后，疫情持续反弹
+
+    [31] => 
+
+    [32] => 日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+
+    [33] => 
+
+    [34] => 韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+
+    [35] => 
+
+    [36] => 
+
+    [37] => 资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '“预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '英国：
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '每13人中就有1人确诊
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '美国：
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '一场晚宴后，
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '新冠病毒“入侵”权力殿堂
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '日韩：
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '放宽防疫后，疫情持续反弹
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => “预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+
+    [1] => 
+    [2] => 
+    [3] => 资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+
+    [4] => 
+    [5] => 
+    [6] => 英国：
+
+    [7] => 
+    [8] => 每13人中就有1人确诊
+
+    [9] => 
+    [10] => 自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。
+
+    [11] => 
+    [12] => 英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+
+    [13] => 
+    [14] => 美国：
+
+    [15] => 
+    [16] => 一场晚宴后，
+
+    [17] => 
+    [18] => 新冠病毒“入侵”权力殿堂
+
+    [19] => 
+    [20] => 与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+
+    [21] => 
+    [22] => 
+    [23] => 
+    [24] => 资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+
+    [25] => 
+    [26] => 路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。
+
+    [27] => 
+    [28] => 日韩：
+
+    [29] => 
+    [30] => 放宽防疫后，疫情持续反弹
+
+    [31] => 
+    [32] => 日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+
+    [33] => 
+    [34] => 韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+
+    [35] => 
+    [36] => 
+    [37] => 资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '“预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '英国：
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '每13人中就有1人确诊
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '美国：
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '一场晚宴后，
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '新冠病毒“入侵”权力殿堂
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '日韩：
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '放宽防疫后，疫情持续反弹
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => “预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+
+    [1] => 
+    [2] => 
+    [3] => 资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+    [4] => 
+    [5] => 
+    [6] => 英国：
+
+    [7] => 
+    [8] => 每13人中就有1人确诊
+
+    [9] => 
+    [10] => 自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。
+    [11] => 
+    [12] => 英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+    [13] => 
+    [14] => 美国：
+
+    [15] => 
+    [16] => 一场晚宴后，
+
+    [17] => 
+    [18] => 新冠病毒“入侵”权力殿堂
+
+    [19] => 
+    [20] => 与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+    [21] => 
+    [22] => 
+    [23] => 
+    [24] => 资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+
+    [25] => 
+    [26] => 路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。
+    [27] => 
+    [28] => 日韩：
+
+    [29] => 
+    [30] => 放宽防疫后，疫情持续反弹
+
+    [31] => 
+    [32] => 日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+    [33] => 
+    [34] => 韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+    [35] => 
+    [36] => 
+    [37] => 资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '“预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+            [2] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+            [2] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+“预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '英国：
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '每13人中就有1人确诊
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。4
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => 4
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '美国：
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '一场晚宴后，
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '新冠病毒“入侵”权力殿堂
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '日韩：
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '放宽防疫后，疫情持续反弹
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => “预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+
+    [1] => 
+    [2] => 
+    [3] => 资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+    [4] => 
+    [5] => 
+    [6] => 英国：
+
+    [7] => 
+    [8] => 每13人中就有1人确诊
+
+    [9] => 
+    [10] => 自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。
+    [11] => 
+    [12] => 英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+    [13] => 
+    [14] => 美国：
+
+    [15] => 
+    [16] => 一场晚宴后，
+
+    [17] => 
+    [18] => 新冠病毒“入侵”权力殿堂
+
+    [19] => 
+    [20] => 与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+    [21] => 
+    [22] => 
+    [23] => 
+    [24] => 资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+
+    [25] => 
+    [26] => 路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。
+    [27] => 
+    [28] => 日韩：
+
+    [29] => 
+    [30] => 放宽防疫后，疫情持续反弹
+
+    [31] => 
+    [32] => 日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+    [33] => 
+    [34] => 韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+    [35] => 
+    [36] => 
+    [37] => 资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '“预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '英国：
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '每13人中就有1人确诊
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '美国：
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '一场晚宴后，
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '新冠病毒“入侵”权力殿堂
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者 廖攀 摄
+'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+            [1] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者廖攀摄
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '日韩：
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '放宽防疫后，疫情持续反弹
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => “预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+
+    [1] => 
+    [2] => 
+    [3] => 资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。
+    [4] => 
+    [5] => 
+    [6] => 英国：
+
+    [7] => 
+    [8] => 每13人中就有1人确诊
+
+    [9] => 
+    [10] => 自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。
+    [11] => 
+    [12] => 英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。
+    [13] => 
+    [14] => 美国：
+
+    [15] => 
+    [16] => 一场晚宴后，
+
+    [17] => 
+    [18] => 新冠病毒“入侵”权力殿堂
+
+    [19] => 
+    [20] => 与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。
+    [21] => 
+    [22] => 
+    [23] => 
+    [24] => 资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者廖攀摄
+
+    [25] => 
+    [26] => 路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。
+    [27] => 
+    [28] => 日韩：
+
+    [29] => 
+    [30] => 放宽防疫后，疫情持续反弹
+
+    [31] => 
+    [32] => 日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。
+    [33] => 
+    [34] => 韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。
+    [35] => 
+    [36] => 
+    [37] => 资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>“预计各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。”3月中旬，世卫组织总干事谭德塞曾如此警告。然而，新冠病毒及其重组变异毒株在全球肆虐之际，英国、美国、德国等部分国家却选择逐步放宽防疫措施。与新冠共存，这些国家的疫情形势现在如何了？
+资料图：当地时间2021年4月12日，英国进入放松疫情封锁措施的第二阶段。酒吧解封的第一晚，伦敦大批民众在市中心喝酒跳舞，场面宛如狂欢节。英国：
+每13人中就有1人确诊
+自英国政府2月宣布“与新冠共存”计划以来，新冠检测阳性者无需自我隔离，政府也不再追踪密切接触者，但与之伴随的，是疫情数据的居高不下。英国国家统计局(ONS)的最新数据显示，英国大约每13人中就有1人确诊。4月6日公布的研究结果还显示，奥密克戎BA.2毒株正在英格兰地区快速传播，导致3月以来55岁以上群体感染率激增，比此前平均水平高出20倍。专家警告，较年长人士出现重症或病亡的风险更高，英国恐迎来新一波住院和死亡高峰。美国：
+一场晚宴后，
+新冠病毒“入侵”权力殿堂
+与2022年初日增确诊超百万例的疫情数据相比，美国近来新增病例大幅回落至4万左右。但令人担忧的是，随着奥密克戎BA.2毒株的蔓延，全美新冠发病率再次上升。美疾控最新统计显示，截至4月2日的一周内，BA.2感染者约占美国新冠病例的72%，其中纽约州和新泽西州等地高达84%。资料图：当地时间2022年1月4日，美国纽约曼哈顿14街一处新冠病毒检测站为居民做检测。中新社记者廖攀摄
+路透社还称，随着美国首都华盛顿逐步取消防疫措施，因疫情停办的格里迪隆俱乐部晚宴也在沉寂两年后再度迎来众多官员，于是，新冠病毒又一次在美国的“权力殿堂”里蔓延——出席晚宴的美司法部长、商务部长、国会众议院情报委员会主席等多名政界要员“中招”。日韩：
+放宽防疫后，疫情持续反弹
+日本新冠疫情近期呈反弹趋势，最近一周全国47个都道府县中有44地新增感染人数增加。日本多名专家认为第七波疫情已经开始，而这可能与放松防疫限制、奥密克戎BA.2毒株扩散有关。日本3月22日解除在东京都等18个都道府县实施的重点防疫举措，商业街人流有所增加。韩国新冠疫情风险则已连续5周维持最高级别。特别是3月以来，单日确诊病例连续数日超过30万。尽管疫情形势不容乐观，韩国政府仍选择自3月5日起放宽部分限制措施；4月4日起又把私人聚会限员放宽至10人，同时考虑视未来两周疫情形势全面解除聚会限员、营业限时措施。资料图：当地时间2022年3月17日，一名医务人员在韩国首尔的一个临时检测点指导等待新冠病毒检测的人。
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220411_142647_757359.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220411_142647_757359.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20220411_143307_197051)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 德国：
+
+    [1] => 
+
+    [2] => 告别口罩 走向未知
+
+    [3] => 
+
+    [4] => 荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+
+    [5] => 
+
+    [6] => 然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+
+    [7] => 
+
+    [8] => 为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+
+    [9] => 
+
+    [10] => 
+
+    [11] => 资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+
+    [12] => 
+
+    [13] => 世卫：
+
+    [14] => 
+
+    [15] => 一些国家死亡率
+
+    [16] => 
+
+    [17] => 达自大流行开始以来最高水平
+
+    [18] => 
+
+    [19] => 据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+
+    [20] => 
+
+    [21] => 谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+
+    [22] => 
+
+    [23] => 他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+
+    [24] => 
+
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '德国：
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '告别口罩 走向未知
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '世卫：
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '一些国家死亡率
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '达自大流行开始以来最高水平
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 德国：
+
+    [1] => 
+    [2] => 告别口罩 走向未知
+
+    [3] => 
+    [4] => 荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+
+    [5] => 
+    [6] => 然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+
+    [7] => 
+    [8] => 为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+
+    [9] => 
+    [10] => 
+    [11] => 资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+
+    [12] => 
+    [13] => 世卫：
+
+    [14] => 
+    [15] => 一些国家死亡率
+
+    [16] => 
+    [17] => 达自大流行开始以来最高水平
+
+    [18] => 
+    [19] => 据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+
+    [20] => 
+    [21] => 谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+
+    [22] => 
+    [23] => 他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+
+    [24] => 
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '德国：
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '告别口罩 走向未知
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '世卫：
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '一些国家死亡率
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '达自大流行开始以来最高水平
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 德国：
+
+    [1] => 
+    [2] => 告别口罩 走向未知
+
+    [3] => 
+    [4] => 荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+    [5] => 
+    [6] => 然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+    [7] => 
+    [8] => 为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+    [9] => 
+    [10] => 
+    [11] => 资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+
+    [12] => 
+    [13] => 世卫：
+
+    [14] => 
+    [15] => 一些国家死亡率
+
+    [16] => 
+    [17] => 达自大流行开始以来最高水平
+
+    [18] => 
+    [19] => 据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+    [20] => 
+    [21] => 谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+    [22] => 
+    [23] => 他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+    [24] => 
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '德国：
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '告别口罩 走向未知
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。 
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] =>  
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '世卫：
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '一些国家死亡率
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '达自大流行开始以来最高水平
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 德国：
+
+    [1] => 
+    [2] => 告别口罩 走向未知
+
+    [3] => 
+    [4] => 荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+    [5] => 
+    [6] => 然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+    [7] => 
+    [8] => 为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+    [9] => 
+    [10] => 
+    [11] => 资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+
+    [12] => 
+    [13] => 世卫：
+
+    [14] => 
+    [15] => 一些国家死亡率
+
+    [16] => 
+    [17] => 达自大流行开始以来最高水平
+
+    [18] => 
+    [19] => 据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+    [20] => 
+    [21] => 谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+    [22] => 
+    [23] => 他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+    [24] => 
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '德国：
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '告别口罩 走向未知
+'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+告别口罩走向未知
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '资料图：世卫组织总干事谭德塞。 中新社记者 彭大伟 摄
+'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] =>  �
+            [1] => � �
+            [2] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => 
+            [1] => �
+            [2] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+            [2] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+资料图：世卫组织总干事谭德塞。中新社记者彭大伟摄
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '世卫：
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '一些国家死亡率
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '达自大流行开始以来最高水平
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 德国：
+
+    [1] => 
+    [2] => 告别口罩走向未知
+
+    [3] => 
+    [4] => 荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。
+    [5] => 
+    [6] => 然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。
+    [7] => 
+    [8] => 为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。
+    [9] => 
+    [10] => 
+    [11] => 资料图：世卫组织总干事谭德塞。中新社记者彭大伟摄
+
+    [12] => 
+    [13] => 世卫：
+
+    [14] => 
+    [15] => 一些国家死亡率
+
+    [16] => 
+    [17] => 达自大流行开始以来最高水平
+
+    [18] => 
+    [19] => 据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。
+    [20] => 
+    [21] => 谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。
+    [22] => 
+    [23] => 他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+    [24] => 
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>德国：
+告别口罩走向未知
+荷兰、法国、德国等国日前也宣布进一步放开防疫。其中在德国，前往大多数商店无需佩戴口罩，餐馆也不再要求出示疫苗接种证明、阴性测试结果。德国卫生部此前还宣布，5月1日起取消阳性病例强制隔离10天的政策，但仍会建议人们自愿隔离5天。然而，“德国之声”认为，告别口罩的德国，正走向未知。因为德国的感染数字仍偏高——截至目前，确诊总数逾2247万，超过总人口的四分之一；另有超13万人死亡，且在近期略有攀升。为此，德国卫生部长劳特巴赫称，不该决定废除阳性病例强制隔离的政策。他强调说“新冠不是感冒”，所以感染后人们必须继续接受隔离，而且是卫生部门安排和控制的隔离。资料图：世卫组织总干事谭德塞。中新社记者彭大伟摄
+世卫：
+一些国家死亡率
+达自大流行开始以来最高水平
+据美国约翰斯·霍普金斯大学最新统计数据，截至北京时间4月8日，全球已有超4.9亿人感染新冠，逾617万人死亡。世卫组织总干事谭德塞日前还指出，预计全球各地疫情将继续暴发，特别是在那些已经取消了预防传播措施的地区。谭德塞称，一些国家的死亡率已达到自大流行开始以来的最高水平。这反映出奥密克戎株传播速度快，以及没有接种疫苗的人面临更高死亡风险，尤其是老年人。他强调，疫苗的公平接种仍是世界上最强大的拯救生命的工具。必须优先考虑卫生工作者、老年人和其他高危群体。
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220411_143307_197051.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220411_143307_197051.txt
+ 
