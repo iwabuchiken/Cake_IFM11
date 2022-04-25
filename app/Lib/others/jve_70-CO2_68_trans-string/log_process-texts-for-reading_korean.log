@@ -9973,3 +9973,108 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220417_205824_388250.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220424_154147_394901)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->科技创新、科学普及是实现创新发展的两翼。发挥创新作为引领发展第一动力的作用，离不开一支规模庞大的高科学素质劳动者队伍。《纲要》提出2025年我国公民具备科学素质的比例超过15%，2035年达到25%。实现这一目标，有赖于社会各方的共同努力。多措并举、凝聚合力，推动社会各方积极参与科普活动，我国公民的科学素质一定能再上台阶，为创新型国家建设蓄积充足底气。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220424_154147_394901.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220424_154147_394901.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220424_154408_234399)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->People march in solidarity with Palestinian people in Karachi, Pakistan, on April 22, 2022, after a new round of Israeli violence against Palestinian worshipers broke out at al-Aqsa Mosque in the Old City of al-Quds. (Photo by AFP)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->During the rally, held on Friday, the Bangladeshi protesters carried banners and placards reading “Israel Will Pay High Price” and “Stop Brutality in Aqsa Mosque.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Stop selling arms to Israel!
+
+$matches ==>
+Array
+(
+    [0] => !
+
+    [1] => !
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Speaking during the event, called by the Palestine Solidarity Campaign, Palestinian ambassador to Britain Husam Zomlot lamented that the occupying Israeli regime gets military assistance while Palestinian people are “labeled in the media as terrorists.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Palestine will be free!
+
+$matches ==>
+Array
+(
+    [0] => !
+
+    [1] => !
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->The crowd, made up mostly of Palestinian youths, chanted “From the River to the Sea, Palestine Will be Free!” and “Long live the Intifada, Intifada Revolution!”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220424_154408_234399.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220424_154408_234399.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 

@@ -95840,3 +95840,1987 @@ $aryOf_4_Matched_Lines__Space_Char ==>Array
 [process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220421_172045_588613.txt'
 [process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220421_172045_588613.txt
  
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20220424_155518_967070)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 王 磊摄
+
+    [1] => 
+
+    [2] => 习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+
+    [3] => 
+
+    [4] => 本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。
+
+    [5] => 
+
+    [6] => ——编 者
+
+    [7] => 
+
+    [8] => 航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。
+
+    [9] => 
+
+    [10] => 数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。
+
+    [11] => 
+
+    [12] => 浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。
+
+    [13] => 
+
+    [14] => 为人才松绑减负
+
+    [15] => 
+
+    [16] => “学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+
+    [17] => 
+
+    [18] => 2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '王 磊摄
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '——编 者
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '为人才松绑减负
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '“学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 王 磊摄
+
+    [1] => 
+    [2] => 习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+
+    [3] => 
+    [4] => 本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。
+
+    [5] => 
+    [6] => ——编 者
+
+    [7] => 
+    [8] => 航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。
+
+    [9] => 
+    [10] => 数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。
+
+    [11] => 
+    [12] => 浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。
+
+    [13] => 
+    [14] => 为人才松绑减负
+
+    [15] => 
+    [16] => “学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+
+    [17] => 
+    [18] => 2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '王 磊摄
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '——编 者
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '为人才松绑减负
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '“学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 王 磊摄
+
+    [1] => 
+    [2] => 习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+    [3] => 
+    [4] => 本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。
+    [5] => 
+    [6] => ——编 者
+
+    [7] => 
+    [8] => 航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。
+    [9] => 
+    [10] => 数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。
+    [11] => 
+    [12] => 浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。
+    [13] => 
+    [14] => 为人才松绑减负
+
+    [15] => 
+    [16] => “学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+
+    [17] => 
+    [18] => 2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '王 磊摄
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '——编 者
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '为人才松绑减负
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '“学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 王 磊摄
+
+    [1] => 
+    [2] => 习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+    [3] => 
+    [4] => 本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。
+    [5] => 
+    [6] => ——编 者
+
+    [7] => 
+    [8] => 航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。
+    [9] => 
+    [10] => 数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。
+    [11] => 
+    [12] => 浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。
+    [13] => 
+    [14] => 为人才松绑减负
+
+    [15] => 
+    [16] => “学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+
+    [17] => 
+    [18] => 2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '王 磊摄
+'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+王磊摄
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '——编 者
+'
+[process-texts-for-reading_chinese.php : 457]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => � �
+        )
+
+    [1] => Array
+        (
+            [0] => �
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 471]
+$line_Replaced
+——编者
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '为人才松绑减负
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '“学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 王磊摄
+
+    [1] => 
+    [2] => 习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。
+    [3] => 
+    [4] => 本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。
+    [5] => 
+    [6] => ——编者
+
+    [7] => 
+    [8] => 航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。
+    [9] => 
+    [10] => 数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。
+    [11] => 
+    [12] => 浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。
+    [13] => 
+    [14] => 为人才松绑减负
+
+    [15] => 
+    [16] => “学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+
+    [17] => 
+    [18] => 2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>王磊摄
+习近平总书记指出，提升自主创新能力，尽快突破关键核心技术，是构建新发展格局的一个关键问题。我国高校要勇挑重担，释放高校基础研究、科技创新潜力，聚焦国家战略需要，瞄准关键核心技术特别是“卡脖子”问题，加快技术攻关。本期教育版，我们以浙江大学为例，呈现近年来高校科技创新的实践与探索，期待更多高校勇于创新、力争一流，在人才培养、科技创新方面取得更大进步，为国家现代化建设作出更大贡献。——编者
+航空航天学院教授李铁风，带领团队研制自供电软体机器鱼，成功“打卡”马里亚纳海沟，在万米海底实现深潜驱动；化学系研究员冯建东，带领团队研发新型化学显微镜，对微观的单分子化学反应实现观察、操纵和测量……如今，在浙江大学，一批青年科技人才在基础研究和原始创新领域崭露头角，日益成为科技创新的生力军。数据显示，近年来，我国高校承担了全国60％以上的基础研究和重大科研任务，获得了60％以上的国家科技三大奖励，为实现“两个一百年”奋斗目标贡献了重要的高校力量。浙江大学在科技创新中的表现，就折射出我国高校瞄准世界科技前沿、聚焦国家战略需要、奋战在关键核心技术研发第一线的昂扬面貌。为人才松绑减负
+“学校对面向科技前沿的探索给予充分信任，给了我们足够的时间与空间”
+2013年，冯建东从浙江大学本科毕业，之后前往欧洲直接攻读博士学位，2018年完成博士后工作后回到母校。谈及在母校深耕科研的感受，冯建东说：“学校为我们提供了开展独立研究的土壤，青年学者可以按照自己的学术规划去建设实验室，这一点非常吸引我。”
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220424_155518_967070.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220424_155518_967070.txt
+ 
+===============================  
+[process-texts-for-reading_chinese.php : 70] starting... : build_Texts_For_Reading (20220424_160434_552301)
+[process-texts-for-reading_chinese.php : 101]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_chinese.php : 118] $linesOf_File =>
+
+Array
+(
+    [0] => 对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+
+    [1] => 
+
+    [2] => 遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+
+    [3] => 
+
+    [4] => 水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+
+    [5] => 
+
+    [6] => 科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。
+)
+[process-texts-for-reading_chinese.php : 148]
+pattern --> /^\r\n/
+[process-texts-for-reading_chinese.php : 157]
+line : '对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '
+'
+[process-texts-for-reading_chinese.php : 174]
+match
+Array
+(
+    [0] => 
+
+)
+
+[process-texts-for-reading_chinese.php : 157]
+line : '科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。'
+[process-texts-for-reading_chinese.php : 194]
+NOT match
+Array
+(
+)
+
+[process-texts-for-reading_chinese.php : 211]
+$aryOf_1_Matched_Lines__Empty_Line_Return ==>Array
+(
+    [0] => 对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+
+    [1] => 
+    [2] => 遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+
+    [3] => 
+    [4] => 水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+
+    [5] => 
+    [6] => 科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。
+)
+
+[process-texts-for-reading_chinese.php : 245]
+(step : 3 : 3) pattern --> /。\r\n/
+[process-texts-for-reading_chinese.php : 254]
+line : '对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+'
+[process-texts-for-reading_chinese.php : 272]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => 。
+
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 286]
+$line_Replaced
+水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+[process-texts-for-reading_chinese.php : 254]
+line : ''
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 254]
+line : '科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。'
+[process-texts-for-reading_chinese.php : 300]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 316]
+$aryOf_2_Matched_Lines__Paragraph_End_Period ==>Array
+(
+    [0] => 对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+    [1] => 
+    [2] => 遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+
+    [3] => 
+    [4] => 水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+    [5] => 
+    [6] => 科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。
+)
+
+[process-texts-for-reading_chinese.php : 338]
+(step : 3 : 3) pattern --> /(.。)([^\r])/
+[process-texts-for-reading_chinese.php : 348]
+line : '对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+            [1] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+            [1] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+            [1] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。'
+[process-texts-for-reading_chinese.php : 366]
+match
+Array
+(
+    [0] => Array
+        (
+            [0] => �。�
+        )
+
+    [1] => Array
+        (
+            [0] => �。
+        )
+
+    [2] => Array
+        (
+            [0] => �
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 380]
+$line_Replaced
+水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+[process-texts-for-reading_chinese.php : 348]
+line : ''
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 348]
+line : '科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。'
+[process-texts-for-reading_chinese.php : 394]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 410]
+$aryOf_3_Matched_Lines__In_Paragraph_Period ==>Array
+(
+    [0] => 对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+    [1] => 
+    [2] => 遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+
+    [3] => 
+    [4] => 水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+    [5] => 
+    [6] => 科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。
+)
+
+[process-texts-for-reading_chinese.php : 431]
+(step : 3 : 4) pattern --> /(.) (.)/
+[process-texts-for-reading_chinese.php : 441]
+line : '对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : ''
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 441]
+line : '科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。'
+[process-texts-for-reading_chinese.php : 485]
+NOT match
+Array
+(
+    [0] => Array
+        (
+        )
+
+    [1] => Array
+        (
+        )
+
+    [2] => Array
+        (
+        )
+
+)
+
+[process-texts-for-reading_chinese.php : 501]
+$aryOf_4_Matched_Lines__Space_Char ==>Array
+(
+    [0] => 对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。
+    [1] => 
+    [2] => 遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+
+    [3] => 
+    [4] => 水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。
+    [5] => 
+    [6] => 科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。
+)
+
+[process-texts-for-reading_chinese.php : 597] $stringOf_Replaeced_Lines ==>对新型化学显微镜的研究，源于冯建东中学时期对化学的疑惑。“为什么化学家观察化学反应不能像方程式那样，通过单分子直接演示呢？”这个问题一直埋在他心中。历经多年在不同学科的交叉研究积累，他回到浙江大学，追寻最初的想法。遇到只比自己大3岁的导师，化学系直博生董金润坦言，这让他在科学求索中更为轻松，与导师的交流也很顺畅，“冯建东老师教会我们建立‘科研审美’，帮助我们找到自己的兴趣与方向。”
+水积而鱼聚，木茂而鸟集。近年来，浙江大学通过实施优秀青年人才“百人计划”，优化实施预聘长聘制，持续为青年人才成长构建优良生态，保持45岁以下专任教师占比一半以上，着力培养青年教师成为服务科技创新的主角。科研成果的涌现，既源自师生“板凳甘坐十年冷”的坚守，也需要高校为人才“松绑减负”的勇气。
+[process-texts-for-reading_chinese.php : 647] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220424_160434_552301.txt'
+[process-texts-for-reading_chinese.php : 655] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220424_160434_552301.txt
+ 
