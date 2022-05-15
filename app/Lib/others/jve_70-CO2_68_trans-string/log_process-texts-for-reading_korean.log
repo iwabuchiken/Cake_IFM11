@@ -10114,3 +10114,141 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220425_214207_343482.txt
 [process-texts-for-reading_korean.php : 432] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220512_124724_756941)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->The Qatar-based satellite news channel and the Palestinian Health Ministry said the killing of Shireen Abu Akleh occurred on Wednesday, when the regimeâ€™s forces stormed the Jenin refugee camp. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->â€œAs you can imagine, this is a shock to the journalists who have been working with her.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Mourners, including journalists, react next to the body of Al Jazeera reporter Shireen Abu Akleh who was killed by Israeli army gunfire in Jenin in the Israeli-occupied West Bank, May 11, 2022. (Photo by Reuters)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Al Jazeera â€˜shocked and saddenedâ€™
+
+$matches ==>
+Array
+(
+    [0] => ™
+
+    [1] => ™
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->The news networkâ€™s managing director, Giles Trendle, said the network was â€œshocked and saddenedâ€ by the killing of Abu Akleh
+
+$matches ==>
+Array
+(
+    [0] => h
+
+    [1] => h
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->â€œAs journalists, we carry on. Our mission is to carry on. We will not be silenced despite attempts to silence us,â€ said Trendle. â€œOur mission is always to carry on to inform the world what is happening. And that is more important ever.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->In a statement following the incident, the office of the Palestinian president condemned the killing, saying it holds the Israeli regime â€œfully responsible for this heinous crime.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220512_124724_756941.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220512_124724_756941.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20220512_125126_969383)
+[process-texts-for-reading_korean.php : 100]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 144]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 214]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 232]
+match : line -->Hamas slams Abu Aklehâ€™s â€˜premeditated murderâ€™
+
+$matches ==>
+Array
+(
+    [0] => ™
+
+    [1] => ™
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Qatar: Israeli terrorism has to end
+
+$matches ==>
+Array
+(
+    [0] => d
+
+    [1] => d
+)
+
+[process-texts-for-reading_korean.php : 232]
+match : line -->Qatarâ€™s deputy foreign minister also condemned the killing by the â€œIsraeli occupationâ€ and called for an end to the â€œstate sponsored Israeli terrorism.â€
+
+$matches ==>
+Array
+(
+    [0] => 
+
+    [1] => 
+)
+
+[process-texts-for-reading_korean.php : 292]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 415] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220512_125126_969383.txt'
+[process-texts-for-reading_korean.php : 423] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20220512_125126_969383.txt
+[process-texts-for-reading_korean.php : 432] returning...
+ 
