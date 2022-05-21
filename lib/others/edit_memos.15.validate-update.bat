@@ -1,8 +1,21 @@
 rem : 2022”N3ŒŽ2“ú9:59:45
-goto firefox
+goto yandex
+rem goto firefox
 
 rem goto opera
 REM goto chrome
+
+rem : yandex // 2022”N5ŒŽ21“ú10:00:44
+:yandex
+set browser="C:\Users\iwabuchiken\AppData\Local\Yandex\YandexBrowser\Application\browser.exe"
+
+set url_1="http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2"
+set url_2="http://localhost/Eclipse_Luna/Cake_IFM11/images/image_manager"
+
+%browser% %url_1%
+%browser% %url_2%
+
+goto end
 
 REM ================================
 REM 	open with : firefox
@@ -16,7 +29,7 @@ start firefox.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index
 
 start firefox.exe "http://localhost/Eclipse_Luna/Cake_IFM11/images/image_manager"
 
-	goto end
+goto end
 
 REM ================================
 REM 	open with : opera

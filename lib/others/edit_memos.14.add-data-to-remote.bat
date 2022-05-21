@@ -1,3 +1,6 @@
+rem : choose browser // 2022”N5ŒŽ21“ú9:57:21
+goto yandex
+
 rem goto opera
 goto firefox
 REM goto chrome
@@ -6,6 +9,19 @@ REM ================================
 REM 	open with : firefox
 REM 	2022”N3ŒŽ2“ú9:56:19
 REM ================================
+
+
+:yandex
+set browser="C:\Users\iwabuchiken\AppData\Local\Yandex\YandexBrowser\Application\browser.exe"
+
+set url="http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/add_From_DB_File?command=GO"
+
+%browser% %url%
+
+goto end
+
+
+
 :firefox
 pushd "C:\Program Files\Mozilla Firefox"
 start firefox.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/add_From_DB_File?command=GO"
