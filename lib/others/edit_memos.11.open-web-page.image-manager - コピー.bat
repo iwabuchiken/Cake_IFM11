@@ -1,4 +1,7 @@
-goto opera
+rem : 2022”N6ŒŽ2“ú10:11:02
+goto yandex
+
+rem goto opera
 REM goto chrome
 
 REM ================================
@@ -31,6 +34,15 @@ REM ================================
 	
 goto end
 
+REM ================================
+REM 	open with : yandex
+REM 	2019/08/13 08:10:14
+REM ================================
+:yandex
+pushd "C:\Users\iwabuchiken\AppData\Local\Yandex\YandexBrowser\Application"
+start browser.exe "http://localhost/Eclipse_Luna/Cake_IFM11/images/image_manager"
+	
+goto end
 
 rem pause
 
