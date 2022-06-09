@@ -45,6 +45,10 @@ set url_Image_Manager_Local=http://localhost/Eclipse_Luna/Cake_IFM11/images/imag
 
 set url_IP_Basics=http://localhost:8001/ip/basics/
 
+rem //2022”N6ŒŽ9“ú9:11:13
+set url_Remote_Cake="http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2?sort=file_name&direction=desc"
+
+
 pushd "C:\Users\iwabuchiken\AppData\Local\Yandex\YandexBrowser\Application"
 
 rem : page : inset data
@@ -54,10 +58,14 @@ rem : page : http://localhost/Eclipse_Luna/Cake_IFM11/images/image_manager
 start browser.exe %url_Image_Manager_Local%
 
 rem : page : http://localhost:8001/ip/basics/
-start browser.exe %url_IP_Basics%
+
+rem : c/o : 2022”N6ŒŽ9“ú9:10:28
+rem start browser.exe %url_IP_Basics%
 
 rem : remote
-start launcher.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2?sort=file_name&direction=desc"
+rem start launcher.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2?sort=file_name&direction=desc"
+rem start browser.exe "http://benfranklin.chips.jp/cake_apps/Cake_IFM11/images/index_2?sort=file_name&direction=desc"
+start browser.exe %url_Remote_Cake%
 
 	goto end
 
