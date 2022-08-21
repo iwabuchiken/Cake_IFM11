@@ -21,4 +21,4 @@ set url=http://127.0.0.1:8000/im/
 rem "http://127.0.0.1:8000/im/"
 
 
-pause
+rem pause
