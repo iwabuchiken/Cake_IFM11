@@ -17,6 +17,7 @@ set url=http://127.0.0.1:8000/im/
 
 %browser% %url%
 
+exit
 
 rem "http://127.0.0.1:8000/im/"
 
