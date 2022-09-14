@@ -83,7 +83,9 @@ php process-texts-for-reading_chinese.php
 		 * 	prep : vars
 		 ********************/
 		
-		$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs";
+		// update : dpath : 2022年9月13日15:21:41
+		//$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs";
+		$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs\\log_files";
 		
 		//C:\WORKS_2\shortcuts_docs\log-session_JVE_70-CO2_trans-sentences.dat
 		$fname_Trans_Dat	= "log-session_JVE_70-CO2_trans-sentences.dat";
