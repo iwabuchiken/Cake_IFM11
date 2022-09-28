@@ -2,6 +2,8 @@
 
 /*
 
+	this file : C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\process-trans-sentences_chinese.php
+
 pushd C:\WORKS_2\WS\Eclipse_Luna\Cake_IFM11\app\Lib\others\jve_70-CO2_68_trans-string\
 echo =============================== >> log_process-trans-sentences_chinese.log && php process-trans-sentences_chinese.php >> log_process-trans-sentences_chinese.log && echo. >> log_process-trans-sentences_chinese.log
 
@@ -101,7 +103,9 @@ php process-trans-sentences.php
 		 * step : 1
 		 * 	prep : vars
 		 ********************/
-		$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs";
+		 #code:20220927_152907
+		$dpath_Trans_Dat	= "C:\WORKS_2\shortcuts_docs\log_files";
+		#$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs";
 		
 		//$fname_Trans_Dat	= "log-session_JVE_70.[CO2].[trans-sentences].dat";
 		// new : 2022年1月27日13:18:36 ##:20220127_131905

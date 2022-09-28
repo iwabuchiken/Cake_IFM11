@@ -7501,3 +7501,22 @@ Array
 C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220202_011531_374862.txt
 [process-trans-sentences_chinese.php : 318] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220202_011531_374862.txt'
   
+===============================  
+starting... : build_Trans_String__Chinese (20220927_153438_225106)
+
+[process-trans-sentences_chinese.php : 182] $tokensOf_Split =>
+
+Array
+(
+    [0] => 聚合物[ju4--
+    [1] => 降解（polymer
+    [2] => degradation）是在聚合物加工过程中，可能在高温和应力作用下或者在聚合物中的微量水分、酸、碱等杂质以及空气中氧的作用，而导致分子链分裂成较小部分，大分子结构改变，分子量降低等化学变化的过程。[1]
+)
+[process-trans-sentences_chinese.php : 204] filtering.. : pattern = '/.+\[.+/'
+[process-trans-sentences_chinese.php : 222] match => 聚合物[ju4--
+[process-trans-sentences_chinese.php : 238] NOT match => ($result = 0)降解（polymer
+[process-trans-sentences_chinese.php : 222] match => degradation）是在聚合物加工过程中，可能在高温和应力作用下或者在聚合物中的微量水分、酸、碱等杂质以及空气中氧的作用，而导致分子链分裂成较小部分，大分子结构改变，分子量降低等化学变化的过程。[1]
+[process-trans-sentences_chinese.php : 305] file written =>
+C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220927_153438_225106.txt
+[process-trans-sentences_chinese.php : 322] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\trans\trans_20220927_153438_225106.txt'
+  

@@ -83,7 +83,9 @@ php process-texts-for-reading_korean.php
 		 * 	prep : vars
 		 ********************/
 		#code:20210517_142450
-		$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs";
+		#code:20220927_150017
+		$dpath_Trans_Dat	= "C:\WORKS_2\shortcuts_docs\log_files";
+		#$dpath_Trans_Dat	= "C:\\WORKS_2\\shortcuts_docs";
 		
 		//$fname_Trans_Dat	= "log-session_JVE_70.[CO2].[trans-sentences].dat";
 		$fname_Trans_Dat	= "log-session_JVE_70-CO2_trans-sentences.dat";
