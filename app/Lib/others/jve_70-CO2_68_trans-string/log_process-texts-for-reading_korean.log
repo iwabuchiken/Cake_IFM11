@@ -14496,3 +14496,232 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221008_215906_236907.txt
 [process-texts-for-reading_korean.php : 434] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221009_140336_995687)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->俄罗斯联邦副总理马拉特•胡斯努林表示，克里米亚大桥的铁路交通已全面恢复，所有计划内的火车都将全部放行。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->胡斯努林对记者说：
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->“就铁路而言我可以说，交通已经完全恢复。我们将让所有计划内的火车——包括客运和货运——全部通行。我们有这方面的技术能力。”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->此前，据克里姆林宫新闻局通报，俄罗斯总统弗拉基米尔•普京签署了一项关于加强横跨刻赤海峡交通通道、电力输电线和天然气干线管道的保护措施的命令。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->10月8日凌晨，克里米亚大桥发生卡车爆炸，导致7辆油罐车起火。公路桥两个地方出现部分倒塌。俄罗斯联邦侦查委员会新闻处发布消息称，初步数据显示，三人在克里米亚大桥爆炸事件中丧生。当时他们乘坐一辆小轿车就在爆炸的卡车旁边，从水中打捞出一男一女两具尸体。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221009_140336_995687.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221009_140336_995687.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221009_214102_061584)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->10月8日凌晨，克里米亚大桥发生卡车爆炸，导致7辆油罐车起火。公路桥两个地方出现部分倒塌。专家在接受卫星通讯社采访时指出，这种对民用基础设施的袭击是“在美国发出绿色信号的情况下”发生的。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->俄罗斯联邦侦查委员会新闻处发布消息称，初步数据显示，三人在克里米亚大桥爆炸事件中丧生。当时他们乘坐一辆小轿车就在爆炸的卡车旁边，从水中打捞出一男一女两具尸体。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->土耳其克里米亚鞑靼人文化联合会主席安维尔•塞尔（Ünver Sel）称克里米亚大桥的爆炸是对民用基础设施的破坏和袭击：
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->“在最近一段时间，乌克兰官方当局发出了袭击俄罗斯和克里米亚的言论。此前，穆斯塔法•杰米廖夫（编注：在俄罗斯被禁并被认定为极端组织的‘克里米亚鞑靼人议会’的前领导人）就摧毁克里米亚大桥一事发表过讲话。当然，发生的对北溪管道的袭击也指向乌克兰和西方。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->美国有言论称，乌克兰参与了对亚历山大•杜金女儿的谋杀。这次对克里米亚大桥的袭击就像是蓄意破坏，这是对民用基础设施的袭击。”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->安维尔•塞尔指出，“在橙色革命之后，在乌克兰不止一次地发生了政府更迭，但是他们的执政方式并没有改变。”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->伊朗记者鲁霍拉•莫达贝尔指出，克里米亚大桥上的爆炸发生在泽连斯基呼吁对俄罗斯进行先发制人的、可能是核打击的 48 小时之后：
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->“乌克兰对克里米亚大桥的袭击，毫无疑问是在美国给出绿色信号并使用美国武器的情况下发生的。美方有意进一步加剧升级冲突和敌对行动。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->在泽连斯基呼吁对俄罗斯进行先发制人的、可能是核打击的48小时后，克里米亚大桥就发生了爆炸。此外，泽连斯基昨晚通过他的法令承认南千岛群岛是俄罗斯‘占领’的日本领土而使局势白热化。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->所有的这一切都表明，白宫为泽连斯基策划的剧本进入到了一个危险的新阶段，俄罗斯政府当然会以任何它认为合适的方式对此作出回应。但毫无疑问，今天的乌克兰，按照美国的构想，是扩大对俄大规模打击的区域跳板，甚至无法预测乌克兰下一次的袭击可能发生在哪个地区。”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221009_214102_061584.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221009_214102_061584.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221009_214254_459168)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->Embajadora de Angola entrega donativo al hospital Agostinho Neto de Guantánamo
+
+$matches ==>
+Array
+(
+    [0] => o
+
+    [1] => o
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->El doctor José Alfredo Esteban Soto, director del Hospital General de Guantánamo transmitió el agradecimiento de los guantanameros por el donativo que icluye mascarillas, jeringuillas y medios de protección que permitirán incrementar la actividad quirúrgica y servir mejor a la población
+
+$matches ==>
+Array
+(
+    [0] => n
+
+    [1] => n
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221009_214254_459168.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221009_214254_459168.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
