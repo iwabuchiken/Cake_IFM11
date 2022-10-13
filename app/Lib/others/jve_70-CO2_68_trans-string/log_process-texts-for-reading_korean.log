@@ -15165,3 +15165,53 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221011_131946_060040.txt
 [process-texts-for-reading_korean.php : 434] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221012_213025_994442)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->The president accused the judiciary of acting “politically,” saying they wanted to legitimize a criminal network. “They want to legitimize a criminal network and they don’t care about the dignity of people, they don’t care about respect for families,” but he insisted that, despite “the political persecution,” his government will stand “tall and firm.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->On the other hand, the president described it “outrageous” that the judicial officials detain “innocent” people and that, on the other hand, “they do not have the courage to do it with drug traffickers, with people who have committed crimes.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221012_213025_994442.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221012_213025_994442.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221012_213324_380645)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221012_213324_380645.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221012_213324_380645.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
