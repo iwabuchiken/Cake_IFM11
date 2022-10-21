@@ -15329,3 +15329,119 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221017_142845_546348.txt
 [process-texts-for-reading_korean.php : 434] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221020_205044_456912)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->俄罗斯《生意人报》根据消息人士透露的信息报道了“萨哈林-1”项目停产原因——“萨哈林-1”项目的运营商美国埃克森油气有限公司（Exxon Neftegaz Limited）（占30%股份）拒绝将石油装运到俄Sovkomflot公司油轮。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->“萨哈林-1”项目于5月停止开采，“萨哈林-2”项目在此情况下继续运营。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->该报的消息来源称，问题的原因是由于埃克森油气有限公司拒绝继续与3月底陷入制裁的Sovcomflot公司油轮合作。受制裁影响，该公司船舶失去了国际船东保赔协会集团（International Group of P&I Clubs）的保险。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->俄罗斯总统普京10月7日签署命令，授权俄罗斯政府成立“萨哈林-1”号项目的新运营商，以接管埃克森油气有限公司（Exxon Neftegaz Limited）的权利和义务。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->“萨哈林-1”号项目的当前运营商是埃克森油气有限公司，其持有项目30%的股份。今年3月，该公司宣布拟退出项目，4月宣布进入不可抗力状态，导致项目几乎停止。目前，项目的油气开采已经完全停止。“萨哈林-1”号的股东还包括俄罗斯石油公司（20%）、日本Sodeco公司（30%）和印度ONGC公司（20%）。
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221020_205044_456912.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221020_205044_456912.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221020_205222_784977)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->Soldiers sit on a US-made M60A3 tank for a group photograph after an anti-invasion drill in Taichung, Chinese Taipei, on January 17, 2019. (Photo by Reuters)
+
+$matches ==>
+Array
+(
+    [0] => )
+
+    [1] => )
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->On Wednesday, Rupert Hammond-Chambers, president of the US-Taiwan Business Council, an initiative aimed at accelerating arms transfers to bolster Taipei’s military against mainland China’s, said of the controversial plan, “It’s right at the beginning of the process. It’s a piece of the puzzle, not a game changer.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->Xi will be ‘sinner’ if he attacks Taiwan: Taiwanese official
+
+$matches ==>
+Array
+(
+    [0] => l
+
+    [1] => l
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221020_205222_784977.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221020_205222_784977.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
