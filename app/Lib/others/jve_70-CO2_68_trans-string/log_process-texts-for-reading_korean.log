@@ -15689,3 +15689,86 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221101_212730_266087.txt
 [process-texts-for-reading_korean.php : 434] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221102_211216_325361)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->South Korea declared on Wednesday that it fired three air-to-ground missiles that landed past the Northern Limit Line (NLL) -- a disputed inter-Korean maritime border -- and off the North Korean coastline, in retaliation to a Pyongyang’s missile launch that landed less than 60 kilometers off the South’s city of Sokcho, which the South Korean president falsely labeled as “territorial encroachment.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->South Korea’s President Yoon Suk-yeol, who has made it his policy to take a tough line on North Korea, further threatened a "swift and firm response" against Pyongyang so that it "pays the price for provocation."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->The missile exchanges came just hours after Pyongyang demanded a halt to large-scale joint military exercises by US and South Korean forces, insisting that such "military rashness and provocation can be no longer tolerated."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221102_211216_325361.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221102_211216_325361.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221102_212256_323827)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->Price, however, noted that Washington and its allies had also threatened that there would be "profound costs and profound consequences" if Pyongyang resumed nuclear testing, which would be a "dangerous, destabilizing step."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->Also on Wednesday, another State Department official said the United States "condemns the DPRK’s ballistic missile launches and its reckless decision to fire a missile below the defacto maritime boundary with the Republic of Korea."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221102_212256_323827.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221102_212256_323827.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
