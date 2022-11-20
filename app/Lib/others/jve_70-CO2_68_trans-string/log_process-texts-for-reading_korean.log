@@ -16151,3 +16151,61 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221117_141232_400393.txt
 [process-texts-for-reading_korean.php : 434] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221119_205319_199348)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->A two-year-old “engaging, lively, endearing” boy died from prolonged exposure to black mould in a Rochdale flat in the United Kingdom, a coroner has concluded, calling it a “defining moment” for the country's housing sector. 
+
+$matches ==>
+Array
+(
+    [0] =>  
+
+    [1] =>  
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->I'm sure I'm not alone in having thought, 'How does this happen? How, in the UK in 2020, does a two-year-old child die from exposure to mold in his home?'," she asked. The senior coroner also underscored in her verdict that "action to treat and prevent the mold was not taken," adding that Ishak's "respiratory condition led to respiratory arrest."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->"The medical advice given to his parents led to Awaab receiving suboptimal ventilation of his airway which was unable to prevent his cardiac arrest," Kearsley said, warning that the issue was "not simply a Rochdale problem."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->Abdullah and her wife, Aisha Aminin, accused the housing association of racism, saying they have "no doubt at all" they were "treated in this way because we are not from this country."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221119_205319_199348.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221119_205319_199348.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
