@@ -16256,3 +16256,50 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221120_142328_302344.txt
 [process-texts-for-reading_korean.php : 434] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221123_135920_483352)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->Meanwhile, Kurilla also said that in addition to the unmanned vessels, the US is “building an experimentation program here in the Middle East to beat adversary drones with our partners.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->He was apparently referring to Iranian drones, which he claimed to be "the greatest technological threat to regional security."
+
+$matches ==>
+Array
+(
+    [0] => "
+
+    [1] => "
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->“Iran’s strategic capacity is now enormous,” he said. “They’ve got overmatch in the theater – the ability to overwhelm.”
+
+$matches ==>
+Array
+(
+    [0] => �
+
+    [1] => �
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221123_135920_483352.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221123_135920_483352.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
