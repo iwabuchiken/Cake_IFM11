@@ -16812,3 +16812,39 @@ pattern --> /([^0-9]\.) /
 [process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221202_141627_844214.txt
 [process-texts-for-reading_korean.php : 434] returning...
  
+===============================  
+[process-texts-for-reading_korean.php : 70] starting... : build_Texts_For_Reading (20221204_142916_585897)
+[process-texts-for-reading_korean.php : 102]
+$fpath_Trans_Dat : C:\WORKS_2\shortcuts_docs\log_files\log-session_JVE_70-CO2_trans-sentences.dat
+[process-texts-for-reading_korean.php : 146]
+pattern --> /\.\r\n/
+[process-texts-for-reading_korean.php : 216]
+pattern --> /([^\.])\r\n/
+[process-texts-for-reading_korean.php : 234]
+match : line -->Italy has so far classified the arms it has been sending to Ukraine,
+
+$matches ==>
+Array
+(
+    [0] => ,
+
+    [1] => ,
+)
+
+[process-texts-for-reading_korean.php : 234]
+match : line -->but some media have suggested the next package will likely include air
+
+$matches ==>
+Array
+(
+    [0] => r
+
+    [1] => r
+)
+
+[process-texts-for-reading_korean.php : 294]
+pattern --> /([^0-9]\.) /
+[process-texts-for-reading_korean.php : 417] opening file... 'C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221204_142916_585897.txt'
+[process-texts-for-reading_korean.php : 425] file written ==>C:\WORKS_2\WS\WS_Others.JVEMV6\JVEMV6\70_co2\texts-for-reading\out.20221204_142916_585897.txt
+[process-texts-for-reading_korean.php : 434] returning...
+ 
